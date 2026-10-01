@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { transform } from 'esbuild';
-import { filterFigures, filterFieldsFor, assetUrl } from '../src/gallery.js';
+import { filterFigures, filterFieldsFor, assetUrl, categorySummary } from '../src/gallery.js';
 
 for (const file of ['src/App.jsx', 'src/ui.jsx', 'src/main.jsx']) {
   await transform(fs.readFileSync(file, 'utf8'), { loader: 'jsx', jsx: 'automatic' });
@@ -20,6 +20,27 @@ assert.equal(filterFigures(figures, { ...base, view: 'favorites' }, [figures[0].
 assert.equal(filterFigures(figures, base, [], [figures[0].id]).length, figures.length - 1);
 assert.equal(filterFigures(figures, { ...base, view: 'hidden' }, [], [figures[0].id]).length, 1);
 assert.equal(filterFigures(figures, { ...base, query: 'no such figure' }, [], []).length, 0);
+const layoutScope = filterFigures(figures, { ...base, dimension: 'layout' }, [], []);
+const layoutCounts = categorySummary(layoutScope, 'layout');
+const unlabelled = filterFigures(figures, { ...base, dimension: 'layout', category: 'unlabelled' }, [], []);
+assert.equal(layoutCounts.total, layoutCounts.labelled + layoutCounts.unlabelled);
+assert.equal(unlabelled.length, layoutCounts.unlabelled);
+assert.ok(unlabelled.every(f => !f.classification.layouts.length));
+const labelledIds = new Set(Object.keys(layoutCounts.counts).filter(key => key !== 'unlabelled').flatMap(key =>
+  filterFigures(figures, { ...base, dimension: 'layout', category: key }, [], []).map(f => f.id)));
+assert.equal(labelledIds.size, layoutCounts.labelled);
+const pendingPurpose = filterFigures(figures, { ...base, dimension: 'purpose', category: 'unlabelled' }, [], []);
+assert.equal(pendingPurpose.length, figures.filter(f => !f.classification.purposes.length).length);
+const missingFixture = { ...figures[0], id: 'fixture-unlabelled', classification: { ...figures[0].classification, layouts: [], purposes: [] } };
+const fixtureScope = [figures[0], missingFixture];
+const favoriteScope = filterFigures(fixtureScope, { ...base, view: 'favorites', dimension: 'layout' }, [missingFixture.id, figures[0].id], [figures[0].id]);
+const favoriteCounts = categorySummary(favoriteScope, 'layout');
+assert.equal(favoriteCounts.total, 1);
+assert.equal(favoriteCounts.unlabelled, 1);
+const hiddenScope = filterFigures(fixtureScope, { ...base, view: 'hidden', dimension: 'layout' }, [], [missingFixture.id]);
+assert.equal(categorySummary(hiddenScope, 'layout').counts.unlabelled, 1);
+const queryScope = filterFigures(figures, { ...base, query: 'CollabLLM', dimension: 'layout' }, [], []);
+assert.equal(categorySummary(queryScope, 'layout').total, queryScope.length);
 const fields = filterFieldsFor(figures);
 const awarded = filterFigures(figures, { ...base, filters: { award: ['awarded'] } }, [], []);
 assert.ok(awarded.length > 0);

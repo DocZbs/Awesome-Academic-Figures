@@ -41,6 +41,8 @@ Gallery is a local bounded catalog, 12 results per explicit load-more batch. Def
 
 Search suppresses filtering during IME composition, commits after 300ms, clears immediately and returns focus to its input. Filters combine OR within one field and AND across fields. Changing filters resets the batch count. No-results provides reset; empty favorites explain how to add items; hidden view offers Restore. Load/error media use a stable image container and a retry affordance.
 
+Category totals and per-tag counts share the current search, advanced filters and gallery/favorites/hidden scope, excluding the active category so switching categories remains possible. Missing layout/purpose annotations have explicit unlabelled categories; they are not inferred from unavailable evidence. Show distinct labelled/unlabelled coverage and explain overlapping tags rather than implying category counts are additive.
+
 ## Flow ledger
 
 | Operation | Trigger | Success | Failure | Source |

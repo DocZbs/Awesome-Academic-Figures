@@ -10,6 +10,7 @@ export const TYPE_LABELS = {
   unclassified: "待分类",
 };
 export const PURPOSE_LABELS = {
+  unlabelled: "未标注用途",
   "method-overview": "方法介绍",
   mechanism: "机制解释",
   comparison: "方法对比",
@@ -18,6 +19,7 @@ export const PURPOSE_LABELS = {
   "experimental-setup": "实验装置",
 };
 export const LAYOUT_LABELS = {
+  unlabelled: "未标注布局",
   "left-to-right": "横向布局",
   "nested-modules": "嵌套模块",
   "feedback-loop": "反馈环路",
@@ -71,8 +73,11 @@ export function valuesFor(figure, field) {
         ? [value, "data"]
         : [value],
     );
-  if (field === "purpose") return figure.classification.purposes;
-  if (field === "layout") return figure.classification.layouts;
+  if (field === "purpose" || field === "layout") {
+    const tags =
+      figure.classification[field === "purpose" ? "purposes" : "layouts"];
+    return tags?.length ? tags : ["unlabelled"];
+  }
   if (field === "source" || field === "venue") return [figure.paper.venue];
   if (field === "number")
     return [
@@ -84,6 +89,24 @@ export function valuesFor(figure, field) {
     ];
   if (field === "year") return [String(figure.paper.publication_year)];
   return [];
+}
+export function categorySummary(figures, dimension) {
+  const counts = {};
+  let unlabelled = 0;
+  let overlapping = false;
+  for (const figure of figures) {
+    const values = [...new Set(valuesFor(figure, dimension))];
+    if (values.includes("unlabelled")) unlabelled++;
+    if (values.length > 1) overlapping = true;
+    for (const value of values) counts[value] = (counts[value] || 0) + 1;
+  }
+  return {
+    total: figures.length,
+    labelled: figures.length - unlabelled,
+    unlabelled,
+    overlapping,
+    counts,
+  };
 }
 export function filterFieldsFor(figures) {
   const fields = { ...FILTER_FIELDS };

@@ -53,8 +53,8 @@ import {
   FILTER_FIELDS,
   filterFieldsFor,
   assetUrl,
-  valuesFor,
   filterFigures,
+  categorySummary,
   readUrl,
   fetchResource,
   loadFigureDetails,
@@ -227,6 +227,15 @@ export default function App() {
     [figures, state, favorites, hidden],
   );
   const selectedFigures = figures.filter((item) => selected.includes(item.id));
+  const categoryFigures = useMemo(
+    () =>
+      filterFigures(figures, { ...state, category: "all" }, favorites, hidden),
+    [figures, state, favorites, hidden],
+  );
+  const categoryStats = useMemo(
+    () => categorySummary(categoryFigures, state.dimension),
+    [categoryFigures, state.dimension],
+  );
   const categoryLabels =
     state.dimension === "type"
       ? TYPE_LABELS
@@ -573,11 +582,15 @@ export default function App() {
             >
               <LayoutGrid size={17} />
               全部图形
-              <span>
-                {figures.filter((item) => !hidden.includes(item.id)).length}
-              </span>
+              <span>{categoryStats.total}</span>
             </Chip>
             {Object.entries(categoryLabels).map(([key, label]) => {
+              if (
+                key === "unlabelled" &&
+                !categoryStats.unlabelled &&
+                state.category !== key
+              )
+                return null;
               const Icon = TYPE_ICONS[key] || Layers3;
               return (
                 <Chip
@@ -587,19 +600,21 @@ export default function App() {
                 >
                   <Icon size={17} />
                   {label}
-                  <span>
-                    {
-                      figures.filter(
-                        (item) =>
-                          valuesFor(item, state.dimension).includes(key) &&
-                          !hidden.includes(item.id),
-                      ).length
-                    }
-                  </span>
+                  <span>{categoryStats.counts[key] || 0}</span>
                 </Chip>
               );
             })}
           </div>
+          {loadState === "ready" && (
+            <p className="category-summary">
+              {(state.dimension === "layout" ||
+                state.dimension === "purpose") &&
+                `当前 ${categoryStats.total} 幅图中，${categoryStats.labelled} 幅已标注${state.dimension === "layout" ? "布局" : "用途"}，${categoryStats.unlabelled} 幅未标注。`}
+              {categoryStats.overlapping &&
+                "同一幅图可有多个标签，分类数量不相加。"}
+              数量按当前搜索、筛选与列表统计。
+            </p>
+          )}
           {state.dimension === "source" && (
             <div className="paper-archive-list">
               {Array.from(
