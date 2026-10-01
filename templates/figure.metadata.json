@@ -1,8 +1,11 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "template_only": true,
   "id": "<venue>-<publication-year>-<paper-key>-fig-<number>",
-  "title": { "zh": "填写图的简短描述", "en": "Replace with a descriptive figure title" },
+  "title": {
+    "zh": "填写图的简短描述",
+    "en": "Replace with a descriptive figure title"
+  },
   "paper": {
     "id": "<paper-id>",
     "title": null,
@@ -14,8 +17,19 @@
     "pdf_url": null,
     "pdf_version": null,
     "awards": [
-      { "category": null, "official_name": null, "award_year": null, "official_source_url": null, "verified_at": null }
-    ]
+      {
+        "category": null,
+        "official_name": null,
+        "award_year": null,
+        "official_source_url": null,
+        "verified_at": null
+      }
+    ],
+    "arxiv_id": null,
+    "arxiv_version": null,
+    "arxiv_url": null,
+    "arxiv_first_submitted_at": null,
+    "collected_at": null
   },
   "source": {
     "kind": "figure",
@@ -25,7 +39,10 @@
     "panel": null,
     "pdf_page_index_1based": null,
     "caption": null,
-    "asset_url": null
+    "asset_url": null,
+    "method": "arxiv_source_original",
+    "arxiv_version": null,
+    "source_archive_sha256": null
   },
   "classification": {
     "collection": "award-winning",
@@ -37,8 +54,23 @@
     "research_topics": [],
     "search_aliases": []
   },
-  "visual": { "aspect_ratio": null, "panel_count": null, "palette_hex": [] },
-  "assets": { "preview": null, "reference": null, "analysis": "analysis.md", "prompt": "prompt.md", "agent": "agent.md", "code": null, "adaptation_preview": null },
+  "visual": {
+    "aspect_ratio": null,
+    "panel_count": null,
+    "palette_hex": []
+  },
+  "assets": {
+    "preview": null,
+    "reference": null,
+    "analysis": "analysis.md",
+    "prompt": "prompt.md",
+    "agent": "agent.md",
+    "code": null,
+    "adaptation_preview": null,
+    "extraction": "extraction.json",
+    "figure_tex": "figure.tex",
+    "originalBase": ""
+  },
   "reuse": {
     "reference_available": false,
     "prompt_origin": "maintainer_reconstruction",
@@ -47,9 +79,32 @@
     "prompt_status": "draft",
     "code_status": "unavailable",
     "adaptation_status": "untested",
-    "variables": ["method_name", "modules", "connections", "data_path", "output_format"],
-    "validation": null
+    "variables": [
+      "method_name",
+      "modules",
+      "connections",
+      "data_path",
+      "output_format"
+    ],
+    "validation": {
+      "visual_extraction": "pending",
+      "adaptation_generation": "not_tested"
+    }
   },
-  "rights": { "holder": null, "source_license": null, "redistribution_basis": null, "attribution": null },
-  "curation": { "maintainer": null, "checked_at": null, "notes": "模板占位条目，不应加入公开图表索引。核心图号填 1 或 2，同时将 core_figure_slot 设为 figure-1 或 figure-2。" }
+  "rights": {
+    "holder": null,
+    "source_license": null,
+    "redistribution_basis": null,
+    "attribution": null,
+    "license_url": null,
+    "license_evidence_url": null,
+    "publication_status": "pending",
+    "third_party_review": null
+  },
+  "curation": {
+    "maintainer": null,
+    "checked_at": null,
+    "notes": "模板占位条目，不应加入公开图表索引。核心图号填 1 或 2，同时将 core_figure_slot 设为 figure-1 或 figure-2。"
+  },
+  "original_assets": []
 }

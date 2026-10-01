@@ -783,7 +783,13 @@ export default function App() {
                               {...actions}
                               compact
                             />
-                            <span className="card-format mono">PNG + MD</span>
+                            <span className="card-format mono">
+                              {figure.original_assets?.[0]?.file
+                                .split(".")
+                                .pop()
+                                .toUpperCase() || "PNG"}{" "}
+                              + MD
+                            </span>
                           </div>
                         </div>
                       </article>
@@ -1207,7 +1213,7 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
             "prompt.md": figure.prompt_text,
             "agent.md": figure.agent_text,
             "metadata.json": JSON.stringify(figure, null, 2),
-            "ATTRIBUTION.md": `${figure.rights.attribution}\n\nSource: ${figure.rights.license_evidence_url}\nLicense: ${figure.rights.source_license} (${figure.rights.license_url})\nChanges: preview rendering or extraction; see metadata.json.\n`,
+            "ATTRIBUTION.md": `${figure.rights.attribution}\n\nPaper: ${figure.paper.url}\n\nSource: ${figure.rights.license_evidence_url}\nLicense: ${figure.rights.source_license} (${figure.rights.license_url})\nChanges: preview rendering or extraction; see metadata.json.\n`,
           }))
             archive[`${figure.id}/${name}`] = strToU8(text);
           const image = await fetchResource(assetUrl(figure, "reference"), {

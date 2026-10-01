@@ -10,12 +10,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path("."))
     parser.add_argument("--remote-assets", default="https://raw.githubusercontent.com/DocZbs/Awesome-Academic-Figures/main/", help="Use GitHub originals without local mirroring")
+    parser.add_argument("--bundles", action="store_true", help="Optionally also generate static ZIPs on the staging server")
     args = parser.parse_args()
     root = args.root.resolve()
     figures = []
     seen = set()
     bundles = root / "bundles"
-    bundles.mkdir(exist_ok=True)
+    if args.bundles:
+        bundles.mkdir(exist_ok=True)
     for path in sorted((root / "figures").glob("*/metadata.json")):
         entry = json.loads(path.read_text())
         figure_id = entry["id"]
@@ -25,6 +27,8 @@ def main():
             raise ValueError(f"License is outside the initial collection policy: {figure_id}")
         if entry["reuse"]["validation"].get("visual_extraction") != "reviewed":
             raise ValueError(f"Unreviewed figure cannot be published: {figure_id}")
+        if entry["source"].get("method") == "arxiv_source_original" and not entry.get("original_assets"):
+            raise ValueError(f"Source-extracted figures must retain author originals: {figure_id}")
         if entry.get("template_only") or figure_id in seen or path.parent.name != figure_id:
             raise ValueError(f"Invalid or duplicate figure ID: {figure_id}")
         seen.add(figure_id)
@@ -52,9 +56,10 @@ def main():
         for name in ("ATTRIBUTION.md", "figure.tex"):
             if (path.parent / name).is_file():
                 files.add(name)
-        with zipfile.ZipFile(bundles / f"{figure_id}.zip", "w", zipfile.ZIP_DEFLATED) as archive:
-            for name in sorted(files):
-                archive.write(path.parent / name, name)
+        if args.bundles:
+            with zipfile.ZipFile(bundles / f"{figure_id}.zip", "w", zipfile.ZIP_DEFLATED) as archive:
+                for name in sorted(files):
+                    archive.write(path.parent / name, name)
         entry["asset_base"] = f"{args.remote_assets}figures/{figure_id}/"
         for field in ("analysis", "prompt", "agent"):
             entry[f"{field}_text"] = (path.parent / entry["assets"][field]).read_text()
@@ -65,7 +70,7 @@ def main():
                "publication_status": "license_and_visual_review_passed", "figures": figures}
     (root / "data").mkdir(exist_ok=True)
     (root / "data/catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
-    print(f"Built catalog with {len(figures)} figures and {len(figures)} local reference bundles")
+    print(f"Built catalog with {len(figures)} reviewed figures; static bundles {'enabled' if args.bundles else 'disabled (browser exports on demand)'}")
 
 
 if __name__ == "__main__":

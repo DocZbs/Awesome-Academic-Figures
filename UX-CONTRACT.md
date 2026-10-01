@@ -71,3 +71,7 @@ Export form uses noValidate, real labels, inline error and first-invalid focus. 
 ## Verification
 
 Required commands: npm run format:check; npm run check; npm run check:tokens; npm run build; designmd lint DESIGN.md; premium strict audit. Browser matrix: desktop/narrow, filters, no results, favorites persistence, hide/restore, selected tray, detail/guide/export, Escape/focus, download/copy, catalog failure/retry, IME and reduced-motion. Screenshots and browser evidence are stored in output/playwright.
+
+## Licensed source originals and thin gallery
+
+The catalog is the authority for counts, venue and year filters. Assets may live at an absolute GitHub URL; local preview must not mirror the bulk figure collection. Source detail displays the exact arXiv/proceedings version and license evidence. Source-derived exports include the original author file, extraction record, TeX layout excerpt and attribution, plus the existing reference/analysis/prompt/agent/user-task files. Verify original SHA-256 before creating a download. Unknown rights or incomplete composites are excluded from the public catalog. Prompt reconstruction remains explicitly untested.

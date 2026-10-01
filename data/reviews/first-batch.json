@@ -638,58 +638,6 @@
     "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
   },
   {
-    "id": "icml-2024-discrete-diffusion-modeling-by-estimating-the-ratios-of-the-data-distribution-fig-2",
-    "source_archive_sha256": "fb3d551fdd97cc2747e2e7a6e82cd131a1c3bf62fda43285a01d2ede134bad47",
-    "review_status": "approved",
-    "checked_at": "2026-10-01",
-    "title": {
-      "zh": "采样策略与模型规模的多编码折线图",
-      "en": "Sampling variants with color, marker and line encodings"
-    },
-    "caption": "Generative Perplexity for SEDD Uniform.",
-    "classification": {
-      "collection": "award-winning",
-      "primary_type": "data",
-      "types": [
-        "data",
-        "line"
-      ],
-      "purposes": [
-        "comparison"
-      ],
-      "layouts": [
-        "grid"
-      ],
-      "styles": [
-        "academic",
-        "white-background"
-      ],
-      "research_topics": [
-        "diffusion",
-        "language-model",
-        "sampling"
-      ],
-      "search_aliases": [
-        "采样策略与模型规模的多编码折线图",
-        "Sampling variants with color, marker and line encodings",
-        "diffusion",
-        "language-model",
-        "sampling"
-      ]
-    },
-    "panel_count": 1,
-    "palette_hex": [
-      "#1D29C6",
-      "#E6AD21",
-      "#C6C6C6"
-    ],
-    "analysis": "# 采样策略与模型规模的多编码折线图\n\n图中用颜色区分模型大小，用圆点与三角形区分求解方式，用线型区分扩散变体，右侧星形点表示基线。双对数坐标把不同开销与质量范围放进同一幅图，紧凑图例解释三种视觉编码。适合多因素采样对比，改绘时需要固定颜色、点型和线型的含义，避免每条曲线随机分配一种颜色。\n\n## 来源与核对\n\nDiscrete Diffusion Modeling by Estimating the Ratios of the Data Distribution，ICML 2024，Figure 2。原文件：imgs/img_perplexity_large_uniform.png。版本：2310.16834v3。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
-    "prompt": "# Adaptation prompt — Sampling variants with color, marker and line encodings\n\nThis is a maintainer reconstruction based on Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution, Figure 2, 2310.16834v3. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Draw a performance-versus-compute plot with three orthogonal encodings: color for model size, marker shape for solver family, and line style for the process variant. Use one blue family and one gold family, round versus triangular markers, and solid versus dashed curves as appropriate to the supplied factors. Include fixed-compute reference methods as star markers. Build a structured legend that explains each factor independently, rather than one cryptic entry per full combination. Preserve the requested logarithmic scales and avoid plotting zero or negative values on them. Use only measured checkpoints; do not interpolate as evidence of untested regimes. If uncertainty exists, show restrained intervals without obscuring line encodings.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #1D29C6, #E6AD21, #C6C6C6. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
-    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：采样策略与模型规模的多编码折线图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
-    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
-    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
-  },
-  {
     "id": "icml-2024-videopoet-a-large-language-model-for-zero-shot-video-generation-fig-1",
     "source_archive_sha256": "179c02931e14cddc1b3522e84206f4fccbe346af8572e882b38ebb9dc8f73902",
     "review_status": "approved",

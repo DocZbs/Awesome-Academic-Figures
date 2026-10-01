@@ -109,6 +109,15 @@ def flatten_tex(files):
     return roots[0], expand(roots[0], set())
 
 
+def main_body_tex(tex):
+    """Do not count appendix figures or material ignored after end{document}."""
+    start = tex.find(r"\begin{document}")
+    start = max(start, 0)
+    body = tex[start:]
+    boundary = re.search(r"\\appendix\b|\\begin\{appendices\}|\\end\{document\}", body)
+    return tex[:start+boundary.start()] if boundary else tex
+
+
 def find_asset(name, files):
     name = name.strip().removeprefix("./")
     candidates = [name] if PurePosixPath(name).suffix else [name+ext for ext in (".pdf", ".png", ".jpg", ".jpeg", ".svg", ".eps")]
@@ -140,7 +149,12 @@ def source_download(identifier, root):
     if not path.exists():
         url = "https://arxiv.org/src/" + identifier
         with urllib.request.urlopen(url, timeout=60) as response:
-            blob = response.read(MAX_ARCHIVE+1)
+            if response.headers.get("Content-Type", "").split(";")[0] == "application/pdf":
+                raise ValueError("Source endpoint offers only a paper PDF; download skipped")
+            prefix = response.read(5)
+            if prefix.startswith(b"%PDF"):
+                raise ValueError("Source endpoint returned paper PDF; download stopped after signature")
+            blob = prefix + response.read(MAX_ARCHIVE+1-len(prefix))
         if len(blob) > MAX_ARCHIVE:
             raise ValueError("Source download exceeds 100 MiB limit")
         if blob.startswith(b"%PDF"):
@@ -183,6 +197,7 @@ def collect(paper, identifier, root):
     blob = source_download(frozen, root)
     files = archive_files(blob)
     main, tex = flatten_tex(files)
+    tex = main_body_tex(tex)
     matches = list(re.finditer(r"\\begin\{figure\*?\}(.*?)\\end\{figure\*?\}", tex, re.S))
     prefix = tex[:matches[1].end()] if len(matches)>1 else tex
     if re.search(r"\\(?:setcounter|renewcommand)\s*\{(?:figure|\\thefigure)\}", prefix):

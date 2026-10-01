@@ -5,10 +5,15 @@ import tarfile
 import unittest
 from pathlib import Path
 
-from collect_arxiv_sources import archive_files, braced, command_args, flatten_tex, preview, figure_captions
+from collect_arxiv_sources import archive_files, braced, command_args, flatten_tex, preview, figure_captions, source_download, main_body_tex
 
 
 class SourceSafety(unittest.TestCase):
+    def test_appendix_and_ignored_trailing_tex_excluded(self):
+        main = r"\begin{document}\begin{figure}\caption{main}\end{figure}"
+        extra = r"\begin{figure}\caption{appendix}\end{figure}"
+        self.assertEqual(main_body_tex(main+r"\appendix"+extra), main)
+        self.assertEqual(main_body_tex(main+r"\end{document}"+extra), main)
     def test_nested_caption_and_commented_figures(self):
         text = r"\caption{A \textbf{nested {caption}} with {braces}}"
         self.assertEqual(command_args(text, "caption"), [r"A \textbf{nested {caption}} with {braces}"])
@@ -38,6 +43,17 @@ class SourceSafety(unittest.TestCase):
     def test_pdf_response_rejected(self):
         with self.assertRaisesRegex(ValueError, "only a paper PDF"):
             archive_files(b"%PDF-1.7 fake paper")
+
+    def test_pdf_source_is_rejected_without_body_download(self):
+        from unittest.mock import MagicMock, patch
+        import tempfile
+        response = MagicMock()
+        response.headers = {"Content-Type":"application/pdf"}
+        response.__enter__.return_value = response
+        with tempfile.TemporaryDirectory() as folder, patch("urllib.request.urlopen",return_value=response):
+            with self.assertRaisesRegex(ValueError, "download skipped"):
+                source_download("1234.56789v1", Path(folder))
+        response.read.assert_not_called()
 
     def test_transparent_original_has_white_preview(self):
         from PIL import Image
