@@ -18,8 +18,9 @@ export function PaperSource({ paper }) {
       <div className="paper-source-heading">
         <span className="eyebrow">PAPER ARCHIVE</span>
         <span>
-          {paper.venue} {paper.publication_year} ·{" "}
-          {paper.awards?.[0]?.official_name || "AI 研究论文"}
+          {paper.venue} {paper.publication_year}
+          {paper.awards?.[0]?.official_name &&
+            ` · ${paper.awards[0].official_name}`}
         </span>
       </div>
       <h3>
