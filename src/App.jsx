@@ -839,7 +839,7 @@ export default function App() {
             <h2>
               找到好图。
               <br />
-              然后，把它变成你的。
+              获得灵感
             </h2>
             <button onClick={() => setGuide(true)}>
               查看使用指南
