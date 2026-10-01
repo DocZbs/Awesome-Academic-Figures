@@ -1,0 +1,907 @@
+[
+  {
+    "id": "cvpr-2024-bioclip-a-vision-foundation-model-for-the-tree-of-life-fig-2",
+    "source_archive_sha256": "1c899b19ca694a191eac235d82cec76e7611fe2cc6d24f9535c767a4e18c426c",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "生物分类层级的嵌套树图",
+      "en": "Hierarchical taxonomy treemap"
+    },
+    "caption": "Treemap of the 108 phyla in TreeOfLife-10M. Different colors are different phyla; nested boxes represent classes, orders, and families. Box size, not number of inner boxes, represents relative number of samples.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "data",
+      "types": [
+        "data",
+        "treemap"
+      ],
+      "purposes": [
+        "dataset-overview"
+      ],
+      "layouts": [
+        "nested-modules"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "biology",
+        "dataset",
+        "vision"
+      ],
+      "search_aliases": [
+        "生物分类层级的嵌套树图",
+        "Hierarchical taxonomy treemap",
+        "biology",
+        "dataset",
+        "vision"
+      ]
+    },
+    "panel_count": 1,
+    "palette_hex": [
+      "#793B88",
+      "#F1B800",
+      "#119D78"
+    ],
+    "analysis": "# 生物分类层级的嵌套树图\n\n一个宽矩形被分成紫色、黄色、绿色等大区块，表示不同生物门。每个区块继续嵌套纲、目、科的矩形，小类别集中在右下角。面积表达样本数量；矩形数量本身不表达数量。大类别直接写在区块左上角，文字大小随可用空间变化。适合展示数据集类别组成与长尾分布，改绘时需要真实的层级树和叶节点计数。\n\n## 来源与核对\n\nBioCLIP: A Vision Foundation Model for the Tree of Life，CVPR 2024，Figure 2。原文件：figures/phyla_ToL_tree.pdf。版本：2311.18803v3。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Hierarchical taxonomy treemap\n\nThis is a maintainer reconstruction based on BioCLIP: A Vision Foundation Model for the Tree of Life, Figure 2, 2311.18803v3. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Use one wide treemap rather than node-link branches. Assign a stable categorical hue to every top-level group, with purple, golden yellow and green dominating the three largest groups. Nest rectangles for each successive taxonomy level. Rectangle area must be calculated from the user-provided sample counts; the number of child rectangles is not a proxy for frequency. Place group labels at upper-left corners, reserve readable labels for large rectangles, and avoid forcing tiny labels into leaves. Use thin light internal boundaries and generous outer padding. Adapt taxonomy depth and label selection to the supplied hierarchy without reproducing the paper’s biological names or sample counts.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #793B88, #F1B800, #119D78. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：生物分类层级的嵌套树图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "cvpr-2024-rich-human-feedback-for-text-to-image-generation-fig-1",
+    "source_archive_sha256": "8c4e8c5f81b1f526b9181c26db20cb3d442b1fb3cbefb3275c542c8a47bdcff9",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "图文生成质量的点标注与评分界面",
+      "en": "Point annotation and rating interface"
+    },
+    "caption": "An illustration of our annotation UI. Annotators mark points on the image to indicate artifact/implausibility regions (red points) or misaligned regions (blue points) w.r.t the text prompt. Then, they click on the words to mark the misaligned keywords (underlined and shaded) and choose the scores for plausibility, text-image alignment, aesthetics, and overall quality (underlined).",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual",
+        "qualitative"
+      ],
+      "purposes": [
+        "mechanism",
+        "qualitative"
+      ],
+      "layouts": [
+        "two-column"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "text-to-image",
+        "human-feedback",
+        "annotation"
+      ],
+      "search_aliases": [
+        "图文生成质量的点标注与评分界面",
+        "Point annotation and rating interface",
+        "text-to-image",
+        "human-feedback",
+        "annotation"
+      ]
+    },
+    "panel_count": 2,
+    "palette_hex": [
+      "#E32323",
+      "#0ADAD7",
+      "#333333"
+    ],
+    "analysis": "# 图文生成质量的点标注与评分界面\n\n左侧是一张生成的熊猫骑摩托车图，红色点标出视觉缺陷，青色点标出与文本不一致的位置。右侧显示 prompt 中被选中的词，以及合理性、图文一致性、美感、总体质量四组评分。图像与评分紧密并排，所选词和评分用下划线强调。改绘可借鉴“例图＋可定位反馈＋分项评分”的结构，示例图片与评分必须由自己的材料提供。\n\n## 来源与核对\n\nRich Human Feedback for Text-to-Image Generation，CVPR 2024，Figure 1。原文件：fig/MAXO-GEN-annotation3.pdf。版本：2312.10240v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Point annotation and rating interface\n\nThis is a maintainer reconstruction based on Rich Human Feedback for Text-to-Image Generation, Figure 1, 2312.10240v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Create two adjacent columns on white: a large annotated example image at left and a narrower text-and-rating panel at right. Red dots represent artifact or implausibility feedback; cyan dots represent text-image misalignment. Use only annotation coordinates supplied by the user. At the top of the right column show the actual prompt, emphasizing the selected misaligned words with an underline and soft selection fill. Below, stack the user’s rating dimensions with one discrete score row each; emphasize the chosen score with an underline. Keep marks small enough to reveal the underlying image. Include a compact legend mapping colors to feedback semantics. Do not invent defects or ratings.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #E32323, #0ADAD7, #333333. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：图文生成质量的点标注与评分界面。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "cvpr-2024-rich-human-feedback-for-text-to-image-generation-fig-2",
+    "source_archive_sha256": "8c4e8c5f81b1f526b9181c26db20cb3d442b1fb3cbefb3275c542c8a47bdcff9",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "四个质量维度的并排评分分布",
+      "en": "Four aligned score histograms"
+    },
+    "caption": "Histograms of the average scores of image-text pairs in the training set.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "data",
+      "types": [
+        "data",
+        "bar",
+        "multi-panel"
+      ],
+      "purposes": [
+        "dataset-overview",
+        "comparison"
+      ],
+      "layouts": [
+        "left-to-right"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "text-to-image",
+        "human-feedback",
+        "dataset"
+      ],
+      "search_aliases": [
+        "四个质量维度的并排评分分布",
+        "Four aligned score histograms",
+        "text-to-image",
+        "human-feedback",
+        "dataset"
+      ]
+    },
+    "panel_count": 4,
+    "palette_hex": [
+      "#1F77B4",
+      "#FF7F0E",
+      "#17BECF"
+    ],
+    "analysis": "# 四个质量维度的并排评分分布\n\n四张直方图横向共用基线，依次展示合理性、一致性、美感、总体质量的评分分布。每个评分区间使用一致的颜色序列，最外侧标出计数轴；分组名称直接写在下方。适合一眼比较不同指标的分布形状。改绘必须固定相同的 bin 边界和计数尺度，避免为了让分布更漂亮而改动数据。\n\n## 来源与核对\n\nRich Human Feedback for Text-to-Image Generation，CVPR 2024，Figure 2。原文件：fig/avg_scores2.pdf。版本：2312.10240v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Four aligned score histograms\n\nThis is a maintainer reconstruction based on Rich Human Feedback for Text-to-Image Generation, Figure 2, 2312.10240v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Place four histogram panels in a single horizontal strip, sharing a common count scale and baseline. Label each panel beneath its x axis using the supplied assessment dimension. Use identical ordered bin boundaries in every panel and a consistent color for the same score bin across panels. Draw clean thin axes, small angled bin labels where needed, and show count ticks primarily at the outer edges. Leave enough spacing to distinguish the groups without separating them into unrelated charts. Compute heights directly from the supplied observations or counts. Use no smoothing, fabricated samples, or rescaling that changes comparative meaning. Include the sample-size and bin definitions in the caption.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #1F77B4, #FF7F0E, #17BECF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：四个质量维度的并排评分分布。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "cvpr-2025-neural-inverse-rendering-from-propagating-light-fig-1",
+    "source_archive_sha256": "87cf82571814057ff35c76c2b89464f6c0cf16a5d072da7f2d6a2566f24d093a",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "光传播场景与时间分辨渲染的分解图",
+      "en": "Time-resolved rendering decomposition"
+    },
+    "caption": "Method overview. (a) Our time-resolved renderer combines physically-based rendering for primary rays (left inset), and neural rendering for an indirect radiance cache along secondary rays (right inset). (b) The incident radiance $\\radiancein$ at a sensor pixel is a function of the outgoing radiance $\\radianceout$ from each point $\\xposof{t}$ along a sensor ray, which integrates incident direct light $\\radianceindir$ and indirect light $\\cachein$ from a pulsed laser source. (b, left) The rendering equation computes the outgoing radiance as an integral over the positive hemisphere $\\Omega$ (with respect to the normal $\\normal$) of the incident radiance. (b, right) Applying volume rendering to the outgoing radiance yields the incident radiance at a sensor pixel. (c) The radiance cache is used to evaluate indirect radiance $\\cachein$ by casting secondary rays and querying neural networks at points $\\xpos'(t)$. (c, left) The networks output the reflectance $\\brdfdir$ of direct light $\\radianceindir$, indirect reflectance $\\brdfind$, and indirect incident radiance $\\radianceinind$. These quantities are used to calculate the time-resolved direct ($\\cacheoutdir$) and indirect ($\\cacheoutind$) outgoing radiance in the direction $\\dirout'$. (c, right) Volume rendering the outgoing radiance along a secondary ray yields $\\cachein(\\xpos, \\dirin, \\tau)$. We optimize the scene appearance and geometry to enforce consistency between rendered and captured measurements.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "architecture",
+      "types": [
+        "architecture",
+        "multi-panel"
+      ],
+      "purposes": [
+        "method-overview",
+        "mechanism"
+      ],
+      "layouts": [
+        "two-column",
+        "nested-modules"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "inverse-rendering",
+        "light-transport"
+      ],
+      "search_aliases": [
+        "光传播场景与时间分辨渲染的分解图",
+        "Time-resolved rendering decomposition",
+        "vision",
+        "inverse-rendering",
+        "light-transport"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#FF6973",
+      "#305779",
+      "#25A23D"
+    ],
+    "analysis": "# 光传播场景与时间分辨渲染的分解图\n\n左侧 a 面板给出脉冲光源、传感器、场景和射线路径，并用两个放大框解释局部交互。右侧上下排列 b、c 两个面板，分别展开直接渲染和间接辐射缓存。红色表示直接光，蓝色表示间接光，绿色强调传感器路径；小曲线图把积分前后波形变化可视化。适合“整体物理场景＋局部数学/网络模块”的说明，公式与物理关系必须按自己的方法重新核实。\n\n## 来源与核对\n\nNeural Inverse Rendering from Propagating Light，CVPR 2025，Figure 1。原文件：figures/method.pdf。版本：2506.05347v1。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Time-resolved rendering decomposition\n\nThis is a maintainer reconstruction based on Neural Inverse Rendering from Propagating Light, Figure 1, 2506.05347v1. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Build an asymmetric three-panel method overview. Allocate the left half to panel (a), a simple 3D scene with a pulsed source, sensor, primary ray, secondary rays, and two magnified interaction insets. Allocate the right half to stacked panels (b) and (c). In each right panel, show the supplied local calculation followed by its aggregated output, using miniature response curves and an explicit arrow. Maintain semantic colors: red for direct contributions, blue for indirect contributions, and green for the observed sensor path. Use faint cool and warm backgrounds to separate the two mathematical modules. All equations, ray directions and network outputs must come from the user’s verified method; do not copy the original physics into an unrelated system.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #FF6973, #305779, #25A23D. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：光传播场景与时间分辨渲染的分解图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "cvpr-2025-neural-inverse-rendering-from-propagating-light-fig-2",
+    "source_archive_sha256": "87cf82571814057ff35c76c2b89464f6c0cf16a5d072da7f2d6a2566f24d093a",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "实验采集装置的实拍与局部放大",
+      "en": "Capture setup photograph with inset"
+    },
+    "caption": "Multi-view capture setup. An elevation arm controls the elevation angle and a rotation stage controls the azimuth angle of the scanning SPAD. Laser light is out-coupled from an optical fiber through a collimating lens and diffusers onto the scene.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "qualitative",
+      "types": [
+        "qualitative",
+        "multi-panel"
+      ],
+      "purposes": [
+        "experimental-setup"
+      ],
+      "layouts": [
+        "nested-modules"
+      ],
+      "styles": [
+        "academic",
+        "dark-background"
+      ],
+      "research_topics": [
+        "vision",
+        "hardware",
+        "experimental-setup"
+      ],
+      "search_aliases": [
+        "实验采集装置的实拍与局部放大",
+        "Capture setup photograph with inset",
+        "vision",
+        "hardware",
+        "experimental-setup"
+      ]
+    },
+    "panel_count": 2,
+    "palette_hex": [
+      "#DE222B",
+      "#FFFFFF",
+      "#111111"
+    ],
+    "analysis": "# 实验采集装置的实拍与局部放大\n\n主体是深色背景的实拍采集装置，包含被测场景、扫描设备、升降臂和旋转平台。左上角用红色边框放大扫描器组件，红色虚线在主图中标出对应区域，细白色引线连接文字标签与部件。适合实验硬件说明。改绘必须用自己的设备照片并核实所有部件位置；不要把原论文的装置当成自己的实验配置。\n\n## 来源与核对\n\nNeural Inverse Rendering from Propagating Light，CVPR 2025，Figure 2。原文件：figures/HardwareSetup17.pdf。版本：2506.05347v1。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Capture setup photograph with inset\n\nThis is a maintainer reconstruction based on Neural Inverse Rendering from Propagating Light, Figure 2, 2506.05347v1. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Use the user’s actual experiment photograph as the large main panel, preserving its orientation and recognizable hardware. Add a zoomed crop in the upper-left corner with a thin red border. Mark the crop’s matching source region in the main photograph using a red dashed box and connect it to the inset with a clean curved or straight leader. Add short white labels on the dark background, with thin white leaders ending precisely on the named components. Keep the specimen unobstructed. If the supplied photo has a light background, switch annotation contrast consistently. Request missing component names or coordinates instead of guessing the apparatus. Deliver editable callouts separately from the photo.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #DE222B, #FFFFFF, #111111. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：实验采集装置的实拍与局部放大。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iccv-2021-swin-transformer-hierarchical-vision-transformer-using-shifted-windows-fig-1",
+    "source_archive_sha256": "947d1c29245c1498ce3818db19dc56ece220041153e1aa688574be15d1b88e14",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "层级特征金字塔与单尺度表示对比",
+      "en": "Hierarchical versus single-scale feature maps"
+    },
+    "caption": "(a) The proposed Swin Transformer builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers and has linear computation complexity to input image size due to computation of self-attention only within each local window (shown in red). It can thus serve as a general-purpose backbone for both image classification and dense recognition tasks. (b) In contrast, previous vision Transformers~\\cite{dosovitskiy2020vit} produce feature maps of a single low resolution and have quadratic computation complexity to input image size due to computation of self-attention globally.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "architecture",
+      "types": [
+        "architecture",
+        "conceptual"
+      ],
+      "purposes": [
+        "comparison",
+        "method-overview"
+      ],
+      "layouts": [
+        "two-column"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "transformer",
+        "hierarchical-representation"
+      ],
+      "search_aliases": [
+        "层级特征金字塔与单尺度表示对比",
+        "Hierarchical versus single-scale feature maps",
+        "vision",
+        "transformer",
+        "hierarchical-representation"
+      ]
+    },
+    "panel_count": 2,
+    "palette_hex": [
+      "#8A1B21",
+      "#A8A8A8",
+      "#355E86"
+    ],
+    "analysis": "# 层级特征金字塔与单尺度表示对比\n\n左右两列用相同视角的透视平面比较两种表示。左列从底部密集局部窗口逐级合并为更粗的特征图，右列保持相同尺度；上方用箭头标出分类以及密集任务出口。红色边框表达窗口范围，灰色细网格表达 patch。改绘可借鉴“同一输入、不同层级结构”的对照，层数和尺度标注应使用自己的网络参数。\n\n## 来源与核对\n\nSwin Transformer: Hierarchical Vision Transformer Using Shifted Windows，ICCV 2021，Figure 1。原文件：figs/teaser11.png。版本：2103.14030v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Hierarchical versus single-scale feature maps\n\nThis is a maintainer reconstruction based on Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows, Figure 1, 2103.14030v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Construct two side-by-side feature-map columns with matching perspective and aligned vertical levels. In the left column, progress from many small local windows at the bottom to fewer larger groups toward the top, making hierarchical aggregation visible. In the right column, keep the representation scale constant across the same number of levels. Outline local windows in muted dark red and draw patch boundaries in light gray. Put the respective method names below the columns. Place actual task-output arrows above the representations and add scale labels along the outer edges only when provided. Keep example input imagery faint so the structural grid dominates. Do not infer a dense prediction head or a resolution change absent from the user’s architecture.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #8A1B21, #A8A8A8, #355E86. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：层级特征金字塔与单尺度表示对比。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iccv-2021-swin-transformer-hierarchical-vision-transformer-using-shifted-windows-fig-2",
+    "source_archive_sha256": "947d1c29245c1498ce3818db19dc56ece220041153e1aa688574be15d1b88e14",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "相邻层之间的移位窗口机制",
+      "en": "Shifted windows across adjacent layers"
+    },
+    "caption": "An illustration of the shifted window approach for computing self-attention in the proposed Swin Transformer architecture. In layer $l$ (left), a regular window partitioning scheme is adopted, and self-attention is computed within each window. In the next layer $l+1$ (right), the window partitioning is shifted, resulting in new windows. The self-attention computation in the new windows crosses the boundaries of the previous windows in layer $l$, providing connections among them.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual",
+        "flowchart"
+      ],
+      "purposes": [
+        "mechanism"
+      ],
+      "layouts": [
+        "left-to-right",
+        "two-column"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "transformer",
+        "attention"
+      ],
+      "search_aliases": [
+        "相邻层之间的移位窗口机制",
+        "Shifted windows across adjacent layers",
+        "vision",
+        "transformer",
+        "attention"
+      ]
+    },
+    "panel_count": 2,
+    "palette_hex": [
+      "#9F1720",
+      "#B9B9B9",
+      "#FFFFFF"
+    ],
+    "analysis": "# 相邻层之间的移位窗口机制\n\n左侧展示规则的四窗口划分，右侧展示下一层的移位划分，中间红色箭头表示层间变化。两侧保持同一背景图和 patch 网格，因此能直接看出窗口边界发生移动。右侧图例用红色大框表示局部窗口，用灰色小框表示 patch。适合解释空间分组、分块或滑动窗口的机制，改变窗口尺寸时需要重新计算边界。\n\n## 来源与核对\n\nSwin Transformer: Hierarchical Vision Transformer Using Shifted Windows，ICCV 2021，Figure 2。原文件：figs/teaser_v4.png。版本：2103.14030v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Shifted windows across adjacent layers\n\nThis is a maintainer reconstruction based on Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows, Figure 2, 2103.14030v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Draw the same underlying patch grid twice, first for layer l and then for layer l+1, separated by a horizontal red arrow. On the first grid use a regular non-overlapping window partition. On the second grid shift the partition by the user-specified offset, visibly moving the window boundaries while preserving the patch coordinate system. Use dark-red thick borders for windows and thin gray borders for individual patches. Show the clipped windows at the image edges faithfully; do not wrap or discard boundary groups unless that is the supplied implementation. Add a compact two-item legend at the far right and label both layer panels at top. Prefer an abstract grid if no licensed example image is supplied.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #9F1720, #B9B9B9, #FFFFFF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：相邻层之间的移位窗口机制。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iccv-2025-generating-physically-stable-and-buildable-brick-structures-from-text-fig-2",
+    "source_archive_sha256": "e60c13a6775201866c6777344daf018c357424678b520179102be7f4e196e021",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "生成、有效性检查与稳定性回滚流程",
+      "en": "Generation with validity checks and stability rollback"
+    },
+    "caption": "Method. (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, LegoGPT generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart",
+        "architecture",
+        "multi-panel"
+      ],
+      "purposes": [
+        "method-overview",
+        "mechanism"
+      ],
+      "layouts": [
+        "left-to-right",
+        "feedback-loop"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "3d-generation",
+        "constrained-generation"
+      ],
+      "search_aliases": [
+        "生成、有效性检查与稳定性回滚流程",
+        "Generation with validity checks and stability rollback",
+        "vision",
+        "3d-generation",
+        "constrained-generation"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#B1B758",
+      "#DB2424",
+      "#37A445"
+    ],
+    "analysis": "# 生成、有效性检查与稳定性回滚流程\n\n上半部分左右排列结构 token 化和训练两个面板；下半部分展开推理过程，用一串积木状态图表现逐步生成。绿色勾表示有效，红色叉表示碰撞或非法积木，弧形箭头表示重采样，顶部回路表示稳定性检查失败后的回滚。适合带约束和纠错的生成方法。改绘时区分局部有效性检查与最终全局稳定性检查，不要把两类失败混在同一条回路里。\n\n## 来源与核对\n\nGenerating Physically Stable and Buildable Brick Structures from Text，ICCV 2025，Figure 2。原文件：figs/overview_brickgpt.pdf。版本：2505.05469v3。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Generation with validity checks and stability rollback\n\nThis is a maintainer reconstruction based on Generating Physically Stable and Buildable Brick Structures from Text, Figure 2, 2505.05469v3. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Arrange three dashed rounded panels: tokenization at upper-left, training at upper-right, and inference across the full lower row. The tokenization panel pairs the user’s structured object with its exact serialization. The training panel aligns input/output token sequences above and below one model bar. The inference panel is a left-to-right sequence of intermediate generated states. Mark valid local steps with green checks, and specific invalid steps with red crosses and short reasons. Draw local resampling arcs only around local validity failures. Draw a separate long rollback path for a failed final global stability check, returning to the last valid stable state. Use the supplied constraints and failure cases rather than assuming every generator has rollback.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #B1B758, #DB2424, #37A445. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：生成、有效性检查与稳定性回滚流程。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iclr-2025-alphaedit-null-space-constrained-model-editing-for-language-models-fig-1",
+    "source_archive_sha256": "55e3f23b097f52498edad8bf8fe294caf828741a4c2b1e1a892d2e5a9d428aaf",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "编辑目标、表示变化与输出失败的双列对照",
+      "en": "Editing objective and representation comparison"
+    },
+    "caption": "Comparison between the current methods and AlphaEdit. (a) and (d) exhibit the objectives, where $\\lambda$ is the coefficient {to keep balance between $e_0$ and $e_1$ in the objective}; (b) and (e) show the distributions of hidden representations after dimensionality reduction within the pre-edited and post-edited LLaMA3, respectively; (c) depicts the output of the post-edited LLaMA3. Best viewed in color.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual",
+        "data",
+        "multi-panel"
+      ],
+      "purposes": [
+        "comparison",
+        "mechanism"
+      ],
+      "layouts": [
+        "two-column"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "llm",
+        "model-editing",
+        "representation"
+      ],
+      "search_aliases": [
+        "编辑目标、表示变化与输出失败的双列对照",
+        "Editing objective and representation comparison",
+        "llm",
+        "model-editing",
+        "representation"
+      ]
+    },
+    "panel_count": 5,
+    "palette_hex": [
+      "#1B9FC2",
+      "#CB3143",
+      "#26BFA5"
+    ],
+    "analysis": "# 编辑目标、表示变化与输出失败的双列对照\n\n竖向画布上部是两列方法对照，每列依次展示优化目标、网络更新示意和编辑前后的散点分布。左列淡粉色，右列淡青色；底部横向文本框展示编辑后模型的遗忘与退化例子。该图把机制、表示证据和行为输出放在同一条叙事中。改绘时散点必须来自真实投影，公式也不能仅为了视觉上相似而照搬。\n\n## 来源与核对\n\nAlphaEdit: Null-Space Constrained Model Editing for Language Models，ICLR 2025，Figure 1。原文件：figures/intro_part12.jpg。版本：2410.02355v4。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Editing objective and representation comparison\n\nThis is a maintainer reconstruction based on AlphaEdit: Null-Space Constrained Model Editing for Language Models, Figure 1, 2410.02355v4. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Use a portrait comparison with two equal columns. Give the baseline a very pale pink background and the proposed method a very pale cyan background. At the top of each column show the actual objective and a small editable network-update schematic. Beneath each, place an identically scaled scatter plot of the supplied pre-edit and post-edit representations, using distinguishable colors and markers. Add a bottom band for real behavioral output examples, using concise text and an explicit failure or improvement label supported by the examples. Label subpanels in reading order. Preserve the relationship between objective, representation and output only when supported by the user’s experiments. Never synthesize scatter points to illustrate a desired separation.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #1B9FC2, #CB3143, #26BFA5. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：编辑目标、表示变化与输出失败的双列对照。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iclr-2025-alphaedit-null-space-constrained-model-editing-for-language-models-fig-2",
+    "source_archive_sha256": "55e3f23b097f52498edad8bf8fe294caf828741a4c2b1e1a892d2e5a9d428aaf",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "多指标方法对比的径向柱图",
+      "en": "Radial grouped bars for method comparison"
+    },
+    "caption": "Performance of various model editing methods on LLaMA3 (8B). Results with asterisks in the superscript are from the ZsRE dataset. SST, RTE, and CoLA demonstrate the general capabilities of the post-edited LLMs. The experiments are conducted with 2000 edited samples for sequential editing. Detailed settings {and results} are provided in Section \\ref{sec:rq1} {and Table \\ref{tab:overall_comp}, respectively}. Best viewed in color.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "data",
+      "types": [
+        "data",
+        "bar"
+      ],
+      "purposes": [
+        "comparison"
+      ],
+      "layouts": [
+        "radial"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "llm",
+        "model-editing",
+        "evaluation"
+      ],
+      "search_aliases": [
+        "多指标方法对比的径向柱图",
+        "Radial grouped bars for method comparison",
+        "llm",
+        "model-editing",
+        "evaluation"
+      ]
+    },
+    "panel_count": 1,
+    "palette_hex": [
+      "#6954C4",
+      "#B9DAB8",
+      "#F6DAC4"
+    ],
+    "analysis": "# 多指标方法对比的径向柱图\n\n一个环状布局把多个指标沿圆周排列，每个指标用一组向外延伸的柱比较不同方法。中央保留方法名称，紫色突出 AlphaEdit，其他方法使用浅绿色、桃色、灰蓝等柔和颜色；图例位于底部。原图的不同指标单位和量级并不相同，因此改绘需要明确每组的尺度，不能用跨指标的柱长直接比较绝对大小。\n\n## 来源与核对\n\nAlphaEdit: Null-Space Constrained Model Editing for Language Models，ICLR 2025，Figure 2。原文件：figures/intro_part2.pdf。版本：2410.02355v4。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Radial grouped bars for method comparison\n\nThis is a maintainer reconstruction based on AlphaEdit: Null-Space Constrained Model Editing for Language Models, Figure 2, 2410.02355v4. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Arrange metric groups evenly around a circular center, with a cluster of outward radial bars for each group. Use a saturated violet for the focus method and restrained pastel colors for the baselines, consistent across all groups. Leave a generous central opening for the method name and a concise subtitle. Place group labels around the inner ring and values at bar ends only where legible. Add a conventional horizontal legend below. The user must supply metric values, units, direction of improvement, and normalization rules. State per-metric scaling explicitly: bar lengths from incompatible units cannot be compared across groups. If those rules are missing, request them or use a conventional faceted bar chart.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #6954C4, #B9DAB8, #F6DAC4. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：多指标方法对比的径向柱图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "iclr-2026-llms-get-lost-in-multi-turn-conversation-fig-1",
+    "source_archive_sha256": "f42bc58d8c08ba8bc2caebcd0903467f8fdcb3943dcbaaa131fd325761f492e1",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "对话案例与能力—可靠性变化的三列图",
+      "en": "Dialogue examples and aptitude-reliability shift"
+    },
+    "caption": "In this work, we simulate single- and multi-turn conversations for six generation tasks. The 15 LLMs we test perform much worse in multi-turn settings (-35\\%) explained by some loss in aptitude, and large losses in reliability. Aptitude is defined as performance in best-case conversation simulation, and unreliability as the gap between best- and worst-case performance. In short, we find that LLMs get lost in multi-turn, underspecified conversation.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "multi-panel",
+      "types": [
+        "multi-panel",
+        "conceptual",
+        "data"
+      ],
+      "purposes": [
+        "comparison",
+        "mechanism"
+      ],
+      "layouts": [
+        "left-to-right"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "llm",
+        "conversation",
+        "reliability"
+      ],
+      "search_aliases": [
+        "对话案例与能力—可靠性变化的三列图",
+        "Dialogue examples and aptitude-reliability shift",
+        "llm",
+        "conversation",
+        "reliability"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#709DC7",
+      "#D6B738",
+      "#F6F8FF"
+    ],
+    "analysis": "# 对话案例与能力—可靠性变化的三列图\n\n三列从左到右分别是单轮对话、中央二维能力—不可靠性坐标、以及多轮对话。背景从淡蓝向淡黄过渡；中央连接同一模型的两个点，呈现设置变化的方向，左右对话框用勾叉标出真实示例的结果。适合把直观失败案例与量化趋势放在同一张引导图。改绘应明确坐标定义、配对关系和真实案例，不能凭经验画趋势。\n\n## 来源与核对\n\nLLMs Get Lost In Multi-Turn Conversation，ICLR 2026，Figure 1。原文件：figures/LIC_Teaser.pdf。版本：2505.06120v1。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Dialogue examples and aptitude-reliability shift\n\nThis is a maintainer reconstruction based on LLMs Get Lost In Multi-Turn Conversation, Figure 1, 2505.06120v1. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Build a three-column teaser. At left show one fully specified user request and the resulting answer. At center draw a paired-point scatter plot with clearly defined aptitude and unreliability axes; connect observations from the same model under the two settings using thin neutral lines. At right show a short multi-turn dialogue with incremental requirements and supported failure annotations. Use a pale blue region for the first setting and a pale warm-yellow region for the second, carrying the colors consistently into points and headings. Check/cross symbols must reflect real example outcomes. Label only selected informative models if space is tight. Use the supplied paired observations and conversation excerpts; never manufacture a deterioration trend.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #709DC7, #D6B738, #F6F8FF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：对话案例与能力—可靠性变化的三列图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "icml-2024-discrete-diffusion-modeling-by-estimating-the-ratios-of-the-data-distribution-fig-1",
+    "source_archive_sha256": "fb3d551fdd97cc2747e2e7a6e82cd131a1c3bf62fda43285a01d2ede134bad47",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "生成质量与推理开销的折线对比",
+      "en": "Generation quality versus compute curves"
+    },
+    "caption": "Quality evaluation of unconditionally generated text. We compare SEDD and GPT-2 by the perplexity of their analytically generated sequences. Our SEDD models consistently outperform GPT-2, interpolating between a $32 \\times$ speedup and a $6$-$8\\times$ improvement based on the chosen step size. The generated text reflects this improved generation capability, as our samples are far more coherent. Additional samples and ablations can be found in Appendix \\ref{app:add:samples}",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "data",
+      "types": [
+        "data",
+        "line"
+      ],
+      "purposes": [
+        "comparison"
+      ],
+      "layouts": [
+        "grid"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "diffusion",
+        "language-model",
+        "compute-quality"
+      ],
+      "search_aliases": [
+        "生成质量与推理开销的折线对比",
+        "Generation quality versus compute curves",
+        "diffusion",
+        "language-model",
+        "compute-quality"
+      ]
+    },
+    "panel_count": 1,
+    "palette_hex": [
+      "#1717D8",
+      "#E89B14",
+      "#BFBFBF"
+    ],
+    "analysis": "# 生成质量与推理开销的折线对比\n\n横轴是网络评估次数，纵轴是生成困惑度，两条带圆点的下降曲线表示不同大小的 SEDD，星形点表示 GPT-2 基线。蓝色和橙色区分模型大小，图例置于上方，浅灰网格辅助读值。适合性能—计算量权衡图。改绘必须保留真实坐标尺度和基线的实际开销，不能把离散星形基线误画成连续趋势线。\n\n## 来源与核对\n\nDiscrete Diffusion Modeling by Estimating the Ratios of the Data Distribution，ICML 2024，Figure 1。原文件：imgs/img_perplexity.png。版本：2310.16834v3。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Generation quality versus compute curves\n\nThis is a maintainer reconstruction based on Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution, Figure 1, 2310.16834v3. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Create one rectangular performance-versus-compute chart. Use network evaluation count on the horizontal axis and the user’s quality metric on the vertical axis, with units and better-direction stated explicitly. Draw each iterative method as a colored line with round markers at measured checkpoints. Represent one-shot or fixed-compute baselines as standalone star markers at their actual compute positions, without connecting them into an unsupported curve. Use blue and orange consistently for model-size groups, a compact legend at the top, thin axes and a light grid. Set logarithmic or linear axes from the supplied experimental design and label them honestly. Plot only actual observations and preserve uncertainty information when provided.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #1717D8, #E89B14, #BFBFBF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：生成质量与推理开销的折线对比。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "icml-2024-discrete-diffusion-modeling-by-estimating-the-ratios-of-the-data-distribution-fig-2",
+    "source_archive_sha256": "fb3d551fdd97cc2747e2e7a6e82cd131a1c3bf62fda43285a01d2ede134bad47",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "采样策略与模型规模的多编码折线图",
+      "en": "Sampling variants with color, marker and line encodings"
+    },
+    "caption": "Generative Perplexity for SEDD Uniform.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "data",
+      "types": [
+        "data",
+        "line"
+      ],
+      "purposes": [
+        "comparison"
+      ],
+      "layouts": [
+        "grid"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "diffusion",
+        "language-model",
+        "sampling"
+      ],
+      "search_aliases": [
+        "采样策略与模型规模的多编码折线图",
+        "Sampling variants with color, marker and line encodings",
+        "diffusion",
+        "language-model",
+        "sampling"
+      ]
+    },
+    "panel_count": 1,
+    "palette_hex": [
+      "#1D29C6",
+      "#E6AD21",
+      "#C6C6C6"
+    ],
+    "analysis": "# 采样策略与模型规模的多编码折线图\n\n图中用颜色区分模型大小，用圆点与三角形区分求解方式，用线型区分扩散变体，右侧星形点表示基线。双对数坐标把不同开销与质量范围放进同一幅图，紧凑图例解释三种视觉编码。适合多因素采样对比，改绘时需要固定颜色、点型和线型的含义，避免每条曲线随机分配一种颜色。\n\n## 来源与核对\n\nDiscrete Diffusion Modeling by Estimating the Ratios of the Data Distribution，ICML 2024，Figure 2。原文件：imgs/img_perplexity_large_uniform.png。版本：2310.16834v3。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Sampling variants with color, marker and line encodings\n\nThis is a maintainer reconstruction based on Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution, Figure 2, 2310.16834v3. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Draw a performance-versus-compute plot with three orthogonal encodings: color for model size, marker shape for solver family, and line style for the process variant. Use one blue family and one gold family, round versus triangular markers, and solid versus dashed curves as appropriate to the supplied factors. Include fixed-compute reference methods as star markers. Build a structured legend that explains each factor independently, rather than one cryptic entry per full combination. Preserve the requested logarithmic scales and avoid plotting zero or negative values on them. Use only measured checkpoints; do not interpolate as evidence of untested regimes. If uncertainty exists, show restrained intervals without obscuring line encodings.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #1D29C6, #E6AD21, #C6C6C6. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：采样策略与模型规模的多编码折线图。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "icml-2024-videopoet-a-large-language-model-for-zero-shot-video-generation-fig-1",
+    "source_archive_sha256": "179c02931e14cddc1b3522e84206f4fccbe346af8572e882b38ebb9dc8f73902",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "多种输入汇聚到生成器并分发任务",
+      "en": "Multimodal inputs and generation tasks"
+    },
+    "caption": "VideoPoet Overview: a versatile video generator that conditions on multiple types of inputs and performs a variety of video generation tasks.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "architecture",
+      "types": [
+        "architecture",
+        "flowchart",
+        "qualitative"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [
+        "hub-and-spoke",
+        "left-to-right"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "multimodal",
+        "video-generation"
+      ],
+      "search_aliases": [
+        "多种输入汇聚到生成器并分发任务",
+        "Multimodal inputs and generation tasks",
+        "vision",
+        "multimodal",
+        "video-generation"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#498FE5",
+      "#DF5246",
+      "#45A355"
+    ],
+    "analysis": "# 多种输入汇聚到生成器并分发任务\n\n左侧四类输入沿彩色曲线汇入中央 VideoPoet：文本、图像、深度与光流、遮罩视频。右侧从模型分出文本到视频、图像到视频、风格化、外扩和视频到音频等输出；最右侧是一组生成示例。整体是横向的输入—核心模型—输出结构，颜色让不同模态便于追踪。改绘适合表达统一模型的多种能力，输出任务和示例必须确实存在。\n\n## 来源与核对\n\nVideoPoet: A Large Language Model for Zero-Shot Video Generation，ICML 2024，Figure 1。原文件：figures/VideoPoetPaper_Dual_Figure3.png。版本：2312.14125v4。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Multimodal inputs and generation tasks\n\nThis is a maintainer reconstruction based on VideoPoet: A Large Language Model for Zero-Shot Video Generation, Figure 1, 2312.14125v4. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Use a wide input-model-output composition. Stack the supplied input modalities at left, each with a small example thumbnail or abstract glyph and a short label. Route smooth colored paths into a compact central model icon and name. Fan output paths toward a vertical list of the actual supported tasks at right; pair visual tasks with short frame strips and audio with a waveform. Optionally reserve a narrow far-right grid for real generated examples, connected by a restrained dashed grouping path. Keep modality colors consistent at input and output, with clear neutral text. Do not add capabilities for symmetry. Use the user’s own permitted examples; retain coherent reading order and generous whitespace around the central hub.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #498FE5, #DF5246, #45A355. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：多种输入汇聚到生成器并分发任务。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "icml-2024-videopoet-a-large-language-model-for-zero-shot-video-generation-fig-2",
+    "source_archive_sha256": "179c02931e14cddc1b3522e84206f4fccbe346af8572e882b38ebb9dc8f73902",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "多模态 token 序列与编解码器布局",
+      "en": "Multimodal token sequence and codec layout"
+    },
+    "caption": "Sequence layout for VideoPoet. We encode all modalities into the discrete token space, so that we can directly use large language model architectures for video generation. We denote special tokens in $<>$ (see Table~\\ref{tab:special_tokens} for definitions). The modality agnostic tokens are in darker red; the text related components are in blue; the vision related components are in yellow; the audio related components are in green. The left portion of the layout on light yellow represents the bidirectional prefix inputs. The right portion on darker red represents the autoregressively generated outputs with causal attention.",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "architecture",
+      "types": [
+        "architecture",
+        "flowchart"
+      ],
+      "purposes": [
+        "mechanism",
+        "method-overview"
+      ],
+      "layouts": [
+        "left-to-right"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "multimodal",
+        "tokenization",
+        "video-generation"
+      ],
+      "search_aliases": [
+        "多模态 token 序列与编解码器布局",
+        "Multimodal token sequence and codec layout",
+        "multimodal",
+        "tokenization",
+        "video-generation"
+      ]
+    },
+    "panel_count": 2,
+    "palette_hex": [
+      "#C9D7F3",
+      "#F8E5A6",
+      "#D2E2AB",
+      "#F3B8BF"
+    ],
+    "analysis": "# 多模态 token 序列与编解码器布局\n\n上方一条横向模型条贯穿整张图，下方连续排列不同模态的 token 片段。左侧淡黄色区域是双向注意力前缀，右侧淡粉色区域是自回归输出。文本、视觉、音频分别用蓝、黄、绿编码，模态通用标记用红色；底部梯形表示编码器或解码器，并与示例输入输出垂直对齐。改绘时需精确描述自己的 token 格式和注意力边界。\n\n## 来源与核对\n\nVideoPoet: A Large Language Model for Zero-Shot Video Generation，ICML 2024，Figure 2。原文件：figures/vffm_schematic.pdf。版本：2312.14125v4。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Multimodal token sequence and codec layout\n\nThis is a maintainer reconstruction based on VideoPoet: A Large Language Model for Zero-Shot Video Generation, Figure 2, 2312.14125v4. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Draw a wide horizontal token-layout schematic. At the top place one rounded model bar spanning both prefix and output regions. Beneath it align a continuous row of token groups and special boundary tokens. Use light blue for text, pale yellow for visual content, light green for audio, and pink/red for modality-agnostic control tokens. Divide the background into a bidirectional input-prefix region and an autoregressive output region, with attention captions along the top. Below the token groups place trapezoidal encoders under inputs and decoders under outputs, connected to the user’s examples. Token spellings, sequence order, codec names and attention boundaries must match the supplied implementation. Avoid decorative tokens or unsupported modality paths.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #C9D7F3, #F8E5A6, #D2E2AB, #F3B8BF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：多模态 token 序列与编解码器布局。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "neurips-2024-visual-autoregressive-modeling-scalable-image-generation-via-next-scale-prediction-fig-1",
+    "source_archive_sha256": "183c650fe10ee7b424684171623eefd9a451deb9ee1c9b407830a640e9ac2088",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "生成样例、分辨率层次与编辑序列",
+      "en": "Generation samples and editing strips"
+    },
+    "caption": "\\small Generated samples from Visual AutoRegressive (VAR) transformers trained on ImageNet. We show 512$\\times$512 samples (top), 256$\\times$256 samples (middle), and zero-shot image editing results (bottom).",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "qualitative",
+      "types": [
+        "qualitative",
+        "multi-panel"
+      ],
+      "purposes": [
+        "qualitative"
+      ],
+      "layouts": [
+        "grid"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "image-generation",
+        "autoregressive"
+      ],
+      "search_aliases": [
+        "生成样例、分辨率层次与编辑序列",
+        "Generation samples and editing strips",
+        "vision",
+        "image-generation",
+        "autoregressive"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#B3CDE0",
+      "#F2AC66",
+      "#FFFFFF"
+    ],
+    "analysis": "# 生成样例、分辨率层次与编辑序列\n\n上方四张较大的生成图形成主视觉，中间一排较小的样例扩展主题多样性，底部两组细长序列展示零样本图像编辑。不同尺寸的行形成“主结果—更多结果—任务变化”的层次。适合生成模型的首页样例图，实际结果必须来自自己的模型，并写清分辨率、输入、编辑操作和筛选规则，不能用生成工具补出实验结果。\n\n## 来源与核对\n\nVisual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction，NeurIPS 2024，Figure 1。原文件：fig/abs.jpg。版本：2404.02905v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Generation samples and editing strips\n\nThis is a maintainer reconstruction based on Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction, Figure 1, 2404.02905v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Create a qualitative gallery with three bands. The top band contains four large equally sized hero samples. The middle band contains a denser row of additional samples with consistent spacing. The bottom band contains two short ordered editing sequences, each preserving its own input-to-output chronology. Let the images supply most color; use a white background and thin neutral gutters rather than heavy frames. Add truthful row labels for resolution or task only if supported by the provided results. Use the user’s actual model outputs and disclose sample selection criteria in the caption. Do not regenerate missing experiment images, remove failure cases to imply universal success, or mix resolutions without stating them.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #B3CDE0, #F2AC66, #FFFFFF. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 1：生成样例、分辨率层次与编辑序列。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  },
+  {
+    "id": "neurips-2024-visual-autoregressive-modeling-scalable-image-generation-via-next-scale-prediction-fig-2",
+    "source_archive_sha256": "183c650fe10ee7b424684171623eefd9a451deb9ee1c9b407830a640e9ac2088",
+    "review_status": "approved",
+    "checked_at": "2026-10-01",
+    "title": {
+      "zh": "逐 token 与逐尺度生成的三范式对照",
+      "en": "Next-token versus next-scale generation"
+    },
+    "caption": "\\small \\textbf{Standard autoregressive modeling (AR) vs. our proposed visual autoregressive modeling (VAR).} (a) AR applied to language: sequential text token generation from left to right, word by word; (b) AR applied to images: sequential visual token generation in a raster-scan order, from left to right, top to bottom; (c) VAR for images: multi-scale token maps are autoregressively generated from coarse to fine scales (lower to higher resolutions), with parallel token generation within each scale. VAR requires a multi-scale VQVAE to work. \\vspace{-12pt}",
+    "classification": {
+      "collection": "award-winning",
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual",
+        "architecture",
+        "multi-panel"
+      ],
+      "purposes": [
+        "comparison",
+        "mechanism"
+      ],
+      "layouts": [
+        "two-column",
+        "left-to-right"
+      ],
+      "styles": [
+        "academic",
+        "white-background"
+      ],
+      "research_topics": [
+        "vision",
+        "autoregressive",
+        "multi-scale"
+      ],
+      "search_aliases": [
+        "逐 token 与逐尺度生成的三范式对照",
+        "Next-token versus next-scale generation",
+        "vision",
+        "autoregressive",
+        "multi-scale"
+      ]
+    },
+    "panel_count": 3,
+    "palette_hex": [
+      "#E8D6A1",
+      "#D3E0C0",
+      "#C5D6EC"
+    ],
+    "analysis": "# 逐 token 与逐尺度生成的三范式对照\n\n左上是文字 token 从左到右生成，左下是图像 patch 按栅格顺序生成并重排为图像，右侧大面板按从粗到细的尺度序列生成 token map。三组低矮模型底座分别用浅黄、浅绿、浅蓝区分；虚线箭头表示自回归顺序，透视图块突出 token 粒度变化。适合介绍生成顺序的创新，改绘必须说明尺度间串行与尺度内并行的真实关系。\n\n## 来源与核对\n\nVisual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction，NeurIPS 2024，Figure 2。原文件：fig/intro.pdf。版本：2404.02905v2。\n\n已核对独立图注编号、完整原文件及预览。作者原文件按字节保留；PNG/WebP 仅用于浏览。颜色是维护者近似读值。改绘 prompt 为维护者重建，尚未实际生成验证。\n",
+    "prompt": "# Adaptation prompt — Next-token versus next-scale generation\n\nThis is a maintainer reconstruction based on Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction, Figure 2, 2404.02905v2. It is not an author-supplied prompt and has not been generation-tested.\n\n## Global composition and reading order\n\nCreate an academic figure for {{research_content}} using the supplied reference as a layout and visual-language guide. Read the reference before drawing. Arrange three comparative panels, with two smaller baselines stacked at left and the main proposed paradigm occupying the larger right side. The first baseline shows text tokens in sequential order over a pale-gold model pedestal. The second shows visual tokens in raster order over a pale-green pedestal, followed by a small reshape grid. The right panel shows a sequence of increasingly fine spatial token maps over a pale-blue model pedestal. Use mild perspective to distinguish spatial maps, and dotted directed arrows for the real autoregressive dependencies. Explicitly separate serial inter-scale generation from parallel intra-scale generation when that matches the method. Replace token examples, scale counts and model names with the user’s actual design; keep the comparison technically fair.\n\n## Content, relationships and annotations\n\nReplace source-paper labels with {{labels}}, and include only the verified connections or mappings in {{relationships}}. Use {{true_data}} for every empirical mark, number or example. If a required item is missing, identify it before drawing rather than inventing it. Adjust the layout using {{layout_changes}} while preserving a clear reading sequence. Separate conceptual illustration from measured evidence in the caption. Keep text editable and avoid overlapping arrows, axes, leaders and labels.\n\n## Style and delivery\n\nUse the reference's restrained academic palette; approximate accent colors are #E8D6A1, #D3E0C0, #C5D6EC. Preserve consistent line weights, legible typography, and adequate whitespace. Color must keep its meaning throughout the figure. Set text language to {{language}}. Deliver {{output_format}} as an editable artifact with a preview, ideally SVG/PDF for diagrams or a plotting script plus SVG/PDF for charts. Verify all labels, legends, clipping and factual relationships against the supplied materials. Preserve source attribution in the delivery notes.\n",
+    "agent": "# 给智能体的绘图任务\n\n先查看 `reference.png` 和作者原始文件，再阅读 `analysis.md`、`prompt.md`、`metadata.json` 与 `ATTRIBUTION.md`。原图是 Figure 2：逐 token 与逐尺度生成的三范式对照。\n\n我的研究内容：{{research_content}}\n\n想借鉴的布局、配色或表达部分：{{layout_changes}}\n\n我的真实标签、模块、关系和数据：{{labels_relationships_true_data}}\n\n图中文字语言、尺寸、可编辑交付格式：{{language_size_format}}\n\n按参考图的表达结构适配我的材料。缺少数据或关系时先列出缺项；不要把原论文结果变成我的实验结果。交付可编辑源文件和预览，并保留参考来源。本模板尚未经实际改绘验证。\n",
+    "rights_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "review_notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  }
+]

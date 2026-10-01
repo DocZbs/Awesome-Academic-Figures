@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2",
+  "id": "iccv-2025-generating-physically-stable-and-buildable-brick-structures-from-text-fig-2",
+  "title": {
+    "zh": "生成、有效性检查与稳定性回滚流程",
+    "en": "Generation with validity checks and stability rollback"
+  },
+  "paper": {
+    "id": "iccv-2025-generating-physically-stable-and-buildable-brick-structures-from-text",
+    "title": "Generating Physically Stable and Buildable Brick Structures from Text",
+    "authors": [
+      "Ava Pun",
+      "Kangle Deng",
+      "Ruixuan Liu",
+      "Deva Ramanan",
+      "Changliu Liu",
+      "Jun-Yan Zhu"
+    ],
+    "venue": "ICCV",
+    "publication_year": 2025,
+    "track": "main",
+    "event_url": null,
+    "awards": [
+      {
+        "category": "iccv-best-paper-award-marr-prize",
+        "official_name": "ICCV Best Paper Award (Marr Prize)",
+        "award_year": 2025,
+        "official_source_url": "https://www.thecvf.com/?page_id=413",
+        "verified_at": "2026-10-01"
+      }
+    ],
+    "collected_at": "2026-10-01",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Pun_Generating_Physically_Stable_and_Buildable_Brick_Structures_from_Text_ICCV_2025_paper.html",
+    "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Pun_Generating_Physically_Stable_and_Buildable_Brick_Structures_from_Text_ICCV_2025_paper.pdf",
+    "arxiv_url": "https://arxiv.org/abs/2505.05469v3",
+    "arxiv_id": "2505.05469",
+    "pdf_version": "Official proceedings PDF",
+    "arxiv_version": "2505.05469v3",
+    "arxiv_title": "Generating Physically Stable and Buildable Brick Structures from Text",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence_url": "https://arxiv.org/abs/2505.05469v3",
+    "checked_at": "2026-10-01",
+    "arxiv_first_submitted_at": "2025-05-08"
+  },
+  "source": {
+    "kind": "figure",
+    "document": "main",
+    "number": 2,
+    "core_figure_slot": "figure-2",
+    "caption": "Method. (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, LegoGPT generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.",
+    "caption_tex": "\\textbf{Method.} (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. \n    (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, \\LegoGPT{} generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.",
+    "method": "arxiv_source_original",
+    "arxiv_version": "2505.05469v3",
+    "asset_url": "https://arxiv.org/src/2505.05469v3",
+    "source_archive_sha256": "e60c13a6775201866c6777344daf018c357424678b520179102be7f4e196e021",
+    "main_tex": "main.tex"
+  },
+  "classification": {
+    "collection": "award-winning",
+    "primary_type": "flowchart",
+    "types": [
+      "flowchart",
+      "architecture",
+      "multi-panel"
+    ],
+    "purposes": [
+      "method-overview",
+      "mechanism"
+    ],
+    "layouts": [
+      "left-to-right",
+      "feedback-loop"
+    ],
+    "styles": [
+      "academic",
+      "white-background"
+    ],
+    "research_topics": [
+      "vision",
+      "3d-generation",
+      "constrained-generation"
+    ],
+    "search_aliases": [
+      "生成、有效性检查与稳定性回滚流程",
+      "Generation with validity checks and stability rollback",
+      "vision",
+      "3d-generation",
+      "constrained-generation"
+    ]
+  },
+  "visual": {
+    "aspect_ratio": 2.281,
+    "pixel_width": 2000,
+    "pixel_height": 877,
+    "panel_count": 3,
+    "palette_hex": [
+      "#B1B758",
+      "#DB2424",
+      "#37A445"
+    ],
+    "palette_source": "maintainer approximation from the reference"
+  },
+  "assets": {
+    "preview": "preview.webp",
+    "reference": "reference.png",
+    "analysis": "analysis.md",
+    "prompt": "prompt.md",
+    "agent": "agent.md",
+    "extraction": "extraction.json",
+    "figure_tex": "figure.tex",
+    "originalBase": "",
+    "code": null
+  },
+  "original_assets": [
+    {
+      "source_path": "figs/overview_brickgpt.pdf",
+      "file": "original-1.pdf",
+      "sha256": "577e5d39e3518bad6c7bb8fd3d0ce5f90a35b3ead6f902f879a1ff5f73d6bb52"
+    }
+  ],
+  "reuse": {
+    "reference_available": true,
+    "prompt_origin": "maintainer_reconstruction",
+    "prompt_language": "en",
+    "prompt_version": "0.2",
+    "prompt_status": "reviewed",
+    "code_status": "unavailable",
+    "adaptation_status": "untested",
+    "variables": [
+      "research_content",
+      "layout_changes",
+      "labels",
+      "relationships",
+      "true_data",
+      "language",
+      "output_format"
+    ],
+    "validation": {
+      "visual_extraction": "reviewed",
+      "adaptation_generation": "not_tested"
+    }
+  },
+  "rights": {
+    "holder": "The authors / original rights holders",
+    "source_license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence_url": "https://arxiv.org/abs/2505.05469v3",
+    "redistribution_basis": "Explicit license on the matching versioned arXiv abstract page",
+    "attribution": "Generating Physically Stable and Buildable Brick Structures from Text — Ava Pun, Kangle Deng, Ruixuan Liu, Deva Ramanan, Changliu Liu, Jun-Yan Zhu, ICCV 2025, Figure 2.",
+    "publication_status": "approved",
+    "third_party_review": "Paper-specific versioned CC license verified. Source figure and caption inspected; no separate rights restriction found on the selected original figure. Known external benchmark-photo and mesh examples are held separately in the pending review queue.",
+    "changes": "Original file is byte-preserved. PNG/WebP are preview conversions on a white background."
+  },
+  "curation": {
+    "maintainer": "Awesome-Academic-Figures",
+    "checked_at": "2026-10-01",
+    "collected_at": "2026-10-01",
+    "notes": "Original figure path and independent numbered caption checked against source. Complete selected figure visually inspected. No adaptation generation claimed."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["src"],
+  "locale": "zh-CN",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Form", "Scrollbar", "Toast"],
+  "requiredCommands": ["format", "contract", "tokens", "build"],
+  "commands": {
+    "format": "npm run format:check",
+    "contract": "npm run check",
+    "tokens": "npm run check:tokens",
+    "build": "npm run build"
+  },
+  "evidence": {
+    "failurePaths": "output/playwright/verification.md"
+  }
+}

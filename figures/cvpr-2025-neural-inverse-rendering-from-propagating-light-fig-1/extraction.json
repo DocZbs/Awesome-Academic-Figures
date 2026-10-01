@@ -1,0 +1,24 @@
+{
+  "id": "cvpr-2025-neural-inverse-rendering-from-propagating-light-fig-1",
+  "number": 1,
+  "caption_tex": "Method overview.\n    (\\textbf{a}) Our time-resolved renderer combines physically-based rendering for primary rays \\textit{(left inset)}, and neural rendering for an indirect radiance cache along secondary rays \\textit{(right inset)}. \n    (\\textbf{b}) The incident radiance $\\radiancein$ at a sensor pixel is a function of the outgoing radiance $\\radianceout$ from each point $\\xposof{t}$ along a sensor ray, which integrates incident direct light $\\radianceindir$ and indirect light $\\cachein$ from a pulsed laser source. \n    (\\textbf{b}, \\textit{left}) The rendering equation computes the outgoing radiance as an integral over the positive hemisphere $\\Omega$ (with respect to the normal $\\normal$) of the incident radiance. (\\textbf{b}, \\textit{right}) Applying volume rendering to the outgoing radiance yields the incident radiance at a sensor pixel.\n(\\textbf{c}) The radiance cache is used to evaluate indirect radiance $\\cachein$ by casting secondary rays and querying neural networks at points $\\xpos'(t)$. (\\textbf{c}, \\textit{left}) The networks output the reflectance $\\brdfdir$ of direct light $\\radianceindir$, indirect reflectance $\\brdfind$, and indirect incident radiance $\\radianceinind$. These quantities are used to calculate the time-resolved direct ($\\cacheoutdir$) and indirect  ($\\cacheoutind$) outgoing radiance in the direction $\\dirout'$.\n(\\textbf{c}, \\textit{right}) Volume rendering the outgoing radiance along a secondary ray yields $\\cachein(\\xpos, \\dirin, \\tau)$.\nWe optimize the scene appearance and geometry to enforce consistency between rendered and captured measurements.\n",
+  "main_tex": "main.tex",
+  "source_archive_url": "https://arxiv.org/src/2506.05347v1",
+  "source_archive_sha256": "87cf82571814057ff35c76c2b89464f6c0cf16a5d072da7f2d6a2566f24d093a",
+  "source_license": "CC-BY-4.0",
+  "original_assets": [
+    {
+      "source_path": "figures/method.pdf",
+      "file": "original-1.pdf",
+      "sha256": "7970ad68007435d213d2eb0c04af4d184cd443108d1734f70503c50ba3b92bd4"
+    }
+  ],
+  "figure_tex": "[th!]\n    \\vspace{-1em}\n    \\begin{center}\n    \\includegraphics[width=\\textwidth]{figures/method.pdf}\n    \\end{center}\n    \\vspace{-1.5em}\n    \\caption{Method overview.\n    (\\textbf{a}) Our time-resolved renderer combines physically-based rendering for primary rays \\textit{(left inset)}, and neural rendering for an indirect radiance cache along secondary rays \\textit{(right inset)}. \n    (\\textbf{b}) The incident radiance $\\radiancein$ at a sensor pixel is a function of the outgoing radiance $\\radianceout$ from each point $\\xposof{t}$ along a sensor ray, which integrates incident direct light $\\radianceindir$ and indirect light $\\cachein$ from a pulsed laser source. \n    (\\textbf{b}, \\textit{left}) The rendering equation computes the outgoing radiance as an integral over the positive hemisphere $\\Omega$ (with respect to the normal $\\normal$) of the incident radiance. (\\textbf{b}, \\textit{right}) Applying volume rendering to the outgoing radiance yields the incident radiance at a sensor pixel.\n(\\textbf{c}) The radiance cache is used to evaluate indirect radiance $\\cachein$ by casting secondary rays and querying neural networks at points $\\xpos'(t)$. (\\textbf{c}, \\textit{left}) The networks output the reflectance $\\brdfdir$ of direct light $\\radianceindir$, indirect reflectance $\\brdfind$, and indirect incident radiance $\\radianceinind$. These quantities are used to calculate the time-resolved direct ($\\cacheoutdir$) and indirect  ($\\cacheoutind$) outgoing radiance in the direction $\\dirout'$.\n(\\textbf{c}, \\textit{right}) Volume rendering the outgoing radiance along a secondary ray yields $\\cachein(\\xpos, \\dirin, \\tau)$.\nWe optimize the scene appearance and geometry to enforce consistency between rendered and captured measurements.\n}\n\n\n\n\n\n\n\n\n\n\n    \\vspace{-1.25em}\n    \\label{fig:method}\n",
+  "review_status": "pending",
+  "preview_status": "ready",
+  "width": 1242,
+  "height": 455,
+  "method": "arxiv_source_original",
+  "visual_review_status": "reviewed",
+  "reviewed_at": "2026-10-01"
+}

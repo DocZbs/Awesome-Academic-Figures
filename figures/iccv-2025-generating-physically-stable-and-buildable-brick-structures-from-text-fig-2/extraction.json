@@ -1,0 +1,24 @@
+{
+  "id": "iccv-2025-generating-physically-stable-and-buildable-brick-structures-from-text-fig-2",
+  "number": 2,
+  "caption_tex": "\\textbf{Method.} (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. \n    (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, \\LegoGPT{} generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.",
+  "main_tex": "main.tex",
+  "source_archive_url": "https://arxiv.org/src/2505.05469v3",
+  "source_archive_sha256": "e60c13a6775201866c6777344daf018c357424678b520179102be7f4e196e021",
+  "source_license": "CC-BY-4.0",
+  "original_assets": [
+    {
+      "source_path": "figs/overview_brickgpt.pdf",
+      "file": "original-1.pdf",
+      "sha256": "577e5d39e3518bad6c7bb8fd3d0ce5f90a35b3ead6f902f879a1ff5f73d6bb52"
+    }
+  ],
+  "figure_tex": "[t]\n    \\centering\n    \\includegraphics[width=0.95\\linewidth]{figs/overview_brickgpt.pdf}\n    \\caption{\\textbf{Method.} (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. \n    (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, \\LegoGPT{} generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.}\n    \\lblfig{overview}\n    \\vspace{-7pt}\n",
+  "review_status": "pending",
+  "preview_status": "ready",
+  "width": 2000,
+  "height": 877,
+  "method": "arxiv_source_original",
+  "visual_review_status": "reviewed",
+  "reviewed_at": "2026-10-01"
+}

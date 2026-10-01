@@ -1,0 +1,26 @@
+[th!]
+    \vspace{-1em}
+    \begin{center}
+    \includegraphics[width=\textwidth]{figures/method.pdf}
+    \end{center}
+    \vspace{-1.5em}
+    \caption{Method overview.
+    (\textbf{a}) Our time-resolved renderer combines physically-based rendering for primary rays \textit{(left inset)}, and neural rendering for an indirect radiance cache along secondary rays \textit{(right inset)}. 
+    (\textbf{b}) The incident radiance $\radiancein$ at a sensor pixel is a function of the outgoing radiance $\radianceout$ from each point $\xposof{t}$ along a sensor ray, which integrates incident direct light $\radianceindir$ and indirect light $\cachein$ from a pulsed laser source. 
+    (\textbf{b}, \textit{left}) The rendering equation computes the outgoing radiance as an integral over the positive hemisphere $\Omega$ (with respect to the normal $\normal$) of the incident radiance. (\textbf{b}, \textit{right}) Applying volume rendering to the outgoing radiance yields the incident radiance at a sensor pixel.
+(\textbf{c}) The radiance cache is used to evaluate indirect radiance $\cachein$ by casting secondary rays and querying neural networks at points $\xpos'(t)$. (\textbf{c}, \textit{left}) The networks output the reflectance $\brdfdir$ of direct light $\radianceindir$, indirect reflectance $\brdfind$, and indirect incident radiance $\radianceinind$. These quantities are used to calculate the time-resolved direct ($\cacheoutdir$) and indirect  ($\cacheoutind$) outgoing radiance in the direction $\dirout'$.
+(\textbf{c}, \textit{right}) Volume rendering the outgoing radiance along a secondary ray yields $\cachein(\xpos, \dirin, \tau)$.
+We optimize the scene appearance and geometry to enforce consistency between rendered and captured measurements.
+}
+
+
+
+
+
+
+
+
+
+
+    \vspace{-1.25em}
+    \label{fig:method}

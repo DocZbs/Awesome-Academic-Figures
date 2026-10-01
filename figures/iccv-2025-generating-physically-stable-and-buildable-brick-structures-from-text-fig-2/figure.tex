@@ -1,0 +1,7 @@
+[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figs/overview_brickgpt.pdf}
+    \caption{\textbf{Method.} (a) Our system tokenizes a brick structure into a sequence of text tokens, ordered in a raster-scan manner from bottom to top. 
+    (b) We create an instruction dataset pairing brick sequences with descriptions to fine-tune LLaMA-3.2-Instruct-1B. (c) At inference time, \LegoGPT{} generates brick structures incrementally by predicting one brick at a time given a text prompt. For each generated brick, we perform validity checks to ensure it is well-formatted, exists in our brick library, and does not collide with existing bricks. After completing the design, we verify its physical stability. If the structure is unstable, we roll back to a stable state by removing all unstable bricks and their subsequent bricks, and resume generation from that point.}
+    \lblfig{overview}
+    \vspace{-7pt}

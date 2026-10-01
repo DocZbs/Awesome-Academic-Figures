@@ -1,0 +1,29 @@
+{
+  "name": "awesome-academic-figures",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "python3 scripts/prepare_site.py",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "python3 scripts/prepare_site.py && node scripts/generate_tokens.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "format": "prettier --write src scripts/generate_tokens.mjs index.html",
+    "format:check": "prettier --check src scripts/generate_tokens.mjs index.html",
+    "check": "node scripts/check_site.mjs",
+    "check:tokens": "node scripts/generate_tokens.mjs --check"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.2.8",
+    "fflate": "^0.8.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "axe-core": "^4.13.0",
+    "prettier": "^3.5.0",
+    "vite": "^6.1.0"
+  }
+}

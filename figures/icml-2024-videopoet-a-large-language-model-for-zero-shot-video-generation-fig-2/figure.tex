@@ -1,0 +1,12 @@
+[tp]
+\centering
+\includegraphics[width=\textwidth]{figures/vffm_schematic.pdf}
+\caption{
+    \textbf{Sequence layout for \modelname{}}. We encode all modalities into the discrete token space, so that we can directly use large language model architectures for video generation.
+    We denote special tokens in $<>$ (see Table~\ref{tab:special_tokens} for definitions).
+    The modality agnostic tokens are in darker red; the text related components are in blue; the vision related components are in yellow; the audio related components are in green.
+    The left portion of the layout on light yellow represents the bidirectional prefix inputs.
+    The right portion on darker red represents the autoregressively generated outputs with causal attention.
+}
+\label{fig:vffm_schematic}
+\vspace{-4mm}
