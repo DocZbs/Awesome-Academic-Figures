@@ -168,6 +168,7 @@ export default function App() {
     const controller = new AbortController();
     setLoadState("loading");
     fetchResource(`${import.meta.env.BASE_URL}catalog.json`, {
+      cache: "no-cache",
       signal: controller.signal,
     })
       .then((response) => response.json())
