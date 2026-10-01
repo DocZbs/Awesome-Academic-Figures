@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505524",
+  "record_sha256": "89de53433645cf1f45c68c19b3feed67ac23d21f94f0b1ab741eb8ed56f976e1",
+  "asset_sha256": "0a643ad63abf4ef201d9c43b2f85ecc4f26a8e669dae51c307f1401f01a9e157",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505524",
+    "title": {
+      "zh": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization · 方法图",
+      "en": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20185",
+      "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+      "authors": [
+        "Yeonhong Park",
+        "Jake Hyun",
+        "Hojoon Kim",
+        "Jae W. Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_id": "2412.20185",
+      "arxiv_first_submitted_at": "2024-12-28T15:51:02Z",
+      "arxiv_updated_at": "2025-06-24T16:03:30Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20185v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505524/image/image.jpg?Expires=1790855553&Signature=CzOL3bz7sakfAsYwkAs80ossluG-L7HgU2lD1k1QkEqcoCWEF9fKzh86S6G5YICR3M9U3RQuTgGPgP9BjgDvQJ7CAt5l7dsukcDDJuw18QtieNq7JVKUrWXnZG6e9vl4XrUcw~fIXP17eaTD01wYP8OjlTLXJvuAjrqUVyfe-8cOgwT08FbEYq93BJlyrVdCGf5MQcWH3OU14jLw8Jdr7pS9wNmbVUMDTzkGTpXzZES6JedoF2iLBYeA8AxsR0XmE76t4Cm0y1sV39PMF3WmlrNvpFvhpLdO4fg1m4TOvmWhDBXeV6My-PUhhRXhObdxeZ-x1c3rPPHo~PIkaQYKuQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505524,
+      "description_sha256": "20a7412240b5fbce1843fdec4d32148d17f3bd725d1316104120805cdb500c79",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "21240eae48501cc591ca2a93c7511a65579523450840176912215fa97ab85a70",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the quantization process of weight residuals in a neural network layer, specifically focusing on the storage and transmission format of quantized weights and their associated scaling factors. The global layout is a rectangular grid representing a weight matrix, with dimensions labeled as d_in (height) and d_out (width), indicating the input and output feature dimensions respectively. The matrix is partitioned into multiple blocks, each corresponding to a group of quantized weights.\n\nVisually, the main component is a large grid composed of small rectangular cells arranged in rows and columns. The top portion of the grid contains dark gray filled rectangles, which represent the quantized weight residuals Q_r(R) stored in 4-bit precision. These are grouped into horizontal bands, each spanning the full width of the matrix, and are separated by vertical ellipses (…) to indicate intermediate rows. Two such bands are explicitly shown, with the rest implied by the vertical ellipsis between them. Each band is enclosed in a red rounded rectangle, emphasizing that these quantized values are bundled together for processing or transfer.\n\nBelow the quantized weight blocks, there is a separate row of dashed-line rectangles labeled 'scales (FP16)', indicating that the scaling factors used for dequantization are stored in 16-bit floating-point format. This row is also enclosed in a red rounded rectangle, aligning horizontally with the quantized weight blocks above it, suggesting a one-to-one correspondence between each group of quantized weights and its corresponding scale.\n\nConnections and arrows are used to show data flow. A thick red arrow originates from the right side of the red-enclosed quantized weight blocks and the scales row, pointing rightward with the label 'Sent to GPU', indicating that both the quantized weights and their scales are transmitted together to the GPU for inference. The red color of the enclosing boxes and the arrow visually links these components as a single unit being sent.\n\nThe figure's purpose is to depict how weight residuals are quantized to 4-bit for memory efficiency while retaining FP16 scales for accurate dequantization during computation, and how this combined data is packaged and sent to the GPU. The structure emphasizes the grouping of weights and scales, likely for efficient batched processing or memory access patterns."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

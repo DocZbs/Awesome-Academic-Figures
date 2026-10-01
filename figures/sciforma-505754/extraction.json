@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505754",
+  "record_sha256": "1fed2b0db4da5eb672fd25c5596097a699b19792f6ac576de34a6f716b7434e9",
+  "asset_sha256": "4b62dacd3768542fb6c7d189c20ae1c60127cb023391d3b327f6a212bb9e98b5",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505754",
+    "title": {
+      "zh": "Knowledge Editing for Large Language Model with Knowledge Neuronal Ensemble · 方法图",
+      "en": "Knowledge Editing for Large Language Model with Knowledge Neuronal Ensemble"
+    },
+    "paper": {
+      "id": "arxiv-2412-20637",
+      "title": "Knowledge Editing for Large Language Model with Knowledge Neuronal Ensemble",
+      "authors": [
+        "Yongchang Li",
+        "Yujin Zhu",
+        "Tao Yan",
+        "Shijian Fan",
+        "Gang Wu",
+        "Liang Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20637",
+      "arxiv_url": "https://arxiv.org/abs/2412.20637",
+      "arxiv_id": "2412.20637",
+      "arxiv_first_submitted_at": "2024-12-30T00:58:00Z",
+      "arxiv_updated_at": "2024-12-30T00:58:00Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20637v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505754/image/image.jpg?Expires=1790855559&Signature=E6IGIdoEMR9ixPgu3SUCFIcYw8ODNVDOuuEwVPkuEdy4IT22KGhvDVu2y02ecekDM7M6hZ2gR-P83riEeXM4mHWTrwQoXKdcr3cx81rwZO6bDg4iOH5sHYcqCJAJjLuXif9jXnRuGd29QLG~1gZsyH5~yVaOzTcKQri2rxcuJL2a1dOLH1HDNdVNtIF6VxNwbS9OPxn~RHj6MCojeFREmOQx6f~FeDom8R2PgNNAFxV6ucxbGLrEQBWyP5DphE-HrF0J3pJf8pC4NQTxIwmRFGvwAOsXQ6-zRAktXfBXndSiOnHLw9K3-GEAhr4ZRUWPaaubAQA6b6yyBJ5gMthThg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505754,
+      "description_sha256": "986b1631ca0ad55bf7481b25224a6cb9d5d60ad17b96b150bfb5aa4caff1ec67",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "22470048dd3e1dd13c8d1da375cf55f0e49980e0e48b43771ec896f42ddafc66",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Knowledge Neuronal Ensemble (KNE) method, divided into two main parts: (a) Locating the KNE and (b) Editing the KNE. In part (a), the process begins with an input question, 'Who is the current British Prime Minister?', represented by a blue box with a thought-bubble icon. This question is fed into a neural network model denoted as 'W', visualized as a stack of four gray rectangular layers, each containing four circular nodes. A dashed arrow from the question points to a green box labeled 'RKeir Starmer' with a checkmark, indicating the correct output. The model W undergoes a token-level Gradient Attribution Method, which computes Gradient Attribution Scores (GAS) for each token. These scores are shown as a stack of four layers, each with four circles colored red or blue; red indicates higher attribution scores, while blue indicates lower ones. A legend on the right shows that the top 1-p% maximum GAS values are marked with a fire icon and red color, while the remaining p% are marked with a snowflake icon and blue color. The next step selects the KNE by choosing neurons with the highest GAS values, resulting in a final KNE representation shown as a stack of two red layers, each with four red circles, indicating the selected high-impact neurons.\n\nPart (b) details the editing process of the KNE. It includes a legend defining the flow types: green lines represent KNE Flow, black lines represent Original Flow, gray arrows indicate forward propagation, and gray arrows with a backward direction indicate backward propagation. Red squares with a fire icon denote KNE neurons, while blue rectangles with a snowflake icon represent frozen weights. The same input question is processed through a sequence of alternating red (KNE) and blue (frozen) blocks, representing the model's layers. The green KNE Flow bypasses the frozen weights and directly connects the KNE neurons across layers, allowing targeted updates. The original black flow proceeds through all layers. The output is split into two paths: one leading to the correct answer 'RKeir Starmer' with a checkmark, and another to the incorrect answer 'Rishi Sunak' with a cross, indicating the goal of editing to correct the output.\n\nA zoomed-in view at the bottom shows the internal structure of a KNE layer, enclosed in a dashed blue rectangle. It contains a Self-Attention block (orange rectangle) connected to a Feedforward Neural Network (FNN) composed of two pink trapezoidal components labeled 'W_in' and 'W_out'. The update rules for these weights are given by the equations: ΔW[:, M_KNE] = W_KNE, where M_KNE ∈ ℕ^n, followed by W_out += α/√n * ΔW_out and W_in += α/√n * ΔW_in. These equations describe how the weights within the KNE are adjusted during the editing process, with α being a scaling factor and n the number of neurons. The connections show that the Self-Attention block feeds into both W_in and W_out, and the FNN outputs feed back into the Self-Attention block, forming a closed loop for weight updates."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

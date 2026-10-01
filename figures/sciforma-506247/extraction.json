@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506247",
+  "record_sha256": "1abc2246f884a03b77f1f9758e3cb878627e74edad344e12ba8730d073a45d65",
+  "asset_sha256": "278d51b2bd5f8ecc1bf9b2d293b24f6ed75e6eaa9bd51fbebeff7533dc9caee1",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506247",
+    "title": {
+      "zh": "Population Aware Diffusion for Time Series Generation · 方法图",
+      "en": "Population Aware Diffusion for Time Series Generation"
+    },
+    "paper": {
+      "id": "arxiv-2501-00910",
+      "title": "Population Aware Diffusion for Time Series Generation",
+      "authors": [
+        "Yang Li",
+        "Han Meng",
+        "Zhenyu Bi",
+        "Ingolv T. Urnes",
+        "Haipeng Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00910",
+      "arxiv_url": "https://arxiv.org/abs/2501.00910",
+      "arxiv_id": "2501.00910",
+      "arxiv_first_submitted_at": "2025-01-01T17:53:43Z",
+      "arxiv_updated_at": "2025-01-01T17:53:43Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1609/aaai.v39i17.34038",
+      "arxiv_current_version_observed": "2501.00910v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506247/image/image.jpg?Expires=1790855567&Signature=Twp4YFmi3r7R1YWdkqLbxZ2rHQe1V3ucy-QFdVlYb7MCJry5cjKHz7u2tb0oyj3AY4i2~0kI~nwTmZMICTbMfBUjQ-7wbECYDUoZEK5cus9m~nix12EXxPKNqcEyRMrmfJXL0cAV63zcLqq7Yfp9EzroPW0QNaN1t6-oAIepkqXyaHYCqHp-N0Gv9TbWs-kQTXiOG5zsLk~ON8QzdlOMbXbMjVchvaxut9At2WnSh6cqqCDgdgktFoX43IhhamaslIG7hDsGn29GnwpFAUyUSaWsQtzZt-Hxe12ahR5PTpnGrLBqYLIBFPVm2AmNbb1~s1RfBpmzXHuqtbBsfwfGAw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506247,
+      "description_sha256": "8374e6a0b2b71ffb01333bf4b21e6569795a6f70511efb70abbe70f2502d2efb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "85697ccb01faa2080e4218448aa75cf10c17c087f782d32abc28c5ccdf13da70",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the PaD-TS model, designed for time series generation using a diffusion-based approach. The global layout is divided into three main horizontal sections: the Temporal Channel (top), Cross-Dim Channel (middle), and Diffusion Step Embedding (bottom), all feeding into a Generation module on the right. The input data X^t, represented as a grid of F x L dimensions, splits into two parallel processing streams. In the Temporal Channel, X^t passes through a Dense layer, then combines with positional encoding (denoted by a wavy circle symbol) via addition (plus sign symbol), forming h_T, which is fed into an Encoder block. Similarly, in the Cross-Dim Channel, X^t goes through another Dense layer to produce h_D, which is also processed by an Encoder. Both encoders output representations H_T and H_D, respectively. Below these channels, the Diffusion Step Embedding module takes a scalar input t (dimension 1 x H) and processes it through a multi-layer perceptron (MLP) composed of three layers with fully connected weights, producing a learned embedding t_emb. This embedding is shared across both generation branches. In the Generation module, H_T and H_D are each passed through multiple stacked DiTs (Diffusion Transformers) blocks, which are depicted as layered rectangles with gradient shading from red to yellow. Each DiT block outputs O_T^i and O_D^i, respectively. These outputs are summed with the shared t_emb via addition operations before being passed through separate Dense layers. Finally, the outputs from both Dense layers are combined via addition to produce the final output X_out, which has the same dimensionality as the input (F x L). The figure includes a legend indicating that the wavy circle represents Positional Encoding and the plus sign represents Addition. The overall flow follows a dual-branch encoder-decoder structure with shared diffusion step conditioning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

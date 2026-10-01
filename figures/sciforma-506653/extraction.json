@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-506653",
+  "record_sha256": "59d5f59183a7b00ac24ea878c5910b2b376e10018a2bc9aaf82481efd92d87c5",
+  "asset_sha256": "2880628c801f7df61eb0bdf7cecbbdc66cc43f465c8f32b57ac698378f8e3ee3",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506653",
+    "title": {
+      "zh": "Detecting Music Performance Errors with Transformers · 方法图",
+      "en": "Detecting Music Performance Errors with Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2501-02030",
+      "title": "Detecting Music Performance Errors with Transformers",
+      "authors": [
+        "Benjamin Shiue-Hal Chou",
+        "Purvish Jajal",
+        "Nicholas John Eliopoulos",
+        "Tim Nadolsky",
+        "Cheng-Yun Yang",
+        "Nikita Ravi",
+        "James C. Davis",
+        "Kristen Yeon-Ji Yun",
+        "Yung-Hsiang Lu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02030",
+      "arxiv_url": "https://arxiv.org/abs/2501.02030",
+      "arxiv_id": "2501.02030",
+      "arxiv_first_submitted_at": "2025-01-03T07:04:20Z",
+      "arxiv_updated_at": "2025-01-03T07:04:20Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02030v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506653/image/image.jpg?Expires=1790855633&Signature=a9xNkUQo-Xf~DBeuSVvCyILVo2GA6eirGED7x1H1lFVIpDs1BHrgbiCrCJC2zNcFNbWJUDJD4QcTIpUOi4IGTQVRVpmssJKmedjGsjcz0n~7QnSABVHA35kDsTS7D4giT6UbHGZwrZLay24DMbd3cT-PywsKL9AyHkiVq4h0rbkEq9kC730IfpvH0Bj~He3Xj8R19CQUAdLN0m8qf9gpRS56sHJLzo7GAROAuFs5dt4mspnOA518UnCGiNjyQ7tLQdaLKnk4Ewm~NWpHTMiZI5-b5lfsLapVHc7pZpzKGuaEJt-z8e5tL6ssHMf~7go31x5PUaxX1RXmx9WhxBdLIg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506653,
+      "description_sha256": "447fde1ce4471ca7bec0551533f5a09c036ac3be0cff0c2d8d7417dea91c7a6b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c3ce55570a5ef19a9a51aea14b051e7a2a2c3835520982785f862affd8171052",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram illustrating two distinct approaches to music error detection: (a) a traditional pipeline used in prior work, and (b) the proposed end-to-end model, referred to as PolyTune. The global layout is divided into two parallel workflows labeled 'a.' and 'b.', each starting from input sources and progressing through processing modules to produce an output representation of detected errors on a musical staff.\n\nIn section (a), the traditional approach begins with two inputs: 'Score' and 'Audio'. The 'Score' is fed into a module labeled 'Score-Audio Alignment', while the 'Audio' is processed by a 'Transcription' module. Both outputs are then directed to a 'Comparison' module, which performs a side-by-side analysis. The result of this comparison is visualized on the right as a musical staff with two notes: one blue note marked 'Missed' and one red note marked 'Extra', indicating detected errors.\n\nSection (b) depicts the proposed PolyTune model. It also takes 'Score' and 'Audio' as inputs. The 'Score' is first passed through a 'Synthesized Audio' module, generating a synthetic audio representation. Both the original 'Audio' and the synthesized audio are then fed into 'Our Music Error Detection Model', a single, unified module. This model directly outputs the error detection result, again shown on a musical staff with the same blue 'Missed' and red 'Extra' annotations.\n\nVisually, all modules are represented as rectangular boxes with black borders and black text. Inputs are labeled with plain black text ('Score', 'Audio') and connected via solid black arrows pointing toward the respective modules. Outputs from modules are indicated by arrows leading to subsequent modules or to the final error visualization. The error visualization consists of a five-line musical staff with two notes: a blue eighth note labeled 'Missed' and a red dotted quarter note labeled 'Extra', both positioned above the staff lines. The labels 'Missed' and 'Extra' are written in blue and red respectively, matching the color of the corresponding notes.\n\nThe connections clearly show that the traditional method (a) requires multiple sequential steps—alignment, transcription, and comparison—whereas the proposed method (b) bypasses these intermediate stages by using a single, end-to-end trainable model. This design simplifies the pipeline and avoids the error-prone nature of explicit alignment and comparison steps, as noted in the figure caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

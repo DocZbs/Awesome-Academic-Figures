@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-506805",
+  "record_sha256": "5e3a357de3fca554b1c77b76d76e601d9e93d4ee5c504a39b8e3ca5e726a2f2f",
+  "asset_sha256": "dd5fc08982b98ba1dbc9c0a4130dc73c45a35bc802240f057b8327e7d48bc15a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506805",
+    "title": {
+      "zh": "Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network · 方法图",
+      "en": "Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network"
+    },
+    "paper": {
+      "id": "arxiv-2501-02618",
+      "title": "Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network",
+      "authors": [
+        "Sanya Sinha",
+        "Michal Balazia",
+        "Francois Bremond"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02618",
+      "arxiv_url": "https://arxiv.org/abs/2501.02618",
+      "arxiv_id": "2501.02618",
+      "arxiv_first_submitted_at": "2025-01-05T18:18:52Z",
+      "arxiv_updated_at": "2025-01-05T18:18:52Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02618v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506805/image/image.jpg?Expires=1790855626&Signature=TKDz12Wq6udt6nW0DJhCHVW1MVZ7~RataCjFt68nKC7de0sdSq~T0vXNaH6obEqG1AXYxJgkYLkKEOnvtDsZtp~aqw7mrpI4iBCAhkAS8yRVSoXNYDwUEydGn2dtNPefKqo4trINQqHd-YCJlTUsV8sTLFd-7CbKK2yxgTPbIEhn-QpuMnK9oXbfP7I2soCKJygcTSH1RjM~OQPFYGdKyemhSyQUpzfEfHrC~MLkEN9l6hjVWL4VSu8XQT~ZFnDKy4XB9zMEsEJEVTwBFzLI5zrs9bDECyRBgczdxq-8LP6pNhvSdgh7IqkDq85Q-IgvqgYagv09Zs5cp~dvbqdHxw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506805,
+      "description_sha256": "6dea986b332edb4ef99ce43b1f5efc3371e76d011d34a176264a9a875cbec188",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2fa8fa6c1092462e34365d61d4b4a86aa899988e4ae84e6dfe3011042d840bc5",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the complete architecture of Go-ELAN YOLOv9, structured into four main components: Backbone, Auxiliary, Neck, and Head. The global layout is horizontal, with the Backbone positioned on the right side, the Auxiliary block to its left, followed by the Neck, and finally the Head on the far right. The Auxiliary block is enclosed within a dashed rectangular boundary, indicating its supplementary role in the network. The Backbone begins with a 'Silence' module (gray rounded rectangle), followed by two consecutive Conv layers (pink rectangles), then a sequence of Go-ELAN blocks (light blue rectangles), each followed by an ADown block (light green rectangle) for downsampling. The final layer in the Backbone is an SPPELAN block (yellow rectangle), which replaces traditional spatial pyramid pooling to eliminate fixed-size constraints. \n\nWithin the Auxiliary block, a parallel structure mirrors the Backbone’s flow but operates in reverse for gradient propagation. It starts with two Conv layers (pink), followed by a Go-ELAN block, then ADown, and continues with alternating Go-ELAN and ADown blocks. This auxiliary path enables reliable gradient computation via Programmable Gradient Information (PGI), preventing semantic loss during backpropagation. \n\nThree CBLinear blocks (purple rectangles) are placed between the Backbone and Auxiliary paths, extracting higher-level features from the Backbone’s intermediate outputs. These features are then fused using CBFuse blocks (orange rectangles), which receive inputs from both the Backbone and Auxiliary branches. Each CBFuse block feeds into a Go-ELAN block in the Auxiliary path, forming a bidirectional feature interaction loop. Dashed arrows indicate cross-connections between CBFuse and CBLinear blocks, emphasizing the fusion mechanism. \n\nThe Neck component (large gray rectangle labeled 'Neck') receives feature maps from the Backbone’s final SPPELAN block and processes them before passing them to the Head. The Head consists of three stacked 'Detect' modules (white rounded rectangles inside a light blue container), responsible for predicting bounding boxes and associated confidence scores. Similarly, the Auxiliary block connects to a separate Head on the left side, also composed of three 'Detect' modules, allowing parallel detection outputs from both paths. \n\nAll modules are represented as rounded rectangles with distinct colors: pink for Conv, light blue for Go-ELAN, light green for ADown, purple for CBLinear, orange for CBFuse, yellow for SPPELAN, and white for Detect. Solid arrows denote forward data flow, while dashed arrows represent feature fusion or gradient pathways. The architecture emphasizes bidirectional feature exchange between Backbone and Auxiliary paths through CBLinear and CBFuse blocks, enhancing gradient reliability and feature representation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

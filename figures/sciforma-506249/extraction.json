@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-506249",
+  "record_sha256": "af8edc1965544d1ba7f6b71f288020c739ba37d956f217f6920f349f6a31d9ad",
+  "asset_sha256": "8351984ce2966c03fab18b13fbb77c57328f519db3d09aca769dc5ddc831c649",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506249",
+    "title": {
+      "zh": "Aligning LLMs with Domain Invariant Reward Models · 方法图",
+      "en": "Aligning LLMs with Domain Invariant Reward Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-00911",
+      "title": "Aligning LLMs with Domain Invariant Reward Models",
+      "authors": [
+        "David Wu",
+        "Sanjiban Choudhury"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00911",
+      "arxiv_url": "https://arxiv.org/abs/2501.00911",
+      "arxiv_id": "2501.00911",
+      "arxiv_first_submitted_at": "2025-01-01T17:58:31Z",
+      "arxiv_updated_at": "2025-01-01T17:58:31Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00911v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506249/image/image.jpg?Expires=1790855567&Signature=QkXoTzwdN~hIAGfL~l4FRa0NAknCrFV5VUOghs9EuGuVpEW16ejH0iCGtwzK4DEll8GmzJx9rltl08yfQpauDDIFUeb91b4tsG10JvcbBkAnfI6R7Y5NgjHmXmhEb9G41rJpEF07A7xGI9zq6aUHbqPabkY2rSSCd40yL-sYEtxh178j5c~f~93T2knxQYPIScf3lmE-f~lTZ9K~GLt~nRSCHo1qlywt70-0VaBQ8A-N8g8OJ7fkFWZT9IUGDPjTNtRp0tjgRXVIsBFYmOGl3YaQBmbIJcV5wzvysBjYFuJXVEOHJtpKlTEvqO0aEbgZl1Qnv97SiT8GaX1p38RuLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506249,
+      "description_sha256": "8b2c8b312a9b19f6f254fe2df093e2d86d0c8bcb667b5a632a4f019c2b4e6c30",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "502c966bae3de155efa1023f77f037ffa3a0eb9d1fc71e36e1364bc912e8950e",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a methodological framework for training a domain-invariant reward model using labeled source data and unlabeled target data. The layout is divided into two main vertical sections: 'DATA' on the left and 'MODEL' on the right, separated by a vertical line labeled 'MODEL'. Below these sections, a horizontal row labeled 'APPLICATIONS' illustrates four distinct use cases.\n\nIn the DATA section, the top portion shows the 'Source Domain' as a small, labeled dataset represented by a beige circular cluster of blue '+' and red '-' points. An example query 'What shape is the Earth?' with options 'Round' (thumbs up) and 'Flat' (thumbs down) is shown alongside an icon of a human annotator interacting with a laptop. Below this, the 'Target Domain' is depicted as a large, unlabeled dataset represented by a gray amorphous cloud of black dots, with examples in multiple languages such as Bengali, Thai, and Swahili, indicating diverse, unannotated data.\n\nIn the MODEL section, the source and target domains feed into a 'Train Reward Model' block, which is illustrated as a neural network with multiple layers of interconnected gray nodes. Two losses are computed: Loss 1, 'Domain Distribution Loss', uses a dashed circle to show that source prompt-response pairs (orange dot) are pushed close to target prompt-response pairs (gray dot), minimizing distributional divergence. Loss 2, 'Source Preference Loss', uses another dashed circle to show that source prompt + chosen response (blue dot) is pulled apart from source prompt + rejected response (red dot), preserving preference signals from the source domain. These two losses are combined via a '+' symbol.\n\nThe APPLICATIONS section at the bottom displays four scenarios: (1) Cross-Lingual, showing English to Bengali translation; (2) Simple-to-Complex, showing a simple math prompt evolving into a complex scientific explanation; (3) Few-shot-to-Full, showing basic arithmetic progressing to advanced algebraic expressions; and (4) Clean-to-Noisy, showing a clean sentence transforming into a noisy, misspelled version with emojis. Each application includes a source prompt-response pair with thumbs-up/down icons and an arrow pointing to the corresponding target transformation.\n\nThe overall structure emphasizes a dual-loss training strategy that enables reward modeling in target domains lacking labeled data by leveraging both distributional alignment and preference preservation from the source domain. The visual elements use color coding (beige for source, gray for target, orange/blue/red for different data types) and consistent shapes (circles for data clusters, rectangles for blocks, dashed circles for loss operations) to convey the workflow logically."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

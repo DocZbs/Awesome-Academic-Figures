@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504634",
+  "record_sha256": "4e74b46d10766517d3de86e9fb70b7a000716c6b0fe79501a8164a8d4d4844f1",
+  "asset_sha256": "7f75c3f2a8f3515c592ef130bbcb7094a6f9d3a2083c1aaf474395ba0f92944e",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504634",
+    "title": {
+      "zh": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation · 方法图",
+      "en": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18688",
+      "title": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation",
+      "authors": [
+        "Faraz Waseem",
+        "Muhammad Shahzad"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_id": "2412.18688",
+      "arxiv_first_submitted_at": "2024-12-24T21:24:41Z",
+      "arxiv_updated_at": "2025-08-05T01:03:48Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18688v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504634/image/image.jpg?Expires=1790855433&Signature=oMMDhI9TmrW9ug9MXPiUVItwvKdlsrQbx3g1xw~uOznGdieD6UVHFT5gjmqLqpaXEVKVkHXSQz9ZKo7fEAVb5Sxf00BlR37lgLXrdkKaSVKHyhUjqr7w-hlUmfh~1EFWX9SlQKbB7AfaqLhErW0At1djs8OzQ92sJSxpHIMjHTAPiBsue36db~bowTAozSIQvFqEOGY8B2yFIlZ78edokkQeRghAWYUuzDw3rc1QDfHni4kge0aA4P93c5o3B9eFTRONc~uhBbTy-Y9wI2JCFIDIvvSJ0~Y1bpCTX4vRk8yphgcR31vrxnJx4~hZ5ETJtsCL6adpaokbJ7Eqg7TjlQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504634,
+      "description_sha256": "100192fe442c7dfd473bb061d5a307fc32cf39989ffab0e70345751d2d3b9bd3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a057b6aa5c0d1dc2175d39cbb31fefbda3d3c2e1f0a8ec76e44fd392c184242b",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a 3D-VQ-based masked generative video model architecture designed for multiple video editing tasks including Frame Prediction, Central Outpainting, Dynamic Inpainting, and Frame Interpolation. The global layout is structured into three main horizontal sections: task inputs and encoding, token combination and masking, and transformer-based reconstruction. At the top, raw video frames are shown as a sequence of images depicting birds on grass, which are first cropped and padded before being processed by a 3D-VQ Encoder and Decoder pair. This encoder-decoder setup is also applied to each of the four task-specific input sequences, represented as green parallelograms with varying internal patterns indicating different mask regions for each task. Each task input is encoded into a sequence of discrete tokens using a 3D-VQ Encoder, producing token grids where yellow cubes represent condition tokens and gray cubes represent masked or target tokens. These token sequences are then combined at a sampled ratio: condition tokens from one task, [MASK] tokens from another, and target tokens from a third, forming a composite token sequence. This combined sequence undergoes COMMIT Masking, a process symbolized by a large blue trapezoid, which randomly masks portions of the tokens. The resulting masked token sequence is fed into a Bidirectional Transformer, depicted as a central blue rectangle. The transformer performs two key operations: predicting the masked tokens (denoted by L_mask) and refining the condition tokens (L_refine), indicated by dashed arrows. Additionally, the transformer reconstructs the target tokens (L_recons), shown by a dashed arrow pointing back to the output token grid. The final output is a reconstructed sequence of tokens, fully filled with blue cubes, representing the generated video content. The entire pipeline emphasizes a masked modeling approach where the model learns to predict missing tokens conditioned on task-specific inputs and context, enabling flexible multi-task video generation. The visual modules include green parallelograms for encoders, blue cubes for tokens, and a blue trapezoid for masking, with color coding distinguishing condition (yellow), masked (gray), and target (blue) tokens. Text labels such as 'Task prompt', 'Class token', and loss terms like L_mask, L_refine, and L_recons are clearly annotated to guide the interpretation of the model's training objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

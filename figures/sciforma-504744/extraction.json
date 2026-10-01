@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504744",
+  "record_sha256": "e5f2f9915142493958b2bbc1519644d19a9f3907a7816984fa45bb56b3b4b321",
+  "asset_sha256": "841d29a9cd6736f6e430278bc8ae15425cd32db0762c87182c3e4f440d0e3d3f",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504744",
+    "title": {
+      "zh": "SWAG: Long-term Surgical Workflow Prediction with Generative-based Anticipation · 方法图",
+      "en": "SWAG: Long-term Surgical Workflow Prediction with Generative-based Anticipation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18849",
+      "title": "SWAG: Long-term Surgical Workflow Prediction with Generative-based Anticipation",
+      "authors": [
+        "Maxence Boels",
+        "Yang Liu",
+        "Prokar Dasgupta",
+        "Alejandro Granados",
+        "Sebastien Ourselin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18849",
+      "arxiv_url": "https://arxiv.org/abs/2412.18849",
+      "arxiv_id": "2412.18849",
+      "arxiv_first_submitted_at": "2024-12-25T09:29:57Z",
+      "arxiv_updated_at": "2025-06-15T09:17:03Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18849v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504744/image/image.jpg?Expires=1790855436&Signature=mldbew10sKlC0FnL47zAgdylW1FCuaJdOJkJoqK~0T3dUjEc0Wam0dtm9pS0mScMXcRVCGR3NjZskrvGuDm6btpiKhSmXTps0N5r4q3wwv1wnOCsvhw-1-EDRg2rqPCX-HnaJSoFB5xUGUX6kSLoIassu2O6c86VxcOo6qx~iYk2YgSCKipAaBH6oPy7t5293g6JnLXVxPo4Td4E5s5rnMiFfNIqRrW3IOLkU4Z5Ry-A574ulkG7c85scfiEHa8wMg6ikMPobfQmqzypH6m6yD7eXGKomWvQ66j3T0HptfR4p0P63dgNKyQchU5NK22cTIYddrzFP-RHhILJU157Sg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504744,
+      "description_sha256": "9bca98aa1eed50a9b1911901d3204291c3296fc2dc40f267f0ae9b2ef206f120",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "17c67bfcc2b65cbf96a416463097183df0457cbb28b2e9a0180b24e50b8f1079",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two parallel neural network architectures for time-series prediction tasks: Regression (top) and Classification (bottom), both sharing a similar decoder-based structure but differing in input size and output interpretation. The global layout is vertically divided into two horizontal workflows under a shared 'Task' label on the left, with the top path labeled 'Regression' and the bottom 'Classification'. Each workflow begins with 'Context tokens' feeding into a gray rounded rectangular module labeled 'Decoder'. In the Regression path, the Decoder receives a single input token of dimension 1×D, producing a single output vector s₁ of dimension 1×D. This vector flows through a trapezoidal Layer Normalization (LN) block, resulting in a 1×C output tensor represented as a vertical stack of colored boxes (blue, green, purple) labeled with numerical values (6, 1, 3) under the heading 'Remaining Time'. This output is then mapped via a 'Regression-to-Classification' transformation to a 1×1 prediction vector ŷ₆, shown as a single pink box within a horizontal sequence of colored boxes (green, blue, pink) labeled ŷ₁, ŷ₃, ŷ₆, indicating predicted class indices. The Classification path follows a similar structure but processes N input tokens of dimension N×D, generating N output vectors s₁ through s_N, each of dimension 1×D, forming an N×D matrix. These pass through an LN block to produce an N×C probability matrix, visualized as N vertical stacks of colored boxes (green, pink, blue) labeled p̂₁ through p̂_N. This matrix feeds into a final 'Classification' module, yielding an N×1 output vector of predicted classes ŷ₁ through ŷ_N, depicted as a horizontal sequence of colored boxes (green, blue, pink). All connections are indicated by solid blue arrows, showing the forward flow from context tokens through the Decoder, LN, and final prediction stages. The figure emphasizes that the Regression task predicts continuous remaining time, which can be converted to discrete class predictions via R2C, while the Classification task directly outputs probabilities for multiple future time steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

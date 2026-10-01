@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505345",
+  "record_sha256": "2c33a11bd3c47d9b4113bb95c469d9fc2d80bc84b9716f194c3419fbf9fb3b30",
+  "asset_sha256": "08d9f45d483cc4205cf05c26fd7c58bffc7a39ce21ab9d114390b68005638a21",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505345",
+    "title": {
+      "zh": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice · 方法图",
+      "en": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice"
+    },
+    "paper": {
+      "id": "arxiv-2412-19845",
+      "title": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice",
+      "authors": [
+        "Hadi Vafaii"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19845",
+      "arxiv_url": "https://arxiv.org/abs/2412.19845",
+      "arxiv_id": "2412.19845",
+      "arxiv_first_submitted_at": "2024-12-25T03:39:18Z",
+      "arxiv_updated_at": "2024-12-25T03:39:18Z",
+      "arxiv_subjects": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19845v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505345/image/image.jpg?Expires=1790855459&Signature=XK-IudPsk9I4Cfk2BHbpCudO9xqK6~GVECI9SMx4F0JHd0eip3b-oafwtAd9b5MTq-gTLFowyTeyIGTqnBWqkJHPjiOxX5nbuieoh0o-9KW-5jak9USc1~ts8XWOw0Usk7FNSNKnmBMCBWTp5WjiMOS3B-~tnFaTMjo1ZtQW~1WJCVKhSJV8s-Lt7Unf8L8paurNt3dI5WbcUPIVM7UbhuDHhdfINdpPg75PVkXvRofmXgyhhClGIn7swTSliKgSzTJdwz6iCZFlDTQ581UriAf~QIoEPPpo6mYTs~YBCpz2wO4eDzEPHDUs3LZZqszZNatxKqU8GXeCS0dC3mOE3w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505345,
+      "description_sha256": "f27919290a3e7e8919198847d6e48d66c82b7fda101fa666d9e502310994dbe4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "be67a297ac0f58377f858496ac59249bdff5a33720be837a1019746e30102c08",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two parallel architectures for variational autoencoders (VAEs), separated by a vertical dashed line, illustrating different sampling strategies within the latent space. Both architectures share a common structure: an input X is processed by an Encoder (Q), which outputs two parameters, μ(X) and Σ(X), representing the mean and covariance of a learned latent distribution. These parameters are used to compute the Kullback-Leibler divergence KL[N(μ(X), Σ(X)) || N(0, I)], shown in blue boxes, which measures the difference between the learned latent distribution and a standard normal prior.\n\nIn the left architecture, a sample z is drawn directly from the learned distribution N(μ(X), Σ(X)), as indicated by the red box labeled 'Sample z from N(μ(X), Σ(X))'. This sampled latent variable z is then passed to a Decoder (P), which reconstructs the input through a function f(z). The reconstruction error is computed as ||X - f(z)||², also shown in a blue box, and serves as the second term in the VAE loss function. The flow is unidirectional: X → Encoder → μ(X), Σ(X) → sample z → Decoder → f(z) → reconstruction loss.\n\nIn the right architecture, the sampling process is modified to enable reparameterization. After computing μ(X) and Σ(X) from the Encoder, a separate random variable ε is sampled from a standard normal distribution N(0, I), as indicated by the red box 'Sample ε from N(0, I)'. This ε is then scaled by Σ(X) (via a multiplication node *) and shifted by μ(X) (via an addition node +) to produce the latent variable z = μ(X) + Σ(X) * ε. This reparameterized z is fed into the Decoder (P) to generate f(z), and the same reconstruction loss ||X - f(z)||² is computed. The KL divergence term remains identical to the left architecture, connecting to both μ(X) and Σ(X).\n\nBoth diagrams use rectangular nodes for components (Encoder, Decoder, μ(X), Σ(X), etc.), with black arrows indicating data flow. The KL divergence and reconstruction loss terms are enclosed in blue boxes, while sampling operations are highlighted in red boxes. The reparameterization trick in the right diagram allows for gradient backpropagation through the sampling step, which is essential for training the model using stochastic gradient descent."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

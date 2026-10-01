@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505342",
+  "record_sha256": "0ec61e9b3c547d4efef40c0928242a8a7ef272ff60e6704d9e29a6f89235a62a",
+  "asset_sha256": "b0bbc99b04fb1a60807ffebd1a8bbe15668a04bbc923eafe5813588bcdf87f05",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505342",
+    "title": {
+      "zh": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice · 方法图",
+      "en": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice"
+    },
+    "paper": {
+      "id": "arxiv-2412-19845",
+      "title": "Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice",
+      "authors": [
+        "Hadi Vafaii"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19845",
+      "arxiv_url": "https://arxiv.org/abs/2412.19845",
+      "arxiv_id": "2412.19845",
+      "arxiv_first_submitted_at": "2024-12-25T03:39:18Z",
+      "arxiv_updated_at": "2024-12-25T03:39:18Z",
+      "arxiv_subjects": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19845v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505342/image/image.jpg?Expires=1790855459&Signature=wFr0RFxXrF56MhCVqKKEct~KgQm6zzL5SHTANHIbD3XIWCQQt3~gayMonO-IJpH51Y1tH9GJ1CJgsOVULpBpTYoxk~9CQmkA6H1LRa9TFcsxIhI-yeneXvSe6RHoM-If5WbM2mcrt8Kf1PPfambTI1dKNaCvuCEC0ofdd6FUK9eLyICdU5viU90g7ZLo8iZenZCgOO9nh5pljpHfws03YfL5fiL3ojYSVhEGGmyuyJo5pt3UBrXvgtN94yFvcNUKw4DjDabj5ACZVhYknjx~t~kDhiMeUSplbkxmfntrkM7bSNdqQeWQQRY9Wlw3Yh06M2fIxSZO5Bv9sdTmoKaoYQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505342,
+      "description_sha256": "c2c4730093d195e4659384d84e3a05d792f6ee7320818a1da266547210f6bd4b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c57688e6549abc8dd663923c43fdb0e6d882aab369d3fd673fdb51780872347c",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a computational model of neural response to visual motion stimuli, structured into multiple panels illustrating both the model architecture and its quantitative outputs. Panel A outlines the global layout: a three-branch processing pipeline for Excitation (red), Direction-Specific Suppression (DS-Sup, blue), and Non-Directional Suppression (NS-Sup, green), all receiving input from a 'Stimulus velocity field'. Each branch processes inputs through three stages: Subunit processing (multiplication of direction and speed tuning functions, e.g., f_θ^exc × f_v^exc), Spatial weights (W^exc, W^DS, W^NS), and Temporal kernel (K_T^exc, K_T^inh, K_T^NS). The outputs of these branches converge via summation (+) into a spiking nonlinearity F, which produces the final firing rate output. The branches are color-coded and labeled accordingly, with arrows indicating data flow.\n\nPanel B plots Speed tuning curves (y-axis) against stimulus speed (x-axis, 0–16°/sec). Three curves correspond to Excitation (red), DS-Sup (blue), and NS-Sup (green), showing peak responses at different speeds; the shaded gray area represents the combined response envelope.\n\nPanel C shows Direction tuning curves (y-axis) versus direction θ (x-axis, 0–360°). The red curve (Excitation) peaks near 90°, the blue (DS-Sup) near 180°, and the green (NS-Sup) is broad and flat, indicating non-directional suppression.\n\nPanel D displays Temporal kernels over time (0–600 ms), with red, blue, and green traces corresponding to Excitation, DS-Sup, and NS-Sup respectively. All show an initial positive peak followed by a negative trough, with slight differences in timing and amplitude.\n\nPanel E plots Firing rate (Hz) against Generating signal (ranging from -1 to 1), showing a nonlinear relationship (dashed black line) overlaid on a gray histogram of the generating signal distribution.\n\nPanel F is a bar chart showing LL* improvement (%) for three conditions: DS-Sup, NS-Sup, and Both, with the 'Both' condition yielding the highest improvement (~14%).\n\nPanel G illustrates spatial receptive fields for each component: Excitation (red, centered, circular), DS-Sup (blue, elongated in one direction), NS-Sup (green, ring-shaped), and All (combined, showing overlapping regions). A small inset on the right shows the spatial profile along the dashed vertical line through the center of the 'All' panel, with red, blue, and green traces corresponding to the respective components. A scale bar (5°) is included in the Excitation panel. The overall structure emphasizes how excitation and two types of suppression interact spatially and temporally to shape the final neural response."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

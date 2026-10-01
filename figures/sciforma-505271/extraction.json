@@ -1,0 +1,101 @@
+{
+  "id": "sciforma-505271",
+  "record_sha256": "870106d117aaa1399306cc29b19da1a1073e78dafea0cb5f622a4009b46fc602",
+  "asset_sha256": "f9459e24b91e08c466efcc8aa46c4e7d321078fb6cd34d2128993136f0c74349",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505271",
+    "title": {
+      "zh": "InfAlign: Inference-aware language model alignment · 方法图",
+      "en": "InfAlign: Inference-aware language model alignment"
+    },
+    "paper": {
+      "id": "arxiv-2412-19792",
+      "title": "InfAlign: Inference-aware language model alignment",
+      "authors": [
+        "Ananth Balashankar",
+        "Ziteng Sun",
+        "Jonathan Berant",
+        "Jacob Eisenstein",
+        "Michael Collins",
+        "Adrian Hutter",
+        "Jong Lee",
+        "Chirag Nagpal",
+        "Flavien Prost",
+        "Aradhana Sinha",
+        "Ananda Theertha Suresh",
+        "Ahmad Beirami"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19792",
+      "arxiv_url": "https://arxiv.org/abs/2412.19792",
+      "arxiv_id": "2412.19792",
+      "arxiv_first_submitted_at": "2024-12-27T18:45:36Z",
+      "arxiv_updated_at": "2025-08-21T16:32:06Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL",
+        "cs.IT"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19792v5"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505271/image/image.jpg?Expires=1790855453&Signature=YnEwO0-e0AMAbfcm6IvO3OqPK0t19PvmAVXoe4JotNOA4UdJuhSco-5fCQx-Ynz3vRLt~bbE25C-5heKWNGM1fiebjMPDZNyoogfuR8PMcr4tPpjgSgeu-C0vU-Jt0cLK2yUloINSTnP21bcXHqr4USIzlohoUc5ZvjcBf9okgigzXM1KWHSMKDNq2z0xPHZy09mL-V9mef7FE3UTdDAxeZvGQvE73dwx7Quk8C5VaoFjqfH7--rFpYPXB91XAw-eFGORBTHFW9~f1AZ-s5OGJFqs3~aCbbWM1MuWBBywn6gnOYZtyt4uTkSJnFBlu7a3L0kdA-qX3GHFxKCgm6xFg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505271,
+      "description_sha256": "edd0dd577ff64ed6ff9b7975a5aa99c50e11907a09184d642670bf06b55684af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9c8a121de85968c35bc6d9eed15d0d134d9521f60083d5378d805818b709a65c",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL",
+        "cs.IT"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative workflow diagram illustrating the difference between Standard RLHF and the proposed InfAlign method, designed to address the train/test mismatch in reinforcement learning from human feedback (RLHF) when using inference-time procedures like Best-of-N. The global layout is divided into two horizontal sections by a dashed red line: the upper section represents 'Standard RLHF' and the lower section represents 'InfAlign'. Both workflows start from an initial policy π₀.\n\nIn the Standard RLHF path (top), π₀ is fed into a yellow rectangular block labeled 'RLHF', which takes a reward signal r as input. The output of this block is a policy π, which is then passed through a vertical purple rectangle labeled 'T : Inference-time procedure' to produce PT(π), representing the policy after applying the inference-time transformation. This path is labeled 'Standard RLHF' on the top right.\n\nIn the InfAlign path (bottom), the same initial policy π₀ is used, but instead of directly feeding into RLHF, it first goes to a light blue rectangular box with a red border, labeled 'Inference-aware reward calibration & transformation'. This module also receives the original reward r as input. The output of this module is a transformed reward, denoted as r̃ (r tilde). This transformed reward is then fed into a second yellow 'RLHF' block, producing an optimized policy π*. This policy π* is then passed through the same inference-time procedure T, resulting in PT(π*). This entire lower path is labeled 'InfAlign' on the right side.\n\nConnections and arrows show the data flow: from π₀ to both RLHF blocks; from r to both RLHF blocks (with one arrow going directly to the top RLHF and another to the blue transformation box); from the top RLHF to π, then to PT(π); from the blue box to r̃, then to the bottom RLHF, then to π*, then to PT(π*). Additionally, there is a feedback loop from the top RLHF output π back to the blue transformation box, indicating that the policy π influences the reward transformation process. The figure caption explains that standard RLHF suffers from a mismatch between the train-time policy π and the inference-time policy PT(π), while InfAlign bridges this gap by optimizing a policy-transformed reward r̃, yielding a policy π* that is specifically optimized for inference under PT(π*)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

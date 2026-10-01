@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504795",
+  "record_sha256": "8a75db7f6942b7892e75ef620ea62c256cf6bf238afd2bd550862ab20a2b1127",
+  "asset_sha256": "598e37b2916300381d37eb4c8b89c49580233c57ced88c030d89b41d5fcbbc73",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504795",
+    "title": {
+      "zh": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs · 方法图",
+      "en": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-18914",
+      "title": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs",
+      "authors": [
+        "Dulhan Jayalath",
+        "James Bradley Wendt",
+        "Nicholas Monath",
+        "Sandeep Tata",
+        "Beliz Gunel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_id": "2412.18914",
+      "arxiv_first_submitted_at": "2024-12-25T14:14:31Z",
+      "arxiv_updated_at": "2025-08-24T22:09:57Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18914v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504795/image/image.jpg?Expires=1790855436&Signature=v-6VhnpAn0fB7MvPOZoEdI9bibxmxNQHzgNT~1IxUXn839cnD0glGtCmEDjUzS~QNgaXHm5QBF6MJxH4lPlNWV65K~-PEco2dy5KC5De9uA1FqTy5jEU~2ubW4HM8I2jRd-kwwReYSshZmEGhXjp4vBZ~Fqi4VcwHS4YUhO1B2xSi97y3f7pvZpEo-7F2eC0WvhPq1aqpCw1UyN58BtHW4JCDjU~716RW8qkdCZhvLm-ctZWEVG0ZYt0QQD6LNzaYmx89GxJqDrktcdPatIFcofEGNtlcDOFLSO8pGib3zthvl7u4iXUuoOuvO2a7Vxk2B5jv6IzCj52MMr7eQba6w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504795,
+      "description_sha256": "4fe63090e10304a2a025f05460697eeb2ad931fb976cdd33b7e93bdc2095e98f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "d8f9d15b7cc21356b7eaf0525fd3f9b6d216858039708e37ff2075677f3240fa",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dd0964af9b50d8f195aa3bf051fca65adae3d8a72c142ff37456e31f682382d6",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a memory update mechanism using JSON-based memory structures, demonstrating how an update to a specific candidate function affects the memory state through two different strategies: direct overwrite and amendment. The global layout consists of three main vertical columns: the left column contains the initial memory state labeled 'Memory (i)' and the update instruction labeled 'Update (i+1)', the center column contains a vertical rectangular module labeled 'UpdateMemory', and the right column displays two resulting memory states labeled 'Single Memory' and 'Amendments'.\n\nIn the leftmost column, 'Memory (i)' is represented as a beige rectangular box containing a JSON structure with a 'candidates' object that includes three entries: 'foo', 'bar', and 'baz', each with 'purpose' and 'percent_match' fields. The 'percent_match' values are 0.2 for 'foo', 0.8 for 'bar', and 0.1 for 'baz'. Below this, 'Update (i+1)' is shown in a purple rectangular box, containing a JSON update targeting the 'foo' candidate via a path expression '$.'candidates'.'foo'', specifying a new 'update' object with modified 'purpose' and 'percent_match' set to 0.7.\n\nThe central module, 'UpdateMemory', is a tall vertical rectangle oriented vertically with the label rotated 90 degrees, indicating a processing step that receives both the current memory and the update instruction. Two arrows emerge from this module: one pointing to the 'Single Memory' output and another to the 'Amendments' output.\n\nThe 'Single Memory' output, also in a beige box, shows the result of directly overwriting the 'foo' entry in the original memory with the updated values. Here, 'foo's 'percent_match' is now 0.7, while 'bar' and 'baz' remain unchanged. The 'Amendments' output, similarly formatted, shows the original memory preserved intact, followed by a new JSON object containing only the updated 'foo' entry with 'percent_match' = 0.7. This represents appending the update as a new record rather than modifying the existing one.\n\nText color coding is used to highlight differences: green text indicates the longest matching prefix between consecutive memory states (e.g., unchanged parts like 'bar' and 'baz'), while red text denotes newly encoded or changed content (e.g., the updated 'foo' entry). The figure visually contrasts the two approaches: direct update minimizes memory size but may require re-encoding more data, whereas amendments preserve history and reduce token encoding cost at the expense of increased memory size."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

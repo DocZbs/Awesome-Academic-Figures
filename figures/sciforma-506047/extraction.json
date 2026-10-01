@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506047",
+  "record_sha256": "8ce6b61067ad11b58413886d357d25b3e8136e7c91afe424f85e76805aaeea3c",
+  "asset_sha256": "59d130ea79fda360a435589ea139c3ee77f4ce28b31e2bbcaae90921631e8b94",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506047",
+    "title": {
+      "zh": "An Unsupervised Anomaly Detection in Electricity Consumption Using Reinforcement Learning and Time Series Forest Based Framework · 方法图",
+      "en": "An Unsupervised Anomaly Detection in Electricity Consumption Using Reinforcement Learning and Time Series Forest Based Framework"
+    },
+    "paper": {
+      "id": "arxiv-2501-00107",
+      "title": "An Unsupervised Anomaly Detection in Electricity Consumption Using Reinforcement Learning and Time Series Forest Based Framework",
+      "authors": [
+        "Jihan Ghanim",
+        "Mariette Awad"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00107",
+      "arxiv_url": "https://arxiv.org/abs/2501.00107",
+      "arxiv_id": "2501.00107",
+      "arxiv_first_submitted_at": "2024-12-30T19:04:43Z",
+      "arxiv_updated_at": "2024-12-30T19:04:43Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00107v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506047/image/image.jpg?Expires=1790855568&Signature=nQkVBCdiFe2AlvlB1My7pmOZ4-R9QZwfcuG7h1wjYp9HUMDNlOBnRowZ0RclqY2LxnbHA1DFp8TAcx1pLWjmshlu81Xz2Eet6-m9ulcBF1UEgCkxeCRc~Pks4kRUc~y3ig3xtHZXk1jtDVArLU3M7rkFbAhs75uVEloyUDJ9M5p1z0OQINp30~dVyogNmh1bih3GykS92mLxfnMPV9ffYUwNJs5-uqanCP6OpDS4w3GDYM0TkcYIH7n2-DLyA2B5tv9Q1SYigDTWjjwV9sDxR-2MWQtVH6qRQp9gGaqXWA3yIUHnCKfn2AHVWm3Dmnk8z-BV7aMe547ZmVrz51bpzg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506047,
+      "description_sha256": "10ed534f0e4ef5b1ff7f6659d9b45b07f40c067ac686e96186bf3bc5188cc652",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "81f85cab0df0859143249f2fdd801227847199685e650dae6de80d4d4ad24772",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comprehensive framework for anomaly detection (AD) model selection using reinforcement learning (RL), structured as a multi-layered, top-down flowchart. The global layout is vertically organized into distinct processing stages, each represented by a horizontal row of rounded rectangular modules, with left-aligned colored boxes providing contextual labels for each stage. The entire process begins at the bottom and progresses upward, culminating in an RL-based decision-making loop at the top.\n\nAt the base, the 'Data preprocessing Of real and synthetic datasets' stage includes three sequential steps: 'Remove missing values', followed by 'Data Rescaling of the electricity consumption feature', and then 'Sliding windows'. These steps feed into the next layer, which contains six anomaly detection models: KNN, COPOD, ECOD, OSVM, USAD, and IForest. This layer is labeled 'Training of AD models on the normal sliding windows', indicating that these models are trained on normal data.\n\nAbove this, the 'Testing of AD models on the anomalous sliding windows' stage shows outputs from the trained models: 'Predicted anomaly scores', 'Thresholds', and 'Predicted anomaly labels'. These outputs are then used to construct the 'Features of each dataset' layer, which includes five components: 'Anomalous sliding windows', 'Scaled Predicted anomaly scores of an AD model', 'Scaled threshold of an AD model', 'Predicted anomaly labels of an AD model', and 'The two confidence scores of an AD model'. A separate box labeled 'True Class Labels (0 or 1)' is positioned to the right, designated as the 'Target of each dataset'.\n\nThe next stage, 'Six Datasets for each TSF', indicates that each Time Series Forest (TSF) will be trained on these six datasets. The subsequent layer, 'Training of each TSFs on its training set', lists six TSF models: TSF 1 for KNN, TSF 2 for COPOD, TSF 3 for ECOD, TSF 4 for OSVM, TSF 5 for USAD, and TSF 6 for IForest. These are then tested in the 'Testing of each TSF on its testing set' stage, producing 'Predicted Class Labels of TSF 1' through 'Predicted Class Labels of TSF 6'.\n\nThe topmost section, titled 'AD Model Selection using RL', forms a closed-loop reinforcement learning environment. It consists of an 'Environment' block containing state features: 'Anomalous sliding windows', 'Scaled Predicted anomaly scores of AD models', 'Scaled thresholds of AD models', 'Predicted anomaly labels of AD models', and 'The two confidence scores of AD models'. An 'Agent' module receives a 'Reward' based on the predicted class labels of TSFs or ground truth labels, and performs an 'Action' to 'Select an AD model from the pool'. The action feeds back into the environment, completing the RL loop. All connections between modules are indicated by solid black arrows, showing the direction of data flow and processing sequence. The figure uses consistent visual attributes: all modules are rounded rectangles with black borders, and the stage labels on the left are color-coded (light gray, light blue, light green) to distinguish different phases of the pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

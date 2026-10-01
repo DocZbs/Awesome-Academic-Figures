@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506555",
+  "record_sha256": "b6b94f78cd3759ac37f113ae8c52e20ba4e79a148fdafa71995481739f5f32bb",
+  "asset_sha256": "1276c73824c6a44036ddfdbdc82ca6f3bd0f552d1a4fcf3fef25a30c2bb78907",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506555",
+    "title": {
+      "zh": "LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction · 方法图",
+      "en": "LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction"
+    },
+    "paper": {
+      "id": "arxiv-2501-01767",
+      "title": "LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction",
+      "authors": [
+        "Er Jin",
+        "Qihui Feng",
+        "Yongli Mou",
+        "Stefan Decker",
+        "Gerhard Lakemeyer",
+        "Oliver Simons",
+        "Johannes Stegmaier"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01767",
+      "arxiv_url": "https://arxiv.org/abs/2501.01767",
+      "arxiv_id": "2501.01767",
+      "arxiv_first_submitted_at": "2025-01-03T11:40:41Z",
+      "arxiv_updated_at": "2025-01-08T12:11:18Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01767v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506555/image/image.jpg?Expires=1790855582&Signature=Mw5avClMWltsuT8FBMOfkDeXmUCFE-fwsgP1pEVOr~vPJrsf5YRY4GaXm3gWxJGBDVcjPumSww4L4jIgrWgDpix6k1P2-UKI1yuYTTBeXXUYUw73gVeoIUeKeF1rgMvR3oyUIHi8JP9mtQdpNWGjqrM7ZlDPYvwpGg9tbV5MyJzI5vAhNbpg1SGZPLIrFx-LBFsIMdbRamVALpxZLpFfx~rP7mp-LhdbxQyMyokAPCs65OQIFY94~WOvi~4ovuVJA47SqmfP1qWE9cs3f82pLnsIeLOfXIkph23d1qZTq4tM4X~jVF-iI0HCf0AXPr5edh9pirflEB9pwA7NqSXbUQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506555,
+      "description_sha256": "1469bdbdbaf7ce68fa71c3d2fe6b21cd061a808c48f5aecb357b11dd91500ac8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "19673293dd710e2547eb9553875cbab1d4967aa14c0deecca005666f8a4d9994",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage pipeline for text feature extraction, divided into two main regions: a blue-dashed box on the left representing ROI extraction and a green-dashed box on the right representing text embedding processing. The global layout follows a left-to-right data flow, starting from an input query image denoted as X_q, which shows a close-up of two orange electrical connectors on a mesh background. This image is processed in parallel by two pathways: one directly feeds into a model labeled f_GDINO, represented as a trapezoidal block with black borders, while the other proceeds to a region marked 'ROIs' enclosed in a dashed rectangle. Inside this ROIs box, two cropped image patches are shown — one highlighting the upper connector and another the lower connector — indicating localized object detection results. These ROIs are then fed into a model labeled f_AVLM, also depicted as a trapezoidal block, which generates K text descriptions. Above this model, the text 'Fixed top_p temp' indicates that the generation process uses fixed hyperparameters for top-p sampling and temperature. The output of f_AVLM consists of multiple text descriptions, visually represented as stacked rectangular boxes labeled 'Text', enclosed within a dashed rectangle inside the green-dashed region. These text outputs are then passed to a second model, f_emb, another trapezoidal block, which performs text embedding using the text-embedding-3-large model (as cited in the caption). The final output is visualized in an 'Embedding Space' coordinate system, showing multiple green arrows originating from the origin and pointing toward a red 'X' marker, symbolizing the embedding vectors converging toward a target point. Arrows indicate the data flow: from X_q to both f_GDINO and the ROIs; from f_GDINO to the ROIs; from ROIs to f_AVLM; from f_AVLM to the Text outputs; from Text outputs to f_emb; and finally from f_emb to the Embedding Space. The entire process is structured to extract and stabilize text features from visual inputs via object detection, vision-language modeling, and embedding."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

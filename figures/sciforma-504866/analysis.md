@@ -1,0 +1,19 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Enhancing Audiovisual Speech Recognition through Bifocal Preference Optimization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19005
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a proposed framework for Bifocal Preference Optimization based Audio-Visual Automatic Speech Recognition (BPO-AVASR). The global layout is divided into two main vertical sections, separated by a dashed line, labeled 'Focal I: Input-Side Preference' on the left and 'Focal II: Output-Side Preference' on the right. Each section contains two horizontal rows representing 'Chosen' and 'Rejected' examples, with a third 'Rejected' row under Focal I connected by 'or', indicating alternative rejection scenarios. At the bottom center, a large rounded rectangle labeled 'Bifocal Preference Optimization based AV-ASR' receives a gray arrow from both focal sections, signifying the integration of both preference types into the final optimization process.
+
+In each row, a processing pipeline is depicted as a sequence of three elements: an audio signal (represented by a waveform icon), a video frame (represented by a mountain landscape icon), and a transcript (represented by a document icon). These are labeled with variables: 'a_w' or 'a_l' for audio, 'v_w' or 'v_l' for video, and 't_w' or 't_l' for transcript. The subscript 'w' denotes the winning (chosen) sample, while 'l' denotes the losing (rejected) sample. In Focal I, the chosen example has green-bordered boxes around 'a_w', 'v_w', and 't_w', while the rejected example has a red-bordered box around 'a_l' (audio) and green borders for 'v_w' and 't_w'. The second rejected example under Focal I has a red border around 'v_l' (video) and green borders for 'a_w' and 't_w', illustrating that either audio or video can be the source of rejection. In Focal II, the chosen example again has all green-bordered elements ('a_w', 'v_w', 't_w'), while the rejected example has a red border around 't_l' (transcript) and green borders for 'a_w' and 'v_w', indicating that the output transcript is the differentiating factor. All pipelines show a rightward arrow from audio and video to the transcript, symbolizing the ASR process. The visual modules are consistent across the diagram: rounded rectangles for the preference pairs, icons for modalities, and colored borders (green for chosen, red for rejected) to highlight differences. The connections are represented by solid black arrows within each pipeline and a large gray arrow from the two focal sections to the final optimization block, emphasizing the flow of preference data into the learning objective.

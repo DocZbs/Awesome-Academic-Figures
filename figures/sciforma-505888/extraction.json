@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505888",
+  "record_sha256": "34510df3dcd8d3595a0579aecd6ee608c25fa6217c36c1426f834918a367b5bf",
+  "asset_sha256": "82505048ee0b5de5b58da031c6e734f5a72b74c03da570d8e867ac5cb05cc2c1",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505888",
+    "title": {
+      "zh": "Attention Is All You Need For Mixture-of-Depths Routing · 方法图",
+      "en": "Attention Is All You Need For Mixture-of-Depths Routing"
+    },
+    "paper": {
+      "id": "arxiv-2412-20875",
+      "title": "Attention Is All You Need For Mixture-of-Depths Routing",
+      "authors": [
+        "Advait Gadhikar",
+        "Souptik Kumar Majumdar",
+        "Niclas Popp",
+        "Piyapat Saranrittichai",
+        "Martin Rapp",
+        "Lukas Schott"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20875",
+      "arxiv_url": "https://arxiv.org/abs/2412.20875",
+      "arxiv_id": "2412.20875",
+      "arxiv_first_submitted_at": "2024-12-30T11:25:54Z",
+      "arxiv_updated_at": "2024-12-30T11:25:54Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20875v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505888/image/image.jpg?Expires=1790855556&Signature=Ln~uQcfS~p5zE9TcdJ9OnhtuOVzlRRolR9p0vAz~nQi6UuDpDL6eOW33ZDTzAVzRmoA1j5jBuLlMehBPkF0l53002D7ZiOjoChvuDk3dmQXtV9c7QcPLvuY~iV~ry~y~~PDe96vVWES6m9yKxmrbqRhSCBU4CZWBkLwPZcSaLDyKe3wIIP6I6GgJ6fqXXmbuP7SPsBDDqvZGGR8bPGkAx0WNDLz6MOtaYX94iBFTpZQkpeMEr3f6eDBTBSQ87DlWB-tHw-nO61NTgWdYPWSk5n9HS6Gd3mjGR6iy1VvvLsy6uNApCQMD8uT4yJylb5SFfwp1A5lLfssMJBq3ROkCbw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505888,
+      "description_sha256": "cb5d25209c5edca88d000b0270cadaaa5f3b398fd4e658be3c02895e3a5c708a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1e541ad7b48d7134a51fcc22998889c172345d400494d6683a2f0fd8f5df1bfb",
+      "row_response_sha256": "9688e5ecc48ade1d79e59b78c53a7a4a05b6fcd1cf22e989bdf4406e3f3bacf2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram of the MoD model and two different routing mechanisms: standard routing and the proposed A-MoD attention routing. The overall layout is divided into three main parts labeled (a), (b), and (c), arranged horizontally with (a) on the left, and (b) and (c) on the right, connected via dotted lines from the 'Router' component in (a). Part (a), titled 'MoD Model', shows a two-block structure: a 'Previous Block' at the bottom and a 'MoD Block' above it. Both blocks contain identical internal components: a Multi-Head Self-Attention (MHSA) layer followed by an MLP layer. In the 'Previous Block', the output of MHSA feeds into MLP, and additionally, attention maps are extracted and passed to the 'Router' in the MoD Block via a dashed line labeled 'Attn. Maps'. The tokens from the previous block are fed into the MoD Block, where they are processed through a router module (a purple rounded rectangle labeled 'Router'). The router receives input from the attention maps and outputs routing decisions that determine which tokens are forwarded to the MHSA and MLP layers within the MoD Block. The output of the MHSA and MLP layers in the MoD Block is then combined with the original tokens via a residual connection before being passed forward. The router has two alternative routing paths indicated by dotted lines leading to diagrams (b) and (c). Diagram (b), labeled 'Standard Routing (as in ?)', shows a simple routing mechanism where tokens are fed into one or more additional trainable layers (represented as a purple rectangle) that produce routing scores (shown as an oval). Diagram (c), labeled 'A-MoD (ours)', illustrates the proposed method: instead of using tokens directly, it takes the 'Prev. Attention Maps' (represented as stacked small rectangles) as input, applies a 'Reduce Avg.' operation (a blue circle with a sigma symbol), and produces 'Routing Scores' (an oval). The visual modules are primarily rectangular boxes for layers (MHSA, MLP), gray squares for tokens, and ovals for scores. The router is highlighted in purple, and the A-MoD specific components (Reduce Avg., Prev. Attention Maps) are also colored blue/purple for distinction. All connections are solid arrows except for the dashed line from the Previous Block's MHSA to the Router and the dotted lines indicating alternative routing paths. The figure caption clarifies that this comparison is between the MoD model with standard routing and the proposed A-MoD attention routing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

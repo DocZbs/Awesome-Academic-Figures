@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506888",
+  "record_sha256": "ab573fd49b0e9a3f4f2533cf2c04a345878502a786ee4ee58d7443e1314deeeb",
+  "asset_sha256": "142408da126a61bb1b994e2a6957ade8ba51b7a4cc5d03bb444c622ad63675bc",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506888",
+    "title": {
+      "zh": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation · 方法图",
+      "en": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2501-02858",
+      "title": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation",
+      "authors": [
+        "Toomas Tahves",
+        "Junyi Gu",
+        "Mauro Bellone",
+        "Raivo Sell"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02858",
+      "arxiv_url": "https://arxiv.org/abs/2501.02858",
+      "arxiv_id": "2501.02858",
+      "arxiv_first_submitted_at": "2025-01-06T09:06:29Z",
+      "arxiv_updated_at": "2025-01-06T09:06:29Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.5220/0013239000003890",
+      "arxiv_current_version_observed": "2501.02858v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506888/image/image.jpg?Expires=1790855628&Signature=BHgc96OB0lsQ1iN2ELOvJjco7JlgE-ueXDNkIfob5YekUbq2TVvc2gAIF2XAi--PRaoJ6x3vtwD4bbgbbDWJissPlf278vpD~rHii~zzdkbf3aYeAoXALG1E3XcMPiNQ1ObCkBJUrL0BCoQdi7ihjls~NoN5WemrD2TzjOJwe-RU6SsjZMnJ0VnqT7b0J0gQYZGoppRfoAlrMuD9vcaC~OvaN79jKZ0FNAoSw8S-zXVtsWA64~I0O2V5LIGVELG0kpEUJdTzj4ENHbBiXfX0xElS~fzXcuum8rhii0hLS9NcPxTQIyyn8QjuljZ3sy1DbVyL1O0jQ8AiOSvaaMc~nw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506888,
+      "description_sha256": "187d417a93dabe6afb1b0ddd77e2ff3635f018460538d0ebcf042c2b818663c9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "50c4a26dafe7059998a69dc15dd8add9d121571c221754185641111912125f9d",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the encoder process in a transformer-based architecture, divided into three main stages labeled (a), (b), and (c), arranged sequentially from left to right. \n\nStage (a) begins with an input tensor of dimensions 577 x 768, represented as an orange square grid. This tensor is fed into a purple rectangular module labeled 'Normalization and Linear Transformation', indicating a sequence of layer normalization followed by a linear projection. An arrow leads from this module to stage (b).\n\nStage (b), enclosed within a light gray background, details the multi-head attention mechanism. The incoming tensor is first reshaped into a green square grid labeled '577 x 2304'. This is then transformed into a tensor of shape '577 x 3 x 12 x 64', also shown as a green grid, representing the splitting of the input into query (Q), key (K), and value (V) matrices across 12 heads. Three blue square grids represent these matrices: Q, K, and V, each annotated with dimensions '(577 x 12 x 64)'. Arrows indicate that Q and K are used to compute an attention score matrix A, shown as a green grid labeled 'softmax (12 x 577 x 64)', where softmax is applied over the last dimension. The resulting attention weights are multiplied with the V matrix to produce an output tensor of shape '577 x 768', depicted as another green grid. This output is then passed to stage (c).\n\nStage (c) continues with the output from (b) entering a purple rectangular module labeled 'Linear Transformation'. The output of this module is combined via a circular summation node (represented as a circle with a plus sign) with the original input from stage (a), forming a residual connection. The summed result is then passed through another purple module labeled 'Normalization and Linear Transformation', again indicating normalization followed by a linear transformation. This output is further combined via another circular summation node with the output from the previous linear transformation, forming a second residual connection. The final output, shown as an orange square grid labeled '577 x 768', matches the input dimensionality, completing the encoder block.\n\nThroughout the diagram, arrows denote data flow direction. All modules are rectangular or circular, with distinct colors: orange for input/output tensors, green for intermediate tensors within attention, blue for Q/K/V matrices, and purple for transformation blocks. Dimensions are explicitly labeled beneath each tensor representation. The overall structure reflects a standard transformer encoder layer, emphasizing multi-head self-attention followed by feed-forward processing with residual connections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

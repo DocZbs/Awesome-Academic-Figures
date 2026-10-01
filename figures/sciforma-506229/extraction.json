@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506229",
+  "record_sha256": "3fc51f2a2f74084e610e272792eb9b1ce6481668fa6c9bea91fa94fb010e4ac0",
+  "asset_sha256": "8d152ae7d7da48a91a6170cc92cd6ed8c9be0a1c25b737ea02b3aab176a874aa",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506229",
+    "title": {
+      "zh": "Hybridising Reinforcement Learning and Heuristics for Hierarchical Directed Arc Routing Problems · 方法图",
+      "en": "Hybridising Reinforcement Learning and Heuristics for Hierarchical Directed Arc Routing Problems"
+    },
+    "paper": {
+      "id": "arxiv-2501-00852",
+      "title": "Hybridising Reinforcement Learning and Heuristics for Hierarchical Directed Arc Routing Problems",
+      "authors": [
+        "Van Quang Nguyen",
+        "Quoc Chuong Nguyen",
+        "Thu Huong Dang",
+        "Truong-Son Hy"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00852",
+      "arxiv_url": "https://arxiv.org/abs/2501.00852",
+      "arxiv_id": "2501.00852",
+      "arxiv_first_submitted_at": "2025-01-01T14:29:54Z",
+      "arxiv_updated_at": "2025-01-01T14:29:54Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00852v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506229/image/image.jpg?Expires=1790855567&Signature=YFtevZ84Da8D2eqRDkND6KjS0z7NP2jl-l~z9Bk2r9E0fo5YJ5SvNo6NG0zVh-v0IryXnE0-6svNgj9wGw1R37yvokguXB3IqJh5zYpKKg-COC05feXt8QAUP0yErE7AFLG0wU9TWorJx8Q3RY1tmmZhc8rMThCe0TtRNEENxZztc~YO78E-H4mAEfmqt8gSyQPSZEAOwkAY9y-xzzj0j7CnpOKaA8Pc51NFamrFV1QvExa3t2sjwvy7qN3NPH5GY1LdYfFtFMcWIwgT0jZRkEWfZGYOt2wla3TbCVesl3JUOpcjKK3DAgA0PtEx5qB90W5VO0X-gOEirAobtLkzBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506229,
+      "description_sha256": "7ee4667848af141ca5d7d0049be3a23eb8053d145ce5cad62ebd23e4d85265b2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "53727f79fd6c6315a3620ddf6c91c16d6f2b2efe69aacb301a94b2a511d121f4",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a reinforcement learning (RL) framework with heuristic integration, designed for solving graph-based sequential decision-making problems such as routing or scheduling. The overall layout is divided into two main sections: the upper 'Policy Network' and the lower 'Heuristics' section, connected by feedback loops for training. The Policy Network is enclosed in an orange border and contains an Encoder-Decoder architecture, while the Heuristics section is outlined with a dotted blue border and shows two graph representations for comparison.\n\n[1] Global Layout and Structure:\n\nThe diagram follows a top-down, left-to-right data flow. The Policy Network processes input graph data through an Encoder and Decoder to generate actions (arc selections), which are then evaluated using Heuristics. The resulting reward is used to calculate losses, which update the Policy Network. This forms a closed-loop training process. The Heuristics section visually compares the policy’s output against a baseline or expert solution, emphasizing the integration of domain knowledge.\n\n[2] Visual Modules and Attributes:\n\nIn the Policy Network:\n- The Encoder receives two inputs: an 'Adjacency Matrix' (gray grid labeled e¹ to eⁿ) and 'Edge Features (x)' (a color-coded matrix with rows x¹ to xⁿ). The Edge Features are color-coded per the legend: blue for 'Demand of arc', purple for 'Priority class of arc', magenta for 'Servicing time of arc', and yellow for 'Traveling time of arc'.\n- These features undergo 'Linear projection' before being fed into a large gray trapezoidal block labeled 'GRAPH ATTENTION MODEL', which outputs a hidden state vector xʰ.\n- The Decoderₜ module (dotted blue box) takes xʰ and processes it through a series of horizontal gray bars (representing recurrent steps or layers). It also receives 'Current embedding' and 'Remaining Capacity' as context inputs, which are combined into a query vector q.\n- The query q is passed to a 'Pointer network' (gray rectangle), which outputs a probability distribution over arcs, visualized as a bar chart labeled 'arcₜ' with multicolored bars corresponding to the embedding information.\n- The output of the Pointer network is denoted as xᵀ, which feeds into the Heuristics section.\n\nIn the Heuristics section:\n- Two graph diagrams are shown side-by-side, each containing nodes v₀ and edges e₁ to e₄. The left graph represents a baseline or expert solution (dashed lines), while the right graph shows the policy’s output (solid lines with red triangles indicating selected arcs). An arrow from the right graph points to the left, suggesting evaluation or comparison.\n- Below the Policy Network, an orange rounded rectangle labeled 'Calculate Losses' receives input from the Heuristics section via a black arrow labeled 'Update Policy Network'.\n- A peach-colored rounded rectangle labeled 'Calculate Reward' connects to 'Calculate Losses' and receives input from the Heuristics section.\n\n[3] Connections and Arrows:\n\nArrows indicate the direction of data and control flow:\n- From the Encoder inputs to the Graph Attention Model.\n- From the Graph Attention Model to the Decoderₜ.\n- From the Decoderₜ to the Pointer network via 'ref' (reference).\n- From 'Current embedding' and 'Remaining Capacity' to the query q.\n- From the Pointer network to the arc selection output (arcₜ) and to xᵀ.\n- From xᵀ to the Heuristics section (right graph).\n- From the Heuristics section to 'Calculate Reward' and then to 'Calculate Losses'.\n- From 'Calculate Losses' back to the Policy Network (Encoder) via 'Update Policy Network', completing the training loop.\n\nThe figure effectively communicates a hybrid RL approach where a learned policy network is guided and evaluated by handcrafted heuristics, enabling more efficient and interpretable decision-making on complex graphs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

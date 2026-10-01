@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503026",
+  "record_sha256": "450b39a35c593d90c6658a68ebcaae3df57649f4c27a2beaa746099078ef104a",
+  "asset_sha256": "0b7c08167c7b210a9ae58b92df2fd354740b96a0536c73a7e3d9587aba81a471",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503026",
+    "title": {
+      "zh": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class · 方法图",
+      "en": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class"
+    },
+    "paper": {
+      "id": "arxiv-2412-15657",
+      "title": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class",
+      "authors": [
+        "Annie D'souza",
+        "Swetha M",
+        "Sunita Sarawagi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15657",
+      "arxiv_url": "https://arxiv.org/abs/2412.15657",
+      "arxiv_id": "2412.15657",
+      "arxiv_first_submitted_at": "2024-12-20T08:15:20Z",
+      "arxiv_updated_at": "2025-02-19T15:36:45Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15657v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503026/image/image.jpg?Expires=1790855277&Signature=jgkqrmnexRLxtKxaU5NVz2neU8nQNjVJgi7UI4aBs9cxFK3wG8irZt~rIUHGgVs~hg7DlAUUWcVm694Da4uLYCuR77BzLYYOxz2J8Pr60ocQwiqhQdxyyZ0MiURRuauZc~IM8cP9K0pFXiO1C60mRJejf1~TGrFozJ8pGH6pRLKkiCtd4MFI4ipv8SW~B6fnV6vQ0qDoWljF99bIgZp2W9ezQDfbHnev~5AUYaDIGzcRzKMo0T7kLUk2ZKoDe~qWMUgFtdqxhOB4pgeImQ6hDWPUBbJLG9cWhLYJYkTOiv5H4Or3n-h7bA9oOt9df8s-9GpfKdX5ioDbybQoVKVyZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503026,
+      "description_sha256": "5352ac8e521e5d4d1d629fd8ad032b1ef9f9727502a8590dedd97552a64d3bb2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b9960fff9055dc936b43061e13233947dbd37f85104857f241da381fd5bdefb8",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram of the TABDDPM (Tabular Data Diffusion Probabilistic Model) framework, illustrating a two-phase process: forward diffusion and reverse generation. The global layout is divided into two horizontal sections. The top section represents the forward diffusion phase, where original tabular data is transformed into a diffused distribution. The bottom section depicts the reverse generation phase, where the diffused distribution is used to reconstruct generated data. Both phases are structured as parallel workflows for numerical and categorical attributes.\n\nIn the forward diffusion phase, the input 'Tabular Data' (represented as a light green rectangle) branches into two paths: 'Numerical attributes' and 'One hot encoded Categorical attributes', both shown as rounded yellow rectangles. These are processed separately: numerical attributes pass through a 'Forward Gaussian Diffusion' module (a pink wavy rectangle), while categorical attributes go through a 'Forward Multinomial diffusion' module (also a pink wavy rectangle). The outputs of both modules converge into a single 'Diffused distribution' (a gray rectangle).\n\nIn the reverse generation phase, the 'Diffused distribution' (same gray rectangle) serves as the input and splits into two paths: one feeding into 'Reverse Gaussian' (pink wavy rectangle) and the other into 'Reverse Multinomial Diffusion' (pink wavy rectangle). The outputs from these modules are 'Numerical attributes' and 'One hot encoded categorical attributes' (again, rounded yellow rectangles), which then merge into 'Generated Data' (light green rectangle), mirroring the structure of the original input.\n\nAll connections are represented by solid black arrows indicating the direction of data flow. The diagram uses consistent color coding: light green for input/output data, yellow for attribute types, and pink for diffusion modules. The visual structure emphasizes the symmetry between forward and reverse processes, highlighting the separation of numerical and categorical data handling throughout the pipeline. The figure caption explicitly identifies this as the 'TABDDPM Schematic Diagram', confirming its role in illustrating the core architecture of the proposed model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

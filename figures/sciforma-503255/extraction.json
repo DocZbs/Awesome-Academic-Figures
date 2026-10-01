@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503255",
+  "record_sha256": "0d93b496e90c7bafccfb1d7b5df4ae1087204fa419fcd34d4b81aff08f8573c4",
+  "asset_sha256": "8f0f45e659149ad36c24b83e0c6c2cbcd3f41ce909f77f6075dba8b1adc3527c",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503255",
+    "title": {
+      "zh": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation · 方法图",
+      "en": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation"
+    },
+    "paper": {
+      "id": "arxiv-2412-16255",
+      "title": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation",
+      "authors": [
+        "Min Huang",
+        "Zifeng Xie",
+        "Bo Sun",
+        "Ning Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16255",
+      "arxiv_url": "https://arxiv.org/abs/2412.16255",
+      "arxiv_id": "2412.16255",
+      "arxiv_first_submitted_at": "2024-12-20T06:44:35Z",
+      "arxiv_updated_at": "2024-12-20T06:44:35Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16255v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503255/image/image.jpg?Expires=1790855361&Signature=hBgeYiZKE5CovPMDaRT9LSi4aGqbLut2QTmRta4ldJVYm5~Qulgi3N33IUh-JVAPPg0dRBVwPl~DOuvpXbHbbx6keo1GPySNU8PUxXLe6uG99PkIuggjGnrJf2bZNsGwGkb6wrGXB4oJyvxzvBWVY1R-oKFPxnbn6XN1wMCedoIVQ2aFp9X~4k6ETmB0WjfVnRu4-B6VA3iAmNoKmKZxAXuzgeyHniyd3uScirspaFBHTVH3skBRxRwD~R89hIOYhmnc84K5qTlOMME0yWyeAmQQeW1kBvqcQxdZmqxY-FOgf80pQO4eT4SenrEPYrKfoeoa3KdN5uptmOYwLzHqzw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503255,
+      "description_sha256": "2622ae642075e6af708b386caa15691d48a0ec79251143b8aadc97eca25dd9ff",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "831478d6a89a6f794964e9188ec70646e9012a74f415dd3b56c898ea16c17d2e",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the PAMDA (Prototype-based Adaptive Multi-Domain Alignment) framework, which is structured as a multi-stage pipeline for domain adaptation using prototype-based learning. The global layout is left-to-right, starting with input data, progressing through feature extraction and prototype generation, and culminating in classification and loss computation. The diagram is divided into three main functional blocks: (a) prototype generation, (b) discrepancy-based alignment, and (c) classification losses.\n\nOn the left, source domains S₁ to S_N and a target domain T are shown as circular icons containing sample images (e.g., digits or textures). These inputs are fed into a shared feature extractor G, represented as a stack of golden rectangular blocks, which outputs features visualized as purple circular nodes arranged in a grid. These features are then processed by a classifier F, depicted as a neural network diagram with blue and pink nodes, producing 'Sample Classification Probabilities' — a blue grid matrix where rows represent samples and columns represent classes 1 to K. This leads to a source classification loss L_c^s.\n\nIn parallel, the features are used for 'Pseudo Label Confidence Discrimination', shown as a peach-colored box containing a bar chart p(x) and a comparison symbol with γ, indicating confidence estimation. This module feeds into 'Cluster Centroid Estimation', represented as a white box with cyan and pink circles, which estimates centroids per class. These centroids are then used in 'Prototype Generation', a white box with blue and gold circles, to form class-specific prototypes. The resulting prototypes are aggregated in a yellow box labeled 'Class-prototype Aggregation', which contains source prototypes (w_s¹^(k) to w_s^N^(k)) and target samples, connected via arrows to a final classifier D_c.\n\nSimultaneously, the same features are used to generate 'Domain-prototypes' — a white box with green and yellow circles — by aggregating class prototypes within each domain. These domain prototypes (e_s₁ to e_s_N) are then aggregated in another yellow box labeled 'Domain-prototype Aggregation', which includes source-domain prototypes and target samples, leading to a domain classifier D_d. This process also produces 'Prototype Classification Probabilities', a red grid matrix with rows as prototypes and columns as classes, which contributes to the prototype classification loss L_c^p.\n\nConnections are color-coded: green arrows indicate forward propagation of features and prototypes, while red arrows denote feedback or auxiliary paths, such as from pseudo-label confidence to cluster centroid estimation. The diagram also includes tables summarizing source domains and their corresponding prototypes, emphasizing the structured organization of data across domains and classes. The entire framework is designed to align source and target domains at both class and domain levels using prototype-based discrepancies, while leveraging supervised knowledge from source data through two distinct classification losses."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

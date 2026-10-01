@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-506488",
+  "record_sha256": "b384febac798bc90026cffb408824045ead0954de689582b78e7b7ac94d37c5d",
+  "asset_sha256": "8edc95d69ced99b118f2c6d9b8febe3cc9f9f73f439c40248d7476642a9da29e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506488",
+    "title": {
+      "zh": "Task-Driven Fixation Network: An Efficient Architecture with Fixation Selection · 方法图",
+      "en": "Task-Driven Fixation Network: An Efficient Architecture with Fixation Selection"
+    },
+    "paper": {
+      "id": "arxiv-2501-01548",
+      "title": "Task-Driven Fixation Network: An Efficient Architecture with Fixation Selection",
+      "authors": [
+        "Shuguang Wang",
+        "Yuanjing Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01548",
+      "arxiv_url": "https://arxiv.org/abs/2501.01548",
+      "arxiv_id": "2501.01548",
+      "arxiv_first_submitted_at": "2025-01-02T21:38:10Z",
+      "arxiv_updated_at": "2025-01-02T21:38:10Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01548v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506488/image/image.jpg?Expires=1790855579&Signature=tjaDK4dhrLoAro9rFTSkVN03RfaE9GuIg5pNx32gFnQT7T1MlJTgkjmJArAODKVpc4n-6jAeiday3UiWpbxXX7IH4bq6h0FvaLoIIm2ZvaOoWKP8iGr-stAa5g4V4En1XVcdgrH4o7~Rdf8OWWwsPnJ1KdpWvbBdEN-sxLr7TkyiGJ~fM~j1HoHilEUNa7bk11rSqYHDWTbOg0vtDAdaNgu~WNILZ4hKEB-jYQi7zuqyD17Vom20W3zgaAEPJNhwlTE1psCGOtcKkKF8RdCHqjArwmieWnPAyWQ84y5X9F3UasNp5TLfFalqerZVcJ7JExbSid-jwjxbR9WuTJ6ggg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506488,
+      "description_sha256": "5ab2c3ee8b94c4797987beac5d1a6f14a51c13638ed1a92de0a700d1772bbd6e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4313f0c5d260ab5e83dad39e359cd3b5e036b8b41670636c9fcd9292a2b2ba1f",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the TDFN (Task-Driven Fixation Network) architecture, which is designed to process an input image through two parallel channels—Low Resolution Channel and High Resolution Channel—before integrating their outputs into a hybrid encoder for downstream tasks. The global layout is vertically structured, with the input image at the bottom, feeding into two separate processing streams that converge at the top into a shared hybrid encoder. Each channel follows a similar processing pipeline: starting from the input image, it passes through an embedding layer, then combines positional encoding via a summation operation, followed by an encoder and work memory module. The low-resolution channel is visually represented with orange shading, while the high-resolution channel uses light blue shading. Both channels have their own 'Embedding' block, which receives the input image and produces feature representations. These embeddings are then combined with 'Positional Encoding' using a circular plus symbol indicating element-wise addition. The resulting features are processed by an 'Encoder' block, followed by a 'Work Memory' block, both of which are stacked vertically within each channel. The outputs from the two channels are then merged into a 'Hybrid Encoder' block, depicted in lavender, which also incorporates 'Channel Encoding' via another summation operation for each channel before merging. The Hybrid Encoder is composed of two stacked components: 'Encoder' on top and 'Work Memory' below. From this hybrid encoder, two outputs are generated: one feeds into a 'Task Network' and the other into a 'Fixation Generator'. A feedback loop is shown from the Fixation Generator back to the Hybrid Encoder, suggesting iterative or adaptive processing. All blocks are rectangular with rounded corners, and arrows indicate the direction of data flow. Text labels are placed inside or adjacent to the blocks, clearly identifying each component. The entire structure emphasizes a dual-path, attention-based architecture with memory integration and task-specific output generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

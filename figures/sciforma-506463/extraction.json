@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-506463",
+  "record_sha256": "a9f3e03ec1ec66f32bd026ba886306d615333e0464ddefcf9d45d13d46a87714",
+  "asset_sha256": "ef097f2c0fd50e1aba82ff91ded6f230d2a337ec855de81cf2724ac2ad0a868c",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506463",
+    "title": {
+      "zh": "Balance-aware Sequence Sampling Makes Multi-modal Learning Better · 方法图",
+      "en": "Balance-aware Sequence Sampling Makes Multi-modal Learning Better"
+    },
+    "paper": {
+      "id": "arxiv-2501-01470",
+      "title": "Balance-aware Sequence Sampling Makes Multi-modal Learning Better",
+      "authors": [
+        "Zhi-Hao Guan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01470",
+      "arxiv_url": "https://arxiv.org/abs/2501.01470",
+      "arxiv_id": "2501.01470",
+      "arxiv_first_submitted_at": "2025-01-01T06:19:55Z",
+      "arxiv_updated_at": "2025-01-01T06:19:55Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01470v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506463/image/image.jpg?Expires=1790855579&Signature=qniWijt4FpR6i3PoOcRJDnc9slVilJOdPIKogi2PQ8m6d8s~HwVKEDPzqgcyNB8wRS2CbnUsX6SpR6cPsdu6D8hGG4WmAL4gD2ecynzzHiQh7z28j19M9D6Pt5Bqm~K7ruNLVlvs4gxqW9N5BvvZJLN9XXc1yCxRhTWPKTX1t3lmhuovORTJB4HtXKASUV4KwYRs8qGtCmu0n3-reM-xoTPQnH6MfokF13Kw2lDyDdX5SiQSWBk8lRdOFiX6B01bJbUiN8Wc40Uts2fIRBvA-Ho-Ki3Ml0suTt8-us3pSbPgeO35q06TyrWnfGnhgy6bcIktLmUYM-ua5h7NQEp21Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506463,
+      "description_sha256": "93e56f32c9b3fcceff8fc23b56cf3619b0624cdae5474a13a35776977d1e0984",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e2defb593b77225ca88d37eacf9a9a07a9ab031466161c922b843fc4c1928f48",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the BSS (Balance Score Sampling) method, divided into two main parts: (a) the multi-modal training framework, and (b) two scheduler mechanisms—(b1) heuristic and (b2) learning-based—for sequence sampling during training.\n\n[1] Global Layout and Structure:\nThe figure is horizontally partitioned into two major sections: (a) on the left, depicting the end-to-end multi-modal representation learning pipeline, and (b) on the right, showing the two scheduling strategies. Section (b) is further vertically split into (b1) and (b2), each illustrating a different approach to dynamic sampling. A legend at the bottom defines key symbols: x_i^(u) and x_i^(v) denote the i-th data point from modalities u and v; s(·) is the balance score function; λ_root(·) is the pacing function; p(·) is the assignment probability; ⊕ denotes element-wise summation; and a cube represents a multi-modal sample.\n\n[2] Visual Modules and Attributes:\nIn section (a), paired multi-modal samples are shown as a red filmstrip (visual modality x_i^(u)) and a blue spectrogram (audio modality x_i^(v)). These inputs are routed through a pink 'Scheduler' module, which dynamically selects one or both modalities via switches. The selected modality feeds into either Encoder 1 (peach-colored, representing visual processing) or Encoder 2 (blue, representing audio processing). Each encoder outputs a feature vector, which is then concatenated and passed to a 'Projection Head' composed of three neural network layers (each represented by a group of circles connected by lines). The projection head produces logits, which are used to compute three cross-entropy losses: L_ce^uni for unimodal branches, and L_ce^multi for the multimodal branch. The projection head uses distinct color-coded connections: orange for Encoder 1’s output, red for the concatenated input, and blue for Encoder 2’s output.\n\nIn section (b1), a yellow cylinder labeled 'Training Set' feeds into a balance score function s(·), producing a set of cubes (multi-modal samples) with numerical scores (e.g., 0.74, 0.33, 0.57). These form 'Fixed Sequences'. A pacing function λ_root(·) transforms these into an 'Imbalanced' distribution over epochs t=1 to T, where higher-scoring samples are repeatedly sampled.\n\nIn section (b2), the same 'Training Set' is processed by two functions: s_upd^k(·) and s_cur^{k+1}(·), generating 'Updated Sequences' with new scores (e.g., 0.15, 0.48, 0.62). These sequences are combined via element-wise summation (⊕) to produce an assignment probability p(·), visualized as a bar chart showing sampling probabilities for each training set index from 1 to N.\n\n[3] Connections and Arrows:\nIn (a), arrows indicate data flow: from paired samples to the Scheduler, then to encoders, followed by concatenation and projection head, ending in loss computation. Dashed lines from the Scheduler to the switches show control flow. In (b1), an arrow from the Training Set to s(·) leads to fixed sequences, which are transformed by λ_root(·) into imbalanced sampling over epochs. In (b2), two arrows from the Training Set lead to updated sequences, which are summed to produce p(·), depicted as a bar chart. All arrows are solid black unless otherwise specified, and dashed lines separate the two scheduler types."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

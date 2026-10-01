@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506277",
+  "record_sha256": "cc9ccf85927443b2e32ccd11a65ac9e327bedea17f07ae5aff6b18271bc6dc11",
+  "asset_sha256": "c08fc41254a191c989beb6d410c473a5db5bb0f352725b14596a5c2d963b7087",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506277",
+    "title": {
+      "zh": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems · 方法图",
+      "en": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems"
+    },
+    "paper": {
+      "id": "arxiv-2501-00967",
+      "title": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems",
+      "authors": [
+        "Leonardo D. González",
+        "Victor M. Zavala"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00967",
+      "arxiv_url": "https://arxiv.org/abs/2501.00967",
+      "arxiv_id": "2501.00967",
+      "arxiv_first_submitted_at": "2025-01-01T21:58:19Z",
+      "arxiv_updated_at": "2025-01-01T21:58:19Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00967v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506277/image/image.jpg?Expires=1790855567&Signature=O5xofljrKLxkQywhZxRQcojzTTTYFfkc0HdFjBhOPGMscw6Dke6yg3jWh8H0jFB6nLncR18HVxyRX6A7BoY8QqjaJ-UDMCoTok5lv85PIgVWlo4iuVr-cr2d40Pq9-j-tbZHT05BjrszEM~xS0PEIa52iUMDpt87L0xrlMH1YGf~JF1nqx5bDiYaqLfupa3C1d6bUB~xnG-JIdb3QLSuzqAA9c8oht4FsDJeLdqnE7zANFwQOgPtysjXTY1jSgtwzdu2Vk-st75w2o6RECtwQ65bZY~jH4UuEfi0u3eQ3WUKCsv1cPF8D-Tda4vv5fHkHY~n6l1fmNY8E5vyZnwAIw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506277,
+      "description_sha256": "2e4cdbf9874470332450741f4f6a39a2befb96700ca48c8e6cd25990a2f2bd23",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2b2118886deed08908b943c3382a29ebec93ed00ecc3ec00c7555ef9e5c6e8e2",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of the S-BO (Sequential Bayesian Optimization) framework, structured as a cyclic process involving data collection, Gaussian-process modeling, and acquisition function optimization. The global layout is a clockwise loop starting from the top-left, moving right to the acquisition function, then down to the Gaussian-process model, left to the system block, and back up to update the iteration counter and select the next query point.\n\nAt the top center, the Acquisition Function (AF) is enclosed in a red-bordered box. It contains a plot showing a wavy black curve with several peaks and valleys, marked with black dots at local extrema and one red dot indicating the selected minimum. Below the plot, the mathematical definition is given: AF^ℓ(x) = m_f^ℓ(x) - κ·σ_f^ℓ(x), where m_f^ℓ(x) is the mean and σ_f^ℓ(x) is the standard deviation from the GP model, and κ is a hyperparameter. To the left of the AF box, the optimization problem is stated: x^{ℓ+1} ← argmin_x AF^ℓ(x) subject to x ∈ X, indicating the selection of the next input point by minimizing the acquisition function over the feasible domain X.\n\nBelow the AF box, on the right side, is the Gaussian-Process Model, depicted as a plot with a black line representing the mean function -m_f^ℓ(x) and shaded purple regions indicating the uncertainty (±σ_f^ℓ(x)). The legend inside the plot labels the black line as -m_f^ℓ(x) and the purple region as σ_f^ℓ(x). To the right of this plot, the outputs m_f^ℓ(x) and σ_f^ℓ(x) are explicitly labeled, showing they are fed into the acquisition function.\n\nOn the bottom left, a large black rounded rectangle labeled 'SYSTEM' represents the physical or simulated system being optimized. An arrow labeled 'Data Collection' points to it from below, and an arrow labeled x^ℓ enters it from the left, indicating the current input point. An arrow exits the system to the right, labeled D^ℓ = D^{ℓ−1} ∪ {x^ℓ, f^ℓ}, signifying that the output f^ℓ from the system is collected and appended to the dataset D^ℓ, which is then used to update the GP model.\n\nThe cycle continues with an arrow from the GP model pointing to the AF box, feeding the mean and variance into the acquisition function. From the AF box, an arrow loops back to the left, updating the iteration counter with ℓ ← ℓ + 1, and then another arrow points to the system with the newly selected point x^{ℓ+1}, completing the loop for the next iteration. The entire diagram visually represents the iterative nature of Bayesian optimization, where each step refines the GP surrogate model using new data and uses the updated model to guide the next sample selection via the acquisition function."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

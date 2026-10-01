@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Multi-Modal Data Exploration via Language Agents — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18428
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a two-part diagram illustrating the optimization of XMODE through parallel planning, structured into an 'Overview' and 'Details' section. The global layout is vertically divided: the top half shows a high-level flowchart labeled 'Overview', while the bottom half provides a detailed breakdown under 'Details'. The overview depicts a circular node labeled 'P' feeding into a rounded rectangular container labeled 'E', which contains four task nodes: t₁ (light green), t₂ and t₃ (yellow), and t₄ (red). These tasks are arranged hierarchically, with t₁ branching to t₂ and t₃, which then converge into t₄. An arrow leads from this container to a diamond-shaped node labeled 'D', indicating decision or output. The 'Details' section elaborates on each component. On the left, a user query box states: 'In the Renaissance, find the total number of paintings depicting war and the number of paintings depicting swords.' This feeds into a gray rectangular block titled 'Planning & Expert Model Allocation', which outputs a table listing four tasks: t₁ (text2SQL, green), t₂ (image_analysis, yellow), t₃ (image_analysis, yellow), and t₄ (data_preparation, red). Each task includes a description and dependencies (e.g., t₂ and t₃ depend on t₁). The central part, labeled 'Execution and self-debugging', shows the execution flow. Task t₁ generates a SQL query to retrieve painting data from a database schema (shown as a table with columns like img_path, inception, etc.). The results are passed to t₂ and t₃, which perform image analysis on individual images to determine if they depict war or swords, respectively. These analyses produce lists of dictionaries with image paths and binary answers. Both outputs feed into t₄, which counts the occurrences and produces a final result: {‘Number of paintings depicting war’: 1, ‘Number of paintings depicting a sword’: 38}. Reasoning notes accompany each step, explaining the logic. On the right, a 'Decision-making' block receives input from the execution phase and contains a thought process confirming sufficient information is available. It outputs a structured summary including details, source, inference, and extra explanation, all derived from the prior steps. Arrows indicate data flow: solid arrows denote direct execution flow, dashed arrows represent data or dependency links (e.g., from SQL results to image analysis tasks). The diagram uses color-coded boxes (green for retrieval, yellow for analysis, red for aggregation) and consistent shapes (rounded rectangles for tasks, tables for data, diamonds for decisions) to visually differentiate components. Text annotations provide context for reasoning, data structure, and final output format.

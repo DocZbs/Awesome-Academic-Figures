@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505828",
+  "record_sha256": "35ef97b68fc3edd516d17df31eba89a2c6637ff6aebcbc3e584706142ab54c39",
+  "asset_sha256": "6511370537d0b2019f39d7acfefe5f64990d0f51d1bcc1bd7f809c3fa6fa020c",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505828",
+    "title": {
+      "zh": "Frequency-Masked Embedding Inference: A Non-Contrastive Approach for Time Series Representation Learning · 方法图",
+      "en": "Frequency-Masked Embedding Inference: A Non-Contrastive Approach for Time Series Representation Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-20790",
+      "title": "Frequency-Masked Embedding Inference: A Non-Contrastive Approach for Time Series Representation Learning",
+      "authors": [
+        "En Fu",
+        "Yanyan Hu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20790",
+      "arxiv_url": "https://arxiv.org/abs/2412.20790",
+      "arxiv_id": "2412.20790",
+      "arxiv_first_submitted_at": "2024-12-30T08:12:17Z",
+      "arxiv_updated_at": "2025-01-06T12:17:43Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20790v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505828/image/image.jpg?Expires=1790855556&Signature=vsx3-v1omigVMXblic0kUnlp9Tr00sNjqg6~sO5rHL0YfDe2AUfDxlIkIcHp45a7U6OpMqxCRsFte8L0Ef1tO9asYRJrg5HJP4JKHVy7yjonlVOTQ5PLu201u2RZqVW9invp8214xBsOuIT2n1n8dNgF0JRA4ZPaGuXlgtQYYFy56jBeV8oFWpMunBYOgoOCqHSqMxsfrbT1uSEUtaux9GKTbN1Sq9ZGiZoVLQK2QIlOoOCSGTzu74hJ0kYj9eupcWp2Ak5t0N6-nI99gwppm9eRYMtjxr0LEf5FsnzQdNUdlqwjSxpkadqzJbeclPXL~BFyZNYCgauKUlQIrpeKNw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505828,
+      "description_sha256": "5750f970c487a9ed330734c2f33ea593697c2caf1cf003a310cfc19b881fe6a4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a44eda7a1edc3e7e871346c3b52c3688f5567fdbc810c770de64813ef7a96c30",
+      "row_response_sha256": "9688e5ecc48ade1d79e59b78c53a7a4a05b6fcd1cf22e989bdf4406e3f3bacf2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the proposed FEI (Frequency-based Embedding Inference) framework, designed for learning robust time series representations through contrastive learning in the frequency domain. The global layout is structured as a dual-branch pipeline: one processing the original time series and the other processing a masked version of it, with both branches converging at prediction heads for contrastive loss computation.\n\nOn the left side, the top branch begins with the 'Original Series', depicted as a gray waveform graph. This input is passed through an 'Encoder' composed of two gray parallelogram-shaped modules labeled f_θ and s_φ, representing the main encoder and a subspace projector, respectively. The output of this encoder is a multi-layered embedding stack shown as a vertical bar with alternating light blue, green, yellow, and gray segments.\n\nParallel to this, the bottom branch starts with the same 'Original Series', which undergoes Fast Fourier Transform (FFT), converting it into a frequency-domain representation shown as a horizontal bar with discrete peaks. A random masking operation is applied to this frequency spectrum, indicated by a green segmented bar where some segments are filled (masked) and others are empty. This masked frequency representation is then transformed back to the time domain via inverse FFT (iFT), resulting in the 'Target Series', another gray waveform graph that appears more noisy due to the masking.\n\nThe masked frequency representation is further processed by a 'Mask Encoder', represented by a green square module labeled g_v, producing a separate embedding stack with a different color pattern (light gray, yellow, green, pink, etc.).\n\nThe Target Series is fed into a 'Momentum Encoder', shown as two red parallelogram-shaped modules labeled f_θ' and s_φ', which is a smoothed, slowly updated version of the original encoder. Its output is a third embedding stack with a distinct color scheme (blue, green, gray, orange, yellow).\n\nIn the right half of the diagram, the outputs from the original encoder and the momentum encoder are combined via a green circular node with a plus sign, feeding into the 'Embedding Predictor'—a red rectangular box labeled z_ψ₁. Simultaneously, the output from the mask encoder is subtracted from the original encoder's output at a red circular node with a minus sign, feeding into the 'Mask Predictor'—a green rectangular box labeled z_ψ₂.\n\nTwo L₂ loss terms are computed: one (red dashed line) connects the output of the Embedding Predictor to the Momentum Encoder’s output, enforcing consistency between predicted and target embeddings. The other (green dashed line) connects the Mask Predictor’s output back to the Mask Encoder’s output, ensuring accurate reconstruction of the mask information. These losses guide the training of the entire network.\n\nThe diagram uses solid black arrows for forward data flow, green arrows for mask-related paths, and red arrows for embedding-related paths. Dashed lines indicate loss connections. The overall structure emphasizes a self-supervised learning paradigm where the model learns to predict both the target embedding and the mask embedding from the original and masked inputs, respectively."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

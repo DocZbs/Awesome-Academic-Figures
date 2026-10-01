@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503111",
+  "record_sha256": "f86aae65e0d8cfb59675b56fd76f12ebdaa3058939da21fbf37babe68e2a99d1",
+  "asset_sha256": "777511df333978c7cd4c52c977816153b1dc085b3291066adc0ca49725a09aa7",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503111",
+    "title": {
+      "zh": "MarkovType: A Markov Decision Process Strategy for Non-Invasive Brain-Computer Interfaces Typing Systems · 方法图",
+      "en": "MarkovType: A Markov Decision Process Strategy for Non-Invasive Brain-Computer Interfaces Typing Systems"
+    },
+    "paper": {
+      "id": "arxiv-2412-15862",
+      "title": "MarkovType: A Markov Decision Process Strategy for Non-Invasive Brain-Computer Interfaces Typing Systems",
+      "authors": [
+        "Elifnur Sunger",
+        "Yunus Bicer",
+        "Deniz Erdogmus",
+        "Tales Imbiriba"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15862",
+      "arxiv_url": "https://arxiv.org/abs/2412.15862",
+      "arxiv_id": "2412.15862",
+      "arxiv_first_submitted_at": "2024-12-20T12:59:41Z",
+      "arxiv_updated_at": "2024-12-20T12:59:41Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15862v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503111/image/image.jpg?Expires=1790855363&Signature=mi1B4cFtKDECd-0tNFKQ1Ts-akZqbYCBOCXNYC4Vq7PaF3I90C82Reh1I45oduimDlA4I4tPBMtpnBnbDM-9ySN~K8NNR9nXhRnHnYRXXDhtRsHCzT4fCB7eYavYduvFtoi51H3HdWbX2HczquGrUMsb~Xm8cwJF6KlwaqvwBCupX-p2q9B0CaCC4siXkncaJtUvATDtqHdkvYxlybAb1tE6VpVAOgjAOHkpfP6~~MPbfYiLbhSzr0cmAAnsfEHiti0bsfJ1wfnrSQmp5FHMeD75MHyHKoydxUM4kyWHzfo~whIxEgR0re4owI5RWDgQQFb7YDVhVd3k36avm7npvg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503111,
+      "description_sha256": "ec8e74a44e30c2403f3f06a5bf4c2bca6f18f83463bb003885229ad3d9a40a7f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8dcea4fe5c7992abd05ad08429491a5991ed91260b759848871d2335c8e2f696",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the MarkovType Model Architecture, designed for a typing task involving sequential processing of EEG responses. The global layout is a rectangular block labeled 'n=1:N', indicating that the process repeats for N sequences within a single typing trial. This main block contains four primary functional modules: a Simulator, a feature extractor denoted as f_e(θ_e), a core network f_h(θ_h), and a classification network f_c(θ_c). These components are arranged in a flow from left to right, with feedback loops and dependencies between them.\n\nVisual modules include circular nodes for inputs/outputs and intermediate variables: t (target symbol), p_{n-1} (prior over alphabet), h_{n-1} (hidden state from previous sequence), q_n (query with K unique symbols), E_n (EEG responses), G_n (alphabet features), p_n (updated prior), and h_n (current hidden state). Rectangular boxes represent the computational modules: the Simulator (dashed border), f_e(θ_e), f_h(θ_h), and f_c(θ_c). The Simulator is enclosed in a dashed rectangle, suggesting it is an external or simulation component. All modules are connected by directed arrows indicating data flow.\n\nConnections and arrows show the following workflow: The target symbol t and prior p_{n-1} are fed into the Simulator, which outputs q_n and E_n. E_n is passed to f_e(θ_e), which processes it along with q_n to produce G_n. Simultaneously, q_n is also sent directly to f_e(θ_e). G_n is then fed into f_h(θ_h), together with the previous hidden state h_{n-1}, to compute the current hidden state h_n. Additionally, G_n is sent to f_c(θ_c), which also receives h_n as input, producing the updated prior p_n. The output p_n feeds back into the next iteration of the loop, while h_n is carried forward as the hidden state for the subsequent sequence. The entire structure is encapsulated within the n=1:N loop, emphasizing the sequential nature of the model across N steps. The caption specifies that f_e maps EEG features over the alphabet using q_n to form G_n ∈ ℝ^{A×L}, and f_h uses G_n and h_{n-1} to form h_n, incorporating memory of past responses."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

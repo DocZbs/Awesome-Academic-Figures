@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20538
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative architectural diagram of two domain adaptation frameworks, labeled (a) and (b), separated by a vertical dashed line. The global layout is split into two side-by-side panels, each illustrating a distinct framework for handling domain-specific and domain-intermediate representations through adversarial learning mechanisms.
+
+In panel (a), titled 'Intermediate Domain Framework (IDF)', the top section features an orange rectangular block labeled 'domain-specific head F''', which outputs to an orange square labeled 'domain-intermediate representations'. An arrow from this square points downward to a green square labeled 'Minimize Discrepancy'. Below this, a green rectangular block labeled 'adversarial domain-specific head F'_a'' outputs to another green square labeled 'domain-intermediate representations'. An upward-pointing green arrow connects this lower green square to the upper green square, indicating a minimization of discrepancy between the two intermediate representations. Additionally, a red arrow labeled 'Maximize Discrepancy' points upward from the orange square to the green square, signifying that the adversarial head aims to maximize the discrepancy between domain-specific and domain-intermediate representations. The labels 'domain-specific' and 'domain-intermediate' are color-coded in red and black respectively, with corresponding blocks matching these colors.
+
+Panel (b), titled 'Alternative Intermediate Domain Framework (AIDF)', mirrors the structure but reverses the roles. Here, the top orange block is labeled 'domain-intermediate head F''', outputting to an orange square labeled 'domain-specific representations'. A red arrow labeled 'Maximize Discrepancy' points upward from this orange square to a green square below it. The lower green block is labeled 'adversarial domain-intermediate head F'_a''', outputting to a green square labeled 'domain-specific representations'. A green arrow labeled 'Minimize Discrepancy' points upward from this lower green square to the upper green square, indicating minimization of discrepancy between the two specific representations. The color coding remains consistent: red for 'domain-specific' and black for 'domain-intermediate', with blocks reflecting these designations.
+
+At the bottom of the figure, a rounded rectangular box contains a legend titled 'Three Variants of Discrepancy:', listing three types: 'Inter' (in blue) defined as minimizing discrepancy between intermediate representations; 'Spec' (in red) defined as maximizing discrepancy between specific representations; and 'DL' (in purple) defined as including both Inter and Spec. This legend clarifies the objectives associated with the arrows in the diagrams.
+
+The overall structure emphasizes the contrast between IDF and AIDF: IDF focuses on aligning intermediate representations while adversarially separating specific ones, whereas AIDF aligns specific representations while adversarially separating intermediate ones. The visual modules consist of rectangular blocks (heads) and squares (representations), connected by directed arrows indicating data flow and optimization goals. The color scheme—orange for domain-specific heads and representations, green for adversarial heads and representations, red for maximize discrepancy, and green for minimize discrepancy—provides clear visual differentiation of components and objectives.

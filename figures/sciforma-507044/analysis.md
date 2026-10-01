@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LHGNN: Local-Higher Order Graph Neural Networks For Audio Classification and Tagging — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.03464
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=507000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of LHGNN, a neural network model designed for processing mel-spectrogram inputs. The global layout is a sequential pipeline starting from the input mel-spectrogram on the far left, progressing through a Conv Stem, followed by four stages (Stage 1 to Stage 4), each containing multiple LHG Blocks, interspersed with downsampling operations, and ending with a Prediction output. Each stage contains a variable number of LHG Blocks denoted as L1, L, L3, and L4 respectively, where L represents the number of repetitions for the LHG blocks within that stage. A detailed expansion of the LHG Block is shown below the main pipeline, enclosed in a large dashed rectangle labeled 'LHG Block × L2', indicating that this block is repeated L2 times within the stage context.
+
+Within the LHG Block, the process begins with a set of nodes represented as yellow circles, with one highlighted green star node being the focus of update. Two parallel operations are performed on these nodes: KNN (k-Nearest Neighbors) and Fuzzy C-Means clustering. The KNN operation constructs a local graph around the green star node, connecting it to its nearest neighbors, depicted as a small graph with edges linking the star to surrounding yellow nodes. Simultaneously, Fuzzy C-Means identifies cluster centers, shown as dashed outlines grouping nodes, with the green star positioned near a cluster center, indicating its membership or influence. The outputs from both KNN and Fuzzy C-Means are combined and fed into a Graph Conv layer, represented as a teal-colored rectangular module. The result of the Graph Conv is then added (via a circular plus symbol) to the original node features before being passed to a Conv FFN (Feed-Forward Network) block.
+
+The Conv FFN block consists of a sequence of operations enclosed in a dashed rectangle: a 1×1 Conv layer, followed by a GELU activation function, then a Depthwise Convolution (DWConv) layer, and finally another 1×1 Conv layer. The output of the Conv FFN is again added (via a circular plus symbol) to the previous feature, forming a residual connection, and the final result is labeled 'Updated Nodes'. This updated node representation is then used in subsequent layers. The entire LHG Block processes the nodes iteratively, updating them based on local neighborhood information (KNN) and higher-order cluster structure (Fuzzy C-Means), enabling rich feature learning. The visual attributes include rounded rectangles for stages and blocks, solid arrows for data flow, dashed lines for structural grouping, and distinct colors (teal for Graph Conv, light blue for KNN/Fuzzy C-Means modules) to differentiate components. The green star symbolizes the target node being updated, while yellow circles represent other nodes in the graph.

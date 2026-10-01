@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505721",
+  "record_sha256": "fa9eef6d4297da49c6e91de3e23e7d5f88ede924658c9b6f5bb0a47c3b070d00",
+  "asset_sha256": "bb17cc7ba965c121809ce0696dccc1ceb732d9f835a27bca96fc684eb787eacb",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505721",
+    "title": {
+      "zh": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks · 方法图",
+      "en": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-20573",
+      "title": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks",
+      "authors": [
+        "Sao Mai Nguyen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20573",
+      "arxiv_url": "https://arxiv.org/abs/2412.20573",
+      "arxiv_id": "2412.20573",
+      "arxiv_first_submitted_at": "2024-12-29T20:44:59Z",
+      "arxiv_updated_at": "2024-12-29T20:44:59Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20573v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505721/image/image.jpg?Expires=1790855558&Signature=pPecB9DH1uU5ic7eaZFr7rDKOuTYUzfcSsm2NSF7e6TfDsMdSi0Pr9H8gyYcD8LaSabxko1PCitjJwdKmnM1qdT9Eq5FlUqGovZNvqmXFX87YQadGLnO4JpZ~qoawsW1DZ2s5DiINJw~V-AU-CE1snZDMDPzcug34ZkFfwJeXBG06susllWtx1e-eOul5SfpGws4LQRCpU3lo7L6phX1Xo3eqCw-LxqY7bXG4OmwQhdW8iRMR-5F1h62pxm~BlMMPEQZC4s60h1Tjz295yubmq0t57ChyVfME-y0lGISD~-eUrsK6TQO7eAXsw88q8vNoPdFVOX78uyB90OasyV7vA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505721,
+      "description_sha256": "61f45ade7c6aab3c53447a7e334c294fcf62283e6e8e1b8ac6949ab30add527b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3427a081b4e0a35d8bd7c916eddf9427734cee20b1115dae9a35d7ad647881bd",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the algorithmic architecture of SGIM-SAHT, a framework designed for adaptive learning or decision-making through iterative strategy application and model updating. The global layout is a cyclic flowchart structured horizontally from left to right, with feedback loops returning to the initial stage, forming a closed-loop system. The main components are arranged in a sequence: selection, strategy application, policy execution, outcome computation, and model updates, followed by feedback to the selection phase.\n\nVisual modules are represented as rectangular boxes with light yellow backgrounds and black borders, except for the 'Environment' module, which is a blue rectangle with a small globe icon on the right side, indicating an external system or real-world interaction. Each box contains descriptive text in bold black font. The top row includes three primary stages: 'Select Teacher, Task & Goal', 'Apply Strategy (T, σ, ωg)', and 'Execute Policy'. Below these, two update modules are stacked vertically: 'Update Outcome & Strategy Interest Mapping' and 'Update World Models'. To the right of 'Execute Policy', the 'Environment' block is shown, with an arrow labeled 'ωr' pointing downward to 'Compute Competence', which feeds into the update modules.\n\nConnections are depicted using thick black arrows indicating the direction of information flow. From 'Select Teacher, Task & Goal', parameters T, σ, ωg are passed to 'Apply Strategy', which outputs Ic to 'Execute Policy'. The 'Execute Policy' block generates an action vector a = [a₁, ..., aₙ], which is sent to the 'Environment'. The environment responds with ωr, which flows to 'Compute Competence', whose output feeds into both update modules. These modules then feed back into the initial selection stage via two distinct paths: one labeled 'Competence-progress-Interest map' and another labeled ℋ, representing historical data or learned representations. This feedback loop closes the cycle, enabling continuous adaptation based on outcomes and updated internal models."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

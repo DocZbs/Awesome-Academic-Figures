@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+CoEvo: Continual Evolution of Symbolic Solutions Using Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18890
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a three-step LLM-driven solution generation framework, structured as an iterative process that evolves ideas from a knowledge library into actionable outputs through a hierarchical 'Idea Tree'. The global layout is divided into two main regions: on the left, the core iterative process involving a large language model (LLM), and on the right, the detailed structure of the Idea Tree. A dashed line connects the 'Inspiring' phase to the Idea Tree, indicating the origin of ideas.
+
+In the left section, the process begins with a 'Task' box containing two components: 'Information' (represented by a document icon) and 'Evaluator' (represented by a hand holding a clock). These feed into the LLM, which operates within an 'Iterative Process' loop. The LLM processes inputs through three sequential stages: 'Inspiring' (yellow rounded rectangle), 'Thinking' (blue rounded rectangle), and 'Solving' (red rounded rectangle). Arrows indicate the flow from Inspiring → Thinking → Solving, with feedback loops from the Evaluator back to the LLM, suggesting continuous refinement.
+
+From the 'Inspiring' stage, multiple 'Using ...' nodes (light yellow rounded rectangles) branch out, representing ideas drawn from the Knowledge Library. These ideas feed into the 'Thinking' stage, which then leads to the 'Solving' stage. The output of the 'Solving' stage is presented in a pink rectangular box labeled 'Code', 'Text', and 'Formula', each with corresponding examples: a snippet of Python code for a logistic growth function, descriptive text explaining the model, and a mathematical formula for growth rate involving parameters like maximum growth rate, carrying capacity, and environmental factors.
+
+On the right, the 'Idea Tree' is depicted as a hierarchical structure with K levels (level 1 to level K). Each level contains multiple 'Using ...' nodes arranged horizontally. Dashed arrows connect nodes across levels, showing how ideas at one level are combined or refined to produce new ideas at the next level. Solid arrows from the top indicate that ideas from the Knowledge Library seed the first level. The tree visually represents the evolution and combination of ideas over iterations, with vertical ellipses (...) indicating intermediate levels between 3 and K. The structure emphasizes progressive refinement and combinatorial expansion of ideas.
+
+Connections are primarily directed: solid arrows denote direct input/output flows, while dashed arrows represent conceptual or evolutionary links, especially within the Idea Tree. The entire diagram conveys a method where initial ideas are iteratively expanded and refined through LLM processing, guided by an evaluator, culminating in multi-modal outputs (code, text, formula) derived from a structured, hierarchical idea generation process.

@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DOLLAR: Few-Step Video Generation via Distillation and Latent Reward Optimization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15689
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative architectural overview of three different reward fine-tuning methodologies for video generation models, all constrained by an 80GB GPU VRAM limit, as indicated by a large curved brace spanning the top of the diagram. The layout is divided into three main vertical sections, each representing a distinct approach: 'Direct Reward Gradient', 'Latent Reward Model', and 'DDPO'. Each section contains stacked rectangular modules, with consistent visual coding: light gray boxes represent components like 'Reward Model' and 'Decoder', light blue boxes denote 'Video Model', and dark gray boxes indicate 'Preoccupied' memory or computational resources.
+
+In the first section, 'Direct Reward Gradient', four modules are stacked vertically: 'Reward Model', 'Decoder', 'Video Model', and 'Preoccupied'. This setup implies that gradients flow directly from the reward model through the decoder to the video model, requiring all components to reside in VRAM simultaneously, which limits scalability.
+
+The second section, 'Latent Reward Model', features a similar stack but with a key difference: the 'Reward Model' and 'Decoder' are omitted from the main stack, replaced by a 'Latent Reward Model' at the top. The 'Video Model' remains in light blue, and 'Preoccupied' is at the bottom. A curly brace on the right side groups the 'Reward Model' and 'Decoder' separately, indicating they are not loaded into VRAM during training but instead used to compute latent rewards, thus reducing memory footprint and enabling the use of larger models.
+
+The third section, 'DDPO', shows only the 'Video Model' and 'Preoccupied' modules within the main stack. To the right, a dashed outline labeled 'Model Gradients Tracked Each Step' is shown with time indices t₁, t₂, t₃ above it, suggesting that gradients are computed and stored across multiple steps. This indicates that DDPO tracks gradients over time, which increases memory usage per step, especially for long sequences, and thus faces VRAM constraints when using large video models.
+
+Dashed vertical lines separate the three approaches, emphasizing their structural differences. The figure visually communicates that while direct reward gradient methods are straightforward, they are memory-intensive; latent reward models reduce VRAM usage by avoiding loading the full reward and decoder stack; and DDPO, though effective, requires tracking gradients over time, which can quickly exhaust VRAM for large models or long sequences. The caption reinforces this by noting the limitations of each method under VRAM constraints.

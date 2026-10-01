@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505236",
+  "record_sha256": "2c6dd26e99452d6da589b6fdd6aebcd4378833a8b3af10331275adbd9e35c26d",
+  "asset_sha256": "21def98a5aed20df4e0363d10d7ff185da809af700c553f52fb6656548dee76c",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505236",
+    "title": {
+      "zh": "Sharpening Neural Implicit Functions with Frequency Consolidation Priors · 方法图",
+      "en": "Sharpening Neural Implicit Functions with Frequency Consolidation Priors"
+    },
+    "paper": {
+      "id": "arxiv-2412-19720",
+      "title": "Sharpening Neural Implicit Functions with Frequency Consolidation Priors",
+      "authors": [
+        "Chao Chen",
+        "Yu-Shen Liu",
+        "Zhizhong Han"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19720",
+      "arxiv_url": "https://arxiv.org/abs/2412.19720",
+      "arxiv_id": "2412.19720",
+      "arxiv_first_submitted_at": "2024-12-27T16:18:46Z",
+      "arxiv_updated_at": "2024-12-27T16:18:46Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19720v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505236/image/image.jpg?Expires=1790855453&Signature=u4dTmCxJ2M1nGGsA3yLf5RbasMZaCg4E~8Co-eQKdXqTS6I~-YZHN-vhWSjIY2FsY6TaMy7UZ7kIs9vpZMthKsgg8d6OQNiGTU-E4pV~g5AVoXNb2Gi3PghllBqdSThHT~~rtpn5LP7jEny8L~93~wSOm4ig7K4R0AnFG8c4x37Gdn~dOQbmTQFzrkcV3Z-uT2KzF~~hJmFTfVC0Xi~f3ezF1HENlOT-QOE30KgB74fYe~e2Z8mcZTYxfgd40G93EGpD8Gv9E6o0cbvOZZMm1EjxrGBo0C7eI79NQO4vYq-47-dncCE2Gdewg65vjFiamAzAWRZWcd-X2ZsD516FRQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505236,
+      "description_sha256": "676866b21a56a71c228f35e78049f57422bd3b87f35efb6b10c603fa2833c627",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "981405bae40e898c98fe2e1ccf9850dc261dc8ead3ee72450ed5f081101410ab",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a two-stage method for 3D shape reconstruction using Signed Distance Functions (SDFs), divided into three main phases: Training, Testing (Optimization), and Testing (Forward). The global layout is structured horizontally from left to right, with vertical alignment of components within each phase. A dashed vertical line separates the Training phase from the Testing phases. Each phase contains learnable or fixed embeddings, SDF modules, 3D chair reconstructions, query points, and error signals.\n\nIn the Training phase, two learnable embeddings, e_C (green bar) and e_F (blue bar), are shown vertically stacked under the label 'Learnable Embeddings'. These embeddings feed into two separate SDF modules: 'SDF f_L for Low Frequencies' (top black box) and 'SDF f_F for Full Frequencies' (bottom black box). The outputs are s_L and s_F respectively. The low-frequency SDF generates a coarse 3D chair model labeled 'Low Frequency Observation', while the full-frequency SDF produces a more detailed model labeled 'Full Frequency Coverage'. Both models are evaluated against ground truth (GT) via query points q (blue circles) connected by dashed lines. Red arrows labeled 'Error' indicate loss computation between predicted SDF values and GT at these queries, feeding back to optimize the embeddings.\n\nThe Testing (Optimization) phase mirrors the training setup but with modifications. The embeddings e_C (now brown) and e_F (now magenta) remain learnable. However, both SDF modules are now grayed out with padlock icons, indicating they are frozen during this stage. The low-frequency observation is updated to a different chair model, and the error signal is again computed from query points to GT. This phase optimizes only the embeddings given fixed SDFs.\n\nThe Testing (Forward) phase follows after a large black arrow from the optimization phase. Here, the embeddings are labeled 'Fixed Embeddings' with padlock icons, showing they are no longer trainable. The SDF modules remain locked. The magenta e_F embedding feeds into the 'SDF f_F for Full Frequencies' module, producing the final output s_F. The resulting 3D chair model is labeled 'Full Frequency Coverage', representing the final reconstructed shape. No error signals are shown here, indicating inference-only mode.\n\nConnections are color-coded: green and blue arrows from embeddings to SDFs in training; brown and magenta arrows in testing (optimization); and a single blue arrow from fixed e_F to the SDF in forward testing. Error signals are red dashed arrows. All SDF boxes are rectangular with rounded corners, and 3D chairs are rendered in grayscale wireframe style. Text labels are clear and positioned near relevant components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

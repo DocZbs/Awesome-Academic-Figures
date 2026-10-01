@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Modeling Autonomous Shifts Between Focus State and Mind-Wandering Using a Predictive-Coding-Inspired Variational RNN Model — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15620
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a hierarchical two-layer Probabilistic Variational Recurrent Neural Network (PV-RNN) architecture over time steps t=1 to t=5, with a focus on the inference window from t=2 to t=4. The global layout is structured as a horizontal timeline with time steps labeled along the top, divided into regions: 'Inference window' (t=2 to t=4), 'Now' (at t=4), and 'Future prior generation' (t=5). Vertically, the diagram is split into two layers: Layer 1 at the bottom and Layer 2 above it. Each layer contains latent state variables d^l_t (for l=1,2) and associated latent variables z^{q,l}_t and z^{p,l}_t, representing variational posterior and prior distributions respectively. The initial state at t=1 is initialized from a unit Gaussian (UG), denoted by UG ≅ z^{q,l}_1 for both layers.
+
+Visual modules include nodes for observed data x_t, reconstructed data x̄_t, latent states d^l_t, and latent variables z^{q,l}_t and z^{p,l}_t. The observed inputs x_t (t=1 to 4) feed into the model, with reconstruction errors e shown as upward arrows from x_t to x̄_t. The latent states d^l_t evolve through time via solid blue arrows, representing the generative process. Dotted red arrows represent the inference process, flowing backward in time to update the latent variables. At each time step within the inference window (t=2,3,4), the word 'update' appears in red above each layer, indicating the variational inference step where z^{q,l}_t is updated to match z^{p,l}_t, symbolized by ≅. The KL divergence (denoted by ℜ) is implied between the posterior and prior distributions during this update.
+
+Connections and arrows are color-coded and styled to distinguish processes: solid blue arrows denote forward generative flow (e.g., from d^l_{t-1} to d^l_t, and from d^l_t to z^{p,l}_t and x̄_t). Dotted red arrows indicate backward inference flow (e.g., from x̄_t to d^l_t, and from z^{p,l}_t to z^{q,l}_t). The shaded rectangular region highlights the inference window, encompassing t=2,3,4, where updates occur. After t=4, the model proceeds to future prior generation at t=5, where the latent states d^l_5 are generated from the last prior z^{p,l}_4, and the reconstruction x̄_5 is produced. The diagram also includes a legend on the left side explaining that ℜ represents KL divergence and UG stands for unit gaussian. The overall structure reflects a sequential, hierarchical variational inference framework where past observations are used to update latent representations, which then generate future predictions.

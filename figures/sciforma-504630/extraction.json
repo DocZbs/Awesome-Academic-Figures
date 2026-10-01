@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504630",
+  "record_sha256": "893ff40cfef000929fb0b5c2c0e9dde3bd3b529617e15b930c67648ef110ac3e",
+  "asset_sha256": "7c67c604808dacd0a2e208f77405cc5698ef15d8ac49f8adeba8c84e9e1f8b83",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504630",
+    "title": {
+      "zh": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models · 方法图",
+      "en": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-18675",
+      "title": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models",
+      "authors": [
+        "Pooyan Rahmanzadehgervi",
+        "Hung Huy Nguyen",
+        "Rosanne Liu",
+        "Long Mai",
+        "Anh Totti Nguyen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18675",
+      "arxiv_url": "https://arxiv.org/abs/2412.18675",
+      "arxiv_id": "2412.18675",
+      "arxiv_first_submitted_at": "2024-12-24T20:28:07Z",
+      "arxiv_updated_at": "2025-07-14T21:28:12Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18675v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504630/image/image.jpg?Expires=1790855433&Signature=dsZYf5mjeHCLGbGJEg9VgktXD7tbabmUbBAkkO9H6d-~mjAOWVB9Nt6nF6hk6XDS-AgzvwamHkkO7Pm-ImKRKa38BLMlcg10gyuh8G7KtMb7fzDP6P60FH00te2xOO7syGladcYfZoucKWMjFv5ImXXmjYGR5dAuKbDhetYc-vjCQ~QTnXW8FlLsfWus9vYlMAix9ZgDd9JSd8onTx2gwSdXfdI7reHZrXgxJiAT96mLwlImV5gFSwWP3ZTPYWYQGiV~GFp-uS~KiGvfpm9D~teMZleoIcceR2YtlWnYbacORvbHQwPscWhj53SWot1SSgPmal7gGgauQhHUg69QeQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504630,
+      "description_sha256": "e29f5e62d086dbd3d7cf1b3ad7b7f60118cd801abbc5469f3403f52bbaaa1a0b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "331885e61b39ea7a3afaf43904ddf6ea9de90da8243d208ce656f00270f4c3f2",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage training framework for Image Difference Captioning, structured within a dashed blue rectangular boundary. The global layout is left-to-right, beginning with input image pairs and a caption, progressing through a vision-language alignment module (enclosed in a red dashed box), and culminating in a text generation stage via an Encoder-Decoder Language Model. The entire pipeline is divided into two main functional blocks: the vision-language alignment stage (red dashed box) and the text generation stage (outside the red box). \n\nOn the far left, two grayscale images are shown side-by-side, depicting a scene with geometric objects; the bottom image shows a cyan block turning blue, indicating a change. Below these images, the corresponding caption reads: 'The cyan matte block that is to the left of the brown cylinder turned blue'. This caption is fed into a light blue rectangular module labeled 'Text encoder', which processes the text into embeddings.\n\nThe two images are each processed by a separate 'Self-attention Transformer' module, represented as rounded green rectangles. These modules share weights, indicated by a yellow double-headed arrow labeled 'Shared weights' between them. The outputs of both self-attention transformers are concatenated via a yellow rectangular node labeled 'Concat', which feeds into a larger green rounded rectangle labeled 'Cross-attention Transformer'. This cross-attention module integrates visual features from both images.\n\nThe output of the cross-attention transformer is passed to a purple rounded rectangle labeled 'Bottleneck', which serves as a feature fusion point. From here, two paths diverge: one leads to the 'Retrieval Loss' (a green-bordered rounded rectangle), which connects back to the text encoder's output, forming a vision-language alignment loop. This alignment is highlighted by a red dashed box labeled 'Vision-language alignment' in the legend. The other path proceeds to the right, entering a large peach-colored rounded rectangle labeled 'Encoder-Decoder Language Model', which performs text generation.\n\nThe Encoder-Decoder Language Model outputs the generated caption, which is compared to the ground truth using a 'Cross Entropy Loss' (green-bordered rounded rectangle), as indicated by a green arrow. This loss is used only during training, as specified in the legend. The legend also clarifies that purple arrows denote 'Training & inference' pathways, while green arrows denote 'Training only' pathways. Additionally, a blue dashed box labeled 'Text generation' points to the Encoder-Decoder Language Model, emphasizing its role.\n\nIn summary, the architecture first aligns visual and textual representations through a shared-weighted dual self-attention and cross-attention mechanism, followed by a bottleneck for feature compression and retrieval loss computation. Then, in the second stage, the bottleneck features are used to condition an encoder-decoder model for generating captions, optimized via cross-entropy loss. The design supports both training and inference, with specific components active only during training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

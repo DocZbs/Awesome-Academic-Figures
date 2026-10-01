@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+NeRF-To-Real Tester: Neural Radiance Fields as Test Image Generators for Vision of Autonomous Systems — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16141
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the NeRF (Neural Radiance Fields) pipeline in two stages: training and rendering. The global layout is divided into two horizontal rows. The top row depicts the training phase, while the bottom row shows the rendering phase. Each row follows a left-to-right workflow, indicated by thick black arrows connecting the stages.
+
+In the top row, the process begins with a set of real images of an underwater coral reef scene, labeled as i_real ∈ S. These images are shown as a stack of four overlapping rectangular frames on the far left. An arrow leads to the next stage, where camera poses are estimated. This is represented by yellow triangular icons with small circular bases, symbolizing cameras, positioned at various viewpoints around the scene. These poses are denoted as (x, d), where x represents the camera position and d the viewing direction. Curved lines connect these camera icons to the corresponding input images, indicating the association between each image and its estimated pose. Another arrow leads to a transparent 3D cube containing the rendered coral reef scene. Inside this cube, the same yellow camera icons are shown, now embedded within the 3D volume. Below this cube, the mathematical mapping is described as θ(x, d) → (c, σ), meaning the NeRF model θ learns to predict color c and volumetric density σ for any given point along a ray defined by camera pose (x, d).
+
+The bottom row begins with a new set of camera poses (x, d), again represented by yellow triangular icons arranged along a curved path, suggesting novel viewpoints not present in the training data. A thick black arrow points to the same 3D cube from the training phase, now labeled 'NeRF Rendering'. Inside this cube, red dashed lines represent camera rays r(t) projected from the camera origins along the viewing directions, extending from a near bound t_n to a far bound t_f. The mapping here is updated to θ(x, d) → (c, α), where α denotes opacity instead of density σ, reflecting the rendering step. Finally, another arrow leads to a stack of four new rendered images, labeled i_nerf, which depict the scene from these novel viewpoints. The caption clarifies that during training, the model learns from real images and estimated poses to predict color and density, while during rendering, it generates new views using novel poses and integrates along rays between near and far clipping planes.

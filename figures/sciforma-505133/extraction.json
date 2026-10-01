@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505133",
+  "record_sha256": "6e3012e49d6667101b1e296355da593c234e0650b595f9f5eb4c289c223b47b7",
+  "asset_sha256": "4e238fa9ebc6ecfa1346983cda31251333430de81a458a4df99fa874b571e114",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505133",
+    "title": {
+      "zh": "RAIN: Real-time Animation of Infinite Video Stream · 方法图",
+      "en": "RAIN: Real-time Animation of Infinite Video Stream"
+    },
+    "paper": {
+      "id": "arxiv-2412-19489",
+      "title": "RAIN: Real-time Animation of Infinite Video Stream",
+      "authors": [
+        "Zhilei Shu",
+        "Ruili Feng",
+        "Yang Cao",
+        "Zheng-Jun Zha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19489",
+      "arxiv_url": "https://arxiv.org/abs/2412.19489",
+      "arxiv_id": "2412.19489",
+      "arxiv_first_submitted_at": "2024-12-27T07:13:15Z",
+      "arxiv_updated_at": "2024-12-27T07:13:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19489v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505133/image/image.jpg?Expires=1790855453&Signature=I9Sm446pgkkob4lK1MbDy88s7cQI~KU9qIBkOrMM0F1blK-ZtlCvKWnayO-9ytdEPh6VGFaC~tlcPwsDA9zjOogT3HAZyjmG79EpYjR724B658k6GzhpqpTXUCxiGlf069Ybd-vDzb0lwApKpn43RhC0JQ~XP4DKpVphpNudPIWSfCi6toBIf1yKBFYrQ4xPybf1KtVOiLUOlEPszS2fq4iUsa~VMR0SVdhrInxFQ18boVBPko9a9TiwZJPaGcXyOsvSaRHZxwlfRZm7xY92SNlCy1U~53aHY5i7wHe9nYmbz9DGDtdEFVwq95zGSQcJ0noS1Z6ZklkvjBJeFOWMPw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505133,
+      "description_sha256": "54dcd274783880282f637a13c1552e1f0e601b95619ad08f3963bbf83fc09553",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "89ce60b4f8a0d20e74a6874b0fb2cdf4864b7f63c9d2d866d655bce69472dc35",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural pipeline of a video generation method that synthesizes human motion sequences conditioned on a reference image and a pose sequence. The global layout is structured as a left-to-right data flow with feedback loops, divided into three main stages: input encoding, iterative denoising via a dual UNet structure, and output decoding. On the far left, a reference image of a person in a light blue dress is processed by a VAE Encoder (blue trapezoid), which extracts latent features. Simultaneously, the same image is fed into a CLIP Text Encoder (yellow trapezoid) to generate semantic embeddings. Below, a Pose Sequence (represented as stacked black frames with colored skeleton keypoints) is passed through a Pose Guider (orange trapezoid), which transforms it into a pose-conditioned embedding. This embedding is then added to the intermediate features of the Denoising UNet via a summation node (+). The core of the architecture consists of two stacked UNets: a Reference UNet (top gray trapezoidal block) and a Denoising UNet (bottom gray trapezoidal block). Both UNets are composed of multiple residual blocks, each containing three types of attention mechanisms: Spatial Attention (light blue rectangles), Temporal Attention (light green rectangles), and Cross Attention (yellow rectangles), as indicated in the legend. These attention modules are arranged vertically within each UNet block, with arrows showing information flow between them. The Reference UNet’s spatial attention features and CLIP embeddings are fed into the Denoising UNet, while the pose-guided features are injected at an intermediate layer. The Denoising UNet performs N iterations of denoising, as indicated by a large blue curved arrow labeled 'N Iterations' looping back to the input. After each N iterations, the noise level of the latent frames is reduced by T/p steps, and the first K/p frames become clean. These clean latents are then passed to a VAE Decoder (blue trapezoid) to reconstruct video frames, shown as a sequence of four identical images of the woman. The remaining latent frames are replaced with newly sampled noise (highlighted in orange dashed box), forming the 'Next Input' for the next iteration. The bottom portion of the diagram shows the 'Noise-Stepping Latents' as a horizontal strip of grayscale frames, where the rightmost portion is replaced with new noise after each cycle. The entire process is iterative, generating a video frame-by-frame by progressively denoising and extending the latent sequence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

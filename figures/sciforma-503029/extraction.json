@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503029",
+  "record_sha256": "189cadc62c9edef5bba9254370211c78649f8265b68ea2a3f5088035378f154a",
+  "asset_sha256": "df6c7b56d6c450f7e210c3258c90a649b83b3fe8e8b6baa0d8f4198c7bd66222",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503029",
+    "title": {
+      "zh": "SCENIC: Scene-aware Semantic Navigation with Instruction-guided Control · 方法图",
+      "en": "SCENIC: Scene-aware Semantic Navigation with Instruction-guided Control"
+    },
+    "paper": {
+      "id": "arxiv-2412-15664",
+      "title": "SCENIC: Scene-aware Semantic Navigation with Instruction-guided Control",
+      "authors": [
+        "Xiaohan Zhang",
+        "Sebastian Starke",
+        "Vladimir Guzov",
+        "Zhensong Zhang",
+        "Eduardo Pérez Pellitero",
+        "Gerard Pons-Moll"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15664",
+      "arxiv_url": "https://arxiv.org/abs/2412.15664",
+      "arxiv_id": "2412.15664",
+      "arxiv_first_submitted_at": "2024-12-20T08:25:15Z",
+      "arxiv_updated_at": "2024-12-20T08:25:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15664v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503029/image/image.jpg?Expires=1790855277&Signature=XvpcLLtINsqJQNkgMBXiU0cNeP6j7bwD9inAZzTBbYsErz85Bv3VDekjci3g1UV0OTVO2cQeT4qWkSKsFvXf0TPEtnWAx28U3B4YdWT6NPxG~t5Br3xP-vuFOI8s9lH-iDqV72EFMP6bBFTDKul6cTN~pIJVBhKIXFOTSa4tziZXkalp~uwuLWjHpAwBBNjX0dirVpu~kxzl8uNJhTey2mrQegntA9dnswV5-CvaRGBAqbuU3fvQDCJ2OYpFhfCmHZ0U7FYB9oLYB99F~sJvfsKedOAE4RZ8OHZUFG6k1z4b70aZeWkg0ppj-eWb~o5BuGQggD9ZtkxLHPD0p-zeSQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503029,
+      "description_sha256": "08b7a7fb50a229998e86ed26c44748866ae137f795560e23cf23c613ccb24804",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f904813bfc202c34ab7f70438496944a8376edad3e0049c7af0b89b6d3fc0a81",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of a motion prediction model that integrates text prompts, past human motion, and 3D scene information to generate future human motion. The global layout is structured as a left-to-right data flow pipeline, beginning with multiple input streams on the left, processing through central encoding and transformation modules, and culminating in a predicted future motion output on the right. The diagram is divided into two main vertical sections: the upper section handles text and motion inputs, while the lower section processes scene and temporal information.\n\nIn the upper section, several dashed rectangular boxes represent input sequences. Each box contains a text prompt (e.g., “A person walks upstairs” or “Balance yourself”), followed by a green circle labeled T_k (text embedding), a blue circle labeled H_k^- (past motion embedding), and a small 3D human figure illustrating the motion. For the last sequence, the motion embedding is labeled H^+ and accompanied by a bell-shaped curve, indicating a probabilistic or diffusion-based representation. These input sequences are fed into a tall blue rectangle labeled 'Encoder', which processes them. The Encoder outputs are combined via a circular plus symbol (denoting concatenation or summation) with another input stream from below.\n\nThe lower section begins with a pink circle labeled S_cano, representing a canonicalized scene representation, connected to a small image showing a 3D staircase with illuminated points. This scene input passes through a purple rectangle labeled 'Encoder' and is then combined with a 'Position Embedding' token, represented by a wavy symbol and a time variable t. This combined signal feeds into the same central processing block as the upper stream.\n\nThe central processing unit is a large vertical blue rectangle labeled 'Transformer'. It receives the concatenated inputs from both the text-motion encoder and the scene encoder. The Transformer outputs a blue circle labeled H^+, representing the predicted canonicalized future human motion. This output is visually linked to a rendered 3D animation on the far right, showing a human figure ascending stairs, with multiple frames illustrating the motion sequence.\n\nAdditionally, a feedback loop is shown at the bottom right: the predicted motion leads to a 'Goal update', depicted as a small image of stairs with red arrows indicating updated target positions. This goal update feeds back into the input side, suggesting an iterative or reinforcement learning component where the model refines its predictions based on updated goals.\n\nThe visual attributes include distinct colors for different components: green for text embeddings, blue for motion/scene embeddings, pink for scene canonicalization, and purple for the scene encoder. Shapes are primarily circles for embeddings and rectangles for modules. Text labels are clear and positioned adjacent to their respective elements. The overall structure emphasizes a multi-modal fusion approach, where text, motion, and scene data are encoded and jointly processed by a diffusion-based transformer to generate future motion, with an emphasis on goal-centric canonicalization and iterative refinement."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

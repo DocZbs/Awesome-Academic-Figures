@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-505675",
+  "record_sha256": "da8d9f57719c1f335301fb314c87467354d1758a34c1f65e185863df71900db1",
+  "asset_sha256": "4268308bc0f28ff92d7144b4788d87e3e1801a220bb491a82da1dcae96af516a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505675",
+    "title": {
+      "zh": "ReTaKe: Reducing Temporal and Knowledge Redundancy for Long Video Understanding · 方法图",
+      "en": "ReTaKe: Reducing Temporal and Knowledge Redundancy for Long Video Understanding"
+    },
+    "paper": {
+      "id": "arxiv-2412-20504",
+      "title": "ReTaKe: Reducing Temporal and Knowledge Redundancy for Long Video Understanding",
+      "authors": [
+        "Xiao Wang",
+        "Qingyi Si",
+        "Jianlong Wu",
+        "Shiyu Zhu",
+        "Li Cao",
+        "Liqiang Nie"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20504",
+      "arxiv_url": "https://arxiv.org/abs/2412.20504",
+      "arxiv_id": "2412.20504",
+      "arxiv_first_submitted_at": "2024-12-29T15:42:24Z",
+      "arxiv_updated_at": "2025-03-24T02:17:34Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20504v5"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505675/image/image.jpg?Expires=1790855552&Signature=lHuskwy4Th8t2OzIDa79tq7VMlg0Q5sPcjeRCBbb-InsNViNjgjbS-j-7DzIznFuMRlnH6Z1uiDL9-3zo6GV4JBTQ57KovyrUPnVnR1p-pjC5t4Q226exbT0okuvcmRDCl6QSrb28~U3BUAjj7j-uL5Gpbd18qGzcHHEpW~DWSQuDWn5Kb5SfyZic8whz2V~dB3lzsSrOmq5GLVHcLxgbedQR9Gzb2WJxM5lwX10tA1bN6VubdCqLkRoRG0Vjw5c88DgN5rndRIdKF4KkCjynYHGg5xgslfk2wcby04wrSbkAdb4JQKRC9CD~LnE-uxINbeCM-zwrE8vq7ig12B1jg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505675,
+      "description_sha256": "4abca63bf811d1d82efeb502954a13e3b9dd47ccc734f76aa54180c409ed677a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5840503ed9899a39d22128bb493ba35690ade803dc267d6e7f427bccbaa0f62f",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ReTaKe framework, a method for efficient video processing using a large language model (LLM) with compressed key-value (KV) caching. The global layout is vertically structured, depicting a data flow from raw video frames at the bottom to the LLM at the top, with intermediate processing stages. At the base, a sequence of blue rectangular blocks labeled 'raw frames' represents the input video. These are processed by a trapezoidal module labeled 'Vision Encoder & Projection', which outputs a sequence of frame embeddings shown as 3D grid-like blocks. Above this, a trapezoidal module named 'DPSelect' selects keyframes from the sequence; this selection is visually indicated by red grid patterns on certain frames, labeled as 'pivot frames' in the legend. The remaining frames are marked as 'non-pivot frames' (blue grids) or 'dropped frames' (gray grids), with corresponding tokens labeled as 'kept frame tokens' (light blue squares) or 'dropped frame tokens' (gray squares). The selected frame embeddings are grouped into chunks, with 'chunk i' highlighted and fed into the 'Large Language Model'. The LLM processes each chunk and generates a KV cache for it, represented as a horizontal array of grid blocks. A component called 'PivotKV' receives this KV cache and compresses it, producing a compressed KV cache for chunk i, depicted as a similar grid array but with fewer elements. This compressed cache is then appended to the existing compressed KV cache of previous chunks [0, i-1], forming an accumulated compressed cache shown as a larger 3D structure. The process repeats for subsequent chunks. Arrows indicate the direction of data flow: from raw frames upward through encoding, selection, and chunking, then into the LLM, followed by KV cache generation, compression via PivotKV, and appending to the cumulative cache. The legend at the bottom clarifies visual attributes: red grids denote pivot frames, blue grids non-pivot frames, gray grids dropped frames, light blue squares kept tokens, and gray squares dropped tokens. The figure emphasizes the iterative, chunk-based processing and the role of DPSelect in selecting keyframes and PivotKV in compressing the KV cache to enable efficient long-context video understanding."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

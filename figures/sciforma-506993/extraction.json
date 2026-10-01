@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506993",
+  "record_sha256": "d2ba25bc2f41ddf450a280ec8bf72d06f0498b5081e80930a7dd3d23d521a382",
+  "asset_sha256": "07af0f6909aecbee03542388fcee87cc94af95f7f6a1d44821e3be1242614ee0",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506993",
+    "title": {
+      "zh": "CodeVision: Detecting LLM-Generated Code Using 2D Token Probability Maps and Vision Models · 方法图",
+      "en": "CodeVision: Detecting LLM-Generated Code Using 2D Token Probability Maps and Vision Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-03288",
+      "title": "CodeVision: Detecting LLM-Generated Code Using 2D Token Probability Maps and Vision Models",
+      "authors": [
+        "Zhenyu Xu",
+        "Victor S. Sheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03288",
+      "arxiv_url": "https://arxiv.org/abs/2501.03288",
+      "arxiv_id": "2501.03288",
+      "arxiv_first_submitted_at": "2025-01-06T06:15:10Z",
+      "arxiv_updated_at": "2025-01-06T06:15:10Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03288v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506993/image/image.jpg?Expires=1790855629&Signature=mGS2Uv61xTnUZJ8Z1Et7Qxgazc3tsxZEjubwtLsT8EqGVdadWxVF1d4NKGx~03y69pg1R~VsWlc0cl8N7x3vLVi1P7uv7N46EF~U6scHxEHgDFlbcJ4FSye0VKdaBwc6w1YbNcuDJCFOdB9MYuR4orFxdcEDIVJDNbHB~~lICWQisuXIvrTP2urjbqWtLKTsNPqwGtdhwnUEaxOrMthpXY1R6QnLj3-roseeg4TdPgQrNdieipTr9WDFEEsdM~CMRwLNznuWpNfsLnuvzzshZfXlDGTgwWtkyDhvpWKLs2Iob5FJhpmlAuXeTQ9OCoDXgbenBR~hoNs6-mkJAtNQFw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506993,
+      "description_sha256": "6e4cbb8b063f8d1cb779942e4ad674349f53f5fad210feebc5186c1cf3ae8ead",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "382cd4b9e7d658824091eeac079966713d6e76750f66daf48fabedf1e9932ee2",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f47a8826a65c668b8a09b7e862eaa695da04c0313c74404a7ef9363d49fb43b1",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct deep learning model architectures side by side, labeled (a) ViT and (b) ResNet, under the overarching caption 'Model Architectures.' The layout is a horizontal split with each architecture depicted as a vertical flowchart of processing stages, connected by solid black arrows indicating the forward pass direction from top to bottom.\n\nIn subfigure (a) ViT, the global structure begins with an 'Input' node at the top, followed sequentially by 'Patch Embedding,' '+ Position Embedding,' 'Transformer Encoder,' 'Global Avg Pooling,' 'MLP Head,' and finally 'Output (2 classes)' at the bottom. All nodes are represented as rounded rectangles with black borders and black text. A feedback loop, indicated by a dashed arrow with a small arrowhead pointing leftward and labeled '×L', connects the output of the 'Transformer Encoder' back to its input, signifying that the encoder is repeated L times. This loop is drawn to the right of the 'Transformer Encoder' block.\n\nIn subfigure (b) ResNet, the structure starts with 'Input,' followed by 'Initial Convolution,' 'BatchNorm,' 'ReLU,' 'Residual Layers,' 'Global Avg Pooling,' 'Fully Connected Layer,' and ends with 'Output (2 classes).' These components are also rendered as rounded rectangles with black borders and black text. Similar to the ViT, a dashed feedback loop labeled '×N' is shown to the right of the 'Residual Layers' block, indicating that this module is repeated N times.\n\nAll connections between modules are solid black downward-pointing arrows, except for the dashed feedback loops which are drawn horizontally to the right and then curve back to the left to point to the respective module's input. The figure uses a monochrome color scheme with no shading or fill colors. The text within each node is centered and written in a clear, sans-serif font. The overall design emphasizes clarity and modularity, highlighting the sequential nature of both architectures while explicitly denoting the iterative components through the feedback loops. The figure does not include any mathematical equations or additional annotations beyond the module names and loop multipliers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

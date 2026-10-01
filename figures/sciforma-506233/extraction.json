@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506233",
+  "record_sha256": "960e3cbbee3c9354a0e3770bc3f76997741cf5a1b56dcc52d8c098f12e743e19",
+  "asset_sha256": "c2326440517ba9cdb18555ebb1f569d37351edb86119c520d16bec6f384c8fb7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506233",
+    "title": {
+      "zh": "Negative to Positive Co-learning with Aggressive Modality Dropout · 方法图",
+      "en": "Negative to Positive Co-learning with Aggressive Modality Dropout"
+    },
+    "paper": {
+      "id": "arxiv-2501-00865",
+      "title": "Negative to Positive Co-learning with Aggressive Modality Dropout",
+      "authors": [
+        "Nicholas Magal",
+        "Minh Tran",
+        "Riku Arakawa",
+        "Suzanne Nie"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00865",
+      "arxiv_url": "https://arxiv.org/abs/2501.00865",
+      "arxiv_id": "2501.00865",
+      "arxiv_first_submitted_at": "2025-01-01T15:18:23Z",
+      "arxiv_updated_at": "2025-01-01T15:18:23Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00865v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506233/image/image.jpg?Expires=1790855567&Signature=YUBeNNqnQbJqFfq4taxwh44FwQz0OhLeDjTz2JZMCozIlqV-y6yzkPsfEprhMPmJgksqN4EKFSGcjicpLgZ-Oj-56gZNmQmosIiPx65rRWiw6AAP27Stu5H24zyK3LoDKdVVKyXKQw5D~kPePM22YLZ-7BNM8A4wttg2UpNzg3N5KZgSHWy6yuojRLfOg7VZG45~Ex3DfdjsWVjR5zdiagwcsjgkefPN7-Pk0UedYi-2kuqxY71QzWm8NKuNPVIdLE3zSHwSXLtnnpouqCp8OYgtWJ-JX6eZ1yEElfxP8fmTNAeRSL1DMwaY-Fea-MOmi872qpTNwrshvWvlqZqO5g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506233,
+      "description_sha256": "fbcf57e8709851dc53e1e45be4f4ce9bcabb1ac9961c5b3fdefba7b77ca5d361",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dc97da33181aa5d727afda4f627e2cc4213ea05ee1998fc1de25692944a4a50b",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram illustrating two variants of a learning framework: Multimodal Variant and Unimodal Variant, positioned side-by-side for direct comparison. The global layout is horizontally divided into two main sections, each labeled at the top with bold underlined text: 'Multimodal Variant' on the left and 'Unimodal Variant' on the right. Each section contains two vertical processing pipelines, one for training and one for testing, indicated by upward-pointing arrows leading to output symbols.\n\nIn the Multimodal Variant, the training pipeline receives three distinct input modalities: a green document icon representing text, a black filmstrip icon representing video, and a blue waveform icon representing audio. These inputs converge into a light blue rectangular processing module containing a black circular symbol with a bowtie-like shape inside. An upward arrow from this module points to the output symbol γ^train. The testing pipeline mirrors the training setup but excludes the video and audio inputs, which are visually marked with red prohibition signs over their respective icons. Only the text input remains active, feeding into an identical light blue processing module, which outputs γ^test.\n\nIn the Unimodal Variant, both training and testing pipelines receive only the green document icon (text) as input. Each input feeds into a light blue rectangular processing module with the same bowtie symbol, producing outputs φ^train and φ^test respectively, indicated by upward arrows.\n\nBelow the two variants, a legend defines three types of co-learning outcomes based on the comparison between γ^test and φ^test: γ^test > φ^test corresponds to 'Positive Co-learning', γ^test < φ^test corresponds to 'Negative Co-learning', and γ^test == φ^test corresponds to 'Neutral Co-learning'. These relationships are presented as mathematical inequalities with corresponding labels in bold text.\n\nAll arrows are light blue and point upwards, indicating the flow of data through the modules. The visual modules are uniformly light blue rectangles with consistent internal symbols. Inputs are represented by colored icons: green for text, black for video, and blue for audio. Prohibited inputs are overlaid with red circles containing diagonal slashes. The figure uses clear spatial separation and symbolic representation to convey the concept of multimodal versus unimodal training and testing, and how their performance comparison defines different co-learning scenarios."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

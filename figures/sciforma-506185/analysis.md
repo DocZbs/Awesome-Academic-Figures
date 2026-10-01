@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+IGC: Integrating a Gated Calculator into an LLM to Solve Arithmetic Tasks Reliably and Efficiently — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.00684
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture and training mechanism of an Interventional Gradient Calculator (IGC) module integrated into a pretrained large language model (LLM). The global layout is divided into two main sections: the left side shows the overall LLM pipeline with the IGC insertion point, and the right side provides a detailed view of the IGC’s internal structure and data flow during training.
+
+On the left, the LLM is depicted as a vertical stack of modules starting from 'Embeddings' at the bottom, followed by 'Decoder Block 1', then 'Latent Activations', which feed into the 'IGC Intervention' module. This intervention modifies the activations before passing them to 'Modified Activations', which then proceed through subsequent decoder blocks ('Decoder Block 2' up to 'Decoder Block n') and finally to 'Embeddings' again to produce the 'Output Sequence'. The IGC is inserted after Decoder Block 1, as indicated by the red diagonal lines connecting the latent activations to the IGC box.
+
+The right section details the IGC’s internal components within a gray box labeled 'IGC'. At the bottom, input tokens are shown as a sequence ending at T_t, with the example input being 'Q: What is 123 times 40?'. These tokens are processed by the 'Input Mapping' module (light blue, trainable), which extracts operands and operator from the text. The extracted values—'Operand 1: 123###', 'Operand 2: 40###', and 'Operator: *'—are represented as yellow boxes (categorical data). These are fed into the 'Calculator' (blue, non-differentiable process), which computes the result '4920######' (yellow box). This result is then passed to the 'Output Mapping' module (light blue, trainable), which generates future tokens (T_{t+1}, T_{t+2}, etc.) corresponding to the output sequence '4920'. The 'Ground Truth' (extracted from sample) is also shown as a yellow box and is used to compute the 'Auxiliary Loss' (pink box), which trains the Input Mapping module. The Output Mapping module is trained via the LLM’s standard loss function.
+
+Connections are shown as arrows: from input tokens to Input Mapping; from Input Mapping to Calculator; from Calculator to Output Mapping; from Output Mapping to future tokens; and from Ground Truth to Auxiliary Loss. The Auxiliary Loss also connects back to Input Mapping. The legend on the far right clarifies colors and shapes: yellow rectangles represent latent activations or categorical data, light blue rectangles denote trainable modules, blue rectangles indicate non-differentiable processes, and pink rectangles signify auxiliary loss components. The diagram assumes teacher forcing during training, where ground truth tokens are used for supervision. During inference, the Input Mapping and Calculator are activated only upon encountering the anchor token T_t, with their outputs cached for reuse.

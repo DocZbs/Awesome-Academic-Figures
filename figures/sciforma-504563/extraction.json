@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504563",
+  "record_sha256": "3c816d4da28f84a3a39afb299e5d32a6a608e3d1149aeee14c8ba1cca0381b91",
+  "asset_sha256": "6699edfa057e2db41de0abf0243f87ad1252a7fc623d707a6ff42777dc93c279",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504563",
+    "title": {
+      "zh": "Graph Structure Learning for Spatial-Temporal Imputation: Adapting to Node and Feature Scales · 方法图",
+      "en": "Graph Structure Learning for Spatial-Temporal Imputation: Adapting to Node and Feature Scales"
+    },
+    "paper": {
+      "id": "arxiv-2412-18535",
+      "title": "Graph Structure Learning for Spatial-Temporal Imputation: Adapting to Node and Feature Scales",
+      "authors": [
+        "Xinyu Yang",
+        "Yu Sun",
+        "Xinyang Chen",
+        "Ying Zhang",
+        "Xiaojie Yuan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18535",
+      "arxiv_url": "https://arxiv.org/abs/2412.18535",
+      "arxiv_id": "2412.18535",
+      "arxiv_first_submitted_at": "2024-12-24T16:34:50Z",
+      "arxiv_updated_at": "2025-01-05T14:30:45Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18535v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504563/image/image.jpg?Expires=1790855433&Signature=joKjTlO4TSKbOKbABuBVNRnWnhwUdSOyUhnpFooV9c7EIv-hY-cSziPESI7DV7ZNItpBaBsPHY6lMzuIvlxUEMNInbllLFOUZw2A50hwIY2n-zyD5YkkwaT6Jwu-ZwbQdg~AkuXU6crr5pQkS7kCvaMdtd7x8a5e7V-M4PfSaMNWCXLCeFO-oahw7VTuiDMo~SAq6-bzkaQ-CMxFlTFmujca~~f0tPC7qQPRmpOpDgmlGOZqmjsHhc7MMBN6Nvt2p3aPv2N9IZrPvQbduTSIdhrTopTEY9wiSbOUSX1YSEUFsrAuJFFgM00K1mwK5~FbXxIplK~Op5cS79MdJtxagg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504563,
+      "description_sha256": "3c8276b0046ae351442d0c819e7d679c68774d7d40cd3bba1f5a2c86af313a13",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0c94d611fb3b6fb1117813651a1c7f9ce63af01903ac903961d81271a34273f6",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of the GSLI (Graph Structure Learning for Imputation) framework, designed for imputing incomplete spatio-temporal data. The global layout is divided into two main sections: an upper-level overview and two lower-level detailed modules. The top section illustrates the end-to-end pipeline, starting from raw incomplete temporal signals X collected from multiple sensor locations (e.g., AMS, ELL, LWRD, etc.) across a geographic region (Japan map shown), along with a pre-defined spatial correlation graph G. These inputs feed into the GSLI Imputation Framework, which consists of four core components: Cross-Temporal Representation Learning, Node-Scale Spatial Learning, Feature-Scale Spatial Learning, and Cross-Feature Representation Learning. The outputs are concatenated through MLP layers to produce complete data X̄.\n\nIn the lower-left module, 'Node-Scale Spatial Learning' is detailed. It begins by splitting the input representation R into feature-specific sub-representations (R_f). Each sub-representation is processed via a meta-graph construction block (denoted as Ĝ_f^Ω), which uses meta-node embeddings Ω_f^1 and Ω_f^2, an MLP, Hadamard product (⊙), ReLU activation, SoftMax, and a graph diffusion convolution. The resulting learned representations are then concatenated by feature to form R^NL. The process leverages a dynamic meta-graph structure to adapt to feature heterogeneity, with connections indicated by colored lines (red, blue, green, yellow) representing different feature channels.\n\nThe lower-right module, 'Feature-Scale Spatial Learning', processes the same input R but permutes it by feature first. It constructs a meta-graph Ĝ^Φ using meta-feature embeddings Φ^1 and Φ^2, which are combined via an MLP, Hadamard product, ReLU, and SoftMax. This meta-graph guides a graph diffusion convolution applied to the permuted representation. The output is then permuted back by node to yield R^FL. This module captures correlations across features by reorganizing the data along the feature dimension.\n\nConnections throughout the diagram are represented by arrows indicating data flow. Solid black arrows denote primary data paths; dashed red, blue, green, and yellow lines represent feature-specific pathways within the node-scale module. The Hadamard Product is symbolized by a circle with a dot, while the Inner Product is shown as a circle with an 'x'. The framework integrates both temporal and spatial learning at multiple scales, enabling robust imputation of missing spatio-temporal data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

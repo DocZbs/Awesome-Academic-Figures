@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Seeing the Whole in the Parts in Self-Supervised Representation Learning — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02860
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of RF-ResNet, a modified ResNet variant designed to control receptive field size through hyperparameters. The global layout is divided into three main sections: A, B, and C. Section A presents an overview of the entire network structure as a sequential pipeline of convolutional blocks. It begins with a 7x7 convolution layer with stride 2, followed by BatchNorm2d, ReLU activation, and optionally a 3x3 max pooling layer with stride 2—this optional pooling is indicated by a yellow box labeled '3x3 max pool(m)/2', where 'm' denotes whether the pooling is applied (True/False). This initial stage feeds into four successive stages of convolution blocks, each enclosed in a dashed rectangle. Each stage consists of multiple blocks: the first block is a 3x3 convolution block with stride s', followed by (n1−2)/2 or similar number of 1x1 blocks and 3x3 blocks alternating, depending on the stage. The strides for the first block in each stage are denoted by s', s'', s''', respectively. These blocks are represented as light blue rectangles labeled '3x3 block / s' or '1x1 block /1'. After the final stage, the output passes through an AvgPool layer and then an MLP (multi-layer perceptron). Section B provides a zoomed-in view of the two types of building blocks used in the network: BasicBlock and Bottleneck. Both are enclosed in dashed boxes and labeled accordingly. The BasicBlock consists of a kxk convolution with stride s, followed by a 1x1 convolution with stride 1. The Bottleneck block contains three layers: a 1x1 convolution with stride 1, a kxk convolution with stride s, and another 1x1 convolution with stride 1. Both blocks are depicted as stacked light blue rectangles with black arrows indicating data flow. Section C lists examples of receptive field sizes for different configurations of RF-ResNet. Four configurations are shown, varying m (presence of max pooling), and s', s'', s''' (strides of the first block in each stage). For example, RF-ResNet(n1,n2,n3,n4,False,1,1,1) yields a receptive field size of 39, while RF-ResNet(n1,n2,n3,n4,True,2,2,2) yields 193. A dashed arrow connects these examples to the main architecture in section A, emphasizing that receptive field size depends on the hyperparameters m, s', s'', s''' rather than the number of blocks n. A legend on the right side clarifies visual elements: yellow boxes represent hyperparameters of receptive field size (like the optional max pooling), light blue rectangles denote blocks of convolutions, and white rectangles with 'kxk conv/s' indicate individual convolution layers with kernel size k and stride s. The figure caption notes that residual connections are omitted for clarity.

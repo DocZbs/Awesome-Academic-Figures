@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504908",
+  "record_sha256": "0212f100b569a4ce7bb0f4191ab5b2b2ba907cb6ea6896aee24c86efe049a6d0",
+  "asset_sha256": "f5c526603eb7e0be1ecdf34db8bb1c626a9db634c5156bc304b447562a4e5416",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504908",
+    "title": {
+      "zh": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction · 方法图",
+      "en": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-19092",
+      "title": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction",
+      "authors": [
+        "Zhaoping Hu",
+        "Zongyuan Huang",
+        "Jinming Yang",
+        "Tao Yang",
+        "Yaohui Jin",
+        "Yanyan Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19092",
+      "arxiv_url": "https://arxiv.org/abs/2412.19092",
+      "arxiv_id": "2412.19092",
+      "arxiv_first_submitted_at": "2024-12-26T07:18:38Z",
+      "arxiv_updated_at": "2024-12-26T07:18:38Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19092v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504908/image/image.jpg?Expires=1790855451&Signature=Lr0TWw~5j9e9APY1Z5WU-~atussUEQQaYtKp9u9fREJLHDBh4scHE0yYKTB1BYN4WYVWl0fAJ7c9O89UKkctenJ1vj5aCT9EtrLXTLXh4trnh~uip-LFgBh7DypLR2535cGkhSwC0O0LpXArIsCecFa75eXSayvYCBtkYw5mHZHhO13axT9jrWpNSAtTYtoB2vd-ZrwEuU0vehf6~Ku9NFEHRCCP8JIyMXEUq8Vn8GK4q~50j5WqEa70o80KL8CfioSbQd29UY2iBkBQ1qiUUck1~L00JAZLJh5L3fOQfm8pvQdWTJ9FHu5TXEa3YcXyhC31EQPM3ddxaPNuXbWhIw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504908,
+      "description_sha256": "3deea7c76c67c4708f57eb7e03dd558be71b1bdd9942d6b746d04b27b435c015",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "99e409a5c0e125a30577c722b67c205a02a04d51565b3b65aa650fcaaf383637",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical graph convolution framework for modeling trajectory data, structured into two main processing streams: one for the global Trajectory Graph and another for User subgraphs, which are integrated through a fusion mechanism. The global layout is divided into three primary regions: the top-left shows the large-scale Trajectory Graph with a zoomed-in view of a User subgraph; the top-right details the feature extraction and initial graph embedding process; and the bottom half presents the user-specific graph processing and readout phase.\n\nIn the top-left, the 'Trajectory Graph' is depicted as a dense, multicolored network of nodes and edges, representing locations and movement patterns. A magnified circular inset labeled 'User subgraph' shows a smaller, more focused network of light blue circular nodes connected by black directed edges, indicating localized user movement patterns.\n\nThe top-right section outlines the initial feature processing pipeline. It begins with a dashed rectangular box listing 'Initial node feature' components: 'Location ID' (pink), 'Category' (peach), and 'lat & lon' (purple); and 'Initial edge feature' components: 'Total flow' (pink), 'Distance' (peach), and '24h-flow' (purple). These features feed into a sequence of two EGraphSAGE layers (light blue rounded rectangles), each followed by a BatchNorm & Dropout layer (orange rounded rectangle). A feedback loop connects the output of the second EGraphSAGE back to its input, suggesting iterative message passing. The output of this stack is passed to a 'Fusion' block (gray rounded rectangle), which combines the learned embeddings into two sets: {z_i}_{i=1}^M (purple rounded rectangle) representing global node embeddings, and {u_i^{long}}_{i=1}^N (lavender rounded rectangle) representing long-term user-specific embeddings.\n\nThe bottom-left section processes the User subgraph. The subgraph's initial node features are derived from the global embedding set {z_i}_{i=1}^M via a black arrow labeled 'initial node feature'. This subgraph then undergoes two GraphSAGE layers (light blue rounded rectangles), each followed by BatchNorm & Dropout (orange rounded rectangle), similar to the global stream but using standard GraphSAGE instead of EGraphSAGE.\n\nFinally, the bottom-right section shows the 'Readout' phase, enclosed in a dashed box. It visualizes a graph with orange circular nodes and red rectangular features attached to them, representing the final aggregated representations. The outputs from both processing streams — the global {z_i}_{i=1}^M and user-specific {u_i^{long}}_{i=1}^N — are combined here, with an arrow from the user-specific stream pointing to the Readout module, indicating integration of user-level information for downstream tasks. The overall flow is directional, moving from raw trajectory data to refined, hierarchical embeddings suitable for prediction or analysis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -5,6 +5,10 @@ import io
 import json
 import tempfile
 import unittest
+import contextlib
+import os
+import runpy
+from types import SimpleNamespace
 from pathlib import Path
 from unittest.mock import patch
 
@@ -141,7 +145,8 @@ class ExternalImportTests(unittest.TestCase):
                "ai_scope_verification": "arxiv_subject_category", "paper_metadata_sha256": "a"*64,
                "paper_metadata_checked_at": "2026-10-01", "prompt_text": description,
                "caption_sha256": importer.hashlib.sha256(description.encode()).hexdigest(),
-               "row_index": 1, "row_api_url": "https://example.org/row/1", "image_url": "https://example.org/fixture.jpg"}
+               "row_index": 1, "row_api_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=0&length=100", "image_url": "https://example.org/fixture.jpg"}
+        self.dataset_row = row
         normalized, reviews = importer.normalize_sciforma([row])
         self.assertEqual(len(reviews), 1)
         self.assertEqual(normalized[0]["source"]["document"], "unspecified")
@@ -151,6 +156,115 @@ class ExternalImportTests(unittest.TestCase):
         texts = importer.draft_texts(normalized[0])
         self.assertIn(description, texts["prompt"])
         self.assertIn("not an author prompt", texts["prompt"])
+
+    def test_github_runner_authorization_requires_linux_and_scoped_workspace(self):
+        with tempfile.TemporaryDirectory() as directory:
+            workspace = Path(directory) / "workspace"
+            workspace.mkdir()
+            environment = {"GITHUB_ACTIONS": "true", "GITHUB_WORKSPACE": str(workspace),
+                           "GITHUB_REPOSITORY": "DocZbs/Awesome-Academic-Figures", "GITHUB_RUN_ID": "12345"}
+            with patch.dict(os.environ, environment, clear=True), patch.object(importer.os, "uname", return_value=SimpleNamespace(sysname="Linux")):
+                self.assertEqual(importer.server_root(workspace / "batch"), (workspace / "batch").resolve())
+                with self.assertRaises(ValueError): importer.server_root(Path(directory) / "outside")
+                (workspace / "escape").symlink_to(Path(directory))
+                with self.assertRaises(ValueError): importer.server_root(workspace / "escape" / "outside")
+                with patch.dict(os.environ, {"GITHUB_REPOSITORY": "different/repository"}):
+                    with self.assertRaises(ValueError): importer.server_root(workspace)
+            with patch.dict(os.environ, environment, clear=True), patch.object(importer.os, "uname", return_value=SimpleNamespace(sysname="Darwin")):
+                with self.assertRaises(ValueError): importer.server_root(workspace)
+            with patch.dict(os.environ, {"GITHUB_ACTIONS": "true"}, clear=True), patch.object(importer.os, "uname", return_value=SimpleNamespace(sysname="Linux")):
+                with self.assertRaises(ValueError): importer.server_root(workspace)
+                with patch.object(Path, "resolve", lambda path: path):
+                    self.assertEqual(importer.server_root(Path("/home/jdp/repo")), Path("/home/jdp/repo"))
+
+    def test_repeat_promotion_preserves_reviewed_files_and_preview(self):
+        stream = io.BytesIO(); Image.new("RGB", (16, 12), "white").save(stream, format="PNG")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with patch.object(importer, "download_image", return_value=stream.getvalue()):
+                stage = importer.stage_record(root, self.item, self.review, {"example.org"})
+            self.review["asset_sha256"] = stage["asset_sha256"]
+            metadata = importer.promote_record(root, self.item, self.review)
+            out = root / "figures" / self.item["id"]
+            metadata["classification"]["primary_type"] = "conceptual"
+            metadata["curation"]["manual_review"] = "Verified pixels"
+            (out / "metadata.json").write_text(json.dumps(metadata))
+            (out / "prompt.md").write_text("Reviewed adaptation prompt")
+            (out / "preview.webp").write_bytes(b"Existing preview bytes")
+            before = {p.name: p.read_bytes() for p in out.iterdir()}
+            self.assertEqual(importer.promote_record(root, self.item, self.review), metadata)
+            self.assertEqual({p.name:p.read_bytes() for p in out.iterdir()}, before)
+            (out / stage["original_file"]).write_bytes(b"tampered")
+            with self.assertRaises(ValueError): importer.promote_record(root, self.item, self.review)
+
+    def test_sciforma_real_revision_row_binding_and_bibliographic_fields(self):
+        self.test_dataset_scope_and_machine_description_stay_unresolved()
+        row = copy.deepcopy(self.dataset_row)
+        row["dataset_revision"] = "c" * 40
+        row["license_evidence_url"] = f"https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/{row['dataset_revision']}/README.md"
+        row.update(doi="10.1234/fixture", journal_reference="Author supplied journal reference")
+        records, reviews = importer.normalize_sciforma([row])
+        self.assertEqual(len(reviews), 1)
+        self.assertEqual(records[0]["source"]["version"], "c"*40)
+        self.assertEqual(records[0]["paper"]["doi"], row["doi"])
+        self.assertEqual(records[0]["paper"]["journal_reference"], row["journal_reference"])
+        self.assertEqual(records[0]["paper"]["venue"], "arXiv")
+        row["row_index"] = 101
+        with self.assertRaises(ValueError): importer.normalize_sciforma([row])
+        row["row_index"] = 1; row["id"] = "sciforma-2"
+        with self.assertRaises(ValueError): importer.normalize_sciforma([row])
+
+    def test_sciforma_cannot_reuse_another_revision_policy(self):
+        self.test_dataset_scope_and_machine_description_stay_unresolved()
+        row = copy.deepcopy(self.dataset_row); row["dataset_revision"] = "c"*40
+        records, reviews = importer.normalize_sciforma([row])
+        self.assertEqual((records, reviews), ([], []))
+
+    def test_incremental_dedup_preserves_baseline_and_alias_history(self):
+        import sys
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / "data").mkdir()
+            digest = importer.hashlib.sha256(b"exact whole image").hexdigest()
+            for identifier in ("z-existing", "a-new"):
+                out = root / "figures" / identifier; out.mkdir(parents=True)
+                (out / "original.png").write_bytes(b"exact whole image")
+                metadata = {"id": identifier, "original_assets": [{"file":"original.png", "sha256":digest}],
+                    "paper": self.item["paper"], "source":{"method":"external_index_image"},
+                    "rights":self.item["rights"], "reuse":{"prompt_origin":"fixture"}}
+                (out / "metadata.json").write_text(json.dumps(metadata))
+            (root / "data/catalog.json").write_text(json.dumps({"figures":[{"id":"z-existing"}]}))
+            alias = {"id":"old-alias", "canonical_id":"z-existing", "image_sha256":digest}
+            ledger = root / "data/figure-aliases.json"; ledger.write_text(json.dumps({"aliases":[alias]}))
+            script = Path(__file__).with_name("deduplicate_figures.py")
+            argv = [str(script), "--root", str(root), "--report", str(root / "dedup-report.json")]
+            for _ in range(2):
+                with patch.object(importer,"server_root",return_value=root), patch.object(sys,"argv",argv), contextlib.redirect_stdout(io.StringIO()):
+                    runpy.run_path(str(script), run_name="__main__")
+            report=json.loads(ledger.read_text()); self.assertEqual(report["duplicate_count"],2)
+            self.assertEqual(report["new_duplicate_count"],0)
+            self.assertEqual(report["aliases"][1],alias)
+            self.assertTrue((root / "figures/z-existing").exists())
+            self.assertFalse((root / "figures/a-new").exists())
+            self.assertTrue((root / "cache/external-duplicates/a-new/original.png").exists())
+
+    def test_reconcile_keeps_reviewed_genre_and_rejects_wrong_exclusion_sha(self):
+        import sys
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory); out=root/'figures'/self.item['id']; out.mkdir(parents=True)
+            metadata={'id':self.item['id'],'paper':self.item['paper'],'source':{'method':'external_index_image','upstream_pattern':'teaser'},
+                      'classification':{'primary_type':'conceptual','types':['conceptual'],'status':'visual_reviewed'},'curation':{},
+                      'original_assets':[{'file':'original.png'}]}
+            (out/'metadata.json').write_text(json.dumps(metadata)); (out/'original.png').write_bytes(b'actual')
+            sample=root/'sample.json';sample.write_text(json.dumps({'records':[],'excluded_ids':[]}))
+            inventory=root/'awards.json';inventory.write_text(json.dumps({'papers':[]}))
+            script=Path(__file__).with_name('reconcile_external_collection.py')
+            argv=[str(script),'--root',str(root),'--sample-review',str(sample),'--award-inventory',str(inventory),'--report',str(root/'report.json')]
+            with patch.object(importer,'server_root',return_value=root),patch.object(sys,'argv',argv),contextlib.redirect_stdout(io.StringIO()):runpy.run_path(str(script),run_name='__main__')
+            self.assertEqual(json.loads((out/'metadata.json').read_text())['classification']['types'],['conceptual'])
+            sample.write_text(json.dumps({'records':[{'id':self.item['id'],'normalized_id':self.item['id'],'review_status':'exclude_crop','observation':'wrong snapshot','image_sha256':'a'*64}],'excluded_ids':[self.item['id']]}))
+            with patch.object(importer,'server_root',return_value=root),patch.object(sys,'argv',argv):
+                with self.assertRaises(ValueError):runpy.run_path(str(script),run_name='__main__')
+            self.assertTrue(out.exists())
 
 
 if __name__ == "__main__":

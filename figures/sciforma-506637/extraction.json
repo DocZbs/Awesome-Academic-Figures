@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506637",
+  "record_sha256": "1740bff900e6e3e1c6c9b672c9328de8a9de76f04748bfc196b16e2655476a31",
+  "asset_sha256": "32093ebabe6c014d2df518d40c3fe1e46ac33250f6e2da2fe994bf85c1b6396e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506637",
+    "title": {
+      "zh": "HMM-LSTM Fusion Model for Economic Forecasting · 方法图",
+      "en": "HMM-LSTM Fusion Model for Economic Forecasting"
+    },
+    "paper": {
+      "id": "arxiv-2501-02002",
+      "title": "HMM-LSTM Fusion Model for Economic Forecasting",
+      "authors": [
+        "Guhan Sivakumar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02002",
+      "arxiv_url": "https://arxiv.org/abs/2501.02002",
+      "arxiv_id": "2501.02002",
+      "arxiv_first_submitted_at": "2025-01-01T17:31:36Z",
+      "arxiv_updated_at": "2025-01-01T17:31:36Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "econ.EM",
+        "stat.ME"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02002v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506637/image/image.jpg?Expires=1790855633&Signature=EU~l7wu7-7BtuEthUz3O5uEMiBISJCpHAdZcysqcbq2s9Bx4UhsuFnfrPfkyI93fZjKcowUz3UR87jrD8jQ2L4zH-WlZLoNv-ZnPzQfIQliHZ5c1RcMJAaNNXzJfrbWviw2fpgeUQGthmv7BFB-~3v2r7F9dn2upVW0cWs4HyNjjKKJOOkzkOKtjEQ2bLaCJNaDprHv08Cc4h1xooTXi4KMcbae9lNiVFtjrTQc2xevObxzOcehqsGvj-MMLxR2iErCl4x9TsaelxAmzmUjnxgRNMhXg98yawuwVmK5Y0TelW3FgkAYMa14fYTzSlG61bt3z67HweZ8sidP65fNc6g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506637,
+      "description_sha256": "5588b7dc705f5e658a3bf592a4108330280c4d12f9d86a45d25b35bbf1d46fde",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ad04ac559e79e227ee564474bf39af9b4a634dfa1e9877b8e2d80e2e5c8b1ec0",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "econ.EM",
+        "stat.ME"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the internal structure of a Long Short-Term Memory (LSTM) neuron at a given time step t, enclosed within a light green rounded rectangle representing the entire LSTM cell. The global layout is horizontal, showing data flow from left to right, with inputs entering from the bottom-left and outputs exiting from the top-right and bottom-right. Three primary inputs are shown: the previous hidden state h_{t-1}, the current input x_t, and the previous cell state c_{t-1}. These inputs feed into four distinct computational gates arranged sequentially from left to right: the forget gate, the input gate, the cell candidate computation, and the output gate.\n\nVisual modules include colored rectangular boxes representing activation functions or gates: a yellow box labeled σ for the forget gate (f_t), a green box labeled σ for the input gate (i_t), an orange box labeled tanh for computing the cell candidate (˜c_t), and a red box labeled σ for the output gate (o_t). Each gate receives inputs from both the current input x_t and the previous hidden state h_{t-1} via horizontal lines entering from below. The outputs of these gates are denoted as f_t, i_t, ˜c_t, and o_t respectively.\n\nThe cell state update process begins with the forget gate output f_t multiplying the previous cell state c_{t-1} through a pink circular node labeled '×'. Simultaneously, the input gate output i_t multiplies the cell candidate ˜c_t (computed via tanh) through another pink '×' node. The results of these two multiplications are then added together using a blue circular '+' node, producing the new cell state c_t, which exits to the right.\n\nFor the hidden state computation, the output gate o_t multiplies the tanh of the new cell state c_t through a pink '×' node. This product is then passed through a purple oval labeled 'tanh' (representing the final tanh activation) to produce the current hidden state h_t, which exits to the bottom-right. Additionally, the same tanh output is used to compute the output y_t, which exits upward from the top-right of the cell.\n\nConnections are represented by black arrows indicating the direction of data flow. The inputs h_{t-1} and x_t split and feed into all four gates. The output of each gate connects to the next stage: f_t to the first multiplication, i_t to the second multiplication, ˜c_t to the second multiplication, and o_t to the final multiplication. The cell state c_t is passed forward to the next time step, while h_t and y_t are outputs of the current time step. The diagram clearly visualizes the gating mechanism that allows LSTMs to selectively remember or forget information over time."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

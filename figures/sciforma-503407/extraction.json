@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503407",
+  "record_sha256": "ab362a4210784fb587d12b59f54a6702a2684d320b988f19de874fbfed90baa7",
+  "asset_sha256": "1ee7de06b308b340c4f54da800bfddbaba9c7b54e60ebfe943e7bbe0c62233db",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503407",
+    "title": {
+      "zh": "Prior2Posterior: Model Prior Correction for Long-Tailed Learning · 方法图",
+      "en": "Prior2Posterior: Model Prior Correction for Long-Tailed Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-16540",
+      "title": "Prior2Posterior: Model Prior Correction for Long-Tailed Learning",
+      "authors": [
+        "S Divakar Bhat",
+        "Amit More",
+        "Mudit Soni",
+        "Surbhi Agrawal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16540",
+      "arxiv_url": "https://arxiv.org/abs/2412.16540",
+      "arxiv_id": "2412.16540",
+      "arxiv_first_submitted_at": "2024-12-21T08:49:02Z",
+      "arxiv_updated_at": "2024-12-21T08:49:02Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16540v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503407/image/image.jpg?Expires=1790855367&Signature=tnnrgrNnGh6QrAsCUAVa~2g2VfjZnM43BXVahHa-tN~kjqqarOtYc3s2D0Cl~JRNCOwz0Fv5oKKIGoABaOhsai9jAU5rZMtC15Z4afwCaLG0Z~j~mdqC2~3r1PKK6GoXwZKNfafIfDuf0SBJsFnoAlFMTAnRY13Ubmlie3Cod8lCiWOS-hXsCfvDuJdap4NoMVt4SkFOoylJbpHONybYmfn1qXNq5gR2~yPZOph2eDLkWKRHmXt6K2D8QRaqDExAVdiC3QB8nBa7UPU08q2s~12rioQ4f93znVgnsbifvx1u6PiHwoIzEqDPrmnIXvFwQRR-ml3ApRf5rAaaulHKcA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503407,
+      "description_sha256": "b96167990b7e76214d5ae09dd608db0b993de307273af653fedda22202121d4b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "144de5ce20f0ea2979834a68ccb4f1de8dcdd687354acd9d9e3e2a12a5e21da8",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative and methodological overview of four distinct components related to training and correcting biases in classification models under class imbalance, arranged in two rows. The top row contrasts two training paradigms: 'Plain CE Training' on the left and 'Logit Adjusted Training' on the right. Each is enclosed in a rounded rectangular box. In 'Plain CE Training', a dataset P(x,y) ~ (x_i, y_i) is fed into a pink rounded rectangle labeled 'Model Θ', which outputs a predicted distribution P^m(y), visualized as a curve over 'Classes'. This output is then used to compute 'Cross Entropy Loss'. In 'Logit Adjusted Training', the same input data flows into an identical 'Model Θ' block, but the output is adjusted by a factor P(y)/P^t(y), where P^t(y) represents the true class prior, leading to a 'Logit Adjusted Loss'. Both models are visually represented with the same pink color and rounded rectangular shape, and each includes an internal graph depicting the predicted probability distribution over classes.\n\nThe bottom row details two post-training correction methods. On the left, 'Effective Prior Calculation' shows a model Θ trained on data P(x,y) ~ (x_i) — i.e., without labels — producing an output P̄(y|x). A blue arrow points from this output to a graph labeled 1/N ∑ P̄(y|x), representing the empirical average over the dataset, which yields the estimated prior P̄(y). A footnote clarifies that P̄(y) corresponds to P^m for the plain CE-trained model and P̄^m for the logit-adjusted model. On the right, 'Prior2Posterior' (P2P) takes the same model Θ (trained on unlabeled data) and its output P̄(y), and feeds it into an orange rectangular block labeled 'P2P'. This module applies the formula P^a(y|x) = P̄(y|x) * P^t(y)/P(y) to produce adjusted posterior probabilities. The entire figure uses consistent visual elements: pink rounded rectangles for models, black arrows for data flow, and mathematical expressions to denote transformations. The layout is modular and hierarchical, emphasizing the contrast between training methods (top row) and the subsequent correction strategy (bottom row)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-505527",
+  "record_sha256": "cf1cc7465c7aa37f953b85927d92b0cc47c6c78039ed80968e1a039a54922ca5",
+  "asset_sha256": "1b4aad266060f0c1900db0d128d5d1e553aadced13cbaa0f78afb03214e08526",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505527",
+    "title": {
+      "zh": "Physics consistent machine learning framework for inverse modeling with applications to ICF capsule implosions · 方法图",
+      "en": "Physics consistent machine learning framework for inverse modeling with applications to ICF capsule implosions"
+    },
+    "paper": {
+      "id": "arxiv-2412-20192",
+      "title": "Physics consistent machine learning framework for inverse modeling with applications to ICF capsule implosions",
+      "authors": [
+        "Daniel A. Serino",
+        "Evan Bell",
+        "Marc Klasky",
+        "Ben S. Southworth",
+        "Balasubramanya Nadiga",
+        "Trevor Wilcox",
+        "Oleg Korobkin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20192",
+      "arxiv_url": "https://arxiv.org/abs/2412.20192",
+      "arxiv_id": "2412.20192",
+      "arxiv_first_submitted_at": "2024-12-28T16:05:41Z",
+      "arxiv_updated_at": "2025-09-11T13:51:55Z",
+      "arxiv_subjects": [
+        "physics.comp-ph",
+        "cs.LG",
+        "hep-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20192v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505527/image/image.jpg?Expires=1790855553&Signature=ixfT59bQosg1ycNoyCzQ7URrfpatCXBKe7AXLwlMIaq8KgcXbeVeqPqwFE6t~CBqbe-5iwNlmhFYIasULAYmL3UAbU8F6~5DEDAlYAlvHOnbo44FjibvKAojrlw7~juJ4jBVRnjr5iXwW-MGBK2Ywm9pyhTTMLv5beFOJTjcf5~IotAkmpjYVomfcrWgkhQuXTCm--qBj~6Uzu-h3oDHnsUTtwcFnnd70KDdwBweWbjJ5yLrs4QlN0xXzTSsjTnvCHfXBgK7xHbhw48CfkaipvJxeu7aWEA0Bh2U83Da3b5ewMleNo-ulnAuXOL~0r50MAQRuS1xrzGYVKK05KY6Pw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505527,
+      "description_sha256": "3a4a0fd5a3628d7823d657f289f094edb6adac8209579a3d4e3b8228459d8709",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "629ef9af570c5ec75595e3bc9b56c19cef9ebe999a1b94f575df8ccc08f8b7f4",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "physics.comp-ph",
+        "cs.LG",
+        "hep-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Feature-to-Parameter Network (F2PNet), a deep learning framework designed to map physical features to model parameters. The global layout is a left-to-right pipeline: starting from input parameters on the far left, passing through a forward model, generating features and latent variables, and finally decoding them into output parameters on the far right. The structure is modular, with distinct components labeled as 'Forward Model: F', 'Decoder: D', and 'Generator', each encapsulated in colored boxes to denote functional roles.\n\nThe input parameters, denoted as p, are represented as a vector in ℝ^Np. These parameters include EOS (Γ₀, s₁, cₛ, cᵥ) and IC (v_impl, F₀, F₁, ..., F₈), and are fed into the Forward Model F, which is enclosed in a light green rounded rectangle. Inside this module, the process begins with a feedforward layer transforming ℝ^Np → ℝ^(Nf·Nt), followed by a reshape operation converting the output to ℝ^(Nf×Nt), and then a transformer layer processing it to ℝ^(Nf×Nt). The output of the forward model is a sequence of feature vectors, labeled as Features: f = (F₀^(i), F₁^(i), ..., F_N(t)^(i)), where i denotes either shock or edge features. These features are visualized as a series of Nt light purple rectangular blocks, each labeled with ℝ^Nf and indexed from (1) to (Nt).\n\nBelow the features, a separate stream generates Latent Features: g, represented as a sequence of Nt light purple rectangular blocks, each labeled ℝ^Ng. These latent features are produced by sampling from a Gaussian distribution N(μ, Σ), indicated by an oval-shaped box labeled 'Generator' at the bottom center of the diagram. This sampling step introduces stochasticity into the model.\n\nThe features f and latent features g are concatenated and fed into the Decoder D, shown as a pink rounded rectangle. The decoder first applies a transformer layer to the concatenated input of size ℝ^((Nf+Ng)×Nt), reshapes it to ℝ^((Nf+Ng)·Nt), and then uses a feedforward layer to map it to the final output space ℝ^Np. The output, denoted as p', mirrors the input parameter structure but includes an additional PTW term in the EOS component, indicating a modified or predicted set of parameters.\n\nConnections between modules are represented by solid black arrows, indicating the direction of data flow. The forward model’s output features f are connected directly to the decoder. The latent features g are generated independently via the generator and also fed into the decoder. The final output p' is shown as a light purple rectangle, matching the input format, completing the closed-loop mapping from parameters to features and back to parameters. The diagram emphasizes the role of the generator in introducing variability and the use of transformers in both encoding and decoding stages to capture sequential dependencies."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

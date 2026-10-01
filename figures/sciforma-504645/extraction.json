@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504645",
+  "record_sha256": "88cdf547ab37a684d2c5cc4337884f44a6f8e76868ce104eff26c3e199f23349",
+  "asset_sha256": "0d98d59d87eafd3806f8d0c2e9ee75517bc10f290f34cd164e5f3bfc6d96dc7a",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504645",
+    "title": {
+      "zh": "TimelyLLM: Segmented LLM Serving System for Time-sensitive Robotic Applications · 方法图",
+      "en": "TimelyLLM: Segmented LLM Serving System for Time-sensitive Robotic Applications"
+    },
+    "paper": {
+      "id": "arxiv-2412-18695",
+      "title": "TimelyLLM: Segmented LLM Serving System for Time-sensitive Robotic Applications",
+      "authors": [
+        "Neiwen Ling",
+        "Guojun Chen",
+        "Lin Zhong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18695",
+      "arxiv_url": "https://arxiv.org/abs/2412.18695",
+      "arxiv_id": "2412.18695",
+      "arxiv_first_submitted_at": "2024-12-24T22:51:29Z",
+      "arxiv_updated_at": "2024-12-24T22:51:29Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18695v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504645/image/image.jpg?Expires=1790855433&Signature=vI4z27OBQNg7nAUcJb7HRPkShE5sA2Y9lfbjhfv0hgHW1717Cr4eae~8h~Hr2knkFDoMZnjvr3PxugrywOxkdGTIyxF03BLBD7WsUfVRZKPXplBIhq7BCxDeH6Mml~UmszMCSQm08RmmdRAsVicOqKY1vTXUbnjT~zNGrVrcejOF4YALs66Rq7GaYpHmBCvJS2WX31CBgCinW4oq8gAORxvuRZubGANLaUjnoaeIszEPRGHGpNpE7zW4FOyPyzOsBNuVn8Fr24JqS4DpX7snhH7ZagSIvswmo1DCSW-W7rfoOLDy~zIYrBBwJ1LZpwuKmqbmgjv5hTehg03pETbr8g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504645,
+      "description_sha256": "4454335017ee4806383b9a3491dad9ab44eebe718858499046daf95e317cbaa7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7a46963d384d5b9d959eee0b1ad9af2011f85042710628cf55b1e1de89c083b5",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a timeline-based interaction between an LLM service and a robotic agent for processing a single request, highlighting three key latency components. The global layout consists of two horizontal timelines stacked vertically: the top row labeled 'LLM Service for Request 1' and the bottom row labeled 'Robotic Agent 1', both aligned along a common horizontal axis labeled 'Timeline' at the bottom. The timeline progresses from left to right, indicating the chronological flow of events.\n\nIn the LLM Service row, the process is divided into sequential segments: 'Segment 0' (orange rectangle), followed by a gray hatched region labeled 'Generation for other requests', then 'Segment 1' and 'Segment 2' (both orange rectangles). These represent the LLM's token generation phases for the current request, interrupted by processing for other requests.\n\nIn the Robotic Agent 1 row, the process begins with 'R0' (an orange rectangle), representing the initial state or reception of the request. This is followed by a blue dotted vertical bar symbolizing data transmission. Then, the agent executes actions corresponding to each segment: 'Exec. seg0', 'Exec. seg1', and 'Exec. seg2' (all orange rectangles). Between each execution phase, there is another blue dotted vertical bar indicating data transmission from the LLM to the robot.\n\nConnections and arrows are used to denote event timing and dependencies. Solid blue upward arrows indicate 'Execution Completion' events, marking the end of each execution phase. Dashed blue downward arrows mark 'Execution Start' events, signaling when the robot begins executing a new segment. The blue dotted bars represent 'Data Transmission' events, occurring between LLM output and robot execution.\n\nTwo waiting periods are explicitly annotated: 'W(s₀)' spans from the start of R0 to the beginning of Exec. seg0, representing the waiting time for the first segment. 'W(s₁)' spans from the end of Exec. seg0 to the start of Exec. seg1, representing the waiting time for the second segment. The total task completion time 'C(r)' is marked below the timeline, spanning from the start of R0 to the end of Exec. seg2, encompassing all waiting and execution times.\n\nThe figure visually conveys that the robot waits for LLM-generated segments before executing them, introducing delays. The caption clarifies that the request response time is W(s₀), the robot waiting time is the sum of all W(sₖ) across segments, and the task completion time C(r) includes both waiting and execution durations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

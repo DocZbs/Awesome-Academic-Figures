@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-504668",
+  "record_sha256": "340b23be1272714fc97763e38fe4a6abe169aef2005ae4447866d3f672829e9b",
+  "asset_sha256": "876c95210ebb954c557dcbfa0103ff1cfcabaa2a124a1a938731abeba30bbb3a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504668",
+    "title": {
+      "zh": "MRI Reconstruction with Regularized 3D Diffusion Model (R3DM) · 方法图",
+      "en": "MRI Reconstruction with Regularized 3D Diffusion Model (R3DM)"
+    },
+    "paper": {
+      "id": "arxiv-2412-18723",
+      "title": "MRI Reconstruction with Regularized 3D Diffusion Model (R3DM)",
+      "authors": [
+        "Arya Bangun",
+        "Zhuo Cao",
+        "Alessio Quercia",
+        "Hanno Scharr",
+        "Elisabeth Pfaehler"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18723",
+      "arxiv_url": "https://arxiv.org/abs/2412.18723",
+      "arxiv_id": "2412.18723",
+      "arxiv_first_submitted_at": "2024-12-25T00:55:05Z",
+      "arxiv_updated_at": "2024-12-25T00:55:05Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/WACV61041.2025.00078",
+      "arxiv_current_version_observed": "2412.18723v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504668/image/image.jpg?Expires=1790855433&Signature=bADPGK5q7XnFe9uNUvu18prdiDfZ2kVvna12ojMqLvdnC~lV6wDVOM5T-T7rFxabFF2CzGkm4c58iOHqbT~gJwsWMhcYVrecBnLhcWq4P3EIFlAk7WLCQT-D4rxfu-anAUj-wYAGqb-4CvINb0R8uBEIfcBXGZR~x62l522MiYqmty0kRiyZf4lO1NPJH-KHbdOixz-9mPiORTxDBwuL0HnfQzhmn8uU63MkmWUsAgSnNCyjced7IlcRO4Mz3D8wWYdVOGcOPpQtWZUGFye8ZLACvQGG3s44OpmkJct7k~-o~p6rtrIVKjwzx3NoCQW1G0tSY0fpSxTExuiSPBxC1A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504668,
+      "description_sha256": "c9f2743ad9f001bfb5af73f80f532d0afc1c153bc015417f9fd451ee3f7b57d0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fc1ea684d90369ba777e5144c9bc5da4f7429a4403e190ba02638916d62bff30",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-phase workflow for generating and reconstructing volumetric data using a diffusion model, guided by specific k-space measurements. The overall layout is divided into three main sections: Phase 1 (Diffusion Model Training), Phase 2 (Sampling), and a separate right-side module labeled G representing measurement and model-based optimization.\n\nIn Phase 1, the forward diffusion process begins with a clear 3D brain image at time t=0, which progressively adds noise over discrete time steps t=1, t=2, up to t=T, resulting in a fully noisy blue rectangular volume. This process is depicted with solid arrows indicating sequential progression. The reverse diffusion process, shown below, starts from the noisy volume at t=T and iteratively denoises it through a series of Denoising UNet modules (light blue hourglass-shaped blocks with black padlock icons), moving backward to recover the original brain image at t=0. The Denoising UNets are connected by dashed arrows, indicating iterative refinement steps.\n\nPhase 2 describes the sampling phase, where the trained diffusion model is used to generate new data. It begins with a noisy volume at t=T and proceeds backward through Denoising UNet modules (same visual style as Phase 1) to produce a clean brain image at t=0. Crucially, during this reverse process, each Denoising UNet receives additional guidance from a green rounded rectangle labeled 'G', which represents the measurement constraint. These connections are shown as downward arrows from G to each UNet, indicating that the reconstruction is conditioned on the measurement data.\n\nOn the right side, the module labeled 'G' details the measurement process. It shows a 3D volume (labeled X, Y, Z axes) being sliced along the y-axis and x-axis to produce two 2D k-space images: 'Sliced k-space on y-axis' and 'Sliced k-space on x-axis'. These slices are visually represented as striped patterns. A black padlock icon indicates that these measurements are constrained or fixed. An arrow leads from this measurement block to a large green rounded rectangle labeled 'Model based Optimization'. This optimization block takes an initial estimate X^(0) as input and produces an updated estimate X^(m), which is fed back to guide the Denoising UNets in Phase 2. The entire system thus combines a pre-trained diffusion model with iterative model-based optimization to reconstruct volumetric data from partial k-space measurements, ensuring a unique and accurate reconstruction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

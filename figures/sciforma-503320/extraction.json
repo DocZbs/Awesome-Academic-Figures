@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-503320",
+  "record_sha256": "8fa8cdf2d4724e6d677d9cd312a3053db151065f02d45cf5c0da6588f887c0e0",
+  "asset_sha256": "b02652717389c6a40a0f88f89268304961f0f31786ba29daafcd84a9851206b3",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503320",
+    "title": {
+      "zh": "Identifying Cyberbullying Roles in Social Media · 方法图",
+      "en": "Identifying Cyberbullying Roles in Social Media"
+    },
+    "paper": {
+      "id": "arxiv-2412-16417",
+      "title": "Identifying Cyberbullying Roles in Social Media",
+      "authors": [
+        "Manuel Sandoval",
+        "Mohammed Abuhamad",
+        "Patrick Furman",
+        "Mujtaba Nazari",
+        "Deborah L. Hall",
+        "Yasin N. Silva"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16417",
+      "arxiv_url": "https://arxiv.org/abs/2412.16417",
+      "arxiv_id": "2412.16417",
+      "arxiv_first_submitted_at": "2024-12-21T00:46:48Z",
+      "arxiv_updated_at": "2024-12-21T00:46:48Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16417v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503320/image/image.jpg?Expires=1790855364&Signature=Hj7xDqelaQAkku8h8GzDDpULMQV7oebBcjwFWVqqsGPzcP~nLKpL-57k7UO1xT6Dt8n~k4LzwFfG2ZovUM9vEFnoeJEbr0EzWKlc91zQPau7ZX9PZfojZMpnCLur3jE8yrol3PEgo2pcrfzvfUgNdYWp7qtAI1DumivQF2igz4Hr0-bIBEDf12hL22TXvft-xBmPJQsyzaaQje1~35CKs0tv~KBg49qd1eJ5381wYmG-aXbFcYB4rE91UEbrLpNP3gI9~1MewhSsyEQ41UYk18kHhvVUCftJCgM3RWsgqoHBVLGPGXpYrVuOatFLGj~1CVk7d8vfqOAlC6LSuD7eGw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503320,
+      "description_sha256": "4dcc5a90367f7719ba0a0a48cc2aafa169b5a93f977e8943cf74c4ba63e30038",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ce5f7ff061fa29988608ca225db0f8685b6347abf2622d43d0564942d1051baf",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comprehensive modeling pipeline for role detection using machine learning and deep learning techniques, structured into two main sections: Data Processing and Modeling & Evaluation.\n\nIn the Data Processing section, the pipeline begins with a dataset represented as a cylindrical database icon. Each sample is labeled with a target (y1, y2, ..., yN) and associated context features (cq1, ca1, etc.). A transformation step labeled 'Target-Context' converts each sample into a structured format {target, context}, such as {y1, {cq1, ca1}}. These transformed samples are then fed into a 'Sample Encoding' module, depicted as a red neural network-like structure, which generates encoded representations (Enc1, Enc2, ..., EncN). To address class imbalance, a 'Label Balancing' step applies SMOTE and ADASYN techniques, producing balanced label sets (Label1, Label2, etc.) shown as red-bordered document icons. The processed data is then partitioned into five folds (fold1 to fold5), arranged vertically in a stack. A legend indicates that gray blocks represent training sets, white blocks validation sets, and hatched blocks denote training folds used during cross-validation. The top fold (fold1) is highlighted as the test fold, while the remaining four are training folds. This setup implies a 5-fold cross-validation strategy, though the caption mentions 10-fold, suggesting potential scalability or an illustrative simplification.\n\nThe Modeling & Evaluation section details the core model architecture and evaluation framework. At the bottom, a sequence of blocks labeled Block-1 through Block-j represents a deep learning backbone, likely a transformer-based model, initialized via 'Tokenization & Embedding'. This backbone undergoes 'Fine-tuning' across its blocks. The output from the final block (Block-j) is passed to a 'Classification Head', depicted as a small neural network, which produces classification predictions. Six distinct modeling approaches are shown above this backbone:\n\n1. Random Forest: Represented by multiple decision trees, it receives input from the backbone's output.\n2. XGBoost: Shown as an ensemble of gradient boosted trees, also receiving input from the backbone.\n3. AdaBoost: Illustrated with a combination of weak learners and a boosting mechanism, similarly fed from the backbone.\n4. Classification Head: Directly connected to the backbone’s final block, forming a standard deep learning classifier.\n5. Ensemble: A final aggregation layer combining outputs from the preceding models (Random Forest, XGBoost, AdaBoost, and Classification Head).\n6. Fine-tuning: Indicates the process applied to the backbone blocks.\n\nRed arrows indicate data flow and connections between components. Outputs from models 1–4 feed into the Ensemble module (5), which then directs results to the Evaluation module. The Evaluation box lists metrics: Accuracy, Recall, Precision, and F1-score, accompanied by an icon of a gear and a neural network, symbolizing performance assessment. The entire pipeline emphasizes a hybrid approach combining traditional machine learning models with deep learning, evaluated rigorously using cross-validation and standard classification metrics."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

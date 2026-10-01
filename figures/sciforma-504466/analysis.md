@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+The Thousand Brains Project: A New Paradigm for Sensorimotor Intelligence — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18354
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a conceptual comparison between a computational learning module named 'Monty' and the hierarchical structure of neocortical columns, illustrating how the former may emulate cortical processing mechanisms. The layout is divided into two main sections: on the left, the Monty module; on the right, three vertically stacked representations of neocortical columns under the heading 'Neocortex'.
+
+In the Monty section, a rectangular box contains three stacked components. At the top is a labeled box containing the text “Car with pose x, θ”, representing a symbolic or semantic representation of an object. Below it is a graphical depiction of a car with a circular sensor or wheel icon and a side-view outline, symbolizing perceptual features. The bottom component is a grid with a blue lattice pattern, showing three purple circular markers connected by arrows, indicating movement or trajectory across discrete spatial locations. Black upward arrows connect the grid to the feature representation, and black downward arrows connect the feature to the symbolic representation, suggesting bidirectional processing. A thick blue arrow enters from the left side of the Monty box and points upward toward the feature layer, while two thick pink arrows enter from below and point upward and downward within the grid layer, indicating input and feedback pathways.
+
+On the right, three identical vertical column structures represent neocortical columns. Each column is segmented into horizontal layers, with labels on the far right identifying them: 'Object' at the top (dashed pattern), 'Feature' in the middle (vertical stripes), and 'Location' at the bottom (dashed pattern). Within each column, black arrows indicate vertical processing: upward arrows from Location to Feature to Object, and downward arrows from Object to Feature to Location, reflecting hierarchical feedforward and feedback connections. Additionally, a thick blue arrow runs vertically through each column from bottom to top, labeled 'Input' at the base, representing sensory input flow. Two thick pink arrows run vertically through each column from bottom to top and then back down, labeled 'Motor' at the base, indicating motor output or feedback loops. Gray double-headed arrows connect the Monty module to each of the three neocortical columns, implying a structural and functional correspondence between the computational model and biological cortical columns.
+
+The overall structure suggests that Monty’s layered processing—symbolic, feature-based, and spatial—maps onto the neocortex’s hierarchical organization of object, feature, and location layers. The figure emphasizes bidirectional communication within both systems and highlights the alignment of input (blue) and motor (pink) pathways across the computational and biological models.

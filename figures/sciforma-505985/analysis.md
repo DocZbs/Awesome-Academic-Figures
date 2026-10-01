@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DeepF-fNet: a physics-informed neural network for vibration isolation optimization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.21132
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the DeepF-fNet architecture, a dual-network framework composed of two main components: the Inverse Eigenvalue Problem Solver (IEPS) on the left and the Wave Equation Solver (WES) on the right, separated by a vertical dashed line. The IEPS is enclosed in a red-bordered rounded rectangle and takes a 'Spectral Target' as input, which is fed into a neural network represented by two layers of nodes—six orange circular nodes in the first layer and four blue circular nodes in the second layer—fully connected to each other. The output of this network is labeled 'Structure Parameters', shown in a green-bordered rounded rectangle. This output is passed to the WES via a red arrow. The WES, enclosed in a purple-bordered rounded rectangle, receives 'Nodal Coordinates' as input, which feeds into an identical neural network structure (six orange nodes followed by four blue nodes), producing 'Mode Shape Vectors' as output, also in a green-bordered rounded rectangle. 
+
+Below each solver, there is a corresponding total loss function enclosed in a dashed-line box. For IEPS, the total loss function (red dashed box) combines three components: 'Data Loss', 'BC Loss' (Boundary Condition Loss), and 'PDE Loss', all represented as red oval shapes, connected by '+' signs. These losses are computed based on the outputs of the IEPS network and are used to update the network parameters via backpropagation (BP), indicated by a thick red curved arrow pointing from the loss function back to the IEPS input. Similarly, the WES total loss function (purple dashed box) combines 'Data Loss', 'BC Loss', and 'PDE Loss' (all in purple ovals), with connections to the WES network outputs. A thick purple curved arrow labeled 'BP' indicates backpropagation from the WES loss function back to its input. 
+
+Connections between modules include: a red arrow from 'Structure Parameters' to 'Nodal Coordinates' in WES; arrows from both solvers’ outputs to their respective loss functions; and cross-connections from the IEPS output to the WES loss function components (specifically to PDE Loss and BC Loss), suggesting that the structure parameters influence the wave equation constraints. The overall layout is symmetrical, with distinct color coding—red for IEPS and purple for WES—to differentiate the two solvers and their associated loss functions. The architecture emphasizes a coupled training process where the IEPS infers structural parameters from spectral targets, and the WES simulates wave behavior using those parameters, with both networks being optimized through their respective loss functions via backpropagation.

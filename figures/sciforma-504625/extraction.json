@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504625",
+  "record_sha256": "c79e4c277438eb6d0c252dc5da6eaf942eb94e5b56026844f95d60c82b98315f",
+  "asset_sha256": "e0b5ae08819bc9d75c0ce8f2a2a0c24c7b35f990e61107be4279ff1929803bd0",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504625",
+    "title": {
+      "zh": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence · 方法图",
+      "en": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence"
+    },
+    "paper": {
+      "id": "arxiv-2412-18655",
+      "title": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence",
+      "authors": [
+        "Laura Vásquez-Rodríguez",
+        "Nhung T. H. Nguyen",
+        "Piotr Przybyła",
+        "Matthew Shardlow",
+        "Sophia Ananiadou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18655",
+      "arxiv_url": "https://arxiv.org/abs/2412.18655",
+      "arxiv_id": "2412.18655",
+      "arxiv_first_submitted_at": "2024-12-24T19:05:21Z",
+      "arxiv_updated_at": "2024-12-24T19:05:21Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18655v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504625/image/image.jpg?Expires=1790855432&Signature=kJ3Lrxga-NaHxZSsWsTRI8X~szU5Jay6HIFTJwhYUNLK0JbiqxbBcTz519MxWm8l7-gFF18D8TrGEQ1-HIGyzb8Nm4~jX2lWn34DGt72HJ5JI36NZ1zCUtx~LpleAm8hGndrL2E8OpjWaGW9hs0W9A8XMGLGExsEdUUiaMHGKwOVm1a4kzxnZ90fQJXgMFKuZ~BOAB-ou3eRCxCvkoBP0uh80Ta-5qrVugCpn8m5VUPy5rEiADRYcYNlz~6DFv4amBizZC7zvZDUU9WKHzX96BQpYyTpbkRO-CZ7Zkg~k7fENL94FRiPIkjZbZVvVm0whazvviIRhxhzIxXKMv38rw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504625,
+      "description_sha256": "ff9318a6ce87c54712646f97dd82f3aa2b97296c033f6d315f7fd49eb62e8243",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "26f09d4f4c9a7678e05c0188817d53ed0ce9993a22874369b1714291f85888bd",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a text simplification (TS) model based on a T5-Model, which is trained using a multi-objective loss function combining simplification, coherence, and readability components. The global layout is left-to-right, starting with two input sources on the far left: one labeled 'simplify: complex' and another labeled 'read classify: simple', both represented by blue document icons with orange checkmarks. These inputs are fed into a central orange rounded rectangle labeled 'T5-Model', which shares the same encoder for both tasks, as indicated by the annotation '(same encoder)' above it. From the T5-Model, three outputs emerge: 'simplified'' (predicted simplified text), which is sent to two separate modules — 'Simplification Loss' and 'Coherence Model'; and 'readability label'' (predicted readability label from the simple text), which is directed to the 'Readability Loss' module. The 'Simplification Loss' module receives an additional input from above labeled 'gold-reference (simple)', which serves as the ground truth for simplification. Similarly, the 'Readability Loss' module receives 'gold-reference (readability label)' from below. The 'Coherence Model' outputs a 'score' that contributes to the final 'Model Loss'. Both 'Simplification Loss' and 'Readability Loss' output 'loss' values that are also fed into the 'Model Loss' module, which is depicted as a blue rounded rectangle on the far right. All three blue modules — 'Simplification Loss', 'Coherence Model', and 'Readability Loss' — are visually consistent in color and shape, indicating they are distinct but related components in the loss computation pipeline. The connections between modules are shown as black arrows with clear labels ('loss', 'score') to indicate the type of data being passed. The overall structure reflects a training framework where the T5-Model generates predictions that are evaluated against gold-standard references and coherence scores, and these evaluations are aggregated into a combined 'Model Loss' to guide optimization. The caption clarifies that the model takes complex text for simplification and simple gold-standard text for readability classification, uses predicted simplifications for loss and coherence evaluation, and uses predicted readability labels for readability loss, culminating in a combined loss function."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

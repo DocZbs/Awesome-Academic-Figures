@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-503622",
+  "record_sha256": "937d0fdae9d276d15af81466b1ca9064b00f4846a96474bcfe92e389f604d356",
+  "asset_sha256": "e733d7d028ad6faf74031ee2a928cc51dd45156bc9fca765ecf09ceee5400c7e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503622",
+    "title": {
+      "zh": "Reconsidering SMT Over NMT for Closely Related Languages: A Case Study of Persian-Hindi Pair · 方法图",
+      "en": "Reconsidering SMT Over NMT for Closely Related Languages: A Case Study of Persian-Hindi Pair"
+    },
+    "paper": {
+      "id": "arxiv-2412-16877",
+      "title": "Reconsidering SMT Over NMT for Closely Related Languages: A Case Study of Persian-Hindi Pair",
+      "authors": [
+        "Waisullah Yousofi",
+        "Pushpak Bhattacharyya"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16877",
+      "arxiv_url": "https://arxiv.org/abs/2412.16877",
+      "arxiv_id": "2412.16877",
+      "arxiv_first_submitted_at": "2024-12-22T06:12:46Z",
+      "arxiv_updated_at": "2024-12-22T06:12:46Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16877v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503622/image/image.jpg?Expires=1790855405&Signature=KoBKDVqtJP0ZsqJq4kju~y6iKl3WnJ02QUpQd4-Eoaw4LVT9YvzuqyRDXVdTd2Saeao8zgIykKUIp9NZHliw4kLv1Wl-TuUUPuvWsybFkpFqewH7ZBRYRjOxtn5-7364U1vEkhfT85OkuK1vY5l~GMqqF9X6wKjgTo9kdCXVCaAn71TRy7BP9zKFJSh0ZstAUM4p3c-Vvji1N2r6I06A-O0PHgYhR~VSVk6AmbVJ4uTQtgnUpiYSAX3xU74xUWVmsA-a7RNcMKGbZLwK8XK2IenVSTnXffh95VaXW82KzudANAoWCzNYoOmpjJvHRLJKHnARTxLTrgsCSVqD5HynuA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503622,
+      "description_sha256": "a1043768c9e07b1d448600155dbd7aa218881037bfc63dbf1997cbd1124465ad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "52eec718bb6cf3948715db573567bf1fc66206c5cc20a63fa89e99bd3435cc63",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Statistical Machine Translation (SMT) model for translating from Persian to Hindi. The overall layout is a two-column flowchart, with the left column representing the process for creating phrase-based translation resources from a parallel corpus, and the right column depicting the generation of language models from a monolingual corpus. Both streams converge at the Moses decoder, which produces the final Hindi translation.\n\nIn the left column, the process begins with a cylindrical node labeled 'Persian-Hindi Parallel Corpus' in light green, indicating the source data. This flows downward via a solid arrow to a rounded rectangular box labeled 'Alignment using Giza++', which performs word-level alignment between the parallel sentences. The output of this step is another rounded rectangle labeled 'Phrase table', which stores aligned phrase pairs for translation.\n\nIn the right column, the process starts with a cylindrical node labeled 'Hindi Monolingual Corpus', also in light green. This feeds into a rounded rectangle labeled 'LM by SRILM', indicating the use of the SRILM toolkit to train language models. The next step is a rounded rectangle labeled '5-gram LMs', representing the trained n-gram language models specifically using 5-grams.\n\nAt the bottom of the diagram, the phrase table and the 5-gram LMs both feed into a central rounded rectangle labeled 'Moses decoder', which is the core decoding component of the SMT system. An additional input to the decoder comes from a rounded rectangle on the far left labeled 'Text in Persian', representing the source sentence to be translated. The output of the Moses decoder is a rounded rectangle labeled 'Translation in Hindi', indicating the final translated output.\n\nAll nodes are uniformly styled with light green fill and dark green borders, and all connections are represented by solid black arrows indicating the direction of data flow. The diagram uses standard flowchart shapes: cylinders for data sources (corpora), and rounded rectangles for processing steps or components. There are no mathematical equations or LaTeX expressions visible in the figure. The caption below the diagram reads: 'Architecture of Persian to Hindi SMT Model.'"
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,52 @@
+name: Stage licensed gallery expansion
+
+on:
+  push:
+    branches: [aaf-expand-3k-20261001]
+    paths: [data/batches/expand-3k-20261001/index.json]
+  workflow_dispatch:
+    inputs:
+      index:
+        description: Normalized licensed candidate index in this branch
+        required: true
+        default: data/batches/expand-3k-20261001/index.json
+      reviews:
+        description: Explicit source and rights review manifest
+        required: true
+        default: data/batches/expand-3k-20261001/reviews.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gallery-expansion-staging
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Download individual licensed figures on the cloud runner
+        env:
+          AAF_CANDIDATE_INDEX: ${{ inputs.index || 'data/batches/expand-3k-20261001/index.json' }}
+          AAF_REVIEW_MANIFEST: ${{ inputs.reviews || 'data/batches/expand-3k-20261001/reviews.json' }}
+        run: python scripts/expand_catalog.py --index "$AAF_CANDIDATE_INDEX" --reviews "$AAF_REVIEW_MANIFEST"
+      - run: python scripts/deduplicate_figures.py --report data/figure-aliases.json
+      - run: python scripts/build_catalog.py
+      - name: Save staged figures for visual review
+        run: |
+          git config user.name 'Awesome Academic Figures'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add figures data/catalog.json data/figure-aliases.json data/batches/expand-3k-20261001/staging-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Stage individually licensed references for gallery expansion'
+            git push origin HEAD
+          fi

@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506905",
+  "record_sha256": "daa8e7699f0505d89fba4da722023b05eb5a0ab8c3e190ada39ac2eb21d946f2",
+  "asset_sha256": "93fac8efe9ca956ff93fdebea1bc8f99996e20d30f9c8a903c3802d7d94a5729",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506905",
+    "title": {
+      "zh": "Socratic Questioning: Learn to Self-guide Multimodal Reasoning in the Wild · 方法图",
+      "en": "Socratic Questioning: Learn to Self-guide Multimodal Reasoning in the Wild"
+    },
+    "paper": {
+      "id": "arxiv-2501-02964",
+      "title": "Socratic Questioning: Learn to Self-guide Multimodal Reasoning in the Wild",
+      "authors": [
+        "Wanpeng Hu",
+        "Haodi Liu",
+        "Lin Chen",
+        "Feng Zhou",
+        "Changming Xiao",
+        "Qi Yang",
+        "Changshui Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02964",
+      "arxiv_url": "https://arxiv.org/abs/2501.02964",
+      "arxiv_id": "2501.02964",
+      "arxiv_first_submitted_at": "2025-01-06T12:16:56Z",
+      "arxiv_updated_at": "2025-01-07T02:55:15Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02964v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506905/image/image.jpg?Expires=1790855628&Signature=edWnGJYGtlG9p~G-Zeh7eIyxWmYFM9akxOcfdd6Xb2Oe5aYIjfiYiHAj9tHBF1ed0Y6~Do1OhCzN8cFVnFMH46YPKIsX12vED02~qStrMtgu1UhHVejFgdGSvXgV8fh9iP-uSpXrKykh86VWCqAFaSg0cT~TrFKj~PzebsIKVnTkTY4NLSpSwGZmJj-UY4JXW-dNCfgV3-u2X0crZdUIKKXYUXFmp3UfezkreM9GDkXncefgs-2sO9sk~wmjTvwAWzEIN9bYnq5c2mh8GquYc~s57igGBoE4x6p~nPWJAWt1Yt8R0M0f8jB5f8PpkxxMtaL-tu948wzmIi-KoRGE9Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506905,
+      "description_sha256": "f332bd6e6bf1fee87b992c4ed1da6b0d4f91da0db8b13a0f500ec0f28e8737c2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "23e5e0308d1bdd636ec4e6a5b0d3feee1de23bc89163378231247951e9936dca",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage pipeline for generating image captions using a large language model (LLM) guided by a rationale derived from Socratic questioning. The global layout is left-to-right, depicting a sequential workflow starting from an input image on the far left and ending with a generated caption on the far right. The architecture consists of four main components: a visual encoder, an adapter, two instances of an LLM (which represent the same underlying model used in different stages), and a rationale module that serves as an intermediate processing step.\n\nIn terms of visual modules and attributes, the visual encoder is represented as a gray trapezoid labeled 'Visual Encoder' with a snowflake icon, indicating its role in processing visual data. It receives an 'Image' as input via an upward arrow. Above it, a golden rectangular box labeled 'Adapter' with a flame icon connects to the visual encoder and feeds into the first LLM. This first LLM is depicted as a light blue rectangle labeled 'LLM (Socratic Questioning)' with a flame icon labeled 'Lora', suggesting LoRA fine-tuning. A separate 'Prompt' input also feeds into this LLM. The output of this stage is directed to a dashed-bordered yellow rectangle labeled 'Rationale', which contains two pink sub-boxes labeled 'Questions' and 'Answers', representing the Q&A pairs generated during the reasoning phase.\n\nFrom the rationale module, an arrow leads to the second LLM, identical in appearance to the first (light blue rectangle with 'LLM' and 'Lora' flame icon), which receives another 'Prompt' input. This second LLM generates the final output, a pink rectangle labeled 'Caption'. The figure emphasizes that although two LLMs are shown, they correspond to the same underlying model used in different phases of the process.\n\nConnections and arrows indicate the flow of information: the image is processed by the visual encoder, whose output is transformed by the adapter before being fed into the first LLM along with a prompt. This LLM generates a rationale composed of questions and answers. The rationale is then passed to the second instance of the same LLM, which, together with a new prompt, produces the final caption. The diagram uses solid black arrows to denote data flow and clearly separates the reasoning (first LLM + rationale) from the generation (second LLM + caption) stages."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

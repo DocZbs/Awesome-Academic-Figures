@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Visual Style Prompt Learning Using Diffusion Models for Blind Face Restoration — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.21042
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the Style-Modulated Aggregation Transformation (SMART), a multi-branch architectural module designed for feature processing in deep learning, particularly in generative or style-transfer contexts. The global layout is left-to-right, starting with an input 'Feature maps' block on the far left, represented as a 3D cube with a gradient from yellow to red, indicating a multi-channel feature volume. This input is split into four parallel branches, each processing the features with a different dilated convolution rate. Additionally, a 'Transformed style vector', depicted as a blue rectangular prism, is fed into each branch to modulate the convolutional operations.
+
+Each branch contains a sequence of components: first, the transformed style vector is processed through two consecutive modules labeled 'Mod' (purple rectangle) and 'Demod' (pink rectangle), which likely represent modulation and demodulation operations, respectively. These are connected by a vertical line, suggesting a sequential dependency. The output of this modulation block is then fed into a 'Dilated Conv' layer, shown as a rounded green rectangle. Each Dilated Conv layer has a distinct dilation rate: rate=1, rate=2, rate=4, and rate=8, increasing progressively down the branches. The outputs of these layers are 3D feature volumes, represented as green cubes with varying shades—lighter for rate=1 and progressively darker for higher rates—indicating different feature representations or channel depths.
+
+The four feature outputs from the dilated convolutions are then concatenated along the channel dimension, forming a larger 3D block labeled 'Concatenated features'. This block is visually represented as a composite cube composed of four vertically stacked segments, each corresponding to one of the four branches and matching the color of its respective output feature. Following concatenation, the features pass through a '3x3 Conv' layer, shown as a gray rounded rectangle, which serves as an aggregation step to fuse the multi-scale features. Finally, the output of this aggregation is a single 3D green cube labeled 'Output features', representing the final processed feature map.
+
+Connections between components are indicated by solid black arrows, showing the flow of data. The input feature maps are split into four paths via horizontal lines branching off to each branch. The transformed style vector is connected to each branch via a separate arrow pointing to the Mod/Demod block. The outputs of the four Dilated Conv layers converge into a single arrow leading to the Concatenated features block. From there, a single arrow leads to the 3x3 Conv layer, and finally to the Output features. The figure uses consistent visual attributes: rounded rectangles for operations, 3D cubes for feature volumes, and distinct colors to differentiate components and their outputs. The overall structure emphasizes parallel processing with multi-scale receptive fields, modulated by style information, followed by fusion and aggregation.

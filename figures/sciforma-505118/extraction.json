@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505118",
+  "record_sha256": "5c5cef7de8f0d3ea69717729d5cc473a33f327ee021421f93a99b1502cfef17f",
+  "asset_sha256": "c14427ac8aa13dcf06d757ed6efb410356c857627fbd314ee49f61735da57daa",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505118",
+    "title": {
+      "zh": "MNet-SAt: A Multiscale Network with Spatial-enhanced Attention for Segmentation of Polyps in Colonoscopy · 方法图",
+      "en": "MNet-SAt: A Multiscale Network with Spatial-enhanced Attention for Segmentation of Polyps in Colonoscopy"
+    },
+    "paper": {
+      "id": "arxiv-2412-19464",
+      "title": "MNet-SAt: A Multiscale Network with Spatial-enhanced Attention for Segmentation of Polyps in Colonoscopy",
+      "authors": [
+        "Chandravardhan Singh Raghaw",
+        "Aryan Yadav",
+        "Jasmer Singh Sanjotra",
+        "Shalini Dangi",
+        "Nagendra Kumar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19464",
+      "arxiv_url": "https://arxiv.org/abs/2412.19464",
+      "arxiv_id": "2412.19464",
+      "arxiv_first_submitted_at": "2024-12-27T05:17:29Z",
+      "arxiv_updated_at": "2024-12-27T05:17:29Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1016/j.bspc.2024.107363",
+      "journal_reference": "Biomedical Signal Processing and Control Biomedical Signal Processing and Control, Volume 102, April 2025, 107363",
+      "arxiv_current_version_observed": "2412.19464v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505118/image/image.jpg?Expires=1790855453&Signature=LjUb41VfIXNJ2jaZBKU6-JqxGH73O~~JwD7RaqqdRgqCvjPAXCgaRsl44jZR1lZk9K5TzbPyOOvz~80t4YbBlByY6FYEngWHajZ2h6eem30-R3pc7E-F6U1r3G3m2CYTeAUVlTzQjRFxNC7vREQ4muHuvfnJP01~E7x3Etfn2NE6F6lBID~5G~~POIDJad7JXcnrO~ftOIKh8QTloafGxzCaaefJAm0bnZ4dDWopkoL07Yp~Ed9gBeRADhFcZKnsq3iBmJ8RyeYT65sW65ApcIhUmmT3T1N3A5EXrfiaVPH-xuuPJ7xNua0DNgUuSmNaqVunLtU6vyxoviMDpCfjkA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505118,
+      "description_sha256": "05f4e1c732e9ac24d6ec20b4a224fef298a11d29ce8088ef8729b31614fb2ebe",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "09cf0b69daf2cd2a14df95af426624b6c1d591216288ce177d6545476e6903a7",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-head spatial-enhanced attention mechanism, structured as a horizontal flow from left to right. The global layout consists of three parallel processing streams originating from a shared input layer on the far left, each stream progressing through identical modules before converging into an attention computation block, followed by a final linear transformation. The input is represented by six yellow circular nodes arranged vertically, connected via full connectivity to three separate Layer Normalization (LN) blocks, each depicted as a light green rounded rectangle labeled 'LN'. Each LN block feeds into a feature map representation shown as a 4x4 grid of small gray squares, with some highlighted in light blue to indicate active or selected features. Following this, each stream passes through a Global Average Pooling (GAP) module, shown as a yellow rounded rectangle labeled 'GAP', which reduces the spatial dimensions to produce a single vector per stream. These three processed streams are then assigned distinct roles: the top stream outputs a Query (Q), the middle stream outputs Key (K^T), and the bottom stream outputs Value (V), each represented as a grid of black-outlined cells. The Query and Key are fed into a local matrix multiplication operation, symbolized by a circled '×' icon, whose output is passed through a Softmax function—depicted as a sigmoid-shaped curve inside a rounded rectangle labeled 'Softmax'—to generate an Attention Map. This Attention Map is visualized as a 3x3 grid with varying colors (blue, yellow, purple, teal) indicating different attention weights. The Attention Map is then multiplied element-wise with the Value (V) via another circled '×' icon, and the result is passed to a final Linear layer, shown as a purple rounded rectangle labeled 'Linear', which produces the output. A legend at the bottom clarifies abbreviations: LN stands for Layer Normalization, GAP for Global Average Pooling, and the circled '×' denotes Local Matrix Multiplication. The overall structure emphasizes parallel processing of multiple feature representations, followed by attention-based weighting and aggregation to enhance spatial feature selection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

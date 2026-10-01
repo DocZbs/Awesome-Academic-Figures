@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-503382",
+  "record_sha256": "9b5b0ec72ec61c7bcffd4542b820e451c07d44e93c87bfc45281575016b4f68f",
+  "asset_sha256": "440e95361700c6e27a93dd316208ca59031971e5529eca60f545fdb76669f489",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503382",
+    "title": {
+      "zh": "Speech Retrieval-Augmented Generation without Automatic Speech Recognition · 方法图",
+      "en": "Speech Retrieval-Augmented Generation without Automatic Speech Recognition"
+    },
+    "paper": {
+      "id": "arxiv-2412-16500",
+      "title": "Speech Retrieval-Augmented Generation without Automatic Speech Recognition",
+      "authors": [
+        "Do June Min",
+        "Karel Mundnich",
+        "Andy Lapastora",
+        "Erfan Soltanmohammadi",
+        "Srikanth Ronanki",
+        "Kyu Han"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16500",
+      "arxiv_url": "https://arxiv.org/abs/2412.16500",
+      "arxiv_id": "2412.16500",
+      "arxiv_first_submitted_at": "2024-12-21T06:16:04Z",
+      "arxiv_updated_at": "2025-01-03T07:18:30Z",
+      "arxiv_subjects": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16500v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503382/image/image.jpg?Expires=1790855364&Signature=gsEoerk9VWU3KEqBrsgYS3GFWCxynXFUdn7Z205v2wnq0bLFNPukd-npxEj-i3Yy9L~PCDjA9nwqnsFZ9FoSroIJrz~QFh5hYubn7zS~BnpRYCNKQzxBaKadrePLI-IOdPl0m2f5XwnSghUs9xR4ajo~OnTAk-Ga8IaJ0c5m1UzvoIjdqVzotlE22FyeELVACHWh5z73l~mPBwtkN5N1xFkB-w1eaFVxcxBWODybMIg1NpzdOnbHCWEQliZ8yFBBQFcQaijFI-jnrnfDSX9NywITXeB3hAmO0b8za0gy24vr6woDGGv8w2nOdk7iYrd9G8cygw9D-5lcm2F5ZxntCw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503382,
+      "description_sha256": "1f8faa5eda3eea38084bccfca46dd62337278adf6e8df8b013b7a0f3d0b81d74",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b8b0182812cdc83e3ac9a37890b05cf249efb2e170b1eb5bc5f5bda2ad2ee612",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two main components: (a) a speech retriever architecture and (b) the SpeechRAG framework compared with a cascaded ASR-based system.\n\n[1] Global Layout and Structure:\nThe figure is divided into two main panels. Panel (a) on the left illustrates the speech retriever’s internal structure, showing a dual-path design for text and speech embeddings. Panel (b) on the right compares the proposed SpeechRAG framework (top path) with a cascaded ASR-based system (bottom path), both processing an audio passage to answer a text query. The layout flows from left to right, indicating data flow and processing stages.\n\n[2] Visual Modules and Attributes:\nIn panel (a), the speech retriever has two parallel branches. The left branch (blue) handles text: it starts with a 'Text Document' (training) or 'Text Query' (inference), which goes through a 'Text Embedding' module (blue trapezoid with gear icon) to produce an 'Embedded Text Sequence' (blue bars). This feeds into a 'Text Retriever' (blue rounded rectangle with gear icon). The right branch (pink) processes 'Audio Passage' (waveform) via a 'Speech Adapter' (pink trapezoid with flame icon) to generate an 'Embedded Audio Sequence' (pink bars), which then enters a 'Text Retriever' (pink rounded rectangle with gear icon). Both retrievers output embeddings compared via 'Cosine Similarity' (label above pink bar).\n\nIn panel (b), the top path (SpeechRAG) begins with an 'Audio Passage' (waveform) feeding into a 'Speech Retriever' (teal rounded rectangle). Its output connects to an 'Audio LM' (teal rounded rectangle), producing a response (e.g., 'David Bowie was the first artist...'). The bottom path (cascaded system) takes the same 'Audio Passage' into an 'ASR' module (yellow rounded rectangle), generating a 'Transcript' (text box with highlighted 'Dated Valley'). This transcript feeds into a 'Text Retriever' (yellow rounded rectangle), then a 'Text LM' (yellow rounded rectangle), yielding a response (e.g., 'Dated Valley was the first artist...'). Text tokens (A, B, C) and audio tokens (waveform icons) are shown as outputs from the respective LMs.\n\n[3] Connections and Arrows:\nIn panel (a), arrows show the flow: from 'Text Document/Query' to 'Text Embedding', then to 'Embedded Text Sequence' and 'Text Retriever'. Similarly, 'Audio Passage' → 'Speech Adapter' → 'Embedded Audio Sequence' → 'Text Retriever'. A dashed arrow links the 'Text Embedding' output to the 'Speech Adapter' input, indicating training-time distillation. The two retrievers’ outputs are connected by a bidirectional arrow labeled 'Cosine Similarity'.\n\nIn panel (b), solid arrows indicate direct data flow: 'Audio Passage' → 'Speech Retriever' → 'Audio LM' → response. In the cascaded path: 'Audio Passage' → 'ASR' → 'Transcript' → 'Text Retriever' → 'Text LM' → response. A dashed arrow from 'ASR' to 'Text Retriever' suggests optional or indirect connection. The 'Transcript' box is linked to the 'Text Retriever' and also shows a highlighted phrase ('Dated Valley') corresponding to the final answer. The 'Audio LM' and 'Text LM' each output tokens (audio tokens and text tokens respectively), shown as small boxes with waveforms or letters."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

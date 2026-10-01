@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505942",
+  "record_sha256": "3dc77c32f18dcc6b9e68b0b1347a40c00c9c3e726e192d292580ec7e9e75b228",
+  "asset_sha256": "f9dbf08344307ae5e2ce6a9a2544b2959e43bfe516bb4294c70fde14e1e179f5",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505942",
+    "title": {
+      "zh": "EdgeRAG: Online-Indexed RAG for Edge Devices · 方法图",
+      "en": "EdgeRAG: Online-Indexed RAG for Edge Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-21023",
+      "title": "EdgeRAG: Online-Indexed RAG for Edge Devices",
+      "authors": [
+        "Korakit Seemakhupt",
+        "Sihang Liu",
+        "Samira Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_id": "2412.21023",
+      "arxiv_first_submitted_at": "2024-12-30T15:46:53Z",
+      "arxiv_updated_at": "2024-12-31T20:40:43Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21023v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505942/image/image.jpg?Expires=1790855558&Signature=RoSu3gwVAz6lXvEmjUa2TBrttCR8dHVQxMWo2xg0uM~gedpTRyDzkK3VEy2QK6ilYK~H9bQxVH2SyMg3e8zLoF7mYrm6sfNvVwMaTcWgXZxvsyE-tr63FvSTgQ7cbnGudV0t5hy3Ktr1kjd~5Q917aoy2E8KhMBTJyM0FzcQdXBsz62a5AdtARCDfV4-w3OfCnArEthsAf6zrUsR99tE1CgpQFSJUOYYed4rFGLD6fjFpMmIXs3EWrQKs1BBqiSLqGA8tho8PJc3lRm5cqYP-2-55yiPoUpvIecrsZEz5D3fzJKn8gyBLIGYfG4SeIt~yL4~3Sr4wGbmgzKLvUL4hw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505942,
+      "description_sha256": "80261ef854fcf40d0a55279e4587654aacb4b49ebd4c826b34427bca805ffd5d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5e5a6d757c85e94b22920e26954598d2b1693ee8208b644ec3719503e8fd1cd7",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two distinct phases of a Retrieval-Augmented Generation (RAG) pipeline: (a) Indexing and (b) Lookup. The overall layout is horizontal, with each phase presented as a linear workflow from left to right, using rectangular boxes for processing steps and a cylinder for data storage. Both phases are labeled at the top with their respective titles in parentheses.\n\nIn section (a) Indexing, the process begins with a rectangular box labeled 'Document'. An arrow labeled '① Preprocess' points from this box to a stack of three overlapping rectangles labeled 'Nodes', indicating that the document is broken down into smaller units. From the 'Nodes' box, an arrow labeled '② Generate Embedding' leads to another stack of three overlapping rectangles labeled 'Vector Embeddings', representing the transformation of nodes into dense vector representations. Finally, an arrow labeled '③ Insert' connects the 'Vector Embeddings' to a cylindrical shape labeled 'Index', symbolizing the storage of these embeddings in a searchable database.\n\nSection (b) Lookup depicts the retrieval and response generation phase. It starts with a rectangular box labeled 'Query'. An arrow labeled '① Generate Embedding' leads to a single rectangle labeled 'Vector Embedding', showing the query being converted into a vector. This is followed by an arrow labeled '② Look Up Nearest Vectors' pointing to the same cylindrical 'Index' used in indexing, indicating a similarity search within the stored vectors. From the 'Index', an arrow labeled '③ Retrieve Nodes' points to a stack of three overlapping rectangles labeled 'Nodes', representing the retrieved relevant content. The final step is an arrow labeled '④ Generate Response (LLM)' leading to a rectangular box labeled 'Response', signifying that a large language model uses the retrieved nodes to generate a final answer.\n\nAll boxes and the cylinder are filled with light gray color and have black borders. Text labels inside the boxes are centered and in bold. The arrows are thick, dark gray, and solid, with arrowheads indicating direction. Each step in both workflows is numbered with a circled numeral and accompanied by a descriptive label below or beside the arrow. The figure is clean, minimalistic, and designed to clearly convey the sequential logic of the RAG system."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

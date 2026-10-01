@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505513",
+  "record_sha256": "daa89fcc0728941783658c10d173a8a9cb972d6e7138efe58f4c0bcc70e54414",
+  "asset_sha256": "d62f16983b6431009312d4f4fed0154b1b0c5a59367eac42744708ffab3c39da",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505513",
+    "title": {
+      "zh": "On dataset transferability in medical image classification · 方法图",
+      "en": "On dataset transferability in medical image classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-20172",
+      "title": "On dataset transferability in medical image classification",
+      "authors": [
+        "Dovile Juodelyte",
+        "Enzo Ferrante",
+        "Yucheng Lu",
+        "Prabhant Singh",
+        "Joaquin Vanschoren",
+        "Veronika Cheplygina"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20172",
+      "arxiv_url": "https://arxiv.org/abs/2412.20172",
+      "arxiv_id": "2412.20172",
+      "arxiv_first_submitted_at": "2024-12-28T15:00:04Z",
+      "arxiv_updated_at": "2024-12-28T15:00:04Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20172v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505513/image/image.jpg?Expires=1790855552&Signature=ZMM3scCpkUKo0-mbJTTixd5K7NakUH1qOrcJq0fOJSRvGAFjBAwYzMRLMTG5ZzBtBOn0KpGBKdLAbcs~VgLCgnxTr7TU2r8AHUMD-jVqsgw-Xl1IQkXgNMJZmT1t2JqDE5pvUkX2ylB3wdQ5TdGCS0viAUlbEUtkmyxPqtEaeiE7Jca9zbtAX8xj0mCFaHqR5zD2ZiS2sQE4hQSt0C5~aOUWNBx~265IAAREUwTGcgr274czzGs1uX1XAqa171OjEQvL15KM6fSeueacSZcnrIOrxQUms5tYb57GFgsAE~yMTWUa2r0PPv3ugw1JicAcIS4bjvpuV2NHuTcBkawQpw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505513,
+      "description_sha256": "975297f600e517fd83b366113d0308f9fd03ce9e4112e25aa6c2bf8ed132e291",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d6c16c7e64542016ecb4b3be240d8b4aa9bd418436230f5323f3978d7b55a45a",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a methodological framework for estimating the transferability of pre-trained models from a model zoo to a specific target dataset, with the ultimate goal of ranking these models by their expected performance after fine-tuning. The global layout is structured into three main vertical sections: 'Model Zoo' on the left, 'Target Dataset' and 'Transferability Estimation' in the center, and 'Model Ranking' on the right. These sections are enclosed in rounded rectangular containers, indicating distinct stages of the process.\n\nIn the 'Model Zoo' section, three neural network architectures are depicted as hand-drawn, multi-layered feedforward networks, each represented with circular nodes connected by lines. The first model, labeled φ₁, is drawn in green; the second, φ₂, in orange; and the third, φₘ, in blue. Each network has an input layer, one or more hidden layers, and an output layer, with arrows indicating forward propagation. These models represent a collection of candidate pre-trained models available for selection.\n\nAt the center, the 'Target Dataset' is shown as a light blue, horizontally-oriented cylinder with diagonal hatching, labeled with the symbol ℒ. A thick black double-headed arrow points downward from this dataset to the 'Transferability Estimation' block, indicating that the dataset serves as the input for evaluating model transferability. Below this, the 'Transferability Estimation' process is described with a bold label and a mathematical formula: Score = S_LP(φ_m, ℒ) × S_FU(φ_m, ℒ), where S_LP denotes a learning potential score and S_FU denotes a feature utility score, both functions of a model φ_m and the target dataset ℒ. This formula represents the composite metric used to assess how well each model is expected to perform when adapted to the target task.\n\nOn the right, the 'Model Ranking' section displays the same three models, now reordered based on their estimated scores. The blue model (originally φₘ) is ranked first with a score of 0.9, the green model (φ₁) is ranked second with a score of 0.7, and the orange model (φ₂) is ranked third with a score of 0.5. Each ranked model is accompanied by its rank number and score, clearly indicating the outcome of the transferability estimation process. The visual style remains consistent with hand-drawn, sketch-like neural networks, preserving the aesthetic across all modules.\n\nConnections between components are indicated by thick black arrows: one horizontal arrow from the Model Zoo to the Transferability Estimation block, and another from the Transferability Estimation block to the Model Ranking block, showing the flow of information and processing. The vertical double-headed arrow from the Target Dataset to the estimation block emphasizes that the dataset is a critical input for computing the transferability scores. The entire diagram conveys a clear, step-by-step workflow: selecting models from a zoo, evaluating their transferability using a combined score derived from learning potential and feature utility, and finally producing a ranked list of models for deployment on the target task."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

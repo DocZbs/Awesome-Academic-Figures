@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503375",
+  "record_sha256": "672c1be02bf09242ab8462b8812c4c1a58cbc9543bbe871c93a3b00f31e4235a",
+  "asset_sha256": "75262eb574eeead9df463a44b9339e090cb32c21c2d91289bfa69ff17f38398a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503375",
+    "title": {
+      "zh": "Real-time Bangla Sign Language Translator · 方法图",
+      "en": "Real-time Bangla Sign Language Translator"
+    },
+    "paper": {
+      "id": "arxiv-2412-16497",
+      "title": "Real-time Bangla Sign Language Translator",
+      "authors": [
+        "Rotan Hawlader Pranto",
+        "Shahnewaz Siddique"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_id": "2412.16497",
+      "arxiv_first_submitted_at": "2024-12-21T05:56:32Z",
+      "arxiv_updated_at": "2024-12-21T05:56:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16497v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503375/image/image.jpg?Expires=1790855364&Signature=dPKmVQ-Wrp~v312JLOqn04UjQvglKt6tT3aryrLZH1yyDg13NK55B8pVaiMrvECQi71gSj~7x~TAIuVRCuiMMBoEwxOv8~GGz60kh4~AIdMez4U7LKaYPk3~a7sqIq2hQpo47Q93ksSXk7Y1c-sNnsvCaipjm4qqOkxPAGoT8YWLSsE8BU1LhoJSEx3mY29D96tUMabUQkSZI3K5DcXzM4w5xIomTJ6sXZ4g~WB0HH7a77pNPpTaNuA2RMDL6zvi4HEpKOJvaG3ToJTH~vOWTEsPZZ2X3xmj1XEL5kCJ4lYA51GwJ5LY0CuQTj7wvRDeHBFEvdHa06vJE9sHwGOVvA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503375,
+      "description_sha256": "8421e78c00cbe7e866254b080bb9b8546054b6b04a7dc3f5f8e14d8f91c9f2c8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f2d868433e7b245732138168e78bb57ccffa58124d7e5723fbc0c825625ddd18",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of CorrNet, a deep learning framework designed for sign language recognition or similar multimodal sequence tasks. The global layout is horizontally structured, progressing from left to right: input frames on the far left, followed by parallel feature extraction pathways, then fusion and temporal modeling stages, culminating in a classifier at the far right. The diagram is divided into two main vertical sections: the left section handles frame-wise feature extraction using multiple parallel 2D CNNs, while the right section processes gloss-wise features via 1D CNNs and a BiLSTM network.\n\nIn the visual modules, each input frame (represented by small images of a person signing) feeds into a separate 'Feature extractor (2D CNN)' block. Each extractor consists of three sequential stages connected by plus signs, indicating additive operations or residual connections between stages. These blocks are enclosed in rounded rectangles with dashed borders and labeled 'Stage'. The outputs from these extractors are collectively referred to as 'Frame-wise Features', indicated by a large horizontal bracket beneath them.\n\nAbove the feature extractors, a red-outlined box labeled 'Correlation Module' contains two submodules: 'Correlation Module' and 'Identification Module', both in red-bordered rectangles. This module receives input X (of shape [C,T,H,W]) and produces output X_out (same shape), with weighted contributions α₁, α₂, and α₃ applied to the outputs of the respective stages. These weights are shown as multiplication symbols connecting the correlation module to the stage outputs, suggesting adaptive weighting based on correlation or identification scores.\n\nThe frame-wise features are then aggregated into gloss-wise features, indicated by another horizontal bracket and arrow pointing right. This aggregation feeds into three vertically stacked '1D CNN' blocks, each represented as a light yellow rectangle. These 1D CNNs process the temporal dimension of the features and feed into a BiLSTM module on the far right. The BiLSTM is depicted as a tall, light orange rectangle containing eight circular units arranged in two vertical columns, connected by bidirectional arrows (blue curved lines) to represent forward and backward propagation through time.\n\nFinally, the output of the BiLSTM is passed to a 'Classifier' block, shown as a simple gray rectangle at the top right, which performs the final classification task. All connections are represented by solid black arrows indicating data flow direction. The diagram uses consistent color coding: green for feature extractors, yellow for 1D CNNs, orange for BiLSTM, and red for the correlation module. Text labels are placed clearly near components, with mathematical notation for input/output shapes and weight coefficients. The overall structure emphasizes a hierarchical and parallel processing pipeline with adaptive fusion via the correlation module."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

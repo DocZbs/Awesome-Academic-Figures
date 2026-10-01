@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505352",
+  "record_sha256": "5c2c6fef4af0ba0d9e946427f7d3d538dcd228b93533cfa18f14c663235a5772",
+  "asset_sha256": "3a99434189de452a8a0e28cb09aaa7d702bb2238ed07a65657477aa502d4c884",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505352",
+    "title": {
+      "zh": "Symbolic Disentangled Representations for Images · 方法图",
+      "en": "Symbolic Disentangled Representations for Images"
+    },
+    "paper": {
+      "id": "arxiv-2412-19847",
+      "title": "Symbolic Disentangled Representations for Images",
+      "authors": [
+        "Alexandr Korchemnyi",
+        "Alexey K. Kovalev",
+        "Aleksandr I. Panov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_id": "2412.19847",
+      "arxiv_first_submitted_at": "2024-12-25T09:20:13Z",
+      "arxiv_updated_at": "2024-12-25T09:20:13Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19847v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505352/image/image.jpg?Expires=1790855459&Signature=Yp96~auSuRgGwkdfH1rs2kpN~Ql11C5VOt5lm-q8Pqr49jHgc35ftS3gM2OuPIHjgYR~zsbsjdgwMhGqg9Zcl4f8plFeqw9PKjgn75N8iwD8Jk5JJtPCHh8GE1S6esbks3s0FKRDv~eFCjItOkyU1SuZhzYixv4whsKmAQe~6a8kpGf5jGlQ2-nXvheRXl3EZMYbacQrZrr8Bg~W-ORKXizORMa3G4h5Nev-vPwuX1tRnh9DemMdmlB9VyaFSu4RW1HeY4NsREwhh-nJQ4N8gn5NCdym3-MUhMNV5~A8d~9ThwwWDta2808UAfoeqBTb27R0WEmdb8XYqPRv77HIWg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505352,
+      "description_sha256": "1f28d0c922be43fdf244faea9ee3aacb954f8c2798dd0fafdb4103b70c1c4590",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e096792e3606d0293eb9d028289d4f4576cd0e05a96c1bad2efbdc057c655769",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of ArSyD (Architecture for Symbolic Disentanglement), a method for manipulating generative factors in images through symbolic feature exchange. The global layout is a horizontal pipeline divided into two parallel input streams (Target Image and Donor Image) converging into a central Feature Exchange module, followed by a shared Decoder producing a Reconstructed Image. The Target Image, shown as a red cylinder on a gray surface within a red-bordered frame, and the Donor Image, shown as a purple cylinder in a blue-bordered frame, are processed independently at first. Each image passes through an orange trapezoidal Encoder block, which extracts high-level features. The output of each encoder is then fed into a light-blue rectangular GF Projection block, which maps the features into a set of Hyperdimensional Vectors (HVs) representing generative factors. These HVs are displayed as white rectangular boxes containing attributes: 'Cylinder', color ('Red' or 'Purple'), size ('Large'), material ('Metal'), and spatial coordinates ('X coord.', 'Y coord.'). The Target Image’s HVs show 'Red' in bold red text, while the Donor Image’s HVs show 'Purple' in bold purple text. The central green rectangle labeled 'Feature Exchange' contains a single merged HV box that receives inputs from both sets. Black arrows indicate that all attributes except color are transferred from the Target to the merged HV, while a distinct purple arrow shows the color attribute being replaced by the 'Purple' value from the Donor. This exchange modifies only the differing generative factor (color), preserving all others. The resulting modified HV set is then passed to a shared orange trapezoidal Decoder, which reconstructs the image. The final output, labeled 'Reconstructed Image' and framed in red, displays the original target scene but with the cylinder now colored purple, demonstrating successful feature transfer. The visual design uses consistent shapes and colors to denote functional modules: trapezoids for encoders/decoders, rectangles for projections and HVs, and a large green rectangle for the exchange module. Text labels are clear and positioned adjacent to their respective components. The overall flow is left-to-right, emphasizing the transformation from input images to reconstructed output via symbolic manipulation of disentangled generative factors."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503684",
+  "record_sha256": "3dfb48e3be29880205280a89eeef0212e379ed4097a0c319a56d73e58b7189f0",
+  "asset_sha256": "2f17c88070bc31d44790ab4c09b0687ad6e218c6620dd1a375435d6049599df3",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503684",
+    "title": {
+      "zh": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning · 方法图",
+      "en": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-16963",
+      "title": "LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning",
+      "authors": [
+        "Fanshuang Kong",
+        "Richong Zhang",
+        "Ziqiao Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16963",
+      "arxiv_url": "https://arxiv.org/abs/2412.16963",
+      "arxiv_id": "2412.16963",
+      "arxiv_first_submitted_at": "2024-12-22T10:47:18Z",
+      "arxiv_updated_at": "2025-02-23T02:53:21Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16963v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503684/image/image.jpg?Expires=1790855405&Signature=e08tghOuKYvReXc9QD5cUdNCjfCKOzMKEVySVk3LfkCLoodtErivkwv2KJGbGKsi-kRGtRBa4WHkqERAsndBmlht6spTANTkF~SU35Q6q0etndLvLnhArYUkX5yndN2MshcYOZPAA3f6gAqz8ifVjUTSDg3gztydDPcw-cqVYMeJVLhMWm2veaT7dV7njkKrr9NthD6EI-AMTulhkgajFtOfLv9LPH8G3cdaTssLgsumRAQzKkAayqXqJsLIigRMbhOJGm43EtNmkIt1A~R9yXNsf8eJKrne8M2TuOr1GTStBRJdtf-o5cGlIAPIq242eMt5npht~Y0ECIU7YvTQFA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503684,
+      "description_sha256": "198cdd61274600a9256d0163e8c9973200f66f60425931ca29f93777a4dbc23a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9a5b1b19ce11feed05f7db87725ee6c7db5d74e30ac852a927c141e32970513b",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into three main panels, labeled (a), (b), and (c), each illustrating different aspects of a hierarchical topic classification (HTC) model's structure and its transformation into a latent space representation.\n\nPanel (a) displays the global hierarchy of HTC as a tree structure rooted at 'ROOT'. The root node is represented by a gray circle with diagonal hatching. It branches into two main child nodes: 'CS' (Computer Science), shown as an orange circle, and 'Math' (Mathematics), shown as a green circle. Each of these further branches into two leaf nodes: under 'CS' are 'Software' and 'Machine Learning', both represented by red star-shaped icons within circles; under 'Math' are 'Statistics' and 'Geometry', both represented by green star-shaped icons within circles. All connections are solid black arrows pointing from parent to child, indicating a strict hierarchical relationship. The panel is captioned '(a) The global hierarchy of HTC.'\n\nPanel (b) shows two separate local hierarchies extracted from (a). On the left, a subtree rooted at 'ROOT' includes only the 'CS' branch down to 'Machine Learning'. On the right, another subtree rooted at 'ROOT' includes only the 'Math' branch down to 'Statistics'. Both subtrees retain the same visual attributes as in (a): gray hatched 'ROOT', orange 'CS', green 'Math', and corresponding star icons for the leaves. This panel illustrates how specific paths or sub-hierarchies can be isolated from the full tree. The caption reads '(b) Local hierarchy of (a).'\n\nPanel (c) presents the spatial inclusion relation derived from the global hierarchy in (a), mapping the hierarchical structure into a continuous latent space. The layout features two distinct clusters: an orange cluster on the left labeled 'CS', containing the 'Software' and 'Machine Learning' nodes (red stars), and a green cluster on the right labeled 'Math', containing 'Statistics' and 'Geometry' (green stars). These clusters are visually emphasized with soft color gradients. Between them, dashed lines represent interpolation paths generated via Mixup operations. Specifically, a blue curved line connects 'Machine Learning' to 'Statistics' with a labeled point at λ=0.5, indicating a 50% mix between the two. Similarly, a yellow curved line connects 'Machine Learning' to 'Geometry' with a labeled point at λ=0.6. Additionally, a horizontal dashed line connects 'Machine Learning' to 'Statistics' with a point at λ=0.5. The parameter λ denotes the Mixup ratio, capturing varying degrees of implicit peer or sibling label correlation in the latent space. The caption states '(c) The spatial inclusion relation of (a).'\n\nOverall, the figure demonstrates the transition from a discrete, explicit hierarchical structure (a) to a continuous, implicit spatial representation (c), where hierarchical relationships are encoded through geometric proximity and interpolation, enabling the modeling of nuanced correlations among sibling categories."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

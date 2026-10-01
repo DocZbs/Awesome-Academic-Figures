@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504639",
+  "record_sha256": "99d315512cfd7e35043653fe5a70a135d141e85ecf8b376538158e50adc2d3e5",
+  "asset_sha256": "13c2454cfba23f5054bd067e16c3d49c19318d195dea9c86162b31bebc46878f",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504639",
+    "title": {
+      "zh": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation · 方法图",
+      "en": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18688",
+      "title": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation",
+      "authors": [
+        "Faraz Waseem",
+        "Muhammad Shahzad"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_id": "2412.18688",
+      "arxiv_first_submitted_at": "2024-12-24T21:24:41Z",
+      "arxiv_updated_at": "2025-08-05T01:03:48Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18688v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504639/image/image.jpg?Expires=1790855433&Signature=terUXqi-YvA78NfAU6fQe7Pz5dpvYm0pf7rEV0aV-GfSK9eIO0mmuq-LWu2QEkYtS0o7CwVWzv753AeJdX9FE5EJCD2u0GeOATe8gbgEIygHraaFU8Q2G1X2k4JX2VHRKV9SZ39f1PfkU6pp6bQN8pPhLWVnkga~yKXFrRKAM5fCYlQSVuqcZUVyP3FX-QPIC-GHW2Ha6DZ-vJ~Uq6BC1xNOC-R7VuNyUVBHSyfjB1rFu4~1RFC~JInQVUYsyC3eU1hxkWPd04RENP2QE1UqllMFWc5C47YhkA92VCLrVnyHIas7mtkwAnYWr7DaZmfc9j5obfxkEe7qLrEQMLls5w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504639,
+      "description_sha256": "1626b07742237e57dd32b65e2553a7f7c1b3ac0d3f0937b49e0be982388e3246",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b6bf9054fae3c4f763f65b8201bb1d4d07869c0a7fff367b8afc30dcfb729b9a",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Grid Diffusion Model, a two-stage pipeline for generating high-resolution video sequences from a text prompt through autoregressive grid image interpolation. The overall layout is divided into two main sections: (a) Key Grid Image Generation and (b) Autoregressive Grid Image Interpolation, each enclosed in a rounded dashed boundary.\n\nIn section (a), a text prompt — 'A hot air balloon floating in the blue sky. Camera zooms out. 4K, High resolution.' — is fed into a light green rectangular module labeled 'Key Grid Image Generation Model'. This model outputs a 2x2 grid of images, collectively termed 'Key Grid Image', visually depicting hot air balloons over a landscape. The grid structure suggests that each cell represents a subframe or region of the final video frame.\n\nSection (b) details the autoregressive interpolation process. The Key Grid Image is first masked, with some subframes replaced by white rectangles, forming 'Masked Key Grid Images'. These are input into a light blue rectangular module labeled '1-Step Interpolation Model', which includes the instruction 'Fill in the blanks, prompt'. This model generates '1-Step Interpolation Grid Images', where the previously masked regions are filled in based on context from unmasked regions and the original prompt. The output is again a 2x2 grid, but now with more complete content.\n\nThis process continues iteratively: the 1-Step Interpolation Grid Images are masked again to produce 'Masked 1-Step Interpolation Images', which are fed into a beige rectangular module labeled '2-Step Interpolation Model', also with the instruction 'Fill in the blanks, prompt'. The result is '2-Step Interpolation Grid Images', showing further refinement and completion of the grid. The diagram uses ellipses to indicate that this autoregressive process can continue for multiple steps, progressively filling in missing content.\n\nAll connections between modules are represented by solid gray arrows, indicating the flow of data and processing order. The visual elements consistently use grid layouts of four images to represent the intermediate states, with masking shown as white rectangles. The color coding of modules — green for generation, blue for first-step interpolation, and beige for second-step — helps distinguish the stages. The figure emphasizes the model's ability to learn spatial dependencies by predicting masked subframes conditioned on previously generated and unmasked frames, enabling high-quality, high-resolution video synthesis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

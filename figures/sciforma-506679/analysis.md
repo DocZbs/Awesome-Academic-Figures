@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DreamMask: Boosting Open-vocabulary Panoptic Segmentation with Synthetic Data — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02048
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the overall framework of DreamMask, a method for open-vocabulary object detection that combines novel sample synthesis (NSS) and imagination-aided training (IAT). The framework is divided into two main sections: NSS at the top and IAT at the bottom, separated by dashed lines.
+
+In the NSS section, the process begins with a prompt: 'List five items that appear with Truck'. This input is fed into an LLM (Large Language Model), represented as a light blue rounded rectangle with a snowflake icon, which generates associated items such as 'Hook/Wheel/Seat/Person/Road'. These are then processed through a module labeled 'Category Name Association' (CNA), shown as a light green rounded rectangle, which filters and refines the list to 'Hook/Wheel/Seat', focusing on relevant components.
+
+This refined list is combined with the union of training and novel categories (C_train ∪ C_novel), also in a light green box, and passed to another LLM instance. This LLM generates layout representations, depicted as two small diagrams showing rectangular bounding boxes arranged in different configurations, within a light green box labeled 'Layout'. The layout is then input into a 'Layout-to-Image Diffusion' model, shown as a larger light blue rounded rectangle with a snowflake icon, which synthesizes images from the layout structure.
+
+The output images are processed by SAM (Segment Anything Model), another light blue rounded rectangle with a snowflake icon, which generates pixel-level segmentation masks. A 'Sample Filter' step follows, producing a 'Synthetic Dataset' shown as a light green box containing four example images: a pool table with its mask, a chandelier with its mask, potted plants with their masks, and a kitchen scene with masks. This dataset is then passed down to the IAT section via a large downward arrow.
+
+In the IAT section, the synthetic dataset is split into 'Synthetic Samples' and 'Realistic Samples', both shown as light green and light yellow rounded rectangles respectively. These are fed into an 'Open-vocabulary Model', represented as a peach-colored block with a flame icon and multiple orange rectangular layers connected by arrows, indicating a neural network architecture. The model extracts features from both sample types, producing 'Synthetic Features' and 'Realistic Features', shown as light green and light yellow boxes.
+
+These features are used to compute a 'Class-wise prototype', depicted as a horizontal bar composed of multiple small yellow rectangles, representing learned class representations. An 'Update' arrow connects the features to this prototype. Additionally, a 'Minimize Distance' objective is shown on the left, with dashed arrows pointing from the prototype to two small gray boxes, indicating a loss function that aligns synthetic and realistic feature representations to reduce domain shift. The entire process emphasizes the integration of LLM-driven imagination, diffusion-based image generation, and SAM for segmentation, followed by aligned training to improve open-vocabulary detection performance.

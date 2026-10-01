@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506462",
+  "record_sha256": "080be3f37eab1324d6145ce596519375871755d46f12c15462825ee12272e894",
+  "asset_sha256": "fbb0fc2f3a7bd03c8a5d9ebc26d4430ab8fafcb8cd6f5670a14e806132af9df4",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506462",
+    "title": {
+      "zh": "GAN-TAT: A Novel Framework Using Protein Interaction Networks in Druggable Gene Identification · 方法图",
+      "en": "GAN-TAT: A Novel Framework Using Protein Interaction Networks in Druggable Gene Identification"
+    },
+    "paper": {
+      "id": "arxiv-2501-01458",
+      "title": "GAN-TAT: A Novel Framework Using Protein Interaction Networks in Druggable Gene Identification",
+      "authors": [
+        "George Yuanji Wang",
+        "Srisharan Murugesan",
+        "Aditya Prince Rohatgi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01458",
+      "arxiv_url": "https://arxiv.org/abs/2501.01458",
+      "arxiv_id": "2501.01458",
+      "arxiv_first_submitted_at": "2024-12-31T07:37:34Z",
+      "arxiv_updated_at": "2024-12-31T07:37:34Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01458v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506462/image/image.jpg?Expires=1790855579&Signature=Yy7QmlfVYC4bYqGVwQp71e5zQQJnWwH8x2IFplMlxf088Rjvx5IPGv0Hp0wavj6ZfTW6Kv7fQMKS~WGKlRp5~NJMvePbWS5Q4Zlu4QPDtzExg2iWtnHNdOkzmwk~zzob0NSpDApT4Nj5HlQfomtl~pAFMagGYk4~od3GLtQmE8~H~3vWQusBbVLrwtTd6wCAw0yq71NvEFWPzRQZ8jFfUnT0bLu87fEDBAZvH~HQznaISIJ0bgiri0jnJECWBTnoGKMKEQ1J~2n20aMKcnXxozcyKpDd~vRPXRdV3wWAaFctleHQ75AGGs--k68B7wAUIgLaWaGmNnvUvgWnhPwosg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506462,
+      "description_sha256": "88b3b901b8e724b432fc90ac79f82e9e701c2162d9210f80a91ada42444d5134",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c64ae5c6235449af0ef854709f0874a1dad5809b7d99ab4349be3219bb15789a",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the GAN-TAT architecture, divided into two main parts: A) the overall pipeline comprising an upstream and downstream module, and B) the detailed design of the ImGAGN-GraphSAGE model used in the upstream module.\n\n[1] Global Layout and Structure:\nPart A is structured into two primary modules: the Upstream Module on the left and the Downstream Module on the right, separated by a vertical dashed line. The Upstream Module is further subdivided into two parallel pathways: 'Graph Embedding' at the top and 'Extended Features' at the bottom. These pathways converge via a direct sum operation (⊕) before feeding into the Downstream Module. The Downstream Module shows a data partitioning and classification process. Part B provides a detailed breakdown of the ImGAGN-GraphSAGE model, showing the Generator, Encoder, and Discriminator components arranged vertically, with the Generator on the right and the Encoder/Discriminator on the left.\n\n[2] Visual Modules and Attributes:\nIn Part A, the 'Graph Embedding' pathway begins with two light blue cylindrical nodes labeled 'SignalLink 3.0' and 'Uniprot', connected to a gray arrow pointing to a 'PIN construct' represented as a small network graph with purple nodes and black edges. This feeds into a 3D block labeled 'ImGAGN-GraphSAGE' with 'Generator' written on its side, which outputs a blue grid labeled '80 Features' for 6048 genes. The 'Extended Features' pathway includes four pink cylindrical nodes labeled 'CTD', 'DGIDB', 'gnomAD', and 'InterPro', followed by a gray arrow labeled 'Pre-processing' leading to a red grid labeled '324 Features' for 6048 genes. The two feature sets are combined via a ⊕ symbol to form a composite input for the Downstream Module. The Downstream Module displays a scatter plot of K genes with purple dots representing positive labels (minority) and light purple dots for negative labels (majority). This set is split into M folds, each containing 80% random samples, shown as smaller scatter plots. Each fold is processed by an XgBoost classifier (labeled XgBoost_1 to XgBoost_M), whose predictions are averaged to produce the final output.\n\nIn Part B, the 'Generator' is depicted as a vertical stack of layers: 'Noise Space' (pink), followed by 'Fully connected layer' (light blue), 'ReLU' (yellow), another 'Fully connected layer' (light blue), 'ReLU' (yellow), another 'Fully connected layer' (light blue), and finally 'Tanh' (purple). The 'Encoder' consists of a 'SageCONV layer' (light blue), 'ReLU' (yellow), 'Dropout' (beige), another 'SageCONV layer' (light blue), 'ReLU' (yellow), and 'Dropout' (beige), culminating in an 'Embedded Space (80 Dim)' box. The 'Discriminator' follows with a 'SageCONV layer' (light blue), 'Softmax' (green), and 'Loss Calculation' (gray). The Generator's output connects to the Encoder's input, and the Encoder's output connects to the Discriminator's input. The Discriminator's output feeds back into the Loss Calculation, which influences the Generator via a feedback loop.\n\n[3] Connections and Arrows:\nIn Part A, arrows indicate data flow: from SignalLink/Uniprot to PIN construct, then to ImGAGN-GraphSAGE, producing 80 features. Similarly, CTD/DGIDB/gnomAD/InterPro feed into pre-processing, yielding 324 features. The two feature sets are summed (⊕) and passed to the Downstream Module. Within the Downstream Module, the entire gene set is partitioned into M folds, each trained with an XgBoost classifier, and their outputs are averaged. In Part B, the Generator's output connects to the Encoder's input. The Encoder's output (Embedded Space) connects to the Discriminator's input. The Discriminator's output goes to Loss Calculation, which sends a feedback signal back to the Generator, forming a closed-loop adversarial training structure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

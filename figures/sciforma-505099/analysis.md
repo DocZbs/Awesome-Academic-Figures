@@ -1,0 +1,29 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Comparative Performance Analysis of Quantum Machine Learning Architectures for Credit Card Fraud Detection — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19441
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents four distinct quantum circuit architectures, each designed for a seven-qubit system, labeled as (a) Real Amplitudes, (b) Efficient SU2, (c) Pauli Two Design, and (d) Two Local. The global layout is divided into four horizontal sections, each depicting a separate ansatz variant with qubit lines running horizontally from left to right, labeled q₀ through q₆. Each qubit line represents a quantum register, and operations are applied sequentially along these lines.
+
+In all panels, quantum gates are represented by purple rectangular boxes containing gate notation such as Rᵧ or R_z, followed by a parameter θ[index], indicating trainable rotation angles. Control operations are shown as blue circles connected by vertical or diagonal lines to target qubits, often accompanied by a blue plus sign symbolizing controlled addition or entangling operations.
+
+Panel (a) Real Amplitudes features a layered structure where each qubit undergoes an Rᵧ gate, followed by controlled-Rᵧ gates acting between adjacent qubits in a staggered pattern. The entanglement is sparse, with controlled gates connecting qubits in a zigzag fashion across layers.
+
+Panel (b) Efficient SU2 displays a more structured pattern with alternating Rᵧ and R_z gates on each qubit, followed by controlled-Z or controlled-phase gates between neighboring qubits. The entanglement is implemented via controlled operations arranged in a repeating block pattern, creating a deeper entanglement structure than (a).
+
+Panel (c) Pauli Two Design shows a random-like configuration with Rₓ, Rᵧ, and R_z gates distributed across qubits, with controlled operations connecting non-adjacent qubits in a seemingly randomized fashion. The gate parameters are indexed with θ[m/4] and θ[...], suggesting a design based on random Pauli string sampling.
+
+Panel (d) Two Local presents a fully connected structure where each qubit receives an Rᵧ and R_z gate at the beginning, followed by a dense network of controlled operations connecting every pair of qubits in a grid-like fashion. This results in maximal entanglement across the system, with each qubit interacting with all others through controlled gates.
+
+Connections between qubits are indicated by blue lines linking control points (circles) to target gates, forming entangling operations. The direction of information flow is from left to right along each qubit line. The figure emphasizes structural diversity among the ansatz types, ranging from sparse entanglement in Real Amplitudes to full connectivity in Two Local, with Efficient SU2 and Pauli Two Design occupying intermediate complexity levels.

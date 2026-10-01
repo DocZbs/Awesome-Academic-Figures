@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02858
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the encoder process in a transformer-based architecture, divided into three main stages labeled (a), (b), and (c), arranged sequentially from left to right. 
+
+Stage (a) begins with an input tensor of dimensions 577 x 768, represented as an orange square grid. This tensor is fed into a purple rectangular module labeled 'Normalization and Linear Transformation', indicating a sequence of layer normalization followed by a linear projection. An arrow leads from this module to stage (b).
+
+Stage (b), enclosed within a light gray background, details the multi-head attention mechanism. The incoming tensor is first reshaped into a green square grid labeled '577 x 2304'. This is then transformed into a tensor of shape '577 x 3 x 12 x 64', also shown as a green grid, representing the splitting of the input into query (Q), key (K), and value (V) matrices across 12 heads. Three blue square grids represent these matrices: Q, K, and V, each annotated with dimensions '(577 x 12 x 64)'. Arrows indicate that Q and K are used to compute an attention score matrix A, shown as a green grid labeled 'softmax (12 x 577 x 64)', where softmax is applied over the last dimension. The resulting attention weights are multiplied with the V matrix to produce an output tensor of shape '577 x 768', depicted as another green grid. This output is then passed to stage (c).
+
+Stage (c) continues with the output from (b) entering a purple rectangular module labeled 'Linear Transformation'. The output of this module is combined via a circular summation node (represented as a circle with a plus sign) with the original input from stage (a), forming a residual connection. The summed result is then passed through another purple module labeled 'Normalization and Linear Transformation', again indicating normalization followed by a linear transformation. This output is further combined via another circular summation node with the output from the previous linear transformation, forming a second residual connection. The final output, shown as an orange square grid labeled '577 x 768', matches the input dimensionality, completing the encoder block.
+
+Throughout the diagram, arrows denote data flow direction. All modules are rectangular or circular, with distinct colors: orange for input/output tensors, green for intermediate tensors within attention, blue for Q/K/V matrices, and purple for transformation blocks. Dimensions are explicitly labeled beneath each tensor representation. The overall structure reflects a standard transformer encoder layer, emphasizing multi-head self-attention followed by feed-forward processing with residual connections.

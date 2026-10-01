@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504207",
+  "record_sha256": "cc967393e1e0bbe5a940274dfabd6441548e26019910b653e612b9cb90c7905b",
+  "asset_sha256": "e7eb426b3b83a4c1b12d8f7adb60468e275979e010c5dedee98fb00c5bffbdaf",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504207",
+    "title": {
+      "zh": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents · 方法图",
+      "en": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents"
+    },
+    "paper": {
+      "id": "arxiv-2412-17942",
+      "title": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents",
+      "authors": [
+        "Antony Seabra",
+        "Claudio Cavalcante",
+        "Joao Nepomuceno",
+        "Lucas Lago",
+        "Nicolaas Ruberg",
+        "Sergio Lifschitz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17942",
+      "arxiv_url": "https://arxiv.org/abs/2412.17942",
+      "arxiv_id": "2412.17942",
+      "arxiv_first_submitted_at": "2024-12-23T19:54:28Z",
+      "arxiv_updated_at": "2024-12-23T19:54:28Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17942v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504207/image/image.jpg?Expires=1790855427&Signature=i6LkUCLd6pbpYVQY9IF5c2X8p2B~8KSn-7L5RAQ7nYFBaLT0fsBQf7yQ--3HvC6DqxVqP1jGXvYgXiSnmbwmUmmfSozNAVdc0~KwxYmJvhN7I5jOsIU2vX6KIzSBs~KFAyyeqCx3eImwHJTdpN8RNavjiUVLk26cuDSPD9qBxyy1gKsKg0Gcwtfn~INFqwugKwCb0bkAcEOYAh9EZIK1KZ2xBQhpdjiDTfYhkC3T5tY46RsWAmZvO~bZVcMqouulptx94AEWpTEYo2B681cKqwTtvMyH6N-Laxdkmtybbq3-WbDuaaV~hy4ptM59r00z8cSUVnsF7Jo5fsf29Jz-Hg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504207,
+      "description_sha256": "cac59207c662fac67617517dc6a26faea17e34d9362e711147696a1b93568213",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "93ef566cfddde87e0bb09841ccee9668eb762ecfdc475f9527e30181fcefeed4",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the application architecture of a document processing and retrieval system, structured into two main workflows: user interaction and data ingestion. The global layout is divided into two vertical columns. The left column represents the interactive system components, while the right column details the data processing pipeline. All processing modules are depicted as blue rectangular process boxes with rounded corners and dark gray borders, while data storage components are shown as yellow cylindrical shapes with dark gray borders.\n\nIn the left column, the topmost component is the 'User interface (Streamlit)', a blue rectangle indicating the frontend layer built using Streamlit. It communicates bidirectionally with the 'Backend Agents', another blue rectangle positioned directly below it, via a double-headed arrow, signifying real-time interaction. The Backend Agents serve as the central orchestrator, connecting to two data stores: 'Contracts database (SQLite)' and 'Vectorstore (ChromaDb)', both represented as yellow cylinders. These connections are unidirectional arrows pointing from the Backend Agents to each database, indicating that the agents read from and write to these databases as needed.\n\nIn the right column, the data ingestion pipeline begins with 'PDF Documents processing', a blue rectangle at the top. This module feeds into 'Chunking and metadata generation', the next blue rectangle below it, via a downward arrow, indicating sequential processing. The output of this step flows into 'Embeddings generation', the final blue rectangle in the right column, also connected by a downward arrow. From here, a horizontal arrow points leftward to the 'Vectorstore (ChromaDb)', establishing that generated embeddings are stored in this vector database for later retrieval.\n\nThe overall structure emphasizes a clear separation between the interactive system (left) and the data preparation pipeline (right), with the Vectorstore acting as a shared resource accessible by both the Backend Agents and the Embeddings generation module. The Contracts database is exclusively accessed by the Backend Agents. The diagram uses consistent visual attributes: blue rectangles for computational processes, yellow cylinders for data storage, and gray arrows for data or control flow, with arrowheads indicating directionality. No mathematical equations or LaTeX expressions are present in the figure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

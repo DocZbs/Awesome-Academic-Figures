@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506728",
+  "record_sha256": "b7ca1c25087da86e40abecc921a829dbfce84d622d0130be0d711c8c6990e660",
+  "asset_sha256": "70e649c53f0b88728a17c1e10b720823d55824f4efedd73ba97d14c84701f4aa",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506728",
+    "title": {
+      "zh": "SR-Reward: Taking The Path More Traveled · 方法图",
+      "en": "SR-Reward: Taking The Path More Traveled"
+    },
+    "paper": {
+      "id": "arxiv-2501-02330",
+      "title": "SR-Reward: Taking The Path More Traveled",
+      "authors": [
+        "Seyed Mahdi B. Azad",
+        "Zahra Padar",
+        "Gabriel Kalweit",
+        "Joschka Boedecker"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02330",
+      "arxiv_url": "https://arxiv.org/abs/2501.02330",
+      "arxiv_id": "2501.02330",
+      "arxiv_first_submitted_at": "2025-01-04T16:21:10Z",
+      "arxiv_updated_at": "2025-06-12T13:18:51Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02330v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506728/image/image.jpg?Expires=1790855623&Signature=Azu1jAMF58d2Ah7ublxBCU9p4RELfkkgqtIgcPiU9yY-Tq07RpWxUK98NZUsh98C5TMT4BsAg9Ui2vAGs5hr3-nV8yMGnCAK8y~MQCCKjYFTBlNgb95LeXpIc-4AGI~1lHtatNlaoZyetyyd1-Ya-DofanWQWSnBkDR6WPm8Np-6~tmwgHKJeuUnJxCBNhbnOdbwoWIYS0hskxELwn7KOq-hFXBSiCSjyfZyjYdHoMLUXskLw6x5O6E6t7aacMzzgGA6bn~9TPX7QV7PGuDVDTBJJlQAqlYXkxf5KBd-5DbY3g~giXzav6kNZX8F3iCZJJ77le3ty22MyCELmNgNHg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506728,
+      "description_sha256": "af7bdf95b5658b3155a3b245adf3653d3533c31ecdef7747fe3d80aca12cf029",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2af6b0e6bb8930a7b24745f67f0d119df14a69d31d07dc9782256b77a2c4665b",
+      "row_response_sha256": "d09ba592fde8f1259c14c0b9b5f9b0a5362f578ed4f27d8bbffc357ea7070954"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a State Representation (SR) network, designed for learning state representations in reinforcement learning or similar sequential decision-making tasks. The global layout consists of two main processing pathways enclosed within dashed rectangular boundaries: the primary SR computation path (top, with a light purple dashed border) and an auxiliary Predictor path (bottom, with a light gray dashed border). These paths share a common input from the Encoder and action, but diverge in their outputs and purposes.\n\nIn the top pathway, the process begins with two input nodes: a blue square labeled 's' representing the current state, and an orange square labeled 'a' representing the action. The state 's' is fed into a gray trapezoidal module labeled 'Encoder', which transforms it into a green square labeled 'φ(s)', denoting the encoded state representation. This encoded state is then concatenated vertically with the action 'a' (represented by an orange rectangle below the green φ(s) box) to form a combined feature vector φ(s,a), as described in the caption and Equation (eq:sr_phi). This concatenated vector is passed into a gray rectangular module labeled 'MLP' (Multi-Layer Perceptron), which processes it to produce the final SR output, represented by a purple square labeled 'SR'.\n\nThe bottom pathway, dedicated to auxiliary prediction, branches off from the same concatenated vector φ(s,a). A black arrow leads from this concatenation point to a gray rectangular module labeled 'Predictor'. The Predictor network takes φ(s,a) as input and outputs a green square labeled 'φ'(s')', which represents the predicted encoding of the next state s'. This auxiliary task is used to improve the training of the Encoder by providing a supervisory signal based on the predictability of future state encodings.\n\nAll connections between modules are indicated by solid black arrows, showing the direction of data flow. The visual attributes include distinct colors for different types of data: blue for raw state 's', orange for action 'a', green for encoded states (φ(s) and φ'(s')), purple for the final SR output, and gray for processing modules (Encoder, MLP, Predictor). The concatenation of φ(s) and 'a' is visually represented by stacking the green and orange boxes vertically within a single bounding box, emphasizing their combination into a single input for subsequent layers. The dashed borders group related components, clearly separating the main SR computation from the auxiliary prediction task."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

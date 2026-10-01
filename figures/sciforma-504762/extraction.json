@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504762",
+  "record_sha256": "659b4c4d59481f5000e5528779df2fa7f3cfa7ee016556c22e797800267d8ee2",
+  "asset_sha256": "25f33768796451cd3ead980943023b8f514831a12d161a6e21ba096c6ebdc803",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504762",
+    "title": {
+      "zh": "TSceneJAL: Joint Active Learning of Traffic Scenes for 3D Object Detection · 方法图",
+      "en": "TSceneJAL: Joint Active Learning of Traffic Scenes for 3D Object Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-18870",
+      "title": "TSceneJAL: Joint Active Learning of Traffic Scenes for 3D Object Detection",
+      "authors": [
+        "Chenyang Lei",
+        "Weiyuan Peng",
+        "Guang Zhou",
+        "Meiying Zhang",
+        "Qi Hao",
+        "Chunlin Ji",
+        "Chengzhong Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18870",
+      "arxiv_url": "https://arxiv.org/abs/2412.18870",
+      "arxiv_id": "2412.18870",
+      "arxiv_first_submitted_at": "2024-12-25T11:07:04Z",
+      "arxiv_updated_at": "2025-04-21T06:15:33Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TITS.2025.3553170",
+      "arxiv_current_version_observed": "2412.18870v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504762/image/image.jpg?Expires=1790855436&Signature=SyVTk6Ek-XxKUtDt3oxLqXjTmm1Qo54VsO2bJDuEPvafn77ltjH1ANF1uUWFdJUjMWmlsk8NBBwr~iCZogYdoCWuNo52xPKWbSeQlVWlP2MTcgCmC4llaOjVBmjUuGcA0fgjJ3oe9EDDr168Paca26O1FhG8ITGl7OP9OFs4yQeyS0EcNjqL8RlPL6CY8AMTYop58hEvbC4vOaUwpKgpDTshqoUbZHlYa6b1u48cnYoxfdCL3KO9I~Dqn8aSvhsNqC4xXUtCug3S-NBuVkwqIa0-7uKwbMHHn9eutOI11iYoLoN9qtPtWR2S8VmTzQCwIc~c1R1~6~I1NLwVE4FeQw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504762,
+      "description_sha256": "8e10e0131552b3e2ad7a49dd79ef8539f4c4057b99c3cae02d3a9d56fa8cd2cf",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5ff7a37ec7d6424209badb6064dffc7a5a7dfa76ea887f3f24f0926365059a3c",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the TSceneJAL framework, a three-stage active learning (AL) pipeline designed for efficient data selection from an unlabeled dataset. The global layout is structured into two main vertical flows: on the left, the AL predictor f_m is trained and updated iteratively; on the right, the AL sampler Φ performs a multi-stage selection process to identify informative scenes. The entire system operates in a loop where selected scenes are annotated and fed back to retrain the model.\n\nOn the left side, the AL predictor f_m consists of four sequential modules: a green 'Feature Net', a light blue 'Backbone', an orange 'Cls. Head' (classification head), and a light blue 'Loc. Head (MDN)' (location head using Mixture Density Network). The initial labeled dataset D_i is used to pretrain the model (indicated as 'initial only'). The unlabeled dataset D_u serves as input to the predictor, which outputs pseudo-labels and MDN predictions, denoted as (Ĉ, M̂), through an interface. This output is then passed to the AL sampler Φ. After each iteration, the selected and annotated scenes are used to update the labeled dataset D_l, which in turn retrains the model.\n\nThe AL sampler Φ, enclosed in a large rounded rectangle, implements a three-stage hybrid sampling strategy. Stage 1, labeled 'Search K₁N_r scenes from D_u as D_s1', uses 'Category Entropy' to balance quantity across classes. This module displays two bar charts: the first shows class-wise entropy (Car, Cycl, Ped) with varying heights, and the second shows normalized entropy after balancing. Stage 2, 'Search K₂N_r scenes from D_s1 as D_s2', employs 'Scene Similarity' to eliminate redundancy. It visualizes clusters of data points (triangles, squares, circles) with dashed ellipses indicating groupings, and an arrow labeled 'MK' (likely Maximum Kernel or similar) pointing to a refined clustering. Stage 3, 'Search N_r scenes from D_s2 as D_s3 (D_r)', applies 'Perception Uncertainty' to ensure complexity. This module shows a decision boundary (dashed line) separating classes, with points near the boundary highlighted, and an arrow labeled 'MDN' indicating the use of the Mixture Density Network to capture uncertainty.\n\nConnections between components are shown via arrows. The output (Ĉ, M̂) from the AL predictor feeds into the AL sampler. The three stages of the sampler are connected sequentially. The final output, 'N_r Selected scenes D_r', is sent to an 'Oracle Ω' for annotation, and the annotated data is then used to update the labeled dataset D_l, closing the loop for model retraining. The figure uses consistent shapes: cylinders for datasets, rounded rectangles for modules, and arrows for data flow. Text labels are placed clearly within or adjacent to each component, and the three stages are explicitly labeled with their respective search objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

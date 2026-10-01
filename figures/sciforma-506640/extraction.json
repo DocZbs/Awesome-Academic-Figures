@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506640",
+  "record_sha256": "21033aacc92cc94181e83508f551e432b5568e3980ffe3ec8b5f94530d6a6a7d",
+  "asset_sha256": "026f8b4baf9880aa7d16df6351337eaf029521b92b451348a1150366debb7d26",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506640",
+    "title": {
+      "zh": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction · 方法图",
+      "en": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction"
+    },
+    "paper": {
+      "id": "arxiv-2501-02006",
+      "title": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction",
+      "authors": [
+        "Xi Yu",
+        "Tiejun Lv",
+        "Weicai Li",
+        "Wei Ni",
+        "Dusit Niyato",
+        "Ekram Hossain"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02006",
+      "arxiv_url": "https://arxiv.org/abs/2501.02006",
+      "arxiv_id": "2501.02006",
+      "arxiv_first_submitted_at": "2025-01-02T04:38:01Z",
+      "arxiv_updated_at": "2025-01-02T04:38:01Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TMC.2025.3525477",
+      "arxiv_current_version_observed": "2501.02006v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506640/image/image.jpg?Expires=1790855633&Signature=OMFYnxyidGzX7-U4iYqPYA66-dSZHMWwPhi9XkkuLwOcTWnCNbXEK7Fi-d9rKgxyx4XvSQTylHy4Y7XWbjdlbcZlJTcErH5JSK-skzxPjDq-GoPeVLw-p~cfs3TTH1QoKQgD-21iR-~0OQNjzpI8LoPandQkbOnzICpUd5kcjANu2ipgTJbtR3Tct6lnzLtoKEtVmjczzCh75lgccFjfxqo1UPN9hC-kes3TZ0jVfekpb1e7gKGYqmNH2CXgpNa3YnAp2pRXn5WdLqQS1i9jvqd52zAHG99q9t78RhO~M-iI5ZNZaT1TiCUVQveSosI5NWYhAXkLGnoF4rXppgOiEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506640,
+      "description_sha256": "58e3a3dedcc97be8640d2bd2f60e2b04f0e2a5f8441035edf9c3fac6ef504176",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "409b8ec88a44431f5a245356b9acf3c208f9350f351dddaa92fb0ca294b33523",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure depicts a graph attention layer, illustrating the iterative update mechanism for the representation of the i-th node during the m-th iteration. The global layout is horizontal, showing a transformation from a set of input nodes on the left to a single updated output node on the right. The structure follows a feed-forward pattern: multiple input nodes at layer m−1 contribute to the computation of a single output node at layer m. At the center-left, a central blue circular node labeled v_i^{m−1} represents the current node whose representation is being updated. It is connected by thick black lines to N other blue circular nodes below it, labeled v_1^{m−1}, v_2^{m−1}, ..., v_N^{m−1}, representing its neighbors or context nodes in the previous layer. Each connecting edge is annotated with an attention coefficient a_{k,i}^{m−1} (for k = 1 to N), indicating the weight assigned to the contribution of each neighbor node to the update of v_i^{m−1}. These coefficients are positioned along the respective edges, with a_{1,i}^{m−1} on the top-left edge, a_{2,i}^{m−1} on the middle edge, and a_{N,i}^{m−1} on the bottom-right edge. From the central node v_i^{m−1}, a thick black arrow points to a single blue circular node on the far right, labeled v_i^m, representing the updated node representation after the m-th iteration. All nodes are uniformly styled as solid blue circles with black outlines, and all connections are bold black lines or arrows, emphasizing the flow of information. The diagram visually encodes the attention mechanism where the new representation v_i^m is computed as a weighted sum of the representations of neighboring nodes, with weights determined by the attention coefficients a_{k,i}^{m−1}. The caption clarifies that this process is part of a larger iterative framework, with M total iterations for updating node representations across the graph."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

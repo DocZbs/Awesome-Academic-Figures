@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504871",
+  "record_sha256": "fba982674ac31d48942db2b003d82916e6f99833e62a95409d064002230cdff1",
+  "asset_sha256": "79e77be68d7d90b94d57eb76caedc6a2db58fe5a4b6cad57c483c1292c9b9d6e",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504871",
+    "title": {
+      "zh": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing · 方法图",
+      "en": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing"
+    },
+    "paper": {
+      "id": "arxiv-2412-19009",
+      "title": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing",
+      "authors": [
+        "Wanglong Lu",
+        "Jikai Wang",
+        "Xiaogang Jin",
+        "Xianta Jiang",
+        "Hanli Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19009",
+      "arxiv_url": "https://arxiv.org/abs/2412.19009",
+      "arxiv_id": "2412.19009",
+      "arxiv_first_submitted_at": "2024-12-26T00:53:54Z",
+      "arxiv_updated_at": "2024-12-26T00:53:54Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TVCG.2024.3434386",
+      "arxiv_current_version_observed": "2412.19009v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504871/image/image.jpg?Expires=1790855446&Signature=co2CYDhWr4ovcmwfaQmVbYVmKcAIoyBxrpH1y~B0fDcKPocYosmlZ9rBzn0ChFDj4olu2vHVRxQu4TsKMBZLiYy1zGIbC6X-w7tQVeZIwNzs6DRoiHy3MU0LijoZnyNViaU8TAp5MtDAetVlqkj-FYOqcU9-6jdUO1VDPww51EJyDLtbcofouayz7MeLmuFXCEcAPtk6DWFri33jKal55IGYDLhXzHdRhzqPJEi3JKKwAFCT1702qpoLuXA5FPxtXQyjjPIlwVwctGDejnrNstGAdpNJ7uvWfzWPiyRqKVMwcDx1i~Dz6SWN2uhLxteCJehvD2ORYKcZAkurKPxS1w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504871,
+      "description_sha256": "e28c8b8f825d287677cf30e8f487763f9ee43f491b9f41170c9353146941bc63",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b3d26cd42832e1b8306e617335127d2b1bc5cfc60dd7bb67624de30eabb00e43",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a style fusion block used in a generative model, designed to integrate multi-scale facial features across different levels of abstraction. The global layout is a horizontal flowchart enclosed within a dashed rectangular boundary, representing the entire block. Inputs enter from the left, processed through several modules, and produce an output on the right labeled F_i^g. The structure follows a dataflow from left to right, with multiple parallel paths converging at the end.\n\nVisual modules include four main input sources: a pink square labeled F_i^{de}, a green dashed square labeled w_{i+1}^*, a blue square labeled F_{t-i}^{en}, and an orange square labeled F_i^s. These inputs feed into three rounded rectangular 'Style layer' modules, colored pink, which are the primary processing units. Each Style layer receives one or more inputs and outputs a feature map. Additionally, there are two purple squares labeled F_i^m and 1-F_i^m, which represent masked feature components derived from intermediate results. The block also contains three circular nodes: two with a dot inside (representing multiplication or element-wise product operations) and one with a plus sign (representing addition or summation). All connections are black arrows indicating the direction of data flow, except for the initial input paths which are color-coded to match their source: pink, green, blue, and orange. A green dashed arrow from w_{i+1}^* to the third Style layer indicates modulation, suggesting this latent vector controls the style transformation.\n\nConnections begin with F_i^{de} and w_{i+1}^* feeding into the top Style layer; F_i^{de} and w_{i+1}^* also feed into the second Style layer. The output of the second Style layer is multiplied (via a circular node) with F_{t-i}^{en} (blue input), and the result is added (via a plus node) to the output of the first Style layer. This sum is then passed to a subsequent circular node (multiplication) with the output of the third Style layer, which itself is modulated by w_{i+1}^*. The output of the third Style layer is split into two paths: one directly feeds into the purple F_i^m box, and the other into 1-F_i^m. These two are then multiplied (via circular nodes) with the respective outputs of the previous path, and finally summed (plus node) to produce the final output F_i^g. The orange input F_i^s is connected via an orange arrow to the third Style layer, indicating it contributes to the style modulation process. The overall design emphasizes conditional style fusion using a modulated latent vector w_{i+1}^* to guide the integration of features from different scales and representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

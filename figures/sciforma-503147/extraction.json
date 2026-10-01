@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503147",
+  "record_sha256": "17f2ffa8fcd7937890a23a16a045db7e86d5a3c22086076e045fc3b7590f2019",
+  "asset_sha256": "65c43efa9f26ad491dde61573f6b0ccacebdf73dd207471f2688e526705b124d",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503147",
+    "title": {
+      "zh": "Never Reset Again: A Mathematical Framework for Continual Inference in Recurrent Neural Networks · 方法图",
+      "en": "Never Reset Again: A Mathematical Framework for Continual Inference in Recurrent Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-15983",
+      "title": "Never Reset Again: A Mathematical Framework for Continual Inference in Recurrent Neural Networks",
+      "authors": [
+        "Bojian Yin",
+        "Federico Corradi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15983",
+      "arxiv_url": "https://arxiv.org/abs/2412.15983",
+      "arxiv_id": "2412.15983",
+      "arxiv_first_submitted_at": "2024-12-20T15:24:28Z",
+      "arxiv_updated_at": "2024-12-20T15:24:28Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15983v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503147/image/image.jpg?Expires=1790855363&Signature=fqHUXOhMxlprAu6q0oy98SLUywwTcwN8~ldpZ46h3GF0fc4Dv-AJR7o2AbkB-p21-DXSvQJrZ3cGwhHLN2zI5ctm7WA5Kul2OyAv44tAHOmmW-ES76IEj4ndN-D78sXfUmqvs4cOd347~vALhdoBwoENngr-93kZHIREZQ5TlCNwi1uZYkSZ2ei4HeP~z7z2Bu6~TuhU0KxneKNR-BSmgNOUc587VlbBbe7lEiz~qOq08wLO5kfoHyUekKcIcvmzt7XDufKab0pLlsi45ypecR4h6T9ADV4qS5xNqjLYewPhJbNIIf-xq8SPZ5M2dd96AlxguZFMgqvZl2a69FJtKA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503147,
+      "description_sha256": "0ce7b389635655af96d4c14977df0a813cf7f067b506e0726e98eaf02dec4c99",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b6772c9800643e15e7b783ccd15f442b271cc068182fdfc31196c41ae8df2db5",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents computational graphs for four distinct recurrent neural network architectures: Vanilla RNN, GRU, SSM, and SNN, arranged side-by-side in a horizontal layout. Each architecture is enclosed within a light gray rounded rectangle, with its name labeled above in bold black text. The overall structure is modular, with each module representing a single time step's computation, showing how the hidden state evolves from time t to t+1 based on the current input x_t.\n\nIn the Vanilla RNN module, the input x_t and previous hidden state h_t are combined and passed through a tanh activation function (represented as a white rounded rectangle with black text 'tanh') to produce the next hidden state h_{t+1}. A single arrow from h_t enters the tanh block, and another arrow from x_t also points to the same tanh block, indicating their combination before activation. The output h_{t+1} exits the tanh block to the right.\n\nThe GRU module features a more complex structure with two sigmoid gates (σ) and one tanh gate. The input x_t and previous hidden state h_t are fed into both σ gates. The first σ gate outputs a reset gate signal, which modulates the input x_t via a multiplication (×) operation. The second σ gate outputs an update gate signal, which is subtracted from 1 (1−) and then used to scale the previous hidden state h_t. The scaled x_t and scaled h_t are summed (+) and passed through a tanh block. The output of the tanh is then combined with the original h_t using the update gate signal (via multiplication and addition), producing h_{t+1}.\n\nThe SSM (State Space Model) module shows a linear transformation of the hidden state. The input x_t is multiplied by matrix B and added to the previous hidden state h_t (via a + node labeled A). This sum is then multiplied by matrix C. The result is passed through a Gated Linear Unit (GLU) block, which consists of a + node followed by a GLU label, and then another + node. The output of this path is y_{t+1}. Simultaneously, the result of the A operation (h_t + Bx_t) is also multiplied by matrix D and added to the GLU output to form y_{t+1}. The hidden state h_{t+1} is directly propagated from the A node to the next time step.\n\nThe SNN (State Space Neural Network) module includes a parameterized function H(θ). The input x_t and a scalar τ are summed at a + node, and the result is multiplied by τ (×) to produce u_{t+1}. Additionally, the sum of x_t and τ is passed through H(θ), which outputs s_{t+1}, a state variable that is passed forward independently. The function H(θ) is represented as a white rounded rectangle with black text 'H(θ)', and the state s_{t+1} is shown as a separate output flowing to the right, indicating it may be used for other purposes or in subsequent steps. The connections are clean, with arrows indicating data flow, and all operations are explicitly labeled with symbols like +, ×, σ, tanh, GLU, and H(θ)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504954",
+  "record_sha256": "d7e025a52233a4926afbe96f8ddfc49c3e73f48dea0bc39ff0ddc4a757e9cf3f",
+  "asset_sha256": "9c516c01ad1cc89b6cdb0560bfea78f8d46de11b962b893a7dde0e3f46041991",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504954",
+    "title": {
+      "zh": "A Lightweight Transformer with Phase-Only Cross-Attention for Illumination-Invariant Biometric Authentication · 方法图",
+      "en": "A Lightweight Transformer with Phase-Only Cross-Attention for Illumination-Invariant Biometric Authentication"
+    },
+    "paper": {
+      "id": "arxiv-2412-19160",
+      "title": "A Lightweight Transformer with Phase-Only Cross-Attention for Illumination-Invariant Biometric Authentication",
+      "authors": [
+        "Arun K. Sharma",
+        "Shubhobrata Bhattacharya",
+        "Motahar Reza",
+        "Bishakh Bhattacharya"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19160",
+      "arxiv_url": "https://arxiv.org/abs/2412.19160",
+      "arxiv_id": "2412.19160",
+      "arxiv_first_submitted_at": "2024-12-26T10:40:15Z",
+      "arxiv_updated_at": "2025-08-14T08:27:24Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19160v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504954/image/image.jpg?Expires=1790855452&Signature=DO65xFmTMjtrmsI6t52XvDSmEwyByPbvTT~e6R~HQ0drxfrJL4RjqRoubrKvNEs~~peBXS0KF9dj8J6iWnUiUKQgYdOv9D3mKQ0z-jceOhqwYrhi5x5efe~eto4YWwnibx1nq9k-ldrmczM96-6CzHLlBaIeH4AdOlokJXkATLW6HhRwremC0SxVCsXdCKsJC5F8SZssMCbe~brVUSXAyjMOIxCNYES6YEEx8-Ds4~p7Ie65xi7HbRbA3a-quLP~poHb~LUKzYefIw5~MSoDIABACGxePvszX-ZG9jqZJ89jKc55qNWU534BamR2HpeKud2hZqEBIeAfgVv3PROO6Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504954,
+      "description_sha256": "116f6c1bebe8ccf3338aeafc0ed4d17a194239229dfbced820515215463c0ecd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "eeea34f1dccce10cfd2ca59d550c3b9dea89814a928b887104d16ef9cc4a4cea",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram of the Phase only Correlation Cross Spectral Attention (POC-CSA) module, enclosed within a rounded rectangular container with a light peach background and bold black border. The title 'Phase only Correlation Cross Spectral Attention (POC-CSA)' is centered at the top in bold black font. The module processes two input sequences: x₁ (channel input) and x₂ (cross-channel input), both entering from the left side.\n\nThe architecture consists of three parallel processing streams. Each stream begins with a Conv1D layer, represented as a rounded rectangle with a light blue fill and dark blue border. The top stream receives x₁ and outputs V, which is directly routed to the final MatMul operation. The middle stream also receives x₁, passes it through a Conv1D layer, then applies an FFT (Fast Fourier Transform) block—shown as a smaller rounded rectangle with a darker blue fill and dark blue border—to produce Q. The bottom stream receives x₂, passes it through a Conv1D layer, then applies an FFT block to produce K.\n\nThe Q and K signals are fed into a central computation block, depicted as a large gray rectangle with a black border. Inside this block, the mathematical expression Qᴴ * K / |Qᴴ * K| is displayed, indicating the phase-only correlation computation, where Qᴴ denotes the conjugate transpose of Q. The output of this block is passed to an IFFT (Inverse Fast Fourier Transform) block, identical in style to the FFT blocks, which converts the result back to the spatial domain.\n\nThe output of the IFFT block is then fed into a tall vertical gray rectangle labeled 'MatMul' (Matrix Multiplication), which performs the final multiplication with the V signal from the top stream. The result of this MatMul operation exits the module on the right side as the final output.\n\nAll connections between components are represented by solid black arrows indicating the direction of data flow. The diagram emphasizes the spectral domain processing via FFT/IFFT operations and the phase-based attention mechanism through the division by the magnitude term in the central block. The visual hierarchy clearly separates the three input pathways and highlights the core attention computation in the center."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

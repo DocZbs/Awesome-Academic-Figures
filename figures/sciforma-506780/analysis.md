@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Layout2Scene: 3D Semantic Layout Guided Scene Generation via Geometry and Appearance Diffusion Priors — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02519
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a two-stage 3D scene generation method that takes a 3D semantic layout and a text prompt as inputs. The global layout is structured into four main components: the 3D semantic layout at the top-left, the Hybrid Representation module below it, the Layout-aware camera sampling process in the center, and the two-stage refinement pipeline on the right, labeled Stage 1 (Geometry Refinement) and Stage 2 (Appearance Generation). The 3D semantic layout is depicted as a top-down view of a room with colored blocks representing different semantic categories: orange for chair, blue for sofa, pink for table, gray for wall, and dark brown for floor, with a legend provided. This layout serves as the initial structure for scene composition.
+
+The Hybrid Representation module, located at the bottom-left, details how scene elements are modeled. It splits the scene into 'objects' (e.g., sofa, chair) and 'background'. Objects are generated using a pre-trained Text-to-3D model, producing 3D meshes or point clouds, while the background is represented by polygons. These components are then converted into a unified representation using Gaussians, shown as overlapping translucent shapes. An arrow labeled 'render' connects this module to a vertical stack of rendered images in the center, illustrating different views of the scene.
+
+The Layout-aware camera sampling block, positioned above the rendered images, indicates that camera viewpoints are sampled strategically to ensure full coverage of the scene. These sampled views feed into the two-stage refinement pipeline on the right.
+
+Stage 1, titled 'Geometry Refinement', uses a diffusion-based model to refine the scene's geometry. It takes as input a noisy latent representation combined with a rendered image from the previous step. The model consists of a series of gray rectangular blocks representing neural network layers, with a prompt ('a living room') feeding into the middle of the network. The output is denoted by the loss term ℒ_GSDS, indicating geometry refinement via a semantic-guided diffusion process.
+
+Stage 2, titled 'Appearance Generation', further refines the scene’s visual appearance. It also employs a diffusion model, taking noise and a rendered image as input. The model architecture is similar to Stage 1 but includes additional feature extraction blocks at the bottom, shown as stacked rectangles in yellow, peach, and green, which likely extract semantic and geometric features from the refined geometry. The output is associated with the loss term ℒ_A, signifying appearance optimization. A bidirectional arrow between Stage 1 and Stage 2 suggests iterative or conditional refinement, where the output of Stage 1 informs Stage 2.
+
+Throughout the diagram, arrows indicate data flow: from the 3D semantic layout and prompt to the Hybrid Representation, then to rendered views, and finally through the two-stage refinement process. The visual modules use consistent color coding for semantic categories, and the diffusion models are depicted as encoder-decoder-like structures with noise injection and conditioning via prompts and features.

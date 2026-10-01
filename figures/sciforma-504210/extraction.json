@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-504210",
+  "record_sha256": "ceebb3129f1d5ea7f28cb47f4584144e2ecb78b0c5bd1f956c7c6d58a9ef4552",
+  "asset_sha256": "40d99e38d696c86757b0c0b35684a3d88486737f2480ee2fe7bba15a36285413",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504210",
+    "title": {
+      "zh": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection · 方法图",
+      "en": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection"
+    },
+    "paper": {
+      "id": "arxiv-2412-17944",
+      "title": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection",
+      "authors": [
+        "Antony Seabra de Medeiros",
+        "Luiz Afonso Glatzl Junior",
+        "Sergio Lifschitz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17944",
+      "arxiv_url": "https://arxiv.org/abs/2412.17944",
+      "arxiv_id": "2412.17944",
+      "arxiv_first_submitted_at": "2024-12-23T19:55:20Z",
+      "arxiv_updated_at": "2024-12-23T19:55:20Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17944v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504210/image/image.jpg?Expires=1790855427&Signature=IE8V2H-1xizQoTFfYKUwkU5-l65J99uLUQVmLSdRKbL6moPfKDR45oh6PQnSSKMrEvaZZOfv2JvqTrKb3aUxkaJ7vV4YCuS2~u5Q3J0rn2NZpM6ESA~AWky6WXhhm8plkrbd6IIlYrInfTLFDFJvgI7mWUzYsTgwXc9G5kNAd~ejbDGCxSZmBQ8uTXv5kur4o0O5aNLbgkzZ7SjLQmS4ghzpxkD8nRXukR51cMzfocROHDFymB7hnGUIgOpWHEBZEJjlD8sNBSSHVMtNCjBcMnKBo4cBnHq35zL~P1SyjKJ-nh-ZmsCT5gtdEv62pLqlXQJQdjq2PHdqEIifwK9~wA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504210,
+      "description_sha256": "3223a58cad4b572a638073d2093d2658962671d99d320cd9985b616263df355b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "94812f25008036299cc0c9d4e4ae752059f16855e8162aeef5b0169481e9c4b0",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the application architecture of a system designed for processing and querying PDF documents, particularly contracts, using a combination of traditional database storage and vector-based retrieval. The global layout is divided into two main vertical workflows: one on the left representing the user interaction and backend logic, and another on the right depicting the document ingestion and embedding pipeline. These workflows converge at the data storage layer.\n\nOn the left side, the topmost component is the 'User interface (Streamlit)', represented as a gray rectangular process box. It communicates bidirectionally with the 'Backend Agents', also a gray rectangular box, via thick double-headed arrows, indicating real-time interaction and request-response communication. The Backend Agents interact unidirectionally with two data stores located below: 'Contracts database (SQLite)' and 'Vectorstore (ChromaDb)', both depicted as light gray cylindrical shapes symbolizing databases. Arrows point from the Backend Agents to each database, suggesting that the agents query or write to these data sources as needed.\n\nOn the right side, the workflow begins with 'PDF Documents processing', a gray rectangular box, which feeds into 'Chunking and metadata generation' through a downward arrow. This step breaks down the documents into smaller segments and extracts relevant metadata. The output then flows into 'Embeddings generation', another gray rectangular box, where textual content is converted into numerical vectors. From here, a thick arrow points leftward to the 'Vectorstore (ChromaDb)', indicating that the generated embeddings are stored in this vector database for efficient similarity search.\n\nAll components are rendered in grayscale with consistent styling: process boxes are gray rectangles with rounded corners and vertical lines on the sides, while databases are light gray cylinders. Text within each box is centered and clearly labeled, often including technical specifics in parentheses such as '(Streamlit)', '(SQLite)', or '(ChromaDb)'. The connections between modules are represented by thick white arrows with open arrowheads, emphasizing the direction of data flow. There are no explicit equations or mathematical notations in the diagram; instead, the architecture relies on clear, sequential module interactions to convey the system’s operational logic. The overall structure emphasizes separation of concerns: user-facing logic on the left, and document preprocessing and indexing on the right, with shared data access via the two distinct databases."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

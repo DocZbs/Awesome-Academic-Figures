@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-505216",
+  "record_sha256": "5ded38e84c7f6fdc2033ef559ed001df159811db4892d6e5dc278fa8abcee2dd",
+  "asset_sha256": "0c9c705b80627b668b44a4b67f1e51255730361350b4d86dd31c7c6ee59b6b67",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505216",
+    "title": {
+      "zh": "Toward Scalable Multirobot Control: Fast Policy Learning in Distributed MPC · 方法图",
+      "en": "Toward Scalable Multirobot Control: Fast Policy Learning in Distributed MPC"
+    },
+    "paper": {
+      "id": "arxiv-2412-19669",
+      "title": "Toward Scalable Multirobot Control: Fast Policy Learning in Distributed MPC",
+      "authors": [
+        "Xinglong Zhang",
+        "Wei Pan",
+        "Cong Li",
+        "Xin Xu",
+        "Xiangke Wang",
+        "Ronghua Zhang",
+        "Dewen Hu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19669",
+      "arxiv_url": "https://arxiv.org/abs/2412.19669",
+      "arxiv_id": "2412.19669",
+      "arxiv_first_submitted_at": "2024-12-27T14:31:52Z",
+      "arxiv_updated_at": "2024-12-27T14:31:52Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19669v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505216/image/image.jpg?Expires=1790855453&Signature=A5KClRWn-Yk4ib2j4Me13fw2qN1cgI5~hT7MBmF~mLozznL8DWdqg0BtztLbac6MCfyECycWaRc2HLgW7BzVz-9-UtiI~bCH27bynoRlGP-afZki4ckwq9ro3zkgc3psLGVzPBcdfLFghjk~leWGpwofnhcPiV0oCf3cl~-hyOhmSA7WBlpzCfJkjGZVnt8X4ht9q-VXfJxh9YG2SlaAcjJivfuWJiUHoEpwVYKeqTZH1guXcx8p3xMUncPKNWZ3bNaCA5Lnnd4WxNEHl5hYtSV0MLiCQP80aeDNORDm~~j5yv54996sQJ1Bn7UXGRKB8-gvw7wfJ9-lMcLoVICWWQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505216,
+      "description_sha256": "7be2a321778b54c56e756e2ef017cf4e20f45a21bae25797bec5c69150f8ba83",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c0d9b2d90593b35e095a843ed6575903077bf34ac688bcb5813a0bba4b932822",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part schematic illustrating an online policy learning and deployment framework for formation control of mobile robots, including wheeled vehicles and multirotor drones. Part A, titled 'Online policy learning,' shows a distributed actor-critic reinforcement learning architecture operating over a prediction interval [k, k+N-1]. On the left, real-world and simulated scenarios are depicted: (a) mobile wheeled vehicles navigating around cones on a court, and (b) multirotor drones flying in formation over a road and in open space. These serve as visual context for the application domain.\n\nThe central part of A displays the core learning architecture. Sensor observations feed into a graph structure composed of blue circular nodes labeled 0 through 8, arranged in two columns (left: 2,3,6,7; right: 1,4,5,8), connected by edges, representing the agent network topology. This graph outputs error vectors e_xi and e_x8, which are fed into multiple controllers (Controller 1 to Controller 8, shown as orange-bordered boxes). Each controller contains an Actor (purple parallelogram) and two Critics (gray parallelograms), with parameters λ_i^d and u_o,i^d (defined in equations referenced in the caption). The Actor generates actions (Action 1 to Action 8), while the Critics evaluate performance based on rewards r1 and r8, which are aggregated into a Cost metric. A State prediction buffer (cylindrical shape) connects the controllers, enabling information exchange across agents. The entire process operates over time steps marked along a red timeline at the bottom: k, k+τ, k+N, k+2N.\n\nPart B, titled 'Online policy deployment,' illustrates how the learned policy is transferred to larger-scale systems. The top box shows a learned policy for M=2 agents, with an explicit action structure: q̇_1 = (v1cosθ1, v1sinθ1, ω1, a1) and q̇_2 = (v2cosθ2, v2sinθ2, ω2, a2), where state and action flow through a neural network block (purple parallelograms). Below, this policy is transferred via 'weights sharing' to a larger system with M=50, 500, 1000... agents. The lower box shows a scaled-up network with stacked purple blocks labeled i, i+1, ..., indicating sequential or parallel processing units, feeding into a large swarm of drones arranged in a grid pattern, demonstrating scalable deployment. The diagram emphasizes that the learned policy’s structure allows efficient transfer to much larger formations without retraining."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503406",
+  "record_sha256": "2abb3168c751a65031de6bb8a46330e1f064d5a87a1383b6c5cea8974276e621",
+  "asset_sha256": "60a32e1ffe61091ecbba894ad87e53c3778f089e7825546c4097601d806f1db7",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503406",
+    "title": {
+      "zh": "DOFEN: Deep Oblivious Forest ENsemble · 方法图",
+      "en": "DOFEN: Deep Oblivious Forest ENsemble"
+    },
+    "paper": {
+      "id": "arxiv-2412-16534",
+      "title": "DOFEN: Deep Oblivious Forest ENsemble",
+      "authors": [
+        "Kuan-Yu Chen",
+        "Ping-Han Chiang",
+        "Hsin-Rung Chou",
+        "Chih-Sheng Chen",
+        "Tien-Hao Chang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16534",
+      "arxiv_url": "https://arxiv.org/abs/2412.16534",
+      "arxiv_id": "2412.16534",
+      "arxiv_first_submitted_at": "2024-12-21T08:25:23Z",
+      "arxiv_updated_at": "2024-12-24T09:00:20Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16534v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503406/image/image.jpg?Expires=1790855367&Signature=ZTTr8uSGc03Y2WLeFe-L46W620uLfbnJe6NC~n2wfHIFdIweSxS3ZijG1baoIePPp09OTb2ldnZV1h-C2fU8mkRBWqcQ34l5kfpMwuGPpl1gPLvUhfLttpZ5ID9GzbCUoYG171~ogSGlIqq0~KJ7Rlm9smz45TtYkcQM-64tjm9Ki95m9-S5gADzrwLUBVLP4Mi9kEh4RNdRlm2~VhJAEWIJlUI5CdwcQB~AvOw96bofO0bfzvQRANwqxK~JMIWMcAEF32oTM6I77GOTxB1QREH9WGytBZn~d1SEkDmDTVgwH00i85wf3DKIqs8DswAQVrQYB-yTx8NfhcCrDNWi2w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503406,
+      "description_sha256": "21c946424beaa38627014b94671a1921ffb256a57e249d8f6fe19fdcf75c1abc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "001e71f9df4881f87c923588994ba0a982ffddaa49fb531909cdacb223b1ca75",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison of two distinct neural network architectures designed to process different types of input data: numerical columns and categorical columns. The overall layout is horizontally divided into two main sections, each labeled at the top with its respective data type — 'Numerical Column' on the left and 'Categorical Column' on the right. Each section contains a vertical stack of rectangular blocks representing sequential layers in the network, with text inside each block specifying the layer type and parameters.\n\nOn the left, under 'Numerical Column', there are two stacked rectangular blocks. The top block is labeled 'Linear(1, N_cond)', indicating a linear transformation layer that takes a single input feature and maps it to an output dimension of N_cond. Below it, the second block is labeled 'Sigmoid()', representing a sigmoid activation function applied to the output of the linear layer. This structure implies a simple feed-forward path where numerical inputs are first linearly transformed and then passed through a sigmoid to produce a normalized output.\n\nOn the right, under 'Categorical Column', there are four stacked rectangular blocks forming a deeper network. The topmost block is labeled 'Embedding(num_categories, N_cond)', which denotes an embedding layer that maps discrete categorical inputs (with num_categories possible values) into a dense vector space of dimension N_cond. Directly below it is 'LayerNorm(N_cond)', indicating a Layer Normalization layer applied to the embedded vectors to stabilize training by normalizing across features. The third block is 'Linear(N_cond, N_cond)', a linear layer that performs a transformation within the same N_cond-dimensional space, possibly for feature refinement or projection. The final block at the bottom is again 'Sigmoid()', applying the same activation function as in the numerical branch to produce a normalized output.\n\nThere are no explicit arrows or connections drawn between the blocks within either column, but the vertical stacking inherently implies a sequential flow from top to bottom. Similarly, there are no connecting lines between the two columns, suggesting they operate independently as parallel processing branches for different data types. The figure does not include any color coding or additional visual styling beyond black text on white rectangular boxes with black borders. The caption 'Detailed network layer composite for Δ₁' indicates that these architectures are components of a larger model denoted by Δ₁, likely used for conditional processing or feature encoding in a machine learning pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

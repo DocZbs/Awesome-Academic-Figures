@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Multi-Modal One-Shot Federated Ensemble Learning for Medical Data with Vision Large Language Model — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.03292
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a one-shot federated ensemble framework, divided into two main stages: (I) Federated learning process and (II) Global ensemble learning. The entire diagram is enclosed within a dotted rectangular boundary, indicating a unified system.
+
+In section (I), the federated learning process is depicted on the left side. At the center is a 'Central server' represented by a stack of three gray server racks. Surrounding it are multiple clients labeled 'Client 1', 'Client i', 'Client j', and 'Client N', each shown as a black silhouette of a person next to a gray database icon. Each client independently trains a local neural network model using its private dataset; these models are visually represented as colored neural network diagrams—blue, orange, and cyan—with interconnected nodes and edges. Solid blue arrows point from each client’s trained model toward the central server, illustrating the transmission of local models to the server. Ellipses ('...') between clients indicate the presence of additional clients not explicitly drawn. A dashed arrow extends from the central server to the right, connecting to section (II).
+
+Section (II), titled 'Global ensemble learning', is located on the right side. It begins with an input image symbolized by a black square containing a white camera icon. From this input, multiple solid blue arrows branch out to several neural network models—again shown in blue, orange, and cyan—representing the aggregated models from different clients. Each model produces a prediction, indicated by a solid blue arrow leading to a document icon with a checkmark inside (colored to match the respective model). These predictions are then sent via arrows labeled 'vote' to a final decision node, represented by a black tag-shaped icon with a white number '1'. Multiple 'vote' arrows converge on this node, signifying an ensemble voting mechanism. The label 'Final decision' appears to the right of the tag icon. The vertical ellipsis ('...') between models and predictions indicates that this process is repeated for all clients’ models.
+
+The visual modules use consistent shapes and colors: clients are silhouettes with databases, servers are stacked racks, models are neural networks with distinct colors, predictions are checkmarked documents, and decisions are tag icons. All connections are directed arrows, primarily solid blue, with labels such as 'input' and 'vote' where applicable. The layout flows logically from decentralized training to centralized aggregation and decision-making.

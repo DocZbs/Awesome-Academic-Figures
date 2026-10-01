@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503150",
+  "record_sha256": "c67da52007d7ae3c88d644d90b1a5d46ef3a21619f647ad42e60e45c119ca170",
+  "asset_sha256": "711a5a9369159ce0ae09c28a6dae275b1ba8355fc3b6df863408e86ad0e78528",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503150",
+    "title": {
+      "zh": "CoCoGaussian: Leveraging Circle of Confusion for Gaussian Splatting from Defocused Images · 方法图",
+      "en": "CoCoGaussian: Leveraging Circle of Confusion for Gaussian Splatting from Defocused Images"
+    },
+    "paper": {
+      "id": "arxiv-2412-16028",
+      "title": "CoCoGaussian: Leveraging Circle of Confusion for Gaussian Splatting from Defocused Images",
+      "authors": [
+        "Jungho Lee",
+        "Suhwan Cho",
+        "Taeoh Kim",
+        "Ho-Deok Jang",
+        "Minhyeok Lee",
+        "Geonho Cha",
+        "Dongyoon Wee",
+        "Dogyoon Lee",
+        "Sangyoun Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16028",
+      "arxiv_url": "https://arxiv.org/abs/2412.16028",
+      "arxiv_id": "2412.16028",
+      "arxiv_first_submitted_at": "2024-12-20T16:25:20Z",
+      "arxiv_updated_at": "2025-05-15T07:55:04Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16028v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503150/image/image.jpg?Expires=1790855363&Signature=aRJ-eiL34amK3dD8GOrSN3NZcqPU8q62NDzyFVRpL-N9U3AF3BKWn7G-Xtew4~DOXgscCbj-UtKFnRSNSNMhkp-WSiy1Ywr2nNtd3vcFZMLWJg4MnXJj80eY1iEx38ADiZY3u4YxhpjmsnuGoL57~I5DeZXDLJIYq8wXe1qsvxAyi0oa~6UAkiwdZZP7zGBAUoK1hwSNhLUR15QX2xEm-Wag-DVPF7dSex84iycuiMfAHLrkNSS3Kof4MC9QFD-fwtEimLZ323uGEsqJdB4-PVsyCdIVdVq8FTqvqf4oA7~c7gpSbYShTo4xdEYtzudH4YGUqVkR3NfkxoIaUteQqQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503150,
+      "description_sha256": "2d61fbd4ef81ad5f278228eec24528d62cb5ac89693963aa82c6053fbedae756",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a00880c29ce16540085fdf8203f800eaffe87a3f0b75e80ea467cd68c8594f9b",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a three-part pipeline for generating defocused images using a neural network-based approach that computes Circle of Confusion (CoC) Gaussians from base Gaussian parameters. The global layout is divided into three main sections labeled (a), (b), and (c), arranged vertically. Section (a) focuses on computing CoC Gaussian means, section (b) on scaling and quaternion parameters, and section (c) on generating CoC Gaussian sets and the final defocused image.\n\nIn section (a), the input consists of base Gaussian parameters (q_B, s_B, μ_B) and camera position (x_cam), fed into an MLP denoted h_θ. This network outputs five parameters: K (aperture parameter), β (CoC scaling parameter), d (direction vector), and two additional outputs used for CoC computation. The Gaussian depth d(μ_B) is computed as the Euclidean distance ||x_cam - μ_B||, shown in an orange box labeled 'Gaussian Depth'. This depth, along with K, feeds into Equation (7) to compute the CoC diameter σ(μ_B), also in an orange box. The CoC diameter, together with β and d, is processed via Equation (9) to compute Δμ_CoC,1 to Δμ_CoC,M — the mean offsets — shown in another orange box. These offsets are added to the base mean μ_B (via a ⊕ symbol) to yield the final CoC Gaussian means μ_CoC,1 to μ_CoC,M, displayed in a green box.\n\nSection (b) details the computation of CoC Gaussian scaling and quaternion parameters. The outputs δs_1 to δs_M and δq_1 to δq_M from h_θ are multiplied element-wise (indicated by ⊗) with the base scaling s_B and quaternion q_B (in dashed boxes) to produce the final CoC scaling s_CoC,1 to s_CoC,M and quaternion q_CoC,1 to q_CoC,M, shown in a green box.\n\nSection (c) shows the generation of CoC Gaussian sets and the final defocused image. The base Gaussian set G_B (in a dashed box) and the computed CoC Gaussian sets G_CoC,1 to G_CoC,M (in a gray box) are rasterized to produce M+1 images, depicted as a grid of six small images showing a scene with a camera, lamp, and other objects under varying focus effects. These images are then combined via a weighted sum operation, represented by a purple block labeled F, resulting in the final defocused image, shown as a single larger image with visible blur effects. The entire process is structured to simulate depth-of-field rendering using learned CoC parameters derived from the base Gaussians."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

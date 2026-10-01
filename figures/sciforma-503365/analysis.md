@@ -1,0 +1,28 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Learn2Mix: Training Neural Networks Using Adaptive Data Integration — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16482
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the learn2mix training mechanism, which dynamically adjusts batch composition during training based on class-wise error rates. The diagram is structured as a left-to-right workflow with three main stages, each enclosed in a rounded rectangular container connected by thick gray arrows indicating progression.
+
+[1] Global Layout and Structure:
+The layout consists of three sequential modules: 'Initial class proportions' on the left, 'Adaptive evolution of class proportions' in the center, and 'Final class proportions' on the right. Each module is labeled with a descriptive title at the top. The flow represents the transformation of batch composition from the beginning of training (epoch t=0) to convergence (epoch t=∞).
+
+[2] Visual Modules and Attributes:
+- Left Module ('Initial class proportions'): Labeled as α⁰ = ã (original training dataset). Contains a vertical stack of four colored rectangles representing Class 1 (peach), Class 2 (green), Class 3 (light blue), and Class 4 (purple). Adjacent to each class label is a corresponding colored rectangle showing the initial mixing parameter: α₁⁰ = 0.4, α₂⁰ = 0.3, α₃⁰ = 0.2, α₄⁰ = 0.1. Below this stack, the caption reads 'Batch composition at epoch t = 0'.
+- Center Module ('Adaptive evolution of class proportions, αᵗ, across epochs'): Contains a line graph plotting the mixing parameter αᵢᵗ on the y-axis against training epoch t on the x-axis, ranging from 0 to ∞. Four lines represent each class: orange for Class 1, green for Class 2, cyan for Class 3, and magenta for Class 4. The graph shows Class 1's proportion decreasing over time while Class 2's increases, and Classes 3 and 4 show slight increases. A legend is positioned above the plot.
+- Right Module ('Final class proportions'): Labeled as α^∞ = ℒ(θ^∞) / [1ₖᵀℒ(θ^∞)], where ℒ denotes the loss vector and 1ₖ is a one-vector of length k (number of classes). Similar to the left module, it displays four colored rectangles for each class with final mixing parameters: α₁^∞ = 0.1, α₂^∞ = 0.4, α₃^∞ = 0.3, α₄^∞ = 0.2. Below, the caption reads 'Batch composition at epoch t = ∞'.
+
+[3] Connections and Arrows:
+Two thick gray arrows connect the modules sequentially: one from the left module to the center, and another from the center to the right. These arrows indicate the temporal progression of the adaptive process, showing how initial proportions evolve through training epochs to reach final proportions. The central graph visually captures this evolution, demonstrating that class proportions are not static but adaptively tuned based on model performance (error rates) during training.

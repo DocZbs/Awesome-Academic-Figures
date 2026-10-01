@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-503534",
+  "record_sha256": "aa28e3423d6ccfbcd3eb556c19817b449fcd0839f5395d35d4cc676f95618172",
+  "asset_sha256": "5a9a94ac33ab97052b40235340d05319bc65f62ae723fe921d054b322137364a",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503534",
+    "title": {
+      "zh": "Gradient-based Trajectory Optimization with Parallelized Differentiable Traffic Simulation · 方法图",
+      "en": "Gradient-based Trajectory Optimization with Parallelized Differentiable Traffic Simulation"
+    },
+    "paper": {
+      "id": "arxiv-2412-16750",
+      "title": "Gradient-based Trajectory Optimization with Parallelized Differentiable Traffic Simulation",
+      "authors": [
+        "Sanghyun Son",
+        "Laura Zheng",
+        "Brian Clipp",
+        "Connor Greenwell",
+        "Sujin Philip",
+        "Ming C. Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16750",
+      "arxiv_url": "https://arxiv.org/abs/2412.16750",
+      "arxiv_id": "2412.16750",
+      "arxiv_first_submitted_at": "2024-12-21T19:53:38Z",
+      "arxiv_updated_at": "2025-02-18T03:28:35Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16750v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503534/image/image.jpg?Expires=1790855374&Signature=Cf~75S~~UmXT5-6phb-tLop1skOpC3uNucSmeL~BX9oqGhK9kmfU~4QiBFe1Y3zo8~ikbjBjuMd8jp9~pf0OabzJTNfUyzAK3I22R3-m12qqWkFVC53qg5KQO8nlr10x9lnPUv9LMXCPiTsN92kV8ycxrz8TkLCtjTdBniCK1q55T3s0Pa7vI4B~b1-rxfrGKoomsXB52J5Phq4r3CCRBVJEnh9GGm3yu0xkEnZJPmab2Nz5K6PQrClkzJkBD504dXu0uOp7e51e7aPujZM036wRLhbmHZkxrFAD8IksKP7Q7GPABy6eAjxUnehR5I6tsjbogELuwvyJgC~MrZjH-w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503534,
+      "description_sha256": "13d6f1643018c1946ac8b1173ee3efb314f1403990a26373cec9f0969db4579d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "22eb9c87fb4175204bbfe7ff28bd0e7c9da04c5f10e47fbc89868ef9c9ec7d71",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overall framework for a traffic simulation system that utilizes the Intelligent Driver Model (IDM) to predict vehicle behavior. The layout is divided into three main panels: (a) Traffic State, (b) Sequential Approach, and (c) Parallel Approach (Ours). Panel (a) shows a top-down view of a multi-lane road with several vehicles, including a blue car highlighted by an orange bounding box and another by a blue bounding box. Dotted lines connect these vehicles to panel (b), indicating the extraction of state variables for each vehicle. These variables—position (p_i), velocity (v_i), and the position and velocity of the leading vehicle (p_h(i), v_h(i))—are represented as labeled data rows in panels (b) and (c). Each row corresponds to a vehicle, indexed from 1 to 100, with distinct background colors (orange, blue, yellow, green, brown, purple) to denote different vehicles or processing order. In panel (b), the Sequential Approach, these rows are processed one after another in order, feeding into a single pink rectangular block labeled 'IDM' via arrows that match the color of each row. This implies a linear, step-by-step computation. In contrast, panel (c), the Parallel Approach (Ours), shows the same set of data rows but with arrows from multiple rows simultaneously entering the same 'IDM' block, suggesting concurrent processing. The caption clarifies that since IDM can be applied independently to each vehicle’s variables, parallelization is feasible. It also notes that in (c), two computational units are assumed to enable parallel execution, although only one IDM block is shown, implying that the model is executed in parallel across multiple units. The visual structure emphasizes the efficiency gain of the proposed parallel approach over the traditional sequential method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

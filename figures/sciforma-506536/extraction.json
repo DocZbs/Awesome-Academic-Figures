@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506536",
+  "record_sha256": "a8a7c5a5d19bc3f8d3d75d7c5a4dbd30bf8e6ac5999272d2106e874a89e046be",
+  "asset_sha256": "1df43994c2839f34298e705f49e56fe43cebefac2512599f0fbfcaa5732dcf80",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506536",
+    "title": {
+      "zh": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network · 方法图",
+      "en": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network"
+    },
+    "paper": {
+      "id": "arxiv-2501-01689",
+      "title": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network",
+      "authors": [
+        "Hiep Dinh",
+        "Son Le",
+        "My Than",
+        "Minh Ho",
+        "Nicolas Vuillerme",
+        "Hieu Pham"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01689",
+      "arxiv_url": "https://arxiv.org/abs/2501.01689",
+      "arxiv_id": "2501.01689",
+      "arxiv_first_submitted_at": "2025-01-03T08:10:08Z",
+      "arxiv_updated_at": "2025-01-03T08:10:08Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01689v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506536/image/image.jpg?Expires=1790855582&Signature=BvRfcmr~ZTw6WEuP6IcguKUvUjaP0fZXx8w1Hw3nB1oia45B12KoayKU2BOTp03prWMCB3y~HFSNejIzqdtQhDO5QT8yXZ7rFpbCIIiwzOOUElOuAN4eFYFwctE6Gl86G5g1oKeUphNMVuvs9h5Gzizv1fUpyhTuH0XSDgXxhiTrDpGfZPqE-a0l2c~pSPHzfdZr7n5beOu-HnjdDXKDHRpCfhx~W8jlPAr8p1eNsBjdiWXEo0w6LJgXbJgRCwQGFffpjG1Rz~xbAcHjZBYjOb4vZqidC-FZIoOnCC9q4XXG14duZwhMwRCaYVDwGYV80R9NXfjHIEvfWy~pO~-f8A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506536,
+      "description_sha256": "0a4fc30fb7c8b4351165839b08ca7977075dac50c8b287fc033657e8d837a118",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ddfb27ff01d0ea9f94107fea38d7001142f76d564d0aac10543428f4b7bee8aa",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative workflow between two gait analysis methodologies: a traditional, resource-intensive clinical approach (panel a) and a proposed, cost-effective, single-camera deep learning-based method (panel b). The global layout is divided into two horizontal sequences, each depicting a step-by-step pipeline from data acquisition to clinical output.\n\nIn panel a, the traditional method begins with optical motion capture using reflective markers placed on a subject walking on a green platform surrounded by multiple cameras mounted on tripods. This is followed by semi-manual data processing, represented by a green box containing a curved trajectory with dots, indicating manual cleaning or interpolation of marker data. Next, anthropometric measurements of the subject’s limbs are taken, shown as a side-view silhouette with a leg extended, and these are combined with the processed data to perform inverse kinematics, resulting in a 3D skeletal model of the subject with joint angles (e.g., 12° at the hip) displayed. The process continues with semi-manual gait cycle detection, visualized as a green box with a sinusoidal wave and vertical dashed lines marking gait events, leading to expert analysis, symbolized by a stylized human head with a brain outline, indicating human interpretation of the results.\n\nPanel b illustrates the proposed method. It starts with single-camera recording, depicted as a person walking beside a smartphone icon, emphasizing low-cost, accessible data collection. The next step is video keypoint detection using an algorithm like OpenPose, shown as the same person with overlaid colored lines and dots tracing body joints, representing 2D pose estimation. These detected keypoints are then fed into a neural network, illustrated as a multi-layered feedforward network with interconnected nodes in green, symbolizing deep learning processing. The final output is a report, represented by a document icon with bar graphs and charts, indicating automated extraction of clinical metrics such as Gait Deviation Index (GDI), knee flexion angle, step length, and walking cadence.\n\nConnections between modules are indicated by solid green arrows pointing rightward, signifying the flow of data and processing steps. The figure uses consistent color coding—green for processing stages and neutral tones for input/output elements—and employs simple, clean icons and silhouettes to convey each stage clearly. The overall structure emphasizes a shift from labor-intensive, expensive clinical setups to an automated, scalable, and accessible solution using consumer-grade hardware and deep learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+AnalogXpert: Automating Analog Topology Synthesis by Incorporating Circuit Design Expertise into Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19824
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the AnalogXpert framework, a system designed to automate analog circuit design using a large language model (LLM) guided by human expertise and iterative refinement. The global layout is structured as a horizontal workflow with feedback loops, divided into four main stages: Design Requirement, Circuit Representation of Subcircuits, CoT & In-Context Learning, and Human Experience-Based Proofreading. These stages feed into a central Large Language Model component, which generates outputs iteratively. The process begins with the Design Requirement block (gray box), specifying parameters such as stage numbers, compensation, input/output signal types, topology, load, and bias conditions. This is combined with the Circuit Representation of Subcircuits block (peach background), which provides a library of pre-defined subcircuits—illustrated with an example of a Cascode Current Mirror shown as a schematic with labeled nodes O1, O2, VBIAS1, VBIAS2, and transistor symbols—and their corresponding SPICE netlist code. The third stage, CoT & In-Context Learning (light green background), guides the LLM through chain-of-thought reasoning and contextual examples, including step-by-step design procedures and prior design examples to improve accuracy. All three inputs converge into the Large Language Model (light blue bar with OpenAI logo), which produces an initial output, Output(0). This output then enters a feedback loop involving Human Experience-Based Proofreading (yellow background), where a Proofreading Checker applies rules to validate block types and connections, generating a Revised Message(N) listing detected errors. This revised message, along with the original design requirement, subcircuits, and learning context, is fed back into the LLM via the Design History module (white box), which accumulates previous outputs and revisions to inform subsequent iterations. The refined output, Output(N+1), is generated and fed back into the proofreading stage, forming an iterative cycle until convergence. The diagram uses arrows to indicate data flow: blue arrows denote primary input flows into the LLM, green arrows represent output flows from the LLM, and black arrows show the feedback path from proofreading to the next iteration. The visual modules are color-coded for clarity: gray for inputs/outputs, peach for subcircuit definitions, light green for learning guidance, yellow for proofreading, and light blue for the core LLM. Text labels within each module specify functional components, such as 'Block Type Check' or 'Revise History', ensuring the methodology is transparent and reproducible.

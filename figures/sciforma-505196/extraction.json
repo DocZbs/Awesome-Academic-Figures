@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505196",
+  "record_sha256": "bd11369d68d1dc0e0dea49ba7315429e8ace7d8095c3ae8c16b70a85f36ffd35",
+  "asset_sha256": "b2b1b15b3ba553c6506e64fb3435379ce889f062c6bd17f9eb4b2db525c797be",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505196",
+    "title": {
+      "zh": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations · 方法图",
+      "en": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations"
+    },
+    "paper": {
+      "id": "arxiv-2412-19628",
+      "title": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations",
+      "authors": [
+        "Mingshu Zhao",
+        "Yi Luo",
+        "Yong Ouyang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19628",
+      "arxiv_url": "https://arxiv.org/abs/2412.19628",
+      "arxiv_id": "2412.19628",
+      "arxiv_first_submitted_at": "2024-12-27T13:13:52Z",
+      "arxiv_updated_at": "2025-07-30T12:28:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19628v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505196/image/image.jpg?Expires=1790855453&Signature=MJqKaKsHs9HhHIF~TVyk98EmGo7EYNUe~jP8sOYXVeRJ7wGwlNPRU4cPCgdzijRpoC6H-Le~7NcQrZWLYYvvNZvhhHrRNIQy4ITvIEG9CMre~RRNNEbFsNfDSwJbppddO3jXedd6tXAc8ARene~pWD8mkduxD87nIJYnnHvdQ~sjWK~uX~DKHrHkCMgGgXjgcpg6m6D3Ul1v3JOiDz6Aws4xMdAxzErIj3mduU4L0dFbXS96dvj1cjk5ABIH5uLcaHfcIpWDQcF1NfuU8nTogXEpeIrepkRHcJle8BHJs6nGZrLCCODmL-3nXoX6joC0Jn8sOzGYH2TyAJh2GYO-MQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505196,
+      "description_sha256": "0479e40bd7c4e5c3813f15778a06a375bea4b69b2a73ad01b79709e99afd407d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9f25c8e5629bd61c892303272c4ad91652b35f36b6bf667386ff708b8de8dea3",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of the RecNeXt model, comprising five subfigures labeled (a) through (e), illustrating the overall structure, downsampling mechanism, block composition, partial-channel block design, and attention module details.\n\n[1] Global Layout and Structure:\nThe figure is organized into five main sections: (a) Overall Architecture, (b) Downsample, (c) Four Partial-Channel MetaNeXt Blocks and One Shared-Channel MetaNeXt Block, (d) Partial-Channel MetaNeXt Block, and (e) RecLinear Attention. Section (a) shows a sequential pipeline divided into four stages, each containing a MetaNeXt block followed by a downsampling module. Sections (b)–(e) provide detailed breakdowns of components used in (a).\n\n[2] Visual Modules and Attributes:\nIn (a), the pipeline begins with a gray rectangular 'Stem' module, followed by four stages. Each stage consists of a cyan 'MetaNeXt' block (with multiplicity N₁×, N₂×, etc.) and a light blue 'Downsample' block. Below each MetaNeXt block, spatial dimensions are annotated: C₁×H/8×W/8, C₂×H/16×W/16, C₃×H/32×W/32, and C₄×H/64×W/64.\n\nIn (b), the 'Downsample' module is shown as a composite unit: a teal 'DWConv' block feeds into a light blue 'MLP', whose output is element-wise added to the input via a ⊕ symbol.\n\nIn (c), the structure of a stage is expanded to show four partial-channel MetaNeXt blocks (each with a distinct color: gray, pink, yellow, gray) followed by one shared-channel MetaNeXt block (four parallel blocks: gray, yellow, pink, gray). Each partial-channel block processes C/4 channels, indicated by labels inside rectangles. The blocks are connected via element-wise addition (⊕), channel-wise MLP (σ), and RepDWConv (*), forming a residual-like structure.\n\nIn (d), the 'Partial-Channel MetaNeXt Block' is detailed: an input splits into two paths — one with Cp channels processed by 'RecLinear Attention', and another with C−Cp channels passed through identity. These are concatenated channel-wise (⊙), fed into an MLP, and then element-wise added to the original input.\n\nIn (e), 'RecLinear Attention' is shown as a module with a 'Linear Attention' block, preceded by spatial downsampling (↓) and followed by nearest interpolation (↑), with outputs combined via element-wise addition (⊕) and RepDWConv (*).\n\n[3] Connections and Arrows:\nIn (a), arrows indicate forward flow from Stem → Stage 1 → Stage 2 → Stage 3 → Stage 4. Each stage connects MetaNeXt to Downsample, and Downsample to the next MetaNeXt.\n\nIn (b), an arrow from DWConv to MLP, and then to ⊕, which combines with the input.\n\nIn (c), each partial-channel block receives input, applies operations (RepDWConv, σ, ⊕), and passes output to the next block. The final shared-channel block receives inputs from all four partial-channel blocks, processes them in parallel, and combines via ⊕.\n\nIn (d), the input splits; one path goes through RecLinear Attention, the other through identity. Outputs are concatenated, processed by MLP, and added back to input via ⊕.\n\nIn (e), input flows through ↓, then Linear Attention, then ↑, and finally ⊕ with the RepDWConv output.\n\nLegend symbols: ↓ = DWConv Downsample, * = RepDWConv, σ = Channel-wise MLP, ↑ = Nearest Interpolation, ⊕ = Element-wise Addition."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

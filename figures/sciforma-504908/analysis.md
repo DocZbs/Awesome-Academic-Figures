@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19092
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a hierarchical graph convolution framework for modeling trajectory data, structured into two main processing streams: one for the global Trajectory Graph and another for User subgraphs, which are integrated through a fusion mechanism. The global layout is divided into three primary regions: the top-left shows the large-scale Trajectory Graph with a zoomed-in view of a User subgraph; the top-right details the feature extraction and initial graph embedding process; and the bottom half presents the user-specific graph processing and readout phase.
+
+In the top-left, the 'Trajectory Graph' is depicted as a dense, multicolored network of nodes and edges, representing locations and movement patterns. A magnified circular inset labeled 'User subgraph' shows a smaller, more focused network of light blue circular nodes connected by black directed edges, indicating localized user movement patterns.
+
+The top-right section outlines the initial feature processing pipeline. It begins with a dashed rectangular box listing 'Initial node feature' components: 'Location ID' (pink), 'Category' (peach), and 'lat & lon' (purple); and 'Initial edge feature' components: 'Total flow' (pink), 'Distance' (peach), and '24h-flow' (purple). These features feed into a sequence of two EGraphSAGE layers (light blue rounded rectangles), each followed by a BatchNorm & Dropout layer (orange rounded rectangle). A feedback loop connects the output of the second EGraphSAGE back to its input, suggesting iterative message passing. The output of this stack is passed to a 'Fusion' block (gray rounded rectangle), which combines the learned embeddings into two sets: {z_i}_{i=1}^M (purple rounded rectangle) representing global node embeddings, and {u_i^{long}}_{i=1}^N (lavender rounded rectangle) representing long-term user-specific embeddings.
+
+The bottom-left section processes the User subgraph. The subgraph's initial node features are derived from the global embedding set {z_i}_{i=1}^M via a black arrow labeled 'initial node feature'. This subgraph then undergoes two GraphSAGE layers (light blue rounded rectangles), each followed by BatchNorm & Dropout (orange rounded rectangle), similar to the global stream but using standard GraphSAGE instead of EGraphSAGE.
+
+Finally, the bottom-right section shows the 'Readout' phase, enclosed in a dashed box. It visualizes a graph with orange circular nodes and red rectangular features attached to them, representing the final aggregated representations. The outputs from both processing streams — the global {z_i}_{i=1}^M and user-specific {u_i^{long}}_{i=1}^N — are combined here, with an arrow from the user-specific stream pointing to the Readout module, indicating integration of user-level information for downstream tasks. The overall flow is directional, moving from raw trajectory data to refined, hierarchical embeddings suitable for prediction or analysis.

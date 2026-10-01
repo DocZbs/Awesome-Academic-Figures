@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506268",
+  "record_sha256": "d192212b96edef8d58852e086f704d5b7e5baef4341b3b2c46b501cdc1b7283a",
+  "asset_sha256": "174379874716bcc8af620c9c53a9ef95783590131e8b0d615ab779846806249d",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506268",
+    "title": {
+      "zh": "Prior Lessons of Incremental Dialogue and Robot Action Management for the Age of Language Models · 方法图",
+      "en": "Prior Lessons of Incremental Dialogue and Robot Action Management for the Age of Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-00953",
+      "title": "Prior Lessons of Incremental Dialogue and Robot Action Management for the Age of Language Models",
+      "authors": [
+        "Casey Kennington",
+        "Pierre Lison",
+        "David Schlangen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00953",
+      "arxiv_url": "https://arxiv.org/abs/2501.00953",
+      "arxiv_id": "2501.00953",
+      "arxiv_first_submitted_at": "2025-01-01T20:58:03Z",
+      "arxiv_updated_at": "2025-04-02T14:24:00Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00953v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506268/image/image.jpg?Expires=1790855567&Signature=BeJAiE7xOSGezo392FZ72QNLJHUT9WMUaAIuHjp3lWPZd2rCvoXu59lUQA~~csuA9SDx62I5ctPxChzfj8~jctWze7p~~8Z8gkqgW6lEORoOvbZ8TtZ9kZvOpcLpPKsQkBC3TNTWZTRZI-g9lML6fD4UD8LFQUqMltSdljDn7fVPUAUr9aNgbbTMYRG41wrV0TMQVT0TYoI1hv7dKNMFNOsMekU6EX-C7MVRMoM-JSOjRGwuiuNwmgSEOZ5Ks9pHTAmlJF9uwm9xa031E5Cn8xz7wtCdSu~WANwtBOarBHRWf4hkCo3K7RAh9h5jh~yclmMhAl7nxsMl36azSZqRTA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506268,
+      "description_sha256": "49ed7de7942e0df2e6b8ff19204345de6b091dce5ca8cd98ae3781c9fb1929c7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9cb065a168f03ed4e83d68122e4dc1d6f6c8862f32ddc429bc98d9b8a63c8739",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a schematic of an LSTM-based dialogue state tracker, as described in Zilka et al. (2015). The global layout is horizontal and sequential, depicting a processing pipeline from input words at the bottom to output probability distributions at the top. The structure consists of three main horizontal layers: the input layer at the bottom, a sequence of encoder modules in the middle, and the output layer at the top.\n\nIn the input layer, four words — 'looking', 'for', 'chinese', 'food' — are shown as individual tokens aligned horizontally. Each word is associated with a subscript index (a₁ through a₄), indicating their position in the sequence. Above each word is a corresponding word embedding vector (w₁ through w₄), represented as rounded rectangular boxes. These embeddings feed upward into a sequence of four identical encoder blocks labeled 'Enc'. Each 'Enc' block is a square box, arranged left-to-right in a chain, with arrows indicating sequential processing from one encoder to the next. The encoders process the embeddings sequentially, forming a recurrent structure typical of LSTM networks.\n\nThe output of the final encoder block connects to a large rounded rectangular box labeled 'vector representation of the dialog', which represents the aggregated context or hidden state (denoted as h₄) of the entire dialogue sequence. From this vector representation, two directed arrows branch out to two separate output components: c_food and c_area. These are depicted as small rectangular boxes, each labeled with a subscript indicating their domain (food and area). Above each of these components, there is a probability distribution symbolized by p(food) and p(area), respectively, suggesting that the model outputs probabilities over possible values for each slot in the dialogue state.\n\nConnections between components are indicated by solid black arrows. The arrows from the word embeddings to the encoders show the flow of input features. The sequential arrows between encoders indicate the recurrence in the LSTM architecture. The arrow from the last encoder to the dialog vector representation signifies the aggregation of information across the sequence. Finally, the arrows from the dialog vector to c_food and c_area represent the decoding step where the hidden state is used to predict slot values, with the probabilities being computed for each slot independently.\n\nThe visual attributes include consistent use of rectangular and rounded rectangular shapes for different components, with clear labeling inside each box. Text labels are placed directly within or adjacent to the respective components. The diagram uses black lines and text on a white background, ensuring clarity and focus on the architectural flow. There are no colors used; all elements are monochrome. The overall design emphasizes the sequential nature of the input processing and the hierarchical transformation from raw words to structured dialogue state predictions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

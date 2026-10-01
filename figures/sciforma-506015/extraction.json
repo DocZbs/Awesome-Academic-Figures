@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506015",
+  "record_sha256": "4a4c74808404867a33b057ef049bfa2f16dfb235491886ffd1f7ff281b0ae263",
+  "asset_sha256": "2a19c6132e89668f3bad06eb2071142d32f4f8e75ff2a3066593b87f00868217",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506015",
+    "title": {
+      "zh": "Predicting Crack Nucleation and Propagation in Brittle Materials Using Deep Operator Networks with Diverse Trunk Architectures · 方法图",
+      "en": "Predicting Crack Nucleation and Propagation in Brittle Materials Using Deep Operator Networks with Diverse Trunk Architectures"
+    },
+    "paper": {
+      "id": "arxiv-2501-00016",
+      "title": "Predicting Crack Nucleation and Propagation in Brittle Materials Using Deep Operator Networks with Diverse Trunk Architectures",
+      "authors": [
+        "Elham Kiyani",
+        "Manav Manav",
+        "Nikhil Kadivar",
+        "Laura De Lorenzis",
+        "George Em Karniadakis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00016",
+      "arxiv_url": "https://arxiv.org/abs/2501.00016",
+      "arxiv_id": "2501.00016",
+      "arxiv_first_submitted_at": "2024-12-15T02:50:30Z",
+      "arxiv_updated_at": "2025-04-14T17:01:43Z",
+      "arxiv_subjects": [
+        "physics.comp-ph",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00016v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506015/image/image.jpg?Expires=1790855568&Signature=PpPKrZ41qFWMoZ~e7abn3VPoCm3sKn7BeyG9wIU5eMpg33sNy-7PT97DECNY2P9oVXqkLcOcbP6Jwz~jdU4k22is-tN0xTL8kpre2juIo~Xbzu3H7oiolFDA5-MrpbGVfAv96-86hbXVUQT3FA01eNFoy~DYSeJQ2bEPQK6qPjqU-zGYmAwgj7A5zOj7STxpcnzeg6ln5uG2vP1uS9Ftn3iVucwtsNE52GLu~zUXoCIjjJkNZQlmXO-Gw1vd4cp~ktNNZC2hjnk8w7-CvIHGc1Kg3mgsh3ynXOQxD0GJxXU5qkLZ0vlqHvx-XmN6p3XT6Vd~9q1Aj46H-1TAjegE0Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506015,
+      "description_sha256": "12fc6cf5769d8ae621faebd864403cdb970c09cd1f0b8c2be4126670a69b4fb1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "18026a7678a4655a48f24e502dae47142e7307b81f0b0f2663c32f573bad224a",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "physics.comp-ph",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic of a two-step DeepONet architecture designed for predicting the phase field α and the displacement field components u and v. The overall layout is horizontal, divided into three main components: a left orange rounded rectangle labeled 'Trunk net', a central green circular node labeled 'Φ*', and a right light blue rounded rectangle labeled 'Branch net'. These components are connected sequentially from left to right by thick blue arrows, indicating the flow of the computational process.\n\nThe 'Trunk net' module, enclosed in an orange rounded rectangle with a dark red border, contains three L2-norm loss expressions. Each expression corresponds to one of the output fields: α, u, and v. Specifically, they are written as ||(Φ(θ_T) A_α)^T - α_True||_L2, ||(Φ(θ_T) A_u)^T - u_True||_L2, and ||(Φ(θ_T) A_v)^T - v_True||_L2. These represent the training objectives for the trunk network, where Φ(θ_T) denotes the trunk network parameterized by θ_T, A_α, A_u, A_v are associated matrices, and α_True, u_True, v_True are the true target values. The module visually emphasizes the optimization of trunk network parameters and the associated matrices during the first stage of training.\n\nThe central component is a bright green circle labeled 'Φ*', which represents the result of the QR decomposition applied to the output of the trunk network. This node acts as a transition point between the trunk and branch networks. A thick blue arrow originates from the 'Trunk net' and points directly to this green circle, indicating that the trained trunk network's output undergoes QR decomposition to produce Φ*, which serves as the basis for the subsequent branch network training.\n\nThe 'Branch net' module, located on the right and enclosed in a light blue rounded rectangle with a darker blue border, contains three corresponding L2-norm loss expressions for the branch network. These are: ||B_α^T(θ_{B,α}) - R* A_α*||_L2, ||B_u^T(θ_{B,u}) - R* A_u*||_L2, and ||B_v^T(θ_{B,v}) - R* A_v*||_L2. Here, B_α, B_u, B_v denote the branch networks parameterized by θ_{B,α}, θ_{B,u}, θ_{B,v}, respectively, and R* and A_α*, A_u*, A_v* are derived from the QR decomposition of Φ*. The module illustrates the second stage of training, where the branch networks are optimized using the decomposed components.\n\nThe entire workflow follows a clear sequence: first, the trunk network is trained to minimize the L2 losses for α, u, and v; then, the resulting Φ* is decomposed via QR factorization; finally, the branch networks are trained using the decomposed components to achieve the final predictions. The visual design uses distinct colors (orange for trunk, green for decomposition, blue for branch) and consistent mathematical notation to convey the methodological structure and data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

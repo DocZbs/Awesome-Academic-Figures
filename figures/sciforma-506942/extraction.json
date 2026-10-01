@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506942",
+  "record_sha256": "dec983fb476796c291ed5d0bf8d7fe08d3fcc6432ad344201d80ef2bf52ab893",
+  "asset_sha256": "5c73401a21d397808767ba51d03a8327557053dcfc0801d9ec3a96146fca2f6a",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506942",
+    "title": {
+      "zh": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks · 方法图",
+      "en": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks"
+    },
+    "paper": {
+      "id": "arxiv-2501-03078",
+      "title": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks",
+      "authors": [
+        "Théophane Vallaeys",
+        "Matthew Muckley",
+        "Jakob Verbeek",
+        "Matthijs Douze"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03078",
+      "arxiv_url": "https://arxiv.org/abs/2501.03078",
+      "arxiv_id": "2501.03078",
+      "arxiv_first_submitted_at": "2025-01-06T15:20:22Z",
+      "arxiv_updated_at": "2025-01-06T15:20:22Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03078v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506942/image/image.jpg?Expires=1790855628&Signature=hsV0u9fdJDr4SUKBoAUVSd0x9WOhhwtRAKvmK9s8rbAzsFpP68MNN--Uv2qLCO6~Hlvd9G87KYMdgXrWO59TW05Qvk~6WAhyDV2DfaK5JIcKp-a~3XNN1i6D3EZv9~RkPoxddZ6tfT6sNh6EQzRNr9Ox8qtnTVTdPZFvPzXqfxTvjyAG56Dzmm6Jan-X6TDuz5vUPRdI0Hi9XYWWu81MguJA3ZA-3lDdrkNbgsbuyFcu2OKBgtzKOWV-kuA9QpXP1edIvBgfxldOwtewQFKl4x3PikNGFd7xVUzTnH1VdCpy7h8913-EJ6uv35J4uMgp4Np6G3Qk1zACg~v7RBcoKA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506942,
+      "description_sha256": "eb1802a1b4f341d32f3a5f6a2617ae88596784c76936c38af755cfc3d1550373",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2856da57aacad522018c64868cfc7304d4029978ca1ea685b3d1c6d79dde8116",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the Qtwo architecture during the decoding phase, structured into two main parts: a top-level sequential decoding pipeline and a bottom-level detailed view of the individual decoding module f_θ^m.\n\n[1] Global Layout and Structure:\nThe diagram is vertically divided into two sections. The top section illustrates the overall decoding process, where M code inputs (I^1 through I^M) are processed sequentially to produce a final reconstructed output x̂. The bottom section, enclosed in a dashed box, provides a magnified view of the internal structure of each decoding module f_θ^m, showing how it combines a codeword c^m with the previous partial reconstruction x̂^(m-1) to generate the next partial reconstruction x̂^m.\n\n[2] Visual Modules and Attributes:\nIn the top section, each code I^k (for k = 1 to M) is represented by a gray rectangular block labeled C^k, symbolizing a lookup table or codebook. These blocks have horizontal lines inside, indicating stored codewords. Each C^k outputs a codeword vector c^k. The first codeword c^1 is directly connected to a circular node with a ⊕ symbol, which represents an element-wise addition operation. This sum is then fed into the first decoding module f_θ^2(·), which is depicted as a white rectangle with the function label inside. Subsequent modules f_θ^3(·), ..., f_θ^M(·) follow in sequence, each receiving the output of the previous module (x̂^(m-1)) and the next codeword c^m. The outputs of these modules are denoted as x̂^1, x̂^2, ..., x̂^M, with the final output being the full reconstruction x̂.\n\nIn the bottom section, the function f_θ^m is shown in detail. It takes two inputs: a codeword c^m (labeled 'codeword c^m') and a partial reconstruction x̂^(m-1) (labeled 'partial x̂^(m-1)'). The codeword c^m is first passed through a trapezoidal-shaped layer, likely representing a linear projection or embedding. This is followed by a series of L identical residual blocks. Each residual block consists of a vertical gray bar (representing a linear transformation or weight matrix), followed by a trapezoidal layer (another non-linear transformation), and then a circular node with a '+' symbol (element-wise addition) that combines the output with the input to the block, forming a skip connection. The final output of this chain is added to the partial reconstruction x̂^(m-1) via another '+' node, producing the new partial reconstruction x̂^m. The number of residual blocks is indicated by the label 'L' between the second and last blocks.\n\n[3] Connections and Arrows:\nArrows indicate the direction of data flow. From each code I^k, an arrow points to the corresponding lookup table C^k, and from C^k, an arrow labeled c^k points to the decoding chain. The first codeword c^1 is connected via an arrow to the ⊕ node, and the result is sent to f_θ^2(·). The output x̂^1 from f_θ^2(·) is passed to f_θ^3(·), and so on, forming a left-to-right sequential flow. In the bottom module, arrows show c^m entering the trapezoid, then flowing through the sequence of L residual blocks, and finally being added to x̂^(m-1) to produce x̂^m. Dashed lines connect the top-level f_θ^2(·) to the bottom-level detailed view, indicating that the bottom diagram is a zoomed-in representation of one such module."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,29 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Multi-Modal Data Exploration via Language Agents — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18428
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the XMODE system architecture for processing a multi-modal query in the ArtWork database, as described in Urban et al. (2023). The overall layout is divided into five main sections, arranged horizontally from left to right, representing a sequential workflow: Planning & Expert Model Allocation (1), Execution and Self-Debugging (2), Decision Making (3), Expert Models & Tools (4), and Data Lake (5). These sections are connected by arrows indicating the flow of execution.
+
+Section (1) 'Planning & Expert Model Allocation' contains a workflow plan table with four tasks: t₁ (text2SQL), t₂ (image_analysis), t₃ (data_preparation), and t₄ (data_plotting). Each task is color-coded—green, yellow, red, and blue respectively—and includes a brief description and dependencies (e.g., $t_1$ for t₂, $t_2$ for t₃). Above this table, a speech bubble states the goal: 'Plot the number of paintings that depict war for each century.' This section is linked to Section (2) via a solid arrow.
+
+Section (2) 'Execution and Self-Debugging' details the step-by-step execution of the tasks. It features a vertical sequence of colored boxes labeled t₁ through t₄, corresponding to the tasks in Section (1). Each task box connects via dashed arrows to reasoning notes (in note-shaped boxes), SQL queries or code snippets, and data outputs. For instance, t₁ generates a SQL query to extract image paths and centuries from the 'paintings' table, which is visually represented as a table with columns 'img_path', 'inception', etc. The output is a JSON-like list of painting records. t₂ uses BLIP for image analysis, producing a list of image-path and 'depict war?' pairs, with visual examples of two paintings ('img_01.jpg' and 'image_78.jpg') shown alongside. t₃ filters the data to count war paintings per century, resulting in a dictionary {'War paintings count': {16: 1, 18: 2}}. t₄ selects matplotlib for plotting, with the actual Python code snippet displayed in a dark terminal-style box, generating a bar chart.
+
+Section (3) 'Decision Making' follows from Section (2) via a solid arrow. It contains a thought bubble summarizing successful completion of data preparation and plotting, followed by a summary box with structured output: 'Summary', 'Details', 'source', and 'extra explanation'. Below this, the final bar chart titled 'Number of War Paintings by Century' is shown, with x-axis labels '16' and '18' and y-axis 'Number of War Paintings', displaying counts 1 and 2 respectively.
+
+Section (4) 'Expert Models & Tools' is positioned below Section (1) and lists the tools used: text2SQL (GPT-4o logo), image analysis (BLIP logo), data preparation (Python logo), and data plotting (Matplotlib logo), each in a colored box matching the task colors in Section (1).
+
+Section (5) 'Data Lake' is adjacent to Section (4) and shows a cylindrical database labeled 'ArtWork DB' connected via a dotted arrow to a collection of images, symbolizing stored artwork data. A yellow folder icon points from the database to the images, indicating data retrieval.
+
+All connections between modules are clearly marked with arrows: solid arrows denote primary workflow progression, while dashed arrows indicate data or reasoning flows within execution steps. The figure effectively demonstrates how a complex multi-modal query is decomposed, executed with expert models, debugged, and culminates in a decision with visual output.

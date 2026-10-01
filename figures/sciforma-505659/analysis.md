@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Utilizing Multimodal Data for Edge Case Robust Call-sign Recognition and Understanding — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20467
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a side-by-side architectural comparison of two models: the parallel Encoder-Decoder (EncDec) on the left and the sequential CallSBERT model on the right, with an additional schematic of a vocal tract model shown in a separate panel on the far right. The global layout is horizontal, divided into three main sections. The left section illustrates the EncDec architecture, the middle section shows the CallSBERT architecture, and the rightmost section contains a gray-boxed diagram of a physical vocal tract model.
+
+In the left section, the EncDec model begins with four horizontally aligned rectangular input nodes at the bottom: 'Transcript' (teal), 'Call1' (purple), 'Call2' (light teal), and 'Call3' (maroon). These inputs feed into a single large rounded rectangle labeled 'Encoder & Decoder' (light gray background, black border) via a thick black upward arrow. From this module, a single upward arrow points to the output label 'Call2|CAO', which is displayed in light teal text above the encoder-decoder box. This indicates that the model processes all inputs simultaneously and produces a single output, likely a reconstructed or encoded version of Call2 conditioned on the other inputs.
+
+The middle section depicts the sequential CallSBERT model. It also starts with the same four input nodes: 'Transcript' (teal), 'Call1' (purple), 'Call2' (light teal), and 'Call3' (maroon). However, instead of a single encoder-decoder, there are three identical SBERT modules (each a rounded rectangle with light gray background and black border) arranged horizontally above the inputs. Each SBERT module receives input from one or more of the lower nodes via colored arrows: the first SBERT receives input from 'Transcript' and 'Call1' via purple and teal arrows respectively; the second SBERT receives input from 'Transcript', 'Call1', and 'Call2' via purple, teal, and light teal arrows; the third SBERT receives input from 'Transcript', 'Call1', 'Call2', and 'Call3' via purple, teal, light teal, and maroon arrows. The outputs of these SBERT modules are labeled 'SimCall1', 'SimCall2', and 'SimCall3' respectively, positioned above each module. The arrows connecting inputs to SBERTs are color-coded to match the source node colors, and the connections are drawn as stepped lines, indicating a sequential processing flow where each SBERT builds upon the previous ones.
+
+The rightmost panel contains a schematic of a vocal tract model. It features a circular 'lungs' component with pressure symbol p_s, connected via a glottis (represented by a mass-spring-damper system with parameters m, k, b) to a vocal tract and nasal tract. The vocal tract is shown as a series of constrictions leading to an output waveform u_m, while the nasal tract leads to output u_n. Arrows indicate airflow direction, and the entire diagram is enclosed in a gray box with a white border.
+
+The figure caption below reads: 'Architecture comparison of the parallel EncDec (left) and the sequential CallSBERT model (right).' The visual design uses consistent color coding for inputs and outputs, rounded rectangles for modules, and distinct arrow styles to differentiate between parallel and sequential data flows.

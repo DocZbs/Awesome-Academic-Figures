@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505946",
+  "record_sha256": "3aec83d281a2956e2614644af4619ff18c521a7badf60e9565cf751de1eca8e9",
+  "asset_sha256": "022c71ed5fcc3f406e2a3cd6c39b036892679004757fba126da9069a048d417e",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505946",
+    "title": {
+      "zh": "EdgeRAG: Online-Indexed RAG for Edge Devices · 方法图",
+      "en": "EdgeRAG: Online-Indexed RAG for Edge Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-21023",
+      "title": "EdgeRAG: Online-Indexed RAG for Edge Devices",
+      "authors": [
+        "Korakit Seemakhupt",
+        "Sihang Liu",
+        "Samira Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_id": "2412.21023",
+      "arxiv_first_submitted_at": "2024-12-30T15:46:53Z",
+      "arxiv_updated_at": "2024-12-31T20:40:43Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21023v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505946/image/image.jpg?Expires=1790855558&Signature=BcQeidlaAVtf0NNyuMmOar1SUAyktIZ7Yv3yWMiQ08LERWNvQJ57NTl7E-CxUWcLV2u7ytmo7J1pbdBmn1Dlth5TW~QSqg-F6~cWDHSuOIB5W9MKKCikcMxKn-HWoyB239JUypiHRlbtEcQ-ZhRXuGCutjktiFybKij56srpFlqoHAD~FxptMRf6TjirVGB4lN3Ci0aYhUraheOuxRoWhY8qudlmG2knJEe4195JAOiK4ASrv-EUudJGCEtu2ODZaVWGmUe9KBvFXi04ETA~BQXcu5FzpOhMNIzJTKt~ALJ1zn9pUBPK4MyF~jn8uYR7GZcMFaoJGm9okIpLmeN0LA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505946,
+      "description_sha256": "d10331c71ab1aa864cc9e23f7cdb6a76e58205f00dd83e9d2431e5473adf3348",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4e5419a7691eb0b00da37810cb8625bb17a8791c06ae774b27737e25d106d34d",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-stage retrieval process designed for efficient vector-based information retrieval from a large text corpus. The global layout is a left-to-right, top-down flowchart, beginning with a query input on the far left and progressing through several indexing and caching stages before culminating in the retrieval of relevant nodes. The process is structured into six main steps, indicated by numbered labels (① through ⑥), with an additional step labeled ④b for handling cache misses or generation of new embeddings.\n\nThe visual modules consist of rectangular boxes, cylindrical shapes representing indexes or caches, and stacked rectangles symbolizing collections of data. The 'Query Embedding' is represented as a black-bordered rectangle at the start. It connects via a thick gray arrow labeled ① 'Search' to a cylinder labeled 'First-level Index'. From there, another arrow labeled ② 'Lookup' leads to a rectangle titled 'Centroid Embeddings Index'. This module has two outgoing paths: one downward, labeled ③ 'Search Stored Embeddings', leading to a light blue cylinder named 'Stored Second-level Index'; and another rightward, labeled ④ 'Lookup Cache', pointing to a light blue cylinder called 'Embedding Cache'.\n\nThe 'Embedding Cache' also receives an incoming arrow from the 'Text Corpus' (a white cylinder on the far right), labeled ④b 'Miss, Gen. Embedding', indicating that when an embedding is not found in the cache, it is generated from the text corpus. From the 'Embedding Cache', a thick gray arrow labeled ⑤ 'Load Embeddings' points to a stack of rectangles labeled 'Vector Embeddings'. Similarly, the 'Stored Second-level Index' also feeds into the 'Vector Embeddings' stack via an arrow labeled ⑤ 'Load Embeddings'. Finally, from the 'Vector Embeddings' stack, an arrow labeled ⑥ 'Retrieve' leads to a stack of rectangles labeled 'Nodes', representing the final retrieved results.\n\nAll arrows are thick and gray, indicating data flow direction. The light blue color of the 'Embedding Cache' and 'Stored Second-level Index' visually distinguishes them as cached or stored components, while the white cylinders ('First-level Index', 'Text Corpus') and black-bordered rectangles ('Query Embedding', 'Centroid Embeddings Index') represent primary processing or source components. The stacked rectangles for 'Vector Embeddings' and 'Nodes' suggest a collection or batch of items. The entire diagram emphasizes a hierarchical and cache-aware retrieval strategy, where initial search operations are refined through multiple index levels and embedding caches to efficiently retrieve relevant nodes from a large corpus."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

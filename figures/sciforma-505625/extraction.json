@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505625",
+  "record_sha256": "7a3ef6f3383a0fe5d900a39eb305147e9a24c1cfc63742b2302264877c782d96",
+  "asset_sha256": "f007db72c77699249607aae22833ec4d0ff3dac08839196655515c5880e00f53",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505625",
+    "title": {
+      "zh": "PTQ4VM: Post-Training Quantization for Visual Mamba · 方法图",
+      "en": "PTQ4VM: Post-Training Quantization for Visual Mamba"
+    },
+    "paper": {
+      "id": "arxiv-2412-20386",
+      "title": "PTQ4VM: Post-Training Quantization for Visual Mamba",
+      "authors": [
+        "Younghyun Cho",
+        "Changhun Lee",
+        "Seonggon Kim",
+        "Eunhyeok Park"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20386",
+      "arxiv_url": "https://arxiv.org/abs/2412.20386",
+      "arxiv_id": "2412.20386",
+      "arxiv_first_submitted_at": "2024-12-29T07:21:33Z",
+      "arxiv_updated_at": "2025-04-07T13:30:39Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20386v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505625/image/image.jpg?Expires=1790855552&Signature=dnicL73P~G-MGzwGg3oBGmaoyHOUxEPPZa7znENINlhmcDyI5RviyOHjfjnmzpXjIvJ5MsE6GM140wTLYOqL-Dh-VZjJr-9JqiWwlNuieOeAjWRgYWmhJC9lGfUbfuDYewbq9IaALM1vU4Au4hg-6ZEL-B0FmR-62jV2ukZMue0liClhUNnFwh4k8GrKY5FA3Zl92XVUv~iA2hE-rLdTXv~kIcQKaEXlpOf6ZXknGrZe-6e9J9rMMrH2r6z4BoHwWHYGaHCiL-l~UKmZh4FDDbutLCaI7FEv7E2hF~fUsrOQCY0RkjH7Cq2v3a3iE9J286t-iEk6pRMHRRqdG5K5Yg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505625,
+      "description_sha256": "e70ebc391cd90983294a83e80860380157e8775a44408ca501995ce69da83e33",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c9b5b0511890413afeaa0384f30090758f6d7ba97f5f5c3af7b01ea02981d5ad",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four variants of Visual Mamba backbones: (a) Vision Mamba (Vim), (b) LocalVim, (c) VMamba, and (d) LocalVMamba, each depicted as a modular block diagram illustrating their internal architectures and data flow. The global layout consists of four vertically aligned, side-by-side diagrams, each enclosed in a thick black border and labeled at the bottom with its respective name. Below each diagram is a set of small square grids representing the scan patterns used by that model, with arrows indicating scan directions and red dots marking class tokens (CLS). A legend in the top-right corner defines color-coded components: yellow for Scan/Reshape operations, blue for Linear layers, red for Selective Scan, black for Class Token, and bidirectional arrows for Scan Directions.\n\nEach backbone follows a similar high-level structure: input features pass through a LayerNorm layer, then enter a core processing module composed of multiple stacked blocks (indicated by 'x2' or 'x4'), followed by a final output projection (Out_proj). The core modules vary across models in terms of scanning mechanisms and fusion strategies.\n\nIn (a) Vision Mamba (Vim), the core module repeats twice ('x2'). It begins with In_proj (blue), followed by BiScan (yellow), Conv1d (gray), SiLU (gray), X_proj (blue), and then feeds into a Selective Scan (red) block. This block receives inputs B, C, and Dt_proj (blue), and outputs are combined via element-wise multiplication (⊗) before being added to the residual connection and passed to Out_proj (blue).\n\nIn (b) LocalVim, the core module repeats four times ('x4'). It starts with In_proj (blue), LayerNorm (gray), then X_proj (blue), SiLU (gray), Conv1d (gray), and Local Scan (yellow). The output is split into two paths: one goes to Selective Scan (red) with inputs B, C, Dt_proj (blue), and the other passes through LayerNorm, Avg Pool, FC1 (blue), GELU (gray), FC2 (blue), Sigmoid (gray), and multiplies with the Selective Scan output. The result is merged via Local Merge (yellow) and fed to Out_proj (blue). An optional CLS token is shown below.\n\nIn (c) VMamba, the core module also repeats four times ('x4'). It begins with In_proj (blue), LayerNorm (gray), then X_proj (blue), SiLU (gray), DWConv2d (gray), and Cross Scan (yellow). The output feeds into Selective Scan (red) with inputs B, C, Dt_proj (blue), which is then merged via Cross Merge (yellow). The other path goes through LayerNorm, FC1 (blue), GELU (gray), FC2 (blue), Sigmoid (gray), and multiplies with the merged output. The result is added to the residual and passed to Out_proj (blue). The scan pattern shows directional arrows in both horizontal and vertical orientations.\n\nIn (d) LocalVMamba, the core module repeats four times ('x4'). It starts with In_proj (blue), LayerNorm (gray), then X_proj (blue), SiLU (gray), DWConv2d (gray), and Local Scan (yellow). The output feeds into Selective Scan (red) with inputs B, C, Dt_proj (blue), which is then merged via Local Merge (yellow). The other path goes through LayerNorm, Avg Pool, FC1 (blue), GELU (gray), FC2 (blue), Sigmoid (gray), and multiplies with the merged output. The result is added to the residual and passed to Out_proj (blue). The scan pattern includes both horizontal and vertical directional arrows.\n\nConnections between modules are represented by solid black arrows indicating forward data flow. Element-wise multiplication is denoted by ⊗, addition by ⊕, and concatenation or merging by ⊕ within the merge blocks. All models incorporate residual connections from the input of the core module to the output of the final Out_proj block."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

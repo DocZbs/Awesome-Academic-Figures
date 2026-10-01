@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504166",
+  "record_sha256": "81200938ee5753847cecf35ba5f6394a14717a0934abb8e91ec775958d91d45f",
+  "asset_sha256": "fa3fd1a08ecc3bf74936ef6ef06155a15d8cc0dcce86b4471ce29c8045e7df99",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504166",
+    "title": {
+      "zh": "Enhancing Knowledge Distillation for LLMs with Response-Priming Prompting · 方法图",
+      "en": "Enhancing Knowledge Distillation for LLMs with Response-Priming Prompting"
+    },
+    "paper": {
+      "id": "arxiv-2412-17846",
+      "title": "Enhancing Knowledge Distillation for LLMs with Response-Priming Prompting",
+      "authors": [
+        "Vijay Goyal",
+        "Mustafa Khan",
+        "Aprameya Tirupati",
+        "Harveer Saini",
+        "Michael Lam",
+        "Kevin Zhu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17846",
+      "arxiv_url": "https://arxiv.org/abs/2412.17846",
+      "arxiv_id": "2412.17846",
+      "arxiv_first_submitted_at": "2024-12-18T20:41:44Z",
+      "arxiv_updated_at": "2024-12-18T20:41:44Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17846v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504166/image/image.jpg?Expires=1790855416&Signature=TZJVN6T~61UEdXjlASmwosMN5X0yaObdWztep-U1-IXGFg6Pvs-x3bV0qSu0HVkb67ioXYQqGqjFH8RyeouaLTO63FUZmv2i1up3QB-mrt~LiX3oL9c6JwuT2tMpJ-W-zzBoyN8UfIa89MenX793xP7o5irWTxtX1yjC~elb8ksgePG1chHH5gjiQSYnOdeXw5i4nOEl1RSnhJabUulXY3If24OyNu~tvnowSMxWZO3vMOiNr~oKX0qmEgpl0Q4NV3ZM7E3PF5kNyEzt5U8Xpf-fav4CNBxxvmK~CDkKtGbfPRx8UGDEfvywiwIoXPPW8J~RkBv0HCW8DKRDxbuc5Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504166,
+      "description_sha256": "129eb3764c8d77e7e3a10e494c5c116628a304b0e8eb8559381df38ad0833ea2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "212bb8f8c4e28b0462fb68e2a9b7a7e91dfafa7b3be9fb32a23c7fdaee60116f",
+      "row_response_sha256": "204196dbb9e6aedf9fbf1db5638e3e992c50ff982292519d95e8b7fb8849839c"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a knowledge distillation framework designed to transfer knowledge from a large teacher model to a smaller student model. The global layout is structured as a two-tiered flow: the top tier represents the teacher model's inference process, while the bottom tier illustrates the student model's training process using the generated data. The entire diagram is composed of rounded rectangular nodes with light blue fill and dark gray borders, connected by solid black arrows indicating the direction of data or control flow.\n\nIn the top tier, the process begins with an 'Input query from GSM8K' node, which feeds into a 'Prompt appender' module. This module processes the input query by appending appropriate prompts before forwarding it to the 'Teacher model (Llama 3.1 405B Instruct)', a large language model serving as the knowledge source. The teacher model generates an 'Output', which is then combined with the original input and prompt to form a 'Transfer set'. This transfer set is created via a diagonal arrow from the 'Prompt appender' and another from the 'Output' node, both converging on the 'Transfer set' node located centrally below the teacher model path.\n\nThe bottom tier begins with the 'Transfer set' feeding into the 'Student model (Llama 3.1 8B Instruct)', a smaller version of the teacher model intended to learn from the distilled knowledge. The student model’s output is directed to a 'Loss function' node, which computes the discrepancy between the student’s prediction and the teacher’s output (as contained in the transfer set). A feedback loop exists from the loss function back to the student model, indicating iterative optimization during training. The loss function also receives input from the transfer set, ensuring alignment between the student’s predictions and the teacher’s responses.\n\nAll nodes are labeled with clear, centered text describing their role, and the connections are unidirectional except for the feedback arc from the loss function to the student model. The diagram is titled 'Knowledge Distillation Framework' at the top center, and the overall structure emphasizes a clear separation between the teacher’s inference phase and the student’s training phase, with the transfer set acting as the bridge between them."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

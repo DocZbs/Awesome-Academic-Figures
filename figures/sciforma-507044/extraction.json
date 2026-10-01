@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-507044",
+  "record_sha256": "abc4fa4af6a9d55038beaee931aac7a3b321a5b1207e4f4c8ddafe33d8d7afa5",
+  "asset_sha256": "b6be362d1b02d54f24e295bbb90761d24fb3ded7e4aa8222b1854e79a868df67",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-507044",
+    "title": {
+      "zh": "LHGNN: Local-Higher Order Graph Neural Networks For Audio Classification and Tagging · 方法图",
+      "en": "LHGNN: Local-Higher Order Graph Neural Networks For Audio Classification and Tagging"
+    },
+    "paper": {
+      "id": "arxiv-2501-03464",
+      "title": "LHGNN: Local-Higher Order Graph Neural Networks For Audio Classification and Tagging",
+      "authors": [
+        "Shubhr Singh",
+        "Emmanouil Benetos",
+        "Huy Phan",
+        "Dan Stowell"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03464",
+      "arxiv_url": "https://arxiv.org/abs/2501.03464",
+      "arxiv_id": "2501.03464",
+      "arxiv_first_submitted_at": "2025-01-07T01:45:39Z",
+      "arxiv_updated_at": "2025-01-29T12:22:49Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03464v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=507000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/507044/image/image.jpg?Expires=1790855632&Signature=o0ts8nvNs~mua6d90m3w-XNrA9NFopVgDqBFyxqfTQoWyETv8ughiwsThsumWfFIEj41QIPUu-I3R~Lj8XL1RKuxTVjV9kQAIeQwdihlXpm94cRpym2bTGh2WsoYlmbhBLdUPTcOL4kiz63TEHofvbNsq8-uN5pDdR4PnyGffw2K04WaKtSTHmNzPuiq1vArO5vPPx4FGX29Vbn~~2GmPG~KVL9jm-4ELAcxEmErQbCg99v7EWyzMrpcUz88eJ1g9ADleHXWd4b4k9gCsT9X7nELHOcjG6KvNq50oo3PYAfn1lNvwzC0vB432Ykw4iJYXRgb8nizUIrvUrrqJiuOuw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 507044,
+      "description_sha256": "3b82aa332ee344e901eb16139d5b8aae1b08726a9efba5d85a7b514bb6186afa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "382cd4b9e7d658824091eeac079966713d6e76750f66daf48fabedf1e9932ee2",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9d4fc1bdac3238d1c21e86295dd34be49ee6969c61c49cad244f354d7ad34cc8",
+      "row_response_sha256": "a28f61e193d5bf20bb0b09740db326193306ded92667fb2b0c341a49c5750d23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of LHGNN, a neural network model designed for processing mel-spectrogram inputs. The global layout is a sequential pipeline starting from the input mel-spectrogram on the far left, progressing through a Conv Stem, followed by four stages (Stage 1 to Stage 4), each containing multiple LHG Blocks, interspersed with downsampling operations, and ending with a Prediction output. Each stage contains a variable number of LHG Blocks denoted as L1, L, L3, and L4 respectively, where L represents the number of repetitions for the LHG blocks within that stage. A detailed expansion of the LHG Block is shown below the main pipeline, enclosed in a large dashed rectangle labeled 'LHG Block × L2', indicating that this block is repeated L2 times within the stage context.\n\nWithin the LHG Block, the process begins with a set of nodes represented as yellow circles, with one highlighted green star node being the focus of update. Two parallel operations are performed on these nodes: KNN (k-Nearest Neighbors) and Fuzzy C-Means clustering. The KNN operation constructs a local graph around the green star node, connecting it to its nearest neighbors, depicted as a small graph with edges linking the star to surrounding yellow nodes. Simultaneously, Fuzzy C-Means identifies cluster centers, shown as dashed outlines grouping nodes, with the green star positioned near a cluster center, indicating its membership or influence. The outputs from both KNN and Fuzzy C-Means are combined and fed into a Graph Conv layer, represented as a teal-colored rectangular module. The result of the Graph Conv is then added (via a circular plus symbol) to the original node features before being passed to a Conv FFN (Feed-Forward Network) block.\n\nThe Conv FFN block consists of a sequence of operations enclosed in a dashed rectangle: a 1×1 Conv layer, followed by a GELU activation function, then a Depthwise Convolution (DWConv) layer, and finally another 1×1 Conv layer. The output of the Conv FFN is again added (via a circular plus symbol) to the previous feature, forming a residual connection, and the final result is labeled 'Updated Nodes'. This updated node representation is then used in subsequent layers. The entire LHG Block processes the nodes iteratively, updating them based on local neighborhood information (KNN) and higher-order cluster structure (Fuzzy C-Means), enabling rich feature learning. The visual attributes include rounded rectangles for stages and blocks, solid arrows for data flow, dashed lines for structural grouping, and distinct colors (teal for Graph Conv, light blue for KNN/Fuzzy C-Means modules) to differentiate components. The green star symbolizes the target node being updated, while yellow circles represent other nodes in the graph."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

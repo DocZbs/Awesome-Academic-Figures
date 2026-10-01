@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506383",
+  "record_sha256": "0dc6a1b660a97efdd6a9ac8a4d9bcc64ac2cb669ad5f7cad067160be913795cb",
+  "asset_sha256": "56c1ad9549e0a6e5b5fab11175166b7b7684fa7dec3deade548997e287d2b75c",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506383",
+    "title": {
+      "zh": "EHCTNet: Enhanced Hybrid of CNN and Transformer Network for Remote Sensing Image Change Detection · 方法图",
+      "en": "EHCTNet: Enhanced Hybrid of CNN and Transformer Network for Remote Sensing Image Change Detection"
+    },
+    "paper": {
+      "id": "arxiv-2501-01238",
+      "title": "EHCTNet: Enhanced Hybrid of CNN and Transformer Network for Remote Sensing Image Change Detection",
+      "authors": [
+        "Junjie Yang",
+        "Haibo Wan",
+        "Zhihai Shang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01238",
+      "arxiv_url": "https://arxiv.org/abs/2501.01238",
+      "arxiv_id": "2501.01238",
+      "arxiv_first_submitted_at": "2025-01-02T12:55:36Z",
+      "arxiv_updated_at": "2025-01-02T12:55:36Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1038/s41598-025-94544-7",
+      "journal_reference": "Scientific Reports, 15, 10161, 2025",
+      "arxiv_current_version_observed": "2501.01238v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506383/image/image.jpg?Expires=1790855575&Signature=QKeRlcDH5ljwfL2s4tjcRT8rqJBW5prXOOa9p-3~dA~XWqT2t-adD081JVV5u83Y-jKiymuPoM6wFZQ4zc4bo1nIaboBDplty6raAimUgmWusmUjzpNzQjd13i3zlNpKxGr5FcRPsbFwXDnG5q6JZ3tzfB9AZPRNj7vZiv54A2FbQeyYl4TqPXQ2QJyF7ZmcPj5Yd45lVEHZXwMToFIJC9njGHK6hmBxJW~GYFNZwj1yIwQfqMbYQirJuojP9XQ4Ue52iR8QFINDgdF9~uxn3vW7DrO748bb2g7Z-oeI2o9PFfMBbs1yfiQ-49PDC1nDKlDfz7Y4av3CpM2PWlHUMw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506383,
+      "description_sha256": "7c154fe6553bcb9c7c359d4ccf4eac7ace3ea2e562d1411bc413c712cb543da2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "05f74abeb3e2bcd47e6902ffe18a3b19b8874a5fa0e410b5bc3c4146e8174a58",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall network structure of EHCTNet, a deep learning framework designed for change detection from bi-temporal remote sensing images. The architecture is modular and sequential, progressing from feature extraction through refined processing stages to final change map generation. The global layout is horizontally organized into five main stages: Feature Extraction, Refined Module I, Enhanced Token Mining based Transformer, Refined Module II, and Detection Head. Each stage is color-coded and labeled at the bottom for clarity.\n\nThe process begins with two input images, labeled 'Bi-temporal input images', each of size H₀ × W₀ × 3, shown on the far left. These images are processed in parallel by a shared hybrid of CNN and Transformer, denoted as HCT, which extracts raw multi-scale features. These features are represented as 3D cubes with heatmaps indicating spatial activations, and they feed into Refined Module I.\n\nRefined Module I, shaded in blue, processes the raw features using a Hierarchical Feature Enhancement Transformer (HEFT), which generates first-order feature images. These are then combined with the raw features via element-wise addition (indicated by a '+' symbol) before being passed to Cross-Kernel Self-Attention (CKSA) blocks. CKSA outputs semantic tokens, depicted as elongated rectangular bars with distinct color gradients (orange/blue and purple/green), representing different feature channels or token types.\n\nThe semantic tokens enter the Enhanced Token Mining based Transformer, shaded in orange. This module consists of an ENCODER and DECODER. The encoder receives the semantic tokens, concatenates them (symbolized by 'C'), and splits them into context tokens (symbolized by 'S'). The context tokens are then processed by the decoder, which reconstructs enhanced semantic information. The output of the decoder is added element-wise to the original semantic tokens, forming a refined set of semantic information images, shown as a 3D cube with a vibrant heatmap.\n\nThis refined output flows into Refined Module II, shaded in red. Here, the semantic information images undergo a second-order semantic difference computation. A subtraction operation ('−') is applied between the current semantic image and a previously computed one (likely from the same module's earlier stage), producing a difference map. This difference map is then processed by a Bi-directional Feature Transformer (BFFT), resulting in a more refined difference representation.\n\nFinally, the Detection Head, shaded in gray, takes the refined difference map and passes it through a classifier (represented by a gray rectangular block) to produce the final binary change map, sized H₀ × W₀ × 2, where white regions indicate detected changes against a black background.\n\nThe figure includes a legend in the lower right corner explaining the symbols: 'C' for Concatenate, 'S' for Split, '+' for Element-wise Add, '−' for Element-wise Subtract, and a gray rectangle for Classifier. All connections are directed arrows, indicating the flow of data from left to right, with some feedback loops within modules (e.g., HEFT and BFFT). The design emphasizes hierarchical refinement and cross-modal attention mechanisms to enhance change detection accuracy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

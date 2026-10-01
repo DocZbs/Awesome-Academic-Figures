@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505812",
+  "record_sha256": "9b0cd94f21df9335ba30d48f7895ba731b2878c4784782c46599b9e05252542a",
+  "asset_sha256": "f183c0eabbaba3607967d0cdb0c4d04930d28e40f2c7a2d9fe8a87ab48b3586e",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505812",
+    "title": {
+      "zh": "Attributing Culture-Conditioned Generations to Pretraining Corpora · 方法图",
+      "en": "Attributing Culture-Conditioned Generations to Pretraining Corpora"
+    },
+    "paper": {
+      "id": "arxiv-2412-20760",
+      "title": "Attributing Culture-Conditioned Generations to Pretraining Corpora",
+      "authors": [
+        "Huihan Li",
+        "Arnav Goel",
+        "Keyu He",
+        "Xiang Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20760",
+      "arxiv_url": "https://arxiv.org/abs/2412.20760",
+      "arxiv_id": "2412.20760",
+      "arxiv_first_submitted_at": "2024-12-30T07:09:25Z",
+      "arxiv_updated_at": "2025-03-19T19:08:17Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20760v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505812/image/image.jpg?Expires=1790855556&Signature=rVaLLS1cU6OXxb1m0iD3diUFop1bow49B0nFND9AXoLENkiDNOJ6zlLFYpd9-2SrkpM6LmxHOdrhnIpmfhAOaV8ZMTDQmYckHmrTTPrxIQm-~VMPenPWb5WUSsEkNKZZynL3fAqa5g-EptsqONC3XjzBfx1xqcuX~EARiq5885Zb2XCtmLSkcFXZN4S0pdreu8uxbir93KAgjLUfB6i~v3Pdvj1qRQSDN83dkoauS4BjuoN1KENNYkcodzTT0FVhvrH8nA~yiQi6xn9lW39it~oaXLMNsDNy1BrKzhuZLR7MSMsgNoYXLwv1D9jiAkag75ANdGTpbOzgjaI5IAapiw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505812,
+      "description_sha256": "087dba4aaddda0b51c2ef37c6a0d60e20f5dbef0a0862a3766b75f851528fdbb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "377264d834ab7b531a87a3b2fb465ee73150128b2cb657c2bb988f8921db6690",
+      "row_response_sha256": "9688e5ecc48ade1d79e59b78c53a7a4a05b6fcd1cf22e989bdf4406e3f3bacf2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the pipeline of a system named MEMOed, designed to determine cultural-symbol associations using pretraining data and a large language model. The global layout is divided into two main horizontal sections: an upper section showing the initial symbol collection process, and a lower section enclosed in a dashed box labeled 'MEMOed', which details the core classification and association strength determination steps.\n\nIn the upper section, a prompt—'For dinner, my Malaysian neighbor probably likes eating'—is fed into a robot icon representing the OLMo-7B language model. This model outputs a list of candidate symbols: 'nasi lemak', 'vegetable salad', 'anchovies', 'cucumber', and 'sushi'. Each symbol is then evaluated for cultural relevance, with 'nasi lemak' marked as 'Mem.' (member) in blue, while the others are marked 'Not Mem.' in light blue, indicating they are not associated with Malaysian culture.\n\nThe lower section, labeled 'MEMOed', contains two main stages. The first stage, 'Classify Relevant Pretraining Documents', uses a signal-to-noise-ratio plus distance metric to filter documents. This is visually represented by two document icons: one with a green checkmark (relevant) and another with a red cross (irrelevant). The second stage, 'Determine Culture-Symbol Association Strength', combines the filtered documents (represented by a stack of yellow documents labeled 'Contribution Score: % of relevant documents') with a statistical Z-score thresholding process (depicted as a bell curve with a vertical dashed line at the peak). The output of this stage feeds back up to the classification step in the upper section, where the final 'Mem.' or 'Not Mem.' labels are assigned based on the computed association strength.\n\nThe visual modules include text boxes, document icons, a robot icon for the OLMo-7B model, a list box for symbols, and a bell curve for Z-score thresholding. Colors are used to distinguish between relevant (green check) and irrelevant (red cross) documents, and to mark membership status (blue for 'Mem.', light blue for 'Not Mem.'). Arrows indicate the flow from prompt to symbol collection, then down to the MEMOed module, and finally back up to classification. The dashed box encapsulates the MEMOed system, emphasizing its role as the core processing unit for determining cultural-symbol associations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

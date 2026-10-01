@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503047",
+  "record_sha256": "e2f1e16d5724cd910092bd2e082e337a319e7334e947bbaeb4e1714e27d058a1",
+  "asset_sha256": "a114653a4066fbb4f94a804277543a0cbf1559f55b862e8ac6cbc2bc5a12ecfa",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503047",
+    "title": {
+      "zh": "Exploiting Multimodal Spatial-temporal Patterns for Video Object Tracking · 方法图",
+      "en": "Exploiting Multimodal Spatial-temporal Patterns for Video Object Tracking"
+    },
+    "paper": {
+      "id": "arxiv-2412-15691",
+      "title": "Exploiting Multimodal Spatial-temporal Patterns for Video Object Tracking",
+      "authors": [
+        "Xiantao Hu",
+        "Ying Tai",
+        "Xu Zhao",
+        "Chen Zhao",
+        "Zhenyu Zhang",
+        "Jun Li",
+        "Bineng Zhong",
+        "Jian Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15691",
+      "arxiv_url": "https://arxiv.org/abs/2412.15691",
+      "arxiv_id": "2412.15691",
+      "arxiv_first_submitted_at": "2024-12-20T09:10:17Z",
+      "arxiv_updated_at": "2024-12-20T09:10:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15691v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503047/image/image.jpg?Expires=1790855277&Signature=s7NRBb8r1dKaGPeu74vGE6LShBw83lBuo2OVYWqXQPVEVt1e6txr8j1i0prseqKP0Kp93EevdW66eu2rHOjNa6Lizfx83sUoM-KTXqm7voFDnzD-uEQU8zmvR3jZYxnzOfXYhLH0LIzhU48dCSIy~Goa3W8y-98-2aYYReWJI2QEPiKev2HXgA35RSrnBGOmFqm3KfD~o79PLv1K0PevGT1SZuH~YDvvxMV5Ca2SF4QJT07wsotQmEMpJ2sNb6AdnCu5uK1HbjYUc5y1MrCNcn3l066HageHgdsMV2y0K50b-wr7KqbwfYDsZ~8-ADkVuur2ecq8NPe2~eW3RlI07g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503047,
+      "description_sha256": "c42fb6fdcb6d89aa115bb3bf1f16893f0357569a27b5d0602da7473ace91fa11",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "08b21241fa4f11ee67e226585ce6934780e0be7968172d84c82f1823c249c48c",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four subfigures illustrating different multimodal tracking frameworks and a performance comparison. Subfigure (a), labeled 'Offline Multimodal Tracker', shows a simple pipeline where RGB and X-modal inputs (represented as gold rectangles) are fed into a blue rounded rectangle labeled 'Extraction & Interaction', which outputs a prediction (light blue rectangle). This represents a static, offline approach using fixed templates.\n\nSubfigure (b), 'Online Multimodal Tracker', extends this by adding a feedback loop. The same inputs go through 'Extraction & Interaction' to produce both a 'Prediction' and a 'Condition'. The 'Condition' output triggers dashed arrows labeled 'Update Reference Information', which feed back to the input modules, indicating dynamic updates to the reference data during tracking.\n\nSubfigure (c), 'Temporal Tracker', illustrates a sequential, frame-by-frame processing flow. At each time step T₁, T₂, ..., Tₙ, RGB and X-modal inputs are processed by 'Extraction & Interaction' to generate a prediction. Crucially, the output also includes 'Multimodal Temporal Information' (depicted as a small horizontal bar with gradient colors from light to dark orange), which is passed forward to the next time step, enabling temporal context propagation across frames.\n\nSubfigure (d), 'Performance Comparison', displays a grouped bar chart comparing four methods: SDSTrack (blue), OneTracker (orange), Un-Track (yellow), and STTrack (ours, green). The x-axis has three metrics: RGB-E AUC ↑, RGB-D EAO ↑, and RGB-T SR ↑. For RGB-E AUC, scores are 58.9 (Un-Track), 59.7 (SDSTrack), 60.8 (OneTracker), and 61.9 (STTrack). For RGB-D EAO, scores are 71.8 (Un-Track), 72.7 (OneTracker), 72.8 (SDSTrack), and 77.6 (STTrack). For RGB-T SR, scores are 53.1 (SDSTrack), 53.6 (Un-Track), 53.8 (OneTracker), and 60.3 (STTrack). Dashed vertical lines separate the three metric groups. The legend at the bottom left identifies the color coding for each method, with STTrack consistently outperforming the others across all metrics.\n\nThe global layout is a 2x2 grid: top row contains (a) and (b), bottom row contains (c) and (d). Each subfigure has a blue header bar with its label. The visual modules consist of gold rectangles for inputs, blue rounded rectangles for processing units, and light blue rectangles for outputs. Connections are solid black arrows for data flow and dashed black arrows for feedback loops. The entire figure is designed to contrast offline, online, and temporal tracking strategies, culminating in a quantitative demonstration of the proposed STTrack's superiority."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

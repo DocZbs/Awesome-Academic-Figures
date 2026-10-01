@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-503386",
+  "record_sha256": "7227703864ddf6b3a6a2dbef8121170a699d3e36e79f4f1a912aa7f8d69ed7eb",
+  "asset_sha256": "3140401afc61c4194d1b28ff4dce8301b6708837dc52ebe546383ee13628ca64",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503386",
+    "title": {
+      "zh": "Adapting Whisper for Code-Switching through Encoding Refining and Language-Aware Decoding · 方法图",
+      "en": "Adapting Whisper for Code-Switching through Encoding Refining and Language-Aware Decoding"
+    },
+    "paper": {
+      "id": "arxiv-2412-16507",
+      "title": "Adapting Whisper for Code-Switching through Encoding Refining and Language-Aware Decoding",
+      "authors": [
+        "Jiahui Zhao",
+        "Hao Shi",
+        "Chenrui Cui",
+        "Tianrui Wang",
+        "Hexin Liu",
+        "Zhaoheng Ni",
+        "Lingxuan Ye",
+        "Longbiao Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16507",
+      "arxiv_url": "https://arxiv.org/abs/2412.16507",
+      "arxiv_id": "2412.16507",
+      "arxiv_first_submitted_at": "2024-12-21T07:06:44Z",
+      "arxiv_updated_at": "2025-01-05T05:55:00Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "journal_reference": "ICASSP 2025",
+      "arxiv_current_version_observed": "2412.16507v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503386/image/image.jpg?Expires=1790855364&Signature=ny7veTMMP~tjB~PjfMPmglqDh3a1yH4L82b3zzZ9Iyr~brSsp4wR9vB8GK4G3P4OqqBHpFYXKcaybUFcAdk6F4zzP6y-17tq20xyKPMVX-oFm0mdj17HMugk608J~ZtjesLq6WJ7igjsViwYYSvWHNvC81Iz5x8nwUidKMyp3qb4xsfqto3Eyi~KRgcnoF1ZwtD75gMgXcTd3GhK~qjVL3gez3Ao5dIHl4qHec8q2nuXvR~y0nUIEY6ekxSkttJykVZvut6VcOV~raL9421BAmNrtOmF1AISgHXM4rK4y5IOOe6cQUyCN~pZ~Cg-oJVaOVzUgFpxIHrgZY~kpQrewA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503386,
+      "description_sha256": "a0d1cb342aec744843384a310d965bbe55a181114d33fa25aa2c760f9c3e941d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b6aea051ff233f7c6afcc1798147af48bebad641a880f36a28824694403bf056",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of an encoder refiner and a language-aware adaptation module for a multilingual speech-to-text system. The global layout is divided into two main vertical sections: the left side represents the Encoder Refiner, and the right side shows the language-aware adaptation component. Both components are enclosed in dashed rectangular boundaries, indicating modular design.\n\nOn the left, the Encoder Refiner begins at the bottom with a '2 x Conv1d' layer, depicted as a light blue trapezoid. This feeds into a stack of four blocks, each containing a core module (Self Attention, MLP, adapter, or LSTM) followed by a residual connection symbolized by a circular '+' node. The first block contains 'Self Attention', followed by an 'adapter' (blue rectangle), then 'MLP', and another 'adapter'. These blocks are stacked vertically within a large light blue dashed rectangle. Above this stack, an 'LSTM' block (dashed rectangle) receives input from the final adapter via a residual connection. The output of the LSTM is fed into a final '+' node, which connects to a dashed box labeled 'CTC' at the top, indicating Connectionist Temporal Classification as the loss function or output layer.\n\nOn the right, the language-aware adaptation module is structured as a dual-path network, processing Chinese ('zh') and English ('en') inputs separately but in parallel. At the bottom, two prompts '<zh> prompt' and '<en> prompt' feed into separate 'Self Attention' blocks. Each path then passes through a 'Cross Attention' block, which receives input from both paths. Following this, an 'MLP' block processes the combined features. Each path then branches into a dedicated adapter: 'zh adapter' (light green) and 'en adapter' (light orange). These adapters are connected via residual connections to the previous layers. The outputs of both adapters are summed via '+' nodes and fed into a 'fusion module' at the top. This fusion module consists of a 'linear' layer (pink rectangle) followed by a 'SoftMax' layer (also pink), producing a final output sequence represented by tokens like '你', 'big', and '...'.\n\nAbove the fusion module, two output sequences are shown: one labeled 'sot zh trans nots' for Chinese, and another 'sot en trans nots' for English, indicating start-of-token, language, translation, and end-of-token markers. Dashed arrows connect the fusion module's output to these sequences, suggesting the generation of tokenized outputs for both languages.\n\nConnections throughout the diagram are represented by solid black arrows indicating data flow direction. Residual connections are marked with circular '+' symbols, denoting element-wise addition. The color coding distinguishes modules: blue for general adapters in the Encoder Refiner, light green for Chinese-specific adapters, light orange for English-specific adapters, and pink for the fusion module components. All major blocks are outlined with dashed borders, while the entire Encoder Refiner and adaptation module are enclosed in larger dashed rectangles."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

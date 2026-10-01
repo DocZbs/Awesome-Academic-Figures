@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SurvAttack: Black-Box Attack On Survival Models through Ontology-Informed EHR Perturbation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18706
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the SurvAttack framework, a method designed to adversarially manipulate electronic health record (EHR) data to deceive a survival analysis (SA) model. The global layout is divided into two main sections: the left side represents the patient medical history timeline and the adversarial attack process, while the right side shows the victim SA model and its misclassification outcome.
+
+On the left, a horizontal blue timeline labeled 'Patient Medical History' spans from left to right, marked with time progression. Along this timeline are rectangular blocks representing sequential visits: 'Visit 1', 'Visit 2', ..., up to 'Visit N'. Each visit contains ICD9 and ATC codes; for example, Visit 1 lists ICD9: 786, 203, ... and ATC: A02AA, C10AA, ...; Visit 2 includes ICD9: 203, 336, ... and ATC: D01AE, G04BX, J01DE, ...; Visit N has ICD9: 070, 203, 276, ... and ATC: J01MA, J02AC, L07AA, .... These codes are presented in black text, except for specific codes highlighted in red (e.g., '336' in Visit 2) or blue (e.g., 'L07AA' in Visit N), indicating targeted modifications.
+
+Below the timeline, the adversarial process begins with the 'Composite Code Scoring (CCS)' module, a rounded rectangle containing the text 'Saliency Index + Similarity Index'. This module receives input from the medical history via a dashed arrow. The CCS scores guide the 'Adversarial Actions' module, another rounded rectangle, which evaluates three types of manipulations: 'replace' (green dashed arrow), 'remove' (red dashed arrow), and 'add' (blue dashed arrow), each targeting specific codes in the visits. For instance, the green arrow points from 'C10AA' in Visit 1 to 'G04BX' in Visit 2, indicating a replacement action.
+
+The 'Synonym Code Selection (SCS)' module, an oval-shaped box below CCS, supports the adversarial actions by providing synonyms based on 'Ontology + Cooccurrence'. It feeds into both CCS and Adversarial Actions via dashed arrows.
+
+After adversarial actions are applied, the modified EHRs are evaluated by the 'SSF Embedding Similarity Check', a diamond-shaped decision node. If the similarity check passes ('Yes'), the perturbed EHRs proceed to the victim SA model; if not ('No'), the attack fails.
+
+On the right, the original patient (Patient 2) is represented in an orange rounded rectangle labeled 'Original Patient 2 EHRs (V2)', with a stick figure icon. The attacked patient (Patient 1) is shown in a light blue rounded rectangle labeled 'Attacked Patient 1 EHRs (V1*)', also with a stick figure. Both feed into the 'Victim SA Model', a green rounded rectangle. The model outputs a comparison: 'T_V1* > T_V2', meaning the predicted survival time for the attacked patient is higher than the original, leading to the conclusion 'Patient1 is more urgent than patient 2', marked with a red 'X' to indicate incorrect prioritization. This demonstrates the successful adversarial attack that reverses the correct urgency ranking.

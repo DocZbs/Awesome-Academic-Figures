@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+NeRF-To-Real Tester: Neural Radiance Fields as Test Image Generators for Vision of Autonomous Systems — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16141
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the metamorphic testing framework, which is used to validate software systems when direct oracle information is unavailable. The global layout is horizontally structured into three main sections: input generation on the left, the System Under Test (SUT) in the center, and output validation on the right. The entire process flows from left to right, with feedback loops connecting inputs and outputs through metamorphic relations (MRs).
+
+In the left section, two test inputs labeled 'Test Input 1' and 'Test Input 2' are shown. These inputs are connected by a downward arrow to a rectangular box labeled 'MR1', which is colored light yellow with a golden border. This represents the first metamorphic relation, which defines a known transformation or relationship between the two inputs. Both Test Input 1 and Test Input 2 also feed into the central component via horizontal arrows.
+
+The central component is a tall, vertically oriented rectangle labeled 'SUT' (System Under Test), colored light green with a darker green border. It serves as the core processing unit that receives both test inputs and produces corresponding outputs.
+
+On the right side, the SUT generates two outputs: 'Test Output 1' and 'Test Output 2', each connected by a horizontal arrow from the SUT. These outputs are linked by a downward arrow to a rectangular box labeled 'MR2', colored light blue with a dark blue border. This represents the second metamorphic relation, which specifies how the outputs should relate based on the input transformation defined by MR1. The test passes if MR2 holds; otherwise, it fails, as stated in the caption.
+
+All connections are represented by solid black arrows indicating the direction of data flow. The diagram emphasizes the logical dependency: the validity of the SUT’s behavior is assessed not by comparing outputs to an explicit correct answer, but by verifying that the outputs satisfy the expected metamorphic relation (MR2) derived from the input relation (MR1).

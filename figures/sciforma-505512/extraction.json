@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505512",
+  "record_sha256": "e024de1e456a9e8cc6cbd96301c0b660defa063c39b56e9ab1d64321decb9f07",
+  "asset_sha256": "744aa30905b588076b23e3fed4016eb8f02b578d4afe31fad90b1055d763e5db",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505512",
+    "title": {
+      "zh": "Geo-ConvGRU: Geographically Masked Convolutional Gated Recurrent Unit for Bird-Eye View Segmentation · 方法图",
+      "en": "Geo-ConvGRU: Geographically Masked Convolutional Gated Recurrent Unit for Bird-Eye View Segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20171",
+      "title": "Geo-ConvGRU: Geographically Masked Convolutional Gated Recurrent Unit for Bird-Eye View Segmentation",
+      "authors": [
+        "Guanglei Yang",
+        "Yongqiang Zhang",
+        "Wanlong Li",
+        "Yu Tang",
+        "Weize Shang",
+        "Feng Wen",
+        "Hongbo Zhang",
+        "Mingli Ding"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20171",
+      "arxiv_url": "https://arxiv.org/abs/2412.20171",
+      "arxiv_id": "2412.20171",
+      "arxiv_first_submitted_at": "2024-12-28T14:59:48Z",
+      "arxiv_updated_at": "2024-12-28T14:59:48Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20171v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505512/image/image.jpg?Expires=1790855552&Signature=MD05v80dBnz-U066hJdR8DX~HrUp1vNvHkc3nS9AHC3mIPOTJj410aeTa1EEUn9IT~E1uiStFX0IW7ff6ptgBVRJxSlKAwpOvQfk4mJKPAfzAGb6cH7eWB5mAmrf3XIvaibGItoEfwkqaic7PnPq3gYgUGR45SAFJs6py-QpnuNRPFBbBmpYsJ1VBc-OPTYTfApp5KfjlPsnGfOrqWFkFJVhKicjnjWPK~jsNHUgim4aF-2-CrVySELbhZ2HLhNomstTyAN0XJkkmT582eOZXXCUIyoS9awr2pFC1MWJoZJPIFT7vAjutzqxsQ8HKsvhQ9zjGdUpWJCMNsIXEK6keA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505512,
+      "description_sha256": "676695f997bb704ff5ae3b8ab09d2d127900ba476cd7317aba49e5b3e8539ca9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b52b612643de7d139e5bc06a835290b6cf870b7a1ae1baa0f072d2b66dee5112",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Geo-ConvGRU module, designed for processing sequential data with spatial context, likely in a bird's-eye view (BEV) representation. The global layout is horizontal and sequential, consisting of two parallel recurrent layers—top and bottom—each composed of three GRU units arranged in a chain, followed by a final fusion step involving a geographical mask.\n\nThe top layer contains three identical rectangular blocks labeled 'GRU₁', each receiving an input from the previous block and an initial hidden state h₁ at the first time step. The bottom layer mirrors this structure with three rectangular blocks labeled 'GRU₀', initialized with h₀. Each GRU₀ unit receives a feature vector from the BEV representation at different time steps: f_BEV^{t−2}, f_BEV^{t−1}, and f_BEV^t, respectively, indicating temporal progression. These BEV features are fed into the corresponding GRU₀ units via upward arrows, suggesting they serve as input features for the lower layer.\n\nVertical arrows connect each GRU₀ unit to its corresponding GRU₁ unit above, indicating that the output of the lower GRU is passed as additional input or context to the upper GRU. This suggests a hierarchical or multi-level processing where the lower layer extracts spatial-temporal features from BEV inputs, and the upper layer refines or combines them with higher-level temporal dynamics.\n\nAfter the third GRU unit in each layer, the outputs from both GRU₁ and GRU₀ converge into a circular node marked with a multiplication symbol '×', representing an element-wise product operation as specified in the caption. This operation is applied between the final outputs of the two GRU chains. Additionally, a separate rectangular box labeled 'ℳ_geo' (geographical mask) feeds into this multiplication node, indicating that the mask is applied element-wise to modulate the combined output.\n\nThe result of this element-wise product is then directed to the rightmost label 'Output', signifying the final output of the module. The entire structure emphasizes a dual-path recurrent processing with temporal evolution, spatial feature integration via BEV inputs, and spatial modulation through a geographical mask, culminating in a fused output. All components are rendered in black-and-white with standard rectangular boxes for GRUs and a circle for the multiplication operation, using clear, sans-serif labels and solid arrows to denote data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

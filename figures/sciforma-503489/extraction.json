@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503489",
+  "record_sha256": "dfef5650bfede549250f4a2260086ab26d4a76d4a640065dbeb0fb475697ebc5",
+  "asset_sha256": "f2cb0a122759049cbdb59fc9179058e3c56074b29dcdce077e6d0dd82b8a34f5",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503489",
+    "title": {
+      "zh": "Two-in-One: Unified Multi-Person Interactive Motion Generation by Latent Diffusion Transformer · 方法图",
+      "en": "Two-in-One: Unified Multi-Person Interactive Motion Generation by Latent Diffusion Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2412-16670",
+      "title": "Two-in-One: Unified Multi-Person Interactive Motion Generation by Latent Diffusion Transformer",
+      "authors": [
+        "Boyuan Li",
+        "Xihua Wang",
+        "Ruihua Song",
+        "Wenbing Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16670",
+      "arxiv_url": "https://arxiv.org/abs/2412.16670",
+      "arxiv_id": "2412.16670",
+      "arxiv_first_submitted_at": "2024-12-21T15:35:50Z",
+      "arxiv_updated_at": "2024-12-21T15:35:50Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16670v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503489/image/image.jpg?Expires=1790855367&Signature=O0xLkpwf2T4qy5okjHvqZCcPO6olz1aZdq1BQ7ANMC4SEmIyo0VJlYLVQlx7tySAFGCZ9BVxDjSFuEcaA1bQQeBS-j3hGWaxM1q6p69JYerrcQVbU2iw~wSgNJzF7-Ar0mzoHUwkG3VVV-dbtYLLdngtxKMnBno11mSPn52P8Be~9J9KzD4TY08UHbkGNldZMVouLqwUH0sE6SGVpBM1ucKFosgRhGgxfPLLdZyr5O9f3Q~mo2pJwegauZnWwhR2Oc6696JGfKSjAcaOAvwdJqz1eAKyQSlDp1nQ2mcd7usNe8p-lpZiJ7CMjUoFq4RObt3aiSOfdBl~LS4pW4kcfQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503489,
+      "description_sha256": "b161ea27a4e763ce1f94b7ad5da722714910e7ed8a40630eab5e13a8904234dc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f07355c6b26c0d6d275ca9bf733b039951c796d87cbe0c86446724de9b34c5c4",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram of two frameworks for generating human interaction motions from text descriptions. The layout is horizontally divided into two main sections: 'Our Framework' on the left and 'InterGen [13]' on the right, separated by a thick vertical dashed line. Above each framework, example motion results are shown with corresponding labels: 'Results with obvious difference' (green text) for the left, 'Ground-truth with clear difference' (black text) in the center, and 'Results with little difference' (red text) for the right, illustrating qualitative performance differences.\n\nIn the left section, 'Our Framework', the core component is the InterVAE, enclosed in a dashed rectangular box. It consists of an Encoder (blue trapezoid with horizontal bars and a small circular icon indicating latent sampling) and a Decoder (yellow trapezoid with horizontal bars and a similar sampling icon). The Encoder receives input from a T5 Encoder, which processes the text description: 'One person bows to the other, who accepts the apology.' The T5 Encoder outputs are fed into the InterVAE Encoder via a blue arrow. The Encoder's output is passed to the Decoder through a green arrow. The Decoder generates motion sequences, visualized as a gradient bar above it, which then feeds into the InterVAE Decoder module (a yellow trapezoid labeled 'InterVAE Decoder').\n\nWithin the InterVAE Encoder and Decoder, the internal structure is detailed. Each contains multiple layers: Input Token (gray), Layer Norm (light blue), Self-Attention (beige), Scale, Shift (light blue), Layer Norm (light blue), Cross-Attention (pink), Layer Norm (light blue), Scale (light blue), Feedforward (light green), and another Layer Norm (light blue). These layers are connected sequentially with arrows, and residual connections are indicated by plus signs and feedback loops. The entire stack is repeated N times, as denoted by 'N×' on the left side of the module.\n\nOn the right, 'InterGen [13]', the framework uses a two-branch design. Two identical blocks, each containing Input Token, Layer Norm, Self-Attention, Layer Norm, Cross-Attention, Layer Norm, and Feedforward layers, are shown side-by-side. These branches receive input from a CLIP Encoder, which processes the same text description. The branches are interconnected via orange cross-attention links between their respective Cross-Attention layers, enabling interaction modeling. Each branch also has residual connections within its layers, and the final output from each branch is combined via a plus sign before being passed upward.\n\nThe figure visually emphasizes the structural differences: our framework uses a single, unified VAE with conditional latent diffusion, while InterGen employs a dual-branch transformer with explicit cross-attention for interaction. The color coding—blue for encoder, yellow for decoder, pink for cross-attention, beige for self-attention, light green for feedforward—is consistent across both frameworks. The bottom of the figure includes the shared text description, grounding the comparison in a specific scenario."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505797",
+  "record_sha256": "1f424a44d6079060fe0d37d26c18715c04a7fe26490cb86f3e96e3573c84de0b",
+  "asset_sha256": "3cb4ce8fbd59d6518d524939b55094628251ee682e5a8dda3ef30c93e4efff0e",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505797",
+    "title": {
+      "zh": "4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives · 方法图",
+      "en": "4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives"
+    },
+    "paper": {
+      "id": "arxiv-2412-20720",
+      "title": "4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives",
+      "authors": [
+        "Zeyu Yang",
+        "Zijie Pan",
+        "Xiatian Zhu",
+        "Li Zhang",
+        "Jianfeng Feng",
+        "Yu-Gang Jiang",
+        "Philip H. S. Torr"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20720",
+      "arxiv_url": "https://arxiv.org/abs/2412.20720",
+      "arxiv_id": "2412.20720",
+      "arxiv_first_submitted_at": "2024-12-30T05:30:26Z",
+      "arxiv_updated_at": "2025-08-05T21:54:39Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20720v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505797/image/image.jpg?Expires=1790855559&Signature=jRleaDtkbslTAQ-jzGgJPPUYtrvjhf~d2DEqwF02XjxGs6qWXw5GQ2WQjD1k8qrC29D-szGqURBvPOnlWo6SRu9efX2Dy1FjnLdVp~lFfOvQKr6UWfiVB496SZm-ASzxkR1iuMfBgD3650FNW6aFJb5muKhlyzY9GIBJZR~Y4vaBS2m~GxeYxMCb0o-FOm4vTYOkdFfVJTO3La2AKL5jvAgsxm0xy4PGSmaMVWfVX36AXz1ilyjx46EJlgbyLH8fgecyqdRzT5CSd7xjO0UDgJ6epHfCqOV-MsEMTVpzu3qDW9uofUUtnXN-9uQMgu5H8RbDUGbl9R7D9R4ENTc2hA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505797,
+      "description_sha256": "81fd3244f9c5e6bd55a4c2510638de43cdbeba586080db7ce18aa6574631faaa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b3d6b420daeeb7d30d2ebce9c42f7f8926b5349bd319a3d0912f1761069b3f4d",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic illustration of a spatio-temporal 4D volume learning framework for dynamic scenes, divided into two main parts: (a) an overview of the scene processing pipeline and (b) a detailed breakdown of the 4D Gaussian Splatting model.\n\nIn part (a), the global layout shows a left-to-right workflow starting with a 'Dynamic scene' depicted by multiple poses of a human figure in motion, representing temporal variation. This is followed by a 'Sampling' step, indicated by a black arrow, leading to a 'Static scene' showing a single pose of the same figure. The next stage is 'Projection', also marked by a black arrow, resulting in a 2D 'Image' rendered on a plane. A curved purple arrow labeled 'Blending' connects the image back to the static scene, suggesting a feedback or rendering loop.\n\nPart (b) details the underlying 4D Gaussian Splatting mechanism. On the left, '4D Gaussians' are shown as ellipsoidal shapes arranged vertically along a dashed axis labeled 't' (time), indicating temporal evolution. Each 4D Gaussian is represented with a grid mesh and colored gradients (blue to red), and includes a small inset showing x-y-z spatial coordinates at the base. These 4D Gaussians are grouped into two vertical stacks, one outlined in orange and the other in blue, suggesting different temporal sequences or conditions.\n\nA black arrow labeled 'Condition' points from the 4D Gaussians to '3D Gaussians', which are depicted as single ellipsoidal shapes with grid meshes and similar color gradients. One 3D Gaussian is outlined in orange, another in blue, corresponding to the conditioning from the respective 4D stacks. From here, a black arrow labeled 'Splattting' leads to '2D Gaussians', illustrated as blurred, overlapping circular patches with green-yellow centers and fading edges, representing projected planar Gaussians in the image plane.\n\nThe visual modules use consistent shapes—ellipsoids for Gaussians—and colors (blue-red gradients) to denote spatial and temporal properties. Text labels are placed directly beneath each module for clarity. The connections between modules are primarily straight black arrows indicating forward processing steps, except for the curved purple 'Blending' arrow in part (a), which implies a compositional or rendering phase. The overall structure emphasizes a hierarchical transformation from dynamic 4D representations through conditional sampling and projection to final 2D image rendering."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

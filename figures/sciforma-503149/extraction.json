@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503149",
+  "record_sha256": "77b02543e45491b84647d7dab96aee3ddca0ea17c6c62a85b87b5513d00d7294",
+  "asset_sha256": "f6596cd2a0679ba2c6400a7a8aee782757196df4cac6f5339975163fda06677e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503149",
+    "title": {
+      "zh": "Choose Your Explanation: A Comparison of SHAP and GradCAM in Human Activity Recognition · 方法图",
+      "en": "Choose Your Explanation: A Comparison of SHAP and GradCAM in Human Activity Recognition"
+    },
+    "paper": {
+      "id": "arxiv-2412-16003",
+      "title": "Choose Your Explanation: A Comparison of SHAP and GradCAM in Human Activity Recognition",
+      "authors": [
+        "Felix Tempel",
+        "Daniel Groos",
+        "Espen Alexander F. Ihlen",
+        "Lars Adde",
+        "Inga Strümke"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16003",
+      "arxiv_url": "https://arxiv.org/abs/2412.16003",
+      "arxiv_id": "2412.16003",
+      "arxiv_first_submitted_at": "2024-12-20T15:53:25Z",
+      "arxiv_updated_at": "2025-04-13T08:22:33Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/s10489-025-06968-3",
+      "arxiv_current_version_observed": "2412.16003v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503149/image/image.jpg?Expires=1790855363&Signature=rtZ0w7CTlZ4xq~HClRVeR1-u~NJTU2f~QzDQuSBUxOnCQTltH~eYDMREIhWNKxOqlPte9wW7m8d42XbmpxWpb420LzD5vTJNoaXNujuMziWd2Ig6V2hu1XCLILX5jJDsdfAu6Exa5x1xru6ueobXheKBX3a3JSSnOID-1tUJDRb1FGiyqArZo0N35SdKYf49F9vAQFOPifR1ARN6nH4X4GJJ6QfMN1YqvFKU3hWNN1B8djqk-EADQZklD5aFfLtxT1W4RFO09mFze9CaSd8GqXaJ~YMfiDBDiQg5sFEbE5XF2RM0WnoUiX60v8KjZY8tzP55wItFmVba7E5s0K0R0w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503149,
+      "description_sha256": "7a434f205e668dfc6ab3dcfb4e761b03661e0d17e72dbce2019283ee79c1323b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "84aaa8ead67a8ed925b1b3235df8888fd7dc48b55879e8382ab52bc671de3a75",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a dual-branch deep learning architecture designed for processing skeleton-based action recognition data. The global layout is horizontally structured, divided into two main sections: the 'Input branch' on the left and the 'Main branch' on the right. On the far left, a stick figure representing a human skeleton with joint connections serves as a visual cue for the input data type. The Input branch processes four distinct feature streams, labeled J (joints), V (velocities), B (bone vectors), and A (angles), each originating from a blue rectangular 'Initialisation layer'. These four streams are processed in parallel through identical sequences of three layers: first, a yellow rounded rectangle representing a 'Spatial graph layer', then an orange rounded rectangle for a 'Temporal convolutional layer' (TCN), and finally a gray rounded rectangle for an 'Attention layer'. Each of these processing stages is enclosed within a dashed box, with the spatial graph layer group outlined in light blue, the TCN group in orange, and the attention group in gray. Below each group, gradient symbols (∇) are shown: ∇_in under the initialisation layer, ∇_TCN under the TCN block, and ∇_Att. under the attention block, indicating points where gradients are extracted for analysis. The outputs of the four attention layers converge into a circular fusion node, which combines them into a single feature stream. This fused output feeds into the Main branch, which mirrors the structure of the input branch's processing blocks: a yellow Spatial graph layer, followed by an orange TCN, and then a gray Attention layer. Again, gradient extraction points ∇_TCN and ∇_Att. are indicated below these layers in the main branch. After the attention layer in the main branch, the flow continues through a pink rectangular 'Dropout' layer, followed by a light green rectangular 'Classifier' layer, which produces the final output. The connections between all components are represented by solid black arrows indicating forward propagation, while dashed lines connect the gradient extraction points to their respective layers. A legend at the bottom clarifies the color-coded shapes: yellow for Spatial graph layer, orange for Temporal convolutional layer, gray for Attention layer, blue for Initialisation layer, pink for Dropout, and green for Classifier. The figure caption specifies that the model uses four input branches to process different feature divisions from skeleton videos, fuses them into a main branch, and that the reference gradients for experiments are extracted after the attention activation and after the TCN in the main branch."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

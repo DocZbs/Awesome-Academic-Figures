@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506019",
+  "record_sha256": "dfe0fe1191e5b695963a5b474431d5f1059caf577d2ab007ef8001117e647805",
+  "asset_sha256": "bfb436e9b951cc5b6b484bbef8d8ef823e95d5bb0668fe0da4132c2b3c8c6b47",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506019",
+    "title": {
+      "zh": "Time Series Feature Redundancy Paradox: An Empirical Study Based on Mortgage Default Prediction · 方法图",
+      "en": "Time Series Feature Redundancy Paradox: An Empirical Study Based on Mortgage Default Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2501-00034",
+      "title": "Time Series Feature Redundancy Paradox: An Empirical Study Based on Mortgage Default Prediction",
+      "authors": [
+        "Chengyue Huang",
+        "Yahe Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00034",
+      "arxiv_url": "https://arxiv.org/abs/2501.00034",
+      "arxiv_id": "2501.00034",
+      "arxiv_first_submitted_at": "2024-12-23T21:28:32Z",
+      "arxiv_updated_at": "2024-12-23T21:28:32Z",
+      "arxiv_subjects": [
+        "q-fin.ST",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00034v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506019/image/image.jpg?Expires=1790855568&Signature=vs1773HyXP-F4D2Ev1loDQvsAbQUfMLA0naRdZKTNUGYu01Nb2nTjvVfBIpPd7scFf0NFLgTiFmuZIGOLX1qtU1FO4lQz1QdwwCVuMy7BryZ7~Tn9xD7kie76nPrP-3EYVurSDTMD8dFyFSN-aLgWm-GZji9666mIpK-AP9Dneow0FWab0gom9dtSRmKtL7SgFaeAT3F2fiN-nm2Q8dpO-aNNGrUFdr9oSd5YvOfkEG0eQNVcdXH1keylLMPPTCCUEGAYkLfgRAPk9YTTzTEMDUZFVk0lTJgkAYBpDfxjtgg82gcJwd2~3L3gXCCqf6VthKAfgxpXrSmzcvukaeUAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506019,
+      "description_sha256": "2e0bb37435a51ec3f0c5b2b7c84c153f315921bd8c1163d9de67899d1556adfa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "cd0dbc30eeb8216e456452fb2c81d423dac79839119d72c807ecb9b7d9831157",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-fin.ST",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a model inference pipeline architecture designed for predicting the next-month default status of financial entities based on historical performance data. The global layout is linear and left-to-right, with a feedback or preprocessing loop from a lower module to the main input. The process begins with a rectangular box labeled '5-Month Performance Sequences (Chosen Time Window and Feature Set)', which serves as the primary input. This box is connected by a solid arrow to a central rectangular box labeled 'Model Inference', indicating the core processing stage. From this, another solid arrow leads to the final output box, titled 'Predicted Probability Distribution for Next-Month Default Status'.\n\nBeneath the input box, there is a rounded rectangular box labeled 'Cold-Start Handling: Early Observations Padded with Market Benchmarks & Origination Attributes'. This module feeds into the '5-Month Performance Sequences' box via an upward-pointing arrow, signifying that it preprocesses or augments the input data for cases where early observations are sparse or missing.\n\nUnderneath the 'Model Inference' box, four distinct machine learning models are listed as the methods employed within this stage: 'Logistic Regression (Class-Weighted)', 'Random Forest (Tuned & Balanced)', 'LSTM (Temporal Sequence)', and 'Transformer (Attention-Based)'. These are presented as text labels without additional shapes, indicating that the inference step leverages multiple model types, each suited to different data characteristics — such as class imbalance, non-linear relationships, temporal dependencies, and attention-based feature weighting.\n\nAll boxes are drawn with black borders and white fill, using a clean, sans-serif font. The arrows are simple, solid black lines with standard arrowheads, denoting unidirectional data flow. The entire diagram is arranged horizontally, with the cold-start handling module positioned below the main input to indicate a preprocessing step. The figure is self-contained and does not include any mathematical equations or LaTeX expressions, relying solely on textual labels and structural connections to convey the workflow. The caption 'Model Inference Pipeline Architecture' accurately summarizes the purpose of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

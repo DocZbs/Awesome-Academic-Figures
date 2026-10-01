@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506898",
+  "record_sha256": "ec2b451176b709aa73cb6d704c3dd7010130ae6ccbbf8028dc60b911db2bc565",
+  "asset_sha256": "74635e91a481ef89815562cf221152b9841fbc77765153fe8c6cb9496d9ce5f5",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506898",
+    "title": {
+      "zh": "Unsupervised Tomato Split Anomaly Detection using Hyperspectral Imaging and Variational Autoencoders · 方法图",
+      "en": "Unsupervised Tomato Split Anomaly Detection using Hyperspectral Imaging and Variational Autoencoders"
+    },
+    "paper": {
+      "id": "arxiv-2501-02921",
+      "title": "Unsupervised Tomato Split Anomaly Detection using Hyperspectral Imaging and Variational Autoencoders",
+      "authors": [
+        "Mahmoud Abdulsalam",
+        "Usman Zahidi",
+        "Bradley Hurst",
+        "Simon Pearson",
+        "Grzegorz Cielniak",
+        "James Brown"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02921",
+      "arxiv_url": "https://arxiv.org/abs/2501.02921",
+      "arxiv_id": "2501.02921",
+      "arxiv_first_submitted_at": "2025-01-06T11:02:52Z",
+      "arxiv_updated_at": "2025-04-28T11:24:12Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02921v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506898/image/image.jpg?Expires=1790855628&Signature=GfaIgksJVDoPMpOLRHovfkUp9f2ZlOr7HVIQ79uazkIPgywqjHfmdIAFHF34KMr5veDazhApUa1jI52B9NRUKnncsUjDahn0REaOn9iW~9E5~VpNLdHpUwPZbLGBvet5NdPAxnC8Tqt-BbEEFsOwx6wU4wk3DZNRZIEAnjLe126VnWjKG4ph2Zf-sVzN44YfxqgDE6RRxOXn6b8RuIchKv8Id8BGoQZezKCaOmXTtu8aSqLH~X53YycHByEKrLxiYI6JibCoddRiT2~TWOjqZGW-4D1W1WEgO~d5L6U39hLP6Ld1vYiBelrq-9X2fWaYvnYaJxrHBZDOON-K4ZFjoA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506898,
+      "description_sha256": "2e8dd10447ba2077793dd85443c69838bc0d1aa44a37c44df5a03c4969e3c461",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2edf4f4b3106793417a7ef0111c7ba18fa671635c9c08f3034bc595442ad364a",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a pre-processing pipeline for extracting hyperspectral imaging (HSI) regions of interest (ROIs) corresponding to individual tomatoes from a full HSI capture of a tomato bunch. The global layout is left-to-right, depicting a sequential workflow starting from raw HSI data and ending with isolated HSI ROIs for each tomato. The structure is modular, divided into distinct stages: input HSI data, RGB image extraction, object detection using YOLOv8, ROI extraction, and final HSI ROI generation.\n\nOn the far left, a 3D cube labeled 'HSI' contains an image of a cluster of red tomatoes, symbolizing the full hyperspectral dataset. From this cube, two paths diverge: one downward to a stack of three colored bars (red, green, blue) labeled 'R,G,B bands', representing the spectral decomposition into RGB channels; the other horizontal path leads directly to an 'RGB Image' — a grayscale-like representation of the tomato bunch. This RGB image serves as input to the next stage.\n\nThe central component is the YOLOv8 model, depicted as two vertical rectangular blocks (blue and orange), indicating a deep learning-based object detector. An arrow from the RGB image points to YOLOv8, which outputs a processed image enclosed in a green box labeled 'RGB ROIs'. Inside this box, the original tomato bunch image is shown overlaid with yellow bounding boxes precisely outlining each individual tomato, demonstrating successful detection.\n\nFrom the RGB ROIs, four separate cropped images of individual tomatoes are extracted and arranged vertically. Each of these crops is connected via blue arrows to a corresponding 3D cube within a red-bordered box labeled 'HSI ROIs'. These cubes mirror the initial HSI cube but now contain only one tomato each, indicating that the spatial coordinates from the RGB detection have been mapped back to the original HSI volume to extract the corresponding hyperspectral data for each detected tomato.\n\nThe connections are represented by solid blue arrows, indicating the flow of data and processing steps. A feedback loop is implied by a blue arrow returning from the HSI ROIs box to the initial HSI cube, suggesting potential iterative refinement or contextual reprocessing. All visual elements use consistent color coding: green for RGB ROI processing, red for final HSI ROIs, and blue for data flow. Text labels are placed directly beneath or beside components for clarity. The overall design emphasizes the integration of RGB-based detection with HSI data for precise, per-object spectral analysis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

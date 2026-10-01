@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504849",
+  "record_sha256": "e0a7b6a6001b6f18cfd28ce8005c207c5cb2fc8063d008cd80849ba392a71c90",
+  "asset_sha256": "e15f0ad01304b398da8467ddf418931b68b0443c50c769ab320297d3dc7ccec7",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504849",
+    "title": {
+      "zh": "HAND: Hierarchical Attention Network for Multi-Scale Handwritten Document Recognition and Layout Analysis · 方法图",
+      "en": "HAND: Hierarchical Attention Network for Multi-Scale Handwritten Document Recognition and Layout Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-18981",
+      "title": "HAND: Hierarchical Attention Network for Multi-Scale Handwritten Document Recognition and Layout Analysis",
+      "authors": [
+        "Mohammed Hamdan",
+        "Abderrahmane Rahiche",
+        "Mohamed Cheriet"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18981",
+      "arxiv_url": "https://arxiv.org/abs/2412.18981",
+      "arxiv_id": "2412.18981",
+      "arxiv_first_submitted_at": "2024-12-25T20:36:29Z",
+      "arxiv_updated_at": "2024-12-25T20:36:29Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18981v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504849/image/image.jpg?Expires=1790855446&Signature=H3ccv4VhY0y8v0lhTVV1yx9IjKiP2iXe5lXYJvOXNdwZFCxsW~JrtJLuUb6ingjQpCDAMCZePyhqjThbJxH5DlrQTS1W4wdnxc4bznryY8AdFBBPmZzwpbAubUxiIjI1foUBR4sFSCXNRDFoYWqVLmXOWTs5-t77aM6u9YsY~0FZsYIIwZtZUNku-E9a4jPsxQtKrRodup7MEKXLDuwmU2pT019d4fcOntLDTjPGQRVNjggFWVSp2~v5Hgw4uaHq~aZsozfi0iexADqWNWU-6AYiQcirPOrw~1c0qY8dBotDyTK98CZtfbGP3~yE6m0jRIdOPicEbyXBPv3qAcaJmA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504849,
+      "description_sha256": "8437f8f8e237357383e3bc462071487aef5f8b89e7dcde156d6c041cd8bbec87",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2b44b3d0895b17e820d69755924f841f9b8147b8cb672000b86547f3ca616960",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the HAND architecture, which combines a convolutional encoder with a transformer-based decoder for document understanding and sequential prediction tasks. The global layout is divided into two main vertical sections: the left side represents the encoder block (repeated 5 times), and the right side represents the decoder block (repeated 6 times). The input document enters the encoder from the bottom left, while the decoder receives embeddings and positional encodings from below. A legend at the bottom left defines visual components: light blue cubes represent Convolutional + Fully Connected layers; purple cubes denote Ground Truth Embedding; dark purple cubes indicate Residual & Layer Normalization; orange cubes signify Positional Encoding; gray cubes represent Transformer decoder layers; green cubes denote Gated & Octave Convolution; and pink cubes represent Output predictions.\n\nIn the encoder block, the input document is processed through a stack of layers. First, it passes through a Gated Depth-Wise Separable Convolution (green cube), followed by an Octave Convolution (pink cube) with a Squeeze-and-Excitation module (red wave-shaped box) that modulates channel-wise importance. The output is then fed into a Gated Conv layer (cyan cube) with a summation operation (+) combining inputs from previous layers. Above this, a 2D positional encoding (orange grid) is added to the feature map (blue grid labeled F2D with dimensions Hf x Wf x Cf), forming a combined feature representation. This is then flattened into a 1D sequence (colored bars) that feeds into the decoder.\n\nThe decoder block consists of six stacked transformer layers. Each layer begins with Multihead Masked Attention, taking query (Qt), key (K), and value (V) inputs. The output is processed through Residual + Layer Norm (purple rounded rectangle), followed by Sparse & Memory Augmented Multi-Head Cross Attention, which uses the encoder’s K and V outputs. Another Residual + Layer Norm follows, then a Position-Wise Feed Forward Network (FFN), and finally Linear Projection & Softmax. The softmax output is passed through an Argmax operation to produce the predicted token Pt, which is then converted via a 1x1 convolution to yield the final output yt. The loss function LCE(yt, Pt) is computed between predicted and ground truth tokens.\n\nThe decoder’s input starts with embedding (purple cubes) and 1D positional encoding (orange cubes), summed together. These are fed into the first decoder block. During training, the target sequence is shifted left (shifted target sequence) to provide ground truth for teacher forcing. The predicted text sequence (y^0 to y^t) is generated autoregressively, with each step feeding into the next. Dashed lines indicate feedback loops or residual connections, such as from the Linear Projection & Softmax back to the Residual + Layer Norm, and from the decoder’s output to the cross-attention mechanism. The entire architecture emphasizes efficient spatial feature extraction via convolutional blocks and accurate sequential generation via memory-augmented attention mechanisms."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

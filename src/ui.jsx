@@ -32,7 +32,9 @@ export function PaperSource({ paper }) {
       <div className="paper-source-meta">
         {paper.publication_date && (
           <span>
-            论文集发布日期{" "}
+            {paper.publication_kind === "journal"
+              ? "期刊发表日期"
+              : "论文集发布日期"}{" "}
             <time dateTime={paper.publication_date.replaceAll("/", "-")}>
               {paper.publication_date.replaceAll("/", "-")}
             </time>
@@ -61,7 +63,11 @@ export function PaperSource({ paper }) {
           </a>
         )}
         <a href={paper.url} target="_blank" rel="noreferrer">
-          {paper.venue === "arXiv" ? "论文来源" : "会议论文集"}
+          {paper.publication_kind === "journal"
+            ? "期刊原文"
+            : paper.venue === "arXiv"
+              ? "论文来源"
+              : "会议论文集"}
           <ExternalLink size={14} />
         </a>
         {paper.pdf_url && (

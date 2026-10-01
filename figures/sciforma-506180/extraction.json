@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506180",
+  "record_sha256": "a3510339eb2830b652a23fec54aec9160093f19c3352a4e6dbee06499b2c7d8f",
+  "asset_sha256": "1e8ffe46149d301d7ff5d93e406dbe1f8d3b4cef73e713a47928d15cec8dd960",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506180",
+    "title": {
+      "zh": "Titans: Learning to Memorize at Test Time · 方法图",
+      "en": "Titans: Learning to Memorize at Test Time"
+    },
+    "paper": {
+      "id": "arxiv-2501-00663",
+      "title": "Titans: Learning to Memorize at Test Time",
+      "authors": [
+        "Ali Behrouz",
+        "Peilin Zhong",
+        "Vahab Mirrokni"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00663",
+      "arxiv_url": "https://arxiv.org/abs/2501.00663",
+      "arxiv_id": "2501.00663",
+      "arxiv_first_submitted_at": "2024-12-31T22:32:03Z",
+      "arxiv_updated_at": "2024-12-31T22:32:03Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00663v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506180/image/image.jpg?Expires=1790855569&Signature=XAmjnMcBua8Tb6FJH5-sAskQC4bwszZmsjZaLdew9ejQIyLkFEePSwvKeXQlTnAI8~9bPUNzXMUo4em0gQFjJlQn4dCGcVrbY8qzW2XWSgaHO1~ETai0Xy0z6OZyKcfWnSuGU9lNE6o3FmGU8VX6IrWyR9JTGV~odVum5i~DzfKM0TgDF2lPjnR3Wt0hj8ONgmO-0DpnCpPE8qLZnj5I2wlYW90X1daaWU~UsO66oMISqR2ZRg3zvzus3dwrSyrUTG2H28kNsRIF0adbMnwW2dPXzWEfJabwke3gIJffoOJspcaC-bvEiZo-yDU~NbOCHxo7aJt~ksHy0aCVgokzLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506180,
+      "description_sha256": "2800dc78c34101ae82ac3a539eb9d53f6cafe8ccfc08c205cb04f7a4c68813f7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4e0ed2da0cc6ec41e0ca89776693b46c7097e2c1824a5b580d2e88615046a356",
+      "row_response_sha256": "bd501de9f505e5b4ad75d767e9a5085cb0fb763622430eaaa9f3a1dd41724993"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Memory as a Layer (MAL) architecture, which integrates memory components into a neural network framework to compress contextual information before it is processed by an attention mechanism. The global layout consists of three horizontal bands stacked vertically: 'Contextual Memory' at the top (light yellow background), 'Core' in the middle (light blue background), and 'Persistent Memory' at the bottom (light pink background). On the far right, a vertical column labeled 'Test Time' contains three stacked boxes indicating learning phases: 'Learning' (yellow), 'In-Context Learning' (gray), and 'Fixed' (pink with a snowflake icon), corresponding to the three memory layers respectively.\n\nIn the 'Core' band, a sequence of dark gray rectangular blocks labeled 'Sequence' flows from left to right. This sequence is processed through a white block segment, which represents a transformation or processing step, followed by another dark gray block segment. Dashed red arrows extend upward from the white segment to a 3D grid structure labeled 'Neural Memory' in the 'Contextual Memory' band. This grid is composed of small cubes with varying shades of brown and beige, suggesting stored data or memory states. A solid red arrow connects the 'Neural Memory' to a gray rounded rectangle labeled 'Attention', which then outputs to the right, indicating the flow of information into the next stage of processing.\n\nIn the 'Persistent Memory' band, a row of reddish-brown rectangular blocks is shown beneath the white segment of the sequence. These blocks are connected via dashed red lines to the white segment, indicating that they provide learnable, data-independent weights that influence the processing of the sequence. The text 'Learnable Data-Independent Weights' is placed next to these blocks, clarifying their role.\n\nThe connections and arrows are color-coded: solid red arrows indicate direct data flow (e.g., from Neural Memory to Attention), while dashed red arrows represent parameter or weight influences (e.g., from Persistent Memory to the sequence processing block). The overall workflow suggests that during test time, the model leverages both contextual memory (learned during training) and persistent memory (fixed or learned independently of data) to enhance the attention mechanism's performance. The architecture emphasizes memory compression and efficient context handling, aligning with the caption’s description of the memory layer’s role in compressing past and current context before attention."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,99 @@
+{
+  "id": "sciforma-503206",
+  "record_sha256": "0b4521338483d91a5fcf43da3175c682e4175c6b96b36c6f20534f70af29501b",
+  "asset_sha256": "4ba76d1fdaa6863ffe05300d58f96267765b93c82eb3d878387ebcd1df523964",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503206",
+    "title": {
+      "zh": "A Decade of Deep Learning: A Survey on The Magnificent Seven · 方法图",
+      "en": "A Decade of Deep Learning: A Survey on The Magnificent Seven"
+    },
+    "paper": {
+      "id": "arxiv-2412-16188",
+      "title": "A Decade of Deep Learning: A Survey on The Magnificent Seven",
+      "authors": [
+        "Dilshod Azizov",
+        "Muhammad Arslan Manzoor",
+        "Velibor Bojkovic",
+        "Yingxu Wang",
+        "Zixiao Wang",
+        "Zangir Iklassov",
+        "Kailong Zhao",
+        "Liang Li",
+        "Siwei Liu",
+        "Yu Zhong",
+        "Wei Liu",
+        "Shangsong Liang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16188",
+      "arxiv_url": "https://arxiv.org/abs/2412.16188",
+      "arxiv_id": "2412.16188",
+      "arxiv_first_submitted_at": "2024-12-13T17:55:39Z",
+      "arxiv_updated_at": "2024-12-13T17:55:39Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16188v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503206/image/image.jpg?Expires=1790855361&Signature=FKsYhXNPpx3E3wIc1W1aMC9AFShNhmQd0dQRE7HDVB6UhBh9VzscXrWxlryIF2UDfxn8RVe~jtFm9Vd~otX2v5nwOME4TQ-cjkLEWQCIIqTJXWimENo6x5C6hKsnj--l3--TIdXhJcDVS4rOrIz-kmBES5gbFQitXj20hKWm8bZEccWRK2MlQ9qJKdW7X3MdBDYIg5ju258qzAAkjItjnj-JDiHRp3N8nq8lRXrrmCSMAw-mS7l0Q-h4gAmqrqOXvjaoK1Fe23VTZOilVppdgyXkbujj7Yb0XYTv1Dm9qlYwsBuDScj8THnq5fyqIomMGBcnuKsBjvs648~kJAw3LA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503206,
+      "description_sha256": "f712ae53005265f0d63b64b8aae374c34398a8e24fbd6ec5a66dbd12f4b83784",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6ebe44b2e692f2d4b578f5194d280515b826393708d77bc832fc0529412ba04e",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the core architecture of the CLIP (Contrastive Language–Image Pretraining) model, which processes image and text data independently through dedicated encoders to produce aligned embeddings in a shared latent space. The global layout is divided into two parallel horizontal workflows: one for image processing at the top and one for text processing at the bottom, both converging toward a joint comparison stage represented by a similarity matrix.\n\nIn the upper branch, an 'Image Dataset' is depicted as a light green rectangle with a dark green border. This feeds into an 'Image Encoder', shown as a vertically oriented rounded rectangle with the same color scheme. The encoder outputs a sequence of N image embeddings, labeled T1, T2, ..., TN, arranged horizontally in individual light green boxes with green borders. These represent the encoded image features.\n\nIn the lower branch, a 'Text Dataset' is shown as a light blue rectangle with a dark blue border. It connects to a 'Text Encoder', a vertically oriented rounded rectangle in matching blue tones. The text encoder produces N text embeddings, labeled I1, I2, ..., IN, displayed vertically in stacked light blue boxes with blue borders. These represent the encoded text features.\n\nThe final stage involves computing pairwise similarities between all image and text embeddings. This is visualized as a grid or matrix on the right side of the diagram. The matrix has rows corresponding to each text embedding (I1, I2, ..., IN) and columns corresponding to each image embedding (T1, T2, ..., TN). Each cell contains the product notation (e.g., I1*T1, I1*T2, ..., IN*TN), indicating the computed similarity score between a specific image and text pair. The matrix includes ellipses to denote omitted intermediate entries, emphasizing the full cross-modal comparison structure.\n\nAll connections are represented by solid black arrows, indicating the direction of data flow from datasets to encoders and then to the similarity computation matrix. The figure uses consistent color coding—green for image-related components and blue for text-related components—to visually distinguish the two modalities throughout the pipeline. The overall design emphasizes the dual-encoder architecture and the contrastive learning mechanism where image-text pairs are aligned via a similarity matrix for downstream tasks such as classification or retrieval."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

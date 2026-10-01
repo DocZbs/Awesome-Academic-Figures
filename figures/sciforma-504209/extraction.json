@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-504209",
+  "record_sha256": "a7cbb083c53fe8fc88ef64dc38303896256354ff17b6b3a188f8f0e5d47a0a99",
+  "asset_sha256": "67093bdb1cd38d7936344ac6c11fc0673595326e12a56134f40395df999b373c",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504209",
+    "title": {
+      "zh": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection · 方法图",
+      "en": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection"
+    },
+    "paper": {
+      "id": "arxiv-2412-17944",
+      "title": "Surveillance Capitalism Revealed: Tracing The Hidden World Of Web Data Collection",
+      "authors": [
+        "Antony Seabra de Medeiros",
+        "Luiz Afonso Glatzl Junior",
+        "Sergio Lifschitz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17944",
+      "arxiv_url": "https://arxiv.org/abs/2412.17944",
+      "arxiv_id": "2412.17944",
+      "arxiv_first_submitted_at": "2024-12-23T19:55:20Z",
+      "arxiv_updated_at": "2024-12-23T19:55:20Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17944v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504209/image/image.jpg?Expires=1790855427&Signature=c0ES80-tpZZE5I2NqH9vXoF58W6-Kv5LBPMmOwWP18EzYcR0iCXoEC53xFQfuIZa7H-gZWk~v4gclidbDI2SR45pfv6seEiZRVnBFT4jddbUz8i~NISQYsFYlJYczHaJ7SgVclKpBH-xtJEs2-f8eFf7ALS1XQ1KZ~qKfI06A~XHT77urGG8kz3pyyj1qQjoEY4O0lfEvnYug6y5Ap3HTIjdcORIQJ77O2vPNzf6JHCX1eC1clnNuFN5~nKol02vvTG8zyGgRv39NreL8qsDtsjO3H9p5oi3n9f6qG4OElNR4y~LaeNJw20T2jjqgICJuvRxDJUkOmmBpr9woKCmBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504209,
+      "description_sha256": "0d5f469fe93acf40ae0dddbe0f3988774380a328613bac13c2f719f3c2d131fc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4060c684c12c50fd8912196811972ace72ca0c7028fec1dcf8f54428955d20c0",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an agents-based architecture designed for processing user queries related to contracts, integrating retrieval-augmented generation (RAG), SQL querying, and large language model (LLM) reasoning, with optional chart generation. The global layout is a directed workflow starting from the left with the User and progressing rightward through decision points and processing modules before returning responses to the User. The structure is modular, with distinct agents performing specialized tasks, connected via labeled arrows indicating data flow and control logic.\n\nVisual modules include rectangular process blocks with rounded corners for agents (e.g., 'Router Agent', 'RAG Agent', 'SQL Agent', 'Prompt generation', 'LLM Answer generation', 'Graph Agent'), depicted in gray with white text. Decision points are represented by diamond-shaped nodes labeled 'Router Agent'. Data storage components are shown as cylindrical shapes: 'Contracts vectorstore' and 'Contracts database', both in light gray. The User is represented by a rectangular icon containing a stylized human figure. All modules have clear labels inside them, and connecting arrows are annotated with descriptive text such as 'Send question', 'Retrieve similar chunks', 'Execute SQL query', 'Retrieved data', 'Send LLM', 'Generate chart', 'Send answer', and 'Send chart'.\n\nThe workflow begins when the User sends a question to the first Router Agent. This agent routes the query to either the RAG Agent or the SQL Agent based on context. The RAG Agent retrieves similar document chunks from the Contracts vectorstore, while the SQL Agent executes an SQL query against the Contracts database. Both pathways converge at the Prompt generation module, which receives 'Retrieved data' from either source and constructs a prompt to send to the LLM Answer generation module. The LLM Answer generation module processes this prompt and generates an answer, which is sent to a second Router Agent. This second Router Agent decides whether to route the answer directly back to the User or to the Graph Agent for chart generation. If routed to the Graph Agent, it generates a chart and sends it back to the User. Otherwise, the answer is sent directly to the User. The entire system operates as a closed-loop interaction between the User and the agent network, enabling dynamic response generation with optional visual output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

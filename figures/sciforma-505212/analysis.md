@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+CAD-GPT: Synthesising CAD Construction Sequence with Spatial Reasoning-Enhanced Multimodal LLMs — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19663
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the CAD-GPT framework, divided into two main sections: the overall algorithmic pipeline on the left and a detailed breakdown of the 3D Modeling Spatial Localization Mechanism on the right. The left section is enclosed in a dashed rectangular boundary labeled 'The Framework of our Method'. At the top, two input options are shown: one involves generating a CAD model corresponding to a provided image, represented by a T-joint pipe icon, while the other directly inputs a pre-defined CAD model of a T-joint pipe with three perpendicular cylindrical connectors. Both inputs feed into the pipeline.
+
+From the image input, data flows into an 'Image Encoder' module, depicted as a teal trapezoid with a snowflake icon indicating frozen weights. This is followed by a 'Linear Layer Projector', shown as a gray rectangle with a plus sign, also marked as having frozen weights. The output from this projector feeds into a large light-blue rounded rectangle labeled 'LLM', which has a flame icon denoting trainable weights. Parallel to this, the CAD model input is processed through a 'Vocabulary of LLM' module, a gold-colored rectangle containing two sub-boxes: 'Added Location Tokens' (light beige) and 'Origin Tokens' (brown). This vocabulary connects to a 'Tokenizer' module, an orange rounded rectangle, which then feeds into the same LLM. A red arrow from the LLM points to a JSON file icon, indicating the output format, which is then rendered into a 3D CAD model using OpenCascade, shown as a 3D T-joint pipe with a red upward arrow.
+
+At the bottom of the left section, two legend boxes clarify weight status: 'Frozen weights' with a snowflake and 'Trainable weights' with a flame.
+
+The right section, titled '3D Modeling Spatial Localization Mechanism', details how spatial information is encoded. It is structured vertically into three parts. The top part, '3D Sketch Plane Orientation Tokens', shows a 3D sphere with axes θ, φ, and γ, illustrating orientation flattening from 3D angles to 1D tokens (e.g., (0,180,0) → (270,180,0) → (270,315,175)), resulting in tokens like <A4>, <A58>, <A285> mapped to 'Learnable Embeddings 1'.
+
+The middle part, '3D Coordinate Location Tokens', displays a 3D grid with X, Y, Z axes, demonstrating coordinate flattening from 3D space (e.g., (29,17,0) → (14,28,1) → (19,26,2)) into 1D tokens such as <P1061>, <P1828>, <P3302>, linked to 'Learnable Embeddings 2'.
+
+The bottom part, '2D Sketch Tokens', features a 2D sketch plane with X and Y axes. It shows two sets of tokens: '2D Sketch Tokens X' (<S0X> to <S127X>) and '2D Sketch Tokens Y' (<S0Y> to <S127Y>), each connected to separate 'Learnable Embeddings 3' and 'Learnable Embeddings 4'. Dashed lines connect the 'Vocabulary of LLM' to the right-side mechanism, indicating that these embeddings are part of the LLM's learned vocabulary. The entire diagram uses arrows to indicate data flow, with solid black arrows for primary paths and dashed gray lines for conceptual or auxiliary connections.

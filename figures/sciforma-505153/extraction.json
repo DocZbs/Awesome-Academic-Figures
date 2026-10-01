@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-505153",
+  "record_sha256": "053255c0008ae0350d4751844b4ba916b8fcc9819ce1d2565d916598e752d05d",
+  "asset_sha256": "431992da2b88bd7c8580f771453fcbfa2797761c88b1e5a668209d1d2d6fddbf",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505153",
+    "title": {
+      "zh": "Is Your Text-to-Image Model Robust to Caption Noise? · 方法图",
+      "en": "Is Your Text-to-Image Model Robust to Caption Noise?"
+    },
+    "paper": {
+      "id": "arxiv-2412-19531",
+      "title": "Is Your Text-to-Image Model Robust to Caption Noise?",
+      "authors": [
+        "Weichen Yu",
+        "Ziyan Yang",
+        "Shanchuan Lin",
+        "Qi Zhao",
+        "Jianyi Wang",
+        "Liangke Gui",
+        "Matt Fredrikson",
+        "Lu Jiang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19531",
+      "arxiv_url": "https://arxiv.org/abs/2412.19531",
+      "arxiv_id": "2412.19531",
+      "arxiv_first_submitted_at": "2024-12-27T08:53:37Z",
+      "arxiv_updated_at": "2024-12-27T08:53:37Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19531v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505153/image/image.jpg?Expires=1790855453&Signature=TLlsBKkjCcat5hL~1zUYq~feELVZwBOap6lwyYleOFI3DnoleD7nA~kwPn244pVeUuxP8rcQlQgs1XMpx0NcRpCV8wHYAhlasgfjjVWqK6Lzo~VyQaUH7dm1zOwcvzT992R-NDdcmCvUbsFLvEWgzZt5P9v3QGpZ8ox1qimHHZlR9HqCHZMk1jmzdcGZvus0FMr~nzxrel4-etgrKXZYtMQg8tPpNLkOcs7p7FpcdPlrbI0t9Lsh7qnke-1LtBvvzhi1Wi7j28tvHmSlAnjLd-lqlgk6XuBAd0O0gVjD9t-D4JUL7YQbzMSSO5xQCS3~l0aAZo2LYRmJptosnnLWNA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505153,
+      "description_sha256": "e619c067cb9470165f4b12e3e8e0063adeba31ebea19a352a3fe66218d550a34",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6673c4256058b209d0768e4df3b2907dc37f5265541c50918729711a2c009b63",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a method designed to mitigate caption noise during text-to-image (T2I) generation by leveraging a pre-trained Vision-Language Model (VLM). The layout is divided into two parallel processing streams, separated by a dashed horizontal line, representing two distinct inputs: one from an image-caption pair and another from a pure text prompt. Both streams converge to influence the T2I model’s output.\n\nIn the top stream, the input consists of an image (depicted as a small plant held between fingers) paired with its caption: 'a small plant with a single green leaf'. This input is fed into a gray trapezoidal module labeled 'VLM', marked with a blue snowflake icon, symbolizing a pre-trained vision-language model. The VLM processes the image-caption pair and outputs a bar chart where each bar corresponds to a token in the caption ('a small', 'plant', 'with a', 'single', 'green', 'leaf'). The height of each bar represents the confidence score assigned by the VLM to that token, with the word 'single' highlighted in red, indicating it may have lower confidence or be flagged as potentially hallucinated.\n\nThis confidence score vector is then used to reweight the tokens in the caption. A visual representation of this weighting is shown as a grid of colored squares (green shades), where the column corresponding to 'single' is outlined in red and appears lighter, indicating reduced weight. This weighted token sequence is then combined with the original text prompt via a blue circular 'X' symbol, representing element-wise multiplication or reweighting.\n\nIn the bottom stream, the same text prompt 'a small plant with a single green leaf' is directly fed into a light blue hourglass-shaped module labeled 'Text-To-Image', marked with a red flame icon. This module generates an image based on the prompt. However, before generating the final output, it receives a cross-attention signal from the weighted token representation above. This is indicated by a dashed arrow labeled 'cross attention' pointing from the weighted token grid to the Text-To-Image module, suggesting that the model attends to the reweighted tokens during generation.\n\nThe final output is an image of the small plant, identical to the input image, demonstrating that the method successfully guides the T2I model to generate accurate content by reducing the impact of noisy or hallucinated tokens in the caption. The entire process is summarized at the top right with the phrase 'a small plant with a single green leaf', reinforcing the target output. The figure concludes with a downward arrow trio leading to the label 'Output:', emphasizing the result of the pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

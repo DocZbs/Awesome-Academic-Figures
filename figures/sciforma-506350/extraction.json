@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506350",
+  "record_sha256": "42c3dd54ba68f7c4b55711e8dec32797619621db937c68c12471a9e00cae484b",
+  "asset_sha256": "840d660b967873b2daad68bb0d0849f6388b5477584446224af796e642aa4f30",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506350",
+    "title": {
+      "zh": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation · 方法图",
+      "en": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01123",
+      "title": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation",
+      "authors": [
+        "Junya Ono",
+        "Hiromi Wakaki"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01123",
+      "arxiv_url": "https://arxiv.org/abs/2501.01123",
+      "arxiv_id": "2501.01123",
+      "arxiv_first_submitted_at": "2025-01-02T07:44:48Z",
+      "arxiv_updated_at": "2025-01-02T07:44:48Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01123v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506350/image/image.jpg?Expires=1790855575&Signature=LLWFKHqY6WvV94MFUMvke5ORzCuJ3AlG4N0UyymOZDvHZljFj0tYPUlBeJk4aqtmCBecN4cG4IOzFC90d4pkaTohpEiI6pUEIP7SDxv7UTRBaitI3YuHSMxu6S5ZN8-~7pG4752W-iKVdIT4TYFad0UwLlXdlfIb85irgeMAUPc975fVWcQc9NyK8p1gvLeTHG7mJh5ro38HrWhrUtgVrn0BcuyRArXK-H-BnwSiIWqGy9wFGebMmFd5D2XV96JOFwN06aIEozZpBmXDSgZxcPr4lf~r-X8fssRJC6N8KAnTOxyq2wtX6yvkftfD9bHVTtyxfBJKZzGy~WzQLYiBcA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506350,
+      "description_sha256": "cdce7def6479dd1a3b877b49726fcf8b8032fd7717e1880e589aabc8cfb769d2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fa482d8dd5735221968cb73a05050e3e5639cfb8314fc8275aa2e59dea74fa74",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Turn-based Multi-Head Self-Attention (TBM) model, designed for emotion recognition in conversational contexts. The global layout is vertically structured, progressing from input at the bottom to output at the top, with a clear flow of data through multiple processing stages. At the base, the input sequence is constructed by concatenating utterances from past, current, and future turns using special tokens, labeled as 'Concat Utterance with Special Token (CUST)'. This sequence includes BOS (beginning-of-sequence), TURN, SEP (separator), and EOS (end-of-sequence) tokens, with the current turn explicitly highlighted in light blue. The input is then processed by a pretrained model, such as RoBERTa, which generates contextualized token embeddings denoted as h_BOS, h_1^c, ..., h_n^c, h_EOS for each turn. These embeddings are grouped by turn, and for each turn c, a mean pooling operation computes a turn-level representation, denoted as H̃^c, with the current turn's representation highlighted in light blue. These turn representations are fed into a multi-layered Transformer block, indicated as 'N layers', where each layer consists of a Multi-Head Self-Attention (MHSA) module, shown in light green, followed by an Add & Norm module, shown in white. The MHSA module receives all turn representations simultaneously and computes attention weights across them, enabling the model to capture contextual relationships between turns. The output of the final layer is the 'Current turn vector', highlighted in light blue, which is passed through a Linear & Softmax layer to produce the final emotion label y^c. The connections are represented by solid black arrows indicating the forward pass: from the input sequence to the pretrained model, from token embeddings to turn representations via mean pooling, from turn representations to the MHSA layers, and finally from the last layer’s output to the classification head. The diagram emphasizes the centrality of the current turn, marked in light blue throughout, and the use of special tokens to structure the input sequence. The caption notes that TBM leverages MHSA over turn-based vectors to enhance context modeling based on Turn-Based Encoding (TBE)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

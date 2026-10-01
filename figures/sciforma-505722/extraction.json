@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505722",
+  "record_sha256": "f2fa48cbafdae79beb53e226ef86633f8a21ca0f4d883620fc062667fd5d199c",
+  "asset_sha256": "b3ff37b442931de52709f1305f7405f877393d14ef99e7e2147bb2c6e955bd2a",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505722",
+    "title": {
+      "zh": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks · 方法图",
+      "en": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-20573",
+      "title": "The intrinsic motivation of reinforcement and imitation learning for sequential tasks",
+      "authors": [
+        "Sao Mai Nguyen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20573",
+      "arxiv_url": "https://arxiv.org/abs/2412.20573",
+      "arxiv_id": "2412.20573",
+      "arxiv_first_submitted_at": "2024-12-29T20:44:59Z",
+      "arxiv_updated_at": "2024-12-29T20:44:59Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20573v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505722/image/image.jpg?Expires=1790855558&Signature=eLQ0hojCedeTyz~asXLqrOTuMZKXFKc~HlG5esNpHAHvzj0pz1jFgMmBJlXaGP-0nv5kpib7v~fTFDKqtAlMAJKNSejHcVcnlBLrI9qTOtBUqolRCtzK03suakIgmYQNwjLc3kBTP0Owo5SAFwnchxs0TJlW11Pxx2P0mEU9eqXVVBXTL1x9lwfN-of014susI4eu1Ji3hm0pB~V4NO17MWTXOHujf6Z2WBu8Ll1EIlbi9qf81AUUhMoDNajXfKaJZSD0vYacpTqJ00uNdbZSP68ACbFIT23oEA0-Ep9vWDVzSFRIG1fxJm4y4l-pgPQ5qAdxAdypXSIMAZx~nN7xA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505722,
+      "description_sha256": "4009304fd703cf920a718288486a8665c5af9eca498ed1a01aedced25a905673",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5c8630750fed4f6d346517786c08e4f1376ae3dd8b643a8d6e2000383382345c",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of STAR, a hierarchical reinforcement learning (HRL) framework that integrates a feudal HRL algorithm with an online abstraction refinement mechanism. The global layout is divided into two main horizontal sections: the upper section, enclosed by a dashed red rectangle, represents the feudal HRL agent composed of three components—Commander, Tutor, and Controller—operating at different temporal scales. Below this, two separate boxes labeled 'Refinement' (in blue) and 'Environment' (in black) represent auxiliary components interacting with the HRL system.\n\nIn the upper section, the Commander is depicted as a green rectangle with a red border, labeled 'Commander' and annotated with its policy function π_Com : S × S → G. It receives three inputs: the initial state s₀, the target goal g*, and an initial abstraction N₀. The Commander generates a sequence of abstract goals G_{t+k} ~ π_Com(s_t, g*), which are passed to the Tutor. The Tutor is shown as an orange rectangle with a red border, labeled 'Tutor' and annotated with π_Tut : S × G → S. It receives the abstract goal and the current state s_{t+l} (via a dashed line) and produces a concrete goal g_{t+l} ∈ S, which is then sent to the Controller. The Controller is a red-bordered rectangle labeled 'Controller' with policy π_Cont : S × S → A. It takes the current state s_{t+1} (from the Environment via a solid line) and the concrete goal g_{t+l} to output an action a ∈ A.\n\nThe temporal hierarchy is indicated by the line styles: solid lines represent the fastest timescale (Controller, k=1), dashed lines the intermediate (Tutor, l>1), and dotted lines the slowest (Commander, k>l). Feedback from the Environment flows back to the agents through these lines: s_{t+1} to Controller (solid), s_{t+l} to Tutor (dashed), and s_{t+k} to Commander (dotted).\n\nBelow the HRL system, the 'Refinement' module (blue-bordered box) receives inputs ε, D (past episodes and abstract goals visited in the last episode) and outputs a refined abstraction N'. This N' is fed back to the Commander, closing the refinement loop. The 'Environment' box receives the action a from the Controller and returns the next state s_{t+1}, completing the interaction cycle. The entire system operates in a feedback loop, where the Refinement component continuously updates the abstraction based on experience, improving the Commander’s ability to generate meaningful abstract goals over time."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

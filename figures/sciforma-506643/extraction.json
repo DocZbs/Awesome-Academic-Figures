@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-506643",
+  "record_sha256": "d0566cd44b6ed0fe078a0ff14dcaf00d4b668984886c49937b7cbc561f4455d4",
+  "asset_sha256": "d453b39d1136c5e804ed04aefbd23a418e24753168801a5baf091623b1da5515",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506643",
+    "title": {
+      "zh": "Explainable Neural Networks with Guarantees: A Sparse Estimation Approach · 方法图",
+      "en": "Explainable Neural Networks with Guarantees: A Sparse Estimation Approach"
+    },
+    "paper": {
+      "id": "arxiv-2501-02010",
+      "title": "Explainable Neural Networks with Guarantees: A Sparse Estimation Approach",
+      "authors": [
+        "Antoine Ledent",
+        "Peng Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02010",
+      "arxiv_url": "https://arxiv.org/abs/2501.02010",
+      "arxiv_id": "2501.02010",
+      "arxiv_first_submitted_at": "2025-01-02T12:10:17Z",
+      "arxiv_updated_at": "2025-02-18T22:45:28Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02010v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506643/image/image.jpg?Expires=1790855633&Signature=bK~g02eCr0QcntVGaIpppU3FRaPf6kcr~oKX2qjgM6y7omR1FGOQavhyc1ZO-S7WGlIu61jssoTWRGd5xnrqgIccozuQuCqUzJD0R3HfHAff7M7cvHohCb6-kGS2W88~1Bd6h67BgPqPQhIQkc1EkRC2Nw3oHZaGOJCh9FcKn5Xf8xgFW2G4RbgD9nvhIX8B8cCYUSlYfr88jd2Vy4pKzR~mAbM1WG0bIF78KMA8AgDnQqhdEZ5GZ2ogsvInfB7o3nsdxiaPXXbXHA~3kY5aLXEpRKq0wmo7ilxvfevw4zm1B1qpAqMiMsmaESdlMoxVYH2X4XO7X2sJhZHLyOz-lQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506643,
+      "description_sha256": "d4168c8c943641016b655a8a71dd00426ced7dcd46aa6053a361738833d66665",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5c8e01a8346d5b424c82770b6581de666a2fa4fe1bfe412ef801c5f3f7006261",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic overview of a neural network architecture designed for adaptive feature selection, specifically illustrated for the case where two features are selected (K=2). The global layout is left-to-right, depicting a data flow from input features through parallel processing pathways to a final output. On the far left, a vertical column of circular nodes labeled x₁, x₂, x₃, ..., x_d represents the input features. These inputs are connected via dashed blue lines to two selected feature nodes, x₁ and x₃, indicating a soft routing mechanism determined by a softmax operation over the weights of the first hidden layer. This routing allows the network to dynamically assign importance to different features, with the solid lines representing the chosen pathways and dashed lines indicating suppressed or less active connections.\n\nFrom each selected feature node (x₁ and x₃), the signal flows into one of two parallel neural network pathways, each enclosed in a green rounded rectangle. Each pathway consists of a multi-layered feedforward network with multiple hidden layers, represented by interconnected circular nodes. The first hidden layer of each pathway receives input from its corresponding selected feature, and subsequent layers are fully connected, with connections shown as solid blue lines. The outputs of these networks are denoted as f₁(x₁) and f₂(x₃), respectively, indicating learned non-linear mappings from the input features.\n\nThe outputs f₁(x₁) and f₂(x₃) are then fed into a summation node Σ, along with an additional scalar bias term β, which is represented as a standalone circular node. The summation node combines these three inputs linearly. The result of this summation is passed through a final activation function σ, depicted as a circular node labeled σ, which produces the final prediction output. The entire structure emphasizes modularity and adaptability: the two pathways operate independently but are combined at the end, enabling the model to learn distinct representations for different features and fuse them effectively. The visual attributes include blue circular nodes for all variables and operations, solid blue lines for active connections, dashed blue lines for inactive or suppressed routes, and green rounded rectangles to group the two parallel neural network modules. The figure’s design clearly conveys the concept of soft routing and adaptive feature selection through the combination of softmax-weighted selection and parallel processing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

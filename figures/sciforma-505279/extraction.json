@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505279",
+  "record_sha256": "113b3f017070816342b4a489b671f1592bfa62a8a793aea689e0593ba122ff95",
+  "asset_sha256": "d22029122ef40795c6dc3a48a58f2fcd1d9db8ed9bcf4f388328ac2a1c7395e8",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505279",
+    "title": {
+      "zh": "Enhancing Drug-Target Interaction Prediction through Transfer Learning from Activity Cliff Prediction Tasks · 方法图",
+      "en": "Enhancing Drug-Target Interaction Prediction through Transfer Learning from Activity Cliff Prediction Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-19815",
+      "title": "Enhancing Drug-Target Interaction Prediction through Transfer Learning from Activity Cliff Prediction Tasks",
+      "authors": [
+        "Regina Ibragimova",
+        "Dimitrios Iliadis",
+        "Willem Waegeman"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19815",
+      "arxiv_url": "https://arxiv.org/abs/2412.19815",
+      "arxiv_id": "2412.19815",
+      "arxiv_first_submitted_at": "2024-12-11T18:56:11Z",
+      "arxiv_updated_at": "2024-12-11T18:56:11Z",
+      "arxiv_subjects": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19815v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505279/image/image.jpg?Expires=1790855453&Signature=bMkOz0HbaSWf~sW~uLDFxhn97g~vhr86cXCEvLsxBxJRmEv3DOcnDid1ovg5SlgmYmBIDOXOds08CsPUBHnKUnJ1-3ebf0abiAhs74ZAs2nzHfuvLQjSECsr-akATdqHDymyV7BjLx8OGRhpEFzUpRN6pwcTH5apjvL-fzK5hfpcAR~Gy6Hw8sgYonz67ZFBtayZZOSWVZ4pxalWZ6oOgaailuXFK1gUp0N9GygF3V7trKZs2PVd21Lc7JnRjw7b66HGD-F0lOz4~uTirYoxrLd89SZ~GTXNBZS2ZUib~sqIICLV7ilfQ7aV-chk7H6fIbJMTwBbn0zzvtyk4Igz-Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505279,
+      "description_sha256": "d76238f3e727351c60182af2db13f9654e8dc74c9b60491f267363c628844d92",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "01038af37c0310e8732ba0752dc4541bca70a60e513eee4d78fe143bcf9ef79d",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.BM",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a dual-task deep learning architecture for compound-protein interaction analysis, specifically designed for two distinct objectives: Activity Classification (AC) at the top and Drug-Target Interaction (DTI) affinity prediction at the bottom. The global layout is divided into two parallel workflows, each originating from a shared 'Compound-Protein Interaction Dataset' represented by a gray cylinder. This dataset feeds into two separate matrices: the upper matrix labeled 'AC' with orange and green cells indicating binary activity classification outcomes across compounds and proteins, and the lower matrix labeled 'Affinities' with grayscale cells representing continuous binding strength values.\n\nIn the AC task (top path), two chemical structures (yellow hexagonal rings) are input into a red trapezoidal 'Compound Encoder', while a blue wavy line symbolizing a protein sequence is processed by a blue trapezoidal 'Protein Encoder'. The encoders output fixed-length vector embeddings—yellow for compounds and purple for proteins—which are then concatenated into a single feature vector. This combined vector is passed through a stack of four light yellow rectangular blocks, representing a multi-layer neural network, which outputs a binary decision: a circular node split into orange (0) and green (1) halves, labeled 'AC?', indicating whether the compound-protein pair is classified as active or inactive.\n\nIn the DTI task (bottom path), a single chemical structure (orange hexagons) is fed into a pink trapezoidal 'Compound Encoder', and a blue wavy protein sequence is processed by a blue trapezoidal 'Protein Encoder'. Their respective embeddings (orange and blue vectors) are concatenated and passed through an identical stack of four light yellow blocks, resulting in a continuous affinity score shown as a gray circle containing '0.6'.\n\nA key architectural feature is the 'Transfer of pre-trained architecture', indicated by dashed lines with black arrowheads connecting the red Compound Encoder in the AC task to the pink Compound Encoder in the DTI task. This signifies that the DTI model leverages weights pre-trained on the AC task, enabling transfer learning to enhance performance on the downstream affinity prediction task, especially for novel interactions. The visual modules are consistently shaped as trapezoids for encoders and rectangles for neural layers, with color-coding (red/pink for compounds, blue for proteins) to distinguish data streams. All connections are directed via solid arrows, except the dashed transfer lines, ensuring clear data flow and model hierarchy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505626",
+  "record_sha256": "7f6883525bb2aab71ebdf7219a0079926513620b9893fd95e46b99a47cad172f",
+  "asset_sha256": "c262b3f0e4ce5efbd408d9ba8675d2150de94cca835e4d2e181cb079d7621efb",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505626",
+    "title": {
+      "zh": "PTQ4VM: Post-Training Quantization for Visual Mamba · 方法图",
+      "en": "PTQ4VM: Post-Training Quantization for Visual Mamba"
+    },
+    "paper": {
+      "id": "arxiv-2412-20386",
+      "title": "PTQ4VM: Post-Training Quantization for Visual Mamba",
+      "authors": [
+        "Younghyun Cho",
+        "Changhun Lee",
+        "Seonggon Kim",
+        "Eunhyeok Park"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20386",
+      "arxiv_url": "https://arxiv.org/abs/2412.20386",
+      "arxiv_id": "2412.20386",
+      "arxiv_first_submitted_at": "2024-12-29T07:21:33Z",
+      "arxiv_updated_at": "2025-04-07T13:30:39Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20386v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505626/image/image.jpg?Expires=1790855552&Signature=NLGX9YIId6EmJXO7OCFViu76Z3XSfrbpntjjhTuvgE7T98pujcF9mQfrATKc-QuNhBeeTCRvI2keI1WrlgumxKe~zekJdwrk8CVDAg~4X385zZZdV~eKSnhf0Gz8y3IBaL1MyPuJ54fh3EGvcmSG~8RKZtfVQRjcb-VQTzTqJUbi2Z~hbV~XrMlO0xe2c6ILG3ciFVs85NgVm5NYf8j5QzNcCt3rL-D-t8CdrWOCcGU5-eGiDh-A9WZV1BJgPTQA29FzwLQaQDl79LfIucbLxOb1l8EzsqQ4CU6Zi-bLUO9kdiHVh1W1sOWK5HICJU-y1WX73pOxdo3qfThq09cNxQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505626,
+      "description_sha256": "f8adb91cc1b57f845034b2a87626bad5b746e9b08656d2a2a8f7ede0b5af52d8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "73cde14acc902037afcd65eb829d52fa9945bf2ea46a36167aaedaf769b5e9fd",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative analysis of four different quantization methods applied to a neural network layer, specifically focusing on the interaction between input activations (X), weight matrices (W), and quantization parameters. The global layout is a horizontal sequence of four panels labeled (a) through (d), each depicting a distinct quantization approach with associated accuracy metrics shown in parentheses at the bottom. Each panel contains two main rectangular blocks: a yellow block representing the input activation tensor X with dimensions L (sequence length) and Din (input dimension), and a blue block representing the weight matrix W with dimensions Din and Dout (output dimension). These blocks are connected by an implied matrix multiplication operation.\n\nIn panel (a), titled 'Vim-Ti FP16 accuracy (76.1%)', the input tensor X is shown with vertical and horizontal lines indicating token-wise variance, and arrows point to 'channel outliers' at the edges, suggesting variability across channels. The weight matrix W is solid blue, indicating full precision. This serves as a full-precision baseline.\n\nPanel (b), 'Baseline W6A6 PTQ (0.2%)', introduces quantization. A red dashed box encloses both X and W, labeled 'per-tensor static' for X and 'per-channel quant' for W. A small yellow square labeled Δx[1] represents the quantization error for X, and a blue bar above W labeled Δw[1xDout] indicates the weight quantization error. This method applies static per-tensor quantization to activations and per-channel quantization to weights.\n\nPanel (c), 'SmoothQuant (54.5%)', shows a smoothing step. A gray vector S is applied to the input X via a black downward arrow, and then multiplied with W (indicated by a star symbol) to produce a smoothed output. The resulting Dout dimension in W is highlighted with a blue band, and the output is labeled 'Smoothing'. This method uses per-tensor static quantization for activations, as noted in the caption.\n\nPanel (d), 'PTQ4VM (73.9%)', presents the proposed method. It includes a red dashed box around X labeled 'per-token static (PTS)', with a small yellow square Δx[1xL] indicating per-token quantization error. The weight matrix W has a blue band with a snowflake icon, suggesting a cooling or stabilization effect. Above the input, a gray vector S is shown with fire icons and a red arrow labeled '③ JLSS', indicating a joint layer-wise scaling strategy. Red dashed lines connect specific tokens in X to corresponding parts of W, emphasizing the per-token alignment. This method combines per-token static quantization for activations with a joint layer-wise scaling strategy for improved accuracy.\n\nAll panels share a consistent visual style: yellow for input tensors, blue for weights, black for dimensions and labels, and red for emphasis or new components. The accuracy values are displayed in green for high performance and red for low performance, providing immediate visual feedback on effectiveness."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

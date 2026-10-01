@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-503551",
+  "record_sha256": "78f5c9ec6cbb5a510bcb8dc76c713569c7077196ab2d13a171a263260b9d2789",
+  "asset_sha256": "acb10b73119a3412757b7d42a3c80d2a0b9654df4f55be10bf47a9ca4cfc86b4",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503551",
+    "title": {
+      "zh": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes · 方法图",
+      "en": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes"
+    },
+    "paper": {
+      "id": "arxiv-2412-16776",
+      "title": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes",
+      "authors": [
+        "Sanghyun Son",
+        "Matheus Gadelha",
+        "Yang Zhou",
+        "Matthew Fisher",
+        "Zexiang Xu",
+        "Yi-Ling Qiao",
+        "Ming C. Lin",
+        "Yi Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16776",
+      "arxiv_url": "https://arxiv.org/abs/2412.16776",
+      "arxiv_id": "2412.16776",
+      "arxiv_first_submitted_at": "2024-12-21T21:16:03Z",
+      "arxiv_updated_at": "2025-07-06T23:21:51Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16776v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503551/image/image.jpg?Expires=1790855374&Signature=HkaZaD8cn5HD4OJ~WdhbF2SOEWLKoZgf3FeHFCM1ZP4ISnUSiR2H27-6LjwvrD9lDFnp949HYTu4nnFXD~27RV931XcWeg0f35hELCced8ec3oxAFMgYkthMAIrcgNw5Jccq0bjUXvX0IxU30nP~0wu2JfU9QvjZ6AGc3vsq6knu5-R4UFniOfTtGE4HB4Rexz1coAGOcwEh2T-wCgD5k2XICOUsf-CJ8yJ6LZ2g4NGghNis0LuseDDq39gP80J36jFA0P-bhnEhALGh-1MMPiB74haoZeb4VutSFRkUeYkuLLkRcw0a7nAnH7pxARc401KaKda4OvRRfZaNi~ICUQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503551,
+      "description_sha256": "8a431ad2d80babb2712d5b9dce26acf028ef458918d4a5139b0bbc40b53afa36",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5ee13da9832f9bed2455e78021634a8c348d02be760fffd68c814847f4c57264",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of the Reinforce-Ball algorithm, which involves sampling points from a probability distribution and reconstructing shapes through face extraction, followed by loss computation for optimization. The global layout is left-to-right, depicting a sequential pipeline: point sampling → face extraction → loss calculation. On the far left, an input probability field Φ(P) feeds into a 'Point Sampling' module, producing B batches of point sets denoted as P^i. In this example, B=4, so four 2x2 grids are shown, each labeled 1 to 4 in pink. Each grid contains scattered points: black dots represent points with existence probability ψ=1, and blue dots represent points with ψ=0. These point sets are then passed to the 'Face Extraction' module, which outputs F^i — a set of reconstructed triangular faces for each batch. The extracted faces are shown as connected line segments forming triangles or partial triangles, with black points serving as vertices and blue points remaining unconnected. From these P^i and F^i, two types of losses are computed for each batch: L^i_card (cardinality loss) and L^i_recon (reconstruction loss). These losses are visualized as a vertical bar chart on the right, with each row corresponding to a batch (1 to 4). The values are: L^i_card = 0.21 (batch 1, orange), 0.22 (batch 2, purple), 0.30 (batch 3, yellow), 0.37 (batch 4, blue); and L^i_recon = 0.21 (batch 1), 0.22 (batch 2), 0.30 (batch 3), 0.37 (batch 4). The total reinforcement learning loss L^i_rl is derived from these components. The figure emphasizes that batch 1 performs best due to lower reconstruction error and fewer points (lower cardinality), thus having the lowest combined loss. The goal is to optimize Φ(P) to increase the sampling probability of such favorable cases (like batch 1) to minimize the expected loss E[L_rl]. All modules are represented as rectangular boxes with labels, arrows indicate data flow, and the color coding (black/blue points, colored bars) helps distinguish between point states and loss magnitudes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

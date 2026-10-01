@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+HunyuanProver: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20735
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a comparative workflow between best-first search (BFS) and Monte Carlo Tree Search (MCTS), highlighting the four distinct phases of MCTS: Selection, Expansion, Simulation, and Backpropagation. The global layout is structured horizontally into four main stages, each represented by a rounded rectangular box labeled accordingly. These boxes are connected sequentially from left to right by solid black arrows, indicating the flow of the algorithm. Additionally, a feedback loop connects the 'Backprop' stage back to the 'Selection' stage, forming a cyclic process typical of iterative tree search algorithms.
+
+Each stage is visually accompanied by a tree diagram below it, demonstrating the state of the search tree at that phase. In the 'Selection' stage, the tree shows a partial traversal with nodes highlighted in orange to indicate selected paths. Numerical values such as 0.7, 0.3, -0.3, 0.1, and 0.9 are annotated on edges or near nodes, representing critic-assigned scores used to guide the selection process. The orange highlights trace a path from root to leaf, emphasizing the decision-making based on these scores.
+
+In the 'Expansion' stage, the tree expands by adding new child nodes to the selected leaf node. One newly added node is highlighted in orange, indicating the point of expansion. The tree structure remains consistent with gray circular nodes and black connecting lines, except for the newly expanded node.
+
+The 'Simulation' stage shows a further extension of the tree, where a random or heuristic-based simulation is performed from the expanded node. A single path is traced downward to a terminal state, which is marked with an orange triangle containing a jagged line, symbolizing a terminal or end condition of the simulation.
+
+Finally, the 'Backprop' stage demonstrates the backward propagation of results. The tree shows the same structure as before, but now the orange highlights trace a path upward from the terminal node through the expanded node and back toward the root, indicating the update of node statistics (e.g., visit counts, values) along the path. This reflects the reinforcement learning aspect of MCTS, where outcomes are propagated back to inform future selections.
+
+The figure’s caption clarifies that BFS only involves Selection and Expansion in one iteration, whereas MCTS includes all four steps. The numerical annotations are explicitly stated to represent critic-assigned scores, which are crucial for guiding the selection phase. The visual distinction between gray and orange nodes effectively communicates active versus inactive or unvisited parts of the tree, while the consistent use of circles for nodes and arrows for transitions maintains clarity throughout the diagram.

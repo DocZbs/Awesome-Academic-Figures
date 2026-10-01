@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504568",
+  "record_sha256": "bb9feee636c780cdf10de32cbcad0edb5ebd95a1b9a69b1ad6d31bb24b34917a",
+  "asset_sha256": "5140410ccebc1d33a2572d9e0ccd98a1e2ae8f9e30838134f1e1600b397fc0f4",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504568",
+    "title": {
+      "zh": "3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement · 方法图",
+      "en": "3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement"
+    },
+    "paper": {
+      "id": "arxiv-2412-18565",
+      "title": "3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement",
+      "authors": [
+        "Yihang Luo",
+        "Shangchen Zhou",
+        "Yushi Lan",
+        "Xingang Pan",
+        "Chen Change Loy"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18565",
+      "arxiv_url": "https://arxiv.org/abs/2412.18565",
+      "arxiv_id": "2412.18565",
+      "arxiv_first_submitted_at": "2024-12-24T17:36:34Z",
+      "arxiv_updated_at": "2025-04-29T02:51:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18565v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504568/image/image.jpg?Expires=1790855433&Signature=JCucqE48gT5w7KKP4xcdqKQAGjDwEnNSo~UzoELUSK5fA1304HavzYwwBM~vXhP9MNC1USFVEwRTas2-PAMsCJedRcyc3kLCvEiBPLoUSnfwUtly7ggh2yUmxEDsI1yWeBH3OvsmXESJMtQxn91NM0V~ZMRfz0fw~wl6aXoN4ElANiTl0Uqn1QgxNeO5bzaf9L559rHJcOAoforZLUrr1CtWnCWjKT-q5ir0bHWFGoHFAMco93BDax040PfnADyIFSVG7aijojkEY5eDhWBCLSaqV5C6UqRjKb94ekoKNDbE5EZgQ2L14TuGNZeobA~EA46ozHEXK6CWStGwmO9oOw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504568,
+      "description_sha256": "e153ecad1f6bc4ed9144cd525405f16d7c5784a3402e5f0cbd007ddb6ff12931",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "99c08b8d0253ef6e73d718e342a4aa85d9226f1eb49dcf04274a33e2ee4a038b",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end multi-view image enhancement framework called ~\\nickname{}, which adapts a text-to-image diffusion model into a multi-view setting for 3D-aware image improvement. The global layout is horizontal, divided into three main stages: input generation/rendering, core enhancement pipeline, and output visualization. A dashed line separates the top pipeline from a bottom row of illustrative diagrams explaining key modules.\n\nOn the left, under 'MV Generation and Rendering', two input pathways are shown: one via a 'Multi-view Generation' module (labeled G), which takes image/text input to produce multiple views; the other via 'Rendering' (labeled R), which uses a 3D representation (e.g., NeRF or 3DGS) to render views. These inputs are combined into 'MV Inputs (#N)', represented as four RGB images of a Viking figurine, each with a distinct color border (green, blue, pink, yellow) and accompanied by Plücker coordinates for camera pose. A 'Noise level τ' parameter is fed into the system, controlling the amount of noise added to the RGB inputs via an 'Add Noise (RGB)' block.\n\nThe central processing stage begins with an 'Encoder' (orange trapezoid) that processes the noisy multi-view inputs, producing a feature map F_{1-N}. This feeds into a core module composed of three stacked 'MV DiT' blocks (light blue rectangles), each containing four submodules: 'Self Attn' (gray), 'Row Attn' (green), 'Epipolar Agg' (red), and 'Cross Attn' (blue). The top MV DiT is marked as a 'copy' and receives the noise level τ. The middle MV DiT receives a latent text embedding 'A Viking man' as input, enabling text-guided enhancement. The bottom MV DiT processes a latent state Z_{1-N}^{t-1}, which is iteratively updated through the diffusion process. The outputs of these blocks are concatenated and passed to a 'VAE Decoder' (orange trapezoid), which generates the final 'MV Outputs' — four high-quality, consistent views of the Viking figurine arranged in a 2x2 grid.\n\nConnections are shown as solid black arrows indicating data flow, with red dashed arrows denoting cross-block interactions (e.g., from the top MV DiT to the middle one). Dotted lines represent latent state propagation (Z_{1-N}^t → Z_{1-N}^{t-1}).\n\nThe bottom row provides visual explanations: on the left, 'Row Attention' (green box) shows a 3D volume with a horizontal slice Y=v, illustrating how attention operates across rows in multi-view space, followed by a sequence of grids showing self-attention within a row. On the right, 'Epipolar Aggregation' (pink box) depicts three views (left, center, right) with red epipolar lines connecting corresponding points, followed by a grid sequence showing how features from different views are aggregated (blue and red squares represent features from different views being combined into a single output).\n\nThe entire system is designed to enhance low-quality multi-view images while maintaining geometric and semantic consistency, and it supports user-controlled enhancement via text prompts and noise level adjustment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

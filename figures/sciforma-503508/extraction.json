@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503508",
+  "record_sha256": "bf7a83562bd038c8b1b0b723b15b52a8bc89258a47ce8baab407e201871de9c9",
+  "asset_sha256": "7eee3c9cece06970ac580459274e15bd5ced6546196322e3b63e6f31cf9dd631",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503508",
+    "title": {
+      "zh": "FAP-CD: Fairness-Driven Age-Friendly Community Planning via Conditional Diffusion Generation · 方法图",
+      "en": "FAP-CD: Fairness-Driven Age-Friendly Community Planning via Conditional Diffusion Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-16699",
+      "title": "FAP-CD: Fairness-Driven Age-Friendly Community Planning via Conditional Diffusion Generation",
+      "authors": [
+        "Jinlin Li",
+        "Xintong Li",
+        "Xiao Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16699",
+      "arxiv_url": "https://arxiv.org/abs/2412.16699",
+      "arxiv_id": "2412.16699",
+      "arxiv_first_submitted_at": "2024-12-21T16:57:09Z",
+      "arxiv_updated_at": "2024-12-21T16:57:09Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16699v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503508/image/image.jpg?Expires=1790855374&Signature=UBizpaygSER8IEhzr1IQorRNlb1Q46epjqVQXHcQ5EYjQsWJFfcw5BpKHp397DdezLGE5sO5WDEPwyf9g9L5w3pRX3KP777oTt4h~xU9Szm2vStIght7rYhTzKzyn7Zt16YNccCYXv2-N8gJrHnAaKEt6eje0xlwDgLaZ3~J-OXKemtsE-mWkRPqYzHFSFHdS31FT2HsBTkC99uX2ZbMoLWXriHpK7P7owMk9sjJKQAjTuovF1txtJ1Kag6e34LDcfPqDGKy7NpwhbEPYLJEj6bo~SX2hDiysKOeArAq90mYgB8f02B2FsvpYKdADgx6Zj9~aYHupcdMJsp0TDOYyg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503508,
+      "description_sha256": "eef2947b13a07ed8f9b50d1d1008b85fdf387218c885b52c92c598111741a0f2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c90f7b2a130070e581cd6081ec424c9a28cec9ead5b0f9a6e45ace6a3fb863a5",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a framework overview of the proposed FAP-CD model, structured as a dual sequential process operating over time steps from 0 to T, enclosed within a large rounded rectangular boundary. The layout is horizontally oriented, with two parallel sequences running top to bottom: an upper sequence representing variables x_t and a lower sequence representing variables e_t. Both sequences progress left to right, indicated by green solid arrows connecting consecutive time steps (e.g., x_{t-1} → x_t, e_{t-1} → e_t), with ellipses (...) denoting intermediate steps between the endpoints x_0, x_T and e_0, e_T. Each variable node (x_t, e_t) is represented as a light gray rounded rectangle with black text.\n\nAt the center of the diagram, positioned between the two sequences, is a distinct green rounded rectangle labeled 'Fair-Demand Module'. This module acts as a central component that connects the two sequences via dashed black lines, indicating bidirectional influence or information flow. Specifically, the Fair-Demand Module receives input from both sequences and provides output to both, suggesting it processes or modulates the relationship between x and e over time.\n\nEach transition between consecutive states in the upper sequence is annotated with two probability expressions: a blue dashed arrow labeled q(x_t | x_{t-1}) pointing forward, representing a forward transition distribution, and a green solid arrow labeled p_{θ,x}(x_{t-1} | x_t, C, A̅_t) pointing backward, representing a learned reverse conditional distribution. Similarly, in the lower sequence, a blue dashed arrow labeled q(e_t | e_{t-1}) points forward, and a green solid arrow labeled p_{θ,e}(e_{t-1} | e_t, C, A̅_t) points backward. These annotations indicate that the model employs a variational inference framework, where the forward process is defined by a known transition distribution q, and the reverse process is modeled by a learnable distribution p_θ conditioned on context C and a modified adjacency matrix A̅_t, which likely encodes fairness constraints or demand-related features.\n\nThe blue dashed arrows form a feedback loop: from x_t to x_{t-1} and from e_t to e_{t-1}, suggesting a reconstruction or denoising process. The green solid arrows represent the learned generative or inference steps. The dashed black lines from the Fair-Demand Module to both sequences imply that this module injects fairness-aware or demand-driven constraints into the learning of the reverse processes p_{θ,x} and p_{θ,e}. The overall structure suggests a joint modeling of two latent or observed processes (x and e) with a shared fairness-demand mechanism that guides the learning of their reverse dynamics, likely for tasks such as fair data generation or demand prediction under fairness constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

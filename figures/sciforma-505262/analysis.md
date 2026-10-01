@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Symbolic Approximations to Ricci-flat Metrics Via Extrinsic Symmetries of Calabi-Yau Hypersurfaces — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19778
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a complete neural-network pipeline designed to incorporate multiple symmetries—specifically C*, Z₂, Sₙ, and Zₙ₊₁ⁿ—into a graph neural network (GNN) framework. The global layout is left-to-right, depicting a sequential data processing flow from input coordinates through symmetry-invariant transformations to a final output prediction. The pipeline begins on the far left with a box labeled 'Input coordinates', represented as a dashed rectangle containing a vertical list of variables: Z₀, ..., Zₙ₋₁, Zₙ. An arrow points left from this box to a symbol Pⁿ, indicating a mapping or projection operation denoted by ℓ. From the 'Input coordinates' box, a rightward arrow leads to the next module, labeled 'Toric Zₙ₊₁ invariants', which is also a dashed rectangle containing a similar vertical list: Z₀ⁿ⁺¹, ..., Zₙ₋₁ⁿ⁺¹, Zₙⁿ⁺¹. Between these two modules, a tensor product symbol ⊗ is shown, followed by a fraction-like structure with the numerator being a function ℜ(·) over |·|, and the denominator labeled 'Z₂ and C* invariants', indicating that the transformation from input to toric invariants involves constructing invariants under Z₂ and C* symmetries. The next major component is a large rectangular block labeled 'Permutation Sₙ invariant GNN', depicted as a stack of three overlapping rectangles to suggest multiple layers or depth. Inside this block, a triangular graph is drawn with nodes labeled Zₙ₋₁, Zₙ, and Z₀, connected by solid and dashed lines, representing a graph structure where edges encode spectral features ZᵢZ̄ⱼ as specified in the caption. This GNN block is designed to be invariant under permutations of the n elements, as enforced by the Sₙ symmetry. Finally, a large curly brace on the right side of the GNN block encloses the entire stack, with an arrow labeled Σ pointing to the final output, denoted as φ̂, indicating a summation or aggregation operation over the GNN layers to produce the predicted output. The figure’s caption emphasizes that spectral features ZᵢZ̄ⱼ must be encoded into the edge features of the GNN layers to respect permutation symmetries, which is visually implied by the internal graph structure within the GNN block. All text labels are in standard black font, and the diagram uses simple geometric shapes (rectangles, lines, arrows) with no color coding, relying on clear labeling and structural layout to convey the methodological flow.

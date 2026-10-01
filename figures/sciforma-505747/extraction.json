@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505747",
+  "record_sha256": "b38b9015e2898684bc69d8f69d1e63828e1fcca4e4e331eb4650edf1a7849092",
+  "asset_sha256": "50baf0782a8bf019fee7f8c0a25326bacfd3c8d4e63cc773d8f00968495a1e62",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505747",
+    "title": {
+      "zh": "Matrix Concentration for Random Signed Graphs and Community Recovery in the Signed Stochastic Block Model · 方法图",
+      "en": "Matrix Concentration for Random Signed Graphs and Community Recovery in the Signed Stochastic Block Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-20620",
+      "title": "Matrix Concentration for Random Signed Graphs and Community Recovery in the Signed Stochastic Block Model",
+      "authors": [
+        "Sawyer Jack Robertson"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20620",
+      "arxiv_url": "https://arxiv.org/abs/2412.20620",
+      "arxiv_id": "2412.20620",
+      "arxiv_first_submitted_at": "2024-12-29T23:49:25Z",
+      "arxiv_updated_at": "2024-12-29T23:49:25Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20620v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505747/image/image.jpg?Expires=1790855558&Signature=fLnZziPH-Xpr09T9shV5SLwOzw25DtF2DOh6P7rEwPi4iQheg49Mr2jB3wXTpJCQSfW7w6pmoXiOTyk4GajKFmpAm-bz8suUuFxxjk~nFijWllWxUJioWSAxUnyeyIm8f3IqjTT3EHAq03LddwBs75uxbf~Jfw0nj20w~24FdS2r6WZEVZStSfhaGps1hdBJ4yIa3AdQWndykAp3mIdRLS8ms8OeCxsHjfUoHq4psDG8cSZTlZrprqzRh8fyCQmhx6FvalN90j0IWsQtUweHJTicd2DzGOANwy~aEkO230SonE7T8~NAMk2IwPo4I3K4nkh3qDGdFA~OT7LSkOhrqw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505747,
+      "description_sha256": "9f7f3728bf8c1a979edc8eae19912f4e2d1603c80a19a2f682c8e52a227aae36",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3e9bdecef8b41b129b03574ff582bd177e37026b2d2ff22ff5f9421aefe02e80",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the construction of a Signed Stochastic Block Model (SSBM) in a two-community setting, progressing through a sequence of steps to generate a signed graph with positive and negative edges. The global layout is horizontal and sequential, depicting a three-stage generative process from left to right, followed by three distinct output configurations shown below the main flow. Each stage is accompanied by descriptive text above or below the corresponding graphical representation.\n\nIn the first stage, labeled 'Start with an even partition', two rectangular regions are shown side-by-side—one shaded light blue and the other light pink—each containing a set of black dots representing nodes. These represent the initial partition of nodes into two equal-sized communities.\n\nThe second stage, labeled 'Add edges between clusters with probability q' and 'Add edges within clusters with probability p', shows the same two communities now connected by numerous edges. Edges within each cluster are drawn in dark blue, while edges between clusters are also dark blue but slightly thinner. This stage visually represents the addition of unsigned edges according to the probabilities p (within-cluster) and q (between-cluster).\n\nThe third stage introduces signs to the edges. It is labeled 'Add negative signs between clusters with probability 1−s' and 'Add negative signs within clusters with probability s'. In this stage, some edges are colored red to denote negative signs. Specifically, red edges appear both within and between clusters, indicating that negative signs are assigned independently with probability s within clusters and with probability 1−s between clusters. The clusters are now shaded differently: one in green and the other in gray, possibly to emphasize the sign assignment phase.\n\nFrom this final stage, a vertical arrow points downward to three distinct output graphs, each labeled with a specific variant of the SignedBlock_k model. The first, labeled 'SignedBlock_k(γ₁k⁻¹/², γ₂k⁻¹/², s)' and subtitled 'The dense setting', displays a densely connected graph with many blue (positive) and red (negative) edges, suggesting high edge probabilities. The second, labeled 'SignedBlock_k(γ₁ log k/k, γ₂ log k/k, s)' and subtitled 'The critical setting', shows a sparser graph with fewer edges, indicating lower connection probabilities near the threshold for detectability. The third, labeled 'SignedBlock_k(p, q, s)', presents a moderately dense graph with a balanced mix of blue and red edges, representing the general case where p, q, and s are arbitrary parameters.\n\nAll graphs consist of black circular nodes connected by straight lines (edges), with blue lines representing positive edges and red lines representing negative edges. The background of each graph box is light gray-blue. Text annotations are in black, except for the word 'negative', which is highlighted in red to match the color of negative edges. The overall structure emphasizes the generative pipeline and its parameterization, culminating in three representative instances of the model under different density regimes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

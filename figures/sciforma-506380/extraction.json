@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506380",
+  "record_sha256": "b73d1d7d57e626ef516ab3c04d74975b4f19100fd089dbb4da06575825ed2f3c",
+  "asset_sha256": "c1af4d3650e79c70378fd01917b4fcdcb6699f24f7e4c3283e95448e7b50ff8e",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506380",
+    "title": {
+      "zh": "Exploiting Latent Properties to Optimize Neural Codecs · 方法图",
+      "en": "Exploiting Latent Properties to Optimize Neural Codecs"
+    },
+    "paper": {
+      "id": "arxiv-2501-01231",
+      "title": "Exploiting Latent Properties to Optimize Neural Codecs",
+      "authors": [
+        "Muhammet Balcilar",
+        "Bharath Bhushan Damodaran",
+        "Karam Naser",
+        "Franck Galpin",
+        "Pierre Hellier"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01231",
+      "arxiv_url": "https://arxiv.org/abs/2501.01231",
+      "arxiv_id": "2501.01231",
+      "arxiv_first_submitted_at": "2025-01-02T12:45:31Z",
+      "arxiv_updated_at": "2025-01-02T12:45:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TIP.2024.352281",
+      "arxiv_current_version_observed": "2501.01231v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506380/image/image.jpg?Expires=1790855575&Signature=kIagBtX0qXuE8hgGrZs6590SQPR7-vgMGseM5OHGbCR02-Wdz0ovYebPWooP0L1tMWyLm6Jku-4e66VGprVbFtI7bj-ryu3YAbo57byZX8Gyrq3PC~y9FnYzg0ipkoPSU6ZiY7E-eFkKiXgJc6wzL897iKcHA27VUX69M0aS6lT6qKuMC-ldyAybsKtoZBLi1qKmYUFC4~qcJ6Ze0k16kGd2SVzGWaMWRlQFcIzFKWC3pj-VhMHmljCfUpR4l9uDZDe~P0ngyhoQ9Ta4wdD0Ikj4cKNqbsH6trCDuIaNLSxcFZgdzAk7idRLpxV6Qh97bf9sCPCU8I3nJOnvXECPwA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506380,
+      "description_sha256": "748d6ea26ac3ea8e43deab27ed0736367cb95f84bd83f79d9c43a951979a3d03",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "eeae5503346eb7adc9ad708ce647e1354a7acb2230b96733923a7a37b08cdc45",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a block diagram of a state-of-the-art neural codec architecture, structured into two main horizontal sections: an upper reconstruction path and a lower latent processing path, both enclosed within light green rectangular regions with blue dashed inner borders. The overall layout is left-to-right, with data flowing from an input image on the far left to a reconstructed output image on the far right.\n\nIn the upper section, the process begins with an input image denoted as 'x', represented by a small square icon containing a mountain-like line drawing. This input is fed into a green trapezoidal block labeled 'g_a(·; φ)', which acts as an analysis transform (encoder). The output of this block is a latent representation 'y'. This 'y' is then passed through a black pixelated cross-shaped module symbolizing quantization and entropy encoding, producing a quantized latent 'ŷ'. The quantized latent 'ŷ' is then processed by another green trapezoidal block labeled 'g_s(·; θ)', serving as a synthesis transform (decoder), which generates the reconstructed image 'x̂', also shown as a mountain icon, matching the input format.\n\nThe lower section handles the latent space processing. The latent 'y' from the upper encoder is fed into a green trapezoidal block labeled 'h_a(·; Φ)', which functions as a hyper-encoder. Its output is a latent 'z'. This 'z' is then passed through a similar black pixelated cross-shaped module for quantization and entropy encoding, resulting in 'ẑ'. The 'ẑ' is then processed by a green trapezoidal block labeled 'h_s(·; Θ)', acting as a hyper-decoder, which outputs parameters 'μ, σ'—presumably mean and standard deviation for a probability distribution. These parameters are used to define a probability mass function (PMF) for the latent 'ẑ', denoted as 'p_f(·; Ψ)', represented by a smaller green trapezoid below the quantization module. A feedback loop connects the output 'μ, σ' back to the quantization module, indicating that the entropy model is adaptive and informed by the hyper-decoder's output.\n\nCrucially, there is a feedback connection from the lower path to the upper path: the 'μ, σ' parameters from the hyper-decoder are sent to the quantization module in the upper path, suggesting that the entropy model for the main latent 'y' is also informed by the hyper-decoder's output. Additionally, the quantized 'ẑ' is fed into the PMF block 'p_f(·; Ψ)', which in turn influences the quantization process, completing the feedback loop for the side latent.\n\nAll five green trapezoidal blocks are trainable neural network components, while the black pixelated modules represent non-trainable quantization and entropy coding/decoding operations, driven by the PMFs defined by the entropy models. The diagram emphasizes the separation of main and side latents, with the side latent being used to condition the entropy model for the main latent, enabling more efficient compression."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01158
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a Tree-LSTM RNN model designed for joint entity recognition and relation extraction, as proposed in the referenced work. The global layout is divided into two main components: a sequence-based module on the left for entity recognition and a dependency-based module on the right for relation classification, both sharing some input representations and connected via contextual information flow.
+
+On the left, the 'Sequence (Entity)' module processes a linear sequence of tokens. It begins with word/POS embeddings at the bottom, feeding into a Bi-LSTM layer composed of pink rectangular LSTM units. These units process the sequence bidirectionally, with hidden states passed through tanh activation functions and then to neural net layers (light blue rounded rectangles) that output softmax probabilities for entity labels such as B-PER and L-PER. Label embeddings are also incorporated as inputs to the top layer, indicated by dashed lines from a gray rounded rectangle labeled 'label embeddings' connecting to the final neural net layers. Dropout is applied, shown by dashed arrows from the Bi-LSTM to the upper layers.
+
+On the right, the 'Dependency (Relation)' module processes the syntactic structure of the sentence. It takes dependency embeddings (gray rounded rectangle) and constructs a tree structure based on the dependency parse. The example sentence 'In 1909, Sidney Yates was born in Chicago.' is parsed with arcs labeled nsubjpass, prep, and pobj, connecting words like 'Yates' to 'born', and 'in' to 'Chicago'. This tree is processed by a Bi-TreeLSTM, where each node (e.g., 'born', 'Yates', 'in', 'Chicago') is represented by a pink rectangular LSTM unit. The outputs from these nodes are combined through a tree-structured computation, with internal nodes receiving inputs from their children. The final representation is passed through a tanh activation and then a softmax layer to predict the relation label, here 'PHYS'.
+
+Connections between the two modules are shown via dashed lines: the output of the 'Yates' node in the dependency tree connects to the corresponding position in the sequence module, and the 'born' node connects to the 'was born' part of the sequence. Additionally, the dependency embeddings feed into the sequence module's Bi-LSTM, indicating shared representation learning. The legend clarifies visual elements: light blue rounded rectangles represent neural net/softmax layers, dashed arrows indicate dropout, pink rectangles are LSTM units, and gray rounded rectangles denote embedding layers. The entire diagram is structured to show how syntactic dependencies inform both entity labeling and relation prediction in a unified framework.

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503642",
+  "record_sha256": "9a30f403edc8dd4d738287fd10955ca0f33114f8a70f1d8d5341bbe3de994758",
+  "asset_sha256": "653dcadd9eab865aaffed0133281ecf6a4fb747c068a3816074a3fc4e77d3274",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503642",
+    "title": {
+      "zh": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages · 方法图",
+      "en": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages"
+    },
+    "paper": {
+      "id": "arxiv-2412-16894",
+      "title": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages",
+      "authors": [
+        "Charitha Rathnayake",
+        "P. R. S. Thilakarathna",
+        "Uthpala Nethmini",
+        "Rishemjith Kaur",
+        "Surangika Ranathunga"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16894",
+      "arxiv_url": "https://arxiv.org/abs/2412.16894",
+      "arxiv_id": "2412.16894",
+      "arxiv_first_submitted_at": "2024-12-22T07:07:09Z",
+      "arxiv_updated_at": "2024-12-22T07:07:09Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16894v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503642/image/image.jpg?Expires=1790855405&Signature=Ka4GM2dnNpEtN6k-OKg37nnyiQThemBOnZ6kKdgvcxw93UIJ7ezagjyGuP1lSdbus~hHuPBsTZ0Dbt8o5DxzJiL6VVs-0N8Xr9-3h463R9jvQgyi3yn-7G6LIQs0-tmuR2sZIPty6c3rO7e7Gyl~qqHN5-pfPieyhqV5tdOmcj0qVQir4jRcThG2jDgjfpBaFUXMzwylnINo8N6NoX1sOxeMbI9zDkYIOZ3OW3TpqvpdMLBofTjqWPFJObS4imo7uGiPTuT1tPMEwV5x~Vui6ROaQNCuEZaoDP0IpdsC0yIjr0evjgWFVy71zlAh0fu2Z4cH1m1sJbGfcWvQ8on6xQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503642,
+      "description_sha256": "f89031fab0fc3eaf68ed0618999994cf4f323ac48a4c46ae7557910ebab1b69c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "07408ad28e9303f5a24a16fcde579a80a8fdc4ebaee82b83e4a0233477d11b77",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Improved UVecMap framework, a method for aligning and combining static and contextual word embeddings to produce unified word representations. The global layout is divided into two parallel processing streams: one for Static Embeddings and another for Contextual Embeddings, both converging into a final combination stage. The top stream begins with Static Embeddings, which include Source and Target embeddings, feeding into a Pre-Processing module. This module performs Linear Transformation and Dimension Reduction, followed by three sequential operations: Length Normalization (LN), Mean Centering (MC), and another LN, culminating in Fusion. The output of this pre-processing step enters the VecMap component, which consists of Initialization (with Dimension Reduction noted in a dashed box), Robust self-learning, and Symmetric re-weighting. The result from VecMap is labeled 'Mapped Embeddings' and flows to the combination stage. The bottom stream processes Contextual Embeddings, also comprising Source and Target embeddings, which are directed to an Embedding Pre-Processing block. This block includes Linear Transformation and Dimension Reduction, both highlighted in dashed boxes, producing 'Pre-Processed Embeddings'. These embeddings are then combined with the Mapped Embeddings from the top stream in a large dashed rectangular box labeled 'Combining Static & Contextual Embeddings'. The final output of this combination is a rounded oval labeled 'Unified Word Representations'. All modules are represented as rectangles or ovals, with solid lines indicating data flow. The VecMap and Embedding Pre-Processing blocks contain internal components shown as nested rectangles, some with dashed borders to denote optional or secondary steps. Text labels are black except for 'Linear Transformation' and 'Dimension Reduction' within the Pre-Processing block, which are in red, emphasizing their importance. The figure uses arrows to indicate the direction of data flow, with clear labeling of intermediate outputs such as 'Mapped Embeddings' and 'Pre-Processed Embeddings'. The overall structure reflects a modular, two-path pipeline that integrates static and contextual embedding spaces through alignment and fusion techniques."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

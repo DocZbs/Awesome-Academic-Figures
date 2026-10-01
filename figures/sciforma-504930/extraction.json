@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504930",
+  "record_sha256": "2742f019aa90c49934c16d0e3333e57169cdff737f07b49711b1b902f91457e2",
+  "asset_sha256": "9d073f622867d8b622bb159797c04af7e375d3c1efc1954f5ea31ea1d6e82a6b",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504930",
+    "title": {
+      "zh": "Advanced Knowledge Transfer: Refined Feature Distillation for Zero-Shot Quantization in Edge Computing · 方法图",
+      "en": "Advanced Knowledge Transfer: Refined Feature Distillation for Zero-Shot Quantization in Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-19125",
+      "title": "Advanced Knowledge Transfer: Refined Feature Distillation for Zero-Shot Quantization in Edge Computing",
+      "authors": [
+        "Inpyo Hong",
+        "Youngwan Jo",
+        "Hyojeong Lee",
+        "Sunghyun Ahn",
+        "Sanghyun Park"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19125",
+      "arxiv_url": "https://arxiv.org/abs/2412.19125",
+      "arxiv_id": "2412.19125",
+      "arxiv_first_submitted_at": "2024-12-26T08:52:27Z",
+      "arxiv_updated_at": "2025-05-22T07:25:40Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19125v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504930/image/image.jpg?Expires=1790855452&Signature=SPPwv4D3dHH1-O45UKwbvj9OMU3In7LfmRQFALYkawuWg2JEhU3~1izXlb4FdRuD6jycTX6NxUIFhIBcoAF~VWeW98TWlg1CVYKcTyrfE03EdU6wZwFZg6-0S5VrZUx4nkehuNoooMykX~DnjPrAG2bAU26IyfoZmXsd6LF5TjK1K2cNu4VL7F1iZe9l800F~usHMbeGSUPPNL7KcUanSpdtgTnSTq6VMtZXqcMJ0sM1PI63bvsBKECRcJi328e-azlG-fOI93B~DKi6qf~f~50bkRwoPF~A9QRqxMEhb9aDDiLOp26~1IGcr9rIqv8HWkvtCaw54Uossq0b-Yb3kg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504930,
+      "description_sha256": "da2528ad305150eb776f19361b42d4f71d8e5567656497a077c7774e045df97d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dc6c1ea9338ecdf08fed97529d198783ddcf8126d30840be6e2fa7a2875f60cf",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Refined Feature Distillation (RFD) process, which is applied iteratively for each feature map across all layers n. The global layout is vertically structured, enclosed within a dashed rectangular boundary labeled 'Iteration i for all Feature Map n'. At the top, a full-precision feature map αi is represented as a solid peach-colored cube. This input splits into two parallel pathways: one for spatial attention (ATT_sp(αi)) and one for channel attention (ATT_ch(αi)). Both are depicted as transparent cubes with blue outlines; the spatial attention cube contains diagonal colored lines (red, green, blue) indicating spatial feature emphasis, while the channel attention cube shows stacked colored planes (orange, blue, green) representing channel-wise focus. Below these, a central rounded rectangle contains the loss computation L_RFD(i), expressed as the sum of two components: L_sp (blue double-headed arrow) and L_ch (green double-headed arrow), symbolizing spatial and channel-wise losses respectively. Further down, the quantized model βi is shown as a solid olive-green cube. From this, two upward arrows lead to corresponding attention outputs: ATT_sp(βi) and ATT_ch(βi), visually identical in structure to those from αi but derived from the quantized model. The diagram emphasizes that the distillation process compares attention maps from the full-precision and quantized models to compute the RFD loss, which is then averaged over all layers to obtain the final loss. The visual elements use distinct colors and shapes to differentiate between full-precision and quantized representations, and directional arrows indicate data flow and loss computation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-505659",
+  "record_sha256": "574f87605c2a96516a286f6fb11e415b4c8c2b536c0a5f1aaeb0284e48c0d14a",
+  "asset_sha256": "8bd4f1f5d9df2298e2f41ff783b272541c0e4370f20bf2ad61fdbc202e7fa6cb",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505659",
+    "title": {
+      "zh": "Utilizing Multimodal Data for Edge Case Robust Call-sign Recognition and Understanding · 方法图",
+      "en": "Utilizing Multimodal Data for Edge Case Robust Call-sign Recognition and Understanding"
+    },
+    "paper": {
+      "id": "arxiv-2412-20467",
+      "title": "Utilizing Multimodal Data for Edge Case Robust Call-sign Recognition and Understanding",
+      "authors": [
+        "Alexander Blatt",
+        "Dietrich Klakow"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20467",
+      "arxiv_url": "https://arxiv.org/abs/2412.20467",
+      "arxiv_id": "2412.20467",
+      "arxiv_first_submitted_at": "2024-12-29T13:45:11Z",
+      "arxiv_updated_at": "2024-12-29T13:45:11Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20467v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505659/image/image.jpg?Expires=1790855552&Signature=X61dlvgQW7qHue3wUYd1W26ZGhtgzEY40tBLNtZK5BQXgQAZXdsRClgK4jXbHn0rCSipJ99Gk4o91v0oG7re3X26RggCd6c9hrWeofThjH9MIKeZbQDbZ2fRc1uajUVusI5N7VBcv8VpYdgIXMOPqrRBGIsg8OWxvqbR-DhHajS92x2pQKzJICyT5kscFDaHcJcHm~cIUjMZWhJKuk~p27iNoqZ4XYac9l2FnJIyrP8VYNCH4cRMor2s~UQNuVq4WPgLUg1I9Y1uwY5eIZnveXcGq-9gbfT3-aZazzdIaTCSHryIXo6-llcJ-b1ZokyMbkl2KgBhp1mKx4ZrJkq4lQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505659,
+      "description_sha256": "f9f0f8327b91ae5919aa856da051da021e8b0ac1e1c6ee4058205641c87d381d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0bac784d52f691c8d4a320793edd3c84406fe9a7d34c0e4df625065ad2703f2a",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side architectural comparison of two models: the parallel Encoder-Decoder (EncDec) on the left and the sequential CallSBERT model on the right, with an additional schematic of a vocal tract model shown in a separate panel on the far right. The global layout is horizontal, divided into three main sections. The left section illustrates the EncDec architecture, the middle section shows the CallSBERT architecture, and the rightmost section contains a gray-boxed diagram of a physical vocal tract model.\n\nIn the left section, the EncDec model begins with four horizontally aligned rectangular input nodes at the bottom: 'Transcript' (teal), 'Call1' (purple), 'Call2' (light teal), and 'Call3' (maroon). These inputs feed into a single large rounded rectangle labeled 'Encoder & Decoder' (light gray background, black border) via a thick black upward arrow. From this module, a single upward arrow points to the output label 'Call2|CAO', which is displayed in light teal text above the encoder-decoder box. This indicates that the model processes all inputs simultaneously and produces a single output, likely a reconstructed or encoded version of Call2 conditioned on the other inputs.\n\nThe middle section depicts the sequential CallSBERT model. It also starts with the same four input nodes: 'Transcript' (teal), 'Call1' (purple), 'Call2' (light teal), and 'Call3' (maroon). However, instead of a single encoder-decoder, there are three identical SBERT modules (each a rounded rectangle with light gray background and black border) arranged horizontally above the inputs. Each SBERT module receives input from one or more of the lower nodes via colored arrows: the first SBERT receives input from 'Transcript' and 'Call1' via purple and teal arrows respectively; the second SBERT receives input from 'Transcript', 'Call1', and 'Call2' via purple, teal, and light teal arrows; the third SBERT receives input from 'Transcript', 'Call1', 'Call2', and 'Call3' via purple, teal, light teal, and maroon arrows. The outputs of these SBERT modules are labeled 'SimCall1', 'SimCall2', and 'SimCall3' respectively, positioned above each module. The arrows connecting inputs to SBERTs are color-coded to match the source node colors, and the connections are drawn as stepped lines, indicating a sequential processing flow where each SBERT builds upon the previous ones.\n\nThe rightmost panel contains a schematic of a vocal tract model. It features a circular 'lungs' component with pressure symbol p_s, connected via a glottis (represented by a mass-spring-damper system with parameters m, k, b) to a vocal tract and nasal tract. The vocal tract is shown as a series of constrictions leading to an output waveform u_m, while the nasal tract leads to output u_n. Arrows indicate airflow direction, and the entire diagram is enclosed in a gray box with a white border.\n\nThe figure caption below reads: 'Architecture comparison of the parallel EncDec (left) and the sequential CallSBERT model (right).' The visual design uses consistent color coding for inputs and outputs, rounded rectangles for modules, and distinct arrow styles to differentiate between parallel and sequential data flows."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

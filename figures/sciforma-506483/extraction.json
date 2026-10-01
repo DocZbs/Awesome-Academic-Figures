@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506483",
+  "record_sha256": "b862199f8db6a84d09795377f513440e4697e725ce1f9b797134fe3057d76e3d",
+  "asset_sha256": "4d5f45165054dc85528aad2b16e5ebc7e48ef6f2d12a77d99622f01afc93ad8c",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506483",
+    "title": {
+      "zh": "TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees · 方法图",
+      "en": "TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees"
+    },
+    "paper": {
+      "id": "arxiv-2501-01511",
+      "title": "TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees",
+      "authors": [
+        "Alireza Khataei",
+        "Kia Bazargan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01511",
+      "arxiv_url": "https://arxiv.org/abs/2501.01511",
+      "arxiv_id": "2501.01511",
+      "arxiv_first_submitted_at": "2025-01-02T19:38:07Z",
+      "arxiv_updated_at": "2025-01-02T19:38:07Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1145/3706628.3708877",
+      "journal_reference": "Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA '25), February 27-March 1, 2025, Monterey, CA, USA",
+      "arxiv_current_version_observed": "2501.01511v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506483/image/image.jpg?Expires=1790855579&Signature=ZW6SzABIm-8viO9zO4aKPKZLF6ZYZotqmgJFah2CQCmRlaGhFGuFFwrZtYYJtfrg5fEsjGyyEiO7xzt~JkDOVqfTHCkA02FTlSO~0aioBdT8doHxFyczvqH~DKe8C4cOBWNVjThgwAkS~Xz3Os5Vu4~jzUgErYgA4IHvMu~e9WDwHKP0KU9nNYZa5l~rLhshAth9ECz5g-cl~tjc36eFxO4q9qMvH6y~aasCyf2YxY8ct~0qyj~H9t6iuOJuD8WVJHKlE9PVO3vkzsWSKV~VomYcfnsK4pi8lckpjcRRvEUrWxH1jwiNJl-YGWwUML5OjT49bWD5o6HCD4CdiY6q~g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506483,
+      "description_sha256": "0de3d1f7ddb94ec5d5f08a63e7fbf4c2ea3751e09e38f030a702697fff89ef5e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6538fcd5f2aa1d7b1044fb59d0b64640ac2fc9593aecbdafd58c06c9310630dd",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the TreeLUT architecture for multiclass classification, structured as a hierarchical pipeline with multiple parallel processing layers. At the top, a sequence of input features x₀ through x_d is fed into a central 'Key Generator' module, represented as a wide blue rectangular block. This generator produces keys that are distributed to multiple parallel branches, each corresponding to a different class or output dimension.\n\nEach branch consists of M parallel quantum decision trees, labeled qf_{i,1} through qf_{i,M}, where i ranges from 1 to N, indicating N distinct output classes. Each qf_{i,j} module is depicted as a blue-topped box containing a small tree structure: a root node (dark gray circle), two internal nodes (one dark gray, one white circle), and four leaf nodes (two white squares, two dark gray squares). These trees represent quantum decision trees, where the internal nodes likely denote quantum operations or gates, and the leaves represent terminal states or outputs.\n\nWithin each branch, the outputs of all M quantum trees are summed together via a circular blue '+' node. Additionally, a bias term qb_i (represented as a white square) is added to this sum. The result is then passed to an output node labeled QF_i (a gray circle), representing the final score or probability for class i.\n\nThe architecture is vertically stacked across N such branches, with ellipses (...) indicating intermediate layers and the continuation of the pattern. All branches receive their inputs from the same Key Generator, ensuring consistent key generation across all classes. The overall layout is modular and symmetric, emphasizing parallelism and uniformity across classes. The visual design uses consistent color coding: blue for main modules and operations, gray for inputs/outputs, and white for bias terms. The connections are clean, straight arrows indicating data flow from top to bottom and left to right within each branch."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503405",
+  "record_sha256": "f231589a97e09ce74e9a1a056c0e8e041da375efa23090f7dd9139046ec94fa5",
+  "asset_sha256": "ae7602b433754fd3974944bce70ba7774d2af5f2f5670b5a10a87d80979bc755",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503405",
+    "title": {
+      "zh": "DOFEN: Deep Oblivious Forest ENsemble · 方法图",
+      "en": "DOFEN: Deep Oblivious Forest ENsemble"
+    },
+    "paper": {
+      "id": "arxiv-2412-16534",
+      "title": "DOFEN: Deep Oblivious Forest ENsemble",
+      "authors": [
+        "Kuan-Yu Chen",
+        "Ping-Han Chiang",
+        "Hsin-Rung Chou",
+        "Chih-Sheng Chen",
+        "Tien-Hao Chang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16534",
+      "arxiv_url": "https://arxiv.org/abs/2412.16534",
+      "arxiv_id": "2412.16534",
+      "arxiv_first_submitted_at": "2024-12-21T08:25:23Z",
+      "arxiv_updated_at": "2024-12-24T09:00:20Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16534v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503405/image/image.jpg?Expires=1790855367&Signature=r~nFGGNDrnoU2g2NWhnrc~U7AKJwql7ZfN8Rnw1zytn0vjfkagGk7Qm9EWJWeoAxchUtJ2AbrFSDOX1o-Ml~3KnPo~BRwwsbFqgo1Np04BgpPaxeQSU6NJgF2DRYGHAvowzF8-wl2JnYlIuTHgNjx8SgI3tYJw1m0Sd5KiK33wx5nfoomSFYROVI~O6eIGIP0dShlcpZhp0-hBHpxT6UfR1~rHqkw5a75eggwKYJf3H5C2o9uVkGPiALOgokEw-6Cyxsh1~xmO5kHg35pfZ-P4IO482MihGO5gKvroEPK99s5QgluG72uKuvWSulbXrykPqovli3gJz9aUktgWaWhA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503405,
+      "description_sha256": "f2f28272c36eb5696d1c56443f32158f1b6abda83a869cf48a39ceaf5f5a6f9c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "773b867d86a3d4a68c6782446011040be55dcc8223e0d7e37d2fca8dcf0c00d9",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-part methodology for constructing and bagging a Relaxed ODT Forest, presented in two main sections labeled (a) and (b). The global layout is horizontal, with section (a) on the left depicting the forest construction process and section (b) on the right showing the bagging and prediction phase. A legend at the top right defines symbols: σ represents the softmax operation, and ⊗ denotes the weighted sum operation.\n\nIn section (a), 'Relaxed ODT Forest Construction', the process begins with a vertical stack of six pairs of elements, each pair consisting of a square labeled w_i1 to w_i6 (in varying shades of pink and purple) and a cube labeled →e₁ to →e₆ (in corresponding colors). These represent feature weights and embeddings. An arrow points from this stack to a text label indicating 'sample N_estimator instances of (w_ij, →e_j) without replacement and repeat N_forest times'. This sampling leads to two separate horizontal arrays. The first array, labeled →w'_i, contains N_estimator pink/purple squares (w_i1, w_i2, w_i3) arranged side by side, enclosed within a dashed box labeled N_forest above and N_estimator below. The second array, labeled E', consists of N_estimator cubes (→e₁, →e₂, →e₃) in matching colors, also enclosed in a dashed box with the same labels. From these two arrays, three downward arrows labeled σ (softmax) are drawn from →w'_i, and three upward arrows point to a central ⊗ symbol (weighted sum operation). The output of this operation is a single pink/purple cube labeled →f_i, representing the forest embedding, which is enclosed in a dashed box labeled N_forest.\n\nSection (b), 'Bagging of Relaxed ODT Forest', continues from →f_i. An arrow labeled 'a shared Δ₃' points from →f_i to a group of N_forest red rectangles labeled ŷ_i, indicating predictions made by a shared sub-network. Below this group, an arrow labeled 'average' points to a rectangular box labeled 'final prediction'. Another arrow from the group of ŷ_i points to a group of N_forest red rectangles labeled loss_i, and from there, an arrow labeled 'sum' points to a box labeled 'loss'.\n\nThe visual modules use distinct shapes and colors: squares for weights (w), cubes for embeddings (→e), and rectangles for predictions (ŷ_i) and losses (loss_i). The color gradient from light pink to dark blue across the initial pairs suggests variation or different feature types. Dashed boxes group elements under N_forest, indicating multiple instances. All text labels are in black, with mathematical symbols and variables in standard notation. The connections are solid black arrows, clearly indicating the data flow and operations between modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

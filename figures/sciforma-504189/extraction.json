@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504189",
+  "record_sha256": "1a8ec1cfda7715a3f9d1605685d5c597c00af42f25c05d8ced26fffeeda83f29",
+  "asset_sha256": "1ef99b90fdf651029ccf8d525ca4bcda45f47b7727aee2ccbb3933c56bc16c4c",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504189",
+    "title": {
+      "zh": "Stability Bounds for the Unfolded Forward-Backward Algorithm · 方法图",
+      "en": "Stability Bounds for the Unfolded Forward-Backward Algorithm"
+    },
+    "paper": {
+      "id": "arxiv-2412-17888",
+      "title": "Stability Bounds for the Unfolded Forward-Backward Algorithm",
+      "authors": [
+        "Emilie Chouzenoux",
+        "Cecile Della Valle",
+        "Jean-Christophe Pesquet"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17888",
+      "arxiv_url": "https://arxiv.org/abs/2412.17888",
+      "arxiv_id": "2412.17888",
+      "arxiv_first_submitted_at": "2024-12-23T11:55:41Z",
+      "arxiv_updated_at": "2025-10-01T15:27:26Z",
+      "arxiv_subjects": [
+        "math.OC",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/s10851-025-01258-6",
+      "journal_reference": "Journal of Mathematical Imaging and Vision, 67 (48), 2025",
+      "arxiv_current_version_observed": "2412.17888v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504189/image/image.jpg?Expires=1790855416&Signature=KWn7t1JFTC7csiKGiqWti6JWXcRj1ugQqp1iQEbeT9mSIJq-RKaU7dcuTy~lzjlWxmf~dKDjN~9CO6l82GFugdWs7zZYVhgW8z3CWdp0qQDAII6~gn2Z7G7x4rGmaC~hBo2vi4X8tiUD9rvEHfTYjV5KKWshJ6lBtMa4FkUNEx8i1kZXfx8Hnz1RG25twSa1VbpT~7dIHARtY4oRJnjQdlOk~7KoW8dgexe9nOrFB~9g9cKK7OxmWmuy-aAqp89qxPQxvNCX2gNFbJHnznJrxBUfFeOwiKPcbqrF9q6f9F5Mv5x-oFwE92a1JlQkhI3HkDy0X92KMPyxX2iJ45U0~g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504189,
+      "description_sha256": "c4ba29af8913c0b85d6608c81cf883f35b6c4f4f70d0452aadbbede75b286e8a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5a199e6f27ce71f1036a3c3c3e21f11a5b6ce289bb6b21eec21a5e31dfbaaef9",
+      "row_response_sha256": "204196dbb9e6aedf9fbf1db5638e3e992c50ff982292519d95e8b7fb8849839c"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "math.OC",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the global architecture of an m-layer neural network, structured as a sequential pipeline of processing blocks. The overall layout is horizontal, with components arranged from left to right to represent the forward pass of data through the network. At the top of the diagram, a constant bias or context input denoted by b₀ is shown entering the system via a horizontal line with downward arrows feeding into each block. This indicates that b₀ is shared across all layers and serves as a persistent input to every block in the network.\n\nThe core of the architecture consists of m identical rectangular blocks, labeled sequentially as 'Block 1', 'Block 2', ..., up to 'Block m'. Each block is represented as a light gray rectangle with black borders and centered black text. These blocks are arranged horizontally in a linear chain, symbolizing the sequential nature of the computation. Between Block 1 and Block 2, and between Block 2 and Block m, dashed lines indicate the continuation of the sequence, implying that intermediate blocks (from 3 to m−1) are omitted for brevity but follow the same structure.\n\nData flows through the network starting from an initial input x₀, which enters Block 1 via a solid arrow from the left. After processing in Block 1, the output x₁ is passed to Block 2 via a solid arrow pointing right. Similarly, each subsequent block receives its input from the previous block’s output: x₂ from Block 2 to Block 3 (implied), ..., x_{m−1} from the penultimate block to Block m. Finally, Block m produces the final output xₘ, which exits the network via a solid arrow pointing right.\n\nAll connections between blocks are depicted as solid black arrows, indicating direct data flow. The connection from b₀ to each block is shown as a vertical arrow descending from the horizontal line above, emphasizing that this input is applied uniformly to all blocks. The dashed lines between blocks serve only to abbreviate the diagram and do not represent any special type of connection or skip pathway.\n\nThe caption below the diagram reads: 'Figure 1: Global architecture of the m-layers neural network~\\eqref{def:oldmodelNN}', indicating that this architecture corresponds to a mathematical definition referenced elsewhere in the paper (specifically equation labeled def:oldmodelNN). The diagram does not include any activation functions, weights, or internal details within the blocks; it focuses solely on the macro-level data flow and structural composition of the network."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503601",
+  "record_sha256": "2e7d36e3ff510062cb7871b8663b39bebfc4ce16376baa7146f9717411492efe",
+  "asset_sha256": "1e8272962fa8fc6ddc9071137c2dbab1c3d85077403985fc55d147dad414b748",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503601",
+    "title": {
+      "zh": "Diffusion-Based Approaches in Medical Image Generation and Analysis · 方法图",
+      "en": "Diffusion-Based Approaches in Medical Image Generation and Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-16860",
+      "title": "Diffusion-Based Approaches in Medical Image Generation and Analysis",
+      "authors": [
+        "Abdullah al Nomaan Nafi",
+        "Md. Alamgir Hossain",
+        "Rakib Hossain Rifat",
+        "Md Mahabub Uz Zaman",
+        "Md Manjurul Ahsan",
+        "Shivakumar Raman"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16860",
+      "arxiv_url": "https://arxiv.org/abs/2412.16860",
+      "arxiv_id": "2412.16860",
+      "arxiv_first_submitted_at": "2024-12-22T05:02:05Z",
+      "arxiv_updated_at": "2024-12-22T05:02:05Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16860v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503601/image/image.jpg?Expires=1790855405&Signature=rBz9uBLdmNWKwieBtUPnP5RoUz3-WMS1C4iolXwCZSjNL24Rkvc1FN1Dr8eOo3Qv9s9MGWCUUj0fay54ZRI7rpCmI2tW2y603pQaoSymoDfHqlFrvrvHcL6AgnxA5Wq97nbDzZ26nnAO~Za8kXGWQLiUeshIwGY0f~qzcWZY~l1zoNvgCdaYqRUM1RK73Sc8oaaCO8YNg3SVs2pvgRj40540odspdxlO6ol8LaCxnIFxmtoAEyOZOI2gGYXInk8QOTEXp4ZOZiizvPBtgCe7qNQ42j7kekR8FTP-EeOXqExssj6M2gucDbMn1GWdPEsAxHjgzGEzqc6OR37Desq27g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503601,
+      "description_sha256": "1abf310ed56a3c462a1b9fa93f71e65b62c4c8192ee8f079c867e4edf7deb1e1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "496ef901352d299ab13e9c56a38639edad22686ba9fb12a61e63a74fb3a86f04",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a diffusion model, specifically designed for image generation or reconstruction through a latent space denoising process. The global layout is divided into three main regions: Pixel Space on the left, Latent Space in the center, and Conditioning on the right. These regions are visually separated by colored backgrounds—pink for Pixel Space, light green for Latent Space, and white for Conditioning—and are connected via directed arrows indicating data flow.\n\nIn the Pixel Space region, an input image x is encoded by an encoder module ε (represented as a blue trapezoid) into a latent representation z. This latent vector then undergoes a forward diffusion process within the Latent Space, gradually adding noise over T steps until reaching z_T, the fully noisy state. The reverse process begins at z_T and iteratively denoises the latent representation through a Denoising U-Net ε_θ, which is depicted as a central blue U-shaped network structure. This U-Net contains multiple blocks, each consisting of two orange rectangular modules labeled 'Q' and 'KV', representing query and key-value components of cross-attention mechanisms. These blocks are interconnected via gray dashed lines indicating skip connections, which help preserve spatial information across layers.\n\nThe denoising process proceeds step-by-step from z_T back to z_{T−1}, and so on, with each step represented by a small green icon resembling a bowtie, labeled 'denoising step'. At each step, the current noisy latent z_t is processed by the U-Net, which receives conditioning information from the right-hand side. The Conditioning block includes various modalities: Semantic Map (red), Text (yellow), Representations (green), and Images (purple), all of which are processed by a transformer-like module τ_θ (blue trapezoid) to produce a contextual embedding. This embedding is concatenated (indicated by a black arrow labeled 'concat') with the latent input before being fed into the U-Net. Within the U-Net, cross-attention mechanisms (symbolized by the Q/KV blocks) allow the model to attend to the conditioning information during denoising.\n\nA switch mechanism (gray rectangle with a checkmark) is shown connecting the conditioning path to the U-Net, suggesting conditional control over which parts of the model receive external guidance. The output of the final denoising step is a clean latent representation z, which is then decoded by a decoder module D (blue trapezoid) back into pixel space, producing the reconstructed image x̃. The entire process is framed as a generative pipeline where noise is progressively removed under guidance from semantic or textual conditions.\n\nAt the bottom of the figure, a legend clarifies the symbols used: the bowtie icon denotes a denoising step; the Q/KV box represents cross-attention; the switch icon indicates a conditional gate; the dashed arrow signifies skip connections; and the concat symbol denotes concatenation of tensors. The overall design emphasizes modularity, conditional control, and the iterative nature of diffusion-based generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

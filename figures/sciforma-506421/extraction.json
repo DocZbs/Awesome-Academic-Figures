@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506421",
+  "record_sha256": "8270438fa87fa4da967ac1bf73dfe87ec5e3638c6635cf3144d6af72a8c82693",
+  "asset_sha256": "54281626f592b66984a795280f537c3ab9102c1870abce841fe8277d7928723f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506421",
+    "title": {
+      "zh": "Large Vision-Language Model Alignment and Misalignment: A Survey Through the Lens of Explainability · 方法图",
+      "en": "Large Vision-Language Model Alignment and Misalignment: A Survey Through the Lens of Explainability"
+    },
+    "paper": {
+      "id": "arxiv-2501-01346",
+      "title": "Large Vision-Language Model Alignment and Misalignment: A Survey Through the Lens of Explainability",
+      "authors": [
+        "Dong Shu",
+        "Haiyan Zhao",
+        "Jingyu Hu",
+        "Weiru Liu",
+        "Ali Payani",
+        "Lu Cheng",
+        "Mengnan Du"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01346",
+      "arxiv_url": "https://arxiv.org/abs/2501.01346",
+      "arxiv_id": "2501.01346",
+      "arxiv_first_submitted_at": "2025-01-02T16:53:50Z",
+      "arxiv_updated_at": "2025-09-23T16:40:27Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01346v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506421/image/image.jpg?Expires=1790855579&Signature=WeTrvM~2UXtdkV2OM2nQL86UNFsUDctHVkwDbMTozHfmjFwD-kxARVWwbf9A3T0fTlb89rb-Or2oRTuj7KFnnSaDeWmwx~sG~8QD6boQcrpy~DwbgmOfhYGhMCoQOa2S2dOGYa4QHqSrSZuPb0wMID3l7xUCa5Dwc7dtgAlP7-EVTOVnvsWN6hOeGHQ2hvmKNonqHtLmAY9A9ey~v60QHeiryfyTnvWheYRL6GMo7flEgNqUmF~jxlR-qQit~XKdurEoFnWG5lOGH4Qeyy0jqvJaxpG4xJbafG8sc7l7gwkPMuGbQJu1WneaOEXzc5GNiGY-qc~MS-oguc0XKqQeBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506421,
+      "description_sha256": "b4ae31f351f37953cadc8add5be940e62be320a08449363a68196327150e8478",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "638db92b999618b52bae7c52a18deb6ca5cb9a3d2e3d2dd348b8612973e1dc78",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage training pipeline for a Large Vision-Language Model (LVLM), structured into distinct phases: Stage 1 (Training Visual Encoder), Stage 2 (Adapter Fine-tuning), and Stage 3 (End-to-End Fine-tuning). The global layout is a horizontal sequence of three rectangular panels, each representing a stage, with clear demarcations and internal flow diagrams. A legend at the top right indicates that components marked with a flame icon are 'Training' (i.e., updated during training), while those with a snowflake icon are 'Frozen' (i.e., kept fixed). \n\nIn Stage 1, labeled 'Training Visual Encoder', the process begins with paired inputs: a stack of text descriptions (e.g., 'Colorful bird...') and a stack of corresponding images (a hummingbird). These are fed into separate encoders: a light green trapezoid labeled 'Text Encoder' and a light blue trapezoid labeled 'Visual Encoder'. Both encoders are marked with flame icons, indicating they are trained. The outputs are aligned via 'Contrastive Learning', shown by a large curly brace connecting the two encoder outputs, emphasizing the goal of learning joint visual-text representations.\n\nStage 2, titled 'Adapter Fine-tuning', shows a single image of the hummingbird being processed by the now-frozen Visual Encoder (light blue trapezoid with snowflake icon). The output is passed to a new component, a gray rectangle labeled 'Adapter', which is marked with a flame icon, indicating it is trainable. The Adapter's output is then fed into a large, light yellow trapezoid labeled 'LLM' (Large Language Model), also marked with a snowflake, meaning it is frozen. The input to this stage is a stack of text prompts such as 'Describe image...', suggesting the task is image captioning or description generation. This stage focuses on adapting the frozen visual encoder’s features to the LLM using a lightweight trainable adapter.\n\nStage 3, 'End-to-End Fine-tuning', illustrates the full LVLM architecture. It receives 'Image Input' and 'Text Input' as separate streams. The image input goes to the 'Visual Encoder' (light blue trapezoid, now with flame icon, indicating it is retrained), and the text input goes to the 'LLM' (light yellow trapezoid, also with flame icon, now trainable). Between them is the 'Adapter' (gray rectangle, flame icon), which processes the visual features before passing them to the LLM. All three components are now trainable, as indicated by the flame icons. The entire system is enclosed in a dashed box labeled 'Large Vision-Language Model', and the final output is an 'Expected Output' box below, signifying the model’s generative capability. The flow is from inputs through the three components to the output, demonstrating a fully integrated and jointly trained model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506232",
+  "record_sha256": "f0fd5780ea6e4e26c2c72420bb5c712a43ab019484107df35cf74239f6ec81c9",
+  "asset_sha256": "90a4def320d7b4db84abcbe505122059569019a4a0ee8cf99840c2c9039a58dc",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506232",
+    "title": {
+      "zh": "DiffETM: Diffusion Process Enhanced Embedded Topic Model · 方法图",
+      "en": "DiffETM: Diffusion Process Enhanced Embedded Topic Model"
+    },
+    "paper": {
+      "id": "arxiv-2501-00862",
+      "title": "DiffETM: Diffusion Process Enhanced Embedded Topic Model",
+      "authors": [
+        "Wei Shao",
+        "Mingyang Liu",
+        "Linqi Song"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00862",
+      "arxiv_url": "https://arxiv.org/abs/2501.00862",
+      "arxiv_id": "2501.00862",
+      "arxiv_first_submitted_at": "2025-01-01T15:15:39Z",
+      "arxiv_updated_at": "2025-01-01T15:15:39Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00862v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506232/image/image.jpg?Expires=1790855567&Signature=WbgN49do18qSIXSXx20hDHymHVnL~lcH8t-A7WIJnPdmo~Qi6PWKJyC32-C35hZPBAMczOIsFRX32WMRcif666dtRV0m4-WSCy7Js~ZI9fh96Gx2iWppIbip8QOXxYmdvVpo1iY~ruLN0vXWfbJaiD3siCJWYskbXcVYp2KEu3~gag3KFcFugKIbgpLzhLBAg-Kh~g6r7qytcc~cqJqlUpRsIP2gzJnDPO1HlS9Htm2PghUFz3uccQvMSU~fx6Z8r5ipSz1DozO1ivQ-VNeJT3jTO8KUo1WptBigUdJlht0iPpJoMALwa6G8dYpxSNNox3pb7PHRNkn98iZiUDgpSA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506232,
+      "description_sha256": "3b3811dae52d54ed01e40df40997a6ad3fac62cb4a0eda26a35d7dd1665a3b92",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8aa3079b266a2a2005bbe5f0dd92513d5a118a67d709dfe2d77c8ff5d8c26587",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a proposed generative model that integrates a diffusion process with variational inference for topic modeling. The global layout is structured into three main horizontal sections: the top section represents the diffusion module (yellow), the middle section represents the document-topic distribution computation module (green), and the bottom section represents the topic-word distribution module (blue). These modules are interconnected through directed arrows indicating data flow and computational dependencies.\n\nIn the diffusion module (yellow), an input document X (represented as a gray vertical rectangle) is fed into a neural network (NN, yellow rounded rectangle) which generates a sequence of latent representations X₀, X₁, ..., Xₜ (yellow squares). This sequence ends with a noise term ε (light green square), which is used in conjunction with the mean μ and standard deviation σ (both light green squares) computed from separate neural networks (green rounded rectangles) also taking X as input. The μ and σ are used to sample a latent variable z via reparameterization, where z = μ + σ ⊙ ε. The sampling process is indicated by an arrow from ε and the μ/σ branches converging into z (light green square).\n\nFrom z, a softmax operation produces θ (light green square), representing the document-topic distribution. This θ is then multiplied element-wise (indicated by a circular ⊗ symbol) with β (light blue rounded rectangle), which represents the topic-word distribution. The β matrix is derived from the topic-word distribution module (blue), which computes it by multiplying the Word Embedding Matrix (light blue rounded rectangle) with the Topic Embedding Matrix (light blue rounded rectangle), again using element-wise multiplication (⊗).\n\nThe resulting product of θ and β yields X' (light green vertical rectangle), the reconstructed document representation. A loss function L(X, X') (pink rectangle) compares the original input X with the reconstructed X', forming the reconstruction loss component.\n\nAdditionally, the latent variable z is connected to a KL divergence loss term L_KLD (pink rectangle), which measures the divergence between the learned distribution q(z|X) (parameterized by μ and σ) and a prior distribution N(0,1) (gray rectangle). This KL divergence loss encourages the latent space to follow a standard normal distribution, completing the variational autoencoder framework.\n\nAll connections are represented by solid black arrows indicating the direction of information flow. The figure uses color coding to distinguish functional modules: yellow for diffusion, green for document-topic computation, and blue for topic-word distribution. Text labels such as 'softmax', 'X', 'z', 'θ', 'β', 'L(X,X')', and 'L_KLD' are clearly placed near their respective components to denote their roles in the model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

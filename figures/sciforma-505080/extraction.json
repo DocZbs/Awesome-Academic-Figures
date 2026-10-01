@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505080",
+  "record_sha256": "50b2529cac7b081be62adfb5d33b7ae971d0348aff42f547530e088acad5d6c2",
+  "asset_sha256": "ae8fd231bd05e3f0108c24c6acd3012500ab450731703b5ffb57634451537421",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505080",
+    "title": {
+      "zh": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing · 方法图",
+      "en": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing"
+    },
+    "paper": {
+      "id": "arxiv-2412-19417",
+      "title": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing",
+      "authors": [
+        "Shu Zhao",
+        "Tan Yu",
+        "Xiaoshuai Hao",
+        "Wenchao Ma",
+        "Vijaykrishnan Narayanan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19417",
+      "arxiv_url": "https://arxiv.org/abs/2412.19417",
+      "arxiv_id": "2412.19417",
+      "arxiv_first_submitted_at": "2024-12-27T03:04:54Z",
+      "arxiv_updated_at": "2024-12-27T03:04:54Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19417v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505080/image/image.jpg?Expires=1790855449&Signature=ESBDMcYZaTp1~WlfkbfObOYxHUtj69vfzgf~-Jy388lIWPcLB7pUbou761zMCDK2uk~w1Xb~r022hZRXmphlpfuf1kJNRSd-d1Fd6a-wWBIcR2jNjgnuYQ0RiElb~oXnZuX4cDPF9wVGU3rpP9kvkvfLvEPD0iUhJW3ZmHumVgqHnY6uErgQf6nUCW2H5J9cOPJzn3SrE1fqVGoSs8NaW5ARsqadOc3ZzyyK~1HRGXg0q20h0YWe0iKX4GevPTQS4SlSi1dCB~UChxZUPY3e-V0wpOESxWWsbl4SNe-cMtoQ89eu837X0uWr85r-2MwPcUCEFJi4u79WHvjaV62GLw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505080,
+      "description_sha256": "bc5cfd1e72a1e36ef7cb0e55d4327caf21fcc967e4a2b426ec13996dac1a45d6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e5e26c2f7af0de2ea209cc3af8d17c9e010da4dbcccf5f7846ade934fce9f91c",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the proposed CLoRA (Conditional Low-Rank Adaptation) module, designed for efficient model adaptation by selectively retrieving and integrating knowledge from a stored pool. The global layout is left-to-right, depicting a sequential data flow starting from input features, through a knowledge retrieval mechanism, and ending in an update to model weights.\n\nOn the far left, a vertical stack of five light green squares labeled 'V' represents the input feature vectors or embeddings. These are fed into a light blue rounded rectangle labeled 'AVG', which computes the average of these vectors to produce a single query vector. This query is then directed as input to a central cylindrical component labeled 'Knowledge Pool'.\n\nThe Knowledge Pool is depicted as a database-like cylinder with horizontal bands in shades of blue and white, symbolizing stored knowledge. It receives two inputs: the query from the AVG module and a set of five purple squares above it, labeled 'K̂' (hat-K), representing the stored key vectors. An arrow labeled 'value' points from the K̂ block into the top of the Knowledge Pool, indicating that the keys are associated with corresponding values stored within. Inside the Knowledge Pool, three small colored markers (red circle, orange diamond, green square) suggest different types or categories of stored knowledge entries. From the Knowledge Pool, an arrow labeled 'Top r' emerges, pointing to a pair of purple squares, indicating that the top 'r' retrieved values (based on similarity with the query) are selected.\n\nThese retrieved values are then multiplied element-wise with a red rectangular block labeled 'q🔥', where the flame symbol suggests a learned or adaptive query weight or scaling factor. The multiplication is denoted by a black circle with a cross inside (⊗). The result of this operation is a new vector or matrix that flows into the final component on the right: a large 5x5 grid of light blue squares labeled 'ΔW'. This represents the computed weight update matrix to be applied to the original model parameters.\n\nThe visual modules are distinguished by color and shape: input features are light green squares; the averaging operation is a light blue rounded rectangle; the Knowledge Pool is a blue-and-white cylinder; retrieved values are purple squares; the adaptive query weight is a red rectangle with a flame icon; and the output weight update is a light blue grid. All connections are represented by solid black arrows, indicating the direction of data flow. The entire process embodies a conditional retrieval mechanism where the model's update is driven by contextually relevant knowledge retrieved from a pre-stored pool, modulated by an adaptive query weight."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

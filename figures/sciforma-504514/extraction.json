@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504514",
+  "record_sha256": "3e364de3e6043d082be045b90864b7e90caec348ecded68b5ec48bdf224b25b4",
+  "asset_sha256": "931c251635c136f9b6eccb584888a6573095dfbb1e4c90a38a59bae358b19bef",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504514",
+    "title": {
+      "zh": "Multi-Modal Data Exploration via Language Agents · 方法图",
+      "en": "Multi-Modal Data Exploration via Language Agents"
+    },
+    "paper": {
+      "id": "arxiv-2412-18428",
+      "title": "Multi-Modal Data Exploration via Language Agents",
+      "authors": [
+        "Farhad Nooralahzadeh",
+        "Yi Zhang",
+        "Jonathan Furst",
+        "Kurt Stockinger"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18428",
+      "arxiv_url": "https://arxiv.org/abs/2412.18428",
+      "arxiv_id": "2412.18428",
+      "arxiv_first_submitted_at": "2024-12-24T13:42:44Z",
+      "arxiv_updated_at": "2025-11-25T12:20:37Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18428v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504514/image/image.jpg?Expires=1790855433&Signature=O3DxmaA6YtbLV~pfddqxcEOpjO6Mo~qFYEJIEr1PMBw8rLVc3WWpIIaUV6pr0gsBQ0Fxmbdvt2Rx0NlipNwZdFRqbOCapoY-z44lb19yOhu4LK7S61F5yQ0eMKurGlkEH4ZukyrxSGzQGr9RNu8Pp2bATNk~YtsJ93SmGpBIbeQ-q9Py3AZuBpHKK14nHZ0CSMGUKpi73n9zpCxu9e~qq1PHwdOC4v-ka-Ywq4xnY5UlpHHSCoc24J9aa0IWCSJHUIWIBa2aZxhpC~YIeLN3tfjgaius1xqyAgVUXn~CRVEPwDswO13ikrjZsG8GFtaqHc~58yaBDkPaK4Y1XSFW4Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504514,
+      "description_sha256": "f41d397a7b5f4d803c689ecf4320e89d1825f149b436a5f98f3a887c91805fa1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "94c7ab0cc57f7cf6c499ddf5f9015a3fb5a7ac4042d37bcbe2592dd80a043222",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the optimization of XMODE, a smart replanning framework, through a two-tiered diagram: an 'Overview' at the top and 'Details' below, separated by a horizontal dashed line. The Overview presents a high-level workflow using standardized shapes: a gray circle labeled 'P' (planning) initiates the process, leading to a rectangular container labeled 'E' (execution), which contains two stacked boxes—t₁ (green) and t₂ (yellow)—representing sequential tasks. An arrow from this container points to a diamond-shaped 'D' (decision-making), followed by a gray circle 'Re-P' (re-planning), which feeds into another 'E' container holding t₃ (yellow), then to another 'D'. This structure visually represents a planning-execution-decision-replanning loop.\n\nIn the Details section, the process is elaborated with specific components and data flows. It begins with a user query: 'What is depicted on the oldest Renaissance painting in the database?' This triggers 'Planning & Expert Model Allocation', which assigns two tasks: t₁ (text2SQL, green box) to retrieve the image path and year of the oldest Renaissance painting using the db_schema, and t₂ (image_analysis, yellow box) to analyze what is depicted in the image, with input $t₁ (the result of t₁). These tasks feed into an 'Execution and self-debugging' module. Within this module, t₁ generates reasoning steps and executes an SQL query: 'SELECT img_path, strftime(\"%Y\", inception) AS year FROM paintings WHERE movement = 'Renaissance' ORDER BY inception ASC LIMIT 1', which queries a table named 'paintings' with columns 'img_path' and 'inception'. The output is a JSON-like result: {\"img_path\": \"images/img_0.jpg\", \"year\": \"1438\"}. This result is passed to t₂, which performs image analysis on 'img_01.jpg' (shown as a thumbnail strip of four images), producing the output: {\"img_path\": \"images/img_0.jpg\", \"year\": \"1438\", \"What is depicted in the image?\": \"painting\"}.\n\nA 'Decision-making' step follows, represented by a gray box containing a thought process: the system recognizes that while the painting is identified, its specific subject is not provided, prompting a feedback action to replan. This leads to 'Re-Planning & Expert Model Allocation', assigning a new task t₃ (image_analysis, yellow box) with the prompt 'What is specifically depicted in the painting?' and input 'img_01.jpg'. This enters another 'Execution and self-debugging' module where t₃ analyzes the image again, yielding: {\"img_path\": \"images/img_0.jpg\", \"What is specifically depicted in the painting?\": \"umbrellas\"}.\n\nFinal decision-making confirms the information is complete, leading to a summary output: {\"Summary\": \"The oldest Renaissance painting in the database is from the year 1438 and depicts umbrellas.\", \"details\": \"The painting from 1438...\", \"source\": \"The information was obtained through image analysis...\", \"inference\": \"umbrellas\", \"extra explanation\": \"The depiction of umbrellas in a Renaissance painting is quite unique and may reflect cultural or artistic themes of the period.\"}. All connections are directed arrows; dashed lines indicate feedback loops or data dependencies. Colors distinguish task types: green for text-to-SQL, yellow for image analysis. Shapes include rectangles for modules, diamonds for decisions, circles for planning/re-planning, and notes for reasoning/thoughts."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

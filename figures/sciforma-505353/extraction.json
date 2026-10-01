@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505353",
+  "record_sha256": "3a33b63a7429c6ab1bc2c67f39df99f16466de2c2a67473b239198b1ac4a4ac4",
+  "asset_sha256": "482bec428e839590759512b9efa42ae27a82160b081fabf9d5a533a8b57a0ac8",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505353",
+    "title": {
+      "zh": "Symbolic Disentangled Representations for Images · 方法图",
+      "en": "Symbolic Disentangled Representations for Images"
+    },
+    "paper": {
+      "id": "arxiv-2412-19847",
+      "title": "Symbolic Disentangled Representations for Images",
+      "authors": [
+        "Alexandr Korchemnyi",
+        "Alexey K. Kovalev",
+        "Aleksandr I. Panov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_id": "2412.19847",
+      "arxiv_first_submitted_at": "2024-12-25T09:20:13Z",
+      "arxiv_updated_at": "2024-12-25T09:20:13Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19847v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505353/image/image.jpg?Expires=1790855459&Signature=TEb5bx0n4PobkMl52X5saZlp5GdkCuYSGkpSyvhMQHm73sXjnriWKpiAFw4LXyWcuFPjiGRWHtP5GQGxnBE4t7LQHU4Cr7i5mZKaJ8HEHq4EDxqvl~DT0t-L2RgBH8IPPaaI4rAHQkVdxkVpq3wtxgzW1ibeoxeTqD0qZfqrnrxNEuUqLf7sByJxsp1fIw~N-OBZxL9pgyB~DjIA0HBvngqT6luP61nQCkeYoMGes-7dTq-nQeF1xc8aR7DMT~grK~qUBld45Xc0iw5QaGI9~nRnRN87WqpwXxSY~xEkwJAp0CCBNtWOf90tM0qKfUD56GCtiL628OX7CJeTMnsbWw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505353,
+      "description_sha256": "a9452a6f32af0d572e9399d99aa9fed955863860183b63648c7fa55a4972c1e5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "298aafc3652dc5b8d9dd3e22ecc208b312a8438b4e858c3cd5364a605d2260cf",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two contrasting methodologies for obtaining a symbolic disentangled representation of an object, labeled as (a) and (b), illustrating the difference between traditional HDC approaches and the proposed ArSyD framework.\n\nIn part (a), the global layout shows a symbolic input description of an object — specified as Shape = Cylinder, Color = Red, Size = Large, Coordx = X, Cordy = Y, Material = Metal — being processed through separate item memory modules for 'Shape' and 'Material'. Each module contains a grid of memory slots (orange rectangles) indexed by G₁ to Gₖ, where each slot holds a vector V (e.g., V₁ᴳ¹, V₂ᴳ¹, ..., Vₖᴳ¹ for Shape). The relevant memory slot corresponding to the object’s attribute (e.g., 'Cylinder' for Shape, 'Metal' for Material) is highlighted with a red border. From each memory module, the selected vector is extracted and multiplied element-wise (denoted by ⊗) with a corresponding global gate vector G (purple rectangle). The resulting vectors from both modules are then summed (+) to produce the final output vector O (blue rectangle).\n\nPart (b) illustrates the ArSyD approach, which grounds symbolic representations in raw visual data. The process begins with an image of Object I (a red cylinder) fed into an Encoder (pink trapezoid), producing a feature vector O′ (red rectangle). This is projected via a GF Projection block (light blue rectangle) into multiple latent representations V′₁ to V′ₙ (light blue rectangles), one per attribute group. These projections feed into two parallel GF Representation modules — one for Shape and one for Material — each structured similarly to part (a) but now incorporating attention mechanisms (green rectangles) within the item memory blocks. The attention mechanism selects the most relevant memory slot based on the projected features. The selected memory vectors V*₁ and V*N (green rectangles) are then multiplied element-wise with their respective global gate vectors G₁ and Gₙ (purple rectangles), and the results are summed to produce the final output vector O (blue rectangle). The overall structure emphasizes grounding symbolic processing in perceptual input via encoding and projection, followed by attention-guided retrieval from learned memory banks.\n\nBoth diagrams share similar visual attributes: memory slots are orange rectangles, gate vectors are purple, output vectors are blue, and operations like multiplication and summation are indicated by ⊗ and + symbols respectively. The key distinction lies in the source of input — symbolic in (a), visual in (b) — and the inclusion of attention and projection layers in (b) to bridge raw data with symbolic memory."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

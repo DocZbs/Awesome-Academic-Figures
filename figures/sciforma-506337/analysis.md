@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+MalCL: Leveraging GAN-Based Generative Replay to Combat Catastrophic Forgetting in Malware Classification — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01110
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the MalCL continual learning pipeline for malware classification across N sequential tasks. The global layout is structured as a horizontal sequence of N task modules, each enclosed in a dashed rectangular box labeled 'Task 1', 'Task 2', ..., 'Task N'. These modules are connected by rightward arrows indicating the progression from one task to the next, with an ellipsis between Task 2 and Task N to denote intermediate tasks. Each task module follows a consistent internal structure, representing a self-contained learning phase.
+
+Within each task module, the visual components include: a cyan cylinder labeled 'Train Dataset' (or 'Replayed Samples' in Tasks 2 through N), a beige rectangular block labeled 'Sample Select', a pink rectangular block labeled 'C_i' (where i corresponds to the task number), a gray rounded rectangle labeled 'Generated Data', and a GAN (Generative Adversarial Network) subsystem. The GAN consists of two components: a green square labeled 'G_i' (generator) and a blue square labeled 'D_i' (discriminator), both enclosed within a white box labeled 'GAN'. A small circle labeled 'z' represents the random noise input to the generator. In Tasks 2 through N, a green rectangle labeled 'Replayed Samples' is added alongside the 'Train Dataset' cylinder, indicating the inclusion of previously learned data for replay.
+
+Connections and arrows define the data and control flow. From the 'Train Dataset' (or combined 'Replayed Samples' and 'Train Dataset' in later tasks), an arrow points to the 'Sample Select' block, which also receives input from the 'Generated Data' block via an orange upward arrow. The 'Sample Select' block outputs to the classifier 'C_i'. The 'Train Dataset' also feeds into the GAN's discriminator 'D_i'. The generator 'G_i' takes the noise input 'z' and produces output that flows to the discriminator 'D_i' and also to the 'Generated Data' block. An orange curved arrow connects the 'Generated Data' block back to the 'Sample Select' block, forming a feedback loop. Additionally, the 'Generated Data' block sends an arrow to the 'C_i' classifier, suggesting that generated samples are used for training or evaluation. The 'C_i' classifier is trained on selected samples from both the real dataset and generated data. The output of 'C_i' is not explicitly shown but implied to be used for the next task, as indicated by the rightward arrow connecting tasks. This structure repeats for each task, with the key difference being the addition of 'Replayed Samples' in subsequent tasks to enable knowledge retention across tasks.

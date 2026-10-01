@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503641",
+  "record_sha256": "036712c0af001a7be4eef711b8891b442b152e68e5e9474ca218cf23922ec2f4",
+  "asset_sha256": "27fd5bdbbce9c5886923532e6f34904f337162e2b883adc29ab876726e3b18ed",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503641",
+    "title": {
+      "zh": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages · 方法图",
+      "en": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages"
+    },
+    "paper": {
+      "id": "arxiv-2412-16894",
+      "title": "Unsupervised Bilingual Lexicon Induction for Low Resource Languages",
+      "authors": [
+        "Charitha Rathnayake",
+        "P. R. S. Thilakarathna",
+        "Uthpala Nethmini",
+        "Rishemjith Kaur",
+        "Surangika Ranathunga"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16894",
+      "arxiv_url": "https://arxiv.org/abs/2412.16894",
+      "arxiv_id": "2412.16894",
+      "arxiv_first_submitted_at": "2024-12-22T07:07:09Z",
+      "arxiv_updated_at": "2024-12-22T07:07:09Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16894v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503641/image/image.jpg?Expires=1790855405&Signature=iVnTuHowjdzwUn79WuGGyB2nb5ZkoQc9eTgqKVAaxOrIVnY1Lhshz6oX6FHKvBdaGWXdAwXdT~90qsNKhSPSR5V4mcCtWOWwGE-b5Uf-ZnfPa1JZC1Uz9f7yT4VfEXVbbPRQGkizQdbaiuo3WdCsEEbQDrbCo~lat-DjTJOB1JxNmnYnOX48KSPD8K8IKNDXuWMCwOIQiaoSqhqXGi7tE9Mdi4K54IeWLMktiutdL9Qvnl3taFjfrCITsV2QdxMk9aNTd93va8v3PL9LpQNUotUFv4bgrRkA6asadeENXMoJRrM3-GwlBkt9ODkOoBlu-mfcfWyQjCqWJDWd9LMfrw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503641,
+      "description_sha256": "44f600c38468955b7de6353016485b24c5b366378bc1dfbb3c8cd68217005786",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d15899490de9e0ad2b935280c9995638f6dd8ee2e68ddc38ee2aa4320f8007d6",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram of the UVecMap framework, illustrating a two-stream processing pipeline for aligning source and target embeddings through pre-processing, initialization, and iterative self-learning phases. The global layout is vertically structured into distinct stages: at the top, two oval nodes labeled 'Source Embeddings' and 'Target Embeddings' serve as inputs. These feed into a dashed rectangular box labeled 'Pre - processing', which contains parallel processing streams for each embedding type. Each stream consists of three rectangular boxes arranged vertically: first 'Length Normalization (LN)', followed by 'Mean Center each Dimension (MC)', and then another 'Length Normalization'. Both streams converge below this box. \n\nFollowing pre-processing, the flow splits into two main components: 'Initialization' and 'Self - Learning', both enclosed in dashed rectangular boxes. The 'Initialization' block contains a single rectangular box labeled 'Generate Initial Solution', which feeds into the 'Self - Learning' block. Within 'Self - Learning', there are two sequential rectangular boxes: the first computes 'Optimal orthogonal mapping to max similarities for current dictionary', and the second derives an 'Optimal dictionary by orthogonal mapping'. This leads to a diamond-shaped decision node labeled 'Converged?'. If the answer is 'NO', an arrow loops back to the first box in the self-learning phase, indicating iteration. If 'Yes', the flow proceeds to a rectangular box labeled 'Symmetric re-weighting'. \n\nFinally, from 'Symmetric re-weighting', an arrow points to an oval node at the bottom labeled 'Source / Target Mapped Embeddings & Built Dictionary', representing the final output. All connections are indicated by solid arrows showing the direction of data or control flow. The diagram uses consistent visual attributes: ovals for inputs and outputs, rectangles for processing steps, and diamonds for decision points. Text labels are centered within shapes, and key operations like normalization and mean centering are explicitly named. The dashed boxes group related stages, enhancing clarity of the modular structure. No colors are used; all elements are black on white background. The diagram emphasizes symmetry between source and target processing paths during pre-processing and the iterative refinement process in self-learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

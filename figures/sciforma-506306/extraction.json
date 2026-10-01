@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506306",
+  "record_sha256": "f88538b812d4c92ae99434a081c409db3832d14d90c20232c1e8c1722f59306d",
+  "asset_sha256": "501f85a67bca78d2c711c7470ca93dc9a0aa8c58983eeaaeacc4db01c3fd780a",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506306",
+    "title": {
+      "zh": "MSWA: Refining Local Attention with Multi-ScaleWindow Attention · 方法图",
+      "en": "MSWA: Refining Local Attention with Multi-ScaleWindow Attention"
+    },
+    "paper": {
+      "id": "arxiv-2501-01039",
+      "title": "MSWA: Refining Local Attention with Multi-ScaleWindow Attention",
+      "authors": [
+        "Yixing Xu",
+        "Shivank Nag",
+        "Dong Li",
+        "Lu Tian",
+        "Emad Barsoum"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01039",
+      "arxiv_url": "https://arxiv.org/abs/2501.01039",
+      "arxiv_id": "2501.01039",
+      "arxiv_first_submitted_at": "2025-01-02T03:41:32Z",
+      "arxiv_updated_at": "2025-01-02T03:41:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01039v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506306/image/image.jpg?Expires=1790855574&Signature=n1jXF8ZXRb5ydT1Yx892DAWYpshJlcTJnDltCXA57uirokKVApZPmIw76xNlFV7HoLSs2LWDTm1jKly7hnEn2VO5Md8VR0kgs8r7gPTApBK98ukIcBhDl4n7y3lUcFarOBEsfel8kdaDbe78xF6x71RvgCvm4jUUNRT61fQCWQJVI4SkieUZ6z1X0Ti2AR6-qYxQVS7E9KvyfCwo-zq6t~erk-6sOsh~qrUAlFcWMcGK~q3UyQqjyNjg-zRTM~AOqAbwjdO-cGL-iwd4vk6I-viJXMvejtB7ZSDnDctGSnKaFDT4xw8pQR25nmkoXRB3VVZq196f1kYLu0kqoHAahw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506306,
+      "description_sha256": "ae59f50f60499b2eb801bd9ae84a8176f87274c3c9dfe04f63328b409bae88fd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4abc41e6132931d1f89f9ea5d0a05c7215b1da0d21f961b72253513d1bb8d060",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural combination of Linear Attention and Multi-Scale Window Attention (MSWA), structured into two main horizontal sections: the top section representing the MSWA layer and the bottom section depicting the MSWA head. The global layout is a left-to-right sequential flow, with the top row showing a series of grid-based feature maps undergoing transformations via attention mechanisms, and the bottom row displaying parallel outputs from multiple attention heads. The top row begins with an input grid, rendered as a 2D matrix of light blue cells, indicating the initial feature representation. This grid is processed through a sequence of operations, each represented by an orange rightward arrow followed by an ellipsis, suggesting iterative or repeated processing steps. After each transformation, the grid evolves to show increasingly complex patterns of dark blue highlighted cells, which represent activated or attended regions. These patterns form diagonal bands or staggered blocks, reflecting the multi-scale window attention mechanism’s focus on localized, non-overlapping or overlapping windows across different scales. Above this sequence, two labels—'Linear Attention' and 'Multi-Scale Window Attention (Layer)'—are positioned at the top, with blue downward arrows pointing to the first and subsequent grids respectively, indicating that both mechanisms contribute to the processing pipeline. The bottom section, labeled 'Multi-Scale Window Attention (Head)', is bracketed by an orange curved brace connecting the final output of the top row to three separate grid outputs below. Each of these lower grids displays a distinct pattern of dark blue highlighted cells, illustrating the parallel computation across multiple attention heads, each capturing different spatial relationships or scales within the input. The visual modules consist primarily of 2D grid matrices with varying shades of blue to denote activation levels, and orange arrows to indicate forward propagation. The connections between modules are shown via solid orange arrows for sequential flow and blue arrows for component contributions. The figure emphasizes the hierarchical and parallel nature of the attention mechanism, where linear attention provides a baseline computation, while MSWA introduces multi-scale, windowed attention at both the layer and head levels, enabling efficient and context-aware feature extraction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

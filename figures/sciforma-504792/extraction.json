@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504792",
+  "record_sha256": "2326be20fe9c405a5af937a6c36ceab4814b683d7ec6ec15144c03bf8f02a4a3",
+  "asset_sha256": "38d12866e9000187d4c8beef9aea518a0d89ac35c3a0e52e9db6add39f0ca834",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504792",
+    "title": {
+      "zh": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs · 方法图",
+      "en": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-18914",
+      "title": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs",
+      "authors": [
+        "Dulhan Jayalath",
+        "James Bradley Wendt",
+        "Nicholas Monath",
+        "Sandeep Tata",
+        "Beliz Gunel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_id": "2412.18914",
+      "arxiv_first_submitted_at": "2024-12-25T14:14:31Z",
+      "arxiv_updated_at": "2025-08-24T22:09:57Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18914v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504792/image/image.jpg?Expires=1790855436&Signature=XDow0c4uuZFQjNQVJCXcMdCNPWtmr5OAItE13zwX5vS~sN3NDTiKBHmVUQhR1yoFbAir0ZkHt6YI-Q68tSvXM5DjeVQrXZfIRvUSdoj47FgOxCE4AMogw9m9Qpp25jKV7oSnZAzuRJr3kzrJjudOBMHufvYX5dstSZzM6LXYMqBorDnWtWHj6IbUHTnMlSdefGJNGte5IASXFueG5XnO7uuJD8BBlhQ6bPMnFRGnTRWANlAB31svkCN7FfVrgrbGqVo8QLgJf9hidcqADGQd9m-gF~SQdRXKzqLFagPBIpjFINcLSyL~bUHPRPcLvZzHVjl2ZyD5R~G3a-6-fb2CQQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504792,
+      "description_sha256": "ceb88dc7818a098ec1496e7de261a168fb2dbc3c2390c3cf5b03e26e7d878283",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "d8f9d15b7cc21356b7eaf0525fd3f9b6d216858039708e37ff2075677f3240fa",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4f9a2cbae63ca9a5327a487c48a016dd228d75b6b0f4c7c9ae4b8ea39b8ef176",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a PRISM code composition framework, depicting an iterative process where a large language model (LLM) incrementally builds a memory of relevant functions to solve a given task. The global layout is divided into two main vertical sections: on the left, a stack of input components labeled with mathematical symbols T, q, S, m_i, and d_i, representing the task, query, schema, current memory state, and data chunk respectively; on the right, the LLM module and its output, along with a feedback loop for validation and revision.\n\nThe left-hand side contains five rectangular boxes stacked vertically, each with a black border and rounded corners. The top box, labeled T, contains the task: 'Compose two functions to capitalize two strings'. Below it, the box labeled q states: 'Find the functions that are relevant to the task'. The third box, labeled S, displays a green comment '# map func to a description' followed by a blue-typed Python-like type annotation: 'functions: dict[Callable, str]', indicating a mapping from callable functions to string descriptions. The fourth box, labeled m_i, shows the current memory state as a tuple: '(functions, {cap: \"capitalises a string\"})', where 'cap' is highlighted in blue and the function name 'functions' is in orange. The bottom box, labeled d_i, contains two function definitions in blue text: 'def first(a, b): return a' and 'def cat(a, b): return a + b'.\n\nA thick gray vertical bar connects these five boxes, symbolizing their collective input to the LLM. An arrow points from this bar to a central square box labeled 'LLM', which processes the inputs. From the LLM, a blue arrow leads to a new memory state box on the right, labeled '(functions, add, cat: \"concats strings\")', where 'add' is in black and 'cat' is in blue. This represents the LLM's proposal to add the 'cat' function (with its description) to the existing memory.\n\nA feedback loop is shown via a blue arrow labeled 'r_i' pointing back from this proposed memory state to the LLM, and another blue arrow labeled 'Validate and revise' pointing upward from the proposed memory to a final validated memory state: '(functions, {cap: \"capitalises a string\", cat: \"concats strings\"})'. This final state includes both the original 'cap' function and the newly added 'cat' function, with their respective descriptions. The entire process demonstrates how the LLM iteratively refines its memory by selecting and validating relevant functions from available data chunks to fulfill the task."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

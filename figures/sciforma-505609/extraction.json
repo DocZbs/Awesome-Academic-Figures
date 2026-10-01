@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505609",
+  "record_sha256": "5afe7c85cf6b1f8997b1dcddb837f37ab3270b794d10a784cc8997fc3333ddca",
+  "asset_sha256": "25456695d6090e56d215fcc2ae0e0b92cdd5f8b8246bce9736e496c2ab0691b6",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505609",
+    "title": {
+      "zh": "LLM2: Let Large Language Models Harness System 2 Reasoning · 方法图",
+      "en": "LLM2: Let Large Language Models Harness System 2 Reasoning"
+    },
+    "paper": {
+      "id": "arxiv-2412-20372",
+      "title": "LLM2: Let Large Language Models Harness System 2 Reasoning",
+      "authors": [
+        "Cheng Yang",
+        "Chufan Shi",
+        "Siheng Li",
+        "Bo Shui",
+        "Yujiu Yang",
+        "Wai Lam"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20372",
+      "arxiv_url": "https://arxiv.org/abs/2412.20372",
+      "arxiv_id": "2412.20372",
+      "arxiv_first_submitted_at": "2024-12-29T06:32:36Z",
+      "arxiv_updated_at": "2025-02-28T13:06:02Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20372v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505609/image/image.jpg?Expires=1790855552&Signature=t84RUSOzTvpp0TU95lVOWEtBwlObknwcwZ97haOiBApsjoMUS8N1CE~GwKTQwJgDCq~Ua2G3LLs2tJGkySHtVaPGsyVNsnb4HdPWx9JR8tWu7KTIJWVlF08vRqOXERgUCsplt6yLS415Rcwpz85Y1DowJ15zpKUNlGKwp3OozfseImUsdywLTCkWS9ZwH3MK0J64UJt6UiEjbPKLRVV-qALX9OMzd4FKgqs4xO4gsWABFE--sf7VbKrvX0DpAupFbDIPmbGWcCXcB14swK2cypbQ~NKqvPA1ec8dHsNEjyET8X7rOqlR6qu3gipjCfAOAAFEYwlCI6pPRoTJjSwHNw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505609,
+      "description_sha256": "2b41ce1615139429362ba7dbc49f379feeed128097ed30001e94e080d3a4b40d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9931ef67bb976ca7ac37a9afa683d98445a9437d1b30578f4c485d9ca415bb1a",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the training and inference stages of an LLM2 framework, divided into three main components: (a) Synthetic Process-Supervision, (b) Process-based Verifier, and (c) Dual-process LLM. The entire diagram is horizontally partitioned into two major phases: 'Training Stage' on the left and 'Inference Stage' on the right, separated by a gray arrowed banner at the bottom.\n\nIn section (a), Synthetic Process-Supervision, a light blue box labeled 'Q: ...' and 'R: He writes 6 pages every' represents a question-answer pair. This input is fed into a yellow rectangular module labeled 'LLM', which generates multiple candidate continuations shown as green rounded rectangles: 'quarter', 'for each ...', 'and he ...', 'so he ...', 'to make ...', and 'month'. These candidates are evaluated for accuracy, with 'quarter' receiving an accuracy score of 0.6 and 'month' receiving 0.3. The candidate 'month' is selected as x_i^-, indicated by a downward arrow from the LLM to the 'month' box and a label 'selected as x_i^-'.\n\nSection (b), Process-based Verifier, shows the training of a pink rectangular module labeled 'Verifier'. It receives two inputs: s_θ(x_<p x_i^+) and s_θ(x_<p x_i^-), representing scores for positive and negative process continuations, respectively. These are connected via bidirectional arrows to a 'pairwise comparison loss' function, which optimizes the verifier. The inputs to the verifier come from a light blue box containing the same Q-R pair as in (a), along with two green boxes labeled 'week' and 'month', indicating the process tokens being compared.\n\nSection (c), Dual-process LLM, depicts the inference stage. A light blue box with 'Q: ...' and 'R: ... 3 + 5 =' is processed by a yellow 'LLM' module, which outputs a sequence of green bars representing token scores or logits: '8 1 . -'. This output is sent to a pink 'Verifier' module, which also receives the same Q-R input. The verifier's output is combined with the LLM's output via a '+' operator, scaled by a parameter β, resulting in a modified sequence of green bars: '8 1 . -', which is then used for final generation. The connection from the LLM to the verifier is shown as a curved line, and the combination step is represented by a circular '+' symbol with β below it.\n\nAll modules are color-coded: LLMs are yellow, verifiers are pink, process tokens and scores are green, and input Q-R pairs are light blue. Dashed vertical lines separate the three sections, and the overall flow moves from left to right, from training to inference."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

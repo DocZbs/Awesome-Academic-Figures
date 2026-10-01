@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504636",
+  "record_sha256": "1c2ca1dabfcec5cdd58f5b3af380c61d023351db5205252d7b0b11847638ef0d",
+  "asset_sha256": "fca90ed027b5f23efc34b43955436ed19ab5824b43f6a40b90bd2c1c05e63111",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504636",
+    "title": {
+      "zh": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation · 方法图",
+      "en": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18688",
+      "title": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation",
+      "authors": [
+        "Faraz Waseem",
+        "Muhammad Shahzad"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_id": "2412.18688",
+      "arxiv_first_submitted_at": "2024-12-24T21:24:41Z",
+      "arxiv_updated_at": "2025-08-05T01:03:48Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18688v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504636/image/image.jpg?Expires=1790855433&Signature=rK8LdU89iMC7pFG5JARqO2dOKoel9q8nQmZy9k-4M-l2vP28Z9fntbxI~Cjdi~EvjYTYK4CjjFCS7pQRJXgxn6YhRWBnkygNj2mMlTCTBQl4TFWm0M2Pk7cJWlVBKCT4~HJLbAufeSNs8p7PCOfw0CCYK1Ahz9q5ebvmWR5qa~5fFO9lj9WBtmthoq2JjVtYt2LPsYE6nUALb4cT236~3SDJRD-CjldZWee40NMXrTzO79UEh1PVl3WmpwCfqFiDfIGuUDYzEzEbzEDhMNQPbHa4dXPbfsb1O9cyajKHvCrcp8DlsiIPgbv0WVLvDwT8nOkXX0D3XB--k1Xece~siA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504636,
+      "description_sha256": "4a62eb8cdc2e3c7da55c5ba10fa13ef030aec18c72e4989c65b4c719b6088bee",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "234f46976c1d2d3042fc8ab1bc0257ef8dc65b08b73fc61d4330ca929fde5a83",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of DirectT2V, a framework for zero-shot text-to-video generation where large language models act as frame-level directors. The global layout is horizontally structured, progressing from left to right, depicting the flow of data through a Diffusion U-Net, frame interaction modules, and a dual softmax attention mechanism leading to mapped output values.\n\nOn the far left, a vertical stack labeled 'Diffusion U-Net' contains four sequential components: Convolution Block (light blue rectangle), Modulated Self Attention (pink rectangle), Cross Attention (light blue), and FFN (Feed-Forward Network, light blue). This entire block is repeated T times, indicated by '× T' above it, suggesting temporal processing across frames. Below this stack, a dashed bracket connects to a group of three 3D cubes representing frames, labeled Q₁:F, K₁:F, V₁:F, indicating query, key, and value tensors for a sequence of frames. These are enclosed in a dashed box labeled 'Frames'.\n\nBelow the 'Frames' box, a rounded rectangle labeled 'Frame Interactions' points to another dashed box containing three 3D cubes labeled 'Mapped Values', showing the result of frame-wise interaction processing.\n\nTo the right, the core attention mechanism is shown. A green cube labeled 'Query' feeds into a 'Dual Softmax Operation' module, which contains two parallel paths. Each path includes a 'Dot product' operation followed by 'Softmax' and then an 'Attention' block (represented as a stack of orange rectangles). The top path is labeled 'T' and the bottom path is also labeled 'T', indicating temporal dimension processing. The outputs of both attention blocks are combined via a circular node labeled '⊕' (element-wise addition), then passed through 'Aggregate' and 'Threshold' blocks to produce a 'Confidence Mask' (a blue grid with varying intensity).\n\nBelow the 'Dual Softmax Operation', a 'Reference' section contains two blue cubes labeled 'Key' and 'Value'. The 'Key' cube connects to the 'Dot product' block in the lower path of the dual softmax. The 'Value' cube connects directly to a 'Dot product' block below the confidence mask.\n\nFurther right, a 'Current' section contains two green cubes labeled 'Key' and 'Value'. The 'Key' cube connects to an 'Attention' block (vertical yellow rectangle) labeled 'Q' at the top and 'K' on the side. The 'Value' cube connects to the same attention block, labeled 'V' on the side. The output of this attention block is multiplied by (1 - M_f), where M_f is derived from the confidence mask via a circular node labeled 'M_f'. This result is added (via ⊕) to the output of the lower dot product (multiplied by M_f), producing the final 'Mapped Value' — a 3D cube with a diagonal split, half green and half blue, symbolizing the combination of current and reference information.\n\nArrows indicate data flow: from the Diffusion U-Net to frames, then to Frame Interactions; from Query and Reference Key/Value to Dual Softmax; from Confidence Mask to M_f; from Current Key/Value to Attention; and finally combining weighted outputs to produce Mapped Value. The diagram emphasizes how confidence-based masking guides attention, enabling selective frame-level guidance for video generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

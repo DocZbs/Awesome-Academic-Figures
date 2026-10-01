@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503468",
+  "record_sha256": "1e4d00830556ca9a34396185cac153e53dbd6422f4688c32211597dc094b5994",
+  "asset_sha256": "d35fdbe1ae0104f9d81c7074b0785b8e4c4630f9c70e50f4d8e356c856533e52",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503468",
+    "title": {
+      "zh": "A Systems Thinking Approach to Algorithmic Fairness · 方法图",
+      "en": "A Systems Thinking Approach to Algorithmic Fairness"
+    },
+    "paper": {
+      "id": "arxiv-2412-16641",
+      "title": "A Systems Thinking Approach to Algorithmic Fairness",
+      "authors": [
+        "Chris Lam"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16641",
+      "arxiv_url": "https://arxiv.org/abs/2412.16641",
+      "arxiv_id": "2412.16641",
+      "arxiv_first_submitted_at": "2024-12-21T14:21:33Z",
+      "arxiv_updated_at": "2026-04-23T14:11:26Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16641v6"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503468/image/image.jpg?Expires=1790855367&Signature=AxnEjK5~L6LfmNnECG-Yx6PjZSqluAJq15QFGVIKdlM6IjTHm26tCIskLwa8squuZlLk0q2n6yIh7kX2g1lhFCHjE6NQH7ip0Q993NSBY-Fg~5wICAvaS9U2LyJ5N71Fep0zEnD61ELqdqTCk0dzw~EkhEir4tClmuhVgJ~YxcqTrIRBbul3PAsOnsnF6ri2f6RuZxkJUIszqm13bEltjx5N0ZoRUBlxCcAXWDkh9wm9qqlDIRjSAZsCdHbEGnZs31CbJuiKGteSgiuvdnuJUDiDfgpOqerNb5R2Fm1LJYz4BAbfA3uavAEWQFgNMPGW4XTZgJfG8fQy4mK4LfJpwA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503468,
+      "description_sha256": "928be1dce7a6bc11fe648627bd6bd701d3412d4bdeefaf4f8931157967227b2d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a5424fe071e12621231f0ad8c133c2587948cd00b18b2ccf76ba347a527d7f92",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a causal Bayesian network with an added feedback loop, structured as a horizontal sequence of five circular nodes connected by directed edges. The global layout is linear from left to right, representing a causal flow: Protected Attribute → Mediator → Data → Decision → Outcome. Each node is a white circle with a black outline, labeled below with a variable name (A, W, X, D, Y) and a descriptive caption (Protected Attribute, Mediator, Data, Decision, Outcome). The nodes are evenly spaced along a horizontal axis.\n\nThe primary causal pathway is represented by solid black arrows: A points to W, W points to X, X points to D, and D points to Y. This sequence models a forward causal chain where the protected attribute A influences the mediator W, which in turn affects the data X, leading to a decision D, and finally resulting in an outcome Y.\n\nIn addition to the forward path, there is a feedback loop introduced via two red curved arrows. One red arrow originates from Y and points back to W, indicating that the outcome influences the mediator. Another red arrow also originates from Y and points to D, suggesting that the outcome has a direct effect on the decision-making process. These red arrows form a feedback mechanism, breaking the strict unidirectional flow and introducing cyclic dependencies into the network.\n\nThe figure includes a caption at the bottom: 'Figure 1: Adding a feedback loop to the causal Bayesian network,' which contextualizes the diagram as a modification to a standard causal model to account for feedback effects. The visual distinction between black (forward causality) and red (feedback) arrows emphasizes the conceptual difference between the original causal structure and the newly introduced feedback components. The diagram does not include any mathematical equations or additional annotations beyond the node labels and the main caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

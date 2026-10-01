@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506035",
+  "record_sha256": "6cf012b7b79a13ff9328ea85ded488bdeed46d7649accf3199b10c770753b5d8",
+  "asset_sha256": "6ede2cc2390fa3bec49b5d94ab72d0b9af0eb627ed6eb5522d26bc6e984a50a3",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506035",
+    "title": {
+      "zh": "Training-free Heterogeneous Model Merging · 方法图",
+      "en": "Training-free Heterogeneous Model Merging"
+    },
+    "paper": {
+      "id": "arxiv-2501-00061",
+      "title": "Training-free Heterogeneous Model Merging",
+      "authors": [
+        "Zhengqi Xu",
+        "Han Zheng",
+        "Jie Song",
+        "Li Sun",
+        "Mingli Song"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00061",
+      "arxiv_url": "https://arxiv.org/abs/2501.00061",
+      "arxiv_id": "2501.00061",
+      "arxiv_first_submitted_at": "2024-12-29T04:49:11Z",
+      "arxiv_updated_at": "2024-12-29T04:49:11Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00061v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506035/image/image.jpg?Expires=1790855568&Signature=dGgjjcMwyEplZnAbmxo2MGol27bBPThtM5yPI0nGD5PbFuAR7e3b2jpw7h4SBiiXXH8WwOMZ4aLJLw7IeS6midMht7N9OBU5RGijplIHyC08kjxRfXRsbnb9O4-eDMZV20u6eRUiUmzN8y8HBfVgAWVM6CZwQCA4byDjM4wyLPsPtkQfHNQuUQaXVD~1ydbdpryYxdG1n6hfuXH0PL8QKXLh1CwPWVKYA~rSu89vWO8DNSWK2BRC6lQYnfzBbcRGkxJbeZgL2zKFpaopvYo82j~xBTxNkqySaq8YUW0X66m~QkFyWqmz~M8S1QsOWVff9ahaCvRa02UPDctFgSU6Ew__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506035,
+      "description_sha256": "75671162c48f1bd0eb473257c4053824fabe9fa30e20db5408689bb566605772",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5ce00ec272e876bb329f7e5b75fb5ef1b7bf6c625b816e3fd8f7957922098315",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative illustration of two model alignment strategies: Segment-wise Model Alignment (SMA) and Layer-wise Model Alignment (LMA), labeled as (a) and (b) respectively. The global layout is divided into two side-by-side diagrams separated by a vertical dashed line, each depicting a multi-layered neural network structure with alignment connections. Both diagrams share a common legend at the top: a yellow double-headed arrow indicates 'The feature similarity that needs to be maximized by alignment', a dashed rectangle denotes 'Segments', and a light purple rectangle represents 'Layers'.\n\nIn both diagrams, the left side contains a stack of five horizontal rectangular blocks enclosed within a dashed box, representing segments. These blocks vary in color from blue at the top to pink at the bottom, indicating different layers or depths within the network. Each block is connected vertically by thin gray lines, suggesting a sequential or hierarchical flow. From the right edge of each block in the segment, a yellow double-headed arrow extends to a corresponding block on the right side, which is outside the dashed box. These right-side blocks mirror the color and order of the left-side blocks, forming a parallel stack. The arrows indicate that feature similarity between corresponding blocks should be maximized through alignment.\n\nIn diagram (a) SMA, the alignment connections (yellow arrows) link each block in the left segment directly to its corresponding block on the right, maintaining a one-to-one correspondence across all five layers. This suggests that alignment occurs at the level of individual segments, preserving the structural integrity of each segment's internal layers.\n\nIn diagram (b) LMA, the alignment connections also link each block in the left segment to its corresponding block on the right, but the visual representation emphasizes that alignment is performed layer-by-layer rather than segment-by-segment. The structure is identical to SMA in terms of block arrangement and connection pattern, but the label 'LMA' implies a different operational logic where each layer is independently aligned, potentially allowing for more flexible or fine-grained matching across models.\n\nBoth diagrams include upward-pointing gray arrows above the right-side blocks, indicating the output or forward propagation direction of the aligned features. The overall structure highlights the difference in alignment granularity: SMA aligns entire segments as units, while LMA aligns individual layers, even though the visual depiction of connections appears identical. The figure serves to illustrate how these two approaches differ conceptually in their alignment strategy despite similar visual representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

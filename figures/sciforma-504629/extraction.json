@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504629",
+  "record_sha256": "d79f9ce30901199d3660fddca07f653d5021dbec4fe15aff39d1e68d403b1289",
+  "asset_sha256": "e9f0ee05222aa3dd21cd79daa20705f856f38d5bb3494a5bcd53321ed2df2f4e",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504629",
+    "title": {
+      "zh": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models · 方法图",
+      "en": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-18675",
+      "title": "TAB: Transformer Attention Bottlenecks enable User Intervention and Debugging in Vision-Language Models",
+      "authors": [
+        "Pooyan Rahmanzadehgervi",
+        "Hung Huy Nguyen",
+        "Rosanne Liu",
+        "Long Mai",
+        "Anh Totti Nguyen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18675",
+      "arxiv_url": "https://arxiv.org/abs/2412.18675",
+      "arxiv_id": "2412.18675",
+      "arxiv_first_submitted_at": "2024-12-24T20:28:07Z",
+      "arxiv_updated_at": "2025-07-14T21:28:12Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18675v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504629/image/image.jpg?Expires=1790855432&Signature=Y9ojKsjc8J6wgNlNeFnj2nR5~xfZRJj2jL4lOzdgmHjtgr4nbO3hf-EC4Z-35F8lZJfg7HaxHLxG7~EK-Q6L8Y15qV6slydaVbhXyPkCCyFxwMqwfs17E0MuzoEUMzCl3l3ZqTs2cGnkpJHaRdhUBrk4jW~Hd~neYL-3pDLW9C~fYVXABKQ1NBAvB~JBrxTcG~pZyx1~Mciw91r7BeLl0VKpLNzYKPfsG1duNFcp6tuQ-tnNVS9NTnlw0WnCEbQZzvd59bytDd8uyEbpvZLyjaTKHjcgZBWmvD5xrMahdOyhOF2scz9rRBtsapUqbM-D-2ub42XKOnxCSLQj~DlS9A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504629,
+      "description_sha256": "93ecc7f36c432d46193899e723d0f4ec83262369e634f0944d2a11f86c37951d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "59d34199cdedc155fe1499a4d70503ba1023dc1ef28d82d4ba9fdcfc6d932152",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a vision-language model (VLM) architecture enhanced with a co-attention bottleneck module called TAB, designed for change captioning tasks. The global layout is divided into four main parts: (a) the overall VLM architecture, (b) the structure of the TAB module, (c) the internal mechanism of the co-attention bottleneck, and (d) visualization of attention maps.\n\nIn part (a), the architecture begins with two separate image inputs — one showing a scene before a change and another after — which are processed by 9 layers of 12-head multi-head self-attention (MHSA) blocks. These outputs are then fed into two layers of 12-head MHSA, followed by a single layer of 1-head co-attention (TAB). The final output is passed to a language model for generating a caption such as 'The large blue cube turned green'. The TAB module is highlighted in green and positioned just before the language model.\n\nPart (b) details the TAB module’s structure. It consists of a 1-head co-attention layer, which receives patch embeddings from the visual encoder (denoted as y). The module includes an MLP block followed by Add & Norm layers, but notably, the skip connection from the input to the output of the co-attention layer is removed (indicated by a red 'X'), making the co-attention layer act as an information bottleneck. This design forces the model to selectively pass visual information to the language model, similar to a forget gate in an LSTM.\n\nPart (c) zooms into the co-attention bottleneck mechanism. It shows the computation of attention scores using query (Q), key (K^T), and value (V) matrices derived from the patch embeddings and a context vector c. The Q matrix is formed by multiplying patch embeddings with W^q, while K^T and V are formed using W^k and W^v respectively. The attention scores are computed as Q·K^T, then masked and normalized via softmax. The resulting attention weights are applied to V to produce the final output. A specific example is shown where the attention weights for patches are [0.09, 0.0, ..., 0.72, 0.0], and the CLS token's attention weight is 0.8. The total patch attention is computed by summing these weights (e.g., 0.8 × 0.9 = 0.72), indicating the contribution of each patch to the final representation.\n\nPart (d) visualizes the attention maps generated by the TAB module. Two bar charts show attention values assigned to different image patches (indexed from CLS to 49). In the top chart, patch 30 receives the highest attention (0.8), corresponding to a highlighted region in the image (a red cube). In the bottom chart, patch 31 receives the highest attention (0.8), highlighting a different region (a green cube). These visualizations demonstrate how TAB precisely identifies which image regions contribute most to the model’s response, enabling interpretable change detection.\n\nThe entire diagram uses color-coded boxes: blue for visual features, orange for context or language-related components, pink for the co-attention bottleneck, and black for the language model. Text labels clearly denote each component, including mathematical operations like softmax, mask, and matrix multiplication. Dashed lines indicate data flow, while solid arrows represent computational steps. The figure effectively communicates how TAB acts as a controlled bottleneck for visual information, enabling both performance and interpretability in vision-language tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

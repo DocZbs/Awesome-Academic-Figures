@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506574",
+  "record_sha256": "de6ab42793073124a87dbf11aa401fd86383136ab8961509852ac1e12f22948e",
+  "asset_sha256": "27c7ee666e5d1e3bd3ee357fd0beb98556170e97aa8d1534721e4059ead63c0b",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506574",
+    "title": {
+      "zh": "End-to-End Long Document Summarization using Gradient Caching · 方法图",
+      "en": "End-to-End Long Document Summarization using Gradient Caching"
+    },
+    "paper": {
+      "id": "arxiv-2501-01805",
+      "title": "End-to-End Long Document Summarization using Gradient Caching",
+      "authors": [
+        "Rohit Saxena",
+        "Hao Tang",
+        "Frank Keller"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01805",
+      "arxiv_url": "https://arxiv.org/abs/2501.01805",
+      "arxiv_id": "2501.01805",
+      "arxiv_first_submitted_at": "2025-01-03T13:32:57Z",
+      "arxiv_updated_at": "2025-06-26T18:40:55Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01805v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506574/image/image.jpg?Expires=1790855582&Signature=hpupgW-A60Fb3qI0Y~6IUOfGcrOfCuyUgmJjMmrODvZock26twvZhjYKzK7V7~X8tJKiObOyjTInmI4KK0VD13QoejsWU1J7bShgQvq53yy3coDKkO~cyNrukZzskJF6pqYYcmjfTp~AcbXrTWpNW16qgb9wn39x8Ty52rN3F~Obp4H-S~lkNGO6lns9BraznRIgQ-K0hmKljBC7kKwUkD~Ah2pYp6ZvJksJ7Yb2Fvw0LzKdkYttwPJbOObb5wuzKF2LlGpHES34Aw5zVbLBoda66iNJzlgF5oVjLWDIb56ms9JiaTCORzTXWuLGAocZOnJnqs7Cy8r3wNWhO9jMgg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506574,
+      "description_sha256": "3dc88d41110f6aa218b855e2c0b7e6035cd5adcfc08b3f68321c08ad747aa737",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f3c808d0d685ba98e854ec5e3c3d7717c286e925c3ae6bc96690929a2f42d4ff",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a CachED (Caching Encoder Decoding) approach for long document summarization, structured into three main steps. The global layout is divided into three sequential phases: (1) chunked encoding of the input, (2) decoding and loss computation, and (3) gradient caching and backpropagation. The entire process is depicted as a flow from bottom to top, with data moving through encoder modules, then to a decoder, and finally gradients being cached and propagated back.\n\nIn Step (1), the input sequence, represented as a light blue horizontal bar labeled 'Input' containing tokens x₁ to xₗ, is split into K non-overlapping chunks denoted as c₁, cₖ, ..., cₖ. Each chunk is processed independently by a separate purple rectangular module labeled 'Encoder'. These encoders produce corresponding hidden state sequences: H₁, Hₖ, ..., Hₖ, which are shown as upward-pointing arrows leading to a row of pink rectangular boxes representing the hidden states h₁ to hₗ. These hidden states are concatenated across all chunks to form a continuous sequence of representations.\n\nStep (2) involves the decoder, another purple rectangular module, which takes the concatenated hidden states as input. The decoder generates an output sequence y₁ to yₘ, displayed as green rectangular boxes. This output is fed into a 'Cross Entropy Loss(J)' function, which computes the loss J. A vertical dashed yellow line labeled '∇J' indicates the gradient of the loss with respect to the model parameters, flowing downward from the loss function.\n\nStep (3) introduces the gradient caching mechanism. A yellow-bordered box labeled 'Gradient Cache(G) = ∂J/∂H' receives the gradient information from the loss function via a dashed yellow arrow. This cache stores the gradients with respect to the hidden states H. From this cache, dashed yellow arrows propagate the gradients back to each individual encoder module, enabling efficient backpropagation through the chunked encoders. The connections between components are indicated by solid black arrows for forward passes and dashed yellow arrows for backward gradient flow. The figure uses distinct colors—light blue for input, pink for hidden states, green for output, and purple for encoder/decoder modules—to differentiate data types and processing units. The overall structure emphasizes an end-to-end trainable architecture where gradients are cached at the hidden state level and reused during backpropagation to handle long documents efficiently."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

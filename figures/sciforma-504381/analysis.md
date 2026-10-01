@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Quantum framework for Reinforcement Learning: Integrating Markov decision process, quantum arithmetic, and trajectory search — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18208
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a graphical representation of a classical Markov Decision Process (MDP) consisting of four discrete states: s₀, s₁, s₂, and s₃. These states are depicted as circular nodes arranged in a roughly square layout, with s₀ at the bottom-left, s₁ at the bottom-right, s₂ at the top-right, and s₃ at the top-left. Each state node is labeled with its respective identifier (s₀, s₁, etc.) in black text centered within the circle. The diagram includes two possible actions, denoted as a₀ and a₁, which are indicated along the directed edges connecting the states. These actions determine the transition paths from one state to another or back to itself.
+
+Each directed edge represents a possible state transition triggered by an action, and is annotated with a transition probability in the form p(s'|s,a), where s is the current state, a is the chosen action, and s' is the resulting next state. For example, the edge from s₀ to s₁ labeled with action a₀ has the probability p(s₁|s₀,a₀) = 0.6. Similarly, self-loops (edges from a state back to itself) are present for all states and are labeled with both the action taken and the corresponding probability; for instance, the self-loop on s₀ with action a₁ has probability p(s₀|s₀,a₁) = 0.1.
+
+In addition to the transition probabilities, each state node is associated with a reward value, denoted as r₀, r₁, r₂, or r₃, respectively. These rewards are positioned near the corresponding state node, typically adjacent to the node’s boundary, and are labeled with 'r' followed by the state index. For example, r₀ is placed near s₀, r₁ near s₁, and so on. The rewards are not directly connected via arrows but are visually linked to their respective states.
+
+The connections between states are represented by smooth, curved or straight arrows with arrowheads indicating direction. Each arrow is labeled with the action (a₀ or a₁) that causes the transition and the transition probability. The arrows are drawn such that they clearly show the source and destination states, avoiding overlap where possible. Some transitions cross over others, but the labels remain legible and positioned near the midpoints of the arrows. The entire diagram uses black lines and text on a white background, with no color coding or shading applied to any elements.
+
+The overall structure forms a fully connected graph among the four states, meaning that from any given state, taking either action a₀ or a₁ can lead to any other state (including itself), depending on the transition probabilities. The probabilities for each action from a given state sum to 1, reflecting the stochastic nature of the MDP. For example, from state s₀, taking action a₀ leads to s₁ with probability 0.6 and to s₂ with probability 0.4, summing to 1.0. Similarly, from s₀ with action a₁, the probabilities to s₁ (0.9) and to s₀ (0.1) also sum to 1.0. This pattern holds for all state-action pairs shown in the diagram.
+
+The figure serves as a complete specification of the MDP's dynamics, including state space, action space, transition probabilities, and reward function, enabling full reconstruction of the environment for algorithmic analysis or simulation.

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503399",
+  "record_sha256": "7421c69cbfc78bc48a68ea61da5aaccf92351d48868a04bc8d991571bd3657cc",
+  "asset_sha256": "44a8d7776a9afa325ad807f207c5a995027f4811f38ba8bfa8a153ed72ebc88c",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503399",
+    "title": {
+      "zh": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities · 方法图",
+      "en": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities"
+    },
+    "paper": {
+      "id": "arxiv-2412-16531",
+      "title": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities",
+      "authors": [
+        "Atticus Sims"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16531",
+      "arxiv_url": "https://arxiv.org/abs/2412.16531",
+      "arxiv_id": "2412.16531",
+      "arxiv_first_submitted_at": "2024-12-21T08:18:43Z",
+      "arxiv_updated_at": "2024-12-21T08:18:43Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16531v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503399/image/image.jpg?Expires=1790855364&Signature=XXZT39qHwe~Hqbyfp7GhVlfva6p169FH1ZjLJv8-xTtWESGBSagE84tHfFGX5WNnMlV9iNAfsNrS1uyk04S9t4EkS8QCRiR4CFIdU44IbZWvTWaNTWzDLRSBfM9G70gj0yNt82cb5m9KaURA95YPdOFolANIfy5ocEfJFovhhD9UwBr1Lz7fKNn9QqcTx-Gyu8mOtb5klzgJhvpFH1IOAiJlg80MIw713ujXWKVEkmpnFpLb48waXqlHdOpYvdLG-5Xu1r5dzEhY3Z52B14eKA~Jkxvf1qd7uHBYtGYh8dRBxYu2uVnwBN7p~iY5GBFddPAOr66W-M7p6y9-~LDiuQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503399,
+      "description_sha256": "2ffab834e24deaa1c6f836979b5d6b8d1af55ad335b6798b108c5188473f45ed",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "626c2678c48d999f684e7d3f591803c6394e721fea105317964fc369c14cf66c",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a simplified architectural diagram of a Variational Autoencoder (VAE), illustrating the end-to-end data flow from input to reconstructed output. The global layout is linear and horizontal, progressing from left to right, with distinct stages labeled beneath each major component: Input, Encoder, Latent Space, Decoder, and Output. Each stage is demarcated by horizontal brackets below the corresponding blocks, providing clear segmentation of the pipeline.\n\nThe visual modules consist of rectangular blocks representing different components. The Input block is a tall black-outlined rectangle labeled with 'x', indicating the raw input data. Following this, the Encoder section comprises multiple green rectangular blocks of varying heights, connected sequentially by arrows; the first is taller, followed by a smaller one indicated by an ellipsis ('...'), suggesting intermediate layers or transformations. These green blocks represent the encoder network, which compresses the input into a latent representation.\n\nAt the center lies the Latent Space, depicted as a single red rectangle containing a bell-shaped curve with vertical bars underneath, symbolizing a probability distribution—typically a Gaussian—over the latent variables. This module represents the stochastic bottleneck where the encoder outputs a distribution rather than a fixed point, enabling probabilistic generation.\n\nThe Decoder section follows, composed of blue rectangular blocks mirroring the structure of the encoder but in reverse order: a small blue block followed by an ellipsis and then a taller blue block. These represent the decoder network, which reconstructs the input from the sampled latent variables.\n\nFinally, the Output block is a tall black-outlined rectangle labeled with 'x'' (x prime), denoting the reconstructed version of the original input.\n\nConnections between all modules are represented by solid black arrows pointing rightward, indicating the forward pass direction of data through the network. The arrows connect the Input to the first Encoder block, then sequentially through the Encoder to the Latent Space, from which an arrow leads to the first Decoder block, continuing through the Decoder to the Output. The diagram emphasizes the autoencoding nature of the model, with the latent space acting as the central probabilistic bottleneck. The color coding—green for encoder, red for latent space, blue for decoder—helps distinguish functional roles visually. The figure caption explicitly identifies it as a simplified representation of the VAE architecture, referencing foundational work on variational autoencoders."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

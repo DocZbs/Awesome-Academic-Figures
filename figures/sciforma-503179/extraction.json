@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503179",
+  "record_sha256": "2ff0165ff0ce5ed5d31b0385f04d194eff307cf44ec4e4733c3b4c4c194a16f7",
+  "asset_sha256": "70a3b830952169ae72c1e0515902f2467091a0c596cfe7bfbdd061a3c0cba4ac",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503179",
+    "title": {
+      "zh": "NeRF-To-Real Tester: Neural Radiance Fields as Test Image Generators for Vision of Autonomous Systems · 方法图",
+      "en": "NeRF-To-Real Tester: Neural Radiance Fields as Test Image Generators for Vision of Autonomous Systems"
+    },
+    "paper": {
+      "id": "arxiv-2412-16141",
+      "title": "NeRF-To-Real Tester: Neural Radiance Fields as Test Image Generators for Vision of Autonomous Systems",
+      "authors": [
+        "Laura Weihl",
+        "Bilal Wehbe",
+        "Andrzej Wąsowski"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16141",
+      "arxiv_url": "https://arxiv.org/abs/2412.16141",
+      "arxiv_id": "2412.16141",
+      "arxiv_first_submitted_at": "2024-12-20T18:40:53Z",
+      "arxiv_updated_at": "2025-05-15T18:31:53Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16141v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503179/image/image.jpg?Expires=1790855363&Signature=Ju6H78mxrPM8lLLLm61zpf3cZxQ6eetm9-72ErCmwc8DCTdRVN0kZGoUuZvSYUpXU~vkSRp96ynZzxUbyQw~uXLO-JseTTtb49ttVkDB48Ay-73YvQx94MQCE0oBmcEVUYh8jGajAnDzs69geHEc5~-CoaDPLikPoRajUE~69oi1CcRsQVXiUSNArXBKbjUVFSjVSnK9Eg~hIX19U5Zc0TaLp29MSRowyK8iYCEOEpOhZjxM5qq4dp3LfkV98CWxPqPO31T4UuFgFMqi0yjq-fBRK49IwLPuBhp78AllaXykkfk5XvCu0JO5kFf~9Ds21PitsO-HcbttEQLIvc5nFg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503179,
+      "description_sha256": "20cecbbccde1fc589e0f147edf4a5baccd0bc654cd85f7851e69ba949f33c24d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7960d90cc8203ee68a2a36e044937650c3e86ff1c1174284553ff952adc6d0d2",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the NeRF (Neural Radiance Fields) pipeline in two stages: training and rendering. The global layout is divided into two horizontal rows. The top row depicts the training phase, while the bottom row shows the rendering phase. Each row follows a left-to-right workflow, indicated by thick black arrows connecting the stages.\n\nIn the top row, the process begins with a set of real images of an underwater coral reef scene, labeled as i_real ∈ S. These images are shown as a stack of four overlapping rectangular frames on the far left. An arrow leads to the next stage, where camera poses are estimated. This is represented by yellow triangular icons with small circular bases, symbolizing cameras, positioned at various viewpoints around the scene. These poses are denoted as (x, d), where x represents the camera position and d the viewing direction. Curved lines connect these camera icons to the corresponding input images, indicating the association between each image and its estimated pose. Another arrow leads to a transparent 3D cube containing the rendered coral reef scene. Inside this cube, the same yellow camera icons are shown, now embedded within the 3D volume. Below this cube, the mathematical mapping is described as θ(x, d) → (c, σ), meaning the NeRF model θ learns to predict color c and volumetric density σ for any given point along a ray defined by camera pose (x, d).\n\nThe bottom row begins with a new set of camera poses (x, d), again represented by yellow triangular icons arranged along a curved path, suggesting novel viewpoints not present in the training data. A thick black arrow points to the same 3D cube from the training phase, now labeled 'NeRF Rendering'. Inside this cube, red dashed lines represent camera rays r(t) projected from the camera origins along the viewing directions, extending from a near bound t_n to a far bound t_f. The mapping here is updated to θ(x, d) → (c, α), where α denotes opacity instead of density σ, reflecting the rendering step. Finally, another arrow leads to a stack of four new rendered images, labeled i_nerf, which depict the scene from these novel viewpoints. The caption clarifies that during training, the model learns from real images and estimated poses to predict color and density, while during rendering, it generates new views using novel poses and integrates along rays between near and far clipping planes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

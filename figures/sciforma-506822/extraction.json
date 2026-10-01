@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-506822",
+  "record_sha256": "3408a9369a43b88f4f7212882875509c32434585e7d2a714ec15ae633491ef21",
+  "asset_sha256": "214c9d043d9a7b0c237f7818c7f6a82c64501acae3ba815514472c8c3f34524f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506822",
+    "title": {
+      "zh": "Flash Interpretability: Decoding Specialised Feature Neurons in Large Language Models with the LM-Head · 方法图",
+      "en": "Flash Interpretability: Decoding Specialised Feature Neurons in Large Language Models with the LM-Head"
+    },
+    "paper": {
+      "id": "arxiv-2501-02688",
+      "title": "Flash Interpretability: Decoding Specialised Feature Neurons in Large Language Models with the LM-Head",
+      "authors": [
+        "Harry J Davies"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02688",
+      "arxiv_url": "https://arxiv.org/abs/2501.02688",
+      "arxiv_id": "2501.02688",
+      "arxiv_first_submitted_at": "2025-01-05T23:35:47Z",
+      "arxiv_updated_at": "2025-02-27T21:31:36Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02688v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506822/image/image.jpg?Expires=1790855627&Signature=PP3pwUPlcuqeK~C~-txlwsPRm7VXNIa0B1KnTWM2qDw3G5QYNXvkJHhvd5Iyd4ZbsOncqq9eb3zrtKTALo8-XMXvnBoWIp6B1fnWO7QueYUMMu-PQ5we3VDTWxkxrOpWErTBcicVlynGsbOFBz~EIeKoBrpLCj70RNa9zwgYKsgZlqDjSNNzWdPHn3tbZu3vWcyNMb5VWPkWow0prIicQK7MUYEbvzlvrvASthBysX2~rv7UCY~32jChB2ixStLdcqbxrS8Y3ef9z7x1DDA5lrilXKu-JvzzWdlgTGhTCDNJZ7nV4Ev22m4R7ckPwy3tLTGFKdXyXEII3DsO-NqRkg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506822,
+      "description_sha256": "a8bfc12a14781e501e9da81265556dd4416c6df6425ab9b7adefb9d0eacfa2f5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0e4619b3355daae94c04fbf4fb3630a0ed6b42027465a8ee671e9ae1597ab8d6",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram illustrating two parallel processing pathways for a language model's final output layer: 'Regular Operation' on the left and 'Interpretability' on the right, separated by a vertical dashed line. Both pathways share identical structural components but differ in input and output labeling, emphasizing the interpretability approach.\n\nIn the global layout, the diagram is vertically structured into two columns. Each column begins with an input at the top, flows downward through a central processing module labeled 'LM Head', and ends with an output at the bottom. The left column, titled 'Regular Operation' in black text, represents standard inference. The right column, titled 'Interpretability' in red text, introduces a modified interpretation technique.\n\nEach pathway contains a central rounded rectangular module labeled 'LM Head' in black text, filled with light pink color and outlined in black. Inside this module, two stacked operations are shown: 'Linear' followed by 'SoftMax', connected by a downward arrow. This indicates the standard linear transformation followed by softmax normalization to produce token probabilities.\n\nIn the 'Regular Operation' column, the input is labeled 'Final Hidden State' with dimensions '(1 x N_embd)' beneath it. A downward arrow connects this input to the 'LM Head'. The output below the module is labeled 'Token Probabilities' with dimensions '(1 x Vocab_size)', indicating the standard probability distribution over the vocabulary.\n\nIn the 'Interpretability' column, the input is labeled 'Up-Projection Weight Vector' in red text, also with dimensions '(1 x N_embd)'. This input is similarly connected via a downward arrow to the identical 'LM Head' module. The output is labeled 'Token Probabilities Associated with Weights' in red text, with dimensions '(1 x Vocab_size)', highlighting that these probabilities are derived from the weight vector itself rather than hidden states.\n\nAll arrows are solid black lines pointing downward, indicating the flow of data from input to output through the LM Head. The consistent structure across both columns underscores that the same computational module is used; only the input source differs. The use of red text for the interpretability side visually distinguishes the novel method from the baseline. The diagram effectively communicates that interpreting LLM weights involves feeding the up-projection weight vector directly into the LM head to decode meaningful token probabilities, thereby enabling weight-level interpretability."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506889",
+  "record_sha256": "0707f97be2932e0c243ab8b8197f0fe084c59ce09508ae2cf6124787140a6374",
+  "asset_sha256": "444b92612f08399df348cfad658394791b213aec07080982c748798ed633b749",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506889",
+    "title": {
+      "zh": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation · 方法图",
+      "en": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2501-02858",
+      "title": "A Novel Vision Transformer for Camera-LiDAR Fusion based Traffic Object Segmentation",
+      "authors": [
+        "Toomas Tahves",
+        "Junyi Gu",
+        "Mauro Bellone",
+        "Raivo Sell"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02858",
+      "arxiv_url": "https://arxiv.org/abs/2501.02858",
+      "arxiv_id": "2501.02858",
+      "arxiv_first_submitted_at": "2025-01-06T09:06:29Z",
+      "arxiv_updated_at": "2025-01-06T09:06:29Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.5220/0013239000003890",
+      "arxiv_current_version_observed": "2501.02858v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506889/image/image.jpg?Expires=1790855628&Signature=QWcs7tYkLYKih5yn6q3TjL33SqUkzSxVyJuhlBo-OaeiZn5LhRmQ-R3CHgiAD8BFOh0wQ8hdQ~86x3vNA9U5OFaTuyddrftZvyLlbvJMV1DYjANbMe~4nMqUCyHt0yJytoqJOEXRabDkPYhyanJ4El~4U881whDku1mbS7yrACnyrA7Yv16HolNNzjdpDvJhUO78BtkEY1WmI4nyDcFT2idED6GwVn~YyArG34xRTR2SvhKsHDKUh9SiUK0lMmCMTo4jaVniww8ngNu1knPkKpclvZlV3w7MRvSvPbCeXLaTmNY9lAuPs91AL7GJEeZahL5O~HDKe4vvBlmNlqQlag__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506889,
+      "description_sha256": "1451a4e4d5596a65ef929ac6898469b5a4031c89e0a1d7b1c97705d86a223efb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ade0910ad822db6a3ea4436231125687dc787031a867dc83a529563645feab80",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the decoder process of a multi-modal segmentation network, divided into three main stages labeled (a), (b), and (c), arranged horizontally from left to right. \n\n[1] Global Layout and Structure: The overall layout is linear and sequential, progressing from input data processing in (a), through intermediate feature transformation in (b), to final cross-modal fusion and output generation in (c). Each stage is enclosed in a light gray rectangular box with a label below it. A thick black curved line connects the bottom of each stage, visually indicating the flow of the pipeline. The final output is shown as a segmented image on the far right.\n\n[2] Visual Modules and Attributes: In stage (a), the input is represented as a 577×768 grid (orange outline with internal crosshatch pattern) that transforms into a stack of 577 feature cubes, each labeled '1 ... 768' and colored white or orange, symbolizing the concatenation of data with classification tokens. Stage (b) shows a matrix of feature tokens (labeled x_1,1 to x_768,768) followed by a '1x1 Conv' block (white rectangle with black text), then 'Up/Down Sampling' (another white rectangle), and finally a mathematical expression 'h/s × w/s × D' in a white box, indicating spatial resizing. Stage (c) contains multiple components: two parallel paths for 'Camera' and 'LiDAR' inputs, each feeding into a 'RCU' (Residual Computation Unit) block (white rectangle). These RCU outputs are summed via a circular '+' node, which also receives input from a 'Previous step' (indicated by a dashed arrow from above). The result passes through another RCU, then a 'De-convolution' block, followed by 'Up-sampling', leading to the final output image showing a green car and red pedestrian on a road. Above the main RCU path, a detailed inset shows the internal structure of an RCU: a sequence of 'ReLU' → '3x3 Conv' → 'ReLU' → '3x3 Conv' → '+' (summing the input and output of the block), forming a residual connection. This inset is connected to the main RCU block by a dotted line.\n\n[3] Connections and Arrows: Solid arrows indicate the primary data flow: from the input grid in (a) to the token stack, then to (b) where tokens go through 1x1 Conv, Up/Down Sampling, and the dimensionality expression. From (b), a solid arrow leads to (c), where the processed features split into Camera and LiDAR branches. Each branch feeds into an RCU, whose outputs converge at a circular sum node. A dashed arrow from the top inset (RCU details) points to the main RCU block, illustrating its internal structure. Another dashed arrow from 'Previous step' points to the sum node, indicating temporal or hierarchical feedback. The output of the sum node goes to the next RCU, then to De-convolution, then to Up-sampling, and finally to the segmented image. All connections are unidirectional, following the left-to-right progression of the pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

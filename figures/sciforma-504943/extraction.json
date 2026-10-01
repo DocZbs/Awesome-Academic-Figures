@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504943",
+  "record_sha256": "db2417c46db119be114a583d598445d1ccf7de98fe5df4822a4d3b36b4784574",
+  "asset_sha256": "36fe10e8ca9974dcfe8f2d25ee0b4ebc67478951ceff6616da215636bfa5c9f7",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504943",
+    "title": {
+      "zh": "AskChart: Universal Chart Understanding through Textual Enhancement · 方法图",
+      "en": "AskChart: Universal Chart Understanding through Textual Enhancement"
+    },
+    "paper": {
+      "id": "arxiv-2412-19146",
+      "title": "AskChart: Universal Chart Understanding through Textual Enhancement",
+      "authors": [
+        "Xudong Yang",
+        "Yifan Wu",
+        "Yizhang Zhu",
+        "Nan Tang",
+        "Yuyu Luo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19146",
+      "arxiv_url": "https://arxiv.org/abs/2412.19146",
+      "arxiv_id": "2412.19146",
+      "arxiv_first_submitted_at": "2024-12-26T09:59:43Z",
+      "arxiv_updated_at": "2024-12-26T09:59:43Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19146v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504943/image/image.jpg?Expires=1790855452&Signature=YRjP4VdtM8-arKnA2sSMSB2-gNOA58Wlyq5zdItCOCl-R~XSWrMwi33hfNlHlw5IvVwLTa86ncpctZ3kI8eombWHo9MLOPzghVbxwFRL~GWYBC8khh02KDV07oxI0F19s8fBU2ad113KUdvNrLZcqmOna7-S2dBaqhZ0ka6I6vHWs72MKuNo3S1zT1ymvTv80SMBYma-PzWAOkOo-8vtryBVuNUpYRp1RbbNPCTs5zaMyHCjzLIZ0Z4eXkX6iCgYlSC3YOH6t-EpgE98USyPEsXe6s52ZSKxpbSovdufA-n1WxAxXxruqcILIq5xJEA~9Q-M24zZj-psvT-xGf7AXQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504943,
+      "description_sha256": "b4c24fec6924fada8bf33396a857bb5ca245466eb08414e477e05d069aa1c0d1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "311425644ea7e28769646fec710a778f1a13b20f41ab8fb52b787d776dc9a4b0",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture and training data pipeline for AskChart, a multimodal model designed for chart understanding and reasoning. The top half presents the model’s structural framework, while the bottom half showcases three curated datasets used for pretraining.\n\n[1] Global Layout and Structure:\nThe figure is divided into two main horizontal sections. The upper section displays the end-to-end processing pipeline and model architecture, starting from input tasks and charts on the left, flowing through the model components in the center, and producing diverse answers on the right. The lower section is segmented into three vertical columns labeled (a), (b), and (c), each demonstrating a distinct dataset type with example inputs, intermediate steps, and outputs.\n\n[2] Visual Modules and Attributes:\nIn the upper section, the leftmost area contains a ‘Task’ box with sample questions (e.g., 'In what year did global fertilizer consumption reach 111.3 megatons?'), accompanied by a bar chart visual. This input feeds into the model via two parallel pathways: a Text Extractor (light blue box with an 'A' icon) and a Vision Encoder (light green box). These connect to a Tokenizer (pink rectangle) and Projection layer (light green rectangle), respectively. The outputs are combined into a sequence of tokens represented by octagonal shapes. These tokens pass through a Transformer-like encoder stack consisting of Self-attention (beige rectangle), Add & Norm (beige rectangle), and a Router module leading into a MoE Layer (orange-dashed box containing multiple FFNs: FFN₁ to FFNₘ). The MoE output is processed by another Add & Norm layer before generating answers.\n\nOn the right side, under ‘Answer’, three types of outputs are shown: Numerical visual reasoning (green header), Chart-to-text (orange header), Chart-to-table (yellow header), and Open-ended question answering (purple header), each with corresponding textual or tabular responses.\n\nIn the lower section:\n(a) Visual Prompt Dataset: Shows a bar chart (a3, purple border) with a visual prompt highlighting the tallest bar (55%), leading to answer (a4, yellow box: '55%').\n(b) OCR-aware Data Prompt Dataset: Displays a pie chart (b2, purple border) with OCR results (b3, blue box: 'Hungary GP Results, Sebastian Vettel, Daniil Kvyat, Daniel Ricciardo, 17%, 50%, 33%') leading to answer (b4, yellow box: 'Daniel Ricciardo').\n(c) Chart-to-Table Instruction Following Dataset: Features a stacked bar chart (c2, purple border) with a structured instruction (c3, yellow box) containing XML-like steps for extracting and organizing data into a table, ending with 'Answer: ...'.\n\n[3] Connections and Arrows:\nArrows indicate data flow. From the Task/Chart input, dashed arrows point to the Text Extractor and Vision Encoder. Solid arrows connect these to the Tokenizer and Projection, then to the sequence of octagons. From there, solid arrows lead through Self-attention → Add & Norm → Router → MoE Layer → Add & Norm → Answer outputs. In the lower section, curved arrows show progression: from task (a1/b1/c1, green) to input chart (a3/b2/c2, purple border), then to OCR results (b3, blue) or visual prompts (a3), finally to answers (a4/b4/c3, yellow). A central 'Train' triangle points upward from the lower datasets to the model, indicating training data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

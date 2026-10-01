@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506491",
+  "record_sha256": "83a5c54c3aeec1cb632351c2de9f39068a4d634ee5c39f9cde8d7521d2b09e0d",
+  "asset_sha256": "b14ae9673ff2b75da36dfef8d229e76a7f9d0b929d62a8e7c371dd5703f1145b",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506491",
+    "title": {
+      "zh": "Semialgebraic Neural Networks: From roots to representations · 方法图",
+      "en": "Semialgebraic Neural Networks: From roots to representations"
+    },
+    "paper": {
+      "id": "arxiv-2501-01564",
+      "title": "Semialgebraic Neural Networks: From roots to representations",
+      "authors": [
+        "S. David Mis",
+        "Matti Lassas",
+        "Maarten V. de Hoop"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01564",
+      "arxiv_url": "https://arxiv.org/abs/2501.01564",
+      "arxiv_id": "2501.01564",
+      "arxiv_first_submitted_at": "2025-01-02T22:52:07Z",
+      "arxiv_updated_at": "2025-02-28T21:44:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01564v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506491/image/image.jpg?Expires=1790855579&Signature=KBeZhHba3bB5JEODYambqDyby~YEF12oaLmreNSIUpPNkLm6~8YL8bxRrkFSwkJFCOUHEIExGgElSotszbQby3HQLPHowwUbgPDxr~RO1BzUtXulvBVRSShQfW~XUlx1fufIqq~BzhUHfgebmOTwllWM9osu~eFQFJmGImdgWqWoRKj0mPk8EeJ2NbHMp7XKB5q5d8C6giFdVw8nnW0EBwLZlRt5ZnJxINMerJiZTP0~p-lJxVH1C1jAKfr4-gRKQyRW4sri3~h9liilYSFvLpKw4s6yoTuRyMl8q5EmpiD6R1hztP04mdTqg6vlpUQYJneclIMlO8D5x3j3TJnjwg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506491,
+      "description_sha256": "cbc983c6dc01c43f4f5c3f4ded8c224a8844034c7a294bbd4bc9d18ac5a14833",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0249d0cf56bdc1495cfba30556143af860f7d5f1c6a608e4a99ce4f82111adb8",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Semialgebraic Neural Network (SANN), designed to compute an output y as a semialgebraic function of an input x. The global layout is a sequential, unrolled computational graph consisting of N identical stages, each representing a time step in an ODE integration process. The structure begins with an initial condition z₀ = 0, which flows into the first stage, and proceeds through N stages before reaching a final projection block Π that produces the output y.\n\nEach stage comprises three main visual modules: a blue rounded rectangle labeled 'N' (representing a neural network), a cyan rounded rectangle labeled 'clamp-sol', and a yellow rounded rectangle labeled 'ODE-step'. The neural network 'N' takes two inputs: the current ODE state z_j (from the previous stage or initialized as 0) and the input x (which is fed into every stage via a horizontal line above the sequence). The output of 'N' is a matrix M_j and a vector b_j, which are passed to the 'clamp-sol' module. This module computes the time derivative ẋ_j using the function clamp-sol(M_j, b_j), which typically corresponds to ẋ_j = M_j⁻¹b_j when M_j is invertible. The computed ẋ_j is then fed into the 'ODE-step' module, which performs a single step of a numerical ODE solver to update the state from z_j to z_{j+1}. This updated state z_{j+1} is passed to the next stage, forming a recurrent loop.\n\nThe connections between modules are represented by directed arrows indicating data flow. The input x is broadcast horizontally to all N stages. The state z_j flows from the output of the 'ODE-step' in stage j to the input of the 'N' module in stage j+1. Additionally, there is a feedback connection from the 'ODE-step' output back to the 'N' module within the same stage, indicating that the updated state z_{j+1} may also influence the computation in the next step (though the primary input to 'N' is z_j). The final state z_N is passed to a magenta trapezoidal module labeled 'Π', which represents a projection operation. This module extracts the first n components of z_N to produce the final output y.\n\nThe diagram uses distinct colors and shapes to differentiate functional components: blue for the neural network, cyan for the clamp-sol operator, yellow for the ODE integrator step, and magenta for the final projection. Text labels are placed adjacent to or inside the modules to denote their roles and outputs. The sequence of stages is indicated by ellipses (...) between the first and last full stages, suggesting the repetition of the core computational unit. The entire process is framed as a continuous-time dynamical system discretized into N steps, where the neural network learns to parameterize the ODE dynamics in a semialgebraic manner."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

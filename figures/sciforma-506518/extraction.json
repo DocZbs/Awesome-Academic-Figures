@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506518",
+  "record_sha256": "c52eb58c5e241c1fb61293afb2f4fc9da1b41312dcabdd66e48439e0d6e7f0eb",
+  "asset_sha256": "b77510c4d6454ef3764b720de6fd66da6d5e81178a39abca85679a74441f1aeb",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506518",
+    "title": {
+      "zh": "AVATAR: Adversarial Autoencoders with Autoregressive Refinement for Time Series Generation · 方法图",
+      "en": "AVATAR: Adversarial Autoencoders with Autoregressive Refinement for Time Series Generation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01649",
+      "title": "AVATAR: Adversarial Autoencoders with Autoregressive Refinement for Time Series Generation",
+      "authors": [
+        "MohammadReza EskandariNasab",
+        "Shah Muhammad Hamdi",
+        "Soukaina Filali Boubrahimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01649",
+      "arxiv_url": "https://arxiv.org/abs/2501.01649",
+      "arxiv_id": "2501.01649",
+      "arxiv_first_submitted_at": "2025-01-03T05:44:13Z",
+      "arxiv_updated_at": "2025-01-03T05:44:13Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01649v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506518/image/image.jpg?Expires=1790855582&Signature=BDhW7Rq0lDHz2mbIuZoK0E96i9CwWLWgZSUJyLFQC9b6XSpXQ5ZqYGJT3rQT1~liAMVrLyevITlvH5lwx0SdWbYR6e3dW0y0N7dCf~rrnBUJSu91YyD2x~-Tgrr-fcuBxVgp~OFhu8JyYpk6jwZGaKS4zd2kU9ySXie2IFOGdOyO5itpqq09eY1nIcIBCeaCblzGSUwj1K0-l3XZQl8Zs-5aoA5MKxLw4HsGXYFQjgbI5ixRCaSl9tLVpJZ2-03VMiML9fFb4DPnZT~-iKv7-3qcXPlG19zOGNagKO93kU3Wj4KeZyn7k9CdMJYwPALD5G6s95MgFVyisz9B30jacw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506518,
+      "description_sha256": "42600eebf7daa03cfe780186ad5bd95b72e8b5f6b11e2c23e0659699d46fd862",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1478de3d7e4b0658a008b7020c6300e220ad31bb847e9a74f70f16972607199c",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the AVATAR framework for time series generation, structured as a generative adversarial network (GAN)-based autoencoder architecture with an additional supervisor module. The global layout flows left to right, beginning with real data input and ending with synthetic data output, with feedback loops connecting components for adversarial training.\n\nOn the far left, a circular node labeled 'Real Data' with symbol X feeds into a trapezoidal Encoder module, shaded light purple, labeled 'Encoder q(Z | X)'. This encoder maps the input X to a latent space representation Z, indicated by a circular node labeled 'Z ~ q(Z)'. From this latent variable Z, a trapezoidal Decoder module, also light purple and labeled 'Decoder', reconstructs the data, producing output that flows into a rectangular Supervisor module, shaded light green and labeled 'Supervisor'. The Supervisor outputs synthetic data, represented by a circular node labeled '^X', completing the forward generative path.\n\nBelow the main flow, a secondary adversarial loop is depicted. A 3D surface plot labeled 'Drawing samples from ^q(Z)' shows a Gaussian-like distribution, illustrating sampling from an estimated prior distribution ^q(Z). This sampled latent variable, denoted '^Z', is fed into a triangular summation node ('+') along with the original latent Z. The combined signal is sent to a rectangular Discriminator module, shaded light pink and labeled 'Discriminator'. An arrow labeled 'Adversarial feedback' curves from the Discriminator back to the Encoder, indicating that the discriminator guides the encoder to adjust the posterior distribution q(Z|X) to match the prior ^q(Z).\n\nAdditionally, a schematic on the right side illustrates the temporal dynamics learning objective: an orange waveform labeled 'Past' transitions through a sequence of circles (some filled, some outlined) marked with a question mark, leading to a red waveform labeled 'Future', with the caption 'Learning temporal dynamics' beneath it. This emphasizes the supervisor’s role in modeling time-dependent patterns.\n\nAll modules are connected with solid black arrows indicating data or signal flow. The adversarial feedback is shown with a curved dashed arrow. The figure uses distinct shapes and colors: trapezoids for encoder/decoder, rectangles for supervisor/discriminator, circles for data points, and a triangle for summation. Text labels are placed within or adjacent to each component, with mathematical notation such as 'Z ~ q(Z)', '^Z ~ ^q(Z)', and 'q(Z | X)' explicitly defining probabilistic relationships. The overall structure reflects a dual objective: reconstruction via autoencoding and distribution alignment via adversarial training, augmented by temporal supervision."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

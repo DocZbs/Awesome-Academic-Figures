@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Bootstrap Your Own Context Length — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18860
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a four-step workflow for synthesizing long-context instruction tuning data, divided into two main phases: data synthesis and fine-tuning. The global layout is structured as a top-down flowchart with a dashed horizontal line separating the data synthesis phase (above) from the fine-tuning phase (below). The upper section details the data generation process, while the lower section shows how the synthesized data is used to fine-tune an LLM.
+
+In the data synthesis phase, step 1 begins with an LLM (represented as a light blue rounded rectangle with a cube icon) generating an instruction, such as 'Plan a 5-day trip to Japan', indicated by a purple numbered circle labeled 'instruction generation'. This instruction is then sent to a retriever (symbolized by a magnifying glass icon) which queries a corpus (depicted as a gray cylinder) to retrieve relevant documents (step 2, labeled 'document retrieval'). The retrieved documents are shown as a vertical stack of rectangular boxes labeled doc₁, doc₂, ..., docₙ.
+
+Step 3 involves query-focused summarization, where QFS Agents (illustrated as a circular group containing three robot icons) process the retrieved documents to produce a concise summary (represented by a document icon with a pencil). This summary is then fed into step 4, answer generation, where the original instruction and the summary are combined to generate a final answer (shown as two speech bubbles—one blue with a question mark, one green with a checkmark—labeled 'answer').
+
+The fine-tuning phase below the dashed line shows how the synthesized data is used for training. A speech bubble labeled 'instruction + docs' (combining the initial instruction and retrieved documents) is input into an LLM (now depicted as a peach-colored rounded rectangle with a flame icon), which generates an 'answer' (another speech bubble). This setup mirrors the data synthesis process but is intended for model training, emphasizing the end-to-end pipeline from instruction to answer using retrieved and summarized context.
+
+All connections between components are represented by thick blue arrows indicating the direction of data flow. The visual modules use distinct shapes and colors: LLMs are rounded rectangles (light blue for generation, peach for fine-tuning), the corpus is a cylinder, documents are stacked rectangles, and agents are robots within a circle. Text labels are clear and positioned near their respective components, with numbered purple circles marking each step in the workflow.

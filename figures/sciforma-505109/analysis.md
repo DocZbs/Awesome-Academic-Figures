@@ -1,0 +1,26 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Find the Intention of Instruction: Comprehensive Evaluation of Instruction Understanding for Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19450
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a pipeline for constructing pool-based contrastive instructions, starting from instruction-following benchmarks and progressing through selection, semantic search, model evaluation, and human correction to generate both random and semantically similar contrastive examples.
+
+[1] Global Layout and Structure:
+The diagram is horizontally oriented, depicting a left-to-right workflow. On the far left, a gray rectangular box labeled 'Instruction Following Benchmarks' serves as the input source. This feeds into an 'Instruction Pool' represented by stacked document icons. From there, two parallel pathways diverge: one via 'Random Selection' leading to 'Random Instructions', and another via 'Semantic Search' leading to 'Semantically Similar Instructions'. Both pathways converge at a central evaluation block labeled 'GPT4 Test', which includes sub-steps for inspecting failure cases and human correction. The outputs from this evaluation stage feed into two final contrastive modules: 'Random Contrastive' and 'Semantic Contrastive'. A dashed arrow loops from the GPT4 Test back to the Instruction Pool, indicating iterative refinement or feedback.
+
+[2] Visual Modules and Attributes:
+The 'Instruction Following Benchmarks' box contains two sub-components: 'Output (Followed)' with example text 'Eat healthy, feel healthy!' and 'Instruction' with example 'Generate an advertisement slogan that promotes healthy eating.', linked by an arrow labeled 'Label Instruction for Pool-based'. The 'Instruction Pool' is depicted as three overlapping documents. The 'Random Selection' module is a red-bordered rectangle, feeding into a red-bordered box labeled 'Random Instructions' containing three example instructions. The 'Semantic Search' module is a blue-bordered rectangle, feeding into a blue-bordered box labeled 'Semantically Similar Instructions' with three corresponding examples. The 'GPT4 Test' is a gray-bordered box with a GPT-4 logo, containing two sub-steps: 'Inspect Failure Case' (with a group icon) and 'Human Correction' (with a single person icon). The final output modules are 'Random Contrastive' (red-bordered) and 'Semantic Contrastive' (blue-bordered), matching the color-coding of their respective input pathways.
+
+[3] Connections and Arrows:
+Solid red arrows connect the Instruction Pool to Random Selection and then to Random Instructions, which proceed to GPT4 Test and finally to Random Contrastive. Solid blue arrows connect the Instruction Pool to Semantic Search and then to Semantically Similar Instructions, which also proceed to GPT4 Test and then to Semantic Contrastive. A dashed gray arrow loops from GPT4 Test back to the Instruction Pool, suggesting iterative improvement. Within the GPT4 Test box, gray downward arrows indicate the sequential flow from GPT4 Test to Inspect Failure Case and then to Human Correction. All connections are unidirectional, except for the feedback loop.

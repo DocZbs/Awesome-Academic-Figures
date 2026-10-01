@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505569",
+  "record_sha256": "6f9703e3c78ba798d6af2104e649074e4d40e70075cd87b12afac349de711aa7",
+  "asset_sha256": "f808109cd5b6fbb51ce63f1ce733aa1546503abfc6334b9208ee41ce293a825b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505569",
+    "title": {
+      "zh": "No Preference Left Behind: Group Distributional Preference Optimization · 方法图",
+      "en": "No Preference Left Behind: Group Distributional Preference Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20299",
+      "title": "No Preference Left Behind: Group Distributional Preference Optimization",
+      "authors": [
+        "Binwei Yao",
+        "Zefan Cai",
+        "Yun-Shiuan Chuang",
+        "Shanglin Yang",
+        "Ming Jiang",
+        "Diyi Yang",
+        "Junjie Hu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20299",
+      "arxiv_url": "https://arxiv.org/abs/2412.20299",
+      "arxiv_id": "2412.20299",
+      "arxiv_first_submitted_at": "2024-12-28T23:30:47Z",
+      "arxiv_updated_at": "2025-05-13T03:06:47Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20299v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505569/image/image.jpg?Expires=1790855553&Signature=DxK~CqKLWF5qKUall5Mb2J1xi32QBzpDsBpF6LvnWNLpYFBv5Xcbw6qkylst2ufuvlBt3U~qSGz93X9BciAN8BT7w3vriokhnTPb3dXd8d2uJv56eNx5niXqEJFAKoKnVuHIPssQKVcxKl48FBV5-bi2OpJBU3jGhpFrUQxpIqqsZa8~-zy-0AOLnYQpy-E60ZczruoBfScNfGR8fX7Y0rdO1zuFIu7s7VZ6ZDOJbQe-Pf47PdKwIlyIaN9EFzcj1wBHqqSSa5kv5Ooc0f-hKWmcslITHJNOIqmKeA5CAbkStDoJDi6-PS8Giqx8vOTCl17lOcqIgCcqCReamE81gg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505569,
+      "description_sha256": "f0e95cdaaeb540c0ddc7e9faf543720ffb9e9b8401198b47ee78a66578717ed7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c4942e956f278781353bc0a7e38b6c9120bdd9ed762da574d3065c23a805ccf7",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Group Distributional Preference Optimization (GDPO) framework, divided into two main phases: Training Time and Inference Time. The layout is structured horizontally, with Training Time occupying the left two-thirds and Inference Time the right third. Training Time is further split vertically into Training Dataset and Training Objective sections.\n\nIn the Training Dataset section, a Belief-Conditioned Preference Dataset is shown. It includes an example query x: 'In your opinion, what is the significance of the availability of products from different parts of the world for our country?' Below this, a bar chart represents the Belief Distribution p_B^*, with probabilities assigned to four belief categories: Very Good (0.3), Somewhat Good (0.5), Somewhat Bad (0.1), and Very Bad (0.1). Two sampled beliefs are highlighted: b_c ~ p_B^* (Somewhat Good, blue) and b_r ~ B\\{b_c} (Somewhat Bad, orange). Below these, two generated responses y_c and y_r are shown, with y_c being preferred over y_r. The response y_c is labeled as 'I believe that, in many circumstances, the access to a wide variety of products from different parts of the world is a sign of growth and evolution.' and y_r as 'It definitely has its pros and cons. It’s nice to have access to all these products, but we need to make sure we’re supporting our local economy as well.'\n\nThe Training Objective section compares Direct Preference Optimization (DPO) and GDPO. DPO uses the loss function ℓ_DPO = ℓ_pref(y_c > y_r, x), aiming for preference alignment. However, it encounters conflicting preferences when p_θ(y_i|x) > p_θ(y_j|x) for different belief contexts. GDPO addresses this by using a composite loss: ℓ_GDPO = ℓ_cal(p_θ(\\hat{b}|x), p_B^*) + ℓ_pref(y_c > y_r, b_c, x). This consists of two components: KL Divergence, which measures calibration between the predicted belief distribution p_θ(\\hat{b}|x) and the target p_B^*, visualized with two bar charts showing alignment; and Belief-Conditioned Preference Alignment, which ensures p_θ(y_i|x, b_i) > p_θ(y_j|x, b_j) for each belief group.\n\nIn the Inference Time section, a New Query x is presented: 'How do you envision the abundance of unique products from various regions of the world inspiring and transforming our markets?' The model then predicts a belief distribution p_θ(\\hat{b}|x), shown as a bar chart matching the training distribution (Very Good: 0.3, Somewhat Good: 0.5, etc.). A sampled belief \\hat{b} ~ P(\\hat{b}) is selected (Somewhat Good). Finally, the model performs Belief-Conditioned Generation P(\\hat{y}|\\hat{b}, x), producing the output \\hat{y}: 'Our collective optimism for the future is buoyed by the incredible range of products from different parts of the world that are now accessible to us.'\n\nVisual elements include color-coded boxes: yellow for top-level headers, light green for inference, light blue for DPO, and light peach for GDPO. Text labels are clear and positioned near relevant components. Arrows indicate the flow from dataset to training objectives and from query to prediction and generation. The figure effectively demonstrates how GDPO calibrates belief distributions before aligning preferences within belief groups, enabling more coherent and contextually appropriate generation at inference time."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DeepCRCEval: Revisiting the Evaluation of Code Review Comment Generation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18291
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the research methodology for 'DeepCRCEval*: Revisiting the Evaluation of Code Review Comment Generation in a Deeper Understanding'. The diagram is structured into three main horizontal layers, each enclosed in a dashed rectangular boundary, representing distinct phases or components of the study.
+
+At the top layer, titled 'Finding Evaluation Criteria', a sequential workflow is depicted using rounded rectangular nodes connected by rightward arrows. It begins with 'Semi-structured Interview' to identify initial evaluation criteria, followed by '+ Human Evaluators (Small Sample Analysis)', and then '+ LLM Evaluators (Expanded Scope Validation)'. A large downward arrow from this final node points to the middle layer, indicating that the developed evaluation framework feeds into the subsequent research questions.
+
+The middle layer, labeled 'Research Questions', contains four rectangular nodes arranged horizontally, each connected by a rightward arrow to show progression. These are: 'RQ1. Analysis of Benchmark Comments', 'RQ2. Efficacy of DeepCRCEval', 'RQ3. Revisiting the Evaluation of CRCGs', and 'Discussion. Implications from New Evaluations'. Two upward-pointing arrows originate from the bottom layer and connect to RQ1 and RQ2, respectively, showing that these research questions are grounded in data and models from below.
+
+The bottom layer is split into two main sections. On the left, under 'Benchmark Datasets', two cylinder-shaped icons represent data sources: 'CodeReviewer Dataset' and 'The Tufano Dataset'. An upward arrow from this section connects to RQ1, indicating these datasets are used for benchmark comment analysis.
+
+On the right, under 'Code Review Comment Generators (CRCGs)', there are three subcategories within dashed boxes. The first, 'Text Similarity Models', contains a rounded rectangle labeled 'Retrieval Models (Comment Finder)'. The second, 'Generative Models', lists several models in parentheses: 'AUGER, the Tufano et al., CodeReviewer, CCT5'. The third, 'Target-Oriented Models', includes a rounded rectangle labeled 'LLM-Prompt Models (LLM-Reviewer*)', where the asterisk denotes a newly proposed model by the authors. An upward arrow from this section connects to RQ2, signifying that the efficacy of DeepCRCEval is evaluated on these CRCG models.
+
+All text is black, and all shapes are outlined in black with white fill. The diagram uses standard flowchart conventions: rounded rectangles for processes, cylinders for datasets, and arrows for directional relationships. The title at the top is enclosed in a dashed box, and the entire figure is framed by a larger dashed border. The caption notes that the asterisk (*) indicates frameworks or models newly proposed by the authors.

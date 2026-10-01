@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503676",
+  "record_sha256": "8dd793c281f4c322fd459f813f3e6c226b158503c08fae2d411c638a37a9afee",
+  "asset_sha256": "22c776bd7601a0a6d38ff158b8d26270721c3c6885ef00d4fb89597bcb2904c4",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503676",
+    "title": {
+      "zh": "Semantic Hierarchical Prompt Tuning for Parameter-Efficient Fine-Tuning · 方法图",
+      "en": "Semantic Hierarchical Prompt Tuning for Parameter-Efficient Fine-Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-16956",
+      "title": "Semantic Hierarchical Prompt Tuning for Parameter-Efficient Fine-Tuning",
+      "authors": [
+        "Haowei Zhu",
+        "Fangyuan Zhang",
+        "Rui Qin",
+        "Tianxiang Pan",
+        "Junhai Yong",
+        "Bin Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16956",
+      "arxiv_url": "https://arxiv.org/abs/2412.16956",
+      "arxiv_id": "2412.16956",
+      "arxiv_first_submitted_at": "2024-12-22T10:28:52Z",
+      "arxiv_updated_at": "2024-12-24T09:07:26Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16956v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503676/image/image.jpg?Expires=1790855405&Signature=IWEl-QEx0bQ37rQEa6eCsyt5NRhDOY18D1nTPvgd0Qdspw0eBAS81n49dphmTpgtR-ltFL7MvrWkAyYtSYnJ9l-1xJgfV9MlvVXuAJHbv7pes~AUdULqNU-lA2RzRmUv5YVBI~VwJmkOO0dmLEo~U5sYCXxnL1ZQGxeLwTVlxtv2WNN3xUXRjDalCBPGPxtseCio13FlBycYzNgqgrlGOryJPBa5AOhsj1RE4MWJC6G3QUE-~Wu9jzFzhAqJ-7UXwiv-Yk6kvTkrj9b4P0xNu7Z2qwFbftGkVSRUW8brnfkEo9rsiA2ZW6WkJrmICbc51ufVlzdL-agW64YjsofjwA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503676,
+      "description_sha256": "82b6b201de1fa838fcbd621ee420700f706785a03d262badfe3f24acc7453e17",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9e7254daa3a7d06c4760245a989522dfb35d3baddbc068c3d4425f79d04b962b",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SHIP (Semantic Hierarchical Prompt) fine-tuning framework, divided into three main components: (a) Semantic Hierarchical Prompt Forwarding, (b) Prompt Matching Loss, and (c) Decoupled Attention. The global layout is structured horizontally, with component (a) occupying the left two-thirds of the diagram and components (b) and (c) positioned to the right within dashed boxes labeled accordingly. Component (a) illustrates the core workflow starting from training data, which is fed into a pretrained model (marked as frozen with a snowflake icon) to extract features. These features are used to compute an Affinity Matrix, visualized as a heatmap with red diagonal blocks indicating strong similarity. From this matrix, clustering is performed via average pooling to identify semantic levels S1 to SM. Each semantic level corresponds to a set of prompts: Semantic Independent Prompts (orange boxes labeled p_si^k) and Semantic Shared Prompts (yellow boxes labeled p_ss). These prompts are integrated into the transformer layers L1 to LN, where they interact with class tokens (gray boxes) and attribute prototypes (green boxes). The prompts are tunable (indicated by flame icons), while the pretrained model and embedding layers remain frozen. An Attribute Gate (AG) module processes the output z_D^i from layer i, combining it with attribute prompts to produce L_a^M (Eq. 4). The final output passes through a Head module (also tunable). Component (b) shows the Prompt Matching Loss (L_m, Eq. 5), computed between the learned prompt representation Z^D and the target prompt P. Component (c) details the Decoupled Attention mechanism (Eq. 6), which decomposes attention into three pathways: I2I (Input-to-Input), I2P (Input-to-Prompt), and P2IP (Prompt-to-Input-Prompt). Each pathway uses query (Q), key (KV) inputs—Z for I2I, Z and P for I2P, and P and [Z,P] for P2IP—and their outputs are scaled and summed to form [z', P']. The legend at the bottom clarifies the color coding: yellow for Semantic Shared Prompt, orange for Semantic Independent Prompt, gray for Class Token, green for Attribute Prototype, and brown for Attribute Prompt. Tunable components are marked with a flame icon, and frozen components with a snowflake icon. The entire framework emphasizes hierarchical prompt learning guided by semantic affinity, enhanced by prompt matching and decoupled attention mechanisms."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

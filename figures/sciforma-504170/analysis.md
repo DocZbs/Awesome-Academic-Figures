@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Zero Shot Time Series Forecasting Using Kolmogorov Arnold Networks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.17853
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic of a domain adaptation framework designed for forecasting tasks across different domains. The overall layout is horizontal, depicting a data flow from left to right, with two main branches: one leading to a forecast output and another to a classification output. At the far left, two input sources labeled 'Primary' and 'Secondary' are represented by solid black cylinders. The 'Primary' input connects via a solid arrow to the first module, while the 'Secondary' input connects via a dashed arrow, indicating a potentially different or auxiliary data stream.
+
+The central component is the 'Proposed Model Backbone', which is divided into two distinct sections enclosed within dashed rectangular boundaries: 'Domain Invariant' on the left and 'Domain Specific' on the right. Both sections consist of multi-layered neural network structures, depicted as grids of interconnected circular nodes with gray outlines and black connecting lines. The 'Domain Invariant' section contains multiple layers of these nodes, with ellipses (...) indicating additional hidden layers. A vertical gray bar separates this section from the 'Domain Specific' section, which also contains several layers of interconnected nodes, suggesting a deeper network structure.
+
+From the 'Domain Specific' section, a solid arrow leads directly to the output labeled 'Forecast', indicating the primary task of the model. Additionally, a curved arrow branches off from the 'Domain Specific' section to a box labeled 'GRL', standing for Gradient Reversal Layer. This GRL box is connected via another curved arrow to a smaller neural network structure labeled 'Domain Classifier'. This classifier consists of fewer layers of circular nodes and outputs to a label 'Classification'.
+
+The 'Gradient Reversal Layer' is explicitly annotated with an arrow pointing to the GRL box, emphasizing its role in the architecture. The entire framework is structured to extract domain-invariant features in the initial backbone layers and then adapt to domain-specific characteristics in later layers, while simultaneously training a domain classifier through the GRL to encourage domain-invariant representations. The visual design uses consistent gray circular nodes for all neural network components, solid black arrows for forward propagation, and dashed arrows for auxiliary or secondary inputs. The figure effectively illustrates a dual-path architecture where feature extraction is shared, but downstream tasks (forecasting and domain classification) diverge, with the GRL facilitating domain adaptation by reversing gradients during backpropagation.

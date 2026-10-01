@@ -2,7 +2,8 @@
 """Validate, stage, and promote explicitly reviewed external figure indexes.
 
 Index validation and metadata reports are safe locally. Asset staging/promotion
-are intentionally restricted to the jdp Linux checkout. No paper PDFs, archives,
+are intentionally restricted to the jdp Linux checkout or an explicitly bound
+Linux GitHub Actions workspace for this repository. No paper PDFs, archives,
 or unlicensed images are fetched. License assertions in an index are candidates,
 not approval: a separate review manifest grants permission to stage each image.
 """
@@ -250,10 +251,12 @@ def normalize_openreview(records, provenance, audit_records):
 def normalize_sciforma(records):
     """Preserve hosted dataset row permission and machine description honestly."""
     normalized, reviews = [], []
-    revision = "b38211e94f25858388f860b6db0b596b3ff45f18"
-    evidence = f"https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/{revision}/README.md"
     for row in records:
-        if (row.get("dataset_revision") != revision or row.get("license") not in LICENSES
+        revision = row.get("dataset_revision", "")
+        if not isinstance(revision, str) or not re.fullmatch(r"[a-f0-9]{40}", revision):
+            raise ValueError("SciForma row requires its actual immutable dataset revision")
+        evidence = f"https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/{revision}/README.md"
+        if (row.get("license") not in LICENSES
                 or row.get("license_url") != LICENSES[row["license"]]
                 or row.get("license_evidence_url") != evidence
                 or row.get("source_license_evidence_kind") != "frozen_dataset_row_license"
@@ -262,6 +265,19 @@ def normalize_sciforma(records):
                 or not set(row.get("arxiv_subjects", [])) & {"cs.AI", "cs.CL", "cs.CV", "cs.LG", "stat.ML"}
                 or not SHA.fullmatch(row.get("paper_metadata_sha256", ""))):
             continue
+        row_url = urllib.parse.urlsplit(https_url(row.get("row_api_url"), "dataset row API"))
+        query = urllib.parse.parse_qs(row_url.query)
+        if (row_url.hostname != "datasets-server.huggingface.co" or row_url.path != "/rows"
+                or query.get("dataset") != ["microsoft/SciFormaData-700K"]
+                or query.get("config") != ["generation_1024"] or query.get("split") != ["train"]
+                or len(query.get("offset", [])) != 1 or len(query.get("length", [])) != 1):
+            raise ValueError("SciForma row API must identify the exact dataset/config/split and slice")
+        offset, length = int(query["offset"][0]), int(query["length"][0])
+        row_index = row.get("row_index")
+        if (type(row_index) is not int or offset < 0 or not 1 <= length <= 100
+                or not offset <= row_index < offset + length
+                or row.get("id") != f"sciforma-{row_index}"):
+            raise ValueError("SciForma row index/ID does not belong to its evidence slice")
         description = row.get("prompt_text", "")
         if not description or hashlib.sha256(description.encode()).hexdigest() != row.get("caption_sha256"):
             raise ValueError("Dataset generation caption differs from its source checksum")
@@ -294,6 +310,9 @@ def normalize_sciforma(records):
                            "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
                            "publication_status": "candidate", "license_verification": "dataset_audited_hosted_row"},
                 "dataset_generation_caption": description}
+        for field in ("doi", "journal_reference", "arxiv_current_version_observed"):
+            if isinstance(row.get(field), str) and row[field].strip():
+                item["paper"][field] = row[field]
         validate_record(item)
         normalized.append(item)
         # Concrete photographs/screenshots of third-party content require separate rights review.
@@ -337,9 +356,17 @@ def validate_review(item, review, *, for_promotion=False):
 
 def server_root(root):
     resolved = Path(root).resolve()
-    if os.uname().sysname != "Linux" or not resolved.is_relative_to(Path("/home/jdp")):
-        raise ValueError("Asset operations run only on jdp under /home/jdp; local operation is metadata-only")
-    return resolved
+    if os.uname().sysname == "Linux":
+        if resolved.is_relative_to(Path("/home/jdp")):
+            return resolved
+        workspace = os.environ.get("GITHUB_WORKSPACE", "")
+        if (os.environ.get("GITHUB_ACTIONS") == "true"
+                and os.environ.get("GITHUB_REPOSITORY") == "DocZbs/Awesome-Academic-Figures"
+                and os.environ.get("GITHUB_RUN_ID", "").isdigit()
+                and workspace and Path(workspace).is_absolute() and Path(workspace).is_dir()
+                and resolved.is_relative_to(Path(workspace).resolve())):
+            return resolved
+    raise ValueError("Asset operations require jdp /home/jdp or this repository's Linux GitHub Actions workspace; local operation is metadata-only")
 
 
 def checked_host(url, allowed_hosts):
@@ -475,6 +502,15 @@ def promote_record(root, item, review):
         old = json.loads((out / "metadata.json").read_text()) if (out / "metadata.json").exists() else {}
         if old.get("source", {}).get("external_record_sha256") != record_digest(item):
             raise ValueError("Refusing to overwrite a different existing curated figure")
+        assets = old.get("original_assets", [])
+        if len(assets) != 1 or assets[0].get("sha256") != actual or old.get("rights", {}).get("publication_status") != "approved":
+            raise ValueError("Existing curated figure differs from the approved original asset")
+        retained = out / assets[0]["file"]
+        if not retained.resolve().is_relative_to(out.resolve()) or hashlib.sha256(retained.read_bytes()).hexdigest() != actual:
+            raise ValueError("Existing curated original changed")
+        # Existing manual classifications, figure numbers, previews and detailed
+        # adaptation instructions are not outputs of an incremental import.
+        return old
     out.mkdir(parents=True, exist_ok=True)
     for name in (staged["original_file"], "preview.webp"):
         shutil.copy2(stage / name, out / name)
@@ -543,7 +579,7 @@ def main():
     parser.add_argument("--reviews", type=Path, help="Explicit record-hash-bound review list; absent means metadata only")
     parser.add_argument("--root", type=Path, default=Path("."))
     parser.add_argument("--report", type=Path, required=True)
-    parser.add_argument("--stage", action="store_true", help="Download rights-approved raster images on jdp only")
+    parser.add_argument("--stage", action="store_true", help="Download rights-approved images only in an authorized Linux asset workspace")
     parser.add_argument("--promote", action="store_true", help="Publish staged images only after asset-hash-bound scope/visual review")
     parser.add_argument("--allowed-host", action="append", default=[], help="Exact HTTPS image hostname; repeated flags allowed")
     parser.add_argument("--limit", type=int)
@@ -615,7 +651,7 @@ def main():
         reviews[review.get("id")] = review
     report = {"schema_version": "0.3", "source_index": str(args.index), "indexed_count": len(records),
               "excluded_known_issue_count": excluded_known_issue_count,
-              "staged_count": 0, "published_count": 0, "metadata_only_count": 0, "invalid_count": 0, "figures": []}
+              "staged_count": 0, "published_count": 0, "already_published_count": 0, "metadata_only_count": 0, "invalid_count": 0, "figures": []}
     allowed_hosts = {host.lower() for host in args.allowed_host}
     selected = records[:args.limit] if args.limit else records
     identifiers = [item.get("id") for item in selected]
@@ -641,8 +677,9 @@ def main():
                     review["asset_sha256"] = staged["asset_sha256"]
                     result["_review"] = review
             if args.promote:
+                already_present = (root / "figures" / item["id"] / "metadata.json").is_file()
                 metadata = promote_record(root, item, review)
-                result.update(status="published", asset_sha256=metadata["original_assets"][0]["sha256"])
+                result.update(status="already_published" if already_present else "published", asset_sha256=metadata["original_assets"][0]["sha256"])
         except (ValueError, KeyError, OSError, urllib.error.URLError) as error:
             result.update(status="not_published", error=str(error))
         return result
@@ -656,6 +693,7 @@ def main():
             if bound_review := result.pop("_review", None):
                 reviews[result["id"]] = bound_review
             report["published_count"] += result["status"] == "published"
+            report["already_published_count"] += result["status"] == "already_published"
             report["invalid_count"] += result["status"] == "not_published"
             report["metadata_only_count"] += result["status"] == "metadata_only"
             report["figures"].append(result)

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505998",
+  "record_sha256": "9662e42c57f997d6e8a6b67550d5981e31f6f4d4f235988f47575c0704db7ae3",
+  "asset_sha256": "92b3f5aafa0809877b38f547e0b58a2c85e18b5f54c5da6863f93afe11379979",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505998",
+    "title": {
+      "zh": "A Large-Scale Study on Video Action Dataset Condensation · 方法图",
+      "en": "A Large-Scale Study on Video Action Dataset Condensation"
+    },
+    "paper": {
+      "id": "arxiv-2412-21197",
+      "title": "A Large-Scale Study on Video Action Dataset Condensation",
+      "authors": [
+        "Yang Chen",
+        "Sheng Guo",
+        "Bo Zheng",
+        "Limin Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21197",
+      "arxiv_url": "https://arxiv.org/abs/2412.21197",
+      "arxiv_id": "2412.21197",
+      "arxiv_first_submitted_at": "2024-12-30T18:58:29Z",
+      "arxiv_updated_at": "2025-03-12T03:28:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21197v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505998/image/image.jpg?Expires=1790855558&Signature=u12rRECtHKPNVEQf46~Kbce7RfdweWT9jWGFKHw49S3n97A2kSW48NmgtQnt0JYz45I9xC9VJ5R9bi4R3gNNKHQJLo3PRTUgB~wYDG8BvAW0rJMU4lDWcxQ0SRoAxZseGiwq4ICFKBM~6I6nHcjy8j22SM3KXmGw1wMUXa-UZqBaKbMIcyOpxoTXP4Cp0lbVTQLouhIr3yL4S8IpVtumw8ecQkxbFcsHN2Vb3QZBlKnjsr8ne3tVe~d5uZid9e792ZhCZlzoBv2Txfbwz4MS0VGhaNgWfSz~c7SGiizd72X~4Vlrmk-ZFmh1eqHfXC~syU2FrZ3-uzJYe-~~sWw~qQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505998,
+      "description_sha256": "def9739522dc920284d8bdb22f46b62472e434886e43c50d77c1e2b92edeb154",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7e74a0fbe907b07a19ff251b994b727f1936146095f3acaf2d75426997c1cbe8",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a conceptual visualization of three distinct dataset condensation frameworks for video data, categorized into two main types: dataset distillation methods—Trajectory Matching (a) and Distribution Matching (b)—and a sample selection method—Score Selection (c). The overall layout is divided into two main regions: on the left, a general pipeline for dataset condensation, and on the right, detailed breakdowns of the three methods within dashed rectangular boundaries.\n\nOn the left side, the process begins with a 'Real Dataset' depicted as stacked orange and blue video clips, feeding into a 'Condensation Module'. This module outputs either a 'Proxy Loss' (light blue box) or a 'Selection Index' (light green box), which are used to update a 'Condensed Dataset' represented by a black database icon. An arrow labeled 'Update' loops back from the condensed dataset to the condensation module, indicating iterative refinement. Below this pipeline, a legend clarifies visual elements: a gray circle labeled θ₀ represents 'Model Param', pink rectangles represent 'Video Clip', and a green rectangle represents 'Model Layer'.\n\nOn the right, the three methods are shown in separate colored boxes. (a) Trajectory Matching (blue box) illustrates a sequence of model parameter updates over time: θ₀ (initial state) evolves through θₜᴿ⁻¹ → θₜᴿ → θₜ⁺¹ᴿ (real trajectory, light blue circles) and θₜˢ⁻¹ → θₜˢ → θₜ⁺¹ˢ (synthetic trajectory, light red circles). A neural network icon at the top connects to θ₀, and a 'Matching' label with a downward arrow points to a 'Loss' box, indicating comparison between trajectories. The sequence repeats N times, as denoted by '× N'.\n\n(b) Distribution Matching (blue box) shows a multi-stage process: Stage I, Stage II, and Stage III, each containing stacked green rectangles representing model layers. Each stage is followed by a 'Matching' step (purple box), with connections flowing from Stage I to Stage II, and Stage II to Stage III. The final output combines 'CE Loss + Matching Loss', suggesting classification and distribution alignment objectives.\n\n(c) Score Selection (green box) depicts a scoring mechanism: N video clips (yellow rectangles) are processed by an 'Observer' to generate 'score' values. These scores are then used to 'select' C clips (pink rectangles) from the original set, forming a condensed dataset of size IPC × C. The selection process is visually represented by a downward arrow labeled 'select'.\n\nConnections and arrows throughout the diagram indicate data flow and computational dependencies. Dashed lines connect the left-side pipeline to the right-side methods, emphasizing that Trajectory Matching and Distribution Matching are distillation approaches using proxy losses, while Score Selection is a direct selection approach using indices. The figure effectively contrasts these methodologies in terms of their operational mechanisms and output structures."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

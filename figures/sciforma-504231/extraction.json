@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504231",
+  "record_sha256": "fcacbb7b25a50ae0ed5aa2e8a14019a92db721956b247262dd08ede4b29e18a0",
+  "asset_sha256": "f5d93dca58efe05ed647a4eab0936c49a8649635cb2c85ff543585fd12d60d64",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504231",
+    "title": {
+      "zh": "Data-driven Modeling of Parameterized Nonlinear Fluid Dynamical Systems with a Dynamics-embedded Conditional Generative Adversarial Network · 方法图",
+      "en": "Data-driven Modeling of Parameterized Nonlinear Fluid Dynamical Systems with a Dynamics-embedded Conditional Generative Adversarial Network"
+    },
+    "paper": {
+      "id": "arxiv-2412-17978",
+      "title": "Data-driven Modeling of Parameterized Nonlinear Fluid Dynamical Systems with a Dynamics-embedded Conditional Generative Adversarial Network",
+      "authors": [
+        "Abdolvahhab Rostamijavanani",
+        "Shanwu Li",
+        "Yongchao Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17978",
+      "arxiv_url": "https://arxiv.org/abs/2412.17978",
+      "arxiv_id": "2412.17978",
+      "arxiv_first_submitted_at": "2024-12-23T20:50:20Z",
+      "arxiv_updated_at": "2024-12-23T20:50:20Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "nlin.CD"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17978v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504231/image/image.jpg?Expires=1790855427&Signature=UhdE60T9QUGyMnNaDUZ8oqM7R2PSaLoFK606UbyY8fNlpRO3BnOD0t81MVWX8VDeZUBtu0JYjKibweUVReqWZhehPsBnSDfNFJW~2-uYi1DFpHPEo0FbMmF7maoRU1Ctg~UWlmVxtoRs7~GYp5uKlXSYt~CrPNBOL4RL9RkO7T2iwuCIkmiEnl-X1RSceNA47Bp~igAJSLmPzVDFLwnS4~zh8U3XvfYNoJyO1eS7jHz11xcuaIZrX0VPXWgXPN6RXspkk12v8CWbWONmuVFicZRmoUDxwJcsGOnNPsTkbGCiRcDjFq0WVCRZyDSOx484Y8dGax~sBBe2A7R0XFOxWQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504231,
+      "description_sha256": "fa619cdbec371f763a12dde30a2e0c2433274424c781ef290cd5d20761e4a4e9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "61624deee57ffca83de78461df444366860f23bcce76cd6c9b32f99531a88157",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "nlin.CD"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a discriminator model designed to distinguish between real and predicted flow fields based on their corresponding physical parameters, specifically the Reynolds number Re_D. The global layout is a horizontal workflow from left to right, beginning with input data and progressing through multiple processing layers to produce a final binary classification output labeled 'Real/Predicted'.\n\nAt the top-left, an input image representing real or predicted flow fields, denoted as s(t; P_sim), is shown with a color gradient indicating velocity or pressure distribution around a circular obstacle. This image feeds into a sequence of convolutional neural network (CNN) layers, represented by purple rectangular blocks each containing three white circles, followed by max pooling layers depicted as dark blue rectangles with two white circles. These layers are arranged in pairs, with ellipses indicating additional intermediate layers. After several CNN and max pooling stages, the feature maps are passed through a flatten layer (gray rectangle with two white circles) and then a dense layer (light blue rectangle with two white circles).\n\nBelow this main pathway, a separate branch begins with a green circular node labeled 'Physical Parameter (P_sim): Re_D', which represents the Reynolds number associated with the flow field. This scalar parameter is fed into a series of dense layers (light blue rectangles with two white circles), indicated by ellipses for intermediate layers.\n\nThe outputs from both pathways converge at a 'dot' operation block (golden rectangle), where the features from the flow field processing branch are combined element-wise with the processed physical parameter features. The result of this dot product is then summed with the output from the final dense layer of the flow field branch via a 'Sum' block (another golden rectangle). This combined signal passes through a sigmoid function, represented by a blue S-shaped curve, which produces a scalar probability output. Finally, this probability is mapped to a binary decision labeled 'Real/Predicted' in a gray rounded rectangle.\n\nA legend box enclosed in a dashed rectangle clarifies the visual symbols: purple blocks denote CNN layers, dark blue blocks denote MaxPooling layers, gray blocks denote Flatten layers, light blue blocks denote Dense layers, and the Sigmoid Function is shown as a curve. All connections are indicated by solid black arrows showing the direction of data flow. The overall structure reflects a hybrid deep learning architecture integrating spatial feature extraction from flow fields with physical parameter embedding to enhance discrimination capability."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

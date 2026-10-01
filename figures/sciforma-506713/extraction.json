@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-506713",
+  "record_sha256": "c2905af263e233fab2bbf9358bd84d6505b5796f3a1e0b401d51cd886384c381",
+  "asset_sha256": "8c80e750f1ec56abc6be559adf7b4a1606893ea007df61d9e3ceb1b5dd9d38c9",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506713",
+    "title": {
+      "zh": "Diffusion Model-Based Data Synthesis Aided Federated Semi-Supervised Learning · 方法图",
+      "en": "Diffusion Model-Based Data Synthesis Aided Federated Semi-Supervised Learning"
+    },
+    "paper": {
+      "id": "arxiv-2501-02219",
+      "title": "Diffusion Model-Based Data Synthesis Aided Federated Semi-Supervised Learning",
+      "authors": [
+        "Zhongwei Wang",
+        "Tong Wu",
+        "Zhiyong Chen",
+        "Liang Qian",
+        "Yin Xu",
+        "Meixia Tao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02219",
+      "arxiv_url": "https://arxiv.org/abs/2501.02219",
+      "arxiv_id": "2501.02219",
+      "arxiv_first_submitted_at": "2025-01-04T07:38:15Z",
+      "arxiv_updated_at": "2025-01-04T07:38:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IT"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02219v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506713/image/image.jpg?Expires=1790855623&Signature=SOScXqFyADAz5pijbXQcWZZMZN1hDiycogrs6HME1QwroplaR0yrz63hi3InCH0f1MgJJ7vB2mIqhZynsxLXuCeEVByQ55wn22dhaqFK1ERDZndgXPe84BGdHF~D1yEvehF14ESEyl~EdZtsesHuulW2WQGr6cF31wGDA7WGvwc1a6EoRYk7N424remJfO3piyXFhHkED6lEWmlFYfXk2jaioqKdao2WCaAbiXTcGlZ9sRxdpko3hqiPYD7c4srTP7Yg2SkG5r-5itljKnBw3mLlywt1a1vUFHavBYLLc0KY~Xdei~cOlMFcEg6c3y3EtR~xwMPkTz10HyUudoPy4A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506713,
+      "description_sha256": "2f5559a20669aa967e7178983221f0c2d3e40ceceb4d172aa2c32e38f79388a1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9e52e849e648771305510f7c6447fe099c757b24323f12408ce7a67b218d3bc7",
+      "row_response_sha256": "d09ba592fde8f1259c14c0b9b5f9b0a5362f578ed4f27d8bbffc357ea7070954"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IT"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a five-step federated learning framework called DDSA-FSSL, designed for semi-supervised learning with synthetic data generation. The overall layout is divided into five vertically stacked sections, each representing a distinct phase of the algorithm, separated by dashed horizontal lines. Each section contains a central server (labeled 'Central Server' with a base station icon) connected to multiple clients (represented as silhouettes), illustrating a client-server federated architecture. A legend in the top-right corner indicates solid arrows represent 'Upload' and dashed arrows represent 'Download'.\n\nIn Step ①, 'Train classifier on labeled data', clients hold local labeled datasets (gray databases) and train local classifiers (black neural network icons). These local models are uploaded to the central server, which aggregates them via 'Model Aggregation' (thick black arrow) to form a global classifier (orange neural network). The aggregated model parameters θ_K are then downloaded back to all clients.\n\nStep ②, 'Perform pseudo labeling for unlabeled data', begins with the global classifier being sent to clients. Each client applies this classifier to their unlabeled data (blue databases) to generate pseudo-labeled data (green databases). The central server collects local confusion matrices M_1^t and M_K^t from clients and computes a 'Global Confusion Matrix' M_g^t (a 2x2 grid of colored squares). This global matrix guides a 'Data selection' process at each client, resulting in 'Optimized Pseudo-labeled Data' (green databases with a checkmark), which are then uploaded to the central server.\n\nStep ③, 'Train DM on labeled and pseudo-labeled data', involves clients combining their original labeled data (gray databases) with the optimized pseudo-labeled data (green databases) to train local Diffusion Models (yellow neural networks). These local DMs are uploaded to the central server, which aggregates them into a 'Diffusion Model' (purple neural network) using 'Model Aggregation'. The aggregated DM parameters φ_K are then downloaded to clients.\n\nStep ④, 'Generate synthetic data', shows the central server computing a 'Global Data Distribution' (red bar chart) from aggregated local data distributions |D_1^l| and |D_K^l| (gray histograms). Clients use their local Diffusion Models (purple neural networks) to generate 'Global Diffusion Synthetic Data' (pink databases), based on discrepancies between local and global distributions.\n\nFinally, Step ⑤, 'Train classifier on labeled and synthetic data', involves clients training local classifiers (orange neural networks) on both their original labeled data and the newly generated synthetic data (pink databases). These updated models are uploaded to the central server, where they are aggregated into a final 'Global Classifier' (red neural network) through 'Model Aggregation'. The final model parameters θ_1 and θ_K are distributed back to clients. Throughout the diagram, model aggregation is consistently represented by thick black arrows, while parameter downloads are shown as dashed arrows from the central server to clients."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

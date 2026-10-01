@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+CustomTTT: Motion and Appearance Customized Video Generation via Test-Time Training — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15646
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a layered architectural framework for video generation, specifically examining how injecting different text prompts at various layers affects the output's appearance and motion. The global layout consists of a horizontal sequence of nine layers indexed from i = 0 to i = 8, arranged left to right. Each layer contains two vertically aligned rectangular modules: one peach-colored representing the 'Spatial Module' and one light green representing the 'Temporal Module'. These modules are consistently paired across all layers, indicating a dual-stream processing structure where spatial and temporal features are handled in parallel.
+
+Above each layer, an arrow points downward into the corresponding pair of modules. For all layers except the third (i = 2), the arrow is black and labeled with the text prompt symbol 'p', indicating standard prompt injection. At layer i = 2, the arrow is orange and labeled 'p*', signifying a special or modified prompt injection that serves as the focal point of the experiment. This design suggests that the model’s behavior under normal prompting (p) is contrasted with its behavior when a distinct prompt (p*) is introduced at a specific layer.
+
+The visual modules are uniformly shaped as rectangles with bold black borders. The Spatial Module is colored peach, and the Temporal Module is light green, as indicated by the legend at the bottom of the figure. The height of each module varies across layers, suggesting changes in feature dimensionality or computational complexity per layer. Notably, at layer i = 4, the Spatial Module is significantly shorter than in adjacent layers, possibly indicating a bottleneck or downsampling operation. Dashed vertical lines connect each layer index to its corresponding module pair, reinforcing the alignment between the layer number and its components.
+
+Connections are represented solely by the downward arrows from the prompt labels to the modules. These arrows indicate the direction of prompt injection into the network. The consistent presence of arrows above every layer emphasizes that all layers receive some form of prompt input, but the distinction between 'p' and 'p*' highlights the experimental manipulation at layer i = 2. There are no explicit connections between layers or between modules within a layer, implying that the interaction between spatial and temporal streams may occur implicitly within each layer or through subsequent processing not depicted here.
+
+The figure’s caption clarifies that this setup is designed to study the influence of the i-th layer on both appearance (likely governed by the Spatial Module) and motion (likely governed by the Temporal Module) in video generation. By injecting p* only at layer i = 2 and p elsewhere, the model’s sensitivity to prompt location can be analyzed, potentially revealing which layers are most critical for controlling visual content versus temporal dynamics.

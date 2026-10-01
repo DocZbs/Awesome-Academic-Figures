@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Human-Readable Adversarial Prompts: An Investigation into LLM Vulnerabilities Using Situational Context — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16359
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a two-phase adversarial attack methodology, referred to as \textit{\OurMethod}, designed to generate and deploy effective adversarial prompts against large language models (LLMs). The global layout is structured as a horizontal workflow with a branching lower section representing two distinct attack schemes. The top row shows the prompt generation pipeline, while the bottom row details the attack execution strategies.
+
+In the first phase, the process begins with a green rectangular module labeled 'Generated Adversarial Suffix', containing an icon of a hooded hacker with a skull on a laptop. This module feeds into a conversion step via a rightward arrow labeled 'Convert Adversarial Suffix using GPT-3.5 Turbo'. The output is a yellow rectangular box within a larger green container titled 'Full-Prompt Template', which lists three components: 'Malicious Prompt', 'Converted Adversarial Suffix', and 'Situational Context'. This full template is then passed through another transformation step, indicated by an arrow labeled 'Paraphrase Full-Prompt Template using GPT-4', leading to a green module named 'Collected Adversarial Prompts'. This module contains an icon depicting multiple documents feeding into a laptop, symbolizing the collection of paraphrased prompts.
+
+From this collection, an arrow labeled 'Attack' points downward to a green box labeled 'Scheme 1: 4-bit Quantized Llama-2 7B Chat Model', indicating the first attack strategy targeting a specific LLM. A second arrow, labeled 'Attack using Paraphrased Full-Prompts with a Score of 5', extends leftward from Scheme 1 to a larger green container labeled 'Scheme 2: Attack other LLMs with One-Shot/Few-Shot Chain-of-Thought Prompting Technique'. Inside this container are three yellow boxes arranged horizontally: 'Adversarial Prompt 1 Query 1 Response 1', 'Adversarial Prompt n Query n Response n', and 'Query n + 1 Response n + 1?', illustrating a sequential prompting approach where the model’s responses are used to guide subsequent queries.
+
+All primary modules are green rectangles with rounded corners, while internal components or data representations are yellow rectangles. Text labels are black, with key titles in bold or underlined for emphasis. The arrows are solid black lines with arrowheads indicating directionality. The figure visually conveys a systematic approach starting from a nonsensical adversarial suffix, converting it into a readable and contextually embedded prompt, paraphrasing it for diversity, and then deploying it via two distinct attack schemes—one direct and one iterative—against various LLMs.

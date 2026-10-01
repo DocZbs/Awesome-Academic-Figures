@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-507005",
+  "record_sha256": "347b73ad462a8b885db0e827b86b2589bcd2507d4c33807f1ee4df9c20fd6382",
+  "asset_sha256": "0f102aa234e9830db53554e8dd3faf4610e9647c6dec82c1815b8c7345662871",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-507005",
+    "title": {
+      "zh": "CM3T: Framework for Efficient Multimodal Learning for Inhomogeneous Interaction Datasets · 方法图",
+      "en": "CM3T: Framework for Efficient Multimodal Learning for Inhomogeneous Interaction Datasets"
+    },
+    "paper": {
+      "id": "arxiv-2501-03332",
+      "title": "CM3T: Framework for Efficient Multimodal Learning for Inhomogeneous Interaction Datasets",
+      "authors": [
+        "Tanay Agrawal",
+        "Mohammed Guermal",
+        "Michal Balazia",
+        "Francois Bremond"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03332",
+      "arxiv_url": "https://arxiv.org/abs/2501.03332",
+      "arxiv_id": "2501.03332",
+      "arxiv_first_submitted_at": "2025-01-06T19:01:10Z",
+      "arxiv_updated_at": "2025-01-06T19:01:10Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03332v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=507000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/507005/image/image.jpg?Expires=1790855632&Signature=HymuIM6xkcKeeEmiH~bcyP~JJFPGps83CHlHNsw-3HsCxMFXUgLZ-yRf0WxoscM0zLXxk1R49ZGdsUx~79nILpq3Ue1JgM2Y09C~cT1XxX6lUPcEHY7Jih3XvkkgF22HvwBttM6TzjeF8AbTv1fiTwwroYDuG3f941TRvomOGAhwjDuXZugHGS7TPvoyFD9BKnmXv2r96t0YIx3h7Y7rtF2x0IKsq1goQBBtWpJNB0RKV7UXoBNITDa5rV6uOkdcBWV44BsNDMhZTaXgQIomoOD52m93DxyiYDmOP6UoCj1U5c0juIiuWWi~Z8gygK1c~htZ2~64TV1vRRTegTAUkQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 507005,
+      "description_sha256": "9db3cd8ba929e5b3fdc5ca6a3073060fe11e454c0713f8deca8cdd43c6a49e01",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "382cd4b9e7d658824091eeac079966713d6e76750f66daf48fabedf1e9932ee2",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6cee1d6d9f0ad8ba5ce5e027b0d9516c2ee61d7ed7fd4534172033f301497949",
+      "row_response_sha256": "a28f61e193d5bf20bb0b09740db326193306ded92667fb2b0c341a49c5750d23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the detailed architecture of CM3T, a multimodal transformer model incorporating three distinct trainable components—Prefix Tuning, Multi-Head Vision Adapter, and Adapter Fusion—each highlighted in a unique color (red, blue, and green respectively), while the remaining parts of the model are frozen during fine-tuning. The global layout follows a standard transformer block structure, starting from an input x, progressing through self-attention and feed-forward layers, and culminating in an output. The input x feeds into a 'Hidden State' block, which then connects to a 'Multi-Head Attention' module containing Q, K, V projections via W_Q, W_K, W_V matrices. This self-attention block is augmented by a red-colored 'Prefix Tuning' module, labeled 'Prefix Tuning added to each head', which includes a 'Gated Addition' layer receiving Δh_p from a softmax layer fed by W'_up and W'_down matrices. The prefix tuning module injects learned prefixes h_p into the self-attention mechanism via dashed lines. Parallel to this, a blue-colored 'Multi-Head Vision Adapter' processes a separate input h_a, passing it through W_down, ReLU, and W_up layers to produce Δh_a, which is concatenated with the main flow after scaling. The concatenated output is then processed by a green-colored 'Adapter Fusion' block, which receives multiple modalities via 'Modality (n) Embedding'. This block contains a 'Cross-Attention' module with Q', K', V' projections (W'_Q, W'_K, W'_V), followed by Layer Norm, Linear, Add & Layer Norm, and finally a fusion mechanism involving Q'', K'', V'' projections feeding into a softmax and a multiplicative gate (denoted by ⊗) to produce z'. The fused output z' is combined with the main stream via a summation node before proceeding through two sequential 'Layer Norm' blocks, a 'Linear' layer, and an 'Adapter' module (blue), all connected in a residual fashion. The final output is generated after another 'Layer Norm'. Dashed lines indicate auxiliary or modality-specific connections, while solid arrows denote primary data flow. The diagram emphasizes modularity and efficient parameterization through adapters and prefix tuning, with the colored modules representing the trainable components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

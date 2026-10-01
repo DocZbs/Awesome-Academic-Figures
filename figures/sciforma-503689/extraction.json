@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503689",
+  "record_sha256": "bc0bae98af9da114187e2af9e2b413f59c443bdd73965d8343e64f21068c6eb7",
+  "asset_sha256": "a84a66176340120c0a0c3bc7ff54f4e366b43de315e4db677b642b241cdec908",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503689",
+    "title": {
+      "zh": "Part-Of-Speech Sensitivity of Routers in Mixture of Experts Models · 方法图",
+      "en": "Part-Of-Speech Sensitivity of Routers in Mixture of Experts Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-16971",
+      "title": "Part-Of-Speech Sensitivity of Routers in Mixture of Experts Models",
+      "authors": [
+        "Elie Antoine",
+        "Frédéric Béchet",
+        "Philippe Langlais"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16971",
+      "arxiv_url": "https://arxiv.org/abs/2412.16971",
+      "arxiv_id": "2412.16971",
+      "arxiv_first_submitted_at": "2024-12-22T11:03:41Z",
+      "arxiv_updated_at": "2024-12-22T11:03:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16971v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503689/image/image.jpg?Expires=1790855405&Signature=pYHnOZYHkWcpocSppKmlHQS7AiEXT7w2QiCwDd1PKXMDWj6qpSfe1aF5Q4rei1VmSyF~PhoszAVsvK0fCmP~i58pgnZwn3n5sgSD3RV-0fZCycyuBNnr8RbxFMhnB78Ta4a7XAGsJnAqGNkVSkU1WQ5IGZU0wcogwDGCWOfBtToL9BOTbmRGvghkhKnSL~Nc1z1Lyi7wHrM-IDoKJ5qCaWhRv-7fUXlQ16KtCvQoW3q3r1h14j8Ks~CVCKwaLhYF7MDzBN0R47wzrlNf3YlFdKW6x7QtKrXPX8bxvrMhTTBHgwptvXPXMKfFvOHZeYUyaEWogXNCEDVsW5msmhQXBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503689,
+      "description_sha256": "273b1d5dd0c7ed885328e135269b8ca2dbda143170174a985366a41d6d00d979",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "41e473cba3df83a04d64e2e0321810112ecfd41066d510137a2ddb345dc53fc8",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a token routing mechanism within a multi-layered expert model architecture, specifically demonstrating how input tokens are dynamically routed through different expert modules across layers. The global layout consists of a left-side input section, followed by three vertically stacked layers labeled 'Layer 1', 'Layer 2', and 'Layer 32', each containing eight expert nodes denoted as E₁ through E₈. The flow proceeds from left to right, with routers acting as decision points between layers.\n\nOn the far left, three input tokens — 'humanities', 'human_', and '_ities' — are shown. These are decomposed into subtokens, with 'humanities' branching into 'human_' and '_ities'. Each subtoken is then processed by a diamond-shaped 'Router' node, which assigns routing probabilities to specific experts in Layer 1. For example, 'human_' is routed to E₁ (red, probability 0.85), E₄ (purple, 0.10), and E₆ (blue, 0.20), while '_ities' is routed to E₆ (blue, 0.76). The colors (red, blue, purple) represent distinct routing paths or expert groups.\n\nIn Layer 1, each expert is represented as a circle with a label Eᵢ. The selected experts (E₁, E₄, E₆) receive inputs based on the router's decisions. The outputs from these experts are then combined using circular plus symbols (⊕), which denote summation or aggregation. The aggregated output is passed to a second 'Router' in the middle, which again assigns routing probabilities to experts in Layer 2. For instance, the red path from E₁ goes to E₃ (red, 0.02), while the blue path from E₆ goes to E₂ (blue, 0.40) and E₅ (blue, 0.36).\n\nLayer 2 contains the same set of eight experts, with some activated (colored) and others inactive (black outlines). The routing continues to Layer 32, where the final expert activations are shown. The red path from Layer 2 leads to E₁ (0.46) and E₂ (0.18), while the blue path leads to E₈ (0.67). The figure also includes a dotted box in Layer 32 indicating intermediate layers are omitted for brevity.\n\nThe figure caption specifies that only two of the eight experts are selected per layer for illustration. For 'human_', the routing path is [(1,4), (8,3), ..., (1,2)], meaning Layer 1 expert 4, Layer 8 expert 3, etc., though the diagram shows only up to Layer 32. Similarly, for '_ities', the path is [(6,4), (2,5), ..., (2,8)]. The arrows are color-coded and labeled with numerical weights (probabilities), indicating the strength of routing decisions. The overall structure emphasizes dynamic, sparse routing through a deep network of experts, with routers determining which experts process each token at each layer."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

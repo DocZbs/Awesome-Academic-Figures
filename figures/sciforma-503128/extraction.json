@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-503128",
+  "record_sha256": "ec95148878f1942bda99d145518d1128bb6c0e80e87abe5a3d7cacc60328d77f",
+  "asset_sha256": "196036134572747fa73671a54ce3b75707827b4d37abed60d5e0df4553dc4543",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503128",
+    "title": {
+      "zh": "Less is More: Towards Green Code Large Language Models via Unified Structural Pruning · 方法图",
+      "en": "Less is More: Towards Green Code Large Language Models via Unified Structural Pruning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15921",
+      "title": "Less is More: Towards Green Code Large Language Models via Unified Structural Pruning",
+      "authors": [
+        "Guang Yang",
+        "Yu Zhou",
+        "Xiangyu Zhang",
+        "Wei Cheng",
+        "Ke Liu",
+        "Xiang Chen",
+        "Terry Yue Zhuo",
+        "Taolue Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15921",
+      "arxiv_url": "https://arxiv.org/abs/2412.15921",
+      "arxiv_id": "2412.15921",
+      "arxiv_first_submitted_at": "2024-12-20T14:13:09Z",
+      "arxiv_updated_at": "2025-04-23T23:24:01Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15921v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503128/image/image.jpg?Expires=1790855363&Signature=i-nVXLy3RiW~Ru3m7P0rLONQa4tkenOg5p8j0N3z8cR2G6guiBl31EqY7xcfY-hkD6Zdu06pD1hD5qp2ZHzFlddI4qwIf3c9QysYNMjBOWIg6qAF2oibZ2q9i2gBfcF5LutyKClzN10jvwkryv4pz8-L9ie8Y1G6FTZwTRZIZ0r~Um28tj7oARrPrUuH60MvStDQP~gEPAwPf6pP3BzTrRUIWZNiAX~tMDi3o8TaKJK4NvCqdvQl8rtl37lnda4QrBbihPPDsT38XEo0Z7QwAZb8BIW~OVCviUP-202aiin7VdxQc3Ag5PSobmHERDftKjaXYxPMSf0Ipcln63eetQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503128,
+      "description_sha256": "12252a803194cc554ed5a8ac31fbed73710f48d98f2bc6fba5911bca68f44189",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e63b815ea5571fdd981156cb006189d0ee6a9382790fc40a673326819283529c",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the framework of Flab-Pruner, a model pruning technique applied to a dense language model to produce a pruned version with reduced size and computational cost while preserving performance. The diagram is structured into three horizontal sections: the top section shows the original Dense Model, the middle section details the Flab-Pruner pruning process, and the bottom section presents the resulting Pruned Model.\n\nIn the Dense Model section, the flow begins with a light green rectangle labeled 'Vocabulary', which connects via a solid arrow to a light blue rectangle labeled 'Embedding'. This feeds into a gray dashed box labeled 'N×Transformers', which contains stacked layers each composed of two blocks: a yellow 'FFN Block' (Feed-Forward Network) and a peach-colored 'GQA Block' (Grouped Query Attention). The output from the transformer stack connects to a light blue 'LM Head' (Language Model Head), completing the forward pass.\n\nThe middle section, labeled 'Flab-Pruner', is divided into three distinct pruning modules, each enclosed in a light purple rounded rectangle. The first module, 'Vocab Pruning', contains three vertically stacked components: 'LM Head', 'Embedding', and 'Vocabulary', each marked with a small scissors icon indicating pruning. The second module, 'Layer Pruning', displays a vertical stack of transformer layers labeled 'Layer N', 'Layer n', and 'Layer 1', with 'Layer n' shown as a dashed outline and also marked with a scissors icon, suggesting selective layer removal. The third module, 'FFN Pruning', features a hexagonal shape split horizontally into two parts: 'Down' on top and 'Up & Gate' below, both in yellow, representing the FFN subcomponents; this entire unit is also marked with a scissors icon, indicating pruning within the FFN block.\n\nThe bottom section, 'Pruned Model', mirrors the structure of the Dense Model but with modifications reflecting the pruning. It starts with 'Vocabulary' (light green), followed by 'Embedding' (light blue), then a gray dashed box labeled 'M×Transformers' (where M < N), containing the same FFN and GQA blocks as before. The final component is the 'LM Head' (light blue). Curved arrows connect the Dense Model to the Flab-Pruner and then from Flab-Pruner to the Pruned Model, visually indicating the transformation process. All connections are represented by solid black arrows, except for the curved feedback-style arrows between the sections, which are thick and gray, emphasizing the flow from input model through pruning to output model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

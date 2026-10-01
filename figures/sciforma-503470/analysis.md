@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Systems Thinking Approach to Algorithmic Fairness — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16641
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a directed graphical model illustrating feedback mechanisms in the context of overt discrimination, as indicated by the caption 'Feedback from overt discrimination'. The global layout is horizontal, with five circular nodes arranged in a left-to-right sequence: A, W, X, D, and Y. These nodes represent variables or entities in the causal process being modeled. The structure follows a primary forward path from A to Y, with additional curved arrows indicating feedback loops.
+
+Visual modules consist of five circular nodes, each labeled with a single uppercase letter beneath it. Nodes A, X are depicted with black outlines and white fill, while nodes W, D, and Y have red outlines and white fill, visually distinguishing them as potentially key or affected variables in the feedback process. All nodes are of uniform size and are spaced evenly along the horizontal axis.
+
+Connections are represented by directed arrows. There is a straight black arrow from A to W, followed by a straight black arrow from W to X, then another straight black arrow from X to D, and finally a straight black arrow from D to Y. These form the main causal chain. Additionally, there are three curved red arrows indicating feedback paths: one from A to D (curving downward), one from A to Y (curving upward), and one from W to Y (also curving upward). These red arrows suggest indirect influences or feedback effects that bypass intermediate steps in the primary chain. The red color of these feedback arrows and the red-outlined nodes they connect to emphasize their role as feedback or discriminative pathways. The diagram does not include any mathematical equations or annotations beyond the node labels and the figure caption.

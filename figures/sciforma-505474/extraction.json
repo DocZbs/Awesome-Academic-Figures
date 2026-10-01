@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-505474",
+  "record_sha256": "d9f7587febe8f6283e3bcc7b3420fc1be079a2bf792f6f28c74a0c3ec88b9fba",
+  "asset_sha256": "820b8e68bd65e62913dbf5e9795cb2f932754b2d596300248cb02b1111bb0313",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505474",
+    "title": {
+      "zh": "SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis · 方法图",
+      "en": "SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-20104",
+      "title": "SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis",
+      "authors": [
+        "Wenkun He",
+        "Yun Liu",
+        "Ruitao Liu",
+        "Li Yi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20104",
+      "arxiv_url": "https://arxiv.org/abs/2412.20104",
+      "arxiv_id": "2412.20104",
+      "arxiv_first_submitted_at": "2024-12-28T10:12:12Z",
+      "arxiv_updated_at": "2025-07-29T19:29:44Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20104v5"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505474/image/image.jpg?Expires=1790855553&Signature=kAo8RmafVDFkZnYGaN0wbGue96jvvELrVXJyWUgfCJhcrAGRtKaEbdhivl-nQi1Os9O8rHDEtklc5wThDHXhOwLNlE5uPdx638vJ52h20ThEZfgLnrcfHqn6dFWvk3Vq3T6ye2i6zAi54PjlwshEGH5Gy8bMzpBSCIp6MGA0XHxTz1R6r6OI3AhJ-n6~039paZ5dz9yQktE5~eE7qj7ohSt5HrRYzJXQ8dvx~0n67EDzXHqC-Rdd3-e5X4Es-AHY5xer9y-xu9hB~X~KYkd0MzKtqAiaRyTcmSjn6b5HSCGdyj-ZsghifDdzIcLAsXli-Q9IxDWbKiZ5tM5A~nmjcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505474,
+      "description_sha256": "33c5e44ee35b0a10f5a9885d200cda0a29920bc28c1a47498f98050029c5cd4b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ef2b28b467465208a446df72b5c2d9c53d249b0a0119e864a3ad042710079779",
+      "row_response_sha256": "a02aa24da361d3d550a34070afa09ff1d74c2d4923bb3e3aac0eee0380102e23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SyncDiff framework, which combines a denoising backbone with explicit synchronization steps for generating synchronized motion sequences. The global layout consists of two main sections: the top portion illustrates the inference pipeline with explicit synchronization steps occurring every s steps, while the bottom portion details the architecture of the denoising backbone.\n\nIn the top section, labeled 'Explicit Synchronization Step (Section 3.6)', the process begins with an input sequence \\(\\hat{x}_{t+s-1}\\), which undergoes (s−1) iterations of denoising via a 'Denoising Backbone' module (light green box). Each iteration involves processing individual motions (pink nodes) and relative motions (yellow nodes) through a graph-like structure. After (s−1) denoising steps, the output \\(\\hat{x}_t\\) is passed to another Denoising Backbone, producing \\(\\hat{\\mu}_t\\). This is followed by an 'Explicit Synchronization Module' (purple box), which computes \\(\\hat{x}_{t-1}\\). This entire sequence repeats cyclically, with the next cycle starting from \\(\\hat{x}_{t-s}\\), again undergoing (s−1) denoising steps before synchronization. The synchronization steps are highlighted in light blue boxes, emphasizing their periodic execution every s steps. Arrows indicate forward propagation, with bidirectional arrows between the two synchronization blocks suggesting feedback or consistency constraints.\n\nThe bottom section, labeled 'Denoising Backbone (Section 3.4)' and enclosed in a light green box, details the internal architecture. It starts with a noisy input \\(x_t\\) derived from an initial clean state \\(x_0 = x\\). This noisy input is decomposed into two components: \\(x_{t,dc}\\) (dynamic content, shown as a waveform) and \\(x_{t,ac}\\) (articulated content, shown as a frequency spectrum). These are processed alongside multiple conditioning inputs: Action/Object Labels (e.g., 'brush', 'roller', 'plate') encoded via CLIP; Rigid Body Shapes encoded via BPS; Articulated Skeleton Shapes \\(\\beta\\) embedded via an embedding layer; and a 0/1 Padding Mask. All these features are fused into a single red vertical feature vector.\n\nThis fused vector is then processed through two parallel Conv1D layers (blue and purple), followed by a Transformer block (orange). The Transformer outputs are split into two branches: one for dynamic content (\\(\\hat{x}_{dc}\\)) and one for articulated content (\\(\\hat{x}_F\\)), each passing through a Linear layer. The outputs \\(\\hat{x}_{dc}\\) and \\(\\hat{x}_{ac}\\) are then composed to reconstruct the final output \\(\\hat{x}\\). Loss functions are defined as \\(\\mathcal{L}_{dc} = ||\\hat{x}_{dc} - x_{dc}||_2^2\\) and \\(\\mathcal{L}_{ac} = ||\\hat{x}_{ac} - x_{ac}||_2^2\\), with additional losses \\(\\mathcal{L}_{align}\\) and \\(\\mathcal{L}_{norm}\\) applied to the reconstructed output.\n\nConnections throughout the diagram are indicated by directed arrows showing data flow. The denoising backbone receives multiple conditioning signals, which are combined before entering the core network. The explicit synchronization modules receive outputs from the denoising backbone and produce synchronized outputs for the next time step. The figure uses color-coded nodes (pink for individual motions, yellow for relative motions) and distinct shapes (rectangles for modules, diamonds for embeddings, etc.) to differentiate components. Text annotations specify module names, mathematical expressions, and section references, ensuring clarity and completeness."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

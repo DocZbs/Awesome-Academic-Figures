@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506856",
+  "record_sha256": "030c75e47257021bd0bb07cbec0b7711dd08a243c2acaf474b55024e01f78f68",
+  "asset_sha256": "302dfc20d126cd9c269647ea382e23466d0a0083b1f1c57d3eda3e9778da3a10",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506856",
+    "title": {
+      "zh": "ICFNet: Integrated Cross-modal Fusion Network for Survival Prediction · 方法图",
+      "en": "ICFNet: Integrated Cross-modal Fusion Network for Survival Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2501-02778",
+      "title": "ICFNet: Integrated Cross-modal Fusion Network for Survival Prediction",
+      "authors": [
+        "Binyu Zhang",
+        "Zhu Meng",
+        "Junhao Dong",
+        "Fei Su",
+        "Zhicheng Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02778",
+      "arxiv_url": "https://arxiv.org/abs/2501.02778",
+      "arxiv_id": "2501.02778",
+      "arxiv_first_submitted_at": "2025-01-06T05:49:08Z",
+      "arxiv_updated_at": "2025-01-06T05:49:08Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02778v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506856/image/image.jpg?Expires=1790855627&Signature=Ra-tvT1NaiHzl4DKfy99CVxn0Tv0fIVDpHYDB3B~vfgO~jsyDkvr21zVHmDyV2FK1thjDECKWU5jJILUk-iZPN1kjD939V6NZRoPjk2es4-rKZDrncT5kD-XEdyAXdgs-QNIVYJoGSFq7dm1UqKZcBlG-5uuYGXi~l0UdEN~BKAinWdbeewfj8D4yiUyHwJR-krx2Y4BqQsLAB1FsHd9Sh81OJOIQcWD93caNDRTJxP6P4lT~GhzsmoMgBh5TvvTr0i5CLq~3a6cVvVK6aiRFVcWNLdSTaedQs049eJJ~8WCXScMedZ6ztIIyCnLAvBM6MnoZXLd3sSNRMtMH1obAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506856,
+      "description_sha256": "6cabe68f6def0b98461acefbe9e8cd75864b47c4678a1fb86f4d94466b836677",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a8cfdecc32582d739d752896717c48065a9175f7b1102ad834d217e1aca5c4fa",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the ROD (Reduced Orthogonal Decomposition) module, designed to process and refine patch features through a series of operations aimed at reducing redundancy and enhancing modality-specific representations. The global layout is left-to-right, depicting a sequential flow from input patch features to refined output features. On the far left, multiple green rectangular bars labeled f_i^p represent input patch features, which are fed into an 'Average Pooling' operation. This pooled output is then passed to a light green rounded rectangle labeled 'Projector', which transforms the features into a higher-level representation.\n\nFrom the Projector, the feature stream splits into two paths. One path leads directly to a circular node marked with a minus sign (representing element-wise subtraction), while the other connects to a blue rectangular bar labeled f_i^{rp,g}, representing a histo-genomic feature. These two inputs are subtracted element-wise, producing an intermediate feature denoted as f_i^{po}. This intermediate feature is further processed by being connected to another circular node marked with a plus sign (element-wise addition), where it is combined with an orange rectangular bar labeled f_i^{rp,t}, representing a histo-text feature. The result of this addition is then directed to a light green rounded rectangle labeled 'Fusor'.\n\nAdditionally, both the histo-genomic feature f_i^{rp,g} and the histo-text feature f_i^{rp,t} are separately connected to loss functions labeled L_cos, indicating that cosine similarity loss is applied to enforce orthogonality between these modality-specific features and the projected features. A feedback loop from the Fusor back to the subtraction node suggests a residual connection, reinforcing the modality-specific enhancement.\n\nThe Fusor combines the processed features and outputs the final refined feature, represented by a green rectangular bar labeled f_i^{rp}. At the bottom of the diagram, a legend clarifies the symbols: a circle with a minus sign denotes 'Element-wise Minus', and a circle with a plus sign denotes 'Element-wise Add'. The overall design emphasizes feature abstraction, orthogonality enforcement via cosine loss, and modality-specific enhancement using residual connections and fusion."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

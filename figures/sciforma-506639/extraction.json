@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506639",
+  "record_sha256": "e83288aa085211ee1521e13640635189fee1adc329b2a3eebc98a5677e2565bc",
+  "asset_sha256": "19e8930b6666848cfea61dc9c91afdb54b35440987f903cf13cac69e10f86d24",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506639",
+    "title": {
+      "zh": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction · 方法图",
+      "en": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction"
+    },
+    "paper": {
+      "id": "arxiv-2501-02006",
+      "title": "Multi-Task Semantic Communication With Graph Attention-Based Feature Correlation Extraction",
+      "authors": [
+        "Xi Yu",
+        "Tiejun Lv",
+        "Weicai Li",
+        "Wei Ni",
+        "Dusit Niyato",
+        "Ekram Hossain"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02006",
+      "arxiv_url": "https://arxiv.org/abs/2501.02006",
+      "arxiv_id": "2501.02006",
+      "arxiv_first_submitted_at": "2025-01-02T04:38:01Z",
+      "arxiv_updated_at": "2025-01-02T04:38:01Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TMC.2025.3525477",
+      "arxiv_current_version_observed": "2501.02006v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506639/image/image.jpg?Expires=1790855633&Signature=CeH~JoPmjJzeJWCKdsph6eyYNND4rSagqp6xsdfuHrp90HudRAROuI5~6S0cpQqDSYXbwMgHQksFaxF4SDM6-d7vLIb2S6AqLpInQhZoLd253MbhmcvKvSOkmF3OaxuJ5-S4~UhmyHeg~PI8LIAF~qiMqowSydOmvUE6duf2yw3cuzAIRxXwVLY6l1DMLFO3cS1DXBTuBBuLSyw97MDGRHSQKixpYVeTo9~oyxjQpePsBGVbQA2BP6oYwlndrQ101gtHR5BtV0x3sGx3dapsPiKuWVzG-zc2yHl1zEoIHRRonNhYxCR8-pIhjOK35ERA5KERbzJPvHGQEMhBfSkwvA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506639,
+      "description_sha256": "f4017a9c7f07d2a95008343c29ec28cd7262f0ce27f3f2791a41f4a14fed49c4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "89a707d26a9e3c3b0e27588ee8c176db9ff469d767dcd04b3e856228e0adea1a",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-task semantic communication system model, structured into three main components: Transmitter/Encoder, Channel, and Receiver/Decoder, arranged horizontally from left to right. The global layout is linear and modular, with dashed rectangular boundaries enclosing each major component. The input signal, denoted as vector x, enters the system on the far left and flows through the pipeline to produce multiple decoded outputs.\n\nIn the Transmitter/Encoder block, a green rectangular module labeled 'Joint source and channel encoder' processes the input x. This module is associated with the conditional probability distribution P_φ(z|x), indicating that it maps the input x to a latent representation z using parameters φ. The output z is then sent to the Channel block.\n\nThe Channel block is represented by a simple additive noise model. It includes a circular symbol with a plus sign inside, representing addition, which combines the transmitted signal z with noise η to produce the received signal ŷ. Below this symbol, the channel transition probability is denoted as P_ch(ẑ|z), indicating the probabilistic relationship between the transmitted and received signals due to channel effects.\n\nThe Receiver/Decoder block, enclosed in a dashed rectangle on the right, contains T parallel decoding modules, each corresponding to a different task. Each module is depicted as a light blue rectangle, with the top one labeled ŷ₁, followed by ŷ₂, and so on down to ŷ_T, indicating multiple output predictions. Each decoder is associated with a conditional probability distribution: P_θ₁(ŷ₁|ẑ), P_θ₂(ŷ₂|ẑ), ..., P_θ_T(ŷ_T|ẑ), where θ_i represents the parameters of the i-th decoder. These decoders take the noisy received signal ẑ as input and independently produce task-specific semantic outputs.\n\nConnections are shown via solid black arrows. An arrow leads from the input x to the Joint source and channel encoder. Another arrow carries z from the encoder to the channel’s adder. The noise η is added to z at the channel, producing ẑ, which is then passed via an arrow to the Receiver/Decoder block. From ẑ, separate arrows branch out to each of the T decoders, indicating that the same received signal is used for all tasks simultaneously. The outputs ŷ₁ through ŷ_T emerge from their respective decoders, completing the multi-task inference process.\n\nThe figure emphasizes a joint encoding strategy that optimizes both source compression and channel robustness, followed by a parallel decoding structure enabling simultaneous execution of multiple semantic tasks. The visual design uses color coding—green for encoding, blue for decoding—to distinguish functional roles, while consistent labeling and mathematical notation ensure clarity and precision."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

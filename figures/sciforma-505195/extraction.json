@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505195",
+  "record_sha256": "812cd8698e7855dff2e4fdac9fc2b4a70da1d5afec327af517f4fcd3a56778f0",
+  "asset_sha256": "f86f6070cca344f73d9b9e24874352b96e7e7e30d105b94b65806587fd4b4b06",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505195",
+    "title": {
+      "zh": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations · 方法图",
+      "en": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations"
+    },
+    "paper": {
+      "id": "arxiv-2412-19628",
+      "title": "RecConv: Efficient Recursive Convolutions for Multi-Frequency Representations",
+      "authors": [
+        "Mingshu Zhao",
+        "Yi Luo",
+        "Yong Ouyang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19628",
+      "arxiv_url": "https://arxiv.org/abs/2412.19628",
+      "arxiv_id": "2412.19628",
+      "arxiv_first_submitted_at": "2024-12-27T13:13:52Z",
+      "arxiv_updated_at": "2025-07-30T12:28:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19628v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505195/image/image.jpg?Expires=1790855453&Signature=LILdgbNj3ot3m0~d6NL5aPhoNkILdp80pM4PDUY5~J~FQGGFumdD7TtgJXUXhQBTu~WAmjLucboPpXnq0JIDVUzF4vCw4xU-1LggjdIZSJ-mDbfnVaaZqj9x1UInaLQY00c~jwKSHqdI623H3EGgAQ59begFzAY9A3XIHJu8DyJ4PQ4xGWgP8mQVg5rLtnS~wjz9VcnUoU45P10OyFcfGc0lOUo4Q-inRs3Ytjghd4KsEcmvieogTORBMLEztT4HBT~nPKZdTOYmJGdOxrixT8SkxLkJAr0TpVwzPbkEzKvLgz~4v-JdOjDK35~qzEtNyTdOSr-nOn99UnqzteAkUA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505195,
+      "description_sha256": "4ae2823aaa86c53990174a04cf2bb6229a15acde2a65296684d427d64c94ec00",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "50fbeac60bbacf6edd767398e1781c3dc4cc938c758712ec5da15454fba30457",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of a Recursive Convolution Module, referred to as \\methodname{}, which is composed of two main components: a MetaNeXt block on the left and the detailed \\methodname{} structure on the right, enclosed within a dashed rectangular boundary.\n\n[1] Global Layout and Structure:\nThe diagram is horizontally divided into two sections. On the left, a vertical sequence of modules represents the MetaNeXt block, forming a residual-like structure. On the right, a hierarchical, multi-scale processing pipeline is shown, illustrating how feature maps are recursively decomposed and processed across different spatial resolutions. The entire right-hand module is encapsulated by a dashed box, indicating it is the core \\methodname{} component.\n\n[2] Visual Modules and Attributes:\nOn the left side, the MetaNeXt block consists of three rounded rectangles stacked vertically: 'Token Mixer' (beige background), followed by 'Norm' (light yellow background), and then 'Channel Mixer' (light blue background). These are connected sequentially by solid black arrows. A skip connection bypasses all three modules, feeding directly into an element-wise addition operation (represented by a circle with a plus sign) at the bottom, which combines the output of the Channel Mixer with the original input.\n\nOn the right side, the \\methodname{} module begins with a large gray square representing the input feature map. From this, a series of downsampling operations (indicated by red circular icons with downward arrows labeled 'DWConv Downsample') progressively reduce the spatial resolution through a cascade of smaller squares: first a light yellow square, then a pink square, and finally a small white square. Each downsampling step is performed using a shared depthwise convolutional layer.\n\nAfter downsampling, each level undergoes a depthwise convolution (represented by orange circular icons with asterisks, labeled 'DWConv'), followed by upsampling (black circular icons with upward arrows, labeled 'Bilinear Upsample'). The upsampling paths converge via element-wise addition operations (black circles with plus signs), aggregating features from multiple scales. The final output is produced after a depthwise convolution (purple asterisk icon) applied to the aggregated features.\n\nA legend in the top-right corner clarifies the symbols: red downward arrow = DWConv Downsample; orange asterisk = DWConv; black plus sign = Element-wise Addition; black upward arrow = Bilinear Upsample.\n\n[3] Connections and Arrows:\nSolid black arrows indicate the primary data flow. From the large gray square, one path proceeds directly downward to the final element-wise addition, while another branches rightward through successive downsampling steps. Each downscaled feature map is processed by a DWConv, then upsampled and fed into an element-wise addition node. These nodes merge features from different scales, with the outputs flowing leftward toward the final aggregation point. The final aggregated feature map passes through a DWConv (purple asterisk) before exiting the module. Dashed lines connect the Token Mixer on the left to the top-left corner of the dashed box, suggesting that the \\methodname{} module is integrated within or replaces part of the MetaNeXt block's token mixing functionality."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

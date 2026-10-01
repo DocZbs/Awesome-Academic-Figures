@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-505541",
+  "record_sha256": "49ce594dc984cfe3dba3fabf82607ef660fd65ddc5900ef067935676b9009d4f",
+  "asset_sha256": "22f0614b0ba9fa10be0947ec87f183346ff68f6c7c13e9b31f7aedccdc6b857d",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505541",
+    "title": {
+      "zh": "LLM Reasoning Engine: Specialized Training for Enhanced Mathematical Reasoning · 方法图",
+      "en": "LLM Reasoning Engine: Specialized Training for Enhanced Mathematical Reasoning"
+    },
+    "paper": {
+      "id": "arxiv-2412-20227",
+      "title": "LLM Reasoning Engine: Specialized Training for Enhanced Mathematical Reasoning",
+      "authors": [
+        "Shuguang Chen",
+        "Guang Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20227",
+      "arxiv_url": "https://arxiv.org/abs/2412.20227",
+      "arxiv_id": "2412.20227",
+      "arxiv_first_submitted_at": "2024-12-28T17:48:33Z",
+      "arxiv_updated_at": "2025-03-19T15:56:49Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20227v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505541/image/image.jpg?Expires=1790855553&Signature=aXBrghYjWEZ7j7cRf2czezhB3u2iQg3wxrsN0edUQ-H~zLet5sWMkc5B55573J7ihxuxl0xTqmBJzB9MIaHazTMVP~OauURNh74XUpSMkPLCvRycGGyYnanntQK2~4FuiVwpkARLnHdrZL3w6oP0FydzNtNjkgaDLrmut6JKM-aRx~9pB7O8Vch8yLp0ajTB3Py8HExAuR3MrUcC7oKzmxtZXMvagx8Xm71DbLsG7N5ipCXFinoodW~cq1k16utKCDNZLmuZy2iYkirAYKiaFEmhThT~mRYKJ1fXKmatWSrpcBiQwq-LkvQZ4I-oaxNnr~fq6O2w0JuOUFuVENSvLw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505541,
+      "description_sha256": "54bbdfd1ca4c3a9dec43e34dffe28e749aa864d317ec66b18090187514dd9e56",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "20fade320c83bd92eaa4fc18b32f2a2c83a8925b1c3a9d408b28e34d2e235a57",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a proposed pipeline for improving reasoning in large language models through a multi-stage refinement process. The global layout is horizontal, flowing from left to right, enclosed within a dashed gray border. It begins with a blue rounded rectangle labeled 'Question', containing a math word problem: 'James buys 5 packs of beef that are 4 pounds each. The price of beef is $5.50 per pound. How much did he pay?'. This question flows via a solid blue arrow to a larger blue rounded rectangle labeled 'Prompt', which includes the same question followed by the instruction: 'Please solve the following math problem. Answer: Let’s think step by step.'\n\nFrom the prompt, two parallel paths emerge. One path leads directly to a green rounded rectangle labeled 'Answer', which contains the correct solution: 'He bought 5*4=20 pounds of beef. So he paid 20*5.5=$110. The answer is 110.' This answer then feeds into a vertically stacked group of three green rounded rectangles, enclosed in a dashed green border, representing the core refinement modules: Supervised Fine-tuning (SFT), Rationale Re-ranking (RR), and Mistake Identification (MI). Each module contains a rationale or modified version of the answer. SFT repeats the correct reasoning. RR rearranges the steps: 'Step 3, Step 1, Step 2', indicating reordering of reasoning steps. MI presents a flawed rationale: 'He bought 50*3=20 pounds of beef. So he paid 20*7.5=$110. The answer is 110.', highlighting a mistake in intermediate calculations.\n\nThese three modules feed into a central neural network icon—a small graph with interconnected blue and red nodes—symbolizing a model that processes the refined rationales. From this model, a solid red arrow points to a vertically stacked group of three pink rounded rectangles, enclosed in a dashed red border, representing the outputs of the model. The top box, labeled 'SFT', contains the correct reasoning: 'He bought 5*4=20 pounds of beef. So he paid 20*5.5=$110. The answer is 110.' The middle box, labeled 'RR', lists reordered steps: 'Step 3, Step 1, Step 2'. The bottom box, labeled 'MI', provides correctness labels: 'Wrong, Wrong, Correct', indicating the model's evaluation of the steps in the MI rationale.\n\nThe visual modules use distinct colors and shapes: blue for input questions and prompts, green for ground truth and refinement modules, and pink for model outputs. All text boxes are rounded rectangles with clear labels. Arrows indicate data flow: solid blue arrows for initial input flow, solid red arrows for model output flow, and a solid green arrow connecting the answer to the refinement modules. The figure visually abstracts a pipeline where a model learns to refine reasoning through supervised fine-tuning, re-ranks rationales, and identifies mistakes, ultimately producing structured outputs that include corrected reasoning, reordered steps, and error detection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

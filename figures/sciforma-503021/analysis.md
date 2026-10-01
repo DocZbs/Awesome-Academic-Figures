@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Error-driven Data-efficient Large Multimodal Model Tuning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15652
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a three-step error-driven data-efficient tuning paradigm for improving a student model’s performance through targeted skill-based refinement. The global layout is structured as a flowchart divided into three main stages: Step 1 at the bottom, Step 2 in the upper middle, and Step 3 connecting them vertically. Each step is enclosed in a dashed rectangular boundary, indicating distinct phases of the process.
+
+In Step 1, located at the bottom left, a yellow rounded rectangle labeled 'Student Model w/ Rationale' receives input from a gray cylinder labeled 'Validation Set'. An arrow leads from the Student Model to a purple rectangle labeled 'Error Samples', which then feeds back into a large white box containing a sample question about magnet interaction. This box includes a visual representation of two magnets with labeled poles (N and S), the question 'Will these magnets attract or repel each other?', possible choices ['attract','repel'], and a detailed rationale broken into four red-highlighted steps: 'Identify the magnets', 'Determine their polarity', 'Understand the interaction between magnets', and 'Apply the knowledge to the question'. The rationale incorrectly assumes the north pole of one magnet faces the south pole of the other, leading to an incorrect conclusion.
+
+In Step 2, positioned above Step 1, an arrow from the rationale box points to an orange rounded rectangle labeled 'Teacher Model (e.g., LMMs)'. From this, another arrow leads to a large white box containing two sections: 'Mistake Identification', stating that the second rationale step is incorrect, and 'Skill Analysis', explaining that the model wrongly assumes north-south pole alignment when the image shows south-south pole alignment. The required missing skill is identified as 'Identify the poles of a magnet'.
+
+In Step 3, located below Step 2 and to the right, an arrow from the Skill Analysis box points downward to a green rounded rectangle labeled 'Skill-based Retrieval'. This module receives input from a gray cylinder labeled 'Supporting Set' via a horizontal arrow. The output of Skill-based Retrieval is a red rectangle labeled 'Training Samples', which feeds back into the Student Model in Step 1, completing the iterative loop. All connections are represented by solid gray arrows, indicating the direction of data and control flow. The figure uses color-coded boxes (yellow for student model, orange for teacher model, green for retrieval, red for training samples, purple for error samples) to distinguish components, while text within boxes is black except for key phrases highlighted in red for emphasis.

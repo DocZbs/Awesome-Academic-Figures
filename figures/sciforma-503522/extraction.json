@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503522",
+  "record_sha256": "870901c5c6cbc0d8a9f50ac47f8657e551964031b67f58b2ed8850db0b3be4a4",
+  "asset_sha256": "71e1bbfb7fa338c2b18e28d2e5a9b18a595dbc94ec5932b5c0f2c660221342c1",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503522",
+    "title": {
+      "zh": "Coupling Neural Networks and Physics Equations For Li-Ion Battery State-of-Charge Prediction · 方法图",
+      "en": "Coupling Neural Networks and Physics Equations For Li-Ion Battery State-of-Charge Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-16724",
+      "title": "Coupling Neural Networks and Physics Equations For Li-Ion Battery State-of-Charge Prediction",
+      "authors": [
+        "Giovanni Pollo",
+        "Alessio Burrello",
+        "Enrico Macii",
+        "Massimo Poncino",
+        "Sara Vinco",
+        "Daniele Jahier Pagliari"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16724",
+      "arxiv_url": "https://arxiv.org/abs/2412.16724",
+      "arxiv_id": "2412.16724",
+      "arxiv_first_submitted_at": "2024-12-21T18:19:12Z",
+      "arxiv_updated_at": "2024-12-21T18:19:12Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16724v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503522/image/image.jpg?Expires=1790855374&Signature=W~qeX-r5~WqG7y4f7srtpserZ02Ekqv1FKt3VVmr31UMcTEzVnuZoT~AUP94KOdRb1nnfFnQXdWNVes190Rv3ATeWMddQlC10FoAHuNCJ5GyTdSeAHVVuUO8KycyDgiAuKGbuE5mRr8uLX5Uq1jTIoKul3L8VNPLgA5f5NwqYqNRerWZUrADatI61LWa9ynex3Fzh~O9d~psUJo7CYCJUN9rK8vevBrr~~rTJEVkFtIujghHTYNVFu4daTu2Ydeo61eHQkAIw1UzMk9lOtdR2H6V1B9Bd37BsTq5sc-SPOPKFeTiqzgFtHUil0kTMIzmJ5CbEkhnDygvZfl31DzEMg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503522,
+      "description_sha256": "20a725fcebd74a93856ded5130029bc67aee7ef93fc2dc62286d93cb6332d53f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "335138738fc3b11bc0dd0c9f11df2222fd6a3cbba9d2ef91dc8897cb10f9de2b",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-step autoregressive neural network architecture for predicting State of Charge (SOC) over time, structured as a sequential pipeline with two main branches. The global layout is horizontal and linear, progressing from left to right, with Branch 1 at the top and multiple instances of Branch 2 arranged vertically below it, forming a cascading or recursive structure. The entire diagram is organized into a clear workflow: initial inputs are processed by Branch 1 to predict the current SOC, which then serves as an input to subsequent Branch 2 modules for future SOC predictions.\n\nVisual modules are represented as rectangular blocks with rounded corners, each labeled with a component name and color-coded to indicate different layers within a branch. In Branch 1, three consecutive blocks are shown: B1-FC1 (blue), B1-FC2 (green), and B1-FC3 (yellow). Similarly, each Branch 2 consists of B2-FC1 (blue), B2-FC2 (green), and B2-FC3 (yellow). These colors consistently denote the first, second, and third fully connected (FC) layers within each branch, respectively. The input to the system is symbolized by a battery icon on the far left, with three output signals: T(t) (temperature at time t), I(t) (current at time t), and V(t) (voltage at time t). These signals feed into the first layer of Branch 1.\n\nConnections are depicted as solid black arrows indicating the direction of data flow. From the battery icon, T(t), I(t), and V(t) are directed to B1-FC1. The output of B1-FC3 is labeled SOC(t), which is then passed to the first Branch 2 module. This Branch 2 receives additional inputs: I(t+N), T(t+N), and N (a parameter, likely representing a time step or window size). The output of this Branch 2 is SOC(t+N), which is fed into the next Branch 2 instance, which in turn receives I(t+2N), T(t+2N), and N, producing SOC(t+2N). This pattern continues recursively, with each subsequent Branch 2 receiving updated current and temperature values at intervals of N, along with the constant N parameter, and generating the next predicted SOC value. The sequence is shown continuing with ellipsis (...) leading to a final Branch 2 that outputs SOC(t+kN), indicating the k-th step ahead prediction. The diagram thus visualizes an autoregressive model where each prediction step uses the previous prediction as part of the input for the next, enabling long-term forecasting. The consistent use of color, shape, and labeling ensures clarity in distinguishing between the two branches and their internal layers, while the arrowed connections clearly define the temporal and computational dependencies."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506420",
+  "record_sha256": "7ef2255d42f7de8142767be1c915bec425a4123c16dbdaf266e64b2744e8044f",
+  "asset_sha256": "35d0f766cd9b2130d9a69bb5faedbbf54cbde5baa56e0a9b48d8e15d5b0fbae9",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506420",
+    "title": {
+      "zh": "DeepFilter: A Transformer-style Framework for Accurate and Efficient Process Monitoring · 方法图",
+      "en": "DeepFilter: A Transformer-style Framework for Accurate and Efficient Process Monitoring"
+    },
+    "paper": {
+      "id": "arxiv-2501-01342",
+      "title": "DeepFilter: A Transformer-style Framework for Accurate and Efficient Process Monitoring",
+      "authors": [
+        "Hao Wang",
+        "Zhichao Chen",
+        "Licheng Pan",
+        "Xiaoyu Jiang",
+        "Yichen Song",
+        "Qunshan He",
+        "Xinggao Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01342",
+      "arxiv_url": "https://arxiv.org/abs/2501.01342",
+      "arxiv_id": "2501.01342",
+      "arxiv_first_submitted_at": "2025-01-02T16:47:55Z",
+      "arxiv_updated_at": "2026-01-03T08:47:44Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01342v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506420/image/image.jpg?Expires=1790855579&Signature=KQi0xHv5v2HQNHPsI1qdXMp6-MSv2WPNRvMP5YKAFCcSNPo7wZSZmEkdVB-4U8-35tsnlZcDeVPiFVNL~RU9wi-ZpTfcWTC8aOMbuHaCXzoBCuuCtb6J3DD9ObJFj3ofzlKyJ2pA3l4pkew0hU9jQnu7uSOczo7rKWGAwaCUxuiFT-ZVKFX8qT5T8bmgElwMY2G33SF92wSISzi1I24VPO6~jhmwoWrN8c~7y5k72aZiY9SU5jGxawiq8N5-t8Hf3bkwWwSn5YtrNKevni-t4rd5XGohe-dDwZ1Y80EvIvhAYtXv8FwCofc4wM4QFzR7LL1yrzaaYpwuJ8g~dCVfAQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506420,
+      "description_sha256": "8921c7590cc8ccf2beea6c6f1a70841e8f11e138f84fd30b172e3b6ea2c761d1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3b981d161713325e5c62e3f9eaedea1e630a9c7a6548088fb714af26ed1a2111",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the DeepFilter architecture, illustrating its core components and data flow. The global layout is divided into two main sections: on the left, a sequential neural network structure labeled 'GF block' is shown, and on the right, a detailed breakdown of the 'Efficient filtering layer' within the GF block is depicted. The entire architecture processes input data X ∈ ℝ^(T×D), where T denotes time steps and D represents feature dimensions.\n\nOn the left side, the workflow begins at the bottom with an Affine layer receiving the input X. This feeds into a repeated module labeled 'GF block', which is enclosed in a dashed gray rectangle and marked with '×K' to indicate K repetitions. Inside each GF block, the data flows through an Efficient filtering layer, followed by Layer-norm, then an FFN (Feed-Forward Network) layer, another Layer-norm, and finally a summation operation (represented by a circle with a plus sign) that combines the output of the FFN layer with the residual connection from the Efficient filtering layer. The output of this residual connection is denoted as R ∈ ℝ^(T×D). The processed signal then passes through a GRU (Gated Recurrent Unit) layer at the top, producing the final output ŷ^H ∈ ℝ.\n\nOn the right side, the Efficient filtering layer is expanded to show its internal mechanism. It begins with the input Z ∈ ℝ^(T×D), represented visually as a temporal tensor with blue sinusoidal waves. This tensor undergoes a Fast Fourier Transform (FFT), converting it into the frequency domain, resulting in Z^(F) ∈ ℂ^(T×D), depicted as red discrete points representing frequency components. These frequency components are then multiplied element-wise (indicated by a ⊗ symbol) with a learnable frequency filter matrix W^(F), shown as a vertical array of red dots. The result is transformed back to the time domain via Inverse Fast Fourier Transform (IFFT), yielding Ž ∈ ℝ^(T×D), again visualized as a temporal tensor. A dashed line connects this expanded view to the Efficient filtering layer in the GF block, indicating that this is the internal computation performed by that layer.\n\nVisual attributes include rounded rectangular boxes for layers, solid black arrows for data flow, and dashed lines for structural grouping or expansion. The temporal tensor is illustrated with blue sine waves, while the frequency tensor is shown with red discrete points. Mathematical notations are placed adjacent to relevant components to denote input/output dimensions and transformations. The overall structure emphasizes a modular design with residual connections and frequency-domain filtering for efficient processing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

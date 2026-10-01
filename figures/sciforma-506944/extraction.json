@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506944",
+  "record_sha256": "ff8fe1e3654a9588a9c996ab27aa70923c8a84f7b29f603646e86cbd3bf53034",
+  "asset_sha256": "ea7eaab1eecb0a29e9b31b7592954f1279a5a30f96033bc536a2894323a12685",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506944",
+    "title": {
+      "zh": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks · 方法图",
+      "en": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks"
+    },
+    "paper": {
+      "id": "arxiv-2501-03078",
+      "title": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks",
+      "authors": [
+        "Théophane Vallaeys",
+        "Matthew Muckley",
+        "Jakob Verbeek",
+        "Matthijs Douze"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03078",
+      "arxiv_url": "https://arxiv.org/abs/2501.03078",
+      "arxiv_id": "2501.03078",
+      "arxiv_first_submitted_at": "2025-01-06T15:20:22Z",
+      "arxiv_updated_at": "2025-01-06T15:20:22Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03078v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506944/image/image.jpg?Expires=1790855628&Signature=GbPMGNcI-ImfTK04XfleHbSDSX0EReYMG9grUlMzSm4UUY6xj4ezYDp3WGK7rUp0356CWvYWP5EASUVHHrAOx3oTlOSEV4JM56N3kaQxy5fbtubPO0O0P5yiK6YL~iBITQAM33v8JJEinAyriNZBL4TaTfg6zfNZo1eFF2l0HQLhra3fPcKLL0hTM2vykZxbSmN4JMmHlMjfqlsrcUTD3bVjha6N-ToOHio0T2Ez4lxHNfQu83W4EmUxGFgEYbAL7gY0U6tqEuVlV~nkt~yPiGTp9dD9z6v9RZnmI9tudqqQcY9a0wKvTZT-yjFX5ZHC88WszAsnysW3F2evKaGRPA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506944,
+      "description_sha256": "6259f429cdeea5b32b57e5a1a07cb8409e299b7d86c5e306b801bf0240c0e446",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b3c6ca437a17d6f22a5b33eb214f6ec796af5422f5b300640bbd9d8078a772fc",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a large-scale search pipeline that integrates vector quantization and efficient indexing techniques for fast similarity search. The diagram is vertically divided into two main sections: 'Database encoding' at the top and 'Large-scale search' at the bottom, illustrating the offline preprocessing phase and the online query processing phase respectively.\n\nIn the 'Database encoding' section, the input is the database D along with training data, represented by a cylindrical database icon. This data is fed into a Vector Quantization (VQ) module, labeled with K_IVF = 10^6, which produces a centroid c^0 and the residual x - c^0. The residual is then processed by a QINCo2 encoding module, generating a sequence of codewords c^1 through c^M. These codewords are used to create AQ (Additive Quantization) and combined RQ (Residual Quantization) tables, a step explicitly noted as being performed using training data only. The centroid c^0 is also passed down to the search phase via a dashed line.\n\nThe 'Large-scale search' section begins with an input query q. This query first undergoes IVF (Inverted File) indexing, producing a shortlist S_IVF ⊂ D of size approximately 85k. This step is visually represented by a gray box labeled 'IVF'. The output of IVF feeds into an AQ module, which further refines the candidate set to S_AQ ⊂ S_IVF with a size of 800. This AQ step is enclosed in a dashed box, indicating it is part of the Faiss search framework. Next, a 'Pairwise additive decoding' step reduces the list to S_pairs ⊂ S_AQ with a size of 100, also within a dashed box. Finally, the QINCo2 decoding module computes arg min over c ∈ S_pairs of the loss function L(q, F((c^m)_m)), selecting the best match based on the decoded representation.\n\nConnections between modules are shown with solid arrows for direct data flow and dashed arrows for auxiliary or precomputed information. Notably, the centroids c^0 and the codewords c^1,…,c^M from the encoding phase are reused during search, as indicated by dashed lines connecting them to the AQ and pairwise decoding stages. The figure includes a note at the bottom stating that shortlist sizes are illustrative for a specific configuration. The overall structure emphasizes a hierarchical filtering approach, starting from a large candidate set and progressively narrowing it down using increasingly refined quantization and decoding steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

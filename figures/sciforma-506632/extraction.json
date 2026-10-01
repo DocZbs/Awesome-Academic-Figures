@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506632",
+  "record_sha256": "a8f59691e0388b3855ebda69fed40c36af4d68bb5d7750160feb63fdbede29d4",
+  "asset_sha256": "d042cbf611c458660c2a95a117eeaaee5812de4b283ad16e0cbca45285b49f97",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506632",
+    "title": {
+      "zh": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation · 方法图",
+      "en": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01993",
+      "title": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation",
+      "authors": [
+        "Alexander Du",
+        "Xiujin Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01993",
+      "arxiv_url": "https://arxiv.org/abs/2501.01993",
+      "arxiv_id": "2501.01993",
+      "arxiv_first_submitted_at": "2024-12-31T18:47:54Z",
+      "arxiv_updated_at": "2026-01-07T09:50:21Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01993v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506632/image/image.jpg?Expires=1790855633&Signature=T2~LZ48GOVbPaDoixnenL3ktxhsY4gYNC63TLLI~uDFXhH0okoZWvb4cwbLKPdtOB~OZlI5IP2VFN72bmlyrOiQkJ24yETqdlvud4T-1ZQAcreBNkdrT9BpgcUB9ApObqkdNRzXcdTHn2Va30QQhLrgjY1PyGcYc7tiMOGAqMIyJdj9bSrDdW5IoP-PBdqLoZcnLQiAQ19jlpHWgbwJdETDyBAUeMCvNxPC3lHrVn7AimI5QSjyhvaXyV9I1GE3gT8ht-FHXjsQ8S8J73hZo5KswY~GUDEo6XyoDTa9mBdM--~GsV0sM0Vj9EfPA6jsEViqfWN0kKb4uWlx0l1IVYg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506632,
+      "description_sha256": "402cc961e02e85aac5cd0850731a19f244de810c5decd22dfe0c0bbfaf6f9cda",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fa8059390aed21245b0affb614a161e00433cbd7d15e4573069a6f179de6a576",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a single, repeating module within the encoder of the PoseLecTr model, which processes sequential data through a series of convolutional and pooling operations. The global layout is left-to-right, depicting a feedforward computational pipeline. The process begins with an input sequence represented as a 3D block labeled 'Embedding', composed of stacked rectangular prisms denoting individual tokens or time steps, with dimensions indicated as X_{i-1} to X_i along the sequence axis and D along the feature dimension. This embedding is fed into a 1D convolutional layer, labeled 'Conv1d', visualized as a green rectangular prism with multiple internal layers, indicating multiple output channels. The output of this layer is a 3D feature map, shown as a large red-outlined box containing multiple yellow vertical bars, representing L feature channels across the sequence length. This feature map is then passed to an 'AvgPool' layer, depicted as a blue-green rectangular prism with internal layers, which performs average pooling over the sequence dimension, reducing the length by half. The result is another 3D feature map, shown as a smaller yellow box with dimensions labeled L/2, indicating the reduced sequence length while maintaining the same number of channels. Finally, this is followed by a simple rectangular block labeled L/2, representing the final output feature vector of the current module. The connections between modules are shown as solid black arrows indicating the forward flow of data. Dashed lines connect the input embedding to the Conv1d layer, emphasizing the transformation. The diagram uses color coding: green for the convolutional layer, blue-green for the pooling layer, and yellow for feature maps. The red outline around the first feature map highlights it as a key intermediate representation. The caption clarifies that this module is one of several identical sections in the encoder, with subsequent sections processing progressively shorter segments (half the length of the previous), and that the final encoder output is formed by concatenating or merging the outputs from all such sections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

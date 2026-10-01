@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503024",
+  "record_sha256": "d509c44af32a3b449e461e1fd5ec00669942f62b0ac62e8a0405dc576b6e7f29",
+  "asset_sha256": "94a09163e13d1de603f105b058aa7511e384759de5d912c66705e4a95db06b1e",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503024",
+    "title": {
+      "zh": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class · 方法图",
+      "en": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class"
+    },
+    "paper": {
+      "id": "arxiv-2412-15657",
+      "title": "Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class",
+      "authors": [
+        "Annie D'souza",
+        "Swetha M",
+        "Sunita Sarawagi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15657",
+      "arxiv_url": "https://arxiv.org/abs/2412.15657",
+      "arxiv_id": "2412.15657",
+      "arxiv_first_submitted_at": "2024-12-20T08:15:20Z",
+      "arxiv_updated_at": "2025-02-19T15:36:45Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15657v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503024/image/image.jpg?Expires=1790855277&Signature=NeL0G4BXnZHxzeZ2xP3tzbIOwZVZLDvaI0siPgejajfsnG1rimXttcE-Eku4TkRMQzf-~pWve9VH2M4HUiSd8lwpmTK~LdP3T2aRb62tjBmTOcc-tnbC9iVe4iO-cEaoKqt5T5QQQqWoyi6R-POyBvNVErwR-Ya5jpHufByCoHMeqBEJoxK0leg87cYYKlRcnZk-uZAouT4Ae6MTDjyaS5BJ~~dbIy3WGQF8WEaPUkz6CEIWEmqcI4Ye2X3v8alA8e7iY0q4tc9JbjK5m9oGNq8hRNTRE1WOhZka1fi9yUiwaKvXlri5iU89ClGITIYyI4Wy77iUsX0a5zU5BEBISQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503024,
+      "description_sha256": "1d8fd987d787baacc0b4c2d534cdb26975b24bcbf416b8d7b11fc9842f48b5da",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2e1ea0b11c770d255aa88cfcfe1f8ce3820f2ea19ac194c502a486666c15a19d",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a methodological pipeline for generating synthetic data to improve classifier performance on imbalanced datasets, particularly by addressing overlapping regions between majority and minority classes. The global layout is left-to-right, depicting a sequential workflow starting from raw data input and ending with a trained classifier. The process begins with an initial dataset split into Majority (D0) and Minority (D1), represented as a vertically divided purple rounded rectangle. An arrow leads to a large rectangular box labeled 'Train Data', which contains the core k-fold cross-validation procedure. Inside this box, the majority class D0 is partitioned into k folds, denoted as D0_{1,...,n}-k, while the minority class D1 remains intact. One fold, D0_k, is designated as the test set and fed into a yellow rectangular module labeled 'Random Forest CLF' (Classifier). The output from this classifier is two sets: D00_k and D01_k, indicating predictions or classifications for the test fold. Below this, a note specifies 'k ∈ {1,...,n} folds', emphasizing the iterative nature of cross-validation. The result of this step is a new dataset composed of three parts: D00 (representing correctly classified majority instances), D01 (overlapping or uncertain instances identified during validation), and D1 (minority class), all stacked vertically within a single purple rounded rectangle. This combined dataset is then passed to a beige cube-shaped module labeled 'Synthesizer'. The synthesizer generates three synthetic datasets: S00 (from D00), S01 (from D01), and S1 (from D1), each represented as a purple rounded rectangle. Notably, the path leading from S01 to the next stage is marked with a red 'X', indicating that this synthetic data from the overlapping region is discarded. The remaining synthetic datasets, S00 and S1, are merged and fed into a pink cylindrical module labeled 'Classifier'. Additionally, the original minority class D1 is also connected directly to the classifier, suggesting it may be used alongside the synthetic data for training. The overall purpose, as described in the caption, is to identify overlapping instances (labeled as a third class CmM) via k-fold validation, generate higher-quality synthetic data using a three-class approach, and finally train a classifier using balanced proportions of synthetic majority and minority data while excluding the ambiguous overlapping region to simplify learning the decision boundary."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

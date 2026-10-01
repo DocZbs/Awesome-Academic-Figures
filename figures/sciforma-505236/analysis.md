@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Sharpening Neural Implicit Functions with Frequency Consolidation Priors — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19720
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a two-stage method for 3D shape reconstruction using Signed Distance Functions (SDFs), divided into three main phases: Training, Testing (Optimization), and Testing (Forward). The global layout is structured horizontally from left to right, with vertical alignment of components within each phase. A dashed vertical line separates the Training phase from the Testing phases. Each phase contains learnable or fixed embeddings, SDF modules, 3D chair reconstructions, query points, and error signals.
+
+In the Training phase, two learnable embeddings, e_C (green bar) and e_F (blue bar), are shown vertically stacked under the label 'Learnable Embeddings'. These embeddings feed into two separate SDF modules: 'SDF f_L for Low Frequencies' (top black box) and 'SDF f_F for Full Frequencies' (bottom black box). The outputs are s_L and s_F respectively. The low-frequency SDF generates a coarse 3D chair model labeled 'Low Frequency Observation', while the full-frequency SDF produces a more detailed model labeled 'Full Frequency Coverage'. Both models are evaluated against ground truth (GT) via query points q (blue circles) connected by dashed lines. Red arrows labeled 'Error' indicate loss computation between predicted SDF values and GT at these queries, feeding back to optimize the embeddings.
+
+The Testing (Optimization) phase mirrors the training setup but with modifications. The embeddings e_C (now brown) and e_F (now magenta) remain learnable. However, both SDF modules are now grayed out with padlock icons, indicating they are frozen during this stage. The low-frequency observation is updated to a different chair model, and the error signal is again computed from query points to GT. This phase optimizes only the embeddings given fixed SDFs.
+
+The Testing (Forward) phase follows after a large black arrow from the optimization phase. Here, the embeddings are labeled 'Fixed Embeddings' with padlock icons, showing they are no longer trainable. The SDF modules remain locked. The magenta e_F embedding feeds into the 'SDF f_F for Full Frequencies' module, producing the final output s_F. The resulting 3D chair model is labeled 'Full Frequency Coverage', representing the final reconstructed shape. No error signals are shown here, indicating inference-only mode.
+
+Connections are color-coded: green and blue arrows from embeddings to SDFs in training; brown and magenta arrows in testing (optimization); and a single blue arrow from fixed e_F to the SDF in forward testing. Error signals are red dashed arrows. All SDF boxes are rectangular with rounded corners, and 3D chairs are rendered in grayscale wireframe style. Text labels are clear and positioned near relevant components.

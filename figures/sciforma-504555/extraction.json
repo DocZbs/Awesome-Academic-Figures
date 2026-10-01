@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-504555",
+  "record_sha256": "170ab373b686f7fe843d57ee85ecd740d290fc25e29201829f3fc3868bb4240b",
+  "asset_sha256": "8e8522ce934b60b67ef3aa6310d1a9698284f3890f876f1524c9692688a69179",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504555",
+    "title": {
+      "zh": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation · 方法图",
+      "en": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18524",
+      "title": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation",
+      "authors": [
+        "Mohammed Hamdan",
+        "Abderrahmane Rahiche",
+        "Mohamed Cheriet"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18524",
+      "arxiv_url": "https://arxiv.org/abs/2412.18524",
+      "arxiv_id": "2412.18524",
+      "arxiv_first_submitted_at": "2024-12-24T16:08:24Z",
+      "arxiv_updated_at": "2024-12-24T16:08:24Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18524v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504555/image/image.jpg?Expires=1790855433&Signature=Mpa2Bz4Mkwd2FI5hJQcQo0Ekicx-DBedg3d6KCsWIT-K9gIPxyLXfnSKIh5hxUFzN5hxKphuN55R96VmCxtl1LcxDDT6D~ud03yWv6oloJQndOLwxfJ0Qmdf-Zfu2hc3K-j0P-nhyCKBaycGbekR5cJRAC~OTAAZdEsVYLLMLHJRJxPlgxCYR~XT-ggP4Zj6QxprXP1cA6BuxkUhK2QWBFqX1U1gFBPXvhiyuo~~meqwfLjbmsAbf~0JapHlPVyHMHtWRlae8wF-qnNyJ3B-4NAp6MZAx712rwahkX674vYv6yT3RsUaLDEkFgNflFscPlwPKqpI4ecfKUQm3WSAPw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504555,
+      "description_sha256": "288c43996694d14ceea4db9727d9aa76b86362a1ac9900ceb2c4deae4c2989a3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3944c444176c70ea2c7fb4b724a2c1c133709fd48acb2b00bc735b9644e3b0d4",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an end-to-end deep learning architecture for sequence-to-sequence tasks, likely optical character recognition or similar, composed of an Encoder and Decoder with a CTC loss and decoding module. The global layout is horizontally structured, divided into two main sections: the left side contains the Encoder, and the right side contains the Decoder and CTC Loss + Decode block, connected by a data flow arrow. The entire diagram is enclosed within a dashed rectangular boundary labeled 'Encoder' on the left and 'Decoder' on the right, with a final output arrow pointing to 'Griffiths, M.P. for Manchester Exchange'.\n\nIn the Encoder section, the input is an 'Input image' of size 32x168x864, represented as a stack of colored 3D blocks. The architecture progresses through multiple convolutional layers, each depicted as a stack of colored 3D blocks with varying dimensions shown below: 32x32x432x34, 32x64x216x16, 32x128x108x16, 32x256x108x8, 32x512x108x2, and finally 32x108x1024. These layers incorporate various components: Conv (green), ReLU (yellow), Full Gated Conv (purple), Squeeze-Excite (light green), Proxima Attention (light blue), Fusion attentions (dark green), Dropout (black), and BN (blue). The final stage before the decoder includes a Reshape operation (gray) and a Dense+Soft-Auxiliary layer (dark gray), followed by a transition to the decoder via a black arrow.\n\nThe Decoder section begins with a 32x108x256 + 108x32x256 tensor, visualized as a tall, multi-colored 3D block. This feeds into a BiLSTM (blue) network, shown as a vertical stack of blue blocks with bidirectional connections (horizontal arrows) and internal feedback loops (dashed lines). The BiLSTM outputs a 32x108x256 tensor, which then passes through another BiLSTM layer producing 32x108x103. A subsequent Reshape (gray) converts this into a 2D structure of 108x103, represented as a column of white circles. This is followed by the CTC Loss + Decode block, which displays a time-step grid from t0 to tn-1, with probability distributions over characters (e.g., 'G', 'r', 'i', '-', 'n', 'g', 'e', '-') at each step. Each cell contains a probability value (e.g., 0.7, 0.1, etc.), and the final output is a sequence of predicted characters, such as 'G r i - n g e -', with corresponding probabilities. The CTC component is marked with a light green color in the legend.\n\nConnections are indicated by solid black arrows showing the forward data flow from encoder to decoder, and within the decoder, bidirectional arrows between BiLSTM units indicate recurrent connections. Dashed lines represent auxiliary or internal feedback paths. The legend at the bottom left maps colors to specific components: blue for BiLSTM, dark gray for Dense+Soft-Auxiliary, purple for Full Gated Conv, green for Conv, yellow for ReLU, orange for Pooling, light green for Squeeze-Excite, light blue for Proxima Attention, dark green for Fusion attentions, black for Dropout, gray for Reshape, and light green for CTC. The final output arrow points to the text 'Griffiths, M.P. for Manchester Exchange', indicating the decoded sequence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

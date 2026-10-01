@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505217",
+  "record_sha256": "ee11650248d22bb3f98d5dace8bece0db02b5e20ee5d94be35f64df01224757d",
+  "asset_sha256": "850c6ae1f25b2bb6f85a19f0d29fbe145b22b94bb28b7d9e33567320d2144e30",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505217",
+    "title": {
+      "zh": "DLScanner: A parameter space scanner package assisted by deep learning methods · 方法图",
+      "en": "DLScanner: A parameter space scanner package assisted by deep learning methods"
+    },
+    "paper": {
+      "id": "arxiv-2412-19675",
+      "title": "DLScanner: A parameter space scanner package assisted by deep learning methods",
+      "authors": [
+        "A. Hammad",
+        "Raymundo Ramos"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19675",
+      "arxiv_url": "https://arxiv.org/abs/2412.19675",
+      "arxiv_id": "2412.19675",
+      "arxiv_first_submitted_at": "2024-12-27T14:52:42Z",
+      "arxiv_updated_at": "2024-12-27T14:52:42Z",
+      "arxiv_subjects": [
+        "hep-ph",
+        "cs.CV",
+        "hep-ex",
+        "hep-th"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19675v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505217/image/image.jpg?Expires=1790855453&Signature=nOkB-baKzffBYoCh0uZaoHMjnVe074~KUmDqb99tiI4LkjLhqyr6Lordd7N8q8eUr6gTVoh3T4a3jnwsISswZU7aWD29LBXpYOzw2JEr--p9065O1Frh68D5vHh4FC4RkgEYcjQcADCYL2sqbogoV8i-QSL49bKjTVZ5nHLwIe2PRsVG1-cjMXtJ0O4Xc-jHimSH2x46-7tN-A82X93mgMPbWN6tRPuq1cPxafEhxWCNi1VhdWOGKT06wecLJFd~ZxC4DXfNbWUTuEyXEIOeNUWkVSXLkIEBUWIW~89EL7gzAAoTAlCtw2ZNbIIA89ppM~F30K4ZSaUbIKd6gCicJA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505217,
+      "description_sha256": "584f3c6ce199a7f7cd15730ba66fb2a8fb5ee45dd7556f634858043856d46849",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "63adab813cc46b2357061dfbcbdf91e3c662166efe020e2c9ba01db4378d7d0d",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "hep-ph",
+        "cs.CV",
+        "hep-ex",
+        "hep-th"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two parallel iterative workflows side-by-side, separated by a vertical dashed line, illustrating the training and prediction cycles for an ML regressor (left panel) and an ML classifier (right panel), both integrated with a VEGAS adaptive sampling strategy. The global layout is structured as a top-down flowchart with feedback loops, emphasizing the iterative nature of the process. Each panel follows a similar structure: initial training, prediction phase, point selection, evaluation via a HEP package, and accumulation of data for subsequent iterations.\n\nIn the left panel (regressor), the process begins with 'ML regressor (0th training)', which receives initial random numbers K₀ and corresponding outputs Y(K₀) from a HEP package, indicated by a green arrow. This leads to 'Train VEGAS map' (blue box). The trained model then enters the 'ML regressor (prediction)' stage, which uses a combination of the VEGAS map and random inputs (denoted by L: VEGAS map+Rand., green arrow) to produce predictions Ŷ. These predictions guide the selection of a batch of points K, using a χ²(Ŷ) criterion plus random points. The selected K is fed into the HEP package to compute Y(K), which is then accumulated into a dataset (orange arrow). This accumulated data, along with previous steps (dashed black arrow labeled 'Include from previous steps'), feeds back into 'ML regressor (training)' and also into 'Train VEGAS map' (blue arrow). A dotted black arrow labeled 'Next iteration' loops back to the prediction stage, closing the cycle.\n\nIn the right panel (classifier), the structure mirrors the left but adapts for classification. It starts with 'ML classifier (0th training)', again receiving K₀ and Y(K₀) from the HEP package (green arrow), followed by 'Train VEGAS map'. The prediction stage ('ML classifier (prediction)') uses the same L: VEGAS map+Rand. input to produce Ŷ ∈ [0,1]. The selection of K is based on Ŷ, combined with random points. The HEP package evaluates these K values, producing two distinct outputs: K_Y=0 and K_Y=1, represented by a diamond-shaped decision node. Both outputs are accumulated (orange arrows) and fed back into the next training phase. The accumulated data, including previous steps (dashed black arrow), is used to train the next iteration of the classifier and to retrain the VEGAS map (blue arrow). The 'Next iteration' loop (dotted black arrow) returns to the prediction stage.\n\nKey visual attributes include rectangular boxes for processing stages, a diamond for decision/branching, solid black arrows for primary data flow, green arrows for random input sources, orange arrows for data accumulation, and blue arrows for VEGAS map training and usage. Dashed lines indicate inclusion of historical data. The figure effectively contrasts how regression and classification tasks are adapted within the same adaptive sampling framework, with the only major difference being the output format (continuous Ŷ vs. binary Ŷ) and the branching logic in the classifier's HEP evaluation step."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

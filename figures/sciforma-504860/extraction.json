@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504860",
+  "record_sha256": "f8f29a79ad2f01c52e6de3b4ac848948c74a1683ed2cd95a7edbd70fc7dd0294",
+  "asset_sha256": "ce87c28f89095568a400dae2d8392186ef4c0d813b4747bf92f687ec5ac657d7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504860",
+    "title": {
+      "zh": "WaveDiffUR: A diffusion SDE-based solver for ultra magnification super-resolution in remote sensing images · 方法图",
+      "en": "WaveDiffUR: A diffusion SDE-based solver for ultra magnification super-resolution in remote sensing images"
+    },
+    "paper": {
+      "id": "arxiv-2412-18996",
+      "title": "WaveDiffUR: A diffusion SDE-based solver for ultra magnification super-resolution in remote sensing images",
+      "authors": [
+        "Yue Shi",
+        "Liangxiu Han",
+        "Darren Dancy",
+        "Lianghao Han"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18996",
+      "arxiv_url": "https://arxiv.org/abs/2412.18996",
+      "arxiv_id": "2412.18996",
+      "arxiv_first_submitted_at": "2024-12-25T22:26:39Z",
+      "arxiv_updated_at": "2024-12-25T22:26:39Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18996v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504860/image/image.jpg?Expires=1790855446&Signature=Mwqx1l~4iWRgiYtxxuPQk~sD1n7TiimFTj2fhr-bqcN0wGi~LEXRDr9YCe4Bih7mzzpM0iw43L1-Bqs~4XDfeBEdwapRUDQzytzi5m~IxcKDcifnPFRuiCaTH1NqSe14kBmiilmvPsMrpT2Pj1AMH8A9diigisTujRvMYFnegCsHZonW1yu3W8-v1lXozfOUOaB2ap0K7vTsfBSVAAuwxgO60c3dxRj8fK-KOg5iaG9U8uRQNc-UBOAqtIRJJ8EdA8rtiv3T9uC3FekULkg5hI~DnQ37ddejJ3inGG7vpmZ-h9fyaujAahdGNyT1CJ0VvWIxQ74hS847Dak5NC0eEQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504860,
+      "description_sha256": "f63831c83ed37debaca4946ac565f37230137c8b406ec0cfb78bd31765b1fa3f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ebb982275f9581e39b7f4cbcfc4c9eee332176dd7c2388a712cd0f8d02b16722",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a cross-scale pyramid encoder, designed to process two input feature maps and generate a cross-scale pyramid representation graph. The global layout is horizontal, progressing from left to right, with two parallel input streams converging into a central processing module before diverging into a multi-stage refinement block. On the far left, two gray square blocks represent the input feature maps, labeled as x̂ and x̂_ref, respectively. Each input is fed into an orange vertical rectangular module labeled 'Depth Conv', indicating a depthwise convolution operation. These two Depth Conv modules are positioned vertically, one above the other, and their outputs are combined and directed into a central light blue rounded rectangular module labeled 'Cross Attention'. This module performs cross-attention between the two processed feature maps. From the Cross Attention module, a solid black arrow leads to a sequence of gray vertical rectangular blocks, each labeled '3 × 3 Conv', representing standard 3x3 convolutional layers. Between the first and last of these convolutional blocks, a dashed arrow and an ellipsis (...) indicate that multiple such layers are present, forming a stack. Below this stack, the text 'd = {1,2,3,2,1}' specifies the dilation rates applied to each convolutional layer in sequence, suggesting a pyramidal structure with increasing then decreasing receptive fields. The final output is a gray square block with a radial gradient, darker at the center, labeled 'Cross-scale pyramid representation graph', indicating the resulting multi-scale feature representation. All connections are represented by solid black arrows, except for the dashed arrow between the first and last 3×3 Conv blocks, which denotes the intermediate layers. The visual modules are distinguished by color and shape: inputs and outputs are gray squares, Depth Conv layers are orange rectangles, the Cross Attention module is a light blue rounded rectangle, and the refinement convolutions are gray rectangles. Text labels are placed inside or adjacent to the respective modules, with mathematical notation used for inputs and dilation parameters."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

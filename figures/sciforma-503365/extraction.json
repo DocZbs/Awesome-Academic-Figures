@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503365",
+  "record_sha256": "2d3d5c8f0488f4f11d2350d6aeea984c69cd88cdb74bc64b0d1c4effbb265bc8",
+  "asset_sha256": "6783415c19e0fcb4093bd887213e3ef1c3f9277d3d9f9a7e1349b52199d54863",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503365",
+    "title": {
+      "zh": "Learn2Mix: Training Neural Networks Using Adaptive Data Integration · 方法图",
+      "en": "Learn2Mix: Training Neural Networks Using Adaptive Data Integration"
+    },
+    "paper": {
+      "id": "arxiv-2412-16482",
+      "title": "Learn2Mix: Training Neural Networks Using Adaptive Data Integration",
+      "authors": [
+        "Shyam Venkatasubramanian",
+        "Vahid Tarokh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16482",
+      "arxiv_url": "https://arxiv.org/abs/2412.16482",
+      "arxiv_id": "2412.16482",
+      "arxiv_first_submitted_at": "2024-12-21T04:40:07Z",
+      "arxiv_updated_at": "2025-10-23T06:15:24Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16482v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503365/image/image.jpg?Expires=1790855364&Signature=m2BMVmIgI0fTdN5m1fmtPwe-GkYTYbhl4gzeyCHQdiieEAC~MKZ2Ia9Po0dUFuzDY2Aw5wHpibflu8~~dXkzjdjWDGTSFe6eG8~fQ9HKd47ByBVVrxADkdpxLGZBC-pjjajlGEf8jVxTV9pzTQA4GXmD7cWn3SvoLGeY3EyEmpAP~ba4vpmTJOWe2T7f4G6LtNub7hfnQEsiut-tNqjKJOYgPQG73o2SDGKMFBqQPEa6aa-CymahVmt~yA~7NjuxzLh4qt8FtZPkAAFtIYlII4uiZt0D7clccr7qcnqZy6ykl0Hw52XKGRFM2wE087gi6tXZ8UskkeODwUghEukwng__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503365,
+      "description_sha256": "fcadf8019d41d471e02a88d65e5b9f4cba196597cd50890a6836f9018603e6d4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fc3bbb0ec28b47840e1507183667e03ec0da9a24653eaf3ef46d32dc7da71acf",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the learn2mix training mechanism, which dynamically adjusts batch composition during training based on class-wise error rates. The diagram is structured as a left-to-right workflow with three main stages, each enclosed in a rounded rectangular container connected by thick gray arrows indicating progression.\n\n[1] Global Layout and Structure:\nThe layout consists of three sequential modules: 'Initial class proportions' on the left, 'Adaptive evolution of class proportions' in the center, and 'Final class proportions' on the right. Each module is labeled with a descriptive title at the top. The flow represents the transformation of batch composition from the beginning of training (epoch t=0) to convergence (epoch t=∞).\n\n[2] Visual Modules and Attributes:\n- Left Module ('Initial class proportions'): Labeled as α⁰ = ã (original training dataset). Contains a vertical stack of four colored rectangles representing Class 1 (peach), Class 2 (green), Class 3 (light blue), and Class 4 (purple). Adjacent to each class label is a corresponding colored rectangle showing the initial mixing parameter: α₁⁰ = 0.4, α₂⁰ = 0.3, α₃⁰ = 0.2, α₄⁰ = 0.1. Below this stack, the caption reads 'Batch composition at epoch t = 0'.\n- Center Module ('Adaptive evolution of class proportions, αᵗ, across epochs'): Contains a line graph plotting the mixing parameter αᵢᵗ on the y-axis against training epoch t on the x-axis, ranging from 0 to ∞. Four lines represent each class: orange for Class 1, green for Class 2, cyan for Class 3, and magenta for Class 4. The graph shows Class 1's proportion decreasing over time while Class 2's increases, and Classes 3 and 4 show slight increases. A legend is positioned above the plot.\n- Right Module ('Final class proportions'): Labeled as α^∞ = ℒ(θ^∞) / [1ₖᵀℒ(θ^∞)], where ℒ denotes the loss vector and 1ₖ is a one-vector of length k (number of classes). Similar to the left module, it displays four colored rectangles for each class with final mixing parameters: α₁^∞ = 0.1, α₂^∞ = 0.4, α₃^∞ = 0.3, α₄^∞ = 0.2. Below, the caption reads 'Batch composition at epoch t = ∞'.\n\n[3] Connections and Arrows:\nTwo thick gray arrows connect the modules sequentially: one from the left module to the center, and another from the center to the right. These arrows indicate the temporal progression of the adaptive process, showing how initial proportions evolve through training epochs to reach final proportions. The central graph visually captures this evolution, demonstrating that class proportions are not static but adaptively tuned based on model performance (error rates) during training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505282",
+  "record_sha256": "15d7b6669ceb225d4a426cb21a2bfece319c9f8bb4349175034671d316fa4e32",
+  "asset_sha256": "f4225d6c502f4f7be5bf60b0622ff3c239151194a29ad5d019919fc17472e583",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505282",
+    "title": {
+      "zh": "ChipAlign: Instruction Alignment in Large Language Models for Chip Design via Geodesic Interpolation · 方法图",
+      "en": "ChipAlign: Instruction Alignment in Large Language Models for Chip Design via Geodesic Interpolation"
+    },
+    "paper": {
+      "id": "arxiv-2412-19819",
+      "title": "ChipAlign: Instruction Alignment in Large Language Models for Chip Design via Geodesic Interpolation",
+      "authors": [
+        "Chenhui Deng",
+        "Yunsheng Bai",
+        "Haoxing Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19819",
+      "arxiv_url": "https://arxiv.org/abs/2412.19819",
+      "arxiv_id": "2412.19819",
+      "arxiv_first_submitted_at": "2024-12-15T04:21:24Z",
+      "arxiv_updated_at": "2025-07-15T21:47:40Z",
+      "arxiv_subjects": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19819v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505282/image/image.jpg?Expires=1790855453&Signature=hrAwEdxtXW4sGI4GmkUJQM95ldbwW2uqslfj-NpgLKItlu~s5w4WdVrH5hvzxnxDPTbDzcbhYJSPM5VjNsiia9t7qi0M5UrWaU8qTRXllPeuBOylnc8-QWlmnHxgUP49nuXxo-iQXmaSLYfwLwK9XHr-dQZkYZoJ~asYWYbnL9NdhxPFseIhtgqZlp3XiYWORkw0bee4LuIZXRvraWIX8~oZNLhfrA8vnaEXHUMNg9KrADd22D6WxEChqXimholC340M06XRH-VwJJUFzy7D~cIfcwmCk0uExVIrg9HmASo-fE7hzYULI1u5a28~-dwIj4Rfl3utH5ExMqYRl3LD-g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505282,
+      "description_sha256": "8e9a9a47483e42cfdbe7a7e56f804ec475afe3cfe92d4622d157ad91613103b7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "eefa1f6e16c222ba114e808a0c50cfad16e82a8744c6bc17f9478a7f5737e591",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct workflows, labeled (a) and (b), illustrating methodologies for developing specialized large language models tailored for chip design quality assurance tasks.\n\nIn diagram (a), the global layout is a vertical flowchart depicting the development pipeline for merged models targeting the OpenROAD QA benchmark. At the bottom, two foundational models are shown: 'LLaMA3-8B-Instruct or Qwen1.5-14B-Chat' (purple rectangle) and 'LLaMA3-8B-EDA or Qwen1.5-14B-EDA' (light blue rectangle). These are connected by a rightward arrow labeled 'DAFT', indicating a domain adaptation fine-tuning process. Above these, a rounded rectangular box labeled 'Model Merging Methods' contains five gray boxes: 'TA', 'TIES', 'DELLA', 'ModelSoup', and one highlighted in green, 'ChipAlign'. Two bidirectional arrows connect this merging methods box to the two foundational models below, suggesting that these models serve as inputs to the merging process. The output of the merging step is a green rectangle labeled 'LLaMA3-8B-ChipAlign or Qwen1.5-14B-ChipAlign', which feeds upward into the final evaluation stage. This topmost stage is another rounded rectangular box titled 'OpenROAD QA', containing three gray sub-boxes: 'Functionality', 'VLSI-Flow', and 'GUI & Install & Test', representing the benchmark categories. A single upward arrow connects the merged model to this QA stage.\n\nDiagram (b) illustrates a similar but distinct pipeline for industrial chip QA. At the bottom left, a purple rectangle labeled 'LLaMA2-70B-Base' points via a rightward arrow labeled 'DAPT' to a light blue rectangle labeled 'ChipNeMo Foundation Model'. From this foundation model, an upward arrow labeled 'DAFT' leads to a light blue rectangle labeled 'LLaMA2-70B-ChipNeMo'. On the left side, a purple rectangle labeled 'LLaMA2-70B-Chat' is positioned above the base model. Both 'LLaMA2-70B-Chat' and 'LLaMA2-70B-ChipNeMo' feed into a central green rectangle labeled 'LLaMA2-70B-ChipAlign' through bidirectional arrows, indicating they are combined using the ChipAlign method. Finally, an upward arrow from this merged model leads to the topmost rounded rectangular box titled 'Industrial Chip QA', which contains four gray sub-boxes: 'ARCH', 'BUILD', 'LSF', and 'TESTGEN', representing the industrial benchmark categories.\n\nVisually, the figure uses color-coding to differentiate components: purple for base or instruction-tuned models, light blue for domain-specific foundation or adapted models, green for the final merged models using the ChipAlign method, and gray for benchmark categories and alternative merging techniques. All boxes are rectangles with rounded corners for containers and sharp corners for individual models/methods. Arrows indicate data or processing flow, with solid arrows for direct transformations and bidirectional arrows for merging processes. The overall structure emphasizes a hierarchical progression from foundational models through adaptation and merging to final evaluation on specific QA benchmarks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

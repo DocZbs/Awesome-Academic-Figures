@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505664",
+  "record_sha256": "40935b9c7fa09811233e109614e1453f72701e4c914e3eac3ab567bd29b8cf5b",
+  "asset_sha256": "11202a6282dd2b2f2100ea2b4b9b84c6f6ce515e0a7743bd4216eb8a9f5494fa",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505664",
+    "title": {
+      "zh": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation · 方法图",
+      "en": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20473",
+      "title": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation",
+      "authors": [
+        "Yu-Hsiang Huang",
+        "Wei Wang",
+        "Sheng-Yu Huang",
+        "Yu-Chiang Frank Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20473",
+      "arxiv_url": "https://arxiv.org/abs/2412.20473",
+      "arxiv_id": "2412.20473",
+      "arxiv_first_submitted_at": "2024-12-29T14:21:03Z",
+      "arxiv_updated_at": "2024-12-29T14:21:03Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20473v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505664/image/image.jpg?Expires=1790855552&Signature=l4HhTqPqDzfSsduggZyz8MHgt36inDPyTn72pW5vuTDCsEM9BhE2dBlSVtwgauyXtq7IzjFPKfsf0wWd7UWbtvT2pFKk8EGiQAm6Xvvn8yPtMATIiFHgjVH3lnCrZmMCJYC7pC5QKYvcUDYa~vZhZVwR6mvbbpS1jq9nnGbByMXEvJO8TmVN4QKrfje6TcoLiYb1fOpHgKDnuywzadryoznMi~vzMrbj4RZU~dYIqgVQunZ631RPzVDQIfKQk9sq6BpzQ1wKtdf3tz-K27-s7QYX1LbXxhCWfafiLOFoLKSUPUynvB1s~2Vo2GxbhsuMqlZuaEK5GsvJH6G~gxtr8A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505664,
+      "description_sha256": "92f358e6deeaebfbce18d6d6feb3ccc25ff79d49ae0d3b29a4614f4f6df90ff9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "275556297cd2d24aed2c3bf9393723de898ac98d4fdf5502325b756d9442144c",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a method for scene graph composition, where a hierarchical structure of objects and their relationships is transformed into a set of single-object nodes and a super-node representing an interaction. The global layout is left-to-right, showing a transformation process from a complex scene graph on the left to simplified node representations on the right. On the left, a tree-like scene graph is depicted: blue rectangular nodes represent individual objects such as 'Haystack', 'Barn', 'Fence', 'Horse', and 'Astronaut'. These are connected by edges labeled with spatial relations (in gold rectangles) like 'next to' and 'in front of', and an interaction (in brown rectangle) labeled 'riding' connecting 'Horse' and 'Astronaut'. A large blue arrow points from this graph to the right side, indicating the transformation process.\n\nOn the right, the result of this transformation is shown. Three dashed circular nodes, labeled v₁⁰, v₂⁰, and v₃⁰, represent single-object nodes O, each containing one object: 'Haystack', 'Barn', and 'Fence' respectively. These are generated via a process labeled 'Single-object node generation', indicated by a light blue arrow pointing to them. Additionally, a large orange oval encloses the 'Horse' and 'Astronaut' nodes along with the 'riding' interaction, forming a super-node S. This super-node is labeled with v₁ˢ and v₂ˢ, denoting its internal components, and is generated through a process labeled 'Super-node generation', indicated by a light orange arrow. The legend at the top left clarifies that gold rectangles denote 'Spatial relation', brown rectangles denote 'Interaction', dashed circles denote 'Single-object node O', and solid orange ovals denote 'Super-node S'. The figure caption explains that this approach uses a large language model (LLM) to construct the scene graph, with blue nodes representing single objects and orange supernodes representing interacting object pairs. The visual design uses distinct colors and shapes to differentiate between object types and relationship categories, and arrows clearly indicate the direction of the transformation from the original graph to the decomposed node representation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

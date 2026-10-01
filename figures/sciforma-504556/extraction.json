@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-504556",
+  "record_sha256": "4121f337699ddbe3280d05c132c9b8e6e179e5e5d883793e5ae903712ad2494e",
+  "asset_sha256": "818e428e59a916314a1453c287db95d38952ab5820b5db3b68ccbde192fec763",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504556",
+    "title": {
+      "zh": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation · 方法图",
+      "en": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18524",
+      "title": "HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation",
+      "authors": [
+        "Mohammed Hamdan",
+        "Abderrahmane Rahiche",
+        "Mohamed Cheriet"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18524",
+      "arxiv_url": "https://arxiv.org/abs/2412.18524",
+      "arxiv_id": "2412.18524",
+      "arxiv_first_submitted_at": "2024-12-24T16:08:24Z",
+      "arxiv_updated_at": "2024-12-24T16:08:24Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18524v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504556/image/image.jpg?Expires=1790855433&Signature=atMWvQKBMpbyWD~QpJ6AjtyOLDTjo9IZF6CBvtOnVMFYct0No~ui~hNQI4AjFqoBF-Ef4tXiuGAx1Fi19G2KOcW5C8f5h8cPlZL-KiKTmvwUeW~Cz8egJ6W2U3Hjniplo6HLWkTZMmBNcT4TGPvaDo3J01XHLxnZbOOczf1-LWGeBRT5266lnz7KU~f1rKLQsu06CT32QaGfM2puMaSMsfbCkvw9HZswIjqFyHs5YFgEKonQTpnnyPFHjFGhvW5afAzByX~OGO72eNpJWLL7gKJZ9wFtEWBYCOfLodEU8E47hWAH3QifwCPpxj4NfPgdHVcIh599gCcPn~ywZM2e0A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504556,
+      "description_sha256": "7011b7e868219b4951066d97615c2af3e90bc762e22da2060f02ff9288e55e0c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8d14dd97b7bcd9d042978070674549f74cce167a564deebf144e9474dcf244f8",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a knowledge distillation framework for sequence modeling, specifically designed for tasks like speech recognition or sequence-to-sequence learning, where a large 'Teacher model' guides a smaller 'Student model'. The global layout is horizontally structured into two main parallel pathways: the top pathway represents the Teacher model, and the bottom pathway represents the Student model. Both models receive the same 'Batch input', depicted on the far left as a vertical stream of handwritten-style text symbols, indicating variable-length sequences. Each model follows an identical architectural structure: starting with a convolutional-like block (two stacked greenish-gray parallelograms), followed by a feature extraction module (a yellow vertical bar with circular nodes), then a multi-layered encoder composed of repeating orange and green blocks connected via gray squares (representing attention or residual connections), and ending with a final output layer (a dark gray vertical bar with white circles). The Teacher model’s output is labeled 'Teacher Logits (z_T)', while the Student model’s output is 'Student Logits (z_S)'.\n\nThe visual modules are color-coded and shaped to denote different components: the input batch is shown as a vertical column of cursive text; the initial layers are parallelograms; the feature extractor is a yellow rectangle with circular nodes; the encoder layers are orange and green rectangles connected by gray squares; and the final output layer is a dark gray rectangle with white dots. Text labels are placed adjacent to each component for clarity. The Teacher and Student models are enclosed in dashed rectangular boxes, with their respective titles centered above them.\n\nConnections and arrows indicate the data and loss flow. From both models’ outputs, arrows lead to a central loss computation graph. The Teacher Logits (z_T) feed into a CTC Loss (L_ctc) block, which is connected to the Total Loss (L_total) via a weight α. The Student Logits (z_S) are split into two paths: one directly to CE Loss (L_ce), weighted by β, and another to an 'Interpolated Logits (z_S interp)' block, which receives a 'Matching Length' signal from the Teacher Logits (via T=τ). This interpolated logits path feeds into KD Loss (L_kd), weighted by γ. Additionally, a separate auxiliary loss (L_aux) is included, weighted by δ. All four loss components—CTC Loss, KD Loss, CE Loss, and L_aux—are summed to form the Total Loss (L_total), represented in a pink box at the top right. The weights α, β, γ, δ are explicitly labeled on the connecting lines to the Total Loss. The notation T=τ appears twice, indicating a time alignment or frame matching step between teacher and student outputs, likely for sequence-level distillation. The entire diagram emphasizes a multi-objective training strategy combining CTC, cross-entropy, knowledge distillation, and auxiliary losses to train the compact Student model under the guidance of the larger Teacher model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

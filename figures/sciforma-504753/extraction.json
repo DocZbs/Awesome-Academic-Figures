@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504753",
+  "record_sha256": "6af11fbbd08e85cd7cc941acee1c665dcc97d33f2339d15a635d6692e6497429",
+  "asset_sha256": "bc957fdf80d82a00f287158544b038a38b8ce80f955864fd4405573c67bd3f19",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504753",
+    "title": {
+      "zh": "Computing Approximate Graph Edit Distance via Optimal Transport · 方法图",
+      "en": "Computing Approximate Graph Edit Distance via Optimal Transport"
+    },
+    "paper": {
+      "id": "arxiv-2412-18857",
+      "title": "Computing Approximate Graph Edit Distance via Optimal Transport",
+      "authors": [
+        "Qihao Cheng",
+        "Da Yan",
+        "Tianhao Wu",
+        "Zhongyi Huang",
+        "Qin Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_id": "2412.18857",
+      "arxiv_first_submitted_at": "2024-12-25T09:55:14Z",
+      "arxiv_updated_at": "2024-12-25T09:55:14Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18857v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504753/image/image.jpg?Expires=1790855436&Signature=qHEsRrLpYb7VRIZ8Q~WdB9IimhOyv-IMLKTVwwzrS9GnfP3SFbnYd3nBLQPPAb6imAdu3EGeK7mQhrU-fc1L77rkuWmmbmXcNxJnN~IaJ7fSs0BmboyJijVjH28z-yLINyXGrKkq4cdJwYju42I8O1eQBLG3kRdEYpzqjO4SPt8S~TX~hPSx9G6RiEJCRKRMPuOOQ528o7Pk0gFYwJEyN-f5cZqL7AMKMqFG0XQ6IpciI7XA6nRSr4sI5OYMO~~6ZujXugvcIVRuMtrFLFM53p4A1HHGIVcfLpNZ3HaS~nZGRjkfh9hNTmoMSV0FlQemig-XCTFxfmtuazQIl~zONA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504753,
+      "description_sha256": "7977f46c0728b40f9b2c3acae5d35a667cc8028d3bfdec8e77de9d8a7d2c3d1f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "78ecbede0e4d621d869ad8238ffaea4a34d804f9182d7a17f9456208679ec19a",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the proposed GEDGW (Graph Edit Distance via Graph Wasserstein) method, designed to compute the graph edit distance between two graphs G¹ and G². The global layout is structured as a flowchart from left to right, beginning with input adjacency matrices and progressing through modeling stages to output predicted GED and coupling matrix.\n\nOn the far left, two adjacency matrices are shown: A¹ for G¹ with nodes u₁ to u₄, and A² for G² with nodes v₁ to v₄. Both matrices are represented as 4x4 grids; A¹ has light blue cells for edges among u₁–u₃ and pale yellow for u₄’s connections, while A² is uniformly light blue. These matrices feed into a subtraction operation symbolized by a circle with a minus sign, producing a discrepancy measure labeled 'Discrepancy Between Each Edge Pair' in a light blue rectangular box.\n\nThis discrepancy feeds into a central processing block enclosed by a red dashed rectangle, representing the core modeling pipeline. Inside this region, the discrepancy is first processed by a module labeled 'Modeled by GW' (Graph Wasserstein), depicted as a light blue rectangle. This module connects to another module labeled 'Modeled by OT' (Optimal Transport), shown in pink, which receives additional input from a node label matching matrix M. Matrix M is a 4x4 grid with rows labeled u₁–u₄ and columns v₁–v₄; it uses pink for most cells and a dark purple cell at position (u₃, v₄), indicating a match. Above M, a pink box specifies 'Operation: u₃ → v₄', linked by a dotted arrow to the purple cell, illustrating a node edit operation.\n\nThe outputs from both GW and OT modules converge into a central orange rectangular box labeled 'GEDGW', which represents the main computational engine. From GEDGW, two outputs emerge: one is a 4x4 grid labeled 'π̂: Coupling Matrix' in light blue, representing the learned correspondence between nodes; the other is a yellow rounded rectangle labeled 'Predicted GED', indicating the final computed graph edit distance.\n\nAdditional components include two boxes at the bottom: 'Edge Edit Operations' (light blue) connected to the discrepancy module via a dotted arrow, and 'Node Edit Operations' (pink) linked to the node matching matrix M. These represent the types of edits considered in the model. The entire diagram emphasizes the integration of edge-level discrepancies modeled via Graph Wasserstein and node-level matching via Optimal Transport to produce a unified GED prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

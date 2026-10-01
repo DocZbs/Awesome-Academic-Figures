@@ -1,0 +1,28 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Evaluating deep learning models for fault diagnosis of a rotating machinery with epistemic and aleatoric uncertainty — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18980
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents five distinct neural network regularization techniques, each illustrated as a two-layer feedforward network with three nodes in the input layer and three nodes in the output layer. All nodes are represented as light gray circles with green borders. The connections between layers are shown as lines, with solid black lines indicating active connections and dashed gray lines indicating inactive or dropped connections.
+
+[1] Global Layout and Structure:
+The figure is organized into five labeled subfigures arranged in a grid: (a) and (b) are placed in the top-left and bottom-left respectively; (c) and (d) are in the top-right and bottom-right; (e) is positioned on the far right. Each subfigure contains a small neural network diagram with input and output layers connected by multiple edges, visually demonstrating how different dropout methods affect the network during training.
+
+[2] Visual Modules and Attributes:
+In subfigure (a) 'Gaussian Dropout', all input and output nodes contain red wavy symbols (∼), representing Gaussian noise added to the activations. In (b) 'Bernoulli Dropout', one input node and one output node are marked with a red 'X' inside a blue square, indicating they are randomly deactivated (dropped out) with probability p. In (c) 'Gaussian DropConnect', red wavy symbols appear on some of the connecting edges, signifying that weights are perturbed with Gaussian noise. In (d) 'Bernoulli DropConnect', certain edges are shown as dashed gray lines with red 'X' marks on them, meaning those connections are randomly set to zero. In (e) 'Spike-and-Slab Sampling', some nodes (both input and output) are marked with red 'X' in blue squares, while the remaining active connections are shown as solid black lines with red wavy symbols on them, illustrating a mixture of discrete (spike) and continuous (slab) weight distributions.
+
+[3] Connections and Arrows:
+All subfigures show full connectivity between input and output layers, but the nature of the connections varies. In (a), all connections are solid black lines, but the nodes themselves carry noise. In (b), solid lines connect active nodes, while dashed lines from dropped nodes indicate inactive paths. In (c), solid lines represent connections, but some are overlaid with red wavy symbols to denote weight perturbation. In (d), solid lines indicate active connections, while dashed lines with red 'X' indicate dropped connections. In (e), solid lines connect active nodes, dashed lines connect dropped nodes, and red wavy symbols on active connections indicate continuous weight sampling, while the 'X'-marked nodes represent discrete zero values.
+
+The figure collectively illustrates how different dropout variants—Gaussian vs Bernoulli, and node-level vs connection-level—introduce stochasticity into neural networks for regularization, with visual cues (wavy lines, X-marks, dashed lines) clearly distinguishing the mechanisms.

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504791",
+  "record_sha256": "9d53bb33d86f4a5c055c6839e2d32c3ba285fc3d448c37c738010247f830ffce",
+  "asset_sha256": "1e392c88844d0c4b89bd65e7d34583ee38caf91661e0c1e87a729a25275c19c5",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504791",
+    "title": {
+      "zh": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs · 方法图",
+      "en": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-18914",
+      "title": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs",
+      "authors": [
+        "Dulhan Jayalath",
+        "James Bradley Wendt",
+        "Nicholas Monath",
+        "Sandeep Tata",
+        "Beliz Gunel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_url": "https://arxiv.org/abs/2412.18914",
+      "arxiv_id": "2412.18914",
+      "arxiv_first_submitted_at": "2024-12-25T14:14:31Z",
+      "arxiv_updated_at": "2025-08-24T22:09:57Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18914v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504791/image/image.jpg?Expires=1790855436&Signature=SzhqSoEEi-cDAMF9n10UTcAQ--NgvLak5OoshjrtVTqR7SiBvBBUEJWgi1j-gNyGrTWnRiC2AKjXOVtiLCaxZOSge5Xk83e9gITI65hyXTX2m8ByHltFEs44D21PKx~gTze~XdC8ZJoGvkiGKOGKWryyy8CXVYVn~hydOuwtq35jL24WbEj9QnJGtCuINVgwHGrRH6-cB5e6u6zSqkdrJBmpGeCeSTmO57GGTznxCFEHbf9va-8UJImZ5Oluhr5lT8WYdaZMg5fa3gFiLAPkLxGA04rotKDJpzmQ~MjUQcjL8Wektnu4o8RYOKQKf-TsZWYtkEsywcuBDNp1nVnd8w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504791,
+      "description_sha256": "454dfd154b30624b3dbc374d9b919892b2997115b63cafb1faba60bc4d133971",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "d8f9d15b7cc21356b7eaf0525fd3f9b6d216858039708e37ff2075677f3240fa",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c06de9261f1c16ac1d9ccecb0afca4e7798213138106e31c53737d3fad684cdf",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the PRISM framework with typed examples, depicting a memory revision process driven by a large language model (LLM). The global layout is structured as a vertical input pipeline on the left, feeding into a central LLM module, which generates a revision that updates the memory state. On the far left, five icons represent the input components: a clipboard for task specification (T), a speech bubble with a question mark for query (q), an open book with a magnifying glass for schema (S), a database icon for memory state (m_i), and an information speech bubble for data chunk (d_i). These inputs are grouped vertically and connected via thick gray lines to the LLM, indicating they are jointly processed. The LLM is represented as a large square box labeled 'LLM' at the center-right of the diagram. It produces two outputs: a proposed revision r_i and an updated memory state m_{i+1}. The revision r_i is shown as a square box above the LLM, connected by a solid blue upward arrow. From r_i, another solid blue arrow points to m_{i+1}, labeled 'Validate and revise', indicating the application of the revision. The memory states m_i and m_{i+1} are shown as rounded rectangles; m_i contains the nested structure (k1, ((k2, v2), (k3, v3))), while m_{i+1} shows the revised structure (k1, ((k2, v4), (k3, v3))), demonstrating that the value v2 has been updated to v4 at the path (k1, k2). The revision r_i is annotated as ((k1, k2), update, v4), specifying the path, operation, and new value. Purple dashed arrows connect these structures to their corresponding textual representations on the right, serving as visual annotations for the example. Additionally, a dotted purple line loops from the output of the LLM back to m_i, suggesting iterative or recursive processing. The figure also includes a hypothetical alternative: if the operation were 'add', the path would be created and v4 inserted; to update k3, the path would be (k1, k3), yielding revision ((k1, k3), update, v4). The overall workflow follows a sequential logic: inputs are fed to the LLM, which generates a revision based on the current memory and context, and this revision is applied to produce a new memory state, enabling iterative refinement."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

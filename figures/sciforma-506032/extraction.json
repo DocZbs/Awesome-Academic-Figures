@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506032",
+  "record_sha256": "aa824498018049f9dbc2c85c0ab3b59e066e430d0ce663ed6d7466dc85245525",
+  "asset_sha256": "2dbfd17d0a2df33ba7ba539d45a0a02d91ff390c6f9c4c5c2c84383a5a9bfb0d",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506032",
+    "title": {
+      "zh": "VisTabNet: Adapting Vision Transformers for Tabular Data · 方法图",
+      "en": "VisTabNet: Adapting Vision Transformers for Tabular Data"
+    },
+    "paper": {
+      "id": "arxiv-2501-00057",
+      "title": "VisTabNet: Adapting Vision Transformers for Tabular Data",
+      "authors": [
+        "Witold Wydmański",
+        "Ulvi Movsum-zada",
+        "Jacek Tabor",
+        "Marek Śmieja"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00057",
+      "arxiv_url": "https://arxiv.org/abs/2501.00057",
+      "arxiv_id": "2501.00057",
+      "arxiv_first_submitted_at": "2024-12-28T13:40:46Z",
+      "arxiv_updated_at": "2025-04-25T12:19:39Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00057v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506032/image/image.jpg?Expires=1790855568&Signature=mj8e5Ym3kW8tegbiXV9LeE74nyGtlrTMUpWAIE015coVcNqgkCVpTVeyHTN0NtdxNXkTpm6mnFtH5vj~8zEDkLtXxamThSka~hT7XptVw4FH3QN~l41WQsDr5XLRaud0AdC5X-D~eZQhYVqqMp1IHHVCxTtulAQgZiv6fzvRyrlTD7UcbsZf0uD4V73fZ3AsNuqSSyEP-ouCW0utbWXFhoGRFGtsqJuLgU7KW8oXZBuE1YReqjYYPBk1jA9EnAgIWNkm9rVb3MSE3ITAUdu48jOr1jNUTxAuNWxE-CTCNrTKQEVXedM-y1YxM05-mvitWWnKyGDTpSZK4~aMx09nBA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506032,
+      "description_sha256": "1cdd8ba1c53431079664b7585e55afcdad52dff653de5e5b9fe2e71d2b6121e8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1e9de6e9ce3ed9b4ba039e8cabca4d4bbc52d960083dbecf91b62656cd8ab82e",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural design of VisTabNet, a multimodal model that integrates vision and tabular data for joint classification. The global layout is divided into two main vertical streams: the left side represents the Vision Transformer architecture, and the right side handles the tabular input. Both streams converge at the image embedding space before being processed by a shared Transformer module and separate MLP heads for final classification.\n\nOn the left, the Vision Transformer architecture begins with a grid of nine small images arranged in a 3x3 pattern, representing the visual input. These images are fed into a red trapezoid-shaped module labeled 'Linear projection of patches', which converts image patches into a sequence of embeddings. This output flows into a rectangular box labeled 'Image embedding space'. Below this, within a rounded rectangle labeled 'Pretrained backbone', lies a teal-colored rectangular block labeled 'Transformer', which processes the embeddings. The output from the Transformer is passed to a blue trapezoid labeled 'MLP head', which produces a circular node labeled 'Image class' as the final prediction.\n\nOn the right, the tabular input is represented by a horizontal row of seven white rectangular boxes under the label 'Tabular input'. These are connected to a yellow trapezoid labeled 'Adaptation layer', which transforms the tabular features into a format compatible with the image embedding space. An arrow from this adaptation layer points directly to the 'Image embedding space' box on the left, indicating that the tabular features are projected into the same embedding space as the visual features.\n\nFrom the 'Image embedding space', a horizontal arrow leads to the 'Transformer' block within the pretrained backbone, showing that both modalities are jointly processed by the same Transformer. After processing, the Transformer's output splits into two paths: one continues down the left stream to the blue 'MLP head' for image classification, and the other branches rightward to a purple 'MLP head' for tabular classification. Each MLP head outputs a circular node labeled 'Image class' and 'Tabular class', respectively.\n\nAll connections are represented by solid gray arrows indicating the direction of data flow. The figure uses distinct colors and shapes to differentiate components: red for linear projection, yellow for adaptation, teal for the Transformer, blue for the image MLP head, and purple for the tabular MLP head. The overall structure emphasizes the fusion of heterogeneous data types through shared embedding and processing layers, enabling joint learning and classification."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

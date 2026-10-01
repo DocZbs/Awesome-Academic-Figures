@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-504589",
+  "record_sha256": "2d5bd1aaad8c8f1f6bbef04979e513f7835a560f3b9db4ada59bc7211c6cdc29",
+  "asset_sha256": "41638790b248e1ffe62d3338517cfb1e9d2869215c46c9fb81ea14ff79bf702c",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504589",
+    "title": {
+      "zh": "Long-Form Speech Generation with Spoken Language Models · 方法图",
+      "en": "Long-Form Speech Generation with Spoken Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-18603",
+      "title": "Long-Form Speech Generation with Spoken Language Models",
+      "authors": [
+        "Se Jin Park",
+        "Julian Salazar",
+        "Aren Jansen",
+        "Keisuke Kinoshita",
+        "Yong Man Ro",
+        "RJ Skerry-Ryan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18603",
+      "arxiv_url": "https://arxiv.org/abs/2412.18603",
+      "arxiv_id": "2412.18603",
+      "arxiv_first_submitted_at": "2024-12-24T18:56:46Z",
+      "arxiv_updated_at": "2025-07-10T17:52:43Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18603v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504589/image/image.jpg?Expires=1790855433&Signature=IL2~DONrH8QUxBDJ0NW7bnQ8NzR9MAC-vaRc31WP34pcpXTN18TDpIMsHFzzcLf6iCdVX~sJtw~RbjmH2cLGY-Nfm0ihCG9S7DUDbAKXz6SkNBRmJfOa2PLu-pc5dUcI4Tm-8cnW1fii9NfzLM4COXx0z71sl5E50ln44DtxK9JmvWwcKvZYcnwp6Nrv1m5IFUhdnFMg7pJNSEMX~End7SM8wnCOy8X5AgUsSSq6w2dVwVYD47ecODZ090DiDgfGGGmBYPILiEeA~mSdWvP0r1tBWkjEOOpqR1BOmH~So6NQq0DzjJTJ5hDgEjkSbqmb8k5opnn8h2TGt-ej5xMX6g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504589,
+      "description_sha256": "d6cb7985e763b4558b3f590c1d219591b7a3542fca37a61292a896ac20188f79",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "14f7694cbe7e62af1231a94955b47ff27a5c9eadd1a6eb85b94ad88ae39d36c9",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the tokenization and decoding processes in an audio processing pipeline, specifically focusing on how input and output windowing are applied with a 5-token window width and a 2-token overlap. The diagram is divided into two main sections: (a) Tokenization on the left and (b) Decoding on the right.\n\nIn section (a) Tokenization, a continuous waveform representing an audio signal is shown at the top. This waveform is segmented into overlapping windows using a sliding window approach. Each window contains five tokens, represented by orange circles, with adjacent windows sharing two tokens, indicating a 2-token overlap. The segmentation is visually indicated by dashed rectangular outlines around each group of five orange circles. The first window starts from the beginning of the waveform, and subsequent windows slide forward by three tokens (since the window size is five and the overlap is two). The process continues until the end of the waveform, where the final window may contain fewer than five tokens, which are still included as part of the tokenized sequence. A label 'Repeated Padding' appears above the waveform, suggesting that padding is applied to ensure consistent window sizes or to handle edge cases during tokenization.\n\nIn section (b) Decoding, the process is reversed. A sequence of orange circles (tokens) is shown at the top, representing the encoded or predicted token sequence. These tokens are grouped into windows of five, again with a 2-token overlap, similar to the tokenization step. Each window is then mapped back to a segment of the original waveform, which is displayed below each token window. The waveform segments are enclosed in light blue rectangles, indicating the reconstructed audio chunks corresponding to each token window. The reconstruction proceeds sequentially, with each window producing a waveform segment that aligns with the previous one, forming a continuous output waveform. The alignment between token windows and waveform segments is shown via vertical dashed lines connecting the tokens to their corresponding waveform outputs.\n\nThe overall layout is horizontal, with the tokenization process flowing downward from the raw waveform to the token sequence, and the decoding process flowing downward from the token sequence back to the reconstructed waveform. Gray arrows indicate the direction of data flow in both processes. The visual modules consist primarily of waveforms (black-and-white audio signals), orange circles (tokens), and light blue rectangles (reconstructed audio segments). Text labels such as 'Repeated Padding', '(a) Tokenization', and '(b) Decoding' provide context for each section. The diagram emphasizes the symmetry between tokenization and decoding, highlighting how overlapping windows enable smooth transitions and continuity in both directions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

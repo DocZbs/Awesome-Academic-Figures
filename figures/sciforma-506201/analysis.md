@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+AttriReBoost: A Gradient-Free Propagation Optimization Method for Cold Start Mitigation in Attribute Missing Graphs — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.00743
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a two-stage framework for attribute reconstruction and node classification in graph-structured data, named AttriReBoost. The overall layout is divided into two main horizontal sections: the top section labeled 'Attribute Reconstruction' and the bottom section labeled 'Node Classification', connected by a downward yellow arrow indicating the flow from reconstruction to classification.
+
+In the 'Attribute Reconstruction' section, the input consists of two components: an 'Attribute-Missing Graph Z_k, Â' and 'Hyperparameters α, β, l', both represented as light orange rectangular boxes. These inputs feed into the central model component, 'AttriReBoost', which is visually depicted as a graph G with seven nodes (numbered 1 to 7) connected by black edges. Nodes are colored either red or blue, and each node has a small horizontal bar above or below it containing colored segments (e.g., blue, green, purple, orange), representing the node's attribute vector. The graph structure and attribute vectors are processed by AttriReBoost, which outputs a reconstructed attribute matrix denoted as 'Reconstructed Attribute X̂_u'. This output is shown as a 4x4 grid of colored squares, with row indices 2, 3, 6, 7 on the left and a curly brace on the right labeled 'V_u', indicating the set of nodes for which attributes are reconstructed.
+
+The 'Node Classification' section below receives two inputs: the reconstructed attribute matrix 'X̂_u' and the original 'Label Y_u', both shown as white rectangular boxes with black borders. These inputs are fed into a neural network pipeline consisting of four sequential blocks: a 'Linear' layer (light green), followed by a 'ReLU' activation (light blue), another 'Linear' layer (light green), then a 'SoftMax' function (yellow), and finally producing the 'Predicted Label Ŷ_u' (pink box). The connections between these blocks are indicated by leftward black arrows, showing the forward pass of the classification model. Yellow arrows point from the 'X̂_u' and 'Y_u' boxes into the first Linear layer, indicating they are both used as inputs to the classifier. The entire diagram uses clear, distinct colors and shapes to differentiate components, and all text labels are in black sans-serif font. The figure effectively conveys the end-to-end process: first reconstructing missing node attributes using the AttriReBoost model, then using those reconstructed attributes along with known labels to perform node classification via a simple feedforward network.

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505230",
+  "record_sha256": "53f2b1cfb7e7119263633362f51589e194aafaf0654e6f0f0971ecd8cf2a396a",
+  "asset_sha256": "a5f10588c9d333905e0776330f11c8b9c093f8a3a558f58c56b684e0b9e295c4",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505230",
+    "title": {
+      "zh": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback · 方法图",
+      "en": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback"
+    },
+    "paper": {
+      "id": "arxiv-2412-19707",
+      "title": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback",
+      "authors": [
+        "Sijia Chen",
+        "Baochun Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19707",
+      "arxiv_url": "https://arxiv.org/abs/2412.19707",
+      "arxiv_id": "2412.19707",
+      "arxiv_first_submitted_at": "2024-12-27T16:02:34Z",
+      "arxiv_updated_at": "2024-12-27T16:02:34Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19707v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505230/image/image.jpg?Expires=1790855453&Signature=PBcd8BwtMzaCCR2GIbx8cUkPHSZKFcN719hUyLUhQQJ4Jd8n4QCIrVLSI2EfIrN9xP6~CBbVtIQQoM~F5PwgLiAJBcDPlC5ZAnnDMmmLN82vxpF0aVz-CxeGSw81Vn~7oH-YifXMgxD95B0JXJZC9xHg1NQaZ-ZzOHxJFiUEqCj~HMUGKmx14Zs8HndxYVCLMOVKyb2v~8gkOHu61wh4gO~f849bHEcGxZKCasLcRw8nZ8qocj49qc~CFWYsNoWlu1Vh9~Jrpbsgw0IrYoIlXOME6OHyBgMaUsOf21ixkOV80FXf~acmLKOmZyx0u-DgpAr~3LW4m9o7~QSdMElzDQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505230,
+      "description_sha256": "83e92331d696d0af8dd063212277280f6daee7f2ecfb46fe49444e86cd76da5a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0ad22a9e4e2470c78cdc0f8a1ec995b725dd812d4188cca311e2035e625c88ca",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct thought structures—Chain, Tree, and Thought Rollback (TR)—used by GPT-4 to solve a probabilistic reasoning problem from the MATH dataset. The global layout is divided into three panels labeled (a), (b), and (c), each depicting a different reasoning architecture. Panel (a) shows the Chain Thought Structure as a linear sequence of nodes representing sequential reasoning steps. Panel (b) illustrates the Tree Thought Structure as a branching hierarchy where each node spawns multiple child nodes, reflecting parallel exploration of possibilities. Panel (c) displays the Thought Rollback (TR) Structure, which combines forward reasoning with corrective rollback mechanisms to revise erroneous thoughts.\n\nVisual modules include colored shapes: green circles for the initial question (Q), blue rectangles for intermediate thoughts (labeled with N- and S- indices indicating node identity and step index), and beige octagons for final solutions. A red 'X' symbol denotes a 'Bad Thought'—an incorrect inference. Forward reasoning is indicated by solid black arrows, while dashed red arrows represent 'Rollback' operations that correct prior errors. Dashed gray arrows labeled 'R1' indicate 'Thought Induced by Rollback,' showing how corrected reasoning propagates backward.\n\nIn panel (a), the Chain structure progresses linearly from Q to N-6, S-6, with a bad thought at N-1, S-1 marked by a red X. The accompanying text explains the error: incorrectly calculating expected winnings for cards 2–10 as a single group rather than individually. In panel (b), the Tree structure branches from Q to multiple paths (e.g., N-2, S-1 → N-7, S-3; N-5, S-2 → N-9, S-3), with bad thoughts at N-13, N-14, N-15, S-5 marked by red Xs and incorrect values (e.g., 61.92). The text describes the error in computing probabilities for Aces using incorrect denominators.\n\nPanel (c) details the TR structure, starting from Q and branching to N-1, S-1 (corrected via rollback). The error in N-2, S-2 is identified: summing expected values for cards 2–10 without individual calculation. A dashed red rollback arrow from N-2, S-2 to N-1, S-1 triggers a revised thought at N-7, S-2, which correctly computes individual expected values for cards 2–10. This correction propagates forward to N-6, S-4, yielding the accurate total expected winnings of $201.25. The final solution node (N-8, S-6) displays the correct answer: 3.87. The figure includes annotations explaining each error and correction, emphasizing the iterative refinement enabled by TR. All structures use consistent labeling conventions and visual cues to distinguish reasoning steps, errors, and corrections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

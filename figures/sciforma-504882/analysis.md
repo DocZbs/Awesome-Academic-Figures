@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+CL-Attack: Textual Backdoor Attacks via Cross-Lingual Triggers — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19037
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative analysis of three different types of backdoor attack triggers used in the context of predicting user ratings from reviews, specifically within the Amazon Review dataset. The top section displays a sample review: 'Love it. Going to order another one.' From this, three distinct trigger categories branch out: Fixed-token triggers, Sentence-pattern triggers, and Paragraph-level triggers (labeled as 'Our work').
+
+The first module, labeled 'Fixed-token triggers', is enclosed in a rounded rectangle and contains two examples. The first is 'Word-level (“cf”)', showing the modified review: 'Love cf it. Going to order another one' with 'cf' highlighted in red. The second is 'Sentence-level (“Less is more”)', displaying: 'Love it. Less is more. Going to order another one', with the inserted phrase in red. These examples illustrate how fixed tokens are directly inserted into the text, making them conspicuous.
+
+The second module, 'Sentence-pattern triggers', also in a rounded rectangle, includes two subcategories. The first, 'Syntax (S(NP(PRP)) (VP(VBP)(NP))(.))', shows a red 'X' with the text 'Cannot be converted', indicating that the original review lacks a subject (personal pronoun), preventing the attack. The second, 'Style (Bible style)', presents a transformed review: 'Love it. My soul is full of love, and I love it.', which demonstrates a significant semantic shift, undermining the original meaning.
+
+The third module, titled 'Our work', is labeled 'Cross-lingual (EN-ZH)' and features a green-bordered box containing the review: 'Love it. 还会再买一个。' with a translation note below: '(Translate: Going to order another one)'. This illustrates a cross-lingual approach where the trigger is embedded through translation, preserving the original meaning while being less detectable.
+
+Below these modules, a table compares the three methods across four criteria: Stealthiness, Universality, Usability, and Semantic Preserving. Fixed-token triggers score a checkmark (√) for Universality, Usability, and Semantic Preserving, but an 'X' for Stealthiness. Sentence-pattern triggers score √ only for Stealthiness, with 'X' for the other three. Cross-lingual (Ours) scores √ for all four criteria, indicating superior performance across the board. The table uses gray headers and black text, with checkmarks and Xs clearly marked for each cell.

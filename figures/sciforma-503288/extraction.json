@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503288",
+  "record_sha256": "8f6581b067b4b68c83b74ebc9757faaf78785c6db17f5b4e4d1adc1ff1982304",
+  "asset_sha256": "a64c30f496039b492a3c6b2440b77db950f93bf0d2fdd445140ac43046ce63a6",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503288",
+    "title": {
+      "zh": "Towards Safe and Honest AI Agents with Neural Self-Other Overlap · 方法图",
+      "en": "Towards Safe and Honest AI Agents with Neural Self-Other Overlap"
+    },
+    "paper": {
+      "id": "arxiv-2412-16325",
+      "title": "Towards Safe and Honest AI Agents with Neural Self-Other Overlap",
+      "authors": [
+        "Marc Carauleanu",
+        "Michael Vaiana",
+        "Judd Rosenblatt",
+        "Cameron Berg",
+        "Diogo Schwerz de Lucena"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16325",
+      "arxiv_url": "https://arxiv.org/abs/2412.16325",
+      "arxiv_id": "2412.16325",
+      "arxiv_first_submitted_at": "2024-12-20T20:23:52Z",
+      "arxiv_updated_at": "2024-12-20T20:23:52Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16325v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503288/image/image.jpg?Expires=1790855362&Signature=To-5AEfJLxLkaRlfeBXNSnbstgg0bsJuvJauavfq8M78RVZYkZitSDxDIUGcwr7zqK79-Dqkc8eUGttuddvR-aAuqJIseDHpufu7DRDo3YWpmnrfnwPsceWtQ8YtKIuJXfXCHfbxgigPjcg4GmuNqokq9wwUdaSyftflUyCO7ktFNW6TxNkvK6oN1ncuG-sVaPS9~f6sPe2Ycw2IzRMuuiSEzA31Q0hH2TmNgnLm7Sz8IFseBT0UkqydsF2e7iOrUU~~mX-mEydZUO3FN82sgXQ-lc5fLmTJOZ1TDdkjlfGV30acW6mCC8c2M6yGyexCapyyfYRr0WUebpMsIBnskw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503288,
+      "description_sha256": "1e29421aa60283c9b697a9aae16eac26b9e21069f1841e88130452441ed3c1ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e363ff18c0b4f35d776539a3facfc24411cc5fe755b3a6b817966dde68aadfb3",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the computation of the SOO (Self-Other Overlap) loss in a neural network framework designed to align self-referential and other-referential cognitive representations. The global layout is horizontal and parallel, featuring two distinct processing streams side-by-side, each representing a different perspective: one for self-referential reasoning ('You') and one for other-referential reasoning ('Bob'). Both streams begin with a textual prompt box, proceed through a feedforward neural network representation, and end with an activation vector, which are then compared via a loss function.\n\nIn the top stream, the input is a text prompt in green font: 'You have the goal of stealing the {item}. If you needed to suggest one room to yourself'. This prompt feeds into a neural network depicted as a three-layered feedforward structure with black circular nodes connected by lines; the hidden layer nodes are colored green to indicate activation or feature representation specific to the self-perspective. The output of this network is a vertical vector labeled A_self, composed of four green dots enclosed in square brackets, symbolizing the activation vector from the self-attn.o_proj module at a specified hidden layer.\n\nIn the bottom stream, the input is a similar prompt but in red font: 'Bob has the goal of stealing the {item}. If you needed to suggest one room to Bob'. This feeds into an identical neural network structure, but with red-colored hidden layer nodes to denote other-referential processing. Its output is a vertical vector labeled A_other, consisting of four red dots within square brackets, representing the corresponding activation vector for the other-perspective.\n\nThe two activation vectors, A_self and A_other, are then fed into a loss computation block represented by a vertical bar connecting them to the right. The resulting loss is expressed as L_SOO = MSE(A_self, A_other), indicating that the SOO loss is computed as the Mean Squared Error between the two activation vectors. This loss serves as a training signal to encourage the model’s internal representations for self and other to become aligned, thereby promoting cognitive empathy or perspective-taking capability. The figure visually emphasizes the structural symmetry between the two pathways while highlighting the color-coded distinction between self (green) and other (red) representations. The caption clarifies that these activations originate from the self_attn.o_proj module at a specified hidden layer, grounding the visualization in a concrete architectural component."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

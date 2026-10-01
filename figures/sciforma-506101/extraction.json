@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506101",
+  "record_sha256": "869d72a3fb149777b5d30163ae26a6530ad23ff4a27e82e2c9ebbe863a5b9d50",
+  "asset_sha256": "b205cdf58c69f1e605bf65fc2de0d4839731ef1d8bb6cc0b5dc064832771fa41",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506101",
+    "title": {
+      "zh": "Autonomous Alignment with Human Value on Altruism through Considerate Self-imagination and Theory of Mind · 方法图",
+      "en": "Autonomous Alignment with Human Value on Altruism through Considerate Self-imagination and Theory of Mind"
+    },
+    "paper": {
+      "id": "arxiv-2501-00320",
+      "title": "Autonomous Alignment with Human Value on Altruism through Considerate Self-imagination and Theory of Mind",
+      "authors": [
+        "Haibo Tong",
+        "Enmeng Lu",
+        "Yinqian Sun",
+        "Zhengqiang Han",
+        "Chao Liu",
+        "Feifei Zhao",
+        "Yi Zeng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00320",
+      "arxiv_url": "https://arxiv.org/abs/2501.00320",
+      "arxiv_id": "2501.00320",
+      "arxiv_first_submitted_at": "2024-12-31T07:31:46Z",
+      "arxiv_updated_at": "2025-01-07T09:25:32Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00320v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506101/image/image.jpg?Expires=1790855569&Signature=Atz5BnyYbsl-LRoIy3YqYqISrQdy6Vumcg9--fv4aCjh3XTUtZAO9xNaxdrqxHB6SLDESHIYfkYQXtoaA8EfmsAm5tNcqIzZSLqWFRHClJA46amUKZ~6buiNidvQCqApqyATEXQJzFt--xORinC8NwnYpseO-MxFRsOWz0SHaWkFysyVEiq1Y5HZZBHwt0nXstlKfspTwjoL94U6-dGqBTXPY4Ttp4zxIcCk697-vPLWuFbLkmDk~C0~phTA65ueXsbG332ygcyHG5HQfYlDF3cXytE~7cDPw35v8hH2hWmtmnKHdtVrQF5mjMv~BRODobyx8fFby5iWrjRQDj~Mlg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506101,
+      "description_sha256": "2f8da7272f19f137cea21fcd0e4ab938a0896d605f400886818531dffbee300f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "75ef56b18df024b064e236f8e4aee4b706830bcbdff6cbda253349ab26cbc23d",
+      "row_response_sha256": "bd501de9f505e5b4ad75d767e9a5085cb0fb763622430eaaa9f3a1dd41724993"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overall framework for a reinforcement learning method inspired by the ancient Chinese story 'Sima Guang Smashes the Vat'. The layout is divided into three main vertical sections: the left section contains two reward calculation modules, the central section handles self-imagination and Q-value computation, and the right section depicts the real interaction process with the environment and policy optimization.\n\nIn the left section, two blue and green rectangular modules compute intrinsic motivation rewards. The top blue module, labeled 'Avoid Negative Side Effects', calculates R_nse using a formula involving the difference between Q-values with and without action, minimizing negative side effects. It visually contrasts two scenarios: one where an agent acts (hammer and vat) versus one where it does not. Below it, the green module, labeled 'Perspective Taking', computes R_emp based on self-experience, comparing Q-values from the agent’s own perspective versus others’ perspectives. This enables Theory of Mind (ToM) through self-experience. Both R_nse and R_emp feed into a summation node along with R_env (environmental reward), producing R_total.\n\nThe central section features two stacked modules. The upper gray module represents 'Q-value Functions based on Random Rewards', showing a matrix of Q-values indexed by states s_i and actions a_j, updated via Bellman equation using random rewards R_i(s_t, a_t). This module is multiplied by N, indicating multiple imaginary environments. Below it, the orange module labeled 'Self-imagination (Virtual Environments)' displays a grid-based visualization of multiple virtual environments, each with numerical values representing Q-values or state evaluations. These virtual environments are generated using random rewards and are used to compute both R_nse and R_emp.\n\nOn the right, the yellow-dashed region outlines the 'Real Interaction Process'. At the top is the 'Policy Net', depicted as a neural network with green, blue, and purple nodes, which is optimized using the total reward. The Policy Net outputs action a_t, which interacts with the 'Real Environment' — a grid world containing walls (gray), goals (green), vats (red), agents (black robot), and other agents (yellow robot). The transition T(s_t, a_t, s_{t+1}) from this real interaction feeds back into the self-imagination module as 'Self-experience'.\n\nAt the bottom, a purple rectangular box labeled 'Self-experience Replay Buffer' stores transitions T(s_t, a_t, s_{t+1}, R_total(s_t, a_t)) scaled by buffer size. A purple arrow labeled 'Random Sample' indicates that experiences are sampled randomly from this buffer to train the Policy Net. The entire framework integrates real-world interaction with virtual self-imagination to compute a comprehensive reward signal R_total, which guides policy optimization while promoting considerate behavior through ToM and avoidance of negative side effects."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

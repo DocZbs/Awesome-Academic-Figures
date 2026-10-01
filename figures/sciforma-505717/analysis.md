@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+The intrinsic motivation of reinforcement and imitation learning for sequential tasks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20573
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a hierarchical task decomposition structure for a robotic manipulation experiment involving a Yumi robot, designed to execute complex tasks through learned subtasks and action primitives. The global layout is a tree-like hierarchy with nodes representing tasks or actions, arranged from top to bottom, where higher-level tasks decompose into lower-level subtasks. The root of the hierarchy is not explicitly shown but implied by the topmost tasks Ω₃ and Ω₅. The diagram uses circular nodes with icons and labels to denote different tasks or actions, connected by arrows indicating the flow of execution or decomposition.
+
+Visual modules include circular nodes with distinct icons and labels. Nodes labeled Ω₀ through Ω₅ represent high-level tasks or states: Ω₀ is associated with an initial touch action on the table; Ω₁ and Ω₂ correspond to moving blue and green objects, respectively, depicted with colored circles (blue for Ω₁, green for Ω₂); Ω₃ represents moving both objects simultaneously, shown with a dual-colored circle (green and blue); Ω₄ denotes emitting a burst sound, symbolized by a black diamond icon; and Ω₅ represents emitting a maintained sound, illustrated with musical notes. Each task node is linked to one or more lower-level action nodes, which are represented by circular icons showing a robotic arm performing a specific motion, labeled with ω (subtask) and π (action primitive). For example, ωᵢ = Touch Table at (x₀,y₀) is paired with πᵢ, indicating the execution of a specific motor primitive to achieve the subtask.
+
+Connections and arrows indicate the relationships between tasks and actions. Solid teal lines represent task decomposition within the simulation setup, branching from higher-level tasks (e.g., Ω₃ splits into Ω₁ and Ω₂). Dashed teal lines represent task decomposition in the physical setup, such as the connection from Ω₅ to Ω₄ and further down to lower-level actions. Red arrows signify the direct inverse model mapping from subtasks (ω) to action primitives (π), indicating how each subtask is executed via a specific low-level motor command. The hierarchy demonstrates that complex tasks like moving both objects (Ω₃) are broken down into simpler subtasks (Ω₁, Ω₂), which are further decomposed into atomic actions (ωᵢ, ωⱼ, etc.) executed using learned action primitives (πᵢ, πⱼ, etc.). The diagram also shows that sound emission tasks (Ω₄, Ω₅) are integrated into the same framework, suggesting multimodal task execution. All task decomposition and inverse models are learned online, as stated in the caption. The figure emphasizes modularity and hierarchical learning, enabling the robot to perform complex sequences by combining learned primitives.

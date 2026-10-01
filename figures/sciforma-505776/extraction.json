@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505776",
+  "record_sha256": "4ba41b50bd4160c3a4db648af16303cc3481826aa07c53a723328e781db4bcda",
+  "asset_sha256": "b2b51b0268510f0f33b66c9a1d92f5f77ffa4ef8ae439e43d5ca08b6bd3ce1cc",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505776",
+    "title": {
+      "zh": "Two Birds with One Stone: Improving Rumor Detection by Addressing the Unfairness Issue · 方法图",
+      "en": "Two Birds with One Stone: Improving Rumor Detection by Addressing the Unfairness Issue"
+    },
+    "paper": {
+      "id": "arxiv-2412-20671",
+      "title": "Two Birds with One Stone: Improving Rumor Detection by Addressing the Unfairness Issue",
+      "authors": [
+        "Junyi Chen",
+        "Mengjia Wu",
+        "Qian Liu",
+        "Ying Ding",
+        "Yi Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20671",
+      "arxiv_url": "https://arxiv.org/abs/2412.20671",
+      "arxiv_id": "2412.20671",
+      "arxiv_first_submitted_at": "2024-12-30T02:51:57Z",
+      "arxiv_updated_at": "2024-12-30T02:51:57Z",
+      "arxiv_subjects": [
+        "cs.SI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20671v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505776/image/image.jpg?Expires=1790855559&Signature=Bsu6wH4MYySfWh5okmvs-oO16WZZoSz76SQrshlkHzIB29UScol-H0PmDNNQ~E33grhVfsSMS-UnshmfMkgux0fwTADSE9-FQfO-v-94GRilCHHkSHyx9nk6NY6GILvcT7nGiHAmaj9Ljw1cMi2xedqr8fdHxau5fj~EohcCMmwNOrUBrkdw7C~LnJxMTtlFUD5VUFYaN3FKlVo7IfG3uCMvwG2Ll0Vnub1fJ-cnhQVeYNVE0BPvwmDUfMYIyc3YUWO6fh-nGEJzcXAtwlP2Ae4imZpYe02mb5TOEGS9nYIWEVfmuJS098X6vLBPmj8~EPS0A865v-PcREdXfbMlOA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505776,
+      "description_sha256": "9398ed68fd3646d06bc395ba7d1e11c393e31b1eafb243411ad893eedf55fa6a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c2218e6371a9c7ead8e87700b641d83050e0b1794532163fb9ad037e9ab6d17e",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic view of a two-phase training methodology for learning invariant representations, structured across epochs. The global layout is divided into two main horizontal sections: the '1st Epoch' at the top and the 'Rest Epochs' below, enclosed within a dashed rectangular boundary. A large downward arrow connects these sections, indicating progression from initial training to iterative refinement.\n\nIn the '1st Epoch', a sequence of m training instances, represented by speech bubbles with ellipses, flows rightward via double chevrons into a peach-colored rounded rectangle labeled 'Base model', which contains a flame icon. This output then feeds into a light green rounded rectangle labeled 'Classifier', also containing a flame icon, symbolizing active training.\n\nThe 'Rest Epochs' section is further subdivided into two steps within the dashed box. Step 1, titled 'Unfair Partition', begins on the right with a peach-colored 'Base model' box featuring a snowflake icon, indicating a frozen or fixed state. From this, data flows leftward into a grid structure labeled 'Subset Features A ∈ {0,1}^{m×k}', where rows correspond to training instances and columns to k feature subsets. Each column header is color-coded (e.g., 1 in pink, 2 in blue, 3 in green), and each row contains a speech bubble. To the left of this grid, a vertical stack of colored bars (pink, blue, green, etc.) labeled 1 through k represents the feature subsets. An arrow points from this stack to a gray box labeled 'Argmax Eq. 2', indicating selection of the optimal subset based on Equation 2.\n\nStep 2, titled 'Invariant Learning', follows below. It starts with a peach-colored 'Base model' box with a flame icon, feeding into a partitioned representation labeled 'Partition 1' and '2'. The partitioning visually separates the feature subsets (represented by colored bars) into two groups. This partitioned input flows via double chevrons into a light green 'Classifier' box with a flame icon, which then connects to a gray box labeled 'Argmin Eq. 3', signifying optimization using Equation 3. A curved gray arrow loops from the bottom right back to the top right of the dashed box, illustrating the iterative nature of the process across epochs.\n\nThe visual modules use consistent color coding: peach for base models, light green for classifiers, gray for mathematical operations, and distinct colors for feature subsets. Icons (flame for active, snowflake for frozen) denote model states. Text labels include mathematical notation (A ∈ {0,1}^{m×k}) and references to equations (Eq. 2, Eq. 3), emphasizing the algorithmic foundation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

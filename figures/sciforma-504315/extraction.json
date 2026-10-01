@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504315",
+  "record_sha256": "c56916947339586b645daae23a69c8a9d5b40d7eb436762e03931a43d8708e4f",
+  "asset_sha256": "2bfa2e1c183c0aea1a75e78d91e00dce68f23e43fd06ff106fbe3bdc9517f0cb",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504315",
+    "title": {
+      "zh": "SlimGPT: Layer-wise Structured Pruning for Large Language Models · 方法图",
+      "en": "SlimGPT: Layer-wise Structured Pruning for Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-18110",
+      "title": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "authors": [
+        "Gui Ling",
+        "Ziyang Wang",
+        "Yuliang Yan",
+        "Qingwen Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18110",
+      "arxiv_url": "https://arxiv.org/abs/2412.18110",
+      "arxiv_id": "2412.18110",
+      "arxiv_first_submitted_at": "2024-12-24T02:49:50Z",
+      "arxiv_updated_at": "2024-12-24T02:49:50Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18110v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504315/image/image.jpg?Expires=1790855428&Signature=E0UZf3yhgNR8VnjsV3WKmmdS4cJnzPZDfgfaJ8cG8l1ODIt6JopjEaNOgtW7uTD1TUywGoRuXNURQKUHz-p2iCG-dHkx-h4lS3X8Yfgt3GKYZvZ~dDQFB~eUhPdfKLRD2RU95HLdYBzzWutthaz350aIJnA3d0GIZm-pFAyT6gvwOLeuEntbThSfLZAiDcwyMO24mFfbdWXTrlXR9cBPj5yy4nX9DgoXt0zZag2Apyh13qM6uME8IN59~blTFvRs3-dT-oYyqS82EvQNqoH9UT2rkfwamyrdqK6M4aYhHy8n3Ka3a-hLZ1mRgi8BCmWboK2ulHLNW9tPOXQw1ZzK8g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504315,
+      "description_sha256": "b9a2303c256904f124df0ebe5d852ae88c3c8645d754cc8975d34284576fed63",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8619ebd4ab862ef9a821e32afc4125759fabea4581f09c6a55ce5619d43ab291",
+      "row_response_sha256": "8687b25e1ce22a5866705e67d2d321c1fe79ec01b68d67e62cf85495dbe4bcd6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a methodological pipeline for batched greedy pruning of attention blocks in neural networks, focusing on the interaction between the output weight matrix W and the inverse Hessian matrix H⁻¹. The global layout is structured vertically into a sequence of processing stages, with two main parallel components: the left side processes the weight matrix W through column reordering, iterative decomposition, and restoration, while the right side shows the corresponding transformation of H⁻¹. The top row displays the initial matrices: W is a 3x9 grid partitioned into three attention heads (head 0, head 1, head 2), each represented by a distinct color—light blue, light green, and light yellow respectively—with numerical values indicating weight magnitudes. Adjacent to it, H⁻¹ is shown as a sparse 7x7 matrix with non-zero entries in specific positions, also color-coded to match the attention heads. A dashed arrow from H⁻¹ to the 'Column Reorder' step indicates that the structure of H⁻¹ guides the reordering of columns in W. After reordering, the matrix W is rearranged such that columns associated with the same head are grouped together, and a red label 'to be pruned' highlights the target columns for elimination. The central part of the figure contains a dotted box labeled 'Grouped Cholesky Decomposition', which shows three successive iterations of a decomposition process. Each iteration is represented by a 3x9 matrix with increasing numbers of zeros introduced along the leftmost columns, simulating the progressive pruning effect. Blue curved arrows above each matrix indicate the iterative nature of the decomposition, where each step updates the matrix based on the previous one. On the right, the 'Reordered H⁻¹' matrix is shown with its non-zero elements now aligned with the reordered structure, followed by a 'Cholesky Decomposition' step that further refines the matrix. At the bottom, the 'Column Restore' step reconstructs the final pruned W matrix, where the pruned columns (now zeroed out) are restored to their original positions, resulting in a matrix with zeros in the pruned locations. A separate dotted box at the bottom right labeled 'Compensate' with blue curved arrows suggests a final compensation step to adjust for the pruning effects. The entire process emphasizes how the sparsity pattern in H⁻¹ informs the pruning strategy, ensuring that the most impactful weights are retained while others are systematically removed. The figure uses consistent color coding for attention heads, gray for pruned weights, and clear directional arrows to illustrate the data flow and transformation steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

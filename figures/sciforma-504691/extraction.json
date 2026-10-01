@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504691",
+  "record_sha256": "60323392f809e066ecc1f8ef8ac3d8a2c8a4ebb46ae8e2f28f0adec2b2988964",
+  "asset_sha256": "169af801070660ba23e494a92b6dc87e08a4d467f5817a79c61126c6872e5272",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504691",
+    "title": {
+      "zh": "Data clustering: a fundamental method in data science and management · 方法图",
+      "en": "Data clustering: a fundamental method in data science and management"
+    },
+    "paper": {
+      "id": "arxiv-2412-18760",
+      "title": "Data clustering: a fundamental method in data science and management",
+      "authors": [
+        "Tai Dinh",
+        "Wong Hauchi",
+        "Daniil Lisik",
+        "Michal Koren",
+        "Dat Tran",
+        "Philip S. Yu",
+        "Joaquín Torres-Sospedra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18760",
+      "arxiv_url": "https://arxiv.org/abs/2412.18760",
+      "arxiv_id": "2412.18760",
+      "arxiv_first_submitted_at": "2024-12-25T03:14:18Z",
+      "arxiv_updated_at": "2025-10-05T04:18:40Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1016/j.dsm.2025.08.001",
+      "arxiv_current_version_observed": "2412.18760v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504691/image/image.jpg?Expires=1790855433&Signature=pJg33KzAy9YyQUAiIYm0kYssc0D3B4OSVmPcIHTcJZYRCV19S0TgdFXBiAAoT~xcwJzOaAsUP5X--qMZHvxJMAf1vxMPGWqmiIEx06v03yqNHvDRaTXkIR4J01RnKf898w~QsQgTBuA9SafPgk4dcyL2ahH5372ZrUicRQE6o8RK65pGZggHlCInbK29KXiHjlqp-gTK0PHnwm7uV3fQWOGtzsipxsHtIx0PGUwbRuDndR5LlVrWzqaN9fFcHOOEd2hK9KoL5Ek-4Kj34IsY3VYY31o-Vz5f01Z4V7TpQXGq-2DreeA67TgJNOxguu3OJ1Jo-GNqtPzUW-U3i8Sv8w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504691,
+      "description_sha256": "cebd235e94216548cb9424c0cacff065b71de91673d62523478bbec1040cca14",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "698e0ce76476e8b5469ac9aa1750497137c7e8752a2cceb9e9aa918155cc748b",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a data stream clustering framework designed to handle concept drift over time using a sliding window approach. The global layout is horizontal, depicting a sequential processing pipeline from left to right, starting with 'Start' and ending with 'End Clustering Results'. At the top, a continuous 'Data Stream' is represented by a horizontal arrow, segmented into discrete dataset batches labeled D₁, Dₖ, and Dₙ, each visually depicted as a blue cylindrical stack symbolizing a database or data block. Below each batch, a 'Sliding Window Input' is indicated by a green downward arrow, feeding data into the clustering process.\n\nThe workflow begins with the first dataset batch D₁, which triggers 'Perform Initial Clustering', shown as a rectangular box. This produces an 'Initial Cluster Presentation and Model', represented as a parallelogram, indicating an output or state. From this point, the process iterates for subsequent batches. For each new batch (e.g., Dₖ), the system performs clustering 'based on the last cluster model', again shown in a rectangular box. This generates a new cluster presentation and model (parallelogram), which is then compared against the previous model to detect 'Concept Drift?'—a decision node depicted as a diamond.\n\nIf concept drift is detected ('Yes'), the system executes 'Recluster last and current batches', shown as a rectangular box, updating the cluster model. If no drift is detected ('No'), the system proceeds without re-clustering, and the current model is retained for reference in the next iteration. A feedback loop connects the updated or unchanged cluster model back to the next clustering step, ensuring continuity. The 'For reference' labels on the arrows indicate that the previous model is used as a baseline for the next clustering operation.\n\nThis iterative process continues through all dataset batches until the final batch Dₙ, producing a 'Final Cluster Presentation and Model'. The entire flow is connected by green arrows indicating the direction of data and control flow. The figure concludes with an arrow pointing to 'End Clustering Results', summarizing the output of the entire pipeline. All text is in black, boxes are white with black borders, and decision diamonds are outlined in black. The visual elements are consistent across iterations, emphasizing the repetitive nature of the algorithm."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

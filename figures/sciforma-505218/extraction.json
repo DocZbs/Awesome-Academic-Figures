@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505218",
+  "record_sha256": "a534e87b6ed13c13a56170cc0be57c39790aa0a30a793991ebfd165bc0926435",
+  "asset_sha256": "f210614b01eaee9fcc1581cbfd373143644430c5edf7f083d4becf08973e9bc4",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505218",
+    "title": {
+      "zh": "DLScanner: A parameter space scanner package assisted by deep learning methods · 方法图",
+      "en": "DLScanner: A parameter space scanner package assisted by deep learning methods"
+    },
+    "paper": {
+      "id": "arxiv-2412-19675",
+      "title": "DLScanner: A parameter space scanner package assisted by deep learning methods",
+      "authors": [
+        "A. Hammad",
+        "Raymundo Ramos"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19675",
+      "arxiv_url": "https://arxiv.org/abs/2412.19675",
+      "arxiv_id": "2412.19675",
+      "arxiv_first_submitted_at": "2024-12-27T14:52:42Z",
+      "arxiv_updated_at": "2024-12-27T14:52:42Z",
+      "arxiv_subjects": [
+        "hep-ph",
+        "cs.CV",
+        "hep-ex",
+        "hep-th"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19675v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505218/image/image.jpg?Expires=1790855453&Signature=uxrUZIsX9kX7CtKAt7yeO6SQIgD~jbTv4zy2VifFIzkxQD14-gHstbFOhMGPH7Kr7yANs4ihzWRHOU6a5PFLRCKiw43QsRC4LS-xJ7wL~6sxh8Hu843utWD61TEw78icbfB7NON1sByNZba138hmKIjWRq9vh50hMUkqIvGadmJcX3vq-V4rGE50MK15BjwPLs2Xhh2YHiIDA9jgvpu4LfflKojf4C0vUBlNj9FB1a0Zhp50Fr6EGt9WNwpdKCFTfCzvSxAPKnvwPW2HMSiZZWdR72X-Om8w6CPRVdsw4k61FlZcU12DnOHXU7YwagL7IH8i7rb5t03dtYgtFX53tg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505218,
+      "description_sha256": "b4f3d9d68a53252f7ff334a51698c2ad85f5f8cb9d883fd9c792dd0024a68885",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "291a9d96e2698bf052167730b243c2bc7f846a413dfaf8be271189be9500562d",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "hep-ph",
+        "cs.CV",
+        "hep-ex",
+        "hep-th"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram illustrating a similarity learning framework within a scanning loop, designed to map sampled data points into a structured representation space based on whether they satisfy certain constraints. The global layout is left-to-right, beginning with a 'Sampling Space' on the far left, progressing through a dual-path neural network architecture in the center, and culminating in a 'Representation Space' on the right. The Sampling Space is represented as a rounded rectangle labeled 'Sampling Space (Uniform distribution)', indicating that input points are drawn from a uniform distribution. From this source, two parallel pathways branch out, each consisting of two sequential 'NN Layer' blocks, depicted as light green rounded rectangles. These layers are connected by solid arrows, indicating forward propagation. Between corresponding layers in the upper and lower paths, dashed arrows point bidirectionally, labeled 'Shared weights', signifying that the two paths share the same learned parameters, forming a siamese-like network structure. After the second NN Layer in each path, a vertical blue rectangular label marked 'Normalize' appears, indicating a normalization step applied to the output of each path before mapping to the final space. The outputs from both normalized paths converge into the Representation Space, which is shown as a large black-outlined circle. Inside this circle, two distinct regions are illustrated: an irregular blue region labeled 'Satisfy the constraints' and a separate pinkish-red region labeled 'Do not satisfy the constraints'. This visualizes the network's goal of separating constraint-satisfying and non-satisfying samples in the embedding space. The overall workflow implies that during training, the network learns to project points satisfying constraints into one region and those not satisfying them into another, thereby structuring the representation space. Once trained, this structured space can be used to predict or identify points that lie close to the target (constraint-satisfying) region. The diagram uses consistent visual attributes: rounded rectangles for processing units, solid arrows for data flow, dashed arrows for parameter sharing, and colored regions to denote semantic separation in the embedding space. The caption reinforces that this is a schematic for similarity learning in a scanning loop, where the structured representation enables prediction of near-target points."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

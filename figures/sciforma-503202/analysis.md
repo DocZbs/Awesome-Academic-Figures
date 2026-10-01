@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Decade of Deep Learning: A Survey on The Magnificent Seven — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16188
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a Transformer model, divided into two main components: the Encoder on the left and the Decoder on the right. The global layout is split vertically, with the Encoder enclosed in a gray dashed rectangle and the Decoder in a light beige dashed rectangle. Both components are composed of stacked layers, each containing submodules connected by arrows indicating data flow.
+
+In the Encoder, the process begins at the bottom with 'INPUT EMBEDDING', represented as a dashed rectangular box. This connects upward via a solid arrow to a summation node (denoted by a circle with a plus sign), which combines the embedding with 'Positional Encoding' (indicated by a circle with a minus sign and labeled text). The result feeds into a 'MULTI-HEAD ATTENTION' module, shown as a light blue rounded rectangle. An arrow from this module loops back to an 'ADD & NORM' block (purple rounded rectangle), which also receives the input from the summation node. The output of 'ADD & NORM' proceeds to a 'Feed Forward' layer (light red rounded rectangle), followed by another 'ADD & NORM' block that again receives the original input from the summation node via a skip connection. The final output of the Encoder’s layer stack is passed to the Decoder.
+
+The Decoder mirrors the Encoder's structure but includes additional components. It starts with 'OUTPUT EMBEDDING' (dashed box), which combines with 'Positional Encoding' through a summation node. This feeds into a 'MASKED MULTI-HEAD ATTENTION' module (light blue rounded rectangle), which has a self-looping skip connection to an 'ADD & NORM' block (purple). The output then goes to a second 'ADD & NORM' block, which receives input from the Encoder’s final output via a cross-attention mechanism—this is indicated by multiple arrows pointing into the 'MULTI-HEAD ATTENTION' module from the Encoder’s output path. Following this, the signal passes through a 'Feed Forward' layer (light red) and another 'ADD & NORM' block (purple), again with a skip connection from the previous 'ADD & NORM'.
+
+From the final 'ADD & NORM' in the Decoder, the signal flows to a 'LINEAR' layer (light blue rounded rectangle), then to a 'SOFTMAX' layer (light green rounded rectangle), which outputs 'PROBABILITIES' at the top of the diagram. All connections are solid black arrows, indicating forward propagation. The color coding distinguishes module types: purple for 'ADD & NORM', light blue for attention mechanisms, light red for feed-forward layers, and green for softmax. The figure uses consistent rounded rectangles for all processing blocks, with dashed boxes for embeddings and positional encoding inputs. The overall structure emphasizes residual connections (skip links) and parallel processing within each layer.

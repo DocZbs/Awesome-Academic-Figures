@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505648",
+  "record_sha256": "93b07b8adf4985cd462bb15acdb1d27e29a40c27d11712e469b32743777ebd82",
+  "asset_sha256": "bfbca26db37fcb25908f1240a3750cb7d36633c8f02aec3e7500591dc3b233ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505648",
+    "title": {
+      "zh": "Treatment Effect Estimation for Graph-Structured Targets · 方法图",
+      "en": "Treatment Effect Estimation for Graph-Structured Targets"
+    },
+    "paper": {
+      "id": "arxiv-2412-20436",
+      "title": "Treatment Effect Estimation for Graph-Structured Targets",
+      "authors": [
+        "Shonosuke Harada",
+        "Ryosuke Yoneda",
+        "Hisashi Kashima"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20436",
+      "arxiv_url": "https://arxiv.org/abs/2412.20436",
+      "arxiv_id": "2412.20436",
+      "arxiv_first_submitted_at": "2024-12-29T11:21:17Z",
+      "arxiv_updated_at": "2025-03-09T14:36:33Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20436v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505648/image/image.jpg?Expires=1790855552&Signature=fKp1wM5a-HDIbr3IfpK~I7~mBtLm2iyAv7ZlWF6ewCFTVnuZdmkQyrVCaI-WmESlqxZJT2QIBOsBDzM~5j5SIBDxhQ4adXwb7yC9ri3~E5a36YRjCO3WNeJ1hO7DRYsijGAboIjs6Hv-PxO-U5sa0PLjX1Br-XaYb~chGu0C7FJe~qQCeZIcYdhO3cRkAeHT7EYVKQa6qrol3rdkZg0A7RCqfYztsh04kGCKDmOuA9YrtN~8e~2TXL3A5UzD-YS0Q2xzTE1Rq5iFAz0trJSCplpk9KGAC4~tV1fXVyhTYRrSmMhY5DkKMIoCcq9sJXrBlSLL22xFVp-zvmno0h7p9g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505648,
+      "description_sha256": "91d8974eb177da7657dae5e39ed4efbe719bd39f8f3cce7912b85221bc897808",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "95bbdfcbe8745c8d43ce42e2718dc487e30ac92ce3c8aad8fddb77a27eebed77",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a methodological framework for estimating treatment effects in graph-structured data, such as social networks. The global layout is divided into two main branches stemming from an initial social network graph, representing two possible treatment scenarios: one where a treatment is applied (t=1) and one where it is not (t=0). The initial network consists of a central orange node connected to several gray nodes, symbolizing a user and their social connections. Above this, a label 'Treatment assignment' with the notation 't ~ p(t | 🧍‍♂️)' indicates that treatment is assigned probabilistically based on individual characteristics.\n\nFrom the initial network, two paths diverge. The upper path leads to the treated scenario (t=1), where the central orange node is shown posting a message: 'This product is great!'. This action triggers a cascade effect across the network, resulting in five blue nodes (labeled as 'purchase' in the legend) indicating purchases by five users. This outcome is denoted as Y(1).\n\nThe lower path leads to the untreated scenario (t=0), which is shaded in gray to indicate it is a counterfactual and not observed. In this case, the same network structure is shown, but only one blue node appears, representing a single purchase. This outcome is labeled Y(0) (Not observed).\n\nA vertical double-headed arrow connects Y(1) and Y(0), labeled 'Treatment effect', visually representing the difference between the observed and counterfactual outcomes. The treatment effect in this example is calculated as 5 - 1 = 4, reflecting the additional purchases attributable to the treatment.\n\nVisual modules include human-shaped icons: orange for the treated user, gray for untreated neighbors, and blue for those who make a purchase. The legend clarifies that blue icons represent purchases. All connections are represented by black lines forming a star-like network centered on the orange user. Arrows indicate the flow of the process: from treatment assignment to the two potential outcomes, and then the comparison between them to compute the treatment effect.\n\nThe figure emphasizes the challenge of causal inference in networked settings, where the counterfactual outcome (Y(0)) is unobserved, and the goal is to estimate the impact of an intervention (e.g., a promotional post) on the entire graph structure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

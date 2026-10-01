@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+3D Shape Tokenization via Latent Flow Matching — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15618
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a shape tokenizer used in a generative model, specifically for Objaverse and ShapeNet datasets. The overall structure is a stacked sequence of six identical blocks, each composed of a cross-attention block followed by two self-attention blocks, as indicated by the '×6' multiplier on the right side of the diagram. Each block processes input tokens and position-encoded points to generate updated shape tokens.
+
+At the bottom of the diagram, the inputs to each block are specified: 'learned initial tokens (k, df)' serve as the query input, while 'position-encoded points (n, d')' provide the key and value inputs. These inputs feed into the cross-attention block, which is highlighted with a light green background. Inside this block, the query, key, and value are processed through a series of operations: first, layer normalization is applied separately to the query (layerorm_q) and key-value (layerorm_kv), followed by linear projections (linear_q, linear_k, linear_v). The outputs are then passed to a softmax attention mechanism, which computes attention scores. The result is projected via a linear_o layer. The output of the attention mechanism is added to the original input (residual connection) and then passed through a layer normalization step. Subsequently, an MLP (multi-layer perceptron) is applied, consisting of a linear layer, a GELU activation function, and another linear layer. The output of the MLP is again added to the previous state via a residual connection, completing the cross-attention block.
+
+Following the cross-attention block, there are two self-attention blocks, marked with '×2'. Each self-attention block has a similar internal structure: it takes 'tokens (k, df)' as input, which are the output from the previous block. The tokens are processed through a layer normalization step, then split into query, key, and value via linear_q, linear_k, and linear_v layers. These are fed into a softmax attention module, followed by a linear_o projection. The result is added to the input (residual connection), then normalized with layerorm, and passed through the same MLP (linear -> GELU -> linear) as before. Another residual connection combines the MLP output with the previous state. The final output of the two self-attention blocks is passed through a final linear layer, producing 'shape tokens (k, d)', which are the output of the entire block.
+
+The diagram includes explicit labels for all major components, such as 'softmax attention', 'MLP (linear -> GELU -> linear)', 'layernorm', and specific linear layers like 'linear_q', 'linear_k', 'linear_v', 'linear_o', 'rmsnorm_q', 'rmsnorm_k', 'layerorm_q', and 'layerorm_kv'. The connections between modules are shown as directed arrows, indicating the flow of data. The entire stack of six blocks processes the input tokens iteratively, refining them into final shape tokens. The caption specifies that for Objaverse, n=16,384, k=1024, df=512, d=16, leading to 55.4M parameters, while for ShapeNet, n=2048, k=32, df=512, d=64, yielding 54.9M parameters. All attention mechanisms use 8 heads, and the MLPs expand and contract the feature dimension by 4 times.

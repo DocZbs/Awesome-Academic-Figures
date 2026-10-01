@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-506443",
+  "record_sha256": "5189ec120f47a705ddd2f2bb1d1804df23de4b225edf3181daedd5eb683364f5",
+  "asset_sha256": "96ec555091686b214a93c98744fb8a2db337442ad65dfc0670d041642caf846f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506443",
+    "title": {
+      "zh": "Multi-Modal Video Feature Extraction for Popularity Prediction · 方法图",
+      "en": "Multi-Modal Video Feature Extraction for Popularity Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2501-01422",
+      "title": "Multi-Modal Video Feature Extraction for Popularity Prediction",
+      "authors": [
+        "Haixu Liu",
+        "Wenning Wang",
+        "Haoxiang Zheng",
+        "Penghao Jiang",
+        "Qirui Wang",
+        "Ruiqing Yan",
+        "Qiuzhuang Sun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01422",
+      "arxiv_url": "https://arxiv.org/abs/2501.01422",
+      "arxiv_id": "2501.01422",
+      "arxiv_first_submitted_at": "2025-01-02T18:59:36Z",
+      "arxiv_updated_at": "2025-01-02T18:59:36Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01422v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506443/image/image.jpg?Expires=1790855579&Signature=bh0fyLM-Rn-JlbcjDwwXFhMKmWWZFMqBd4h~5O4odSisqEFZFaAuYL8~MgYgBKh6i9qB889DxV89U2JShML33vw3f98ZEGD~i-TEGUxFA~8O1GQvojsUemq3qKDi4BVO~duf0ya1Ujth-77zFr~XngUJCIxBYF-AnKHeeKyD6nasQM-Trh87CjhhL0FW0eVtFSXPkitn-GP0fwM5dI7rrdy0Fiol1a1mx76fgrSXnVNG1H6hBJmu8KPip~5TjszqFVtQBry~3kOtjb7URZHZACxHBVv9mnMGV8Cg8s3vMgeQ-bR7bTHT5C7INnaTAQ0MLUQq58qGW-hVRYfPcwwiXw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506443,
+      "description_sha256": "3b20ea7239913bce66f40886c379f375b3801ac239a46b0a6228ff6bbd7997d9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d31084dd57206af01cb0c32885e879fcdf50bb9755530a8044794f319a9fb876",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comprehensive multi-modal machine learning pipeline for video analysis, structured into three main stages: input data processing, feature extraction, and training/output generation. The global layout is a top-down flowchart with distinct color-coded modules and directional arrows indicating data flow. The entire process begins with two primary input sources: 'Video Files' and 'Tabular Data', which are processed separately before converging into a unified feature representation for final prediction.\n\nIn the left section, 'Video Files' feed into a set of video feature extraction models, represented by a yellow box labeled 'Video Feature Extraction Model'. This group includes four models: VideoMAE, X-CLIP, TimeSformer, and Vivit, all depicted as white rectangular boxes. Below this, a light blue box labeled 'Text Encoding Model' contains BERT, which processes textual information. Further down, a light purple box labeled 'Video to Text Model' includes LLaVA-NeXT and InternVideo2, which convert visual content into text-based representations. These models receive inputs from both 'Video Files' and a 'Prompt Template' module, which is part of a peach-colored box labeled 'Template Construction'. The 'Prompt Template' also receives input from 'Cleaned Caption', which is derived from 'Tabular Data'.\n\nThe 'Tabular Data' branch, shown on the lower-left, undergoes preprocessing via 'Remove outliers By IQR' before being split into several feature engineering components within a pink box labeled 'Tabular Feature Engineering'. These include 'Stats of Hashtag and Mention', 'Mining for Video Create Date', 'Information extracted from Video Files', and 'Log for Author and Video Popularity data'. All these engineered features are then fed into an XGBoost model.\n\nThe outputs from the video and text models (VideoMAE, X-CLIP, TimeSformer, Vivit, BERT, LLaVA-NeXT, InternVideo2) are combined and passed to a 'Neural Network' block, which produces an 'Avg Output'. Simultaneously, the XGBoost model also generates an output that is combined with the neural network's output to form the final prediction. The 'Avg Output' is then directed to the 'Training and Output' stage, represented by a green box at the top right, indicating the final phase of the pipeline.\n\nConnections between modules are indicated by dashed blue arrows, showing the direction of data flow. A solid blue arrow connects 'Metadata' to 'Feature Extraction', suggesting metadata is used during the feature extraction phase. The legend on the right side of the figure clarifies the color coding: yellow for video feature extraction, light blue for text encoding, light purple for video-to-text models, peach for template construction, and pink for tabular feature engineering. The overall structure emphasizes a hybrid approach combining deep learning models for multimodal data with traditional machine learning (XGBoost) for tabular features, culminating in a joint prediction system."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

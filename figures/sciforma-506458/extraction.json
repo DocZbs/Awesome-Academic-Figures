@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506458",
+  "record_sha256": "1af9c4937a8a7ccaf81c00b8cfaf5fbab2e7b8f7cfc6041fc1bce29666c17ce8",
+  "asset_sha256": "58dd1208026a0cf64b4bebdffb3e4edb3e2e46cf273de10f90f6367c12cfb1be",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506458",
+    "title": {
+      "zh": "Real-Time Computational Visual Aberration Correcting Display Through High-Contrast Inverse Blurring · 方法图",
+      "en": "Real-Time Computational Visual Aberration Correcting Display Through High-Contrast Inverse Blurring"
+    },
+    "paper": {
+      "id": "arxiv-2501-01450",
+      "title": "Real-Time Computational Visual Aberration Correcting Display Through High-Contrast Inverse Blurring",
+      "authors": [
+        "Akhilesh Balaji",
+        "Dhruv Ramu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01450",
+      "arxiv_url": "https://arxiv.org/abs/2501.01450",
+      "arxiv_id": "2501.01450",
+      "arxiv_first_submitted_at": "2024-12-30T11:15:45Z",
+      "arxiv_updated_at": "2024-12-30T11:15:45Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01450v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506458/image/image.jpg?Expires=1790855579&Signature=YoUutK54f~evd7cBM1UtYJ-cnsFVWePpXTqyeeOs6k-AgdKYYIwMcBwJ6zr1j1FXRbtwcXpjQ538L3M8T72ENb0wMDHaqGQrhtNDuoqtL8M-6eQgLb2JsUXPwW93xUjN3Iry9tTNAj5VeVbon~RZK1nu3BWCEq-~bm5oWH5rXgkErUfc1rPqc1Z7Cn-8OrrhPiByxPWsXQ0gYZf4e5ILWC~67fwnq75a4cYUK3z8EU5VyAM1MCUj2dK69MhZJ2rQ6UniBMg7Ulh6sIM-7CkVQLKw0vB-Etd1g~LMyzuwQzTtGXe0waB-y0SVl-H3PaV7h1Cmq3u-0J9dGvNAgsPwaw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506458,
+      "description_sha256": "472e1cc7a01c9364320da3f16fa8be94e2bdc5044fd7c6a6d749cce5aa19d146",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2f64bbdfcda2feb382afd1c045e1717ce2f8a52388176ec56f8c117647667c41",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating a system for deconvolving on-screen images captured by a camera, with the goal of reconstructing or enhancing the original screen content. The global layout is structured as a top-down workflow with three main vertical columns: input sources on the top, processing modules in the middle, and feedback to an update layer on the left. The diagram uses rectangular blocks to represent components and processes, with arrows indicating data flow and control signals.\n\nIn the top row, two input requests—'Camera Image Request' and 'Screen Capture Request'—originate from outside the system and feed into three primary components. The 'Camera' block, colored light orange with a dark orange border, receives the camera image request and outputs an 'Image'. The 'Screen Contents' block, light blue with a blue border, receives the screen capture request and provides 'Screen capture and location of all windows on the screen'. The 'VCD Layer' block, gray with a dark gray border, contains an internal 'Update' sub-block and serves as the final destination for the processed output.\n\nThe central processing path begins with the 'Camera' block feeding its 'Image' to a process box labeled 'Find distance d and angle θ wrt. normal', which computes the geometric parameters of the camera relative to the screen. This output, denoted as '(d, θ)', flows to the next process box: 'Compute point spread function', which generates a model of how the screen's display is blurred due to viewing angle and distance. Simultaneously, the 'Screen Contents' block sends the screen capture data to a large process box at the bottom: 'Deconvolve on-screen image using the point spread function'. This step combines the screen content data with the computed point spread function to produce a 'Deconvolved Image'.\n\nFinally, the 'Deconvolved Image' is fed back to the 'VCD Layer' via an upward arrow, triggering the 'Update' sub-process within it. This creates a closed-loop system where the deconvolved image is used to refresh or correct the VCD Layer’s representation, likely for real-time display or further analysis. All connections are represented by solid black arrows, with labels placed near the arrows to indicate the nature of the data being transferred. The diagram emphasizes a pipeline from raw inputs (camera and screen capture) through geometric and optical modeling to a refined output that feeds back into the system for continuous updating."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

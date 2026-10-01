@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506364",
+  "record_sha256": "3469932eca047bb8ad723cf7a08392eb97cf4eaf5b257726d4a7dc7dd2d452c7",
+  "asset_sha256": "46b1c2e185e5ba0119229e36f5bfb5b71a1bb33c79a7c4d6c2f3131fce0e7328",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506364",
+    "title": {
+      "zh": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks · 方法图",
+      "en": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2501-01158",
+      "title": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks",
+      "authors": [
+        "Farshad Noravesh",
+        "Reza Haffari",
+        "Ong Huey Fang",
+        "Layki Soon",
+        "Sailaja Rajalana",
+        "Arghya Pal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_id": "2501.01158",
+      "arxiv_first_submitted_at": "2025-01-02T09:25:24Z",
+      "arxiv_updated_at": "2025-01-21T09:12:40Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01158v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506364/image/image.jpg?Expires=1790855575&Signature=tP6ukl9cGQh~yTq-R~Qq8Fp4yKvnFtnM9hhYBDIqloGk~m~aE7dbBAPrGz1GKmInpMyXaJ4iOQuShWxuMm7zInJo9PE1E6sQf5IJVi4IGYc35SiS4QneOyRFJ0yOetizxuMxxkslDVvPH7UWYbBsKVC6j3sY3YZZnRsW7N3-N0kApQ4FozAaUfiDMngJhcMNVcDpBh2rNmYKdN7cOBvRW2pDqIiEs4jmNKVBmc0Pw2eSRPZk2EsR3~JDPt5kJlYqXk64DY9PiJEAq38SDql6b3O06b6mQ50Azw-4FG3Ip1Ir5G-cR2ukFqZDM5DqPflz1pxJM4lCXNFVSwFpE32jbA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506364,
+      "description_sha256": "dcc02685a6148525f6242093e769ac408aaa90d583c4cbe14fa5716e1f939be1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "94b313aca804ba6f7a2fc232a43ad1e4ec44bb36b1f32007ba59f4181e278432",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Tree-LSTM RNN model designed for joint entity recognition and relation extraction, as proposed in the referenced work. The global layout is divided into two main components: a sequence-based module on the left for entity recognition and a dependency-based module on the right for relation classification, both sharing some input representations and connected via contextual information flow.\n\nOn the left, the 'Sequence (Entity)' module processes a linear sequence of tokens. It begins with word/POS embeddings at the bottom, feeding into a Bi-LSTM layer composed of pink rectangular LSTM units. These units process the sequence bidirectionally, with hidden states passed through tanh activation functions and then to neural net layers (light blue rounded rectangles) that output softmax probabilities for entity labels such as B-PER and L-PER. Label embeddings are also incorporated as inputs to the top layer, indicated by dashed lines from a gray rounded rectangle labeled 'label embeddings' connecting to the final neural net layers. Dropout is applied, shown by dashed arrows from the Bi-LSTM to the upper layers.\n\nOn the right, the 'Dependency (Relation)' module processes the syntactic structure of the sentence. It takes dependency embeddings (gray rounded rectangle) and constructs a tree structure based on the dependency parse. The example sentence 'In 1909, Sidney Yates was born in Chicago.' is parsed with arcs labeled nsubjpass, prep, and pobj, connecting words like 'Yates' to 'born', and 'in' to 'Chicago'. This tree is processed by a Bi-TreeLSTM, where each node (e.g., 'born', 'Yates', 'in', 'Chicago') is represented by a pink rectangular LSTM unit. The outputs from these nodes are combined through a tree-structured computation, with internal nodes receiving inputs from their children. The final representation is passed through a tanh activation and then a softmax layer to predict the relation label, here 'PHYS'.\n\nConnections between the two modules are shown via dashed lines: the output of the 'Yates' node in the dependency tree connects to the corresponding position in the sequence module, and the 'born' node connects to the 'was born' part of the sequence. Additionally, the dependency embeddings feed into the sequence module's Bi-LSTM, indicating shared representation learning. The legend clarifies visual elements: light blue rounded rectangles represent neural net/softmax layers, dashed arrows indicate dropout, pink rectangles are LSTM units, and gray rounded rectangles denote embedding layers. The entire diagram is structured to show how syntactic dependencies inform both entity labeling and relation prediction in a unified framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

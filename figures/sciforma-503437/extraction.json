@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503437",
+  "record_sha256": "fac3cc1c65c0f1b51226507ed8d2fdffce8ee56310a4cf672ef8a90f7875e6ef",
+  "asset_sha256": "f9095f7e64414a3d473c2d73326d944c7dba46bba517bb19a61e903a271848d8",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503437",
+    "title": {
+      "zh": "V\"Mean\"ba: Visual State Space Models only need 1 hidden dimension · 方法图",
+      "en": "V\"Mean\"ba: Visual State Space Models only need 1 hidden dimension"
+    },
+    "paper": {
+      "id": "arxiv-2412-16602",
+      "title": "V\"Mean\"ba: Visual State Space Models only need 1 hidden dimension",
+      "authors": [
+        "Tien-Yu Chi",
+        "Hung-Yueh Chiang",
+        "Chi-Chih Chang",
+        "Ning-Chi Huang",
+        "Kai-Chiang Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16602",
+      "arxiv_url": "https://arxiv.org/abs/2412.16602",
+      "arxiv_id": "2412.16602",
+      "arxiv_first_submitted_at": "2024-12-21T12:27:07Z",
+      "arxiv_updated_at": "2024-12-21T12:27:07Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16602v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503437/image/image.jpg?Expires=1790855367&Signature=qqbNU78OSpugNvfFBP-qex8xOduJjgPbf~RPT4XN0kiBBA5dD45znrWDG1Sp3-M2mXhM4CETfM-VFo~6Bu9Usol~tkwHLq9nzgwcBxjbkLXfTovJQzlKlegETJlHNMQl7QZxH-QNUrx6Z0mWtavJgQUFH4nFcVl9NJQXhdcpzV3r86l8kFq5f1cAms2n66PpTm4i7LZEsHVDEXQwq4RshiZU6uSmcAQwF4iT0qRbpnT4AiFdPldHsUbfyzwGBvuNNZHqjlS~pkMu0q9ieZOvHMVrxc84u1v7c~N4s0WCM0IUr-0Z6381qp9aSZnQvs4qVtZYXkOCtlWJDCxtJjSq~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503437,
+      "description_sha256": "2a7668eed6bf5117a7996bc2279f206b21d0f179e3744b130033b66e5ced5645",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "33497f5b29aa2a1b50831a20bdf4d5c07b2cf99aab6c01eb13d50b171fae79df",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the VMeanba block, a modified version of the selective scan operation designed to reduce computational complexity by lowering the channel dimension before performing the scan. The global layout is divided into two main sections: on the left, the input and output patch processing via Cross Scan and Cross Merge operations; on the right, the core VMeanba block architecture enclosed in a yellow rectangular container labeled 'VMeanba block'.\n\nOn the left side, the top row shows 'input patches'—a small image of a coiled snake—feeding into a 'Cross Scan' module. This module displays a grid of patches with indices like 00, 01, 02, etc., arranged in a 4x4 pattern, illustrating how patches are scanned in a cross-shaped pattern (indicated by red arrows connecting green circles). The scanned patches are then passed to the VMeanba block. Similarly, the bottom row shows 'output patches', also featuring the snake image, which are generated through a 'Cross Merge' module using the same patch grid and cross-pattern scanning, but in reverse order to reconstruct the output.\n\nThe central VMeanba block contains several functional modules. At the top-left, an 'Embedding' layer (blue rectangle) outputs parameters A and D. Below it, two 'Linear' layers (also blue rectangles) produce parameters Δ and B, C respectively. These parameters feed into a 'Discretization' module (blue rectangle), which processes them further. From this point, the flow splits into two parallel pink rectangular blocks on the right: 'Mean (T)' and 'Copy and Stack (T⁻¹)'. The 'Mean (T)' block reduces the channel dimension from D to a smaller set (labeled L₁, L₂, L₃), visually represented by stacked blue and cyan rectangles, with a red curved bracket indicating the channel reduction. The 'Copy and Stack (T⁻¹)' block performs the inverse operation, expanding the reduced channels back to the original dimension D, again shown with stacked rectangles and a red bracket.\n\nA large green rectangle labeled 'Scan Operation' sits at the center-bottom of the VMeanba block, receiving input u and producing output y. This green block represents the primary optimized component, as noted in the caption. Arrows indicate that the discretized parameters and the transformed channel data from 'Mean (T)' feed into the Scan Operation, while the output y is sent to the 'Copy and Stack (T⁻¹)' block for reconstruction.\n\nConnections between modules are shown with black arrows. The input patches connect to the Cross Scan module, which feeds into the VMeanba block’s embedding and linear layers. The output from the Scan Operation connects to both the Copy and Stack block and the Cross Merge module, which generates the final output patches. The red brackets in the pink blocks highlight the proposed VMeanba components responsible for channel dimensionality reduction and restoration, distinguishing them from the original blue and green components. The entire diagram illustrates a forward pass where input patches are processed through a dimension-reduced scan operation and reconstructed into output patches, emphasizing efficiency gains through the VMeanba transformation T and its inverse T⁻¹."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

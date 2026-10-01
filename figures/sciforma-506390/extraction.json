@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-506390",
+  "record_sha256": "55eea025a7ce7024e59e522f0a62fac960fd79a8ca02ab60331fc6e0bd92f140",
+  "asset_sha256": "4b134918f7966b13880b727f7765f71c80c9772e279771297763c4ea67c84e43",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506390",
+    "title": {
+      "zh": "Bayesian Active Learning By Distribution Disagreement · 方法图",
+      "en": "Bayesian Active Learning By Distribution Disagreement"
+    },
+    "paper": {
+      "id": "arxiv-2501-01248",
+      "title": "Bayesian Active Learning By Distribution Disagreement",
+      "authors": [
+        "Thorben Werner",
+        "Lars Schmidt-Thieme"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01248",
+      "arxiv_url": "https://arxiv.org/abs/2501.01248",
+      "arxiv_id": "2501.01248",
+      "arxiv_first_submitted_at": "2025-01-02T13:21:47Z",
+      "arxiv_updated_at": "2025-01-02T13:21:47Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01248v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506390/image/image.jpg?Expires=1790855575&Signature=Kyi2mpNULFj8y2ZPn2FbT2Dr8DNTL5X3hNJA5PRH1hB40lxwUeNOhBvPxSqij0MFA1HYuJF8fdiCdQduMLf8rQKi1u~6CsTpm05~gPZxr5oz8AQJ46ZZpXPPhOoWes1tZptcIcm9LD0DIvxt5MO95XeZON0eW9D781llePQCNaAYfTXr-X8jBzj7qqXlyipLiPYw2ck7qMHE0H0w3HwahxQl4ztOnb41tVSNhr3MxxpomBSyPbK-CD3je2bqPcTJzNdnEwHhhqB6OtS6g6vOrtBDsmMDfal2w5zKTsyEF9UwUa9S53gmZSvC2rb-JQa47oB-dne55VWZg3zwcx8nNg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506390,
+      "description_sha256": "92daa724800f19bb52c93e20762011c3765eeae1ed59d2054cf93e2d1bfe362b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e6ebaa4cf3f8c80c9bc0d5ede06d39f964eca0608ff3a7800cfa5a13c5cb40ed",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of two regression models sharing a common encoder but differing in their decoder architectures. The global layout is divided into two main vertical sections: the Encoder on the left and the Decoder on the right, separated by a vertical line. The Encoder processes an input x, represented as a light blue rounded rectangle, through a multi-layer perceptron (MLP) structure repeated N times. This MLP Layer consists of three vertically stacked light green rectangular modules labeled 'Linear', 'ReLU', and 'Dropout' from top to bottom. The output of this encoder is a latent variable z, shown as a light yellow rounded rectangle.\n\nOn the right side, the Decoder section is split horizontally into two distinct models. The upper model is labeled 'Normalizing Flow' and uses a 'Spine Transform' module, depicted as a light green rounded rectangle, which is applied M times. This module takes two inputs: the latent variable z (light yellow rounded rectangle) and an additional 'Noise' input (light blue rounded rectangle). The output of the Spine Transform is a predictive distribution denoted as p̂|x, shown as a pinkish-purple rounded rectangle, and is labeled as 'Freeform Predictive Distribution'.\n\nThe lower model is labeled 'Gaussian Neural Network'. It also takes the latent variable z as input and feeds it into two parallel light green rectangular 'Linear' layers. The outputs of these two Linear layers are then processed by a third light green rectangular module labeled 'SoftPlus'. The outputs from the first Linear layer and the SoftPlus module are connected to a pinkish-purple rounded rectangle labeled p̂|x, which represents the 'Gaussian Predictive Distribution'. Two arrows point to this output: one from the first Linear layer labeled μ (mean), and another from the SoftPlus module labeled σ (standard deviation).\n\nAll connections between modules are represented by solid black arrows indicating the direction of data flow. The figure includes textual annotations such as 'N times' above the encoder's MLP block and 'M times' above the Spine Transform in the decoder, indicating repetition. The overall design uses consistent color coding: light blue for inputs, light yellow for the latent variable z, light green for processing modules, and pinkish-purple for the final predictive distributions. The caption states that both models use an MLP encoder to create a latent embedding z of the input, which is then used to parametrize a predictive distribution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

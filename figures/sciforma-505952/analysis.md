@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Machine Learning Optimal Ordering in Global Routing Problems in Semiconductors — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.21035
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a graph compression process from a k-layer environment to a 1-layer environment, specifically demonstrated on a 3-layer grid graph. The global layout is divided into two main parts: on the left, a vertically stacked 3-layer grid structure labeled 'k-layer environment', and on the right, a simplified 2-node structure labeled '1-layer environment'. A large black arrow points from left to right, indicating the transformation or compression operation.
+
+In the k-layer environment, the structure consists of three horizontal layers labeled 'layer 1', 'layer 2', and 'layer 3' from bottom to top. Each layer contains a pair of purple circular nodes connected by a horizontal purple edge. These nodes are labeled as v₁ᵏ, v₂ᵏ in layer 1; v₃ᵏ, v₄ᵏ in layer 2; and v₅ᵏ, v₆ᵏ in layer 3. The horizontal edges connecting these node pairs are labeled e₁₂ᵏ, e₃₄ᵏ, and e₅₆ᵏ respectively. Additionally, each layer is connected vertically to the next via black lines forming a 3D-like grid, with black circular nodes at the intersections between layers, representing structural connections but not labeled as vertices in the compressed mapping.
+
+The visual modules include purple circular nodes for the primary vertices being compressed, black circular nodes for intermediate structural connectors, and black lines for vertical and diagonal connections within the grid. The purple edges represent the intra-layer connections that are preserved in the compression. All labels are in purple text matching the nodes and edges they denote.
+
+The transformation shown maps the entire k-layer structure to a single-layer representation. In the 1-layer environment, only two purple circular nodes remain, labeled v₁¹ and v₂¹, connected by a single horizontal purple edge labeled e₁₂¹. This represents the compressed version where all equivalent vertices across layers (v₁ᵏ, v₃ᵏ, v₅ᵏ → v₁¹; v₂ᵏ, v₄ᵏ, v₆ᵏ → v₂¹) and edges (e₁₂ᵏ, e₃₄ᵏ, e₅₆ᵏ → e₁₂¹) are collapsed into a single layer. The black structural nodes and connections from the original grid are omitted in the compressed graph, emphasizing that only the essential connectivity pattern is retained.
+
+The figure's caption clarifies that this is a 1-layer compression for a 3-layer grid graph, where equivalent vertices and edges in the k-layer graph are mapped to single vertices and edges in the 1-layer compressed graph G¹. The diagram visually conveys the reduction of complexity while preserving the core topological relationships.

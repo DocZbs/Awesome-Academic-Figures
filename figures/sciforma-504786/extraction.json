@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-504786",
+  "record_sha256": "d4b717e28245d3cadf130cb5a70f3a6fcc29c1d1e74b773cc4c8c38c9496a1f7",
+  "asset_sha256": "c366133e88255913ceca58d3cb8b0a6e960bd11e9e66eec2013a39e98e959925",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504786",
+    "title": {
+      "zh": "AdaEAGLE: Optimizing Speculative Decoding via Explicit Modeling of Adaptive Draft Structures · 方法图",
+      "en": "AdaEAGLE: Optimizing Speculative Decoding via Explicit Modeling of Adaptive Draft Structures"
+    },
+    "paper": {
+      "id": "arxiv-2412-18910",
+      "title": "AdaEAGLE: Optimizing Speculative Decoding via Explicit Modeling of Adaptive Draft Structures",
+      "authors": [
+        "Situo Zhang",
+        "Hankun Wang",
+        "Da Ma",
+        "Zichen Zhu",
+        "Lu Chen",
+        "Kunyao Lan",
+        "Kai Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18910",
+      "arxiv_url": "https://arxiv.org/abs/2412.18910",
+      "arxiv_id": "2412.18910",
+      "arxiv_first_submitted_at": "2024-12-25T13:57:33Z",
+      "arxiv_updated_at": "2024-12-25T13:57:33Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18910v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504786/image/image.jpg?Expires=1790855436&Signature=GTLOthHLkz1OYfjModbIX6OLh8gNqKQJDtdZI7WG9-~jc-n-PVSV3GY29FTSvHqEDivf8QPGSKn~t9Mr6yTJhfc3DmlRs5qO-dIz6JpGsyDbPDocj3~4nZ54fUBQNeiDbVgcvY-moVRO7a8~XC7GtDvEXrIjvrXnh8uq4zveH5bfQd8FdOWmgOMFuuwku1zUOxJV7KQ7z0Ypa1Lpe5inLDb3Mfd5cOZSpqMbCO97wHxEvEjFMK7Bl7rH5gjtBy9mqCD15DiiV1nyC9cO6~TYDAvJPFYY57M5ovTetrhMpVT4zRjTZN0moL5DLoVM5LQT9bab7emMjpumS7UM~f~nEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504786,
+      "description_sha256": "f859838c4ae0f2911861e386f2bde1634247ac5a1a9897861bd52de95fe720c8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "d8f9d15b7cc21356b7eaf0525fd3f9b6d216858039708e37ff2075677f3240fa",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "777ef10cb96b5a4755cbaeb9268f02aac6aa0332e75e3f9d25399664053e42cf",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the AdaEAGLE framework, divided into three main panels: (a) AdaEAGLE Architecture, (b) LDLP Architecture, and (c) LDLP Training Data Collection.\n\nIn panel (a), the global layout shows a two-stage generation process. At the bottom, a 'Draft' module (light blue rectangle with a pencil icon) generates tokens x1 to x6 based on input tokens x1 to x4. Above it, a 'Target' module (gray rectangle with a checklist icon) generates tokens x1 to x7. The Draft outputs are compared with Target outputs via a feedback loop labeled with step ①, where tokens x1 to x4 from Draft are aligned with x1 to x4 from Target, marked with green checkmarks or red crosses indicating correctness. Step ② shows the Target module evaluating the next token x4, with three green checks and one red cross, suggesting a confidence or accuracy metric. This evaluation feeds into an LDLP (Lightweight Draft Length Predictor) module (blue circle with a person icon), which predicts how many more tokens the Draft should generate—labeled as 'Draft 3 more tokens' in step ③. The LDLP then sends this prediction back to the Draft module to guide further generation.\n\nPanel (b) provides a detailed view of the LDLP architecture. It is structured as a neural network with three main layers: Embedding (green rectangle), Transformer layers (gray rectangle), and Final norm (yellow rectangle). Input tokens x̂1 to x̂4 are embedded into vectors e1 to e4. These embeddings pass through Transformer layers, producing feature representations f1 to f4. The final layer computes a scalar output via 'Final norm', which is passed to an MLP (Multilayer Perceptron, blue oval) that outputs a real number (e.g., 2.8 ≈ 3), representing the predicted number of additional tokens to generate. A magnifying glass icon indicates inspection or analysis of the internal features, particularly e3 and f3, which are highlighted in yellow and green respectively, suggesting they are key features used for prediction.\n\nPanel (c) details the LDLP training data collection process. It is split into three steps. Step ①: The Target model generates tokens x1 to x7 from initial input x1 to x3. Step ②: The Draft model generates tokens x5 to x̂8 from input x1 to x4. Step ③: Paired data is collected by comparing Draft and Target outputs. For instance, x5 and x6 from Draft match Target’s x5 and x6 (green checks), while x̂7 and x̂8 do not match (red cross). From this comparison, a pair (e4, f4) is extracted along with a label '2', indicating the number of correct tokens generated by the Draft before divergence. This labeled pair serves as training data for the LDLP module.\n\nOverall, the figure presents a self-correcting, adaptive drafting system where a lightweight predictor guides the draft model’s generation length based on alignment with a target model, using paired data derived from comparison to train the predictor."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

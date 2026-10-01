@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505709",
+  "record_sha256": "57e973c49f610bcd79a523f50a89e0c5191a33aa59dafdb4fe78be72cf0bbb69",
+  "asset_sha256": "8be8ba5a03fd2decb2dfa214d172db3d5c4e6cfbf0069b606e557ec291515787",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505709",
+    "title": {
+      "zh": "Counterfactual Samples Constructing and Training for Commonsense Statements Estimation · 方法图",
+      "en": "Counterfactual Samples Constructing and Training for Commonsense Statements Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20563",
+      "title": "Counterfactual Samples Constructing and Training for Commonsense Statements Estimation",
+      "authors": [
+        "Chong Liu",
+        "Zaiwen Feng",
+        "Lin Liu",
+        "Zhenyun Deng",
+        "Jiuyong Li",
+        "Ruifang Zhai",
+        "Debo Cheng",
+        "Li Qin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20563",
+      "arxiv_url": "https://arxiv.org/abs/2412.20563",
+      "arxiv_id": "2412.20563",
+      "arxiv_first_submitted_at": "2024-12-29T20:18:52Z",
+      "arxiv_updated_at": "2024-12-29T20:18:52Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20563v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505709/image/image.jpg?Expires=1790855558&Signature=vmO6hzqh4d6L~DYFgdZCCOscBV-Z7shXFLlBCCnbIPQUH2uY6C5wneW3N0JLqidTR9oq2RoRct0odki4RSeFPMgy5BZFqBDu9LcA0Boqj9iJAHSfCVuTiIgDBmS-VYeHCjR1fB-o4A4PZaT1D4-gOgA6yZr13~WjP4Xpep-0seULr17ELUasigcNPOxVwibOMcv9AGgMceEkBLiwjlWuJLTFfoRfqcRlKIBRTFRVfcQgAgfUVOH0oQ6rplAHxX9TD0vMEwRy6r9bHeduRvmv8NusjDeTFWVhPWn13A2M3vjIywl0XIRt6JzoGcaSkEYzemVKSCx-hzW1ykIpc2UmHw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505709,
+      "description_sha256": "556944c4748a3297b31b64326bf563dce2b8db348550fc3cad62a9da15ff2f95",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6844d11d13f1594e2dd35272a1fa66287d268993192516eebf8783298acd471f",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main sections, labeled (a) Language-Explainable Ability and (b) Commonsense-Sensitive Ability, each illustrating a distinct capability required of an ideal Plausibility Evaluation (PE) model. Both sections follow a consistent horizontal workflow layout: Statement → Models → Output (Contribution & Answers or Answers), enclosed within dashed rectangular boundaries.\n\nIn section (a), the Statement is a sentence: 'Mr. July ordered wires for dinner at a Chinese restaurant.' This is processed by two models: a standard Language Model (LM) represented as a light orange rounded rectangle, and an enhanced LM+CCSG model (also light orange, with '+CCSG' appended). The outputs are shown as two components: a bar chart indicating token-level contribution (gray bars, with one darkened in the LM case) and a textual answer ('It is wrong'). For the LM, the token contribution highlights an incorrect region (indicated by a red 'X'), while the answer is marked correct with a green checkmark. In contrast, the LM+CCSG model correctly identifies the relevant tokens (all gray bars, no darkened one) and provides the same correct answer, marked with a green checkmark. This demonstrates that the enhanced model not only gives the right answer but also explains it through appropriate linguistic focus.\n\nSection (b) illustrates Commonsense-Sensitive Ability. The Statement contains two similar sentences: 'A cheetah can swim faster than a fish.' and 'A cheetah can run faster than a fish.', with the verbs 'swim' and 'run' highlighted in blue. These are fed into a robot-shaped model icon (gray body, red accents, blue eyes) representing the PE model. The model outputs two answers: 'It is true' for both statements, but the first is marked with a red 'X' (incorrect), while the second is marked with a green checkmark (correct). A thinking emoji with a speech bubble ('Cheetah can't swim as fast as the fish!') appears next to the incorrect output, emphasizing the model's failure to recognize the commonsense implausibility of the first statement. This highlights the need for the model to detect subtle semantic shifts that affect real-world plausibility.\n\nThe figure uses color coding consistently: red 'X' for incorrect predictions or contributions, green checkmarks for correct ones, and blue for emphasized words. All text is in black unless otherwise specified. The overall structure emphasizes that an ideal PE model must be both linguistically explainable and sensitive to commonsense reasoning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

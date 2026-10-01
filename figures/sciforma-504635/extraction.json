@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504635",
+  "record_sha256": "e75acb1a554bb14f7263c3b6bf30332864005b1a850a94252374bf79fe59f869",
+  "asset_sha256": "70f27a1835a5f21c0e0176bf7a27e72a39237ad38882c9f324f4ac8d5f631fe5",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504635",
+    "title": {
+      "zh": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation · 方法图",
+      "en": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18688",
+      "title": "Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation",
+      "authors": [
+        "Faraz Waseem",
+        "Muhammad Shahzad"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_url": "https://arxiv.org/abs/2412.18688",
+      "arxiv_id": "2412.18688",
+      "arxiv_first_submitted_at": "2024-12-24T21:24:41Z",
+      "arxiv_updated_at": "2025-08-05T01:03:48Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18688v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504635/image/image.jpg?Expires=1790855433&Signature=cuMUHrLzcCC5pgBbpy2ysYs40QY~EchLBl4q8UQZXnvOPEuSiNbSlnCLnyHmPDbCdAutlVGKumvYFtDeerhrJU1gjXTUM~Bsqb08CZN16aNNJs6csy1N8BMdrzTyyw1t3oHJT82suQy~6p94OPzmy6CdXi2JryM79HxGWRghzGdb4fOypfFC7YN3vHashW1G8smhcyDs1f9ZhfEbAGqo7xZK6S4w5erGE6ty57l87DyWQGp4upRYl8gjyTUMsB2uBvraE1rJEKyFpLnXbMSb~nRPO-PcC6TdgdkJsq6LETBKzrweS~idR2t8QIsprN2K2N5X~caUgrd6YzzrRU~hTQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504635,
+      "description_sha256": "15ceaade0e1359ca79c812492a918c9f6d8320d5adc9982f679904139ba1976f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "471ffe7501026ce3512be4cefa3f8ccdb59fb3a471e5f985dd55963417c0b6b1",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a latent diffusion model architecture designed for generative tasks, where data is synthesized through a reverse diffusion process applied to latent representations, guided by external conditioning inputs such as text or images. The global layout is divided into three main regions: Pixel Space on the left, Latent Space in the center, and Conditioning on the right. These regions are connected via a forward and reverse diffusion pipeline, with the core generative process occurring within the Latent Space.\n\nIn the Pixel Space (enclosed in a pink box), an encoder ε maps an input image x into a latent representation z. This latent vector is then subjected to a forward diffusion process, which gradually adds noise over T steps, resulting in a fully noisy latent z_T. The decoder D reconstructs the original image from the final denoised latent z, producing an output x̃. The encoder and decoder are represented as light blue parallelograms, with the input/output images shown as purple rounded rectangles.\n\nThe central Latent Space (light green background) contains the core generative mechanism. It begins with the Diffusion Process, which transforms the initial latent z into z_T. The reverse process, or denoising, is performed by a Denoising U-Net ε_θ, depicted as a U-shaped network with multiple blocks. Each block contains two parallel components, each with Q, K, V modules (orange rounded rectangles) representing query, key, and value matrices for cross-attention mechanisms. These blocks are connected by skip connections (dashed gray arrows) that carry information from earlier layers to later ones, preserving spatial details. The U-Net receives the current noisy latent z_{T-1} and the full noisy latent z_T as inputs, and outputs a denoised version of z_{T-1}, which is then used in the next step. The denoising step is symbolized by a green icon with two overlapping diamonds, labeled 'denoising step' in the legend.\n\nConditioning inputs (text, semantic map, image representations) are processed by a module τ_θ (light blue parallelogram) on the right side, which generates contextual embeddings. These embeddings are concatenated (indicated by a black circle labeled 'concat') with the latent features at various points in the U-Net, particularly feeding into the cross-attention blocks. The cross-attention mechanism allows the model to condition the denoising process on the external information, enabling guided generation. The legend also includes icons for 'crossattention' (Q/KV), 'switch' (a camera-like icon), 'skip connection' (dashed arrow), and 'concat' (black circle), clarifying the visual symbols used in the diagram.\n\nThe entire process is iterative: starting from z_T, the model performs T denoising steps, each time refining the latent representation using the U-Net conditioned on the external inputs, until it reaches a clean latent z, which is then decoded back into pixel space. The figure effectively captures the end-to-end flow of a latent diffusion model, emphasizing the role of conditioning and the structure of the U-Net in achieving high-quality, guided image synthesis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

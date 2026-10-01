@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+MMVA: Multimodal Matching Based on Valence and Arousal across Images, Music, and Musical Captions — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01094
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates an end-to-end framework for image-to-music generation, structured as a pipeline that begins with a target image and ends with generated music. The global layout is left-to-right, with three main stages: image analysis, prompt template search, and music generation. On the far left, a 'Target Image' (depicted as a family walking in a park) is processed by an 'Image VA Predictor', which outputs two scalar values: Valence (0.75) and Arousal (0.41), displayed in a red-bordered box. These values form a valence-arousal (VA) vector representing the emotional content of the image.
+
+This VA vector is then used in a 'Prompt Template Search' stage on the right side of the diagram. Four candidate text prompts are shown, each in a black-bordered box labeled 'Candidate 1' through 'Candidate 4'. Each candidate has a placeholder genre (e.g., {hip hop}, {pop funk}, {country}, {classic}) within a text template: 'This is a {genre} music piece.' Each candidate is processed by a 'Text VA Predictor' (indicated by a black arrow pointing from the text box to a yellow box), which computes its own VA scores. For example, Candidate 1 yields Valence 0.53 and Arousal 0.68; Candidate 2 yields 0.68 and 0.67; Candidate 3 yields 0.66 and 0.45; Candidate 4 yields 0.51 and 0.74.
+
+The VA scores from the image and each candidate are compared to compute a 'Distance Vector'—a vertical stack of four gray boxes showing the Euclidean or similar distance between the image’s VA and each candidate’s VA. The distances are 0.35, 0.27, 0.10, and 0.41, respectively. The smallest distance (0.10) corresponds to Candidate 3, indicating it is the best match in emotional space.
+
+An orange arrow labeled 'Retrieval' points from the Distance Vector to the 'Retrieved Prompt' box, which displays the text of Candidate 3: 'This is a {country} music piece.' This retrieved prompt is then fed into a 'Text-to-Music Generative Model', represented by a wide orange arrow pointing leftward to the final output: 'Generated Music', shown as a waveform.
+
+All visual modules are clearly labeled with text, and arrows indicate data flow. The color coding is consistent: red for the image’s VA output, yellow for candidate VA predictions, gray for distance values, and orange for the retrieval and generation steps. The diagram uses rectangular boxes for inputs, models, and outputs, with clear directional arrows to denote processing flow. The overall structure emphasizes a retrieval-based approach where the most emotionally aligned text prompt is selected before music generation.

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505479",
+  "record_sha256": "e1bc89fbef4d9397204fdbed8b56293d372d3772c15d16f27fd36ef2a0b05dd1",
+  "asset_sha256": "c019dc8ae9a81575553d50ff6f40d8d34192894956538c74547f7a5a902a77e4",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505479",
+    "title": {
+      "zh": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification · 方法图",
+      "en": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-20110",
+      "title": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification",
+      "authors": [
+        "Xi Yang",
+        "Pai Peng",
+        "Wulin Xie",
+        "Xiaohuan Lu",
+        "Jie Wen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20110",
+      "arxiv_url": "https://arxiv.org/abs/2412.20110",
+      "arxiv_id": "2412.20110",
+      "arxiv_first_submitted_at": "2024-12-28T10:40:21Z",
+      "arxiv_updated_at": "2026-02-15T14:03:30Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20110v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505479/image/image.jpg?Expires=1790855552&Signature=mupX5nVVll2NFLTSB77qBpN0bfuD1uBOefdMECt6pdwogcoqlor9qegAYYI~dcwSOP0LIZNtcD9I5A6j4LExOYbsT3htY~685KoGK6DaAyrbINQLEI6Tlly~aNBBSXZunhSuVAcH8NQvuy3FY7oowGZUcvf-QLWQweOmWBkNUlVbcYpVLIFOh2~erifKcT4kpjXj2qtbGrB2Dtp4yDMZALxY2qgN8GccFI7Qr5J1Od9TJIsjVyNtkspxG65EotvPpyI0WM2kZ6uB~nlqId33OPX4-7~WYWUSfCFHifwKzUhc3G799ZGBSC5mSohVESpf6qbCb9ond12GbTTXFvOjtw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505479,
+      "description_sha256": "ba886a0f7df6bbe9391de7e18f02baaaaef4a74217895ea302ac236e4665471c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3c310a7f565aaf656197717a73749850381a04e0f9121d08598818d1731b98aa",
+      "row_response_sha256": "a02aa24da361d3d550a34070afa09ff1d74c2d4923bb3e3aac0eee0380102e23"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the concept of triplet loss, a common technique in metric learning used to learn embeddings where similar items are close in space and dissimilar items are far apart. The diagram is divided into two main parts, connected by a dashed arrow indicating a transformation or optimization process.\n\nIn the left part, there are three circular nodes representing features: an 'Anchor' node (dark gray), a 'Positive' node (light green), and a 'Negative' node (light pink). Each node is a ring-shaped circle with a white center, and they are connected by solid black lines to the Anchor, forming a simple triangular structure. The Anchor represents an image feature, the Positive represents the corresponding correct textual feature, and the Negative represents the closest incorrect textual feature, as described in the caption.\n\nThe right part shows the same three nodes after applying the triplet loss optimization. The positions of the Positive and Negative nodes have shifted relative to the Anchor. A dashed vertical line is drawn near the Negative node, and another dashed vertical line is drawn near the Positive node, indicating a boundary or margin. Between these two dashed lines, a bidirectional dashed arrow labeled 'Margin' points from the Positive to the Negative, illustrating the desired separation between the positive and negative samples. This margin enforces that the distance from the Anchor to the Positive should be smaller than the distance from the Anchor to the Negative by at least this margin value.\n\nThe overall layout is horizontal, with the initial state on the left and the optimized state on the right, connected by a dashed rightward arrow. The visual modules are consistent in shape (ring-shaped circles) but differ in color to distinguish roles: dark gray for Anchor, light green for Positive, and light pink for Negative. All labels are placed directly below or beside their respective nodes in black text. The connections are solid black lines in the left diagram and remain solid in the right, while the margin and boundary lines are dashed gray, emphasizing their conceptual nature rather than direct feature connections. The figure effectively conveys the goal of triplet loss: to pull the positive sample closer to the anchor and push the negative sample farther away, ensuring a minimum margin between them."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

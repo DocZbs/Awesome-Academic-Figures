@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504879",
+  "record_sha256": "131b61a2bd6bbe424c5de23e075efca07531ccdc7405cd3f2f1745f093108ee5",
+  "asset_sha256": "082a178739fa8f8cf734fcc8126c3830f338558a651e29668655b59201acc199",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504879",
+    "title": {
+      "zh": "Repository Structure-Aware Training Makes SLMs Better Issue Resolver · 方法图",
+      "en": "Repository Structure-Aware Training Makes SLMs Better Issue Resolver"
+    },
+    "paper": {
+      "id": "arxiv-2412-19031",
+      "title": "Repository Structure-Aware Training Makes SLMs Better Issue Resolver",
+      "authors": [
+        "Zexiong Ma",
+        "Shengnan An",
+        "Zeqi Lin",
+        "Yanzhen Zou",
+        "Bing Xie"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19031",
+      "arxiv_url": "https://arxiv.org/abs/2412.19031",
+      "arxiv_id": "2412.19031",
+      "arxiv_first_submitted_at": "2024-12-26T03:01:32Z",
+      "arxiv_updated_at": "2024-12-26T03:01:32Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19031v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504879/image/image.jpg?Expires=1790855446&Signature=Xj3VIMUMMfiSS~WSWRhs5BKFLSbGxjVesYJpn~zusx73lwtiakQz7Unyqp571~Kb9T5MB1Gb8Ea682JZEOQmFW4ocuTD9EMebSO-gbloPiJatMViXGtwiDL-mVsJrigOj81FxNlio5ILm9kGCW4-986MJ2SiICUyGDBDQWKOU8JepmvR9nnWMB2~WySxbacs64MyUsAruGcMLbcZLv4QYqVEGJUggpxjiU3cnW63Jg1gTIJJX7yXlO2yQqshpJt2oz5zTzCWDcLx8IedWwRPDf2QtgT8wSekv7zqAhtGx35OspPUgMgwKNln-nXhjIKHfMSvOfMmK7zSU-YpNr4gDg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504879,
+      "description_sha256": "d513fcc66bfee9911b2b426e3a62d8b33a523dfd3148edc0c6a8503e3bcb0886",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "00cc313584660259ba7d250379f36de002a1b64dc2ae4bb42510e3bbb99bb73f",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two typical issue-resolving frameworks, labeled (a) and (b), each illustrating a distinct approach to localizing and editing code snippets to resolve software issues. Both frameworks share a common overall structure: they begin with an input consisting of an 'Issue' and a 'Repository', and proceed through a localization phase followed by 'Code Edit Generation'. The 'Issue' is represented as a rectangular box with a circular icon and text stating 'Please support header rows in RestructuredText output...', while the 'Repository' is shown as another rectangular box containing a GitHub logo and the path 'astropy / astropy'. These inputs feed into either an LLM-based or Retriever-based Localization module.\n\nIn framework (a), the localization process is LLM-based and enclosed within a dashed blue rectangle labeled 'LLM-based Localization'. This module consists of three sequential steps: 'File Localization', 'Function Localization', and 'Lines Localization', each depicted as a light blue rounded rectangle connected by solid blue arrows indicating progression. After line-level localization, the flow proceeds to 'Code Edit Generation', also a light blue rounded rectangle, which represents the final step of generating code edits to resolve the issue.\n\nFramework (b) illustrates a Retriever-based Localization approach, similarly enclosed in a dashed blue rectangle. Inside this module, two inputs — 'Issue' (with a circular icon) and 'Files' (with a document stack icon) — are directed toward a central magnifying glass icon labeled 'Retriever'. The retriever processes these inputs and outputs a 'File' (represented by a single document icon), which then flows to 'Code Edit Generation'.\n\nBoth frameworks are visually identical in layout and component placement, differing only in the type of localization mechanism used. The figure includes a caption at the bottom stating: 'Typical issue-resolving frameworks. Both of them first localize the code snippets related to the issue, then edit the snippets to resolve the issue.' Additionally, a note below the diagrams specifies: 'Agentless first performs LLM-based step-by-step progressive localization, then edits the localized code snippets,' suggesting that the LLM-based approach is associated with a specific agent called Agentless. All visual elements use consistent colors — primarily light blue for modules and dark blue for borders and arrows — and clear, readable fonts. The diagram uses solid arrows to denote data flow and dashed rectangles to group related components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

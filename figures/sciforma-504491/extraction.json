@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504491",
+  "record_sha256": "0156b8eb4e4dc2a91dfcd5a631896a503009ceed24dd7a032486904643fc7d5e",
+  "asset_sha256": "bb245ea42d033dfb855f4ba8c6cd4b7900cf09a6735e5110e207f2cdfdfd33f3",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504491",
+    "title": {
+      "zh": "Scaling Capability in Token Space: An Analysis of Large Vision Language Model · 方法图",
+      "en": "Scaling Capability in Token Space: An Analysis of Large Vision Language Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-18387",
+      "title": "Scaling Capability in Token Space: An Analysis of Large Vision Language Model",
+      "authors": [
+        "Tenghui Li",
+        "Guoxu Zhou",
+        "Xuyang Zhao",
+        "Qibin Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18387",
+      "arxiv_url": "https://arxiv.org/abs/2412.18387",
+      "arxiv_id": "2412.18387",
+      "arxiv_first_submitted_at": "2024-12-24T12:20:24Z",
+      "arxiv_updated_at": "2025-11-23T11:07:55Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "journal_reference": "Journal of Machine Learning Research, volume 26, number 253, page 1--61, 2025",
+      "arxiv_current_version_observed": "2412.18387v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504491/image/image.jpg?Expires=1790855427&Signature=we1rOxZ5DBBsdrSy5IJMnphp9~6RzJ53VBFSqlBSYg1viW8F6LfVMvBz7SV3PMxnag082lgeySZ5z53R~viSqO50llOn4EollyPE9~scNumb4guQhjtOO6VIXsnX2UAlJqPD~rcK7luLwcOiy6sP-LOXwOXdqtMm--bdH6iTVJ~urnh15dFJJn8mT0NT-hNszm0ddffXBahP2lza0o4hG1Tc5t~Mn5dT3Y6gX-VcJC~fiiMkUT1uhD~d0kwPgHPJmUP2WGN7fiqR9neoVtbAiwBZkmp3STROpzIroF4KzyNkWXjeFWxcJirMXXyxcRR7UpVL2RLa~hyit3mk~9zq-A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504491,
+      "description_sha256": "9826229e10f7c32210fa8fb81766748d38a7aedb6c865092904826c6a4a6b745",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "16dd2cb95b892d4fdc73ee97d0de5d1c1fa0e65e27c6496dbef783ba7abbd974",
+      "row_response_sha256": "de92f686a38fd8c61047a885d32c6fdd48928f0a859514f8069f80a1592172af"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-stage architectural pipeline for a vision-language model, designed for tasks such as visual question answering. The global layout is horizontally divided into two main processing blocks: the left side handles vision and question fusion, while the right side processes the fused representation through a large language model to generate answers. The entire flow proceeds from bottom to top, then left to right, indicating a sequential data processing pipeline.\n\nOn the left, the process begins with 'Global-Local image views', represented as a row of five light yellow rounded rectangles, which feed into a yellow rectangular module labeled 'Vision Encoder'. This module has a small fire emoji in its bottom-right corner, indicating it is updated during fine-tuning. The output of the Vision Encoder is a sequence of light yellow tokens, which are then passed to a smaller yellow box labeled 'local merge', also marked with a fire emoji, suggesting this component is trainable. The local merge module combines these visual tokens with 'question text' (represented as a sequence of light blue tokens) and 'learnable queries' (represented as a sequence of light green tokens). These three components are concatenated into a single token sequence, shown as alternating light yellow, light blue, and light green tokens, followed by an ellipsis to indicate continuation.\n\nThis combined sequence is fed into a large light blue rectangular block labeled 'Vision-Question Fusion', which also bears a fire emoji, signifying it is fine-tuned. The output of this fusion module is a set of four light green rounded rectangles labeled 'fused vision tokens', positioned above the block.\n\nOn the right side, the fused vision tokens are passed to a dark blue rectangular block labeled 'Large Language Model', which contains a snowflake emoji in its bottom-right corner, indicating it remains frozen during training. Below this block, the input to the LLM is shown as a sequence of tokens: light blue tokens (representing the question text), followed by light green tokens (the fused vision tokens), and then more light blue tokens, again with an ellipsis. A small black rectangular module labeled 'MLP' with a fire emoji is placed below the LLM's input, connected to the light green fused vision tokens, suggesting a projection or transformation step applied to these tokens before they enter the LLM. The final output of the LLM is a sequence of dark blue rounded rectangles labeled 'answers', with an ellipsis indicating further tokens may follow.\n\nThe figure uses color-coding to distinguish different types of inputs and representations: light yellow for visual features, light blue for question text, light green for learnable queries and fused vision tokens, and dark blue for the LLM’s output. The fire and snowflake emojis serve as visual indicators of whether a module is trainable (fire) or frozen (snowflake) during fine-tuning. The overall structure emphasizes a modular design where visual and textual information are first fused in a trainable component, then processed by a frozen large language model to generate answers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Hybrid Technique for Plant Disease Identification and Localisation in Real-time — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19682
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the process of Depth-Wise Separable Convolutions (DWSC), a two-stage convolutional operation commonly used in efficient neural network architectures. The global layout is horizontal, progressing from left to right, divided into two main phases: Depthwise Convolution and Pointwise Convolution, each labeled in blue text beneath the corresponding section.
+
+In the first phase, labeled 'Depthwise Convolution', the input is represented as a 3D block composed of three stacked colored cubes (red, green, blue) indicating the three channels, with spatial dimensions labeled as 14×14. The input block has a label 'INPUT' below it. A thick black arrow points to the next stage, which shows the kernel used in the depthwise step. This kernel is depicted as three separate 3D blocks (light orange, light blue, yellow), each with dimensions 3×3×1, arranged side-by-side to represent three distinct filters, one per input channel. Each kernel block is labeled with '1' on its top and side faces, and the entire kernel group is labeled 'KERNEL' below. Another thick black arrow leads to the output of this stage, shown as a 3D block with three stacked layers (same colors as input) but now with spatial dimensions 12×12, indicating a reduction due to convolution with a 3×3 kernel (assuming no padding). The number '3' is labeled on the top face, representing the number of output channels (one per input channel), and '12' is labeled on the front face for spatial dimension. This block is labeled 'OUTPUT'.
+
+A large black arrow transitions to the second phase, labeled 'Pointwise Convolution'. Here, the input to this stage is a single 3D block (light orange) with dimensions 1×1×3, representing the 12×12 feature maps from the previous stage being flattened or processed as a single spatial unit across all channels. This block is labeled 'KERNEL' below. A thick black arrow points to the final output block, which is a solid gold-colored 3D cube with dimensions 1×1×12, indicating 12 output channels. The number '12' is labeled on the front face, and '1' on the top and side faces. This block is labeled 'OUTPUT'.
+
+The figure includes a caption at the bottom explaining that the example uses a 14×14×3 input image, applies three 3×3×1 kernels for depthwise convolution, and then one 1×1×3 kernel for pointwise convolution. The visual elements use distinct colors to differentiate input channels and kernel components, and numerical labels are placed on the faces of the 3D blocks to indicate spatial and channel dimensions. All connections between stages are indicated by bold black arrows, showing the flow of data through the two sequential convolution operations.

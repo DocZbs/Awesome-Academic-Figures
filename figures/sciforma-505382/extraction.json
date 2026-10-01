@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505382",
+  "record_sha256": "239910e781a19d5617e51e23b3f953a844b474d5d9ff9b736f68ddc49134bf3b",
+  "asset_sha256": "e51835fd2905df47b9890b6f5b4c955d90f5b18668fe52867c2259fb6d4c3244",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505382",
+    "title": {
+      "zh": "Modeling Continuous Spatial-temporal Dynamics of Turbulent Flow with Test-time Refinement · 方法图",
+      "en": "Modeling Continuous Spatial-temporal Dynamics of Turbulent Flow with Test-time Refinement"
+    },
+    "paper": {
+      "id": "arxiv-2412-19927",
+      "title": "Modeling Continuous Spatial-temporal Dynamics of Turbulent Flow with Test-time Refinement",
+      "authors": [
+        "Shengyu Chen",
+        "Peyman Givi",
+        "Can Zheng",
+        "Xiaowei Jia"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19927",
+      "arxiv_url": "https://arxiv.org/abs/2412.19927",
+      "arxiv_id": "2412.19927",
+      "arxiv_first_submitted_at": "2024-12-27T21:22:18Z",
+      "arxiv_updated_at": "2024-12-27T21:22:18Z",
+      "arxiv_subjects": [
+        "physics.flu-dyn",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19927v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505382/image/image.jpg?Expires=1790855459&Signature=UJC1MpLhtycLB3hG2p8xHDWX1USl9qa5-rKHByx-nhmYAu7EHPU4Ko9Wxv-WTwwH2IoR5rkCQU2l8b3eyht0FQMU7HpJGNVIhYvd2k7CuoDT4UlETxkeVg~NG0WEJmFxkwxrY7m0FFwJK0Q2bRSFbp0mvSp91oJNPvzj5pGSHSHeGKQ8yBhdQsmYJknO6C0vAnPMaCvT7WmlmG8jCn82Db5UhJz0kFlS4BLVQ02FvG-ERTrt8AIrxKP0mFVODBLUoQ-ywhlQQpua1Z92RZw2YxJD2tiXuM7CaZkDYBVCUDFvDP4PEcUU3DYZ8XJKQsBMIJlwZWaA3APKKD5-Qnpneg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505382,
+      "description_sha256": "44221edc858d0ac96cae1a311dca72de6c3332ec8e24694923cf47ce024191ab",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1e051e66a5c7d23e7596e9e263cb2b429a7bb8fbd545996b83eaa12cb63c2c3d",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "physics.flu-dyn",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a computational framework for predicting turbulent flow states using a Physics-Residual Update (PRU) model, which integrates physical laws (Navier-Stokes equations) with machine learning components. The global layout is a horizontal workflow from left to right, starting with direct numerical simulation (DNS) data and progressing through multiple intermediate virtual states to produce a predicted future state. At the bottom left, a solid rectangular box labeled 'DNS Q^d(t)' serves as the input, feeding into a rounded rectangle labeled 'Q(t)', representing the current state of the flow field. From this initial state, a blue arrow labeled 'FDM or CNN' points upward to a dashed rectangular box labeled 'Q_{s,0}', indicating the computation of spatial derivatives using either Finite Difference Method or Convolutional Neural Network. A second blue arrow, labeled 'NS Equation', connects 'Q_{s,0}' to another dashed box labeled 'Q_{t,0}', representing the temporal derivative computed via the Navier-Stokes equation. This process repeats in parallel for subsequent intermediate steps: 'Q(t,1)', 'Q(t,2)', ..., up to 'Q(t,N)', each generated by applying 'FDM or CNN' to the previous state to get 'Q_{s,n}', then using 'NS Equation' to compute 'Q_{t,n}'. These intermediate virtual states are represented by dashed rectangles, as indicated in the legend. The sequence of intermediate states is connected horizontally by black arrows, showing progression over time steps. Finally, all the computed temporal derivatives 'Q_{t,0}', 'Q_{t,1}', ..., 'Q_{t,N}' are aggregated via vertical black lines into a final output box labeled 'Q̂_PRU(t+δ)', which represents the predicted flow state at the next time step. The blue arrows are explicitly labeled in the legend as 'Network layers to computer virtual states', emphasizing that these steps involve neural network operations. The dashed boxes are defined in the legend as 'Intermediate Virtual State'. The entire structure reflects a multi-step, physics-informed prediction pipeline where machine learning approximates spatial derivatives and physical equations govern temporal evolution, enabling accurate reconstruction of turbulent flow fields in spatio-temporal domains."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

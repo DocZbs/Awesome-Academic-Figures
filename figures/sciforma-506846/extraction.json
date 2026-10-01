@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506846",
+  "record_sha256": "9ad9d7a0100ea0646a035c780fe622106469f49ffb7120b44fc0aa30445ac4f7",
+  "asset_sha256": "942f12f2e036b8e59cf4552dca345cc3a10828166b4be38308b570fab92581b2",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506846",
+    "title": {
+      "zh": "Are GNNs Actually Effective for Multimodal Fault Diagnosis in Microservice Systems? · 方法图",
+      "en": "Are GNNs Actually Effective for Multimodal Fault Diagnosis in Microservice Systems?"
+    },
+    "paper": {
+      "id": "arxiv-2501-02766",
+      "title": "Are GNNs Actually Effective for Multimodal Fault Diagnosis in Microservice Systems?",
+      "authors": [
+        "Fei Gao",
+        "Ruyue Xin",
+        "Xiaocui Li",
+        "Yaqiang Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02766",
+      "arxiv_url": "https://arxiv.org/abs/2501.02766",
+      "arxiv_id": "2501.02766",
+      "arxiv_first_submitted_at": "2025-01-06T05:18:13Z",
+      "arxiv_updated_at": "2025-03-10T09:51:12Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02766v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506846/image/image.jpg?Expires=1790855627&Signature=EjtnvuyNa3een6qZ7sGmTB5a60bYIOxHYDinFYGmU6PE5lOQUi48Wq5FVFj0oGtNusGPBxN3~ARtKVfqC-fJWh73lNn-H15sLFd9s05c7~NLSymx4BzP7NhWgQ2vy0XlaUEAciPafbgUIZq9dr6LTgeJ2wZ5bZHgryAjxCkP8~bfMHPhi7Lfmiv9-mRlReOGhsO2kTJzTqHskemGfRVesc4AlBgC5mN-9XdPTUWAV5hFZvbK-C9vE2LqtT2U~Sze0ZKqcDCKujMKoT9JgrBr2ooaU1hbS9c9~xzZIfYGiCLaMDnnS2KSkv7qfZkjXnUy-ltTNmhfZ2ok1v3shriu~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506846,
+      "description_sha256": "1d544a321c946755ff0160dba336aebc24a6232c47d1b9fa17d031d219df5f01",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2f4f50dd51b982064394195e48b9df63f0d544766b10448e20f389f333e246a6",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DiagMLP architecture, a multi-modal data processing framework designed for fault detection, localization, and classification tasks. The global layout is a vertical pipeline with four main stages, labeled ① through ④, progressing from raw data input at the bottom to final task output at the top. On the right side, a detailed breakdown of the Fusion MLP block is shown as an inset, providing internal structure of the model components.\n\nStage ①, 'Embedding of Multi-modal Raw Data', is represented as a gray rectangular box at the base. It receives three types of raw data: Metrics (symbolized by a gauge chart), Logs (represented by a document icon with 'LOG'), and Traces (depicted as a cloud-connected network). These inputs are transformed into embeddings, visualized as sequences of colored circles (blue, gray, pink, dark gray) per modality, with a 'Learnable Position Embeddings' vector added to each sequence, indicated by a blue circle pointing to the first position in each sequence.\n\nStage ②, 'Modal Fusion MLP', is a light green rectangle above stage ①. It processes the embedded modalities by receiving the sequences of embeddings from stage ①. The input sequences are shown feeding into this block, which then outputs a set of fused representations, depicted as four distinct colored ovals (olive, blue-gray, purple, brown) arranged horizontally. A label 'Node-wise concatenation' points to these ovals, indicating that the outputs from different modalities are concatenated along the node dimension.\n\nStage ③, 'Node Fusion MLP', is another light green rectangle above stage ②. It takes the node-wise concatenated outputs from stage ② as input. This block further fuses the information across nodes and modalities, preparing it for the final task.\n\nStage ④, 'Fault Detection/Localization/Classification Tasks', is a teal rectangle at the top, receiving the output from stage ③. This represents the final downstream task module where predictions are made.\n\nOn the right, the 'Fusion MLP' block is expanded to show its internal layers. It begins with 'Modal / Nodal Concatenation' (yellow box), followed by a 'Linear' layer (light blue), then 'LayerNorm' (light green), 'ReLU' (pink), and finally 'Dropout' (orange). These layers are connected sequentially with solid arrows pointing upward, indicating the forward pass. A dashed line connects the 'Node Fusion MLP' (stage ③) to the 'Fusion MLP' block, suggesting that the internal structure of stage ③ is defined by this Fusion MLP architecture.\n\nAll connections between stages are represented by solid black arrows, indicating the flow of data. The dashed line from stage ③ to the Fusion MLP inset indicates a structural relationship rather than direct data flow. The color coding of the blocks (gray for input, light green for fusion stages, teal for output, yellow/orange/pink/light blue for internal layers) helps distinguish functional components. The figure caption clarifies that DiagMLP replaces GNN modules and operates between embedding and task modules, processing multimodal features without relying on graph topology."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

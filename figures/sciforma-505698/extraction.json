@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505698",
+  "record_sha256": "d1ca8288cb75be4a3aca98c41d021e2b66cdb5ad3270c8efa4186bc863f834be",
+  "asset_sha256": "0c89973d19af115c45002310c5994a5384ba4171e5315bbf2e07d4d9d131c547",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505698",
+    "title": {
+      "zh": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation · 方法图",
+      "en": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20538",
+      "title": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation",
+      "authors": [
+        "Qucheng Peng",
+        "Ce Zheng",
+        "Zhengming Ding",
+        "Pu Wang",
+        "Chen Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20538",
+      "arxiv_url": "https://arxiv.org/abs/2412.20538",
+      "arxiv_id": "2412.20538",
+      "arxiv_first_submitted_at": "2024-12-29T17:59:45Z",
+      "arxiv_updated_at": "2024-12-29T17:59:45Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20538v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505698/image/image.jpg?Expires=1790855552&Signature=t8WuMBIvEF1GPbzixWftTzML~aI-fG52l7mBAeFrmP~O2RvprCA6o6XUj~39C~ni8~q~T0nFmJhKoZ81Zzn5RvxO7lFefqGYPr0Q51XAcvcsV~VOmtDkhJ1m4njTpCTwG69gMd~BH1up6UywnJP8Luh220cKc-OXB1Ck3WZdw6Gz-HryXq7P5UpyTfb5akKtZFF1xJ-9h3ZFbA0aLFU~SIRgAimMatxg1CZRCzZ-j1PW8l1t6IqOq~aFpHra3GjiZ1KFT6rFwOrjDqW3rJy9o9fx8lnDrfPa0m-e6P3khlnIKBMnnLHTCpamxh2wUuNTZUki65UDwnlHZX0W5Jso8Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505698,
+      "description_sha256": "52fab7e0d84231d74765a8f7b8ddace86abe0fa09ac8ce8f183c2f22a3b491d3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "908b774523c7cdee918a5f07152432642906eed08cb91696a918882f77fb60e0",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram of two domain adaptation frameworks, labeled (a) and (b), separated by a vertical dashed line. The global layout is split into two side-by-side panels, each illustrating a distinct framework for handling domain-specific and domain-intermediate representations through adversarial learning mechanisms.\n\nIn panel (a), titled 'Intermediate Domain Framework (IDF)', the top section features an orange rectangular block labeled 'domain-specific head F''', which outputs to an orange square labeled 'domain-intermediate representations'. An arrow from this square points downward to a green square labeled 'Minimize Discrepancy'. Below this, a green rectangular block labeled 'adversarial domain-specific head F'_a'' outputs to another green square labeled 'domain-intermediate representations'. An upward-pointing green arrow connects this lower green square to the upper green square, indicating a minimization of discrepancy between the two intermediate representations. Additionally, a red arrow labeled 'Maximize Discrepancy' points upward from the orange square to the green square, signifying that the adversarial head aims to maximize the discrepancy between domain-specific and domain-intermediate representations. The labels 'domain-specific' and 'domain-intermediate' are color-coded in red and black respectively, with corresponding blocks matching these colors.\n\nPanel (b), titled 'Alternative Intermediate Domain Framework (AIDF)', mirrors the structure but reverses the roles. Here, the top orange block is labeled 'domain-intermediate head F''', outputting to an orange square labeled 'domain-specific representations'. A red arrow labeled 'Maximize Discrepancy' points upward from this orange square to a green square below it. The lower green block is labeled 'adversarial domain-intermediate head F'_a''', outputting to a green square labeled 'domain-specific representations'. A green arrow labeled 'Minimize Discrepancy' points upward from this lower green square to the upper green square, indicating minimization of discrepancy between the two specific representations. The color coding remains consistent: red for 'domain-specific' and black for 'domain-intermediate', with blocks reflecting these designations.\n\nAt the bottom of the figure, a rounded rectangular box contains a legend titled 'Three Variants of Discrepancy:', listing three types: 'Inter' (in blue) defined as minimizing discrepancy between intermediate representations; 'Spec' (in red) defined as maximizing discrepancy between specific representations; and 'DL' (in purple) defined as including both Inter and Spec. This legend clarifies the objectives associated with the arrows in the diagrams.\n\nThe overall structure emphasizes the contrast between IDF and AIDF: IDF focuses on aligning intermediate representations while adversarially separating specific ones, whereas AIDF aligns specific representations while adversarially separating intermediate ones. The visual modules consist of rectangular blocks (heads) and squares (representations), connected by directed arrows indicating data flow and optimization goals. The color scheme—orange for domain-specific heads and representations, green for adversarial heads and representations, red for maximize discrepancy, and green for minimize discrepancy—provides clear visual differentiation of components and objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

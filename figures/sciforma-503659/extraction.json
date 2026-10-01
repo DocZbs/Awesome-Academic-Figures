@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-503659",
+  "record_sha256": "10a97b98c82cc3d029bc0741f0a12f9b0884802157dd07f91f5a9a26b27a981d",
+  "asset_sha256": "74ae898bdf9be3cf3308c5e2747bccd6a3d1aa32d0e1f7652d50ee450a29fa75",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503659",
+    "title": {
+      "zh": "AV-DTEC: Self-Supervised Audio-Visual Fusion for Drone Trajectory Estimation and Classification · 方法图",
+      "en": "AV-DTEC: Self-Supervised Audio-Visual Fusion for Drone Trajectory Estimation and Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-16928",
+      "title": "AV-DTEC: Self-Supervised Audio-Visual Fusion for Drone Trajectory Estimation and Classification",
+      "authors": [
+        "Zhenyuan Xiao",
+        "Yizhuo Yang",
+        "Guili Xu",
+        "Xianglong Zeng",
+        "Shenghai Yuan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16928",
+      "arxiv_url": "https://arxiv.org/abs/2412.16928",
+      "arxiv_id": "2412.16928",
+      "arxiv_first_submitted_at": "2024-12-22T08:58:15Z",
+      "arxiv_updated_at": "2024-12-22T08:58:15Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.CV",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16928v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503659/image/image.jpg?Expires=1790855405&Signature=c3ZatI2zre8e9H3vYfxrbNnTVyT2VL-sUd70aBaF57cK0hFWTpPrapgKPbge6G1yq1sLFOYB44iTgnigHbUBJE~gLqw-PdQG4AjQSLaYkUEOA8gt1uwKx-7MfjP5xZZnF3LPoxJUlqLon3YkhYQSBjiLz5Y8DO~V5nhXXoLRZ-q9Q1Zmk~1e5WPJpdzbUirm5SP4yjYC3b3tBynFKeINS7mDvYCnKBO1SqRZwIXV3qTTd51-y1tmbF6wsrWyEBiWScmGbcwWH6wBKSvGb3SMNJleAwROezuGTlZ0vheqKP4qfjX3GNdFNtRy-oTWK9FCAgvkopVuKUCBzBTvPT8oJA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503659,
+      "description_sha256": "8606e07df10ed430387eb2223fccb50bf130b66e21794e30827a452a4f254235",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f898889fa855c3194d0165963cbbb81402c2a71b3a9e942fcb24958b10332091",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.CV",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the AV-DTEC architecture, a multimodal deep learning framework designed for UAV detection using audio-visual data and LiDAR-based pseudo-labels. The global layout is divided into three main vertical streams: visual input processing on the left, audio-visual fusion in the center, and LiDAR-based pseudo-label generation on the right. These streams converge toward a shared detection head, with auxiliary teacher-student modules for training guidance.\n\nOn the left, the visual stream begins with an input image R, which is split into patches and flattened. This is followed by a Position Embedding (light blue box) and fed into Vim (Vision Mamba), a vision encoder represented by a light blue dashed box. The output of Vim includes a learnable visual token C_v (pink rectangle), which is passed to a teacher-student module. The teacher component uses Faster R-CNN to predict UAV position and existence probability, while the student component receives feedback via an AAM (Attention Adjustment Module) that modulates the visual feature contribution based on the existence probability α. This modulation is implemented via element-wise multiplication (indicated by ⊗ symbol).\n\nBelow the visual stream, the audio input is processed through a spectrogram S generated from raw audio waveforms. The spectrogram is split spectrally and flattened, then embedded with Patch Embeddings (teal rectangles) before being fed into SMamba (Spectral Mamba), a light purple dashed box. Concurrently, the audio signal undergoes temporal patch splitting and flattening, producing temporal embeddings (teal rectangles) and an extra learnable token C_t (pink rectangle), which are processed by TMamba (Temporal Mamba), a pink dashed box. Together, SMamba and TMamba form the AVMamba module, responsible for multimodal feature extraction.\n\nThe outputs from Vim (C_v), SMamba, and TMamba (C_t) are combined in two Feature Enhancement Modules (pink boxes) within the Neck section. The first module receives k,v from Vim and q from SMamba; the second receives k,v from SMamba and q from TMamba. These modules fuse cross-modal features and produce a unified feature representation C_t, which is then fed into the Head section.\n\nThe Head consists of Classification and Regression Heads (pink boxes) that output detection results, visualized as 3D trajectories labeled M300. During training, these outputs are compared with pseudo-labels generated from LiDAR data. The LiDAR input is processed by DBSCAN clustering (pink box) to generate point cloud clusters, which are then converted into pseudo-labels (3D trajectory visualization). These pseudo-labels guide the training process by providing ground truth for the detection head.\n\nThe legend at the bottom clarifies the color coding: light blue for Position Embedding, teal for Patch Embedding, pink for Extra Learnable Token, and the ⊗ symbol for Element-Wise Multiplication. The entire architecture is structured to enable effective multimodal fusion, with dynamic adjustment of visual feature weights during inference based on UAV existence probability, as described in the caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

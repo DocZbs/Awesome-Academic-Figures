@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503392",
+  "record_sha256": "8b9328ea60b793291f9ccf3b221e5226225215a4a606d37aa1b62354337579c0",
+  "asset_sha256": "3c26aac00f9d9289ee475c78a3fdbbc15081090c02ca8cd1530a548efcda8836",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503392",
+    "title": {
+      "zh": "Anchor Learning with Potential Cluster Constraints for Multi-view Clustering · 方法图",
+      "en": "Anchor Learning with Potential Cluster Constraints for Multi-view Clustering"
+    },
+    "paper": {
+      "id": "arxiv-2412-16519",
+      "title": "Anchor Learning with Potential Cluster Constraints for Multi-view Clustering",
+      "authors": [
+        "Yawei Chen",
+        "Huibing Wang",
+        "Jinjia Peng",
+        "Yang Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16519",
+      "arxiv_url": "https://arxiv.org/abs/2412.16519",
+      "arxiv_id": "2412.16519",
+      "arxiv_first_submitted_at": "2024-12-21T07:43:05Z",
+      "arxiv_updated_at": "2024-12-21T07:43:05Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16519v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503392/image/image.jpg?Expires=1790855364&Signature=ovPgJmkkKWGcJVNdnDejQc31-magfl2e3qtApjUY8RwsPCV6377X8IQ3fQ97ioyMgJoOJnuL9POd2LMT760go~f0tSSWI905k9iwOw~l9oqMzIgwtXQB4W6Mka9aOiYevAYC~XUVcRKr-hjjavhG6Ice6nQNAdEe7SfaT1m24j1crhGDCVjK6WgKQIQqmQnOFYO-ZroAyhhbuDA-QtUm3yZkxB9753UhylwXjri0exCSrnEPwU8hdQDFSoKKfnPqBbsJEp-JYDuFLvzOcw3A5qBa1aYz7tQLjSTgnlk4bgdJZabphDOaY2kegVdTHLCZtiBHiYgjuXIXon59-iihtw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503392,
+      "description_sha256": "727bd4f5af4819cf0a637bb24428ad4ca303bbc3f489ca754e338ec99471b77e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f2266ec01784dea4092393a9b00ae53ba32fbe35f8a7afea3b95c1a9c94583a4",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram of the proposed ALPC (Anchor Learning with Potential Cluster constraints) framework, designed for multi-view data clustering. The overall layout is structured into three horizontal sections, each representing a stage in the processing pipeline: top for view-specific anchor learning, middle for constructing consistent anchor graphs with semantic constraints, and bottom for generalizing the process to other views.\n\nIn the top section, labeled 'Original data', a matrix X^(1) ∈ ℝ^{d₁×n} is depicted as a set of vertical teal bars, representing the first view's data. An arrow labeled 'Anchor Learning' points to a transformed matrix A^(1) ∈ ℝ^{d₁×mc}, shown as fewer, taller teal bars, indicating the learned anchors. Adjacent to this, a base matrix U^(1) ∈ ℝ^{d₁×c} is illustrated as two rows of colored blocks (teal, light blue, purple, yellow), symbolizing cluster prototypes. A bidirectional curved arrow connects A^(1) and U^(1), suggesting an iterative refinement between anchors and base matrix.\n\nThe middle section, titled 'Consistent Anchor Graphs', forms the core of the framework. It contains three main components connected by bidirectional purple arrows. On the left, 'Sample clustering center of mass' is represented by matrix P ∈ ℝ^{c×mc}, shown as a grid of binary values (0s and 1s) with color-coded rows (teal, gray, purple). In the center, the 'Consistent Anchor Graphs' are visualized as a sparse matrix Z ∈ ℝ^{mc×n}, depicted as a grid with purple blocks on the diagonal and off-diagonal positions, indicating relationships between anchors and samples. On the right, 'Anchors clustering center of mass' is shown as matrix R ∈ ℝ^{c×n}, another binary grid with color-coded columns (teal, gray, purple), representing cluster assignments for anchors. Below these matrices, the phrase 'semantic constraints of potential cluster structures' emphasizes that the framework enforces alignment between sample and anchor cluster centers.\n\nThe bottom section mirrors the top but for a generic view v. It starts with original data X^(v) ∈ ℝ^{dv×n}, shown as gray vertical bars. After 'Anchor Learning', it produces A^(v) ∈ ℝ^{dv×mc}, also as gray bars. A bidirectional curved arrow links A^(v) to U^(v) ∈ ℝ^{dv×c}, which is visualized as two rows of multicolored blocks (pink, gray, yellow, green, purple), representing cluster prototypes for view v. This section illustrates the framework's scalability across multiple views.\n\nConnections are indicated by arrows: solid green arrows denote the anchor learning process; bidirectional purple arrows in the middle indicate mutual consistency between sample and anchor cluster centers via the anchor graph; and curved bidirectional arrows between A^(1)/A^(v) and U^(1)/U^(v) represent iterative optimization. The entire diagram emphasizes a unified model where anchor learning and consistent graph construction are jointly optimized under semantic constraints to ensure shared cluster structures across views."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

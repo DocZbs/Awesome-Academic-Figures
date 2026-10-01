@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506213",
+  "record_sha256": "f2ce1b3df83105e29837e3fabe5a9accb9a954f2eeb69f58676def6f44a1413e",
+  "asset_sha256": "ad8b16cc5cfa829d40f1b5af5c49f735e32347d43312e252c8cd8599eaee3aa8",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506213",
+    "title": {
+      "zh": "Make Shuffling Great Again: A Side-Channel Resistant Fisher-Yates Algorithm for Protecting Neural Networks · 方法图",
+      "en": "Make Shuffling Great Again: A Side-Channel Resistant Fisher-Yates Algorithm for Protecting Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2501-00798",
+      "title": "Make Shuffling Great Again: A Side-Channel Resistant Fisher-Yates Algorithm for Protecting Neural Networks",
+      "authors": [
+        "Leonard Puškáč",
+        "Marek Benovič",
+        "Jakub Breier",
+        "Xiaolu Hou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00798",
+      "arxiv_url": "https://arxiv.org/abs/2501.00798",
+      "arxiv_id": "2501.00798",
+      "arxiv_first_submitted_at": "2025-01-01T10:46:22Z",
+      "arxiv_updated_at": "2025-04-23T07:49:47Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00798v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506213/image/image.jpg?Expires=1790855567&Signature=LEkUT9m5u7dg0bySLbtwTU54ttTznUAy1mF7qsSEJshqhJxcPa3O9G9LssLMAfgEtD7C4W5yd2mkFDGPMcUcv-6XLkBvjdwtpQ5Isl0mZNYS1Fjlgtub5RJ5xzrKsxj-TZkE~vuYnOheGkvzERVwXBs2p7V4YjKcfzEZejHe19P~cRx3w15BCy8V4xSqxM79t1ohWMILj2ix~xDarmRSerI42w1V1hcU14kDlVfCZ5--esL2dR9RvJDvEEmYK3zRlPuw3oUysWK4Yk4~6u1ycN9rgpGpeTr-HGBzWH~UfX-C2ZgA6J-0N5~s1S6DY2HypZLFmqHTpcIUYS7GzlXA0Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506213,
+      "description_sha256": "6ad50b3d0d46ea6a22321734491b2313186e8006e3b529322e0b5d0f64cbaca0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "487f4de7d1ac02315c79bece94f4a5a1630c7cc3bb4be1d107cece596c0a3687",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating a modified, protected version of the Fisher-Yates shuffle algorithm. The global layout is a vertical sequence of steps, starting at the top and flowing downward, with a loop structure that returns to an earlier step under certain conditions. The flowchart begins with a rounded rectangle labeled 'Start: Input array of N elements' in light pink, indicating the initialization phase. This is followed by a series of rectangular process boxes in light purple, each representing a computational step. The first such box sets the variable i = N - 1. Next, the algorithm picks a random nonnegative integer r, also shown in a light purple rectangle. A red-bordered box labeled 'Add protection' points to the next step, which is a light red rectangle containing the equation j = r mod (i + 1), indicating a modular arithmetic operation designed to add security or randomness protection. Following this, a light purple rectangle instructs to 'Swap elements with indices i and j', representing the core shuffling operation. Then, i is incremented by 1 in another light purple box. The flow then reaches a diamond-shaped decision node in light green, labeled 'i > 0?', which determines whether the loop continues. If the condition is 'Yes', a black arrow loops back to the 'Pick random nonnegative integer r' step. If 'No', the flow proceeds downward to the final rounded rectangle in light pink, labeled 'End: array is shuffled', marking the completion of the algorithm. All connections between nodes are represented by solid black arrows, clearly indicating the direction of execution. The visual design uses color-coding to differentiate types of steps: light pink for start/end, light purple for standard operations, light red for the protected computation, and light green for decision points. The red 'Add protection' annotation emphasizes the security enhancement introduced in the j calculation step."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

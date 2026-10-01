@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503378",
+  "record_sha256": "d010846bb13ccf9ec06a7451f9d2d2dbc21f1a3bb17b335be24975c6d18f736a",
+  "asset_sha256": "902c6f3d057b4973eba7d59a884cde0a9b052777ba844b02a3bcaee52a5c9425",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503378",
+    "title": {
+      "zh": "Real-time Bangla Sign Language Translator · 方法图",
+      "en": "Real-time Bangla Sign Language Translator"
+    },
+    "paper": {
+      "id": "arxiv-2412-16497",
+      "title": "Real-time Bangla Sign Language Translator",
+      "authors": [
+        "Rotan Hawlader Pranto",
+        "Shahnewaz Siddique"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_id": "2412.16497",
+      "arxiv_first_submitted_at": "2024-12-21T05:56:32Z",
+      "arxiv_updated_at": "2024-12-21T05:56:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16497v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503378/image/image.jpg?Expires=1790855364&Signature=MZzX0tL6kNeSzJkU2zz-VIpAM2g7SKgvNi1nx-XPyl77shLn1T0l8TxytI5mMYrygu7wWLyqDdQtCc75isG5UFuJtOJNchugrXaw7J8uZCc~b3CtP7siwg0hgEq03T-LXSTIGhc~ZfPrFijkvRNVCN~shUSSxVDdE~6ATJKDSJSKOSbgajaNC9sWy5dPd2BQsV5kYanlMlzZ3~mgLVPeovwyqBhdCwTQ2EuRBGGWNGpp0zWYQGpGhDy9E61q4pS9FcjkaJMCwk~5CULeOrV9aOHQCjWxFsKHx~h2dOSEo0zadXzto1vL1KFcZ11lBQGd1b19Tc5AbPY93hrp9kRBEw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503378,
+      "description_sha256": "33cddd23dd8840bb68fccfd33e76c2681776f6afbc4c793300b3d383559f99b9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6b7efbbdf4138bef0ad85cfe389e72cfe2dad30e5148cbfe328b06f692872c6d",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a data collection pipeline for human pose and facial keypoint extraction, structured as a left-to-right flowchart. On the far left, four vertically stacked rectangular images depict a person in different poses: holding hands together in front of the chest, clasping hands near the face, folding hands in prayer position, and raising hands to the sides of the head. Each image shows overlaid keypoints—green dots forming a mesh on the face and pink dots connected by lines outlining hand and arm joints—indicating pose estimation results from a computer vision model. These images serve as input sources for the subsequent processing stages.\n\nFrom each of these four images, a horizontal arrow extends to the right, converging into a single rectangular processing block labeled 'Extract keypoint'. This module represents the computational step where pose and facial landmarks are detected and extracted from the input frames. The block is outlined with a thin black border and contains centered, bold, black text.\n\nAn arrow proceeds from the 'Extract keypoint' block to another rectangular box labeled 'numpy array', indicating that the extracted keypoints are converted into a numerical format suitable for machine learning or further analysis. This box shares the same visual style as the previous one: simple rectangle with black outline and centered black text.\n\nFinally, an arrow leads from the 'numpy array' box to a cylindrical shape labeled 'DATA', symbolizing a database or storage repository. The cylinder is oriented horizontally, with the label 'DATA' centered inside it in bold, black font. This signifies the final stage where processed numerical data is stored for later use.\n\nThe entire diagram is laid out linearly from left to right, with inputs on the far left, processing modules in the center, and output/storage on the far right. All arrows are solid black lines with classic arrowheads, indicating unidirectional data flow. There are no feedback loops or branching paths beyond the convergence of the four image inputs into the first processing module. The visual design is minimalistic, using only black outlines and text on a white background, emphasizing clarity and functional representation over aesthetic embellishment. The caption 'Data collection' confirms the purpose of this pipeline: to gather structured pose and facial keypoint data from video frames or images for downstream applications such as gesture recognition or behavioral analysis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

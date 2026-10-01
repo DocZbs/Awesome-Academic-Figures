@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505522",
+  "record_sha256": "823b23c3b61dec77a1df2a2c406923c61d11dda744cc3be010a2b059b6169bee",
+  "asset_sha256": "f9d3d1fa17e20e0e560c48b1e1e8fadfd07dbfcb1ce3461510ee92448b8b6eae",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505522",
+    "title": {
+      "zh": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization · 方法图",
+      "en": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20185",
+      "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+      "authors": [
+        "Yeonhong Park",
+        "Jake Hyun",
+        "Hojoon Kim",
+        "Jae W. Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_id": "2412.20185",
+      "arxiv_first_submitted_at": "2024-12-28T15:51:02Z",
+      "arxiv_updated_at": "2025-06-24T16:03:30Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20185v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505522/image/image.jpg?Expires=1790855553&Signature=C0Md8wKek8Ek9v3UFHXWSx69fgFFJnxF58M0X9qtIikHSJggAQ0BXlNNljm9T8xVg1PjS6Z4g1SvgSW7vlsMg7LsuYpi-umG5uTmPkF8LMluESw5JkknZYbL3tgASjcu~QcNBfdjKHNdtiJtHpoGlbN59Zvh7u-keAv-zwKMyvaBxTHFST~pzhGu3uveFSWBw2nDxKgeKdks2PA-6MNOUBBsMA8UGyWoTMcMaqGwUEvAu1CmBzOMp8AYr0MflCkjCJ0UdDcFJ7uNLIK~hX7rvLyxJ8HDKKuydjuLq21K5CqPPNkHoq0TqlP12psl3FcYm1Y73Hz2hZTQCKqM55-q3A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505522,
+      "description_sha256": "9d9bf7107036eb1357bc51e0238dabe15e7dbc8f2eec44151031dbeacefc0b9c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c53df1549ce43c9deaa9b13f02b8ae9413ff59a0ef2cc6c3177b1e6931ce7a0f",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a CPU-augmented inference architecture for quantized large language models (LLMs), designed to improve computational efficiency by offloading specific computations from the GPU to the CPU. The global layout is a horizontal pipeline divided into two main processing domains: a CPU domain on the left, enclosed in a reddish-pink rounded rectangle, and a GPU domain on the right, enclosed in a tan-colored rounded rectangle. These domains are connected via a PCIe link, indicated by a labeled arrow between the CPU and GPU blocks.\n\nWithin the CPU domain, there are two primary components: a memory block labeled '(LP)DDR' containing 'R (= W - Ŵ)', representing the residual error between full-precision weights W and their quantized approximation Ŵ, and a central 'CPU' block. The (LP)DDR is connected to the CPU with a thick black line labeled '~70 GB/s', indicating the memory bandwidth. The CPU is connected to the GPU via a thinner line labeled 'PCIe' with a bandwidth of '~32 GB/s'.\n\nIn the GPU domain, there are also two components: a 'GPU' block and a 'GDDR' memory block containing 'Ŵ, x', where Ŵ represents the quantized weights and x represents the input activations. The GPU is connected to the GDDR with a thick black line labeled '~1TB/s', signifying the high-bandwidth local memory access.\n\nA prominent gray arrow spans horizontally beneath the entire pipeline, originating from the (LP)DDR block and pointing toward the GPU, labeled 'Selected Residuals (R⊙M)'. This indicates that only a subset of the residuals, selected based on a mask M, is transferred from the CPU's memory to the GPU for processing, enabling efficient computation by avoiding full residual transmission. The diagram emphasizes the data flow and bandwidth constraints between components, highlighting how the CPU handles residual computation and selective transfer to the GPU, which performs the main inference using quantized weights and inputs stored in GDDR."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

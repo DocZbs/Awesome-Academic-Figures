@@ -1,0 +1,31 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Computing Approximate Graph Edit Distance via Optimal Transport — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18857
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a step-by-step transformation process between two graphs, G¹ and G², using a sequence of graph editing operations. The global layout is structured as a vertical workflow from top to bottom, with G¹ at the top left, an adjacency matrix representation in the center top, and G² at the top right. Below these, four rectangular processing blocks—two pink and two blue—represent sequential operations, connected by arrows indicating the flow of transformation. The entire diagram is organized into a clear left-to-right and top-to-bottom pipeline.
+
+In the top row, G¹ is depicted as a triangle-shaped graph with three nodes: u₁ (yellow), u₂ (green), and u₃ (yellow), connected by black edges. The adjacency matrix next to it shows a 3×4 matrix with rows labeled u₁, u₂, u₃ and columns v₁, v₂, v₃, v₄. The matrix entries are binary: 1s are highlighted in light orange (at positions (u₁,v₁), (u₂,v₂), and (u₃,v₃)), while 0s are in pale yellow. This matrix represents the mapping or correspondence between nodes in G¹ and potential nodes in G².
+
+To the right, G² is shown as a path graph with four nodes: v₁ (yellow), v₂ (green), v₃ (orange), and v₄ (green), connected in a linear chain. The graph is labeled G².
+
+Below G¹, a downward arrow leads to the first operation block: a pink dashed rectangle labeled 'Relabel node', which contains a yellow circle labeled u₃ transforming via a red arrow into an orange circle labeled u₃, indicating a color change (relabeling) of node u₃.
+
+From this block, a downward arrow points to the second pink block: 'Insert green node', containing a green circle labeled u₄, representing the addition of a new green-colored node.
+
+An arrow from this block points rightward to the first blue block: 'Insert edge', which contains a black edge connecting the orange u₃ and the green u₄, indicating the creation of a new edge between them.
+
+From this block, an upward arrow leads to the final blue block: 'Delete edge', which contains a green u₂ and an orange u₃ connected by a black edge crossed out with a red 'X', signifying the removal of the edge between u₂ and u₃.
+
+Finally, an upward arrow from this block points to G², completing the transformation pipeline. The figure visually demonstrates how G¹ is transformed into G² through a series of node relabeling, node insertion, edge insertion, and edge deletion operations, with colors used to track node identities and changes.

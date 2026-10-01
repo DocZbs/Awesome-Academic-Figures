@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505366",
+  "record_sha256": "cdbc352b25566ec7b677cff9df43d978e0f05d94b65ef9bf3ee51fc3cc8f23ba",
+  "asset_sha256": "fc9a84b5ee7ebec5b3ac7c090c71c383a469c87d28b0587f05e137c0dfc50db1",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505366",
+    "title": {
+      "zh": "A Fully Hardware Implemented Accelerator Design in ReRAM Analog Computing without ADCs · 方法图",
+      "en": "A Fully Hardware Implemented Accelerator Design in ReRAM Analog Computing without ADCs"
+    },
+    "paper": {
+      "id": "arxiv-2412-19869",
+      "title": "A Fully Hardware Implemented Accelerator Design in ReRAM Analog Computing without ADCs",
+      "authors": [
+        "Peng Dang",
+        "Huawei Li",
+        "Wei Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19869",
+      "arxiv_url": "https://arxiv.org/abs/2412.19869",
+      "arxiv_id": "2412.19869",
+      "arxiv_first_submitted_at": "2024-12-27T09:38:19Z",
+      "arxiv_updated_at": "2024-12-27T09:38:19Z",
+      "arxiv_subjects": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19869v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505366/image/image.jpg?Expires=1790855459&Signature=u4-BzDL6c-BTz2ZTDykJ-z52X-rVV-zoTPL9NFSUymxaQaH6oAYKejfm4UODxRER7SM1RCkayWmYRz~IyB-GaHIWbt~R2H5pxsERwX5BM-W9CeIMhHeNj2Cpj2Df9E~jAmNx6t9s9L8sTmuByXv6sXQroV4wR3wef8nPANwoB1n~q93wGBqVaWJf9ZJ-8w8zDyEXneEQs0Bs6gr-M1BzUKy0vHMovYYWntBRskiYEl9i~7S3Cy58SjAD2vzMIbd6h8bJnGZVQ9zzBYtUm~eLFobmZz1KBA-Zo~avw-Sovbh1QVX29iGWbqvDO8lXCBqD8x0XGxJAy2dfe~J5oTyq8w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505366,
+      "description_sha256": "33016c553a3337f0c8cff47d6c60c46af938d5f610aa6f189a09c005c61c6700",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d6088ab3219625ab762b78cf319f3fb43b8ab24d9e2b529e1d061a5df6c963f4",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the hardware implementation of binary stochastic sigmoid neurons using Nyquist resistor noise, divided into two main parts: (a) the high-level neural network architecture and data flow, and (b) the corresponding physical circuit design.\n\n[1] Global Layout and Structure:\nThe figure is split into two sections. Section (a) at the top shows the abstract neural network layer processing, while section (b) below details the analog circuit implementation. A curved arrow connects the activation unit in (a) to the circuit in (b), indicating that the latter realizes the former. The overall flow moves from left to right: input features are processed through a weighted sum, then passed through an activation unit to produce binary outputs for the next layer.\n\n[2] Visual Modules and Attributes:\nIn part (a), the leftmost module is a fully connected layer represented by green circles labeled x₀ to xₙ, connected via weights W to summation nodes (Σ). These summations output real-valued activations (e.g., 0.3, 0.6, 0.9) which feed into the 'Activation Unit'—a dashed box containing two pink rounded rectangles labeled 'Stochastic Binarize' and 'Noise Source'. This unit converts continuous values into binary outputs (0 or 1), which are then passed to the next layer, shown as green circles y₀ to yₙ.\n\nIn part (b), the left side shows a crossbar array of resistors (blue and purple bars) representing the synaptic weights, with inputs xᵢᵇ applied at the bottom and currents Iⱼ flowing horizontally. A magnified inset shows a single resistor with conductance G, generating thermal noise i_RMS = √(4kTGAf), where k is Boltzmann’s constant, T is temperature, G is conductance, and Δf is bandwidth. The right side of (b) contains the 'Sigmoid Neurons' block, a circuit with multiple transimpedance amplifiers (TIAs) with feedback resistors R_TIA, each receiving a reference current I_ref and producing voltages V₀ to Vₙ. These voltages are compared against a threshold V_th1 using comparators (labeled 'cmp') to generate binary outputs y₀ to yₙ.\n\n[3] Connections and Arrows:\nIn (a), arrows show the forward pass: from input x to weighted sums, then to the activation unit, and finally to output y. The activation unit receives noise from the 'Noise Source' to enable stochastic binarization. In (b), the crossbar array's output currents I₀ to Iₙ are fed into the TIA circuits. Each TIA integrates the current to produce a voltage, which is then compared to V_th1 to yield a binary output. The I_ref lines connect to all TIAs, providing a common reference. The curved arrow from the activation unit in (a) to the circuit in (b) indicates that the circuit implements the stochastic binarization function. The entire system leverages thermal noise from resistors to achieve probabilistic binary activation, mimicking biological neurons."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

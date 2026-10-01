@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-503487",
+  "record_sha256": "363c18399bb7a87e8ae29cbb9a8d840e8466fbf4c7762df86b5d262610de6c34",
+  "asset_sha256": "a0f4abd8945cf1d3ed9a05a6b8cb49b2b185b49f5d709b88fbb4fb0c8f618167",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503487",
+    "title": {
+      "zh": "Generalizable Articulated Object Perception with Superpoints · 方法图",
+      "en": "Generalizable Articulated Object Perception with Superpoints"
+    },
+    "paper": {
+      "id": "arxiv-2412-16656",
+      "title": "Generalizable Articulated Object Perception with Superpoints",
+      "authors": [
+        "Qiaojun Yu",
+        "Ce Hao",
+        "Xibin Yuan",
+        "Li Zhang",
+        "Liu Liu",
+        "Yukang Huo",
+        "Rohit Agarwal",
+        "Cewu Lu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16656",
+      "arxiv_url": "https://arxiv.org/abs/2412.16656",
+      "arxiv_id": "2412.16656",
+      "arxiv_first_submitted_at": "2024-12-21T14:57:24Z",
+      "arxiv_updated_at": "2024-12-21T14:57:24Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16656v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503487/image/image.jpg?Expires=1790855367&Signature=tW2gpDYvvLJzBZ46LNf1y9AoR6IQ~eormpeZm~LdnrQlecsc47dHCZ8ldd1v~g221QG7pqmPpw~9Vfp5Abm9AdPV1hGzz0KegQYGz-9cQxr~K2fe4jITfn90PdjbGN8UaRYj1ZRJOrK19mvlTdXZWu9wJBvQwN3pqOBVcs8DVm~hsO-FJ9K832D~E3prBWot-J-M4dSp1oaz8l9DaGs3MyPIhXv28Hnq5~8vdTbjwPVIaJJJzDjhKYR~mR5YBouXD1QCK0LWvdehWZ~hx11TYS4Z0132t39R-K6DIBjIou2VidWisI2qNYRiVspmFwZuLEIQnbB6nsA5S-1grh~NRQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503487,
+      "description_sha256": "881a465772cad3fd1c45bf05fbe80dd66ac5610be0b14a7f6cb6f397c23e45c4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0c914a3065042982c90ab1c185d326dec31610ed799c7e697da93269d9640beb",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of GAPS, a method for segmenting articulated objects into semantic parts using a combination of 3D point cloud processing and 2D image segmentation, followed by a transformer-based decoding step. The global layout is divided into two main parallel pathways: a top pathway handling 3D data and a bottom pathway processing 2D data, which converge into a central transformer decoder for final part segmentation.\n\nIn the top pathway, an input articulated object (shown as a wooden cabinet with an open drawer and door) is first represented as a 3D point cloud p_i. This point cloud is then processed to generate a 3D original superpoint s_j, depicted as a colorful segmented 3D model where each color represents a different superpoint. A 'Learn and Update' step refines this into a 3D learned superpoint s'_j, shown as a more accurately segmented version with improved boundaries. These superpoints are organized into a grid-like structure labeled 'Transformer query', where each cell corresponds to a superpoint (s_0' to s_6') and is marked with yellow if active or selected. The grid has columns labeled p_0 to p_4, indicating query positions.\n\nIn the bottom pathway, the same articulated object is processed by a 2D Segment Anything Model. This model infers part centers p_k (e.g., p_0 to p_4) on a 2D image of the object, shown as small circles on the cabinet’s parts. These inferred 2D part centers are then mapped to 3D positions using a coordinate system (x, y, z), resulting in 3D query points p_k(x, y, z). These 3D query points are fed into the transformer query grid as additional inputs.\n\nThe two pathways converge at the transformer decoder, represented as a purple trapezoid labeled 'Transformer Decoder'. The decoder takes the combined information from the 3D superpoints and 2D-inferred 3D query points to perform part segmentation. The output is a segmented 3D model of the object, with distinct colors assigned to different parts (e.g., green for the door, red for the drawer, pink for the top surface).\n\nTo the right of the transformer decoder, a green dashed box lists the final part assignments: Part_0 = {s_1}, Part_1 = {s_3, s_5}, Part_2 = {s_2}, Part_3 = {s_4}, Part_4 = {s_0, s_6}, showing how the superpoints are grouped into semantic parts. Arrows indicate the flow: from the 3D point cloud to superpoint learning, from 2D segmentation to 3D query point mapping, and finally from both sources to the transformer decoder for part segmentation. The entire process is encapsulated within two dashed boxes—one blue for the 3D processing and one orange for the 2D processing—highlighting the dual-input nature of the method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

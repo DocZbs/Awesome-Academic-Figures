@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505082",
+  "record_sha256": "4232c6dd1a34bb3e5e75b63fadf1053b042ba743ee93bcad8c4e4bcdf761448d",
+  "asset_sha256": "b780184842fbbb2e6acdd1e076fdfd445d0481779b1779cacc31c589b785f065",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505082",
+    "title": {
+      "zh": "De Novo Generation of Hit-like Molecules from Gene Expression Profiles via Deep Learning · 方法图",
+      "en": "De Novo Generation of Hit-like Molecules from Gene Expression Profiles via Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-19422",
+      "title": "De Novo Generation of Hit-like Molecules from Gene Expression Profiles via Deep Learning",
+      "authors": [
+        "Chen Li",
+        "Yoshihiro Yamanishi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19422",
+      "arxiv_url": "https://arxiv.org/abs/2412.19422",
+      "arxiv_id": "2412.19422",
+      "arxiv_first_submitted_at": "2024-12-27T03:16:56Z",
+      "arxiv_updated_at": "2025-04-17T08:28:21Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19422v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505082/image/image.jpg?Expires=1790855449&Signature=gbpO~8jtGg-g6Ee56OJAg9qXKpBz-LSKs~vVH5ffWhxtYWth3LBVu-SIKXkTk8d-n-~tD~SRAIsizBQxT35igraoITq1Q969XGWaQyjrbt7Ufdd5vQjrgSihZlMlN4GHkt4H52VZpVuR2762arImzFwDYAhtqpCefgAp3mLLG13JSgZ0vdOqv0mdGDJc48jblXaNusd2bUkTI80WXmIeoECaYkCVfzoLcxSf7eEyRNgQVfeS~Rhec7~F48HsAUzhyomABsT2zd0PTAZk9eRCfvs2emq3~GWFsgUW~3wOrrcwj5NVw2qqN0NKRWgf8XlxVhnFgKIw9Hl~WCtkcrLitw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505082,
+      "description_sha256": "672aff2faad4e7cc9f46e241be138389b78af0ed62ab8d9cef08031fdabe8a33",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "37ec2d318436c8a4fa2e9b0246c14d79b727116dd5b8dea5ce303dc6aec1d816",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the HVL2Mol model, a two-stage deep learning framework for generating candidate molecules based on gene expression profiles. The overall layout is divided into two main components: (A) Feature Extraction of Gene Expression Profile and (B) Molecular Generation, connected by a feedback loop labeled 'Hit Identification' that leads from generated molecules back to the input gene expression data.\n\nIn section (A), a gene expression profile, represented by a double helix icon, is fed into a Variational Autoencoder (VAE). The VAE consists of an encoder (a blue trapezoid narrowing toward the center) that compresses the input into a latent space, depicted as a 3D manifold with a Gaussian distribution. From this latent space, a decoder (a light blue trapezoid expanding outward) reconstructs the original gene expression profile, shown again as a double helix. The latent features extracted by the encoder are then passed as a condition to the LSTM in section (B).\n\nSection (B) details the molecular generation process using an LSTM network. The condition from the VAE’s latent space is concatenated with an embedding vector representing a start token. This concatenated vector feeds into the first time step of a multi-layer LSTM, consisting of three hidden layers, each represented by a row of blue circular nodes. At each time step, the LSTM generates a character of a SMILES string—starting with 'C', followed by 'O', and ending with '<EOS>' (end-of-sequence token)—which is shown above the corresponding output node. Dashed lines indicate the recurrent connections within each layer, while solid arrows show the flow of information between layers and across time steps. The generated characters are sequentially assembled into a complete SMILES string, which represents a generated molecule, illustrated as a chemical structure with rings and functional groups. This molecule is then considered a candidate for hit identification, completing the feedback loop to the initial gene expression profile.\n\nThe visual modules include distinct shapes and colors: DNA helices for gene expression, blue trapezoids for VAE encoder/decoder, a 3D manifold for latent space, green rectangles for embeddings, and blue circles for LSTM hidden units. Text labels such as 'Latent Features as the condition for LSTM', 'Concatenation', and 'Generated molecule' clarify the data flow. The connections are primarily directed arrows indicating forward propagation, with dashed lines denoting recurrent links in the LSTM. The entire diagram emphasizes a conditional generative process where biological features guide the synthesis of novel chemical structures."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

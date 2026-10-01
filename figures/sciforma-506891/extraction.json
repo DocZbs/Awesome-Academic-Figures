@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506891",
+  "record_sha256": "65e58a440278347d7df4ea3cc2d4a58d090ee97e760b59b734e4eeb6d194f52b",
+  "asset_sha256": "19bb718284424602d85f32c4a8e1f0ec1d647cb820e0e869ccd1d38bfced171b",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506891",
+    "title": {
+      "zh": "Seeing the Whole in the Parts in Self-Supervised Representation Learning · 方法图",
+      "en": "Seeing the Whole in the Parts in Self-Supervised Representation Learning"
+    },
+    "paper": {
+      "id": "arxiv-2501-02860",
+      "title": "Seeing the Whole in the Parts in Self-Supervised Representation Learning",
+      "authors": [
+        "Arthur Aubret",
+        "Céline Teulière",
+        "Jochen Triesch"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02860",
+      "arxiv_url": "https://arxiv.org/abs/2501.02860",
+      "arxiv_id": "2501.02860",
+      "arxiv_first_submitted_at": "2025-01-06T09:08:59Z",
+      "arxiv_updated_at": "2025-01-06T09:08:59Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02860v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506891/image/image.jpg?Expires=1790855628&Signature=Hf9fPQKt4zB~NRnHWWzJeVcE5npzWYwUvRH~rZCTCXfX3OrCGCETcnnDNlr21hW2MoyvTBNTinusoUQGxwCGxlEC1Ks7qrhCpscIg4jGmJ4QP2Y1K-3nZVhfUg4sGG14uOc7XF5ExMpvNqY3a9uk4ZsBQ2cf9-bmZLJr891VDiGIFZiHGTmII4teHvwXHK6tH6-tpoBkrtyFJcYM6Kk39DB~uOnoboSLfAM1-9A3sK1AqGC-VVIGI2YoiH054La6TZzVtjahWarn7n6EIhs-NSnzQSSEy7RQkdoO1GwGj2x-vpMK5-j3Mad0ehNpc7d-HiDOli8pW5iQg-sLLDtquw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506891,
+      "description_sha256": "e00e00b05443b7e6dd9c51fd158585b25efcc62e991358d05d77ab64eae3c484",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dbadb7f5760e03d3a05d08ab3a72a62284f3ae669a1a262e12f30ef86f94e967",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of RF-ResNet, a modified ResNet variant designed to control receptive field size through hyperparameters. The global layout is divided into three main sections: A, B, and C. Section A presents an overview of the entire network structure as a sequential pipeline of convolutional blocks. It begins with a 7x7 convolution layer with stride 2, followed by BatchNorm2d, ReLU activation, and optionally a 3x3 max pooling layer with stride 2—this optional pooling is indicated by a yellow box labeled '3x3 max pool(m)/2', where 'm' denotes whether the pooling is applied (True/False). This initial stage feeds into four successive stages of convolution blocks, each enclosed in a dashed rectangle. Each stage consists of multiple blocks: the first block is a 3x3 convolution block with stride s', followed by (n1−2)/2 or similar number of 1x1 blocks and 3x3 blocks alternating, depending on the stage. The strides for the first block in each stage are denoted by s', s'', s''', respectively. These blocks are represented as light blue rectangles labeled '3x3 block / s' or '1x1 block /1'. After the final stage, the output passes through an AvgPool layer and then an MLP (multi-layer perceptron). Section B provides a zoomed-in view of the two types of building blocks used in the network: BasicBlock and Bottleneck. Both are enclosed in dashed boxes and labeled accordingly. The BasicBlock consists of a kxk convolution with stride s, followed by a 1x1 convolution with stride 1. The Bottleneck block contains three layers: a 1x1 convolution with stride 1, a kxk convolution with stride s, and another 1x1 convolution with stride 1. Both blocks are depicted as stacked light blue rectangles with black arrows indicating data flow. Section C lists examples of receptive field sizes for different configurations of RF-ResNet. Four configurations are shown, varying m (presence of max pooling), and s', s'', s''' (strides of the first block in each stage). For example, RF-ResNet(n1,n2,n3,n4,False,1,1,1) yields a receptive field size of 39, while RF-ResNet(n1,n2,n3,n4,True,2,2,2) yields 193. A dashed arrow connects these examples to the main architecture in section A, emphasizing that receptive field size depends on the hyperparameters m, s', s'', s''' rather than the number of blocks n. A legend on the right side clarifies visual elements: yellow boxes represent hyperparameters of receptive field size (like the optional max pooling), light blue rectangles denote blocks of convolutions, and white rectangles with 'kxk conv/s' indicate individual convolution layers with kernel size k and stride s. The figure caption notes that residual connections are omitted for clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

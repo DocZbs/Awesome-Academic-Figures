@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505381",
+  "record_sha256": "96b5f4c14e6790ade7f283f944f18146e6b3d42d3627b9ed9019531bdc657c49",
+  "asset_sha256": "d98d0e411d4d1ad12aca0b106dc1420a9ff877dafdb3761304f9c5d6835d1063",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505381",
+    "title": {
+      "zh": "Not all Views are Created Equal: Analyzing Viewpoint Instabilities in Vision Foundation Models · 方法图",
+      "en": "Not all Views are Created Equal: Analyzing Viewpoint Instabilities in Vision Foundation Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-19920",
+      "title": "Not all Views are Created Equal: Analyzing Viewpoint Instabilities in Vision Foundation Models",
+      "authors": [
+        "Mateusz Michalkiewicz",
+        "Sheena Bai",
+        "Mahsa Baktashmotlagh",
+        "Varun Jampani",
+        "Guha Balakrishnan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19920",
+      "arxiv_url": "https://arxiv.org/abs/2412.19920",
+      "arxiv_id": "2412.19920",
+      "arxiv_first_submitted_at": "2024-12-27T20:50:35Z",
+      "arxiv_updated_at": "2024-12-27T20:50:35Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19920v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505381/image/image.jpg?Expires=1790855459&Signature=gOxHC1uTmW2-Ny4KuO7AXfyGj1F~vJ9xrtkhsRGP~4W0piCz5wgjiXABRzsl4azl8iMFwxuBSUL8a3CMGd5-a~953IxZbHIgkyXB0jPxzqI78jOXg2nYq1XEoU6GroGBxuEabh9b5URkkdKldDhACJDXUVudUKSp6Q5FQijOftqZOhpnfzoH00AF~Ijr~i8p4AY0GB4c4vTk-LuepAQHpdGw6nJWtGzbCAdEk688hCFQNMAckJBAgo1Gx3Z0JwhELwuVbs4oizJK0~dZU0ImBKSdDgEn4YeffXJ4WnGHRAd2djJ6So1fTAMfGF8B7V1BwRzStLI~micE6qtjdv6Asw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505381,
+      "description_sha256": "79aa4711cab7fc49c4a95703fa8236bb5c5526d6d5cc950b12e97957240055b4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1617aecb898edd9d2326368d31178dc47757bc6059267552122572cfb9ceb611",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the concept of viewpoint stability in a featurizer for 3D scene analysis. The global layout is left-to-right, depicting a pipeline: from a 3D scene captured from multiple viewpoints, through a featurizer module, to a 3D feature space representation. On the far left, under the label '3D Scene', a central brown barstool is shown within a black circular boundary, symbolizing the object of interest. Around this circle, six camera icons (five blue, one red) are arranged to represent different viewing angles. The blue cameras indicate small perturbations in camera position or orientation, while the red camera represents a viewpoint that leads to instability. Corresponding to these cameras, six 2D images of the stool are displayed in boxes—five with blue borders (stable views) and one with a red border (unstable view), showing slight variations in perspective. An arrow points from the 3D scene to the next module labeled 'Featurizer', which is represented as a graph with seven interconnected nodes of varying colors (blue, green, purple, orange, yellow), symbolizing a neural network or feature extraction model. Another arrow leads from the Featurizer to the rightmost section titled 'Feature Space', depicted as a 3D coordinate system with axes pointing up, right, and down-left. In this space, clusters of light blue circles represent stable features, grouped closely together, while a single red circle lies far from them, representing an unstable feature. The vertical axis is labeled 'Stable' in blue, and the horizontal axis is labeled 'Unstable' in red, emphasizing the contrast. The figure visually conveys that small changes in viewpoint (blue cameras) produce small changes in feature space (clustered blue points), indicating stability, whereas a specific viewpoint (red camera) causes a large deviation in feature space (isolated red point), indicating instability. This demonstrates the featurizer's sensitivity to certain viewpoints, which is critical for robust 3D scene understanding."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

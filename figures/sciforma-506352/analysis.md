@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01123
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a variant of the Transformer-based model (TBM) architecture, specifically designed for processing sequential data such as dialogue turns or time-series vectors. The global layout is a vertical stack of four main processing layers enclosed within a large rounded rectangular container labeled 'N layers', indicating that this entire block is repeated across multiple layers in the full model. At the top, an input labeled 'Current turn vector' feeds into the topmost layer.
+
+The visual modules are arranged from bottom to top as follows: First, at the bottom, there is a row of input vectors represented as rounded rectangles: H̃¹, ..., H̃ᶜ⁻¹, H̃ᶜ (highlighted in light blue), H̃ᶜ⁺¹, ..., H̃ᵐ. These represent historical and current context vectors, with H̃ᶜ being the current turn vector emphasized by color. Above these inputs is a light green horizontal bar labeled 'Add Positional Encoding (PE)', which receives all input vectors and adds positional information to them. This PE layer outputs to the next module.
+
+The third module from the bottom is another light green bar labeled 'Multi-Head Self-Attention (MHSA)'. It receives the output from the PE layer and processes it using self-attention mechanisms. Multiple upward-pointing black arrows originate from each input position and converge into the MHSA layer, visually representing the attention mechanism where each token attends to all other tokens in the sequence.
+
+Above the MHSA layer is a white horizontal bar labeled 'Add & Norm', which takes the output from MHSA and performs residual connection addition followed by layer normalization. This is a standard component in Transformer architectures.
+
+The topmost module is a light green bar labeled 'Add Feed Forward Networks (FFN) & Norm', which applies a feed-forward neural network to the normalized output from the previous layer, followed by another normalization step. This completes one full layer of the Transformer block.
+
+Connections and arrows are used to indicate the flow of data: solid lines connect the input vectors to the PE layer, then to MHSA, then to Add & Norm, and finally to FFN & Norm. The output of the FFN & Norm layer is fed back to the top input node labeled 'Current turn vector', suggesting a feedback loop or iterative refinement process. The diagram also includes small horizontal connectors between the PE and MHSA layers, and between MHSA and Add & Norm, indicating that the same set of inputs is processed through these stages. The overall structure emphasizes the sequential processing of contextual vectors through positional encoding, self-attention, and feed-forward networks, consistent with the caption stating that PE is placed before MHSA and FFN after.

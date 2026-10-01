@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-504588",
+  "record_sha256": "4b51566eda52524f4f5302f954b74e54596bed06f7eaf400c25e59acabd11ecc",
+  "asset_sha256": "08c6964be4eb1051983fc9e56401def47a6ba99e4084eded3ffa088391d39791",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504588",
+    "title": {
+      "zh": "Long-Form Speech Generation with Spoken Language Models · 方法图",
+      "en": "Long-Form Speech Generation with Spoken Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-18603",
+      "title": "Long-Form Speech Generation with Spoken Language Models",
+      "authors": [
+        "Se Jin Park",
+        "Julian Salazar",
+        "Aren Jansen",
+        "Keisuke Kinoshita",
+        "Yong Man Ro",
+        "RJ Skerry-Ryan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18603",
+      "arxiv_url": "https://arxiv.org/abs/2412.18603",
+      "arxiv_id": "2412.18603",
+      "arxiv_first_submitted_at": "2024-12-24T18:56:46Z",
+      "arxiv_updated_at": "2025-07-10T17:52:43Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18603v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504588/image/image.jpg?Expires=1790855433&Signature=Br7vlpgNAf1e98hU0p4w82F2lCdQqQOIDiCq~gcQ5NocLNujewD1b4d6lpgN2JFNISAsOgYgNQjtKw3hzmAYM-xCEVw~RVurOSa9dTXsoPFp05lG2EMNf-H~WsxT9FcydjkvWn5harS7Yc~Z-ikNNQs7MrllCNGB2w69GYR22gtIllq1v3pcIpw8YSVGyV7ZlZn64qEv6ZLALT8-xR3g7YWOE27vC~m~D-tjeZR-PsCCDZWEDMuoxVh6VxPOUK3tBFGs7k8KOJ6wkpFvNjUS-7NyLc0FejO8kVhuKjE5vZ4or9rZbHIWX4A76n0qKAQnz4Qcq2~qyAFGDvVoXaSMiQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504588,
+      "description_sha256": "ad113f63f2e371d948b5e7da5d220506ffb8882180dfa3d36c2cc8318cd85967",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dbcd72575c0ca8b64eb672a429a7d9965e89efcdf376747db0478fd1bf20d15c",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SpeechSSM architecture, which consists of two main components: a causal hybrid state-space model (Griffin) for semantic token modeling on the left, and a non-autoregressive synthesizer (SoundStorm) for speaker-conditioned acoustic token generation on the right. The global layout is linear and left-to-right, depicting a complete pipeline from raw audio input to reconstructed audio output.\n\nOn the far left, a waveform representation of raw audio is shown, followed by a 'Windowing' step indicated by a gray arrow pointing to a trapezoidal-shaped module labeled 'USM-v2 Encoder'. This encoder processes the audio into discrete semantic representations. The output of the encoder is passed through a gray rectangular block labeled 'VQ', representing vector quantization, which produces a sequence of USM-v2 Tokens. These tokens are visualized as a vertical stack of orange circles numbered 0, 1, 2, ..., t-1, indicating a time-series sequence.\n\nThe central component is a large rounded rectangle labeled 'SpeechSSM', outlined in light orange. Inside, the process begins with an 'Embedder' (orange rectangle), which maps the incoming tokens into a latent space. This is followed by a series of processing blocks enclosed in a dashed orange border, repeated N times. Each iteration contains two 'Recurrent Residual Block' modules (orange rectangles) followed by a 'Local Attention Residual Block' (also orange). The sequence ends with another 'Embedder' module, which outputs a new sequence of USM-v2 Tokens, now indexed from 1 to t, indicating a shifted or updated token sequence.\n\nTo the right of the SpeechSSM module, the output tokens undergo another 'Windowing' step, represented by a gray arrow leading to a blue rounded rectangle labeled 'SoundStorm'. Below this module, three red circles are labeled 'Speaker Reference', indicating that SoundStorm is conditioned on speaker identity. The output of SoundStorm is a grid of blue and light-blue circular tokens labeled 'SoundStream Tokens', arranged in a 3x4 matrix, representing the acoustic codebook tokens generated by the neural codec.\n\nFinally, these acoustic tokens are fed into a trapezoidal-shaped 'SoundStream Decoder' module, which reconstructs the original audio waveform, shown as a waveform on the far right, completing the end-to-end pipeline. All connections between modules are indicated by gray arrows, showing the direction of data flow. The figure uses distinct colors and shapes to differentiate components: gray for preprocessing/decoding modules, orange for the SpeechSSM internal blocks, and blue for the SoundStorm and its output tokens. Text labels are placed adjacent to each module for clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

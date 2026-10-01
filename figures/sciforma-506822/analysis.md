@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Flash Interpretability: Decoding Specialised Feature Neurons in Large Language Models with the LM-Head — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02688
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative architectural diagram illustrating two parallel processing pathways for a language model's final output layer: 'Regular Operation' on the left and 'Interpretability' on the right, separated by a vertical dashed line. Both pathways share identical structural components but differ in input and output labeling, emphasizing the interpretability approach.
+
+In the global layout, the diagram is vertically structured into two columns. Each column begins with an input at the top, flows downward through a central processing module labeled 'LM Head', and ends with an output at the bottom. The left column, titled 'Regular Operation' in black text, represents standard inference. The right column, titled 'Interpretability' in red text, introduces a modified interpretation technique.
+
+Each pathway contains a central rounded rectangular module labeled 'LM Head' in black text, filled with light pink color and outlined in black. Inside this module, two stacked operations are shown: 'Linear' followed by 'SoftMax', connected by a downward arrow. This indicates the standard linear transformation followed by softmax normalization to produce token probabilities.
+
+In the 'Regular Operation' column, the input is labeled 'Final Hidden State' with dimensions '(1 x N_embd)' beneath it. A downward arrow connects this input to the 'LM Head'. The output below the module is labeled 'Token Probabilities' with dimensions '(1 x Vocab_size)', indicating the standard probability distribution over the vocabulary.
+
+In the 'Interpretability' column, the input is labeled 'Up-Projection Weight Vector' in red text, also with dimensions '(1 x N_embd)'. This input is similarly connected via a downward arrow to the identical 'LM Head' module. The output is labeled 'Token Probabilities Associated with Weights' in red text, with dimensions '(1 x Vocab_size)', highlighting that these probabilities are derived from the weight vector itself rather than hidden states.
+
+All arrows are solid black lines pointing downward, indicating the flow of data from input to output through the LM Head. The consistent structure across both columns underscores that the same computational module is used; only the input source differs. The use of red text for the interpretability side visually distinguishes the novel method from the baseline. The diagram effectively communicates that interpreting LLM weights involves feeding the up-projection weight vector directly into the LM head to decode meaningful token probabilities, thereby enabling weight-level interpretability.

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504907",
+  "record_sha256": "ab84f634d10316786a68063c387ebb40790c0bbf30f8a34fe0c7f6fa2a4fa7ab",
+  "asset_sha256": "a35f3ebb92b9e830b596f267418f1e28f59b8dab56265e67f5b3d461640ec2d6",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504907",
+    "title": {
+      "zh": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction · 方法图",
+      "en": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-19092",
+      "title": "TrajGEOS: Trajectory Graph Enhanced Orientation-based Sequential Network for Mobility Prediction",
+      "authors": [
+        "Zhaoping Hu",
+        "Zongyuan Huang",
+        "Jinming Yang",
+        "Tao Yang",
+        "Yaohui Jin",
+        "Yanyan Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19092",
+      "arxiv_url": "https://arxiv.org/abs/2412.19092",
+      "arxiv_id": "2412.19092",
+      "arxiv_first_submitted_at": "2024-12-26T07:18:38Z",
+      "arxiv_updated_at": "2024-12-26T07:18:38Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19092v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504907/image/image.jpg?Expires=1790855451&Signature=LsNIiSLvdjSwzJi-TT7OP02xWwNIl96D7XEyFA7mb3XBWJsHZn9k35V-sYoAq42FN7R-dw-na1bFrYVClq9ZJqOMztlFEgrN9auoJrWiotGncbftofRG9ZSJNWJA95pHbEa~ywEL~i2GFoRkD6jnrPTcuIFSt9UP8WRlbrVF1r9QyZ03CkNMmLinZJfcUVqtlUJPoiWHT58CPcRfda6dufR~byz0hZPPseC6~Z7KIMPmu7n-rUKEA7Jzx~2dQYe2LOMj6NXb8mLjj9phF21jpSQzb41WhzXCFi93S2f70e9i3XC8yTmMssEvO9HVXLrUdaC-CcCJxwJnvPrO7nJE5A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504907,
+      "description_sha256": "7d0d7ce3ab72be44eb8caac1d4b39dc898c66043f7c1c14725d45999728aaabb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "87466f2b15d6f79e046917df3a9f1aef1f5c91bf0dcf23d034fb966854530698",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of TrajGEOS, a trajectory prediction model composed of three main modules: Graph Learning, Trajectory Embedding, and Predicting Module, each enclosed in a dashed rectangular boundary. The global layout is left-to-right, with data flowing from historical and current trajectory inputs through graph-based feature extraction, temporal embedding, and finally to dual prediction outputs for category and location.\n\nIn the Graph Learning module on the left, 'Historical Trajectories' (a light blue rectangle) feed into an EGraphSAGE model, represented as a complex, colorful network graph with nodes and edges. This produces a set of node embeddings {z_i}_{i=1}^M, visualized as a horizontal bar of purple blocks. Below this, a GraphSAGE model (a simplified graph with orange and blue nodes connected by lines) processes the same historical data, followed by a 'Readout' step, generating long-term user representations {u_i^{long}}_{i=1}^N, shown as a horizontal bar of pink blocks. These two sets of embeddings are passed to the next module.\n\nThe central Trajectory Embedding module processes both current and recent trajectories. The 'Current trajectory' (S_i^p), depicted as a sequence of three light blue circles connected by lines, is converted into 'Current records' — vertical bars with gradient colors (purple to red) representing time and category features. These records are fed into a GRU (Gated Recurrent Unit), shown as a light blue rounded rectangle, which outputs a short-term representation u_{i,p}^{short} (a purple block). Simultaneously, the 'Input trajectory' (a sequence of orange and blue circles) is split into 'Recent trajectory' [S_i^{p-2}, S_i^{p-1}], shown as a sequence of orange circles. This is transformed into 'Recent records' (vertical bars with gradient colors) and passed to an 'Orientation module'. This module includes 'Position Embedding' (a series of vertical bars) and an 'Attention' mechanism (a light blue rectangle), which generates a mid-term representation u_{i,p}^{mid} (a red block). The long-term representation u_i^{long} (pink block) from the Graph Learning module is also fed into this module.\n\nIn the Predicting Module on the right, the short-term, mid-term, and long-term representations (u_{i,p}^{short}, u_{i,p}^{mid}, u_i^{long}) are combined via element-wise addition (indicated by a ⊕ symbol). The resulting vector, along with the 'User ID' (a green block), is input into two separate 'Predictor' blocks (light orange rounded rectangles). One predictor outputs the predicted category at time T+1, denoted as \\hat{cat}_i^{T+1}, while the other outputs the predicted location, \\hat{loc}_i^{T+1}. The connections between modules are indicated by solid black arrows, showing the direction of data flow. The figure uses distinct colors and shapes to differentiate components: light blue for graph and recurrent layers, light orange for predictors, purple and pink for different embedding types, and green for user ID."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

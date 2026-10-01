@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-506746",
+  "record_sha256": "787d1abdcb4f2e29e367bfe1b0223414436da5579daf2ccbd57c42e5c810184f",
+  "asset_sha256": "8b474c4f306cd3a2ee6863cff5131d72915503e0219ba288feade32ee3693920",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506746",
+    "title": {
+      "zh": "Towards the Anonymization of the Language Modeling · 方法图",
+      "en": "Towards the Anonymization of the Language Modeling"
+    },
+    "paper": {
+      "id": "arxiv-2501-02407",
+      "title": "Towards the Anonymization of the Language Modeling",
+      "authors": [
+        "Antoine Boutet",
+        "Lucas Magnana",
+        "Juliette Sénéchal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02407",
+      "arxiv_url": "https://arxiv.org/abs/2501.02407",
+      "arxiv_id": "2501.02407",
+      "arxiv_first_submitted_at": "2025-01-05T00:03:18Z",
+      "arxiv_updated_at": "2026-05-20T14:04:13Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02407v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506746/image/image.jpg?Expires=1790855623&Signature=dqdc1Mf5-WcyzAG4Ka4V4paF62-l9Y-VaqXpH-MtqOtTXb4D5nc6-CmK06jODyh-6smTS~jXM72qPSWZALSRJVw~47X1C1231wHj-85SdO~ONwpDY83wuMJYZPb3TxUSBItCN~-I93IEsLl4zXz71bNXGT~EzuIzB~Yc3cFT8xF4A-qWl4uVwPjNX2HixGi95xymEUkK4GazJTriozvTHVYCCbKcYE5uRZQUB2L-6~VTUyDbPOttrmhytTDqgg9YitlJ3n12DZcPOCkpk-bcoQ1RZoYH8o11fGa28lmH1Uf6x8gDHp8aRKQVTw7JVDFoyb9T0Rg0cDEM-s13Nllfew__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506746,
+      "description_sha256": "a88739c58d59cd15ceaa604f2f709d6e88f9537ae77b984412e3ff55dd819360",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5ad81f2acc69e6e8ad4e3b1a1d8bad3cde63f118ff7f3b1e7d1b915535ca3366",
+      "row_response_sha256": "d09ba592fde8f1259c14c0b9b5f9b0a5362f578ed4f27d8bbffc357ea7070954"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage workflow for de-identifying clinical reports, developed by the Hospices Civils de Lyon (HCL), involving pre-trained language models and fine-tuning for named entity recognition (NER) of private data. The global layout is linear and sequential, progressing from left to right and then downward, with distinct modules representing different stages of model development and application. The top row shows the initial pre-training and domain adaptation phase, while the bottom row depicts the final fine-tuning step for privacy detection.\n\nIn the first stage, a French language model, labeled 'CamemBERT (A)', is shown as a light blue rounded rectangle. It is initialized through a fill-mask task on general French texts, represented by a purple stack of documents with an arrow pointing toward the model. This indicates the base model is trained on broad French language data. The second stage involves adapting this model to medical domains: an arrow leads from CamemBERT (A) to 'CamemBERT (A')', another light blue rounded rectangle, which is described as 'specialized on medical'. This transition is driven by a fill-mask task on medical texts, depicted by a green stack of documents above the arrow.\n\nThe third and final stage involves fine-tuning the specialized model for detecting private data using NER. A vertical arrow points downward from CamemBERT (A') to a pink rounded rectangle labeled 'token classifier (B')'. Above this arrow, the text 'fine-tuning to detect private data (NER)' is written, and a yellow stack of documents is placed beside it, symbolizing the training data used for this task. The token classifier (B') is the output component designed to identify sensitive information within clinical reports.\n\nAll connections are represented by solid arrows indicating the direction of data flow and model evolution. The visual attributes include color-coded document stacks (purple for general French, green for medical, yellow for NER training) and distinct model boxes (light blue for CamemBERT variants, pink for the final classifier). Text labels are placed directly below or adjacent to each module to clarify their roles. The entire diagram is structured to reflect a clear progression: from general language modeling to domain-specific adaptation, and finally to task-specific fine-tuning for privacy protection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

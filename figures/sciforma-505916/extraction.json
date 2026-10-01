@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505916",
+  "record_sha256": "d3588ccd5e3cf72a886d792569525138f2d3bd6170a50629744c35703bb30dae",
+  "asset_sha256": "0d9201491a8622772efc8a311d2a6e51220dcc3e5df0a431790b3c63175bac14",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505916",
+    "title": {
+      "zh": "GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search · 方法图",
+      "en": "GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search"
+    },
+    "paper": {
+      "id": "arxiv-2412-20953",
+      "title": "GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search",
+      "authors": [
+        "Matan Ben-Tov",
+        "Mahmood Sharif"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20953",
+      "arxiv_url": "https://arxiv.org/abs/2412.20953",
+      "arxiv_id": "2412.20953",
+      "arxiv_first_submitted_at": "2024-12-30T13:49:28Z",
+      "arxiv_updated_at": "2025-09-18T16:12:36Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20953v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505916/image/image.jpg?Expires=1790855558&Signature=C3DXN6hfsrXXqlHyCt8hFTYCEHjKA0K0C7Clqp0El4UNj9d1OJAncmaYI2-aCxnfKDYnoQEdV5Su4QMoQnK3mdsvFSX4yjuxw76BRFLjzKVEqw-ZVbarlC0-FrwvX7sNEiadBNIKGLceCqiaKMvoTz81DsNGWG5G-TwditPsSTqvGpyXDp5c4Fd4BOk65Z~TNLx9LQbxVUh2zayXa3S2T~yfen6JW3fNLwhCDkJlOVFi4IqxhsFDZ7AhPkyLTLZ1AACr5mp2iuh7MS2U63oWxgx8eAmIYB0wU1qgpPpG0hSy~75BiGGTa18yyKRQX9ZqC1GaUeh-r1BxbdkskYagsQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505916,
+      "description_sha256": "873b17acc8bfb5ef0d7e7d050b18e871cdf6173c874c1a47635fb8459203e467",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "32a0938e55721243c447dcb6ba0321dd52a6bc7ff4d1dd1de1f08f60208939cd",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the GASLITE attack on a retrieval system, structured as a three-stage adversarial process. The global layout is left-to-right, depicting the attacker’s workflow from crafting a trigger to poisoning the corpus and finally achieving successful retrieval of targeted information. On the far left, inputs include 'Samples of query dist.' represented as a green stack of query samples q₁ through q|Q|, the attacker’s private 'Info' shown as a purple rounded rectangle, and a 'Retriever' symbolized by a yellow cartoon face inside a dark blue trapezoid. Below these, a separate green stack labeled 'Query Dist.' contains modified queries ŝ₁, ŝ₂, etc., connected via dashed blue lines to the central attack module.\n\nThe central component is a large pink-bordered box labeled 'GASLITE Attack', containing a 2D scatter plot with green dots representing data points and two distinct purple dots connected by a dashed magenta line, indicating a transformation or embedding shift. Above this box, step (1) is annotated: an attacker icon (purple owl) crafts a red 'Trigger' block. This trigger, combined with the attacker’s 'Info' (purple block), forms a composite adversarial passage enclosed in a dashed red border, which is then injected into the corpus.\n\nStep (2) shows the poisoning phase: a syringe icon injects the adversarial passage into a gray 'Corpus' box, depicted as a grid of document slots with a small globe icon, symbolizing a database. One slot is highlighted in red, indicating the insertion point.\n\nStep (3) on the right demonstrates the retrieval outcome: a green query ŝᵢ is fed into the retrieval system, resulting in a ranked list of passages. The top-ranked result is the adversarial passage (dashed red border) containing both 'Info' (purple) and 'Trigger' (red), followed by standard passages labeled 2nd through 6th. A blue arrow labeled 'Retrieval' points upward from the corpus to this output list. The caption clarifies that any query from the target distribution will retrieve the attacker’s information in the top-k results, demonstrating successful backdoor activation.\n\nVisual attributes include color-coded blocks: green for queries, purple for attacker info, red for triggers, and gray for the corpus. Arrows indicate data flow: solid pink arrows from inputs to the attack module, dashed red from the crafted passage to the corpus, and dashed blue feedback loops from the corpus to the query distribution. The overall structure emphasizes the attacker’s control over the retrieval system through strategic poisoning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

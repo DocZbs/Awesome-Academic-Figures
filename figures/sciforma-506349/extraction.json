@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506349",
+  "record_sha256": "0cf9a72a373530a123130897da2a38ed9951075c78bc9de759291a54aa95b235",
+  "asset_sha256": "4b5dcdab7cc3bc96bc7df9d3825d7712b93f4f9d805057ac9efa7837d05d30f6",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506349",
+    "title": {
+      "zh": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation · 方法图",
+      "en": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01123",
+      "title": "TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation",
+      "authors": [
+        "Junya Ono",
+        "Hiromi Wakaki"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01123",
+      "arxiv_url": "https://arxiv.org/abs/2501.01123",
+      "arxiv_id": "2501.01123",
+      "arxiv_first_submitted_at": "2025-01-02T07:44:48Z",
+      "arxiv_updated_at": "2025-01-02T07:44:48Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01123v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506349/image/image.jpg?Expires=1790855575&Signature=hG3CxCglHK9nWTqL1TDiK4R9g5Mc1C98oOGa0W9PFPV9XikssRUmDzUUPLciK61s1SxkfdfTOTUaGrzsqc2mAFYKd-96Ohpa-wSgm4hAOXZGvzEh62mcOVwHimZQjBp8~sts-1g-F0cFl7IGk-JiHbvmI3OQeBItnc5SQBDyJXxy7SKy~Yyy~IfsREWp16YjtepgOA3EtqPyMTFdByGq0HLZR9vafoKTThy2GIpkzHmeIV1J2yugTDGNRocfMy9P~imGfjK3akJL3oLFLbwhquARSAED6hP0eunMGQDiDlvt1zBOFsIHLMBLetlHHX84WlxZdkvFUX9ntl5mtHuCIQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506349,
+      "description_sha256": "e800f736fccddd15504f0fcc1ff03640e6f24d684ab679636a916119acf327d0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e51b4819d2eecf0871d979b30f712cc935788043ff4954ebd245c0b924bdae06",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Turn-based Encoding (TBE) model designed for emotion classification in conversational contexts. The global layout is vertically structured, depicting a top-down data flow from input utterances through a pretrained language model to an emotion label prediction. At the bottom, the input consists of concatenated utterances from past, current, and future turns, separated by special tokens: 'TURN' marks the boundary between utterances within a turn, and 'SEP' separates different turns. This concatenation is labeled as 'Concat Utterance with Special Token (CUST)' and includes BOS (beginning-of-sequence) and EOS (end-of-sequence) tokens at the start and end, respectively. The input sequence is processed by a pretrained model, such as RoBERTa, which generates token-level hidden representations denoted as h_BOS, h_1^1, ..., h_n^1, ..., h_1^m, ..., h_n^m, h_EOS. These representations are grouped into sequences corresponding to past, current, and future turns, with the current turn's tokens highlighted in light blue. Above the pretrained model, two parallel pathways emerge: one directly feeds the full sequence of token-based vectors into a Linear & Softmax Layer for emotion prediction; the other computes a turn-based vector by taking the mean of the hidden states from the current turn only, represented as H̃^c. This turn-based vector is shown as a light blue rounded rectangle labeled 'Turn-based vector', derived from the average of h_1^c to h_n^c, which are also highlighted in light blue. The mean operation is visually indicated by a bracket grouping these current-turn tokens. Both the token-based vector pathway and the turn-based vector pathway converge into the same Linear & Softmax Layer, which outputs the final emotion label y^c. The figure includes mathematical notations at the bottom to emphasize the summation over tokens in each turn: Σ x_i^1 for past turns, Σ x_i^c for current turn (highlighted), and Σ x_i^m for future turns. The visual modules use rounded rectangles for layers and operations, with distinct colors—light blue for current-turn components—to differentiate them from others. All connections are represented by solid black arrows indicating the direction of information flow. The caption clarifies that CUST constructs a multi-turn sequence using special tokens, and TBE leverages a current-turn-based vector H̃^c formed by averaging token-based vectors from the current turn."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

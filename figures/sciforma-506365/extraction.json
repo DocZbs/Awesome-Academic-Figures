@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506365",
+  "record_sha256": "2d97f94c21cacc8c5b36d3b5e28716d80c59ec94e5c178fee4f643d0fda5c6b5",
+  "asset_sha256": "1c1d23820042dee53cd8e1887473ae741420bb9c9aa7098d1dc545fd011745d4",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506365",
+    "title": {
+      "zh": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks · 方法图",
+      "en": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2501-01158",
+      "title": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks",
+      "authors": [
+        "Farshad Noravesh",
+        "Reza Haffari",
+        "Ong Huey Fang",
+        "Layki Soon",
+        "Sailaja Rajalana",
+        "Arghya Pal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_id": "2501.01158",
+      "arxiv_first_submitted_at": "2025-01-02T09:25:24Z",
+      "arxiv_updated_at": "2025-01-21T09:12:40Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01158v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506365/image/image.jpg?Expires=1790855575&Signature=PkLv0NM8TET6G~G-sUJ9Dc8Gri0oKJXeGr1N9Pv-t7hoKnv13vDes1z9MFjWblG1NTDYN88fJc7QV0t-2sHkkYYWhONza306LqtTr7zSwFOdAsD3Ar171wotIUDgfq5V~PL36ESpDOw30hfClDypAsvTRnVEwBwZ3FEqi9GCaST9Vtju-gvtbNHzMpVuKS0zKR7aaIRotPKDEZYVHRT703RHdzD-1jBMBWSFP6Uc8~ZEz5~l1IuLwPiS884K6H02Kw4Pte3EDKgECas~W5n7G7TZ~P0v0v73FLEVRhoWCRl0OAnsd3r3q7ESuTVsB1dTSYu8m-TUAPi~Dt6ViAapmA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506365,
+      "description_sha256": "c84d840d1320d035d8c6e4a6dd8290448faa18a953617758b45c09a4d8397ff4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a661ba6a6a97a55084414aa0b960d0c740f0774556e1536837a063482b2380bc",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a BioBERT-based biomedical event extraction model. The global layout is hierarchical and top-down, starting from input tokens at the bottom and progressing through multiple processing layers to produce two final outputs: 'Argument role labeling' and 'Trigger or entity classification'. The structure is divided into distinct functional modules arranged vertically, with data flow indicated by arrows moving upward.\n\nAt the bottom, a sequence of green rectangular blocks represents the input tokens. These tokens are fed into a large light-blue rectangular module labeled 'BioBERT', which serves as the base language model. Above BioBERT, there is a row of eight stacked rectangular blocks, each composed of a red lower half and a green upper half, representing token embeddings or contextualized representations generated by BioBERT. These are then passed to an 'Encoder' module, also a light-blue rectangle, which processes the sequence to produce contextualized representations for each token.\n\nFrom the Encoder, two separate paths emerge. The first path leads to two parallel light-blue rectangular modules labeled 'Head Representation' and 'Tail Representation', indicating that the model extracts representations for specific spans or entities within the text. These two representations are then combined via a circular node with a cross symbol inside, representing a concatenation or interaction operation. The output of this combination is fed into 'Fully connected layer 2', which in turn connects to the final output module labeled 'Argument role labeling'.\n\nThe second path from the Encoder goes directly to 'Fully connected layer 1', which then connects to the output module 'Trigger or entity classification'. This suggests a multi-task learning setup where the same encoder provides inputs for both trigger/entity classification and argument role labeling tasks.\n\nAll major modules are light-blue rectangles with black borders and black text, except for the 'BioBERT' label, which is in blue text. The input tokens and intermediate representations are depicted as small green squares or stacked red-green rectangles. Arrows indicate the direction of information flow, all pointing upward, showing a feed-forward architecture. At the very bottom, below the input tokens, there is a sample sentence: 'In contrast, VEGF121 did not support complex formation', which likely serves as an example input for the model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

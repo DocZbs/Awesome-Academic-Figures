@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20185
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the quantization process of weight residuals in a neural network layer, specifically focusing on the storage and transmission format of quantized weights and their associated scaling factors. The global layout is a rectangular grid representing a weight matrix, with dimensions labeled as d_in (height) and d_out (width), indicating the input and output feature dimensions respectively. The matrix is partitioned into multiple blocks, each corresponding to a group of quantized weights.
+
+Visually, the main component is a large grid composed of small rectangular cells arranged in rows and columns. The top portion of the grid contains dark gray filled rectangles, which represent the quantized weight residuals Q_r(R) stored in 4-bit precision. These are grouped into horizontal bands, each spanning the full width of the matrix, and are separated by vertical ellipses (…) to indicate intermediate rows. Two such bands are explicitly shown, with the rest implied by the vertical ellipsis between them. Each band is enclosed in a red rounded rectangle, emphasizing that these quantized values are bundled together for processing or transfer.
+
+Below the quantized weight blocks, there is a separate row of dashed-line rectangles labeled 'scales (FP16)', indicating that the scaling factors used for dequantization are stored in 16-bit floating-point format. This row is also enclosed in a red rounded rectangle, aligning horizontally with the quantized weight blocks above it, suggesting a one-to-one correspondence between each group of quantized weights and its corresponding scale.
+
+Connections and arrows are used to show data flow. A thick red arrow originates from the right side of the red-enclosed quantized weight blocks and the scales row, pointing rightward with the label 'Sent to GPU', indicating that both the quantized weights and their scales are transmitted together to the GPU for inference. The red color of the enclosing boxes and the arrow visually links these components as a single unit being sent.
+
+The figure's purpose is to depict how weight residuals are quantized to 4-bit for memory efficiency while retaining FP16 scales for accurate dequantization during computation, and how this combined data is packaged and sent to the GPU. The structure emphasizes the grouping of weights and scales, likely for efficient batched processing or memory access patterns.

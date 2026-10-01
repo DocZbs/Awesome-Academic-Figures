@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+MarkovType: A Markov Decision Process Strategy for Non-Invasive Brain-Computer Interfaces Typing Systems — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15862
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the MarkovType Model Architecture, designed for a typing task involving sequential processing of EEG responses. The global layout is a rectangular block labeled 'n=1:N', indicating that the process repeats for N sequences within a single typing trial. This main block contains four primary functional modules: a Simulator, a feature extractor denoted as f_e(θ_e), a core network f_h(θ_h), and a classification network f_c(θ_c). These components are arranged in a flow from left to right, with feedback loops and dependencies between them.
+
+Visual modules include circular nodes for inputs/outputs and intermediate variables: t (target symbol), p_{n-1} (prior over alphabet), h_{n-1} (hidden state from previous sequence), q_n (query with K unique symbols), E_n (EEG responses), G_n (alphabet features), p_n (updated prior), and h_n (current hidden state). Rectangular boxes represent the computational modules: the Simulator (dashed border), f_e(θ_e), f_h(θ_h), and f_c(θ_c). The Simulator is enclosed in a dashed rectangle, suggesting it is an external or simulation component. All modules are connected by directed arrows indicating data flow.
+
+Connections and arrows show the following workflow: The target symbol t and prior p_{n-1} are fed into the Simulator, which outputs q_n and E_n. E_n is passed to f_e(θ_e), which processes it along with q_n to produce G_n. Simultaneously, q_n is also sent directly to f_e(θ_e). G_n is then fed into f_h(θ_h), together with the previous hidden state h_{n-1}, to compute the current hidden state h_n. Additionally, G_n is sent to f_c(θ_c), which also receives h_n as input, producing the updated prior p_n. The output p_n feeds back into the next iteration of the loop, while h_n is carried forward as the hidden state for the subsequent sequence. The entire structure is encapsulated within the n=1:N loop, emphasizing the sequential nature of the model across N steps. The caption specifies that f_e maps EEG features over the alphabet using q_n to form G_n ∈ ℝ^{A×L}, and f_h uses G_n and h_{n-1} to form h_n, incorporating memory of past responses.

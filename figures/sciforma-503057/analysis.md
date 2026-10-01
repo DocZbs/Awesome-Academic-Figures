@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+AutoLife: Automatic Life Journaling with Smartphones and LLMs — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15714
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a system architecture for generating user journals by inferring routines from context logs using a large language model (LLM). The global layout is structured vertically, depicting a data processing pipeline from raw context inputs at the top to journal output at the bottom. At the top, a timeline shows periodic 'Idle' states separated by short intervals labeled 't', with a larger time window 'T' indicating the observation period. This timeline feeds into a gray rounded rectangle labeled 'Context Detection', which serves as the initial processing stage. Below this, a light gray box lists three types of context data: 'Time, e.g., 11:15 a.m.' marked with a diamond icon, 'Motion context, e.g., stationary.' marked with a circle icon, and 'Location contexts, e.g., restaurant.' marked with an 'X' icon. These context elements are passed to the next stage, a peach-colored rounded rectangle labeled 'Context Fusion & Refinement'. From this module, a downward arrow leads to a dashed rectangular boundary containing multiple stacked cards, each displaying the same three context icons (diamond, circle, X), representing the 'Refined Context Log'. Adjacent to this, a light blue box labeled 'Prompt' contains descriptive text: 'Derive the user's routine by a list of context logs. Combine the time information and infer high semantic activity like dining or working.' An arrow from the Prompt box points upward to a stylized brain icon labeled 'LLM', which then connects via an upward arrow to a peach-colored document-shaped box labeled 'Journal'. The Journal box contains sample text: 'The user's routine centers around the a Shopping Mall. They frequents a restaurant and engages in activities like dining and socializing...'. The visual modules are distinguished by color and shape: gray for detection, peach for fusion and output, light gray for context details, and light blue for prompt instructions. Icons (diamond, circle, X) are used consistently to denote different context types. All connections are represented by solid black arrows indicating the flow of data and control, moving from context detection through refinement, to prompt construction, LLM inference, and finally journal generation.

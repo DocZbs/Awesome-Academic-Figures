@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504206",
+  "record_sha256": "97c69b5b9f30a884759b7a20ed5d87616b68f5c719981e5f4e817898e9b66677",
+  "asset_sha256": "cff81c0fe1894d1e5c5764a708f6dbfc7775c3f06f903e7fce262cc9d102ee72",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504206",
+    "title": {
+      "zh": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents · 方法图",
+      "en": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents"
+    },
+    "paper": {
+      "id": "arxiv-2412-17942",
+      "title": "Contrato360 2.0: A Document and Database-Driven Question-Answer System using Large Language Models and Agents",
+      "authors": [
+        "Antony Seabra",
+        "Claudio Cavalcante",
+        "Joao Nepomuceno",
+        "Lucas Lago",
+        "Nicolaas Ruberg",
+        "Sergio Lifschitz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17942",
+      "arxiv_url": "https://arxiv.org/abs/2412.17942",
+      "arxiv_id": "2412.17942",
+      "arxiv_first_submitted_at": "2024-12-23T19:54:28Z",
+      "arxiv_updated_at": "2024-12-23T19:54:28Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17942v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504206/image/image.jpg?Expires=1790855427&Signature=H0w21PWKCNkcuUftkm4y1-TlDsPuDffFsqZU5boSBs8Q1PJxrednGUgZ0JPxa3YEzpMgsXVHGYy4L0YFuTxa3yGtuykDeX55cWokS4Rs5e8xmBEOIK54xKE7BFfdSmj2q-gzqIkdPAlADJmRfzgWCW77elghaOECLJkcgNwCqimIiH7HBncDY8owDMl4ZPRiFqCAUjENjK6OPhzSc5R2clhCKt9rU5mM3Kpvz0CLyRq-mP6Ffs1xNn9p0hmlwLffPRRiFXuBlYgecEhvcti46lLUUR0kzRgHg3Y-xRommg4vMcc6gBCS4W0s8xKwRl1ur4yYn~D9TGEQ1RyedgnLtw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504206,
+      "description_sha256": "3e061cd3bb94db9e3ef61a258404d9318c611a31b20b37f743dab795455fad8b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "27cefc27b8fa71c2a4b4b8c729738ededca5d7f8b9abbc989c880f7351508b14",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-agent methodology workflow designed to process user queries by routing them through specialized agents to retrieve and synthesize information from different data sources, ultimately generating answers or visualizations. The global layout is a horizontal flowchart with a clear left-to-right progression, starting from the user on the far left and ending with feedback loops back to the user. The structure is divided into two main processing branches: one for retrieving unstructured data via RAG (Retrieval-Augmented Generation) and another for structured data via SQL, both converging into a unified prompt generation step before final answer or chart production.\n\nVisual modules are represented using distinct shapes and colors. The 'User' is depicted as a white rectangle with a black icon of two stylized human figures. Two 'Router Agent' components are shown as green diamonds, indicating decision points in the workflow. All functional agents—RAG Agent, SQL Agent, Prompt generation, LLM Answer generation, and Graph Agent—are represented as blue rectangles with double vertical lines, signifying process steps. Data storage components, namely 'Contracts vectorstore' and 'Contracts database', are yellow cylinders, symbolizing databases or repositories.\n\nThe workflow begins when the User sends a question to the first Router Agent. This agent routes the query to either the RAG Agent or the SQL Agent based on the nature of the question. The RAG Agent retrieves similar chunks from the Contracts vectorstore, while the SQL Agent executes an SQL query on the Contracts database. Both agents return retrieved data to the Prompt generation module. This module combines the retrieved data and sends it to the LLM Answer generation component, which produces a textual response. The output is then sent to a second Router Agent, which decides whether to send the answer directly to the User or route it to the Graph Agent for visualization. If routed to the Graph Agent, it generates a chart, which is then sent back to the User. Simultaneously, the textual answer is also sent to the User. The connections between modules are indicated by solid arrows with labels describing the action or data being transferred, such as 'Send question', 'Retrieve similar chunks', 'Execute SQL query', 'Retrieved data', 'Send LLM', 'Send answer', and 'Generate chart'. The diagram includes feedback loops: the Graph Agent sends a chart to the User, and the LLM Answer generation sends an answer to the second Router Agent, which then forwards it to the User. The entire system is designed to handle diverse query types by intelligently routing them to appropriate data retrieval methods and producing either textual answers or visual charts as needed."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

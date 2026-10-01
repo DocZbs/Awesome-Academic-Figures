@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506278",
+  "record_sha256": "c4b78abfcf03363c245066725ccba61d1dfa66ddcdf2f3c8c207ea5e86153db1",
+  "asset_sha256": "daf04f750b90680cd9517b4fa70de9445ace6640787cbab6c8485da16b020fb3",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506278",
+    "title": {
+      "zh": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems · 方法图",
+      "en": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems"
+    },
+    "paper": {
+      "id": "arxiv-2501-00967",
+      "title": "On the Implementation of a Bayesian Optimization Framework for Interconnected Systems",
+      "authors": [
+        "Leonardo D. González",
+        "Victor M. Zavala"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00967",
+      "arxiv_url": "https://arxiv.org/abs/2501.00967",
+      "arxiv_id": "2501.00967",
+      "arxiv_first_submitted_at": "2025-01-01T21:58:19Z",
+      "arxiv_updated_at": "2025-01-01T21:58:19Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00967v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506278/image/image.jpg?Expires=1790855567&Signature=FAj6XMgQdVsiN4zo-ENu4ZBXWmazeSDKC1TEIUdZTPhB6DRlU1TCC6klhsbft8XFA9WV6IFoSAIqw-AfeoqPMWJicFwVXIAkFPRFFNljiLcQCkgnDkxcsPVcUfYdp4I059ChqARAVFo~7VdZv1oIl2l3CSeGV0FnSmYm~z0GF0697S-0dPFuu9z74yl~E~iQ~xHdwrWPPcBFWXYR3tXZjUucU~RgFB-AK8KyQFdWH02pUaxK3biZdDeWUWlN3sq~0J6mWtgQaPj7hHH~64mrcxvk4DshzsCocVBxg40K-Vx5cSOvciqV5akPj9ZWR8LBGe5adbDCTLg7OOoB~wcffA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506278,
+      "description_sha256": "f8f15271362b2d29a1d9117d2a1574079406cc6745ef5f5e26d53b4a653b111e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "730794c6f1a5d8cde0bcdccf0288f54ed99dc0b91751d8f5eda8d8768ef6891c",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of the OP-BO (Optimization with Probabilistic Bounds) algorithm, structured as a feedback loop involving data collection, Gaussian Process modeling, and an auxiliary optimization problem. The global layout is a top-down, left-to-right flow with a feedback connection from the top to the bottom left, forming a closed loop. At the top center, a red-bordered box labeled 'Auxiliary Problem' contains two plots: the left plot shows a blue curve representing -f(x, u_y^ℓ) - f(x, l_y^ℓ), with a shaded purple region indicating the feasible region, and a caption below stating f(x,y) ∈ [f(x,l_y^ℓ), f(x,u_y^ℓ)]. The right plot displays -u_y^ℓ(x) - l_y^ℓ(x) with a similar purple feasible region, and a caption l_y^ℓ(x) ≤ y ≤ u_y^ℓ(x). Above this box, the mathematical formulation of the auxiliary problem is given: x^{ℓ+1} ← argmin_{x,y} f(x,y) subject to l_y^ℓ(x) ≤ y ≤ u_y^ℓ(x), x ∈ X, y ∈ ℝ^{d_y}. Below the auxiliary problem, the process continues with a 'Data Collection' block on the left, labeled 'SYSTEM', which contains five components: g1, g2, GP3, GP4, and g5. g1 and g2 are white rounded rectangles; GP3 and GP4 are black rounded rectangles; g5 is a white rounded rectangle. Arrows indicate that x^ℓ enters the system, and outputs from g1, g2, and g5 feed into GP3 and GP4. An arrow from the system points right to a 'Gaussian Process Model' block, which contains a plot showing a blue curve for -m_y^ℓ(x) with a shaded purple region for σ_y^ℓ(x), and black dots along the curve. A label above this plot reads m_y^ℓ(x) and σ_y^ℓ(x). A horizontal arrow from the system to the GP model is labeled D_y^ℓ = D_y^{ℓ-1} ∪ {x^ℓ, y^ℓ}, indicating data update. From the GP model, two vertical arrows point upward to the auxiliary problem, carrying m_y^ℓ(x) and σ_y^ℓ(x). After solving the auxiliary problem, a vertical arrow leads down to the left, updating ℓ ← ℓ + 1, and then a horizontal arrow returns to the system, feeding x^{ℓ+1} back into the data collection step. The entire process is iterative, with each iteration updating the dataset and retraining the GP model to refine the confidence bounds for the next optimization step."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

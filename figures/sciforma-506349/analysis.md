@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+TED: Turn Emphasis with Dialogue Feature Attention for Emotion Recognition in Conversation — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01123
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a Turn-based Encoding (TBE) model designed for emotion classification in conversational contexts. The global layout is vertically structured, depicting a top-down data flow from input utterances through a pretrained language model to an emotion label prediction. At the bottom, the input consists of concatenated utterances from past, current, and future turns, separated by special tokens: 'TURN' marks the boundary between utterances within a turn, and 'SEP' separates different turns. This concatenation is labeled as 'Concat Utterance with Special Token (CUST)' and includes BOS (beginning-of-sequence) and EOS (end-of-sequence) tokens at the start and end, respectively. The input sequence is processed by a pretrained model, such as RoBERTa, which generates token-level hidden representations denoted as h_BOS, h_1^1, ..., h_n^1, ..., h_1^m, ..., h_n^m, h_EOS. These representations are grouped into sequences corresponding to past, current, and future turns, with the current turn's tokens highlighted in light blue. Above the pretrained model, two parallel pathways emerge: one directly feeds the full sequence of token-based vectors into a Linear & Softmax Layer for emotion prediction; the other computes a turn-based vector by taking the mean of the hidden states from the current turn only, represented as H̃^c. This turn-based vector is shown as a light blue rounded rectangle labeled 'Turn-based vector', derived from the average of h_1^c to h_n^c, which are also highlighted in light blue. The mean operation is visually indicated by a bracket grouping these current-turn tokens. Both the token-based vector pathway and the turn-based vector pathway converge into the same Linear & Softmax Layer, which outputs the final emotion label y^c. The figure includes mathematical notations at the bottom to emphasize the summation over tokens in each turn: Σ x_i^1 for past turns, Σ x_i^c for current turn (highlighted), and Σ x_i^m for future turns. The visual modules use rounded rectangles for layers and operations, with distinct colors—light blue for current-turn components—to differentiate them from others. All connections are represented by solid black arrows indicating the direction of information flow. The caption clarifies that CUST constructs a multi-turn sequence using special tokens, and TBE leverages a current-turn-based vector H̃^c formed by averaging token-based vectors from the current turn.

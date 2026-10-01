@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504245",
+  "record_sha256": "57ca09396add81b5bebc1fa41c08bd39b007fe13742145cf894a862d6b37dfce",
+  "asset_sha256": "bf33ff17a1ed75305287fce782239021a7e2e85adcc065937ca2e568e09eca9b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504245",
+    "title": {
+      "zh": "Correctness is not Faithfulness in RAG Attributions · 方法图",
+      "en": "Correctness is not Faithfulness in RAG Attributions"
+    },
+    "paper": {
+      "id": "arxiv-2412-18004",
+      "title": "Correctness is not Faithfulness in RAG Attributions",
+      "authors": [
+        "Jonas Wallat",
+        "Maria Heuss",
+        "Maarten de Rijke",
+        "Avishek Anand"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18004",
+      "arxiv_url": "https://arxiv.org/abs/2412.18004",
+      "arxiv_id": "2412.18004",
+      "arxiv_first_submitted_at": "2024-12-23T21:57:11Z",
+      "arxiv_updated_at": "2024-12-23T21:57:11Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18004v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504245/image/image.jpg?Expires=1790855427&Signature=Z2RS0ataLhBsI5jEjtdw~snMMNKCD8-B1v8HW0u~zd4KfhQeeAWepwnSQeIRp6SQ2lgU0Nq84-JO6wjUQkzXrpy5ayM6qlHf26GMKuajJwQfQZ~RVm5hDPgHwoe95LAgMZMI2nGYtMpaqUNhlwIDxAk~Fzq-VU2oNDUQTGpacYP13qH7-Qc8eSDogJEUYMI3wOIDu-6wIeKdh2rJPThvtMR7vI3DcyNHOyjOq0JW9Jbrsr4wohlJnlwEhj4bMsdh~dsVfIDflcoxBtQ-mp68Z-gOgzb9nxHlXvfuWszYzj4xHVxOl0WgoLXfdCmNkBoW5ojq7zKLLp~IzqfYrveN1A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504245,
+      "description_sha256": "d082a4c98403cf693a4f0e4a23425e3040888f6ad6f351182de4bd37aa8b499c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dd27c8ba69e6e859b85c99fbe7b7c5bc6f0f75a22eabf12f560d8a3bd6295d53",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into four panels labeled (a), (b), (c), and (d), each illustrating a different scenario for how a model generates an answer and cites supporting evidence in response to the question: 'What is the capital of Germany?'. Each panel contains a consistent set of components: a dashed circular region labeled 'Model Memory' containing stored knowledge ('Berlin : German capital'), a rectangular box labeled 'Retrieved docs' listing two documents ('Berlin : German capital' and 'Bonn: no longer capital'), a central circular node labeled 'Model', a rectangular output box with the answer 'Berlin is Germany's capital', and a smaller rectangular box labeled '[Citation]' indicating the source cited for the answer. The panels differ in the connections between these components and the correctness or faithfulness of the citation.\n\nIn panel (a) 'Faithful citation', a solid blue arrow connects the 'Model' to the answer box, indicating the answer is generated by the model. A solid pink arrow connects the retrieved document 'Berlin : German capital' to the '[Citation]' box, showing the model correctly cites the document that directly supports the answer. A green checkmark next to the citation indicates this is the ideal, faithful case.\n\nPanel (b) 'Citing related context' shows the same answer generation via the blue arrow. However, the pink arrow from the '[Citation]' box points to the document 'Bonn: no longer capital', which is unrelated to the answer. A dotted blue arrow also connects the 'Model' to this incorrect document, suggesting it was considered during reasoning. A red 'X' marks this as an incorrect citation, even though the answer is correct.\n\nPanel (c) 'Correct but unfaithful' displays the same answer and citation as (a), with the pink arrow pointing to 'Berlin : German capital'. However, a dashed blue arrow connects the 'Model Memory' directly to the answer, bypassing the retrieved document. This implies the model generated the answer from memory and then post-rationalized the citation to match its prior knowledge. Despite the correct answer and citation, a green checkmark is shown, but the caption notes this is 'unfaithful' because the citation does not reflect the actual generation process.\n\nPanel (d) 'Incorrect citation' shows the model generating the correct answer via the blue arrow. But the pink arrow from the '[Citation]' box points to the document 'Bonn : German capital', which is factually incorrect (as Bonn is no longer the capital). A red 'X' indicates this is an incorrect citation. The retrieved document list includes 'Bonn : German capital' as a mislabeled or outdated document, which the model incorrectly cites.\n\nAll panels share a common layout: the 'Model Memory' is at the top left, 'Retrieved docs' below it, the 'Model' in the center, the answer box to the right, and the '[Citation]' box below the answer. Arrows indicate data flow: blue arrows represent answer generation, pink arrows represent citation selection, and dashed lines indicate memory access or incorrect/related connections. The figure uses color coding—green checkmarks for correct/faithful cases, red Xs for incorrect/unfaithful cases—to visually distinguish outcomes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

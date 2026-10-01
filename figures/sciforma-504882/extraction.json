@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-504882",
+  "record_sha256": "f36a57e2f7f09b187aa0ce99fc853f2f7affb6d7c6e516b5de500821d4357f5f",
+  "asset_sha256": "a3edf07adb54fd8030df7e52f94b245e32a129bb78183bcb534238fa85834d58",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504882",
+    "title": {
+      "zh": "CL-Attack: Textual Backdoor Attacks via Cross-Lingual Triggers · 方法图",
+      "en": "CL-Attack: Textual Backdoor Attacks via Cross-Lingual Triggers"
+    },
+    "paper": {
+      "id": "arxiv-2412-19037",
+      "title": "CL-Attack: Textual Backdoor Attacks via Cross-Lingual Triggers",
+      "authors": [
+        "Jingyi Zheng",
+        "Tianyi Hu",
+        "Tianshuo Cong",
+        "Xinlei He"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19037",
+      "arxiv_url": "https://arxiv.org/abs/2412.19037",
+      "arxiv_id": "2412.19037",
+      "arxiv_first_submitted_at": "2024-12-26T03:13:03Z",
+      "arxiv_updated_at": "2025-03-31T04:48:28Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19037v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504882/image/image.jpg?Expires=1790855446&Signature=CyrWOPlk5FVfE~7F1f-jXx8iQoO~6vc8MUP9fQj~y07tYwVIIzJNJIcAi7rQQlzp-sj0E1UyohXFNgUiL8PP4wtN1pi1eHOamIYJ9Em~iULVzr0FZhT0-I6Px378W~dWFFhy32RWpTNL74xdsgLmr9tqcOEEij9tpbOM8Z-CJGQM-rTVhHAlt8nq-d8scPQ50jMNuxp9CdKW~kIky4wDMYmBv5z-BwpL8~1DfuudA2X2mePeCYcQCEss8RYKPqPOZ5jUjTe9vsyN2k4X5h5Arwq-6wGs6ApYwAi09LNN4sD9m~jKwdq98fqzSYnVjTwTCsrHsW4rVYup~rOuNCcIBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504882,
+      "description_sha256": "15e4b4797e56081289f9bb62a5f2bc83edf2a0adc996e59737519f66785c7503",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7a2412e9e77a0031494b190cd8d8404aa5937350f32d4800d8a190143d9a90e0",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative analysis of three different types of backdoor attack triggers used in the context of predicting user ratings from reviews, specifically within the Amazon Review dataset. The top section displays a sample review: 'Love it. Going to order another one.' From this, three distinct trigger categories branch out: Fixed-token triggers, Sentence-pattern triggers, and Paragraph-level triggers (labeled as 'Our work').\n\nThe first module, labeled 'Fixed-token triggers', is enclosed in a rounded rectangle and contains two examples. The first is 'Word-level (“cf”)', showing the modified review: 'Love cf it. Going to order another one' with 'cf' highlighted in red. The second is 'Sentence-level (“Less is more”)', displaying: 'Love it. Less is more. Going to order another one', with the inserted phrase in red. These examples illustrate how fixed tokens are directly inserted into the text, making them conspicuous.\n\nThe second module, 'Sentence-pattern triggers', also in a rounded rectangle, includes two subcategories. The first, 'Syntax (S(NP(PRP)) (VP(VBP)(NP))(.))', shows a red 'X' with the text 'Cannot be converted', indicating that the original review lacks a subject (personal pronoun), preventing the attack. The second, 'Style (Bible style)', presents a transformed review: 'Love it. My soul is full of love, and I love it.', which demonstrates a significant semantic shift, undermining the original meaning.\n\nThe third module, titled 'Our work', is labeled 'Cross-lingual (EN-ZH)' and features a green-bordered box containing the review: 'Love it. 还会再买一个。' with a translation note below: '(Translate: Going to order another one)'. This illustrates a cross-lingual approach where the trigger is embedded through translation, preserving the original meaning while being less detectable.\n\nBelow these modules, a table compares the three methods across four criteria: Stealthiness, Universality, Usability, and Semantic Preserving. Fixed-token triggers score a checkmark (√) for Universality, Usability, and Semantic Preserving, but an 'X' for Stealthiness. Sentence-pattern triggers score √ only for Stealthiness, with 'X' for the other three. Cross-lingual (Ours) scores √ for all four criteria, indicating superior performance across the board. The table uses gray headers and black text, with checkmarks and Xs clearly marked for each cell."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

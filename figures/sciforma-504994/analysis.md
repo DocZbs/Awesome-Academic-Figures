@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Learning Cross-Domain Representations for Transferable Drug Perturbations on Single-Cell Transcriptional Responses — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19228
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the XTransferCDR framework, a deep learning architecture designed for cross-perturbation expression profile prediction. The global layout is structured into four main horizontal sections: input data on the left, an encoder block, a cross-transfer module, a decoder block, and output predictions on the far right. The entire pipeline processes two distinct perturbed expression profiles, labeled as Perturbation a (green) and Perturbation b (blue), each represented by a grid of colored squares denoting gene expression levels, denoted as X^(a) and X^(b) respectively. These inputs are derived from biological experiments shown symbolically with petri dishes and pipettes.
+
+In the Encoder section (yellow background), two separate encoders, E_p (for perturbation) and E_s (for basal state), are depicted as stacked yellow 3D blocks. Each encoder processes one of the input expression profiles. From E_p, a green latent vector p^a is extracted for Perturbation a, and from E_s, a green latent vector s^a is extracted. Similarly, for Perturbation b, E_p produces a blue latent vector p^b, and E_s produces a blue latent vector s^b.
+
+The Cross Transfer section (light blue background) performs latent space interactions. For each perturbation, the model computes two loss terms: L_orth (orthogonality loss) between p^a and s^a, and L_sim (similarity loss) between s^a and s^b. These losses are indicated by black arrows pointing to the respective latent vectors. The core cross-transfer operation involves swapping perturbation embeddings across conditions: p^a is combined with s^b (green + blue) to form a new latent representation, and p^b is combined with s^a (blue + green) to form another. These combinations are shown as dashed boxes containing two adjacent 3D blocks. Additionally, self-consistent combinations p^a + s^a and p^b + s^b are also formed, serving as control or reconstruction paths.
+
+The Decoder section (orange background) consists of a single shared decoder D, represented as stacked orange 3D blocks. It receives all four combined latent representations (p^a+s^b, p^b+s^a, p^a+s^a, p^b+s^b) and maps them back to the expression space.
+
+On the far right, the Predicted expression profiles are shown as grids matching the input format. Four outputs are generated: X̂^(a-b) (green arrow) from p^a+s^b, X̂^(b-a) (blue arrow) from p^b+s^a, X̂^(aa) (green arrow) from p^a+s^a, and X̂^(bb) (blue arrow) from p^b+s^b. These correspond to cross-prediction and self-reconstruction tasks. Three loss functions are associated with these outputs: L_cross for the cross-predicted profiles (X̂^(a-b) and X̂^(b-a)), L_reco^(2) for the self-reconstructed profiles (X̂^(aa) and X̂^(bb)), and L_reco^(1) for the direct decoder outputs D(S^a) and D(S^b), which are shown as additional outputs from the decoder. The connections are color-coded: green for Perturbation a, blue for Perturbation b, and gray for general data flow. The figure uses 3D rectangular blocks to represent neural network layers, with colors indicating the source perturbation, and dashed boxes to denote combined latent representations.

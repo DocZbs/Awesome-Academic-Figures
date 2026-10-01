@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506679",
+  "record_sha256": "f343af102e681c73544262f5cf780b9bf809b54757c99d760c4aa653e461e642",
+  "asset_sha256": "0f2164984100eb411b7fbf1a1d25d1ca0c6d3bb87f5e2f981ec1400c9d93746b",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506679",
+    "title": {
+      "zh": "DreamMask: Boosting Open-vocabulary Panoptic Segmentation with Synthetic Data · 方法图",
+      "en": "DreamMask: Boosting Open-vocabulary Panoptic Segmentation with Synthetic Data"
+    },
+    "paper": {
+      "id": "arxiv-2501-02048",
+      "title": "DreamMask: Boosting Open-vocabulary Panoptic Segmentation with Synthetic Data",
+      "authors": [
+        "Yuanpeng Tu",
+        "Xi Chen",
+        "Ser-Nam Lim",
+        "Hengshuang Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02048",
+      "arxiv_url": "https://arxiv.org/abs/2501.02048",
+      "arxiv_id": "2501.02048",
+      "arxiv_first_submitted_at": "2025-01-03T19:00:00Z",
+      "arxiv_updated_at": "2025-05-28T08:11:16Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02048v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506679/image/image.jpg?Expires=1790855633&Signature=RQliJfTtgA1Db39Ko1JXIP7N-scfhULygTrvH9fRbU8q4agxslurAT52HpSWadmXZqTOqfvDNw29bodvD90AK3xojx9gPC30kZBS8BeD5-RkOgQiTSuKXtvzeF7M6BdOGL2yJqYWcGtUUTve89WwjhHd5MeCFcAWtLMLY93dO-gUPfbKtFlw-RsMUNLeoe~cPKKece3H92jTQ~~EgtOxX2-ulZKY47tqGnRUNIAjfkLz1IeiMBu0Ex~JZTM~twwnWA-qr9h9GWk0XGZS9VdMdAL4isQSQoRWhjTMArfF0w~bk~c1tCL78VMiy2d24Vmwipsy5nbJj5FmKRJqXeuAdw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506679,
+      "description_sha256": "92359c11228cad93925164c138fb4db695f363f2dfac8f3e73560ea99dd9665e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "92c9161917a9700ec4ac3240e47d75c00da69500c56fd089edf548e6f5917edd",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of DreamMask, a method for open-vocabulary object detection that combines novel sample synthesis (NSS) and imagination-aided training (IAT). The framework is divided into two main sections: NSS at the top and IAT at the bottom, separated by dashed lines.\n\nIn the NSS section, the process begins with a prompt: 'List five items that appear with Truck'. This input is fed into an LLM (Large Language Model), represented as a light blue rounded rectangle with a snowflake icon, which generates associated items such as 'Hook/Wheel/Seat/Person/Road'. These are then processed through a module labeled 'Category Name Association' (CNA), shown as a light green rounded rectangle, which filters and refines the list to 'Hook/Wheel/Seat', focusing on relevant components.\n\nThis refined list is combined with the union of training and novel categories (C_train ∪ C_novel), also in a light green box, and passed to another LLM instance. This LLM generates layout representations, depicted as two small diagrams showing rectangular bounding boxes arranged in different configurations, within a light green box labeled 'Layout'. The layout is then input into a 'Layout-to-Image Diffusion' model, shown as a larger light blue rounded rectangle with a snowflake icon, which synthesizes images from the layout structure.\n\nThe output images are processed by SAM (Segment Anything Model), another light blue rounded rectangle with a snowflake icon, which generates pixel-level segmentation masks. A 'Sample Filter' step follows, producing a 'Synthetic Dataset' shown as a light green box containing four example images: a pool table with its mask, a chandelier with its mask, potted plants with their masks, and a kitchen scene with masks. This dataset is then passed down to the IAT section via a large downward arrow.\n\nIn the IAT section, the synthetic dataset is split into 'Synthetic Samples' and 'Realistic Samples', both shown as light green and light yellow rounded rectangles respectively. These are fed into an 'Open-vocabulary Model', represented as a peach-colored block with a flame icon and multiple orange rectangular layers connected by arrows, indicating a neural network architecture. The model extracts features from both sample types, producing 'Synthetic Features' and 'Realistic Features', shown as light green and light yellow boxes.\n\nThese features are used to compute a 'Class-wise prototype', depicted as a horizontal bar composed of multiple small yellow rectangles, representing learned class representations. An 'Update' arrow connects the features to this prototype. Additionally, a 'Minimize Distance' objective is shown on the left, with dashed arrows pointing from the prototype to two small gray boxes, indicating a loss function that aligns synthetic and realistic feature representations to reduce domain shift. The entire process emphasizes the integration of LLM-driven imagination, diffusion-based image generation, and SAM for segmentation, followed by aligned training to improve open-vocabulary detection performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

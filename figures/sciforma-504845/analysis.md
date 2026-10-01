@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Evaluating deep learning models for fault diagnosis of a rotating machinery with epistemic and aleatoric uncertainty — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18980
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a deep ensemble architecture where multiple base learners are combined to produce a final prediction. The global layout is linear and left-to-right, depicting a data flow from input to output. On the far left, an 'Example' is shown as the input, represented by bold black text. This input is fed simultaneously into a vertical stack of K-trained base learners, which are enclosed within a large rectangular container labeled 'K-trained base learners' at the top. Inside this container, two representative base learners are shown: 'Base learner 1' at the top and 'Base learner K' at the bottom, with three black squares in between indicating additional learners not explicitly drawn. Each base learner is depicted as a small neural network diagram consisting of interconnected nodes with colored circles (pink, yellow, blue, green) representing neurons or activation units, connected by thin lines symbolizing weights or connections. These diagrams are contained within individual rectangular boxes with labels. From each base learner, a thick black arrow emerges to the right, converging into a single thick vertical bar labeled 'K outputs', indicating that all K base learners produce one output each. This combined output flows into a vertical bar chart on the far right, labeled 'Probability of predicted classes'. The bar chart consists of several horizontal yellow bars of varying lengths, stacked vertically with black dotted lines between them to indicate omitted intermediate classes. The bars represent the probability distribution over possible classes, with longer bars indicating higher probabilities. The entire diagram uses bold black arrows to denote data flow, and all text labels are in bold black font. The visual design emphasizes parallel processing through the ensemble and aggregation of outputs into a probabilistic prediction.

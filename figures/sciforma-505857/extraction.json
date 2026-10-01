@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-505857",
+  "record_sha256": "97ac8feb069891e9299532a9fb3aa62bb8756b0a33367ec72fd94ac695f472cb",
+  "asset_sha256": "5f6b9ccea213516b21936fc2b227af0b015f3fadfeadac6febf011bcc0f8db84",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505857",
+    "title": {
+      "zh": "Disentangling Preference Representation and Text Generation for Efficient Individual Preference Alignment · 方法图",
+      "en": "Disentangling Preference Representation and Text Generation for Efficient Individual Preference Alignment"
+    },
+    "paper": {
+      "id": "arxiv-2412-20834",
+      "title": "Disentangling Preference Representation and Text Generation for Efficient Individual Preference Alignment",
+      "authors": [
+        "Jianfei Zhang",
+        "Jun Bai",
+        "Bei Li",
+        "Yanmeng Wang",
+        "Rumei Li",
+        "Chenghua Lin",
+        "Wenge Rong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20834",
+      "arxiv_url": "https://arxiv.org/abs/2412.20834",
+      "arxiv_id": "2412.20834",
+      "arxiv_first_submitted_at": "2024-12-30T09:58:31Z",
+      "arxiv_updated_at": "2024-12-30T09:58:31Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20834v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505857/image/image.jpg?Expires=1790855556&Signature=ISV0l4VgN6ks2ZBgtZFczp5GKJyNH-3Uk-miq0TrBSBcXogURFznVlBl3zCaiPRc1a3oqhoflszpJsmWl-UqWyfHsRoZe1t~IyZ7xKmlN0O7cdwkYY~wE26qxyXiBnxpRM5yq7vcQ5v8S5dffwtZ7BMqTLMR9BpynjJ23iBJw5hDSlJrxavsT3HYljFJ2pf4QwsYQ82~~NwmKE4bhNgXUYRx0WPKLGn-RlOItJnxWTIx2oD76EbDgA0iaTaEBseHaAfFAsvnFsBocQhDxBtuKGh9E3ehb-z865~SIMQw95uOxf138ae5fl0YyoDdme~kzVPACz5qhCp1xnRWDUjrkQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505857,
+      "description_sha256": "d6abbd5366bf096ff1b70fc10a91170cf79ffda05ee38128fac47785bb0f721c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4bd6d456ced29e59ce4c9f57df359cfc544ee3c89c67886f7fd1b1e997584040",
+      "row_response_sha256": "9688e5ecc48ade1d79e59b78c53a7a4a05b6fcd1cf22e989bdf4406e3f3bacf2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a three-step framework for efficient personalization of Large Language Models (LLMs), structured into three main phases: self-supervised pre-training (shared by all users), efficient fine-tuning (repeated for each user), and personally adaptive inference from LLMs. The overall layout is divided into three vertically aligned, dashed-boxed sections labeled Step 1, Step 2, and Step 3, each representing a distinct phase in the pipeline.\n\nIn Step 1, titled 'Learning Latent Encoder and Adapter', the process begins with a prompt x and sampled response y_k fed into a green trapezoidal module labeled 'Latent Encoder'. This encoder outputs a latent variable z_{x,y,k}, which is then passed through a series of stacked blue rectangular modules representing LLM Decoder Layers, culminating in an LM Head Layer. The output is a reconstruction probability p(y|x,z) denoted as y_{k;i}. A KL divergence loss connects the latent distribution q(z|x,y) to a prior N(μ_{x,y}, σ²_{x,y}), which is further linked to a standard normal distribution N(0,I). The flow includes a 'sample & adapt' connection from the latent variable to the decoder stack. The bottom input labels indicate 'prompt & sampled response', and the top label reads 'self-supervised pre-training: shared by all users'.\n\nStep 2, titled 'Learning Personalized Latent Encoder', focuses on user-specific adaptation. It receives two inputs: a preferred response y_w and a dispreferred response y_l, both paired with the same prompt x. Each is processed by a separate green 'Latent Encoder', producing latent representations z_{x,y_w} and z_{x,y_l}. These latents are compared via a 'sample & compare' mechanism, where z_w > z_l indicates preference, leading to Direct Preference Optimization (DPO). The result is a personalized latent distribution z_{x;θ}, generated by a yellow trapezoidal 'Latent Encoder (personalized)' module. This module takes the prompt x and a textual preference signal as input. The top label states 'efficient fine-tuning: repeated for each user', emphasizing per-user training. The visual elements include overlapping green and red circles representing the latent spaces of preferred and dispreferred responses, with thumbs-up and thumbs-down icons indicating preference.\n\nStep 3, titled 'Personalized Generation from LLMs', performs inference using the personalized latent encoder. The prompt x is fed into the yellow 'Latent Encoder (personalized)', which outputs the personalized latent z_{x;θ}. This latent is then used to 'sample & adapt' into the LLM Decoder Layers, similar to Step 1, producing a personalized output y_{θ;<i}. The top label reads 'personally adaptive inference from LLMs', and the output is described as p(y|x,z) with parameter θ,i. The bottom label specifies 'prompt & response'.\n\nConnections between steps are indicated by thick blue arrows pointing rightward, showing progression. The entire diagram uses consistent color coding: green for shared latent encoders, yellow for personalized ones, and blue for LLM components. Textual annotations include mathematical expressions like q(z|x,y), p(y|x,z), and N(0,I), along with descriptive labels such as 'reconstruction', 'inference', and 'latent preference'. The caption clarifies that only Step 2 requires per-user training and operates on lightweight latent encoders rather than full LLMs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

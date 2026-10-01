@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Unsupervised Bilingual Lexicon Induction for Low Resource Languages — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16894
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic diagram of the UVecMap framework, illustrating a two-stream processing pipeline for aligning source and target embeddings through pre-processing, initialization, and iterative self-learning phases. The global layout is vertically structured into distinct stages: at the top, two oval nodes labeled 'Source Embeddings' and 'Target Embeddings' serve as inputs. These feed into a dashed rectangular box labeled 'Pre - processing', which contains parallel processing streams for each embedding type. Each stream consists of three rectangular boxes arranged vertically: first 'Length Normalization (LN)', followed by 'Mean Center each Dimension (MC)', and then another 'Length Normalization'. Both streams converge below this box. 
+
+Following pre-processing, the flow splits into two main components: 'Initialization' and 'Self - Learning', both enclosed in dashed rectangular boxes. The 'Initialization' block contains a single rectangular box labeled 'Generate Initial Solution', which feeds into the 'Self - Learning' block. Within 'Self - Learning', there are two sequential rectangular boxes: the first computes 'Optimal orthogonal mapping to max similarities for current dictionary', and the second derives an 'Optimal dictionary by orthogonal mapping'. This leads to a diamond-shaped decision node labeled 'Converged?'. If the answer is 'NO', an arrow loops back to the first box in the self-learning phase, indicating iteration. If 'Yes', the flow proceeds to a rectangular box labeled 'Symmetric re-weighting'. 
+
+Finally, from 'Symmetric re-weighting', an arrow points to an oval node at the bottom labeled 'Source / Target Mapped Embeddings & Built Dictionary', representing the final output. All connections are indicated by solid arrows showing the direction of data or control flow. The diagram uses consistent visual attributes: ovals for inputs and outputs, rectangles for processing steps, and diamonds for decision points. Text labels are centered within shapes, and key operations like normalization and mean centering are explicitly named. The dashed boxes group related stages, enhancing clarity of the modular structure. No colors are used; all elements are black on white background. The diagram emphasizes symmetry between source and target processing paths during pre-processing and the iterative refinement process in self-learning.

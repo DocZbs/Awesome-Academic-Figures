@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503377",
+  "record_sha256": "faac0e31e0036d391440f49a924792b8d6b941ed834de09a3116b120b69edb47",
+  "asset_sha256": "4725d1b4a22f8bd799c6d88da9e765787ec574f0e057e6fcfc7a3723bf8d444d",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503377",
+    "title": {
+      "zh": "Real-time Bangla Sign Language Translator · 方法图",
+      "en": "Real-time Bangla Sign Language Translator"
+    },
+    "paper": {
+      "id": "arxiv-2412-16497",
+      "title": "Real-time Bangla Sign Language Translator",
+      "authors": [
+        "Rotan Hawlader Pranto",
+        "Shahnewaz Siddique"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_id": "2412.16497",
+      "arxiv_first_submitted_at": "2024-12-21T05:56:32Z",
+      "arxiv_updated_at": "2024-12-21T05:56:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16497v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503377/image/image.jpg?Expires=1790855364&Signature=i8V9konFgeip7KscNl2fSXBEL7a16Yo2HnTdaPSyKOCr6k1JuPaY0za2UAifkLNvQNXnmY4wxCIBHufvhIEOMZma0J1QFUBhdA3dDg-LBtFhEYwW~V7cRzE6iK~FMfDUAVYzv9THy0H6eKafeGkh9GRGHfxfveR-meIIvrCFHKP9AA~h35tFToV97NBajFOI~A8skcAYu3vsb~SPNlfiEDtceqLXlet5uGA5OiQc0XRF0OUiDjoel1d2xrFvFUAkTOf5SzbckmJnuWcmHBfEw1GnityBWj0qJjlFQxUitNf3GEIkGDqBnVtTlpfUd9ydtYcoSFC1mlVYNCO3vS4T-A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503377,
+      "description_sha256": "0bccd219304e854e3db9f516936fc0b047676dc62d4b4c9e9a145ee1933bd8f2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "32fc9d89235f440220277c55669272ee142cedaeeaf27842fa3c31c3bd869623",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating the methodology of a real-time hand gesture recognition system designed for rendering Bengali text using the Banla font. The global layout is vertically oriented, starting from the top with a 'Start' node and progressing downward through a sequence of processing stages, with feedback loops and parallel branches. The structure follows a clear data pipeline: from input capture and feature extraction, through machine learning inference, to output visualization.\n\nThe visual modules are represented by distinct shapes and colors. The process begins with a teal oval labeled 'Start', indicating the initiation point. This connects to a blue rectangle labeled 'Mediapipe holistic hand detection', which represents the initial step of detecting hand and body landmarks using the Mediapipe framework. Following this, another blue rectangle labeled 'Extracting keypoints value' denotes the extraction of numerical coordinates from detected landmarks. A parallelogram labeled 'input camera for data collection' signifies the live video input source, positioned as a data acquisition stage. From here, the flow splits into two paths: one leads to a blue rectangle labeled 'DATA processing and labeling', which prepares the extracted data for training; the other continues directly to a teal oval labeled 'Realtime detection', representing the live inference phase. The processed data then flows into a blue rectangle labeled 'LSTM architecture', indicating the use of a Long Short-Term Memory neural network for sequence modeling and classification. The output of the LSTM feeds into a blue rectangle labeled 'Banla font rendering', which converts the predicted gesture into rendered Bengali text using the Banla font. This rendered text is then fed back into the 'Realtime detection' module, suggesting an interactive or display loop. Finally, a downward arrow from 'Realtime detection' points to a rectangular image at the bottom, showing a person with hand gestures being tracked (with green face mesh and purple hand keypoints), and Bengali text displayed at the bottom of the screen, visually demonstrating the system's output.\n\nConnections are indicated by solid black arrows, showing the direction of data or control flow. The main vertical path proceeds from 'Start' → 'Mediapipe holistic hand detection' → 'Extracting keypoints value' → 'input camera for data collection'. From 'input camera for data collection', there is a branch to 'DATA processing and labeling' → 'LSTM architecture' → 'Banla font rendering' → 'Realtime detection'. Additionally, a feedback loop exists from 'Realtime detection' back to 'Mediapipe holistic hand detection', enabling continuous real-time operation. Another connection from 'Extracting keypoints value' directly to 'Realtime detection' suggests that raw keypoint data can also feed into the real-time inference module, possibly for testing or direct processing. The final output is visualized in the embedded image, which serves as a real-world demonstration of the system in action, with the detected hand and face landmarks overlaid on the user and the corresponding Bengali text rendered at the bottom."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

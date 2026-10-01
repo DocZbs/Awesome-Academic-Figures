@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505079",
+  "record_sha256": "41e0beef1971d9c60236b8521c1b50e75107f7ab46358c829490fa285620eef2",
+  "asset_sha256": "3c5a11307bf00884811d2164a1bfecd39f258fa0f2129bee567536749fd229ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505079",
+    "title": {
+      "zh": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing · 方法图",
+      "en": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing"
+    },
+    "paper": {
+      "id": "arxiv-2412-19417",
+      "title": "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing",
+      "authors": [
+        "Shu Zhao",
+        "Tan Yu",
+        "Xiaoshuai Hao",
+        "Wenchao Ma",
+        "Vijaykrishnan Narayanan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19417",
+      "arxiv_url": "https://arxiv.org/abs/2412.19417",
+      "arxiv_id": "2412.19417",
+      "arxiv_first_submitted_at": "2024-12-27T03:04:54Z",
+      "arxiv_updated_at": "2024-12-27T03:04:54Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19417v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505079/image/image.jpg?Expires=1790855449&Signature=JREVfxjL2Ji8LA6n4fa2lH6GCgphRnoAAw1oEKpGHn15Iq4P6ZpIzbY3a4gq8QBl3D2Bv5mlJ-znIOgbVqEmOF~NUSGCQQ35mjHldYFsz4cwO5BgVX0cufFP1NQhzmvmiRX3KHZmD-1ArlQydwa~TS2lbWfq97xG5iChz87MVgi8y3cVwlwhvadzT5BTHxwx5swRD1EHWdsxszYxnXxNWcY4MSZwfcmhVQpVOYuj9cs4dtvAzbjnBXGjyySeRZlTCRvFLBQYSD9RBYwf4ZzXdJ8pSStPT~SdgzTXGSYydej2iXXzmJRsV3NYkoggUFka-W~Iz7vblEPO7vssXUl2lw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505079,
+      "description_sha256": "c3ec2c7c7ad56db47baa3b7bbf28693f8d78625bef92f813b19885d589535410",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "87f9ef22f5f13b48406c04ea6e654ad6f1acccefdc0feff024330595c61abbd5",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of the KALAHash method, divided into two main phases: Training-only and Inference, separated by a dashed horizontal line. The top section, labeled 'Training-only' and enclosed in a light yellow rounded rectangle with a dashed border, outlines the process for generating class-specific knowledge representations. It begins with an icon representing 'Categories', depicted as a stack of documents with a tag labeled '[CATEGORY]', which is processed through a 'Word Embed' module (light blue rectangle with a snowflake icon indicating it is frozen). This is followed by a 'Text Encoder' (also light blue with a snowflake), producing a sequence of embeddings denoted as 'K' (five purple squares). These embeddings are fed into a module labeled 'F' (pink trapezoid with a fire icon, indicating learnable parameters), which outputs a modified representation 'K̂'. This 'K̂' is then passed to a module 'G' (pink parallelogram with a fire icon), which generates a tensor 'T'. The output 'T' is directed to a component named 'KIDDO' (orange rounded rectangle), which is also marked as learnable. A legend in the top-right corner clarifies that fire icons denote 'Learnable' components and snowflake icons denote 'Frozen' components.\n\nThe bottom section, labeled 'Inference' and enclosed in a light gray rounded rectangle with a dashed border, describes the image processing pipeline. It starts with an 'Images' input, represented by a stack of photo icons, which is processed by a 'Patch Embed' module (light blue rectangle with a snowflake, indicating frozen). This produces a sequence of initial visual tokens 'V₀' (four light green squares). These tokens are sequentially processed through multiple 'Transformer Layer' modules (light blue rectangles with snowflakes, indicating frozen), labeled as 'Transformer Layer 1', 'Transformer Layer i', and 'Transformer Layer L', with ellipses indicating intermediate layers. At each layer, the input token sequence 'V_{i−1}' is transformed into 'V_i'. During this process, the 'CLoRA' module (pink rounded rectangle with a fire icon, indicating learnable) receives the 'K̂' from the training phase and outputs a weight update 'ΔW', which is applied to the Transformer layers. After the final Transformer layer, the output 'V_L' (four light green squares) is passed to a 'Hash Layer' (pink rectangle with a fire icon, indicating learnable), which generates a hash vector 'H' (single light green square). This hash vector 'H' is then sent back to the 'KIDDO' module in the training phase, completing the feedback loop. The overall structure emphasizes the separation between the training phase, where class knowledge is encoded and optimized, and the inference phase, where images are hashed using the learned parameters, with CLoRA enabling efficient adaptation of the frozen Transformer backbone."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

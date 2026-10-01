@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506376",
+  "record_sha256": "79866b67443aee6f6a8581d6dad77351a133cf454fddc69710a9a155319fcaf1",
+  "asset_sha256": "f4782fa257303814f3569ba2eaa0b5a066a3c47288a2e410820d70145c1e9c67",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506376",
+    "title": {
+      "zh": "TabTreeFormer: Tabular Data Generation Using Hybrid Tree-Transformer · 方法图",
+      "en": "TabTreeFormer: Tabular Data Generation Using Hybrid Tree-Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2501-01216",
+      "title": "TabTreeFormer: Tabular Data Generation Using Hybrid Tree-Transformer",
+      "authors": [
+        "Jiayu Li",
+        "Bingyin Zhao",
+        "Zilong Zhao",
+        "Uzair Javaid",
+        "Kevin Yee",
+        "Biplab Sikdar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01216",
+      "arxiv_url": "https://arxiv.org/abs/2501.01216",
+      "arxiv_id": "2501.01216",
+      "arxiv_first_submitted_at": "2025-01-02T11:57:08Z",
+      "arxiv_updated_at": "2026-07-28T01:21:42Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01216v7"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506376/image/image.jpg?Expires=1790855575&Signature=kuLfmO1d337ev5cy7iSijSPtMlyvQWZ6ij76lljvAhRie0ieBGwr2XB1ZLFYMl9v4L4MZ4LtBTHne7GJ3O0gYqs-hksMF6f2sg1-ptarrLaT96DIOTgZwLElVWSXDEjKeoOU8H1WAV8YClKizrb3nHH74PpB8yKrtBDGfACh81DKJ5u2kso~N4spb-rbchSyWfV1m2uQLmVyq9LNnDHLPquCZqVSXo8IJfkXruOAYUGz5M9hdWVzd3qEo4zYv50RkA2D1yCk7mDN-Wdg8RJWRHGqygf86CfBGMgL7FV1mLqtN8nXTmkUfMaa8jV0Jluk3LXNPniDyntV7R7tlcCJfA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506376,
+      "description_sha256": "37038690883aaf2b1eda6b0a47f052871d94bbb897fd4051c7d4b0da45a12718",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dd71e83fd00ed4e9c78c7dbe8c61118051ad8750597e98f544cae33d5dc3b1bd",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the TabTreeFormer framework, illustrating a top-down data flow from input table to synthetic table generation. The global layout is vertically structured into three main sections: the bottom section contains the raw Input Table, the middle section details two parallel processing modules—Tree-based Model and Tokenizer—and the top section shows the Auto-regressive Transformer (Trainable) and Reverse Tokenizer, culminating in the Synthetic Table output. A legend at the top right defines token types: BOS/EOS (white), mask (light gray), leaf (light green), bin (blue), quantile (pink), and category (orange). \n\nIn the lower half, the Input Table includes columns such as Households (H), Gender (G), Age (A), and Education (E), with sample rows like '2, F, 29, High-School'. This table feeds into two parallel modules. On the left, the Tree-based Model (green dashed box) processes each row into a sequence of tokens using multiple LightGBM trees (visualized as decision trees with numbered nodes). Each tree outputs a leaf index (e.g., 1, 3, 5, etc.), forming a sequence per row. The module caption states it introduces 'tabular inductive bias'. On the right, the Tokenizer (blue dashed box) converts each row into a sequence of tokens using three subcomponents: Label Encoder (orange) for categorical features (e.g., Gender → 1 or 2), K-Means Quantizer (purple) for numerical features (e.g., Age → binID like 2 or 3), and Quantile Quantizer (pink) for numerical features (e.g., Age → quantileID like 14 or 33). These are combined into a token sequence with headers H.binID, H.quantID, G.catID, etc. The tokenizer caption notes it represents data 'compactly and effectively with multimodal information and sufficient precision'. \n\nThe middle section’s outputs feed into the top section. The Auto-regressive Transformer (Trainable) receives concatenated sequences from both modules, with tokens from the Tree-based Model (light green) and Tokenizer (blue/pink/orange) interleaved, separated by '+' symbols, and framed by [S] (start) and [E] (end) tokens. The transformer generates a sequence of tokens, which are then passed to the Reverse Tokenizer (blue oval) to reconstruct the Synthetic Table. The Reverse Tokenizer maps tokens back to original data types: bin tokens to numeric ranges, quantile tokens to quantile values, and category tokens to labels. The entire process is labeled 'Model Inference' at the top, indicating the generative phase. Arrows show clear data flow: from Input Table to both modules, then to the Transformer, and finally to the Synthetic Table. Dashed lines connect specific tokens to their source features (e.g., Age=29 → binID=2 via K-Means, quantileID=14 via Quantile). The figure emphasizes the integration of tree-based inductive bias and optimized tokenization to enable high-quality synthetic tabular data generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

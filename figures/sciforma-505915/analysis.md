@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Generalising Battery Control in Net-Zero Buildings via Personalised Federated RL — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20946
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a multi-agent reinforcement learning architecture, specifically focusing on two variants of shallow neural networks used for both policy and state-value estimation. The global layout is left-to-right, depicting a data processing pipeline starting from feature inputs, through encoding and network processing, to final outputs. On the far left, two rectangular blocks labeled 'Private Features' and 'Public Features' serve as input sources. These features feed into a 'Personal Encoding' module, which is enclosed in a dashed blue rectangle and visually represented as a hexagonal structure containing two sequential layers with 'Tanh' activation functions (light teal squares), flanked by vertical light blue bars representing linear transformations or weight matrices. A dashed blue line connects this module to a stack of gray rectangular blocks labeled 'Obs. Agent 1', indicating that the encoded representation is applied to agent observations. The 'Public Features' also directly connect to this observation stack via a solid black line. From the observation stack, a thick purple arrow points rightward to the first major network block titled 'Shallow Network'. This block is depicted as a stack of identical gray rectangles, each containing a hexagonal structure similar to the Personal Encoding module but with two 'Tanh' units and vertical blue bars, labeled 'Agent 1'. Below this, a second network variant, 'Shallow Network With Grouping', is shown. It consists of a stack of gray rectangles where multiple smaller hexagonal units (each with a 'Tanh' activation) feed into a larger shared hexagonal unit with another 'Tanh', suggesting a grouping mechanism for processing multiple inputs before aggregation. Both network types are connected via thick purple arrows to two final output blocks: 'Policy' and 'State-Value Estimation', which are light blue rectangles stacked vertically. The caption clarifies that the same network type is used for both policy and state-value networks, differing only in the output layer, and notes that the 'Personal Encoding' block is optional. The visual style uses consistent color coding: light blue for feature/input/output blocks, light pink for network layers, and light teal for activation functions. All connections are directional, indicated by arrows, with solid lines for direct data flow and dashed lines for structural or optional relationships.

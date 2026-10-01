@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Fairness Through Matching — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02793
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the concept of Matched Demographic Parity (MDP), a fairness mechanism in machine learning. The global layout is divided into two main sections: on the left, two vertical groups labeled 'Female' (in purple) and 'Male' (in green), each enclosed in a dashed rectangular boundary; on the right, a black-bordered box containing the directive 'Treat female A and male B similarly!'. Below the left groups, a label 'Transport map' in red text indicates the matching process.
+
+The visual modules consist of four purple circles representing females within the left group and four green circles representing males within the right group. Each circle symbolizes an individual. Two specific individuals, labeled 'A' (purple) and 'B' (green), are highlighted at the bottom of their respective groups and enclosed together in a black oval, emphasizing their matched pair status. Red arrows connect individuals across the two groups, forming a one-to-one correspondence between females and males. These arrows represent the transport map, which assigns each female to a corresponding male based on similarity or feature alignment. Notably, the arrow connecting A and B is bidirectional, indicating mutual matching.
+
+Connections are depicted via red arrows originating from each female node and pointing to a unique male node, ensuring no overlaps and establishing a bijection. These connections visually represent the matching process where each individual in one demographic group is paired with an individual in the other group. A thick black arrow originates from the bottom-right corner of the transport map area and points upward toward the instruction box, signifying that the matching process directly informs the model’s behavior: once matched, the model treats the paired individuals (like A and B) similarly. This ensures fairness by enforcing parity in treatment across demographics. The figure uses color coding consistently—purple for females and green for males—to distinguish groups, while red arrows denote the matching relationships. The overall structure conveys a workflow: demographic groups are aligned via a transport map, resulting in matched pairs whose similar treatment enforces fairness.

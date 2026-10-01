@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-503006",
+  "record_sha256": "aa7c6f1640bcc290e1a0d908ae6f5a42a2b525e1c9ad132a5b370624d640c0c4",
+  "asset_sha256": "70fb155ee12b12918a6b886a3c1492590bbad8348ee9c26ebd16b1f4eea72f7b",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503006",
+    "title": {
+      "zh": "Understanding Individual Agent Importance in Multi-Agent System via Counterfactual Reasoning · 方法图",
+      "en": "Understanding Individual Agent Importance in Multi-Agent System via Counterfactual Reasoning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15619",
+      "title": "Understanding Individual Agent Importance in Multi-Agent System via Counterfactual Reasoning",
+      "authors": [
+        "Jianming Chen",
+        "Yawen Wang",
+        "Junjie Wang",
+        "Xiaofei Xie",
+        "jun Hu",
+        "Qing Wang",
+        "Fanjiang Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15619",
+      "arxiv_url": "https://arxiv.org/abs/2412.15619",
+      "arxiv_id": "2412.15619",
+      "arxiv_first_submitted_at": "2024-12-20T07:24:43Z",
+      "arxiv_updated_at": "2024-12-23T01:56:56Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1609/aaai.v39i15.33733",
+      "journal_reference": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2025)",
+      "arxiv_current_version_observed": "2412.15619v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503006/image/image.jpg?Expires=1790855276&Signature=o9kmYlLD0CdSnFGgb5SO1dsWmESIdNwTo8stTwpGSLHRhaj5T9jWa2iDDEzi09wZvHD7PljSq4TykM4OHsKIeFc6XaADCCnbNoSfU25RxC0pxlSBnlRmK-MCW7GApT9ih4FxvAuWTL-1U2qPDn2UYZWW8eU5dYcC3DHzDpZU6~t0aE4ykQqp7gJqrlsOJnzwdbNl66cC8wHzFzAUzBZkkY69O-FMhZdTW6~yhYXdRKersm-LtD82gDiMzf9v8yXmq0c9o7AMs9kzoGUSCoHV6hi4KJfBRWc8-2ZgqfHG1KUFMuUKbKRxIMaIylRJm51sbC1yjiZUanC0T6hewI5CZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503006,
+      "description_sha256": "dc8e2a5ec264274b6547dc4c9b6b1b75ce5c79b62afb3f1eec7e1d8f3483713b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7142b4ca0b4b74fca2c15e3614ebd9f8c305bc26151528cd7f3857ea1aa6fd10",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two parts: (a) the workflow of EMAI at each time-step t, and (b) the architecture and training mechanism of EMAI. In part (a), the global layout shows an environment (env) providing observations o₁ through oₙ and rewards r + rᵐ to both Target Agents (π) and the EMAI module. The Target Agents generate actions a₁ through aₙ, which are then processed by a masking operation. The EMAI module outputs masking probabilities, which are used to randomize the actions into a₁ᵐ through aₙᵐ. These masked actions are combined with the original actions via a circular node labeled 'masking' to produce the final action output. Additionally, EMAI computes Agent Importance, represented by icons with varying border colors (red and yellow), indicating the relative significance of each agent based on the masking probability (lower probability implies higher importance). The entire process feeds back into the environment via the 'action' arrow.\n\nIn part (b), the architecture of EMAI is shown within a large dashed blue box labeled 'EMAI'. The input consists of observations o₁ through oₙ and rewards r + rᵐ. These inputs feed into the Masking Agents (πθ), depicted as a yellow rounded rectangle containing multiple red icon nodes (each with a crossed-out eye symbol) and ellipses indicating multiple agents. The Masking Agents output masked actions a₁ᵐ through aₙᵐ and individual Q-values Q₁(o₁,a₁ᵐ) through Qₙ(oₙ,aₙᵐ). These are passed to the Central Critic Network (Cω), another yellow rounded rectangle, which computes the total value Q_tot. The Q_tot is used to compute a Loss, which is also influenced by the reward J(π) obtained from a Monte Carlo estimation. The Loss is then used to update both the Masking Agents and the Central Critic Network, as indicated by dashed orange arrows labeled 'update'. The connections are primarily solid blue arrows, with the update paths shown as dashed orange lines. The overall structure emphasizes a reinforcement learning framework where the masking agents learn to randomize actions while the central critic evaluates the total value, and the loss function drives the optimization to minimize reward differences before and after randomization, promoting more randomization for less important agents."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

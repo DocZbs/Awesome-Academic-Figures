@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505756",
+  "record_sha256": "debf32d48e9f90c19d6b05a37403fce08eba200be28fe0108a58e2b2202ff850",
+  "asset_sha256": "d251240687cd9592d847eadef9271200bd4424a98b657513ffd1bc20ab0fc893",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505756",
+    "title": {
+      "zh": "YOLO-UniOW: Efficient Universal Open-World Object Detection · 方法图",
+      "en": "YOLO-UniOW: Efficient Universal Open-World Object Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-20645",
+      "title": "YOLO-UniOW: Efficient Universal Open-World Object Detection",
+      "authors": [
+        "Lihao Liu",
+        "Juexiao Feng",
+        "Hui Chen",
+        "Ao Wang",
+        "Lin Song",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20645",
+      "arxiv_url": "https://arxiv.org/abs/2412.20645",
+      "arxiv_id": "2412.20645",
+      "arxiv_first_submitted_at": "2024-12-30T01:34:14Z",
+      "arxiv_updated_at": "2024-12-30T01:34:14Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20645v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505756/image/image.jpg?Expires=1790855559&Signature=c8epf0NB90~9Dt98bzF6LDqO29TywJP6Fogp8tNh6ws0HXSJGJu40lZHEjvLcvXvpx8MUJyHv-L33sGE~EN4KFUw42wWLlFnAnLk2fTNhzRzaoBCcqxwaaYUwlvwwPNLa-3amtlbkCg4o7J2YdybPNU6MqUqpwjM~kd9LDbeVeRXzBs0vp9MMNL8qH4VE9KstxZ5hGE4frYodj64NgEm4irOzP~p-yNDoKtRT5uocwOOi~lGmCHPa9kQDQZwB3NjSIRA7zywSGNAnaFquvg4i8pA6jYg0TmZILKmlYzHg1NZjqeK6HfKjDTeF5l0Bj1yaOWaoMuPP1y8xYw5k~trlA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505756,
+      "description_sha256": "c9bb01fc5d37fc00cb8fa45e3cc852226c6feb5f8d5b55a27adbf94664ee6241",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "524fb950e50fc42e71169b02ce452bc6612a284f9213616f717a32038d6e82a8",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative analysis of four detection framework architectures, labeled (a) through (d), illustrating different approaches to open-vocabulary and open-world object detection. The layout is divided into two main sections: the left side compares two open-vocabulary detection methods, while the right side contrasts open-world and open-vocabulary detectors with a proposed unified approach.\n\nIn section (a), an open-vocabulary detector is shown with a global structure involving a Text Encoder (light blue rounded rectangle with a snowflake icon), a Detector (peach-colored rounded rectangle with a flame icon), and an Image-Text Fusion module (yellow vertical rectangle). The Text Encoder and Detector feed into the Image-Text Fusion block, which then outputs to a circular cross symbol representing a fusion or decision operation. This setup emphasizes cross-modal fusion between text and image features.\n\nSection (b) presents an alternative, more efficient open-vocabulary detector, marked as 'our' method with Adaptive Decision Learning. It retains the same components — Text Encoder (light blue with flame icon) and Detector (peach with flame icon) — but omits the explicit Image-Text Fusion module. Instead, the outputs from both modules directly feed into the circular cross symbol, suggesting a streamlined, adaptive decision-making process without intermediate fusion.\n\nA vertical dashed line separates the left and right sections. On the right, section (c) compares two distinct detector types. The first, an Open-Vocabulary Detector (green rounded rectangle), takes inputs from Image and Text (gray rectangles) and outputs to two oval nodes: 'Classes in Text' and 'Known Classes', indicating it can detect only classes mentioned in the text. The second, an Open-World Detector (yellow rounded rectangle), also takes Image input and outputs to 'Known Classes' and 'Unknown', signifying its ability to distinguish known from unknown classes. Both detectors are shown as separate entities, highlighting their differing capabilities.\n\nFinally, section (d) introduces the proposed Universal Open-World Detector (a green-yellow gradient rounded rectangle), which combines the strengths of both previous types. It takes two inputs: Image (gray rectangle) and Text & Wildcard (another gray rectangle), where 'Wildcard' implies a general placeholder for unknown classes. The output is directed to two ovals: 'Classes in Text' and 'Unknown', demonstrating its dual capability to handle both open-vocabulary and open-world detection tasks. The entire figure uses consistent visual attributes: rounded rectangles for models, gray rectangles for inputs, ovals for outputs, and arrows to indicate data flow. The 'VS.' labels between (a) and (b), and between (c) and (d), emphasize the comparative nature of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

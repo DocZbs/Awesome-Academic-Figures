@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503575",
+  "record_sha256": "e8a918bfca98658ed794301053687bb1b1546ab450111b3ace28d44c9cd09a23",
+  "asset_sha256": "42e1474c01d5a5154e4c4adf6a523836c8af7843017c1499fe5fed558781652c",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503575",
+    "title": {
+      "zh": "Visual Prompting with Iterative Refinement for Design Critique Generation · 方法图",
+      "en": "Visual Prompting with Iterative Refinement for Design Critique Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-16829",
+      "title": "Visual Prompting with Iterative Refinement for Design Critique Generation",
+      "authors": [
+        "Peitong Duan",
+        "Chin-Yi Cheng",
+        "Bjoern Hartmann",
+        "Yang Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16829",
+      "arxiv_url": "https://arxiv.org/abs/2412.16829",
+      "arxiv_id": "2412.16829",
+      "arxiv_first_submitted_at": "2024-12-22T02:35:57Z",
+      "arxiv_updated_at": "2025-05-22T23:42:09Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16829v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503575/image/image.jpg?Expires=1790855374&Signature=fjoM78CGYzW32l~nMktguEi62723lpijT5UcCdSRQno-DeKKzqyIdyf7D0KySackoGupy~cqbY3wZczb~zQHrK0xgVlXJZ4f80xbjpy6ZRSWaHmW55ngY0VZ5vuQzfO8scWBY8zghc3vLdN979OrJ6T29K7-AVEGl2hPYIupEZ2JyDXzroNzF55bWaWJ7md~NE6-u-IuoTPmC-nyzXK1EKN1mnH0mkctXEb2pTab230VklK-9KWfQDslufWZx5rouWA3SJGMjRWYRZ9i1ue93tADssmisAi9f72oObFM7yY-qcY5OtYNzP3NcBPIUFgRb2lLeDoz9FkU6cGogKPjig__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503575,
+      "description_sha256": "a0f9127e6612a0c268436d01d590257615fd5c4a31029ec2402023c9da6abc2b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fdf175f15e1ee58ff361399905af754ce35dc6723cb638ed25623d319e28a82b",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a modular pipeline for generating and refining text items along with their corresponding bounding boxes (Bbox) from an input image and task prompt. The overall layout is structured into three vertically aligned, color-coded modules: 'Text Generation & Refinement Module' (light blue), 'Validation Module' (light green), and 'Bbox Generation & Refinement Module' (light orange). These modules are arranged left-to-right, indicating the primary data flow direction.\n\nIn the leftmost module, the process begins at step [1] with the input of an image and task prompt, which feeds into the 'Text Generation LLM' (blue rectangle). This model produces a 'List of Text Items' (step [2]), which is passed to the 'Text Filtering LLM' in the Validation Module. The filtered list (step [3]) is then processed one item at a time by the 'Bbox Generation LLM' (orange rectangle) in the rightmost module. This generates a 'Text Item & Bbox' pair (step [4]), which is sent to the 'Bbox Refinement LLM for Bbox' (orange rectangle). This refinement stage iteratively adjusts the bounding box based on the text item until termination, as indicated by the circular arrow and label [5].\n\nThe refined bounding box is then sent back to the 'Text & Bbox Validation LLM' (green rectangle) in the Validation Module. This validator receives both the text item and refined bbox (step [6+]) and evaluates them. Based on validation, three outcomes are possible: if both text and bbox are correct, the output is produced (step [7+] labeled 'Output: Correct Text & Correct Bbox'); if the text is incorrect but the bbox is correct, it sends 'Incorrect Text & Correct Bbox' (step [7+]) to the 'Text Refinement LLM for Bbox' (blue rectangle) in the left module; if the bbox is incorrect but the text is correct, it sends 'Correct Text & Incorrect Bbox' (step [7+]) back to the 'Bbox Refinement LLM for Bbox'. If both are incorrect, the item is discarded (step [7+] red arrow).\n\nThe 'Text Refinement LLM for Bbox' iteratively refines the text based on the current bbox until termination (step [4], circular arrow). Once refined, the updated 'Refined Text & Correct Bbox' (step [8+]) is sent back to the 'Text & Bbox Validation LLM' for re-evaluation. All LLMs are represented as rectangles with black borders, colored according to their module. Text labels inside each box specify the LLM's function. Arrows indicate data flow, with numbered labels showing the sequence of operations. Numbers with a '+' denote iterative or multiple instances of the same step. The figure captures a feedback-driven, multi-stage refinement process ensuring accurate text and bounding box pairs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

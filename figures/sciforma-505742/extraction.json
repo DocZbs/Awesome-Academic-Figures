@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-505742",
+  "record_sha256": "e431048f0d26a4574e9b47a1046c35b068b4f9f993b69ea093194560fb68b34c",
+  "asset_sha256": "d1f2d188bfa751efcd3552bd7e866a02c2b0f7c8160ec22142edbf93ca7e2a02",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505742",
+    "title": {
+      "zh": "MATEY: multiscale adaptive foundation models for spatiotemporal physical systems · 方法图",
+      "en": "MATEY: multiscale adaptive foundation models for spatiotemporal physical systems"
+    },
+    "paper": {
+      "id": "arxiv-2412-20601",
+      "title": "MATEY: multiscale adaptive foundation models for spatiotemporal physical systems",
+      "authors": [
+        "Pei Zhang",
+        "M. Paul Laiu",
+        "Matthew Norman",
+        "Doug Stefanski",
+        "John Gounley"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20601",
+      "arxiv_url": "https://arxiv.org/abs/2412.20601",
+      "arxiv_id": "2412.20601",
+      "arxiv_first_submitted_at": "2024-12-29T22:13:16Z",
+      "arxiv_updated_at": "2024-12-29T22:13:16Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20601v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505742/image/image.jpg?Expires=1790855558&Signature=qGwh6B56IG7shavsZ8a1zmxb78Ub6323U1BipcNpYnFvXLi-LLm8rb7LU3uTiC~Vbu~nOaPBmMw8vTM-eHkWvM-CQ1hdC3~cnoFB9bTjl76C~uH05A1RJUiwze4SBFPXzw2fiDHUSidFs3bIkBRRQLDYKZjFJoXLo5oJDpyCRUIodlaCSNJgjuqbJUVb0yRrvc8fevydaiy1ouGCWLpBtGNhzFc37DDugOKgTRa7te-I07KOmYoNH77Ax9cpEbseCWdqq6Z5VzGGQR81GRyG101Dc399jok5Lh9VxTKoeg9vEY4CyXt09FWUYvOL02KiVSybyCFVFirhIzlUYRvb6g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505742,
+      "description_sha256": "117796d7d71a11a13e321a6a525e651ad73d912a5eb3a1b90e010208d93c2176",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4d46feb57b116dbf6484b930ae9b4f7283c2d2f398cea8f3d8271f9ed8163706",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an adaptive tokenization framework for vision transformers, designed to dynamically adjust patch sizes based on local feature variance. The global layout is divided into three main stages: coarse token generation, local refinement, and batched sequence processing for multi-resolution tokens. On the left, two example frames at time steps t=651 and t=372 show coarse tokens represented as blue rectangular blocks beneath green grid-based feature maps. Each feature map displays heatmaps indicating local intensity variations. Adjacent to each coarse token representation is a 'Local variance' plot showing variance values per token ID, with a horizontal dashed line marking γ_sts·Max, the threshold for refinement. Tokens exceeding this threshold are refined to smaller patch sizes, indicated by pink rectangular blocks beneath the refined feature maps. These refined tokens are highlighted with pink outlines in the original token sequences. The middle section aggregates these refined tokens into two distinct batches: 'Multi-resolution tokens', consisting of sequences with alternating blue (large patch) and pink (small patch) tokens, and 'Masked batch for mixed-resolution tokens', where gray padding tokens are added to align sequences of varying lengths. The rightmost part shows two adaptation modules: Adap_Mul processes the multi-resolution tokens and feeds them into AViT, SViT, and ViT models; Adap_Mix processes the masked batch and feeds it into SViT and ViT. The legend clarifies that blue tokens correspond to large patch size [p_x1, p_y1], pink tokens to small patch size (sub-token-scale [STS]) [p_x_sts, p_y_sts], and gray tokens are padding tokens with large numerical values used for masking. The entire process follows a data flow from coarse tokenization through variance-based refinement to batched multi-resolution input for downstream vision transformer models, with the refinement criterion defined by γ_sts·Max as specified in Equation (\\ref{eq-ind})."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

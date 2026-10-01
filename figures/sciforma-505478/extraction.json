@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505478",
+  "record_sha256": "fdd2455f08bd510e3677101c5937835991afb85a7d5ce060369b08a92593d41d",
+  "asset_sha256": "c49e245ec1ff51d44e8b9c24b1514317739bb22508740256b62159153a8ebd24",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505478",
+    "title": {
+      "zh": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification · 方法图",
+      "en": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-20110",
+      "title": "Cross-Modal Mapping: Mitigating the Modality Gap for Few-Shot Image Classification",
+      "authors": [
+        "Xi Yang",
+        "Pai Peng",
+        "Wulin Xie",
+        "Xiaohuan Lu",
+        "Jie Wen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20110",
+      "arxiv_url": "https://arxiv.org/abs/2412.20110",
+      "arxiv_id": "2412.20110",
+      "arxiv_first_submitted_at": "2024-12-28T10:40:21Z",
+      "arxiv_updated_at": "2026-02-15T14:03:30Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20110v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505478/image/image.jpg?Expires=1790855552&Signature=t-~3QG7J59zsZgrz~m8aRq~hvMdgpg4bam1vO31Un1vbPHMyJGAd7r3PzFCIGvS84N4gSglkgXpu9C7MeVUyzO3TkMtlav~L1rc9sq1uwPwBuVx-nF0ZwZLL8Mm5h4XAEaQbntRKrTcibezwI-jcrCFsF-W04TRHZEYEldi3Ngo3OlDNCxZrAY24dCWlRm4FdWIkaVAIJ9ZE0LmUUFNREFow~FIsmiYZzfTS41Xoab~DdoycfMircOEgfMpFMYy5iyOaNqun2NT9IIvyFSuh-gBmkS3LXTT7AxzPvO7K5bsQu99dve65PPxHljEBcVZye-dcrmwe1EFs~3-paPPr0w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505478,
+      "description_sha256": "dd8b07315da28ab15a6e9126835823c54cb6acee088b4807ec85634614a98f0d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8038291b8fdf3eda734de9dd00f3f791c3707f0f560c52ff29a8e704c0a74696",
+      "row_response_sha256": "a02aa24da361d3d550a34070afa09ff1d74c2d4923bb3e3aac0eee0380102e23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Cross-Modal Mapping (CMM) architecture, designed to reduce the modality gap between visual and textual features by optimizing only a linear transformation matrix W and a textual feature matrix T, without requiring a visual cache. The global layout is horizontally structured into two main parallel streams: a top visual processing path and a bottom text processing path, which converge to produce final logits for classification. The visual stream begins with a series of input images (e.g., cat, bird, dog, etc.) fed into a Visual Encoder, represented as a large rounded rectangle with a snowflake icon indicating it is frozen during training. The encoder outputs a sequence of visual features v₁ through vₙ, which are then transformed via a trainable weight matrix W—depicted as a grid with a flame icon—resulting in a new set of features v'₁ through v'ₙ. These transformed features are then combined with text features through a fusion mechanism denoted by a circular multiplication symbol, producing α, which contributes to Logits_CMM. The text stream starts with a list of class names (cat, bird, dog, pig, etc.) concatenated with a template 'Template(CLASS)', shown in a green dashed box, forming a prompt. This prompt is processed by a Text Encoder, also marked with a snowflake icon to indicate it is frozen. The encoder outputs text features t₁ through tₙ, which are split into two branches: one passes through a frozen transformation (indicated by a snowflake) to yield a feature matrix T, and the other passes through a trainable transformation (flame icon) to feed into a TripletLoss module. The feature matrix T is used in conjunction with the visual features to compute the fusion parameter α. The final output combines Logits_CMM and Logits_CLIP (from the original CLIP model) to form the final Logits, which are passed to a CrossEntropyLoss function for training. The figure includes a legend at the top right showing flame icons for trainable components and snowflake icons for frozen components. The overall design emphasizes efficient training by limiting trainable parameters to W and T, and enhances classification by introducing a cross-modal inductive bias through the CMM component."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

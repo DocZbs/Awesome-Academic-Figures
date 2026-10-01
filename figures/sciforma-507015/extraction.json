@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-507015",
+  "record_sha256": "2b68f648f2cc27f5abfa7ad7634cdd5abaaf1b7dee9a135af79830598074bd53",
+  "asset_sha256": "23c245541459ee77c03fe112cf51716b990fe4973fe76a958749354dc73c2499",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-507015",
+    "title": {
+      "zh": "BoundingDocs: a Unified Dataset for Document Question Answering with Spatial Annotations · 方法图",
+      "en": "BoundingDocs: a Unified Dataset for Document Question Answering with Spatial Annotations"
+    },
+    "paper": {
+      "id": "arxiv-2501-03403",
+      "title": "BoundingDocs: a Unified Dataset for Document Question Answering with Spatial Annotations",
+      "authors": [
+        "Simone Giovannini",
+        "Fabio Coppini",
+        "Andrea Gemelli",
+        "Simone Marinai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03403",
+      "arxiv_url": "https://arxiv.org/abs/2501.03403",
+      "arxiv_id": "2501.03403",
+      "arxiv_first_submitted_at": "2025-01-06T21:46:22Z",
+      "arxiv_updated_at": "2025-12-01T09:36:01Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/s10032-025-00563-5",
+      "arxiv_current_version_observed": "2501.03403v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=507000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/507015/image/image.jpg?Expires=1790855632&Signature=eveASABoj2IWwsoVjU7hOyU005-O~rZIKm9FDkNSNVVBG~9IfrGJbetlfIrUA5K~4ZU0ln9oWi1sjsegqZ~2Trt05dxPGO25MH~vhWBGv2SUcpRrum-thqXC7DtDA3LAGKEAN0G5VU1i6ItmXFAe3tTs5~J0Q9~jbPaitOpzoY8Hz-rMTvYY49ghd2F-cymCVhAFbJjsDSzT3Z7HwEboG77GPAnUr9jTyrpJv4b7xZwlUrQ9WAMbJd3EMoGi2smCSX-OsqiRZ24yKyAxIT99HVD392xk1J7X~a1ML7ohV3TERkmENK1Efz1026Bw-lIVlzFIomSgcujQH1fumIHl3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 507015,
+      "description_sha256": "c3a37a5b42935c11575daacb65de6cb710cec822a275f73905e8b12d9c8ea6b2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "382cd4b9e7d658824091eeac079966713d6e76750f66daf48fabedf1e9932ee2",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a6d08384a69c0bea9746a8ec4627854593b312f5ac42a69cd8eb0900dd0b78ad",
+      "row_response_sha256": "a28f61e193d5bf20bb0b09740db326193306ded92667fb2b0c341a49c5750d23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a dataset construction pipeline designed to create a unified dataset called BoundingDocs from two distinct input categories: Q&A datasets and Key-Value extraction datasets. The global layout is linear and left-to-right, with a branching path for question generation that feeds back into the final output. On the far left, two stacks of document icons represent the input datasets — red for Q&A datasets and blue for Key-Value datasets — labeled accordingly beneath them. These inputs flow via a black arrow to a rectangular box labeled 'AWS OCR', indicating optical character recognition processing using Amazon Web Services' Textract service. From there, another black arrow leads to a rectangular box labeled 'Match Annotations', which aligns extracted text with corresponding document annotations. A downward blue arrow from this module connects to a blue-bordered rectangular box labeled 'Generate Questions', signifying a secondary processing step. This step is driven by an external model represented by a green oval labeled 'Mistral 7B v0.3', connected by a blue arrow, indicating that this large language model is used to generate and rephrase questions specifically for the Key-Value datasets. The output of the 'Generate Questions' module feeds into the final component via a blue arrow. The final output is a purple parallelogram labeled 'BoundingDocs', representing the consolidated, annotated dataset. A black arrow from 'Match Annotations' also points directly to 'BoundingDocs', showing that both the matched annotations and the generated questions contribute to the final dataset. The visual modules are distinguished by color and shape: red and blue document stacks for inputs, white rectangles for processing steps, a green oval for the LLM, and a purple parallelogram for the output. Text labels are clear and positioned within or near each module. The connections are primarily black arrows for primary data flow and blue arrows for auxiliary or model-driven flows, emphasizing the role of Mistral 7B v0.3 in question generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

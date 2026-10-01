@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505109",
+  "record_sha256": "f87e1404807ee5c85711b83ed923cebc9e57476c9b33c8857d89956d4afdf046",
+  "asset_sha256": "964dfc8a24cd6b4dafd47b6e33e79c221b0695a34177ddd16f28f921c8818aa6",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505109",
+    "title": {
+      "zh": "Find the Intention of Instruction: Comprehensive Evaluation of Instruction Understanding for Large Language Models · 方法图",
+      "en": "Find the Intention of Instruction: Comprehensive Evaluation of Instruction Understanding for Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-19450",
+      "title": "Find the Intention of Instruction: Comprehensive Evaluation of Instruction Understanding for Large Language Models",
+      "authors": [
+        "Hyeonseok Moon",
+        "Jaehyung Seo",
+        "Seungyoon Lee",
+        "Chanjun Park",
+        "Heuiseok Lim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19450",
+      "arxiv_url": "https://arxiv.org/abs/2412.19450",
+      "arxiv_id": "2412.19450",
+      "arxiv_first_submitted_at": "2024-12-27T04:37:39Z",
+      "arxiv_updated_at": "2025-01-23T00:45:55Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19450v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505109/image/image.jpg?Expires=1790855453&Signature=Qd7j0Run8kHQds63Vr9jYvDowKOfO3aVh2eCCZcwRZRMnxfRcmEhxxEMI4JxjUD9eyrsqjruglhfEwCxHUjJSCR9V2X-HzreBTqRQdrJ~-srqq8slptkKJDi-y592r2xTFZRMSoBcZksA3o~nKNBPXvgzcVqwE-TFXshHBCqaflmW9lZGd9xiiAPI9ixIcZqdx-YYIWpyODP2uERcfKQtswNcyDpkHC-0iUIJbhUz0u0WSfLa2w5DoRj-txveRsh0xsMvJMY26KeGVI9bRRK~KfYCP1A9Z5kaVEgpvSlcXfL7tlUvkJRLBFTMt9TdorX2JwFd2DAvuRh-rAmZN~NQg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505109,
+      "description_sha256": "a2de9e0a6065bbf8695610ba9ebf04274221c153406beafad6db156953ad689a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fdef3a3de11d33cfa164034adae9db4fe808a1258cac0fe0ed2905d944f35f82",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a pipeline for constructing pool-based contrastive instructions, starting from instruction-following benchmarks and progressing through selection, semantic search, model evaluation, and human correction to generate both random and semantically similar contrastive examples.\n\n[1] Global Layout and Structure:\nThe diagram is horizontally oriented, depicting a left-to-right workflow. On the far left, a gray rectangular box labeled 'Instruction Following Benchmarks' serves as the input source. This feeds into an 'Instruction Pool' represented by stacked document icons. From there, two parallel pathways diverge: one via 'Random Selection' leading to 'Random Instructions', and another via 'Semantic Search' leading to 'Semantically Similar Instructions'. Both pathways converge at a central evaluation block labeled 'GPT4 Test', which includes sub-steps for inspecting failure cases and human correction. The outputs from this evaluation stage feed into two final contrastive modules: 'Random Contrastive' and 'Semantic Contrastive'. A dashed arrow loops from the GPT4 Test back to the Instruction Pool, indicating iterative refinement or feedback.\n\n[2] Visual Modules and Attributes:\nThe 'Instruction Following Benchmarks' box contains two sub-components: 'Output (Followed)' with example text 'Eat healthy, feel healthy!' and 'Instruction' with example 'Generate an advertisement slogan that promotes healthy eating.', linked by an arrow labeled 'Label Instruction for Pool-based'. The 'Instruction Pool' is depicted as three overlapping documents. The 'Random Selection' module is a red-bordered rectangle, feeding into a red-bordered box labeled 'Random Instructions' containing three example instructions. The 'Semantic Search' module is a blue-bordered rectangle, feeding into a blue-bordered box labeled 'Semantically Similar Instructions' with three corresponding examples. The 'GPT4 Test' is a gray-bordered box with a GPT-4 logo, containing two sub-steps: 'Inspect Failure Case' (with a group icon) and 'Human Correction' (with a single person icon). The final output modules are 'Random Contrastive' (red-bordered) and 'Semantic Contrastive' (blue-bordered), matching the color-coding of their respective input pathways.\n\n[3] Connections and Arrows:\nSolid red arrows connect the Instruction Pool to Random Selection and then to Random Instructions, which proceed to GPT4 Test and finally to Random Contrastive. Solid blue arrows connect the Instruction Pool to Semantic Search and then to Semantically Similar Instructions, which also proceed to GPT4 Test and then to Semantic Contrastive. A dashed gray arrow loops from GPT4 Test back to the Instruction Pool, suggesting iterative improvement. Within the GPT4 Test box, gray downward arrows indicate the sequential flow from GPT4 Test to Inspect Failure Case and then to Human Correction. All connections are unidirectional, except for the feedback loop."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

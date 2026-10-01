@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-506991",
+  "record_sha256": "aaf7e164a2440a27849f690538636f0826e6f1e3b5e2c75fb92a210443480d07",
+  "asset_sha256": "c1d5d1b68e0f07094ed8a5e06f60539d544e988b1c3d6bbccbf82c91f15e17a6",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506991",
+    "title": {
+      "zh": "ComMer: a Framework for Compressing and Merging User Data for Personalization · 方法图",
+      "en": "ComMer: a Framework for Compressing and Merging User Data for Personalization"
+    },
+    "paper": {
+      "id": "arxiv-2501-03276",
+      "title": "ComMer: a Framework for Compressing and Merging User Data for Personalization",
+      "authors": [
+        "Yoel Zeldes",
+        "Amir Zait",
+        "Ilia Labzovsky",
+        "Danny Karmon",
+        "Efrat Farkash"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03276",
+      "arxiv_url": "https://arxiv.org/abs/2501.03276",
+      "arxiv_id": "2501.03276",
+      "arxiv_first_submitted_at": "2025-01-05T09:57:03Z",
+      "arxiv_updated_at": "2025-01-05T09:57:03Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03276v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506991/image/image.jpg?Expires=1790855629&Signature=iPHdKPY0XruI~sk7JYk3O6ZFYbTFOnAdBaWPwAz~GxVAlwbYkMH5aahT-2FuZFxJryPxnxEZyz6aIzdHfQ9WFGkD5WLDl1vJ-Y6k0Z4wnP1EILWf6yJEm8SB9o3gcbYFKqFVcwAzKucxJjrbQPbYi7aeR~c0zGvpHHk6GIZk4m6jtQsT~y0a7u1iLvgOZ6uEdgNv0GSdBkKxer7cR741l~2h~yS8LdcNP04KZox-n45bxI8-F~xWOmfIFYIVj4yUIhO0x2qwpVpW40QCxSJbF6d1KOjaNXovkrhyPAHQjNI~U5Ggrr6WyYdvkRkNVj7bo7cycySfkL46-l6a6qKldw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506991,
+      "description_sha256": "0ff9fe6f333e11fde68a218ebca892a65240965ba2014ce64aa18a520d7ef200",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "382cd4b9e7d658824091eeac079966713d6e76750f66daf48fabedf1e9932ee2",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3d055bf8958e791921f602908176f862db0a9bae5df763b388865250d1c8707f",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ComMer architecture, a method for compressing and merging multiple documents before feeding them into a large language model (LLM) for response generation. The layout is divided into two main sections: the left side shows the overall pipeline, while the right side details the internal structure of the compressor module.\n\nOn the left, the global workflow is structured into three sequential stages labeled vertically as '1. Compress', '2. Merge', and '3. Respond'. In stage 1, three separate documents — 'I'm 36', 'I like bouldering in gyms', and 'I work at Google' — are each processed by an individual 'Compressor' module. Each compressor is represented as a beige rounded rectangle with the label 'Compressor' and a small orange flame icon, indicating it is a trainable component. Below each compressor, the corresponding input text is shown, along with a sequence of colored squares representing the compressed embedding vectors: green for the first document, red for the second, and purple for the third. Above each compressor, two small colored squares (matching the output color) represent the compressed output tokens.\n\nIn stage 2, labeled 'Merge', the compressed outputs from the three compressors are combined via a mean pooling operation. This is visually depicted by arrows pointing from each pair of compressed tokens (green, red, purple) to a central pair of orange-bordered squares with diagonal purple and green stripes, symbolizing the merged representation.\n\nIn stage 3, labeled 'Respond', the merged representation is fed into a frozen LLM named 'Gemma', shown as a light blue rounded rectangle with a snowflake icon, indicating it is not trained during this process. Below Gemma, a sequence of blue squares represents the generated token sequence, followed by the output text: 'In which office can I find a gym?'\n\nA vertical dashed line separates the left pipeline from the right panel, which shows the internal architecture of the compressor. Here, the same 'Gemma' model is depicted again, but now with two orange flame icons inside, indicating it is adapted using a trainable LoRA (Low-Rank Adaptation). The input text 'I work at Google' is shown below, followed by a sequence of purple squares (representing the input tokens) and two orange-bordered squares with flame icons (representing the trainable compression embeddings appended to the input). The output consists of the final layer representations of these compression embeddings, shown as four purple squares and two flame icons, matching the output format used in the left panel.\n\nThe visual elements consistently use color-coded squares to represent token embeddings: green for age-related content, red for hobbies, purple for employment, and blue for the LLM’s generated output. The flame icons denote trainable components, while the snowflake denotes a frozen model. All connections are indicated by solid black arrows showing the flow of information from input through compression, merging, and finally to response generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

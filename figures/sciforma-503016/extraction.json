@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503016",
+  "record_sha256": "e437b6b6a5ab542c47b043cde93a822cca8ce02d06e60041a4ed421d22770acd",
+  "asset_sha256": "39aa4a8a187173a29f504a160a0de489b7abbd30a8cc9a884514d6916eb6a886",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503016",
+    "title": {
+      "zh": "CrackUDA: Incremental Unsupervised Domain Adaptation for Improved Crack Segmentation in Civil Structures · 方法图",
+      "en": "CrackUDA: Incremental Unsupervised Domain Adaptation for Improved Crack Segmentation in Civil Structures"
+    },
+    "paper": {
+      "id": "arxiv-2412-15637",
+      "title": "CrackUDA: Incremental Unsupervised Domain Adaptation for Improved Crack Segmentation in Civil Structures",
+      "authors": [
+        "Kushagra Srivastava",
+        "Damodar Datta Kancharla",
+        "Rizvi Tahereen",
+        "Pradeep Kumar Ramancharla",
+        "Ravi Kiran Sarvadevabhatla",
+        "Harikumar Kandath"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15637",
+      "arxiv_url": "https://arxiv.org/abs/2412.15637",
+      "arxiv_id": "2412.15637",
+      "arxiv_first_submitted_at": "2024-12-20T07:55:08Z",
+      "arxiv_updated_at": "2024-12-20T07:55:08Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15637v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503016/image/image.jpg?Expires=1790855276&Signature=WeE5K0QKOTg6NSB-nTIZQn49mFcQVaOoTc5dtNS0-TpljdWwAdoF0XRdXaL-dXY8x11Zwv1t5E~kuaDWoRwp6g1h-DTkY0NEocatiMlCapzeRKbbU7UD6f98WPuUxLFF5PQ9bBh6hjTcKx3pxUQbjjQxRmizkzQAHZTec1CDeXyOqbQPoiMzXRnsz2Bd2SBHIce0ZTGcPisbF559BfoQY2I6s9o24mwT4eN7aOwZ7S939yoVNfVo420QO~vdYiM41GGbGG6jXXEy-06cfkPYNCabRWvTYFciL24HWCV8KBtvzuTjhAwPW5vU70wmAEiyvt9ZYrEeuyPjsBYvEkVQ1g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503016,
+      "description_sha256": "9bc3c042f6faffdcb24272dbaa8bfbd3aa46b7e506fe0d4896c803a25a4876ea",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "21b6793482a4335a1c07d5eba2bcfaf84ab874cbf950481efa7ca14999b42488",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-step deep learning architecture for domain-adaptive binary segmentation, divided into Step 1 and Step 2, with a legend explaining visual components. The global layout is split into two main sections: Step 1 on the left and Step 2 on the right, each depicting a neural network pipeline. Step 1 shows a standard encoder-decoder structure trained on labeled source data, while Step 2 introduces domain adaptation via a shared encoder with domain-specific layers and an adversarial discriminator.\n\nIn Step 1, the input is a source domain image X_j^S, represented as a gray square with a crack-like texture. This feeds into an encoder E_φ1, composed of stacked blocks: yellow blocks denote domain-invariant layers φ_i, pink blocks represent domain-specific layer φ_s1, and the entire encoder is shown as a hierarchical structure narrowing toward the center. The output from the encoder is passed to a blue decoder D1, consisting of stacked blue blocks that expand back to the original image size. The decoder outputs a segmentation mask Y_j^S, shown as a black square with a white crack, which is compared to the ground truth via a cross-entropy loss L_CE, indicated by a yellow box with an arrow pointing to the decoder.\n\nStep 2 begins with the same source image X_j^S entering a modified encoder E_φ2. This encoder retains the domain-invariant layers (yellow) and the first domain-specific layer φ_s1 (pink), but adds a second domain-specific layer φ_s2 (purple). The output from E_φ2 splits into two paths: one feeding into decoder D1 (blue), now marked with a lock icon indicating it is frozen, and the other into a new decoder D2 (teal). Decoder D1 is connected to a Kullback-Leibler divergence loss L_KLD, which measures the difference between the latent representations of the two decoders. Decoder D2 is connected to the same L_CE loss as in Step 1, ensuring continued segmentation accuracy on the source domain.\n\nAdditionally, Step 2 includes adversarial training. Both source X_j^S and target domain images X_j^T (a different gray image with a crack, shown below) are fed into the same encoder E_φ2. The shared latent representation is then passed through a Gradient Reversal Layer (GRL), depicted as a blue curved arrow, before being input to a gray discriminator d_p. The discriminator outputs a loss L_adv, which is used to train the encoder to produce domain-invariant features. The GRL reverses the gradient during backpropagation, enabling the encoder to learn features that fool the discriminator.\n\nThe legend at the bottom left defines the color-coded blocks: yellow for domain-invariant layers φ_i, pink for domain-specific layer φ_s1, purple for domain-specific layer φ_s2, light blue for decoder D1, teal for decoder D2, and gray for discriminator d_p. It also defines the datasets: {X_j^S, Y_j^S} for the source domain S and {X_j^T} for the target domain T. The overall workflow follows an alternating training strategy: first, train for segmentation on the source domain; then, freeze D1 and φ_s1, add φ_s2, and perform adversarial training on both domains to enable domain adaptation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

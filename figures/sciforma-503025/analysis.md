@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15657
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of CTabSyn, a class-conditional tabular data generation model, which extends the existing TabSyn framework with a minor but critical modification to handle imbalanced class distributions and leverage fine-grained class labels. The overall layout is divided into two main sections: on the left, a Variational Autoencoder (VAE) module responsible for encoding and decoding tabular data into and from a latent space; on the right, a conditional diffusion model operating within the same latent space to generate new data samples. These two components are connected through shared latent space representations, forming an end-to-end generative pipeline.
+
+In the VAE section, the input tabular data (represented as a grid-like structure) is first processed by a 'Tokenizer, Encoding' block, depicted as a light gray trapezoid, which maps the raw data into a latent representation. This latent space is shown as a vertical yellow rectangle labeled 'Latent Space'. The decoder side consists of a 'Detokenizer, Decoding' block (also a light gray trapezoid) that reconstructs the original data from the latent space. Two loss functions, 'KL Loss' and 'Recon Loss', are computed during training and fed back to the encoder-decoder structure, indicating a standard VAE training objective. The VAE is explicitly labeled in bold black text at the center of this section.
+
+The right-hand side of the diagram details the conditional diffusion process. It begins with the 'Forward diffusion' step, represented as a wavy-topped rectangular box, which takes the latent space representation and gradually adds noise to it, producing a 'Diffused Distribution' — shown as a vertical orange rectangle. This noisy distribution is then used as input to the 'Reverse diffusion' process, another large wavy-topped box, which aims to recover the original clean data. Within the reverse diffusion module, a 'Denoiser' (a simple white rectangle) receives three inputs: 'Noisy Data' (from the diffused distribution), 'Time step' (indicating the current stage in the denoising process), and crucially, the 'Target label' — highlighted in green to emphasize the modification made to the original TabSyn model. This green-highlighted 'Target label' is the key addition enabling class-conditional generation, allowing the model to condition the denoising process on specific class information. The output of the denoiser is fed back into the latent space, completing the loop and enabling iterative refinement toward the target data distribution.
+
+Connections between modules are indicated by solid black arrows, showing the flow of data and control signals. The latent space acts as a central hub, connecting the VAE and the diffusion model. The forward diffusion process outputs the diffused distribution, which feeds into the reverse diffusion process. The reverse diffusion’s denoiser uses the target label, noisy data, and time step to produce a refined latent representation, which is then passed back to the latent space. The entire system is designed to generate high-quality, class-conditioned tabular data by combining the VAE's ability to learn a compact latent representation with the diffusion model's capacity for high-fidelity, iterative denoising guided by class labels.

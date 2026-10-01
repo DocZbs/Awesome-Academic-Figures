@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Counterfactual Explanation for Auto-Encoder Based Time-Series Anomaly Detection — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02069
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-module pipeline for explaining anomalous samples in a machine learning context. The global layout is a left-to-right, top-down flowchart with three main rectangular modules arranged in a sequence: Module 1 on the top-left, Module 2 on the top-right, and Module 3 at the bottom-center. All modules are represented as rounded rectangles with black borders and bold black text inside, set against a white background. There are no colors other than black and white, and all text is in a standard sans-serif font.
+
+Module 1, labeled 'Anomaly Detector Auto-Encoder', serves as the initial processing unit. It receives an input sample (not explicitly shown but implied as the starting point) and outputs an 'Anomalous Sample' label, which is indicated by a label placed above the arrow leading from Module 1 to Module 2. This module functions as the primary classifier that identifies whether a given sample is anomalous.
+
+Module 2, labeled 'Feature Selector', receives the anomalous sample from Module 1. Its role is to identify and extract the most relevant features contributing to the anomaly. The output of this module is labeled 'Relevant Features', which is shown as a text label next to the arrow pointing downward from Module 2 to Module 3.
+
+Module 3, labeled 'Counterfactual Explainer', is the final component in the pipeline. It receives two inputs: the original anomalous sample directly from Module 1 (via a vertical arrow branching from the connection between Module 1 and Module 2), and the relevant features extracted by Module 2. The explainer uses both pieces of information to generate a counterfactual explanation—i.e., a description of how the sample could be modified to become non-anomalous. The arrows indicate the direction of data flow: from Module 1 to Module 2, from Module 2 to Module 3, and from Module 1 directly to Module 3. All connections are solid black lines with classic arrowheads indicating the direction of information transfer.
+
+The overall structure reflects a sequential yet partially parallel workflow: anomaly detection first, followed by feature selection, and finally explanation generation using both the raw anomalous sample and the selected features. The diagram emphasizes modularity and clarity in the explanation process, aligning with the caption’s description of a three-stage method for anomaly explanation.

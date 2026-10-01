@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-506389",
+  "record_sha256": "0c90881a80b06319c32e45450f7bc4adb823ea8b00273a78df1ae02052e91180",
+  "asset_sha256": "90182a5ef56fcf3683170ec67e335cf582cefd87cf20125b8838ad6b1df8ce87",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506389",
+    "title": {
+      "zh": "Large Language Model-Enhanced Symbolic Reasoning for Knowledge Base Completion · 方法图",
+      "en": "Large Language Model-Enhanced Symbolic Reasoning for Knowledge Base Completion"
+    },
+    "paper": {
+      "id": "arxiv-2501-01246",
+      "title": "Large Language Model-Enhanced Symbolic Reasoning for Knowledge Base Completion",
+      "authors": [
+        "Qiyuan He",
+        "Jianfei Yu",
+        "Wenya Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01246",
+      "arxiv_url": "https://arxiv.org/abs/2501.01246",
+      "arxiv_id": "2501.01246",
+      "arxiv_first_submitted_at": "2025-01-02T13:14:28Z",
+      "arxiv_updated_at": "2025-01-02T13:14:28Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01246v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506389/image/image.jpg?Expires=1790855575&Signature=lBMvt5bemh8~k1LjfovRfUH8DRak1dJN075o3F6l~OuP1bQRz0hAYmWS4zJOPBSSxYOA0VYmQy220Oc2VNjEeYuwpe5mobrnmpEM6hJOfDcbVTrk4A0cPmFIeEpoHkVnVQHFHxeD7VS1-ttrMmJjj3eqykeVNVIeqWcwJcOPEXO41BaSt2-Uyy667awd9srWaQBslAAr0beO~0Mf6axS7WXYDIca9fidZ4pDcSsdzj2CLvOMbE4O5Rps9vvRYSIVXWlSXZdnELsIPJ54UmgKMpWwotdpPYbT2umGD6KE3BlppEQmrJ0bHX2sV8PgtXU~DigAUadLtX9r2AeF-sQ25g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506389,
+      "description_sha256": "5adaa4bc946c7c48860b188b25cafe62f36c378df1827ebe39369ef055c8e53b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ab4e883f0694e1adba6bc27f21e556bcc5bf51d7de95bb453e2687f29f46b923",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of LeSR (LLM-enhanced Symbolic Reasoning), a framework for knowledge base (KB) completion using symbolic reasoning augmented by large language models (LLMs). The global layout is structured as a horizontal pipeline with three main processing stages: Subgraph Extractor, LLM Proposer, and Rule Reasoner, each represented by a green rounded rectangle with distinct icons—a magnifying glass, a lightbulb, and a gear—respectively. These modules are connected sequentially via dotted lines indicating data flow.\n\nAt the bottom left, a complex directed graph represents the full knowledge base, composed of circular nodes connected by arrows. A dashed orange box labeled 'performer' points to this graph with an arrow labeled 'select', indicating that the Subgraph Extractor selects subgraphs based on the query relation 'performer'.\n\nAbove the Subgraph Extractor, a beige box titled 'Relevant Subgraphs' displays two example subgraphs extracted from the KB. The first is a generic abstract subgraph with edges labeled 'performer' in red text. The second is a concrete example involving entities 'Shine a Light', 'The Rolling Stone', and 'Ronnie Wood', with edges labeled 'cast member' and 'member of'. An arrow labeled 'extract' points upward from the Subgraph Extractor to this box.\n\nFrom the 'Relevant Subgraphs' box, a downward arrow labeled 'context' leads to the LLM Proposer. This module generates logical rules based on the provided context. Below it, a beige box titled 'Proposed Logical Rules' contains two example rules written in formal logic: 'IF (A, present in work, B) AND (B, based on, C) AND (C, performer, D) THEN (A, performer, D);' and 'IF (A, present in work, B) AND (B, cast member, C) THEN (A, performer, C); ...'. The relation 'performer' is highlighted in red within these rules. An arrow labeled 'generate' connects the LLM Proposer to this rules box.\n\nAn upward arrow labeled 'refine' connects the Proposed Logical Rules box to the Rule Reasoner. This module evaluates and refines the proposed rules to determine their validity and significance.\n\nFinally, an upward arrow labeled 'solve' connects the Rule Reasoner to a blue box titled 'KB Completion'. This box contains two example queries and answers: Q: (Happy, performer, ?) → A: Pharrell Williams; Q: (Dr. John Watson, performer, ?) → A: Jude Law. These demonstrate how the refined rules are applied to complete missing triples in the knowledge base.\n\nThe entire workflow illustrates a cycle where the Subgraph Extractor retrieves relevant subgraphs from the KB, the LLM Proposer generates plausible logical rules from them, the Rule Reasoner refines these rules, and finally, the refined rules are used to solve KB completion tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

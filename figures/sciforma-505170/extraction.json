@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505170",
+  "record_sha256": "7af10f08c18c8ccf3244131eb3e29c8ad3473b6bfb08200cf398844420a40c41",
+  "asset_sha256": "37f948767d1f253f675d1c26209f252c50fb53f9abedc3f90398a82b9f8a3149",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505170",
+    "title": {
+      "zh": "Hindsight Planner: A Closed-Loop Few-Shot Planner for Embodied Instruction Following · 方法图",
+      "en": "Hindsight Planner: A Closed-Loop Few-Shot Planner for Embodied Instruction Following"
+    },
+    "paper": {
+      "id": "arxiv-2412-19562",
+      "title": "Hindsight Planner: A Closed-Loop Few-Shot Planner for Embodied Instruction Following",
+      "authors": [
+        "Yuxiao Yang",
+        "Shenao Zhang",
+        "Zhihan Liu",
+        "Huaxiu Yao",
+        "Zhaoran Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19562",
+      "arxiv_url": "https://arxiv.org/abs/2412.19562",
+      "arxiv_id": "2412.19562",
+      "arxiv_first_submitted_at": "2024-12-27T10:05:45Z",
+      "arxiv_updated_at": "2024-12-27T10:05:45Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19562v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505170/image/image.jpg?Expires=1790855453&Signature=HP6qnbq7-rfYEu9iDco-aKzbmfSR2ydvD21m-KsHzVr6pjox1r84lF4iQ5ZSgXzszWfuEDzvvWelgON22TBZf~la9SmXT8wjFwAvhXCi3BWT52nPLrtkz5e3jlSVUOZbpyIZe-OndiTkJuctHeGhn3AngGSoQhxUX~~-kClhY39mdxfOQcjn8urH5Ae~Ww2WDaFaKyhGDayxi~FMz3TuMqSRmpG4nV~fzoDT7JEsWhThCjzefmEtNNJPA8MN~yg9gvl9P8Hfsxr3qh4RTpLzhCyOoh-MoXXLCfdeApxaHnVyx5y-voWYN5mwqCL6Ubkk-DXA2DX1yQ0b4XSDgK4HUg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505170,
+      "description_sha256": "b02c7d5e0501e6db1388d6710ba0d4d1131f47f20e6819cbecba0805e0d88b66",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5851731a0306ed90e7e2568ee7914bbb5a42d905f3115be33a587faef8777c95",
+      "row_response_sha256": "a5f875b45f26a460d7d57a9f125413bd5347530d7ecfdf3c08a66aadb09b8d26"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-part methodology for a hindsight planning framework in reinforcement learning, combining adaptive state estimation with language model-based reflection for improving policy decisions. On the left, the global layout shows a reasoning process enclosed in a dashed boundary, depicting a sequential decision-making loop. At each time step t, the system receives a partial observation y^t from the environment, which is fed into an Adaptation Module. This module estimates a latent variable and combines it with y^t to form a complete state x_t^i, represented as a central node in the diagram. From this state, multiple action branches diverge, symbolizing different possible rollouts. Two distinct actors are shown: one prompted by relabeled samples (red arrows), and another prompted by ground-truth (gt) samples (blue arrows). These actors generate actions a_t^i, leading to next states x_{t+1}^i. A purple dashed line highlights the best rollout, selected based on critic evaluation, which is then executed in the environment. The environment is depicted as a pink rectangle at the bottom right of the reasoning process, receiving the chosen action and producing the next observation. The legend clarifies the arrow colors: red for relabeled sample prompts, blue for gt sample prompts, and purple for the best rollout.\n\nOn the right side of the figure, a vertical stack of boxes demonstrates the relabeling process for the hindsight actor. The top box specifies the task: 'Move the salt bottle to the drawer'. Below it, two horizontal boxes show the ground truth rollout (green background) and the suboptimal rollout (yellow background), each listing sequences of actions such as '(Pick up, Fork)', '(Put, Fork, Sink)', etc. The next box contains the input prompt for the LLM, which includes a reflection instruction: 'You need to reflect what mistake you have made in above rollout and how to fix the mistake.' Following this, a purple box labeled 'The output of LLM' presents the LLM’s response, which includes a reflection on the error (e.g., not toggling off the faucet or placing the fork incorrectly) and a proposed correction. The final box lists the corrected actions: '(Toggle off, Faucet), (Pick up, Fork), (Put, Fork, SideTable)'. This entire sequence demonstrates how the LLM is used to generate reflective feedback and correct suboptimal trajectories, thereby enriching the training data for the hindsight actor. The figure thus integrates a dynamic state estimation module with a language-based reflection mechanism to enhance planning robustness."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

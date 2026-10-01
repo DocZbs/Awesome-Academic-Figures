@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506508",
+  "record_sha256": "d59005b3153aeb740f73eb1ab0200de7b64c302e2ea5ee6c87a5703978e82037",
+  "asset_sha256": "1beae59b53695044c86591110b6c6e33f88c3d0d391d425acf563c0cc6d8a12d",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506508",
+    "title": {
+      "zh": "Google is all you need: Semi-Supervised Transfer Learning Strategy For Light Multimodal Multi-Task Classification Model · 方法图",
+      "en": "Google is all you need: Semi-Supervised Transfer Learning Strategy For Light Multimodal Multi-Task Classification Model"
+    },
+    "paper": {
+      "id": "arxiv-2501-01611",
+      "title": "Google is all you need: Semi-Supervised Transfer Learning Strategy For Light Multimodal Multi-Task Classification Model",
+      "authors": [
+        "Haixu Liu",
+        "Penghao Jiang",
+        "Zerui Tao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01611",
+      "arxiv_url": "https://arxiv.org/abs/2501.01611",
+      "arxiv_id": "2501.01611",
+      "arxiv_first_submitted_at": "2025-01-03T03:11:17Z",
+      "arxiv_updated_at": "2025-01-03T03:11:17Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01611v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506508/image/image.jpg?Expires=1790855582&Signature=X5nZ3PHpUSspfg6yNRNB5oq0Btdu2uP2p-nsENRWWMwhf9nDQqA-Qz6Nx8vDSsk4JqOEpcgxsnrrzzI7WZm~Fwja7dm2cX0WwHCWnWmqRoNu7ZpsmaUkGKCSeHbqCOnsOqupoG44wC8OiI3bUMg-z0vMV3jT6Rj9mxG01ZCXYcQ4dYOYbW2rGskmtnMLKUVSB3UpkBTJIqjAboZlqj9sinYGsuOh4kP3yB-4MO1ULNGWzscqpM8~iFbWq-YvzbbKv8rf4xN-3I1n0BIB3ph3R1pB6s~LI3ins8mUI8nWKMxf59OUv6HiU5FVVLQcVgxwVOAfAhqakPnASSkigbgkRA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506508,
+      "description_sha256": "47b5d8f1f9428b20fad39595f758649671894d19e048ecc950f99df4acd58bfd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "03472ff8f852e85f65842ddf312d8952404c9ab21f212f8084d5f36b4be8431f",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a multimodal fusion architecture designed to process both visual and textual inputs, specifically an image and a caption, to produce a final output. The global layout is a left-to-right data flow diagram, starting with two input nodes on the left: a circular node labeled 'Image' and another labeled 'Caption'. These inputs feed into separate modality-specific encoders: the 'Image' input connects to a parallelogram-shaped module labeled 'EfficientNetB4', representing the vision model; the 'Caption' input connects to a rectangular module labeled 'BERT(Tiny)', representing the NLP model. A legend in the top-right corner clarifies the visual encoding: vision models are depicted as parallelograms, NLP models as rectangles, and fusion models as dashed rectangles. The legend also defines FCNN as Fully Convolutional Neural Network and FFNN as Feedforward Neural Network.\n\nFrom the EfficientNetB4 and BERT(Tiny) modules, the features are processed through multiple FCNN layers. Specifically, the image features from EfficientNetB4 are split into two paths, each passing through an FCNN block, producing outputs labeled 'K' (Key) and 'V' (Value). The caption features from BERT(Tiny) pass through one FCNN block, producing an output labeled 'Q' (Query). These K, V, and Q representations are then fed into a 'Cross Attention' module, which is enclosed within a dashed rectangle indicating it is part of the fusion model. Additionally, a direct path from the BERT(Tiny) output bypasses the initial FCNN and connects to another FCNN block within the same dashed fusion region. The output of this second FCNN is combined with the output of the Cross Attention module, feeding into a final FFNN block. The output of the FFNN is then directed to a rounded rectangle labeled 'Output', signifying the final result of the model.\n\nConnections are represented by solid black arrows indicating the direction of data flow. The diagram includes a small black dot on a line connecting the BERT(Tiny) output to the second FCNN within the fusion module, indicating a branching point where the feature stream splits or merges. The overall structure emphasizes a dual-branch encoder setup followed by a cross-modal fusion stage using attention mechanisms, culminating in a final feedforward network for prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

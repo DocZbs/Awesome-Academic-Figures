@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505663",
+  "record_sha256": "13e14a0706d215a9d0200cca567b7361191f5293875b8dc09902122a19478281",
+  "asset_sha256": "321aba879718726596d5a91db2f147cc9dbac290adcbd4a375e7f6c44784a4f2",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505663",
+    "title": {
+      "zh": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation · 方法图",
+      "en": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20473",
+      "title": "Toward Scene Graph and Layout Guided Complex 3D Scene Generation",
+      "authors": [
+        "Yu-Hsiang Huang",
+        "Wei Wang",
+        "Sheng-Yu Huang",
+        "Yu-Chiang Frank Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20473",
+      "arxiv_url": "https://arxiv.org/abs/2412.20473",
+      "arxiv_id": "2412.20473",
+      "arxiv_first_submitted_at": "2024-12-29T14:21:03Z",
+      "arxiv_updated_at": "2024-12-29T14:21:03Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20473v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505663/image/image.jpg?Expires=1790855552&Signature=t1XAmg-QZE-HCwEYnKX4I9QjgdpBt6hY0BINVVc1whC9aYHLwI2SDIkd5cvs2Anc9~PCEh9BBfvIwJelvG34wljm-piD~oDFhonNuC33-qHZxnd-2R~UWuALeEsKfqHis5xp2hPGsjYGKg4LRnf96BH~FZWPZfIAdVZiMsvFGuGXS3qcumtDRah6FPGRTPiRa87A1PpWWf09amF2p0Ym1VSlksg3fjuwjFDZUwBpApJLspnojZewlugPhNjlNIa09QPhyIWOt1Ly-6hcTxcsEzCWYPqVU0AU8EBjXsnaI7MHaNRt7urnE~B~MP0pTnDMxYKVMVPz1qn5XwlwHnJ6lg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505663,
+      "description_sha256": "4e69d7e10c88d51579214260e6c92c1e4e7d7731416f0105fcfd7c300e9ef578",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f36a6e0c8e21353c687bef4f1325db1d6d0e81d7f04aa1cc4a681dfce3f18b05",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the methodological pipeline of GraLa3D, structured into three main stages: (a) Scene Graph Composition, (b) Node-to-3D Generation, and (c) 3D Scene Harmonization. The overall layout is horizontal, divided into three distinct sections labeled accordingly, each containing modular components connected by arrows indicating data flow and processing steps.\n\nIn section (a), Scene Graph Composition, a text prompt y^g — exemplified as 'An astronaut riding a brown horse, with a wooden fence in front, a barn beside them, and a haystack behind the barn' — is input into a green rectangular block labeled 'LLM'. This LLM processes the prompt to generate a scene graph G, represented as a hierarchical structure of colored rectangular nodes. Orange nodes denote interacting entities such as 'Horse' and 'Astronaut' linked by a 'riding' relationship. Blue nodes represent individual objects like 'Haystack', 'Barn', and 'Fence', while yellow nodes indicate spatial relations such as 'next to' and 'in front of'. The LLM also outputs a 3D layout bounding box B, depicted as a multi-colored cube with axes, which encodes spatial arrangement. The scene graph G and bounding box B are then used to form super-nodes S (for interacting objects) and single-object nodes O (for standalone objects).\n\nSection (b), Node-to-3D Generation, takes the super-node S and single-object nodes O from stage (a) and generates 3D representations. For the super-node S ('Horse' and 'Astronaut'), a masked ISM loss is applied during generation, resulting in a 3D rendering of an astronaut riding a horse within a dashed cube. Similarly, for single-object nodes O, such as 'Fence', 'Barn', and 'Haystack', masked ISM loss is applied to produce individual 3D models: a wooden fence, a barn with a blue roof, and a yellow haystack. These 3D models are shown within dashed outlines, indicating intermediate outputs.\n\nSection (c), 3D Scene Harmonization, integrates the generated 3D models into a coherent scene. The spatial arrangement from the layout bounding box B is used to position the objects correctly. Texture refinement is applied using two models: MVDream, represented by an orange bowtie-shaped icon, and ControlNet, shown as a blue bowtie-shaped icon. These models refine the textures and appearances of the 3D objects, ensuring visual consistency. The final output is a complete 3D mesh model, illustrated as a rendered scene with the barn, haystack, fence, and astronaut on horseback, all harmonized in appearance and spatial layout. Dashed circles highlight specific object groupings, emphasizing the integration process. The entire pipeline is designed to convert a natural language description into a visually consistent and spatially accurate 3D scene."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

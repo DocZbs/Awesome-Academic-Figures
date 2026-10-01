@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LearnLM: Improving Gemini for Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16429
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a four-stage expert evaluation pipeline for comparing the pedagogical effectiveness of LearnLM against other large language models (LLMs), structured as a horizontal workflow with a final comparative analysis. The global layout is divided into four main sections, labeled 1.) Scenario Curation, 2.) Conversation Collection, 3.) Conversation Assessment, and 4.) Overall Comparison, connected by orange arrows indicating the flow from left to right and then downward to the final analysis.
+
+In Stage 1, 'Scenario Curation', a white rounded rectangle contains a stack of cards titled 'Scenario Details'. Each card includes a 'Conversation Plan' describing a learner's context (e.g., 'You are a student in 'intro to Python'...'), a 'Learner Persona' with traits like 'Does not show work' or 'Is easily distracted', and an 'Initial Learner Query' such as 'I can't seem to solve x²+3x=5 for x :('. This section sets up the context for the evaluation.
+
+Stage 2, 'Conversation Collection', shows how the curated scenarios are used. A light blue arrow points from Stage 1 to this stage, which features three stacked components: 'System Instructions', 'Scenario', and 'Grounding' — all represented as gray document icons. These are fed into two parallel conversational modules: 'LearnLM Conversation' and 'Other LLM Conversation'. Each module displays a chat interface with alternating human (green avatar) and robot (blue avatar) messages, symbolizing the interaction between the AI tutor and the simulated learner. The 'LearnLM Conversation' is highlighted with a green background, while the 'Other LLM Conversation' has a white background.
+
+Stage 3, 'Conversation Assessment', shows three circular avatars labeled 'Pedagogy Experts' — each with distinct skin tones and hairstyles — representing human evaluators. They are shown reviewing a panel titled 'Select preference', which lists criteria such as 'Better pedagogy', 'More like a very good human tutor', 'Better instruction following', and 'Better adapted to learner'. For each criterion, a horizontal seven-point scale is displayed, with a teal robot icon on the left, a purple robot icon on the right, and a red dot indicating a selected preference point. A cursor hovers over one of the scales, emphasizing the interactive nature of the assessment.
+
+Stage 4, 'Overall Comparison', is located below the first three stages and is connected by a thick orange curved arrow from Stage 3. It presents three side-by-side scatter plots, each comparing LearnLM against a different LLM: 'Claude 3.5 Sonnet ↔ LearnLM', 'GPT-4o ↔ LearnLM', and 'Gemini 1.5 Pro ↔ LearnLM'. The x-axis is labeled 'Preference toward LearnLM' and ranges from -3 to +3, with a dashed vertical line at 0. The y-axis lists five evaluation criteria: 'Better supported learning goal', 'Better adapted to learner', 'Better instruction following', 'More like a very good human tutor', and 'Better pedagogy'. Data points are color-coded: red for negative preference (toward the other LLM), gray for neutral, and purple for positive preference (toward LearnLM). A red dot marks the mean preference for each criterion. Above the x-axis, a percentage scale from -100% to +100% provides an additional reference. The entire section is enclosed in a white rounded rectangle with a blue label '4.) Overall Comparison' at the bottom.
+
+The figure uses consistent visual elements: rounded rectangles for stages, colored avatars for experts, robot icons for LLMs, and clear labels for all components. The color scheme includes green for LearnLM, purple for other LLMs, red for negative preferences, and gray for neutral. The overall design emphasizes a structured, human-in-the-loop evaluation process leading to quantitative comparison.

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505235",
+  "record_sha256": "e2f038dae6265ddcffc73d062fc88cec45eb59b82641ce56841f238f7c3ee5eb",
+  "asset_sha256": "96002a829c203d4b21bbdbe17f9b16e6b3c287ca07f231951b5e6d1a843d8cad",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505235",
+    "title": {
+      "zh": "ProKAN: Progressive Stacking of Kolmogorov-Arnold Networks for Efficient Liver Segmentation · 方法图",
+      "en": "ProKAN: Progressive Stacking of Kolmogorov-Arnold Networks for Efficient Liver Segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-19713",
+      "title": "ProKAN: Progressive Stacking of Kolmogorov-Arnold Networks for Efficient Liver Segmentation",
+      "authors": [
+        "Bhavesh Gyanchandani",
+        "Aditya Oza",
+        "Abhinav Roy"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19713",
+      "arxiv_url": "https://arxiv.org/abs/2412.19713",
+      "arxiv_id": "2412.19713",
+      "arxiv_first_submitted_at": "2024-12-27T16:14:06Z",
+      "arxiv_updated_at": "2024-12-27T16:14:06Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19713v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505235/image/image.jpg?Expires=1790855453&Signature=NFfX0OJlJZqvqhaJEC69nTD3BPZpoV04fBBatUA-HlwEIxJ4XVhUFFw7koBYWmy3yQGWlLgxMfhlRYFtcA7o-CGy-ua~1jsTFA8RmRDoD8zOl5rLNyKgWPu7thwFs4aLHaLdMNGOT-NCYCmDYtvSnAzIIE0wmbVKmguwckIYO5th~jNl4O301HtkLPh7oyrbA5-G3XUmkHFFYDcRNyWN5vjdkz41Z08tbTxtiUO6H91SdtQY-6uMTMFIIKuwEoyo3C46UwxpsiPiEA0DBqk7Zz-MCa~EE-QeAPdb7WCcNbJHqZFT5rippojVM8DESBPzHlJXy8Zd2-0k~MB1KBwmTQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505235,
+      "description_sha256": "f5756f8bb81e1604ac97615bc08b543379380cabf6ec3ee4de66e09ebb64f4af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f491398f5ac9da5afc3218ba7c1b8a73c0572e5a4e2ef995c8494fd8bdc23437",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure depicts the architecture of a Kolmogorov-Arnold Network (KAN) block, as used in the proKAN model. The overall layout is structured into four distinct vertical sections: Input Layer, Layer-1, Layer-2, and Output Layer, arranged from left to right. Each section is enclosed within a colored rectangular background—Input Layer and Output Layer in light beige, Layer-1 in light blue, and Layer-2 in light yellow—to visually separate the stages of computation.\n\nIn the Input Layer, five circular nodes with light green fill are vertically aligned, representing input features. These inputs feed into Layer-1 via straight gray arrows connecting each input node to a corresponding yellow circular node, which acts as an intermediate relay point.\n\nLayer-1 contains multiple pink rectangular modules, each housing a wavy black curve symbolizing a learnable activation function (specifically B-splines). These modules are arranged in two vertical columns: one column receives direct connections from the yellow relay nodes, while the other column receives connections from the first column’s outputs. The outputs from these pink modules are aggregated through summation nodes (gray circles labeled with Σ), which then feed into blue square modules containing upward-curving activation functions. The outputs of these blue modules are passed to pink circular nodes, which serve as intermediate outputs for Layer-1.\n\nThese pink circular outputs from Layer-1 connect to Layer-2. Layer-2 mirrors the structure of Layer-1 but with more modules, indicating increased complexity and flexibility with depth. It consists of multiple pink rectangular modules with B-spline activation curves, arranged in two vertical columns. The first column receives inputs from the pink circular nodes of Layer-1, while the second column receives inputs from the first column. Outputs from the second column are summed via Σ nodes and fed into blue square modules with curved activation functions. These blue modules output to pink circular nodes, which then feed into the Output Layer.\n\nThe Output Layer comprises five vertically stacked pink circular nodes, each receiving input from one of the blue activation modules in Layer-2. These represent the final outputs of the KAN block.\n\nConnections between modules are represented by solid lines of varying colors: gray for primary forward paths, brown for connections within Layer-1, and teal for connections from Layer-1 to Layer-2 and within Layer-2. The diagram emphasizes that every edge in the network is modeled by a learnable activation function, enabling flexible non-linear transformations. The increasing number of modules in Layer-2 compared to Layer-1 reflects the growing expressive capacity of deeper layers, facilitating modeling of complex relationships while preserving interpretability."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

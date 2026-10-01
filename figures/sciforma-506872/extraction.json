@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506872",
+  "record_sha256": "bfe58d5eaf329f72c1bf8eb3575c71c8a1c97f5c323b6263a2d215466dccbf9a",
+  "asset_sha256": "0d781b813a94c66065e6f6b1f623f1df66c0926fcd4eae2ae35241d730c619ca",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506872",
+    "title": {
+      "zh": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models · 方法图",
+      "en": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-02816",
+      "title": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models",
+      "authors": [
+        "Kai Wang",
+        "Shaozhang Niu",
+        "Qixian Hao",
+        "Jiwei Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02816",
+      "arxiv_url": "https://arxiv.org/abs/2501.02816",
+      "arxiv_id": "2501.02816",
+      "arxiv_first_submitted_at": "2025-01-06T07:32:12Z",
+      "arxiv_updated_at": "2025-01-06T07:32:12Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02816v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506872/image/image.jpg?Expires=1790855627&Signature=OXc-JlZXonWQcDwKlj1lBzTbecouHJPJNDDTTDGcbmJ9AnTj4FWUmvZVPKtvIjvNlYlREPA8K4i9qgV70rmox1GA2Fx3AvCCkuBQE5HWXyyKz3VsCylt0Q6EHi5AzaxSbknwLhkyVYdQc2aL6V8UMuaIrML5EQ~008cyf10qtDt7P~CC1Dp2TAieuCGVRYDYLWpeiLYbbIFD40gZuWSKviqvX2hk04VI3ErXxZ99HIzq0M4LAIklxxSEUo4JhUA~6nWFSVZlGsEC~lvsUo7tGh~1mtTY2G7NMzcFI0Bwch9oxxvqcINu4RwJJFk6Sa2r09N4VjDNabkd1kA~lPPjzQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506872,
+      "description_sha256": "40b18c88efd975e4abfbf3cb3b015f6a8c7d1b1edf794cc0ed8090439aba1c9f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7cce229d8cfdded25ac5c5ad36268c1c1715a0f0945e8eb4fd798149d61a1905",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Dual-stream Multi-scale Feature Extractor (DMFE), designed to capture features at multiple scales through two parallel processing streams. The global layout is horizontally oriented, with data flowing from left to right. The structure begins with an initial Conv1×1 layer on the far left, which serves as the input to both streams. From this point, the network splits into two distinct branches: an upper stream and a lower stream, each containing three parallel multi-scale feature extraction blocks. Each block within the streams consists of a combination of convolutional layers with varying kernel sizes and dilation rates, specifically Conv3×3 with dilation rates of 7, 5, and 3, along with smaller kernels like Conv7×1, Conv5×1, Conv3×1, Conv1×7, Conv1×5, and Conv1×3. These layers are arranged vertically within each block, forming a stacked structure. The outputs of these layers within each block are combined using element-wise addition operations, represented by circular nodes labeled with a '+' symbol. The outputs from the three blocks in each stream are then merged via concatenation, indicated by a circular node labeled 'C'. The concatenated output from both streams is then passed through a final Conv3×3 layer before exiting the module. Additionally, skip connections are present: the output of the initial Conv1×1 layer is directly connected to the element-wise add operation at the top of each block in the upper stream, and similarly, the output of the lower stream’s first block is connected to the element-wise add operation at the bottom of each block in the lower stream. The figure includes a legend at the bottom left, defining the symbols: '+' denotes element-wise addition, 'C' denotes concatenation, and 'Conv3×3 Dilate=d' represents a 3×3 convolutional layer with dilation rate d. The entire diagram is enclosed within a rectangular border, with the title 'Dual-stream Multi-scale Feature Extract' positioned at the top center."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

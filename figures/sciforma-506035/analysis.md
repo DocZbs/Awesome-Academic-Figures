@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Training-free Heterogeneous Model Merging — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.00061
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative illustration of two model alignment strategies: Segment-wise Model Alignment (SMA) and Layer-wise Model Alignment (LMA), labeled as (a) and (b) respectively. The global layout is divided into two side-by-side diagrams separated by a vertical dashed line, each depicting a multi-layered neural network structure with alignment connections. Both diagrams share a common legend at the top: a yellow double-headed arrow indicates 'The feature similarity that needs to be maximized by alignment', a dashed rectangle denotes 'Segments', and a light purple rectangle represents 'Layers'.
+
+In both diagrams, the left side contains a stack of five horizontal rectangular blocks enclosed within a dashed box, representing segments. These blocks vary in color from blue at the top to pink at the bottom, indicating different layers or depths within the network. Each block is connected vertically by thin gray lines, suggesting a sequential or hierarchical flow. From the right edge of each block in the segment, a yellow double-headed arrow extends to a corresponding block on the right side, which is outside the dashed box. These right-side blocks mirror the color and order of the left-side blocks, forming a parallel stack. The arrows indicate that feature similarity between corresponding blocks should be maximized through alignment.
+
+In diagram (a) SMA, the alignment connections (yellow arrows) link each block in the left segment directly to its corresponding block on the right, maintaining a one-to-one correspondence across all five layers. This suggests that alignment occurs at the level of individual segments, preserving the structural integrity of each segment's internal layers.
+
+In diagram (b) LMA, the alignment connections also link each block in the left segment to its corresponding block on the right, but the visual representation emphasizes that alignment is performed layer-by-layer rather than segment-by-segment. The structure is identical to SMA in terms of block arrangement and connection pattern, but the label 'LMA' implies a different operational logic where each layer is independently aligned, potentially allowing for more flexible or fine-grained matching across models.
+
+Both diagrams include upward-pointing gray arrows above the right-side blocks, indicating the output or forward propagation direction of the aligned features. The overall structure highlights the difference in alignment granularity: SMA aligns entire segments as units, while LMA aligns individual layers, even though the visual depiction of connections appears identical. The figure serves to illustrate how these two approaches differ conceptually in their alignment strategy despite similar visual representations.

@@ -47,6 +47,8 @@ import {
 } from "./ui.jsx";
 import {
   TYPE_LABELS,
+  BROWSE_TYPE_LABELS,
+  browseGenresFor,
   PURPOSE_LABELS,
   LAYOUT_LABELS,
   DIMENSIONS,
@@ -65,6 +67,7 @@ import {
 const TYPE_ICONS = {
   architecture: Network,
   mechanism: Workflow,
+  experimental: ChartNoAxesCombined,
   flowchart: Workflow,
   conceptual: Shapes,
   qualitative: Images,
@@ -248,7 +251,7 @@ export default function App() {
   ).length;
   const categoryLabels =
     state.dimension === "type"
-      ? TYPE_LABELS
+      ? BROWSE_TYPE_LABELS
       : state.dimension === "purpose"
         ? PURPOSE_LABELS
         : state.dimension === "layout"
@@ -373,7 +376,7 @@ export default function App() {
             <h1 id="hero-title">
               好研究，
               <br />
-              也值得一张
+              值得一张
               <span className="heading-accent">
                 好图<span className="accent-spark">✳</span>
               </span>
@@ -599,6 +602,12 @@ export default function App() {
                 state.category !== key
               )
                 return null;
+              if (
+                key === "unclassified" &&
+                !categoryStats.counts[key] &&
+                state.category !== key
+              )
+                return null;
               const Icon = TYPE_ICONS[key] || Layers3;
               return (
                 <Chip
@@ -647,45 +656,42 @@ export default function App() {
                 )}
               </div>
               <p className="filter-caption">找到适合你研究的表达方式</p>
-              {Object.entries(filterFieldsFor(figures)).map(([field, info]) => (
-                <details
-                  key={field}
-                  open={field === "number" || field === "layout"}
-                  onKeyDown={(event) => {
-                    if (event.key === "Escape") {
-                      event.currentTarget.open = false;
-                      event.currentTarget.querySelector("summary").focus();
-                    }
-                  }}
-                >
-                  <summary>
-                    {info.label}
-                    <ChevronDown size={14} />
-                  </summary>
-                  {field === "number" && (
-                    <p className="filter-caption">
-                      Figure 1 / 2 是已核实的论文图号；带 arXiv
-                      标记的图号仅在相应预印本版本核实。找研究概览，请选上方的
-                      Teaser 图。
-                    </p>
-                  )}
-                  <div className="filter-options">
-                    {info.options.map((option) => (
-                      <label key={option.value}>
-                        <input
-                          type="checkbox"
-                          checked={state.filters[field].includes(option.value)}
-                          onChange={() => setFilter(field, option.value)}
-                        />
-                        <span>{option.label}</span>
-                        <span className="filter-count mono">
-                          {facetCounts[field]?.[option.value] || 0}
-                        </span>
-                      </label>
-                    ))}
-                  </div>
-                </details>
-              ))}
+              {Object.entries(filterFieldsFor(figures))
+                .filter(([field]) => field !== "number")
+                .map(([field, info]) => (
+                  <details
+                    key={field}
+                    open={field === "layout"}
+                    onKeyDown={(event) => {
+                      if (event.key === "Escape") {
+                        event.currentTarget.open = false;
+                        event.currentTarget.querySelector("summary").focus();
+                      }
+                    }}
+                  >
+                    <summary>
+                      {info.label}
+                      <ChevronDown size={14} />
+                    </summary>
+                    <div className="filter-options">
+                      {info.options.map((option) => (
+                        <label key={option.value}>
+                          <input
+                            type="checkbox"
+                            checked={state.filters[field].includes(
+                              option.value,
+                            )}
+                            onChange={() => setFilter(field, option.value)}
+                          />
+                          <span>{option.label}</span>
+                          <span className="filter-count mono">
+                            {facetCounts[field]?.[option.value] || 0}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                  </details>
+                ))}
               <div className="filter-tip">
                 <CornerDownRight size={17} />
                 <p>
@@ -820,9 +826,11 @@ export default function App() {
                             )}
                           </div>
                           <div className="card-tags">
-                            <span>
-                              {TYPE_LABELS[figure.classification.primary_type]}
-                            </span>
+                            {browseGenresFor(figure).map((genre) => (
+                              <span key={genre}>
+                                {BROWSE_TYPE_LABELS[genre]}
+                              </span>
+                            ))}
                             <span>
                               {LAYOUT_LABELS[figure.classification.layouts[0]]}
                             </span>
@@ -1019,8 +1027,8 @@ export default function App() {
               <h3>浏览完整图像</h3>
               <p>
                 按 Teaser
-                图、机制图、方法框架图等图类进入，叠加用途、布局、会议和论文图号筛选。图号与图类独立：Figure
-                1 不一定是 Teaser 图。点击图像查看大图、结构描述和同篇参考图。
+                图、机制图、实验图浏览，叠加用途、布局、会议或期刊筛选。
+                点击图像查看大图、结构描述和同篇参考图。
               </p>
             </div>
           </div>

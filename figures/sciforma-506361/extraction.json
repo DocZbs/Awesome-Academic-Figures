@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506361",
+  "record_sha256": "d5e6590f3e34b27e5494a8ba68065e9ccd3f7e8dab75f45407c0b8455b53f86b",
+  "asset_sha256": "8c196a080222cb21babb0b32c6126d64870dacc2b3e8f35c6b683ab8ddff9aa6",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506361",
+    "title": {
+      "zh": "BlockDialect: Block-wise Fine-grained Mixed Format Quantization for Energy-Efficient LLM Inference · 方法图",
+      "en": "BlockDialect: Block-wise Fine-grained Mixed Format Quantization for Energy-Efficient LLM Inference"
+    },
+    "paper": {
+      "id": "arxiv-2501-01144",
+      "title": "BlockDialect: Block-wise Fine-grained Mixed Format Quantization for Energy-Efficient LLM Inference",
+      "authors": [
+        "Wonsuk Jang",
+        "Thierry Tambe"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01144",
+      "arxiv_url": "https://arxiv.org/abs/2501.01144",
+      "arxiv_id": "2501.01144",
+      "arxiv_first_submitted_at": "2025-01-02T08:57:00Z",
+      "arxiv_updated_at": "2025-07-24T03:46:03Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01144v5"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506361/image/image.jpg?Expires=1790855575&Signature=Z5WLtQtThzCSf92Q9rMgzgvSye5Qy0Dc59lkGubikCto3wkrbjiLgTIwDtNCXbOWt5IHUaScJ8njlnTm5-l49oT9O5QG7KDqnehdzW98cbwbggJSTlIat~LbhifsipPXDX46M03Ac9P6WHW5PIksa9pZGggjEBka2cnd5qs5Cum24k~MsTvVfNr-zJoF3kmkOmk~B0KewKt~DIx46Qc7jrgMPTmV8eA0vD9MZqliOozXiKSKbx97gonK~3uPfxsQInVBlqjH6~InWWCIWB6sTlDxFoi1cQ7l8qXoI9w8d9QzCIfdQiGdhTZASnbfGUgX4-Qfs3epst-eA6jNoEbe2g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506361,
+      "description_sha256": "b833c600e439cb09863ed12f6f54b442eb36769b9106caa4c59f8f56e1acfc7f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4bdf8142b3249aa546e61a36af109c40b9759f64a475a54e8705159756c2fdcc",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of a quantization technique named FormatBook, which operates by matching activation patterns with pre-defined format variants during inference. The global layout is structured horizontally into three main components: an input 'Activation' block on the left, a central 'FormatBook' module, and an output 'Weight' block on the right. These components are connected via arrows indicating data flow and assignment logic.\n\nOn the left, the 'Activation' block, labeled as 'Online quantization', contains a grid of fine-grained blocks. Each block is a colored rectangle labeled with a 'Dialect' number (e.g., Dialect 1, Dialect 2, etc.), representing different quantization formats applied dynamically during inference. The colors—light blue for Dialect 1, orange for Dialect 2, yellow for Dialect 3, and teal for Dialect 4—visually distinguish the dialects. The block structure suggests a matrix-like arrangement where each cell corresponds to a specific activation tensor segment.\n\nIn the center, the 'FormatBook' is enclosed in a rounded rectangular container and serves as a lookup table or registry of standard format variants. It lists four dialects vertically: Dialect 1 (light blue), Dialect 2 (orange), Dialect 3 (yellow), and Dialect 4 (teal), with ellipsis below indicating more dialects may exist. This module acts as a reference for selecting the optimal format variant based on activation patterns.\n\nOn the right, the 'Weight' block, labeled as 'Offline quantization', mirrors the structure of the Activation block but represents pre-quantized model weights. It also consists of colored rectangles labeled with dialect numbers, arranged in a grid. The colors correspond to the same dialects as in the Activation block, ensuring compatibility between online and offline quantization steps.\n\nConnections between these modules are represented by lines originating from each fine-grained block in the Activation section and pointing to multiple dialect entries in the FormatBook. Among these, one connection per block is highlighted in bold black, indicating the selected best dialect assigned to that activation block. The remaining connections are gray, suggesting alternative or less preferred matches. These assignments are guided by the text label beneath the FormatBook: 'Assign the best dialect (standard format variant)', emphasizing the selection process.\n\nFinally, a large multiplication symbol 'X' is placed between the Activation and Weight blocks, symbolizing the element-wise multiplication operation performed during inference, where the assigned dialects from the FormatBook guide how activations interact with weights. The overall workflow implies that FormatBook enables dynamic, efficient quantization by aligning runtime activations with pre-defined, optimized weight formats, thereby balancing accuracy and computational efficiency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

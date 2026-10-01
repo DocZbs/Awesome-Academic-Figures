@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Time Series Feature Redundancy Paradox: An Empirical Study Based on Mortgage Default Prediction — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.00034
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a model inference pipeline architecture designed for predicting the next-month default status of financial entities based on historical performance data. The global layout is linear and left-to-right, with a feedback or preprocessing loop from a lower module to the main input. The process begins with a rectangular box labeled '5-Month Performance Sequences (Chosen Time Window and Feature Set)', which serves as the primary input. This box is connected by a solid arrow to a central rectangular box labeled 'Model Inference', indicating the core processing stage. From this, another solid arrow leads to the final output box, titled 'Predicted Probability Distribution for Next-Month Default Status'.
+
+Beneath the input box, there is a rounded rectangular box labeled 'Cold-Start Handling: Early Observations Padded with Market Benchmarks & Origination Attributes'. This module feeds into the '5-Month Performance Sequences' box via an upward-pointing arrow, signifying that it preprocesses or augments the input data for cases where early observations are sparse or missing.
+
+Underneath the 'Model Inference' box, four distinct machine learning models are listed as the methods employed within this stage: 'Logistic Regression (Class-Weighted)', 'Random Forest (Tuned & Balanced)', 'LSTM (Temporal Sequence)', and 'Transformer (Attention-Based)'. These are presented as text labels without additional shapes, indicating that the inference step leverages multiple model types, each suited to different data characteristics — such as class imbalance, non-linear relationships, temporal dependencies, and attention-based feature weighting.
+
+All boxes are drawn with black borders and white fill, using a clean, sans-serif font. The arrows are simple, solid black lines with standard arrowheads, denoting unidirectional data flow. The entire diagram is arranged horizontally, with the cold-start handling module positioned below the main input to indicate a preprocessing step. The figure is self-contained and does not include any mathematical equations or LaTeX expressions, relying solely on textual labels and structural connections to convey the workflow. The caption 'Model Inference Pipeline Architecture' accurately summarizes the purpose of the diagram.

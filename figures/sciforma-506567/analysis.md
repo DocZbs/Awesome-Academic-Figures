@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+JoyGen: Audio-Driven 3D Depth-Aware Talking-Face Video Editing — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01798
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the JoyGen method, divided into two main sections: Training (top) and Inference (bottom), each enclosed in a dashed rectangular boundary. The global layout is horizontal, with data flowing from left to right through distinct processing modules. Both pipelines share a similar structure but differ in input sources and certain components.
+
+In both pipelines, the process begins with a target face image on the left. A black mask is applied to the target, producing a masked target image. This masked target, along with a reference face image (in training) or the original target face (in inference), is fed into separate VAE encoders (beige trapezoidal blocks labeled 'VAE encoder'). Additionally, a 3D Face Reconstruction module (green rounded rectangle) extracts ID/Exp coefficients from the target face. These coefficients are passed to a 3DMM & Render module (another green rounded rectangle), which generates depth and lip depth maps. These depth maps are also encoded via separate VAE encoders. Audio input, represented by a waveform and microphone icon, is processed by an Audio encoder (yellow trapezoid). All encoded features converge into a central UNet architecture (large purple hourglass-shaped block), which contains multiple layers with alternating blue (Self Attention) and pink (Cross Attention) blocks, as indicated by the legend. The UNet outputs are decoded by a VAE decoder (beige trapezoid) to produce the final output frame.
+
+In the Training pipeline, the reference face is used alongside the masked target to guide the learning process. The predicted frame is shown as the output. In the Inference pipeline, the reference face is replaced by the target face itself, and the ID coefficient is extracted directly from the target. Additionally, an A2M decoder (blue trapezoid) is introduced, which takes the audio input and outputs expression coefficients (Exp coeff) to the 3DMM & Render module, enabling audio-driven facial animation. The final output is labeled as 'edited frame'.
+
+Connections are represented by solid black arrows indicating the flow of data between modules. The UNet receives inputs from all VAE encoders and the Audio encoder, with vertical arrows showing the integration of these features at different levels within the UNet. The VAE decoder receives the output from the UNet and produces the final image. The figure uses consistent color coding: green for 3D face reconstruction and rendering, beige for VAE encoders and decoder, yellow for the audio encoder, and blue for the A2M decoder. The UNet’s internal attention mechanisms are color-coded per the legend: blue for self-attention and pink for cross-attention.

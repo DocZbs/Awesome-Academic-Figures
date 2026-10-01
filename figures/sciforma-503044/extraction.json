@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503044",
+  "record_sha256": "779e61255baeb031b5113fe62e89ed32d16a27784459933c5f615f0fab35ac80",
+  "asset_sha256": "7dd45511c953205a5ebc2d52e1853633d19acd8f81819a87339ec1c8e30ac708",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503044",
+    "title": {
+      "zh": "DOLLAR: Few-Step Video Generation via Distillation and Latent Reward Optimization · 方法图",
+      "en": "DOLLAR: Few-Step Video Generation via Distillation and Latent Reward Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-15689",
+      "title": "DOLLAR: Few-Step Video Generation via Distillation and Latent Reward Optimization",
+      "authors": [
+        "Zihan Ding",
+        "Chi Jin",
+        "Difan Liu",
+        "Haitian Zheng",
+        "Krishna Kumar Singh",
+        "Qiang Zhang",
+        "Yan Kang",
+        "Zhe Lin",
+        "Yuchen Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15689",
+      "arxiv_url": "https://arxiv.org/abs/2412.15689",
+      "arxiv_id": "2412.15689",
+      "arxiv_first_submitted_at": "2024-12-20T09:07:36Z",
+      "arxiv_updated_at": "2026-05-06T21:36:42Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15689v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503044/image/image.jpg?Expires=1790855277&Signature=W0OUEu1jCtTzEXQ8lehKRxYdbLKfFRzZw1M5AXr~M-JQblZyIX8iTsIckSPfrRnxmafjh0Cw5rrPkRekf5CgUBxUJtclSF2j3~h5WEzV4wEA-frqGsE0GwzDu2UHWAxx~H9qzWoebrMojXFMwo8hPXiytpettrQeYPoD0wP4tgFPZ4r5yNq6llCYbcBgmFLoLgLCuJ033qd3VlzCjlfELXGmu0VdPT5D4xArGWAOJzuKz9sP3duNpDwBIJsnzz~U1uXJcEii1PuMV8zEM-6ChidfxhPKvecNRZpPyZF3xiKbdTJEDVjOMQsoRzm3S7ZvpKs8PSYya5OKHwsZjHnTZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503044,
+      "description_sha256": "ab81ae6d5e7b3842d8f90df65726f5ad5791d81fb86c92465b42a0d80ad941c9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "133fb4abcf61ac3e5fb0c86b6a50f776a9eb4d6df2e341dd08854301c8c9fad1",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural overview of three different reward fine-tuning methodologies for video generation models, all constrained by an 80GB GPU VRAM limit, as indicated by a large curved brace spanning the top of the diagram. The layout is divided into three main vertical sections, each representing a distinct approach: 'Direct Reward Gradient', 'Latent Reward Model', and 'DDPO'. Each section contains stacked rectangular modules, with consistent visual coding: light gray boxes represent components like 'Reward Model' and 'Decoder', light blue boxes denote 'Video Model', and dark gray boxes indicate 'Preoccupied' memory or computational resources.\n\nIn the first section, 'Direct Reward Gradient', four modules are stacked vertically: 'Reward Model', 'Decoder', 'Video Model', and 'Preoccupied'. This setup implies that gradients flow directly from the reward model through the decoder to the video model, requiring all components to reside in VRAM simultaneously, which limits scalability.\n\nThe second section, 'Latent Reward Model', features a similar stack but with a key difference: the 'Reward Model' and 'Decoder' are omitted from the main stack, replaced by a 'Latent Reward Model' at the top. The 'Video Model' remains in light blue, and 'Preoccupied' is at the bottom. A curly brace on the right side groups the 'Reward Model' and 'Decoder' separately, indicating they are not loaded into VRAM during training but instead used to compute latent rewards, thus reducing memory footprint and enabling the use of larger models.\n\nThe third section, 'DDPO', shows only the 'Video Model' and 'Preoccupied' modules within the main stack. To the right, a dashed outline labeled 'Model Gradients Tracked Each Step' is shown with time indices t₁, t₂, t₃ above it, suggesting that gradients are computed and stored across multiple steps. This indicates that DDPO tracks gradients over time, which increases memory usage per step, especially for long sequences, and thus faces VRAM constraints when using large video models.\n\nDashed vertical lines separate the three approaches, emphasizing their structural differences. The figure visually communicates that while direct reward gradient methods are straightforward, they are memory-intensive; latent reward models reduce VRAM usage by avoiding loading the full reward and decoder stack; and DDPO, though effective, requires tracking gradients over time, which can quickly exhaust VRAM for large models or long sequences. The caption reinforces this by noting the limitations of each method under VRAM constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

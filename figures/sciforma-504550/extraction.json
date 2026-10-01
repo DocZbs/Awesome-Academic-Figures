@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504550",
+  "record_sha256": "0170692e5a3190ea040ae80f1946002c856b24e92ce811ba782e741b7fc69e57",
+  "asset_sha256": "983ef44ccde070090d487a28a6917119f0652861618a04528f1bebd1db4c7293",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504550",
+    "title": {
+      "zh": "FedGIG: Graph Inversion from Gradient in Federated Learning · 方法图",
+      "en": "FedGIG: Graph Inversion from Gradient in Federated Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-18513",
+      "title": "FedGIG: Graph Inversion from Gradient in Federated Learning",
+      "authors": [
+        "Tianzhe Xiao",
+        "Yichen Li",
+        "Yining Qi",
+        "Haozhao Wang",
+        "Ruixuan Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18513",
+      "arxiv_url": "https://arxiv.org/abs/2412.18513",
+      "arxiv_id": "2412.18513",
+      "arxiv_first_submitted_at": "2024-12-24T15:52:21Z",
+      "arxiv_updated_at": "2024-12-24T15:52:21Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18513v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504550/image/image.jpg?Expires=1790855433&Signature=jypYl0sxtRXydxXTzxfVztTeFpowUe5RkPFWyeidMFkgOnjhLnAoSm7PTOdLQgXESNdKK518a5UIRrketkJ1Kt1Oi3Q1072jRz6CktZ9Il4WIr1kYq4Igbp8RLqBtmCYOv21k7aL9Y3tmX8woGiXU5KBpTjVBy8A4A~s-a2Dp7z2UdH-ZyXlhYodgfchMwAfv0Z-qKqaKmQD0Cd9ccY~QKJrKCS0~gEJCHeTSVjCLeZSjywNaPV2QHlWRxWePwDm34NjFf3XhTFfM2cy9NlTECSOgM7wlHftI4W3ctx~RXXRwN0sdrZ2UyywGgY-6b~PhZJWF8AkWXW-U4p8-N1~oQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504550,
+      "description_sha256": "f5902a3125a4db7ad8467825cdbf985155f1fdd14e56c2aee8fdbc23907ae5ea",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1f05d29eba6d7943d9fe0dcf4e599e8ae01c4e9dd7cda68ef235568373314034",
+      "row_response_sha256": "76421f1e55e732da71b9521a54f3eacacac7a5ed9753bdaa81c0617f2ac3f5f0"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of FedGIG, a framework designed to defend against malicious attacks in federated graph learning (FGL) by modeling both benign clients and malicious attackers. The layout is divided into two main horizontal sections: the top section represents the benign client's process, enclosed in a blue-bordered box, while the bottom section details the malicious attacker's strategy, enclosed in a red-bordered box. These two processes interact via gradient comparison and distance minimization.\n\nIn the top section, a benign client (represented by a blue icon labeled 'Benign Client') possesses a real graph with five nodes (A–E), depicted as green circles connected by edges. This graph is fed into a Graph Neural Network (GNN), shown as a light-blue rectangular module. The output of this GNN is a gradient vector, denoted as Gradient: G, visualized as a bar chart with orange and green bars. This gradient is sent to a central server for aggregation.\n\nIn the bottom section, a malicious attacker (represented by a red hooded icon labeled 'Malicious Attacker') attempts to reconstruct the real graph by generating a pseudo graph. The process begins with a randomly initialized adjacency matrix, shown as a 5x5 grid with floating-point values ranging from -1.7 to 0.8. This matrix undergoes two transformations: first, symmetric transformation with self-loop removal, resulting in a symmetric adjacency matrix where each entry (i,j) equals (j,i), and diagonal entries are zero; second, sparsification with discretization, converting the matrix into a sparse binary adjacency matrix with only 0s and 1s, representing the presence or absence of edges. These steps are visually represented by corresponding graph diagrams below the matrices, showing the evolution from a fully connected graph with self-loops to a sparse, undirected graph.\n\nThe binary adjacency matrix is then processed through a masked autoencoder module, enclosed in a dashed box labeled 'Subgraph Reconstruction'. This module consists of an encoder (blue trapezoid) and decoder (yellow trapezoid), which performs masking and restoring of edges in the graph. The masking step hides some edges (shown as dashed lines and colored nodes), and the decoder reconstructs them. The output is a reconstructed adjacency matrix, identical in structure to the original binary matrix, followed by a reconstructed graph diagram matching the benign client’s graph.\n\nFinally, the reconstructed graph is fed into another GNN module (same as the benign client’s), producing a gradient vector denoted as Gradient: Ŝ, also visualized as a bar chart. An arrow labeled 'Distance Minimization' connects the two gradient outputs, indicating that the attacker optimizes the pseudo graph to minimize the distance between Gradient: G and Gradient: Ŝ. The goal is to make the gradients as similar as possible, implying that the pseudo graph closely mimics the real graph. The entire process highlights how FedGIG enables attackers to efficiently generate realistic pseudo graphs by leveraging adjacency matrix constraining and subgraph reconstruction, posing a threat to privacy in federated graph learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

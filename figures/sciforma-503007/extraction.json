@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503007",
+  "record_sha256": "6c6e565524041040b901b58e7a14d764a714d10e775531c67f2971d32d30cc4a",
+  "asset_sha256": "762d9c68f2e6949cc197f9856fbe8f2f1029ab0ec3da20ba4dfd699addbebe5e",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503007",
+    "title": {
+      "zh": "Modeling Autonomous Shifts Between Focus State and Mind-Wandering Using a Predictive-Coding-Inspired Variational RNN Model · 方法图",
+      "en": "Modeling Autonomous Shifts Between Focus State and Mind-Wandering Using a Predictive-Coding-Inspired Variational RNN Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-15620",
+      "title": "Modeling Autonomous Shifts Between Focus State and Mind-Wandering Using a Predictive-Coding-Inspired Variational RNN Model",
+      "authors": [
+        "Henrique Oyama",
+        "Jun Tani"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15620",
+      "arxiv_url": "https://arxiv.org/abs/2412.15620",
+      "arxiv_id": "2412.15620",
+      "arxiv_first_submitted_at": "2024-12-20T07:25:20Z",
+      "arxiv_updated_at": "2024-12-20T07:25:20Z",
+      "arxiv_subjects": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.3389/fncom.2025.1578135",
+      "arxiv_current_version_observed": "2412.15620v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503007/image/image.jpg?Expires=1790855276&Signature=kqZ~yBhT1KE8HVvx4DUuDLP5opJvpyTluFai51mKNZf42iByDG0JM6Kj2TlqniR1efnDXnCvhTMJUXqW8Ucx5IqOcqoXLEC517~A2Aw5mR3bJ8FVHGAcgKQIvfrKz6~qnra9EzkVbdc8VIPHhsc1Hph7KU0TiEdwcNPrqNZiy~TlG8bZmPUFBx8pRwjq3FEMe1dhpm1VNxHSTtbOWEM-CmWifbBtkffucDUmKh-jgCUmBLuGEdpsqcSxS5dmKluXbQbPGXpRCDyOMpP~gXiEs2GiGvrw2pxXEafqXFQAqCTi3eGeUIWigM9nSJ8gJgpcIXWYVAhT2SmDjACvG-YycQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503007,
+      "description_sha256": "c28e4412ac432a220323fbb14a776b26783c070cb064de397cf325193271e0b8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b816ff481ad540668405b2ef81349ec9cd37576410c5a0feef50984317724036",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical two-layer Probabilistic Variational Recurrent Neural Network (PV-RNN) architecture over time steps t=1 to t=5, with a focus on the inference window from t=2 to t=4. The global layout is structured as a horizontal timeline with time steps labeled along the top, divided into regions: 'Inference window' (t=2 to t=4), 'Now' (at t=4), and 'Future prior generation' (t=5). Vertically, the diagram is split into two layers: Layer 1 at the bottom and Layer 2 above it. Each layer contains latent state variables d^l_t (for l=1,2) and associated latent variables z^{q,l}_t and z^{p,l}_t, representing variational posterior and prior distributions respectively. The initial state at t=1 is initialized from a unit Gaussian (UG), denoted by UG ≅ z^{q,l}_1 for both layers.\n\nVisual modules include nodes for observed data x_t, reconstructed data x̄_t, latent states d^l_t, and latent variables z^{q,l}_t and z^{p,l}_t. The observed inputs x_t (t=1 to 4) feed into the model, with reconstruction errors e shown as upward arrows from x_t to x̄_t. The latent states d^l_t evolve through time via solid blue arrows, representing the generative process. Dotted red arrows represent the inference process, flowing backward in time to update the latent variables. At each time step within the inference window (t=2,3,4), the word 'update' appears in red above each layer, indicating the variational inference step where z^{q,l}_t is updated to match z^{p,l}_t, symbolized by ≅. The KL divergence (denoted by ℜ) is implied between the posterior and prior distributions during this update.\n\nConnections and arrows are color-coded and styled to distinguish processes: solid blue arrows denote forward generative flow (e.g., from d^l_{t-1} to d^l_t, and from d^l_t to z^{p,l}_t and x̄_t). Dotted red arrows indicate backward inference flow (e.g., from x̄_t to d^l_t, and from z^{p,l}_t to z^{q,l}_t). The shaded rectangular region highlights the inference window, encompassing t=2,3,4, where updates occur. After t=4, the model proceeds to future prior generation at t=5, where the latent states d^l_5 are generated from the last prior z^{p,l}_4, and the reconstruction x̄_5 is produced. The diagram also includes a legend on the left side explaining that ℜ represents KL divergence and UG stands for unit gaussian. The overall structure reflects a sequential, hierarchical variational inference framework where past observations are used to update latent representations, which then generate future predictions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

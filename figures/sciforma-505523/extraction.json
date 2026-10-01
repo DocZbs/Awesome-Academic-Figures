@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505523",
+  "record_sha256": "458746beb4a06f7d5bc2cbb96e8679bc107cfe749f800a23f7088fcad1122732",
+  "asset_sha256": "144e5e51c5f60b6e4bc7161b9c637e1fd86bb7b056bd6f597d676dfc16af650e",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505523",
+    "title": {
+      "zh": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization · 方法图",
+      "en": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20185",
+      "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+      "authors": [
+        "Yeonhong Park",
+        "Jake Hyun",
+        "Hojoon Kim",
+        "Jae W. Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_url": "https://arxiv.org/abs/2412.20185",
+      "arxiv_id": "2412.20185",
+      "arxiv_first_submitted_at": "2024-12-28T15:51:02Z",
+      "arxiv_updated_at": "2025-06-24T16:03:30Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20185v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505523/image/image.jpg?Expires=1790855553&Signature=mC6VVE3EXFXzmB3SmAjbDcfuNQCOV5n0xBJ23iCTHH7JBN4pTp4CZCw8LuDRfkvwgoZUjihyWkOV3wKcbQzN1qW5aeB~vrlcdf8ThKqsDg5RkxXFgWtKV5s7eGyLMvtF2vlqxS4erDlQLjEdN8PlpwuEX-yuv5ZbROnYop9Wug761Q45UHz0iL~Sv4Aqc8QuTdpruUg~5ZxYn5XF~QVXDvN2XByZa4B0tAoYh943LomkuKQhr-5gOO~ZTgIAdI70kmYe5mSY2kUQ72I~BCBe4YxDdErnE8lg61ShF9WfKcjY8EQzXYUPD3TggmWb4BWp5iQ~QDM0kAkNelF-~2uuZw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505523,
+      "description_sha256": "f3c3b35d0ebf8ece72a2a4a56d5c59f66d3ff678889c7e9c5208d578775a5c21",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8b0ba285a65f14b8d41b65c52efc511f3aca56bcfa2d85d92f02da26b0026adc",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of a hybrid computing framework for efficient and accurate neural network inference, combining GPU-based computation with CPU-assisted dynamic error compensation. The global layout is divided into two main sections: on the left, a vertical stack representing the neural network layers, and on the right, a horizontal pipeline illustrating the computational flow between GPU and CPU memory and processing units.\n\nOn the left side, the neural network structure is shown as a sequence of four linear layers (Linear 1 to Linear 4), each associated with specific projection types: Linear 1 handles Q/K/V projections, Linear 2 handles output projection, Linear 3 handles gate/up projections, and Linear 4 handles down projection. Each linear layer is followed by a normalization step, except for Linear 4 which is followed by an activation function. Self-attention is applied after Linear 2. This stack is enclosed in a gray box with bidirectional arrows indicating data flow between layers.\n\nThe central part of the diagram shows the computational pipeline. Two memory blocks are depicted: a tan-colored 'GPU Memory' block containing quantized weight matrix \\(\\widehat{\\mathbf{W}}\\) with dimensions \\(d_{in} \\times d_{out}\\) and associated quantization metadata, and a red-colored 'CPU Memory' block containing quantized residual matrix \\(\\widehat{\\mathbf{R}}\\) with the same dimensions and its own quantization metadata. Both matrices are represented as rectangular grids with labeled dimensions.\n\nFrom these memory blocks, data flows to a 'Base GEMV' (General Matrix-Vector Multiplication) module, which receives \\(\\mathbf{X}\\) (input vector of size \\(d_{in}\\)) from GPU memory and \\(Q_b(\\mathbf{W})\\) (quantized base weights) to produce output \\(\\mathbf{o}_b\\) of size \\((1, d_{out})\\).\n\nParallel to this, a 'Dynamic Error Compensation' module is shown in a large gray box. It begins with a 'Channel Selection' step (labeled ①), which selects specific channels from the input \\(\\mathbf{X}\\) based on 'sc_indices' (sparse channel indices). These selected channels are passed to a 'Residual Fetch' step (labeled ②), which retrieves corresponding residual values from the CPU memory via PCIe (indicated by dashed arrow). The fetched residual data is then processed by a 'Residual GEMV' (labeled ③), producing \\(\\mathbf{o}_{dec}\\) of size \\((1, d_{out})\\). Finally, an 'Addition' step (labeled ④) combines \\(\\mathbf{o}_b\\) and \\(\\mathbf{o}_{dec}\\) to produce the final output \\(\\mathbf{0}\\) of size \\((1, d_{out})\\).\n\nConnections are indicated by solid black arrows for data flow within the GPU and dashed black arrows for data transfer from CPU via PCIe. The legend at the bottom clarifies this distinction. The entire diagram emphasizes a split-computation strategy where the bulk of computation occurs on the GPU, while critical error correction components are offloaded to the CPU to maintain accuracy with reduced precision weights."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

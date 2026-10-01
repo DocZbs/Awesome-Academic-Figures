@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503872",
+  "record_sha256": "6846f4db6d1b1762a708c8617f687c9733cb22dd24ae23a8217beea955cf6dbf",
+  "asset_sha256": "a6bec94243bef035af84fb08ec8f31eb7d8bd483633f73e23b18239fd7f9c0bf",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503872",
+    "title": {
+      "zh": "Better Knowledge Enhancement for Privacy-Preserving Cross-Project Defect Prediction · 方法图",
+      "en": "Better Knowledge Enhancement for Privacy-Preserving Cross-Project Defect Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-17317",
+      "title": "Better Knowledge Enhancement for Privacy-Preserving Cross-Project Defect Prediction",
+      "authors": [
+        "Yuying Wang",
+        "Yichen Li",
+        "Haozhao Wang",
+        "Lei Zhao",
+        "Xiaofang Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17317",
+      "arxiv_url": "https://arxiv.org/abs/2412.17317",
+      "arxiv_id": "2412.17317",
+      "arxiv_first_submitted_at": "2024-12-23T06:21:15Z",
+      "arxiv_updated_at": "2024-12-23T06:21:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17317v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503872/image/image.jpg?Expires=1790855403&Signature=L0GD71zwJVzuhQqzyeqMJX4qipyJGqklOlsfVSdhitv9f7TNTvJDtF2LEtideMUhe6NeCKsAYrP2sVcekSKa3H66vtjyVb3noVv5esqXDFMVc5N-VLycovwGF2rmGA0pppNiqVcUIGQyrPJ0Gi6Zm1UNsEz56qrKl8CrWoCI9EmBUD-aFxuc5mfYLdL0WmArV75I0ugzShXJT7h3z6eEzZklIRQ5Dqi4-Vl7BegEUqgGVv~y3BZsRatgjaGwgKkuiX9YnUE4ufPxeXv9juGr7vrGjWeU1vNbNWWkQYa7t1~LYkMGFFxt0AxbN20HJ6irnIdpx2UgkdorJOa0WzCFMQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503872,
+      "description_sha256": "feeeaf89634238cf07a08b490b4d6424a27b79e47fdbfaec75a56f31d46db6ed",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "852251d5bc8e391f4f19f9bd9d1e87c88cb3225150a6bf4e344bc21e0c58b8a7",
+      "row_response_sha256": "738d9d9d724f7284f210f367a6cb6f601b5adbb5d05076ff5ba8dbe46db44cd1"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the FedDP framework, illustrating a federated learning pipeline involving multiple clients and a central server. The global layout is divided into two main vertical sections: the left side represents individual clients (Client 1 and Client K), while the right side represents the server. A dashed red border encloses the entire system, with step labels (① through ⑧) indicating the sequential flow of operations. The process begins at the server, which distributes the initial global model and distillation data to all clients (step ①, indicated by blue dashed arrows labeled 'Distribute').\n\nOn the client side, each client performs local training. This involves a local model (represented as a neural network with pink, purple, and green nodes) trained on local data (depicted as stacked cylinders, colored green for Client 1 and yellow for Client K). Additionally, each client uses distillation data (blue stacked cylinders) to compute similarity scores (C₁ for Client 1, C_K for Client K), shown as vertical lists of numerical values (e.g., 0.844, 0.912, 0.818 for Client 1). These similarity computations are labeled as step ③. The local model is updated based on this information (step ②). After local training, clients upload both their updated local model and the computed similarity scores to the server (step ④, indicated by green arrows labeled 'Upload').\n\nAt the server, the first major module is 'Model Aggregation'. It receives the K local models (w₁ to w_K), each represented as a neural network with distinct background colors (green, beige, light blue). These are aggregated using a weighted sum formula: w = Σ(K from k=1) (n_k / n) * w_k, resulting in an 'Initial Global Model w' (step ⑤). The second module, 'Heterogeneity Awareness', processes the uploaded similarity scores C (from all clients) through a normalization step to produce 'Correlation Factors α', shown as a vertical list of normalized values (e.g., 0.087, 0.152, 0.116). This is step ⑥.\n\nThe third module, 'Knowledge Distillation', uses the Initial Global Model w as a 'Teacher Model' and the aggregated local models as 'Student Models'. The Teacher Model generates 'Soft Predictions' (bar charts), which are then multiplied element-wise by the Correlation Factors α (indicated by '*' symbols) to produce 'Weighted Soft Predictions'. These are ensembled to form 'Ensemble Soft Predictions' (step ⑦). Simultaneously, the Student Model also produces 'Soft Predictions' (step ⑦). Finally, these predictions undergo 'Knowledge Distillation' (step ⑧, orange box) to obtain the 'Final Global Model ŵ', which is then distributed back to clients (step ①, completing the cycle). The server also stores the distillation data (blue cylinder) for use in generating teacher logits. The entire process emphasizes adaptive weighting of client contributions based on data heterogeneity via correlation factors."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

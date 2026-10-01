@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Blockchain-Empowered Cyber-Secure Federated Learning for Trustworthy Edge Computing — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20674
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a workflow diagram illustrating a proposed framework for defending federated learning (FL) systems using blockchain-based trust and reputation mechanisms. The overall layout is a horizontal flowchart enclosed within a rounded rectangular boundary, structured into three main rows of processing steps connected by directional arrows indicating the sequence of operations. Each step is represented by a light blue rounded rectangle with black borders and black text, arranged from left to right and top to bottom to depict a cyclical process that repeats until convergence.
+
+The top row begins with 'Registration of Interested Agents', which flows into 'Generate token of each agent as the identifier'. This is followed by 'Activity and Resource-aware Trust Model', which leads to 'Select eligible agents'. From here, the flow moves downward to the middle row, starting with 'Analyze gradients of agents’ local models'. This step feeds into 'Poisonous Attack Identification', which then connects to 'Isolate malicious agent'. The isolated agent triggers a request: 'Request for insertion of the latest reputation score into the Blockchain'.
+
+The bottom row begins with 'Reputation score inserted into the chain', which proceeds to 'Validate the Trust Score through Committee Consensus'. This validation step leads to 'Update reputation score in the trust model', which finally connects to 'Repeat the process until convergence'. A feedback loop from this final step returns to the beginning of the cycle, emphasizing the iterative nature of the framework.
+
+All connections between modules are represented by thick black arrows, indicating unidirectional flow except for the final loop back to the start. The diagram does not include any mathematical equations or LaTeX expressions, but the caption clarifies that the framework integrates blockchain for reputation management and incorporates defenses against data/model poisoning attacks by analyzing local model gradients. It also highlights that unlike prior works, this approach considers FL participant resources, eligibility, and network reputation as integral components of the trust model.

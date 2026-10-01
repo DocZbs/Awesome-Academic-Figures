@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503866",
+  "record_sha256": "90c73c5769e56975c4bb035cea83eddb7810a4be75a240f8ab0a9b1ad8841131",
+  "asset_sha256": "c9d38553864c0c3f1018b80b15fc0fdc84d6128084ce5dfaa3b61f7a111339a4",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503866",
+    "title": {
+      "zh": "On the Feasibility of Vision-Language Models for Time-Series Classification · 方法图",
+      "en": "On the Feasibility of Vision-Language Models for Time-Series Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-17304",
+      "title": "On the Feasibility of Vision-Language Models for Time-Series Classification",
+      "authors": [
+        "Vinay Prithyani",
+        "Mohsin Mohammed",
+        "Richa Gadgil",
+        "Ricardo Buitrago",
+        "Vinija Jain",
+        "Aman Chadha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17304",
+      "arxiv_url": "https://arxiv.org/abs/2412.17304",
+      "arxiv_id": "2412.17304",
+      "arxiv_first_submitted_at": "2024-12-23T05:52:17Z",
+      "arxiv_updated_at": "2025-01-17T23:02:52Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17304v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503866/image/image.jpg?Expires=1790855402&Signature=NlT8dZ7DMU4jlP7~zKHosrXqwQnjg0d4THi1s1C4X6aMitNXgNcT7hHFuVuXa3oqklvp76coaAztn1D1DP8Z~ZfgA41yJQNUZ9qHtwlkR0pLAvG8Ijvj9ER6you0blWDJxKV7PgoJDAJa70e763pprIEfdDG8ng8TUehINktpkMjbrSMT~Ty-KHhjslsIxScxvLRJ4TaNbaoQvg~qwmzXWIr7YI0bYizHPBq9Ms2oQgaUgE-y8iYqJs9cFdawdMtHmB3JaDaQBj0yX5Jnhx5D5TrdtdUHSzZRM18AEpSOfwaDRCnWmwyHQ5vLE-YE~PwyBp0oNgeGpFjTIQ3OiyKEQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503866,
+      "description_sha256": "957d695b9860458ae9cb5d4c81fa84d79923e72d16bb2abb4bf2ec90688d6420",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1727a69136325ea00c9a5a18da9ce14ed891e36edd1de967c0ca6e13f28120e8",
+      "row_response_sha256": "738d9d9d724f7284f210f367a6cb6f601b5adbb5d05076ff5ba8dbe46db44cd1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multimodal system architecture for time series classification, specifically designed for ECG data analysis. The global layout is structured vertically in two parallel processing streams that converge into a shared language model. On the left side, a stack of three overlapping rectangular images, each containing a blue line graph representing time series data (likely ECG signals), serves as the visual input. This stream flows downward via a black arrow into a salmon-pink rectangular block labeled 'Vision Encoder'. On the right side, a stack of three overlapping rounded rectangles contains text: 'What class is this? [1,4,6,2,6,8,2 ....] Class: 1', representing a natural language prompt. This stream flows downward via a black arrow into a light purple rectangular block labeled 'Tokenizer + Embedding'. Both streams then feed into a wider, central light purple rectangular block labeled 'Language Model', indicating a shared processing unit. From this central model, two distinct output paths emerge. The left path leads to four adjacent green squares displaying numerical values: 0.3, 0.2, 0.4, and 0.1, which are collectively labeled 'Per-Class Classification' beneath them, suggesting a probability distribution over classes. The right path leads to two stacked light purple rectangles labeled 'ECG Detected' and 'Abnormal Patient', collectively labeled 'Generative Labels' below, indicating text-based diagnostic outputs. All connections between components are represented by solid black arrows pointing downward, signifying the flow of data from input to output. The figure uses color coding to differentiate modules: salmon pink for vision processing, light purple for language processing, and green for classification probabilities. The overall structure reflects a dual-input, unified-model approach where visual time series data and textual prompts are jointly processed by a language model to produce both probabilistic class scores and generative diagnostic labels."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

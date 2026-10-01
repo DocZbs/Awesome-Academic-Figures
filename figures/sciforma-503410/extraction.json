@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503410",
+  "record_sha256": "9a846ac9b37f988964db8c1f9bd6500f08a4aadce1e1355b10bc948224e0e8f8",
+  "asset_sha256": "a01c000e6a175d286b34a45099897b1c3a4d4e62eb10d1a83ee3aaa88738dc4b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503410",
+    "title": {
+      "zh": "Diffusion Prior Interpolation for Flexibility Real-World Face Super-Resolution · 方法图",
+      "en": "Diffusion Prior Interpolation for Flexibility Real-World Face Super-Resolution"
+    },
+    "paper": {
+      "id": "arxiv-2412-16552",
+      "title": "Diffusion Prior Interpolation for Flexibility Real-World Face Super-Resolution",
+      "authors": [
+        "Jiarui Yang",
+        "Tao Dai",
+        "Yufei Zhu",
+        "Naiqi Li",
+        "Jinmin Li",
+        "Shutao Xia"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16552",
+      "arxiv_url": "https://arxiv.org/abs/2412.16552",
+      "arxiv_id": "2412.16552",
+      "arxiv_first_submitted_at": "2024-12-21T09:28:44Z",
+      "arxiv_updated_at": "2024-12-21T09:28:44Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16552v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503410/image/image.jpg?Expires=1790855367&Signature=PIH-Mp43UMxCFOV~zg1LdDJ3g7YenE7hqt05YUSQRs5RY370ruKR6NvvUitl9PgEPPfz~WWJHT1UMblTy5qSJvFFHJDv5ZlirmLzneZLq16WcRjMAyX4LQ6GAXClQISxUZ~7uE1OGD3ODyUwgQtVuFIi8jaD7PRhc3LRD875rlQPBkd8kClrAbHmiBBlB92ULp-iPnZc1EqJUCC4JaZh-EkEZfzWYfaGSA7V968SyD3W-zhmIqr31ufpi8raMNV9OEEIvutno~zqf~U-23je98TkubFbNJMOF9C2whEACMV7pGfKmso0GmFcWVjOAAhfgLd6FXZHjdYNoTUE1~h9Gg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503410,
+      "description_sha256": "db799696d358955f502a651031846cb01656146209f0069b61e18f4472775aa9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "243d6dd3c2e1ac6ae348d4c622c68e165657c58f538d94f6da1a63710632a109",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural design of a Corrector module, presented as a U-Net-like encoder-decoder structure with skip connections. The global layout is horizontally oriented, with input on the left, processing in the center, and output on the right, all enclosed within a rounded beige background. The main components are arranged sequentially: an input image I'_{G_{t-1}} enters from the left, passes through a vertical orange rectangular block labeled 'Feature extraction layer', then flows into a blue trapezoidal 'Encoder' module that narrows toward the center. From there, the data moves to a symmetrically shaped blue 'Decoder' module that widens toward the right. The final output, denoted I_G, is produced after an addition operation symbolized by a circle with a plus sign. A legend in the upper right corner defines the visual elements: an orange square represents a 'Feature extraction layer', a circle with a plus sign denotes 'Addition', and a solid arrow indicates a 'Skip connection'.\n\nThe Encoder and Decoder are both large blue trapezoids, with the Encoder tapering inward and the Decoder expanding outward, suggesting a hierarchical feature compression and expansion process. The feature extraction layer is a tall, narrow orange rectangle positioned immediately after the input, indicating a preprocessing step. The input I'_{G_{t-1}} is labeled with a subscript G_{t-1} and an apostrophe, suggesting it is a previous or modified version of a generated image. Above the feature extraction layer, a downward arrow labeled y_T with the text 'Grayscale' indicates that a grayscale version of some target signal y_T is also fed into this layer, likely for conditioning or guidance.\n\nConnections between modules are shown via arrows. A solid black arrow leads from the feature extraction layer to the Encoder, and another from the Encoder to the Decoder. Three dashed horizontal arrows run from the Encoder to the Decoder at different levels, representing skip connections that transfer features directly from encoding stages to corresponding decoding stages, preserving spatial information. At the end of the Decoder, a solid arrow points to a circular addition operator, which combines the Decoder's output with the original input I'_{G_{t-1}} via a feedback loop — a long solid line that curves from the input point down and back up to the addition node. This feedback suggests a refinement or correction mechanism where the initial input is added to the processed output to produce the final corrected image I_G. The entire diagram conveys a generative or corrective process, where a previous image is refined using a learned feature representation and contextual guidance (y_T), with skip connections ensuring fine-grained detail preservation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

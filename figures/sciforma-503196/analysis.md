@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LABIIUM: AI-Enhanced Zero-configuration Measurement Automation System — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16172
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of the Lab-Automation Measurement Bridge (LAMB), a system designed for remote and automated control of laboratory instruments. The global layout is divided into two main components: LABIIUM Chat on the left and LAMB on the right, both enclosed within a larger dotted boundary labeled 'LABIIUM'. The user interacts with the system from the far left, connecting via HTTPS to LABIIUM Chat, which is further connected to LAMB through a secure tunnel using the QUIC transport protocol.
+
+LABIIUM Chat is represented as a nested structure with multiple gray rectangular layers. The outermost layer is labeled 'Context Window', followed by 'LLM API' at the bottom. Inside this, four rounded rectangular modules are stacked vertically: 'Python Libraries', 'Instrument Configuration', 'Function Calling', and 'User Chat History'. These modules represent the components managed by the LLM API, providing context and functionality for user interactions.
+
+On the right side, the LAMB component is depicted as a nested structure within a dashed rectangle labeled 'Raspberry Pi'. Inside, a gray container labeled 'Docker' encloses four rounded rectangular modules: 'VS Code Server', 'Python Environment', 'AI Executor', and 'Instrument Server (Rust)'. This indicates that these services run within a Docker container on the Raspberry Pi hardware platform.
+
+Connections between components are shown using dashed lines. The User connects to LABIIUM Chat via HTTPS, and LABIIUM Chat connects to LAMB through a Secure Tunnel using QUIC. Within LAMB, the Instrument Server (Rust) communicates with external hardware via solid black lines labeled 'Visa Driver (Rust)', connecting to 'Instruments' and 'Device under Test'. The Instruments and Device under Test are represented as dark gray rounded rectangles, with two vertical lines linking them to indicate their physical connection.
+
+All modules are rendered in dark gray rounded rectangles with white text, while containers and boundaries are shown as light gray or white rectangles with dashed or solid borders. The overall flow begins with the user interacting through a web interface (LABIIUM Chat), which processes requests using an LLM API and context window, then sends commands via a secure tunnel to the LAMB system. The LAMB system executes these commands using its AI Executor and Instrument Server, which controls physical instruments through a Rust-based VISA driver, enabling remote automation of lab measurements.

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505355",
+  "record_sha256": "5d2e367517783bebaf0c362defa83600fe58b1ba8e5bd2b27daece29dccb88bc",
+  "asset_sha256": "176344719f9b6f9d3459e34b1697389f49bb79c96ed3dd87f02805d0c343da55",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505355",
+    "title": {
+      "zh": "Symbolic Disentangled Representations for Images · 方法图",
+      "en": "Symbolic Disentangled Representations for Images"
+    },
+    "paper": {
+      "id": "arxiv-2412-19847",
+      "title": "Symbolic Disentangled Representations for Images",
+      "authors": [
+        "Alexandr Korchemnyi",
+        "Alexey K. Kovalev",
+        "Aleksandr I. Panov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_url": "https://arxiv.org/abs/2412.19847",
+      "arxiv_id": "2412.19847",
+      "arxiv_first_submitted_at": "2024-12-25T09:20:13Z",
+      "arxiv_updated_at": "2024-12-25T09:20:13Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19847v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505355/image/image.jpg?Expires=1790855459&Signature=qMIeWTXXDMOHFjc5ODdnOQngpprooUXaGyrcgXvdM3eTVyk2HBo1fX3XKtdofNZODl4Zhjii7bXIwO82SmIvQVARyjxcAlUTdv8LdtIouCkXj~LcaQuDEMpRg7ivlbv2cvJwxCtWFBYkbstHmF3hLfEiiB0zOUH06-GINvmmicb7zxM6~Y7id4uXZYt97KNnhnEL3isbtlxwYvJWEITZguMIAQU1AuSDp-VSAH1P6HyHtW11KQ058GkcOHRB5vm2XkbJuvjn5EF9ayrGecxkAzSiTXLQqzTib0t4QKk~AewO-BaByX~z3whBvkEkFpoVqCEdmvbBTjPGf5FW9bsmCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505355,
+      "description_sha256": "1de0b4acbd512f55ad60032e5febde7564153766a31b05594830979fe273e9b2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4096386c22635daeb4e02f458c49bb0d18c9b5219be9aa0236124f8bb1916859",
+      "row_response_sha256": "bf72f02e7c2ab66b0ac9220d8e6dabb4618faa5ecc073c1eebf9b30f04b4ff35"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the methodology for computing two metrics—DMM (Disentanglement Metric for Multiple Modifications) and DCM (Disentanglement Metric for Change Mapping)—used to evaluate the disentanglement of generative factors in a latent space. The global layout is divided into two main parts: a left-side workflow depicting the model’s processing pipeline and a right-side table representing the metric computation.\n\nOn the left, the process begins with an input latent vector h, which is fed into a Decoder to produce a reconstructed representation Ŝ. This is then passed to a Classifier to generate a prediction ŷ. In parallel, the latent vector h is modified to produce h', which is also processed through the same Decoder and Classifier to yield Ŝ' and ŷ'. The predictions ŷ and ŷ' are then compared in a 'Compare' module, which determines whether each generative factor's prediction has changed due to the modification of the latent unit. This comparison results in a binary output per factor: 1 if the prediction changed, 0 if it remained unchanged.\n\nThe visual modules are represented using standard flowchart shapes: rectangular boxes for operations like 'Modify', 'Classifier', and 'Compare'; trapezoidal shapes for the 'Decoder' to indicate transformation or decoding; and arrows to denote data flow. All elements are outlined in blue, with black text inside. The outputs ŷ and ŷ' are shown as mathematical symbols, indicating predicted class labels.\n\nThe right side of the figure displays a table with five columns labeled F₁ through F₅, representing different generative factors, and multiple rows, each corresponding to a different latent unit c. Each cell contains a 0 or 1, indicating whether modifying that unit caused a change in the prediction for the corresponding factor. The last column shows the row sum for each unit, which is used to compute the DMM metric—the sum of changes across all factors for a given unit. The bottom row shows the column sums, which are used to compute the DCM metric—the total number of times each factor was affected by modifications across all units. A red box highlights one row (second row) to emphasize the row sum calculation. Arrows from the table point to labels 'DCM' for each row sum and 'DMM' for the column sum, indicating how these metrics are derived. The figure caption clarifies that DCM is computed per row (sum of changes per unit) and DMM per column (sum of changes per factor), though the caption mentions 'DCN' while the figure labels 'DCM'—this discrepancy is noted but the figure visually aligns with DCM as the row-based metric."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

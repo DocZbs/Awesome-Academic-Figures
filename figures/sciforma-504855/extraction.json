@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504855",
+  "record_sha256": "f594eb084bd6896206e55d5fdb12cdbbe27a1a827b7e322d1b1af6c9a4bd7f5a",
+  "asset_sha256": "bc16e15d58615e44438b985b9f0b1a84fd3b273a1445fda62130129cad53b2f5",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504855",
+    "title": {
+      "zh": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition · 方法图",
+      "en": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition"
+    },
+    "paper": {
+      "id": "arxiv-2412-18988",
+      "title": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition",
+      "authors": [
+        "Peihao Xiang",
+        "Kaida Wu",
+        "Ou Bai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18988",
+      "arxiv_url": "https://arxiv.org/abs/2412.18988",
+      "arxiv_id": "2412.18988",
+      "arxiv_first_submitted_at": "2024-12-25T21:52:31Z",
+      "arxiv_updated_at": "2025-07-26T03:18:13Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18988v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504855/image/image.jpg?Expires=1790855446&Signature=aJ4ySTErW-20PhwiayLT9Hlu64DLuft-F4oVrEOmOXRfoJFGgGRm3JjEnM2RtjpJb0EeYfPySmzovepcb08Fvr-vHywviYYqzwMTIx0V7FpjSRZHisgO5curcq9j~my2YwZLHKwuHQQSGoOxiJ9TjEU8Hmyx2mJ7ARUaKJZ3vxsCsWRXX~PW6r2hQTDwa88UD13rzuKCNazdtSeazyV5SaMisQd4dzCokFwLGhi0P96tznLGSTiANrug0Fbr1Tq6j-lkppOv2DvP6ZhhOZ5yCX~vnTwrKTDX4IUQAbGIkzdYwNE56nU-acjiQ~Jb60SBwc2AuS-MQLXffvJLKBXT-w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504855,
+      "description_sha256": "2c64f5442b633be53a42e81516d7530af979729ffb414ed7cb2bfafb1d8bdd63",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8f5704fa1b3683988ab334de777c39f68f46a74547f1c6f391f2d454914ef331",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart titled 'Multi-Task Label Data Preprocessing Flow-Chart', illustrating the end-to-end data preprocessing pipeline for facial expression classification using video data from the RAVDESS dataset. The global layout is top-down, starting at the 'Start' node and ending at the 'End' node, with a clear sequential flow of operations connected by directed arrows. The structure is modular, with distinct stages: dataset acquisition, video loading and resizing, model-based face processing, and label generation.\n\nThe visual modules are primarily rectangular boxes representing functions or processes, with rounded rectangles for start and end points. A cylinder-shaped box labeled 'HuggingFace DataBase' represents the external data source, while another cylinder labeled 'MTCNN Model' denotes an external pre-trained model used for face detection and landmark extraction. Text annotations are placed alongside arrows to indicate data dimensions or inputs/outputs, such as '(2, 1440)' or '(96, 1280, 720, 3)'.\n\nThe process begins at 'Start', which leads to 'Get_Dataset()', receiving 'Data Name' as input. This function retrieves data from the 'HuggingFace DataBase' under the 'RAVDESS Dataset' label. The output is a dataset of size (2, 1440), which is then passed to 'Set_Dataset()'. This step partitions the data into training, validation, and test sets, explicitly labeled as 'Train_Set: (720, 2)', 'Val_Set: (360, 2)', and 'Test_Set: (360, 2)'.\n\nFrom 'Set_Dataset()', the flow proceeds to 'Load_Dataset()', which outputs 'Video Path' to 'Read_Video()'. The video data is then processed by 'Video_Resize()', which resizes frames to dimensions (96, 1280, 720, 3), followed by 'Downsample()', reducing the resolution to (16, 224, 224, 3). Concurrently, 'Load_Model()' loads the 'MTCNN Model' to perform two parallel tasks: 'Face Detection()' and 'Face Landmark()'. These produce outputs of dimensions (16, 4) and (16, 5, 2), respectively.\n\nBoth outputs from face detection and landmark extraction are fed into 'Labelized()', which combines them with the previously partitioned dataset to generate labeled data. The output of this step includes 'Train_Label: (720, 3)', 'Val_Label: (360, 3)', and 'Test_Label: (360, 3)', indicating the final labeled datasets for each split, with three classes corresponding to 'Facial Expression Class'. The entire pipeline concludes at the 'End' node.\n\nAll connections are represented by solid black arrows indicating the direction of data flow. The diagram uses consistent font and line styles, with no color coding; all elements are monochrome. The flowchart is logically structured to reflect a real-world machine learning preprocessing pipeline, emphasizing data transformation, model integration, and label generation for multi-task learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

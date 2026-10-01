@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503880",
+  "record_sha256": "10c72f2bd15816f8496864460a0329f0ef349c26a77ebf60cb26dc428ef23402",
+  "asset_sha256": "aba0111fa7eb044147141060f6eb81b1e305b3cf57efd9d7e8d2a53d165d2a68",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503880",
+    "title": {
+      "zh": "A Dual-Perspective Metaphor Detection Framework Using Large Language Models · 方法图",
+      "en": "A Dual-Perspective Metaphor Detection Framework Using Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-17332",
+      "title": "A Dual-Perspective Metaphor Detection Framework Using Large Language Models",
+      "authors": [
+        "Yujie Lin",
+        "Jingyao Liu",
+        "Yan Gao",
+        "Ante Wang",
+        "Jinsong Su"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17332",
+      "arxiv_url": "https://arxiv.org/abs/2412.17332",
+      "arxiv_id": "2412.17332",
+      "arxiv_first_submitted_at": "2024-12-23T06:50:04Z",
+      "arxiv_updated_at": "2024-12-25T08:49:27Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17332v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503880/image/image.jpg?Expires=1790855403&Signature=pCNXbZxhVCMMbR2xIQ2uxKh3vjW3Nvds6fRmiNhjac42IlhscQt8Gzgw3qzJTM1X7UYxTA4DxRuyJ1v7ClD4P2aUQUYeynVSA920AlvgV3VzrD93fw8YMl6FbXgZq8~UhTwL4SEmCT~3ohyd9IFyjzWIvmKhvHP-JQopG0sY3h4kSo2EW~jd3CdMvsJ56I0Q2fZp0uuWuj7aybiqvc6FMBCKmcbTg9PZK6yufaACOR~pfNEAeXVjqxkXG6gTzeMAfOjfKX8ntZO4YeXTX1EHiv5tw~AWW4624IK8C-gxQApWJ7-gGRtSITeVzuCVf-CDi7aM0wT1u-T7-lPSCN71BQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503880,
+      "description_sha256": "e923733a16bc5a82660b53d5c9a7ec63b747575d0e4ddf17e3f483b62908c7fa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "32a12f09b680910a1866f3821f8005f94eb8837dffc4a38eb07481565af50ea3",
+      "row_response_sha256": "738d9d9d724f7284f210f367a6cb6f601b5adbb5d05076ff5ba8dbe46db44cd1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the DMD (Theory-Driven Metaphor Detection) framework, structured into three main components: (a) Implicit Theory-Driven Guidance, (b) Explicit Theory-Driven Guidance, and (c) Self-Judgment. The global layout is divided into three vertical sections, separated by dashed lines, each illustrating a distinct phase of the framework’s workflow.\n\nIn section (a), Implicit Theory-Driven Guidance begins with an annotated dataset containing sentences labeled as metaphorical ('yes') or non-metaphorical ('no'). A sample sentence, such as 'He now says that specialty retailing fills the bill, but he made a number of ...', is processed by a MelBERT model (represented as a blue rounded rectangle). This model generates two theoretical embeddings: h_MIP and h_SPV, which are combined into a joint representation h_T. These embeddings are stored in a Datastore, which contains annotated samples indexed by their h_T vectors. The Datastore is visualized as a table with rows representing samples and a k-nearest neighbor search (k=3) illustrated via a circular region enclosing the closest points in embedding space. The selected nearest neighbors are then used as context for an LLM (Large Language Model, shown as a green rounded rectangle) to determine whether a specific word in a given sentence expresses metaphorical meaning, with the prompt including examples and requiring a 'yes' or 'no' answer along with an explanation.\n\nSection (b), Explicit Theory-Driven Guidance, starts with content from metaphor theories (e.g., MIP and SPV definitions) fed into an LLM to generate a multi-step reasoning process (Step 1: Determine basic meaning; Step 2: Analyze sentence context; etc.). Simultaneously, the target word (e.g., 'fill') is looked up in a Dictionary (pink rounded rectangle), retrieving its definition and usage examples. Both the LLM-generated steps and dictionary information are combined into a structured input prompt for another LLM, which then judges whether the word expresses metaphorical meaning, again requiring a 'yes' or 'no' response.\n\nSection (c), Self-Judgment, evaluates outputs from both previous guidance methods. The LLM’s response from (a) is first assessed, with an example output showing 'Answer: no' and an explanation. Then, the LLM’s response from (b) is evaluated, where it presents two views and asks the LLM to judge them. A thought bubble illustrates internal reasoning: 'I agree with view 2... So the answer is yes.' The final decision is derived from this self-judgment process, combining insights from both implicit and explicit guidance to produce a final verdict on metaphorical expression.\n\nThroughout the diagram, arrows indicate data flow and processing direction. The LLMs are consistently represented as light green rounded rectangles, while the MelBERT and Dictionary modules are blue and pink, respectively. Text boxes are used for prompts, inputs, and explanations, often with color-coded bars indicating different types of information (e.g., examples, dictionary entries). The figure uses dashed lines to separate the three major components and solid arrows to show the sequence of operations within and across them."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

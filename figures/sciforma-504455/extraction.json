@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504455",
+  "record_sha256": "a509a07fd9ac0b8287771aefa8c001cad70dfb54aafc642da9dd872d0a182f91",
+  "asset_sha256": "e96156afe1e71c2aca860c0513a65b031ed7ff12d3c09d7e809fec86b999ca3f",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504455",
+    "title": {
+      "zh": "Data-Driven Self-Supervised Graph Representation Learning · 方法图",
+      "en": "Data-Driven Self-Supervised Graph Representation Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-18316",
+      "title": "Data-Driven Self-Supervised Graph Representation Learning",
+      "authors": [
+        "Ahmed E. Samy",
+        "Zekarias T. Kefatoa",
+        "Sarunas Girdzijauskasa"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18316",
+      "arxiv_url": "https://arxiv.org/abs/2412.18316",
+      "arxiv_id": "2412.18316",
+      "arxiv_first_submitted_at": "2024-12-24T10:04:19Z",
+      "arxiv_updated_at": "2024-12-24T10:04:19Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.3233/FAIA230325",
+      "journal_reference": "ECAI 2023. IOS Press, 2023. 629-636",
+      "arxiv_current_version_observed": "2412.18316v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504455/image/image.jpg?Expires=1790855427&Signature=ZUS6x94HUtdS-VDnlgm7mJxLCaXwSaXZ4NEgvFK2MXvqOOBD-T7A7XZefAKYxE3NJUeko0P8o2oohRDyE2PW9KhMVf70XKbE6iRsOKiBPcFJNrdkQmLol3Xv0S3IeDUCUW1iQnDUiILxy5VS1gf-Lho5nGXyCIWuNKRlWbeAMQt2MSwFDeNQBbWT5rOfzXC9~v6ttGIZMa-7U6TLFuRdFNu-9N175xiQO0NUmMMEiLXw57kOJ0SrpMw0MlpbTDhMcoOOM3qa43VhrqUkG5U21JGjXhhvdIwvVB4vbRMf6hFLVnmWLZ1cqWOUl2LAnmYPqiKUNx0mekjkMAFN0Qe7lQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504455,
+      "description_sha256": "1fbffc9cdebae8cb362ef91831ffbc18851c8522c5a50f9d46e1e4af85857a2e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8e0f61c1e133dd18144da92f67c3d590056d1a67c5176c25e908ee316e5a3c52",
+      "row_response_sha256": "de92f686a38fd8c61047a885d32c6fdd48928f0a859514f8069f80a1592172af"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct architectural configurations (labeled (a), (b), and (c)) for a graph-based self-supervised learning framework, each illustrating a different strategy for data augmentation prior to encoding via a Graph Neural Network (GNN). The overall layout is divided into three horizontal panels, each representing one configuration, with vertical columns indicating stages: 'The Data to be Augmented', 'Learnable Topology/Feature Augmenter', 'Augmentation Space', 'GNN Encoder', and 'Latent Space'. Each panel flows left to right, showing the transformation pipeline.\n\nIn panel (a), labeled 'Learnable Feature Augmenter', the input consists solely of node features X, represented as a grid of colored squares. Two separate Feed-Forward Networks (FFN1 and FFN2), parameterized by fΘ1 and fΘ2 respectively, are applied to X to produce two augmented feature matrices X1 and X2. These are shown as differently colored grids. The adjacency matrix A remains unchanged and is depicted as a grayscale checkerboard pattern, blurred to indicate it is not augmented. The augmented views G1 = (A, X1) and G2 = (A, X2) are then fed into a shared GNN Encoder composed of multiple GNN Layers (parameterized by hΘ), producing latent representations Z1 and Z2, shown as color-coded grids.\n\nPanel (b) illustrates 'Learnable Topology Augmenter'. Here, the input includes both the adjacency matrix A (checkerboard) and node features X (colored grid). The topology augmenter applies two transformations: one is an identity mapping tΦ(A) which leaves A unchanged (shown as the original A), and the other is a learned transformation tΦ'(A) implemented via a GNN-based module with multiple GNN Layers and a Pairwise Similarity (Sim) component, producing a modified adjacency matrix A'. The node features X remain unchanged and are shown as the original colored grid. The resulting augmented views are G1 = (A', X) and G2 = (A, X). These views are processed by the same shared GNN Encoder (hΘ) to yield latent representations Z1 and Z2.\n\nPanel (c) combines both feature and topology augmentation. The input again includes A and X. The topology augmenter applies the learned transformation tΦ'(A) to produce A', while the feature augmenter applies two FFNs (fΘ1 and fΘ2) to X to produce X1 and X2. This creates two fully augmented views: G1 = (A', X1) and G2 = (A, X2). Both views are passed through the shared GNN Encoder (hΘ) to generate latent representations Z1 and Z2.\n\nThroughout all panels, arrows indicate the flow of data. The GNN Encoder is consistently depicted as a stack of rectangular boxes labeled 'GNN Layer' with ellipsis between them, indicating multiple layers. The latent space outputs Z1 and Z2 are shown as grids with varied colors, suggesting diverse embeddings. The visual distinction between augmented and non-augmented components is made by blurring the unaffected data (e.g., A in panel (a), X in panel (b)). The figure emphasizes that the augmentation strategies differ across panels but converge on a common GNN encoder for representation learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

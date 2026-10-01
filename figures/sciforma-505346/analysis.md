@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19845
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative architectural diagram of two generative models, split vertically by a dashed line into a left (complex) and right (simplified) version. Both sides depict a dual-path network structure for image reconstruction, with input x at the bottom left and output x̂ at the bottom right. The global layout is symmetrical in structure but differs in complexity: the left side shows a multi-scale, hierarchical architecture with multiple latent variables and skip connections, while the right side is a streamlined, single-scale version.
+
+In both diagrams, the red path represents an encoder or feature extraction stream, and the blue path represents a decoder or reconstruction stream. Each path consists of diamond-shaped nodes labeled 'r', indicating a processing module such as a residual block or transformation layer. The red path flows upward from x to the top, while the blue path flows downward from the top to x̂.
+
+On the left side, the top of the diagram is marked '2 × 2', indicating the spatial resolution of the initial latent space. A blue box labeled 'h' feeds into a circular plus sign (addition operation), which then connects to the first blue 'r' node. Below this, three levels of latent variables z₁, z₂, z₃ are shown, each associated with a gray trapezoid (downsampling) and yellow trapezoid (upsampling) pair, and labeled with their respective resolutions: 2×2, 4×4, and 8×8. These latent variables are generated from the red path via a circular plus sign (addition) and then fed into the blue path through another addition operation, forming skip connections. The red and blue paths are connected at each level by these skip connections, where the output of a red 'r' node is added to the input of the corresponding blue 'r' node.
+
+On the right side, the structure is simplified: there is only one latent variable 'z' at the 2×2 resolution, with no intermediate latent variables or skip connections. The red path still ascends from x to the top, and the blue path descends from the top to x̂, but they do not interact except at the top, where the latent variable 'z' is generated from the red path and used to initialize the blue path. The red and blue paths remain separate throughout, with no intermediate additions.
+
+All arrows are directed, indicating the flow of data. Red arrows follow the red path, blue arrows follow the blue path, and black arrows indicate the flow of latent variables between the paths. The circular plus signs denote element-wise addition operations. The figure visually contrasts a complex, multi-scale, skip-connected architecture on the left with a simpler, single-scale, non-skip-connected version on the right, likely illustrating a trade-off between model capacity and simplicity.

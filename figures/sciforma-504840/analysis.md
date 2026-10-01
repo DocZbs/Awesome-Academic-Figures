@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Evaluating deep learning models for fault diagnosis of a rotating machinery with epistemic and aleatoric uncertainty — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18980
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a deep ensemble model named De1, which consists of four identical base learners arranged vertically in a stacked configuration. The entire ensemble is enclosed within a large rectangular boundary labeled 'De1' on the left side. Each base learner is individually encapsulated within a dotted rectangular box, with the top one labeled 'Base learner 1' and the bottom one labeled 'Base learner 4', indicating a sequence from 1 to 4. Between these two boxes, three vertical black dots represent the omitted intermediate base learners (2 and 3), suggesting a total of four learners in the ensemble.
+
+Each base learner follows an identical feedforward neural network structure. The process begins with an input module represented as a vertical blue oval labeled 'Input (burst)', indicating the input data is a burst signal. This input is connected via a solid black arrow to a 3D cube-shaped block labeled 'Conv+Pool', which represents a combined convolutional and pooling layer stack, likely used for feature extraction. The cube is shaded light blue with a gray side face, giving it a 3D appearance.
+
+From the Conv+Pool block, a solid black arrow labeled 'Flatten' points to the next component: a white vertical oval labeled 'Dense layer', representing a fully connected layer. Another solid black arrow connects this dense layer to a final white vertical oval labeled 'Output layer', which produces the model's output for that base learner. All internal components within each base learner are aligned horizontally from left to right, following a clear data flow direction.
+
+There are no direct connections between the base learners; they operate independently in parallel. The figure does not show any aggregation or combination mechanism (e.g., voting, averaging) for the outputs of the base learners, implying that such a step may occur outside the scope of this diagram. The visual style is clean and schematic, using consistent shapes, colors, and labels to convey the modular and repetitive nature of the ensemble architecture. The caption 'Architecture of deep ensemble De1' confirms the purpose of the diagram.

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505996",
+  "record_sha256": "2c88566ee4b21a43d7b72906dd2c7e1765a2099b7a42307b5b5cffb5a5dc7f2b",
+  "asset_sha256": "0f0850d5bdae9e4171b2da2bf7e0c83ea2614991fd6e6464cd52bb6500df14a5",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505996",
+    "title": {
+      "zh": "A Large-Scale Study on Video Action Dataset Condensation · 方法图",
+      "en": "A Large-Scale Study on Video Action Dataset Condensation"
+    },
+    "paper": {
+      "id": "arxiv-2412-21197",
+      "title": "A Large-Scale Study on Video Action Dataset Condensation",
+      "authors": [
+        "Yang Chen",
+        "Sheng Guo",
+        "Bo Zheng",
+        "Limin Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21197",
+      "arxiv_url": "https://arxiv.org/abs/2412.21197",
+      "arxiv_id": "2412.21197",
+      "arxiv_first_submitted_at": "2024-12-30T18:58:29Z",
+      "arxiv_updated_at": "2025-03-12T03:28:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21197v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505996/image/image.jpg?Expires=1790855558&Signature=DHF4wj9BRH40f4SKpJ5j09I10XA-5nZjoOLBQaUdsy0CK3NU4g-WtHjR4d9ktuYtLrYvce1VuW59Zvycu9RWEqybYqRux-1y5j0gyi2sRm5IOuLZimhvzRe5qVyQhWtb57iNBZFhHirI8IC59QigAc~N3z1O9P2HYTWnP3o4mwPkP5oDYaBXuBMzuvsv43H1Fitj6NCb6FtTt7KGTTi3Ur1~l2D3wlQ3iK1a9Jy-Yr9Pm9DQlKoBDGMtdMG2PqufpUCSuKuG~6HEV5kX-vFccV-7R9ShUKFt2aiOJDJAYsA2mgwaUvmADKd8nsXf1E7wns2YaISDvmsYKyLpyIlONg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505996,
+      "description_sha256": "7f322e05ee2b724dd7e6d5a78aa5855c4d8cc8bf164d652f20156e8588dfcd5a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "13f4f3344adf44e96941693bcd2b63ebd9dc2ec6a28af112afebfcba0dc196ea",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-phase pipeline for video dataset condensation and evaluation, divided by a vertical dashed line into (1) Condensation on the left and (2) Evaluation on the right. The global layout is structured as a flowchart with distinct modules connected by arrows, emphasizing a sequential and conditional workflow.\n\nIn the Condensation phase, the process begins with a 'Real Video' input, represented as a green horizontal bar segmented into N frames, enclosed in a dashed green box. This real video feeds into an 'Interpolator', depicted as a gray trapezoid, which processes it to generate a 'Synthetic Video', shown as a blue horizontal bar segmented into N_c frames, enclosed in a dashed blue box. A red dashed rectangle labeled 'Sliding-window' highlights a segment within the synthetic video, indicating temporal windowing. The interpolator also receives feedback via a red dashed arrow labeled 'Loss Backward' from a neural network structure labeled 'Condensation Network', which is represented as a multi-layered graph with pink, blue, and green nodes. This network is connected to a diamond-shaped decision node labeled 'G > 0', where 'G' stands for 'Require Grads'. If G > 0 (Y branch), the flow proceeds to a pink rounded rectangle labeled 'Dataset Distillation'; if not (N branch), it goes to a light blue rounded rectangle labeled 'Sample Selection'. The output of both branches is combined via a 'Combine' arrow back to the synthetic video module, forming a feedback loop. The Condensation Network receives gradients from the decision node via a red dashed arrow, indicating gradient-based optimization.\n\nIn the Evaluation phase, the same 'Synthetic Video' (blue bar, x N_c) is processed through the 'Interpolator' again, and simultaneously passed to a black-bordered rectangle labeled 'Labeling'. Both outputs feed into a purple rounded rectangle labeled 'Evaluation Network', which then connects to a green-bordered rectangle labeled 'Test on Val Set', representing the final evaluation step.\n\nVisual attributes include color-coded boxes: green for real video, blue for synthetic video, gray for interpolator, pink for dataset distillation, light blue for sample selection, purple for evaluation network, and green for test set. Shapes vary: rectangles for data or operations, trapezoids for interpolators, diamonds for decisions, and a neural network graph for the condensation model. Arrows indicate data flow (solid black) and gradient/loss propagation (red dashed). The legend at the bottom clarifies symbols: red dashed rectangle = sliding-window, red dashed arrow = loss backward, G = require grads, and the neural network icon = condensation network. The entire diagram is designed to show how real video is condensed into a synthetic dataset using a trainable network and conditional logic, followed by evaluation using a separate network trained on labeled synthetic data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,100 @@
+{
+  "id": "sciforma-503341",
+  "record_sha256": "f95792a8e53e8f52733f754b9389a2c9c9f81381d5510a544bb7dfa06cb0e711",
+  "asset_sha256": "d2122ac96146c63fdedaee9f4299ea0b8cf51a039251097b1be0bdecc05de19e",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503341",
+    "title": {
+      "zh": "Correcting Large Language Model Behavior via Influence Function · 方法图",
+      "en": "Correcting Large Language Model Behavior via Influence Function"
+    },
+    "paper": {
+      "id": "arxiv-2412-16451",
+      "title": "Correcting Large Language Model Behavior via Influence Function",
+      "authors": [
+        "Han Zhang",
+        "Zhuo Zhang",
+        "Yi Zhang",
+        "Yuanzhao Zhai",
+        "Hanyang Peng",
+        "Yu Lei",
+        "Yue Yu",
+        "Hui Wang",
+        "Bin Liang",
+        "Lin Gui",
+        "Ruifeng Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16451",
+      "arxiv_url": "https://arxiv.org/abs/2412.16451",
+      "arxiv_id": "2412.16451",
+      "arxiv_first_submitted_at": "2024-12-21T02:50:08Z",
+      "arxiv_updated_at": "2024-12-21T02:50:08Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16451v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503341/image/image.jpg?Expires=1790855363&Signature=wcyhVoEMXgFVkhe8AXup~9VgJl~rskwHp3eSms7TsgA3PxeU33me4waht33uT8pDotLypJGhDcB0Jj-h5xHP2YapJGL5O7nXk6sxACjE0JZB1oxGBRtXAcLmbF0Y~RopmS3QJGJc~R7HH1POE6foK4wmhE5DY1LwqhDlrVd9RwNP4sEQPh30OuJTp0rxgVvH6meq4au2Vh0L0WIgJS6tGtTpFX11~wmSeVOtXCRdBzYeKtEZ2DY7DYP5rrFm4Mkhp-oagi7LIqiSnEpUnsQ98QUzEC8Ik28UAacLOo69Cber~-~mP6NSg8kWi3P3Keraio6U01yY3SOUEzNCODTMxQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503341,
+      "description_sha256": "7923b39bd912ba0135808b1f9c79c6a7802e867c9940b86d65257cccd10c7f5b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8c8ae8022f61ecc445d20db7b96924421d26b73b861a5bd1b7ceaad94c10f32a",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the end-to-end pipeline of a method called \\ourmethod, designed to correct large language model (LLM) misbehavior by identifying influential training samples and using them for optimization. The top row provides a high-level conceptual overview: on the left, an LLM generates a problematic review of 'Gone with the Wind'—highlighting racist tropes—marked with a red 'X'. This output is processed through a Linear-FAC Influence Function, which retrieves a set of recalled training samples (represented as document icons, some blue, some red). These samples are then used in an Influence-driven Bregman Optimization step, symbolized by a pen tool, to refine the model’s behavior. On the right, the corrected output is shown—a more critical, historically aware review—marked with a green check. A human user is depicted at both ends, posing the same question, emphasizing the goal of aligning model outputs with desired ethical or factual standards.\n\nThe bottom row details the technical components. It begins with a Transformer sublayer composed of an Attention (ATT) module and a Feed-Forward Network (FFN), repeated N times. The pre-activation gradient Ds is computed from the input state α. Through linearization, this gradient is approximated as Ŵκ(h, H) + b̂, where Ŵ represents the weight matrix and κ is a function of hidden states h and H. This leads to the computation of the modular gradient DŴ = Ds · aᵀ, visualized as a grid of varying gray shades indicating different gradient magnitudes. From this, an Influence Score (IF Score) is derived, represented by a star icon. The IF Score assigns positive values (blue documents) to samples that contribute to misbehavior and negative values (red documents) to those that counteract it. These scored samples are then categorized into 'Not Influential' and 'Influential Samples'. The influential ones are ranked based on their impact, using a Bregman Divergence plot showing U(x) versus θ, with a point θ^s indicating the current parameter and θ the target, and the gradient ∇U(x) guiding the optimization direction. Finally, these ranked influential samples are fed into the Influence-driven Bregman Optimization process, symbolized again by the pen tool, to adjust the model parameters and correct its behavior. The entire lower half is labeled as 'Linear-FAC for Influence Score' on the left and 'Influence-driven Bregman Optimization' on the right, clearly demarcating the two main stages of the method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

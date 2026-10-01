@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-505643",
+  "record_sha256": "3c1b0dd5f980c674d5ccc55dfa9fcf4bbf61773e1392140a050cbf0da9153118",
+  "asset_sha256": "3b1b0cf5f764342f284518fcdc604d6d8d0d36171723349415c6b055c9669f31",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505643",
+    "title": {
+      "zh": "Bringing Objects to Life: training-free 4D generation from 3D objects through view consistent noise · 方法图",
+      "en": "Bringing Objects to Life: training-free 4D generation from 3D objects through view consistent noise"
+    },
+    "paper": {
+      "id": "arxiv-2412-20422",
+      "title": "Bringing Objects to Life: training-free 4D generation from 3D objects through view consistent noise",
+      "authors": [
+        "Ohad Rahamim",
+        "Ori Malca",
+        "Dvir Samuel",
+        "Gal Chechik"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20422",
+      "arxiv_url": "https://arxiv.org/abs/2412.20422",
+      "arxiv_id": "2412.20422",
+      "arxiv_first_submitted_at": "2024-12-29T10:12:01Z",
+      "arxiv_updated_at": "2025-05-27T17:40:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20422v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505643/image/image.jpg?Expires=1790855552&Signature=sGEfCTVx9BCycGBkTFZ32pUg~Ga8diwQDEVCC207t9BphEnfqRQYQjIhvRFZjYfr2aot-P70WFurx0sxQsly1u6gWD8Jk5kWSOzVJ8t7IXvFwjsZD4~3b-RRrhsgXCXqInt8mabFdEXMS1s1dRCprpho8k-EiJudCo0J80ovt-OH4VqG6-FDyOT2ovZQDPcGBD4vJu6q42M2OUvIJWpn4hrIp8r8AosqRhNwxO5NlzCe-wcIHOO~~qY~J2ryhObTbrkDyXtcLYLyycmJZ993tXikYvizFGs5mGSgZEPb7-Giq9~32Q2MNn3ndgB3LXAo91i-zmJBENtDSpSr0RB6xg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505643,
+      "description_sha256": "24953a975a545faa305e94c347132789a8dc20d279b3a5456245abf0323a6da3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "de8be545ab85af7d75c3bd09246cd11f10d3aa6933c977051dbea1beea346ba2",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of a method for optimizing a 4D radiance field to add dynamic motion to a static 3D object, using a combination of a 4D NeRF and an image-to-video model. The global layout is divided into two main stages: 'Initialize a static 4D' on the left, and 'Adding Dynamics' on the right, enclosed within a large green rounded rectangle. The process begins with a 3D input object, depicted as a plant inside a wireframe sphere, which is initialized into a 4D NeRF module represented as a light green cube. This initialization is guided by random noise of dimension ℝ⁴ˣ¹⁶, shown as a vector pointing to the sphere. The 4D NeRF is then used to render multiple frames over time, visualized as a stack of images showing the plant at different time steps, with an arrow labeled 'time' indicating the sequence. A view selector, shown as a light blue rectangular box, selects viewpoints for rendering, with arrows pointing from it to both the 4D NeRF and the render output. The rendered frames, along with a textual prompt 'A blooming plant' and a corresponding noisy image patch, are fed into an 'Image-To-Video model', depicted as a light green trapezoid with a lock icon, symbolizing a pre-trained, frozen model. This model outputs two gradients: ∇θL₁₂V, shown as a purple heatmap labeled 'Attention mask', and ∇θLmasked_SDS, shown as a grayscale image of the plant, representing the masked Style-based Differentiable Synthesis (SDS) loss. These gradients are backpropagated to the 4D NeRF via a dashed green arrow labeled 'Backpropagating gradients to the NeRF', forming a feedback loop that updates the 4D NeRF to incorporate motion while preserving the object’s identity. The entire process is designed to distill dynamic priors from the image-to-video model into the 4D NeRF, enabling the generation of realistic motion for the static 3D object."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

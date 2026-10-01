@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Data-driven Modeling of Parameterized Nonlinear Fluid Dynamical Systems with a Dynamics-embedded Conditional Generative Adversarial Network — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.17978
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a discriminator model designed to distinguish between real and predicted flow fields based on their corresponding physical parameters, specifically the Reynolds number Re_D. The global layout is a horizontal workflow from left to right, beginning with input data and progressing through multiple processing layers to produce a final binary classification output labeled 'Real/Predicted'.
+
+At the top-left, an input image representing real or predicted flow fields, denoted as s(t; P_sim), is shown with a color gradient indicating velocity or pressure distribution around a circular obstacle. This image feeds into a sequence of convolutional neural network (CNN) layers, represented by purple rectangular blocks each containing three white circles, followed by max pooling layers depicted as dark blue rectangles with two white circles. These layers are arranged in pairs, with ellipses indicating additional intermediate layers. After several CNN and max pooling stages, the feature maps are passed through a flatten layer (gray rectangle with two white circles) and then a dense layer (light blue rectangle with two white circles).
+
+Below this main pathway, a separate branch begins with a green circular node labeled 'Physical Parameter (P_sim): Re_D', which represents the Reynolds number associated with the flow field. This scalar parameter is fed into a series of dense layers (light blue rectangles with two white circles), indicated by ellipses for intermediate layers.
+
+The outputs from both pathways converge at a 'dot' operation block (golden rectangle), where the features from the flow field processing branch are combined element-wise with the processed physical parameter features. The result of this dot product is then summed with the output from the final dense layer of the flow field branch via a 'Sum' block (another golden rectangle). This combined signal passes through a sigmoid function, represented by a blue S-shaped curve, which produces a scalar probability output. Finally, this probability is mapped to a binary decision labeled 'Real/Predicted' in a gray rounded rectangle.
+
+A legend box enclosed in a dashed rectangle clarifies the visual symbols: purple blocks denote CNN layers, dark blue blocks denote MaxPooling layers, gray blocks denote Flatten layers, light blue blocks denote Dense layers, and the Sigmoid Function is shown as a curve. All connections are indicated by solid black arrows showing the direction of data flow. The overall structure reflects a hybrid deep learning architecture integrating spatial feature extraction from flow fields with physical parameter embedding to enhance discrimination capability.

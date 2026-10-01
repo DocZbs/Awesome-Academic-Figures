@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503022",
+  "record_sha256": "d72e4900832aef648d21d71b121ea9ed43c85025b1ac089cc0b497333ce9c754",
+  "asset_sha256": "ebb89207c933da90ad2c6b9a26da4ec79e8c723a11cd18423c26585df9df29ac",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503022",
+    "title": {
+      "zh": "Error-driven Data-efficient Large Multimodal Model Tuning · 方法图",
+      "en": "Error-driven Data-efficient Large Multimodal Model Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15652",
+      "title": "Error-driven Data-efficient Large Multimodal Model Tuning",
+      "authors": [
+        "Barry Menglong Yao",
+        "Qifan Wang",
+        "Lifu Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15652",
+      "arxiv_url": "https://arxiv.org/abs/2412.15652",
+      "arxiv_id": "2412.15652",
+      "arxiv_first_submitted_at": "2024-12-20T08:07:11Z",
+      "arxiv_updated_at": "2024-12-20T08:07:11Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15652v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503022/image/image.jpg?Expires=1790855277&Signature=qPoJwjujRHe3X9rjugK1BDGs0Qh742XBXrnE5V32xdTnK91E1OGZC95hocNSfw6sTw127YHtkn~ukC4k60ERAIxeM8aDQ5o2SfWDOCiIER3KL0xFY32Nec1hBMyzLXoUiRPbof~NdrtgbLzOK04DqdG8Q~00gX7-ZE3hGDrGgHBrtHKr~uk4MKVY9eDbwlQEIDw0gAdOHDwVUYBozto5Z6O4Xm4lRyGLnMek425djz2V9~dubXqHkadL-CybYfR~4b1b9335ofnvvkSTVmrRf0NfQaryVQMA2UhO~lCMJTeGskpRgLbsJnZmvmlfkoSZFRQynW62RT3AqUu2ymDFZg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503022,
+      "description_sha256": "db5a4b0a6ced989d90b76ef7d14ccf114f68bed262a365f40b258baf2cbcf4f5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a4a908c14b6398b94ee71aa3ebfddac21becfef14924789bf7d48ac98010a581",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a step-by-step reasoning process used to identify mistakes in a model's decision-making by incrementally adding reasoning steps and observing how the probability distribution over answer choices evolves. The global layout is divided into three main sections: on the left, a 'Reasoning Steps' box contains four sequentially numbered reasoning statements, each enclosed in a colored rectangle with a dashed border; in the center, a large peach-colored rounded rectangle labeled 'Teacher Model' receives inputs from these steps; on the right, an 'Answer Probabilities' graph plots the changing confidence in two answer options (A and B) as more reasoning steps are added.\n\nIn the 'Reasoning Steps' section, each step is visually distinct by color and border style: Step ① (gray with blue dashed border) states 'There are two magnets in the image'; Step ② (light blue with blue dashed border) observes 'We see two magnets placed end to end, with one magnet’s \"S\" end facing the other magnet’s \"N\" end'; Step ③ (light green with green dashed border) provides the physical principle 'Opposite poles attract each other, while like poles repel'; Step ④ (light yellow with yellow dashed border) concludes 'Since the north pole of one magnet is facing the south pole of the other magnet, they will attract each other.' These steps are presented in a vertical stack, with each subsequent step building upon the previous ones.\n\nArrows from each step (or cumulative set of steps) point to the 'Teacher Model' in the center. Specifically, an arrow labeled ① points from Step ① alone; another labeled ①② points from Steps ① and ② together; a third labeled ①②③ points from the first three steps; and a fourth labeled ①②③④ points from all four steps. This indicates that the model is queried at each stage with the accumulated reasoning so far.\n\nOn the top right, a text box presents the question: 'Will these magnets attract or repel each other?' with choices '(A) attract' and '(B) repel', and a prior belief: 'There is a probability of 60% that option B is correct'. An arrow from this box points to the 'Teacher Model', indicating the initial context provided to the model.\n\nThe 'Answer Probabilities' graph on the right has a horizontal axis ranging from 0% to 100% and a vertical axis with grid lines. Two lines represent the probability assigned to Option A (in dark blue) and Option B (in red). Each line is marked with data points connected by segments, and each segment corresponds to the output after a new reasoning step is added. The graph shows that initially, Option B is favored (around 80%), but as more reasoning steps are added, the probability for Option A increases and eventually surpasses Option B, culminating in a high confidence in Option A after all four steps. Curly braces on the left side of the graph group the data points corresponding to each set of reasoning steps (①, ①②, ①②③, ①②③④), aligning them with the input arrows from the left. The visual progression demonstrates how the model's confidence shifts toward the correct answer as more accurate reasoning is provided."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

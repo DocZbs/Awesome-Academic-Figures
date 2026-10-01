@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505966",
+  "record_sha256": "294b1a8571215217f4d760841310260f30c99c0aa401fdc1dc8aa634a03107ef",
+  "asset_sha256": "d6f906d4821cada571882e6e633304d8bd6f121191f8bec62fbd54d40316ffef",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505966",
+    "title": {
+      "zh": "Learning Epidemiological Dynamics via the Finite Expression Method · 方法图",
+      "en": "Learning Epidemiological Dynamics via the Finite Expression Method"
+    },
+    "paper": {
+      "id": "arxiv-2412-21049",
+      "title": "Learning Epidemiological Dynamics via the Finite Expression Method",
+      "authors": [
+        "Jianda Du",
+        "Senwei Liang",
+        "Chunmei Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21049",
+      "arxiv_url": "https://arxiv.org/abs/2412.21049",
+      "arxiv_id": "2412.21049",
+      "arxiv_first_submitted_at": "2024-12-30T16:08:12Z",
+      "arxiv_updated_at": "2024-12-30T16:08:12Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21049v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505966/image/image.jpg?Expires=1790855558&Signature=WqAbE5e4WkWpba~y4uB4iDrswM3nDyvyVVdoCV5jO75TM2F0u2OvSjAlTtxZaRGSwozg8pZv1SXrHaQzlF6xlFe53Xs1VE400nvrGMUORSD1sdAcfWQGkCMS~bQGuKUA83958vzGXDOeI~uwffu4sLH97qcENe-m2933lX3z2OYzYyz14nOvQP01bpvd8Jn8Kogv0TfrDGgpcUkHkEqLK2A4AedFNHeVk65xV3M6-ITZf0S-p8UH-oZvikWM55b1eCekzewhXbCXa~ID9ou2q96h31fw~uhLCIXuXlYKvBtbrlfFUZBOvv0FQYx7DmB6Q4bEEoLW41QiSIjtwWTudw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505966,
+      "description_sha256": "a095cc69829b0ef0ba1d0175a7c12de2d8e82224b8ec326efe8cc5766e42af1c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "220b042568f5803a3b269d0da3b96cba7154ac6d8b0ab05e505e81bd1ecd0d98",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part flowchart illustrating the FEX method for discovering mathematical expressions to solve ordinary differential equations (ODEs) or partial differential equations (PDEs). Part (a), labeled 'Searching loop', outlines the iterative framework. It begins with an input ODE (yellow rectangle) feeding into a Loss module (gray rectangle). This loss is computed based on an Expression (beige rectangle), which is constructed from a Tree (green rectangle) and a Controller (orange rectangle). The Tree and Controller together form a composite module within a light gray rounded box. The Loss output is directed to a Score module (light blue rectangle), which evaluates candidate expressions. The Score feeds into a Candidate pool (light blue wavy container) holding multiple expressions (e.g., Expression 1, Expression 2, shown as purple rectangles). From the Candidate pool, expressions are passed to Weight optimization (purple rounded rectangle), which generates final solutions (Solution 1, Solution 2, etc., also purple rectangles). A feedback loop exists: the Score sends an 'Update' signal back to the Controller, allowing it to adapt and improve future expression generation. The Loss also directly connects to Weight optimization, indicating its role in guiding the optimization process.\n\nPart (b), labeled 'Expression generation', details how the Expression is built from the Tree and Controller. On the left, the Controller X (vertical orange rectangle) outputs four distinct probability distributions, each represented by a bar chart with varying colors. Each distribution corresponds to a different node type: Identity (Id), multiplication (×), cosine (cos), and sine (sin). These are sampled to construct a Tree (large green rectangle containing a hierarchical structure). The Tree uses circles for binary operations and squares for unary operations, as indicated by the legend below. Dashed pink arrows show the sampling process: Id is selected as the root, × as the next binary operator, cos and sin as leaf nodes. The resulting Tree is then converted into a formal Expression (beige rectangle), depicted as a tree diagram with Id at the top, × below it, and cos(x) and sin(x) as children. Below this, the equivalent mathematical expression is written as α₃((α₁ cos(x) + β₁) × (α₂ sin(x) + β₂)) + β₃, showing the parametric form of the generated expression. The entire process in part (b) is enclosed in a large light gray rounded box, emphasizing its role as a sub-module within the larger searching loop."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

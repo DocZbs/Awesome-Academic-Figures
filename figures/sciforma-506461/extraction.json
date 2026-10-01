@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506461",
+  "record_sha256": "1573627f5ebe7d8f7481ab8a1e479aca4258fdba4d01dea2459052f939f43edc",
+  "asset_sha256": "98ce3ef8d5e78987ce5f9a9e5366aba60aaf82266e0cfd4c15c511066da5c191",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506461",
+    "title": {
+      "zh": "Beyond Introspection: Reinforcing Thinking via Externalist Behavioral Feedback · 方法图",
+      "en": "Beyond Introspection: Reinforcing Thinking via Externalist Behavioral Feedback"
+    },
+    "paper": {
+      "id": "arxiv-2501-01457",
+      "title": "Beyond Introspection: Reinforcing Thinking via Externalist Behavioral Feedback",
+      "authors": [
+        "Diji Yang",
+        "Linda Zeng",
+        "Kezhen Chen",
+        "Yi Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01457",
+      "arxiv_url": "https://arxiv.org/abs/2501.01457",
+      "arxiv_id": "2501.01457",
+      "arxiv_first_submitted_at": "2024-12-31T04:50:15Z",
+      "arxiv_updated_at": "2025-11-27T05:43:05Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01457v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506461/image/image.jpg?Expires=1790855579&Signature=J0Yo9R3tlzQPymNJfXKWxugWR3BitquT4njyBqIQ-ASVjSJuI0lnjcIprmi~uLg4A2sd0cZvWa~4-hMliMf-Fmr19LTTEULMJXT~2EMKMaHTF0Ku3Ii3DIjGli6FQAhwq6cfUkup2-gpgM4Xe1nNwN6InZ15E0Voedv96KttejI4Wih54ODl5qd-3ubAml24vEG7xh3x-PqKHY6HD1vFrmN4aAhc-T0Rr4VsOcIv4TU6NjF7ugxWdEV6Oc1N2Lq4zY6zIBJdsuAxAw1dVQ7-g6BE8fnPxMtXDEf96GfI8szd7PGcLLa8RzlhQajGz1fqPOvXmcRwqFZLZRFXsUsebw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506461,
+      "description_sha256": "fa9e675ad2cba9cc5c38bc06fc024a8a4378f17ce8f27dfeba919732d5c9c900",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "cdb15758a6ae5a1421ca8a455d21f6a82dd7dc903559e1ce0f0d9d2a93bbf82f",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the three-step Distillation-Reinforcement-Reasoning (DRR) pipeline, structured into distinct phases: Step 1: Reasoning Process Distillation, Step 2: DM Training, and Step 3: Inference. The global layout is horizontally segmented into these three steps, separated by dashed lines, with Step 1 and Step 3 occupying the top half and Step 2 represented as a continuous gray arrow spanning the bottom. Step 1 is labeled in green, Step 3 in blue, and Step 2 in gray, indicating their respective roles.\n\nIn Step 1, a large rounded rectangle with a green border contains an example reasoning trace. It begins with a question: 'What city has had an NFL football team with the same name as a Los Angeles NFL team?' followed by two answer-rationale-environment cycles. The first attempt yields 'Cleveland' with rationale about the Cleveland Rams, followed by an environment feedback of 'Wrong answer. Try again...'. The second attempt gives 'St. Louis', with rationale about the St. Louis team, and environment feedback 'Correct answer. Stop generation...'. This box is connected via green arrows to two modules: a light green rounded rectangle labeled 'Environment' containing an icon of an open book with a lightbulb, and a larger light blue-green rounded rectangle labeled 'Large Language Model (Reasoner)' featuring a neural network icon. A green arrow points from the Environment to the Reasoner, labeled 'Context', indicating feedback flow.\n\nStep 2, labeled 'DM Training', is depicted as a thick gray curved arrow originating from the bottom of the reasoning trace box and extending to the bottom of the Discriminative Model in Step 3. This signifies that the distilled reasoning traces from Step 1 are used to train the Discriminative Model.\n\nStep 3, labeled 'Inference', features a light blue rounded rectangle labeled 'Discriminative Model', containing a smaller neural network icon. Two blue arrows connect this model to the Large Language Model (Reasoner): one upward-labeled 'Verdict' from the Discriminative Model to the Reasoner, and one downward-labeled 'Prediction' from the Reasoner to the Discriminative Model. This indicates a feedback loop during inference where the Discriminative Model evaluates the Reasoner's output and provides a verdict to guide further reasoning or final prediction.\n\nAll modules are enclosed within dashed rectangular boundaries corresponding to their step. Text labels are clear and positioned adjacent to components or along arrows. The visual design uses color coding—green for distillation, blue for inference, gray for training—to differentiate stages. The overall workflow progresses from reasoning trace generation and environment interaction (Step 1), through training of a discriminative model on those traces (Step 2), to collaborative inference between the Reasoner and Discriminative Model (Step 3)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

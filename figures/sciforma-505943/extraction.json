@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505943",
+  "record_sha256": "f6ddd5b1fe6cdb90fc1da8ba1430d2329b1eaa9c618743e07bdd31be0bd4850f",
+  "asset_sha256": "6f65cd959029a0f2a3127d739c4a87d0480e5cf9bd73bd808497d3f521aec519",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505943",
+    "title": {
+      "zh": "EdgeRAG: Online-Indexed RAG for Edge Devices · 方法图",
+      "en": "EdgeRAG: Online-Indexed RAG for Edge Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-21023",
+      "title": "EdgeRAG: Online-Indexed RAG for Edge Devices",
+      "authors": [
+        "Korakit Seemakhupt",
+        "Sihang Liu",
+        "Samira Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_id": "2412.21023",
+      "arxiv_first_submitted_at": "2024-12-30T15:46:53Z",
+      "arxiv_updated_at": "2024-12-31T20:40:43Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21023v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505943/image/image.jpg?Expires=1790855558&Signature=OQ7ziCuNCGw20Snjon~A7yBl2QwIeON1F~bcQnzzXyVI~im3fjImfM~VBk2mz9Gz5PA2uXaWlL-va6OCHlZUHeCNJniwZCagRbEVLbLdVI55PhqXWN2GmlUGdYl2mUlEuMZrmMj3a8bXqYex1rPwpUFahqsNuf8kexz3s0LNTOWHULh3K~2uTN~onlRVs2d9yov0iinpLcZo1ZdKWyD59lKNHs8iWV9EbHubjEJG7pgozqymoCk1Ua9vuOvAcLqwchPcjotf8GkiDSE01ufhhDE6PQ4mPhPknsmVlDbVfJQ4DGRUarNUha036he~11xc5K1yQu8F5Sbhi2H3NJ~zWQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505943,
+      "description_sha256": "98a2c89487d72eef45c934b852e4296ff6bda619ffaee839cc7288e2305fcbba",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b9e78e3bf3914c9b52c2a203f2f3237b92fc1f1a0aa6b81fd717d6b194855156",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the retrieval process of an Inverted File Index, structured as a hierarchical two-level indexing system. The global layout is a top-down flowchart depicting four sequential steps in the retrieval workflow, marked by numbered annotations (① through ④) and directional blue arrows indicating the path taken during query processing. At the top, an 'Incoming Query Embedding' enters the system and initiates the process.\n\nStep ①, labeled 'Lookup First-level', shows the query embedding being directed into a wide, light green rectangular box labeled 'First-level Index'. This index acts as the root of the hierarchy and is visually distinct due to its size and color. From this first-level index, two paths diverge: one blue arrow leads to a smaller green rectangle labeled 'Second-level Index' on the left, while a gray arrow leads to another similar green rectangle on the right, indicating alternative branches in the index structure.\n\nStep ②, 'Lookup Index', follows the blue path from the first-level index to the left second-level index. This step involves selecting a specific second-level index based on the query’s similarity or hash-based mapping. The visual representation emphasizes this selection via a blue arrow.\n\nStep ③, 'Search Second-level', proceeds from the selected second-level index. Three gray rectangular boxes, labeled 'Stored Embedding' in the legend, branch out from this index. These represent stored embeddings within the second-level index, which are compared against the incoming query embedding. The blue arrows from the second-level index point to these stored embeddings, indicating the search operation.\n\nStep ④, 'Retrieve Data', occurs when a match is found. Blue arrows extend downward from each stored embedding to a white square box labeled 'Data Chunk' in the legend. These data chunks represent the actual content retrieved from storage. The right side of the diagram includes a second branch of the second-level index, connected by gray arrows, which also leads to stored embeddings and data chunks, but is not traversed during the current query path, suggesting it represents an alternative or unselected branch.\n\nThe legend at the bottom clarifies the visual elements: a white square denotes a 'Data Chunk', a light green rectangle denotes an 'Index', and a gray rectangle denotes a 'Stored Embedding'. A blue arrow symbolizes the 'Steps Taken' during the retrieval process, distinguishing active traversal from inactive or alternative paths shown in gray. The diagram effectively conveys a hierarchical, multi-stage retrieval mechanism where the query embedding navigates through levels of indices to locate and retrieve relevant data chunks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

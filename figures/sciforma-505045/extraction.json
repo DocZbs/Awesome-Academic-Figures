@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505045",
+  "record_sha256": "aae6671beed41f3f97926a4d43ef3f2f8162a06e6c27b5eb3f580f6a12f3a4e4",
+  "asset_sha256": "a8f80aac1f460cad37ef8c413a37c72050b6eabac8ad5961e0f60cb47e04529d",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505045",
+    "title": {
+      "zh": "Performance Control in Early Exiting to Deploy Large Models at the Same Cost of Smaller Ones · 方法图",
+      "en": "Performance Control in Early Exiting to Deploy Large Models at the Same Cost of Smaller Ones"
+    },
+    "paper": {
+      "id": "arxiv-2412-19325",
+      "title": "Performance Control in Early Exiting to Deploy Large Models at the Same Cost of Smaller Ones",
+      "authors": [
+        "Mehrnaz Mofakhami",
+        "Reza Bayat",
+        "Ioannis Mitliagkas",
+        "Joao Monteiro",
+        "Valentina Zantedeschi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19325",
+      "arxiv_url": "https://arxiv.org/abs/2412.19325",
+      "arxiv_id": "2412.19325",
+      "arxiv_first_submitted_at": "2024-12-26T18:54:32Z",
+      "arxiv_updated_at": "2024-12-26T18:54:32Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19325v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505045/image/image.jpg?Expires=1790855448&Signature=PKV~CIvs7XKUslN5FuaePYtKhP0umZgIc7NWp6hZfnLkULx1aAeDEBXOgJujCF5CBu8NehDB-8kaIj7H2EUMpY0ZVXb2vmSeKrVfMtpGd6KeDu~IGmrcfLTSwQIoXUoL302T6FHrT57LCg820zAArzLyzACBGn~rBDEfkcraukBoWMRQfaXk0JyHe671HwfpZrubQe9A65rPpwUhomGDfEQSci-fy-aKrUDxgQgDbOLCFYZJ1C~9tcZKGNSzjW2Qk7ISVkTJkKN7BrI9GzskaDsM-jRbX9HrrTM8mO9nR3l15VIObgVcSHdrNrzjAmgRhYXgIRK5a2j4IZBzRUvuOA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505045,
+      "description_sha256": "79ff8b79e8cedfc4e62e0fe972e9bbd7e37ddb4538f888612dc43e33aff05e47",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a812f2754ee8576b0029c3e4368fc2709f71c502a237c465889a9ce9b3c0307b",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural design of PCEE (Probabilistic Confidence-based Early Exit), a framework for early exit in deep neural networks. The global layout consists of a horizontal sequence of layers, represented by green rounded rectangles labeled L_i, L_{i+1}, ..., L_n, indicating successive network layers. Each layer L_i is followed by a corresponding exit block E_i, depicted as a light blue rounded rectangle, forming a repeating pattern across the network. These exit blocks serve as decision points where the model may choose to terminate processing and output a prediction.\n\nAt the top of the diagram, a large light blue rounded rectangle encapsulates the internal structure of a single exit block E_i. This module receives the input representation r_i from the preceding layer. Inside this module, r_i is fed into an 'exit layer' component, shown as a vertical light blue rectangle. The exit layer computes two outputs: a confidence score c_i, represented by a purple arrow, and a prediction pred_i, shown by a red arrow. The confidence score c_i is mapped to an estimated accuracy acc_i using a reliability diagram—a bar chart embedded within the module—where the x-axis represents confidence (ranging from 0.2 to 1.0) and the y-axis represents accuracy (ranging from 0.2 to 1.0). The diagram shows a step-like curve with a dashed horizontal line at accuracy 0.5, indicating a threshold. The highest bar corresponds to confidence 0.8–1.0, suggesting high accuracy at high confidence.\n\nThe estimated accuracy acc_i is then evaluated against a predefined threshold δ in a conditional decision block, also inside the large blue container. This block contains the logic: 'if acc_i ≥ δ: exit pred_i; else: pass r_i'. If the condition is met, the model outputs the prediction pred_i via a downward red arrow, signifying early termination. Otherwise, the original representation r_i is passed forward to the next layer via a gray arrow, continuing the forward pass.\n\nConnections between components are indicated by arrows: solid gray arrows represent the forward flow of representations r_i between layers; solid red arrows indicate the output of predictions pred_i when exiting; and solid purple arrows denote the flow of confidence scores c_i to the reliability diagram. Dashed blue lines connect the exit block E_i to the main network path, visually linking the decision point to the underlying layer structure. Additionally, small red downward arrows beneath each E_i suggest potential auxiliary outputs or logging of decisions. The entire diagram emphasizes a dynamic, confidence-driven early-exit mechanism integrated into a multi-layer network."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

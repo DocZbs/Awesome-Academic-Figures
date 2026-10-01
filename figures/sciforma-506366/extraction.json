@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506366",
+  "record_sha256": "8df67b37e38d6317a3b10add0e8f0db1ddc8736923b2650ffec88b615153dae7",
+  "asset_sha256": "4d1d78183ae07c04da087a0b237880a977e36e431d777f3a7335a333ab830f03",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506366",
+    "title": {
+      "zh": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks · 方法图",
+      "en": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2501-01158",
+      "title": "Attending To Syntactic Information In Biomedical Event Extraction Via Graph Neural Networks",
+      "authors": [
+        "Farshad Noravesh",
+        "Reza Haffari",
+        "Ong Huey Fang",
+        "Layki Soon",
+        "Sailaja Rajalana",
+        "Arghya Pal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_url": "https://arxiv.org/abs/2501.01158",
+      "arxiv_id": "2501.01158",
+      "arxiv_first_submitted_at": "2025-01-02T09:25:24Z",
+      "arxiv_updated_at": "2025-01-21T09:12:40Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01158v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506366/image/image.jpg?Expires=1790855575&Signature=cqBUAaxpXdg68z6YpvnfGZ~1We9y9hsRfqdlW4R2~YG~TNNZIXGTkD6AOHWbL3NAt2sPWKRZcNYJIOfSdCaGy4eq9nDBmpeDgbx0~Hw1-VA-~Msqs4v6oNp4jaRPsIci05qTMqr2taLz0voO7sVPK8BUZvK~CSTUowh0ZaMSDeZX2jNn3zgp7o5k1FLR4X70WTywvjpHGtfAOWQN9GiB9gNBnb3Tb6zcPmX3NoeIRDCze6CMxDYqh-Cgg-Bh0xFVZR1UVD3tOGnssV6YxDEwjEN4Gy0-ClnkNee7xWIIAU4rl-nJpW16OggUi8zgwx13xHG9asr-87ziHfZ1SGw~TQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506366,
+      "description_sha256": "16849071ba1174c5510f80b3804fbe84efd025424cf9ba0e2bdb02405378148d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6185b06f13173f7b9ef8df5e305a24c8c9349d4dabf6e46b3b14acce113f655b",
+      "row_response_sha256": "3812067a29b04ea19db7cec9f954864c8cf9d2d9e3c5bf88f739a44485d93ac2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a GNN-based biomedical event extraction model initialized by the BioBERT encoder. The overall layout is hierarchical and left-to-right, with data flowing from input text at the bottom to final classification outputs at the top. The structure is divided into two main processing streams: one for trigger or entity classification and another for argument role labeling, both converging through a central Graph Neural Network (GNN) module.\n\nAt the bottom, the input is a sequence of tokens represented as green squares, which feed into the BioBERT model. BioBERT processes these tokens and produces contextualized embeddings, shown as stacked red and green rectangles above it—each representing a token’s embedding. These embeddings are then passed upward to the GNN module.\n\nIn parallel, the same input text is processed by a Dependency Parser, which generates an Adjacency Matrix. This matrix captures syntactic relationships between tokens and is fed into the GNN as structural information, enabling the model to consider sentence dependencies during graph learning.\n\nThe GNN takes both the token embeddings from BioBERT and the adjacency matrix as inputs. It computes node representations for each token, producing two distinct outputs: Head Representation and Tail Representation. These representations are combined via a circular fusion operator (depicted as a circle with intersecting arrows), which merges them into a joint representation.\n\nFrom this fused representation, the model proceeds to two separate output branches. The first branch passes the fused representation through a Fully Connected Layer 2, leading to Argument Role Labeling. The second branch routes the GNN’s output directly through a Fully Connected Layer 1, resulting in Trigger or Entity Classification.\n\nAll modules are represented as light blue rectangular boxes with black borders and black text, except for 'BioBERT', which is highlighted in blue text to emphasize its role as the foundational encoder. The connections between modules are indicated by solid black arrows, showing the direction of data flow. The entire pipeline is designed to leverage both semantic context from BioBERT and syntactic structure from the dependency parser within a GNN framework to perform biomedical event extraction tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

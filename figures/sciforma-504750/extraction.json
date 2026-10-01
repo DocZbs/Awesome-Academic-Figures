@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504750",
+  "record_sha256": "3cef4a8414457c2ba25af993ab8d4b08f86b9d208a799ad45680d05cbcf593cc",
+  "asset_sha256": "6eee5f5aa4cbed582768cf9582606b38a52f512308e1831ef54de8e06c23bcd1",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504750",
+    "title": {
+      "zh": "Computing Approximate Graph Edit Distance via Optimal Transport · 方法图",
+      "en": "Computing Approximate Graph Edit Distance via Optimal Transport"
+    },
+    "paper": {
+      "id": "arxiv-2412-18857",
+      "title": "Computing Approximate Graph Edit Distance via Optimal Transport",
+      "authors": [
+        "Qihao Cheng",
+        "Da Yan",
+        "Tianhao Wu",
+        "Zhongyi Huang",
+        "Qin Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_id": "2412.18857",
+      "arxiv_first_submitted_at": "2024-12-25T09:55:14Z",
+      "arxiv_updated_at": "2024-12-25T09:55:14Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18857v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504750/image/image.jpg?Expires=1790855436&Signature=T5zeGug8Etl0mIgc8x-shmXhyE7iZlbcxC1SvSFLVB98UiXTQwUI9I30an3roBik0NgHbpB24kDbKJ0dpYvnDIeIncpQI3aQHP9yiL7Ld9Q1PwylMnLE3G1mCts7hFPGB6mgf6gngI2uuZac6B7TZzVrUGehl33aQJqastwslC-tdFLQ-2BIvOIvqNMeDPqdItfrPEonnf673GwpnYy1y-Eju4VBouJVQQeqA0h0ly6dxgRFKd2qiRdhtAkCyyCW5fxFkUAK1kVla9wVb~Nwtw-Q8Z3SThXzOFbcYzSL99eXU0Q3nDW-1E-dE3x0SrSqiktbjHiEs32WsC86rafrTQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504750,
+      "description_sha256": "8a32751f1423e656e3e6ca3f59ca48c999a85fd66af838004f949d56de758231",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fd78b7593be2c69cbfdc2289e84dcada119daa3d46faefa5b882eb06516a479e",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of GEDIOT, a model designed for graph matching and discrepancy computation. The overall layout is horizontally structured into three main components: Node Embedding Component (left), Learnable OT Component (top right), and Graph Discrepancy Component (bottom right), each enclosed in dashed boxes with distinct border styles—blue for Node Embedding, red for Learnable OT, and gray for Graph Discrepancy. On the far left, two input graphs are shown: one with nodes u1–u5 and another with v1–v4, each represented as undirected graphs with colored circular nodes and edges. Adjacent to each graph is a feature matrix where rows correspond to nodes and cells are colored to indicate features (orange, gray, yellow). These matrices feed into the Node Embedding Component.\n\nWithin the Node Embedding Component, the feature matrices are processed through three sequential Graph Neural Network (GNN) layers, depicted as tall beige rectangles labeled 'GNN'. Each GNN layer outputs a feature representation, which is then concatenated across layers using a multi-colored block labeled 'Concatenate' (showing stacked pink, blue, and green grids). The concatenated output from each graph is passed through a Multi-Layer Perceptron (MLP), shown as a light blue rectangle, producing final node embeddings H¹ (purple grid) for the first graph and H² (cyan grid) for the second graph.\n\nFrom H¹ and H², two paths diverge. The upper path leads to the Learnable OT Component, enclosed in a red dashed box. Here, H¹ and H² are fed into a 'Cost Matrix Layer' (yellow rounded rectangle), which computes a cost matrix Ĉ. This is followed by a 'Learnable Sinkhorn Layer' (purple rounded rectangle), which generates a coupling matrix π̂. The coupling matrix is used in a 'Node Matching' module (dashed rectangle), which outputs a loss term Lₘ (BCE), indicating binary cross-entropy loss for matching accuracy.\n\nThe lower path leads to the Graph Discrepancy Component, enclosed in a gray dashed box. H¹ and H² are first processed by a 'Graph Embedding' module (light blue rounded rectangle), which produces a unified graph-level embedding. This embedding is then fed into a 'Neural Tensor Network' (light green rounded rectangle), which computes a predicted score w₂. This score is sent to a 'GED Computation' module (dashed rectangle), which calculates the Graph Edit Distance (GED) and outputs a loss term Lᵥ (MSE), representing mean squared error for discrepancy prediction.\n\nAdditionally, the coupling matrix π̂ from the Learnable OT Component also feeds into the GED Computation module as a predicted score w₁, indicating that both the matching and discrepancy components contribute to the final GED prediction. The connections between modules are represented by solid black arrows, with some labeled (e.g., 'Predicted Score w₁', 'Predicted Score w₂') to clarify data flow. The entire architecture emphasizes a dual-path approach: one for node-level matching via optimal transport and another for graph-level discrepancy via neural tensor networks, with both contributing to the final loss functions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

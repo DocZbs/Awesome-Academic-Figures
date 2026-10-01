@@ -80,5 +80,19 @@ for (const item of batch.figures) {
     assert.match(item.number_evidence.official_image_sha256, /^[a-f0-9]{64}$/);
   }
 }
-for (const n of [1, 2]) assert.equal(figures.filter(f => f.source.number === n).length, batch.figure_number_counts[String(n)]);
+for (const n of [1, 2]) assert.ok(figures.filter(f => f.source.number === n).length >= batch.figure_number_counts[String(n)]);
+const releasePath = 'data/expansion_release_20261001.json';
+if (fs.existsSync(releasePath)) {
+  const release = JSON.parse(fs.readFileSync(releasePath, 'utf8'));
+  assert.equal(figures.length, release.figure_count);
+  for (const n of [1, 2]) {
+    const numberedFigures = filterFigures(figures, { ...base, filters: { number: [String(n)] } }, [], []);
+    assert.equal(numberedFigures.length, release.known_number_counts[String(n)]);
+  }
+  const journals = figures.filter(f => f.paper.publication_kind === 'journal');
+  assert.equal(journals.length, release.new_journal_count);
+  assert.ok(journals.every(f => f.source.number_status === 'verified_publisher_jats_label_graphic_id'));
+  assert.ok(journals.every(f => f.classification.status === 'visual_genre_reviewed'));
+}
+
 console.log('Figure genres, independent facet counts and recorded numbering evidence checks pass.');

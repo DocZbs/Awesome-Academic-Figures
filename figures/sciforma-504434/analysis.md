@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Improving Multi-Step Reasoning Abilities of Large Language Models with Direct Advantage Policy Optimization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18279
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the Direct Advantage Policy Optimization (DAPO) training framework, divided into two main stages: Critic Training (left side) and Policy Optimization (right side), each further split into two steps. The global layout is a 2x2 grid, separated by dashed lines, with Step A.1 and A.2 on the left (Critic Training) and Step B.1 and B.2 on the right (Policy Optimization). Each step contains distinct visual modules connected by arrows indicating data flow.
+
+In Step A.1: Generation, a 'Training Query Set' icon (a document with math symbols and a pencil) feeds a query q (e.g., 'What is the smallest positive integer that ends in 9 and is divisible by 7') into a blue robot icon labeled 'GENERATOR'. The generator outputs an intermediate step x (e.g., 'Let’s list some numbers that end in 9: 9, 19, 29, 39@'), which is concatenated with the query to form a state s. This state is stored in a blue cylinder labeled D_gen.
+
+Step A.2: Completion begins with the D_gen dataset feeding into a second blue robot icon labeled 'COMPLETER', which generates multiple completion trajectories (e.g., 'Wait, Let’s double ... Final answer 119', 'Let’s check if any ... Final answer 119', 'So, our number can...Final answer 50'). These are compared against a golden answer (119) shown in a yellow box, with green checkmarks for correct and red X for incorrect. The outcomes feed into a neural network icon labeled 'CRITIC' (V_φ), which takes the state s as input and predicts a Monte Carlo (MC) value, shown as 2/3, representing the average reward of completions from that state.
+
+On the right, Step B.1: Compute Advantages starts with D_gen feeding into a light green box labeled 'State s := Concat(q,x)', which then passes to a blue robot icon (LLM) generating multiple next steps a1 through an. These next steps are concatenated with the state to form new states, which are evaluated by a pretrained neural network V_φ (shown as a multilayer graph) to produce Q-values (Q1=V(s,a1), ..., Qn=V(s,an)). The advantage A is computed as A = Q - E[Q], where E[Q] is the mean of all Q-values, and stored in a blue cylinder labeled D_ADV.
+
+Step B.2: Direct Advantage Policy Optimization uses D_ADV to feed state s, action a, and advantage A into a training loop. An arrow labeled 'Optimize' points from this data to a neural network icon labeled 'LLM Policy', with a sub-label 'Next Step Generation'. Below this, the DAPO objective function is displayed in red: min_θ E_D [ (1/β) A - log(π_θ(a|s)/π_ref(a|s)) ]², indicating the optimization of the policy π_θ to align with the advantage signal relative to a reference policy π_ref.
+
+Visual attributes include: blue cylinders for datasets (D_gen, D_ADV), blue robots for LLMs/generators/completers, green boxes for state construction, yellow boxes for Q-values and golden answers, and a multilayered neural network icon for the critic V_φ and LLM policy. Arrows indicate directionality of data flow, and text labels specify operations and components. The figure uses color coding to distinguish between different types of data and modules: blue for data storage and agents, green for state processing, yellow for value estimates, and red for the final optimization loss.

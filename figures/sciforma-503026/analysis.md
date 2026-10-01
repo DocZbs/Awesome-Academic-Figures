@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Synthetic Tabular Data Generation for Imbalanced Classification: The Surprising Effectiveness of an Overlap Class — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15657
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic diagram of the TABDDPM (Tabular Data Diffusion Probabilistic Model) framework, illustrating a two-phase process: forward diffusion and reverse generation. The global layout is divided into two horizontal sections. The top section represents the forward diffusion phase, where original tabular data is transformed into a diffused distribution. The bottom section depicts the reverse generation phase, where the diffused distribution is used to reconstruct generated data. Both phases are structured as parallel workflows for numerical and categorical attributes.
+
+In the forward diffusion phase, the input 'Tabular Data' (represented as a light green rectangle) branches into two paths: 'Numerical attributes' and 'One hot encoded Categorical attributes', both shown as rounded yellow rectangles. These are processed separately: numerical attributes pass through a 'Forward Gaussian Diffusion' module (a pink wavy rectangle), while categorical attributes go through a 'Forward Multinomial diffusion' module (also a pink wavy rectangle). The outputs of both modules converge into a single 'Diffused distribution' (a gray rectangle).
+
+In the reverse generation phase, the 'Diffused distribution' (same gray rectangle) serves as the input and splits into two paths: one feeding into 'Reverse Gaussian' (pink wavy rectangle) and the other into 'Reverse Multinomial Diffusion' (pink wavy rectangle). The outputs from these modules are 'Numerical attributes' and 'One hot encoded categorical attributes' (again, rounded yellow rectangles), which then merge into 'Generated Data' (light green rectangle), mirroring the structure of the original input.
+
+All connections are represented by solid black arrows indicating the direction of data flow. The diagram uses consistent color coding: light green for input/output data, yellow for attribute types, and pink for diffusion modules. The visual structure emphasizes the symmetry between forward and reverse processes, highlighting the separation of numerical and categorical data handling throughout the pipeline. The figure caption explicitly identifies this as the 'TABDDPM Schematic Diagram', confirming its role in illustrating the core architecture of the proposed model.

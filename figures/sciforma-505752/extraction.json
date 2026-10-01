@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-505752",
+  "record_sha256": "f6bf777ed91b80fa1ba312ebc1ee365a402ff815a4d5b254a427f8f6d68cb46d",
+  "asset_sha256": "02f9d8c84e3d0b946297c456ad2cac769b8d16e4136ca400c7ab69c9642c47c4",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505752",
+    "title": {
+      "zh": "NetFlowGen: Leveraging Generative Pre-training for Network Traffic Dynamics · 方法图",
+      "en": "NetFlowGen: Leveraging Generative Pre-training for Network Traffic Dynamics"
+    },
+    "paper": {
+      "id": "arxiv-2412-20635",
+      "title": "NetFlowGen: Leveraging Generative Pre-training for Network Traffic Dynamics",
+      "authors": [
+        "Jiawei Zhou",
+        "Woojeong Kim",
+        "Zhiying Xu",
+        "Alexander M. Rush",
+        "Minlan Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20635",
+      "arxiv_url": "https://arxiv.org/abs/2412.20635",
+      "arxiv_id": "2412.20635",
+      "arxiv_first_submitted_at": "2024-12-30T00:47:49Z",
+      "arxiv_updated_at": "2024-12-30T00:47:49Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20635v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505752/image/image.jpg?Expires=1790855558&Signature=pPCHXMeXJ4secQG2CmAA4zcBcQ9uZdBJ0xUTh5l65abaf4NawKaVC2SiAJpryUM3MFVB4F7rH6pNrunN5sEkFFCzTe1Vji0hni3VeOXlW6yrIUbAPsLKYc3Q9GmOPxXOpCiKNG93sSAN6XpAoSm2LDPKK62RUFb9sZfNZaTt8UJ3MVZZ57apNjb5Uaku~J~SAGosCBcku6Cx1zd8p0Ax2KinLe4zaXt7Kyf4nOf-c0~c7RmtjJ3zdG69uagKvxRRTeZuItZLfLD7HAqFqa7Sw7EHf2~tCiNTj5xd4-68yueVpkLGXjS~tQ2WZK4TTnHdKX5azs-SCpvHqcq8wS15xQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505752,
+      "description_sha256": "3101f423b1a24352f102bfca39810939860717058301ffe49e4d4adca562649d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "aed1179dcdb7812f4e6537d3a578178fa9f908fe676c05576a301d2909cd577b",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage generative pre-training framework for network traffic analysis, consisting of a generative pre-training phase and a fine-tuning phase. The global layout is divided into three main sections: on the left, raw NetFlow traffic is depicted as a multi-line time series graph showing fluctuating values over time for features such as port (purple), protocol (green), number of packets (gray), and number of bytes (red), with a vertical dashed line marking time step T and a bracket indicating the historical window up to T-1. This raw data flows into the central 'Generative Pre-training' module, which is enclosed in a light gray box. Inside this module, the input consists of history traffic features plus time (represented by stacked colored blocks for T-1, T-2, etc., with purple, green, gray, red, and magenta blocks corresponding to different features and time steps) fed into a dark gray rounded rectangle labeled 'Transformer Decoder'. Additionally, metadata including 'Node' and 'Customer' is provided as side input. The Transformer Decoder outputs a sequence of orange blocks representing learned representations, which are then used to predict the traffic at time T, shown as a segmented bar with four colored blocks (purple, green, gray, red) labeled 'Traffic?' above a dashed arrow labeled 'predict'. A thick brown curved arrow connects the output of the Transformer Decoder to the rightmost section, labeled 'Fine-tuning', which is also enclosed in a light gray box. In this stage, the orange block sequence is labeled 'Pre-trained Traffic Representation' and is passed into a dark gray rounded rectangle labeled 'Classification Layer'. This layer outputs a prediction for 'DDoS Attack?', indicated by a dashed upward arrow labeled 'predict'. All connections between components are represented by arrows: gray arrows indicate data flow within the pre-training module, while the brown arrow signifies the transfer of learned representations to the fine-tuning stage. The visual modules use consistent color coding for features (purple for port, green for protocol, gray for packets, red for bytes, magenta for time), and all text labels are in black sans-serif font. The overall structure emphasizes a sequential workflow from raw data through generative modeling to downstream classification."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

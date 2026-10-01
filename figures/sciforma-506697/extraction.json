@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506697",
+  "record_sha256": "1b0ffe951cbc65cda0590433071a4d62fb0f4d59d8515c6ce3705e205b1a50a4",
+  "asset_sha256": "26485e428ca2c60fdd54affe3030e1cc2afc8b68e4602065c0f8d884a09405ba",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506697",
+    "title": {
+      "zh": "Tree-NET: Enhancing 2D Medical Image Segmentation Through Efficient Low-Level Feature Training · 方法图",
+      "en": "Tree-NET: Enhancing 2D Medical Image Segmentation Through Efficient Low-Level Feature Training"
+    },
+    "paper": {
+      "id": "arxiv-2501-02140",
+      "title": "Tree-NET: Enhancing 2D Medical Image Segmentation Through Efficient Low-Level Feature Training",
+      "authors": [
+        "Orhan Demirci",
+        "Bulent Yilmaz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02140",
+      "arxiv_url": "https://arxiv.org/abs/2501.02140",
+      "arxiv_id": "2501.02140",
+      "arxiv_first_submitted_at": "2025-01-03T23:17:01Z",
+      "arxiv_updated_at": "2026-08-06T11:55:27Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/s00521-026-12420-5",
+      "arxiv_current_version_observed": "2501.02140v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506697/image/image.jpg?Expires=1790855633&Signature=K192j9bov5HHU7T0nvIzNNIX3tGgP1s6raEOeV8TEKHmNPyB3pGSkE0GpanTrikLwol~4YqHSc7A-345ktOqjGUVQz3fHk7z~uDbalRnBGXBQ2wyUD-vF1okI-C2bYWVxQL1HnrsoW2ntRVpMk1A-lwmIFw0q251LDofTMOR8OmgEdJJVh-zxpzyeZ1WWp5oQvRrZ7i7kKswaQqtDugbHOoKzdKc3Nl5W5XT1xWlDeSeaaoM4UzQESIDzd1VcUHbxU-j6h6ez~d5wsB9iiQ9vTPYa7ifgjNbXwJktGekdLAy1F33jfH7rmS6r6Fp4pTvAthUjjjnxmS0dsc5ycmjgQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506697,
+      "description_sha256": "62276de354806fa56ab8c13fcbd3b661ec17bb793e28466e9f1a2edbd34a42a9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "50ab8f1278ceabbcbdbfeb767d9bb3f98975066eb4c165ec1e906284bca1379b",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a modular deep learning architecture named Tree-NET, composed of three main components: Encoder-Net, Bridge-Net, and Decoder-Net, each enclosed within dashed rectangular boundaries. The global layout is structured into three vertical sections from right to left: Encoder-Net on the right, Bridge-Net in the center, and Decoder-Net on the left. Each component contains blue rounded rectangular modules representing neural network layers or subnetworks, connected by arrows indicating data flow or loss computation.\n\nIn the Encoder-Net (rightmost section), an 'Input' feeds into an 'Encoder' module, which passes data to a 'Bottleneck' layer. From there, the data flows to a 'Decoder' module. A bidirectional gray arrow connects the 'Input' and 'Decoder', labeled 'Euclidean Loss', indicating reconstruction loss computation between input and output.\n\nThe Bridge-Net (central section, outlined with a red dashed border) receives the bottleneck feature from the Encoder-Net and processes it through a 'U-Net' module. The U-Net outputs are fed back to the Bottleneck layer via a bidirectional red arrow labeled 'IoU + BCE Loss', signifying the use of Intersection over Union and Binary Cross-Entropy losses for training this bridge component. This Bridge-Net acts as a feature refinement or segmentation module, connecting the encoder and decoder pathways.\n\nThe Decoder-Net (leftmost section) begins with a 'Label' input feeding into an 'Encoder' module, which then connects to a 'Bottleneck'. This bottleneck is linked to the Bridge-Net’s U-Net via a bidirectional red arrow, reinforcing the shared feature space. The Bottleneck in Decoder-Net feeds into a 'Decoder' module, which produces an output compared against the original 'Label' via a bidirectional gray arrow labeled 'Euclidean Loss', indicating supervision for the decoder's reconstruction task.\n\nAll modules are represented as blue rounded rectangles with black text labels. The connections are primarily unidirectional gray arrows showing forward data propagation, except for the bidirectional arrows used for loss computation. The red dashed boundary around Bridge-Net and the red bidirectional arrows emphasize its role in loss-based training with IoU + BCE, distinguishing it from the Euclidean Loss used in Encoder-Net and Decoder-Net. The overall structure suggests a multi-stage, loss-guided framework where features are encoded, refined via U-Net, and decoded with separate supervision signals."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

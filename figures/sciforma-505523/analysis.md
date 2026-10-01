@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20185
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an architectural overview of a hybrid computing framework for efficient and accurate neural network inference, combining GPU-based computation with CPU-assisted dynamic error compensation. The global layout is divided into two main sections: on the left, a vertical stack representing the neural network layers, and on the right, a horizontal pipeline illustrating the computational flow between GPU and CPU memory and processing units.
+
+On the left side, the neural network structure is shown as a sequence of four linear layers (Linear 1 to Linear 4), each associated with specific projection types: Linear 1 handles Q/K/V projections, Linear 2 handles output projection, Linear 3 handles gate/up projections, and Linear 4 handles down projection. Each linear layer is followed by a normalization step, except for Linear 4 which is followed by an activation function. Self-attention is applied after Linear 2. This stack is enclosed in a gray box with bidirectional arrows indicating data flow between layers.
+
+The central part of the diagram shows the computational pipeline. Two memory blocks are depicted: a tan-colored 'GPU Memory' block containing quantized weight matrix \(\widehat{\mathbf{W}}\) with dimensions \(d_{in} \times d_{out}\) and associated quantization metadata, and a red-colored 'CPU Memory' block containing quantized residual matrix \(\widehat{\mathbf{R}}\) with the same dimensions and its own quantization metadata. Both matrices are represented as rectangular grids with labeled dimensions.
+
+From these memory blocks, data flows to a 'Base GEMV' (General Matrix-Vector Multiplication) module, which receives \(\mathbf{X}\) (input vector of size \(d_{in}\)) from GPU memory and \(Q_b(\mathbf{W})\) (quantized base weights) to produce output \(\mathbf{o}_b\) of size \((1, d_{out})\).
+
+Parallel to this, a 'Dynamic Error Compensation' module is shown in a large gray box. It begins with a 'Channel Selection' step (labeled ①), which selects specific channels from the input \(\mathbf{X}\) based on 'sc_indices' (sparse channel indices). These selected channels are passed to a 'Residual Fetch' step (labeled ②), which retrieves corresponding residual values from the CPU memory via PCIe (indicated by dashed arrow). The fetched residual data is then processed by a 'Residual GEMV' (labeled ③), producing \(\mathbf{o}_{dec}\) of size \((1, d_{out})\). Finally, an 'Addition' step (labeled ④) combines \(\mathbf{o}_b\) and \(\mathbf{o}_{dec}\) to produce the final output \(\mathbf{0}\) of size \((1, d_{out})\).
+
+Connections are indicated by solid black arrows for data flow within the GPU and dashed black arrows for data transfer from CPU via PCIe. The legend at the bottom clarifies this distinction. The entire diagram emphasizes a split-computation strategy where the bulk of computation occurs on the GPU, while critical error correction components are offloaded to the CPU to maintain accuracy with reduced precision weights.

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505559",
+  "record_sha256": "7b2d16bc046e657c6037838197f400dc41bc07df76115a5c6c6bb53f35c8d356",
+  "asset_sha256": "b9a411e006478d9eed9e180d8cbab3752316b118bb3abeb4a8f8976fba5522a1",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505559",
+    "title": {
+      "zh": "Transformer-Based Contrastive Meta-Learning For Low-Resource Generalizable Activity Recognition · 方法图",
+      "en": "Transformer-Based Contrastive Meta-Learning For Low-Resource Generalizable Activity Recognition"
+    },
+    "paper": {
+      "id": "arxiv-2412-20290",
+      "title": "Transformer-Based Contrastive Meta-Learning For Low-Resource Generalizable Activity Recognition",
+      "authors": [
+        "Junyao Wang",
+        "Mohammad Abdullah Al Faruque"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20290",
+      "arxiv_url": "https://arxiv.org/abs/2412.20290",
+      "arxiv_id": "2412.20290",
+      "arxiv_first_submitted_at": "2024-12-28T21:57:12Z",
+      "arxiv_updated_at": "2024-12-28T21:57:12Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20290v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505559/image/image.jpg?Expires=1790855553&Signature=fhYLr0Xqy5OgD6BIlVVgvDokktFLrPBsu1bZCyZkPtWnAS-Qlvu1NVXshsVm0ir9W7~Ci8ZVnsUZ99b70hguiQUE8SkwVn5SdlXlY5yuN0UyL044qwX-TSpjsV5EvnJkw8tax6j63ukTNEAm~AlA03tJvfd0M3-d0H6v6xw-Jbe-PwbbQzAGMHJvZUFN2ymidgDvCsnQnMkIPlLeMRjmPkbtXbFSnlkVADEApnbnu1itJWz6LQXShTjGr5OwiCy5guaDua-Q9mZx1peLWX1IP5I-yqcvio8yY9qud2P53QEIN6SKOKV2dViNbVlUH-hmx2Ccfdvu5e-x8bIVACzlRQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505559,
+      "description_sha256": "01c4c627638790abd30ded890ea7dbfd24df8c0a9bec78c1cd5b3db2c0303a66",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "159806d1911846d1b3e161f066fade3d01e19012277a2c8cbb9b2be94b665a08",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the end-to-end architecture of a meta-learning framework for time series classification, named $\\Design$, which integrates data augmentation, feature extraction via a Transformer-based encoder, and contrastive meta-learning for domain generalization. The layout is divided into three main horizontal sections: Data Diversity Expansion, Feature Extraction, and Contrastive Meta-Learning, connected sequentially from left to right.\n\nIn the first section, 'Data Diversity Expansion', original multivariate time series samples are shown as stacked waveforms. These undergo data augmentation through four techniques: Rotation, Jittering, Scaling, and Magnitude Warping, each illustrated with modified waveform examples. The augmented samples are then passed to the next stage.\n\nThe second section, 'Feature Extraction', begins with multivariate time series input. This is split into univariate series, followed by Instance Normalization and Patching. A Projection + Position Embedding layer processes these patches, feeding them into a Transformer Encoder. The encoder consists of multiple layers, each containing Multi-Head Attention, Add & Norm, Feed Forward, and another Add & Norm block. The output is flattened and concatenated before being processed by a Conv1D + ReLU layer, producing a set of features represented as two vertical stacks of colored blocks (yellow and blue), indicating distinct feature representations.\n\nThe third section, 'Contrastive Meta-Learning', is split vertically into 'Meta-Train' (top, blue border) and 'Meta-Test' (bottom, orange border) phases, both sharing weights as indicated by the 'Shared Weights' label. In each phase, features are processed by an FC + ReLU layer, then fed into a Supervised Contrastive Learning module. This module visualizes a feature space with three classes (Class 1, Class 2, Class 3) represented by different shapes (triangles, circles, squares) and colors, with each class distributed across multiple domains (Domain I, II, III). Green dashed arrows denote intra-class pulling (bringing similar samples closer), while green solid arrows denote inter-class pushing (separating dissimilar samples). The loss functions $\\mathcal{L}_{\\text{train}}^{\\text{cls}}$ and $\\mathcal{L}_{\\text{train}}^{\\text{supcon}}$ (for training) and $\\mathcal{L}_{\\text{test}}^{\\text{cls}}$ and $\\mathcal{L}_{\\text{test}}^{\\text{supcon}}$ (for testing) are computed. The outputs are passed through an FC + SoftMax layer for Classification, which maps to activity labels (running, cycling, walking, etc.). The meta-optimization loop connects the test phase back to the feature extraction module, enabling iterative improvement.\n\nA legend at the bottom clarifies the arrow types: dashed green for intra-class pulling and solid green for inter-class pushing. The caption notes that different colors in the feature space represent different domains, emphasizing the model's ability to generalize across domains."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

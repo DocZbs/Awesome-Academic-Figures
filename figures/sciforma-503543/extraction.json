@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503543",
+  "record_sha256": "0d23bbf04b1b47ca9d1033ea99cf3467fe75c66c329cecd36c486c77d455dccc",
+  "asset_sha256": "bbc6845da1c73a3b7d70c79372f35f6f627f16b27c1fa3594956aeb44bf9859d",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503543",
+    "title": {
+      "zh": "Optimization Insights into Deep Diagonal Linear Networks · 方法图",
+      "en": "Optimization Insights into Deep Diagonal Linear Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-16765",
+      "title": "Optimization Insights into Deep Diagonal Linear Networks",
+      "authors": [
+        "Hippolyte Labarrière",
+        "Cesare Molinari",
+        "Lorenzo Rosasco",
+        "Cristian Vega",
+        "Silvia Villa"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16765",
+      "arxiv_url": "https://arxiv.org/abs/2412.16765",
+      "arxiv_id": "2412.16765",
+      "arxiv_first_submitted_at": "2024-12-21T20:23:47Z",
+      "arxiv_updated_at": "2026-01-19T10:45:03Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16765v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503543/image/image.jpg?Expires=1790855374&Signature=MhkuicY6pcQRMhqG4rWw2BJVyY5K3i3o84SjnhCGe0JsIen9Jtror8NsfXAAh8uqeT~E-DnBPxCSSJL4NzZzwJhnwhdj3QmU7LHMTkfvVYtfyuqZZb4~6jIIjt2KL1gEGZL9j2uMYLrEQ29IPbdZPTf~nJiv7PEyOyPfF3p6HkwAqFuxePA~PGDJUrow3wq0mc~ncf~MILNACGQl~QOZowbqHbEqjT31x1ial3DPXfJ6d9xU1RuFv2C9G~iecdt2D3jEQrjH0C2Dmr6HN~VlrmqyVKNKKiZztvMI~P5VWuwJRePmCt96j8sTA8N24tlXj7wiGzV4WFmYPTMtInoQzA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503543,
+      "description_sha256": "dd2035df4b8b34863cacd5694e15eb2a30de5c526c323e0fcb7ffff05d70a726",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9ae962e641cd897dd43778d147f04e4b7bb27d7290e79ea4a8824fbfe442c9cd",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural representation of a diagonal linear network, structured as a directed acyclic graph with four parallel processing paths converging into a single output node. The global layout is horizontal and layered, consisting of four distinct rows, each representing an independent input-output pathway. Each row contains three circular nodes connected sequentially from left to right by solid black lines, forming a chain. These chains are vertically aligned and parallel, indicating independent processing streams that operate in parallel on different input components.\n\nEach row begins with a purple circular node labeled with an input variable: x₁ⁱ, x₂ⁱ, x₃ⁱ, and x₄ⁱ respectively, where the superscript i denotes the ith data sample or instance. Following each input node is a green circular node labeled u₁ through u₄, representing intermediate transformation units or hidden layer activations specific to each input dimension. The third node in each row is a beige circular node labeled v₁ through v₄, which represents the final transformed feature or weighted output for each input component before aggregation.\n\nAll four beige nodes (v₁ to v₄) converge via individual solid black lines to a single large pink circular node located to the right of the four chains. This central node is labeled fθ(xⁱ), indicating the final output function parameterized by θ, computed as a combination of the individual v outputs. The convergence implies that the network computes a linear combination or aggregation of the transformed inputs, consistent with the 'diagonal' nature of the network—each input dimension is processed independently and then combined without cross-dimensional interactions.\n\nThe visual attributes include distinct colors for different functional roles: purple for inputs, green for intermediate transformations, beige for final per-dimension outputs, and pink for the aggregated output. All nodes are uniformly sized circles with bold black outlines, and all connections are simple straight black lines without arrows, suggesting unidirectional flow from left to right. There are no additional annotations, equations, or legends within the diagram itself; the caption below the figure explicitly identifies it as 'Figure 1: Representation of a Diagonal Linear Network,' providing context for the structure's purpose. The diagram does not depict any feedback loops, nonlinear activation functions, or shared weights between dimensions, reinforcing the linear and diagonal characteristics of the model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

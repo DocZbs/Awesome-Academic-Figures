@@ -1,0 +1,30 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+From Creation to Curriculum: Examining the role of generative AI in Arts Universities — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16531
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a simplified latent diffusion model architecture for text-to-image generation. The global layout is a left-to-right dataflow diagram, starting from a user prompt on the far left and ending with an output image on the far right. The central processing block is a large gray rectangle labeled '画像情報クリエータ' (Image Information Creator) and '拡散プロセス' (Diffusion Process), which contains the core iterative loop of the model.
+
+Visual modules and attributes include: 
+- A rectangular box labeled 'ユーザープロンプト' (User Prompt) containing the example text 'An astronaut riding a horse in the style of cubism'. This is connected by an arrow to a rounded gray rectangle labeled 'テキストエンコーダ CLIP' (Text Encoder CLIP), indicating the first processing step.
+- From the CLIP encoder, an arrow leads to a small light-gray square labeled 'テキスト埋め込み' (Text Embedding), representing the encoded text representation.
+- On the left side, a label 'ランダム「シード」画像 ガウスノイズ' (Random 'Seed' Image Gaussian Noise) points to a dark gray square labeled '潜在空間における表現' (Representation in Latent Space), which serves as the initial noisy input to the diffusion process.
+- The central component is a white rounded rectangle labeled 'ニューラルネットワーク UNet' (Neural Network UNet), which processes both the latent noise and the text embedding.
+- To the right of the UNet, another dark gray square labeled '潜在空間での拡散表現' (Diffusion Representation in Latent Space) receives the output from the UNet.
+- Below the UNet, a gray rounded rectangle labeled '画像再構成 サンプラー/スケジューラ' (Image Reconstruction Sampler/Scheduler) is shown, which feeds back into the initial latent representation box, forming a loop.
+- An annotation next to this feedback loop states 'N回スケジューラのステップを繰り返す' (Repeat N steps of scheduler), indicating the iterative nature of the diffusion process.
+- Following the final latent representation, an arrow leads to a trapezoidal gray box labeled '画像デコーダ VAE' (Image Decoder VAE), which reconstructs the image from the latent space.
+- The final output is a grayscale image of an astronaut riding a horse in a cubist style, labeled '出力画像' (Output Image).
+
+Connections and arrows show the flow: The user prompt goes to the CLIP encoder, then to the text embedding. The random Gaussian noise enters the latent space representation. Both the text embedding and the latent representation are fed into the UNet. The UNet's output becomes the new latent diffusion representation, which is then processed by the sampler/scheduler and fed back to the latent representation for the next iteration. This loop repeats N times. After the final iteration, the latent representation is passed to the VAE decoder, which generates the final output image. The diagram clearly separates the text encoding path from the image generation path, with the two converging at the UNet within the diffusion loop.

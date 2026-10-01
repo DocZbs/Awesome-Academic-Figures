@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-506939",
+  "record_sha256": "e59f980f11e66ddf3a1e1cba2088b0de4f7c8418b9852c9c696d85961700c903",
+  "asset_sha256": "14fa911fec2fc7f6322c2e0e55773aeecc6c3cbc52a8563c4753078577d736ca",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506939",
+    "title": {
+      "zh": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation · 方法图",
+      "en": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2501-03059",
+      "title": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation",
+      "authors": [
+        "Guy Yariv",
+        "Yuval Kirstain",
+        "Amit Zohar",
+        "Shelly Sheynin",
+        "Yaniv Taigman",
+        "Yossi Adi",
+        "Sagie Benaim",
+        "Adam Polyak"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03059",
+      "arxiv_url": "https://arxiv.org/abs/2501.03059",
+      "arxiv_id": "2501.03059",
+      "arxiv_first_submitted_at": "2025-01-06T14:49:26Z",
+      "arxiv_updated_at": "2025-01-06T14:49:26Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03059v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506939/image/image.jpg?Expires=1790855628&Signature=aJkXvPw-0kjxXyl8greNGJXfcGQjOAn8BgSsRXS40sT9tl6h2qDuUz90O5ShunhMYV-6bDMipQKy0ySlAP9IAXM~D11C3Gvvm9-2SgbAfOEme2NwxTT8nTSb1Mqhr8C6qykV56PpfyfYRh1GRREYPfzzbZMR8QgpfgO3iv~tlq8g9OtLVnFc4pyomhwKMtipQ3ooQGHLvqB55wfeXAIKI-ZCfJUIN-9ps27ppXQoKwzpdzSuO35oXifFyaTrPs-n8~rATIT9aefHRIcZYtAxITRzHR32zkwFO81XgJF0qC0MqrY~6UiwfpHwyDThGPUPAuTgCJsw9o0yC9lbcwAIdw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506939,
+      "description_sha256": "87bfc1822ed6198abb3b1d51bf5aeaf63820a1c1a6818207955386ac467c417e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1a92bbfafcad99804896a202e9f7fd98103e24b749efd8dc7540532c642443fd",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-layered attention mechanism designed for video understanding, specifically focusing on object-aware processing through masked attention blocks. The global layout is vertically stacked, depicting a hierarchical flow from input video data at the bottom to higher-level attention operations at the top. At the base, 'Video latents patches' are represented as a sequence of squares—black for general patches, light red for 'cat'-associated patches, and dark red for 'dog'-associated patches—aligned horizontally. These patches are derived from input 'Frames', shown as a stack of images featuring a cat and a dog, and corresponding 'Masks' that segment the two animals, indicating object boundaries used for token assignment.\n\nAbove the latent patches, four distinct attention layers are arranged sequentially: 'Self-Attention', 'Masked Self-Attention', 'Cross-Attention', and 'Masked Cross-Attention'. Each layer is labeled within a colored rectangular box—light blue for self-attention layers and light orange for masked variants. The 'Self-Attention' layer shows full connectivity between all latent patches via bidirectional arrows, indicating that every patch attends to every other patch. In contrast, the 'Masked Self-Attention' layer restricts attention connections to only within each object group: black patches attend only to other black patches, light red to light red, and dark red to dark red, forming separate attention subgraphs.\n\nThe 'Cross-Attention' layer introduces external prompt tokens, represented by triangles. A gray triangle labeled 'Prompt tokens' connects to all latent patches, suggesting a global context or shared prompt. The 'Masked Cross-Attention' layer further refines this by introducing object-specific prompt tokens: a light red triangle for 'Cat-specific prompt tokens' and a dark red triangle for 'Dog-specific prompt tokens'. These connect exclusively to their respective object patches, enabling localized, object-aware guidance.\n\nConnections are depicted as directed arrows: from lower layers to upper ones, and within layers, showing information flow. All arrows point upward, indicating a feed-forward progression. The figure includes a legend at the bottom clarifying symbols: gray triangle = prompt tokens, light red triangle = cat-specific prompt tokens, dark red triangle = dog-specific prompt tokens. The overall structure emphasizes a modular, object-aware attention pipeline where masking enforces spatial and semantic locality, while cross-attention integrates external prompts for fine-grained control."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

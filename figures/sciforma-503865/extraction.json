@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503865",
+  "record_sha256": "d02126ee25bdffa9b0cf21a814d001a85fe8bea56d8ea50aa59f121068116b4e",
+  "asset_sha256": "315c883918ff58c5217f92ce1a86074ad596c249782f37e1cb2468eb58858103",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503865",
+    "title": {
+      "zh": "On the Feasibility of Vision-Language Models for Time-Series Classification · 方法图",
+      "en": "On the Feasibility of Vision-Language Models for Time-Series Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-17304",
+      "title": "On the Feasibility of Vision-Language Models for Time-Series Classification",
+      "authors": [
+        "Vinay Prithyani",
+        "Mohsin Mohammed",
+        "Richa Gadgil",
+        "Ricardo Buitrago",
+        "Vinija Jain",
+        "Aman Chadha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17304",
+      "arxiv_url": "https://arxiv.org/abs/2412.17304",
+      "arxiv_id": "2412.17304",
+      "arxiv_first_submitted_at": "2024-12-23T05:52:17Z",
+      "arxiv_updated_at": "2025-01-17T23:02:52Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.17304v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503865/image/image.jpg?Expires=1790855402&Signature=C7kplz0xipYF8bMLMA-EOjWeOMOJk12x15V0qGzikuHfAxakPLcDsV5s35aEJ1T0ojjVLsPY0rGvf8n3frFfoOzWPuK~wOW0hJpctkFmaACmOD7VLSWzV8~QKYMcouWMNnUa4Vy2yNQ-B-KKUoqOFOhh59AprxkFJxoD5x4IIqvFzOmlQ9jaB0Ojekuy1cfrt1fGSV8U8GSBU4JbzKitYXr2BeuXDOgJUQvomrgTWEG0MXYnpsrZn7zPyR5sBLF7zUrvudNaAgXukbVzsYANCFfz-fp2DSJAP8OhedbwnpzoCYmXpzcxGZPN7bULqF9yGB0n93iNgyh7pskbZtq~Bw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503865,
+      "description_sha256": "cf5a06f81cd71a2adb108add2e0ef850a9c93156ba141fd7f79796d2f492c5a5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4566e056684a6c1d7550c3e2cb3b114f8d22b4acf32cee17dac2f55f7646f646",
+      "row_response_sha256": "738d9d9d724f7284f210f367a6cb6f601b5adbb5d05076ff5ba8dbe46db44cd1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a pipeline overview for running multiple scenarios from the UCR Time Series Archive, structured as a directed workflow diagram with distinct modules connected by arrows indicating data or control flow. The global layout is left-to-right, starting with scenario definition on the left, progressing through data generation and model training in the center, and concluding with model evaluation on the right. The diagram is organized into five main stages, each represented by rectangular or document-shaped nodes with specific colors and labels.\n\nIn the first stage, a beige rectangle labeled 'Scenario Generator' initiates the process. It outputs a stack of yellow document-shaped nodes labeled 'Scenario1', 'Scenario2', and 'Scenario3', representing multiple generated scenarios. These scenarios are then fed into a light green rectangle labeled 'Experiment Launcher', which acts as a control module to trigger the subsequent steps.\n\nFrom the Experiment Launcher, a single arrow points to a light blue rectangle labeled 'Data Generation', indicating that the launcher initiates the data creation process for each scenario. The Data Generation module produces two separate output files: one light cyan rectangle labeled 'train.json validation.json' and another light cyan rectangle labeled 'test.json'. These represent the split datasets used for training/validation and testing, respectively.\n\nThe train and validation dataset file is connected via an arrow to a beige rectangle labeled 'LLaVA Training', signifying that this data is used to train the LLaVA model. The trained model is then passed to a light pink rectangle labeled 'Model Evaluation', which receives input from both the LLaVA Training module and the test.json file. This indicates that the evaluation step uses the trained model and the test dataset to assess performance.\n\nAll connections are represented by solid black arrows, showing unidirectional flow. The visual attributes include color-coded modules: beige for generators and training, light green for launching, light blue for data processing, light cyan for data files, and light pink for evaluation. Text within each node is centered, using a clear sans-serif font. The overall structure emphasizes a modular, sequential pipeline where scenarios are defined, data is generated, models are trained, and results are evaluated in a controlled, reproducible manner."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

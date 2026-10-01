@@ -1,0 +1,100 @@
+{
+  "id": "sciforma-503342",
+  "record_sha256": "b73dd77b8401ffce0f823cf1f115025b1a24da52420123b391c77cd0a8a85041",
+  "asset_sha256": "635c55da7d131754457e69f8737e13e504270fe96f4938bd6235dc1b2748357a",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503342",
+    "title": {
+      "zh": "Correcting Large Language Model Behavior via Influence Function · 方法图",
+      "en": "Correcting Large Language Model Behavior via Influence Function"
+    },
+    "paper": {
+      "id": "arxiv-2412-16451",
+      "title": "Correcting Large Language Model Behavior via Influence Function",
+      "authors": [
+        "Han Zhang",
+        "Zhuo Zhang",
+        "Yi Zhang",
+        "Yuanzhao Zhai",
+        "Hanyang Peng",
+        "Yu Lei",
+        "Yue Yu",
+        "Hui Wang",
+        "Bin Liang",
+        "Lin Gui",
+        "Ruifeng Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16451",
+      "arxiv_url": "https://arxiv.org/abs/2412.16451",
+      "arxiv_id": "2412.16451",
+      "arxiv_first_submitted_at": "2024-12-21T02:50:08Z",
+      "arxiv_updated_at": "2024-12-21T02:50:08Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16451v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503342/image/image.jpg?Expires=1790855363&Signature=Mg~DpS2A0UyIPUFeYjRXt4oIgINQcGfk~QblAzPSChjEExRvGjmGDIQMm67HtwE0Mz0qcVNuOoeAShXH-2VZ8GqukM2ZFUcqu5hxxiNuwVnXaeteKlV-iqfxtN6SNCX1jKn182rX7quUXewPk4g0uJmXlqyOPZ6Zr~LCOA~RKw-apzyjX-I0cgAiyNoismwXxV4M67lG7DiKAQZArHQM3PUHkenYN2sQhdCm7~MHzMjL6P9K-SikkI2ED~PX2YZSiYmXftPbiYKN1NJZE9~d-BuSVAyxxnHWcgBkm6ZYLXIiqlSqNicxlLqeOUGkKyNHr24vXdmPPoxqMo3kuA-mig__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503342,
+      "description_sha256": "9f559bf1641b73830018d0e13e76e98f737d1f2b143830356431c8e2181d4071",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "674287d9418bbe38eb90d29205fa350a3bad4c22224a1998ea8fd3a221e682d4",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comparative methodology for evaluating the safety of large language models (LLMs) under different training regimes and adversarial attacks. The global layout is a horizontal flowchart with two parallel training paths originating from an initial LLM box on the far left. The top path trains a 'Safe Model' using only safe data, while the bottom path trains an 'Impure Model' using both safe and unsafe data (with 'unsafe' highlighted in red). Both models are represented as solid black-bordered rectangles with bold black text. From each model, dashed arrows labeled 'Generate' point to behavior outputs: the Safe Model generates 'Safe Behavior', depicted as a light green dashed rectangle, while the Impure Model generates 'Unsafe Behavior', shown as a pink dashed rectangle. A bidirectional dashed arrow labeled 'Attack' connects the Safe Model and Impure Model, indicating an adversarial interaction between them. Additionally, a rounded rectangle labeled 'Prompts' is positioned to the right, connected by a dotted oval labeled 'Influence Query' that encloses the Prompts box and the Unsafe Behavior output, suggesting that prompts are used to elicit or influence unsafe behavior. The overall structure emphasizes the contrast between safe and unsafe training data and their resulting behaviors, with visual cues such as color (green for safe, pink for unsafe), border styles (solid for models, dashed for behaviors), and arrow types (solid for training, dashed for generation/attack, dotted for influence query) to differentiate functional roles and relationships."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

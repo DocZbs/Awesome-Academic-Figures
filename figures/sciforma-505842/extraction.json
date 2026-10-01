@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-505842",
+  "record_sha256": "88ec9b86b3268325d2f883b265ba9aa1e452ffc1672e2983e556e9a7f1525d77",
+  "asset_sha256": "61d681ebd29e363f827b439e4804bb3cc1567477c9b4145b44db5226d341c88a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505842",
+    "title": {
+      "zh": "TimeRAF: Retrieval-Augmented Foundation model for Zero-shot Time Series Forecasting · 方法图",
+      "en": "TimeRAF: Retrieval-Augmented Foundation model for Zero-shot Time Series Forecasting"
+    },
+    "paper": {
+      "id": "arxiv-2412-20810",
+      "title": "TimeRAF: Retrieval-Augmented Foundation model for Zero-shot Time Series Forecasting",
+      "authors": [
+        "Huanyu Zhang",
+        "Chang Xu",
+        "Yi-Fan Zhang",
+        "Zhang Zhang",
+        "Liang Wang",
+        "Jiang Bian",
+        "Tieniu Tan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20810",
+      "arxiv_url": "https://arxiv.org/abs/2412.20810",
+      "arxiv_id": "2412.20810",
+      "arxiv_first_submitted_at": "2024-12-30T09:06:47Z",
+      "arxiv_updated_at": "2024-12-30T09:06:47Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20810v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505842/image/image.jpg?Expires=1790855556&Signature=ZI4MMzS5Z8yMMVSyr2cP6zZJ6PpbUkCd2y81522JDc-cGPTQ~AbZ6hZNFC0NTtVD9JhHGXjN0RhfzC6ZmEsZjnUxKfBHma78q6XcpKvwWReC~vICxn21PnWD3lot0tQoAnyi4b2nY6U4t38s4hm2Nw837W9s6T302jue0qV3~fTCAXwaUp8TF-gCiFMzoBsF6IjKZW0axynk~nLHKcvHtE7pTa3LveX0WIeZ9llzxWQePjA1kAbHtKvGPXaCsCcUPD8NvqcVlrwlZo2TK~ogyeNJnx9MfvoyycB~ooewsKfbdyJh4cGOqTW5fGgrUank9y0GKdZhGz4lhhKoS1f6cA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505842,
+      "description_sha256": "e2ceca5bc7814523375a2ecba1ebd329c1c8e2a7d974dab6c2ee17c1b44f5b02",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a8171a80d08495228fbae0f6b2fcb083cb9e1de63647275d9564e75b30c4ae57",
+      "row_response_sha256": "9688e5ecc48ade1d79e59b78c53a7a4a05b6fcd1cf22e989bdf4406e3f3bacf2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a knowledge-enhanced time series forecasting framework, structured as a left-to-right pipeline with feedback loops for training. The global layout is divided into three main horizontal zones: input processing on the left, core forecasting components in the center, and prediction evaluation on the right. A legend at the top right clarifies arrow types: solid blue arrows indicate forward propagation, dashed blue arrows denote backward propagation (gradient flow), solid red arrows represent retrieval or knowledge injection, and dashed red arrows signify backward updates to the retriever.\n\nOn the far left, the 'Input' is depicted as a red waveform signal enclosed in a dashed teal box, feeding into a sequence container labeled 'Input | c₁ | c₂ | ... | cₖ', where each cᵢ is a pink rectangular token. Below this, a 'Knowledge Base' represented by a pink database icon connects via a red arrow to a central red rectangular module labeled 'Retriever', which contains a flame icon indicating active computation. The Retriever performs a 'Top K' search, symbolized by a magnifying glass, retrieving a set of pink tokens 'c₁ | c₂ | ... | cₖ' from the knowledge base. These retrieved tokens are then injected into the input sequence via a red arrow pointing upward to the input container, merging with the original input tokens.\n\nThe central component is the 'Forecaster', a large rounded rectangle with a light purple background. It consists of two stacked modules: the upper one, 'Channel Prompting', shaded with a gradient from blue to pink and marked with a flame icon, and the lower one, 'Backbone', shaded light blue with a snowflake icon, suggesting it is frozen during training. The merged input sequence (original input plus retrieved tokens) flows into the Channel Prompting module via a solid blue arrow. The output of Channel Prompting feeds into the Backbone, which then produces the final predictions.\n\nOn the right side, the 'Prediction' block contains a sequence of predicted values 'p₁ | p₂ | ... | pₖ' inside a dashed blue box, with a single 'p' above it. This prediction is compared against the 'Ground Truth', shown as a red waveform with a blue segment indicating the forecast horizon, enclosed in a dashed teal box. A dashed blue arrow connects Ground Truth to Prediction, representing the loss computation. From there, a dashed blue arrow labeled 'update' flows back to the Channel Prompting module, indicating gradient-based parameter updates. Additionally, a dashed red arrow labeled 'update' flows from the prediction block back to the Retriever, signifying that the retriever's parameters are also updated during training based on prediction performance.\n\nThe entire process follows a forward pass from Input → Retriever → Forecaster → Prediction, and a backward pass from Ground Truth ← Prediction → Forecaster → Retriever, enabling end-to-end learning while keeping the Backbone frozen as specified in the caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

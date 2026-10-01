@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506404",
+  "record_sha256": "67bc6693f8aa4ee1844f2db2908dc4af7ce6d7652628436e2fd941571082b7be",
+  "asset_sha256": "9a82500a0606cc340ef892adc3b2a99c33bf53c386210f3ca3990bf8ae4db477",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506404",
+    "title": {
+      "zh": "ToolComp: A Multi-Tool Reasoning & Process Supervision Benchmark · 方法图",
+      "en": "ToolComp: A Multi-Tool Reasoning & Process Supervision Benchmark"
+    },
+    "paper": {
+      "id": "arxiv-2501-01290",
+      "title": "ToolComp: A Multi-Tool Reasoning & Process Supervision Benchmark",
+      "authors": [
+        "Vaskar Nath",
+        "Pranav Raja",
+        "Claire Yoon",
+        "Sean Hendryx"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01290",
+      "arxiv_url": "https://arxiv.org/abs/2501.01290",
+      "arxiv_id": "2501.01290",
+      "arxiv_first_submitted_at": "2025-01-02T15:10:52Z",
+      "arxiv_updated_at": "2025-01-02T15:10:52Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01290v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506404/image/image.jpg?Expires=1790855579&Signature=V9KydYORCsTvxuV27pcxkb0wqDfUl0BAe0VG28KJx5VYgAuLg3xKc2dF5mDCXHBIL56kInfyq755tzTSZB57aCd6ecEys3HLhRud69YeHPglSrkpmq9kDYcZXJs-HvQZNpCOUdITFXvSrNgKWiJqbaq6wBJCKyMuIC9IWcr-htcJtSknjlqs4zVWELufNeiKQa1EgqujYUUp9mVv0~udhHRAnxPOcQZHdhq6AMOLBF3FWsHfeSldwlI6FoExLCvwNb5~qUObZ0uChtChBDU1nhFu3qq8C9UU3JgFPGC9JuqE6~XTjYy1icbu7uP79IKomLwu4zm4Y63HPt8rAMKtnQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506404,
+      "description_sha256": "142c4f3bdcbc6775bc2a4d9fe0f3de9cc74a0a4713685d4609b023412cd0f508",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4971755fcf4137898b2debafb2e6f0221b839948428e3dcf7e6c1a3f5ea3e252",
+      "row_response_sha256": "5b9705380852a638ffcb2d17f0bd7d32e841f08b27a737e1aa4ea0340d6a4777"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-step annotation process for collecting supervised data in a reasoning or tool-use framework, such as ReAct, where human corrections are applied to model-generated outputs at each step. The overall layout is horizontal, progressing from left to right across three main stages: 'Action Plan', 'Step 1', and 'Step N', each enclosed in a dashed rectangular boundary indicating distinct phases of the process.\n\nIn the 'Action Plan' stage, a gray box labeled 'Model' contains the initial 'Action Plan'. This is compared against a green box labeled 'Human Corrected Action Plan', which includes a checkmark (✓), indicating correctness. An arrow from the Model's Action Plan points to the Human Corrected version with a red cross (✗), signifying that the original plan was incorrect and required correction. A separate arrow from the corrected version points back to the Model with a green checkmark (✓), implying acceptance or feedback.\n\nThe 'Step 1' stage shows two parallel columns: 'Model' and 'Human Corrected'. Under 'Model', three components—'Thought', 'Action', and 'Action Input'—are displayed as rounded rectangles. The 'Thought' component is green with a ✓, while 'Action' and 'Action Input' are red with ✗, indicating errors. These components feed into a blue box labeled 'Tool Observation'. In the adjacent 'Human Corrected' column, all three components are green with ✓, showing corrected versions. These also feed into a matching 'Tool Observation' box. Arrows connect each model component to its corrected counterpart, illustrating the correction process.\n\nThe 'Step N' stage mirrors Step 1 but represents the final step in the sequence. Here, the 'Model' column shows 'Thought' as red with ✗, while 'Action' and 'Action Input' are green with ✓. The 'Human Corrected' column again displays all components as green with ✓. Both columns lead to a 'Final Answer' box in blue. Dotted arrows between Step 1 and Step N indicate that this process repeats over multiple steps.\n\nThroughout the diagram, colors denote correctness: green with ✓ indicates correct output, red with ✗ indicates incorrect output. All boxes are rounded rectangles with consistent styling. Text labels are centered within boxes. The diagram emphasizes iterative human correction of model-generated reasoning steps, particularly focusing on thought, action, and action input components, culminating in a verified final answer. The caption clarifies that this process is used to collect annotated trajectories for benchmarking or synthetic data generation, with corrections performed either by human annotators or advanced language models."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

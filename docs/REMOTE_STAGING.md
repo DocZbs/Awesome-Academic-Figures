@@ -1,6 +1,6 @@
 # 远端源码收录与轻量本地预览
 
-批量材料和 Git 发布在 SSH 中转服务器处理；本机只同步源码、JSON 索引与维护者文本。不要反向同步服务器的 `cache/`、`tmp/source-review/`、新收录的 `figures/` 或 `.git/`。
+本轮批量图像在 GitHub Actions 云端 runner 下载和检查，最终只发布通过许可及逐图预览审核的素材。历史 SSH 源码收录流程仍可使用；本机只同步源码、JSON 索引与维护者文本。不要反向同步服务器的 `cache/`、`tmp/source-review/`、新收录的 `figures/` 或 `.git/`。
 
 ## 初始化服务器
 
@@ -45,6 +45,6 @@ python3 -m venv .venv
 
 审查 manifest 是人工核对结果，不应由候选发现器自动批准。目录构建拒绝缺少授权证据或视觉核对的图片，并验证原文件校验值。只有 `figures/` 中经过核对的文件进入 GitHub；不提交源包、整篇论文 PDF、缓存、候选图片和服务器依赖。
 
-本地仅更新 `data/catalog.json` 与其他小型 JSON。`prepare_site.py` 检测远程素材 URL，使用内联分析和 prompt，不复制服务器原图。浏览器按需加载图片；只在用户点击下载参考包时取回其选中的原文件。
+本地仅更新 `data/catalog.json` 与其他小型 JSON。`prepare_site.py` 检测远程素材 URL，详情中的分析和 prompt 按需加载，不复制云端原图。浏览器按需加载图片；只在用户点击下载参考包时取回其选中的原文件。
 
 历史 CollabLLM 两张 PMLR 裁图按正式出版协议授权，保留原 PDF hash 与裁图记录。旧 `stage_figures.py` 整篇 PDF 回退默认关闭，需明确参数才可运行；新增批次使用源码流程。

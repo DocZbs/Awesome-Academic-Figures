@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504853",
+  "record_sha256": "c9935a3635f4610840552ea65ba9341ab32a892258f6f476039ab1f3bb77e29d",
+  "asset_sha256": "b68b83af10458b8f69eb7f67478067311be3a161db9873acb6dfcd3809d1904c",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504853",
+    "title": {
+      "zh": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition · 方法图",
+      "en": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition"
+    },
+    "paper": {
+      "id": "arxiv-2412-18988",
+      "title": "MTCAE-DFER: Multi-Task Cascaded Autoencoder for Dynamic Facial Expression Recognition",
+      "authors": [
+        "Peihao Xiang",
+        "Kaida Wu",
+        "Ou Bai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18988",
+      "arxiv_url": "https://arxiv.org/abs/2412.18988",
+      "arxiv_id": "2412.18988",
+      "arxiv_first_submitted_at": "2024-12-25T21:52:31Z",
+      "arxiv_updated_at": "2025-07-26T03:18:13Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18988v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504853/image/image.jpg?Expires=1790855446&Signature=E~HiZbudakRHoqynVCdpm3d0x1h6AsHwTVC0BR9LV3NisKr894yF~6bM9t4ugwfyWEB9SjMVsYa~VSohP0SDu8Z8sxnPG6nRkNSR9426Shqafkmhn~jJH6vXt2uZREePtJJwcczUWa36z6-vClFSjWjyFPwJqifGqRY7qdzJYr9YbWmGhpHSKeOf8oVpQ1CovRgIlkk0r6IWgkaKwPLogf8faUoKABXOFNbztNd5ZSz4oboDijacf6OB11TD62WF2t7q6bA76z8ThxGlcB66D24iET1APYpRZI0ZWH11Zu3qAlwfTOeiGqnNsLTbMIa0eo1WaD3RoRSnLWLWjRBRtw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504853,
+      "description_sha256": "e17bf3741f72dc8cc9e1329384be434c3100ff7ed81236c248e2ecbeca554990",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "03b7752f2c65235568b6d7a696a3dfdedbab9f03a0cbe2c3ea2367360c4213ee",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four distinct autoencoder-based learning frameworks arranged in a 2x2 grid, each illustrating a different architectural approach for video representation learning. The overall layout is divided into four quadrants labeled (a), (b), (c), and (d), separated by dashed lines, with each quadrant containing a flowchart depicting data flow from input to task output.\n\nIn all diagrams, the 'Input' is represented as a black arrow pointing to the first module. The 'VideoMAE Encoder' is consistently depicted as a rounded rectangle with a light green fill and dark green border, labeled centrally with bold black text. Task-specific decoders are shown as rounded rectangles with a light blue fill and dark blue border, also labeled centrally with bold black text. Final tasks are denoted by plain black text labels ('Task 1', 'Task 2', 'Task 3') positioned at the end of arrows originating from the decoders.\n\nSubfigure (a), titled 'Autoencoder-Based Single-Task Learning Framework', shows a linear pipeline: Input → VideoMAE Encoder → Task-Specific Decoder → Task. This represents a standard single-task setup where one decoder handles one downstream task.\n\nSubfigure (b), titled 'Autoencoder-Based Non-Fully Shared Multi-Task Learning Framework', illustrates a parallel multi-task structure. Input flows into the VideoMAE Encoder, which then branches out to three separate Task-Specific Decoders, each leading to a distinct task (Task 1, Task 2, Task 3). This indicates independent decoding paths for each task.\n\nSubfigure (c), titled 'Autoencoder-Based Fully Shared Multi-Task Learning Framework', introduces a shared component. After the VideoMAE Encoder, a purple rounded rectangle labeled 'Shared Decoder' is placed. From this shared decoder, three separate Task-Specific Decoders branch out, each connecting to a unique task. This design implies that the shared decoder extracts common features before task-specific decoding occurs.\n\nSubfigure (d), titled 'Autoencoder-Based Multi-Task Cascaded Learning Framework', depicts a cascaded architecture. The VideoMAE Encoder feeds into three Task-Specific Decoders arranged vertically. The top decoder outputs to Task 1. Its output also feeds into the middle decoder, which outputs to Task 2. Similarly, the middle decoder's output feeds into the bottom decoder, which outputs to Task 3. This creates a sequential dependency among tasks, where each subsequent task leverages information from the previous one.\n\nAll connections are represented by solid black arrows indicating the direction of data flow. The figure uses consistent visual styling across all subfigures to emphasize structural differences while maintaining clarity. The caption below the entire figure summarizes the purpose: to illustrate the distinctions between these four frameworks, with (d) being presented as the proposed method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

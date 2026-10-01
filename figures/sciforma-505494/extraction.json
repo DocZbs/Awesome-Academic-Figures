@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505494",
+  "record_sha256": "a9025f954263ce64b239780efb09053a53e7ac7853cc1f5fd7ec883c4dbb36a4",
+  "asset_sha256": "4fcfdac09eec3dbfd7c7f09cd522cfd142ef3e38711d2029646f53b153c3aa26",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505494",
+    "title": {
+      "zh": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting · 方法图",
+      "en": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting"
+    },
+    "paper": {
+      "id": "arxiv-2412-20155",
+      "title": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting",
+      "authors": [
+        "Wooseok Han",
+        "Minki Kang",
+        "Changhun Kim",
+        "Eunho Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20155",
+      "arxiv_url": "https://arxiv.org/abs/2412.20155",
+      "arxiv_id": "2412.20155",
+      "arxiv_first_submitted_at": "2024-12-28T13:54:30Z",
+      "arxiv_updated_at": "2024-12-28T13:54:30Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20155v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505494/image/image.jpg?Expires=1790855553&Signature=WWRbarDEDIYqDYTA2D4Nyyg3qV2KQkLAHIXZkJGT1ge2i85Om1oGI7qeUQ30v6f7sQa2ANFzYOLfezb30vLCTJ2sQ2k9Y0KtqQw4Hde5zWTUSR0pWWsr8ViR1PYT-yJfp16XqN0rnSK6qOShWstVyehWjEQCbWGWSulICZMFMRrWEd4LOQDI26ESus9diHKatAL7hdJqUE4rHV0n5TKjHGD8o5ErpcaCw7FTTanHy4BndjjDc1BBxxgBdtFEs9FrZyzXWSp8RSsqAKH8HwssV9oCvvv7mShRrhe2Z~ldL0QX45fGgMTv5yU9TKZnI86J1Kl5SyEkjEZqjupb47zgjg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505494,
+      "description_sha256": "05a5189e8f42e0f04ef1629ac0c276672ed1e6042544b196591fabac95e0e877",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "3cc264328c6050699ed69e70a1bce8555fc561c35d185446944bc18640b5490c",
+      "row_response_sha256": "a02aa24da361d3d550a34070afa09ff1d74c2d4923bb3e3aac0eee0380102e23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the Stable-TTS framework, divided into two main phases: (a) Training and (b) Inference, separated by a vertical dashed line. The global layout is horizontal, with each phase showing a left-to-right data flow. In the training phase, inputs include text ('Hello, world.'), a paired low-band Mel spectrogram, and randomly concatenated Mel spectrograms. These inputs feed into four encoders: a yellow Prosody Encoder, a white Variance Adaptor, a blue Text Encoder, and a green Timbre Encoder. The Prosody Encoder outputs a sequence of prosody codes (p_ph) represented as colored boxes (e.g., 67, 20, ..., ||), which are connected to a Pitch Loss function indicated by a red arrow pointing to a sine wave. The Variance Adaptor takes p_ph and outputs variance parameters p (black boxes) and μ (blue boxes), while the Text Encoder outputs μ_ph (blue boxes) and the Timbre Encoder outputs s (green circles). All these outputs—p, μ, μ_ph, and s—are combined as conditioning inputs to a Diffusion Model. This model consists of a Noise Estimator ε (light gray trapezoid) and is shown processing a forward process from x₀ (initial clean Mel spectrogram) to x_T (noisy spectrogram). In the inference phase, the setup begins with an inference text ('Yeah, of course.') and a Prior Sample containing a prompt (e.g., 'Hello, world.') and associated prosody codes (67, ..., ||). A purple Prosody Language Model (PLM) uses this prompt to predict new prosody codes p (colored boxes: 15, 15, 1, 74, 35). Simultaneously, the timbre vector s is generated by concatenating multiple Mel spectrograms from the same speaker. Both p and s serve as conditions for another Diffusion Model, which performs a reverse process from x_T (noisy spectrogram) back to x₀ (clean spectrogram), again using a Noise Estimator ε. The connections between modules are depicted with arrows: thick gray arrows indicate conditioning inputs to the diffusion models, thin blue lines show internal connections within the Variance Adaptor, and black arrows denote data flow. The figure uses distinct colors for different components: yellow for prosody, blue for text, green for timbre, and purple for the PLM. Text labels such as 'Condition', 'Forward Process', 'Reverse Process', and 'Concatenated Mel' clarify the roles of various elements. The overall structure emphasizes how training leverages multiple encoders to condition the diffusion model, while inference relies on a PLM and concatenated Mel spectrograms to generate expressive speech."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

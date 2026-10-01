@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Interpretable Load Forecasting via Representation Learning of Geo-distributed Meteorological Factors — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02241
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a method for computing the Shapley value to interpret Graph Neural Networks (GNNs), specifically focusing on how node contributions are evaluated within different subgraphs. The global layout is divided into two main sections: the left side displays a series of subgraphs representing various coalition formations, while the right side presents the computational pipeline for deriving the Shapley value.
+
+On the left, six subgraph panels are arranged in two rows and three columns, each enclosed in a rounded rectangle with a light beige background. The top row shows subgraphs labeled 'Subgraph S₂ ∪ Gₛ', 'Subgraph S₃ ∪ Gₛ', and 'Subgraph S₄ ∪ Gₛ'. The bottom row shows 'Subgraph S₂', 'Subgraph S₃', and 'Subgraph S₄'. Each subgraph contains six nodes numbered 1 through 6, represented as circles with distinct colors: node 1 is green, node 2 is yellow, node 3 is blue, node 4 is orange, node 5 is yellow, and node 6 is orange. Edges between nodes are either solid or dashed lines, indicating different types of connections. In the union subgraphs (top row), solid edges are present between nodes 3–4, 4–5, and 4–6, while dashed edges connect 1–2, 1–3, and 2–4. In the standalone subgraphs (bottom row), all edges are dashed, suggesting a base graph structure without additional features.
+
+Below these subgraphs, a rectangular box labeled 'Coalition List' lists four coalitions: S₁: {node 1}, S₂: {node 3}, S₃: {nodes 1, 3}, and S₄: empty set (∅). This indicates the set of nodes being considered in each coalition for contribution evaluation.
+
+On the right side, a stacked, layered structure represents the computational process. The layers are labeled from top to bottom as 'Subgraph S₄ ∪ Gₛ', 'Subgraph S₃ ∪ Gₛ', 'Subgraph S₂ ∪ Gₛ', and 'Subgraph S₁ ∪ Gₛ', with the bottom-most layer containing two parallel processing paths for 'Subgraph S₁ ∪ Gₛ' and 'Subgraph S₁'. Each layer feeds into a model component 'g' (represented as an orange rectangle), which processes the subgraph input. The output of 'g' is then passed to a function 'f' (light green rectangle), along with an auxiliary input X₀. The outputs of these functions are combined via a final aggregation step labeled 'U(Sᵢ, Gₛ)' (yellow rectangle), which computes the utility for each coalition. These utilities are then used to compute the final 'Shapley value Φ(Gₛ)', shown in a gray rectangle at the bottom.
+
+Arrows indicate the flow of data: from each subgraph panel on the left to the corresponding layer on the right; from the 'g' module to the 'f' module; and from both 'f' modules to the 'U(Sᵢ, Gₛ)' module, which then points to the final Shapley value. The diagram emphasizes that the Shapley value is derived by evaluating the marginal contribution of each coalition across multiple subgraph configurations, using a two-stage model (g followed by f) and aggregating results through U, ultimately yielding an interpretable measure of node importance in the GNN.

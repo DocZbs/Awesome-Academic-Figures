@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18524
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates an end-to-end deep learning architecture for sequence-to-sequence tasks, likely optical character recognition or similar, composed of an Encoder and Decoder with a CTC loss and decoding module. The global layout is horizontally structured, divided into two main sections: the left side contains the Encoder, and the right side contains the Decoder and CTC Loss + Decode block, connected by a data flow arrow. The entire diagram is enclosed within a dashed rectangular boundary labeled 'Encoder' on the left and 'Decoder' on the right, with a final output arrow pointing to 'Griffiths, M.P. for Manchester Exchange'.
+
+In the Encoder section, the input is an 'Input image' of size 32x168x864, represented as a stack of colored 3D blocks. The architecture progresses through multiple convolutional layers, each depicted as a stack of colored 3D blocks with varying dimensions shown below: 32x32x432x34, 32x64x216x16, 32x128x108x16, 32x256x108x8, 32x512x108x2, and finally 32x108x1024. These layers incorporate various components: Conv (green), ReLU (yellow), Full Gated Conv (purple), Squeeze-Excite (light green), Proxima Attention (light blue), Fusion attentions (dark green), Dropout (black), and BN (blue). The final stage before the decoder includes a Reshape operation (gray) and a Dense+Soft-Auxiliary layer (dark gray), followed by a transition to the decoder via a black arrow.
+
+The Decoder section begins with a 32x108x256 + 108x32x256 tensor, visualized as a tall, multi-colored 3D block. This feeds into a BiLSTM (blue) network, shown as a vertical stack of blue blocks with bidirectional connections (horizontal arrows) and internal feedback loops (dashed lines). The BiLSTM outputs a 32x108x256 tensor, which then passes through another BiLSTM layer producing 32x108x103. A subsequent Reshape (gray) converts this into a 2D structure of 108x103, represented as a column of white circles. This is followed by the CTC Loss + Decode block, which displays a time-step grid from t0 to tn-1, with probability distributions over characters (e.g., 'G', 'r', 'i', '-', 'n', 'g', 'e', '-') at each step. Each cell contains a probability value (e.g., 0.7, 0.1, etc.), and the final output is a sequence of predicted characters, such as 'G r i - n g e -', with corresponding probabilities. The CTC component is marked with a light green color in the legend.
+
+Connections are indicated by solid black arrows showing the forward data flow from encoder to decoder, and within the decoder, bidirectional arrows between BiLSTM units indicate recurrent connections. Dashed lines represent auxiliary or internal feedback paths. The legend at the bottom left maps colors to specific components: blue for BiLSTM, dark gray for Dense+Soft-Auxiliary, purple for Full Gated Conv, green for Conv, yellow for ReLU, orange for Pooling, light green for Squeeze-Excite, light blue for Proxima Attention, dark green for Fusion attentions, black for Dropout, gray for Reshape, and light green for CTC. The final output arrow points to the text 'Griffiths, M.P. for Manchester Exchange', indicating the decoded sequence.

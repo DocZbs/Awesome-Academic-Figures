@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Semantic Captioning: Benchmark Dataset and Graph-Aware Few-Shot In-Context Learning for SQL2Text — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.03166
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a parse tree representation of an SQL query, structured as a hierarchical diagram with directed edges indicating parent-child relationships among syntactic components. The global layout is a top-down tree structure rooted at the 'Select' node, which branches into three main components: 'Count', 'From', and 'Where'. These primary nodes are rendered as gray ovals with black text, signifying major clauses in the SQL statement. Each of these branches further decomposes into subordinate elements, forming a multi-level hierarchy.
+
+Visual modules are differentiated by color and shape: gray ovals represent core SQL clauses ('Select', 'From', 'Where'), pale yellow ovals denote operators or functions ('Count', 'Not', 'In', 'Table', 'Columns', 'Subquery'), and solid blue ovals indicate terminal identifiers or literals ('Star', 'Identifier'). The 'Table' node under 'From' has a distinct blue border, possibly to highlight its role as a table reference. All nodes are oval-shaped, and all text is centered within each node in a clear, sans-serif font.
+
+Connections are represented by solid black arrows pointing from parent to child nodes, indicating the syntactic derivation or composition order. Starting from the root 'Select', the left branch leads to 'Count', which connects to 'Star'—representing the aggregate function count(*) in the query. The middle branch from 'Select' goes to 'From', which points to 'Table', which in turn points to 'Identifier'—corresponding to the table name 'Dogs'. The right branch from 'Select' leads to 'Where', which connects to 'Not', then to 'In'. The 'In' node splits into two children: 'Columns' (leading to 'Identifier') and 'Subquery'. The 'Subquery' node branches again to another 'Select' (gray oval), which further expands into 'Columns' (to 'Identifier') and 'From' (to 'Table' and then 'Identifier'), mirroring the structure of the outer query's 'From' clause. This nested structure accurately reflects the subquery component in the original SQL: 'SELECT dog_id FROM Treatments'.
+
+The diagram visually encodes the grammar of the SQL query specified in the caption: 'SELECT count(*) FROM Dogs WHERE dog_id NOT IN (SELECT dog_id FROM Treatments)'. The parse tree captures both the syntactic hierarchy and the nesting of subqueries, with terminal 'Identifier' nodes representing actual column or table names. The consistent use of colors and shapes allows for immediate identification of clause types, operators, and data references, making the structure of the query comprehensible at a glance.

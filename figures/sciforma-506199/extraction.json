@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506199",
+  "record_sha256": "ba74fe75ea47b0383f88aa88d7d90aff188ad7805be126e6ef5475e5d59509a9",
+  "asset_sha256": "396d0c087c0603ec244e3f43cfe300bfe34998b9ee487fe73b8d87f15f63778d",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506199",
+    "title": {
+      "zh": "RORem: Training a Robust Object Remover with Human-in-the-Loop · 方法图",
+      "en": "RORem: Training a Robust Object Remover with Human-in-the-Loop"
+    },
+    "paper": {
+      "id": "arxiv-2501-00740",
+      "title": "RORem: Training a Robust Object Remover with Human-in-the-Loop",
+      "authors": [
+        "Ruibin Li",
+        "Tao Yang",
+        "Song Guo",
+        "Lei Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00740",
+      "arxiv_url": "https://arxiv.org/abs/2501.00740",
+      "arxiv_id": "2501.00740",
+      "arxiv_first_submitted_at": "2025-01-01T06:07:02Z",
+      "arxiv_updated_at": "2025-04-15T12:16:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00740v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506199/image/image.jpg?Expires=1790855569&Signature=lX4Y3m0xGqmsSwnBFHToZTSS20W~C9V0EHsWjgOWsnx4kxXA8sPjgUUIUBP8Arz4jxeRaavFasjp7I5X2Azz6vb44BqM5x-0e0yihJIpddW4jEWDXDPLI5GbiFeOh-EBR5OBRCUnzif465S3j9YS5FyXgTytWoX8LBtVHeeWSKCv~AOIgblXuKwB3jniXrNGxQ-DER6p0d9zc3t~77Sc7NEatS2Rizzfwg-fMSl~TrXXIlZHrrh7G49rQ9IC6ODM-6L~IhIUpXPttS2Ne8x6ta71XWG3VgYCDchcswoJ7EnVZJ80N0FZuEVBqXZQPc0rQjQceOUR~9oS4Y0ZhNZytg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506199,
+      "description_sha256": "2cafb6288876f1b558468402f6683efd16ce082832b1a8d53560faf538404f34",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "dce0739097dc88bd34ff4b97a8b9e582f5a9b9bb1b474ab6866879e6c9e12c4d",
+      "row_response_sha256": "bd501de9f505e5b4ad75d767e9a5085cb0fb763622430eaaa9f3a1dd41724993"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the training pipeline for a discriminator used in automated data annotation, based on the down and middle blocks of the SDXL-inpainting model. The global layout is left-to-right, depicting a data flow from input to loss computation. On the far left, three inputs are shown vertically: an original image denoted as x_e, a binary mask m indicating the region to be edited, and a synthesized image x_s. These three inputs are combined via a black cross-shaped connector and fed into a light blue 3D rectangular block, representing a feature extraction or fusion module. This block outputs to a larger, trapezoidal green structure labeled D_φ, symbolizing the main discriminator network. A snowflake icon above this block suggests a frozen or pre-trained component, consistent with using the base SDXL-inpainting model. Below the green block, a red rectangular module labeled 'LoRA' feeds upward into the three vertical green layers, indicating that LoRA (Low-Rank Adaptation) layers are introduced as trainable components within the discriminator. Following the green block, a red rectangular module labeled 'CONV' with a flame icon denotes a trainable convolutional layer; a circular arrow with '×4' indicates that this CONV layer is repeated four times in sequence. The output of the final CONV layer passes through a blue square module labeled 'SoftPlus', which contains a yellow L-shaped curve symbolizing the SoftPlus activation function. The result is then directed to a loss function L_φ, represented by a black box with 'YES' and 'NO' labels above it, suggesting binary classification output (e.g., real vs. fake) used to compute the loss. The entire process is designed to train the LoRA and CONV layers using human feedback data, as stated in the caption, while keeping the base model mostly fixed."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

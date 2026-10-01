@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-503291",
+  "record_sha256": "87c3d1a13a3d5330cd4ef9e0e71089a6a2da5ff154a303f568e0af54f591d967",
+  "asset_sha256": "bc41d4a5a152648aecbb9627dda7cd3ed16c6bea963da07988ace3862c206c95",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503291",
+    "title": {
+      "zh": "Improving Object Detection for Time-Lapse Imagery Using Temporal Features in Wildlife Monitoring · 方法图",
+      "en": "Improving Object Detection for Time-Lapse Imagery Using Temporal Features in Wildlife Monitoring"
+    },
+    "paper": {
+      "id": "arxiv-2412-16329",
+      "title": "Improving Object Detection for Time-Lapse Imagery Using Temporal Features in Wildlife Monitoring",
+      "authors": [
+        "Marcus Jenkins",
+        "Kirsty A. Franklin",
+        "Malcolm A. C. Nicoll",
+        "Nik C. Cole",
+        "Kevin Ruhomaun",
+        "Vikash Tatayah",
+        "Michal Mackiewicz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16329",
+      "arxiv_url": "https://arxiv.org/abs/2412.16329",
+      "arxiv_id": "2412.16329",
+      "arxiv_first_submitted_at": "2024-12-20T20:37:09Z",
+      "arxiv_updated_at": "2024-12-20T20:37:09Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.3390/s24248002",
+      "journal_reference": "Sensors 2024, 24, 8002",
+      "arxiv_current_version_observed": "2412.16329v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503291/image/image.jpg?Expires=1790855362&Signature=M5vu8O0RnhVIzU2zwAJD18swoux0FEHkqDyeaVRV5shIHaSdH4tv71UgyJdsMahIIaiog5KhG7QUSgZBmjfdPq8Wql7s1YlxmtAlu4cuSuPya2lrSSxHLOcH5MqgH-nWLRa3qoABKbG-8BkwT-tqfH10RLXZI3xFRMjcW9R2sj2KacqzmBdJk5GecwBUkRAItNQ~DuHO8ckpSCr0ZCXZ8zbWutAbSCIKbEyR6OlqvoE5d~Xwj8wUQJae0VZHkV1XGWk522nGBGV3sQrcOaM6TUcf6RJ2opJeNKhlvND4aIK-lnT9GiGNVNpxpgUI2qEjpJakCigDMmSuWd1qVk5DPw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503291,
+      "description_sha256": "d3ce5683d076efe93fff0801e6aef6976ab40d5714674fdcd5c043e736c420e8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "89b46aa170449993e843959d1db8a80a6a70b3e27ae07a2c69f4797895e0bad5",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a modified Squeeze-and-Excitation (SE) block designed for input-aware channel weighting, specifically for components T_A12 and D_M. The global layout is a horizontal flow from left to right, depicting a data processing pipeline starting with an input tensor X and ending with an output tensor X_out. The structure consists of three main stages: squeeze, excitation, and scale, connected by directed arrows indicating the flow of information.\n\nThe input tensor X is represented as a 3D cube labeled with dimensions H (height), W (width), and 5 (number of channels). This cube is the output of two preceding convolutional layers with 3×3 kernels and stride 1×1, followed by a ReLU activation. From this input, two parallel paths emerge. The first path, labeled F_sq, applies global average pooling across the spatial dimensions (H and W) to reduce X into a 1×1×5 vector, depicted as a small rectangular block with five vertical bars. This vector represents the 'squeeze' operation, capturing channel-wise statistics.\n\nThe second path is a direct connection from X to the final output, which will be scaled later. The 1×1×5 vector from F_sq is then processed by a feed-forward network denoted as F_ex. This network outputs a 1×1×2 vector, shown as a small rectangle with two vertical bars colored red and purple, representing the 'excitation' step. The F_ex network includes a sigmoid activation function, ensuring the output values lie between 0 and 1, serving as channel-wise scaling factors.\n\nThe final stage, labeled F_scale, involves element-wise multiplication between the original input X and the 1×1×2 scaling vector from F_ex. This operation produces the output tensor X_out, which is visually represented as a 3D cube identical in spatial dimensions (H, W) and channel count (5) to the input X, but with the first two channels highlighted in red and purple to indicate they have been scaled by the corresponding values from F_ex. The remaining three channels are shown in white, implying they were not modified or are part of a different scaling context. The entire process is designed to adaptively reweight channels based on the input content, enhancing feature representation for downstream tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

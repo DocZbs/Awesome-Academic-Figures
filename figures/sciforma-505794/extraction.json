@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505794",
+  "record_sha256": "2620b3242cf1bf728cf1a74c51002274b843d38d714b1c48f5405718deb80fce",
+  "asset_sha256": "93d0484e808d84e4432486edde9d506fad23f5afa1c9513c6de73e7853a575c1",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505794",
+    "title": {
+      "zh": "ChartAdapter: Large Vision-Language Model for Chart Summarization · 方法图",
+      "en": "ChartAdapter: Large Vision-Language Model for Chart Summarization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20715",
+      "title": "ChartAdapter: Large Vision-Language Model for Chart Summarization",
+      "authors": [
+        "Peixin Xu",
+        "Yujuan Ding",
+        "Wenqi Fan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20715",
+      "arxiv_url": "https://arxiv.org/abs/2412.20715",
+      "arxiv_id": "2412.20715",
+      "arxiv_first_submitted_at": "2024-12-30T05:07:34Z",
+      "arxiv_updated_at": "2024-12-30T05:07:34Z",
+      "arxiv_subjects": [
+        "cs.MM",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20715v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505794/image/image.jpg?Expires=1790855559&Signature=IRGIZYW8Gu-~mRN-tViTtY5REgXuibdBvw5Uq0-zg1A66yP6Gmen2Fzz2i6uKN2acg9ERyTambRYUjsNdhWOrCIx93toEUYKAGXyOgmYxYeMFjlby4nlJHttFIYwuLCNbMo3oXaRMPWaaHkHr58U9GWyDykQgtexR1CHepFF9KOYOXv2yDqxjbuCAehVZGxo2UiilrxendQHwmbu8ymc-vCwoRY1qJhoWeM7bRxgOeLM-3NN1uLbx9LreDrdG9nOajZ7BmwOE49DrXYstZg3jU79whVh19A2Dx73H9Od8NqXSLudrl761rBI76o4b-0zfeuQrXDsYac1pt~7KyzBhw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505794,
+      "description_sha256": "794ae4702db1baab4e3cba523f660f33efe3f9639bcc3aa27b99a2c762dcf427",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "19c2f37a8aa53a4450d5ef0705077db14d117297631d34920ace2019bfc2fdff",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.MM",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural framework of ChartAdapter, a module designed to integrate with a Large Vision-Language Model (LVLM) for generating chart summaries. The global layout is divided into two main sections: the top-level pipeline showing the end-to-end process from input chart to output summary, and the bottom section detailing the internal structure of the ChartAdapter module.\n\nIn the top section, the process begins with an 'Input Chart'—a line graph with interactive zoom features—shown on the left. This chart is pre-processed and passed through a 'Chart Encoder', symbolized by a snowflake icon, which extracts visual features. These features are then aligned with a general instruction: '<image>\\nWrite a summary for this chart.' The aligned representation is fed into a large language model (LLM), depicted as a cloud with 'LLM' inside and a flame icon indicating active processing. The LLM generates a 'Chart Summary' such as 'Crime is less of an issue in Russia than in previous years ...'. A semantic representation, shown as a sequence of colored blocks (pink, green, blue, yellow), is extracted from the LLM and sent back to the ChartAdapter for further refinement.\n\nThe bottom section details the ChartAdapter’s internal architecture, enclosed in a dashed box labeled 'ChartAdapter'. It consists of two main components: 'Cross-modal Interaction' and 'Implicit Semantic Decoder', each containing 12 identical layers (indicated by '×12'). Each layer includes three modules: 'Self Attention', 'Cross Attention', and 'Feed Forward', all represented as vertical yellow rectangles.\n\nThe input to the Cross-modal Interaction block comes from two sources: a 'Query' vector 'g' generated by a 'Cross-Modal Projector' (diamond-shaped, beige) from the chart encoder's output 'x', and 'Key&Value' vectors 'σ' derived via an MLP from 'Latent Textual Embeddings' (stacked beige boxes). The Latent Textual Embeddings also provide a 'Query' vector 'μ' directly to the Implicit Semantic Decoder. The Cross-modal Interaction processes these inputs and outputs a hidden state 'h', which serves as 'Key&Value' for the Implicit Semantic Decoder. The decoder produces an output 'e', which is projected via another 'Cross-Modal Projector' to generate the final semantic representation 'r', feeding back into the LLM. The entire module uses red-labeled arrows to denote data flow, with specific labels like 'Query', 'Key&Value', and mathematical symbols (g, σ, μ, h, e, r) to indicate the nature of the data being processed. A small flame icon at the bottom right of the ChartAdapter indicates its active role in the inference process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505985",
+  "record_sha256": "617d5f3914a78c84dcf65009c7b696a8523b8cd26c4708e17017aacc62ecc878",
+  "asset_sha256": "b740b3ee4105436af0dee59c13387e98bd5c611c4555d84fc97f179196b1b2cf",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505985",
+    "title": {
+      "zh": "DeepF-fNet: a physics-informed neural network for vibration isolation optimization · 方法图",
+      "en": "DeepF-fNet: a physics-informed neural network for vibration isolation optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-21132",
+      "title": "DeepF-fNet: a physics-informed neural network for vibration isolation optimization",
+      "authors": [
+        "A. Tollardo",
+        "F. Cadini",
+        "M. Giglio",
+        "L. Lomazzi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21132",
+      "arxiv_url": "https://arxiv.org/abs/2412.21132",
+      "arxiv_id": "2412.21132",
+      "arxiv_first_submitted_at": "2024-12-30T18:08:55Z",
+      "arxiv_updated_at": "2024-12-30T18:08:55Z",
+      "arxiv_subjects": [
+        "physics.comp-ph",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21132v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505985/image/image.jpg?Expires=1790855558&Signature=OMa2guZlgjTP5DXB3jGhfS6wDaO-LCjptM3CWfi198v0EsxVdA4Mf9OoazdFXttLyF~7O6isElJlqmKa8iQa9FNY~bh7zVsfHTT6dkBe6KFh-xP6j9sAGI4v~zL~pv3vGTqYTHba5rOPm62tA0-D3nF7Ao5xXxEnyQw2K97txlj5OzKiCzqfNWpGdvjY3yBglq~J5DcbRFOGC8A0AkmbJLwRhxYmMyVAHMgcaGiWqzewovEUFNgIzU2A2lLjmq-7DRt1Qv7UDsvBqI7yb~QE3wyhYns9dvBempFlSMY~rfxGpvWaAJY~~j~HYHH7eAyh697EUbrphTyafTuh7uKIGg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505985,
+      "description_sha256": "5bba32844c9de69086106fc5a0a9ebfeaa64a085a72a1f509447fe3a740b1258",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c088a9043b8052d71ec4890cbad412df33b3fc77c654f1e6425a1d1a054617ec",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "physics.comp-ph",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DeepF-fNet architecture, a dual-network framework composed of two main components: the Inverse Eigenvalue Problem Solver (IEPS) on the left and the Wave Equation Solver (WES) on the right, separated by a vertical dashed line. The IEPS is enclosed in a red-bordered rounded rectangle and takes a 'Spectral Target' as input, which is fed into a neural network represented by two layers of nodes—six orange circular nodes in the first layer and four blue circular nodes in the second layer—fully connected to each other. The output of this network is labeled 'Structure Parameters', shown in a green-bordered rounded rectangle. This output is passed to the WES via a red arrow. The WES, enclosed in a purple-bordered rounded rectangle, receives 'Nodal Coordinates' as input, which feeds into an identical neural network structure (six orange nodes followed by four blue nodes), producing 'Mode Shape Vectors' as output, also in a green-bordered rounded rectangle. \n\nBelow each solver, there is a corresponding total loss function enclosed in a dashed-line box. For IEPS, the total loss function (red dashed box) combines three components: 'Data Loss', 'BC Loss' (Boundary Condition Loss), and 'PDE Loss', all represented as red oval shapes, connected by '+' signs. These losses are computed based on the outputs of the IEPS network and are used to update the network parameters via backpropagation (BP), indicated by a thick red curved arrow pointing from the loss function back to the IEPS input. Similarly, the WES total loss function (purple dashed box) combines 'Data Loss', 'BC Loss', and 'PDE Loss' (all in purple ovals), with connections to the WES network outputs. A thick purple curved arrow labeled 'BP' indicates backpropagation from the WES loss function back to its input. \n\nConnections between modules include: a red arrow from 'Structure Parameters' to 'Nodal Coordinates' in WES; arrows from both solvers’ outputs to their respective loss functions; and cross-connections from the IEPS output to the WES loss function components (specifically to PDE Loss and BC Loss), suggesting that the structure parameters influence the wave equation constraints. The overall layout is symmetrical, with distinct color coding—red for IEPS and purple for WES—to differentiate the two solvers and their associated loss functions. The architecture emphasizes a coupled training process where the IEPS infers structural parameters from spectral targets, and the WES simulates wave behavior using those parameters, with both networks being optimized through their respective loss functions via backpropagation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503374",
+  "record_sha256": "4004eaa0dbd16ed4dac8506f1a0c6a61c77193d1c837bb4ee09c5f46ba09121b",
+  "asset_sha256": "a84807cee8f67e608c2450471df5287294c72160c8ab29813bb68199d5f97553",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503374",
+    "title": {
+      "zh": "Real-time Bangla Sign Language Translator · 方法图",
+      "en": "Real-time Bangla Sign Language Translator"
+    },
+    "paper": {
+      "id": "arxiv-2412-16497",
+      "title": "Real-time Bangla Sign Language Translator",
+      "authors": [
+        "Rotan Hawlader Pranto",
+        "Shahnewaz Siddique"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_url": "https://arxiv.org/abs/2412.16497",
+      "arxiv_id": "2412.16497",
+      "arxiv_first_submitted_at": "2024-12-21T05:56:32Z",
+      "arxiv_updated_at": "2024-12-21T05:56:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16497v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503374/image/image.jpg?Expires=1790855364&Signature=LsYsIrFKpYpXvVW-uS5s0YAqhVDoldQBDOpvvFtIlYDbH4tpFzFk-Iv5GR0DIE93tgXHz3oVpp~uiXGfsqBWzgdaI0hESPM0PjQCMoLOkTsle7rrle8Q2ZfpJv0DzBTw72TU-sPCUU077c8PId3BvRJUS0x4AiplAwVobzDXJ9c9HYAWAzd-BOwT0ZQQYHR~l8WhPM~VAdgKx1lliamOSjS41lLMoSyXPVpSVk16DkIysMSIH8t81yuRTs441LbdtZBWglBM606zKZGfiwT5Y82tbwZiQu~MzJ8WOzik3bJU~spONiB~xp~Qjk1XllUdfIF2dLHnUbFBV5dFwLWbuQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503374,
+      "description_sha256": "f760f15b0366066fded88fdb6b952aa77e9ee4a9c513dbba01e2c603aa31202e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6ea089b593ceb3b153a41f2c76e7b07ba7eadd7af714c1560102af77a0726c13",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of a Sign Language Translation (SLT) model, structured as an encoder-decoder framework with attention mechanism. The global layout is horizontally divided into two main components: the Encoder on the left and the Decoder on the right, separated by a dashed vertical boundary. Both components are enclosed within dashed rectangular boxes labeled 'Encoder' and 'Decoder', respectively. Below the Encoder, a separate dashed box labeled 'Spatial Embedding' contains input frames, indicating the source of visual data.\n\nIn the Encoder section, the bottom layer consists of four input frames (labeled Frame₁, Frame₂, ..., Frameₜ), each represented as a small grayscale image of a person signing. Each frame feeds into a CNN block (depicted as a yellow rectangle with 'CNN' inside), which extracts features. These feature vectors (denoted f₁, f₂, ..., fₜ) are passed upward to a tokenization layer (a light purple horizontal bar labeled 'tokenization layer'), which converts them into discrete tokens z₁, z₂, ..., zₙ. These tokens are then fed into a bidirectional RNN stack (four circular nodes per direction, labeled RNN, arranged vertically in two rows). The top row represents forward RNNs processing from left to right, while the bottom row represents backward RNNs processing from right to left. The outputs of these RNNs are combined to form hidden states h₁, h₂, ..., hₙ, which are then passed to an output vector layer (a light green horizontal bar labeled 'output vector'). This layer produces context vectors o₁, o₂, ..., oₙ, which are passed to the Decoder.\n\nThe Decoder section begins with a Word Embedding layer at the bottom, consisting of five vertical blocks labeled 'Linear Projection'. Each block maps a word token (e.g., <bos>, word₁, word₂, ..., wordₜ₋₁, wordₜ) into an embedding vector (k₁, k₂, ..., kₜ). These embeddings feed into a bidirectional RNN stack (five circular nodes per direction, labeled RNN), producing hidden states h̄₁, h̄₂, ..., h̄ₜ. Above this, an attention layer (a pink horizontal bar labeled 'attention layer') computes attention weights a₁, a₂, ..., aₜ based on the encoder's output vectors o₁ to oₙ. These weights are used to compute context vectors c₁, c₂, ..., cₜ, which are combined with the decoder’s hidden states to produce final hidden representations h₁, h₂, ..., hₜ. Each of these is passed through a fully connected (FC) layer (white circles labeled 'FC') to generate predicted words (word₁, word₂, ..., wordₜ, <eos>). The final output sequence ends with an <eos> token.\n\nConnections are shown as solid black arrows indicating data flow: from frames to CNNs, to tokenization, to RNNs, to output vectors; from word tokens to linear projections, to RNNs, to attention, to FC layers. Dashed arrows indicate the attention mechanism linking the decoder’s current state to all encoder outputs. The entire diagram uses consistent node shapes (circles for RNNs, rectangles for CNNs and linear projections, bars for layers) and colors (yellow for CNNs, light purple for tokenization, light green for output vector, pink for attention layer). Text labels are placed directly on or near components, with mathematical notation (e.g., zₙ, hₙ, oₙ, aₙ) used for intermediate variables."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

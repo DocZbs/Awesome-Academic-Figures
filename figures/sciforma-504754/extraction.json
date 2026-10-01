@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504754",
+  "record_sha256": "86b1e732274933fea31616bca2bc6e201cf9a2367ff1554cafa932d04f35173b",
+  "asset_sha256": "76b7fab68cf664f43d57bf7e71ed0e042eafd068a9bd672a679d3d86cc9b80b8",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504754",
+    "title": {
+      "zh": "Computing Approximate Graph Edit Distance via Optimal Transport · 方法图",
+      "en": "Computing Approximate Graph Edit Distance via Optimal Transport"
+    },
+    "paper": {
+      "id": "arxiv-2412-18857",
+      "title": "Computing Approximate Graph Edit Distance via Optimal Transport",
+      "authors": [
+        "Qihao Cheng",
+        "Da Yan",
+        "Tianhao Wu",
+        "Zhongyi Huang",
+        "Qin Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_url": "https://arxiv.org/abs/2412.18857",
+      "arxiv_id": "2412.18857",
+      "arxiv_first_submitted_at": "2024-12-25T09:55:14Z",
+      "arxiv_updated_at": "2024-12-25T09:55:14Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18857v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504754/image/image.jpg?Expires=1790855436&Signature=pK3GSugEI7nBeNjlapLRg-WFpFom5EmsoJ~te2jfOY6V7IXmSgpdgSSs~usPJ-OE2TZcgng5JU7fd1Abr86EeJg3GrwTmXJkDCyQejxzLqV3rwSopOZm-G4d~lBxL7bPuIxkVyrr5Y3RWc4gZ8yzkDI2W4toOqMRuTj1zFaRt7hkTKpnedRoJP8mkoGw2Ptkg4M1C86ipW77S4rCbFU6QlWjBgbHKgMRR7Ve2MT1Es0FJiwsIxQmJs0-iUF4NvMZyJuRfTEFqkr5bWit7rKyosSCqfiC9V8b~baMX4scOCE7cu5-h2XdCQM0vmwODGJHFKh3ytMS07aBtwR7k2WN2A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504754,
+      "description_sha256": "7787f7354642058bda36e39785f6fa8cfdc69a6d8966f01cb3bdc55f8b7913d3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "03c4df5c6bec0e6892b8c83bcc9bb44058a6a38e6aaae77f0799d59ece4b72b0",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural workflow of GEDIOT, a method for computing Graph Edit Distance (GED) using learnable Optimal Transport (OT). The global layout is left-to-right, depicting a pipeline starting from two input graphs, progressing through feature extraction and embedding, forming a cost matrix, applying learnable OT, and finally outputting a predicted GED and a coupling matrix.\n\nOn the far left, two graphs, G¹ and G², are shown. G¹ contains nodes u₁ to u₄, while G² contains nodes v₁ to v₅. Edges between nodes are labeled with edit costs: 'N' for node substitution, 'O' for node deletion/insertion, and 'C' for edge substitution. Dashed red lines indicate potential edit operations between nodes across graphs. Adjacent to each graph are its corresponding feature matrices, structured as binary matrices with columns labeled N, O, C, and rows corresponding to nodes. These matrices encode the edit operation types available for each node.\n\nThe feature matrices feed into a yellow rectangular block labeled 'GNN', representing a Graph Neural Network. The GNN processes the graph structures and features, producing embeddings H¹ for nodes in G¹ and H² for nodes in G². These embeddings are represented as grids: H¹ has rows u₁ to u₄ and H² has rows v₁ to v₅, with light green and light blue cells respectively, indicating learned node representations.\n\nFollowing the GNN, an MLP (Multi-Layer Perceptron) block further refines these embeddings. The outputs H¹ and H² are then combined via element-wise addition (indicated by ⊕) to form a cost matrix Ĉ. This matrix is displayed as a blue grid with rows u₁ to u₄ and columns v₁ to v₅, containing numerical values such as 0.53, 0.07, etc., representing the pairwise costs between nodes of the two graphs.\n\nThe cost matrix Ĉ is fed into a rounded rectangular block labeled 'Learnable OT', which performs an optimization to compute the optimal transport plan. This module outputs two results: a 'Predicted GED' (Graph Edit Distance), shown in a beige rounded rectangle, and a 'Coupling Matrix' denoted as π̂. The coupling matrix is a grid with rows u₁ to u₄ and columns v₁ to v₅, filled with values like 0.00, 1.00, 0.46, etc. Cells with non-zero values are shaded in light orange, indicating the probability or weight assigned to matching specific node pairs under the optimal transport solution. For example, u₁ is fully matched to v₂ (value 1.00), while u₂, u₃, and u₄ are partially matched to v₁, v₃, and v₄ with weights 0.46, 0.51, and 0.03 respectively.\n\nThe entire process is visually organized to show the transformation from raw graph structures and edit costs to a learned alignment (coupling matrix) and a final distance metric (predicted GED), emphasizing the role of GNNs for representation learning and learnable OT for alignment optimization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

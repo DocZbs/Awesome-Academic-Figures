@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506685",
+  "record_sha256": "22abb49f91fbf8897b9090f201617e71a062c3533f9c77f4bc100900243e1bee",
+  "asset_sha256": "64abb4e8010a50acd8b71f9d114d07c5b93d5d800ee2b67a4888bcd9fd4c5c17",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506685",
+    "title": {
+      "zh": "AI-Powered Cow Detection in Complex Farm Environments · 方法图",
+      "en": "AI-Powered Cow Detection in Complex Farm Environments"
+    },
+    "paper": {
+      "id": "arxiv-2501-02080",
+      "title": "AI-Powered Cow Detection in Complex Farm Environments",
+      "authors": [
+        "Voncarlos M. Araújo",
+        "Ines Rili",
+        "Thomas Gisiger",
+        "Sebastien Gambs",
+        "Elsa Vasseur",
+        "Marjorie Cellier",
+        "Abdoulaye Baniré Diallo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02080",
+      "arxiv_url": "https://arxiv.org/abs/2501.02080",
+      "arxiv_id": "2501.02080",
+      "arxiv_first_submitted_at": "2025-01-03T19:54:38Z",
+      "arxiv_updated_at": "2025-01-03T19:54:38Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1016/j.atech.2025.100770",
+      "arxiv_current_version_observed": "2501.02080v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506685/image/image.jpg?Expires=1790855633&Signature=TIuuX7qkjbnX7uV1hRSom27cdfHpnvgnuIJQZYzPkDqSc60Cpwf0dxW3hTByTwGt2rWOFLatrqBxjX0gXjGaeegaIrzMfsTZveL0O-4WnerpSugTB3pKefmYDAPRBs5s5N2uax2BrcNnjBLqB8qO5~mhwcdMA4emxU86OzyDGh4lLiRZVYsDoLGC1VHRueYH7CqSAmyoXsgQQgZpETMh42QrJRZschT3hbbfWB1gSht6RYQSBG1NRi-bW2DYFoo-hFoWJaQXLIhsL3ASQWo~oqqHyzpq4gP-9HrmmcbAZ8UfF6xxQcbMT7O3F2U7i6cEwi9uBkCBinhPIg7I11CSyg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506685,
+      "description_sha256": "68d2a437d4e868115aa1b970dd754d231a10f71a9649fab6ae59b6a90ca247a7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "bec189b22a07c91fb1ada7eb524190bbfd708412ce70c8b1db219beaedc603ba",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a tailored YOLOv8-CBAM object detection model, presented as a left-to-right data flow pipeline. The global layout is divided into four main stages: Input Image, Backbone, Neck, and Head, each enclosed in distinct dashed bounding boxes with different colors—orange for Backbone, purple for Neck, and yellow for Head. The entire process begins with an input image on the far left, showing a cow in a field, which feeds into the Backbone module via a thick orange arrow.\n\nIn the Backbone section, three yellow rectangular blocks represent CSP1-1, CSP1-3, and another CSP1-3 layer, arranged sequentially from left to right. These blocks are connected by blue arrows indicating forward propagation. After the third CSP block, the feature map passes through a smaller yellow block labeled 'SPP' (Spatial Pyramid Pooling), followed by an orange cube labeled 'CBAM' (Convolutional Block Attention Module), which introduces attention mechanisms to enhance feature representation.\n\nFrom the CBAM module, multiple feature maps are sent to the Neck section, which is enclosed in a purple dashed box. Here, four parallel pathways are shown, each consisting of a magenta rectangular block representing a feature processing unit. Each pathway includes an 'Upsampling + Concat' operation, indicated by text above the block and a blue arrow pointing upward from a lower-resolution feature map to a higher-resolution one, suggesting feature fusion from deeper layers. The outputs of these four pathways are then fed into the Head section.\n\nThe Head section, outlined in a yellow dashed box, contains three stacked yellow cubes of decreasing size, labeled with their spatial dimensions: 76x76x27, 38x38x27, and 19x19x27. These represent multi-scale prediction heads for object detection at different resolutions. Blue arrows connect the outputs of the Neck’s pathways to the corresponding Head cubes, indicating that each head receives fused features from the Neck.\n\nFinally, the output of the Head is directed to a Detection result on the far right, depicted as a cropped image of the cow with a green bounding box and the label 'cow 87%', indicating the detected class and confidence score. A thick green arrow connects the Head to this detection output, completing the end-to-end flow.\n\nAll connections between modules are represented by solid blue arrows, except for the initial input arrow (thick orange) and final output arrow (thick green). The diagram uses color-coding consistently: yellow for backbone and head components, magenta for neck processing units, orange for CBAM, and purple for the neck boundary. Text labels are placed directly on or near the respective components, ensuring clarity. The overall structure reflects a typical YOLO-style detector with enhanced feature extraction via CBAM and multi-scale feature fusion in the Neck."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

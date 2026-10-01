@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-503626",
+  "record_sha256": "b85b5e10377afecfedc4b1fc484fe274c1b09edc5c10a787355fc65a2753d30b",
+  "asset_sha256": "a6d9da552b92bf8f4078ed2086e5e09563a10996fe80239f123be85cceaa9bb3",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503626",
+    "title": {
+      "zh": "Predicting the Reliability of an Image Classifier under Image Distortion · 方法图",
+      "en": "Predicting the Reliability of an Image Classifier under Image Distortion"
+    },
+    "paper": {
+      "id": "arxiv-2412-16881",
+      "title": "Predicting the Reliability of an Image Classifier under Image Distortion",
+      "authors": [
+        "Dang Nguyen",
+        "Sunil Gupta",
+        "Kien Do",
+        "Svetha Venkatesh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16881",
+      "arxiv_url": "https://arxiv.org/abs/2412.16881",
+      "arxiv_id": "2412.16881",
+      "arxiv_first_submitted_at": "2024-12-22T06:21:06Z",
+      "arxiv_updated_at": "2025-07-22T00:06:37Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16881v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503626/image/image.jpg?Expires=1790855405&Signature=Kx1exVYP73FWJAIyXRqKl~VbU~OKN6qYZVe0yA~8eJ8MAqvszbgT1urFu5JBW0q2XvRm~RJRC8vC09nSTeA7-3xxRk2z3Zk4umfSFbiCTZf~MKG7l7yFBWcME6BspuUvFZ2~0x8EdpwPtPeAfnK6HTUdRFGIBJ9YV~BbbyYLMnNGYbUpTxpNoHW-22IQfoc2eHm0x5Pxz5kZ5JbJaBndKQl6kQeQVAivjW0GW9bIE6uua6CyAQUkMVUThudJ5eN-LEj7InF~cUydFGt~O30ZD7eW8kDRk7Ys7ReKcPNpiE85kHkbQVnS3HKEyRlq~zgu2f4fu53ZKE4kFQOA~5N5BA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503626,
+      "description_sha256": "b37ab7a42007cd51f8cf4864e2aaaf3212e15b4d022c6e6f80dc3900044da5a8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a375ac1bc65629d746a4307f2a67fc87599521a01335749f959db0059398dc77",
+      "row_response_sha256": "1f882a74c5aa7ee1fb88ae432b559b3f7d1e1aa0b74059f53e421b54862f3430"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the training and test phases of a model reliability prediction task, divided into two main sections: Training phase and Test phase. The Training phase is further subdivided into two parallel workflows: Baseline and Our method. Both workflows begin with a blue circular node labeled 'C', representing the initial configuration space or input set. In the Baseline workflow, 'C' feeds into a black rectangular box labeled 'Random sampling', which outputs a blue cylindrical node labeled '{c₁, ..., c_I}', indicating a set of sampled configurations. This set then passes through a blue rectangular box labeled 'CT({c₁, ..., c_I} | T, D, h)', representing a construction function that generates a training dataset R, depicted as a blue cylinder labeled 'R'. This dataset is then processed by a green rectangular box labeled 'Imbalance handling method', resulting in an augmented dataset 'R*', also shown as a blue cylinder. Finally, 'R*' is used to train a model 'S', represented by a blue circle, via an arrow labeled 'train'. In 'Our method', the same initial 'C' is fed into an orange rectangular box labeled 'GP-based sampling', replacing random sampling. The subsequent steps mirror the baseline: generating '{c₁, ..., c_I}', passing through 'CT({c₁, ..., c_I} | T, D, h)' to produce 'R', followed by a purple rectangular box labeled 'SMOTE' (a specific imbalance handling technique), producing 'R*', which then trains model 'S'. The Test phase, highlighted with a green border, begins with 'C' feeding into a blue rectangular box labeled 'Create grid', which generates a set '{c₁, ..., c_G}' (a grid of configurations) shown as a blue cylinder. This set goes through 'CT({c₁, ..., c_G} | T, D, h)' to produce a test dataset 'R'' (blue cylinder). An arrow labeled 'evaluate' connects 'R'' to the trained model 'S', which outputs the final performance metric, 'F1-score', displayed in a blue rectangular box. All arrows indicate the direction of data flow. The figure uses distinct colors to differentiate components: blue for datasets and models, black for baseline sampling, orange for our method's sampling, green for general imbalance handling, and purple for SMOTE. The caption clarifies that the CT function is detailed elsewhere and highlights that the primary difference between the baseline and our method lies in the sampling strategy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

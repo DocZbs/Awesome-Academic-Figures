@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504265",
+  "record_sha256": "4cb92b02b3323c0aa9978bae3fcee92e3ef1a72702954f86295957d4ce967b49",
+  "asset_sha256": "91602826ddafd37a0399a4bddc9258379c512075684f12c83abaa488153736a2",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504265",
+    "title": {
+      "zh": "AA-SGAN: Adversarially Augmented Social GAN with Synthetic Data · 方法图",
+      "en": "AA-SGAN: Adversarially Augmented Social GAN with Synthetic Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-18038",
+      "title": "AA-SGAN: Adversarially Augmented Social GAN with Synthetic Data",
+      "authors": [
+        "Mirko Zaffaroni",
+        "Federico Signoretta",
+        "Marco Grangetto",
+        "Attilio Fiandrotti"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18038",
+      "arxiv_url": "https://arxiv.org/abs/2412.18038",
+      "arxiv_id": "2412.18038",
+      "arxiv_first_submitted_at": "2024-12-23T23:17:44Z",
+      "arxiv_updated_at": "2024-12-23T23:17:44Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/978-3-031-91767-7_2",
+      "arxiv_current_version_observed": "2412.18038v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504265/image/image.jpg?Expires=1790855427&Signature=fwGSimGLnYawDEmkHNVDLIiDJ00jzeGjFx6OBxO7Lfc0utupSR4G8NGjnuMSvpjGBNR~NH9JOwXyDHI22FdpCk2ZWYTgOJNtP2WcZNpd7O7l79HN7Pa2WxdowplatK0np99neFt6vkNMGSbcdMCgChypQv~vNn-6pjrJ8o4I8WQAOM~kAF7xH76Ixz3LrbUtez86FUHEENis8OSRo7B458ZgbFmDUgmAA7qW9m5saCAEKleIRHt-EcySFyeFA3GPtFIW-cWLQgiz9YEcoYsCPyn7TXmlk6~Nh2ayxVZ~Y3l6Nfq1~CkCHkp8bcJdR-3BFLYk5QUlE9aSHbRr3TCMAQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504265,
+      "description_sha256": "deced3857dd78b778dd1e3592b04bece098827d73e0bf86a0becf0155bf904da",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d7dcc383dfbe7742a4f1e23bc92e50cc6df12328631c60505faf0b97b92055d3",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of Social GAN, a generative adversarial network designed for predicting pedestrian trajectories. The overall layout is horizontally structured, divided into two main components: the Generator on the left and the Discriminator on the right, connected by data flow arrows indicating the adversarial training process.\n\nThe Generator consists of an Encoder-Decoder framework enclosed within a light blue rectangular container labeled 'Generator'. The Encoder, shaded teal, contains an LSTM module represented as a trapezoidal shape with input dimensions labeled '(batch, 8, 2)' on the left side. This indicates that the encoder processes sequences of 8 time steps with 2-dimensional spatial coordinates per step. The output of the Encoder feeds into a 'Pooling Module', depicted as a small white rectangle between the Encoder and Decoder. The Decoder, also teal-shaded, contains another LSTM module with output dimensions labeled '(batch, 12, 2)', signifying it generates 12 future time steps of 2D coordinates. The entire Generator receives an 'observed trajectory' as input, shown as a composite box with two segments: a dotted-patterned 'obs' segment and a solid 'pred' segment, representing observed past and predicted future parts respectively. The Generator outputs a 'predicted trajectory', labeled 'pred' in a teal rounded rectangle.\n\nThe Discriminator is a separate component, enclosed in a light green rectangular container labeled 'Discriminator'. It contains a single Encoder with an LSTM module, shaded mint green, processing inputs of dimension '(batch, 12, 2)' and producing an output of dimension '(batch, 1, 2)'. This module classifies trajectories as either 'real' or 'fake'.\n\nConnections and arrows define the data flow: The observed trajectory feeds into the Generator’s Encoder. The Generator’s output ('pred') is routed to the Discriminator via a pink rounded rectangle labeled 'fake'. Simultaneously, ground truth future trajectories (indicated by a dashed line from the 'obs' segment of the input to the Discriminator) are fed into the Discriminator via a purple rounded rectangle labeled 'real'. The Discriminator then outputs a binary classification result in a green rounded rectangle labeled 'real/fake'. Additionally, a dashed arrow labeled 'ground truth' connects the original input's 'obs' segment to the Generator’s output, suggesting that during training, the ground truth is used for supervision alongside the adversarial loss. The figure visually emphasizes the adversarial nature of the model: the Generator aims to produce trajectories indistinguishable from real ones, while the Discriminator learns to differentiate between real and generated trajectories."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

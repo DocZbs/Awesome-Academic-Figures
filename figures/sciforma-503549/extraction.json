@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-503549",
+  "record_sha256": "4a8ac60782cf2439d26394f9be45b05b717cb8329acd30455e67744142dd9ee5",
+  "asset_sha256": "3a523868f78218d4f9d9709eef08370ff9cd67b95e1c8e332eef3324ad574fa3",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503549",
+    "title": {
+      "zh": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes · 方法图",
+      "en": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes"
+    },
+    "paper": {
+      "id": "arxiv-2412-16776",
+      "title": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes",
+      "authors": [
+        "Sanghyun Son",
+        "Matheus Gadelha",
+        "Yang Zhou",
+        "Matthew Fisher",
+        "Zexiang Xu",
+        "Yi-Ling Qiao",
+        "Ming C. Lin",
+        "Yi Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16776",
+      "arxiv_url": "https://arxiv.org/abs/2412.16776",
+      "arxiv_id": "2412.16776",
+      "arxiv_first_submitted_at": "2024-12-21T21:16:03Z",
+      "arxiv_updated_at": "2025-07-06T23:21:51Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16776v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503549/image/image.jpg?Expires=1790855374&Signature=TwhFA7ekOIqfAsE~TXiAho2DSBklrsIardiK71AczVKm0bPGaexIgtyQldSw2plO6a7b6ZXTIU7wwsHe9vC6Rg31GvtbXfRjNXAL6R7toHgoKuuQUpYEe2fYVe2TYJaO~WIbtr78SebSF-vrMifBg7Km5tS8-AkfMxkUv892dIimSMust-CuhKETlO-7dmL2AONZ30NwVCjfEWVvWw5J45W75-5u-kLxDYyp9QwRnQTzp3E8J-P7xEfg5OPDVnWjvm34AC-yDMp7VwYDp9y5tcbH-jFGQC2wskYHDA6CVkNqS9ZySY-Y8kgkCc0e-TRLnCxGk1kOwbxdVQlhvYqXCQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503549,
+      "description_sha256": "570d03cb93a51ef2680864aa7fe8d249206ea507ed0a6068daaea361d824d6a1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "feab8fcd6bca5cdadecb7e0b8fe80ae7bd2f2c5ad076f1375b69299336d357cb",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a conceptual comparison between traditional mesh representations and differentiable mesh variants, specifically DMesh and DMesh++. The layout is divided into two main panels: (a) on the left, labeled '(Traditional) Mesh', and (b) on the right, labeled 'DMesh, DMesh++'. Each panel contains a 3D mesh visualization, a mathematical representation, and a differentiability assessment.\n\nIn panel (a), the traditional mesh is depicted as a triangulated surface composed of blue and orange triangles connected by black vertices. The mesh exhibits geometric degeneracies: a red arrow points to an overlapping region labeled 'Self-Intersection' in red, and a blue arrow points to a long, narrow triangle labeled 'Thin Triangle' in blue. Below the mesh, the standard mesh data structure is shown: a vertex matrix V, represented as a bracketed array with columns x₁, y₁, z₁, etc., indicating 3D coordinates, and a face matrix F, represented as a bracketed array with columns i₁, j₁, k₁, etc., representing vertex indices that define triangle connectivity. A green checkmark under V indicates it is differentiable, while a red cross under F indicates it is not differentiable due to its discrete, integer nature.\n\nPanel (b) illustrates the DMesh/DMesh++ approach. The mesh visualization shows a clean, well-formed triangulated surface with alternating blue and orange triangles and black vertices, free of self-intersections or thin triangles. Below this, the data structure is represented as a single matrix P, enclosed in a dashed box, with columns labeled 'Position' (light blue, containing x₁, y₁, z₁, etc.), '“Real” Value' (light orange, containing ψ₁, ψ₂, etc.), and a third column (light purple) labeled 'Etc. (e.g. Color)', indicating additional continuous features. A green checkmark below the entire matrix P confirms its differentiability. This design integrates both geometry and connectivity into continuous, differentiable features, eliminating the need for discrete index arrays.\n\nThe figure visually contrasts the limitations of traditional meshes—non-differentiable connectivity leading to degeneracies—with the advantages of DMesh++, which uses a fully differentiable, continuous feature representation to produce robust, high-quality meshes suitable for optimization and machine learning tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

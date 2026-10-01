@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506704",
+  "record_sha256": "4b047540a1f747150c4506e50bcb48f33c69bb17cff2083866e0cac44bab26bb",
+  "asset_sha256": "84fb96c90eb9685004b04cb4a0eb2db085c3fb3fe4a9d9d706c2d76e3905db01",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506704",
+    "title": {
+      "zh": "From Images to Detection: Machine Learning for Blood Pattern Classification · 方法图",
+      "en": "From Images to Detection: Machine Learning for Blood Pattern Classification"
+    },
+    "paper": {
+      "id": "arxiv-2501-02151",
+      "title": "From Images to Detection: Machine Learning for Blood Pattern Classification",
+      "authors": [
+        "Yilin Li",
+        "Weining Shen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02151",
+      "arxiv_url": "https://arxiv.org/abs/2501.02151",
+      "arxiv_id": "2501.02151",
+      "arxiv_first_submitted_at": "2025-01-04T00:54:32Z",
+      "arxiv_updated_at": "2025-01-04T00:54:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "stat.AP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02151v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506704/image/image.jpg?Expires=1790855623&Signature=eDMQuvx2x016ikRSs3UYiGkpBkX~M5MxGWwkmDb7Rym3p93nzOxidpsLyuGYrr6YupVPRnWxEjF-eM0OkxhG6UH9SYBubYyLbddfc0Tj3R5gB0HMYXKnwiMBinjafWHOzkPFg4Xmwp9stuykotRosU90lb9SM6o~iWyl8l2FHkpo7F7DpMh7claaXUPH5V4A79HyGWe-u1FVfY8jIi9zjxiDezXJtt9Jl5Q7WWaP4abtQDyaRurjD320UHohi8q3Kv8WzUNTyBoq8Mad1g5X-ZF63YhW3U77CvOhEnzDLwHeiDczIaxlfrliQPWbBLkuq49XHBzE4EgMNGCKlalM7g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506704,
+      "description_sha256": "c5a8dd54d07054e2190fa1aed9997044480279bf7e0565630df9a3c503ebd980",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "38d8128621f7d48417951aa3e758b9683d369b2386adcb2eb4bf66f5212b19fc",
+      "row_response_sha256": "d09ba592fde8f1259c14c0b9b5f9b0a5362f578ed4f27d8bbffc357ea7070954"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "stat.AP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a decision tree structure derived from an XGBoost model, visualized as a hierarchical flowchart. The global layout is a top-down tree diagram, starting from a root node at the top and branching into child nodes at each level, culminating in leaf nodes at the bottom. The tree has three levels of internal decision nodes and four terminal leaf nodes, arranged horizontally at the bottom row. Each node is represented as an oval-shaped box with black borders and black text inside, containing either a decision condition or a leaf prediction value.\n\nThe root node at the top contains the condition 'mean_area<158.228333'. From this node, two directed edges branch out: a blue arrow labeled 'yes, missing' pointing downward to the left, and a red arrow labeled 'no' pointing downward to the right. The blue arrow leads to a leaf node labeled 'leaf=0.102692105', which is a terminal node with no further branches. The red arrow leads to the next internal node, which contains the condition 'fract1_ring_25_35<0.816153884'.\n\nFrom this second internal node, two more branches emerge: a blue arrow labeled 'yes, missing' leading to the left, and a red arrow labeled 'no' leading to the right. The blue arrow connects to another internal node with the condition 'sd_ratio_dis<0.491339505'. This node further splits into two leaf nodes: a blue arrow labeled 'yes, missing' leads to 'leaf=-0.0244797021', and a red arrow labeled 'no' leads to 'leaf=-0.114089243'.\n\nThe red arrow from the 'fract1_ring_25_35' node leads to a third internal node with the condition 'i<30.5'. This node also splits into two leaf nodes: a blue arrow labeled 'yes, missing' leads to 'leaf=-0.0456030555', and a red arrow labeled 'no' leads to 'leaf=0.0973736867'.\n\nAll arrows are solid lines with arrowheads indicating direction. Blue arrows represent the 'yes, missing' path, while red arrows represent the 'no' path. The text labels on the arrows are positioned near the middle of each edge. All nodes are aligned vertically in a clear hierarchical manner, with consistent spacing between levels. The entire diagram is monochromatic except for the blue and red arrows, which serve as visual cues for different decision outcomes. The figure illustrates the decision-making process of the XGBoost model, where each internal node represents a feature-based split, and each leaf node represents a predicted output value."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

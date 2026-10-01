@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506016",
+  "record_sha256": "ee6dde8c4295012df6bc504be5321a746592c23cc66ed20b6c80547db8fdaac5",
+  "asset_sha256": "ea744f1cef691c3f5d169a585593d1a52b625a9e371527bbc3eef123d93f82db",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506016",
+    "title": {
+      "zh": "Distilling Large Language Models for Efficient Clinical Information Extraction · 方法图",
+      "en": "Distilling Large Language Models for Efficient Clinical Information Extraction"
+    },
+    "paper": {
+      "id": "arxiv-2501-00031",
+      "title": "Distilling Large Language Models for Efficient Clinical Information Extraction",
+      "authors": [
+        "Karthik S. Vedula",
+        "Annika Gupta",
+        "Akshay Swaminathan",
+        "Ivan Lopez",
+        "Suhana Bedi",
+        "Nigam H. Shah"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00031",
+      "arxiv_url": "https://arxiv.org/abs/2501.00031",
+      "arxiv_id": "2501.00031",
+      "arxiv_first_submitted_at": "2024-12-21T02:15:29Z",
+      "arxiv_updated_at": "2024-12-21T02:15:29Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00031v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506016/image/image.jpg?Expires=1790855568&Signature=pjlogG6N1AOcQTH9Qmt4svfyyn9eM3GBm46kAuCuhl2XoiHVJSCcr9za3im93flLj~A4tmNXR-lpo6q7D82G1q1A64cva0v1u5Ry~4fliMbmf7RsnxLNIdizT9aJXNmeXRLwIkxh1r2-0hOIr3v7xQ1c0~oi2ETf1gxDDf74XXzOAwBmlugxR7oNzKnbkhoof4mtog7M1ae8B4vizqOOtNh7WofKCLq1QQYk8SI8pEiFcwUAKn0sAvSB~yFAZWJUBJyrSxBuItvmrT6KYhNVsNv6Odlt5egreHUQMra-taPic8wvM2DXmbU6Hq47aD-vGMgxlW6-RM3P9TP7Y26hRA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506016,
+      "description_sha256": "97ca06fdec129fff20ce126a2442f542272053aa7c960a5bd3ff9887b7abbc51",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4fe4038a2bc5934aa2e3eb2b92241696e19c4c2b3f69da7e3c68fc8c3b757b2e",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-stage pipeline for clinical entity recognition using large language models (LLMs) as teacher labelers and a BERT model for distillation and inference. The global layout is a left-to-right workflow divided into four main phases: '2,096 clinical documents', 'Teacher labelers', 'Labeled documents', and 'Distillation & Inference'. Each phase is represented by a light blue banner with white text, indicating the progression of data through the system.\n\nIn the first stage, a stack of clinical documents is shown as a series of overlapping gray rectangles, each containing sample text describing patient medications, diseases, and symptoms. The example text includes phrases like 'metformin 500 mg BID for diabetes' and 'omeprazole 20 mg PRN'.\n\nThe second stage, 'Teacher labelers', features a vertical arrangement of multiple LLMs (labeled LLM 1, LLM 2, ..., LLM n), each depicted as a blue neural network icon with interconnected nodes. These LLMs are grouped under a large curly brace, indicating they operate collectively. Below them, an 'Ontology' is represented by a black icon of stacked horizontal bars, suggesting structured medical knowledge. Together, these components serve as the teacher models responsible for annotating entities in the clinical texts.\n\nThe third stage, 'Labeled documents', shows the same stack of documents, now with highlighted entities. Medications such as 'metformin', 'atorvastatin', and 'amlodipine' are highlighted in yellow; diseases like 'diabetes' and 'acid reflux' are in pink; and symptoms or conditions are in green. A legend on the right side explicitly maps these colors to 'medications', 'diseases', and 'symptoms'. This stage represents the output of the teacher labelers, where entities have been annotated with color-coded labels.\n\nThe final stage, 'Distillation & Inference', begins with an arrow labeled 'Fine-Tuning' pointing from the labeled documents to a black neural network icon labeled 'BERT'. This indicates that the BERT model is trained on the teacher-generated labels. Below the BERT model, another arrow leads to a stack of documents with colored highlights, representing the model's inference output on new data. The entire process is designed to transfer knowledge from powerful but computationally expensive LLMs to a smaller, more efficient BERT model, which can then be deployed for real-world inference tasks. The caption clarifies that the optimal combination of teacher labelers was selected based on F1 score, and the distilled BERT model was evaluated on both in-distribution and external validation datasets."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

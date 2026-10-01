@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+PERSE: Personalized 3D Generative Avatars from A Single Portrait — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.21206
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents four distinct neural network architectures labeled (a) through (d), collectively forming the network configuration of an avatar model. The global layout is divided into two main horizontal sections: the top section contains (a) Pose-conditioned Deformation MLP_pose and (b) Canonical MLP_c, while the bottom section contains (c) Latent Mapping MLP_z and (d) Deformation MLP_d. Each module is represented as a sequence of rectangular blocks arranged horizontally, indicating layers in a multi-layer perceptron (MLP) structure, with connections shown as lines between blocks or from input to output.
+
+In (a) Pose-conditioned Deformation MLP_pose, inputs PE(x^sc) and Z are fed into a series of 9 light green rectangular blocks, each labeled '512', representing hidden layers of 512 dimensions. These are followed by a final layer of size 3, then a blue block labeled 'Sig' (sigmoid activation), producing output s^sc. A separate branch takes input x^d - x^fc and Z, passing through three light green blocks of size 128, then branching into four parallel paths: one with a 3-unit layer and 'Sig' outputting Δs, another with 1-unit layer and 'Sig' outputting Δo, a third with 3-unit layer and 'Sig' outputting Δc, and a fourth with 4-unit layer outputting Δq. The outputs of the first 9 layers in the main branch also feed into additional branches leading to outputs o^sc, c^sc, and q^sc via intermediate 512-unit layers and corresponding activation layers (Sig or direct output).
+
+In (b) Canonical MLP_c, the same 9x512 layer structure as in (a) is used, but with different branching. From the 9th 512-layer, three branches emerge: one to a 3-unit layer with 'Sig' outputting o^sc, another to a 3-unit layer with 'Sig' outputting c^sc, and a third to a 4-unit layer outputting q^sc. The input is PE(x^sc) and Z, and the primary output is s^sc.
+
+In (c) Latent Mapping MLP_z, inputs f_I and f_T are processed through two consecutive 512-unit light green blocks, followed by a 32-unit block, producing output Z.
+
+In (d) Deformation MLP_d, inputs x^gc and Z are fed into four 128-unit light green blocks. From the last 128-unit block, multiple branches diverge: one to a 5-unit block with 'Softmax' outputting W(x^gc); another to a 150-unit block outputting E(x^gc); a third to a 108-unit block outputting P(x^gc); a fourth to a 3-unit block outputting O^{sc→fc}; and a fifth to two 128-unit blocks followed by a 3-unit block outputting O^{gc→sc}. All blocks are light green except for activation functions (blue), which include 'Sig' and 'Softmax'. The figure uses consistent visual attributes: light green rectangles for linear layers, blue rectangles for activation functions, and black lines for data flow. Text labels denote layer sizes, activations, and outputs. The overall workflow suggests a modular design where latent codes Z are generated from inputs f_I and f_T, then used alongside pose or geometry coordinates to compute deformations and canonical representations.

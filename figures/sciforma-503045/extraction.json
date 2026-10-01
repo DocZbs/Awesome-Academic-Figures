@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-503045",
+  "record_sha256": "5f3a791672d89f190ffbed1056104cdc975df3a9480d082e1bb86bcf9d1d9f45",
+  "asset_sha256": "2dc72a94b8d8df6c21ec4640b45f9df7c5eefd9a5ef81557c1fe7ca0dc58544f",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503045",
+    "title": {
+      "zh": "Theory of Mixture-of-Experts for Mobile Edge Computing · 方法图",
+      "en": "Theory of Mixture-of-Experts for Mobile Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-15690",
+      "title": "Theory of Mixture-of-Experts for Mobile Edge Computing",
+      "authors": [
+        "Hongbo Li",
+        "Lingjie Duan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15690",
+      "arxiv_url": "https://arxiv.org/abs/2412.15690",
+      "arxiv_id": "2412.15690",
+      "arxiv_first_submitted_at": "2024-12-20T09:09:10Z",
+      "arxiv_updated_at": "2025-03-24T19:55:56Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15690v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503045/image/image.jpg?Expires=1790855277&Signature=cxGMEAKsumaY7yWHBKCzpRoV30ZQezvlDBoKohyp2llPyI7jckd0b2y5Ba3Fq7D6xkaoqy1FmhXE1P4ga8AFbKvP9dzZIK9rxQR7t7DmnLv0UhIDkBI1H4KkK60op7uchDVmmzpyg2R2aG3wBFjZDm~M3lJoWIx5yL5RNnqKhfp-pN-jg-yLdc24vcFEudXvxeRbAUcX1s9StIj8V0C4W4I-LjJfM0ZTQF1KbY1pM1EblB1sl~M3UbGJJ05TGpJvpsVHwAA~CmEzNJrvejuy0QeRoeySgJU9LSRirOLhb9pDs0YOQb2Dc9cri3YG0G1Y~UjxwgVZE3zfi43Ki9Mz~g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503045,
+      "description_sha256": "74c4e8a6e185b2b9258c2ecfbd65cf40929f9d0429cc143dcfffdd7b98aceda0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8b201d82367c0eeb6c8c0219bb86a8c41876fbff1a252bec7030764ef7a180ce",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Mobile Edge Computing (MEC) network architecture with M edge servers, each represented as an 'expert' and depicted as a cloud icon containing stacked server racks. The global layout is triangular, with a central MoE (Mixture-of-Experts) gating network positioned at the apex, connected via wireless links (represented by red and gray antenna icons) to multiple experts distributed below. The experts are labeled as Expert 1 (busy), Expert 2 (idle), and Expert M (idle), indicating their operational status. Each expert is associated with a group of human figures symbolizing users or clients; Expert 1 has three black human icons, Expert 2 has three, and Expert M has three, suggesting user distribution across the network.\n\nAt the left side of the diagram, a red human icon labeled 'Task arrival at time t' indicates a new task request originating from a mobile user. This user connects to the Base Station (BS) of Expert 1, which is shown as grayed-out to denote it is currently busy. A dashed red arrow extends from this BS to the central MoE gating network, signifying the task's initial submission. The MoE gating network, labeled 'MoE gating network (see Fig. 2)', acts as a decision-making component that selects an appropriate idle expert to handle the task. In this example, it chooses Expert 2, indicated by a solid red arrow from the MoE to Expert 2’s BS, while dashed gray arrows to other experts (like Expert M) indicate they were not selected.\n\nThe visual modules include: (1) the human icons representing users, colored red for the arriving task and black for regular users; (2) the cloud-shaped expert nodes, colored gray for busy (Expert 1) and black for idle (Experts 2 and M); (3) the antenna icons symbolizing BSs, colored red for active communication paths and gray for inactive ones; and (4) the central MoE gating network, shown as a text label with a reference to Figure 2 for further detail. All connections are directional arrows: solid red for active task routing, dashed red for initial task submission, and dashed gray for unselected paths.\n\nThe workflow follows a logical sequence: upon task arrival at time t, the user’s BS (of Expert 1) forwards the request to the MoE gating network. The MoE then selects an idle expert (here, Expert 2) and instructs the original BS to forward the task dataset to the selected expert’s BS. After task completion, the selected expert updates its local model and sends the result back to the user through the original BS. Finally, the MoE updates its gating network for future tasks, as referenced in Figure 2. The diagram emphasizes dynamic load balancing and efficient resource allocation in a distributed MEC environment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

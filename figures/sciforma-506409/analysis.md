@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Learning Spectral Methods by Transformers — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01312
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-stage architectural framework for constructing a Transformer-based model that approximates Principal Component Analysis (PCA), as part of an existence proof for Theorem 3.1. The overall layout is divided into three vertically aligned, labeled sections: '1. Symmetrization', '2. Power Iterations', and '3. Removal of Principal Eigenvectors', each enclosed in a rounded rectangular container with distinct background shading—light gray for Section 1, medium gray for Section 2, and off-white for Section 3. These sections represent sequential phases in the algorithmic pipeline.
+
+In Section 1, 'Symmetrization', a light blue rounded rectangle contains two stacked modules. The top module is a yellow rounded rectangle labeled 'Attention' with the mathematical notation '{(K_i, Q_i, V_i)}_{i∈[2]}', indicating a two-headed attention mechanism. Below it, a pink rounded rectangle labeled 'MLP (W₁, W₂)' represents a fully connected layer with two weight matrices. An arrow points downward from the Attention block to the MLP block, indicating forward propagation.
+
+Section 2, 'Power Iterations', features a loop structure indicated by a dashed green border enclosing τ iterations. Inside this loop, there are two vertically stacked blocks. The upper block is a purple rounded rectangle containing two submodules: an orange rounded rectangle labeled 'Attention {(K_i, Q_i, V_i)}_{i∈[M]}', representing a multi-head attention with M >> 2 heads, followed by a pink rounded rectangle labeled 'MLP'. The lower block is a light blue rounded rectangle containing a yellow 'Attention' block and a pink 'MLP' block, identical in structure to the first stage but without explicit head count notation. Solid black arrows connect these components sequentially within each block, and a dashed green arrow loops back from the bottom of the lower block to the top of the upper block, forming the iterative cycle. A label 'τ iterations' is placed above the dashed loop to indicate the number of repetitions.
+
+Section 3, 'Removal of Principal Eigenvectors', consists of four vertically stacked light blue rounded rectangles, each containing two horizontal bars—one yellow on top and one pink below—symbolizing an Attention-MLP pair. These blocks are connected by solid black arrows flowing downward. A dashed green arrow originates from the bottom of the fourth block and points leftward toward the input of the Power Iterations loop, labeled 'Next principal eigenvector', indicating feedback for successive eigenvector estimation. Additionally, a solid black arrow enters the topmost block from the right, originating from outside the diagram, suggesting an external input.
+
+Color coding consistently denotes layer types: yellow blocks represent Attention layers (two-headed in Section 1, multi-headed in Section 2), orange blocks denote multi-head Transformers with large M, and pink blocks denote fully connected (FC) layers. The diagram visually encodes the progression from symmetrization of input data (X and XXᵀ), through iterative power method updates via attention and MLP layers, to the sequential removal of principal eigenvectors, thereby mimicking the classical PCA algorithm within a neural network framework.

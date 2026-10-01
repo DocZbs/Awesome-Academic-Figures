@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505915",
+  "record_sha256": "096b1c090dfa11266efb7553fa5230ca6bc883d0b7c21acbe7daf062bd58deb2",
+  "asset_sha256": "dc5bfadba4198a2007562d63cfba1a2f1fd6b222c8cb2d1bcf80003bd0e8b27a",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505915",
+    "title": {
+      "zh": "Generalising Battery Control in Net-Zero Buildings via Personalised Federated RL · 方法图",
+      "en": "Generalising Battery Control in Net-Zero Buildings via Personalised Federated RL"
+    },
+    "paper": {
+      "id": "arxiv-2412-20946",
+      "title": "Generalising Battery Control in Net-Zero Buildings via Personalised Federated RL",
+      "authors": [
+        "Nicolas M Cuadrado Avila",
+        "Samuel Horváth",
+        "Martin Takáč"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20946",
+      "arxiv_url": "https://arxiv.org/abs/2412.20946",
+      "arxiv_id": "2412.20946",
+      "arxiv_first_submitted_at": "2024-12-30T13:38:31Z",
+      "arxiv_updated_at": "2025-07-15T07:46:57Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20946v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505915/image/image.jpg?Expires=1790855558&Signature=cgPpmuXcui~Ib86EbEexZuVO~sLfFQTLTTBr0Rbh87HgWCsegDh17ZciQ538-CL3o~58rSKWbYzXUHA1JNhCVhlFBL6n1uKUXEfV~6Qk38JpI9Wh2PrBqn05oZbwDbPulj5W1ZGxuZta2PM6tHMG1MVpH2rWY3rOnocmd6vy-BFqiZlyLA2oHiNvNXK~N2qqAO9gh5YjwIGciFkWLQc6A0q4FKZsEGgO~20pRo3pt-fBkmLk-pfkFzyWDCtwRtZ2mwyECOuBVOIhNAvYnkF7FI-YP6n3pVHgnRrIOKXFekG0rA~c8ngkEjW1HlFmJA5YcP4I2L-YUUxop3Avpp4eJA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505915,
+      "description_sha256": "81132293c9fb04a86ebd6df2a951e6fc3de08a9d2b70dbab31b8efca87faab6a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0d6a6df3144572059d975608a059987c158c17eb060a1bc4d44a33d9aad4d69d",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a multi-agent reinforcement learning architecture, specifically focusing on two variants of shallow neural networks used for both policy and state-value estimation. The global layout is left-to-right, depicting a data processing pipeline starting from feature inputs, through encoding and network processing, to final outputs. On the far left, two rectangular blocks labeled 'Private Features' and 'Public Features' serve as input sources. These features feed into a 'Personal Encoding' module, which is enclosed in a dashed blue rectangle and visually represented as a hexagonal structure containing two sequential layers with 'Tanh' activation functions (light teal squares), flanked by vertical light blue bars representing linear transformations or weight matrices. A dashed blue line connects this module to a stack of gray rectangular blocks labeled 'Obs. Agent 1', indicating that the encoded representation is applied to agent observations. The 'Public Features' also directly connect to this observation stack via a solid black line. From the observation stack, a thick purple arrow points rightward to the first major network block titled 'Shallow Network'. This block is depicted as a stack of identical gray rectangles, each containing a hexagonal structure similar to the Personal Encoding module but with two 'Tanh' units and vertical blue bars, labeled 'Agent 1'. Below this, a second network variant, 'Shallow Network With Grouping', is shown. It consists of a stack of gray rectangles where multiple smaller hexagonal units (each with a 'Tanh' activation) feed into a larger shared hexagonal unit with another 'Tanh', suggesting a grouping mechanism for processing multiple inputs before aggregation. Both network types are connected via thick purple arrows to two final output blocks: 'Policy' and 'State-Value Estimation', which are light blue rectangles stacked vertically. The caption clarifies that the same network type is used for both policy and state-value networks, differing only in the output layer, and notes that the 'Personal Encoding' block is optional. The visual style uses consistent color coding: light blue for feature/input/output blocks, light pink for network layers, and light teal for activation functions. All connections are directional, indicated by arrows, with solid lines for direct data flow and dashed lines for structural or optional relationships."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

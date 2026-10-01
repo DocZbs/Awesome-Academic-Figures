@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505696",
+  "record_sha256": "be85b239e41f21a93bd84b6d850352818d125386345eda84c319aa5733e0755c",
+  "asset_sha256": "6ae5d41bc45b328c0e1805a61a9086566da5e291c60d4bedf801ac9c58ca4d6b",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505696",
+    "title": {
+      "zh": "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks · 方法图",
+      "en": "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks"
+    },
+    "paper": {
+      "id": "arxiv-2412-20522",
+      "title": "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks",
+      "authors": [
+        "Yifei Liu",
+        "Zhihang Zhong",
+        "Yifan Zhan",
+        "Sheng Xu",
+        "Xiao Sun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20522",
+      "arxiv_url": "https://arxiv.org/abs/2412.20522",
+      "arxiv_id": "2412.20522",
+      "arxiv_first_submitted_at": "2024-12-29T17:12:16Z",
+      "arxiv_updated_at": "2025-06-14T14:30:25Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20522v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505696/image/image.jpg?Expires=1790855552&Signature=T4XiOL-VwClMC3GTdJpz-eBSw2ro0TVOCUWz-xnoyT2eOcsrDgmLxZKZ~T4MePZZFwS8yryoR-9F9-lMMsjimjGajl0q2UpGUMz1ARI45w3VkHNjUEoS9XAPGQgZicLEBMEvO5TDVymBO~bCvRAzfZFhg8cDD3EDtGjWoLYttNJF2o4ITf93LDculLho5FoApdgIq8FVATcyEW8x0OCSp2I-pkN2SCCG696yDZ1oHzPM0kMkB7bm2HTsB6gATlFSr3sA7A5x36Z9FB0~CbPTHd2Vmppfpw8aNc1gYsMkTAVkg2RfzvO-CZhqCdlMORJ8RntCPI6S7CUAW3p99VNy1Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505696,
+      "description_sha256": "d4b3753216cfdc9fa477d67bfdd132e46820af27789c045fde7a26635081dd0a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1bf9114ca0f98701d2268740d14e371bb59c5c0660d2c3fc1c819ccce5a028a3",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the MaskGaussian pipeline, a method for differentiable rendering using Gaussian splats with learned existence masks. The global layout is left-to-right, depicting the entire workflow from input Gaussians to final rendered output and loss computation. On the far left, five 3D Gaussians (G1–G5) are shown as colored ellipsoids, representing the scene primitives. These Gaussians are splatted onto a 2D plane via a 'splat' operation, producing overlapping translucent disks with varying colors and opacities. A 'query pixel' is selected, indicated by a red arrow pointing to a white square within the splatted region.\n\nBelow the splats, the process begins with sampling existence masks from each Gaussian’s existence distribution, represented as Gaussian curves. Each Gaussian corresponds to a mask Mi (i=1 to 5), depicted as colored circles: green for present (Mi=1), gray for absent (Mi=0). The masks are sampled probabilistically, and only those with αi > 0 (opacity greater than zero) are retained. The αi values are computed from each splat’s normal attributes (center, scale, rotation) and are shown as colored squares corresponding to each Gaussian. After filtering out splats with αi ≤ 0 (here, G2 and G5 are filtered), the remaining splats (G1, G3, G4) and their associated masks (M1, M3, M4) proceed to the 'masked rasterization' stage.\n\nThe masked rasterization module is enclosed in a large rounded rectangle on the right. It processes the surviving splats in order, computing transmittance Ti and color ci for each. For each splat i, the render block computes ci using the mask Mi and αi. The transmittance Ti evolves based on previous transmittances and masks, with gradients flowing backward through the chain. Crucially, when a splat is masked (e.g., M2 is gray/absent), its αi is set to zero, and it contributes no gradient to its own normal attributes (thus no update), but still receives a gradient for its mask Mi, allowing the existence probability to be updated. This selective gradient flow is indicated by red 'x' marks on the backward arrows for masked splats.\n\nThe final rendered color is obtained by summing the contributions c1, c2, c4 (with c2 being zero due to masking). This output color is compared to the ground truth (GT) color via a loss function, shown as a red square labeled 'loss'. The loss backpropagates through the network, updating only the masks and normal attributes of unmasked splats. The legend at bottom-right clarifies that solid black arrows indicate forward pass and dashed blue arrows indicate backward pass. The figure also notes T1=1 as the initial transmittance. The overall structure emphasizes the dual role of masks: controlling visibility during rendering and enabling selective gradient updates for training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

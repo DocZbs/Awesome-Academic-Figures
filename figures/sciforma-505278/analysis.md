@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Enhancing Drug-Target Interaction Prediction through Transfer Learning from Activity Cliff Prediction Tasks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19815
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic overview of a compound-based dataset splitting strategy for two distinct computational biology tasks: Drug-Target Interaction (DTI) prediction and Activity Clustering (AC) prediction. The global layout is divided into two main horizontal workflows: the upper portion illustrates the DTI task, while the lower portion details the AC task. On the left side, two large oval clusters labeled 'Proteins' and 'Compounds' represent the initial dataset. The 'Proteins' cluster contains stylized blue wavy lines symbolizing different proteins, and the 'Compounds' cluster contains two groups of molecules—green for one set and red for another—representing different chemical compounds. Lines connect individual proteins to compounds, annotated with numerical values (e.g., 0.4, 0.2, 1.3, 0.9), indicating interaction affinities. These interactions feed into two separate downstream processes via black arrows.
+
+In the upper workflow, the dataset is partitioned into 'train' and 'test' subsets, depicted as two dashed rectangular grids. Each grid row corresponds to a compound (green or red), and columns represent proteins (labeled M1 through Mn). The cells within these grids are shaded in varying intensities of gray to denote continuous affinity scores, with darker shades indicating higher affinity. This represents the DTI prediction task where the model learns to predict interaction strengths between compounds and proteins.
+
+The lower workflow outlines the AC prediction task, which involves three sequential steps. First, compounds interacting with a given protein are extracted from both train and test sets and fed into a series of gray rectangular layers representing a neural network or embedding module. These layers process the compounds, producing embedded representations. Second, the processed compounds are paired based on structural similarity, visualized by dashed boxes grouping similar molecules. Third, each compound pair is classified as either an AC (Activity Cluster) or non-AC. This classification is shown in a final grid where green squares denote AC pairs and orange squares denote non-AC pairs. A legend on the right clarifies the color coding: gray stripes represent affinity, green indicates AC, and orange indicates non-AC. Additionally, small molecule diagrams above the final grid illustrate examples of compound pairs being evaluated. The entire AC pipeline is driven by protein-specific inputs, indicated by a blue wavy line labeled 'proteins' feeding into the first processing layer. The figure effectively contrasts the direct DTI prediction approach with the more complex, multi-step AC prediction framework.

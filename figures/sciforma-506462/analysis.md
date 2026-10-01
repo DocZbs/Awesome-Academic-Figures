@@ -1,0 +1,28 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+GAN-TAT: A Novel Framework Using Protein Interaction Networks in Druggable Gene Identification — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01458
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the GAN-TAT architecture, divided into two main parts: A) the overall pipeline comprising an upstream and downstream module, and B) the detailed design of the ImGAGN-GraphSAGE model used in the upstream module.
+
+[1] Global Layout and Structure:
+Part A is structured into two primary modules: the Upstream Module on the left and the Downstream Module on the right, separated by a vertical dashed line. The Upstream Module is further subdivided into two parallel pathways: 'Graph Embedding' at the top and 'Extended Features' at the bottom. These pathways converge via a direct sum operation (⊕) before feeding into the Downstream Module. The Downstream Module shows a data partitioning and classification process. Part B provides a detailed breakdown of the ImGAGN-GraphSAGE model, showing the Generator, Encoder, and Discriminator components arranged vertically, with the Generator on the right and the Encoder/Discriminator on the left.
+
+[2] Visual Modules and Attributes:
+In Part A, the 'Graph Embedding' pathway begins with two light blue cylindrical nodes labeled 'SignalLink 3.0' and 'Uniprot', connected to a gray arrow pointing to a 'PIN construct' represented as a small network graph with purple nodes and black edges. This feeds into a 3D block labeled 'ImGAGN-GraphSAGE' with 'Generator' written on its side, which outputs a blue grid labeled '80 Features' for 6048 genes. The 'Extended Features' pathway includes four pink cylindrical nodes labeled 'CTD', 'DGIDB', 'gnomAD', and 'InterPro', followed by a gray arrow labeled 'Pre-processing' leading to a red grid labeled '324 Features' for 6048 genes. The two feature sets are combined via a ⊕ symbol to form a composite input for the Downstream Module. The Downstream Module displays a scatter plot of K genes with purple dots representing positive labels (minority) and light purple dots for negative labels (majority). This set is split into M folds, each containing 80% random samples, shown as smaller scatter plots. Each fold is processed by an XgBoost classifier (labeled XgBoost_1 to XgBoost_M), whose predictions are averaged to produce the final output.
+
+In Part B, the 'Generator' is depicted as a vertical stack of layers: 'Noise Space' (pink), followed by 'Fully connected layer' (light blue), 'ReLU' (yellow), another 'Fully connected layer' (light blue), 'ReLU' (yellow), another 'Fully connected layer' (light blue), and finally 'Tanh' (purple). The 'Encoder' consists of a 'SageCONV layer' (light blue), 'ReLU' (yellow), 'Dropout' (beige), another 'SageCONV layer' (light blue), 'ReLU' (yellow), and 'Dropout' (beige), culminating in an 'Embedded Space (80 Dim)' box. The 'Discriminator' follows with a 'SageCONV layer' (light blue), 'Softmax' (green), and 'Loss Calculation' (gray). The Generator's output connects to the Encoder's input, and the Encoder's output connects to the Discriminator's input. The Discriminator's output feeds back into the Loss Calculation, which influences the Generator via a feedback loop.
+
+[3] Connections and Arrows:
+In Part A, arrows indicate data flow: from SignalLink/Uniprot to PIN construct, then to ImGAGN-GraphSAGE, producing 80 features. Similarly, CTD/DGIDB/gnomAD/InterPro feed into pre-processing, yielding 324 features. The two feature sets are summed (⊕) and passed to the Downstream Module. Within the Downstream Module, the entire gene set is partitioned into M folds, each trained with an XgBoost classifier, and their outputs are averaged. In Part B, the Generator's output connects to the Encoder's input. The Encoder's output (Embedded Space) connects to the Discriminator's input. The Discriminator's output goes to Loss Calculation, which sends a feedback signal back to the Generator, forming a closed-loop adversarial training structure.

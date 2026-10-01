@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504683",
+  "record_sha256": "08de3b7361caf934c2b611d3d37b9180fa23dee8afef676bbabec58ebe71d9ca",
+  "asset_sha256": "3e3e81e4d7112b9cdde422bf049a5b3757dbc21db83699b0e5f3b7bc565ea2dd",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504683",
+    "title": {
+      "zh": "Order Matters! An Empirical Study on Large Language Models' Input Order Bias in Software Fault Localization · 方法图",
+      "en": "Order Matters! An Empirical Study on Large Language Models' Input Order Bias in Software Fault Localization"
+    },
+    "paper": {
+      "id": "arxiv-2412-18750",
+      "title": "Order Matters! An Empirical Study on Large Language Models' Input Order Bias in Software Fault Localization",
+      "authors": [
+        "Md Nakhla Rafi",
+        "Dong Jae Kim",
+        "Tse-Hsun Chen",
+        "Shaowei Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18750",
+      "arxiv_url": "https://arxiv.org/abs/2412.18750",
+      "arxiv_id": "2412.18750",
+      "arxiv_first_submitted_at": "2024-12-25T02:48:53Z",
+      "arxiv_updated_at": "2025-09-26T19:33:14Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18750v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504683/image/image.jpg?Expires=1790855433&Signature=EW3rA34KcI7ZJspQzUm3vpIZfRERHICMpXyeXgt3z-mMcKGiSaSbzkWdrGpNM2KmO5-A5EXhXEvRTOip15XFVe6N30poPWVIY-gnIB5OkyVAoHA7G8ZjH3OlRl8E0FS-1Hx4BhuQjUnYTc3OXymCezYLDm2tDkwOrIfY9MPANvBL6-DpyYtl~6CrRO5uwOpAg-TwcLM9DiEXngaqRszj0OHYOapY3eGa1k-OK8v3YvDOh245rF-ph--ny61yRjITPV1KULv9olfj-2O0HNMyaJLQeNmqrAzHc3WZA4SFZXnwiAQ1kpGKfjp7W82JHdIA4YmriaPJwEoVQyUQpc0L7w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504683,
+      "description_sha256": "b6d4cfbfd2de0a757bf679a16df2800af5b82d3907bb300fbb4f88008e24fd16",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2551e5a9913618df500d54056a147ec503af7571e61d38aa0fc834e94c2c8bf2",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a fault localization (FL) approach using Large Language Models (LLMs), structured as a sequential workflow divided into distinct stages. The global layout is left-to-right, beginning with a dashed rectangular boundary labeled 'System Under Test' on the far left, followed by a series of processing steps leading to evaluation outcomes on the right. Inside the 'System Under Test' box, three input components are shown: 'Stack Trace', 'Failing Test Code', and 'Covered Methods', each represented as a rounded rectangle with black borders and black text. These inputs feed into three parallel output modules: 'Kendall Tau-Based Ordered Method List', 'Segmented Ordered Method Lists with Varying Sizes', and 'Strategy-Based Ordered Method List', also depicted as rounded rectangles with black borders and black text. Each of these outputs is connected via thin black lines from the respective input, indicating derivation or transformation. A thick blue arrow points from the 'System Under Test' box to the next stage, labeled 'Fault Localization (FL) Using LLM', which is a standard rectangular box with black border and black text. This module processes the ordered method lists and produces 'Ranked Suspicious Methods', another rectangular box with black border and black text, connected by a thick blue arrow. From here, another thick blue arrow leads to the 'Evaluate' module, also a rectangular box with black border and black text. The 'Evaluate' module branches out into three evaluation outcomes, each represented as a rounded rectangle with black borders and black text: 'Order Bias Across Kendall Tau Variations', 'Order Bias Across Segment Sizes', and 'FL Performance Across Different Ordering Strategies'. These are connected to 'Evaluate' via thin black lines, indicating separate metrics or analyses derived from the evaluation process. The entire diagram uses a clean, monochrome color scheme with black text and borders, except for the thick blue arrows that signify major transitions between stages. All text is in a sans-serif font, and the layout emphasizes a clear, linear progression from inputs through processing to evaluation, with branching at the final stage to show multiple performance dimensions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-504361",
+  "record_sha256": "ee424335db2fdf2ff0f2a43830b86c2eee4f63d9d726c162d8c9148af0735030",
+  "asset_sha256": "bb26b765fb12d5e8191299c060de2f64248a5e3581af2df67318a20393a85fe5",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504361",
+    "title": {
+      "zh": "Parallel Neural Computing for Scene Understanding from LiDAR Perception in Autonomous Racing · 方法图",
+      "en": "Parallel Neural Computing for Scene Understanding from LiDAR Perception in Autonomous Racing"
+    },
+    "paper": {
+      "id": "arxiv-2412-18165",
+      "title": "Parallel Neural Computing for Scene Understanding from LiDAR Perception in Autonomous Racing",
+      "authors": [
+        "Suwesh Prasad Sah"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18165",
+      "arxiv_url": "https://arxiv.org/abs/2412.18165",
+      "arxiv_id": "2412.18165",
+      "arxiv_first_submitted_at": "2024-12-24T04:56:32Z",
+      "arxiv_updated_at": "2024-12-24T04:56:32Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/ISED63599.2024.10956572",
+      "journal_reference": "12th International Conference on Intelligent Systems and Embedded Design (ISED-2024)",
+      "arxiv_current_version_observed": "2412.18165v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504361/image/image.jpg?Expires=1790855429&Signature=rhhKcmiiq5ko7C8UjGlM8Ggmif5zWLmb7J4Uvk6NJMrth7ldmfNWoTrl3n3YBYxjFFF-Odn0hG1Nln2-vU~XeVtw8qzSM~qTeJy9Ss9htAu2cOcgBeTKQh~sDDQXZ1CjQM~-ONnujpKmdWV5C9WtTyQEs6goxnbK~3EMUiyGMRN2L7Bv39gRJ8warOVlvcF43NtFVAVWIxx5m2t9pLmHPUl4Rc9Jsf-AOEsIpfDyTCeQuXnN-ztaYnJO41PZd~Fvn5WzEXODRD1j2nPYK8pqYpQmKCzjYCv~spqi1q9duEjt-lyGC65zZ4LOlm8xdkPuJeEc0dGGzi-EqZC~0cwuMw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504361,
+      "description_sha256": "28099104bb5e009f69f5c5cde2880afca5c13858eda9506b676462093024df50",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "166e1c7322752559dee8fb160cf027d45b234141b9f38274318833415b54061a",
+      "row_response_sha256": "8687b25e1ce22a5866705e67d2d321c1fe79ec01b68d67e62cf85495dbe4bcd6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the PPN (Probabilistic Perception Network) architecture, which processes a sequence of Bird's Eye View (BEV) maps over time. On the left side, a stack of BEV maps is shown, labeled from 'tn-15' to 'tn', indicating a temporal sequence of 16 frames. These maps are visually represented as dark images with red and orange highlights, likely depicting road features or vehicle positions from a top-down perspective.\n\nThe input sequence is fed into two parallel neural network branches: a Segmentation Network and a Reconstruction Network. Both networks follow an encoder-decoder architecture, depicted as gray trapezoidal blocks with the labels 'Encoder' and 'Decoder' inside. The Segmentation Network is enclosed in a larger rectangular box and includes dashed lines labeled 'Skip Connections' above the encoder and decoder, indicating feature reuse across different layers for improved spatial detail preservation. This network is described in the caption as a spatio-temporal pyramid network.\n\nThe Reconstruction Network, located below the Segmentation Network, also consists of an encoder and decoder but lacks explicit skip connections in the diagram. It is identified in the caption as an autoencoder, suggesting its role in reconstructing the input sequence.\n\nEach network outputs a processed image on the right side. The output of the Segmentation Network shows a segmented version of the BEV map, with distinct red outlines highlighting specific regions, possibly lane markings or obstacles. The output of the Reconstruction Network displays a reconstructed BEV map with a more uniform red glow, indicating a focus on overall structure recovery rather than fine segmentation.\n\nArrows indicate the flow of data: from the input sequence to both networks, and then from each network’s decoder to its respective output image. The layout is horizontal and modular, emphasizing the parallel processing of the same input by two specialized networks. The visual design uses consistent gray tones for network components, black backgrounds for input/output images, and red/orange hues for highlighted features, ensuring clarity and focus on the architectural flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

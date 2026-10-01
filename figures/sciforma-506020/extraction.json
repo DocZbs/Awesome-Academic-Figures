@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-506020",
+  "record_sha256": "e15ec03f7193c9c7ebca1bdc1e0a855e39a8cf4b0356e646f43cda7457ce7e53",
+  "asset_sha256": "395dea7fcbb1a63af98ac1e61aa6ac8c03f3c491b40658b729d97b456b5843bc",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506020",
+    "title": {
+      "zh": "Speech Recognition With LLMs Adapted to Disordered Speech Using Reinforcement Learning · 方法图",
+      "en": "Speech Recognition With LLMs Adapted to Disordered Speech Using Reinforcement Learning"
+    },
+    "paper": {
+      "id": "arxiv-2501-00039",
+      "title": "Speech Recognition With LLMs Adapted to Disordered Speech Using Reinforcement Learning",
+      "authors": [
+        "Chirag Nagpal",
+        "Subhashini Venugopalan",
+        "Jimmy Tobin",
+        "Marilyn Ladewig",
+        "Katherine Heller",
+        "Katrin Tomanek"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00039",
+      "arxiv_url": "https://arxiv.org/abs/2501.00039",
+      "arxiv_id": "2501.00039",
+      "arxiv_first_submitted_at": "2024-12-25T00:16:22Z",
+      "arxiv_updated_at": "2024-12-25T00:16:22Z",
+      "arxiv_subjects": [
+        "eess.AS",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00039v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506020/image/image.jpg?Expires=1790855568&Signature=IHFKb7Rgjo6GXN95tBRZnb~UAmEIGDuUN3~2sxhhzemlxLA5h75xz41wnbRwDBqn7cZau7StbM5puWBRYieVHLjLr6b3D8H5meMYRlWzQVsyLPf13wMUtSYGEExzFurpX2j4JZwYyE3m8DegrDleMhx1m17lC52tM2J7NQNVPD-X-BLHsBVAkrZ4ZHlY~EDHCgx~qiSPmoy~d~vuPfKcHCnWqcDdas2pHyPohb2KWXhBONgfb4dZBmzK-eRkDv-fIG0OVITiGIIM51b1m-pAMs9J1BJmhVIurgCtY~OoJNGEKaiLlLbcp8A1w3cHT2ifDnHtuOazIZclsX1ngxMETQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506020,
+      "description_sha256": "0a5fcfd472d3cd98c22ca957a6d5435b51c844e1964eaebe2080ffbe24b4cce9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ed400d2862e458999b89f7aee76b5fb96c8aeb5b7882fe748bb738de579aa660",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.AS",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a method for using a large language model (LLM), specifically Gemma 2B, for automatic speech recognition (ASR) through a multi-stage pipeline involving audio tokenization, clustering-based remapping, supervised fine-tuning, and reinforcement learning with alignment rewards. The global layout is left-to-right, depicting a data flow from raw audio input to final model output, with feedback loops for reward-based optimization.\n\nOn the far left, a blue waveform icon represents raw audio input, which is processed by a blue trapezoidal module labeled 'Audio Tokenizer'. This module outputs a set of audio tokens, visualized as purple rectangular blocks. These audio tokens are then fed into a clustering component, shown as a scatter plot with yellow, red, and blue points grouped into clusters, indicating unsupervised grouping of embeddings. A vertical stack of yellow rectangles labeled 'vocab' represents the LLM’s vocabulary space, and arrows from the clusters point to corresponding purple tokens below, illustrating a 'Remapping' process where audio tokens are mapped to vocabulary tokens based on cluster assignments.\n\nThe remapped audio tokens are passed to a central green rectangular block labeled 'Gemma 2B', marked with a small flame icon, indicating it is the primary LLM used in the pipeline. This model generates 'text tokens', represented as yellow rectangular blocks, which are then converted into a string output: 'Hello word.' — shown in a beige rounded rectangle labeled 'Model Output'.\n\nAbove this main path, a 'True Transcript' box contains the correct text: 'Hello world!'. A red arrow connects this true transcript directly to a pink rectangular box labeled 'Alignment Reward', which contains two subcomponents: 'Meaning Preservation Reward Model (Gemma 2B)' and 'Word Error Rate'. These components are combined via a '+' symbol, indicating the total reward is a sum of both metrics. A red arrow labeled 'Reward Signal' flows from the Alignment Reward box back to the Gemma 2B model, forming a reinforcement learning loop that guides the model to improve its output by minimizing word errors and preserving semantic meaning.\n\nThe figure visually emphasizes the integration of clustering for vocabulary alignment, supervised training on disordered speech (implied by the remapping), and reinforcement learning for fine-grained optimization. The color coding is consistent: blue for audio processing, purple for audio tokens, yellow for text/vocabulary tokens, green for the LLM, and pink for the reward mechanism. Text labels are clear and positioned near relevant components, with arrows indicating data and control flow. The overall structure reflects a hybrid approach combining unsupervised clustering, supervised learning, and reinforcement learning to enhance ASR performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

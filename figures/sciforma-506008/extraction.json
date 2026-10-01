@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-506008",
+  "record_sha256": "5b8bbc7c62024d0966ba3e8cfbb26943bd03facd3e8c7ed61bbf4826e7880f32",
+  "asset_sha256": "a5430087026020e2e2e7a4d25d67fc6de86dcf54e60f5734ee38038bfcb9a93d",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1344,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506008",
+    "title": {
+      "zh": "PERSE: Personalized 3D Generative Avatars from A Single Portrait · 方法图",
+      "en": "PERSE: Personalized 3D Generative Avatars from A Single Portrait"
+    },
+    "paper": {
+      "id": "arxiv-2412-21206",
+      "title": "PERSE: Personalized 3D Generative Avatars from A Single Portrait",
+      "authors": [
+        "Hyunsoo Cha",
+        "Inhee Lee",
+        "Hanbyul Joo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21206",
+      "arxiv_url": "https://arxiv.org/abs/2412.21206",
+      "arxiv_id": "2412.21206",
+      "arxiv_first_submitted_at": "2024-12-30T18:59:58Z",
+      "arxiv_updated_at": "2025-09-28T10:33:24Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21206v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506008/image/image.jpg?Expires=1790855567&Signature=Ma4mZsCWNePYnHGP6uLDY1ZPjuL5F7BY5~RHZNpDPzttIKAhyB5TIcZADbbp5tkmqLOAXwMeKZiW6yZ1PojVNw1YsI-wLIToHnDuy-mOyftjKDlcGdKRUn3im8fjjF1YUTPAqYjZBdFUn8BEPmCIEhMEkzmGK8WCsVJr1l60lSrsI5gcDb7Qg2ko4Jv5u6yvowa8aqUvnvHZiFr6ca9PSEL5xD0K5a3eRjpqntNvY~z9Bc7kP9NyKBzWuSDIS0z~uEhcz5QrnZiCj1DErFJK4NP6OxHMgAhQ-kb7cFQ4-JLM81z12dxO-Tk80HkLNxTCSttlR4VkdqWZnRLSwAGmEw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506008,
+      "description_sha256": "4032ffc16a514561d04a2d3a698feeb2e95f50262a51468f555b7a77b92e3c3f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f24e6d49540d95949f74ebffcada453c1e3c2fcc60a0031f5e00348a0159488e",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four distinct neural network architectures labeled (a) through (d), collectively forming the network configuration of an avatar model. The global layout is divided into two main horizontal sections: the top section contains (a) Pose-conditioned Deformation MLP_pose and (b) Canonical MLP_c, while the bottom section contains (c) Latent Mapping MLP_z and (d) Deformation MLP_d. Each module is represented as a sequence of rectangular blocks arranged horizontally, indicating layers in a multi-layer perceptron (MLP) structure, with connections shown as lines between blocks or from input to output.\n\nIn (a) Pose-conditioned Deformation MLP_pose, inputs PE(x^sc) and Z are fed into a series of 9 light green rectangular blocks, each labeled '512', representing hidden layers of 512 dimensions. These are followed by a final layer of size 3, then a blue block labeled 'Sig' (sigmoid activation), producing output s^sc. A separate branch takes input x^d - x^fc and Z, passing through three light green blocks of size 128, then branching into four parallel paths: one with a 3-unit layer and 'Sig' outputting Δs, another with 1-unit layer and 'Sig' outputting Δo, a third with 3-unit layer and 'Sig' outputting Δc, and a fourth with 4-unit layer outputting Δq. The outputs of the first 9 layers in the main branch also feed into additional branches leading to outputs o^sc, c^sc, and q^sc via intermediate 512-unit layers and corresponding activation layers (Sig or direct output).\n\nIn (b) Canonical MLP_c, the same 9x512 layer structure as in (a) is used, but with different branching. From the 9th 512-layer, three branches emerge: one to a 3-unit layer with 'Sig' outputting o^sc, another to a 3-unit layer with 'Sig' outputting c^sc, and a third to a 4-unit layer outputting q^sc. The input is PE(x^sc) and Z, and the primary output is s^sc.\n\nIn (c) Latent Mapping MLP_z, inputs f_I and f_T are processed through two consecutive 512-unit light green blocks, followed by a 32-unit block, producing output Z.\n\nIn (d) Deformation MLP_d, inputs x^gc and Z are fed into four 128-unit light green blocks. From the last 128-unit block, multiple branches diverge: one to a 5-unit block with 'Softmax' outputting W(x^gc); another to a 150-unit block outputting E(x^gc); a third to a 108-unit block outputting P(x^gc); a fourth to a 3-unit block outputting O^{sc→fc}; and a fifth to two 128-unit blocks followed by a 3-unit block outputting O^{gc→sc}. All blocks are light green except for activation functions (blue), which include 'Sig' and 'Softmax'. The figure uses consistent visual attributes: light green rectangles for linear layers, blue rectangles for activation functions, and black lines for data flow. Text labels denote layer sizes, activations, and outputs. The overall workflow suggests a modular design where latent codes Z are generated from inputs f_I and f_T, then used alongside pose or geometry coordinates to compute deformations and canonical representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

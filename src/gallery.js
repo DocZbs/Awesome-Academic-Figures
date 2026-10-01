@@ -1,6 +1,7 @@
 export const TYPE_LABELS = {
   teaser: "Teaser 图",
   mechanism: "机制图",
+  experimental: "实验图",
   architecture: "方法框架图",
   flowchart: "流程图",
   conceptual: "概念示意图",
@@ -8,6 +9,12 @@ export const TYPE_LABELS = {
   data: "数据图",
   "multi-panel": "多面板组合图",
   taxonomy: "分类与层级图",
+  unclassified: "待分类",
+};
+export const BROWSE_TYPE_LABELS = {
+  teaser: "Teaser 图",
+  mechanism: "机制图",
+  experimental: "实验图",
   unclassified: "待分类",
 };
 export const PURPOSE_LABELS = {
@@ -65,7 +72,10 @@ export const FILTER_FIELDS = {
       label,
     })),
   },
-  venue: { label: "会议来源", options: [{ value: "ICML", label: "ICML" }] },
+  venue: {
+    label: "会议 / 期刊来源",
+    options: [{ value: "ICML", label: "ICML" }],
+  },
   year: { label: "论文年份", options: [{ value: "2025", label: "2025" }] },
 };
 export function valuesFor(figure, field) {
@@ -80,6 +90,23 @@ export function valuesFor(figure, field) {
         ),
         ...(figure.classification.purposes?.includes("mechanism")
           ? ["mechanism"]
+          : []),
+        ...(figure.classification.types.some((type) =>
+          ["architecture", "flowchart", "conceptual", "taxonomy"].includes(
+            type,
+          ),
+        )
+          ? ["mechanism"]
+          : []),
+        ...(figure.classification.types.some((type) =>
+          ["data", "qualitative", "line", "bar", "scatter", "heatmap"].includes(
+            type,
+          ),
+        ) ||
+        figure.classification.purposes?.some((purpose) =>
+          ["comparison", "qualitative", "experimental-setup"].includes(purpose),
+        )
+          ? ["experimental"]
           : []),
       ]),
     ];
@@ -100,12 +127,24 @@ export function valuesFor(figure, field) {
   if (field === "year") return [String(figure.paper.publication_year)];
   return [];
 }
+export function browseGenresFor(figure) {
+  const genres = valuesFor(figure, "type").filter(
+    (value) => value in BROWSE_TYPE_LABELS && value !== "unclassified",
+  );
+  return genres.length ? genres : ["unclassified"];
+}
 export function categorySummary(figures, dimension) {
   const counts = {};
   let unlabelled = 0;
   let overlapping = false;
   for (const figure of figures) {
-    const values = [...new Set(valuesFor(figure, dimension))];
+    const values = [
+      ...new Set(
+        dimension === "type"
+          ? browseGenresFor(figure)
+          : valuesFor(figure, dimension),
+      ),
+    ];
     if (values.includes("unlabelled")) unlabelled++;
     if (values.length > 1) overlapping = true;
     for (const value of values) counts[value] = (counts[value] || 0) + 1;
@@ -223,7 +262,11 @@ export function filterFigures(figures, state, favorites, hidden) {
       return false;
     if (
       state.category !== "all" &&
-      !valuesFor(figure, state.dimension).includes(state.category)
+      !(
+        state.dimension === "type" && state.category in BROWSE_TYPE_LABELS
+          ? browseGenresFor(figure)
+          : valuesFor(figure, state.dimension)
+      ).includes(state.category)
     )
       return false;
     if (
@@ -245,6 +288,7 @@ export function filterFigures(figures, state, favorites, hidden) {
         ...(figure.paper.awards || []).map((award) => award.official_name),
         ...(figure.paper.awards?.length ? ["获奖论文"] : []),
         ...figure.classification.types.map((key) => TYPE_LABELS[key] || key),
+        ...browseGenresFor(figure).map((key) => BROWSE_TYPE_LABELS[key]),
       ].join(" "),
     );
     return normalized(state.query)
@@ -254,18 +298,34 @@ export function filterFigures(figures, state, favorites, hidden) {
 }
 export function readUrl() {
   const params = new URLSearchParams(location.search);
+  const dimension =
+    params.get("dimension") in DIMENSIONS ? params.get("dimension") : "type";
+  const category = params.get("category") || "all";
+  const previousCategories = {
+    architecture: "mechanism",
+    flowchart: "mechanism",
+    conceptual: "mechanism",
+    taxonomy: "mechanism",
+    data: "experimental",
+    qualitative: "experimental",
+    "multi-panel": "experimental",
+  };
   return {
     query: params.get("q") || "",
-    dimension:
-      params.get("dimension") in DIMENSIONS ? params.get("dimension") : "type",
-    category: params.get("category") || "all",
+    dimension,
+    category:
+      dimension === "type"
+        ? previousCategories[category] || category
+        : category,
     view: ["favorites", "hidden"].includes(params.get("view"))
       ? params.get("view")
       : "gallery",
     filters: Object.fromEntries(
       Object.keys(FILTER_FIELDS).map((key) => [
         key,
-        (params.get(key) || "").split(",").filter(Boolean),
+        key === "number"
+          ? []
+          : (params.get(key) || "").split(",").filter(Boolean),
       ]),
     ),
   };

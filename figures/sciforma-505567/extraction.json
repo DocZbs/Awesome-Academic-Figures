@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-505567",
+  "record_sha256": "978bc31386c7b274f6f8e6d8d955c61e7e421a5e9b3b7c22230aa8a0d9a397fa",
+  "asset_sha256": "8a211c842733541230f10f4603517eab08fb73c9fa42d818f7f34afc97ddd927",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505567",
+    "title": {
+      "zh": "An Experimental Study on Fairness-aware Machine Learning for Credit Scoring Problems · 方法图",
+      "en": "An Experimental Study on Fairness-aware Machine Learning for Credit Scoring Problems"
+    },
+    "paper": {
+      "id": "arxiv-2412-20298",
+      "title": "An Experimental Study on Fairness-aware Machine Learning for Credit Scoring Problems",
+      "authors": [
+        "Huyen Giang Thi Thu",
+        "Thang Viet Doan",
+        "Ha-Bang Ban",
+        "Tai Le Quy"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20298",
+      "arxiv_url": "https://arxiv.org/abs/2412.20298",
+      "arxiv_id": "2412.20298",
+      "arxiv_first_submitted_at": "2024-12-28T23:27:07Z",
+      "arxiv_updated_at": "2026-03-05T16:19:05Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CY",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1007/s42521-026-00202-6",
+      "arxiv_current_version_observed": "2412.20298v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505567/image/image.jpg?Expires=1790855553&Signature=rCsfV82dkj8hzIBiVt~MsrAudEdDVlUiifvrQf-35nLlxfO-otroUVtcGufybIjt7IJ9nE2BvKqmEbTEHG3~V6M717L-zO0paT5uTU-aWItb6BiaV-jDyM4HmnB4j1p2hmNQVt8RXdE2HU~2bdHaHf9m~nmxHHVKVui6B1DoIZravg2biqayprGfWvVRCPiz697pBa3uEo34Lt4fp~Zt6miWIjsGG6sKJj9E8KbKv2DnQx~IYysSsEmH50xyuPNumX~pE2GZcsGIcHglPnBkQD4waly82xnDXuBW~3kyih6cqhUt4lvV9rEfd2mGoMyl6DeqlweDfKI8rKIKLMM~jA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505567,
+      "description_sha256": "888212196999a440e038c8641de2a6e141df193323db2f7efe52d51e43def028",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4123e48354f5e176dd1d9086596a8be6efea71e0be99ede53242aebe71b6a976",
+      "row_response_sha256": "d37805d4c9b51ec0e0bc0b3de34b4895b78b924f6d3149b105af3ebd4dca086e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CY",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a Bayesian network model for credit scoring, structured as a directed acyclic graph (DAG) with nodes representing variables and edges indicating probabilistic dependencies. The global layout is hierarchical, flowing from top to bottom, with the root node 'Sex' at the top left, branching into multiple intermediate and terminal nodes. The network is organized into distinct functional clusters: demographic and protected attributes on the upper left, score-related variables in the center, behavioral and account-related features on the right, and credit outcome variables at the bottom.\n\nVisual modules consist of oval-shaped nodes, each labeled with a variable name. Nodes are color-coded to denote their role: blue ovals represent protected attributes ('Sex', 'Marital', 'Age'), a yellow oval marks the class label ('label'), and all other nodes are red ovals, indicating non-protected or derived variables. The text within each node is black, centered, and uses a standard sans-serif font. The edges are solid black arrows pointing from parent to child nodes, indicating the direction of influence in the probabilistic model.\n\nThe connections form a clear causal flow. From 'Sex', two edges lead to 'Marital' and 'Field'. 'Marital' further connects to 'Age'. 'Field' branches to 'label', 'Score_level', and 'Changed_phone_number'. 'Score_level' leads to 'Score_class', which then points to 'Score_point'. 'Score_point' has three outgoing edges: to 'Region', 'INPS_yes_no', and 'Has_Credit'. 'Region' connects to 'Language', which in turn connects to 'Has_Credit'. 'INPS_yes_no' connects to 'INPS_mln_sum', which also receives an input from 'Changed_phone_number'. 'Changed_phone_number' additionally connects to 'Day_of_birth' and 'Linked_cards'. Both 'INPS_mln_sum' and 'Score_point' feed into 'Has_Credit', which finally connects to 'Number_of_credits'. The node 'Month_of_birth' appears as a standalone node at the top, with no incoming or outgoing edges, suggesting it may be an unused or placeholder variable in this specific model. The caption clarifies that 'label' is the class label (target variable) and 'Age', 'Marital', 'Sex' are protected attributes, which are visually distinguished by their blue color."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

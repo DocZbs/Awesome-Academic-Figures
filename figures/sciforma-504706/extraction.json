@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504706",
+  "record_sha256": "4fd41dfa95c0ebab26646f31e865c7fea657ff65f7b4ac87a26f39d0361d423a",
+  "asset_sha256": "a12979368bb1b0045fface832febab896e475e0ae97a7891336c292d742c42fb",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504706",
+    "title": {
+      "zh": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics · 方法图",
+      "en": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics"
+    },
+    "paper": {
+      "id": "arxiv-2412-18785",
+      "title": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics",
+      "authors": [
+        "Buzhen Huang",
+        "Jingyi Ju",
+        "Yuan Shu",
+        "Yangang Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18785",
+      "arxiv_url": "https://arxiv.org/abs/2412.18785",
+      "arxiv_id": "2412.18785",
+      "arxiv_first_submitted_at": "2024-12-25T05:35:30Z",
+      "arxiv_updated_at": "2024-12-25T05:35:30Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TCSVT.2023.3328371",
+      "arxiv_current_version_observed": "2412.18785v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504706/image/image.jpg?Expires=1790855435&Signature=OqZoe~zuguxo0Mw9f7xJ9OtduGioyWp329MIvuUnL7UI73X-Sx0jWKI4sjBQF3ADHYjzHMrQteJjWHw-xLP~SR-OOu247y1FwsMtdJMEK0QHrDey6DwCLzhgbj4uw-F~tAfN7lCr7ycQlFnF0oKIeJt6xdhday19g3KPWZR1dRU-dmu7yhi33cK8plEKjj3vmW7D1vC14lDtuHmjjVuJDHekDgav5yO7UkBFar4TvaYGtZKqP9kOD3Zzm~VFJxH80ndK9Yl17w8H8KtXGC2ast~yKvfb95I3fGBHFqY~I5hvJ1GLoL7GoOcSDeR4UekB9c-NQQd2jO4YfNzccIBS7w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504706,
+      "description_sha256": "7adcb58c99203a7055a72e894d1a8ba5bd3264ddc39a5673ff118219b80df913",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5bed66fcc358aab00513b8bc19e054054d2711d277174b7a1c0598f289fedb19",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating the pipeline of a method designed to jointly recover camera parameters and human meshes from detected human semantics, leveraging a motion prior. The global layout is structured as a two-row horizontal workflow, with the top row representing sequential initialization steps and the bottom row showing inputs converging into a central optimization module. All modules are represented as rounded rectangles with gray borders; most have a light peach background, while the central 'Simultaneous Optimization' module stands out with a salmon-orange fill, emphasizing its role as the core computational stage.\n\nIn the top row, the process begins with '2D/3D Pose Detection', which feeds into 'Intrinsics Initialization'. This step then passes to 'Extrinsics Initialization', completing the initial parameter setup. From here, an arrow descends to 'Pose Association' in the bottom row, indicating that extrinsic initialization informs pose correspondence across frames or views.\n\nIn parallel, the bottom row starts with 'Motion Prior', which represents prior knowledge about human motion dynamics. This module connects directly to the central 'Simultaneous Optimization' block. Additionally, 'Pose Association' also feeds into this same optimization module, forming a convergence point where both motion constraints and pose correspondences are integrated.\n\nAll connections are depicted using solid gray arrows with triangular heads, indicating unidirectional data flow. The arrows clearly define the dependency structure: pose detection initiates the chain, leading through intrinsic and extrinsic initialization, which then enables pose association. Simultaneously, the motion prior is introduced independently and combined with pose association results within the final optimization stage. The figure visually emphasizes that the 'Simultaneous Optimization' module integrates multiple inputs—pose associations derived from initialized camera parameters and the motion prior—to achieve joint refinement of camera parameters and human mesh reconstruction. The caption clarifies that this architecture enables precise recovery of both camera parameters and human meshes by leveraging semantic pose detections and motion priors."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

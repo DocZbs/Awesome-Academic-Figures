@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-505493",
+  "record_sha256": "d01350793fd6f1893f447433cbb65189136d59a01b7eb23e879b88f952f924e8",
+  "asset_sha256": "874c33481edf7cdfa176a03713fbaeb72b5acf637daaa7bd68f570064fbd6d49",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505493",
+    "title": {
+      "zh": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting · 方法图",
+      "en": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting"
+    },
+    "paper": {
+      "id": "arxiv-2412-20155",
+      "title": "Stable-TTS: Stable Speaker-Adaptive Text-to-Speech Synthesis via Prosody Prompting",
+      "authors": [
+        "Wooseok Han",
+        "Minki Kang",
+        "Changhun Kim",
+        "Eunho Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20155",
+      "arxiv_url": "https://arxiv.org/abs/2412.20155",
+      "arxiv_id": "2412.20155",
+      "arxiv_first_submitted_at": "2024-12-28T13:54:30Z",
+      "arxiv_updated_at": "2024-12-28T13:54:30Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20155v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505493/image/image.jpg?Expires=1790855553&Signature=eUwtrrKjfgHyqklai791RJpNxGdzPj4u554YpK02qBxkO1t8goLucfBYjbrD5euAfNYzvJx0ywszc5O96fgW1T-q72f07QghAP5DNBWVRAE~TFLIfNPg1oAaa0BXgq6Zd3IY4wmpYaejq4KW7pXRNb9sN4JSznzwRZ4xge-xxg0vpFlLxgh1BovkMiQ2c3alJupSyAq1KN3tOZbnDg8qwF3~FoHL-AXmQkUBcl9aRj1ChL4WtxaVat639i74rA6uiDtFya09E2Marf9fDucfAxQQncYocOwJU2tRUok4TUMvROzo7FinlaWrdKPgqTIYJjQKzejz1QkqFeCBovF7Rw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505493,
+      "description_sha256": "6be97ed192e500bb8d0e9a0250cb43c8f59a8540a765de751eccb7c163a94279",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b21831fa99e088b56f023625d5d2b6207bd31ceeb6f479768a3a4e8009f50f3c",
+      "row_response_sha256": "a02aa24da361d3d550a34070afa09ff1d74c2d4923bb3e3aac0eee0380102e23"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the fine-tuning process of a diffusion-based model for speech synthesis, specifically focusing on preserving learned priors during training. The global layout is divided into two main horizontal pathways: one for the target sample and another for the prior sample, which was used during pre-training. Both pathways feed into noise estimators, which are central components of the diffusion model architecture.\n\nOn the left side, the 'Target Sample' is represented by a green-bordered box containing the text 'How are you?' alongside its corresponding Mel spectrogram. Below it, the 'Prior Sample' is shown in a blue-bordered box with the text 'Hello, world.' and its Mel spectrogram. These samples serve as inputs to separate noise estimator modules.\n\nEach noise estimator is depicted as a gray bowtie-shaped module labeled 'Noise Estimator ε'. The top estimator processes the target sample’s noisy Mel spectrogram and outputs a reconstructed Mel spectrogram labeled 'Target', which matches the original target Mel. The bottom estimator processes the prior sample’s noisy Mel spectrogram and outputs a reconstructed Mel spectrogram labeled 'Prior', matching the original prior Mel.\n\nA bidirectional arrow labeled 'Shared Weights' connects the two noise estimators, indicating that they share the same model parameters during fine-tuning. This implies that the same noise estimation network is applied to both target and prior data, ensuring consistency across different input types.\n\nAt the bottom of the diagram, a red arrow labeled 'Prior-preservation Loss' connects the output of the lower noise estimator back to the upper one. This indicates that during fine-tuning, an additional loss term is computed to ensure that the model preserves the characteristics learned from the prior sample, preventing overfitting to the target sample alone.\n\nIn the top-right corner, a small cube icon labeled 'Frozen Diffusion' suggests that the underlying diffusion model architecture is fixed or frozen during this fine-tuning phase, with only specific components (like the noise estimator) being updated.\n\nThe overall workflow follows a diffusion-based denoising process: noisy Mel spectrograms are fed into shared noise estimators, which predict and remove noise to reconstruct clean spectrograms. Simultaneously, the prior-preservation loss ensures that the model retains knowledge from previously learned priors, balancing adaptation to new targets with retention of generalizable features.\n\nThis architecture enables efficient fine-tuning by leveraging shared weights and dual-loss optimization—diffusion loss for accurate reconstruction and prior-preservation loss for maintaining robustness and generalization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

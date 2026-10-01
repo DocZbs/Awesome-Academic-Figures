@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-504889",
+  "record_sha256": "8f7d220ac4800304a12e4589fd20ff732a763681020cb732e953395e74370b5f",
+  "asset_sha256": "d16a892be9d043943f45320257313282efce85b0e6e98e8ca4acbc99ee3c135b",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504889",
+    "title": {
+      "zh": "FFCG: Effective and Fast Family Column Generation for Solving Large-Scale Linear Program · 方法图",
+      "en": "FFCG: Effective and Fast Family Column Generation for Solving Large-Scale Linear Program"
+    },
+    "paper": {
+      "id": "arxiv-2412-19066",
+      "title": "FFCG: Effective and Fast Family Column Generation for Solving Large-Scale Linear Program",
+      "authors": [
+        "Yi-Xiang Hu",
+        "Feng Wu",
+        "Shaoang Li",
+        "Yifang Zhao",
+        "Xiang-Yang Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19066",
+      "arxiv_url": "https://arxiv.org/abs/2412.19066",
+      "arxiv_id": "2412.19066",
+      "arxiv_first_submitted_at": "2024-12-26T05:35:48Z",
+      "arxiv_updated_at": "2024-12-26T05:35:48Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19066v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504889/image/image.jpg?Expires=1790855446&Signature=tJJdlI75ACOOe4t~VQb9N5x3PvGczIGWr58cJ8fb0KYrhidTMTQniO0fJE6sM0OC1suDDCO7lmH5u7pEEzbke5pM4vq4EWnBKCFnqC90ZuYM9u2YQe46MYQ~cVv2pC7Yu0i69uoYb1eGeeCoDgGHn58TPFgOGZ~4qqKLq9V-Phi64DiNVOVLOtPpf9GBha~JuB5Q0km2DtbLbuw3piU9XxJ3FU1sxcFMkeNygQGgGrTEZ01X~H8pKgsZX6dV9Ing4jm3V1GjGz3~fRcjPdscFa8LEIhr2Nr2uyKpZqGdfxM~~xq6kO2yFsUQakuPpDgkW9uVas0DRz~eTBxfa5fzow__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504889,
+      "description_sha256": "65c02c6f166f89a36d1dfbfe68c430653a57a7e0321162645171c3a912094e14",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "06e0d5c16350505f76c233b89f7d2fab558f5589da9966acde7dbdd0cd1700ed",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the column selection process in the FFCG (Feature Feature Column Generation) framework, contrasting it with the RLCG (Reinforcement Learning Column Generation) approach. The global layout consists of five sequential stages arranged horizontally, each depicting a bipartite graph with two sets of nodes: variable nodes (v1 to v7) on the left and constraint nodes (c1 to c5) on the right, connected by edges representing relationships. The entire sequence is enclosed within a dashed red border, with the first stage labeled 'RLCG' in blue and the subsequent stages labeled 'FFCG' in red.\n\nIn each stage, variable nodes are represented as circles; initially, v4, v5, v6, and v7 are colored green to indicate they are part of the available action set G. When selected, a variable node turns orange. The constraint nodes (c1–c5) remain gray throughout. A special node labeled 'STOP' appears in later stages, depicted as a blue circle, signifying termination of the selection process.\n\nThe workflow begins with the RLCG stage, where the RL agent selects v4 from the green action set. This selection is indicated by an arrow labeled 'select v4' pointing to the next stage. In the second stage, the selected v4 becomes orange, and a new blue 'STOP' node is added below the variable nodes, with an arrow labeled 'add STOP' indicating this addition. The available action set is now updated to G minus {v4}, excluding v4 but including STOP.\n\nThe third stage shows the RL agent selecting v6 from the remaining green nodes (v5, v6, v7), turning v6 orange. An arrow labeled 'select v6' connects this stage to the next. In the fourth stage, v6 remains orange, and the agent continues selecting from the remaining green nodes. An arrow labeled 'until STOP is selected' points to the final stage, indicating the iterative nature of the process.\n\nIn the final stage, all previously selected nodes (v4, v6, v7) are orange, and the 'STOP' node is also orange, indicating it has been selected to terminate the process. The resulting selected column set C = {v4, v6, v7} is returned. The figure visually captures the dynamic update of the action space and the iterative selection mechanism guided by the RL agent, culminating in the termination condition."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

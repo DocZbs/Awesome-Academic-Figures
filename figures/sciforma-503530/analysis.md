@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+EasyVis2: A Real Time Multi-view 3D Visualization System for Laparoscopic Surgery Training Enhanced by a Deep Neural Network YOLOv8-Pose — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16742
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative workflow diagram of two 3D reconstruction systems: one for static background reconstruction and another for real-time moving objects reconstruction and 3D visualization. The layout is divided into two main vertical sections by dashed lines, each representing a distinct pipeline. The left section, titled 'Static background reconstruction', contains three rectangular modules stacked vertically. The top module, labeled 'Multi-view images input (only background)', is light blue with rounded corners. Below it is a medium blue module labeled 'Point-based dense 3D reconstruction', followed by a purple module at the bottom labeled 'Static background 3D model output'. The right section, titled 'Real-time moving objects reconstruction and 3D visualization', also has a vertical stack of modules. It begins with a light blue 'Multi-view images input' module, followed by a yellow-highlighted module labeled '2D object detection & pose estimation', which is marked as the 'Main difference' via a legend in the upper right corner. Subsequent modules in this section are medium blue: '2D observation denoise', '3D object pose reconstruction', then three more modules on the far right: 'Reconstruction result denoise', 'Object surface model completion', and '3D rendering', culminating in a purple '3D visualization result output' module at the bottom. Arrows indicate data flow: from the 'Multi-view images input' in both pipelines, the left pipeline proceeds linearly through its three modules. In the right pipeline, the '2D object detection & pose estimation' module feeds into '2D observation denoise', which connects to '3D object pose reconstruction'. From there, a thick black arrow branches to the right, feeding into 'Reconstruction result denoise', which then flows sequentially through 'Object surface model completion' and '3D rendering' to reach the final output. Additionally, a gray arrow from the 'Static background 3D model output' in the left pipeline points to a label 'Load 3D model to render engine', which then connects to 'Render view manual control' and further to the '3D visualization result output' in the right pipeline. Another gray arrow from the 'Static background 3D model output' points to 'Camera pose [R|t]', which connects to the '3D object pose reconstruction' module in the right pipeline. The visual style uses consistent rounded rectangles with varying shades of blue and purple for different stages, and yellow for the key differentiating step. Text within modules is black, centered, and uses a clear sans-serif font. The overall structure emphasizes the integration of static background modeling with dynamic object reconstruction for real-time 3D visualization.

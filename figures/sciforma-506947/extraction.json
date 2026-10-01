@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506947",
+  "record_sha256": "f12e20097c55adf0eb5af7444e3de60ffe359685b6c728766a80aa207c55b919",
+  "asset_sha256": "2f7416110f285f8fcf5c9fe1fb146a760e48f943036c42772e8f7fc209697874",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506947",
+    "title": {
+      "zh": "A Novel Structure-Agnostic Multi-Objective Approach for Weight-Sharing Compression in Deep Neural Networks · 方法图",
+      "en": "A Novel Structure-Agnostic Multi-Objective Approach for Weight-Sharing Compression in Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2501-03095",
+      "title": "A Novel Structure-Agnostic Multi-Objective Approach for Weight-Sharing Compression in Deep Neural Networks",
+      "authors": [
+        "Rasa Khosrowshahli",
+        "Shahryar Rahnamayan",
+        "Beatrice Ombuki-Berman"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03095",
+      "arxiv_url": "https://arxiv.org/abs/2501.03095",
+      "arxiv_id": "2501.03095",
+      "arxiv_first_submitted_at": "2025-01-06T15:51:29Z",
+      "arxiv_updated_at": "2025-01-06T15:51:29Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.NE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03095v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506947/image/image.jpg?Expires=1790855628&Signature=YyLc-3fORC2-xmg7GaoWFyrWr8PEJ4OLaFUOM1XSx1yiCLbG2I-BeXtzOBhx4XRsPG-aQg8-z0FVIonoTBbCRsyxdNdmkDXpUKbFHpmT4R3aCYen-vzayyoR~W63UP5CrVyHUotwB2~dNoRodtEl-x2fKQhnoWFThNMEzOG7Ph4~Lh1UxCxlAkD1uw3WFc6vhIh3pEEh7pSK4hTV07vyn~LpZcZoT1ymZliAFDeHsYjROsGDxHO6U2hYyEl1y3evmuaGKO1J1KhcCuoNK51dZ9xkaVhbGglBCy7eqykDY-xajEb93c1y4uV1msZ1DGI5Z~8heL5uDGbOBNzGX6ObHA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506947,
+      "description_sha256": "b5c34591ecc5807988eface4da57f01d395ea9db8d04c861822ee8c3b6e19fb3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4f883bcd8477bc9ded1655cf640242f80fb9fa9060b9a3394d291efeafbcc776",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.NE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage compression pipeline for deep neural network (DNN) parameters, starting from a pretrained DNN and culminating in a highly compressed representation using Huffman coding. The global layout is a left-to-right, top-down flowchart with two main horizontal pathways: the upper path handles the initial optimization for determining the number of clusters k, while the lower path manages iterative merging and final encoding.\n\nIn the top-left, a pretrained DNN is depicted as a fully connected neural network with purple circular nodes representing neurons, labeled with parameters θ₁, θ₂, ..., θₖ, and a box below specifying θ = {θ₁, θ₂, ..., θₖ}, N = |θ|. This network's weights are converted into a dense, random-k d-histogram of weights in blocks, visualized as a blue histogram. This leads to the first major module: 'Evolutionary Multi-objective Optimization for k in Ordinary Histogram'. This module contains five sequential steps in light purple rectangular boxes: Linear Spaced Initialization of k, Construct Ordinary Histograms, Evaluation using f₁ and f₂, Non-dominated Sorting, and Selection. These steps are enclosed in a dashed rectangle and feed into a large gray arrow pointing right.\n\nThis arrow leads to a plot titled 'Pareto Optimal Solutions', showing Validation F1-score on the y-axis versus # of Shared Weights (d) on the x-axis. The plot includes a red dashed line labeled 'Baseline' and black dots forming the 'Pareto Frontier', with a circle highlighting the plateau region. From this plot, a dashed arrow points to a group of green histograms labeled 'Pareto frontier d-Histogram of Shared Weights'.\n\nFrom the Pareto frontier, a solid arrow leads to a box labeled 'Select Top Solutions Above Baseline Threshold', which then outputs multiple green histograms labeled 'Top Selected Pareto frontier d-Histogram of Shared Weights'. These selected solutions feed into the next major module: 'Iterative Merge', also enclosed in a dashed rectangle. This module contains two steps: 'Merge Neighboring Blocks' and 'Evaluation and Decision Making', connected by a feedback loop. The output of this module is a series of red histograms labeled 'Extra Compressed m-Histogram of Shared Weights'.\n\nA gray arrow from these red histograms points to a box labeled 'Huffman Coding', which in turn points to a binary tree structure labeled 'Huffman Tree for Shared Weight Codebook'. The tree has circular internal nodes with 0/1 labels and cube-shaped leaf nodes, representing the variable-length codebook. The entire process is designed to reduce the storage footprint of DNN weights through clustering, optimization, iterative merging, and entropy-based encoding."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

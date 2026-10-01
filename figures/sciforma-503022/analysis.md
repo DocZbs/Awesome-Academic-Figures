@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Error-driven Data-efficient Large Multimodal Model Tuning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15652
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a step-by-step reasoning process used to identify mistakes in a model's decision-making by incrementally adding reasoning steps and observing how the probability distribution over answer choices evolves. The global layout is divided into three main sections: on the left, a 'Reasoning Steps' box contains four sequentially numbered reasoning statements, each enclosed in a colored rectangle with a dashed border; in the center, a large peach-colored rounded rectangle labeled 'Teacher Model' receives inputs from these steps; on the right, an 'Answer Probabilities' graph plots the changing confidence in two answer options (A and B) as more reasoning steps are added.
+
+In the 'Reasoning Steps' section, each step is visually distinct by color and border style: Step ① (gray with blue dashed border) states 'There are two magnets in the image'; Step ② (light blue with blue dashed border) observes 'We see two magnets placed end to end, with one magnet’s "S" end facing the other magnet’s "N" end'; Step ③ (light green with green dashed border) provides the physical principle 'Opposite poles attract each other, while like poles repel'; Step ④ (light yellow with yellow dashed border) concludes 'Since the north pole of one magnet is facing the south pole of the other magnet, they will attract each other.' These steps are presented in a vertical stack, with each subsequent step building upon the previous ones.
+
+Arrows from each step (or cumulative set of steps) point to the 'Teacher Model' in the center. Specifically, an arrow labeled ① points from Step ① alone; another labeled ①② points from Steps ① and ② together; a third labeled ①②③ points from the first three steps; and a fourth labeled ①②③④ points from all four steps. This indicates that the model is queried at each stage with the accumulated reasoning so far.
+
+On the top right, a text box presents the question: 'Will these magnets attract or repel each other?' with choices '(A) attract' and '(B) repel', and a prior belief: 'There is a probability of 60% that option B is correct'. An arrow from this box points to the 'Teacher Model', indicating the initial context provided to the model.
+
+The 'Answer Probabilities' graph on the right has a horizontal axis ranging from 0% to 100% and a vertical axis with grid lines. Two lines represent the probability assigned to Option A (in dark blue) and Option B (in red). Each line is marked with data points connected by segments, and each segment corresponds to the output after a new reasoning step is added. The graph shows that initially, Option B is favored (around 80%), but as more reasoning steps are added, the probability for Option A increases and eventually surpasses Option B, culminating in a high confidence in Option A after all four steps. Curly braces on the left side of the graph group the data points corresponding to each set of reasoning steps (①, ①②, ①②③, ①②③④), aligning them with the input arrows from the left. The visual progression demonstrates how the model's confidence shifts toward the correct answer as more accurate reasoning is provided.

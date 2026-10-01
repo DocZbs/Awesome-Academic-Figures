@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Unveiling Secrets of Brain Function With Generative Modeling: Motion Perception in Primates & Cortical Network Organization in Mice — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19845
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a hierarchical and densely interconnected schematic of cortical and subcortical brain regions involved in visual processing, arranged vertically from bottom to top to reflect increasing levels of processing complexity. The global layout is organized into distinct horizontal layers, starting at the bottom with primary sensory inputs and progressing upward through multiple stages of visual and associative cortex, culminating in higher-order association areas and the hippocampus (HC) at the apex. The structure resembles a multi-tiered network diagram where each node represents a specific brain region or area, labeled with standard neuroanatomical abbreviations such as V1, MT, FEF, and HC. Nodes are represented as rectangular boxes, with varying shades of gray indicating different functional categories or processing streams—darker gray boxes denote primary or major processing areas (e.g., V1, MT, V4, FEF), while lighter gray boxes represent secondary or intermediate areas (e.g., VIP, LIP, STPa). Some nodes are grouped horizontally within the same layer, suggesting parallel processing pathways (e.g., M | V1 | P-B | P-I at the lowest level). 
+
+Visual modules include labeled rectangles positioned across 8–9 horizontal tiers. At the base, the first tier contains four dark-gray boxes labeled M, V1, P-B, P-I, which receive inputs from two subcortical structures: LGN (lateral geniculate nucleus) and RGC (retinal ganglion cells), shown below them with branching lines connecting to M and P pathways respectively. Above this, subsequent tiers contain progressively more complex areas such as V2, V3, VP, V3A, V4t, V4, MT, MSTd, MSTl, FST, FEF, and others. Higher tiers include areas like 7a, 7b, 36, 46, TF, TH, AITd, AITv, CITd, CITv, PITd, PITv, VOT, and finally HC at the top. Each box is uniformly sized and aligned within its row, creating a grid-like appearance despite the dense interconnections. 
+
+Connections are depicted as thin black lines with no arrowheads, implying bidirectional or unspecified directional flow; however, the vertical arrangement suggests a predominantly feedforward progression from lower to higher areas. Lines originate from one box and terminate at another, often splitting or merging to indicate multiple connections between regions. The density of connections increases toward the upper tiers, particularly among areas like 46, TF, TH, and HC, which exhibit extensive reciprocal connectivity with numerous lower areas. Notably, areas such as FEF, MT, and V4 show heavy interconnectivity both within their own tier and across adjacent tiers. The diagram emphasizes the distributed and highly interconnected nature of visual processing, with multiple parallel pathways (e.g., dorsal and ventral streams) converging and diverging throughout the hierarchy. There are no explicit labels on the connections themselves, but their topology reflects known anatomical connectivity patterns in primate visual cortex. The overall impression is one of a comprehensive, data-driven model of cortical connectivity, likely derived from tracer studies or neuroimaging data, illustrating how visual information flows and integrates across hierarchical and parallel networks.

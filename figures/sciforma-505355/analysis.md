@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Symbolic Disentangled Representations for Images — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.19847
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the methodology for computing two metrics—DMM (Disentanglement Metric for Multiple Modifications) and DCM (Disentanglement Metric for Change Mapping)—used to evaluate the disentanglement of generative factors in a latent space. The global layout is divided into two main parts: a left-side workflow depicting the model’s processing pipeline and a right-side table representing the metric computation.
+
+On the left, the process begins with an input latent vector h, which is fed into a Decoder to produce a reconstructed representation Ŝ. This is then passed to a Classifier to generate a prediction ŷ. In parallel, the latent vector h is modified to produce h', which is also processed through the same Decoder and Classifier to yield Ŝ' and ŷ'. The predictions ŷ and ŷ' are then compared in a 'Compare' module, which determines whether each generative factor's prediction has changed due to the modification of the latent unit. This comparison results in a binary output per factor: 1 if the prediction changed, 0 if it remained unchanged.
+
+The visual modules are represented using standard flowchart shapes: rectangular boxes for operations like 'Modify', 'Classifier', and 'Compare'; trapezoidal shapes for the 'Decoder' to indicate transformation or decoding; and arrows to denote data flow. All elements are outlined in blue, with black text inside. The outputs ŷ and ŷ' are shown as mathematical symbols, indicating predicted class labels.
+
+The right side of the figure displays a table with five columns labeled F₁ through F₅, representing different generative factors, and multiple rows, each corresponding to a different latent unit c. Each cell contains a 0 or 1, indicating whether modifying that unit caused a change in the prediction for the corresponding factor. The last column shows the row sum for each unit, which is used to compute the DMM metric—the sum of changes across all factors for a given unit. The bottom row shows the column sums, which are used to compute the DCM metric—the total number of times each factor was affected by modifications across all units. A red box highlights one row (second row) to emphasize the row sum calculation. Arrows from the table point to labels 'DCM' for each row sum and 'DMM' for the column sum, indicating how these metrics are derived. The figure caption clarifies that DCM is computed per row (sum of changes per unit) and DMM per column (sum of changes per factor), though the caption mentions 'DCN' while the figure labels 'DCM'—this discrepancy is noted but the figure visually aligns with DCM as the row-based metric.

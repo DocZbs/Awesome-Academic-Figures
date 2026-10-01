@@ -8,6 +8,7 @@ import unicodedata
 import hashlib
 from pathlib import Path
 from layout_annotations import load_annotations, apply_annotation
+from classification_annotations import load_classifications, apply_classification
 
 
 def main():
@@ -18,6 +19,7 @@ def main():
     args = parser.parse_args()
     root = args.root.resolve()
     layout_annotations = load_annotations(root)
+    classifications = load_classifications(root)
     figures = []
     seen = set()
     bundles = root / "bundles"
@@ -28,6 +30,8 @@ def main():
         figure_id = entry["id"]
         if figure_id in layout_annotations:
             apply_annotation(entry, layout_annotations[figure_id], path.parent)
+        if figure_id in classifications:
+            apply_classification(entry, classifications[figure_id], path.parent)
         if entry["rights"].get("publication_status") != "approved" or not entry["rights"].get("license_evidence_url"):
             raise ValueError(f"Publication requires reviewed license evidence: {figure_id}")
         if entry["rights"].get("source_license") not in {"CC-BY-4.0", "CC0-1.0"}:
@@ -85,6 +89,8 @@ def main():
         figures.append(entry)
     if set(layout_annotations) - seen:
         raise ValueError("Layout annotations reference missing figures")
+    if set(classifications) - seen:
+        raise ValueError("Classification annotations reference missing figures")
     figures.sort(key=lambda f: (f["paper"]["id"] != "icml-2025-collabllm", -f["paper"]["publication_year"], f["paper"]["id"], f["source"].get("number") or 0))
     # A final proceedings record and its arXiv record can refer to one paper.
     # Only exact normalized titles with the same first author share an ID;

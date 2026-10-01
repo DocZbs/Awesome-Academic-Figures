@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504707",
+  "record_sha256": "fe5f01bc71484ce53718e168865bbc0e4cfcfe2d1ee356ac5e1141f703b90684",
+  "asset_sha256": "0cfb53a78720ec096884c599c8feab5d63411230eadf7254a1a4c14fb07b49ad",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504707",
+    "title": {
+      "zh": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics · 方法图",
+      "en": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics"
+    },
+    "paper": {
+      "id": "arxiv-2412-18785",
+      "title": "Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics",
+      "authors": [
+        "Buzhen Huang",
+        "Jingyi Ju",
+        "Yuan Shu",
+        "Yangang Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18785",
+      "arxiv_url": "https://arxiv.org/abs/2412.18785",
+      "arxiv_id": "2412.18785",
+      "arxiv_first_submitted_at": "2024-12-25T05:35:30Z",
+      "arxiv_updated_at": "2024-12-25T05:35:30Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TCSVT.2023.3328371",
+      "arxiv_current_version_observed": "2412.18785v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504707/image/image.jpg?Expires=1790855435&Signature=U7Fdij2pXVLsLGFuOqw99aAYA267~lGhAMRXLvBNMzSHpzoMD-FQlNhpcNYppCU7ni~TbJKbAArQzWqLAFEWuN7zHpZ4yBQLm39owTS2lU7cKVnGx1sVhL5qPLYsid368Bk-eYT12VLA7pUjmGwpU38UiuZTGURS~x9aazwFw~nSdNOLKVc4b6ORPOkV80JHBGodv-2IMHmhprUHU3WxaoxBYxUvIWMXDGxdPJoTc00VjOFtAK6GJoO-wQTGKh6SsPmo-LZhbkM~2IBQ1hQ6LJEiLaZq0bSlLMSdt1XUajH-gQUExAFCrvJnn8FtpT9xHuhB7IERZuag9q9ht0Ou0A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504707,
+      "description_sha256": "194ef9165f6db29ec776f631f4947fe2c7b3ae27f0d3b4d2400ec43db3ab52f9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "fc0ff568dfaea889e6f83e70e1c6b778fb3de0c2da2adb3b60e4e32fb2fdaab3",
+      "row_response_sha256": "3b257f20cd644c4cd76670f4c1f47425f9bbeef92d4708ac4285d8d07f2d11fd"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a symmetrical encoder-decoder architecture designed to model human motion dynamics and kinematics. The global layout is linear and left-to-right, depicting a sequential processing pipeline: input human motion sequences are fed into an encoder, transformed into latent representations, and then decoded back into reconstructed motion sequences. On the far left, a sequence of five gray 3D human body models in different poses represents the input motion data. This input is processed by the Encoder, which consists of a stack of four pink rounded rectangular blocks labeled 'GRU', arranged vertically with bidirectional feedback loops between adjacent layers, indicating recurrent connections typical of Gated Recurrent Units. The entire encoder block is enclosed in a black rectangular boundary. A thick black arrow points from the input to the encoder, and another from the encoder to the latent space representation. The latent space is visualized as a series of five overlapping, bell-shaped distributions colored in a gradient from blue to yellow, representing the probability distribution p_θ_i(z_i) over latent variables z_i at each time step. These distributions are aligned horizontally, suggesting a temporal sequence. Following this, a thick black arrow leads to the Decoder, which mirrors the encoder’s structure but uses beige rounded rectangular blocks also labeled 'GRU' and similarly connected with bidirectional loops, enclosed in a black rectangular boundary. Finally, a thick black arrow from the decoder points to the output, which is again a sequence of five gray 3D human body models in poses corresponding to the reconstructed motion. The overall design emphasizes symmetry between encoder and decoder, with consistent visual attributes—rounded rectangles for GRU units, color differentiation (pink for encoder, beige for decoder), and clear directional arrows indicating data flow. The figure visually conveys that the model learns a compact motion prior by encoding motion sequences into a latent space and decoding them back, enabling training on short clips and generalization to longer sequences."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

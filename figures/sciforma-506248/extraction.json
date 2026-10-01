@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506248",
+  "record_sha256": "7e6b53d09aa2a2dfb63ebe0bd6044626942e4454a6c396396e305ae310981f53",
+  "asset_sha256": "ce9cf38b5deae040b781a79163392b74aa09ea38f28a2252cb873941efe6d3e6",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506248",
+    "title": {
+      "zh": "Population Aware Diffusion for Time Series Generation · 方法图",
+      "en": "Population Aware Diffusion for Time Series Generation"
+    },
+    "paper": {
+      "id": "arxiv-2501-00910",
+      "title": "Population Aware Diffusion for Time Series Generation",
+      "authors": [
+        "Yang Li",
+        "Han Meng",
+        "Zhenyu Bi",
+        "Ingolv T. Urnes",
+        "Haipeng Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00910",
+      "arxiv_url": "https://arxiv.org/abs/2501.00910",
+      "arxiv_id": "2501.00910",
+      "arxiv_first_submitted_at": "2025-01-01T17:53:43Z",
+      "arxiv_updated_at": "2025-01-01T17:53:43Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1609/aaai.v39i17.34038",
+      "arxiv_current_version_observed": "2501.00910v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506248/image/image.jpg?Expires=1790855567&Signature=buLqFlZwF8vEKihiVJ0NDKua8It8irLNSRR1nGdK-5hjtrc5aPzVOK28K1T4ciNpMfE48fQguEByV66K0WQuHOXJcqXPyXDFl3gu12wLVeO3cNkih~4uCdEoVtenTmzEsw1f7~f9N26hmgSXOyVBWNXmouJ~DW72pB04C3mSe7BTQthEdzuy4fzt5guf5kDVb~XoF1ssXCiwv8OgUuRhiN5RjUm-G7ZAFwbhoCdxMmnBrxxVOxyJrvyCA2COwgPnTYeFZ8-DDZRWsU1KD~7xpw4oeus72docRJXZpYpOtU8cghzk7eQ7ceXy6aeVM5NPjG9O1bde6jB--4jvJsQTTQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506248,
+      "description_sha256": "d05974ff75d4564b22102bcf434be6e11cdb4852a40b2652399f9b7bfdd6d229",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0ca5ed10ef55517b27021718627d5db70137001ee15c2dd6785d89d28e098874",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a DiT (Diffusion Transformer) block, which is a modified transformer layer designed to incorporate conditional information at multiple points within the network. The global layout is divided into two main regions: the left side contains the sequential processing pipeline of the transformer block, while the right side shows the condition processing module that generates conditioning vectors injected into the main flow.\n\nOn the left, the input is represented as a grid of colored squares labeled 'Input', feeding into the first component, 'Layer Norm 1' (a light purple rounded rectangle). This is followed by 'Cond Injection 1' (a golden-yellow rounded rectangle), which receives a conditioning vector from the right-side module. Next comes 'Multi-Head Attention' (light cyan rounded rectangle), then another 'Cond Injection 2' (golden-yellow), followed by 'Layer Norm 2' (light purple). After this, the sequence continues with 'Cond Injection 3' (golden-yellow), 'Feed Forward' (light cyan), and finally 'Cond Injection 4' (golden-yellow). Each 'Cond Injection' step integrates a conditioning signal into the feature representation. The outputs of the two main branches — one after Layer Norm 1 and the other after Layer Norm 2 — are combined via addition operations (represented by circular nodes with a '+' symbol) before proceeding to the next stage. The final output of the block is derived from the sum of the output of Cond Injection 4 and the residual connection from the initial input.\n\nOn the right, the condition processing module is enclosed in a light purple background. It begins with a cyan 3D rectangular block labeled 'Condition', which feeds into a small neural network composed of two layers of gray circular nodes connected fully between layers. The output of this network is a red 3D rectangular block, which serves as the source of the conditioning vectors. Curved arrows extend from this red block to each of the four 'Cond Injection' modules on the left, indicating that the same or derived conditioning signal is injected at these four distinct points in the transformer block.\n\nConnections are shown as solid black lines with arrowheads indicating direction. The residual connections are depicted as straight lines looping back to the addition nodes. The curved lines from the red conditioning block to the 'Cond Injection' modules emphasize the cross-module injection mechanism. The color coding helps distinguish functional components: golden-yellow for conditioning injection steps, light purple for normalization layers, and light cyan for core transformer operations like attention and feed-forward. The overall structure reflects a deep integration of conditional information throughout the transformer block, enabling dynamic adaptation based on external conditions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

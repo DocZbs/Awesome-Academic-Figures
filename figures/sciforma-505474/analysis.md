@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20104
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the SyncDiff framework, which combines a denoising backbone with explicit synchronization steps for generating synchronized motion sequences. The global layout consists of two main sections: the top portion illustrates the inference pipeline with explicit synchronization steps occurring every s steps, while the bottom portion details the architecture of the denoising backbone.
+
+In the top section, labeled 'Explicit Synchronization Step (Section 3.6)', the process begins with an input sequence \(\hat{x}_{t+s-1}\), which undergoes (s−1) iterations of denoising via a 'Denoising Backbone' module (light green box). Each iteration involves processing individual motions (pink nodes) and relative motions (yellow nodes) through a graph-like structure. After (s−1) denoising steps, the output \(\hat{x}_t\) is passed to another Denoising Backbone, producing \(\hat{\mu}_t\). This is followed by an 'Explicit Synchronization Module' (purple box), which computes \(\hat{x}_{t-1}\). This entire sequence repeats cyclically, with the next cycle starting from \(\hat{x}_{t-s}\), again undergoing (s−1) denoising steps before synchronization. The synchronization steps are highlighted in light blue boxes, emphasizing their periodic execution every s steps. Arrows indicate forward propagation, with bidirectional arrows between the two synchronization blocks suggesting feedback or consistency constraints.
+
+The bottom section, labeled 'Denoising Backbone (Section 3.4)' and enclosed in a light green box, details the internal architecture. It starts with a noisy input \(x_t\) derived from an initial clean state \(x_0 = x\). This noisy input is decomposed into two components: \(x_{t,dc}\) (dynamic content, shown as a waveform) and \(x_{t,ac}\) (articulated content, shown as a frequency spectrum). These are processed alongside multiple conditioning inputs: Action/Object Labels (e.g., 'brush', 'roller', 'plate') encoded via CLIP; Rigid Body Shapes encoded via BPS; Articulated Skeleton Shapes \(\beta\) embedded via an embedding layer; and a 0/1 Padding Mask. All these features are fused into a single red vertical feature vector.
+
+This fused vector is then processed through two parallel Conv1D layers (blue and purple), followed by a Transformer block (orange). The Transformer outputs are split into two branches: one for dynamic content (\(\hat{x}_{dc}\)) and one for articulated content (\(\hat{x}_F\)), each passing through a Linear layer. The outputs \(\hat{x}_{dc}\) and \(\hat{x}_{ac}\) are then composed to reconstruct the final output \(\hat{x}\). Loss functions are defined as \(\mathcal{L}_{dc} = ||\hat{x}_{dc} - x_{dc}||_2^2\) and \(\mathcal{L}_{ac} = ||\hat{x}_{ac} - x_{ac}||_2^2\), with additional losses \(\mathcal{L}_{align}\) and \(\mathcal{L}_{norm}\) applied to the reconstructed output.
+
+Connections throughout the diagram are indicated by directed arrows showing data flow. The denoising backbone receives multiple conditioning signals, which are combined before entering the core network. The explicit synchronization modules receive outputs from the denoising backbone and produce synchronized outputs for the next time step. The figure uses color-coded nodes (pink for individual motions, yellow for relative motions) and distinct shapes (rectangles for modules, diamonds for embeddings, etc.) to differentiate components. Text annotations specify module names, mathematical expressions, and section references, ensuring clarity and completeness.

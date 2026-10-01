@@ -1,0 +1,101 @@
+{
+  "id": "sciforma-506041",
+  "record_sha256": "47ccb6c0d75d0d61f29fbdf68a0ce5355b3894efea3de6b3680bbefac83733f3",
+  "asset_sha256": "7b58f8064520524f2c8c17ea0ec6283a0a0f5873c7f6209381d2dc57e78c3da8",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506041",
+    "title": {
+      "zh": "LTX-Video: Realtime Video Latent Diffusion · 方法图",
+      "en": "LTX-Video: Realtime Video Latent Diffusion"
+    },
+    "paper": {
+      "id": "arxiv-2501-00103",
+      "title": "LTX-Video: Realtime Video Latent Diffusion",
+      "authors": [
+        "Yoav HaCohen",
+        "Nisan Chiprut",
+        "Benny Brazowski",
+        "Daniel Shalem",
+        "Dudu Moshe",
+        "Eitan Richardson",
+        "Eran Levin",
+        "Guy Shiran",
+        "Nir Zabari",
+        "Ori Gordon",
+        "Poriya Panet",
+        "Sapir Weissbuch",
+        "Victor Kulikov",
+        "Yaki Bitterman",
+        "Zeev Melumian",
+        "Ofir Bibi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00103",
+      "arxiv_url": "https://arxiv.org/abs/2501.00103",
+      "arxiv_id": "2501.00103",
+      "arxiv_first_submitted_at": "2024-12-30T19:00:25Z",
+      "arxiv_updated_at": "2024-12-30T19:00:25Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00103v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506041/image/image.jpg?Expires=1790855568&Signature=i95zGohM8JWFEh3HPXn~~CyPxS9qefNCKbC5GFmrTMTBAPYgaM6A2lPxjBS8PIUhEhMpAKUtC5cOIPvynH-lp3X7XPf4bWhw5ni4RSWOyQM~PAQt8DzjcZdD9VXfUiuzsyFNE6isfdLOtc8UPsS4rkOfy2xXt3PEhaE1nPwMCVZUcvkwoSwJwX13O6uMd8iu3AjtrR5rooqEFRBcG3N9kvIUvZjhHuaNqwvf-WA~~McP-yBwULLFZCMbugykqi7fL-mt7EOiHW23DJz7hz8oOxV78Dvz1TZ2cN5gEzJxit~q13YgM3pfem9Lvh4AKFFppDrcPjeFAcclN4DNgY6j5Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506041,
+      "description_sha256": "bbb2c33d5b7fcc1d9d12a9c07280102853956a47dd1252c78cd9acdd6ac69824",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f05a1ebf57f608620fde3f41396502a1559978c5d3f789336b241ee631b2b070",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the holistic denoising strategy of LTX-Video, which consists of a sequence of latent-to-latent denoising steps followed by a final latent-to-pixels denoising step. The global layout is a left-to-right horizontal flow, depicting a generative process that starts from a random noise input and ends with a full-resolution image output. The process is structured as a chain of operations, with time steps labeled t_{n-1}, t_{n-2}, ..., t_2, t_1, indicating a reverse diffusion process progressing from high noise to clean image.\n\nThe visual modules begin on the far left with a 3D cube representing the initial latent noise z_{n-1} ~ N(0, I), which is sampled from a standard normal distribution. This cube has dimensions w/32 × h/32 × (f+7)/8, where w, h, and f denote the final image width, height, and channel count, respectively. The cube is filled with a speckled gray pattern to visually represent random noise. An arrow points from this cube to the first processing module.\n\nThe next set of modules consists of a series of light blue rounded rectangles, each corresponding to a denoising step at a specific time index t_i (from t_{n-1} down to t_2). These modules are connected sequentially by solid blue arrows, indicating the forward progression of the denoising process. Above each module, a downward-pointing blue arrow labeled with the respective time step t_i indicates the injection of time-dependent information into the denoising operation. A large curved bracket below these modules groups them together and labels them as 'latent-to-latent denoising steps', emphasizing that these steps operate entirely within the compressed latent space.\n\nFollowing the last latent-to-latent step (at t_2), the flow continues to a trapezoidal-shaped module, which represents the final denoising step. This module is labeled 'latent-to-pixels denoising step' and is also associated with the time step t_1. It receives the output from the previous step and performs the final reconstruction to pixel space. An arrow labeled x_0 and h points from this trapezoid to the final output.\n\nThe final output is represented as a 3D rectangular box containing a realistic image of a child walking a dog in a snowy forest. The box is labeled with dimensions w, h, and f along its edges, corresponding to the final image's width, height, and number of channels. The image inside is clear and detailed, contrasting with the initial noisy latent state.\n\nAll connections between modules are depicted as solid blue arrows, indicating the direction of data flow. The entire process is designed to progressively denoise the latent representation, culminating in a high-quality image output. The figure effectively communicates the two-stage denoising pipeline: first refining the latent representation over multiple steps, then mapping it to the final pixel space in one final step."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

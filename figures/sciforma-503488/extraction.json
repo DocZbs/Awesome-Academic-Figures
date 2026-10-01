@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503488",
+  "record_sha256": "5d2b8b1443dfd3b59d6180d15524470105f0bf71dae3a6ea603ac47e5a00f2f8",
+  "asset_sha256": "92f135423615cea5bd57568ef6f11d71ece912ba1100bf24311ba645f7148fb9",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503488",
+    "title": {
+      "zh": "Label Privacy in Split Learning for Large Models with Parameter-Efficient Training · 方法图",
+      "en": "Label Privacy in Split Learning for Large Models with Parameter-Efficient Training"
+    },
+    "paper": {
+      "id": "arxiv-2412-16669",
+      "title": "Label Privacy in Split Learning for Large Models with Parameter-Efficient Training",
+      "authors": [
+        "Philip Zmushko",
+        "Marat Mansurov",
+        "Ruslan Svirschevski",
+        "Denis Kuznedelev",
+        "Max Ryabinin",
+        "Aleksandr Beznosikov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16669",
+      "arxiv_url": "https://arxiv.org/abs/2412.16669",
+      "arxiv_id": "2412.16669",
+      "arxiv_first_submitted_at": "2024-12-21T15:32:03Z",
+      "arxiv_updated_at": "2024-12-21T15:32:03Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16669v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503488/image/image.jpg?Expires=1790855367&Signature=sB5RwR012GOIkUH4A0vKpTDx~iG8-uX1rc6PFgAOp8fP9Vyueio2uiCMlnZhTpJ3HpnSdgOTsdu1eoVFlPANNAT8x-6PswApYgEaPNKBVixGIWiOwWjILLfi3V~bcp0eZF7WBs~Igcw8S6Djro6ama1-a5CIU~ko0ZBkLLpqykqYs5j1o5PzFtFFn7CXys1H3yP-SvXd91hHXSqLzLTtbtKuikGMIzdAPTM3rkojvDYDo8sUFwqP3uI4KskMXJemy31Uwpmu7hBKjlAWcQPv9NIuyK3SasVaZHuCr-IS2kitEirgKcUUi4FXF5w9zyRhTvcAke~4~LqNFb22DqS1nw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503488,
+      "description_sha256": "e2f866be434ad4f3934d0ddbd02bd5d305ad79b1fa2a9a430c885544d511252f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a3c383491e774f8fd63aba9e35df5a6d11dfc1979bc7e9d81bf18b98bde69bac",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a distributed fine-tuning protocol involving a SERVER and a CLIENT, divided into two main sections by a vertical line. On the left, under the label 'SERVER', there are n model instances, each represented by a sequence of three identical hourglass-shaped blocks (blue, green, or red) enclosed in light beige boxes, corresponding to unique LoRA weights θ₁, θ₂, ..., θₙ. Each model instance processes data through these layers, producing activations h₁, h₂, ..., hₙ, depicted as stacked blocks of matching color (blue, green, red) with increasing height from top to bottom. These activations are then sent forward to the CLIENT side.\n\nOn the right, under the label 'CLIENT', the activations are combined using weights W₁, W₂, ..., Wₙ, each shown as a small gray box connected to a white box via a circle with a dot (⊙), symbolizing element-wise multiplication. The result is a set of weighted activations, shown as blended colored blocks (e.g., blue-gray, green-gray, red-gray), which are then summed together via a large Σ symbol to produce a single activation vector h′, represented as a stack of light gray blocks. This h′ is passed through a series of local layers (three horizontal beige bars labeled 'local layers'), followed by a model head denoted by a square containing the symbol ℒ, representing the loss function.\n\nArrows indicate the flow: from SERVER to CLIENT, labeled 'forward' and 'last layer activations from n models'; and from CLIENT back to SERVER, labeled 'backward' and 'weighted gradients to n models'. The backward pass shows gradients flowing from the loss back through the local layers and summation, then splitting to update the weights W₁ to Wₙ, which in turn influence the original models on the SERVER. The entire process is designed to enable efficient fine-tuning across multiple model instances with shared computation on the CLIENT side."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

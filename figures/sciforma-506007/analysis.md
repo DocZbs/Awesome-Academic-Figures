@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+PERSE: Personalized 3D Generative Avatars from A Single Portrait — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.21206
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a pipeline for generating and refining 3D avatars using text prompts and synthetic datasets, with a focus on latent space interpolation and reconstruction-based optimization. The global layout is left-to-right, divided into three main sections: input data generation on the left, the core generative network in the center, and output visualization and refinement on the right.
+
+On the far left, under 'Synthetic Datasets', three distinct text prompts (A, B, and an unnamed third) are shown, each associated with multiple rendered images of avatars exhibiting different attributes such as hair color, clothing, or accessories. These serve as training examples. Below this section, labeled 'Finetuning Inputs', are two specific avatar images derived from Text Prompt A and Text Prompt B, which are fed into the central processing module.
+
+The central part of the diagram features two identical Encoder blocks, each marked with a blue snowflake icon and labeled 'Encoder'. The top encoder processes the avatar from Text Prompt A, producing 'Latent A', while the bottom encoder processes the avatar from Text Prompt B, producing 'Latent B'. These latents are then combined via an 'α weighted sum' operation, resulting in an 'Interpolated Latent'. This interpolated latent is fed into a large green trapezoidal block labeled 'Avatar Network (GS)', which also receives 'FLAME Params' as an additional input. The Avatar Network outputs a 3D mesh representation, which is then passed through a 'Rasterizer' block to produce 2D rendered images.
+
+To the right of the rasterizer, five rendered images are displayed, corresponding to different values of α: 0.0, 0.3, 0.5, 0.7, and 1.0. These show a smooth transition from the blue-haired avatar (α=0.0) to the red-haired avatar (α=1.0), demonstrating continuous interpolation in the latent space.
+
+Below the rendered images, a bidirectional arrow labeled 'L_recon' connects them to another set of five images labeled 'Generated Images as Pseudo GT'. These pseudo ground-truth images are produced by a separate 'Finetuned UNet' model, depicted as a light-blue hourglass-shaped network. The UNet takes the same interpolated latents (or possibly the rendered images) as input and generates refined outputs that closely resemble the original avatars, suggesting a reconstruction loss is used to train or fine-tune this network.
+
+The visual modules are primarily rectangular or trapezoidal blocks with black borders. The encoders and Avatar Network are filled with light green; the UNet is light blue. Text labels are black, with mathematical symbols like α and L_recon clearly denoted. The flow is indicated by solid black arrows, showing the direction of data processing from inputs to outputs. The diagram emphasizes the role of latent interpolation and reconstruction loss in achieving high-fidelity avatar generation and refinement.

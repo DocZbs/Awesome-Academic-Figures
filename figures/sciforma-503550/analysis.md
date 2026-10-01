@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DMesh++: An Efficient Differentiable Mesh for Complex Shapes — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16776
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the behavior of weight regularization in a rendering context, specifically how it affects the representation of geometric shapes using weighted points and their associated faces. The layout consists of three vertically aligned diagrams labeled (1), (2), and (3), progressing from left to right to show a sequence of states in a mesh simplification process. To the far left, a simple angular shape is shown in black lines, representing the ground truth geometry being rendered.
+
+In diagram (1), the ground truth geometry is depicted by a gray dotted vertical line. Three points are positioned along this line: A at the top, B at the bottom, and C in the middle, marked with a lime green circle to indicate its redundancy. Points A and B are solid black circles. Each point is annotated with a weight of 1.0. Two faces are formed: face AC (blue dashed line) and face BC (red dashed line), both with opacity 1.0, meaning they are fully present. A horizontal black arrow leads to the label 'A.O. = 1.0', indicating the accumulated opacity for a ray passing through these faces is 1.0, resulting in zero reconstruction loss.
+
+Diagram (2) shows the effect of applying weight regularization. The weight of point C is reduced to 0.8, indicated by the lime green circle now labeled 0.8. As a result, the opacities of faces AC and BC decrease to 0.8 (shown in blue and red, respectively). Simultaneously, a new face AB appears, represented by a forest green solid line with opacity 0.2. This reflects the probability that the direct edge between A and B is activated when C is downweighted. The accumulated opacity for the ray is now calculated as 0.84 (likely from 0.8 + 0.2 * 0.8 or similar probabilistic combination), leading to a non-zero reconstruction loss.
+
+Diagram (3) presents the optimal configuration after successful removal of the redundant point C. Only points A and B remain, connected by a single forest green solid line (face AB) with opacity 1.0. The accumulated opacity returns to 1.0, achieving zero reconstruction loss. This state represents the desired simplified mesh.
+
+The figure uses color coding to distinguish elements: black for essential points, lime green for redundant points, blue for face AC, red for face BC, and forest green for face AB. Dashed lines indicate active faces under full weights, while solid lines represent the final or alternative connections. Arrows between diagrams indicate the progression of the regularization process and its impact on accumulated opacity.

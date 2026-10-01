@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-503400",
+  "record_sha256": "90630673364ce33c4af4678da3af4b9a9286f7585c97010bc3d7e0f26e2e7a24",
+  "asset_sha256": "a5ac0f646b78d88cf7692ba55ceeb976eef8d1501be5115f7692ea9deb3acad9",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503400",
+    "title": {
+      "zh": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities · 方法图",
+      "en": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities"
+    },
+    "paper": {
+      "id": "arxiv-2412-16531",
+      "title": "From Creation to Curriculum: Examining the role of generative AI in Arts Universities",
+      "authors": [
+        "Atticus Sims"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16531",
+      "arxiv_url": "https://arxiv.org/abs/2412.16531",
+      "arxiv_id": "2412.16531",
+      "arxiv_first_submitted_at": "2024-12-21T08:18:43Z",
+      "arxiv_updated_at": "2024-12-21T08:18:43Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16531v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503400/image/image.jpg?Expires=1790855367&Signature=H4tky~BrsQoNRO~AxxjDhtCaOo0bO1zn7kQtMpBdGu5pYDLSMZo9undLAwDbwz9BdZdiMF9-sL0fE26amqexTzrTebqko2rN1OKBa5Te2q-Sffli-Fn3AGKbxy5OAzPrxN7ity5HMdlEdoPd~2py~DPNtjCFIGLpfmUA~YTauvIJ6LKJsCbYK8Xh8a61csWBUlVFRPfQ5f5isjzRtSRJC~mOMY2UKmFF6-xQ5QfZHVtgpzlV1CNyHyoeYHpGR~E~ceZ4sDmhVyA0sm7qYA9JDkrtwk9PzA~~wF9leWwCxf1ru6KDIAkS~2N0CDMemKu1RHdvEYrAwGlvA1wNu0piGg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503400,
+      "description_sha256": "19e205064c0405c6b6bf498b1b692f3f130368c2882fb1032064084a9391fdf1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "00be98a554aa0c20b51bdb542bf3b25bab8404019652c3e968160093992b01dc",
+      "row_response_sha256": "8504d1eb85143265b3d9d499c5f66bf5d6c78ee425007d87989ae6321d8a13e6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a simplified latent diffusion model architecture for text-to-image generation. The global layout is a left-to-right dataflow diagram, starting from a user prompt on the far left and ending with an output image on the far right. The central processing block is a large gray rectangle labeled '画像情報クリエータ' (Image Information Creator) and '拡散プロセス' (Diffusion Process), which contains the core iterative loop of the model.\n\nVisual modules and attributes include: \n- A rectangular box labeled 'ユーザープロンプト' (User Prompt) containing the example text 'An astronaut riding a horse in the style of cubism'. This is connected by an arrow to a rounded gray rectangle labeled 'テキストエンコーダ CLIP' (Text Encoder CLIP), indicating the first processing step.\n- From the CLIP encoder, an arrow leads to a small light-gray square labeled 'テキスト埋め込み' (Text Embedding), representing the encoded text representation.\n- On the left side, a label 'ランダム「シード」画像 ガウスノイズ' (Random 'Seed' Image Gaussian Noise) points to a dark gray square labeled '潜在空間における表現' (Representation in Latent Space), which serves as the initial noisy input to the diffusion process.\n- The central component is a white rounded rectangle labeled 'ニューラルネットワーク UNet' (Neural Network UNet), which processes both the latent noise and the text embedding.\n- To the right of the UNet, another dark gray square labeled '潜在空間での拡散表現' (Diffusion Representation in Latent Space) receives the output from the UNet.\n- Below the UNet, a gray rounded rectangle labeled '画像再構成 サンプラー/スケジューラ' (Image Reconstruction Sampler/Scheduler) is shown, which feeds back into the initial latent representation box, forming a loop.\n- An annotation next to this feedback loop states 'N回スケジューラのステップを繰り返す' (Repeat N steps of scheduler), indicating the iterative nature of the diffusion process.\n- Following the final latent representation, an arrow leads to a trapezoidal gray box labeled '画像デコーダ VAE' (Image Decoder VAE), which reconstructs the image from the latent space.\n- The final output is a grayscale image of an astronaut riding a horse in a cubist style, labeled '出力画像' (Output Image).\n\nConnections and arrows show the flow: The user prompt goes to the CLIP encoder, then to the text embedding. The random Gaussian noise enters the latent space representation. Both the text embedding and the latent representation are fed into the UNet. The UNet's output becomes the new latent diffusion representation, which is then processed by the sampler/scheduler and fed back to the latent representation for the next iteration. This loop repeats N times. After the final iteration, the latent representation is passed to the VAE decoder, which generates the final output image. The diagram clearly separates the text encoding path from the image generation path, with the two converging at the UNet within the diffusion loop."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

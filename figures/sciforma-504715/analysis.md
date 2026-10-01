@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+FairGen: Enhancing Fairness in Text-to-Image Diffusion Models via Self-Discovering Latent Directions — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18810
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the inference pipeline of FairGen, a method designed to guide image generation toward a prescribed demographic distribution without introducing computational overhead. The global layout is horizontal, depicting a left-to-right data flow from user input to generated output images. On the far left, a user interacts with a 'Distribution Indicator'—represented as a circular gauge—allowing selection of a desired demographic distribution, such as uniform or another custom distribution. This selection is visually indicated by a slider with two labeled bars: orange for 'Male' and green for 'Female'. The chosen distribution is then passed to an 'Attribute Adapter M', depicted as a light green rectangular module with multiple vertical green bars, symbolizing different attribute adaptation matrices. These adapters are selected based on the distribution weights and are dynamically integrated into the diffusion model.
+
+The core of the pipeline consists of a dashed-line boundary enclosing the main generative components: a 'Text Encoder', a 'Diffusion UNet', and an 'Image Decoder'. The user provides a text prompt, such as 'A photo of a CEO', which enters the Text Encoder—a light blue rounded rectangle. The encoded text representation is then fed into the Diffusion UNet, shown as two trapezoidal blocks with stacked orange and purple rectangles, each marked with a '+' symbol indicating feature fusion. The Attribute Adapter M connects to these blocks via vertical arrows, signifying that the selected adapter matrices are applied to modulate the features within the UNet during the diffusion process. This integration ensures that the generation process adheres to the prescribed demographic distribution without altering the model’s structure or adding extra parameters.
+
+The processed features are then passed to the Image Decoder, another light blue rounded rectangle, which reconstructs the final image. The output is displayed on the far right as a panel titled 'Generate Images', containing four example images: two male CEOs and two female CEOs, each accompanied by a gender icon (blue for male, red for female) and a 50% label, illustrating balanced gender representation. The visual design uses consistent color coding: orange for male-related elements, green for female-related elements, and light blue for core model components. All connections are represented by solid black arrows, indicating the direction of data flow, while dashed lines denote modular boundaries. The figure effectively communicates how FairGen enables controlled, fair image generation by integrating attribute-specific adapters into the diffusion process based on user-defined distributions.

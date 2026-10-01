@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503585",
+  "record_sha256": "7a0756fd5b144f86a685e1b691a3ad909dfaa2c7863622ef797ce58aacf0e7c0",
+  "asset_sha256": "61bb0dace9d5c771594d51db4f270c391babed4abda02feb5d83dd7c21e6721b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503585",
+    "title": {
+      "zh": "Graph Learning-based Regional Heavy Rainfall Prediction Using Low-Cost Rain Gauges · 方法图",
+      "en": "Graph Learning-based Regional Heavy Rainfall Prediction Using Low-Cost Rain Gauges"
+    },
+    "paper": {
+      "id": "arxiv-2412-16842",
+      "title": "Graph Learning-based Regional Heavy Rainfall Prediction Using Low-Cost Rain Gauges",
+      "authors": [
+        "Edwin Salcedo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16842",
+      "arxiv_url": "https://arxiv.org/abs/2412.16842",
+      "arxiv_id": "2412.16842",
+      "arxiv_first_submitted_at": "2024-12-22T03:40:16Z",
+      "arxiv_updated_at": "2024-12-22T03:40:16Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16842v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503585/image/image.jpg?Expires=1790855374&Signature=XWnRejWBKGh0Fmm5SChp6oqArMX9eLanwQoOt40eanFm2bEfNwTk-Wy~qq3BZUt~dUh3~5TJp0CTzSt9sWxE653FkpM9eLLNho7rXAqSlNOaaW1ejDWFv17cQmkUe~iDgTAvUaCsP45BTP15tMFl9~ewi0yp79cxe6FMzxfcxnUU5y0B2Ve6MM8skfcJo6UfYb7j3xG11L8qiGNxSECGRblCIJatLXW3CW3HGWn0ARDDS2jbpflkUYDKxC8D8~cvMpam~fGe6T-yQXO6tdB1FMTsMF3A123u2dNbErjWfeAzpfvjvsaxvl9WsOsbw59iXCaKu2nhJaQrARiiLNQUBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503585,
+      "description_sha256": "8de41068795291cd48edde2d5792dc7ee067564f1fe4e7d9381f29b80dc9d9ad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "560e2a328d43a1d47f5672b14eeb3e721c21607dfae35d0ccfcb58343914618d",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the best-performing Graph Neural Network (GNN) model, presented as a directed acyclic graph of computational layers. The global layout is vertically stacked, with data flow proceeding from top to bottom, indicating a sequential forward pass through the network. Two distinct input streams originate at the top: one labeled 'input_5' with an InputLayer receiving a tensor of shape [(None, 5)] and outputting the same shape, and another labeled 'input_6' with an InputLayer receiving a tensor of shape [(None, 10, 10)] and outputting the same. These inputs feed into a series of GraphConvLayer modules arranged in a cascading sequence.\n\nThe first GraphConvLayer, named 'graph_conv_layer_10', receives the output from 'input_5' as its input (shape: (None, 5)) and produces an output of shape (None, 10, 16). This layer is followed by 'graph_conv_layer_11', which takes the previous layer's output as input (shape: (None, 10, 16)) and outputs the same shape. Next, 'graph_conv_layer_12' receives the same input shape and reduces the feature dimension to (None, 10, 8). The final GraphConvLayer, 'graph_conv_layer_13', also receives input of shape (None, 10, 8) and maintains this output shape.\n\nA key structural feature is the multi-input design: 'graph_conv_layer_10' receives only the 'input_5' stream, while 'graph_conv_layer_11' receives both the output from 'graph_conv_layer_10' and the 'input_6' stream. Similarly, 'graph_conv_layer_12' receives the output from 'graph_conv_layer_11' and 'input_6', and 'graph_conv_layer_13' receives the output from 'graph_conv_layer_12' and 'input_6'. This indicates that the 'input_6' stream is concatenated or otherwise combined with intermediate features at each subsequent GraphConvLayer, suggesting a skip-connection-like or multi-modal fusion mechanism.\n\nThe final layer is a Dense layer named 'dense_2', which takes the output from 'graph_conv_layer_13' (shape: (None, 10, 8)) and maps it to a final output of shape (None, 10, 1), likely representing a regression or classification prediction per node in the graph. All layers are represented as rectangular boxes with black borders, containing the layer name, type (e.g., GraphConvLayer, Dense), and input/output shapes. Arrows indicate the direction of data flow, with solid lines connecting layers in sequence and curved lines showing the persistent connection of 'input_6' to multiple downstream layers. The figure does not include any color coding; all elements are monochrome. The caption 'Best performing GNN model' confirms this architecture's superior performance in the context of the study."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

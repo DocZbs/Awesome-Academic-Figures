@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505795",
+  "record_sha256": "3947527c81f953ae87effa37d67bc72fe9c7d1d799b1691dc745fb5f56ae61de",
+  "asset_sha256": "c4bad9a5e385530678536bf0a72a214361d0dae6251ea8db9339c8c46f8c7307",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505795",
+    "title": {
+      "zh": "ChartAdapter: Large Vision-Language Model for Chart Summarization · 方法图",
+      "en": "ChartAdapter: Large Vision-Language Model for Chart Summarization"
+    },
+    "paper": {
+      "id": "arxiv-2412-20715",
+      "title": "ChartAdapter: Large Vision-Language Model for Chart Summarization",
+      "authors": [
+        "Peixin Xu",
+        "Yujuan Ding",
+        "Wenqi Fan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20715",
+      "arxiv_url": "https://arxiv.org/abs/2412.20715",
+      "arxiv_id": "2412.20715",
+      "arxiv_first_submitted_at": "2024-12-30T05:07:34Z",
+      "arxiv_updated_at": "2024-12-30T05:07:34Z",
+      "arxiv_subjects": [
+        "cs.MM",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20715v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505795/image/image.jpg?Expires=1790855559&Signature=k5CcEjl-GMVBFaq2LkDq~fOQRuxbyPFmqkGHxWw5l~NpC8l0PaZWAXncdvgHWGEhqXXDd~AVWsVIs0TUEvD92nQbcJge4ufx2ptNeG0KFoT0xxXSYp-I36TmpkBKF-D5XgAoziJNRmwgFbutrQXJXS0NkrL83d0HDraFbZsshzZmBr-8np2ARYP9k7XyKSXjYdxNNZ0rP6-fKpKAof19rOuwt5QznmyIluMnfL1EVBA1ekad4Eloo9~ds4Nz62t0qKX2ICzEK2RG1bIZq0mBbeVQHo9tsdTR8Z06nF6CfCxHx2Qt5xQpS4ksp~j5o4~x6vNlJJ7ByKCiFRcXPzlHaA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505795,
+      "description_sha256": "31dc0c904dd9c907daa9ffa9dc28e36db93cd71c59c4964cfb5295c0df44275e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0d701e38638fd922ccd29379bbb3675d3177a9324c189cbe9c6169594a904b44",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.MM",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four distinct pipelines for chart-to-text summarization, labeled (a) through (d), arranged in a 2x2 grid layout. Each pipeline begins with an 'Input Chart' represented as a light blue rounded rectangle containing a 3x3 grid of small chart thumbnails. The overall structure is modular, with each subfigure illustrating a different approach to generating a 'Chart Summary', which is consistently shown as a light blue rounded rectangle at the end of each flow.\n\nIn subfigure (a) 'Template-based Approaches', the input chart flows into a 'Frozen OCR Tools' module, depicted as a blue rectangle with diagonal hatching. This module outputs a structured data table, shown as a white box with numerical values (e.g., '55|53.7|53.9|...') and labels ('Mar'19|May'19|Jul'19|...', 'Actual|Forecast'). A 'General Instruction' box, light blue with rounded corners, contains the text '<image>\\nWrite a summary for this chart.' This instruction, along with the extracted data, feeds into a yellow circular node labeled 'Templates'. The templates then produce the final 'Chart Summary'.\n\nSubfigure (b) 'Bi-model Approaches' follows a similar path: the input chart goes to 'Frozen OCR Tools', which outputs the same data table. The 'General Instruction' is also identical. However, instead of templates, the data and instruction are fed directly into an 'LLM' (Large Language Model), represented by a black brain-like icon with multiple nodes. The LLM generates the 'Chart Summary'.\n\nSubfigure (c) 'LVLM-based Approaches' introduces a more complex preprocessing chain. The input chart first undergoes 'Pre-process', then passes through a 'Chart Encoder', followed by 'Alignment'—all shown as white rounded rectangles. These three steps collectively form a visual processing pipeline. The output of 'Alignment' is combined with the 'General Instruction' and fed into the same 'LLM' icon, which produces the 'Chart Summary'.\n\nSubfigure (d) 'Our Approach' combines elements from previous methods. The input chart is processed through 'Pre-process', 'Chart Encoder', and 'Alignment' modules, identical to (c). However, the output of 'Alignment' is directed to a new component: a yellow rectangular box labeled 'ChartAdapter', which has a diagonal hatch pattern. The 'General Instruction' is also fed into the 'LLM'. Crucially, the 'ChartAdapter' outputs are connected to the 'LLM', indicating it modifies or enhances the input to the model. The 'LLM' then generates the 'Chart Summary'.\n\nAll connections between modules are indicated by solid black arrows, showing the direction of data flow. The figure caption below states that (a)-(c) show existing pipelines, while (d) demonstrates the proposed design."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

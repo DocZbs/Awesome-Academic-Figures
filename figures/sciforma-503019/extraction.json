@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503019",
+  "record_sha256": "b24792a06dc60f3ed0bd45e995476e87cd8f40d693f5dcb8cbd88987544c93ca",
+  "asset_sha256": "3eac43726b961bf052845525820eeccd68dac98296cdb7a68aecab29b32a5c81",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503019",
+    "title": {
+      "zh": "CustomTTT: Motion and Appearance Customized Video Generation via Test-Time Training · 方法图",
+      "en": "CustomTTT: Motion and Appearance Customized Video Generation via Test-Time Training"
+    },
+    "paper": {
+      "id": "arxiv-2412-15646",
+      "title": "CustomTTT: Motion and Appearance Customized Video Generation via Test-Time Training",
+      "authors": [
+        "Xiuli Bi",
+        "Jian Lu",
+        "Bo Liu",
+        "Xiaodong Cun",
+        "Yong Zhang",
+        "Weisheng Li",
+        "Bin Xiao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15646",
+      "arxiv_url": "https://arxiv.org/abs/2412.15646",
+      "arxiv_id": "2412.15646",
+      "arxiv_first_submitted_at": "2024-12-20T08:05:13Z",
+      "arxiv_updated_at": "2024-12-23T06:52:45Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15646v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503019/image/image.jpg?Expires=1790855276&Signature=ZYirXtVILoRl6sU9teQz2w1dVm2DBo3AwyELVUkYry5AOuMEyOk4LXg8pQuVf-AvgCWWbHyyRANs9AmdSi2MwAOnRDIwQcYGBDDShLhgmhZonDCa0cG3-jkiHUYbK0NWbqeukh60fUfN6-L9AeZLCLBDAohtJHHOxteEa3oWH4m~kn6WX8HXlCpJ4~5Us1CSHDmEX42JkCo-rhDsdaG-5MoYu4uigNPAN4-YDWqzsm97fc94Lgr9vothK4sJui2IrKT796xOiSOtabj-9uD2scZJ2wC-5sqPtfivAJjWe2WSzSTMhIgQRSEZMd~FGBn1B9CX~CuX4MltG9nbF9VsRQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503019,
+      "description_sha256": "217f41e69b41d1d4ab73ed274597f00ee8576da45b569255f82dcb714977f6ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ea7d96bd234bf244ce00772c5932cb0c9482bf4eacedff32590110aec028f8fe",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a layered architectural framework for video generation, specifically examining how injecting different text prompts at various layers affects the output's appearance and motion. The global layout consists of a horizontal sequence of nine layers indexed from i = 0 to i = 8, arranged left to right. Each layer contains two vertically aligned rectangular modules: one peach-colored representing the 'Spatial Module' and one light green representing the 'Temporal Module'. These modules are consistently paired across all layers, indicating a dual-stream processing structure where spatial and temporal features are handled in parallel.\n\nAbove each layer, an arrow points downward into the corresponding pair of modules. For all layers except the third (i = 2), the arrow is black and labeled with the text prompt symbol 'p', indicating standard prompt injection. At layer i = 2, the arrow is orange and labeled 'p*', signifying a special or modified prompt injection that serves as the focal point of the experiment. This design suggests that the model’s behavior under normal prompting (p) is contrasted with its behavior when a distinct prompt (p*) is introduced at a specific layer.\n\nThe visual modules are uniformly shaped as rectangles with bold black borders. The Spatial Module is colored peach, and the Temporal Module is light green, as indicated by the legend at the bottom of the figure. The height of each module varies across layers, suggesting changes in feature dimensionality or computational complexity per layer. Notably, at layer i = 4, the Spatial Module is significantly shorter than in adjacent layers, possibly indicating a bottleneck or downsampling operation. Dashed vertical lines connect each layer index to its corresponding module pair, reinforcing the alignment between the layer number and its components.\n\nConnections are represented solely by the downward arrows from the prompt labels to the modules. These arrows indicate the direction of prompt injection into the network. The consistent presence of arrows above every layer emphasizes that all layers receive some form of prompt input, but the distinction between 'p' and 'p*' highlights the experimental manipulation at layer i = 2. There are no explicit connections between layers or between modules within a layer, implying that the interaction between spatial and temporal streams may occur implicitly within each layer or through subsequent processing not depicted here.\n\nThe figure’s caption clarifies that this setup is designed to study the influence of the i-th layer on both appearance (likely governed by the Spatial Module) and motion (likely governed by the Temporal Module) in video generation. By injecting p* only at layer i = 2 and p elsewhere, the model’s sensitivity to prompt location can be analyzed, potentially revealing which layers are most critical for controlling visual content versus temporal dynamics."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

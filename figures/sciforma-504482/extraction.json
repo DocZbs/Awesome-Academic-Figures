@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504482",
+  "record_sha256": "c48a35762434c6233fb48479db7791ee97a637cd220800ff10d3e1c9a4d84ad4",
+  "asset_sha256": "e02a67cd9bc0b688680fe77842750dfcb82f54ef88e5c54bc8b3924ba5ea2534",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504482",
+    "title": {
+      "zh": "Many Objective Problems Where Crossover is Provably Essential · 方法图",
+      "en": "Many Objective Problems Where Crossover is Provably Essential"
+    },
+    "paper": {
+      "id": "arxiv-2412-18375",
+      "title": "Many Objective Problems Where Crossover is Provably Essential",
+      "authors": [
+        "Andre Opris"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18375",
+      "arxiv_url": "https://arxiv.org/abs/2412.18375",
+      "arxiv_id": "2412.18375",
+      "arxiv_first_submitted_at": "2024-12-24T12:00:37Z",
+      "arxiv_updated_at": "2025-07-15T22:04:08Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AI",
+        "cs.DS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18375v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504482/image/image.jpg?Expires=1790855427&Signature=k1a0RoEorbh80PQV~EUR89rVR8l-M2KUUS0iwmb8VPlEOkmFvXIDoDoIv-sksDun8AcEzXYJCLsBMe6T4cZSHM2JJy1lDIEjlKTNYqFBdyq5SO36wga3UWTpE6hlynvqFMWv-W0pwEZ-VzWw48-EwZe2~AyXWdeb988xUw56fzkUAuGxU8OgtfhKPl4-o4CsunF9CmQX88WZ7dvwMquoPtp3lGLoG0XfRU~eR3VdjFZNFIay6nB-z1GSw6uN-sRO~Ft5fDwyD5Wwu58MCKl-KMk9A7Oad4yIrgKi2m5dBpMF5hTnAfk~wt01xjL7KVJYI4K4UH0tboXyzPH-KQH~Wg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504482,
+      "description_sha256": "12ccbd1250545d25c9ff82b63ffb7b495521320b0fe283503d3c5475975b2d5c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "361ee03433d5d130acb0d5afe5defd2526f36643e69daf6c34e0f0807c6f6c00",
+      "row_response_sha256": "de92f686a38fd8c61047a885d32c6fdd48928f0a859514f8069f80a1592172af"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AI",
+        "cs.DS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-stage evolutionary algorithm workflow for optimizing binary strings, structured as a horizontal pipeline with three main phases: initialization and mutation, block-wise accumulation of ones, and crossover-based expansion to cover the Pareto front. The global layout consists of three vertically stacked columns, each representing a stage in the process, connected by curved arrows indicating the flow of transformation. Each column contains multiple binary strings, formatted as pairs separated by vertical bars (e.g., '1001000001|1001010100'), representing chromosomes or solutions.\n\nIn the first column, labeled 'x ∈ L after typical initialization', several initial binary strings are shown. These strings are transformed via an operation labeled 'Increase |x¹|₁', which increases the number of ones in the first part of the string (denoted x¹), leading to the second column labeled 'x ∈ M'. This transformation results in strings with more concentrated ones in the left segment.\n\nThe second column feeds into the third column, labeled 'x ∈ A ∪ B', via an arrow labeled 'Store ones in blocks'. Here, the binary strings are modified such that ones are grouped into contiguous blocks, visually emphasized by pink rectangular outlines around the blocks. Two specific strings in this column are marked with red dots, indicating they are selected as parent solutions for crossover. A brown vertical line within these strings denotes the crossover point.\n\nFrom this stage, two downward-curving arrows indicate sequential crossover operations: first, 'apply crossover on first block', producing offspring where the first block is exchanged between parents; second, 'Apply crossover on second block', using the previously generated offspring as new parents to perform crossover on the second block. The resulting offspring strings are shown with purple-highlighted segments, indicating the inherited portions from each parent.\n\nFinally, the bottom-left column, labeled 'Cover Pareto Front', displays the final set of evolved strings, which collectively span the full range of possible optimal solutions. The caption explains that this process allows one-point crossover to extend block sizes by 2n/(5m), and that the red dots denote selected parents while the brown line marks the crossover point. The purple highlights show the inherited segments in offspring. The overall goal is to achieve complete coverage of the Pareto front through successive block-wise optimization and crossover."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

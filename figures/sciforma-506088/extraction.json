@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506088",
+  "record_sha256": "c326a81c5ada55b199f7c44f9ab1a083a541a1dd0dbbcdc11a0569044b64336e",
+  "asset_sha256": "b1fc40db25a779a3adaae6300c0d75edad604ad6b4a104a345521673fd1c820e",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506088",
+    "title": {
+      "zh": "ReFormer: Generating Radio Fakes for Data Augmentation · 方法图",
+      "en": "ReFormer: Generating Radio Fakes for Data Augmentation"
+    },
+    "paper": {
+      "id": "arxiv-2501-00282",
+      "title": "ReFormer: Generating Radio Fakes for Data Augmentation",
+      "authors": [
+        "Yagna Kaasaragadda",
+        "Silvija Kokalj-Filipovic"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00282",
+      "arxiv_url": "https://arxiv.org/abs/2501.00282",
+      "arxiv_id": "2501.00282",
+      "arxiv_first_submitted_at": "2024-12-31T05:28:35Z",
+      "arxiv_updated_at": "2024-12-31T05:28:35Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00282v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506088/image/image.jpg?Expires=1790855568&Signature=dPaRxYglrNvEJ534wkyVXaLd~KgkF3RChCpXfSTLgU1CGJ-SDBiojsha2VUT44zKSKYNkn4RS8AmPrVOiB-9-6GzEhmap8-7Wcqvccb7pEvYcnqX1hwsSL34GRbBSTJ7WO0qOx~OoNEzzZzOY1zyRXHBsOWztQgRIiLkmMdVTyEyupxO6pLk3an2-D2~gm1f-~DjXck8cUQ~6NSR7k6S4D5SKMs34EJIF~r-FB1LUIfNFvMhcjGXGgNpxdkH6JE6fkFG5Cy3EZxHsQzcfWBMHPkqVdYA--Wsz033JwPKHm9urdm4nnuxzGyvmLjnqvru72bK47UbEBtqdRnPxK~LoA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506088,
+      "description_sha256": "a5bfc163612a7bcb6282cf29654560a2ce1ebb912bdca08379ae59bc45958b4c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "03c3eaf90da571d5bf6888ee4048cd955a785d5d81469f85024ec4e38ab96707",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ReFormer approach, a framework for generating deep radio frequency (RF) fakes using a latent token sequence model. The global layout is horizontally structured, divided into three main sections: latent encoding and quantization on the left, central training and inference of a decoder-only transformer (DoT), and generation of deep RF fakes on the right. A vertical split in the center separates the 'TRAINING' phase (right side of DoT) from the 'INFERENCE' phase (left side of DoT), indicated by labeled vertical bars with colored squares (yellow for inference, blue for training).\n\nOn the left, two trapezoidal modules represent the encoder and decoder components of a Vector Quantized Variational Autoencoder (VQVAE). The top beige trapezoid is labeled E_{Θ_E}(x), representing the encoder that maps input x to latent space z. Below it, an orange trapezoid labeled D_{Θ_D}(z_q) represents the decoder that reconstructs from quantized latent tokens z_q. An arrow labeled Q points from z to z_q, indicating the quantization step that produces discrete latent tokens Z_Q.\n\nIn the center, a large dark blue rounded rectangle labeled 'DoT' denotes the decoder-only transformer. It receives the quantized latent sequence Z_Q as input during training and generates an output sequence \\widehat{Z_Q} during inference. Above the DoT, a row of small orange squares represents the output \\widehat{Z_Q}. Below it, another row of orange squares represents the input Z_Q. Text adjacent to the DoT specifies the training objective: 'For Z_Q ∈ Z_D: Do the training until: \\widehat{Z_Q} ≈ Z_Q', indicating that the DoT is trained to reconstruct the original quantized latent sequences.\n\nTo the left of the DoT, the inference process is described: 'Inference (generate \\widetilde{Z_Q^C}): 1st token = C, Sample DoT autoregressively'. This indicates that during inference, the DoT generates a new sequence \\widetilde{Z_Q^C} starting with a context token C, sampling tokens sequentially.\n\nOn the far right, the generated latent sequence \\widetilde{z_q^C} (represented by a row of orange squares) is fed into another orange trapezoid labeled D_{Θ_D}(\\widetilde{z_q^C}), which corresponds to the same decoder module as on the left but now used to produce the final 'Deep RF fake'. This completes the pipeline from latent representation to synthetic RF signal generation.\n\nConnections are shown via arrows: from E_{Θ_E}(x) to Q, from Q to DoT (input Z_Q), from DoT to output \\widehat{Z_Q}, and from \\widetilde{z_q^C} to D_{Θ_D}(\\widetilde{z_q^C}) to produce the Deep RF fake. The vertical bars labeled 'INFERENCE' and 'TRAINING' visually separate the two phases, with inference occurring when the first token is set to C and sampling proceeds autoregressively, while training involves minimizing the reconstruction error between \\widehat{Z_Q} and Z_Q."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

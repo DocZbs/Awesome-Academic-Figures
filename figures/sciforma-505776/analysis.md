@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Two Birds with One Stone: Improving Rumor Detection by Addressing the Unfairness Issue — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20671
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic view of a two-phase training methodology for learning invariant representations, structured across epochs. The global layout is divided into two main horizontal sections: the '1st Epoch' at the top and the 'Rest Epochs' below, enclosed within a dashed rectangular boundary. A large downward arrow connects these sections, indicating progression from initial training to iterative refinement.
+
+In the '1st Epoch', a sequence of m training instances, represented by speech bubbles with ellipses, flows rightward via double chevrons into a peach-colored rounded rectangle labeled 'Base model', which contains a flame icon. This output then feeds into a light green rounded rectangle labeled 'Classifier', also containing a flame icon, symbolizing active training.
+
+The 'Rest Epochs' section is further subdivided into two steps within the dashed box. Step 1, titled 'Unfair Partition', begins on the right with a peach-colored 'Base model' box featuring a snowflake icon, indicating a frozen or fixed state. From this, data flows leftward into a grid structure labeled 'Subset Features A ∈ {0,1}^{m×k}', where rows correspond to training instances and columns to k feature subsets. Each column header is color-coded (e.g., 1 in pink, 2 in blue, 3 in green), and each row contains a speech bubble. To the left of this grid, a vertical stack of colored bars (pink, blue, green, etc.) labeled 1 through k represents the feature subsets. An arrow points from this stack to a gray box labeled 'Argmax Eq. 2', indicating selection of the optimal subset based on Equation 2.
+
+Step 2, titled 'Invariant Learning', follows below. It starts with a peach-colored 'Base model' box with a flame icon, feeding into a partitioned representation labeled 'Partition 1' and '2'. The partitioning visually separates the feature subsets (represented by colored bars) into two groups. This partitioned input flows via double chevrons into a light green 'Classifier' box with a flame icon, which then connects to a gray box labeled 'Argmin Eq. 3', signifying optimization using Equation 3. A curved gray arrow loops from the bottom right back to the top right of the dashed box, illustrating the iterative nature of the process across epochs.
+
+The visual modules use consistent color coding: peach for base models, light green for classifiers, gray for mathematical operations, and distinct colors for feature subsets. Icons (flame for active, snowflake for frozen) denote model states. Text labels include mathematical notation (A ∈ {0,1}^{m×k}) and references to equations (Eq. 2, Eq. 3), emphasizing the algorithmic foundation.

@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Real-time Bangla Sign Language Translator — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16497
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a flowchart illustrating the testing procedure for a sensor-based system, structured as a top-down sequential process with decision branching. The global layout is vertical, beginning at the top with an initial calibration step and progressing downward through a series of processing stages, culminating in two parallel output paths based on a conditional decision. The flowchart uses standard flowchart symbols: rectangles for processes, a diamond for decision-making, and rounded rectangles for start/end points or external outputs. A cloud-shaped annotation provides supplementary information about the mapping range used during sensor data processing.
+
+At the top, a double-bordered rectangle labeled 'calibration process' serves as the initial preparatory stage. Two downward arrows from this box converge into a black rounded rectangle labeled 'start', indicating the initiation of the main operational sequence. From 'start', a single arrow leads to a white rectangular box labeled 'read sensor's values', representing the first active step in data acquisition.
+
+Following this, another white rectangle labeled 'map the sensors reading' indicates the transformation of raw sensor data. An arrow from this box points to a black diamond-shaped decision node labeled 'sensor's readings = stored values "letter found"'. This decision point evaluates whether the current sensor readings match previously stored values associated with a detected letter. Two paths emerge from this decision: one labeled 'yes' and the other 'no'.
+
+The 'yes' path leads to a white rounded rectangle labeled 'display in parallel to the LCD display', indicating immediate local visual feedback. The 'no' path leads to another white rounded rectangle labeled 'display serially through bluetooth to the smartphone', suggesting remote transmission of data for further analysis or logging.
+
+A gray cloud-shaped annotation is positioned to the right of the 'map the sensors reading' box, connected by a curved arrow. It contains explanatory text: 'the mapping is in the range of 0 to 200 where 0 refers to the min value and 200 refers to the max value (min,max) values obtained in the calibration process'. This clarifies that the mapping step normalizes sensor readings to a standardized scale derived from the calibration phase.
+
+All arrows are solid black lines with classic arrowheads, indicating unidirectional flow. The diagram uses contrasting colors—black for decision nodes and start point, white for process steps and outputs—to visually distinguish between control logic and operational steps. Text within each shape is centered and written in a clear, sans-serif font. The overall structure emphasizes a clear, conditional workflow from sensor input through processing and decision to dual output modes depending on detection success.

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-506631",
+  "record_sha256": "e28c6614ddae7e18e5ac41f4771e3ed94e8cd386a8a30977171d78a33c6abc0f",
+  "asset_sha256": "d4d19a7bda601776bde84a6a4b12c213e35bc3221c20215bf41d0d47046271cc",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506631",
+    "title": {
+      "zh": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation · 方法图",
+      "en": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01993",
+      "title": "A Novel Convolution and Attention Mechanism-based Model for 6D Object Pose Estimation",
+      "authors": [
+        "Alexander Du",
+        "Xiujin Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01993",
+      "arxiv_url": "https://arxiv.org/abs/2501.01993",
+      "arxiv_id": "2501.01993",
+      "arxiv_first_submitted_at": "2024-12-31T18:47:54Z",
+      "arxiv_updated_at": "2026-01-07T09:50:21Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01993v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506631/image/image.jpg?Expires=1790855633&Signature=quE9vQwiFcXAmG-NBd6bp115vtP-jS05PN4prl3qDpmd5U659gMZxFjwJgIatO3cXLvesgtaEjODxKbp8vw2szfHksEpOdAMF2lbhh2VhfWi1r9Y68FEItg2OCQg6T~pcJl-D5ey~SXvX55QuIvYbbD3JuJk5Ffkc8gDCyjII40sW54lyZp45m38S4vhGee4~NA8dB7qcBYQGMYY41NW2xtGjRAUgNemhD-ig5rgXAMOVtziIo7TSJDktH6CXeVxL6K~XC9ind8d-KZgMOaenOZmE2YTelqKlEf1Hty5H7Gy~q-DoTxdF9-fM002uIsfVxD9Dhu5ZvUJksRN~b~ukQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506631,
+      "description_sha256": "9bb6b56d38214101dda94010e8e238f8aadab6d02e4e64641ff0727c48887ce8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f532784364658da3bc243b8e34e3e5b89de080ac6c89bc46bba749ae45d0c6dc",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of PoseLecTr, a model designed for pose estimation or related tasks involving spatial relationships, likely using graph-based representations. The overall layout is a left-to-right pipeline divided into three main stages: feature extraction, encoder-decoder processing, and loss computation. The structure is modular, with detailed submodules shown below the main flow for clarity.\n\n[1] Global Layout and Structure:\nThe diagram begins on the left with input images (two grayscale landscape images), which feed into a Feature Extraction Block. This block outputs patch embeddings, which are then processed by an Encoder composed of multiple Transformer blocks, followed by a Graph module and a GNN Block. The output from the GNN Block feeds into a Decoder consisting of an MLP Layer and an Output layer. The final output is connected to a loss function labeled 'ROTATION LOSS + TRANSLATION LOSS'. Below the main pipeline, three expanded submodules are shown: the Feature Extraction Block, a Transformer Block, and the GNN Block, providing internal details of each component.\n\n[2] Visual Modules and Attributes:\n- Input Images: Two grayscale images at top-left, labeled as inputs.\n- Feature Extraction Block: A light green rectangular box containing four components in sequence: 'Resnet 50 Block' (gray), 'Avg Pooling Layer' (white), 'Flatten' (white), and 'MLP Layer' (dark green). This block processes the input images to produce patch embeddings.\n- Patch Embeddings: Represented as a grid of gray rectangles, indicating discrete patches extracted from the image.\n- Adjacent Matrix: Shown as a square grid of varying gray shades, representing pairwise relationships between patches; it is generated from the patch embeddings and fed into the Graph module.\n- Encoder: A large white box labeled 'Encoder', containing N Transformer Blocks (light beige boxes labeled 'Transformer Block1' to 'Block4'), followed by a Graph module (stacked circular nodes forming a graph structure, labeled 'Graph G(V, ε, A)'), and then a GNN Block (orange rectangle).\n- Transformer Block: Expanded below the Encoder, showing internal components: 'Self-Attention' (gray), 'Norm' (white), and 'FFN' (gray), arranged sequentially.\n- Graph Module: Contains a visual representation of a graph with nodes and edges, symbolizing the spatial relationships encoded via the adjacent matrix.\n- GNN Block: An orange rectangle, indicating a Graph Neural Network layer that processes the graph structure.\n- Decoder: A white box labeled 'Decoder', containing an 'MLP Layer' (dark blue) and an 'Output' (light gray) layer.\n- GNN Block Expansion: A large brown box below the main pipeline, detailing the internal structure of the GNN Block. It includes the Adjacent Matrix as input, feeding into three 'Legendre Blocks' (yellow), each followed by an 'MLP Layer' (blue). These paths are combined via element-wise addition (⊕). The output is further processed through a concatenation ('concat') step with Legendre polynomials (gray box labeled 'legendre polynomials x N'), followed by another 'Flatten' and 'concat' operation.\n\n[3] Connections and Arrows:\nSolid arrows indicate direct data flow: from input images → Feature Extraction Block → Patch Embeddings → Encoder (Transformer Blocks → Graph → GNN Block) → Decoder (MLP Layer → Output) → Loss. Dashed lines connect the main modules to their expanded submodules for detail. The Adjacent Matrix is generated from Patch Embeddings and fed into the Graph module. Within the GNN Block expansion, the Adjacent Matrix is used as input to the Legendre Blocks, which process it through multiple layers and combine results via ⊕ operations. The final concatenated output from the GNN Block feeds into the Decoder. The Output layer connects to the loss function, which combines rotation and translation losses."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

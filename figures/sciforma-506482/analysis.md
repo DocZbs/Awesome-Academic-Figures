@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01511
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the TreeLUT architecture designed for binary classification tasks. The global layout is structured in a top-down flow: input features are processed through a Key Generator, which then feeds into multiple parallel decision trees (denoted as qf1, qf2, ..., qfM), whose outputs are aggregated with a bias term qb via a summation node to produce the final output QF.
+
+At the top of the diagram, a sequence of input features x₀, x₁, x₂, ..., x_{d−1}, x_d is represented as a horizontal row of gray circular nodes. These inputs are directed downward via a single arrow into a wide blue rectangular block labeled 'Key Generator'. This module serves as the initial processing unit that transforms or encodes the input features.
+
+From the Key Generator, three parallel branches emerge, each leading to an individual decision tree module. These modules are enclosed in rectangular boxes with blue headers labeled qf1, qf2, and qfM respectively, indicating a set of M such trees. Each tree module contains a small decision tree structure composed of internal nodes (dark gray circles and white circles) and leaf nodes (white squares and dark gray squares). The internal nodes represent decision points, while the leaf nodes represent output values or predictions. The tree structures are identical in form across all modules, suggesting uniformity in design. The ellipsis between qf2 and qfM indicates that there are additional intermediate trees not explicitly drawn.
+
+Each tree module’s output is connected by a line to a central summation node, depicted as a blue circle containing a '+' symbol. Additionally, a separate white rectangular box labeled 'qb' (representing a bias term) also connects to this summation node. The summation node aggregates all incoming signals—outputs from each qf module and the bias qb—and produces a single output, represented as a gray circular node labeled 'QF', which stands for the final quantized function or prediction.
+
+All connections are represented by solid black arrows indicating the direction of data flow. The visual hierarchy emphasizes the modular and parallel nature of the architecture: inputs are first encoded, then processed independently by multiple trees, and finally combined linearly with a bias to yield the final classification output. The color scheme uses blue for primary processing blocks and gray for inputs and outputs, with white used for leaf nodes and the bias box to differentiate components. The diagram is clean and schematic, focusing on the logical flow rather than implementation details.

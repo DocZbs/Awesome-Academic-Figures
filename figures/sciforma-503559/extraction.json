@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-503559",
+  "record_sha256": "50168146d26d487e7b3a9081e56f5821b1ae7a27a4b9dbaf7fe6287b6b606efe",
+  "asset_sha256": "a4dd99f15b0ee76d6d52e88ded815573efac0b1ee0e6434dfe0ea015145d7f77",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503559",
+    "title": {
+      "zh": "Quantum-Like Contextuality in Large Language Models · 方法图",
+      "en": "Quantum-Like Contextuality in Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-16806",
+      "title": "Quantum-Like Contextuality in Large Language Models",
+      "authors": [
+        "Kin Ian Lo",
+        "Mehrnoosh Sadrzadeh",
+        "Shane Mansfield"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16806",
+      "arxiv_url": "https://arxiv.org/abs/2412.16806",
+      "arxiv_id": "2412.16806",
+      "arxiv_first_submitted_at": "2024-12-21T23:46:55Z",
+      "arxiv_updated_at": "2024-12-21T23:46:55Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "quant-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16806v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503559/image/image.jpg?Expires=1790855374&Signature=DsR2yyS1Dl7Wlld6Ruwzx4unOzgjzQiPHzy8B5wdm1cgwLeeKlowZzT1luZLZc-SPlYJE0bTj~9gT3L6whE3NFXEr5SFI2rpOTtHY-5H~llMOgEbv01U8safRqpSWK0YvyHrDHBFaR0uJGEyc8WPcqU3vX84mojfsEjlKyItwybjo2ZHGcS1l5hfPLhNQAMdJh4sSi8xmJVWTeAm4jPko-~4hLI2Xv4HcBtc67~3FljGxKb8lcUkyTnoCVjk~bmkx21uuQyINT6dXfkowMLpxe-gcIZs4ZCWINA7qr5-ZtvqFlI3V1Pz7uD-defAUiaQ6Yyh~JJRiy2Ft2mkLIa3UA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503559,
+      "description_sha256": "df1b55911f153c75b2e5d3cf110dc42557f0c1b1bb47921fa85b6f048e2ffa89",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7413d32facbf1dcfb1bad0a0379780d95750abeb2890f976e797eff872b45099",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "quant-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a vertical flowchart illustrating the architectural pipeline of the BERT model, showing the transformation of input tokens into output prediction vectors through three main sequential layers. The global layout is structured as a top-down flow, with components arranged in three horizontal rectangular blocks stacked vertically: 'Input Embeddings' at the bottom, 'Transformer Encoder' in the middle, and 'Prediction Feedforward' at the top. Each block processes six token positions, indicated by aligned inputs and outputs beneath and above each layer respectively.\n\nAt the bottom, the 'Input Embeddings' layer receives a sequence of six tokens: '[CLS]', 'this', 'is', '[MASK]', '.', and '[SEP]'. These tokens are mapped to corresponding embedding vectors labeled x₀ through x₅, which are fed upward into the next layer. The 'Transformer Encoder' layer processes these embeddings and produces six intermediate representations labeled y₀ through y₅. These representations are then passed to the topmost layer, 'Prediction Feedforward', which generates final prediction vectors p₀ through p₅, one for each position in the sequence.\n\nEach module is represented as a white rectangular box with black borders and centered black text. The tokens at the bottom are written in plain text, while the embedding vectors (xᵢ), intermediate representations (yᵢ), and prediction vectors (pᵢ) are denoted using bold lowercase letters with subscript indices. All connections between layers are depicted as thin black vertical arrows pointing upward, indicating the forward pass direction of data flow from input to output. There are no horizontal connections or feedback loops; the architecture is strictly feedforward.\n\nThe figure caption explicitly states that this is a flow chart of the BERT model illustrating how embedding vectors are transformed into output vectors, reinforcing the purpose of the diagram as a visual explanation of the model’s core processing pipeline. The diagram does not include any color coding or additional annotations beyond the labeled vectors and module names."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

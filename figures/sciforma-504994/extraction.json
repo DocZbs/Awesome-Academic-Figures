@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504994",
+  "record_sha256": "77cdd822465f95d3d8d91a19f0b8c57bea8f1e21b74b80f28cf66515df924352",
+  "asset_sha256": "a398ba3f9e2e7813db0a9367e1789a4021b41e2d056867ef6069ba905d2c460a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504994",
+    "title": {
+      "zh": "Learning Cross-Domain Representations for Transferable Drug Perturbations on Single-Cell Transcriptional Responses · 方法图",
+      "en": "Learning Cross-Domain Representations for Transferable Drug Perturbations on Single-Cell Transcriptional Responses"
+    },
+    "paper": {
+      "id": "arxiv-2412-19228",
+      "title": "Learning Cross-Domain Representations for Transferable Drug Perturbations on Single-Cell Transcriptional Responses",
+      "authors": [
+        "Hui Liu",
+        "Shikai Jin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19228",
+      "arxiv_url": "https://arxiv.org/abs/2412.19228",
+      "arxiv_id": "2412.19228",
+      "arxiv_first_submitted_at": "2024-12-26T14:09:16Z",
+      "arxiv_updated_at": "2025-01-15T01:16:30Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19228v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504994/image/image.jpg?Expires=1790855452&Signature=qIloc0~TtWX2a9v9rflVNR313J0X7uH4jlnhD~8wg0Ww1aPokriVSkXqhlevctD71fI6vSo~bdGVDdRWR4hbD9HCrXWPoERHrb7wQ71gOa17iPZamnaak8W53vuhLhacfWJzFB77OFi8Kunvtk2var4j2qcfnaslbRjD5nHQ1sJ9YQkugyatph2e4GFOUytTiIK86n9e0Maj1SOB-qJpdnEdLBpWUPkFC79H8mGWe8QdnsP530UYupZagzwkaHnv6RJDKOXaLpk0Uags9PyFTp-ojJX~ykHfOQtNw0KD909x6Fio9TM82dx-1DxiH3YHzJWcfZM8xGpwK35AjaVeoQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504994,
+      "description_sha256": "632bd30ce56e36827cd466b1c040052d249f6fa3e5dfe82ee79e0f42a84275a6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7f0ba7addb80f4b27b68e456243873999cbb470505f07dcb54398448acc34646",
+      "row_response_sha256": "f660526c9219aba5bd2770f7f64ab8d0ba044fc54dd7ecf0509dd435371c8f96"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the XTransferCDR framework, a deep learning architecture designed for cross-perturbation expression profile prediction. The global layout is structured into four main horizontal sections: input data on the left, an encoder block, a cross-transfer module, a decoder block, and output predictions on the far right. The entire pipeline processes two distinct perturbed expression profiles, labeled as Perturbation a (green) and Perturbation b (blue), each represented by a grid of colored squares denoting gene expression levels, denoted as X^(a) and X^(b) respectively. These inputs are derived from biological experiments shown symbolically with petri dishes and pipettes.\n\nIn the Encoder section (yellow background), two separate encoders, E_p (for perturbation) and E_s (for basal state), are depicted as stacked yellow 3D blocks. Each encoder processes one of the input expression profiles. From E_p, a green latent vector p^a is extracted for Perturbation a, and from E_s, a green latent vector s^a is extracted. Similarly, for Perturbation b, E_p produces a blue latent vector p^b, and E_s produces a blue latent vector s^b.\n\nThe Cross Transfer section (light blue background) performs latent space interactions. For each perturbation, the model computes two loss terms: L_orth (orthogonality loss) between p^a and s^a, and L_sim (similarity loss) between s^a and s^b. These losses are indicated by black arrows pointing to the respective latent vectors. The core cross-transfer operation involves swapping perturbation embeddings across conditions: p^a is combined with s^b (green + blue) to form a new latent representation, and p^b is combined with s^a (blue + green) to form another. These combinations are shown as dashed boxes containing two adjacent 3D blocks. Additionally, self-consistent combinations p^a + s^a and p^b + s^b are also formed, serving as control or reconstruction paths.\n\nThe Decoder section (orange background) consists of a single shared decoder D, represented as stacked orange 3D blocks. It receives all four combined latent representations (p^a+s^b, p^b+s^a, p^a+s^a, p^b+s^b) and maps them back to the expression space.\n\nOn the far right, the Predicted expression profiles are shown as grids matching the input format. Four outputs are generated: X̂^(a-b) (green arrow) from p^a+s^b, X̂^(b-a) (blue arrow) from p^b+s^a, X̂^(aa) (green arrow) from p^a+s^a, and X̂^(bb) (blue arrow) from p^b+s^b. These correspond to cross-prediction and self-reconstruction tasks. Three loss functions are associated with these outputs: L_cross for the cross-predicted profiles (X̂^(a-b) and X̂^(b-a)), L_reco^(2) for the self-reconstructed profiles (X̂^(aa) and X̂^(bb)), and L_reco^(1) for the direct decoder outputs D(S^a) and D(S^b), which are shown as additional outputs from the decoder. The connections are color-coded: green for Perturbation a, blue for Perturbation b, and gray for general data flow. The figure uses 3D rectangular blocks to represent neural network layers, with colors indicating the source perturbation, and dashed boxes to denote combined latent representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

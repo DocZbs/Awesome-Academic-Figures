@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505634",
+  "record_sha256": "cbb8efe6f800677b77813aad90c820c73cef438b02cbb70131f1d0e421c39556",
+  "asset_sha256": "8e8bb20aca3186854cdcfb06c7f281a28f256250894d2265534c24665121ab6a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505634",
+    "title": {
+      "zh": "Defending Multimodal Backdoored Models by Repulsive Visual Prompt Tuning · 方法图",
+      "en": "Defending Multimodal Backdoored Models by Repulsive Visual Prompt Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-20392",
+      "title": "Defending Multimodal Backdoored Models by Repulsive Visual Prompt Tuning",
+      "authors": [
+        "Zhifang Zhang",
+        "Shuo He",
+        "Haobo Wang",
+        "Bingquan Shen",
+        "Lei Feng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20392",
+      "arxiv_url": "https://arxiv.org/abs/2412.20392",
+      "arxiv_id": "2412.20392",
+      "arxiv_first_submitted_at": "2024-12-29T08:09:20Z",
+      "arxiv_updated_at": "2025-10-30T07:48:58Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20392v4"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505634/image/image.jpg?Expires=1790855552&Signature=H5gOtVEvJveg0vvK~Cx80iKW4CKOKM8-ZI6w2QrrURjl-rhUa7Y9MlwKB3w85bHkv4f-lfSaMU1TmJMQVC5lByFxRCfVb~4Nf3gx0--f5Qc~03RZBJI0EM5l4GPSwS2rzDHlBE5yLUfOUTsZ~kAgCol9ABaW~Dhoq8a2Bu1Km8sOU1GYxMi31jr9tha7vq3VxMHb6u2YZX9WVYXyeTgmqvDyXaYzgijgMHAgSrPLrrlHB64XYQNNgqm2C-ZQoWKMpQ3eM3dcdTUfKZXm~tZuJQzwY4f2Y2ct47n7NGG3~LU7KobW4odb-AZqsg2ynr9a2PJrKRfcfCqPwoTR2HIQ1Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505634,
+      "description_sha256": "6ce55f86c52c341a879f16aec53f5058ea77ab00c8e79fb71740b256e852bba9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5957e3dbc6fcd45089d8c31cb52dd46784340df1d377fd4df64d8ecc5f75cce6",
+      "row_response_sha256": "bc4ac5fb5cda58560dd606915120ce9a8de7b88b7bd52cf7dc8f65e31b2aa440"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of RVPT (Repulsive Visual Prompt Tuning), a method designed to enhance backdoor robustness in vision models by selectively tuning visual prompts while keeping the base model's parameters frozen. The global layout is a two-tiered horizontal flow: the top tier represents the main visual encoder with learnable prompt modules, and the bottom tier shows a frozen version of the same encoder used for comparison. Both encoders receive a 'Downstream image' as input. The top encoder, labeled with solid purple borders, contains multiple Encoder Blocks, each marked with a red flame icon indicating learnable parameters, and some blocks are highlighted with red bars labeled 'Purified Feature'. These red bars are inserted at specific positions (D+1 to L-1) within the encoder, representing tunable visual prompts. The bottom encoder, outlined with dashed purple lines, is identical in structure but has all parameters frozen, indicated by blue snowflake icons, and processes the same image to produce original features. The outputs of both encoders are compared via FR Loss (Feature-Repelling Loss), which is applied at multiple layers (D+1, ..., L-1) to minimize the cosine similarity between the purified and original features, ensuring that the learned prompts do not retain or amplify irrelevant features. The final output of the top encoder is an Image Embedding (IE), shown as a red rectangle. This IE is then compared with Text Embeddings (TE₁ to TE_c) generated by a separate Text Encoder. The Text Encoder receives a concatenated prompt: 'a photo of a ' plus 'Class names', and produces text embeddings for each class. The similarity scores (S₁ to S_c) between IE and each TE are computed, and the CE Loss (Cross-Entropy Loss) is applied to ensure accurate classification. A special similarity score S₊ is highlighted with a red border, likely indicating the target class. The legend at the bottom clarifies symbols: red flame = Learnable Parameter, blue snowflake = Frozen Parameter, purple bar = Original Feature, red bar = Purified Feature, red square = Image Embedding (IE), gray square = Text Embedding (TE), black square = Similarity Score (S), and red rectangle = Repulsive Visual Prompt. The overall workflow emphasizes that RVPT optimizes visual prompts using both FR Loss (to repel non-predictive features) and CE Loss (to maintain clean task performance), thereby promoting robustness against backdoor attacks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506873",
+  "record_sha256": "1ef91a309b5a23b8de682df59b56e6d28e5fa61b5c40b4844fb072918821b159",
+  "asset_sha256": "f5f27cdbfd5484cbe6f1f754d5514b061c293508a72f182d117d9696a9451c2a",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506873",
+    "title": {
+      "zh": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models · 方法图",
+      "en": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-02816",
+      "title": "InpDiffusion: Image Inpainting Localization via Conditional Diffusion Models",
+      "authors": [
+        "Kai Wang",
+        "Shaozhang Niu",
+        "Qixian Hao",
+        "Jiwei Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02816",
+      "arxiv_url": "https://arxiv.org/abs/2501.02816",
+      "arxiv_id": "2501.02816",
+      "arxiv_first_submitted_at": "2025-01-06T07:32:12Z",
+      "arxiv_updated_at": "2025-01-06T07:32:12Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02816v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506873/image/image.jpg?Expires=1790855627&Signature=o2VbWXa0e5n6nqd4lg0OXhYeHvCQdhUHQ2EpJJSzRA14FJs7hxS9PswKbwcyhY2VtA9ukI4LPsHVPis6yKBfL0oPB-KAS~ye-Pnin2kVNiVFn35qm-LO~xoGpV5c81Dpg7ag15Emlno69sAFPYcfQooc7CgCzcaJLScpoRZF~C~dNZnwcJT6yF8Z4nMLEDUq1tRWlZ7Bcvq47EfqopNjLki-x9OiGOt6rOq5PsiVlvGuzWiBaahcsNKsXzZOwoF7rndpGbBfIEiaT6q5jON5SxaJKZi8FyrpObafGSyO50vG3kUrV1~O~pevNRXBgZPo3rOHPacPxGRTN2P4nDJQ3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506873,
+      "description_sha256": "3ce303fc8b7501c13434d27d42532b9564b9e392afcb30077d3f3176ee6e1202",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "d0481d2b70923b9e5e0d1340f98563c34136af0dc1eab46be3366f9eed851495",
+      "row_response_sha256": "c9ccf5f63a553053641ef5c4114c2b7c8acf96bc87397461a29c8c92d4a7fdf6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main sections, labeled A and B, separated by a vertical line. Section A is titled 'Image Semantic Extraction' and Section B is titled 'Image Edge Extraction'. Both sections depict a sequential processing pipeline composed of modular components arranged horizontally from left to right.\n\nIn Section A, four input features, labeled f₄, f₃, f₂, and f₁ from left to right, each feed into a corresponding module labeled 'DMFE', which is represented as a rounded rectangle with light gray fill and black border. The output of each DMFE module connects downward to a circular node labeled 'c', which represents a concatenation operation. The outputs of these concatenation nodes are then passed sequentially through three 'Conv3×3' modules, each depicted as a vertically oriented rounded rectangle with light gray fill and black border, indicating a 3x3 convolutional layer. The final output of this chain is denoted as fₛ, which is the semantic feature map.\n\nIn Section B, two input features, f₄ and f₁, feed into separate DMFE modules. The output of the DMFE module corresponding to f₄ connects directly to the concatenation node 'c', while the output of the DMFE module corresponding to f₁ also feeds into the same 'c' node. The result of this concatenation is then processed by a single 'Conv3×3' module, whose output is labeled fₑ, representing the edge feature map.\n\nAll connections between modules are indicated by solid black arrows pointing from the source to the destination. The overall layout is horizontal and linear within each section, with vertical inputs feeding into the top of the DMFE modules. The visual style is consistent across both sections: all modules are light gray rounded rectangles or circles with black borders and black text. There are no colors other than black and shades of gray. The figure uses standard mathematical notation for feature maps (f₁, f₂, etc.) and module labels (DMFE, Conv3×3, c). The structure implies a hierarchical feature fusion process where multiple feature levels are processed through DMFE blocks, concatenated, and refined via convolutional layers to produce distinct semantic and edge representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

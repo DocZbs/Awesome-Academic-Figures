@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-506957",
+  "record_sha256": "04347a225c813848dffd55b82d37493ab3dd9584e22d66028cde182508d7622a",
+  "asset_sha256": "dc0c6569726e666eb519bbf7dad5adda270b7dd7fa036d429cb1e7cf095786be",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506957",
+    "title": {
+      "zh": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models · 方法图",
+      "en": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models"
+    },
+    "paper": {
+      "id": "arxiv-2501-03124",
+      "title": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+      "authors": [
+        "Mingyang Song",
+        "Zhaochen Su",
+        "Xiaoye Qu",
+        "Jiawei Zhou",
+        "Yu Cheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.03124",
+      "arxiv_url": "https://arxiv.org/abs/2501.03124",
+      "arxiv_id": "2501.03124",
+      "arxiv_first_submitted_at": "2025-01-06T16:31:45Z",
+      "arxiv_updated_at": "2025-06-28T12:31:45Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.03124v5"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506957/image/image.jpg?Expires=1790855628&Signature=uPYchJbG1xbwjbpJnHcKz8dYiYkJPm3enrR1mKHY4FeJxD3q-sONmYvdMh6E-ScnHvfiswzvfSkpMJW2Ayg952VngYsSk5oi~PGYYUjMRRrvn6PW042E5f18~tl9Jp8eMU746cudEJcIUOHEo5m1oEeE5TXE9usAOe3dGIB-6RI69n6mijEWfhZLInPHigWt6nkiHN~1KVUCx0CfOAUjdQyI3Lff5HOi4Kr0OdLPe27rWG3dS4dz4ZDKrJAqV7Xt9wGvN3xwm-48APB7gX52MmaPLi6SHTpn7IUC0IfUnwyVtAluf1FAC9qv-pooy7SgyFnTzre23Upw~E~x8F7Rzw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506957,
+      "description_sha256": "30af958c3eac5ac8b2f5b83130b5814da4e7b85b2cb606adaddb8211fde32f1b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "af5bdb9b1dfed4f8084253ce55fd184ef27d916eae294d5351a41e2661e1a2ba",
+      "row_response_sha256": "0b0059a0f71d6106ea4b4e3c5ce2b53fd4ade26b30b46546852c71867e8fe9f8"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a structured taxonomy of evaluation criteria for PRM (Probabilistic Reasoning Models), organized into three main categories: Simplicity, Soundness, and Sensitivity. The layout is a three-column table with headers 'Categories', 'Descriptions', and 'Illustration'. A vertical sidebar on the left labels these three categories with distinct background colors: green for Simplicity, yellow for Soundness, and gray for Sensitivity. Each row corresponds to a specific criterion within one of these categories.\n\nUnder Simplicity, two criteria are listed: Non-Redundancy and Non-Circular Logic. Non-Redundancy requires the PRM to detect redundant steps—steps that can be removed without affecting correctness. Its illustration shows a linear chain of nodes A → C → B, where node C is highlighted in red to indicate redundancy. Non-Circular Logic addresses reasoning chains that loop back to the starting point; its illustration depicts a cycle between nodes C and A, with A also connecting to B, and the cycle is marked with curved arrows.\n\nUnder Soundness, four criteria are defined: Empirical Soundness, Step Consistency, Domain Consistency, and Confidence Invariance. Empirical Soundness requires detection of counterfactual steps contradicting ground truth; its illustration shows A → C → B with a red dashed line from C to a green box labeled 'G' indicating contradiction. Step Consistency requires detecting conflicts within a reasoning path; its illustration shows A → B → C with a red curved arrow and 'x' symbol between A and C, indicating inconsistency. Domain Consistency requires robustness when applying domain-specific theories outside their valid context; its illustration compares two domains (A and B) with identical structures but different node colors, connected by dashed red lines to show invalid cross-domain application. Confidence Invariance requires the PRM to remain invariant when faced with confidently stated contradictions; its illustration shows A → B → C with B and C shaded red and labeled 'Confident' under a brace.\n\nUnder Sensitivity, three criteria are listed: Prerequisite Sensitivity, Deception Resistance, and Multi-Solution Consistency. Prerequisite Sensitivity requires detection of missing critical premises; its illustration shows A → B → C with a dashed circle around M (a missing prerequisite) and a red dashed line from M to B. Deception Resistance requires detection of subtly altered statements that appear correct but are inaccurate; its illustration contrasts a 'Correct Theory' (A → B) with a 'Deception' (A → B') where B' is red, indicating a subtle error. Multi-Solution Consistency requires consistency across different solution paths for the same problem; its illustration shows two parallel paths from A: one via B → C → D and another via B' → C' → D, with all nodes in green, indicating consistent outcomes.\n\nAll illustrations use circular nodes with letters (A, B, C, etc.) and arrows to represent reasoning chains. Red color is used to highlight errors, contradictions, or invalid elements. Dashed lines and symbols like 'x' or braces are used to denote relationships or conditions. The descriptions are concise, defining each criterion's requirement for the PRM. The overall structure is clean, grid-based, and designed for clarity in presenting a comprehensive evaluation framework for PRMs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-505070",
+  "record_sha256": "fd7c1df8a24495661ce5419da6eb2e0ca639af35f5cfe12c341d8527e2cb0851",
+  "asset_sha256": "7f5be073fb7b33dc7cd6b7d8e88a41aeb5bc26409a9382083c42c0cd4e2d5bec",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505070",
+    "title": {
+      "zh": "An Engorgio Prompt Makes Large Language Model Babble on · 方法图",
+      "en": "An Engorgio Prompt Makes Large Language Model Babble on"
+    },
+    "paper": {
+      "id": "arxiv-2412-19394",
+      "title": "An Engorgio Prompt Makes Large Language Model Babble on",
+      "authors": [
+        "Jianshuo Dong",
+        "Ziyuan Zhang",
+        "Qingjie Zhang",
+        "Tianwei Zhang",
+        "Hao Wang",
+        "Hewu Li",
+        "Qi Li",
+        "Chao Zhang",
+        "Ke Xu",
+        "Han Qiu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19394",
+      "arxiv_url": "https://arxiv.org/abs/2412.19394",
+      "arxiv_id": "2412.19394",
+      "arxiv_first_submitted_at": "2024-12-27T01:00:23Z",
+      "arxiv_updated_at": "2025-02-13T03:00:18Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19394v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505070/image/image.jpg?Expires=1790855449&Signature=SS4ejcjTguB1TMLd3sNNb4gUORNXb~q1eWmeiygigx9wGXl4EB8mTBRxD32noUjKUKQhHL5iUFqIDO-dK12XGgWx8MId4dkuZv0Snz5UrN3jMq4ZKYR-l5Y-du5OOn3G2T~DVkY-3SNvarnNENKA8IrsS976yiTRiNyvPMUP98iusuHeZYJj5q6qkv87st5-kU~CmZCDu1BxR5TLzpCdJC96kJN-kd-kg3pH--dYTNPFD-Zk5lDZxsXcHApu55luTabsf3sw4raO1evyZeLaS5M3QvpIY2KW9VrOnQH5XtmPAEJuLjVw0GAlhEbYxmVH2lNu5C9wY76eINB9H5uZZw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505070,
+      "description_sha256": "35a5d4c52bdd8ebf894fbe2bded6ac0cdf9beaf02d7efbd31ea2310d856be9dd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "6fe99bbc37a5847c8ab368f6e7a6d9750931bed98657b7fa43739185c782005e",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Engorgio pipeline, divided into two main stages: Generation Stage (top half) and Testing Stage (bottom half), separated by a dashed horizontal line. The overall layout is left-to-right, depicting a data flow from input distributions to output sentences.\n\nIn the Generation Stage, the process begins with a Proxy Distribution θ ∈ R^{S×V}, represented as a blue grid matrix. This matrix undergoes two operations: 'Gumbel-Softmax' (indicated by a yellow arrow labeled 'Update') and 'Cut and Softmax' (blue arrow). The latter produces a Probability Matrix w_{1:t} ∈ R^{t×V}, shown as a grid with red and blue cells, where red highlights selected tokens. From this probability matrix, a Token Sequence of length t is sampled (red blocks), then decoded into an Engorgio Prompt (a text box containing example tokens like 'svol wished Gew drug Sec...'). This prompt is fed as input to a Local Model, depicted as a rounded rectangle containing a standard Transformer block with N layers: Multi-Head Self-Attention (purple), Position-wise Feed Forward (blue), and Positional Encoding (green circle). The Local Model outputs Predicted Logits f_θ(E(θ)) ∈ R^{S×V}, shown as a blue grid. These logits are used to compute two losses: <EOS> Escape Loss and Self-mentor Loss, indicated by arrows pointing to the loss terms.\n\nThe Local Model receives Aggregated Embeddings E(θ) ∈ R^{S×H}, generated by multiplying the Vocabulary Z ∈ R^{V×H} (blue grid) with the Weight Matrix W ∈ R^{S×V} (blue grid), symbolized by a multiplication 'x' icon. The Weight Matrix W is updated via Gumbel-Softmax during training.\n\nIn the Testing Stage, the optimized Proxy Distribution θ is used to generate the final Engorgio Prompt through the same sampling and decoding steps as in the generation stage. This prompt is then queried to a Target Model, which has the same internal structure as the Local Model (Transformer with N layers). The Target Model generates an Output Token Sequence of length S, which is decoded into the final Output Sentence (e.g., 'svol wished Gew drug Sec download chart setTimeout exhe transition membre ...').\n\nConnections are shown with arrows: solid blue arrows indicate forward data flow, while yellow arrows denote update or feedback paths (e.g., from loss back to the proxy distribution). The figure uses consistent visual attributes: matrices are blue grids, selected tokens are red, models are rounded rectangles with internal blocks, and text boxes represent decoded sequences. The caption clarifies that the generation stage uses gradient-based updates via a local proxy model, while the testing stage uses the optimized prompt to avoid <EOS> tokens."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

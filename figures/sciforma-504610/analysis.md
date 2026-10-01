@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+KRAIL: A Knowledge-Driven Framework for Base Human Reliability Analysis Integrating IDHEAS and Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.18627
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the IDHEAS-ECA Human Reliability Analysis (HRA) process, structured as a flowchart with eight sequential steps, beginning from a PRA model and culminating in uncertainty analysis. The global layout is horizontal and top-down, with a main workflow progressing from left to right, branching into parallel paths for specific analyses, and converging again before the final step. The diagram uses rectangular boxes for each step, with rounded rectangles for initial inputs, and arrows indicating data flow and dependencies between steps.
+
+Visual modules include: a rounded rectangle labeled 'PRA model' at the top-left, feeding into Step 1. Step 1 is split into two rectangular boxes: 'Develop scenario narrative' and 'Develop scenario timeline', both labeled as Step 1. From here, the process branches into two parallel paths: one for scenario context determination and another for HFE identification and definition. These converge into Step 2 ('Analyze tasks and identify CT(s) in HFE'), which feeds into Step 3 ('Characterize the CT(s) and select applicable CFMs'). Step 4 ('Assess PIFs applicable to every CFM') receives input from Step 3 and also from Step 1's scenario context. Step 5 ('Calculate Pc') takes as input 'PIF attributes of every CFM for every CT'. Step 6 appears twice: one box labeled 'Estimate parameters of Tavail and Treqd distributions' receives input from Step 2, and another labeled 'Calculate Pt' receives distribution parameters from the first Step 6. Step 7 ('Calculate overall HEP') combines outputs Pc and Pt from Steps 5 and 6 respectively. Finally, Step 8 ('Uncertainty, sensitivity, and dependency analysis and documentation') sits below the main flow, receiving inputs from all prior steps via a large bracket.
+
+Connections are represented by solid black arrows. Key data flows include: 'Scenario context and list of applicable PIFs' from Step 1 to Step 4; 'HFE and its definition' from Step 2 to Step 3 and Step 6; 'List of CT(s)' from Step 2 to Step 3; 'List of applicable CFM(s) for the CT(s)' from Step 3 to Step 4; 'Tavail distribution parameters' and 'Treqd distribution parameters' from Step 6 (parameter estimation) to Step 6 (Pt calculation); Pc and Pt feed into Step 7. All steps are labeled with bold text inside white rectangular boxes with black borders. The figure includes a legend at the bottom defining acronyms: CFM = cognitive failure mode, CT = critical task, HEP = human error probability, HFE = human failure event, PIF = performance-influencing factor, PRA = probabilistic risk assessment, Pc = error probability due to CFMs, Pt = error probability due to uncertainty in Tavail and Treqd, Tavail = time available, Treqd = time required. The overall structure emphasizes a systematic, modular approach to HRA, integrating cognitive modeling, task analysis, and probabilistic calculations.

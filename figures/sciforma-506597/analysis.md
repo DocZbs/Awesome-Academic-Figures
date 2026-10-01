@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Exoplanet Detection via Differentiable Rendering — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01912
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the propagation of wavefront aberrations through a space-based astronomical instrument, such as the James Webb Space Telescope (JWST), and the associated correction mechanisms. The global layout is a left-to-right flowchart depicting the optical path from the source to the science detector, with feedback loops for wavefront sensing and control. On the far left, a stylized sun emits parallel light rays toward a hexagonal segmented primary mirror, represented as a yellow honeycomb structure with a central black hexagon. A label below this mirror states 'Mirror misalignments induce wavefront errors,' indicating the origin of initial aberrations. These errors are visually represented by purple wavy lines propagating to the right. The light then encounters a gray diagonal rectangular element, symbolizing an optical component (likely a fold mirror or beam splitter), where additional wavefront distortions are introduced. Below this component, a downward arrow leads to a box labeled 'Wavefront Sensor,' which measures the aberrations, as indicated by the caption 'Aberrations are measured.' From the wavefront sensor, a feedback loop connects back to a box labeled 'Control System,' with the note 'Infrequent and partial correction' beneath it, signifying that corrections are applied sporadically and incompletely. The main optical path continues rightward from the mirror to a box labeled 'Coronagraph,' followed by blue wavy lines representing additional aberrations induced by optics imperfections, as noted by the caption 'Optics imperfections induce additional unknown aberrations.' The final stage is a box labeled 'Science Detector,' which receives the combined distorted wavefronts. Above the detector, a small inset diagram shows overlapping purple and blue wavy lines with a '+' symbol, accompanied by the text 'Images corrupted by unknown and known aberrations,' summarizing the final state of the detected image. The entire diagram uses black arrows to indicate the direction of light propagation and data flow, with text annotations providing context for each step. The visual modules are primarily rectangular boxes for systems (Control System, Wavefront Sensor, Coronagraph, Science Detector) and geometric shapes for optical components (hexagonal mirror, diagonal mirror). Colors are used meaningfully: yellow for the mirror, purple for aberrations from mirror misalignments, and blue for aberrations from optical imperfections. The figure effectively conveys the challenge of achieving perfect wavefront correction in space telescopes due to both measurable and unmeasurable sources of distortion.

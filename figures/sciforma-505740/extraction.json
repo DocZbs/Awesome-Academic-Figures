@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505740",
+  "record_sha256": "5cdde44e0af7c056d6ba2b30d1f4fe2819243cf375b49732fe9fb266a25f7e45",
+  "asset_sha256": "4c44fa9ba1fb84e9302896a2097c01e2d9c97a9e9cc4adea163d0163710d3fff",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505740",
+    "title": {
+      "zh": "Controlling Out-of-Domain Gaps in LLMs for Genre Classification and Generated Text Detection · 方法图",
+      "en": "Controlling Out-of-Domain Gaps in LLMs for Genre Classification and Generated Text Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-20595",
+      "title": "Controlling Out-of-Domain Gaps in LLMs for Genre Classification and Generated Text Detection",
+      "authors": [
+        "Dmitri Roussinov",
+        "Serge Sharoff",
+        "Nadezhda Puchnina"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20595",
+      "arxiv_url": "https://arxiv.org/abs/2412.20595",
+      "arxiv_id": "2412.20595",
+      "arxiv_first_submitted_at": "2024-12-29T21:54:39Z",
+      "arxiv_updated_at": "2024-12-29T21:54:39Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20595v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505740/image/image.jpg?Expires=1790855558&Signature=r1yZWlusmbsqPkgJ-ZCrpCY1WJlSDCp6dZRYjTJxT-iGEWlI92mNXHlzBvYWOKhUYkSqG3HsP8rf~tgOt34LWA-Tf1QtPZsgivATNEYm5RpHM8OxKU2moEIK0O5R573ITzI0mGw1gnzTjQ4RqNLnufmu2c~ezuXWuUXN5~DOYvqj6BPKuxW804YB9ojdl~ouRz~yB24jeFJrVIvD5Cfd5nlmUL~R7xa8bYKC0Ip6FNwqZ8cz9SqCw6JErERjzcLCVpAS-dc05b5vT7VhdMy2gJuCEqIHbq8W00CUKmiWZIk8FUEdGwBsa5WKFJU9~PZ~~XrR3zSxBxQY0jUnVv8N3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505740,
+      "description_sha256": "edaf0059a10e2925a488c93ad9184811dcc0cda493b16b1dec14d13dc123a221",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "2c84b77a74e366d9445d326a55740b9dec359901b1597508ba65b048b46dbdf6",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a domain transfer assessment methodology for few-shot In-Context Learning (ICL), adapted from Roussinov et al. (2023), designed to evaluate performance on two tasks: genre classification and generated text detection. The overall layout is divided into two main sections: a large gray rectangular area labeled 'Corpus' on the left, and a workflow pipeline on the right. A vertical axis on the far left, labeled 'Topic LDA Score (e.g. how much of \"sport\" in a document)', indicates the gradient of topic relevance, with higher scores at the top.\n\nWithin the 'Corpus' section, there are two horizontally arranged dashed boxes representing 'On-Topic (e.g. \"sport\")' at the top and 'Off-Topic (e.g. no \"sport\")' at the bottom. Each contains a flow from 'Human-written' data (represented as a white rectangle with a small icon and text 'Examples Test Texts' for On-Topic, and 'Examples' for Off-Topic) through an LLM (depicted as a cylinder) to 'Generated' data (also a white rectangle with similar text). For On-Topic, the output includes both 'Examples' and 'Test Texts'; for Off-Topic, only 'Examples' are produced. These generated texts are then fed into the right-side pipeline.\n\nThe right-side pipeline begins with 'Prompt Assembly', a gray box containing instructions to define the task, specify what to use (style, tone, structure, etc.), and what not to use (topics, length). This module receives 'Texts' from both On-Topic and Off-Topic streams. It outputs a 'Prompt' to an LLM (cylinder), which produces an 'Output'. This output, along with 'Labels' (derived from the original human-written texts), is sent to 'Task Assessment', another gray box listing evaluation metrics: Accuracy, recall, precision, F1, etc.\n\nConnections are shown via black arrows: from Human-written to LLM, from LLM to Generated, from Generated to Prompt Assembly (labeled 'Texts'), from Prompt Assembly to LLM (labeled 'Prompt'), from LLM to Task Assessment (labeled 'Output'), and from the original corpus to Task Assessment (labeled 'Labels'). The diagram emphasizes that On-Topic texts serve dual purposes—both as test data and potentially as ICL examples—while Off-Topic texts are used only as examples. The methodology is generalizable to other non-topical classification tasks like gender, authorship, or sentiment analysis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

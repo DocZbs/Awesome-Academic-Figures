@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-504340",
+  "record_sha256": "728ea32987dad86d9592f13c54ac6f0f340c069283e8acf3302dcaf07a21a523",
+  "asset_sha256": "d834639007664f45fb2451efc59b3012ebde8435b79844eacd6b0de41ce5fd00",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504340",
+    "title": {
+      "zh": "Ensuring Consistency for In-Image Translation · 方法图",
+      "en": "Ensuring Consistency for In-Image Translation"
+    },
+    "paper": {
+      "id": "arxiv-2412-18139",
+      "title": "Ensuring Consistency for In-Image Translation",
+      "authors": [
+        "Chengpeng Fu",
+        "Xiaocheng Feng",
+        "Yichong Huang",
+        "Wenshuai Huo",
+        "Baohang Li",
+        "Zhirui Zhang",
+        "Yunfei Lu",
+        "Dandan Tu",
+        "Duyu Tang",
+        "Hui Wang",
+        "Bing Qin",
+        "Ting Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18139",
+      "arxiv_url": "https://arxiv.org/abs/2412.18139",
+      "arxiv_id": "2412.18139",
+      "arxiv_first_submitted_at": "2024-12-24T03:50:03Z",
+      "arxiv_updated_at": "2024-12-24T03:50:03Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18139v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504340/image/image.jpg?Expires=1790855428&Signature=dbrxEKIR98kvSkOW15N8IDg1vYA8TvveC0FgrdrvVuBiSj9BcRB0J3LXGJ0PjhWamkFcCJGysMNIrv00VU0-5aRI1SbLVRED-Tue546i35xVaY1g1IFxKDCrsU4bHgTTsq8FsK96kwmzA8ePQi3rvkPL4LVA-C7hePZHPXddwyGeGWQK-WzPZ-9VmOai7dqfAGvBBpoAzDKho~ZQ8JE-7PsyVk5s3zQGCyP~S5jPznVlhmAXIeWRwo5Bm8vvGDuiP~~cHFqMNNbGVVuNmN70NPMHCXfZ2OpiJs2m9PtrpzB51Yz8IuNr3LjaIRbxVeh7jNQm4oNTcbljU4s~3j4K4Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504340,
+      "description_sha256": "a67ffc24eb3477712735098837f672b2bc20082461297792584426a54f2d0b35",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5530f2bedcfa882882dcbf9a6d581e400466cd403f0d7d2cf4b1984831b6ac70",
+      "row_response_sha256": "8687b25e1ce22a5866705e67d2d321c1fe79ec01b68d67e62cf85495dbe4bcd6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of Stage 2 of a text-to-image generation model, specifically designed to incorporate a style latent module as a constraint for the Text ControlNet. The global layout is divided into four main modules: Glyph Latent Module, Text Processing Module, Style Latent Module, and Perceptual Loss, each enclosed in dashed red boxes. These modules are arranged in a top-down and left-right flow, with data and control signals moving from input prompts and images through processing blocks to final output and loss computation.\n\nIn the Glyph Latent Module (top-left), three inputs are processed: Glyph (l_g) represented by the Chinese characters '河岸' in a gray box, Position (l_p) as a black rectangle, and Masked Image (l_m) as a blue rectangle. Each is passed through dedicated blocks—Glyph Block, Position Block, and VAE (green trapezoid)—before being fused in Fuse Layer-1 (light blue rectangle). The output, denoted Z_a, is a latent representation of the glyph and position information, shown as a light blue box containing '河岸'.\n\nThe Text Processing Module (top-center) begins with a Prompt box (dashed black border) containing the text: 'A picture containing [Tgt Language], captions shown in the snapshot are \"河岸\".' This prompt feeds into a Text Encoder (light blue rectangle), which outputs P to a Text Control Net (light blue parallelogram). The Text Encoder also sends features directly to a UNet (large light blue hourglass-shaped block). The Text Control Net and the Text Encoder both provide conditioning to the UNet.\n\nThe central UNet receives multiple inputs: the latent glyph representation Z_a, a time step t (from a yellow-dotted box labeled 'Time Step'), and a noise term ε_t (gray box) derived from the difference between T_t (latent text) and the current prediction. The UNet processes these to generate a denoised output, which is then decoded via a VAE (green trapezoid) to produce T* (the generated image with '河岸').\n\nThe Style Latent Module (bottom-left) takes two inputs: a Style Image S (blue box with 'BANK') and a Background Image B (blue box with a textured background). Both are encoded by separate VAEs (green trapezoids), then processed by a Text Erase Model (light blue rectangle) to remove text from the background. The resulting style and background latents are fused in Fuse Layer-2 (light blue rectangle), producing Z_s (a latent vector with 'BANK'), which is added to the UNet’s input alongside Z_a.\n\nThe Perceptual Loss section (bottom-right) compares the original input image T (blue box with '河岸') with the generated image T* (blue box with '河岸'). Both are passed through OCR Encoders (light blue rectangles) to extract text representations T_p and T_p*. The perceptual loss L_p is computed between these representations, while the diffusion loss L_d is computed from the UNet's noise prediction error. The entire system is trained end-to-end using these losses to ensure accurate text rendering and style consistency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

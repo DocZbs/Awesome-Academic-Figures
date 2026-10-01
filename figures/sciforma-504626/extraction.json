@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-504626",
+  "record_sha256": "8f30316f0b6797a458f994abbe4218a6dabf65dd8ffda4a90787ef2917920447",
+  "asset_sha256": "3ff13209f28aebe5a79c7671e712e58e48d230d4231f561fbcca157409120158",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504626",
+    "title": {
+      "zh": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence · 方法图",
+      "en": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence"
+    },
+    "paper": {
+      "id": "arxiv-2412-18655",
+      "title": "Simple is not Enough: Document-level Text Simplification using Readability and Coherence",
+      "authors": [
+        "Laura Vásquez-Rodríguez",
+        "Nhung T. H. Nguyen",
+        "Piotr Przybyła",
+        "Matthew Shardlow",
+        "Sophia Ananiadou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18655",
+      "arxiv_url": "https://arxiv.org/abs/2412.18655",
+      "arxiv_id": "2412.18655",
+      "arxiv_first_submitted_at": "2024-12-24T19:05:21Z",
+      "arxiv_updated_at": "2024-12-24T19:05:21Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18655v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504626/image/image.jpg?Expires=1790855432&Signature=L13NhoFV0bicCXSVGeVwIKlZncewRTGrfh3Q-MP57oil6ZDRWHxXkRdoDPP05GnGkx8n1lZSyOQCpVB~YQ0eO~7ghHSatRmFk58DYwtt2bEeVy9NgOdibdAT21QhMoQBA7o9Ox3kzSaYB10Sw59VOsCSnO1aqGNpMGg5XVU9mHJ3Qwu4UN6~rn3oq7tuAcUCYqsf7tDERoWOempWXXE6uhrIaO9oyyBeKqq~42oS2p3idmTOqbpVbRHlTJEbxRRSUoxyiRoTgaSDGsr9OX63ZePb-IcOIYWVGCmoUWqpu8cRVKsmsMrFW-nqoW4-6Mp5aKT69-POUCglPsgYNAvFrQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504626,
+      "description_sha256": "89c310119a5768b3ee8c189fda0e3432e3d3753a999748b0324ae87cc1e9037d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "e8b63ebcf3c5ed176ef002de7e2b60b0a5a802da026aad70ce76079c00052d75",
+      "row_response_sha256": "c72aff31ac49401cd0cc1f1852622e9fc0e73ad06605eced4871f6a4840cb4f1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an SBERT-based model architecture designed for coherence classification, presented as a left-to-right sequential pipeline. The global layout is linear and horizontal, with components arranged in a clear flow from input to output, emphasizing a feedforward neural network structure. The process begins on the far left with an input representation: a blue document icon labeled 'abstract', symbolizing the textual input, accompanied by an orange circular badge with a white checkmark, indicating validated or processed input data. This input is directed via a black arrow to the first processing module.\n\nThe first module is a large orange rounded rectangle labeled 'Sentence Embedding (sBERT)' in bold white text. This component represents the initial stage where abstract sentences are encoded into dense vector representations using the Sentence-BERT (sBERT) model, a pre-trained transformer-based architecture specialized for sentence-level semantic embeddings. The orange color distinguishes it as the primary embedding layer.\n\nFrom this module, a black arrow leads to the next component: a blue rounded rectangle labeled 'BiLSTM' in bold white text. This denotes a Bidirectional Long Short-Term Memory network, which processes the sequence of sentence embeddings in both forward and backward directions to capture contextual dependencies across the entire abstract. The blue color is consistent with subsequent processing layers, visually grouping them as core neural network components.\n\nFollowing the BiLSTM, another black arrow connects to a second blue rounded rectangle labeled 'Linear Layer' in bold white text. This represents a fully connected layer that projects the BiLSTM's output into a lower-dimensional space, typically for classification purposes. The consistent blue color reinforces its role as part of the core neural network stack.\n\nThe output of the Linear Layer is passed through a green circular node labeled 'sigmoid' in black text below it. This signifies the application of a sigmoid activation function, which transforms the linear layer’s output into a probability score between 0 and 1, suitable for binary classification.\n\nFinally, a black arrow points from the sigmoid node to the output box: a rectangular box with a light blue border and white background, containing the text 'Coherence (1/0)' in bold black font. This indicates the final binary prediction—whether the abstract is coherent (1) or incoherent (0).\n\nAll connections are represented by solid black arrows pointing rightward, clearly indicating the unidirectional data flow through the model. The visual design uses distinct colors (orange for embedding, blue for core layers, green for activation, and light blue for output) to differentiate functional modules while maintaining a clean, minimalistic style typical of deep learning architecture diagrams. The caption 'SBERT-based model architecture' confirms the purpose and context of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

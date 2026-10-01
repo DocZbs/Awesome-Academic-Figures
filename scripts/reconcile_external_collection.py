@@ -5,13 +5,14 @@ import hashlib
 import json
 import re
 import shutil
+import unicodedata
 from pathlib import Path
 
 from bulk_import_external import ID, server_root
 
 
 def title_key(title):
-    return re.sub(r"[^a-z0-9]", "", title.lower())
+    return re.sub(r"[\W_]", "", unicodedata.normalize("NFKC", title).casefold())
 
 
 def main():
@@ -36,9 +37,13 @@ def main():
         if inspection_dir.exists():
             metadata = json.loads((inspection_dir / "metadata.json").read_text())
             asset = inspection_dir / metadata["original_assets"][0]["file"]
+            if not asset.resolve().is_relative_to(inspection_dir.resolve()):
+                raise ValueError("Unsafe exclusion original asset path")
             actual_sha = hashlib.sha256(asset.read_bytes()).hexdigest()
             result["asset_sha256"] = actual_sha
             result["sample_checksum_match"] = actual_sha == result["sample_image_sha256"]
+            if not result["sample_checksum_match"]:
+                raise ValueError("Exclusion visual evidence refers to a different original image")
             if source.exists():
                 if destination.exists():
                     raise ValueError("Exclusion destination already exists; refusing overwrite")
@@ -54,18 +59,22 @@ def main():
     teaser_mapped = 0
     for path in sorted((root / "figures").glob("*/metadata.json")):
         metadata = json.loads(path.read_text())
+        previous_text = path.read_text()
         if metadata.get("source", {}).get("method") not in {"external_index_image", "hosted_dataset_figure"}:
             continue
         actual_awards = [award for award in awards.get(title_key(metadata["paper"]["title"]), [])
                          if award.get("official_source_url") and award.get("verified_at")]
         metadata["paper"]["awards"] = actual_awards
         enriched += bool(actual_awards)
-        if metadata["source"].get("upstream_pattern") == "teaser":
+        if (metadata["source"].get("upstream_pattern") == "teaser"
+                and metadata["classification"].get("status") == "source_index_labels_unverified"
+                and metadata.get("curation", {}).get("visual_review", {}).get("status") != "reviewed"):
             metadata["classification"]["primary_type"] = "teaser"
             metadata["classification"]["types"] = ["teaser"]
             teaser_mapped += 1
         metadata["curation"]["award_matching"] = "Exact normalized title match to verified official-source award inventory; no match means no award tag."
-        path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n")
+        if metadata != json.loads(previous_text):
+            path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n")
     report = {"excluded_count": len(excluded), "moved_count": sum(r["status"] in {"moved_out_of_gallery", "previously_moved_out_of_gallery"} for r in excluded),
               "moved_now_count": sum(r["status"] == "moved_out_of_gallery" for r in excluded),
               "excluded": excluded, "external_figures_with_verified_award_tags": enriched, "teaser_labels_mapped": teaser_mapped,

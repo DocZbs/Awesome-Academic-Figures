@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503531",
+  "record_sha256": "ef23bb16b2e5eabf1edf19da25aa44888f5a44ab6fd10d6821dbaed1ef6d21d0",
+  "asset_sha256": "f6395525a2e1d280afa477e45d79ccb500eb8f0dc0b38eb78ae337426176ebde",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503531",
+    "title": {
+      "zh": "EasyVis2: A Real Time Multi-view 3D Visualization System for Laparoscopic Surgery Training Enhanced by a Deep Neural Network YOLOv8-Pose · 方法图",
+      "en": "EasyVis2: A Real Time Multi-view 3D Visualization System for Laparoscopic Surgery Training Enhanced by a Deep Neural Network YOLOv8-Pose"
+    },
+    "paper": {
+      "id": "arxiv-2412-16742",
+      "title": "EasyVis2: A Real Time Multi-view 3D Visualization System for Laparoscopic Surgery Training Enhanced by a Deep Neural Network YOLOv8-Pose",
+      "authors": [
+        "Yung-Hong Sun",
+        "Gefei Shen",
+        "Jiangang Chen",
+        "Jayer Fernandes",
+        "Amber L. Shada",
+        "Charles P. Heise",
+        "Hongrui Jiang",
+        "Yu Hen Hu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16742",
+      "arxiv_url": "https://arxiv.org/abs/2412.16742",
+      "arxiv_id": "2412.16742",
+      "arxiv_first_submitted_at": "2024-12-21T19:26:19Z",
+      "arxiv_updated_at": "2025-04-08T21:14:22Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16742v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503531/image/image.jpg?Expires=1790855374&Signature=CXGb4nADl-9VvJV83cV9a5OWUN2wLAovE~Qn-st3TDJivz970YYxFBJ0aQTgIBAqBxKk3lDkn9BVgDJmCmujZipQnas~1CKZKIPPHvcjqmYd1xcSc~783ihDiMM443xclE4V37vwpiqtVw9E7kxM8ZcZ1Vrt3WHPz6nl-b2QnZysrqwfy7VXRMyU1UBhuV~fAkEUrfDlsoTbYPcNuyBzTg9W0TNtwTC9CqhD7dlsGyhJVY2avrYL~~-YoAl9x-faN3H5dhlNrpPmdcAA37SaGIoSP96iozhnPvQUg4-Pnbtr39cvahGjaiMQf8qkF1zSel12U2K5P1oXSrqrUW~cow__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503531,
+      "description_sha256": "fd11b5bd712e352b7753c4499a92634673884b5644ecb771059b5785f912b06b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4920110d2d3debc80e09160ad2f9f20e92ce8e285cbb3a72537c23a31282c679",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part diagram: an upper section illustrating the YOLOv8-Pose model architecture for object pose estimation, and a lower section depicting a semi-automatic dataset generation and training pipeline. \n\nIn the upper part, the global layout flows left to right. An 'Image Input' is shown as a grayscale image of a surgical tool, feeding into a 'Backbone' module represented by a stack of four decreasing rectangular blocks, colored light blue. This backbone extracts features and passes them to the 'Object Detection Head', also light blue, which consists of three parallel stacks of rectangular blocks. Outputs from these stacks are combined and fed into the 'Pose Estimation' module, depicted as a single white block within a purple rectangle. The final output is labeled 'Object Pose Output', showing the same surgical tool image with a bounding box and four blue keypoints indicating estimated pose. Arrows indicate forward propagation from input through backbone, detection head, and pose estimation to output.\n\nThe lower part shows a circular training pipeline with six rectangular modules connected by arrows. Starting from 'Initial Data' (light gray), the flow proceeds to 'Generate Object and Marker Masks' (light blue), then to 'Extend ST-Pose Dataset' (light blue), followed by 'Marker De-Dependence Data Augmentation' (light blue). From there, it goes to 'Train YOLOv8-Pose' (light blue), then to 'Online Inference and Data Sampling' (light blue), and finally to 'Manual Label Refinement' (light blue), which loops back to 'Generate Object and Marker Masks'. All modules in the pipeline are rounded rectangles with black borders and dark blue text. The arrows indicate the sequential steps in the iterative training process, emphasizing data refinement and augmentation to improve model robustness without relying on markers. The caption explains that the dataset uses masks generated by a modified Cutie method, and data augmentation involves substituting backgrounds and markers with different textures to achieve marker independence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

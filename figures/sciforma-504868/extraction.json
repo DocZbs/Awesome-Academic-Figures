@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-504868",
+  "record_sha256": "26520b3db08af3842756fa13f4ff62ca12b7caa301c848b0a6265c9576457ec9",
+  "asset_sha256": "8561bf21cfd9cae0913c85900f0e1a0a3086e814a98cc2dc633a322def1385c7",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504868",
+    "title": {
+      "zh": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing · 方法图",
+      "en": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing"
+    },
+    "paper": {
+      "id": "arxiv-2412-19009",
+      "title": "FACEMUG: A Multimodal Generative and Fusion Framework for Local Facial Editing",
+      "authors": [
+        "Wanglong Lu",
+        "Jikai Wang",
+        "Xiaogang Jin",
+        "Xianta Jiang",
+        "Hanli Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19009",
+      "arxiv_url": "https://arxiv.org/abs/2412.19009",
+      "arxiv_id": "2412.19009",
+      "arxiv_first_submitted_at": "2024-12-26T00:53:54Z",
+      "arxiv_updated_at": "2024-12-26T00:53:54Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/TVCG.2024.3434386",
+      "arxiv_current_version_observed": "2412.19009v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504868/image/image.jpg?Expires=1790855446&Signature=uLGeeWDoJPS91nqVAv5G8uWIPqvfNiq4OrI7nKn4WSPKiV3DuJpnuTHXwtNuc7iGb8J-uw27dRShGNBgtQlPCnSN4rUDFwJoQgu~2XFCO30goERYf9anfgF86mKCE52ebMG6NqYCM-UXkx-dX7hpoy0GZ0bimr4pbSvy2zxs5anU0Bs0TLCW4AZ0ChJFSwQfQPtYHJMlKCJKFg7kppLmJvHW4wLxXEMVUlPktzrzSxYgpXZ2MrjDokrhkmfskcYu60K4JmF2yjG8Asd5D6pwBax0vWkiq7rzCccmUQ3DGvGZcnjqecVss8cdCqyC--7xKT-Gc42yvO~ttJAeSOf0nA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504868,
+      "description_sha256": "2e98a59946ab4dbe859da508150207e25ac6d585cc1bd6ceed2f9e4fb59e6b86",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "79fb541cca9fe84c0a14e1f8052565ef247838ffbc997076ffd2e26f9bde1467",
+      "row_response_sha256": "19a69d508110fdac711928b2b1613d5ddff97950bb3fb4e9741a7e36129f6238"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a latent warping network, composed of a stack of four identical code-to-code modulation blocks arranged vertically on the left side. Each block receives two inputs: an initial latent representation w^s0 and a reference latent vector w^r, which are fed into the first block. The output of each block, denoted as Δw_i (for i = 1 to 4), is passed to the next block as part of the residual connection, while also being outputted at the final stage as Δw_4. The entire stack is labeled 'Latent warping network'.\n\nOn the right side, enclosed within a dashed box and labeled 'Code-to-code modulation block', is the detailed internal structure of one such modulation block. This block takes two inputs: the previous latent difference Δw_{i-1} (of size t × 512) and the reference latent vector w^r (also t × 512). The block is divided into two main components: 'Channel-based cross-attention' and 'Position-based cross-attention', both operating on the same inputs.\n\nIn the channel-based cross-attention section, w^r is processed by a fully connected (FC) layer to produce query vectors w^q, which are reshaped (denoted by ⊙) into a t × t matrix. Another FC layer generates key vectors w^k, which are used in matrix multiplication (⊗) with the reshaped queries to compute an attention map. Simultaneously, Δw_{i-1} is processed by an FC layer to produce value vectors w^v. These values are multiplied element-wise (⊗) with the attention map to yield a^c.\n\nIn the position-based cross-attention section, Δw_{i-1} is processed by two FC layers to generate value vectors ŵ^v and key vectors ŵ^k. Additionally, w^r is processed by an FC layer to produce query vectors ŵ^q, which are reshaped into a 512 × 512 matrix. The reshaped queries are multiplied with the keys to form another attention map. This attention map is then multiplied element-wise with ŵ^v to produce a^p.\n\nThe outputs a^c and a^p are summed via element-wise addition (+) to form a combined attention output. This result is then processed through a gate activation mechanism: w^r is fed into two separate MLPs to generate gate parameters ξ and μ. The combined attention output is multiplied element-wise (⊙) with ξ, and the result is added to μ using element-wise addition (+), producing the final output Δw_i (t × 512).\n\nA legend in the lower right corner defines the symbols used: → indicates data flow; ⊙ denotes reshape; ⊗ represents Hadamard product (element-wise multiplication); + signifies element-wise addition; and × stands for matrix multiplication."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

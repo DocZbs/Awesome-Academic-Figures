@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-506148",
+  "record_sha256": "5f69730f4e1f2df7df5c8d15a887e451cdb431018b6474e0e76f925a0db98195",
+  "asset_sha256": "89eebe301df4f73ed00781131e8e2a305c347b90b9d3994714b577f9c0d0cb2e",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506148",
+    "title": {
+      "zh": "Exploiting Boundary Loss for the Hierarchical Panoptic Segmentation of Plants and Leaves · 方法图",
+      "en": "Exploiting Boundary Loss for the Hierarchical Panoptic Segmentation of Plants and Leaves"
+    },
+    "paper": {
+      "id": "arxiv-2501-00527",
+      "title": "Exploiting Boundary Loss for the Hierarchical Panoptic Segmentation of Plants and Leaves",
+      "authors": [
+        "Madeleine Darbyshire",
+        "Elizabeth Sklar",
+        "Simon Parsons"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00527",
+      "arxiv_url": "https://arxiv.org/abs/2501.00527",
+      "arxiv_id": "2501.00527",
+      "arxiv_first_submitted_at": "2024-12-31T16:23:58Z",
+      "arxiv_updated_at": "2024-12-31T16:23:58Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00527v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506148/image/image.jpg?Expires=1790855569&Signature=E-TdkLg6gwnclBr2AgxdmkfoHg56ZiI52dtyJ8X~yZx1JBgq8t35eDF-x9XNJskqgKYfTyJibFrwFpUxDIn7PRLYvTShWSBK~-U1HI3x7nSqUKZmIESgR7vfV2q90ZwZJPEUApZz182jpvKZLJGVAdKU5NhiB5S6jDPoIoofk89tpR2stOAx6Q~6CK4Zt-s~I-XFXyJuqROu07t~7JXQSyVGhqqoc4YzPn17fnARndp9c2CuEwTWZfOaPBF8cQCGKC2Nz9rV1RVLO6A1WPQrKRTNcZc-o2L9GA1SQxBllSH6xxI~rugyQ8ntrIPhsYJ2Qfov9N~uG~1UrsNm046TuQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506148,
+      "description_sha256": "db95a6be2c520c99713a14de7c87d33b6dee5fcc9af03b9e10cef0726f91ab4b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b8d433a912e4446a444c1880d36fb5beac143b5555e826d1177a16b585bb58f3",
+      "row_response_sha256": "bd501de9f505e5b4ad75d767e9a5085cb0fb763622430eaaa9f3a1dd41724993"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an adapted Mask2Former architecture designed for hierarchical segmentation of plants and their leaves. The global layout is left-to-right, depicting a sequential processing pipeline starting from image input through feature extraction and decoding to final segmentation outputs. The structure is modular, with distinct components arranged horizontally: Backbone → Pixel Decoder → Query Features → Plant Decoder and Leaf Decoder → Outputs.\n\nVisual modules include: (1) a trapezoidal 'Backbone' module in light blue, which extracts 'Image Features'; (2) a parallelogram-shaped 'Pixel Decoder' module, also in light blue, containing four progressively larger gray parallelograms representing multi-scale feature maps; (3) a vertical stack of four colored squares (green, red, blue, orange) labeled 'Query Features', indicating learnable query embeddings; (4) two separate decoder blocks, each enclosed in a rounded rectangle with light blue background — 'Plant Decoder' and 'Leaf Decoder'. Each decoder consists of three connected gray rectangular layers, suggesting transformer-based decoding stages; (5) output modules: two light blue rectangles labeled 'Plant Mask' and 'Class' for plant-level predictions, and similarly 'Leaf Mask' and 'Class' for leaf-level predictions.\n\nConnections and arrows show data flow: Image features from the Backbone feed into the Pixel Decoder. The Pixel Decoder outputs multi-scale feature maps that are cross-connected via multiple horizontal lines to both the Plant Decoder and Leaf Decoder. The Query Features are split and fed into both decoders as initial queries. Within each decoder, the three gray layers process the inputs sequentially. Outputs from the Plant Decoder are combined with a feature map via a circular '×' symbol (indicating element-wise multiplication or fusion) before producing the Plant Mask and Class. Similarly, outputs from the Leaf Decoder are fused with another feature map via a '×' symbol to produce Leaf Mask and Class. Notably, the Pixel Decoder’s feature maps are also directly connected to the fusion points of both decoders, enabling feature refinement. The diagram emphasizes parallel processing for plant and leaf segmentation, with shared backbone and pixel decoder but separate decoders for hierarchical prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

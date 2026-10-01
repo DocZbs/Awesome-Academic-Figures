@@ -26,7 +26,13 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run check && npm run check:tokens && npm run format:check
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
       - run: python3 scripts/check_layout_annotations.py
+      - run: python3 scripts/check_classification_annotations.py
+      - run: python3 scripts/check_bulk_import_external.py
       - run: python3 scripts/build_catalog.py
       - run: npm run build
       - uses: actions/upload-pages-artifact@v4

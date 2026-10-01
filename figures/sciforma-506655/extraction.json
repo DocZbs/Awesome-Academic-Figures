@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-506655",
+  "record_sha256": "d1753e8223c697aac198aeab89c9c1f9b9115965bd0e352de0a3079fdf08c617",
+  "asset_sha256": "657aceb18e007ea78a6a87c89697fbfe641f807ef43f84ce49a33f7a05fae7f6",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506655",
+    "title": {
+      "zh": "Detecting Music Performance Errors with Transformers · 方法图",
+      "en": "Detecting Music Performance Errors with Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2501-02030",
+      "title": "Detecting Music Performance Errors with Transformers",
+      "authors": [
+        "Benjamin Shiue-Hal Chou",
+        "Purvish Jajal",
+        "Nicholas John Eliopoulos",
+        "Tim Nadolsky",
+        "Cheng-Yun Yang",
+        "Nikita Ravi",
+        "James C. Davis",
+        "Kristen Yeon-Ji Yun",
+        "Yung-Hsiang Lu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02030",
+      "arxiv_url": "https://arxiv.org/abs/2501.02030",
+      "arxiv_id": "2501.02030",
+      "arxiv_first_submitted_at": "2025-01-03T07:04:20Z",
+      "arxiv_updated_at": "2025-01-03T07:04:20Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02030v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506655/image/image.jpg?Expires=1790855633&Signature=cCtUf281dxetWy0zLhi50srY1xAqMJ-UnVxEa2dy7W8kvtWNQXa5VKLGsq8uhPpHJt79u0wXy9wUzFkcOV5EBfA3AZCe8O9vXwSxM98XclKIkVH8q5KMAD13IXM5nC-eblULL3FbYspWHz-C0nxULspBcJWhikPDI3N3K0CmYoeEmMCMdZLiTLaOkDHatcNFoAdILm~hSPzS2PE1R3YFHDyxZj97hxHfHY6xOjXTC4wYq~8s3V7SgsD0LSdLGrY-8AOfAeV2k6NIpgNKoxXwEGRiohDy4OSGktNPDy0Q1Dx9a3oiCMlLGswAHru0PZe5wynIyzUzeaBebF6O~tBvcQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506655,
+      "description_sha256": "2c5e0dc58a04246f71057a4f8248f19712ceec6738995367753334b2a387bc1d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "423c1db5a6b7850ab94569d38b02bcce110d93f0bb0aa602596c9b409692896b",
+      "row_response_sha256": "931278fb611052ad229f49a3ef9ed0b65e99e77b2aaab62456772d10decd0e08"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architectural design of Polytune, a system for aligning musical performance with a score using audio inputs. The global layout is structured into four main horizontal stages: Input, ViT Encoder, Greedy Autoregressive Sampling, and MIDI-Like Output Tokens. The input stage contains two parallel streams: 'Score Audio' and 'Performance Audio', both represented as blue waveform signals with a red box highlighting a segment. Each audio stream is converted into a spectrogram (a 2D color-coded matrix) before being fed into separate encoders. The ViT Encoder stage includes two distinct encoders: a light blue 'Score Audio Encoder' and a pink 'Performance Audio Encoder', each processing N sequential frames (labeled 1 to N) from their respective spectrograms. The outputs of these encoders are concatenated vertically and fed into a 'Joint Encoder' (light purple rectangle), which integrates both modalities. From the Joint Encoder, the representation flows into a 'Decoder' (white rectangle) that performs autoregressive generation. The Decoder uses cross-attention (indicated by an arrow labeled 'Cross Attention') to attend over the joint encoder's output. The decoding process begins with a start-of-sequence token (SOS) and generates tokens sequentially: t₁, t₂, ..., tₙ. Each token generation step is shown with red feedback loops connecting the current token to previous ones, illustrating the autoregressive nature. The generated tokens include time stamps (e.g., '<Time 0>'), pitch values (e.g., '<Pitch 60>'), correctness labels ('<Correct>'), and an end-of-sequence token ('<EOS>'). The final stage displays the output as a MIDI-like token sequence mapped onto a vertical note grid (E4 to B4) over time (0 to 2 seconds). Notes are color-coded: black for detected notes (e.g., D#4, C#4), light blue for 'Correct' classification, and pink for 'Missing' classification. A gray arrow points from the decoder output to this grid, indicating the mapping of tokens to musical events."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

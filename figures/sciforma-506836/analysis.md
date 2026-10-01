@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Tree-based RAG-Agent Recommendation System: A Case Study in Medical Test Data — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.02727
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comprehensive overview of the HiRMed system, divided into two main parts: (a) HiRMed System Architecture and (b) HiRMed Workflow. The global layout is split into two vertical sections, with part (a) on the left and part (b) on the right, both under the overarching title 'HiRMed System Overview'. Part (a) illustrates a hierarchical tree structure rooted at a 'Root Node', which branches into multiple 'Child Nodes'. Each Child Node further connects to specific data items labeled 'Item1', 'Item2', and 'Item3', represented as clusters of overlapping squares in black and white. A 'Memory' module, depicted as a cloud with a server icon, is positioned on the far left and interacts bidirectionally with the nodes via 'Retrieve' and 'Store' operations. The Root Node and each Child Node are associated with 'Rag-based Inference' processes, indicated by arrows pointing from the nodes to the inference label. The Root Node is visually distinct, shown as a server icon with a magnifying glass, while Child Nodes are represented as a combination of a square and a plus sign. The Memory module is connected to the Root Node via a 'Store' arrow and to the Child Nodes via a 'Retrieve' arrow, forming a feedback loop. Part (b) details the operational workflow of HiRMed, showing a sequence of steps starting from a 'Document Embedding' process using an 'Embedding Model' (represented as a grid of dots), which takes a 'Query and Embedded Query' as input. This leads to a 'Query Result' that feeds into a 'Weight Model' (a balance scale icon) to produce a 'Structured Output'. The output is then distributed to three departments: 'Department 1 (ICU Team)', 'Department 2 (ICM Team)', and 'Department 3 (ICM Team)', each represented by a computer icon with a person symbol. Below this, a second workflow path is shown, beginning with a 'Knowledge Base for Departments Training Items' feeding into the same embedding model. The resulting query result is processed through a 'Prompt + Query' step involving a 'LLM API' (a spiral icon), followed by the Weight Model, yielding a structured output. This output is then sent to three departments: 'W1' (ICU Team), 'W2' (ICM Team), and 'W3' (ICM Team), each with a corresponding icon. The entire diagram uses black lines and text, with clear directional arrows indicating data flow. The visual modules are consistently styled with simple icons and labels, and the connections are unidirectional except for the memory interactions, which are bidirectional. The figure includes subcaptions for each section and a main caption summarizing the system overview.

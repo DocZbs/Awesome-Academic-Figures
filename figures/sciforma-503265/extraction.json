@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503265",
+  "record_sha256": "e040aa18c43297b8980f25fa42ec31782748633bc991333a85216236516892af",
+  "asset_sha256": "f69ef3397d5dd2378f3e86f95b119a29b056eb40b73561096f2be6859fd3e2f5",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503265",
+    "title": {
+      "zh": "A Classification Benchmark for Artificial Intelligence Detection of Laryngeal Cancer from Patient Voice · 方法图",
+      "en": "A Classification Benchmark for Artificial Intelligence Detection of Laryngeal Cancer from Patient Voice"
+    },
+    "paper": {
+      "id": "arxiv-2412-16267",
+      "title": "A Classification Benchmark for Artificial Intelligence Detection of Laryngeal Cancer from Patient Voice",
+      "authors": [
+        "Mary Paterson",
+        "James Moor",
+        "Luisa Cutillo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16267",
+      "arxiv_url": "https://arxiv.org/abs/2412.16267",
+      "arxiv_id": "2412.16267",
+      "arxiv_first_submitted_at": "2024-12-20T10:34:03Z",
+      "arxiv_updated_at": "2025-05-13T09:50:39Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS",
+        "q-bio.QM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16267v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503265/image/image.jpg?Expires=1790855361&Signature=hDqzeI6GBP~m2T1i-ccYFaHRpD~lHl9RQzEQ14GX7m7AM9vXEAj1lFcvKFZLNkkjMDLHg4Q4SoLmCH6kLJ6yHuCh7EAHtqDvyW3i~YtIKrfmClCEhhIWo7kpMN1~a66K1m3yUPmxG9RW0tb1u2wVhQ6XCsYSnbtIOXGvks5NjkhYWpGpMKqcaVgmMVHovx1MQRjmvOLNYCdT8l88KeGWvKR8LdgVjQm4AOQ7wi7Tv4iqWUIehZeVt7d-hJETSTFI85xt~MDfGCTH1y-e4uhDdhCNpdIkNNRXJ82LdMXDZTSfdzpQQ0bQPbG6iHmV~Djvn11oLBhD34-~w00SFWaumA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503265,
+      "description_sha256": "edadda4628856fe72e1c894c91c72b830ff6e8b68d0fb74bc76835d37a370e20",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4c5f595a5b9e523bb9f0b95db361189ac9b0029270906a5436e6a976f906b2a4",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS",
+        "q-bio.QM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stream data preprocessing pipeline followed by a classification stage using grid search cross-validation. The global layout is horizontal and linear, with two parallel preprocessing branches converging into a single classifier module. The top branch processes 'Audio Features' denoted as vector $\\bar{x}_1$, while the bottom branch handles 'Demographic/Symptom Data' denoted as vector $\\bar{x}_2$. Both streams are encapsulated within dashed rectangular boxes labeled 'Preprocessing', indicating distinct but parallel processing paths.\n\nIn the top preprocessing stream, the input 'Audio Features' first undergoes 'Impute Missing Values (Mean)', represented as a rectangular box. This is followed by 'Z-Score Normalisation', also in a rectangle, and then 'Feature Selection (Decision Tree)', which selects relevant features from the audio data. The output of this stream is labeled $\\bar{x}_1'$.\n\nIn the bottom preprocessing stream, the input 'Demographic/Symptom Data' is processed through 'Impute Missing Values (Fill value 0)', followed by 'Z-Score Normalisation'. The output of this stream is labeled $\\bar{x}_2'$.\n\nThe outputs from both preprocessing streams, $\\bar{x}_1'$ and $\\bar{x}_2'$, are combined into a single input vector $[\\bar{x}_1', \\bar{x}_2']$ and fed into a 'Classifier' module, which is enclosed within a larger dashed box labeled 'Grid Search Cross-Validation'. This indicates that the classifier is optimized using grid search over hyperparameters within a cross-validation framework. The final output of the system is an oval labeled 'Predictions', signifying the model's output after classification.\n\nAll connections are represented by solid arrows indicating the direction of data flow. The figure uses consistent visual elements: ovals for inputs and outputs, rectangles for processing steps, and dashed boxes to group related modules. Text labels are clear and placed inside or adjacent to the respective shapes. The overall structure reflects a modular, pipeline-based machine learning workflow where two different data types are preprocessed independently before being fused and classified."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

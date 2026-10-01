@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503594",
+  "record_sha256": "a39acb967e99afe397ea1f40fcd42a08a0fc1730e6e7fe80fdb55a2cdbbabf67",
+  "asset_sha256": "ed29a308b2e7786ab7996ccd87f16c624e86236e6c45fe51eb774f3e6193ed89",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503594",
+    "title": {
+      "zh": "OpenRFT: Adapting Reasoning Foundation Model for Domain-specific Tasks with Reinforcement Fine-Tuning · 方法图",
+      "en": "OpenRFT: Adapting Reasoning Foundation Model for Domain-specific Tasks with Reinforcement Fine-Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-16849",
+      "title": "OpenRFT: Adapting Reasoning Foundation Model for Domain-specific Tasks with Reinforcement Fine-Tuning",
+      "authors": [
+        "Yuxiang Zhang",
+        "Yuqi Yang",
+        "Jiangming Shu",
+        "Yuhang Wang",
+        "Jinlin Xiao",
+        "Jitao Sang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16849",
+      "arxiv_url": "https://arxiv.org/abs/2412.16849",
+      "arxiv_id": "2412.16849",
+      "arxiv_first_submitted_at": "2024-12-22T04:21:30Z",
+      "arxiv_updated_at": "2024-12-22T04:21:30Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16849v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503594/image/image.jpg?Expires=1790855374&Signature=R0o8OP-RcjiQtZjkPQn~L~WUc5yRTEu6g8gjdr8G5B4GzxS1TQQaRhJgwDJmrx2-ddRGy3oyrEdDfDqth30D0alEu8aVjwoRazrH655GVHOju87YBbpXHgu-e7aix99DrxLgC6KY~aiE-twU2noFwpEpgWjmRhzmgDFgX~63dZ3Nww-06B5FCwKpi2yXiXBBmwMuUdtayfcUKugVN86XmkmktT36SOayxHA7J29qgnbwsiXD3fHKFuIpCugFkBEaV9rn-92QnD4BML~1eoHN1j3LXZT-dhHcq~ql-KVc7oESjqe5miCw9radb8zS6LgB1X0I0KjXBWSumuwNrMRQaA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503594,
+      "description_sha256": "2b1ed40b9b0558596f3f015021abaa18cfaeb72b64cfe15bea9e7801d6ce5fe3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c94bc49ed9f718ca8e16dd7dd3e24c4b8572ed34b4e676d384b0a5dbfe1982ad",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the OpenRFT framework, a methodological pipeline for training a reasoning policy model through a combination of data augmentation, reasoning process synthesis, supervised fine-tuning, and reinforcement learning. The global layout is structured as a flowchart progressing from left to right and top to bottom, with distinct stages labeled numerically (e.g., 2.1, 2.2.1, 2.3.1) indicating sequential steps in the methodology.\n\nAt the top-left, a cylindrical database labeled '{(Qi, Ai)}' represents domain-specific samples. This feeds into a black rectangular module labeled '2.1 Data Augmentation', which outputs an augmented dataset '{(Qi, Qi', Ai)}'. A red arrow from this module points to the 'SFT Policy Model π_SFT', indicating its role in few-shot in-context learning (ICL), labeled '2.3.1 Few-shot ICL'.\n\nParallel to this, a gray rounded rectangle labeled 'Teacher Reasoning Foundation Model (e.g., o1)' feeds into a blue rectangular module labeled '2.2.1 Reasoning Process Synthesis'. This module generates a new dataset '{(Qi, ..., Si^j, ..., Ai)}' with reasoning steps, represented by another cylindrical database. This synthesized data flows into a blue rectangular module labeled '2.2.2 Supervised Fine-Tuning', which takes as input a 'Reasoning Foundation Model π_ori (e.g., o1-mini)' and produces the SFT Policy Model π_SFT.\n\nThe SFT Policy Model π_SFT then generates a sequence of reasoning states S_i^1, S_i^2, ..., S_i^m, depicted as a chain of circular nodes. These states are evaluated by a gray rounded rectangle labeled 'Process Reward Model ρ_PRM', which assigns process rewards pr_i^1, pr_i^2, ..., pr_i^m. These rewards are combined via a function f with an outcome reward or_i to compute the total reward R_i, shown as 'f(pr_i^1, pr_i^2, ..., pr_i^m) + or_i = R_i'. This reward signal feeds back into the SFT Policy Model via a red arrow labeled '2.3.2 Reinforcement Learning', forming a feedback loop for iterative improvement.\n\nAdditionally, the augmented data '{(Qi, Qi', Ai)}' also feeds directly into the SFT Policy Model, reinforcing the few-shot ICL component. The outcome A_i' from the policy model contributes to the outcome reward or_i. The visual modules use distinct shapes and colors: black rectangles for data augmentation, blue rectangles for synthesis and fine-tuning, gray rounded rectangles for foundation models and reward models, and cylinders for datasets. Arrows indicate data flow and learning signals, with red arrows specifically denoting reinforcement learning components and feedback loops."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

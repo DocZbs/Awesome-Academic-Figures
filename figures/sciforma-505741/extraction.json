@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-505741",
+  "record_sha256": "b3842ab2ff75e68eab6f0c34dfb47b2c7abfaaa25ea36770e0e79cb6dbd609ac",
+  "asset_sha256": "4ef0d8b6f111d6f7d5462ec1c5ec05bcadd92178e1483480d9de1cc1f8565b46",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505741",
+    "title": {
+      "zh": "GliLem: Leveraging GliNER for Contextualized Lemmatization in Estonian · 方法图",
+      "en": "GliLem: Leveraging GliNER for Contextualized Lemmatization in Estonian"
+    },
+    "paper": {
+      "id": "arxiv-2412-20597",
+      "title": "GliLem: Leveraging GliNER for Contextualized Lemmatization in Estonian",
+      "authors": [
+        "Aleksei Dorkin",
+        "Kairit Sirts"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20597",
+      "arxiv_url": "https://arxiv.org/abs/2412.20597",
+      "arxiv_id": "2412.20597",
+      "arxiv_first_submitted_at": "2024-12-29T22:02:00Z",
+      "arxiv_updated_at": "2025-01-11T13:49:03Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20597v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505741/image/image.jpg?Expires=1790855558&Signature=u1U8Nvxbiqk7~OhYZ8siHdEotW5~jRrQD189vk0TDG~y67KJE5M71sTq9-oNgsg2Iq0ohvV0DYYXdmJ6a-wJmSsbnqRZ5qjZ6QghN3XQg9jbgUkpm~HgC2NsWijaP7H~iN8XirrMqBMtL2aU3r2fwYY7cCwE90oPugsOA7SGXfU5pwCqFiD6kamAU-woNhs7OxPTiT723uosAW-v05ALJ4pV9jByy~lI1C-qBBdWSqrdYq8-dJTYPy1cMFcis~7PlZjhrh~rEI0lrXRY20zSpW1wCaYtAPs-XjP8uFNGkjqgRDI5aePicJ8rCIynxWtmjZs7LZJR51LnzqwbdI4eOA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505741,
+      "description_sha256": "da5ab74edd1ab148207e2b1206fa70b03250af15195e8c901d50c95da8df2d7a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "b17dc5caaf66d0d9714b34355b2a9f1b25e72bb1bc8ba047737ca6b27d16dd70",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic representation of the GliNER architecture for lemmatization, structured in a top-down flow. At the top, an input sequence is shown split into two parts: on the left, a pink rectangle contains the text '[ENT] remove_ning [ENT] replace_ies_y', representing masked entity tokens; adjacent to it is a gray '[SEP]' token, followed by a light green rectangle containing the text 'running man studies', which represents the context sentence. Below this input layer, a wide light blue rectangle labeled 'Pre-trained Encoder Transformer' processes the entire input sequence. The output of this encoder is a row of gray rounded rectangles labeled 'Token Representations', indicating the encoded embeddings for each token in the input. These token representations are then fed into two parallel processing layers: on the left, a beige rectangle labeled 'Entity Representation Layer' produces a row of gray rounded rectangles labeled 'Entity Representations'; on the right, a light green rectangle labeled 'Span Representation Layer' produces a row of gray rounded rectangles labeled 'Span Representations'. From these two representation layers, black arrows point downward to a central scoring matrix. This matrix is a 2x3 grid with bold borders, where rows correspond to the entity candidates ('remove_ning' and 'replace_ies_y' in pink labels) and columns correspond to the span candidates ('running', 'man', 'studies' in light green labels). Each cell in the grid contains a numerical score: the top-left cell (remove_ning → running) is highlighted in light green and shows 0.9; the top-middle (remove_ning → man) is 0.1; the top-right (remove_ning → studies) is 0.3; the bottom-left (replace_ies_y → running) is 0.3; the bottom-middle (replace_ies_y → man) is 0.2; and the bottom-right (replace_ies_y → studies) is highlighted in light green and shows 0.8. The visual design uses color coding to distinguish components: pink for entity inputs, light green for context spans, beige for entity processing, and light blue for the encoder. The connections are represented by solid black arrows indicating data flow from the encoder to the representation layers and then to the final scoring matrix, which computes alignment scores between entity candidates and context spans."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

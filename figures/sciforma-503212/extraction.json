@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503212",
+  "record_sha256": "57064aded572020bf6660f6cec9aebd66d86b03562bf43dee00715658e04b105",
+  "asset_sha256": "30777d052a0aa3464cb97acb5242a2813733ae4cc7eccd94ab8fa492b8c88452",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503212",
+    "title": {
+      "zh": "CLIP-RLDrive: Human-Aligned Autonomous Driving via CLIP-Based Reward Shaping in Reinforcement Learning · 方法图",
+      "en": "CLIP-RLDrive: Human-Aligned Autonomous Driving via CLIP-Based Reward Shaping in Reinforcement Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-16201",
+      "title": "CLIP-RLDrive: Human-Aligned Autonomous Driving via CLIP-Based Reward Shaping in Reinforcement Learning",
+      "authors": [
+        "Erfan Doroudian",
+        "Hamid Taghavifar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16201",
+      "arxiv_url": "https://arxiv.org/abs/2412.16201",
+      "arxiv_id": "2412.16201",
+      "arxiv_first_submitted_at": "2024-12-17T00:12:45Z",
+      "arxiv_updated_at": "2024-12-17T00:12:45Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16201v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503212/image/image.jpg?Expires=1790855361&Signature=IMFpYeJeRb5UuRtoDHS9OlMxJS7GZXVIGULUWib-z1MU~C7FMpeF9RpRgAv9gJhZkv4dHaQKbAtbAl7TBOKZFZuplmSBw6u6UK0vvsZM6QWz-B6Pu9Nud6HGFg6YYwEWNEO4ZTXwxF2ZddpykcAgZQbYiAM1Hsm8IEeE3rbta5ZlykzvLGjiSkNlB~PH2Hsw4D35M~T0QaAc4v113rbUtdGdXJim~ZP5A8IqV~bJVMQZuRk00rmEM8yFoqOZh~92p~lIPbS~0WayURnvr79Rfa6NI9q27GUdjlf~~OJn77Vvss4PwPXEykd3ss5WJaMEZy0AuK-due2dVSqrIDjeFA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503212,
+      "description_sha256": "cfde3275d5fb1cf8a80f31467896cb7974e3423bd21972ba510f1c66113fc4bb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "5fadd202c1d2a4169e0f8791298ff175ea4d4f938c308b98f314da6097d0cdaa",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a block diagram of a reinforcement learning framework based on Proximal Policy Optimization (PPO), designed for training an agent in the Highway-env environment. The global layout is structured as a feedback loop where policy updates are driven by gradient computation from a composite loss function, which is then used to update the model parameters via stochastic gradient descent (SGD). The diagram flows from left to right and includes feedback connections from the environment and memory to the central PPO module.\n\nAt the center of the diagram is a large gray rectangular block labeled 'PPO', representing the core algorithm. This block receives inputs: the current state s_t from the environment, and outputs the action a_t. The PPO block also receives a mini-batch of data from a blue dashed box labeled 'TrajectoryMemory (s_t, a_t, r_t, s_{t+1})', which stores past experiences. The mini-batch is shown as a salmon-colored rectangle feeding into the PPO block.\n\nTo the right, the 'Highway-env' environment is depicted as a gray square containing a simplified highway scene with lanes and vehicles, indicating the simulation environment where the agent operates. The environment receives the action a_t from PPO and returns the next state s_{t+1} and reward R, which are fed back into the TrajectoryMemory. A loop labeled 'for episode → n' indicates that this process repeats over multiple episodes.\n\nOn the left side, the loss components are computed. The main loss function L^{CLIP+VF+S}(θ) is shown as a large white rectangle at the top-left. It aggregates three sub-losses: L^{CLIP}(θ), L^{VF}(θ), and S[π_θ](s_t). These are represented as smaller white rectangles connected to the main loss block. The L^{CLIP}(θ) loss receives inputs π_θ(a_t|s_t) and π_{θ_old}(a_t|s_t), which represent the current and old policy probabilities, respectively. The L^{VF}(θ) loss receives V_θ(s_t) from the value function and compares it to V_target, the target value. The S[π_θ](s_t) term represents the entropy regularization, which receives π_θ(a_t|s_t) as input.\n\nAdditionally, the advantage estimate Â_t is computed using π_θ(a_t|s_t) and r_t(θ), and is fed into the L^{CLIP}(θ) component. The state s_t is also directly passed to the value function V_θ(s_t) and to the entropy term S[π_θ](s_t).\n\nA top-level arrow points from the composite loss L^{CLIP+VF+S}(θ) to the PPO block, labeled 'Update with the gradient ∇L^{CLIP+VF+S}(θ) by SGD', indicating the parameter update mechanism. The entire system forms a closed-loop training pipeline where experience is collected, stored, sampled in mini-batches, and used to compute gradients for updating the policy and value functions within the PPO framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506780",
+  "record_sha256": "5e72666bd58a52d47ad68b6d2fa1145cb9ab856e57b5aa22340743242931e3ac",
+  "asset_sha256": "39f819715c0b5ffb0953864d4ca1b339b82f4765615c29f4e2ece5084388a60b",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506780",
+    "title": {
+      "zh": "Layout2Scene: 3D Semantic Layout Guided Scene Generation via Geometry and Appearance Diffusion Priors · 方法图",
+      "en": "Layout2Scene: 3D Semantic Layout Guided Scene Generation via Geometry and Appearance Diffusion Priors"
+    },
+    "paper": {
+      "id": "arxiv-2501-02519",
+      "title": "Layout2Scene: 3D Semantic Layout Guided Scene Generation via Geometry and Appearance Diffusion Priors",
+      "authors": [
+        "Minglin Chen",
+        "Longguang Wang",
+        "Sheng Ao",
+        "Ye Zhang",
+        "Kai Xu",
+        "Yulan Guo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.02519",
+      "arxiv_url": "https://arxiv.org/abs/2501.02519",
+      "arxiv_id": "2501.02519",
+      "arxiv_first_submitted_at": "2025-01-05T12:20:13Z",
+      "arxiv_updated_at": "2025-01-05T12:20:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.02519v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506780/image/image.jpg?Expires=1790855623&Signature=LwLo5fpz2T9htWkDluy6pp8zjDgYpN-rKoekmXRg0WysTtC8UVwWQzrfCTZvu8VJgByHyz0OwK6vUAn0NlmkaJcK7dazwBE8T7CAUAgQJhATQ3jA9Bp6RJqiJpvf2MhT0Zf~DrbNrr-UQuzV6wSsxUPdLtvff3OdEWYsjX15pB0u501IZPaxkyHF20eWjHTN5erV1lYVKFOdMQ6NQbF68Q820uQqTzj4d3gwGdUwTYwHrzKphLS7Q20N9ZzKkgIvfxZ3U2xB3RjzgBg3wiXbwbbG8ILha8V7Rdx4Brbt97ObODL92ihdgLyxvegEVk0aH83Lc2xtmVc2TYSAVFq-Bg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506780,
+      "description_sha256": "710f8b61b8060289982ede099b1ed55d5d2a7ab2d8d9909e5156c3273562a2c5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "34d12ea455acec147e36c8901c52851c52b54ab69d23ec1340e54f5e009839b9",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "32c0922ab16f72d038488f6483c97a7bd252683ee7e7c9113b5d32129e4563ff",
+      "row_response_sha256": "d09ba592fde8f1259c14c0b9b5f9b0a5362f578ed4f27d8bbffc357ea7070954"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a two-stage 3D scene generation method that takes a 3D semantic layout and a text prompt as inputs. The global layout is structured into four main components: the 3D semantic layout at the top-left, the Hybrid Representation module below it, the Layout-aware camera sampling process in the center, and the two-stage refinement pipeline on the right, labeled Stage 1 (Geometry Refinement) and Stage 2 (Appearance Generation). The 3D semantic layout is depicted as a top-down view of a room with colored blocks representing different semantic categories: orange for chair, blue for sofa, pink for table, gray for wall, and dark brown for floor, with a legend provided. This layout serves as the initial structure for scene composition.\n\nThe Hybrid Representation module, located at the bottom-left, details how scene elements are modeled. It splits the scene into 'objects' (e.g., sofa, chair) and 'background'. Objects are generated using a pre-trained Text-to-3D model, producing 3D meshes or point clouds, while the background is represented by polygons. These components are then converted into a unified representation using Gaussians, shown as overlapping translucent shapes. An arrow labeled 'render' connects this module to a vertical stack of rendered images in the center, illustrating different views of the scene.\n\nThe Layout-aware camera sampling block, positioned above the rendered images, indicates that camera viewpoints are sampled strategically to ensure full coverage of the scene. These sampled views feed into the two-stage refinement pipeline on the right.\n\nStage 1, titled 'Geometry Refinement', uses a diffusion-based model to refine the scene's geometry. It takes as input a noisy latent representation combined with a rendered image from the previous step. The model consists of a series of gray rectangular blocks representing neural network layers, with a prompt ('a living room') feeding into the middle of the network. The output is denoted by the loss term ℒ_GSDS, indicating geometry refinement via a semantic-guided diffusion process.\n\nStage 2, titled 'Appearance Generation', further refines the scene’s visual appearance. It also employs a diffusion model, taking noise and a rendered image as input. The model architecture is similar to Stage 1 but includes additional feature extraction blocks at the bottom, shown as stacked rectangles in yellow, peach, and green, which likely extract semantic and geometric features from the refined geometry. The output is associated with the loss term ℒ_A, signifying appearance optimization. A bidirectional arrow between Stage 1 and Stage 2 suggests iterative or conditional refinement, where the output of Stage 1 informs Stage 2.\n\nThroughout the diagram, arrows indicate data flow: from the 3D semantic layout and prompt to the Hybrid Representation, then to rendered views, and finally through the two-stage refinement process. The visual modules use consistent color coding for semantic categories, and the diffusion models are depicted as encoder-decoder-like structures with noise injection and conditioning via prompts and features."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

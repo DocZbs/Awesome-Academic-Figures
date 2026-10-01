@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Improving Equity in Health Modeling with GPT4-Turbo Generated Synthetic Data: A Comparative Study — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16335
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a methodological pipeline for evaluating the performance of a downstream model on minority group data through augmentation using GPT4T, compared against baseline approaches. The global layout is left-to-right, depicting a sequential workflow starting from raw data input and ending with performance metrics. On the far left, a database icon labeled 'Real Data (MIMIC-IV & Framingham)' serves as the initial data source. From this, two parallel branches emerge: one leading to a light green rectangular box labeled 'Minority Group Sample', and the other to another identical box labeled 'Majority Group Sample'. These represent the stratified sampling of data into minority and majority groups.
+
+From the 'Minority Group Sample', two distinct processing paths diverge. One path leads to a cylindrical database icon labeled 'Baseline Approaches', indicating traditional methods applied to the minority sample. The second path leads to an icon representing multiple documents feeding into a smaller database, labeled 'Augmentation with GPT4T', signifying synthetic data generation via large language model augmentation. Both these processed outputs — from baseline approaches and GPT4T augmentation — converge into a central component: a scatter plot with red and blue dots separated by a curved decision boundary, labeled 'Downstream Model'. This visualizes the classification task performed by the model on the augmented or baseline-processed minority data.
+
+Simultaneously, the 'Majority Group Sample' feeds directly into the same 'Downstream Model', serving as a reference or control group for comparison. The output of the downstream model is then directed to the final stage: a bar chart icon inside a pink rectangle labeled 'Performance (AUROC, AUPRC)', indicating the evaluation metrics used to assess model effectiveness. All connections between components are represented by solid black arrows, indicating the direction of data flow and processing sequence. The visual modules are distinguished by color and shape: real data and samples are shown with icons and green boxes; processing steps use database or document icons; the model is depicted as a scatter plot with a decision boundary; and performance is shown as a bar chart within a pink box. Text labels are placed adjacent to each module for clarity, and the entire diagram emphasizes the comparative evaluation of augmentation strategies versus baseline methods on minority group data.

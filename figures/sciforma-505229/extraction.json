@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-505229",
+  "record_sha256": "ff4b568685da6cef14c41cb877d94f3ecc4b9a1ed9a3e6f32285d566bb281688",
+  "asset_sha256": "cd62e60f0c973073e45cd731ae3981fa2f74725096afc72d71fe7d0a7b4d267b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505229",
+    "title": {
+      "zh": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback · 方法图",
+      "en": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback"
+    },
+    "paper": {
+      "id": "arxiv-2412-19707",
+      "title": "Toward Adaptive Reasoning in Large Language Models with Thought Rollback",
+      "authors": [
+        "Sijia Chen",
+        "Baochun Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19707",
+      "arxiv_url": "https://arxiv.org/abs/2412.19707",
+      "arxiv_id": "2412.19707",
+      "arxiv_first_submitted_at": "2024-12-27T16:02:34Z",
+      "arxiv_updated_at": "2024-12-27T16:02:34Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19707v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505229/image/image.jpg?Expires=1790855453&Signature=EMbYAQns0e-VAWa9ly07rBGuUrsJ9ZmzUZ6FICuUzZKy6armDNLDEejOJrdwDTnf1k6kfu-zdGhn4cs5jeyTevHnXob9pZkkH34M4XXxiiLSby7nFYon7~oR6uMUALlbPpz0-B0Y0D-XEoj19LLdho7NqlzhF6bpiLvlrBSOioH5TJ3VXYATxM50usz2MBYaDeh4fDT2H2saSdPNIHK7yhw3cpCuiStIAaeD01DN0ROCbHQ1J7N5pUYn-ep-LCkwS4mxsk0c22sxw7AAv4TUxbACl-3iuDkYVdv59nFCGTPhDMJD5Twkfta7SdIhBbrYBX8CHgW3BTygBYV-akmF~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505229,
+      "description_sha256": "4e4042885b0899410a66c266030444f19e6873ed41147ae8b8e157266ca4d01e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "7061572d308b826a37321afe45f2eaa225a754654fa364cd92d0e84cce84899e",
+      "row_response_sha256": "fde3928f6c196bbaffe0c1de18c1b02cb629da0585dafe39dbbdf1aa9775a4e3"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a schematic of a rollback mechanism in a large language model (LLM)-based reasoning process, specifically when the model reaches the n-th reasoning step. The global layout is horizontal, depicting a sequential reasoning flow from left to right, with a feedback loop for rollback operations. The process begins with an initial state z₀, represented as a green circle, which feeds into an LLM block (a rounded rectangle labeled 'LLM'). This LLM generates a sequence of intermediate states z₁, ..., zₘ₋₁, shown as blue rectangles connected by solid black arrows, indicating forward progression. The current state zₘ₋₁ is then used as input to two parallel reasoning paths.\n\nThe upper path represents a standard forward reasoning step, where zₘ₋₁ is processed by an LLM function f(zₘ | Π(Aₘⁿ, Aₓ(·)_{z₀...m−1}, z₀...m−1)), producing output zₘⁿ, a blue rectangle labeled with superscript n, indicating a modified or rolled-back version. This path includes a red arrow labeled 'R' pointing from the LLM to zₘⁿ, signifying a rollback action. The lower path represents the normal forward step without rollback, using f(zₘ | Π(Aₓ(·)_{z₀...m−1}, z₀...m−1)) to produce zₘ, a standard blue rectangle. Both zₘ and zₘⁿ are part of a continuing sequence leading to zₙ, indicated by a vertical dotted line and downward arrow.\n\nA key component is the 'Rollback-1' module, enclosed in a gray dashed box. It is triggered when a rollback is needed, indicated by a red dashed arrow labeled 'R-1' originating from zₘⁿ and pointing back to the Rollback-1 block. Inside this module, two inputs are provided: Aₘⁿ (a white rectangle) and m (another white rectangle), which are combined and fed into an LLM function f(A | Π_R(R, [z₀...n])). This function uses a rollback-specific context Π_R, incorporating the rollback signal R and the full history [z₀...n], to generate a corrected or revised state. The red dashed arrow from zₙ to the Rollback-1 block indicates that the final state zₙ can trigger a rollback, possibly due to inconsistency or error detection.\n\nAll LLM blocks are rounded rectangles with the label 'LLM' at the bottom. The function f is written inside each LLM block, with its arguments specifying the conditioning on previous actions (A) and states (z). The use of Aₓ(·)_{z₀...m−1} in the upper path accounts for the possibility that zₘ₋₁ itself may have resulted from a prior rollback, ensuring robustness. The visual distinction between zₘ and zₘⁿ (superscript n) highlights the difference between normal and rolled-back states. The red arrows and labels 'R' and 'R-1' clearly mark the rollback and rollback-triggering events, while the dashed lines indicate non-standard or conditional flows. The figure effectively conveys a dynamic, self-correcting reasoning process with explicit rollback logic."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

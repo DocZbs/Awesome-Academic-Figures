@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505068",
+  "record_sha256": "613661d46da4a6b0f6dac26e24b941538ff700ed8a4653c777c8546eb0bb4f9f",
+  "asset_sha256": "6dc6d533b2cf8ae569cf7a8dbd445d5583560ca72c61e6eeb26b8e2115e1c46e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505068",
+    "title": {
+      "zh": "BeSplat: Gaussian Splatting from a Single Blurry Image and Event Stream · 方法图",
+      "en": "BeSplat: Gaussian Splatting from a Single Blurry Image and Event Stream"
+    },
+    "paper": {
+      "id": "arxiv-2412-19370",
+      "title": "BeSplat: Gaussian Splatting from a Single Blurry Image and Event Stream",
+      "authors": [
+        "Gopi Raju Matta",
+        "Reddypalli Trisha",
+        "Kaushik Mitra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.19370",
+      "arxiv_url": "https://arxiv.org/abs/2412.19370",
+      "arxiv_id": "2412.19370",
+      "arxiv_first_submitted_at": "2024-12-26T22:35:29Z",
+      "arxiv_updated_at": "2025-01-05T21:19:48Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.19370v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505068/image/image.jpg?Expires=1790855449&Signature=wt-nq2mE~xbtPKn5MgPR70tDkYHpzbWcZtt~8uEV8ZpkNbQTliRAHTO6ysYhCBhCU0yOYi-HsIQBoYzm8WVJQ9S0xyKnyqiaYDVUF5My1nt292mOhslwk78G5g62uyGB5AkmOpND81ht6A2enAmSEYrM~pcG5dLweeKMP-eoKjVM8MOBInk4UHGHiw9vomxQjpttvnGGSEB3H1jizfzkpSdqGuLFGnd0f9SnEn7kUskG6k4sh4JwA21zHHDb-BmjVITay8Le9ND4znjqPELyp5fMcZ30O5Mox8GtgsAyMylUh4oO8w1sRd8xHw4Ol~wAawE9bRUwAksA3x~mPoV0KQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505068,
+      "description_sha256": "05256f382bc2b65ec50035e2696d39f635d95f157f3f001c688e8f29effe04cc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "53353b8947e8ed9403c214d563c432182e51a33886d3ec0ceb330aec8b1ba4c6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "0c75171acd0dc0d04e3f1516580622b9c69670fd5550efca32ea73dabdf2d173",
+      "row_response_sha256": "50f139e06243051f72c575fabfc2d7a2d60f7c8e60b4b35ba46721347de046fe"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the BeSplat framework, a method for jointly reconstructing sharp 3D radiance fields represented as 3D Gaussians and estimating camera motion trajectories using a single blurry RGB image and its corresponding event stream. The global layout is structured as a dual-loop optimization pipeline: one loop handles RGB image reconstruction and loss computation, while the other manages event-based consistency. These loops converge through shared components—specifically, the 3D Gaussians and the camera trajectory—to enable joint optimization.\n\nAt the top-left, 'SFM Points' (shown as blue dots) serve as initial 3D point cloud input, feeding into an 'Initialization' module (dashed rectangle), which generates the initial set of 3D Gaussians (depicted as green elliptical shapes). These Gaussians are then processed through two parallel pathways: one leads to 'Projection' (dashed rectangle), which maps the Gaussians onto a virtual camera plane based on the camera trajectory; the other feeds into 'ADC' (Analog-to-Digital Conversion, dashed rectangle), which converts the Gaussians into a differentiable signal suitable for rendering.\n\nThe camera trajectory is modeled as a Bézier curve, visualized in a separate box labeled 'Camera Trajectory', showing two curves—one blue for 'Event' data and one green for 'RGB' data—indicating distinct paths or timing for each modality. This trajectory guides the projection step, which connects to 'Differentiable Rasterization' (dashed rectangle), producing rendered outputs. From this module, a 'Render' arrow leads to a composite output box containing multiple synthesized images (a sequence of frames showing a camera moving over a red surface with a black object), representing the synthesized RGB images along the trajectory.\n\nThe top feedback loop computes the 'RGB Loss' (brown rectangular box). It compares the 'Captured Image' (a real photo of the scene) with the 'Synthesized Image' (generated via rendering), using an averaging operation (indicated by a '+' symbol) to combine multiple synthesized views before computing the loss. This loss backpropagates gradients (blue arrows) to update both the 3D Gaussians and the camera trajectory.\n\nThe bottom feedback loop computes the 'Event Loss' (purple rectangular box). It compares 'Captured Events' (a sparse binary image showing event occurrences) with 'Synthesized Events' (generated by computing intensity differences across the rendered frames, indicated by a '-' symbol). The synthesized events are derived from the rendered image sequence, and the loss is computed based on the difference between actual and predicted events. Gradients from this loss also flow back (via blue arrows) to update the 3D Gaussians and camera trajectory.\n\nA legend at the bottom center clarifies the arrow types: solid black arrows denote 'Operation Flow' (forward pass), while blue arrows denote 'Gradient Flow' (backward pass during optimization). The entire system forms a closed-loop optimization where both RGB and event losses jointly refine the 3D Gaussians and the camera trajectory to achieve accurate reconstruction and motion estimation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

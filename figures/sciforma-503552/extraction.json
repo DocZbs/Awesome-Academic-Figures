@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-503552",
+  "record_sha256": "023c36ff771d0322797dbeab2461a94c9b84c6193124de05826cae6cd604acc9",
+  "asset_sha256": "4a27e560197cdb4ec5c315ce470fb65415e547ddaeb2ac02f15e3e241b5e3dd0",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503552",
+    "title": {
+      "zh": "HyperCLIP: Adapting Vision-Language models with Hypernetworks · 方法图",
+      "en": "HyperCLIP: Adapting Vision-Language models with Hypernetworks"
+    },
+    "paper": {
+      "id": "arxiv-2412-16777",
+      "title": "HyperCLIP: Adapting Vision-Language models with Hypernetworks",
+      "authors": [
+        "Victor Akinwande",
+        "Mohammad Sadegh Norouzzadeh",
+        "Devin Willmott",
+        "Anna Bair",
+        "Madan Ravi Ganesh",
+        "J. Zico Kolter"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16777",
+      "arxiv_url": "https://arxiv.org/abs/2412.16777",
+      "arxiv_id": "2412.16777",
+      "arxiv_first_submitted_at": "2024-12-21T21:19:08Z",
+      "arxiv_updated_at": "2024-12-21T21:19:08Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16777v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503552/image/image.jpg?Expires=1790855374&Signature=WevT5KVwZerKRT2vrUY4M8qOm-iCLVrnvzfvCyGA-XkzIgWHJWgi9L7JF-rgtMbxzlUjnNTZq~BOpxsia4aW3RCpR0ookz2lyGFrloC8TLpJkMMmKXbkjH6JNQMwQnib9akpXKqZnplO-kHfrkRU5KaGYBxValu-q4W2X6qNXfITjxrEqG8cOKHTK1SWdeawTh6AFCplDZfBuk86CCEeR7LA77hsquWouA7aQ~ytrQcTqJXk7LSeUTrXi0APIWMAeYcj7Q0U5xfRgFH1TIIr8pUuDLf27ScFcw-Sxrh9C7G1M2AYhD0P5AKGQTXrn3PrOpX3-lUosSA-etYdg5R6Mw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503552,
+      "description_sha256": "5d85557dd15120804ae5db6697f58309ac2352c72abd90b7a2afbe32ec91d26e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "f85260e378c872a0232ca97daa1ad894cd9405c55dea4756ac3a751b9adfcd31",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ff5735512da65df0db427733a75e4119b38d5ba6c8386914c51424bae1b4adf7",
+      "row_response_sha256": "c9146b0a8685d67fe89c4be618e8fd8a94559b08f5b6c73d9b974ad9735d3efb"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two architectural diagrams labeled (a) and (b), illustrating the traditional CLIP-based SigLIP pre-training framework and its HyperCLIP variant, respectively. Both diagrams share a similar global layout: on the left, text captions are processed by a text encoder; on the right, images are processed by an image encoder; and the resulting embeddings are aligned via a contrastive loss function labeled 'SigLIP loss' at the bottom center.\n\nIn diagram (a), the traditional setup, multiple captions such as \"a photo of a dog\", \"a photo of a cat\", and \"a photo of a truck\" are fed into a blue rounded rectangle labeled 'Text-encoder'. This module outputs a sequence of square-shaped embedding tokens, each with a light gray diagonal hatch pattern. These embeddings are connected via dashed blue arrows to a grid of white square placeholders arranged in a large rounded rectangle, representing the joint embedding space. On the top right, a set of images (depicted as small thumbnails including a dog, cat, and truck) are input into a pink rounded rectangle labeled 'Image-encoder', which produces corresponding embedding tokens (white squares with diagonal hatching). These image embeddings are also connected via dashed blue arrows to the same joint embedding grid. The alignment between text and image embeddings is enforced through the SigLIP loss function.\n\nDiagram (b) introduces the HyperCLIP variant. It retains the same components as (a): the text encoder, image encoder, caption inputs, image inputs, and SigLIP loss. However, it adds a yellow rounded rectangle labeled 'Hypernetwork' positioned above the image encoder. Dashed blue arrows labeled 'params' extend from the Hypernetwork to the image encoder, indicating that the Hypernetwork dynamically generates the parameters (weights) of the image encoder during training. Additionally, dashed blue arrows connect the text encoder's output embeddings to the Hypernetwork, suggesting that the text embeddings influence the generation of the image encoder's parameters. This creates a feedback loop where text information guides the adaptation of the vision model’s weights, enabling more effective alignment under the SigLIP loss. The entire system is trained end-to-end, as stated in the caption, allowing HyperCLIP to improve zero-shot accuracy on benchmarks like ImageNet and CIFAR-100 while maintaining minimal training overhead."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

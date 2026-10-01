@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SCENIC: Scene-aware Semantic Navigation with Instruction-guided Control — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15664
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an architectural overview of a motion prediction model that integrates text prompts, past human motion, and 3D scene information to generate future human motion. The global layout is structured as a left-to-right data flow pipeline, beginning with multiple input streams on the left, processing through central encoding and transformation modules, and culminating in a predicted future motion output on the right. The diagram is divided into two main vertical sections: the upper section handles text and motion inputs, while the lower section processes scene and temporal information.
+
+In the upper section, several dashed rectangular boxes represent input sequences. Each box contains a text prompt (e.g., “A person walks upstairs” or “Balance yourself”), followed by a green circle labeled T_k (text embedding), a blue circle labeled H_k^- (past motion embedding), and a small 3D human figure illustrating the motion. For the last sequence, the motion embedding is labeled H^+ and accompanied by a bell-shaped curve, indicating a probabilistic or diffusion-based representation. These input sequences are fed into a tall blue rectangle labeled 'Encoder', which processes them. The Encoder outputs are combined via a circular plus symbol (denoting concatenation or summation) with another input stream from below.
+
+The lower section begins with a pink circle labeled S_cano, representing a canonicalized scene representation, connected to a small image showing a 3D staircase with illuminated points. This scene input passes through a purple rectangle labeled 'Encoder' and is then combined with a 'Position Embedding' token, represented by a wavy symbol and a time variable t. This combined signal feeds into the same central processing block as the upper stream.
+
+The central processing unit is a large vertical blue rectangle labeled 'Transformer'. It receives the concatenated inputs from both the text-motion encoder and the scene encoder. The Transformer outputs a blue circle labeled H^+, representing the predicted canonicalized future human motion. This output is visually linked to a rendered 3D animation on the far right, showing a human figure ascending stairs, with multiple frames illustrating the motion sequence.
+
+Additionally, a feedback loop is shown at the bottom right: the predicted motion leads to a 'Goal update', depicted as a small image of stairs with red arrows indicating updated target positions. This goal update feeds back into the input side, suggesting an iterative or reinforcement learning component where the model refines its predictions based on updated goals.
+
+The visual attributes include distinct colors for different components: green for text embeddings, blue for motion/scene embeddings, pink for scene canonicalization, and purple for the scene encoder. Shapes are primarily circles for embeddings and rectangles for modules. Text labels are clear and positioned adjacent to their respective elements. The overall structure emphasizes a multi-modal fusion approach, where text, motion, and scene data are encoded and jointly processed by a diffusion-based transformer to generate future motion, with an emphasis on goal-centric canonicalization and iterative refinement.

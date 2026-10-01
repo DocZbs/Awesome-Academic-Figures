@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506537",
+  "record_sha256": "b4c99428446c0323052e7ad096f4d3fb2ed2bbeeb801ddacca8b17098b68c3a6",
+  "asset_sha256": "42391487ed2f0474dff7fd3cda189bbb892973df31e014ea58c81e684380f58a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506537",
+    "title": {
+      "zh": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network · 方法图",
+      "en": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network"
+    },
+    "paper": {
+      "id": "arxiv-2501-01689",
+      "title": "Quantitative Gait Analysis from Single RGB Videos Using a Dual-Input Transformer-Based Network",
+      "authors": [
+        "Hiep Dinh",
+        "Son Le",
+        "My Than",
+        "Minh Ho",
+        "Nicolas Vuillerme",
+        "Hieu Pham"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01689",
+      "arxiv_url": "https://arxiv.org/abs/2501.01689",
+      "arxiv_id": "2501.01689",
+      "arxiv_first_submitted_at": "2025-01-03T08:10:08Z",
+      "arxiv_updated_at": "2025-01-03T08:10:08Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01689v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506537/image/image.jpg?Expires=1790855582&Signature=AB1gmLYDk4faUSvQCNWN1Af2X42t-pTFuzuxnxZTeY3SHqIUIeZa~yFQD493-qxTjsQisSLgbNx7QPcdCQYzXbfI9VVoQQMHEHeJftaRZrpljDRxOgxjEk4s2hZQ4HEKEO07W0AI1NrchNCHw6f0ntidoWGXhIrZDAFYzDLPhEVOzFEQY9~rDVr2OyTQiYwsUS2A3UWCRBoP8qYqhnmHEIYh7vCx5eh46VLax4sEHPDD6kZY-x8iwQ8-M75A-kVhspb2IT8ePMWwQNiGHlAeMBbSUfDwgjrcrXIRj5CD2Edw~QD0jjZDnmqme2yzRH-rE6hWPr1nXG~Q9bioZxF0Vw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506537,
+      "description_sha256": "8848f97097387d4e7576a004b675be74b4fadb0af2a64178283c59cfa98e380c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "ef55a203eb4119b585f5f31bd3dea7adc9aa2278271e501c5818a708dbb3205e",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end deep learning architecture for gait parameter prediction, named DPG, which processes skeletal data extracted from input videos. The global layout is left-to-right, depicting a sequential pipeline starting from raw video input and ending in a final prediction. The top-left section shows 'Input video' as a vertical stack of four frames, enclosed in a rounded rectangle with a yellow border. This feeds into 'OpenPose', indicated by a labeled arrow, which outputs 'Skeletal Data' — a visual representation of human body joints with colored lines connecting 25 landmarks, also in a rounded rectangle with a yellow border. From this, two distinct image-based representations are generated: one for 25 body landmarks and 8 side parameters (shown as a grayscale striped image), and another for 3 lower-body landmarks (hip, knee, ankle) (shown as a black image with white lower-body outlines). These two images are processed via 'Stacking' operations, resulting in two separate image stacks labeled 'Img 2 128x128x3' and 'Img 1 128x128x3', both depicted as beige rectangles with stacked layers. These two image stacks are then fed into a 'Transformer-based feature extractor' module, outlined with a dashed red border. This module consists of three convolutional blocks: Conv1 (128x128x3 → 128x128x32), followed by max-pooling (kernel 2x2); Conv2 (64x64x32 → 64x64x64), followed by max-pooling; and Conv3 (32x32x64 → 32x32x128), followed by max-pooling. Each convolution and pooling layer is represented by a pink rectangle with labeled dimensions and operations. The output of the last max-pooling layer (32x32x128) is passed to a 'Feature fusion' module, outlined with a dashed blue border. Here, the output is split into two paths: 'Img 1' and 'Img 2', each flattened into vectors ('Img 1 Vector' and 'Img 2 Vector'), which are then concatenated into a single 'Concatenated vector' of size 1x65536, shown in a light blue rectangle. This vector is fed into a 'Classification model', outlined with a dashed green border, consisting of four fully connected layers: 1x512, 1x256, 1x128, and 1x64, each represented by a light green rectangle. The final output is a 'Prediction 1x1', shown in a light green rectangle, which corresponds to the critical gait parameters. On the bottom-left, a supplementary visualization shows a 3D human model with highlighted joints alongside multiple time-series plots of gait parameters, illustrating the output context. All connections are directed arrows indicating data flow, with explicit labels such as 'Stacking', 'Flatten', 'Concatenate', and layer names. The entire pipeline is designed to extract spatial features from skeletal sequences and classify them into meaningful gait parameters."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

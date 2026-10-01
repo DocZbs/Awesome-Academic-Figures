@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Choose Your Explanation: A Comparison of SHAP and GradCAM in Human Activity Recognition — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.16003
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a dual-branch deep learning architecture designed for processing skeleton-based action recognition data. The global layout is horizontally structured, divided into two main sections: the 'Input branch' on the left and the 'Main branch' on the right. On the far left, a stick figure representing a human skeleton with joint connections serves as a visual cue for the input data type. The Input branch processes four distinct feature streams, labeled J (joints), V (velocities), B (bone vectors), and A (angles), each originating from a blue rectangular 'Initialisation layer'. These four streams are processed in parallel through identical sequences of three layers: first, a yellow rounded rectangle representing a 'Spatial graph layer', then an orange rounded rectangle for a 'Temporal convolutional layer' (TCN), and finally a gray rounded rectangle for an 'Attention layer'. Each of these processing stages is enclosed within a dashed box, with the spatial graph layer group outlined in light blue, the TCN group in orange, and the attention group in gray. Below each group, gradient symbols (∇) are shown: ∇_in under the initialisation layer, ∇_TCN under the TCN block, and ∇_Att. under the attention block, indicating points where gradients are extracted for analysis. The outputs of the four attention layers converge into a circular fusion node, which combines them into a single feature stream. This fused output feeds into the Main branch, which mirrors the structure of the input branch's processing blocks: a yellow Spatial graph layer, followed by an orange TCN, and then a gray Attention layer. Again, gradient extraction points ∇_TCN and ∇_Att. are indicated below these layers in the main branch. After the attention layer in the main branch, the flow continues through a pink rectangular 'Dropout' layer, followed by a light green rectangular 'Classifier' layer, which produces the final output. The connections between all components are represented by solid black arrows indicating forward propagation, while dashed lines connect the gradient extraction points to their respective layers. A legend at the bottom clarifies the color-coded shapes: yellow for Spatial graph layer, orange for Temporal convolutional layer, gray for Attention layer, blue for Initialisation layer, pink for Dropout, and green for Classifier. The figure caption specifies that the model uses four input branches to process different feature divisions from skeleton videos, fuses them into a main branch, and that the reference gradients for experiments are extracted after the attention activation and after the TCN in the main branch.

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-504260",
+  "record_sha256": "d837fe63ddd131cf31ea6372c14f22872b5f4bd74975d7ea8ec59370cba34f4b",
+  "asset_sha256": "312e9c85aa6feda8b4b47433337b2b731db570889990b55ecc3d6a1d97e44fd8",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504260",
+    "title": {
+      "zh": "LayerDropBack: A Universally Applicable Approach for Accelerating Training of Deep Networks · 方法图",
+      "en": "LayerDropBack: A Universally Applicable Approach for Accelerating Training of Deep Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-18027",
+      "title": "LayerDropBack: A Universally Applicable Approach for Accelerating Training of Deep Networks",
+      "authors": [
+        "Evgeny Hershkovitch Neiterman",
+        "Gil Ben-Artzi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18027",
+      "arxiv_url": "https://arxiv.org/abs/2412.18027",
+      "arxiv_id": "2412.18027",
+      "arxiv_first_submitted_at": "2024-12-23T22:39:41Z",
+      "arxiv_updated_at": "2024-12-23T22:39:41Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18027v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504260/image/image.jpg?Expires=1790855427&Signature=lM2lPx40Mv4J3Fz7dxO2ZTU3lamLr8slX72TetahCY9fj-gFjDIkTDt23acom70BIxq03gNVg3eLQ6ABf5WU0sT-e6tZC3Tti7Pe~H-yHJHgdfjUK6wfOxXyVSCbWv-PahhevyMkaR0xT7LSXYm8AZf1BTtAaf3RJsRjRSpXl5RVGy~3DVQivv8gzqERT9H5qpLRtI9zox4cISl3oxxWAzuLwtaaV9-1-hwgXD-boru4t8J3klauTooFX7d0aeIadG~Ddgo-OAlW8zS0WgXaFxVvtjrOa8pP-w0rbqq1JQ7LuhslIYHM~JJbaawtiEGJ1N4N3NCKTy3LHGgBt0qDiA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504260,
+      "description_sha256": "1753ba48ee5cada929ce292eb892f8e166e921e9f0b1de474f6f2077ab7eb70f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c6e86ab1d756e0418971c1b12470ce946cf352128df6877469dad03058ef1532",
+      "row_response_sha256": "65044e59e4afbe7c658dbc7bf5173b7452cb2b27426486db32f51bd42e9e7eb5"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four sub-diagrams labeled (a), (b), (c), and (d), illustrating different sampling strategies within a semi-stochastic optimization framework. The global layout consists of two rows and two columns, each subfigure depicting a relationship between a vertical column of parameters and a horizontal sequence representing mini-batches over time.\n\nIn each subfigure, the left side shows a vertical stack of blue circular nodes labeled from w₁ at the top to wₘ at the bottom, representing the parameter space. These nodes are enclosed in a red rectangular boundary. On the right side, there is a horizontal sequence of colored rectangles labeled ℬᵗ, representing mini-batches at time t. This sequence consists of four rectangles: three dark green, one light green, arranged from left to right, indicating progression over time. An arrow labeled 't' points rightward beneath this sequence, denoting temporal evolution.\n\nThe key distinction across subfigures lies in how the parameter space interacts with the mini-batch sequence. In (a) and (b), a red arrow points from the entire parameter stack to the mini-batch sequence, indicating deterministic sampling — the full set of parameters is used. In contrast, (c) and (d) show a red arrow pointing from a subset of the parameter stack (specifically, two consecutive blue circles in the middle) to the mini-batch sequence, indicating stochastic sampling — only a subset of parameters is selected.\n\nSpecifically, (a) and (c) depict full parameter sampling on the left (entire stack) and partial sampling on the left (subset), respectively, while (b) and (d) show the same but with the parameter stack on the right side of the diagram. The red rectangle enclosing the sampled parameters visually distinguishes stochastic (partial) from deterministic (full) sampling.\n\nAccording to the caption, the proposed approach alternates between configurations (c) and (d), meaning it alternates between stochastic sampling of a subset of parameters and stochastic sampling of a subset of parameters from the right-side representation — both implying semi-stochastic behavior in the parameter space and stochastic behavior in the sample space. The mini-batch sequence ℬᵗ remains consistent across all diagrams, emphasizing that the variation lies in the parameter selection strategy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

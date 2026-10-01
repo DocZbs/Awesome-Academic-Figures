@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-503301",
+  "record_sha256": "ec8f34642df54a000a2fd5f77e21b38cb5080c4785594607135db5db2619d57a",
+  "asset_sha256": "8830d11a00f6a9ad6eb5f072a7496876db13499ba3cca15a83f4818afbba9db7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503301",
+    "title": {
+      "zh": "Human-Readable Adversarial Prompts: An Investigation into LLM Vulnerabilities Using Situational Context · 方法图",
+      "en": "Human-Readable Adversarial Prompts: An Investigation into LLM Vulnerabilities Using Situational Context"
+    },
+    "paper": {
+      "id": "arxiv-2412-16359",
+      "title": "Human-Readable Adversarial Prompts: An Investigation into LLM Vulnerabilities Using Situational Context",
+      "authors": [
+        "Nilanjana Das",
+        "Edward Raff",
+        "Aman Chadha",
+        "Manas Gaur"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16359",
+      "arxiv_url": "https://arxiv.org/abs/2412.16359",
+      "arxiv_id": "2412.16359",
+      "arxiv_first_submitted_at": "2024-12-20T21:43:52Z",
+      "arxiv_updated_at": "2025-05-29T05:54:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16359v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503301/image/image.jpg?Expires=1790855363&Signature=uLDV2DWLC4k~p3g4VvV8poX~JIaWbaES8-100o3vvGAQMJBPkJcf~orxVRdZt4fdJBGsyscPzbHvSs7buDaWWTiMwpxxK7S34844OtnoOWOILqd6fwhN50imeEO6qVnLOD7V~5xMSq~svCioIMc60de0C~b9Su9Zos33zPUn2eY2zXcZvINix1clsMVTO~a3K2CunszrYGVf2MCzs7xMkvzp7JeZjP~bd54~TlBoj9YFodV~hw394TtULnn5QO34u0UhqlsfchgS5ihud7uX2ViG8e3zUvfJHHDVXr1NmkDveI7ZVPeX9nBOm2r0f03YAJzGHEXibzsOwOAkwOPerQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503301,
+      "description_sha256": "fab1804ab43a9797a4554ef99fdf77d8ef39c26facf53eb43da102216e7e0160",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "a9e42779f8b5fa0e2dbff7742da28586c998ab40c367b362ac369f17e2adf466",
+      "row_response_sha256": "14199e8a74dd8bd3b7dad941e2fc0f45da6d821af712e6bbfe7558579a14c3df"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-phase adversarial attack methodology, referred to as \\textit{\\OurMethod}, designed to generate and deploy effective adversarial prompts against large language models (LLMs). The global layout is structured as a horizontal workflow with a branching lower section representing two distinct attack schemes. The top row shows the prompt generation pipeline, while the bottom row details the attack execution strategies.\n\nIn the first phase, the process begins with a green rectangular module labeled 'Generated Adversarial Suffix', containing an icon of a hooded hacker with a skull on a laptop. This module feeds into a conversion step via a rightward arrow labeled 'Convert Adversarial Suffix using GPT-3.5 Turbo'. The output is a yellow rectangular box within a larger green container titled 'Full-Prompt Template', which lists three components: 'Malicious Prompt', 'Converted Adversarial Suffix', and 'Situational Context'. This full template is then passed through another transformation step, indicated by an arrow labeled 'Paraphrase Full-Prompt Template using GPT-4', leading to a green module named 'Collected Adversarial Prompts'. This module contains an icon depicting multiple documents feeding into a laptop, symbolizing the collection of paraphrased prompts.\n\nFrom this collection, an arrow labeled 'Attack' points downward to a green box labeled 'Scheme 1: 4-bit Quantized Llama-2 7B Chat Model', indicating the first attack strategy targeting a specific LLM. A second arrow, labeled 'Attack using Paraphrased Full-Prompts with a Score of 5', extends leftward from Scheme 1 to a larger green container labeled 'Scheme 2: Attack other LLMs with One-Shot/Few-Shot Chain-of-Thought Prompting Technique'. Inside this container are three yellow boxes arranged horizontally: 'Adversarial Prompt 1 Query 1 Response 1', 'Adversarial Prompt n Query n Response n', and 'Query n + 1 Response n + 1?', illustrating a sequential prompting approach where the model’s responses are used to guide subsequent queries.\n\nAll primary modules are green rectangles with rounded corners, while internal components or data representations are yellow rectangles. Text labels are black, with key titles in bold or underlined for emphasis. The arrows are solid black lines with arrowheads indicating directionality. The figure visually conveys a systematic approach starting from a nonsensical adversarial suffix, converting it into a readable and contextually embedded prompt, paraphrasing it for diversity, and then deploying it via two distinct attack schemes—one direct and one iterative—against various LLMs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

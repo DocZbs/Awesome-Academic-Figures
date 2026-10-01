@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-506226",
+  "record_sha256": "dbe2ee68d0ad9647334be7905751f812ae22bdaa34a03919994743d7b846e4c4",
+  "asset_sha256": "9d80296c0e03640d1fbdc4324be0d13690b0274c4a62dfbe0eb11f67424ef89e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506226",
+    "title": {
+      "zh": "Spatially-guided Temporal Aggregation for Robust Event-RGB Optical Flow Estimation · 方法图",
+      "en": "Spatially-guided Temporal Aggregation for Robust Event-RGB Optical Flow Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2501-00838",
+      "title": "Spatially-guided Temporal Aggregation for Robust Event-RGB Optical Flow Estimation",
+      "authors": [
+        "Qianang Zhou",
+        "Junhui Hou",
+        "Meiyi Yang",
+        "Yongjian Deng",
+        "Youfu Li",
+        "Junlin Xiong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00838",
+      "arxiv_url": "https://arxiv.org/abs/2501.00838",
+      "arxiv_id": "2501.00838",
+      "arxiv_first_submitted_at": "2025-01-01T13:40:09Z",
+      "arxiv_updated_at": "2025-08-19T09:13:25Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00838v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506226/image/image.jpg?Expires=1790855567&Signature=KxZkhW5UTz-70Q8i6Hk6q6Cqrd56nRfE7HmGkWq2paRzLAvwIjmgCciDUztocj~bCp80SQHPwckrQdVRqlgNOI5e0HHiwu82qi1NzBiD0HWEJ~lDD1TolagYUTlPWmgWeF5oBcAXRDJtRYZyVUywhpBIsxwGbCvk6YI32PoleD06MBrKw3G8~PzWFY908bZv-kkzlNBHzvrGHaBqsX--pwpuwC0SUTVDrLHmilQ5SMz6Of5mmnSu-YNmVwxYN-JoSiNc~61jBidRE1vphLP0phFp22rv6A0Q904bkveO7csc-Le-gUYhHPi3xz9NBCqMFmrf1S0XQpohXSQJY8XWhw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506226,
+      "description_sha256": "7cbcfe6021933583d607f6015670abdaa92889c52dffa613c9573376ca82637e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "40431b1366ba184a28e6513eba41d94fad7d6bfe2725d27adb68f68f0b6bc079",
+      "row_response_sha256": "c0ea51dd68f1b3a3d9f7d12790561e06867ecc35566a2a7bcd1995eb7246a4d4"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the overall architecture of a multimodal framework designed for optical flow estimation, combining frame-based (ICE) and event-based data. The layout is divided into three main horizontal sections: the top section shows the full pipeline, while the bottom left and right sections provide detailed expansions of two key modules: Cross-Modal Guided Aggregation and Mix-Fusion Context Encoder.\n\nIn the top section, the process begins with two parallel branches: Spatial Branch and Temporal Branch. The Spatial Branch processes frame data (labeled as ICE), represented by two grayscale images at times t and t+1, along with a time axis indicating Δt. This branch outputs a feature E_t. The Temporal Branch processes event data, shown as multiple pink event frames split over time, producing a feature E_e. These two features are combined via all-pair correlation to generate temporally dense event features {F_{v_i}}. The ICE feature is also used to sample a 4D Volume (ICE), denoted as C_G, while the event features are sampled into an N×4D Volume (Event), denoted as C_T. Both volumes are then fed into the Cross-Modal Guided Aggregation module.\n\nThe Cross-Modal Guided Aggregation module, highlighted in yellow, takes ICE features as K and V, and event features as Q. It performs attention operations using W^V, W^K, and W^Q to compute attention weights, which are applied to produce enhanced features. These are then aggregated with the original features to form Aggregated Features, which are passed to a GRU unit for temporal modeling, updating the hidden state f_{t+1} from f_t.\n\nThe Mix-Fusion Context Encoder, shown in purple, receives both Image (I_{T_k}) and Events (V_{T_k}^{T_{k+1}}) as inputs. The Image is processed through a Spatial Encoder to produce F_s, while Events go through a Temporal Encoder to produce F_t. These are concatenated and processed through a series of convolutional layers (Conv 1×1, Conv 3×3, ReLU, Conv 1×1, BN) to generate a Spatiotemporal Context Feature (F_st), which is then fed back into the network.\n\nConnections are indicated by arrows: from the Spatial and Temporal Branches to the correlation module, from the correlation output to the 4D volumes, from the volumes to the Cross-Modal Guided Aggregation, and from the aggregation to the GRU. The Mix-Fusion Context Encoder feeds its output back into the main pipeline. The visual modules use distinct colors: blue for ICE-related components, green for event-related components, orange for enhanced/aggregated features, and gray for processing blocks like GRU or convolutions. Text labels specify module names, feature types, and mathematical notations such as K, V, Q, and equations for dimensions (e.g., HW × D)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

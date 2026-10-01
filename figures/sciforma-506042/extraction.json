@@ -1,0 +1,101 @@
+{
+  "id": "sciforma-506042",
+  "record_sha256": "1993bdb3d845618de9e2de639cd735e750f6186b34f68c58901266831aad9c16",
+  "asset_sha256": "a3174574c925b7146e7d1b842edc90bfed1b6482ac051228757d6ca580d0def4",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506042",
+    "title": {
+      "zh": "LTX-Video: Realtime Video Latent Diffusion · 方法图",
+      "en": "LTX-Video: Realtime Video Latent Diffusion"
+    },
+    "paper": {
+      "id": "arxiv-2501-00103",
+      "title": "LTX-Video: Realtime Video Latent Diffusion",
+      "authors": [
+        "Yoav HaCohen",
+        "Nisan Chiprut",
+        "Benny Brazowski",
+        "Daniel Shalem",
+        "Dudu Moshe",
+        "Eitan Richardson",
+        "Eran Levin",
+        "Guy Shiran",
+        "Nir Zabari",
+        "Ori Gordon",
+        "Poriya Panet",
+        "Sapir Weissbuch",
+        "Victor Kulikov",
+        "Yaki Bitterman",
+        "Zeev Melumian",
+        "Ofir Bibi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.00103",
+      "arxiv_url": "https://arxiv.org/abs/2501.00103",
+      "arxiv_id": "2501.00103",
+      "arxiv_first_submitted_at": "2024-12-30T19:00:25Z",
+      "arxiv_updated_at": "2024-12-30T19:00:25Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.00103v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506042/image/image.jpg?Expires=1790855568&Signature=nNE9u2flmrNHnaYTTOpuWl~Pjp0~z30qLrYrdckOoqEoQCQs9dMrZciSq5u74wPJ6zLFzTDtFDN7O0SD1QMXpPtdakhT7038DiadhEGC72WegOwx9Pz8eI1m6S0JL3h9-vgENCWNMyOpMjaLndDKjZ5GjNLxcHURJue-F6ewRnLhkrw~ePgW0viycMnXuH-qODBSkdBCjtbvlxcMfcCM8VYAC~DM6qQ2f6LH0hKs28cZ9u2PdtfUpz8ql7sBISPDwQbLgkzvlr3dhzNg7QHGu8kkcVernXOgUOMjrRSayaOdz7j6gT37fKAsopBUJjblMjyYnMkg2eDQAEkZS~p24A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506042,
+      "description_sha256": "3ef15cb99023ad84b011a51753971abea40fde1707d31d2bb34afdf10f4b4ea7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "44826744b928e62480f91ce54c7a495c2db9652f82d75ec8dec9eb105d90478e",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f2c4b7b19cfa9ca3ff140094753427530276b8d734273cd29f5bc3c0e987c332",
+      "row_response_sha256": "6e7156d7290df11894809bf81e74a5309153db3da5ac5771223255011b1e3b8e"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the LTX-Video Video-VAE architecture, divided into two main components: (a) the Causal Encoder and (b) the Denoising Decoder. The global layout presents these two components side by side, each as a vertical stack of processing modules, with input and output data represented as 3D volumes (cubes) at the bottom and top respectively. The Causal Encoder on the left processes an input video volume (labeled with dimensions h, w, f) through a series of operations to produce a compressed latent representation z (with dimensions h/32, w/32, (f+7)/8). The Denoising Decoder on the right takes this latent representation and reconstructs the original video volume, incorporating diffusion-timestep conditioning.\n\nIn the Causal Encoder, the input video is first passed through a 'Patchify' module, which likely divides the video into patches. This is followed by a sequence of blocks: a 'CausalConv3D In' layer (pink), then four 'ResBlock x 4' layers (blue), each consisting of multiple residual blocks. These are interspersed with 'Downsample' layers (yellow) to reduce spatial and temporal resolution. After three more sets of 'ResBlock x 3' (blue) and 'Downsample' (yellow) layers, the final 'CausalConv3D Out' layer (pink) produces the latent representation z. A detailed inset labeled 'ResBlock' shows the internal structure of a single residual block, which contains two 'CausalConv3D' layers (pink), each followed by a 'SiLU' activation (light gray) and 'PixelNorm' (light gray). A dashed blue line indicates a skip connection within the ResBlock, combining the input hidden state with the output of the second CausalConv3D layer via an addition operation (blue circle with plus sign).\n\nThe Denoising Decoder begins with the latent representation z, which is processed by a 'Conv3D In' layer (pink). It then passes through a series of 'CondResBlock' layers (blue), grouped in sets of 5, 6, and 8, which are interspersed with 'Upsample' layers (yellow) to gradually increase the resolution back to the original size. A detailed inset labeled 'CondResBlock' reveals its internal structure: it includes 'Noise Inject' layers (purple), 'Conv3D' layers (pink), 'SiLU' activations (light gray), and 'Scale, Shift' operations (teal). The 'Scale, Shift' blocks receive conditioning from a 't emb.' (time embedding) module, which is fed the diffusion timestep t. This conditioning allows the decoder to adapt its denoising process based on the current step in the diffusion schedule. The final output of the decoder is passed through an 'UnPatchify' module before being output as the reconstructed video volume. The entire Denoising Decoder is designed to perform iterative denoising, with noise injected at multiple layers, guided by the time embedding."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

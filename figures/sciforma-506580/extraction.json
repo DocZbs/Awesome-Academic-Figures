@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506580",
+  "record_sha256": "54ea8a825190a0c8b0d5dbf70db1b16904295459e54ef34816b0e49153a0cb66",
+  "asset_sha256": "0091afadca604545c62177282d2e5e5e1d500de02047210acc64848b707600c8",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506580",
+    "title": {
+      "zh": "Rerouting LLM Routers · 方法图",
+      "en": "Rerouting LLM Routers"
+    },
+    "paper": {
+      "id": "arxiv-2501-01818",
+      "title": "Rerouting LLM Routers",
+      "authors": [
+        "Avital Shafran",
+        "Roei Schuster",
+        "Thomas Ristenpart",
+        "Vitaly Shmatikov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01818",
+      "arxiv_url": "https://arxiv.org/abs/2501.01818",
+      "arxiv_id": "2501.01818",
+      "arxiv_first_submitted_at": "2025-01-03T14:03:14Z",
+      "arxiv_updated_at": "2025-01-03T14:03:14Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01818v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506580/image/image.jpg?Expires=1790855582&Signature=F8NLapx~SddWQU9mKQVBorw5jNIDJVLqrIwlRctJZ4rT--DYszar2ABfuu-F63AKGFtNQ2NPafhMm-vqhg11Y0DLxXHAmDiaBg473K4KJILSNELiq4d255K7ntMRrw5qlu65iUMyuO1Hs3EnBjE9tbbGj3CPvfEBLTIBQzn~xv0wqaT~D6-MBlXHX90s6tYNKV5bfdctyBYeUSiWHE9iVO0FzrweuOv3ds6alz5hmabyzZiKBoSRyVOaUPCTzRI4j-4GEb~Gx9DgJT7ZTDku7IkyB3j4HDNzKSu~vWJADIzRI6AlDptgQs4cMXYtAW5VYg1iqXPgZiZA8lmwrfbUCA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506580,
+      "description_sha256": "115ac036b9d3bcb48bd396be8c8e2186a40baac6b16c5a0bd0a55a8ad71eb2bf",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4b2f4ddde7865e5e878fe17f3b9addcb15ca0db633c6d6ed69dc6181c5dd170a",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a routing architecture for large language models (LLMs), designed to optimize computational cost by dynamically assigning incoming queries to either a 'Strong Model' or a 'Weak Model' based on query complexity. The global layout is linear and left-to-right, beginning with a stack of input queries on the far left, progressing through a central decision-making module labeled 'Router', and concluding with a stack of output responses on the far right. The Router is enclosed within a dashed rectangular boundary, emphasizing it as the core processing unit responsible for classification and routing decisions.\n\nWithin the Router, a diamond-shaped decision node poses the question 'complex?'. This node acts as a classifier, determining whether each query requires the computational power of the Strong Model or can be handled efficiently by the Weak Model. Two distinct paths emerge from this decision node: a solid blue arrow labeled 'yes' directs complex queries to the Strong Model, while a dashed orange arrow labeled 'no' routes simpler queries to the Weak Model. The Strong Model is represented as a light blue rounded rectangle, and the Weak Model as a pale yellow rounded rectangle, visually distinguishing their roles and resource intensities.\n\nIncoming queries are depicted as a stack of rounded rectangles with diagonal hatching, colored blue at the top and fading to orange below, symbolizing a diverse set of inputs. These queries feed into the Router via two types of arrows: solid blue lines represent queries deemed complex, while dashed orange lines indicate simpler queries. Similarly, the outputs—labeled 'Responses'—are shown as a stack of similarly styled rounded rectangles, with responses from the Strong Model arriving via solid blue arrows and those from the Weak Model via dashed orange arrows. This consistent color-coding reinforces the flow and origin of each response.\n\nThe connections between components are directional, using arrows to indicate data flow. Solid blue arrows signify the path for complex queries and their corresponding responses, while dashed orange arrows denote the path for simple queries and their responses. The diagram emphasizes that both models contribute to the final set of responses, but the Router controls the distribution to balance performance and cost. As noted in the caption, this system allows for calibration to maintain a desired ratio of queries sent to the Strong versus Weak Model, enabling cost-effective operation under expected workloads."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

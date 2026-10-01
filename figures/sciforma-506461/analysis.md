@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Beyond Introspection: Reinforcing Thinking via Externalist Behavioral Feedback — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01457
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the three-step Distillation-Reinforcement-Reasoning (DRR) pipeline, structured into distinct phases: Step 1: Reasoning Process Distillation, Step 2: DM Training, and Step 3: Inference. The global layout is horizontally segmented into these three steps, separated by dashed lines, with Step 1 and Step 3 occupying the top half and Step 2 represented as a continuous gray arrow spanning the bottom. Step 1 is labeled in green, Step 3 in blue, and Step 2 in gray, indicating their respective roles.
+
+In Step 1, a large rounded rectangle with a green border contains an example reasoning trace. It begins with a question: 'What city has had an NFL football team with the same name as a Los Angeles NFL team?' followed by two answer-rationale-environment cycles. The first attempt yields 'Cleveland' with rationale about the Cleveland Rams, followed by an environment feedback of 'Wrong answer. Try again...'. The second attempt gives 'St. Louis', with rationale about the St. Louis team, and environment feedback 'Correct answer. Stop generation...'. This box is connected via green arrows to two modules: a light green rounded rectangle labeled 'Environment' containing an icon of an open book with a lightbulb, and a larger light blue-green rounded rectangle labeled 'Large Language Model (Reasoner)' featuring a neural network icon. A green arrow points from the Environment to the Reasoner, labeled 'Context', indicating feedback flow.
+
+Step 2, labeled 'DM Training', is depicted as a thick gray curved arrow originating from the bottom of the reasoning trace box and extending to the bottom of the Discriminative Model in Step 3. This signifies that the distilled reasoning traces from Step 1 are used to train the Discriminative Model.
+
+Step 3, labeled 'Inference', features a light blue rounded rectangle labeled 'Discriminative Model', containing a smaller neural network icon. Two blue arrows connect this model to the Large Language Model (Reasoner): one upward-labeled 'Verdict' from the Discriminative Model to the Reasoner, and one downward-labeled 'Prediction' from the Reasoner to the Discriminative Model. This indicates a feedback loop during inference where the Discriminative Model evaluates the Reasoner's output and provides a verdict to guide further reasoning or final prediction.
+
+All modules are enclosed within dashed rectangular boundaries corresponding to their step. Text labels are clear and positioned adjacent to components or along arrows. The visual design uses color coding—green for distillation, blue for inference, gray for training—to differentiate stages. The overall workflow progresses from reasoning trace generation and environment interaction (Step 1), through training of a discriminative model on those traces (Step 2), to collaborative inference between the Reasoner and Discriminative Model (Step 3).

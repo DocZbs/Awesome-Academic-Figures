@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-506512",
+  "record_sha256": "dca48cac3fcf6f597696443ed68e4a557e6b47c92df2b39f58a53124d53cdbfa",
+  "asset_sha256": "107ce8eacba439b864ba5cb100282c58248f1486e8b61766290c40be36173de4",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-506512",
+    "title": {
+      "zh": "Crossing Language Borders: A Pipeline for Indonesian Manhwa Translation · 方法图",
+      "en": "Crossing Language Borders: A Pipeline for Indonesian Manhwa Translation"
+    },
+    "paper": {
+      "id": "arxiv-2501-01629",
+      "title": "Crossing Language Borders: A Pipeline for Indonesian Manhwa Translation",
+      "authors": [
+        "Nithyasri Narasimhan",
+        "Sagarika Singh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2501.01629",
+      "arxiv_url": "https://arxiv.org/abs/2501.01629",
+      "arxiv_id": "2501.01629",
+      "arxiv_first_submitted_at": "2025-01-03T04:32:27Z",
+      "arxiv_updated_at": "2025-01-03T04:32:27Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2501.01629v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/506512/image/image.jpg?Expires=1790855582&Signature=b-AUboES1gX9ZfkMiI8UUEvaAx7872g2y43zOcpuTtxy8JxprqJU2jxSRMpCWpGG2ewt6U7mzPuS-vuHMbTwcGQYA6KdNfa-pgCQG5jAEhyQHZwq3kaXWcBse-ykHLR5lMg6~4HcKc55zo8tzXZXixEfawqERu~KYITSco3dWmiB2N-BMA7cR7mG7YmyZ-NDX9IUuEcrdqLq6srjiNrTJd1iuA6ClysL8xt3iAq2FjOHTg~tFwkHYcOraXHkhwolOGaAdUstkN4-ZZRwZ0Ma-w2ieryKCMP~FF0~HDxRWGca0BbW9u9LoKHfP5YDKHwgloP2jGRhNCwxenf25p1I3g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 506512,
+      "description_sha256": "9cfcc19ec532bba462001b82ab6795766dd76c310beb54c7ac5a76bce4fd4236",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "050de6ae52291c174903fc2e0fb7e3aee0ab03a2fb25dd1be9d1700b42f0dd37",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9596c5a8e63098563aeaa92fdebe6e3590d218b266cc9dd72cf5e01f077e23d9",
+      "row_response_sha256": "8c5367114011c1a6f34558f2e32ddfacc00bc93bdd58ff7cd04bc645ea30abc2"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating the end-to-end methodology for translating speech bubbles in Indonesian Manhwa panels. The global layout is vertical, with a main processing pipeline running from top to bottom, and two external pre-trained models feeding into specific stages on the left side. The structure is linear and sequential, with clear directional arrows indicating the order of operations.\n\nThe visual modules are represented as rectangular boxes with black borders and black text, arranged in a columnar fashion. At the top, the process begins with 'Indonesian Manhwa panels' as the input source. This feeds into the first processing step: 'Create bounding box and extract speech bubbles'. To the left of this step, a separate module labeled 'Trained Yolov5xu model on webcomics-text-selection_dataset' is shown, with an arrow pointing to the bounding box creation step, indicating that this model is used to detect and extract speech bubbles from the panels.\n\nThe next step in the pipeline is 'Perform OCR on extracted speech bubbles using Tesseract', which processes the extracted speech bubbles to convert the text into machine-readable format. Following this, the next stage is 'Perform translation on extracted OCR', where the OCR output is translated. On the left side, another external module, 'Trained MarianMT Machine Translation model on Opensubtitles and Identic dataset', is connected via an arrow to this translation step, signifying that this pre-trained model performs the actual translation task.\n\nThe final step in the pipeline is 'Overlay the translations back on Manhwa panels', which involves placing the translated text back into the original comic panels, likely within the same or adjusted speech bubble positions. All connections between steps are represented by solid black arrows pointing downward, indicating the forward progression of the workflow. There are no feedback loops or branching paths; the entire process is a straightforward, unidirectional sequence. The figure does not include any color coding, shading, or additional graphical elements beyond the basic rectangles and arrows. The caption 'Overview of Methodology' succinctly summarizes the purpose of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

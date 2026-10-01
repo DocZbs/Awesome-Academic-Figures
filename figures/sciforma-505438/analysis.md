@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.20056
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of GSplatLoc, a novel camera localization method based on differentiable rendering using 3D Gaussian splatting. The global layout is a horizontal workflow from left to right, depicting the forward operation flow (blue arrows) and the backward gradient flow (green arrows) used during optimization. On the far left, a 3D Gaussians Scene is represented as a rendered interior room environment, accompanied by a triangular icon labeled 'T' symbolizing the estimated camera pose. This pose is fed into a projection module, where rays are cast through the 3D scene, visualized as a sequence of colored spheres along a ray path. These rays are then processed by a Differentiable Tile Rasterizer, shown as a grid with overlapping ellipses representing projected Gaussians under a reference pose (also marked with a 'T' icon). The output of this rasterizer is a Rendered Depth map, depicted as a color gradient image transitioning from blue (near) to green/yellow (far), which is compared against a Reference Depth map generated from a known or ground-truth pose. Both depth maps feed into a loss computation block on the right, labeled 'Depth Loss', which also includes a 'Counter Loss' component shown below it as a wireframe sketch of the scene. The combined loss is minimized via backpropagation, indicated by a green arrow looping from the Minimize box back to the Estimated Pose, forming a closed-loop optimization process. The legend at the bottom clarifies that blue arrows denote Operation Flow and green arrows denote Gradient Flow. All modules are rectangular or square boxes with descriptive labels, while the 3D scene and depth maps are rendered images. The overall structure emphasizes an iterative refinement of camera pose through differentiable rendering and loss minimization.

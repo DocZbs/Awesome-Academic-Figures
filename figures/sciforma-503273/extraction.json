@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503273",
+  "record_sha256": "52cf1296cdf9c079de682831139cb0a7fb96a095f88c67be7824e2b2d8cb7717",
+  "asset_sha256": "535e7734aeb3397837afc69c339fb4d50763bb5cbfbb24b6d25005176a7b4cbb",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503273",
+    "title": {
+      "zh": "SGAC: A Graph Neural Network Framework for Imbalanced and Structure-Aware AMP Classification · 方法图",
+      "en": "SGAC: A Graph Neural Network Framework for Imbalanced and Structure-Aware AMP Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-16276",
+      "title": "SGAC: A Graph Neural Network Framework for Imbalanced and Structure-Aware AMP Classification",
+      "authors": [
+        "Yingxu Wang",
+        "Victor Liang",
+        "Nan Yin",
+        "Siwei Liu",
+        "Eran Segal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16276",
+      "arxiv_url": "https://arxiv.org/abs/2412.16276",
+      "arxiv_id": "2412.16276",
+      "arxiv_first_submitted_at": "2024-12-20T17:17:57Z",
+      "arxiv_updated_at": "2026-01-14T12:01:15Z",
+      "arxiv_subjects": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16276v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503273/image/image.jpg?Expires=1790855362&Signature=aR-UgPMUKVHFCuDQ7JPTRiFnlaJdw0lSXn6MJ0V60EQ3I0IMdBRDvE-WXL~cb0U7aJbYww4uPpL7enAIJnOuqPuWw-AcIdeuBvyAcMvzF7u2et2DFclvAwP~qptJh553W0I6oKFRlWZT9ZQvmxF5fijTrUs2NL9KHWGqpynXOC3HGEicmKvIFTdAVyT809u7eDsTjPETwlrf8xMi8nTL1b9Jz2I~zljK6NbGgr4JlINBve2g9oQqEsmuTBzqZi1-36PS7nQyRurHHcRIXinqTjHSVBhVFTnJHAeIqtGMSEqfsrkv820XZJbshZfgzSJ02ywOWaqOXbl3JCD2pWGi4Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503273,
+      "description_sha256": "b9959071b177953c312f29dda260fba7c68317f2e7d96763426ea6768b8c3742",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "1804cf24ef7e3cdab0ce4d0cf11a8c45aa5bf55c735d662987162c86df2140f8",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.QM",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of a computational model for antimicrobial peptide (AMP) classification, structured as a multi-stage pipeline. The global layout is divided into two main horizontal pathways: an upper pathway for 3D structure prediction and a lower pathway for graph-based feature learning and classification, with a dashed arrow connecting them to indicate the flow of information from structure to graph representation.\n\nIn the upper section, the process begins with a 'Peptide Sequence Corpus' shown as a yellow-bordered box containing several example amino acid sequences. This corpus is split into two cylindrical data repositories: a light blue cylinder labeled 'AMP data' and a light red cylinder labeled 'non-AMP data'. Both data sources feed into a lavender rectangular module named 'Omegafold', which performs 3D structure prediction. The output of Omegafold is depicted as a large circular region containing multiple colorful 3D protein structures, labeled 'Predicted 3D structure of all peptides'.\n\nA dashed black arrow extends from this 3D structure region downward to the lower pathway, indicating that these predicted structures are used to construct a graph representation. In the lower section, a large circular area labeled 'Constructed graph structure of all peptides' displays four example peptide graphs (peptide-1 to peptide-4), each represented as a network of interconnected nodes. Each node is a colored circle labeled with a one-letter amino acid code (e.g., Y, F, L, N, S, etc.), symbolizing Cα atoms, with edges representing spatial or structural relationships.\n\nThis constructed graph is fed into a lavender rectangular module titled 'Graph Encoder', which processes the graph data to extract structural and relational features. From the Graph Encoder, three distinct loss functions branch out, each represented as a light green rectangle: 'Classification loss', 'Pseudo-label loss', and 'Contrastive loss'. These losses are designed to refine the learned representations through supervised classification, pseudo-label distillation, and contrastive learning, respectively. The outputs of all three loss modules converge into a single lavender rectangular box labeled 'Final Prediction', which represents the model's ultimate classification decision.\n\nThe visual design uses consistent color coding: lavender for core processing modules, light green for loss functions, and distinct colors for nodes in the peptide graphs to differentiate amino acids. All connections are indicated by white arrows, with the exception of the dashed black arrow linking the 3D structure prediction to the graph construction step. The entire diagram is organized logically from left to right and top to bottom, reflecting the sequential nature of the method: from raw sequence data, through 3D structure prediction, to graph construction, feature encoding, multi-loss optimization, and final prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

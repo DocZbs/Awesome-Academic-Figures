@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503120",
+  "record_sha256": "b7d411fa281c2558da13ac6fb9529f4bdce5aa4d01a010d378f807fd866bb7af",
+  "asset_sha256": "7925f7da2c587aaed0d04ae44e4e98f94ab4f5ffd829eb619e4ac217755a3429",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503120",
+    "title": {
+      "zh": "What Are Step-Level Reward Models Rewarding? Counterintuitive Findings from MCTS-Boosted Mathematical Reasoning · 方法图",
+      "en": "What Are Step-Level Reward Models Rewarding? Counterintuitive Findings from MCTS-Boosted Mathematical Reasoning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15904",
+      "title": "What Are Step-Level Reward Models Rewarding? Counterintuitive Findings from MCTS-Boosted Mathematical Reasoning",
+      "authors": [
+        "Yiran Ma",
+        "Zui Chen",
+        "Tianqiao Liu",
+        "Mi Tian",
+        "Zhuo Liu",
+        "Zitao Liu",
+        "Weiqi Luo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15904",
+      "arxiv_url": "https://arxiv.org/abs/2412.15904",
+      "arxiv_id": "2412.15904",
+      "arxiv_first_submitted_at": "2024-12-20T13:56:23Z",
+      "arxiv_updated_at": "2025-03-08T05:01:59Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15904v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503120/image/image.jpg?Expires=1790855363&Signature=DHgB-DvpD3GxxwDUcHjE2ShhH3Et0KGsuZ4B5vZjPavE~x4XeIF~ygDCfO2pne-PyUm3aZYEzAWR490rBeUs5IU2oVU-0GAOqjNpZWapigDZc0Y9i6LTGaHiKNHHXjU3UrX5dSxuyy6Ojo8roeMbXWLLyBQ2HRDMgSTGASSwH6Ecjj5TTrq5CGLjZM0y2GbqNTT2jS7nT8got4JmrNArDht0tt4m2dzToDLFqHHZl7pB3A7epD2P1xBraMJ07h7O4zojudSrOxkcNJkLrsiD5~i2qx05U~oq6wtf~SUrUnbDFjm9R~w6-u6WhYoAj4DHy5G7F75OVqj8QR7zM65xEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503120,
+      "description_sha256": "d42489a65b0a5e6e3bcc12c2e7d5cc7c052a071b6ed132e1abc87fe78bc796bb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "c463cf7ca1c040599f1656387e2bde5a33d3b1ede88804da2434a726e96e2d4f",
+      "row_response_sha256": "28cd8c23fe44aa467c5ecdd61c288283128082839c9ee441fd51780690ed736f"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a tree-like search process for solving a nested logarithmic math problem: log_{log_{log_2 256} 64} 256, using a method guided by the MO-SRM (Mathematical Operation Score Ranking Mechanism) to supervise the Generation Search (GS). The global layout is hierarchical and branching, starting from a single root node at the top and expanding into multiple paths through successive reasoning steps. Each path represents a different sequence of mathematical simplifications and intermediate thoughts.\n\nAt the top, a light green rounded rectangle labeled 'Math Problem:' contains the original expression. From this node, three black arrows branch downward to the first level of reasoning nodes. Each of these nodes consists of two stacked components: an upper gray rounded rectangle labeled 'Thought:' containing a partial or full transcription of the current step in the reasoning process (e.g., 'log₂ 256.'), and a lower light blue rounded rectangle labeled 'Math Expression:' which displays the formal mathematical transformation applied at that step, along with a numerical MO-SRM score beneath it.\n\nThe 'Math Expression' boxes contain LaTeX-style mathematical expressions, such as 'log₂ 256 = log₂ 2⁸ = 8', and each is followed by a MO-SRM value (e.g., -0.04196). These scores appear to quantify the quality or correctness of the step, with higher positive values indicating better progress toward the solution. The figure shows multiple branches, some of which are pruned (indicated by ellipses '...'), while others continue. Notably, yellow stars mark specific nodes that represent correct or optimal steps in the reasoning chain.\n\nConnections between nodes are represented by thick black curved arrows, indicating the flow of reasoning from one step to the next. The arrows originate from the 'Math Expression' box of a parent node and point to the 'Thought' box of a child node, suggesting that the mathematical operation leads to the next thought. The final nodes at the bottom of the tree show the complete solution: 'log_{log_{log_2 256} 64} 256 = log₂ 256 = 8', with the answer '8' boxed. One of these final nodes has a particularly high MO-SRM score (4.03516) and is marked with a star, indicating it is the optimal solution path.\n\nThe visual modules are consistently styled: 'Thought' boxes are gray with red headers, 'Math Expression' boxes are light blue with green headers, and all text within them is black except for the MO-SRM scores, which are in black font. The structure emphasizes the exploration of multiple reasoning paths, with MO-SRM acting as a supervisor to guide the search toward the correct solution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

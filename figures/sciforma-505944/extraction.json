@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-505944",
+  "record_sha256": "9418ffa2a1beefa9d7cf8d0a97ad9e0bebeeb4f32af294d42b60195cf6ae189b",
+  "asset_sha256": "0c8caa88a2a5b9cc42212e31e11c650deb7a6e5f24d229ee56f10add7b3d3d41",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505944",
+    "title": {
+      "zh": "EdgeRAG: Online-Indexed RAG for Edge Devices · 方法图",
+      "en": "EdgeRAG: Online-Indexed RAG for Edge Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-21023",
+      "title": "EdgeRAG: Online-Indexed RAG for Edge Devices",
+      "authors": [
+        "Korakit Seemakhupt",
+        "Sihang Liu",
+        "Samira Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_url": "https://arxiv.org/abs/2412.21023",
+      "arxiv_id": "2412.21023",
+      "arxiv_first_submitted_at": "2024-12-30T15:46:53Z",
+      "arxiv_updated_at": "2024-12-31T20:40:43Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.21023v2"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505944/image/image.jpg?Expires=1790855558&Signature=NM80HXfQafKmAzC07gQpuILuN-AqgtztuR8tqXJ~acuTmZbEDP2vhks~NJ0kOZdxZjTXH0SAzjPJgH2JVOrdWOrJQ5b6A0SWC3I~UHiPY5p0X~4G123YibAV~QrCuyFw6eOGUl9GPCYxpY64r46c7MnF2g1hmMkFKluUntF2666a6RZsf9A7I5DD7lewtY5rfZU7ek~bUPur4NT3~cUaHiCEWUa1inEk4IVxvrcQCupHx1DuZcTGwYcGtCAHKkxRPR5gyrTEYs0WkHlsEe2lR6v90-~SmQ2mvLUqeO68ha2RoYe3uThzWiQRfxBImZZmDTajCIgLcQg2vJkCDm0ccQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505944,
+      "description_sha256": "aa1223eb43ffaf56cc0f4a7d9e45a7aa083922fe4e51ff0862f9bf4b8fee6137",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "4875a197923ab82f933944bd7b56776a0114fe3a7fd97e1f0c59126622d4e3e9",
+      "row_response_sha256": "c750e57ad5cac7f54b6c47ad9235ef4376b160d2e4e94e07de38a29b5bccc7d1"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative timeline analysis of four different strategies for embedding retrieval in a system, labeled as ① Offline IVF, ② Generate Embeddings, ③ Load Embeddings, and ④ Embedding Cache Hit. The horizontal axis represents time, progressing from left to right, and each strategy is depicted as a sequence of rectangular stages arranged horizontally. Above the topmost timeline, a large brace spans the first three stages of all four strategies, labeled 'Time to First Token (TTFT)', indicating that this metric encompasses the duration from query embedding through second-level lookup or generation until the prefill stage begins.\n\nEach strategy consists of a series of processing steps, represented by rectangular blocks with black borders and centered text. The stages common across all strategies include 'Query Embed', 'First-level Look up', and 'Prefill'. The differences lie in the intermediate steps between 'First-level Look up' and 'Prefill'.\n\nIn strategy ① Offline IVF, the sequence is: Query Embed → First-level Look up → Second-level Look up → Prefill. The 'Second-level Look up' block is shaded light gray, distinguishing it from the white blocks of other stages.\n\nStrategy ② Generate Embeddings follows: Query Embed → First-level Look up → Second-level Generate → Second-level Look up → Prefill. Here, the 'Second-level Generate' block is shaded light blue, indicating a computational step for generating embeddings on-demand.\n\nStrategy ③ Load Embeddings proceeds as: Query Embed → First-level Look up → Load Embeddings → Second-level Look up → Prefill. The 'Load Embeddings' block is also shaded light blue, signifying a data loading operation.\n\nStrategy ④ Embedding Cache Hit shows: Query Embed → First-level Look up → Cache Hit → Second-level Look up → Prefill. The 'Cache Hit' block is shaded light blue, representing a successful retrieval from an embedding cache, which avoids generation or loading.\n\nAll timelines are aligned vertically, allowing direct comparison of the duration and composition of TTFT across methods. The figure visually emphasizes that strategies involving embedding generation or loading (② and ③) add extra stages, potentially increasing TTFT, while the cache hit (④) minimizes latency by skipping these steps. The consistent use of color coding—light gray for offline lookup and light blue for dynamic operations—helps differentiate the nature of each intermediate step. There are no explicit arrows connecting the blocks; instead, the horizontal arrangement implies sequential flow. The figure’s purpose is to illustrate how different embedding handling approaches affect the time to first token, a critical performance metric in retrieval-augmented systems."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

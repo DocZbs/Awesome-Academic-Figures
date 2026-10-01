@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+From Age Estimation to Age-Invariant Face Recognition: Generalized Age Feature Extraction Using Order-Enhanced Contrastive Learning — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2501.01760
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=506500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the feature learning mechanism in OrdCon, a method that combines order learning and proxy matching for structured representation learning. The global layout is a directed graph with two central latent nodes, z_{age}^{(i)} and z_{age}^{(j)}, positioned at the top and bottom respectively, connected to multiple context nodes c_{y_{age}}^{(i)} and c_{y_{age}}^{(j)}. These context nodes are arranged horizontally, representing different time steps or age levels, with c_{y_{age}-1}^{(i)} on the far left, followed by c_{y_{age}}^{(i)}, then c_{y_{age}+1}^{(i)}, and finally c_{y_{age}}^{(j)} on the far right. The structure forms a bipartite-like connection pattern between the two latent nodes and the context nodes.
+
+Visual modules include circular nodes: the latent variables z_{age}^{(i)} and z_{age}^{(j)} are depicted as light purple circles, while the context variables c_{y_{age}}^{(i)} and c_{y_{age}}^{(j)} are shown as teal circles, with varying shades indicating different time steps or instances. The node labels are written in black text directly below each circle. The edges are color-coded and styled to represent different learning processes: thick magenta arrows indicate 'Order Learning', while thick orange arrows denote 'Proxy Matching'. Additionally, dashed magenta lines extend from z_{age}^{(i)} to v_b^{(i,j)} and v_f^{(i,j)}, which are labeled above the node, suggesting backward and forward push functions or influence vectors. These dashed lines have arrowheads pointing outward, implying propagation or influence.
+
+Connections and arrows show a bidirectional relationship between the latent nodes and context nodes via Proxy Matching (orange arrows), where each latent node connects to multiple context nodes, and vice versa. Specifically, z_{age}^{(i)} connects to c_{y_{age}-1}^{(i)}, c_{y_{age}}^{(i)}, c_{y_{age}+1}^{(i)}, and c_{y_{age}}^{(j)}; similarly, z_{age}^{(j)} connects to all four context nodes. Order Learning (magenta arrows) is represented by direct connections between the two latent nodes, with a bidirectional arrow between z_{age}^{(i)} and z_{age}^{(j)}, and additional unidirectional arrows from each latent node to itself, possibly indicating self-referential or temporal consistency constraints. The caption notes that the opacity of the push function weights (represented by the dashed lines) varies, with higher opacity indicating higher weight, though this is not visually distinct in the static image. The legend at the bottom left explicitly defines the arrow types: magenta for Order Learning and orange for Proxy Matching. The overall flow suggests a dual-process model where latent representations are learned through both structural ordering and proxy-based alignment across contexts.

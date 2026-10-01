@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-503005",
+  "record_sha256": "c0b2c0b0e84bba52276e990c9719287f77124512dd9a765261c8fef52418a94e",
+  "asset_sha256": "951bb84fca6ba1e6dfeffdd03b06c2d2097b2d0502fc669e46a9c521c9e8de05",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503005",
+    "title": {
+      "zh": "3D Shape Tokenization via Latent Flow Matching · 方法图",
+      "en": "3D Shape Tokenization via Latent Flow Matching"
+    },
+    "paper": {
+      "id": "arxiv-2412-15618",
+      "title": "3D Shape Tokenization via Latent Flow Matching",
+      "authors": [
+        "Jen-Hao Rick Chang",
+        "Yuyang Wang",
+        "Miguel Angel Bautista Martin",
+        "Jiatao Gu",
+        "Xiaoming Zhao",
+        "Josh Susskind",
+        "Oncel Tuzel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15618",
+      "arxiv_url": "https://arxiv.org/abs/2412.15618",
+      "arxiv_id": "2412.15618",
+      "arxiv_first_submitted_at": "2024-12-20T07:22:41Z",
+      "arxiv_updated_at": "2025-03-24T23:10:37Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.15618v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503005/image/image.jpg?Expires=1790855276&Signature=DRYhiNMBnIH8s16sJTHswEb5QW1E75UuO3RjTAuqd7IounBj9NHihvv8EGoqfjUBV4XTls8ABKi0sF~W6Dzuo6s0DRE0yNjmwEBoIu9GWK3a5nfJenj~XRraJ33RrJMTZojjXygYjeLwK6ZiE3xVHDXyMogdptOKZUZX0JD02zcO0vBFSElr394k9MbbgEXM-7Cxp1zk-0zwTdNvXHPyybGXlNdlgD9NMLI~fIIJG-oMaFqXcoXuOOAbNYQSUJ9R73GoRxDLQFAY9MRSCgHyFOMMYpv4W7oTtRvUIp0~p0kBgnkMu8RoVcnbOg9knPXH80qzr9qtthCRa~4194iH2w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503005,
+      "description_sha256": "04f995f71bbd1ad41e544bc6b33e5262b6c0a9a44907bf1f1b29fc15571eb7cf",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "9f020c8165e4dbc67b5aa9fe62f8ebb6cd755bccd13532620f38364e0f659e76",
+      "row_response_sha256": "f6e499a3ab25ca9366eafdc982e7d831fd5a74200d5fab35c3ab383fad911ce9"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a flow-matching velocity estimator used for shape tokenization. The overall structure is a single block repeated three times, as indicated by the '×3' notation on the right side of the main module. The block processes three primary inputs: position-encoded flow matching time (denoted as d''), position-encoded point (1, d'), and shape tokens (k, d). These inputs are processed through a series of operations including linear transformations, layer normalization, cross-attention, and multi-layer perceptrons (MLPs), with gating and scaling mechanisms applied at intermediate stages.\n\nThe global layout consists of a large rectangular box enclosing the core processing block. Within this box, the flow proceeds from bottom to top. On the left, the position-encoded flow matching time (d'') passes through a stack of three modules: two linear layers separated by a SiLU activation function. This stack outputs two signals labeled 'shift 1 & scale 1' and 'gating 1', which are used to modulate subsequent layers. Similarly, another set of signals, 'shift 2 & scale 2' and 'gating 2', are derived from the same input stack but are applied later in the block.\n\nIn the center, the position-encoded point (1, d') first goes through a linear layer, then a layer normalization (layernorm) module. The output of this layernorm feeds into a cross-attention block, which also receives 'key, value' inputs from the shape tokens (k, d). The cross-attention block is highlighted with a light green background and labeled 'cross attention block'. Its output is passed to another layernorm, followed by an MLP composed of linear -> GELU -> linear layers. The MLP's output is then combined with the original layernorm output via element-wise addition (+) and multiplication (×) operations, where the multiplication is gated by 'gating 1' and scaled by 'shift 1 & scale 1'.\n\nThis combined result is further processed through another layernorm, then another MLP, and again combined via + and × operations, this time using 'gating 2' and 'shift 2 & scale 2'. The final output of this sequence is passed through a linear layer to produce the velocity output, specified as (1, 3xyz), indicating a 3D vector per input point.\n\nConnections are shown as directed arrows. The position-encoded point flows upward through linear, layernorm, and cross-attention components. The shape tokens provide key-value pairs to the cross-attention block. The flow matching time input branches into multiple control signals (shift, scale, gating) that modulate the attention and MLP layers. The outputs of the two main processing paths (after the first and second layernorms) are combined using residual connections with gating and scaling, forming a hierarchical refinement process. The entire block is repeated three times, as noted by the '×3' annotation, suggesting a deeper network structure. The caption notes that the model uses 512-dimensional features, 8-head attention, and MLPs that expand and contract dimensions by 4x. The total trainable parameters are 8.72M for Objaverse and 8.87M for ShapeNet. A variant for neural rendering omits the adaptive layer norm and uses standard layer norm, with 4 such blocks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

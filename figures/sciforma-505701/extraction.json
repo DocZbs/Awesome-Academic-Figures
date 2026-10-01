@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-505701",
+  "record_sha256": "da14514ebf3232f951f4c22ae2e8211d003ae9446508ccf68a49fad76ab83f0c",
+  "asset_sha256": "71e7b729a07b07b64ec160ca258328ef6fd461ebbd8c5e74f9f18a8e6851dd52",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-505701",
+    "title": {
+      "zh": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation · 方法图",
+      "en": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2412-20538",
+      "title": "Exploiting Aggregation and Segregation of Representations for Domain Adaptive Human Pose Estimation",
+      "authors": [
+        "Qucheng Peng",
+        "Ce Zheng",
+        "Zhengming Ding",
+        "Pu Wang",
+        "Chen Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.20538",
+      "arxiv_url": "https://arxiv.org/abs/2412.20538",
+      "arxiv_id": "2412.20538",
+      "arxiv_first_submitted_at": "2024-12-29T17:59:45Z",
+      "arxiv_updated_at": "2024-12-29T17:59:45Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.20538v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=505700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/505701/image/image.jpg?Expires=1790855558&Signature=tIndkUEBT75jAkO3hdYbatltZE3S6YGjkzTCQzDUGWg5blz9pZCiFTZR-fiPP1MMTvCVolinZryTTagd2exFyWJZaxrDmAA252iJUYr5lrmx~P~nCJkfJoklvg-EeKL8q7Nw7Fckd3CQrrSmJDW~9GACxYzI4x4buZQiZjfBpC2DavSbboCQgu90InWx9Bp6WdL4iMtwwJOjMlmZYITqryalbE04VsY9b~X8x-XQ3XQQdCaJJitOZbPtDFotyC9b0l7x4UkIz-nuBL-5hmeRSVeVYWteHJIGFiCl7JqLS1RV8MDqx5VXj8SuO-yPHboLX9-4i5Yl~aiMFb-FpCv8Vw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 505701,
+      "description_sha256": "fa727aab2dbd3ce38e0e9a4ee383fe59a4275300a274c7e60fc5253e79f98ae8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "c4234276727b2bef25b57c05ba8e66d9c0678e9b4d269cfbf4a4931897b7873a",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "87c3e4f4c25d95f66cc6bec134126ad86e76577957c677dff7c85430f44793f5",
+      "row_response_sha256": "d0510cee78d470972beca67496dd87b0ac176e37368b3ba2f8cd340eca0c7edf"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram of two domain adaptation frameworks, labeled (a) and (b), separated by a vertical dashed line. The global layout is split into two side-by-side subfigures, each illustrating a distinct model design for processing input data xi through a shared feature extractor G. In both diagrams, the shared feature extractor G is represented as a blue cube, receiving input xi via a black arrow. From this central component, multiple pathways diverge, each associated with different heads and optimization objectives.\n\nIn subfigure (a), the conventional structure, the output from G is fed into two parallel heads: an orange inference head F and a green adversarial head Fa. The inference head F produces output F(G(xi)), while the adversarial head Fa produces Fa(G(xi)). These outputs are connected back to the shared feature extractor via feedback loops, with the objective explicitly stated in red text as 'Minimize Outputs' Discrepancy Directly', indicating a direct minimization of the difference between the outputs of the two heads.\n\nSubfigure (b) illustrates the proposed Intermediate Domain Framework (IDF). Here, the shared feature extractor G also feeds into two main branches. The first branch leads to an orange inference head F and a separate orange domain-specific head F'. The second branch connects to a green adversarial head Fa and a green adversarial domain-specific head Fa'. The outputs of the inference head F and the domain-specific head F' are combined in an orange square node, which computes the discrepancy F(G(xi)) - F'(G(xi)), with the goal of 'Minimize Intermediate Representations' Discrepancy' (stated in red). Similarly, the outputs of the adversarial head Fa and the adversarial domain-specific head Fa' are combined in a green square node, computing Fa(G(xi)) - Fa'(G(xi)), with the goal of 'Maximize Outputs' Discrepancy' (stated in purple). This dual-objective setup introduces a more complex interaction between the heads, where the framework simultaneously minimizes intermediate representation differences while maximizing output discrepancies, suggesting a more nuanced domain adaptation strategy.\n\nAll heads are depicted as rectangular prisms, colored orange for inference/domain-specific components and green for adversarial components. The connections are shown as arrows, with orange arrows linking to the inference and domain-specific heads, and green arrows linking to the adversarial components. The text labels for the modules and objectives are placed adjacent to the corresponding components, with key optimization goals highlighted in red or purple for emphasis. The figure includes mathematical expressions for the computed discrepancies, aligned vertically on the right side of each subfigure, reinforcing the quantitative nature of the objectives. The overall structure emphasizes a progression from simple direct minimization in (a) to a more sophisticated, multi-objective framework in (b), with explicit intermediate representation control."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

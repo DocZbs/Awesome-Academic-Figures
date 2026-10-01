@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-504427",
+  "record_sha256": "1d58ca130db5a32eb897f792ff4d93f23b256329e033c2e59459a1031a40826c",
+  "asset_sha256": "db644f3ec65e20716fe10a6be6d9fd78e51d281729ebe587a317a2dc2c6f8247",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-504427",
+    "title": {
+      "zh": "NoiseHGNN: Synthesized Similarity Graph-Based Neural Network For Noised Heterogeneous Graph Representation Learning · 方法图",
+      "en": "NoiseHGNN: Synthesized Similarity Graph-Based Neural Network For Noised Heterogeneous Graph Representation Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-18267",
+      "title": "NoiseHGNN: Synthesized Similarity Graph-Based Neural Network For Noised Heterogeneous Graph Representation Learning",
+      "authors": [
+        "Xiong Zhang",
+        "Cheng Xie",
+        "Haoran Duan",
+        "Beibei Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.18267",
+      "arxiv_url": "https://arxiv.org/abs/2412.18267",
+      "arxiv_id": "2412.18267",
+      "arxiv_first_submitted_at": "2024-12-24T08:27:33Z",
+      "arxiv_updated_at": "2024-12-24T08:27:33Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.18267v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=504400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/504427/image/image.jpg?Expires=1790855427&Signature=WN1iHlbGMETum321PIb3FiQ4tu0egxfTdXhJ59XzBD48qvhYIC1M26sgT68huTt4Ix5G7v4IJu7KSDibNU2hdnp13fLBB3VS9w-JksEK0JicsKsvYod~zKfJlbH8PzMuk4HAlZPZvjfnMRgZvBklNfZZDx9v3l17GIg8KGgIk6WrTVWoOWAq6RnsAz~Bamgz2HcYzkpgwkpH8qWcgEYGc8gZIHxxSJ486x6KPHlEQe7x34luBHRAHiUBTDkAABVRQMI839swIXtvINVmA3n7NJkD2XgDsqKqJvFPt2HebmXfRgJOhrrnEhyRgQb0MS6Ma31s7KNVP7KcNoUXMMwYGA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 504427,
+      "description_sha256": "642de7b879b421e4ab12b71cd832e91023f8d9a9777a1c44560a14fa4eb2b1f5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "ad1850c4486b52d00c6e9d9104228411c68dc7a84df7f719bcf3431837014149",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "8442d127b7ddebf39fc69785f59833f4dcfa0bd62b794c1598a357fd4d30db5a",
+      "row_response_sha256": "de92f686a38fd8c61047a885d32c6fdd48928f0a859514f8069f80a1592172af"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of a similarity-aware heterogeneous graph neural network (HGNN) model designed for robust learning on noisy heterogeneous graphs. The global layout is divided into two parallel processing streams: one for the original noised heterogeneous graph G and another for a synthesized similarity graph G^θ, both converging into shared similarity-aware HGNN modules and classifiers for joint optimization.\n\nOn the left side, the input is a noised heterogeneous graph G, depicted with green circular nodes (P1, P2, P3) representing one type of entity and blue diamond-shaped nodes (A1, A2, A3) representing another. An error link between P1 and A2 is marked in red. This graph is processed through a 'Graph Augment' module (Eq. 6), producing augmented adjacency matrix Â and feature matrix Z. Simultaneously, the graph's features X and adjacency A are fed into a 'Graph Synthesizer' (Eqs. 1–5), which generates a 'Synthesized Similarity Graph' G^θ. This synthesized graph is visually represented with dashed edges indicating inferred or learned similarity relationships, including new connections like between P1 and P3, and A1 and A3. This synthesized graph also undergoes 'Graph Augment' (Eq. 6) to produce Â^θ and Z.\n\nBoth augmented representations feed into identical 'Similarity-Awared HGNN' modules (Eqs. 7–10), shown as light green rectangles. These modules share parameters, indicated by 'shared' arrows pointing from each HGNN to the other. Each HGNN outputs a hidden representation (Ĥ or Ĥ^θ), which is passed to a corresponding 'Classifier' (gray rectangle). The classifier produces predicted probability outputs (Ŷ or Ŷ^θ), shown as matrices with decimal values for each node (e.g., 0.1, 0.2, 0.6, 0.1 for P1 in Ŷ). These predictions are compared against ground truth labels Y (a binary matrix, e.g., 0 0 1 0 for P1), using loss functions ℒ_o and ℒ_s (Eq. 12) to compute classification losses.\n\nAdditionally, the HGNNs generate metapath-based adjacency matrices A^φ and Â^θ via Eq. (13), which are visualized as small graphs on the right. For example, A^φ shows solid edges between P1-P2 and P2-P3, while Â^θ shows dashed edges between P1-P2 and P2-P3, reflecting the learned structure. These generated graphs are compared to a target graph (shown at bottom right) using a graph reconstruction loss ℒ_g (Eq. 14), indicated by a red dashed arrow connecting the generated graph to the target. The entire framework is optimized jointly using these multiple losses to improve robustness and accuracy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

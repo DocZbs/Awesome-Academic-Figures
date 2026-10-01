@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-503232",
+  "record_sha256": "df15c649356b8bdae88463f37a522d4bf08e181f21a4675e9aa462d7004529a0",
+  "asset_sha256": "494fad85df079fd9e8677f28f6cf47d36a7dff64fbb209c74f37e54ef1e16711",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503232",
+    "title": {
+      "zh": "Cross-Attention Graph Neural Networks for Inferring Gene Regulatory Networks with Skewed Degree Distribution · 方法图",
+      "en": "Cross-Attention Graph Neural Networks for Inferring Gene Regulatory Networks with Skewed Degree Distribution"
+    },
+    "paper": {
+      "id": "arxiv-2412-16220",
+      "title": "Cross-Attention Graph Neural Networks for Inferring Gene Regulatory Networks with Skewed Degree Distribution",
+      "authors": [
+        "Jiaqi Xiong",
+        "Nan Yin",
+        "Shiyang Liang",
+        "Haoyang Li",
+        "Yingxu Wang",
+        "Duo Ai",
+        "Fang Pan",
+        "Jingjie Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.16220",
+      "arxiv_url": "https://arxiv.org/abs/2412.16220",
+      "arxiv_id": "2412.16220",
+      "arxiv_first_submitted_at": "2024-12-18T10:56:40Z",
+      "arxiv_updated_at": "2025-01-09T14:55:29Z",
+      "arxiv_subjects": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "arxiv_current_version_observed": "2412.16220v3"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503232/image/image.jpg?Expires=1790855361&Signature=PHcN0YDX1w-jaqSnJsq0PYann9jEdMi~YnPj1ZkY82mivDNskud-mobMVHzxxTsXM4px0dWetiaUN-Sk~zbhB1tXGYh3M5KR6GRwqzW9GvVc7LsaMDBSto3iq6JTOCYn4P4IimOtCxSa2~GMxa3Q4AutJ-P~YUGpHZThh4~AoctXeU0XCES4SuuC7Vfgn0cRLhDTtPIxZucF1NT45VNKcmorngru5PDtTlxbSbb3BqTmjCBEG2qMWlW-aX-LgBtKOXtgCO3XBs9i7ky8VVw07NGpOFAQdH8CSt-ZaD5f2hc8ngeP4S6LeWgIkdGIGHrjWXBDSWWW1WwYUOIb5TqNOg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503232,
+      "description_sha256": "6b0c8fe439703a723d679576f871ca15af2029bcf0c63c2800b13301f47b4cb9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5b9d799a046eda38eca1df54c0efa55be855b862a589dcfeb9bf4e329d8744ee",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "eca5aa144ad1be72d701332f2456917cea0a82c05852f1ca24e7d630b7db909c",
+      "row_response_sha256": "ae9d16094ec5eb79c071243aff2142e25fe576fd817ae5fa4826667979d53fa6"
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the XATGRN method, structured into three main modules: Fusion Module (a), Relation Graph Embedding Module (b), and Prediction Module (c), each enclosed in dashed blue borders. The global layout is divided into two primary vertical sections: the left side contains modules (a) and (b), while the right side contains module (c). A dotted purple line connects the output of the Fusion Module to the Prediction Module, and a dotted red line connects the output of the Relation Graph Embedding Module to the same Prediction Module, indicating parallel input streams.\n\nIn the Fusion Module (a), the process begins with two input gene representations: 'Regulator gene R' (orange rectangle) and 'Target gene T' (green rectangle). Each undergoes a 'Self-attention' operation (blue rounded rectangles). Additionally, both inputs feed into a 'Cross Attention' block (gray dashed box containing two blue rectangles), where query vectors Q_R and Q_T are used to compute attention between R and T, indicated by orange and green curved arrows. The outputs from self-attention and cross-attention are combined via a 'Mean' operation (purple oval), producing a feature vector labeled F^corr_(R,T) (blue rectangle), which is then passed to the Prediction Module.\n\nThe Relation Graph Embedding Module (b) processes a 'GRN relation digraph' (dashed box on the left), depicted as a directed graph with blue circular nodes representing genes and edges indicating regulatory relationships. Each node is associated with two embeddings: yellow squares for 'amplitude embedding' and pink squares for 'phase embedding'. This graph is fed into a 'Dual GAT Encoder' (blue rounded rectangle), which generates embeddings F^am_R, F^ph_R for regulator genes and F^am_T, F^ph_T for target genes. These embeddings are then processed by a 'Dual Decoder' (white rounded rectangle) composed of two sub-decoders: 'Direction-aware Decoder' and 'Connection-aware Decoder', both gray rectangles. A feedback loop labeled 'loss' connects the decoder back to the encoder, suggesting a training mechanism. The outputs F^am_R, F^ph_R, F^am_T, F^ph_T are sent to the Prediction Module via the red dotted line.\n\nThe Prediction Module (c) integrates features from both modules. It starts with an 'Embedding Concat' step (gray oval), where F^corr_(R,T) from the Fusion Module and the four embeddings from the Relation Graph Embedding Module are concatenated into a single feature vector (represented by colored blocks: blue, pink, yellow, pink, yellow). This concatenated vector is passed through a 'Dense' layer (gold trapezoid), followed by a 'Softmax' layer (gray rectangle), leading to 'Link prediction' (gray rectangle). The final output is visualized as a small directed graph with blue nodes and edges marked with '+' or '-' signs, indicating predicted positive or negative regulatory links."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}
