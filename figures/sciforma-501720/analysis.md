@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13394
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a two-phase OOD detection method, divided into 'Fit g' (training phase) and 'Deploy g' (inference phase). The global layout is horizontal and split vertically into two rows: the top row illustrates the training process, while the bottom row shows the deployment process. A legend at the bottom defines visual symbols: blue diamonds represent ID samples, gradient-colored diamonds (blue-orange) represent WILD samples (unknown distribution), solid blue circles denote ID activations, gradient-colored circles (blue-orange) denote WILD activations, solid orange circles denote surrogate OOD activations, and solid blue circles denote surrogate ID activations.
+
+In the 'Fit g' phase, a cluster of blue and gradient-colored circles (representing ID and WILD activations) is shown on the left. These activations are processed by a dotted rectangular box labeled 'Surrogate ID and OOD Label Assignment', which assigns surrogate labels to the WILD activations. The output is a new cluster of activations where blue circles represent surrogate ID activations and orange circles represent surrogate OOD activations. This labeled dataset is then fed into a binary classifier denoted as g(θ), represented by a gray arrow pointing to the classifier block.
+
+In the 'Deploy g' phase, a single gradient-colored diamond (WILD sample) is input into a trapezoidal module labeled 'Pre-trained Model f(·)', which contains a snowflake icon symbolizing the frozen model. The model outputs a prediction, but more importantly, it also produces 'Internal Activations' (indicated by a dashed line) that are passed to the function g(·, θ). This function, which was trained in the top phase, takes the internal activation (represented as a gradient-colored circle) and the learned parameters θ to output a decision. Two gray arrows from g(·, θ) point to flags: a blue flag labeled 'ID' and an orange flag labeled 'OOD', indicating the final classification result.
+
+Connections are shown via solid gray arrows for data flow and dashed lines for auxiliary or internal signals. The dashed line from the pre-trained model to g(·, θ) explicitly marks the 'Internal Activations' being used for OOD detection. The dashed arrow from the binary classifier g(θ) in the top row to g(·, θ) in the bottom row indicates that the same classifier is deployed after training. The entire diagram visually conveys that the method learns a binary classifier on surrogate labels derived from ID and WILD samples during training, and then applies this classifier to internal activations of new samples during inference to determine if they are in-distribution or out-of-distribution.

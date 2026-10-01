@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501294",
+  "record_sha256": "f969a92af78c609f6967e1906b48e530389091a48a648ad7fe2d8140885ad636",
+  "asset_sha256": "df1880452b142c2a946b491f9197c30b85259dea81cac05df3ebbd6435d2ce02",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501294",
+    "title": {
+      "zh": "LLMs are Also Effective Embedding Models: An In-depth Overview · 方法图",
+      "en": "LLMs are Also Effective Embedding Models: An In-depth Overview"
+    },
+    "paper": {
+      "id": "arxiv-2412-12591",
+      "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+      "authors": [
+        "Chongyang Tao",
+        "Tao Shen",
+        "Shen Gao",
+        "Junshuo Zhang",
+        "Zhen Li",
+        "Kai Hua",
+        "Wenpeng Hu",
+        "Zhengwei Tao",
+        "Shuai Ma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_id": "2412.12591",
+      "arxiv_first_submitted_at": "2024-12-17T06:48:24Z",
+      "arxiv_updated_at": "2025-07-25T09:22:04Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501294/image/image.jpg?Expires=1790835190&Signature=svJmJRKVygiUKOGFwv7DoR4Oe~Dm9vGQKtCDTCOd88Wvy7W~HUFv8aEXUdSywcuxVKld97OXx1hnWFk15F3aqNSgF-EnSN3py9Zj-vCwn1LEFE~m3LiictP6hAK3l1HMYGiz3jP0Me0olCq9u6TC4cv5MaTeVCMOrTNRNO~3lIfEzKdNfEnqdKFfoTyAUn0hVP7j~ArCtSCbHbvAyymImJDqBhwZuxPc4MX5SMTkzJppTVcAif9XigDupBEwXCfMaZf0wukX64iiJmeqB6O23FfjfvzofEmuYNVCM8xauZgq5gxGbgqJ0oakXDyv5vPfGK5gddnOMbiHdjSAihBzHA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501294,
+      "description_sha256": "986caf3d24f11de836b9287c2965effde06f7620f02a1855bd27eef3172a814e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural overview of three prominent pre-trained language models: ELMo, BERT, and OpenAI GPT, illustrating their structural differences in processing input sequences and generating output embeddings. The layout is divided into three vertically aligned panels, separated by vertical lines, each dedicated to one model. Each panel follows a consistent vertical structure from bottom to top: input embeddings, multiple hidden layers, and output embeddings.\n\nIn the leftmost panel labeled 'ELMo', the architecture is depicted as a bidirectional LSTM network with two layers. At the bottom, orange rectangular boxes labeled E₁, E₂, ..., Eₙ represent the input embeddings. These feed into two parallel LSTM stacks: one forward (left-to-right) and one backward (right-to-left), both spanning layer 1 and layer 2. Each LSTM unit is shown as a yellow rectangle with 'LSTM' inside, connected sequentially within each direction. The outputs from both directions at each position are combined and projected upward to produce output embeddings T₁, T₂, ..., Tₙ, represented as yellow rectangles at the top. The bidirectional nature is emphasized by arrows pointing both left and right within each LSTM stack, and connections from both stacks converge to form the final output.\n\nThe central panel, labeled 'BERT', shows a stacked transformer-based architecture. Input embeddings E₁, E₂, ..., Eₙ (orange rectangles) are fed into multiple identical layers (layer 1, layer 2, ..., layer n), each consisting of yellow rectangular blocks representing transformer layers. Within each layer, there are cross-connections between positions, indicated by diagonal arrows connecting different positions (e.g., from E₁ to E₂, E₂ to E₃, etc.), reflecting self-attention mechanisms. The output from the topmost layer (layer n) is passed through an upward arrow to produce output embeddings T₁, T₂, ..., Tₙ (yellow rectangles). The architecture emphasizes bidirectional context via these intra-layer connections across all positions.\n\nThe rightmost panel, labeled 'OpenAI GPT', illustrates a unidirectional transformer architecture. Similar to BERT, it has input embeddings E₁, E₂, ..., Eₙ (orange rectangles) feeding into multiple layers (layer 1 to layer n), each composed of yellow rectangular blocks. However, the connections within each layer are strictly unidirectional, with arrows pointing only from earlier to later positions (e.g., from E₁ to E₂, E₂ to E₃, etc.), indicating autoregressive processing. This reflects the causal masking used in GPT, where each token can only attend to previous tokens. The output from the top layer is projected to generate output embeddings T₁, T₂, ..., Tₙ (yellow rectangles).\n\nAll three architectures share a common visual style: input embeddings are orange rectangles, hidden layers are yellow rectangles with labels or content, and output embeddings are yellow rectangles. The flow is consistently top-down for inputs and bottom-up for outputs. The figure visually contrasts bidirectional (ELMo, BERT) versus unidirectional (GPT) processing, and recurrent (ELMo) versus transformer (BERT, GPT) architectures."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

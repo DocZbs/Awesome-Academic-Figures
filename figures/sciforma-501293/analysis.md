@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LLMs are Also Effective Embedding Models: An In-depth Overview — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12591
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a survey on deploying Large Language Models (LLMs) as embedding models, structured into three main sections: Sec 4. Direct Prompt for Embedding, Sec 5. Tuning as Embedding Model, and Sec 6. Specialized Embedding. The layout is divided into three horizontal dashed-bordered regions, each representing one section.
+
+In Sec 4, titled 'Direct Prompt for Embedding' (marked with a snowflake icon), the top region illustrates a prompt-based approach. On the left, two green rectangular boxes show a prompt template ('This sentence: “{sentence}” means in one word:') and an example sentence ('An apple a day keeps the doctor away.'). These feed into a gray box labeled 'LLM', depicted as a neural network with interconnected circles. From the LLM, four labeled outputs emerge: ① E[POS], ② Pooling, ③ Logit dist., and ④ Others, leading to a green bar with five white circles representing the derived embedding vector. This section is subdivided into 4.1 Prompt Design and 4.2 Embedding Derivation.
+
+Sec 5, titled 'Tuning as Embedding Model' (marked with a fire icon), occupies the middle region. It begins with input components: a purple box containing a task instruction ('Retrieval relevant passages that answer the query. Query: {query}') and another with a sample query ('What are some ways to reduce stress?'), which merge into a 'Task Instruct' and 'Query' block. Below, a yellow box labeled 'Positive' contains a relevant passage about exercise reducing stress, while a pink box labeled 'Negative' contains an irrelevant passage about unhealthy habits. Both are directed toward a second LLM model (also shown as a neural network with a fire icon). The output from this LLM consists of three horizontal bars—purple, yellow, and pink—each with five white circles, representing embeddings for the query, positive, and negative examples respectively. Curved arrows connect these to labels 'Relevant' and 'Irrelevant'. A speech bubble points to this setup, stating 'Main Objective: Contrastive Loss'. This section includes subsections: 5.3 Data Construction (listing Data Adaption, Data Synthesis, Negative Mining with icons of documents and a database), 5.1 Model Design (listing Bi-Attention, Low-Rank Adaption, Embedding Derivation, Contextual Embeddings with an AI chip icon), and 5.2 Training Objective (listing Multi-task Training, Multi-stage Training, Knowledge Distillation with icons of a target and lightbulb).
+
+Sec 6, titled 'Specialized Embedding', spans the bottom region and displays six distinct embedding types using icons and labels: Multi-lingual Embedding (globe with 'A' and star), Multi-modal Embedding (person with speech bubbles showing Chinese characters and symbols), Long Context Embedding (scroll), Code Embedding (code editor), Reason-aware Embedding (lightbulb with gear), and Domain-Specific Embedding (atom symbol). Each is represented by a simple black-and-white icon above its respective label.
+
+The entire figure uses color-coded boxes for clarity: green for prompt inputs, purple for queries and task instructions, yellow for positive examples, pink for negative examples, and gray for LLM models. Arrows indicate data flow and relationships between components, emphasizing the progression from raw input to embedding derivation through either direct prompting or fine-tuning, culminating in specialized applications.

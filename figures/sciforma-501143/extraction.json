@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501143",
+  "record_sha256": "b08d8fc072cf226f6caff98ff7981d5aa99a9a7799ad6decaf9d7a26434fff94",
+  "asset_sha256": "c064e54f81d0226a9fdf66ebcd6985c431a135e7fa6e04ef812183dce0e2cbb8",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501143",
+    "title": {
+      "zh": "Causally Consistent Normalizing Flow · 方法图",
+      "en": "Causally Consistent Normalizing Flow"
+    },
+    "paper": {
+      "id": "arxiv-2412-12401",
+      "title": "Causally Consistent Normalizing Flow",
+      "authors": [
+        "Qingyang Zhou",
+        "Kangjie Lu",
+        "Meng Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12401",
+      "arxiv_url": "https://arxiv.org/abs/2412.12401",
+      "arxiv_id": "2412.12401",
+      "arxiv_first_submitted_at": "2024-12-16T23:13:17Z",
+      "arxiv_updated_at": "2024-12-16T23:13:17Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501143/image/image.jpg?Expires=1790835185&Signature=gCzf8b5Lrw2MVtvlJw-e5aoU0DOx1H0Vzbxr-A2tJu6eHBBlRdo22Lfp6PucZdCU~njX2AfhkK0rvPXYN73XairBCV30AHClk2wtDeW1S-VwLlzIUGjM1~~fFkKkph3ek6sC45KKtV~K6uomgUDccbhgvBbFPbW1m0MvM4F--J6pPXr7z~LiDyo6pKPd1Z6nwKq537oGQJz4T4qmd5IAFLosfZBwHDzGyaSLS~so3ikW5Ue2yXne626teccGBFc4ej58NObKr9WwdMmzQ2ntjKcyOtdi9m2halxteWNTiDO273XmSgs7aEkABqo21Pak2j5bYZmq-z7wrWwblo0lkw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501143,
+      "description_sha256": "dbf6709a30af9dfe96a551a7fce14a68678cf9c872ddf654bf6416969865ae58",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a directed acyclic graph (DAG) representing the causal structure of an Eight Node Chain dataset. The global layout consists of two horizontal rows of rectangular nodes, each labeled with a variable X_i, where i ranges from 0 to 7. The top row contains nodes X₀, X₁, X₂, and X₃ arranged left to right. The bottom row contains nodes X₄, X₅, X₆, and X₇, also arranged left to right. The structure forms a chain-like progression with a branching point at X₃, which connects downward to X₄, initiating a reverse chain in the bottom row.\n\nEach node is represented as a simple white rectangle with a black border, containing centered black text denoting the variable name (e.g., 'X₀', 'X₁', etc.). There are no color variations or special shapes; all nodes are uniform in appearance. The variables are labeled sequentially, suggesting a temporal or causal ordering.\n\nConnections between nodes are depicted using solid black arrows, indicating directed causal relationships. In the top row, there is a left-to-right sequence: X₀ → X₁ → X₂ → X₃. From X₃, a vertical arrow points downward to X₄, establishing a causal link from the top chain to the bottom chain. In the bottom row, the direction reverses: X₄ → X₅ → X₆ → X₇, forming a backward chain. All arrows are unidirectional and have standard arrowheads, with no bidirectional edges or feedback loops present. The graph is acyclic, as no path leads back to a previously visited node.\n\nThe overall structure implies a causal model where the first four variables form a forward chain, and the last four form a reverse chain, connected via a single link from X₃ to X₄. This design may be used to test causal inference algorithms on complex, non-linear chains or to simulate data with specific dependency patterns. The figure does not include any additional annotations, equations, or legends beyond the node labels and arrows."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

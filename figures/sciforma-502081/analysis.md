@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Crabs: Consuming Resource via Auto-generation for LLM-DoS Attack under Black-box Settings — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13879
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the AutoDoS algorithm, structured into three main steps, each visually distinct in color and layout. The global layout is divided into three vertically stacked rectangular sections labeled 1, 2, and 3, arranged left-to-right across the diagram, with a vertical sidebar on the far left displaying logos of major AI models (including OpenAI, Anthropic, DeepMind, Meta, Google, and Microsoft), indicating the target scope of the attack.
+
+Step 1, titled 'Construct DoS Prompt through DoS Attack Tree' and colored beige, begins with an 'Initial DoS Prompt T' at the top. This prompt branches into a tree structure with four main subtrees labeled T₁, T₂, T₃, and T₄. Each subtree expands further into nodes representing sub-problems, with different colors indicating strategies: cyan for 'Deep Backtracking', green for 'Breadth Expansion', and orange for 'Initial Sub-problem'. A highlighted region within T₂, enclosed by a dashed pink border, shows a refined subtree P’ derived from P_L via 'Breadth Extension enhance stability' and 'Depth Backtracking broaden the scope'. A legend at the bottom right clarifies these node types.
+
+Step 2, titled 'Iterative optimization process of Tree DoS' and colored light blue, features three interacting models: 'Attack Model' (represented by a robot with a red skull icon), 'Target Model' (a robot with a neutral face), and 'Judge Model' (a human silhouette). These models form a feedback loop: the Attack Model generates prompts, which are evaluated by the Judge Model against the Target Model’s responses. The evaluation process is visualized through multiple iterations of tree structures, each progressively refined—some marked with red Xs for rejection, others accepted. Accompanying speech bubbles show evolving responses from the Target Model, such as 'I can only answer the first question...' to 'Sure, let’s dive into your questions...'. A bar chart on the right compares 'Initial' vs. 'Iterative' token lengths, showing a dramatic increase under iterative optimization, with a caption stating 'Iterative optimization unleashes the full potential of the DoS Attack Tree'.
+
+Step 3, titled 'Length Trojan Strategy' and colored light green, depicts a trojan implantation mechanism. It starts with a sequence of small trees (symbolizing prompts) leading to a large orange rocking horse (symbolizing the implanted trojan). A speech bubble from the attacker says 'I only need a response within 200 tokens', while another from the victim model responds 'Sure, let’s dive into your questions...'. This indicates the trojan forces the model to generate long responses despite constraints. A shield icon with a checkmark represents successful evasion, and a red skull icon signifies the malicious intent. An arrow leads from this step to the final panel.
+
+On the far right, a vertical panel displays the logos of the same AI models from the sidebar, now overlaid with red skull icons, symbolizing compromised systems. Above it, two speech bubbles show the model’s behavior before and after the attack: initially refusing ('I’m sorry, but I can’t assist with that request.') and then generating a long response ('<Model Generates 16384 tokens>') after being triggered by the Length Trojan. The entire diagram uses consistent icons, arrows, and color coding to convey the workflow from prompt construction to iterative refinement and finally to trojan-based exploitation.

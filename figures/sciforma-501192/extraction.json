@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501192",
+  "record_sha256": "f6cf946ea5b19dff407731dd729826f1e4030ff64cc071303987096893de7e08",
+  "asset_sha256": "5e847ba2d075b1383165ad76bb65f4a8a23b71662a681f9ce86c7897b0f80074",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501192",
+    "title": {
+      "zh": "Boosting Long-Context Management via Query-Guided Activation Refilling · 方法图",
+      "en": "Boosting Long-Context Management via Query-Guided Activation Refilling"
+    },
+    "paper": {
+      "id": "arxiv-2412-12486",
+      "title": "Boosting Long-Context Management via Query-Guided Activation Refilling",
+      "authors": [
+        "Hongjin Qian",
+        "Zheng Liu",
+        "Peitian Zhang",
+        "Zhicheng Dou",
+        "Defu Lian"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12486",
+      "arxiv_url": "https://arxiv.org/abs/2412.12486",
+      "arxiv_id": "2412.12486",
+      "arxiv_first_submitted_at": "2024-12-17T02:43:54Z",
+      "arxiv_updated_at": "2025-05-23T09:33:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501192/image/image.jpg?Expires=1790835186&Signature=pSTNeeR9mNFhuF5jCgcQN1zQwMTSTXmatl52PQhCSLmy0EDeOCjgBljAwzVs9qfH-uwsFEDPHJJENWCNDZVkBj0VWfhZpk27exAwsz4ZXE~7XZ-Tzks68kRNP7DJBiHPEX6ahRDQPp7OZQYH1yEDLkfmDsSfSCThy003fjRJK3a5W7xevM4cc6sGjXb1mDUVEvkj3wo7vNVC0mTt5Roj85wB98jFtVilLhWeOCDlyN8dHJYySmKW4jjbi4Pn0k3XMH8RvdkMihSn5TnfMmsyrtFX2Mab1mybmg4q6o5hMGD2KXcRgct7-F5VC2Ncc-qxq-eJ2SvrFnEBpfAx0OWoEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501192,
+      "description_sha256": "cb2d488a618a22b526785c5f5f6471e95fccfb8db76789c062115aa3bd78ef79",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of ACRE, a method for efficient long-context processing in large language models (LLMs), structured into three main panels: (a) Bi-layer KV Cache construction, (b) Query-Guided Refilling, and (c) Optimization stages.\n\nPanel (a) illustrates the Bi-layer KV Cache architecture. At the bottom, a long context (~1M tokens) is represented as a horizontal sequence of tokens, with red dots indicating selected L1 tokens. These L1 tokens form a 'Nested Input' denoted by x̃, which is fed into an LLM module depicted as a gray rounded rectangle containing a snowflake icon (indicating freezing or caching) and a flame icon (indicating computation). The LLM processes this input through selective attention mechanisms, shown as curved arrows connecting tokens within the nested input. This results in the construction of two levels of KV caches: L1 KV Cache [K^L1, V^L1], represented as a horizontal row of red circles, and L2 KV Cache [K^L2, V^L2], shown above as multiple groups of gray circles. The L1 cache is proxied by the L2 cache via dashed arrows labeled 'Proxying'. Additionally, a 'Nested KV [K̃, Ṽ]' structure is shown below the L1 cache, linking back to the original long context via curved arrows labeled 'Selective Attention', indicating how relevant tokens are chosen for caching.\n\nPanel (b) describes the Query-Guided Refilling process. An input query q, symbolized by a speech bubble with a question mark, is processed alongside the stored Context L1 Cache (a grid of red and pink circles representing cached activations). Within Transformer Layers, the model attends to the L1 cache, indicated by curved arrows pointing from the query-relevant positions to the L1 cache entries. This leads to the generation of a Query-relevant L2 KV Cache (gray circles), which is then used to refill the L1 KV Cache, producing Refilled KV Activations (a mix of red, gray, and blue circles). These refilled activations are fed into the LLM to generate the Final Answer, represented by a green checkmark inside a speech bubble.\n\nPanel (c) outlines the two-stage optimization process. Stage I, 'learn to build Bi-layer cache', involves training the LLM on unsupervised long text. The original LLM parameters are kept frozen (indicated by the snowflake icon), while newly initialized parameters are trained (flame icon). The goal is to predict the next token, using the long context to construct the Bi-layer cache. Stage II, 'learn to select KV cache', uses task-specific data consisting of context and query pairs. The LLM is trained to predict the ground-truth answer, learning to selectively choose which KV cache entries to use during decoding. This stage builds upon the previously learned Bi-layer cache structure, refining the selection mechanism for improved performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501976",
+  "record_sha256": "ef08fdd4849b31123f74f81faa4d407ee9f8b8a16bb6a768e0e1a277a63dd40c",
+  "asset_sha256": "2c5d737e121bbaf551ef6abd619cd07a6ef0615f9073636bc9a91c0afd087e08",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501976",
+    "title": {
+      "zh": "3D Registration in 30 Years: A Survey · 方法图",
+      "en": "3D Registration in 30 Years: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-13735",
+      "title": "3D Registration in 30 Years: A Survey",
+      "authors": [
+        "Jiaqi Yang",
+        "Chu'ai Zhang",
+        "Zhengbao Wang",
+        "Xinyue Cao",
+        "Xuan Ouyang",
+        "Xiyu Zhang",
+        "Zhenxuan Zeng",
+        "Zhao Zeng",
+        "Borui Lu",
+        "Zhiyi Xia",
+        "Qian Zhang",
+        "Yulan Guo",
+        "Yanning Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_id": "2412.13735",
+      "arxiv_first_submitted_at": "2024-12-18T11:14:01Z",
+      "arxiv_updated_at": "2024-12-19T12:59:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501976/image/image.jpg?Expires=1790835209&Signature=hhuImcJEZg~1mRjvrTSYafGSex01Jquinox-2tuuUg1Hv6ZpN76KGHS656vWclfJPVHzdVt4vo1DP0sl9MVlECkVy7atJLSt8yLeqfUrFfNUVeKqYmh10K1xVUw-PLvdtIEhIt76OF7HLcwWIpdK1oUL5hRm4RPjVOcHu-gWMl6cekFiL97lNY179rbBiPqzqn65zzoUzMhO4eZ3-9qrtltewIycYHm9GitZkvU9N3LvdVDYhx3xpWNLxvkXcPO~N8bPPuOn92VVA~MK1LHvzPRwUpsRu1Des2r7YSn6AmOblPt1qQaxYJUHnu9ZJfK-hfbxb~jeWp-oLEWpfp5uVw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501976,
+      "description_sha256": "b99ac8a0c114088e94ca461d8eb0c83b8a4e230a0024fa0f874f33b2da2c5026",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage framework for supervised 3D pairwise coarse registration, structured as a horizontal flowchart with distinct processing modules connected by directed arrows. The global layout is left-to-right, beginning with two input point clouds on the far left, progressing through feature extraction, matching stages, and culminating in transformation selection and refinement. The top input point cloud is rendered in blue, while the bottom one is in orange, both depicted as sparse 3D point sets with visible surface structures, indicating two different scans or views of a scene.\n\nThe first stage involves parallel Feature Extraction modules, each represented as a light blue trapezoidal shape with a vertical gradient and labeled 'Feature Extraction' in black text. These modules receive the respective input point clouds and output features that are passed to subsequent stages. From each Feature Extraction module, an arrow leads to the Superpoint Matching Module, which is a rounded rectangle with a light green fill and black border, labeled accordingly. This module processes the extracted features from both inputs to establish initial correspondences at the superpoint level.\n\nA small icon between the Superpoint Matching Module and the Point Matching Module visually represents the superpoint correspondence: it consists of three stacked, alternating blue and yellow rectangular blocks, symbolizing paired superpoints from the two inputs. An arrow labeled 'superpoint correspondence' connects the Feature Extraction outputs directly to the Point Matching Module, indicating that this correspondence is also fed into the next stage.\n\nThe Point Matching Module is a dark gray rounded rectangle with black text, positioned centrally in the second stage. It receives both the superpoint correspondence and the feature representations from the Feature Extraction modules. This module refines the matches down to individual points, leveraging the coarse superpoint alignment to guide fine-grained point correspondence.\n\nFinally, the output of the Point Matching Module flows into the last module, Transformation Selection & Refinement, depicted as a light gray rounded rectangle with black text. This module computes and optimizes the spatial transformation (e.g., rotation and translation) that aligns the two point clouds based on the matched point pairs, completing the registration pipeline.\n\nAll connections are solid black arrows indicating the direction of data flow. The diagram emphasizes a hierarchical and modular design, where coarse-level superpoint matching informs finer point-level matching, ultimately enabling robust and accurate 3D registration."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

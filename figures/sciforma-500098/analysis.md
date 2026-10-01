@@ -1,0 +1,53 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10739
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the overall architecture of the proposed DSRC framework, which consists of two parallel branches: a Teacher model (top, shaded pink) and a Student model (bottom, shaded blue), both sharing identical network structures. The framework implements a three-stage knowledge distillation strategy—Distillation After Encoding (DAE), Distillation After Fusion (DAF), and Distillation After Prediction (DAP)—to facilitate effective knowledge transfer from the teacher to the student. Additionally, a point cloud reconstruction module is integrated to enhance collaborative representation fusion among agents.
+
+[1] Global Layout and Structure:
+
+The diagram is vertically divided into two main horizontal sections: the Teacher model at the top and the Student model at the bottom. Both models process point cloud inputs through an encoder, followed by feature fusion and detection heads. A central vertical column connects the two models via three distillation modules (DAE, DAF, DAP) and a message exchange mechanism. On the left side, a point cloud reconstruction module processes multi-view point clouds derived from the student’s input, generating dense object and background components. The rightmost part shows the final prediction outputs from both models, with the student’s output used during inference.
+
+[2] Visual Modules and Attributes:
+
+- **Teacher Model (pink background)**: Receives 'Teacher Point Cloud P_i^T' (visualized as a 3D scene with highlighted objects). This passes through an 'Encoder' (a gray box with interconnected circles) producing features F_i^T (a red 3D block). These features are fused (gray 'Fusion' box) into H_i^T (a multicolored 3D block), then fed to 'Detection Heads' (green box) to generate predictions.
+
+- **Student Model (blue background)**: Receives 'Student Point Cloud P_i^S' (a sparser 3D scene). It follows the same structure: Encoder → F_i^S (blue 3D block) → Fusion → H_i^S (multicolored 3D block) → Detection Heads → prediction.
+
+- **Point Cloud Reconstruction Module (left, orange box labeled 'Point cloud Reconstruction')**: Takes 'Multi-view Point Cloud' (a 3D scene with multiple views) and reconstructs it using loss L_rec, outputting 'Dense Object' and 'Background' components. These are used to enrich the student's input.
+
+- **DAE (Distillation After Encoding, yellow box)**: Located between the encoders of both models. It takes F_i^T and F_i^S, applies a decoder-like structure (red and blue blocks with cross connections), and uses losses L_d (distillation loss) and L_rec (reconstruction loss) to align features.
+
+- **Message Exchange (oval with cars and envelope)**: Represents inter-agent communication, where features {F_j^T} and {F_j^S} from neighboring agents are exchanged bidirectionally.
+
+- **DAF (Distillation After Fusion, orange box)**: Connects H_i^T and H_i^S with a bidirectional arrow labeled L_h (hierarchical loss), ensuring alignment of fused features.
+
+- **DAP (Distillation After Prediction, green box)**: Compares outputs from detection heads: C_i^T vs C_i^S (class features) and R_i^T vs R_i^S (regression features), using KL divergence (D_KL) and prediction loss (L_p).
+
+- **Prediction Outputs (right)**: Two 3D scenes showing bounding boxes around detected objects, one from each model. During inference, only the student’s prediction (blue data flow) is used.
+
+[3] Connections and Arrows:
+
+- Black arrows indicate data flow within each model: from point cloud → encoder → fusion → detection heads.
+
+- Red arrows (teacher) and blue arrows (student) show the distinct data paths. The teacher’s path is active during training but discarded at inference.
+
+- Bidirectional arrows connect the DAE, DAF, and DAP modules between teacher and student, indicating knowledge distillation.
+
+- A black arrow from 'Multi-view Point Cloud' to 'Point cloud Reconstruction' feeds into the student’s input, enhancing its representation.
+
+- Message exchange is shown as bidirectional arrows between vehicles in the oval, with features {F_j^T} and {F_j^S} flowing to/from the DAF module.
+
+- The final prediction from the student model (blue arrow) leads to the inference output, while the teacher’s prediction is shown for comparison but not used in deployment.

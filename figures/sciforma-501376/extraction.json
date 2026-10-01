@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501376",
+  "record_sha256": "2d8bfea801e1a902ffc3ad70f9ba5353567adfe0ac991fabe7857c663882dd46",
+  "asset_sha256": "517f082730d929519c3bb5fa7ef64c2ac2c457b0b608ff5ba64855e74e12b859",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501376",
+    "title": {
+      "zh": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks · 方法图",
+      "en": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12700",
+      "title": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks",
+      "authors": [
+        "Ruixuan Miao",
+        "Xu Lu",
+        "Cong Tian",
+        "Bin Yu",
+        "Zhenhua Duan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12700",
+      "arxiv_url": "https://arxiv.org/abs/2412.12700",
+      "arxiv_id": "2412.12700",
+      "arxiv_first_submitted_at": "2024-12-17T09:16:53Z",
+      "arxiv_updated_at": "2024-12-17T09:16:53Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501376/image/image.jpg?Expires=1790835192&Signature=KxTfveFfA70PLrlIuoHQExYynS-D2NhbhOjNkcEqmxGRlGFo1J1d~zMgNXwlF1OJPUONBgYL451YaPcmMsfqISMLNzfJfW4GDGXeC27wnjrkjfNPKVx5hHsfwDOQl-4PfKLJBBcR3AgMsvHiuuwmW2Fjpjk~5Ck1CTeyPC414CyIrhGk5uFaJsxI7s9ObU6BkdX6-ZlpMvhqxu5wa6JCDF-kRrsei5YBuQTfCAKt8jLLPLh4Af95Qxo9k64IrhrJUQCLirnBIhkhG99pweqc3wIHuf-g1AbB0rWqgCt9-RTtthH~ALkCWGS-vtoxXRxEssJD6Djmy6B5H8koHHF-YQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501376,
+      "description_sha256": "e2af9e4f6314c3a4467acb6d5dbb016bbca2f3e6362d7d269dd57175c6919b66",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the three-phase training process of ParMod, a modular reinforcement learning framework, showing the progression from phase0 to phase2 with associated reward shaping, loss calculation, and model updates. The global layout is divided into three vertical sections, each enclosed by a dashed border: phase0 (red), phase1 (green), and phase2 (blue). Each phase contains two neural network modules arranged vertically, representing different components of the model. The top module in each phase is labeled with θ (theta) and represents a policy or action-value function, while the bottom module is labeled with Ω (omega) and represents a value or auxiliary function. These modules are fully connected feedforward networks with multiple hidden layers, depicted as nodes connected by black lines; input nodes are blue circles, output nodes are green (for θ) or purple (for Ω), and hidden nodes are white. \n\nIn phase0, the top network is denoted θ_{θ₀}(a|s⊗), and the bottom network is Ω_{ω₀}(s⊗,a). Below this pair, a rank annotation states 'rank(q1) = 0'. An arrow labeled 'reward shaping +r' points from phase0 to phase1, indicating a positive reward signal applied during transition. A yellow arrow labeled 'loss calculation' originates from the Ω_{ω₀} output and points to the Ω_{ω₁} input in phase1, signifying that the loss from phase0 influences the training of the next phase's Ω module.\n\nPhase1 contains the top network θ_{θ₁}(a|s⊗) and bottom network Ω_{ω₁}(s⊗,a). Below these, the rank annotation reads 'rank(q2) = rank(q3) = 1', indicating that both q2 and q3 have rank 1. Two bidirectional arrows labeled 'reward shaping +r' and '-r' connect phase1 to phase2, suggesting that reward shaping can be applied in both directions between these phases. Another yellow 'loss calculation' arrow connects the Ω_{ω₁} output to the Ω_{ω₂} input in phase2, continuing the loss propagation across phases.\n\nPhase2 includes the top network θ_{θ₂}(a|s⊗) and bottom network Ω_{ω₂}(s⊗,a), with the rank annotation 'rank(q4) = 2' below. The entire structure emphasizes a sequential, iterative training process where each phase builds upon the previous one through reward shaping and loss backpropagation, with the Ω modules receiving loss signals from prior phases to guide their optimization. The visual flow is left-to-right, with feedback loops indicated by the bidirectional reward shaping arrows between phase1 and phase2, and forward propagation of loss signals via yellow arrows. The figure captures the modular, phased nature of ParMod’s training, highlighting how reward shaping and loss computation facilitate progressive learning across phases."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

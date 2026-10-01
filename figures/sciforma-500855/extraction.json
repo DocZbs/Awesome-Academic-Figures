@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500855",
+  "record_sha256": "d412c899ecd76e64bc88ab7cc8fae2cf00156a1841fed166be1de281d9a2b95f",
+  "asset_sha256": "a37bff970920c91bef00dcac5b631f174c5bc2ce9a0d0d87d9805613e004bede",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500855",
+    "title": {
+      "zh": "From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach · 方法图",
+      "en": "From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach"
+    },
+    "paper": {
+      "id": "arxiv-2412-11892",
+      "title": "From 2D CAD Drawings to 3D Parametric Models: A Vision-Language Approach",
+      "authors": [
+        "Xilin Wang",
+        "Jia Zheng",
+        "Yuanchao Hu",
+        "Hao Zhu",
+        "Qian Yu",
+        "Zihan Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11892",
+      "arxiv_url": "https://arxiv.org/abs/2412.11892",
+      "arxiv_id": "2412.11892",
+      "arxiv_first_submitted_at": "2024-12-16T15:41:14Z",
+      "arxiv_updated_at": "2024-12-17T04:38:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500855/image/image.jpg?Expires=1790835177&Signature=N-o3V-sXgZZFNOG3il4bMy81SpcQ-psM14ddf1V3SFCEyGGgeubj1IbBTFiKjhxg8KjQug6hT3OUrbXCa8j-gAXyh8ZlS9lyVCFnQf3AS8aPvQ81Pa2xelWiqB9g0ruRR210n0f5g~Dn-nxpFyg6lJ-mmE4hZuHwbqA35MGXo2leDcefyFbt81Cio9z0cmhrGazq260lTQ05ACM8inRG6mnwob2dH1ftBGXNXqGxFw2LAEKOCJPraTXLY47fMWzfsh8fy3GyMB5AiryQ6QKG4tGChiQ2sEq46vu5uUQNCW5QWCEpDL2o4lIzwvq2r0WPiboPO~bSRq2Y9yplzAo6ig__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500855,
+      "description_sha256": "c87b107bee1b67137afb04b19f4c7de831b939ac4f8a3b766e53a1db35662610",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of a vision-language model designed to reconstruct a cabinet shape program from a 2D drawing input. The entire system is encapsulated within a dashed rectangular boundary labeled 'Vision-Language Model (i.e., Mini-InternVL-1.5-2B)', indicating it is a unified model composed of two primary components: a vision encoder and a language model. The workflow begins on the left with a black-bordered box labeled 'Input: 2D drawing', which feeds into the vision component. This input is processed by dividing the image into multiple small square regions, represented as four black-outlined squares labeled 'image patches'. These patches are then fed into a light blue rounded rectangle labeled 'InternViT-300M', which serves as the vision encoder. The output of this encoder is passed through a vertical black rectangle labeled 'MLP' (Multi-Layer Perceptron), which transforms the encoded visual features into a sequence of visual tokens. These tokens are depicted as three light blue squares labeled 'visual tokens'. Simultaneously, a text prompt is introduced into the system: '[SOS] Reconstruct cabinet from image:', shown in orange text and labeled 'text prompt'. Both the visual tokens and the text prompt are concatenated and fed into the second major component of the model: a salmon-colored rounded rectangle labeled 'InternLM2-1.8B', representing the large language model. This model processes the combined visual and textual inputs to generate the final output. The output is shown on the far right as a black-bordered box labeled 'Output: Cabinet shape program', indicating the generated program that describes the 3D structure of the cabinet. Solid black arrows indicate the direction of data flow between all components, emphasizing the sequential processing pipeline from input to output. The diagram uses distinct colors—light blue for vision-related modules and salmon for the language model—to differentiate functional roles within the architecture."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

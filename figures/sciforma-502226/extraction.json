@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502226",
+  "record_sha256": "7072ac1bf3dae33ed7a153e56849c68384bb215db0192f34b6d2ea3dbad2acfa",
+  "asset_sha256": "4936dc278a0db76c87eeb0e8a9e4bcb896e04d05010f2dbb8952f3f15f8e4181",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502226",
+    "title": {
+      "zh": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective · 方法图",
+      "en": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-14135",
+      "title": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective",
+      "authors": [
+        "Zhiyuan Zeng",
+        "Qinyuan Cheng",
+        "Zhangyue Yin",
+        "Bo Wang",
+        "Shimin Li",
+        "Yunhua Zhou",
+        "Qipeng Guo",
+        "Xuanjing Huang",
+        "Xipeng Qiu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14135",
+      "arxiv_url": "https://arxiv.org/abs/2412.14135",
+      "arxiv_id": "2412.14135",
+      "arxiv_first_submitted_at": "2024-12-18T18:24:47Z",
+      "arxiv_updated_at": "2024-12-18T18:24:47Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502226/image/image.jpg?Expires=1790835212&Signature=A9J27JO2EiD1rbqwjtdnIYv~u7sKrxq2OaTvGX8dii4SXcObfxr5IiAQHtFHeV6rzHaF9jzI4FwO9KEb8dJ4eE4BPcr~cvjGKasxCSuQOhyRqrAJxURi387qAqDYf7HiWqrQKcmbj-MJqBV1sRtdWSwn79p-cx87FwlCmk7qF4dBakNlg~qx-DxHUgxoMZK8PrRq5jdzd0YrSVprDhqlXg-GPqbGLw0ZUZ4KBNYQSACsOhIhMS8WyHPz2CxbA9NurXkBqcRndJ6c7Qfu40hWygJ8tI27F9ufSEAw9UvBmIO-kzSnd40QvWTkBIk7qtIVDHzsyEshXy6O6H1omIA5EQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502226,
+      "description_sha256": "f178db3c7c6d07aad4e6e64cff97b013ee8f936c4fd87fbac8637dd2b5223777",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comparative workflow of two reinforcement learning approaches—Policy Gradient and Behavior Cloning—based on the type of data they utilize during training. The global layout is a left-to-right flowchart, beginning with a 'Search' step and progressing through data generation and model training stages. The process starts with a pink rectangular box labeled 'Search', which feeds into a black-bordered square labeled 'Solutions'. This square contains a tree-like graph with gray nodes representing generated solutions. An arrow leads from this to another square labeled 'Solutions with Rewards', which displays a similar tree structure but with colored nodes: green for the solution with the highest reward and red for all other solutions. From this point, the workflow splits into two parallel branches.\n\nThe upper branch leads to a red-bordered square labeled D_search with the subtitle 'All solutions', containing the full tree with both green and red nodes. This dataset feeds into a dark red rectangular box labeled 'Policy Gradient', which further branches into three smaller dark red boxes labeled 'REINFORCE', 'PPO', and 'DPO', indicating specific policy gradient algorithms.\n\nThe lower branch leads to a red-bordered square labeled D_Expert with the subtitle 'Solution with the highest rewards', showing only the green nodes from the original tree (the expert solution), while the red nodes are faded or omitted. This dataset feeds into a dark red rectangular box labeled 'Behavior Cloning'.\n\nVisual modules include rectangular boxes for processes and datasets, with distinct colors: pink for initial steps, black borders for intermediate data representations, red borders for datasets used in training, and dark red for algorithmic methods. Nodes in the tree diagrams are color-coded: green for expert/high-reward solutions and red for non-expert solutions. Text labels are placed directly beneath or beside each module for clarity. All connections are represented by solid black arrows indicating the direction of data flow. The figure emphasizes that Policy Gradient methods utilize the entire search space (D_search), whereas Behavior Cloning relies exclusively on the top-performing solution (D_Expert)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

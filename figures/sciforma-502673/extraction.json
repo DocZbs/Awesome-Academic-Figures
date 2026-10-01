@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502673",
+  "record_sha256": "f030f94b940b0ee11db9491cd1b4c3f88296f6014f2220ac27f141803f098ca3",
+  "asset_sha256": "4cc5d7e0e53bbb7977fc9845345b64b831d23669b079ac517f39dc5770c15920",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502673",
+    "title": {
+      "zh": "Hybrid-Regularized Magnitude Pruning for Robust Federated Learning under Covariate Shift · 方法图",
+      "en": "Hybrid-Regularized Magnitude Pruning for Robust Federated Learning under Covariate Shift"
+    },
+    "paper": {
+      "id": "arxiv-2412-15010",
+      "title": "Hybrid-Regularized Magnitude Pruning for Robust Federated Learning under Covariate Shift",
+      "authors": [
+        "Ozgu Goksu",
+        "Nicolas Pugeault"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15010",
+      "arxiv_url": "https://arxiv.org/abs/2412.15010",
+      "arxiv_id": "2412.15010",
+      "arxiv_first_submitted_at": "2024-12-19T16:22:37Z",
+      "arxiv_updated_at": "2025-09-09T16:03:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502673/image/image.jpg?Expires=1790835224&Signature=M6B4LtHgahs~s3CY4c9S27XDPSJiKRtwBoxaMnY4VpSY1Bc~m7SuH1smjORlBKgKJdt3vjlT5zltNu6WEe329zPDLSQxNyxBcXk7WA2Y~FnOfOn1vNUzzOW0Qo0Pb-362zysllsV8OQe-I7OvewF0mECB9if598uA4ApSMN8O69Anq0xlu5jI2QAvXuKeCRdhglwSiO7UCv5RRLnHG9xZfZN34rsCzPDO8Rn-9R2SdYg7OFjmnXbLlQ0Bnj6Dk0IerFLS0CYUYNxuy8u5VV0MMNUwW8qZIZOG8DKYlqBozPN0gEED-D~X1piWmeMdg6ENOgGhpURSVDIfMAWu8Jm7w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502673,
+      "description_sha256": "f511144a2549ee25e883e3bab21e747e0437e0b437e588250003f195c11d4518",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the FedMPR framework for federated learning with magnitude pruning and noise injection, structured into three main phases: Local Training, Model Aggregation, and Broadcasting, occurring at time step t = i and progressing to t = i + 1. The global layout is horizontal, showing a left-to-right workflow across these phases, with two parallel client streams (Client 1 and Client 2) demonstrating identical processing steps. Each client begins with a fully connected neural network represented as a blue node graph within a rounded rectangle. During Local Training, each client first injects Gaussian noise into selected weights, visually indicated by red dashed circles around nodes labeled 'wi' in the legend. This noise injection is shown as adding ε terms to weights (e.g., w₁ + ε₁) in a detailed inset diagram. Following noise injection, each client performs magnitude pruning, depicted as a beige dashed box labeled 'Magnitude Pruning', which removes less significant weights, shown as grayed-out or absent connections in the network. The pruned client models are then sent to the central server for Model Aggregation. Here, the server constructs a Global Model by aggregating the pruned client models, resulting in a combined network where some weights are retained (blue), some are noise-perturbed (red dashed), and others are pruned (gray). A second inset diagram below the aggregation phase shows the pruning process in detail: on the left, 'Before Pruning', all weights w* are active; on the right, 'After Pruning', certain weights (e.g., from x₂ and x₃) are set to zero, indicated by gray lines and '0' labels, representing unstructured pruning. The aggregated global model is then broadcast back to the clients, completing the cycle at t = i + 1. The legend clarifies visual attributes: solid blue circles represent original weights (w), red dashed circles represent noise-injected weights (wi), gray circles represent pruned weights (wd), and gray lines indicate unstructured pruning. All connections between modules are directed arrows, indicating the flow of data and model updates. The figure uses consistent color coding and node shapes throughout, with neural networks enclosed in light-blue rounded rectangles, and processing steps like noise injection and pruning shown as distinct boxes with descriptive labels."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500471",
+  "record_sha256": "aa3406fb34d3541a8e076496f4a950d6db5a3a1b28faf02b40d09df83e5b84a1",
+  "asset_sha256": "f81cf1b8dd7ffd3e228450c5d0c3ba76cc87cc1caca81dd2dcf53b37d317cd4c",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500471",
+    "title": {
+      "zh": "PAT: Privacy-Preserving Adversarial Transfer for Accurate, Robust and Privacy-Preserving EEG Decoding · 方法图",
+      "en": "PAT: Privacy-Preserving Adversarial Transfer for Accurate, Robust and Privacy-Preserving EEG Decoding"
+    },
+    "paper": {
+      "id": "arxiv-2412-11390",
+      "title": "PAT: Privacy-Preserving Adversarial Transfer for Accurate, Robust and Privacy-Preserving EEG Decoding",
+      "authors": [
+        "Xiaoqing Chen",
+        "Tianwang Jia",
+        "Yunlu Tu",
+        "Dongrui Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11390",
+      "arxiv_url": "https://arxiv.org/abs/2412.11390",
+      "arxiv_id": "2412.11390",
+      "arxiv_first_submitted_at": "2024-12-16T02:37:38Z",
+      "arxiv_updated_at": "2026-04-11T02:33:41Z",
+      "arxiv_subjects": [
+        "cs.HC",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500471/image/image.jpg?Expires=1790835171&Signature=stkB8vBS7wHZSbaAAv6qdXVuJjsVFXRP3A34YV9JDQrzmcIKGm1Ao8qV3L6ils7MENn2xDiW9nHvZokSCX--dGXy~PzMA6-~l-wKU8vQoiZcuHJAOoA9e~WfdzkHzjA3QzVzDwPxrC2vlAeFDH4z03DwI06xeH~Sgqp44eD-CEw-EJ5ek8GsfW0e~Q5HL12YH-IrQtVCIXuHJQYdlZt41BrVRDrXsmmSyUUmJF0TFoamEAHmeFGhOaFxm5K7zBSvwF6g9Azd4vH80eOmORx12DKBlCzye2NovIYKqXdApmCRsLZgTqIxffciU-0RV1B4tyW4z6bslT9TMbVv74zeyw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500471,
+      "description_sha256": "0f4c979b3ab4c8eceb011b7dab2e8807b5b45ec93d53b6c0ddf116800b858e6a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.HC",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a federated source-free transfer learning framework, structured into two main vertical regions separated by a vertical black line. On the left side, within a large rectangular boundary, there are U distinct data sources labeled Source 1, Source 2, ..., Source U, arranged vertically. Each source is represented by an oval-shaped container with a unique border color: yellow for Source 1, light blue for Source 2, and purple for Source U. Inside each oval, two types of data points are shown: circular dots and square shapes, both colored to match the oval’s border, indicating heterogeneous data distributions across sources. From each source, a rightward arrow leads to a corresponding 'Client Model' — Client Model 1, Client Model 2, ..., Client Model U — each depicted as a small neural network diagram composed of interconnected black circles arranged in three layers (input, hidden, output). These client models are positioned immediately to the right of their respective sources.\n\nOn the right side of the vertical divider, outside the main rectangle, is the 'Global Model', represented as a larger neural network structure with four layers of nodes. The nodes are colored differently: orange on the first layer, blue on the second and third layers, green on the fourth layer, and red on the final output node, suggesting a more complex or aggregated model. Bidirectional arrows connect each client model to the global model, indicating iterative communication and parameter exchange during training. These arrows are parallel double-headed lines, emphasizing synchronization.\n\nAt the bottom right corner, adjacent to the vertical divider, a black padlock icon is placed, symbolizing privacy or security, reinforcing the federated nature of the setup where raw data remains local. The overall layout conveys a distributed learning process where multiple clients train locally using their private data sources and collaboratively update a shared global model without sharing raw data, aligning with the concept of source-free federated transfer learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

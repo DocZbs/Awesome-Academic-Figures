@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501987",
+  "record_sha256": "ce70fa4bd15e9f87407470af63c75467a6386b49210c16dff4328489ab3625a2",
+  "asset_sha256": "d53061bbe2d16f5b317875e142ee7bba38e7c059db72a0d46f06d0d0f20be015",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501987",
+    "title": {
+      "zh": "On the Compression of Language Models for Code: An Empirical Study on CodeBERT · 方法图",
+      "en": "On the Compression of Language Models for Code: An Empirical Study on CodeBERT"
+    },
+    "paper": {
+      "id": "arxiv-2412-13737",
+      "title": "On the Compression of Language Models for Code: An Empirical Study on CodeBERT",
+      "authors": [
+        "Giordano d'Aloisio",
+        "Luca Traini",
+        "Federica Sarro",
+        "Antinisca Di Marco"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13737",
+      "arxiv_url": "https://arxiv.org/abs/2412.13737",
+      "arxiv_id": "2412.13737",
+      "arxiv_first_submitted_at": "2024-12-18T11:14:30Z",
+      "arxiv_updated_at": "2024-12-18T11:14:30Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.AI",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501987/image/image.jpg?Expires=1790835209&Signature=L5Q16PBKxPsHTOyhpMdumG2ejLIk6g03YaAyZxEX2fRI8N2h0iFmWo77RO8kxbXE2mzi1XO3yQSwpJ80sJxmTP5fkItYM-fuMjPD72nifV6sMwOKKZ46fLC0SXoZFB9aUy-0ymTPERiB7vkPHE3kg40oCBcZomiVyijW-BG7pJBrITg3CiKp5LkjAdFz~xklthQuNMxReAMme0pFLN1hwrGhnZZU5jfxGPx1rdsMTR4QBER-MT5xK5xDuZNEZH1Z8TZmJTykLS88rj7chv-eLeTYHSocEAi1sR8mWQkeBfhQiO~zRIFZ6QhPQV7jgvsN6lex2eGznSN7W5gCvqVfLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501987,
+      "description_sha256": "897eecb300d54b48c51a4af20107e24a6684a6ea1dfdf589989badc07d607ddc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.AI",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an experimental methodology for fine-tuning and compressing CodeBERT models for multiple downstream tasks in software engineering. The overall layout is structured into two parallel workflows: one for fine-tuned models and another for compressed fine-tuned models, both originating from the same base model and evaluated on efficiency and effectiveness metrics.\n\n[1] Global Layout and Structure:\nThe diagram is organized horizontally into two main branches, each representing a distinct phase of model development. The top branch represents the 'Fine-Tuning Phase' followed by evaluation of 'Fine-Tuned Models'. The bottom branch represents the 'Compression Phase' applied to the fine-tuned models, resulting in 'Compressed Fine-Tuned Models', which are then also evaluated. The entire process begins with the base model, CodeBERT, located on the far left. Arrows indicate the flow of data and processing steps from left to right.\n\n[2] Visual Modules and Attributes:\nOn the far left, a circular icon labeled 'CodeBERT' serves as the starting point. This feeds into the 'Fine-Tuning Phase' box, which contains three rounded rectangular submodules: 'Fine-tune for Vulnerability Detection', 'Fine-tune for Code Summarization', and 'Fine-tune for Code Search'. Each submodule corresponds to a specific task. These three fine-tuning steps output three separate neural network representations, depicted as small interconnected node graphs, collected under the 'Fine-Tuned Models' box. These models are then directed to an 'Eval' box, which includes a magnifying glass icon and lists 'Efficiency' and 'Effectiveness' as evaluation criteria.\n\nBelow this, a downward arrow from the 'Fine-Tuning Phase' leads to the 'Compression Phase' box. This box contains three rounded rectangular submodules: 'Knowledge Distillation', 'Model Quantization', and 'Model Pruning'. These techniques are applied to the fine-tuned models, producing nine smaller neural network representations arranged in a 3x3 grid under the 'Compressed Fine-Tuned Models' box. These compressed models are then sent to a second 'Eval' box, identical in structure and content to the first, evaluating them on 'Efficiency' and 'Effectiveness'.\n\nAll boxes are outlined in black with bolded titles. The neural network icons are simple black-and-white diagrams of nodes connected by lines, symbolizing model architectures. The arrows are thick, black, and blocky, indicating directional flow.\n\n[3] Connections and Arrows:\nA large arrow points from the 'CodeBERT' icon to the 'Fine-Tuning Phase' box. From within the 'Fine-Tuning Phase', three separate arrows point to the three individual models in the 'Fine-Tuned Models' box. A single arrow connects the 'Fine-Tuned Models' box to the first 'Eval' box. A downward arrow connects the 'Fine-Tuning Phase' box to the 'Compression Phase' box. From the 'Compression Phase', three arrows point to the three rows of models in the 'Compressed Fine-Tuned Models' box. Finally, a single arrow connects the 'Compressed Fine-Tuned Models' box to the second 'Eval' box. All connections are unidirectional, indicating a sequential and modular pipeline.\n\nThe figure visually communicates a comparative study between standard fine-tuned models and their compressed counterparts across multiple software engineering tasks, with both sets being rigorously evaluated on performance and resource efficiency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

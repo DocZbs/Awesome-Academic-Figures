@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502065",
+  "record_sha256": "ec390df5d3d4902bd6feb6f45ad1b5775fc2074c4e1bb555f49ac765d83716eb",
+  "asset_sha256": "d6e165a7fe509173e10df5f8e9d87d1a0abf73ce10bb5c0a04cc8d4f04e108b8",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502065",
+    "title": {
+      "zh": "A Concept-Centric Approach to Multi-Modality Learning · 方法图",
+      "en": "A Concept-Centric Approach to Multi-Modality Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13847",
+      "title": "A Concept-Centric Approach to Multi-Modality Learning",
+      "authors": [
+        "Yuchong Geng",
+        "Ao Tang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13847",
+      "arxiv_url": "https://arxiv.org/abs/2412.13847",
+      "arxiv_id": "2412.13847",
+      "arxiv_first_submitted_at": "2024-12-18T13:40:21Z",
+      "arxiv_updated_at": "2026-01-22T20:02:38Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502065/image/image.jpg?Expires=1790835207&Signature=iXaZ-4piqJUMDiGIMQ1lwBE6QDCqXYcGp778T6SWDFqHwd8rVz3O5LDUmaps3kIrqlrSGwFxghHF1W9zln0hg88u5H4zB2qreHQSmFfbGszt0eFjSTZ~NtGjXbsnWckFs6BxkuMHErpP1SYB1tAm9NILpO2~DqjTwR-IuVDHxCubpqFhZJF3N7R1KpEIt3IpQuqugjvFHRna109bxqzUc1cGkqSev~jm~YocRSVWRn5C7JyzA7KtIGd8Rc8Y9hDbpI3BQxBDhM1y3GQ-u-g-UJro-f5KT~S83GXHijmUKldvGpa5VSUdCoBtM7rQhYXsTvGShBM21E8FJYXadFIK-w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502065,
+      "description_sha256": "2f99451964d40a8f6544ecd9d4d67ef90b6a267bf007f409a28bf51d770057a0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a visual question answering (VQA) framework that integrates vision-based object detection with symbolic reasoning through a structured concept space. The global layout is left-to-right, depicting a pipeline starting from an input image and question, progressing through vision processing and symbolic program generation, and ending with a final answer. On the far left, an 'Original CLEVR Image' is shown containing multiple 3D-rendered objects: a blue cube, red cube, green cube, and yellow cylinder. This image is denoted as X_i and is fed into a blue trapezoidal module labeled f_detection, representing an object detection model. This model outputs a set of detected objects, represented as four distinct 3D shapes (teal cube, red cube, yellow cylinder, blue cube), each labeled x_1^vision, x_2^vision, x_3^vision, x_4^vision, enclosed within a dashed blue rectangle. These detected objects are then passed to another blue trapezoidal module labeled f_vision, which acts as a vision-modality projection model. The output of this module is denoted as Ω̂_i, which feeds into a large green-dashed rectangular region labeled 'Concept Space' and 'Symbolic Programs'. Within this region, the concept space is visually represented by nested rectangles of varying colors (peach, light green, beige, cream), each containing a blue rectangle labeled Ω_1^vision, Ω_2^vision, Ω_3^vision, Ω_4^vision, indicating projected representations of the detected objects. To the right of the concept space, a flowchart of symbolic programs is shown, consisting of rounded rectangles connected by arrows: 'scene' → 'filter_shape' → 'unique' → 'query_color', culminating in the output 'Yellow' labeled as o_i. Simultaneously, a natural language question, 'What is the color of the cylinder object?', denoted as q_i, is input into a yellow trapezoidal module labeled π, representing a program generator. This module outputs a sequence of symbolic programs, denoted as ŷ_i, which is connected via a dashed yellow arrow to the 'scene' node in the symbolic programs flowchart, indicating that the generated program guides the reasoning process over the concept space. The entire framework demonstrates how visual inputs and linguistic queries are jointly processed to derive a symbolic answer through structured reasoning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

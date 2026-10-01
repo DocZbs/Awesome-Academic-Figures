@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500691",
+  "record_sha256": "02c2bd1b9c0567f4cd357e3f467a0ec4dfcc13d63b8dbfd0efae9b7a2885b15d",
+  "asset_sha256": "e52ffea8ae83d229ef621a88a935bc849e90d9abb21ba222a7c68385bbe31348",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500691",
+    "title": {
+      "zh": "DINO-Foresight: Looking into the Future with DINO · 方法图",
+      "en": "DINO-Foresight: Looking into the Future with DINO"
+    },
+    "paper": {
+      "id": "arxiv-2412-11673",
+      "title": "DINO-Foresight: Looking into the Future with DINO",
+      "authors": [
+        "Efstathios Karypidis",
+        "Ioannis Kakogeorgiou",
+        "Spyros Gidaris",
+        "Nikos Komodakis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11673",
+      "arxiv_url": "https://arxiv.org/abs/2412.11673",
+      "arxiv_id": "2412.11673",
+      "arxiv_first_submitted_at": "2024-12-16T11:26:46Z",
+      "arxiv_updated_at": "2025-11-28T18:40:16Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500691/image/image.jpg?Expires=1790835174&Signature=GFHRymlH27nZpCqhsVlCxvK7A1nBbPJDUhe-osbFuUsQE~4tMyy~CdICyws4QBuD5pmkF-NvwIlXS0yfv3dPpwfekFrmRZr9G9cV8Vp8qgqf55IeMk6FP~mrnCJQvekthVY28CrRXwgbRqUPo92o0l2I-nL2lpLT2Q0nkEGJFJloDTjdcTabYgLUT1zZO7~U1IwFrb56bWBDN~dddDmCcpuzLgFfYxCdoUMYCBWjDeAxkCd2l~UaUUcluc75PvxiVr6z9cfl5602sIgyZ6D~K9e9W8jq~TEz0Th-qNp~joOeo9AStnvNTcFjfgp~maU9~swm8lofuPTAuwdBIPO~5w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500691,
+      "description_sha256": "b089432342f2f8787f291af0c85dab9ca9c62a5e91f8dc72c6d02b6f2a659742",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a self-supervised future prediction framework using a Masked Feature Transformer. The global layout is divided into two main sections: a training-time process (enclosed in a red dashed box labeled 'At Train-Time') and a test-time inference setup (enclosed in a teal dashed box labeled 'Library of Prediction Heads At Test-Time'). The left side shows input context frames from time t−Nc to t, and a future frame at t+1, all depicted as street-view images with timestamps. These frames are processed by identical blue trapezoidal modules labeled 'Visual Encoder', each marked with a snowflake icon indicating a frozen or pre-trained model. The output of each encoder is a grid of light blue feature tokens. For the context frames, some of these tokens are masked (represented by gray squares with 'M'), and the entire sequence of features (both unmasked and masked) is fed into a large pink rectangular block labeled 'Masked Feature Transformer', which contains a flame icon symbolizing the active learning component. This transformer outputs a set of greenish-gray 'Predicted Features' in a similar grid format. During training, the predicted features are compared to the features extracted from the future frame (t+1) via a yellow rectangular module labeled 'SmoothL1', which computes the loss. At test time, the predicted features are passed to multiple task-specific 'Head' modules within the teal box. Each head is a trapezoid with a snowflake icon, colored differently (purple, cyan, lavender), and connected to an example output image: 'Semantic Segmentation' (colored segmentation map), 'Depth Prediction' (heat-map style depth image), and 'Surface Normals' (color-coded normal vectors). The connections are shown as black arrows, indicating the flow of data from inputs through encoders, the transformer, and finally to the prediction heads. The figure emphasizes the modularity of the system, where a single feature prediction model enables diverse downstream tasks without retraining."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

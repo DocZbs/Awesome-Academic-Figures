@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500897",
+  "record_sha256": "161e6771d83db9bd9db8eb6f66b8fe6b4da923208c9562e2a4d40b4f6240b428",
+  "asset_sha256": "ce44463825a6ef2b2f0a2c97b72eab9c63393cbd570b8202dbfe8a01642d802c",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500897",
+    "title": {
+      "zh": "SciFaultyQA: Benchmarking LLMs on Faulty Science Question Detection with a GAN-Inspired Approach to Synthetic Dataset Generation · 方法图",
+      "en": "SciFaultyQA: Benchmarking LLMs on Faulty Science Question Detection with a GAN-Inspired Approach to Synthetic Dataset Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11988",
+      "title": "SciFaultyQA: Benchmarking LLMs on Faulty Science Question Detection with a GAN-Inspired Approach to Synthetic Dataset Generation",
+      "authors": [
+        "Debarshi Kundu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11988",
+      "arxiv_url": "https://arxiv.org/abs/2412.11988",
+      "arxiv_id": "2412.11988",
+      "arxiv_first_submitted_at": "2024-12-16T17:11:48Z",
+      "arxiv_updated_at": "2024-12-16T17:11:48Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500897/image/image.jpg?Expires=1790835177&Signature=cWuw1WXdm-iSo053XPOkatLD9Lkk8cYfbf3QZmtPhHfzEM-VnWBtAJQ6bYBv0kk7t0Wlwnk300Pwlr~5WWYn~46q8D~JEO2UcnaaOg2z7HvXCRFgajkHLtVrp0j~cwIiCf9cmQRBJToZniZ8oD-46RGmNTm7pURJDhJX5UmA0SRhehp2-EZlQiNmYp6XTGa9Q9MqXmviw8yJR~tR5-tW~4iB0-7IX6MnUHIGbktS5W0x0smbyaL01L3F1NCCWd7JE9GcRrzN8pQBQlPRMiHzQVb6hlk5KQ644lkFacTfTcGTuvjaZ6AeE8dq~chnPjWkdIMrB1xKdQxF3ZMw2Pw5aQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500897,
+      "description_sha256": "88bdf4fcafd869f48409fbf3d1c23a4976fa931f4ee304267e32127b87ad3b3a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a GAN-inspired synthetic data generation framework, structured as a generative adversarial network (GAN) architecture adapted for large language models (LLMs). The global layout is horizontally oriented, with three generator modules positioned on the left side arranged vertically, and a single discriminator module located on the right side. All components are represented as rounded rectangular boxes filled with a solid blue color and outlined with a darker blue border, with white text inside indicating their roles.\n\nOn the left, there are three identical generator modules labeled 'LLM_Gen a', 'LLM_Gen b', and 'LLM_Gen c', stacked vertically. These represent distinct LLM-based generators, possibly trained with different configurations or initializations, designed to produce synthetic data. Each generator outputs to the discriminator via a thin, light-blue arrow pointing rightward toward the central discriminator module.\n\nThe discriminator, labeled 'LLM_Dis', is a single, wider rounded rectangle positioned to the right of the generators. It receives input from all three generators simultaneously through individual arrows, indicating that it evaluates the authenticity of the generated data from each source. The discriminator's role is to distinguish between real and synthetic data, providing feedback to the generators during training.\n\nA critical feature of the architecture is the feedback loop: a single, long, light-blue arrow extends from the output of the discriminator back to the inputs of all three generator modules. This closed-loop connection signifies an adversarial training process where the discriminator’s evaluation (e.g., confidence scores or gradients) is used to update the generators, enabling them to improve their ability to produce realistic synthetic data over time. The feedback loop is drawn as a continuous line originating from the right edge of the discriminator, curving downward and then leftward to connect to the top of the generator stack, visually emphasizing the iterative nature of the training.\n\nAll connections are represented by simple, unidirectional arrows with solid lines and small arrowheads, indicating the direction of data or signal flow. The overall structure reflects a standard GAN topology but specialized for LLMs, where multiple generators compete to fool a shared discriminator, which in turn guides their improvement. The visual design is clean and minimalistic, using consistent colors and shapes to emphasize modularity and the adversarial relationship between components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

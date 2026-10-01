@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500283",
+  "record_sha256": "c122d4ef298227fd1e401474b4ec87fb37a7aa571bc4bc32dbdb0f5d2d1e7a8a",
+  "asset_sha256": "02319df79a31c997b0d036461a2c924bcc6b102922b0676b5df1a9f47a95f3b0",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500283",
+    "title": {
+      "zh": "Deployment Pipeline from Rockpool to Xylo for Edge Computing · 方法图",
+      "en": "Deployment Pipeline from Rockpool to Xylo for Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-11047",
+      "title": "Deployment Pipeline from Rockpool to Xylo for Edge Computing",
+      "authors": [
+        "Peng Zhou",
+        "Dylan R. Muir"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_id": "2412.11047",
+      "arxiv_first_submitted_at": "2024-12-15T04:19:10Z",
+      "arxiv_updated_at": "2024-12-15T04:19:10Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500283/image/image.jpg?Expires=1790835164&Signature=Cf0-Nyc4dMgFluFQCgid1BqE5c7euz1JpbiS85OaNzzTxMBBpy2eDNXlje~8nkcqtJ8gKL~VPWj9mW1U0yB4rOYW9-BMfbAy3lZAE7YmANib4vgvb7vb-RnBUVNDP~wlDvN5dqyjgI~4~FjOjC3r0TVIEnupSH-E9eih3-p7GkcGl8skNiITc6nlc1kcj3hyOrVfcUwMQkPUUF8O1ynAQkYRlStw3x~3KWnXnyDqhok45u071YBmBfeDZ~gWfODi-6RGVd-L-JKkPO2vxtcEs9fK2F0G2dLBEGiupBLZvgeept2vvXMAGXlGcAvjSQJ~hXalFQ-cA89DbkqQzjxFsQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500283,
+      "description_sha256": "375bd77f687369f206300ff8d1f61b8874af86f3966e879172390cbcea69e8ad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a GraphHolder, which encapsulates a network composed of interconnected GraphModules and GraphNodes, demonstrating the flow and management of data within the system. The global layout is a horizontal pipeline enclosed within a large rectangular boundary labeled 'GraphHolder'. On the far left, a vertical blue rectangle labeled 'input_nodes' serves as the entry point for data, feeding into a stack of gray circular nodes labeled 'GraphNodes'. These nodes are connected via dashed lines to a rectangular box labeled 'GraphModule', which contains two internal components: a light blue square on the left and a purple square on the right. The GraphModule processes the incoming data from the GraphNodes and outputs to another stack of gray circular GraphNodes positioned centrally. From this central stack, multiple dashed lines radiate outward to two separate GraphModules arranged vertically on the right side of the diagram. Each of these GraphModules mirrors the structure of the first, containing a light blue square and a purple square. The outputs from both right-side GraphModules converge onto a final vertical stack of gray circular GraphNodes, labeled 'GraphNodes', which is shaded with a purple background and marked with a label 'output_nodes' at the bottom. All connections between components are represented by dashed lines with arrowheads indicating directionality, suggesting a flow of information or computation. The visual modules are distinguished by shape and color: GraphNodes are gray circles with dashed outlines, GraphModules are white rectangles with internal colored squares (light blue and purple), and input/output nodes are highlighted with solid blue and purple backgrounds respectively. The diagram emphasizes a modular, hierarchical data processing pipeline where GraphNodes represent data points or states, and GraphModules represent processing units that transform these states through successive stages. The overall structure suggests a multi-stage graph-based computational framework where data propagates through layers of modules and nodes, with parallel processing paths converging toward a final output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

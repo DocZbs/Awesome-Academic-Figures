@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501087",
+  "record_sha256": "e7d6c56e830c3e7ea84f562c9f7af4b70b8dc1580ef72f8e7adb8692cc62b116",
+  "asset_sha256": "78ffe06f938f812a04530b1fed82be5a0c73ec717103207990b8a1a28e0cbcab",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501087",
+    "title": {
+      "zh": "OmniPrism: Learning Disentangled Visual Concept for Image Generation · 方法图",
+      "en": "OmniPrism: Learning Disentangled Visual Concept for Image Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12242",
+      "title": "OmniPrism: Learning Disentangled Visual Concept for Image Generation",
+      "authors": [
+        "Yangyang Li",
+        "Daqing Liu",
+        "Wu Liu",
+        "Allen He",
+        "Xinchen Liu",
+        "Yongdong Zhang",
+        "Guoqing Jin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12242",
+      "arxiv_url": "https://arxiv.org/abs/2412.12242",
+      "arxiv_id": "2412.12242",
+      "arxiv_first_submitted_at": "2024-12-16T18:59:52Z",
+      "arxiv_updated_at": "2026-04-10T10:12:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501087/image/image.jpg?Expires=1790835184&Signature=t9UPFKBi01ACEvDecN9Z~g7aGah4Gi2xRUabfVgtr76QecstABAXctBpft4lTfSfLYWIxIjs7YDd83o4~yGZ-SsaG0qfH4GwqF0EWBEOJjMrz0URnp31bjss-lHA-3ZP0PTzYkaY9hRrB6scxE09CeJ~-M3j9c9pxsbiDu8c23zKXtzxsSH08Idxik6eCalhdXf4E5y4wyqqF8jm53-q~BRmkkdhrCGtqv3D4xSk5vuTEybo1Bs4a3wWUeZODNm9C~H8txpFbSXxQgOOqZFoR0akF8hOvuHRwuaVJZp3E3fjN9NMo6AJ~K1oprV1kzQ~ARNTuqVBysnsoiv016q8EA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501087,
+      "description_sha256": "436d667cff57b5b4299ee3d6be83849cb8c0ae7c665a74d22c801eab03389b19",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the framework of OmniPrism, divided into two main parts: (a) Inference Pipeline and (b) Contrastive Orthogonal Disentangled Learning. The global layout is split vertically by a dashed line, with (a) on the left depicting the generative process and (b) on the right showing the training objective and concept disentanglement mechanism.\n\nIn part (a), the inference pipeline begins with three inputs: a reference image I_ref, a target prompt T_tar, and concept guidance T_cg (e.g., 'chef'). The reference image passes through an Image Encoder (beige box with snowflake icon indicating frozen weights), while the target prompt and concept guidance pass through separate Text Encoders (also beige with snowflake icons). The output of the concept guidance encoder, f_cg, is concatenated with a learnable query q (represented as a stack of colored rectangles) and fed into the Concept Extractor module. This module consists of N identical blocks, each containing Self Attention, Cross Attention, and FFN layers (light pink boxes), forming a transformer-like structure. The Concept Extractor outputs concept representations f_cpt. These are then used in additional Cross Attention layers (purple boxes with flame icon indicating trainable weights) within the Diffusion Model (large light blue region labeled 'Diffusion Model'), which also receives latent input x_t from previous steps. Each block in the Diffusion Model has a corresponding learnable block embedding e_i (stacked colored rectangles), which is added to the query q via an 'Add' operation to align the concept domain with the specific diffusion block. The final output is x_{t-1}, the generated image at the previous timestep.\n\nPart (b) details the Contrastive Orthogonal Disentangled (COD) Learning mechanism. It shows how the Concept Extractor processes both the reference image I_ref with query q and an anti-query q_a (stack of different colored rectangles) to extract Reference Anti-Concept f^a_cpt and Reference Concept f_cpt. Similarly, it processes the target image I_tar with query q to extract Target Concept f^tar_cpt. These concept embeddings are fed into a loss function L_COD, which enforces similarity between f_cpt and f^tar_cpt and orthogonality between f_cpt and f^a_cpt. The Concept Extractor is shown as a large light blue box with a flame icon, indicating it is trainable. A legend at the bottom clarifies symbols: flame = trainable, snowflake = frozen, plus sign = concatenate. Block Embeddings e1 to eN are depicted as stacks of colored rectangles, representing learnable parameters added to the query for alignment across diffusion blocks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

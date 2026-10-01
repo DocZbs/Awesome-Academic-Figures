@@ -1,0 +1,19 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Adaptive Concept Bottleneck for Foundation Models Under Distribution Shifts — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14097
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of CONDA, a domain adaptation framework for concept-based models (CBMs), structured into two main horizontal sections: the Source Domain (top) and Target Domain (bottom), separated by a dashed line. In the Source Domain, input images (x_s, y_s) are processed by a Frozen Foundation Model φ(x), represented as a light blue rectangle, which outputs a feature vector z = φ(x) — depicted as a vertical stack of blue squares. This feature vector feeds into a Concept Bottleneck C_s (light blue trapezoid, m × d), producing Concept Scores v_Cs(x) (green vertical bar, m × 1). These scores are then passed to a Label Predictor W_s, b_s (light blue trapezoid, L × m), generating Prediction Logits f_s^(cbm)(x) (pink vertical bar). A legend on the right indicates color coding: light blue for 'Frozen' components, light green for 'Adapted: CSA', pink for 'Adapted: LPA', and yellow for 'Adapted: RCB'.
+
+In the Target Domain, input images x_t are similarly processed by a Frozen Foundation Model φ(x) (light blue rectangle), yielding z = φ(x) (blue stack, d × 1). The feature vector splits into two parallel branches. The main branch uses a Concept Bottleneck C (light green trapezoid, m × d), producing v_C(x) (green bar, m × 1), which feeds into a Label Predictor W, b (pink trapezoid, L × m), outputting prediction logits. The residual branch uses a smaller Concept Bottleneck Ĉ (yellow trapezoid, r × d), producing v_Ĉ(x) (yellow bar, r × 1), which feeds into a Label Predictor Ŵ, b̂ (yellow trapezoid, L × r). The outputs of both predictors are summed via a plus symbol to produce the final target prediction logits f_t^(cbm)(x). A text box on the right specifies: feature dimension: d, # classes: L, # main concepts: m, # residual concepts: r (≪ m). The figure visually emphasizes that CSA adapts the main concept bottleneck (green), LPA adapts the main label predictor (pink), and RCB adapts the residual branch (yellow). The overall layout follows a left-to-right data flow, with clear separation between source and target domains, and modular representation of each component with labeled dimensions and color-coded adaptation status.

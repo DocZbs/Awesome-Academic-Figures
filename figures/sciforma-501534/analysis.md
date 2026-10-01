@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12953
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a transformation process in a Mixture-of-Experts (MoE) architecture, specifically focusing on expert utilization and optimization through caching. The global layout is divided into two main horizontal sections: the top row represents the original MoE structure with dynamic expert selection, while the bottom row shows the optimized, fused version after applying caching. A large black arrow labeled 'Caching' connects the two rows, indicating the transformation from the original to the optimized structure.
+
+In the top row, three vertical rectangular blocks represent different time steps or noise levels, labeled σ_{i+1}, σ_i, and σ_{i−1} from left to right. Each block contains multiple rows of colored rounded rectangles (experts), with each row having four experts. The experts vary in color (e.g., teal, red, green, pink, orange, light blue), indicating different expert types. Between each pair of adjacent experts in a row, there is a short horizontal red line (router), signifying the routing mechanism that selects which experts to activate. In some rows, certain experts are outlined in black, indicating they are selected for activation at that time step. The routers are consistently present, showing that routing decisions are made per time step. The figure includes ellipses (...) on both ends of the top row, suggesting that this sequence extends beyond the shown time steps.
+
+A legend to the right of the top row clarifies the visual elements: a multicolored circle labeled 'Expert' and a red horizontal bar labeled 'Router'. Below this, the word 'Caching' is written, emphasizing the core operation being applied.
+
+The bottom row displays the result of the caching process. It also contains three vertical blocks corresponding to the same time steps σ_{i+1}, σ_i, and σ_{i−1}. However, these blocks now contain fewer, larger, and vertically stacked experts. Each block has five rows, with two experts per row, arranged in a grid. The colors of the experts are consistent with those in the top row, but the structure is simplified—there are no routers, and the experts are fused into a compact form. This reflects the optimization where frequently co-activated experts are merged into a single fused expert module, reducing computational overhead. The ellipses (...) on both ends of the bottom row indicate continuation of the sequence.
+
+The overall workflow is as follows: at each time step, the router selects a subset of experts (k=2, as noted in the caption) based on the input noise level. Since routing is deterministic per time step, the same set of experts is repeatedly activated across identical inputs. Caching leverages this determinism to precompute and fuse these co-activated experts into a single, more efficient module. The resulting architecture in the bottom row eliminates redundant routing and reduces inference cost, achieving a more streamlined and faster network. The figure thus visually communicates how caching transforms a dynamic, router-dependent MoE into a static, fused expert network.

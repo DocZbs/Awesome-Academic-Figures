@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-500038",
+  "record_sha256": "918a9a1920d4a309a974e544f6d23e7b1d28e886a860003ea2672d9a1e7452cb",
+  "asset_sha256": "f70cfc742a78173b4fec5c047d3581f5c15cbb76b770e67cf60b43846df1c6aa",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500038",
+    "title": {
+      "zh": "MEATRD: Multimodal Anomalous Tissue Region Detection Enhanced with Spatial Transcriptomics · 方法图",
+      "en": "MEATRD: Multimodal Anomalous Tissue Region Detection Enhanced with Spatial Transcriptomics"
+    },
+    "paper": {
+      "id": "arxiv-2412-10659",
+      "title": "MEATRD: Multimodal Anomalous Tissue Region Detection Enhanced with Spatial Transcriptomics",
+      "authors": [
+        "Kaichen Xu",
+        "Qilong Wu",
+        "Yan Lu",
+        "Yinan Zheng",
+        "Wenlin Li",
+        "Xingjie Tang",
+        "Jun Wang",
+        "Xiaobo Sun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10659",
+      "arxiv_url": "https://arxiv.org/abs/2412.10659",
+      "arxiv_id": "2412.10659",
+      "arxiv_first_submitted_at": "2024-12-14T03:09:04Z",
+      "arxiv_updated_at": "2024-12-14T03:09:04Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500038/image/image.jpg?Expires=1790835163&Signature=EnD5lc9HxtTJJao7kuslSFMcWpatyhu4lfRP4GSy4--WDokxgBPUjNlD-HhbLXBfcVlrFrxm-yB2uB9wIMstOW~7APcjGDo3guZ6reo9E97-LovHg0Suzn~1q~li-UJ0TpiX37MDyFUOc3jsSJNv51sv0tBqxPJdYGZ41UTjVm2o7qCQjnIPmbNv-~SVZhMequxR1y7DodWPqEDPZ17pnTKnXS26aH2mhHVT6QGahwu276RaFjxktzwvNfMWOe-yHKKIJrw6dhQspBqtS2bMBh1RXp034grygRiXt71e8dql9Qv0oPNoRKIn3f7CzP-NEy7hr1pozuAZqESUyKN8Xg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500038,
+      "description_sha256": "4b8c8d84a74bb1f08236029df792f93f4230ec061174e2bbf859d519817f5891",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of MEATRD, a multimodal framework for anomaly detection in histology images using gene expression data, structured into three main stages: Visual Representation Learning, Multimodal Reconstruction, and Anomaly Discrimination.\n\nStage I: Visual Representation Learning begins with a histology image, which is divided into image patches. These patches are processed by a Mobile-UNet model, depicted as a series of orange and blue bars representing convolutional layers, with a shortcut connection shown as an arrow bypassing some layers. The output is reconstructed patches, visually represented as a stack of similar image tiles, indicating the autoencoding process for learning visual features.\n\nStage II: Multimodal Reconstruction is the core of the framework and consists of two major components: Feature Extraction and Multimodal Embedding Fusion. In Feature Extraction, image patches are fed into a Mobile-UNet Encoder (shown as orange blocks), producing feature maps. Simultaneously, gene expression data (represented as green and white stacked bars) is processed by an MLP-based Gene Encoder (light green box), generating gene embeddings. Both modalities are then combined into a Local Subgraph, where nodes represent data points and edges indicate relationships; one node is marked as 'Masked Target Node' (dark gray circle), indicating the focus of reconstruction. This subgraph feeds into the MGDAT Network, which contains an MGDAT Block. Within this block, image and gene embeddings are concatenated and passed through a Multimodal Bottleneck Transformer (yellow box). The outputs are then processed by two GAT (Graph Attention Network) modules—one for fused image embedding (pink box) and one for fused gene embedding (teal box)—which are tied together via a dashed line, indicating shared parameters or alignment. The fused embeddings are then passed to a Decoder composed of a ResNet Decoder (light yellow blocks, with a flame icon symbolizing reconstruction) and a GNN-based Gene Decoder (light green box), which reconstructs both image and gene data. The entire MGDAT network is applied N times, as indicated by the 'Nx' label on the arrow from the MGDAT Block to the Decoder.\n\nStage III: Anomaly Discrimination takes the original query spots (histology image patches and associated gene expression) and the reconstructed query spots (output from Stage II) as inputs. Each is processed by a separate branch containing a ResNet Image Encoder (peach box) and an MLP Gene Encoder (light green box), whose outputs are fused. The two branches are tied, meaning they share weights, ensuring consistent feature extraction. The difference between the latent representations of original and reconstructed data is computed as Latent Reconstruction Error, visualized as a row of colored circles (red, orange, yellow). This error is then fed into an SVDD (Support Vector Data Description) module, which classifies whether the input spot is anomalous based on deviation from normal patterns. The final output is a binary anomaly score.\n\nThe overall layout is horizontal and modular, with clear stage divisions. Arrows indicate data flow, with solid arrows for direct processing and dashed arrows for parameter tying or conceptual links. Colors are used consistently: orange for image-related components, green for gene-related components, pink for image fusion, teal for gene fusion, and yellow for transformer and decoder elements. Text labels are placed directly on or near each component for clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

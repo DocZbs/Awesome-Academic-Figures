@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501615",
+  "record_sha256": "83d44ed651a5eef413dff3132f25461a4fdc730b13048f2deac3b81ce715fcc3",
+  "asset_sha256": "f33cade7b9d013540e2418253c562956fbd58e32d7f811fbc7845b33d85b1643",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501615",
+    "title": {
+      "zh": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method · 方法图",
+      "en": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method"
+    },
+    "paper": {
+      "id": "arxiv-2412-13134",
+      "title": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method",
+      "authors": [
+        "Jiate Li",
+        "Meng Pang",
+        "Binghui Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_id": "2412.13134",
+      "arxiv_first_submitted_at": "2024-12-17T17:53:32Z",
+      "arxiv_updated_at": "2024-12-17T17:53:32Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501615/image/image.jpg?Expires=1790835197&Signature=s4967klKRudctUA3a2Fz5eB5H79IT4e5dfGg1icbrUcMsZ5uliTUof5shQ8iNafmzz-If5Z7FEG0l-Zn6DKckwqRoPJmKt08AtAdbQ7poxpi7jYHAzHU0CLbvgITdannE-OK-sKL3uDXLdaOLe9UVCSuknOzyCpbtgm8WpJ9LwXg1~qVHbkDVxIwAT-ra6ImEvPKNeqIV9sLE~kEvirAyOVwBS3QQJ643VsY1O3c7wtExhv56XcQ-JXa9wBROqhz2R6p096r3rmYZJ-ZbQa~gBUFjIcG6TMvCxSH4KbjdyvDXFutduoIPRkyTnRgSWJqhKXgbjSWNuzDF2zaWnAy-Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501615,
+      "description_sha256": "de534be43c564dc2b90af293108d3bba1fdca0671b239d47e7d0f07a205e19f3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a training pipeline for a Q-network integrated with a GSE (Global State Embedding) module, structured into three main stages labeled a, b, and c, each enclosed in distinct dashed borders. The global layout is horizontal and modular, progressing from left to right and top to bottom, with data flow indicated by arrows connecting components.\n\nStage a, outlined in red dashed lines, is titled 'Obtain the GSE state for critic'. It begins with an 'Embedding Sequence Batch' represented as a series of light cyan rectangular blocks, each containing a colored dot (blue, purple, pink), denoting individual sequence embeddings. These are fed into an LSTM-q module, depicted as stacked maroon rectangles, which processes the sequence to produce a GSE_q output — a set of three maroon blocks with corresponding colored dots. This output is labeled S^q and flows downward to stage b.\n\nStage b, outlined in yellow dashed lines, is titled 'Obtain Q value with GSE state and action batch'. It receives two inputs: the S^q state from stage a and an 'Action Batch' (a_b), shown as three beige rectangular blocks with colored dots, generated from a 'Shared Buffer Under Multi-environment' — a vertical stack of three colored squares (blue, purple, pink) feeding into a tall white rectangle. These two inputs are combined and fed into a 'Q network', visualized as a multi-layered neural network with interconnected white circles. The output of this network is 'Q Values', represented as three pink rectangular blocks with colored dots, which then proceed to stage c.\n\nStage c, titled 'Train the Q network and LSTM-q module', involves computing a loss function. The Q Values from stage b are compared with a 'Reward Batch' (r_b), shown as three light pink rectangular blocks with colored dots, using an MSE (Mean Squared Error) node — a black circle labeled 'MSE'. The resulting loss is defined as MSE(Q, r_b). This loss is used to update both the Q network (Q -> Q') and the LSTM-q module (LSTM-q -> LSTM-q'), as indicated by upward arrows from the MSE node to a box listing these updates. The entire process forms a closed-loop training cycle where the Q network and LSTM-q are iteratively refined based on the discrepancy between predicted Q values and actual rewards.\n\nAll components are clearly labeled with text annotations, and the color-coding of dots within blocks consistently tracks the correspondence of data across modules. The diagram uses solid black arrows to indicate data flow and dashed borders to group related operations, providing a clear, step-by-step visualization of the training procedure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

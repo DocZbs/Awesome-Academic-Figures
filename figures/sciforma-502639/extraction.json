@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502639",
+  "record_sha256": "cefde47c0967ce62be0393cce7faa50afc509012b926d9463f91fd1b5a93db91",
+  "asset_sha256": "2f7997dbf5873686414ab91e9bd7bab12d12eb0e96324bda706fae236eb69642",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502639",
+    "title": {
+      "zh": "RobustFT: Robust Supervised Fine-tuning for Large Language Models under Noisy Response · 方法图",
+      "en": "RobustFT: Robust Supervised Fine-tuning for Large Language Models under Noisy Response"
+    },
+    "paper": {
+      "id": "arxiv-2412-14922",
+      "title": "RobustFT: Robust Supervised Fine-tuning for Large Language Models under Noisy Response",
+      "authors": [
+        "Junyu Luo",
+        "Xiao Luo",
+        "Kaize Ding",
+        "Jingyang Yuan",
+        "Zhiping Xiao",
+        "Ming Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14922",
+      "arxiv_url": "https://arxiv.org/abs/2412.14922",
+      "arxiv_id": "2412.14922",
+      "arxiv_first_submitted_at": "2024-12-19T15:00:18Z",
+      "arxiv_updated_at": "2024-12-19T15:00:18Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502639/image/image.jpg?Expires=1790835223&Signature=E99ziDikya8mT97oWezOPHWGGg-8MlCQGBE4hK5LpmfUp5GANm~jjLDDPT5qhk4qe7ET6uCsYLJBrioW4Xxhp~TW-hpthYhmckpMPe363zG9sslYkwidepiUm37POuRuY~ETM~uHl8eFh5PV82w3bPFy4HQ1CazVQVPzIa2bA-eeyCNYpLMFrc-rMJNueCGnhGgg-bl4YmYzQEIzDnXd~leibGaXMhzyHW0D8uaOi0VcHhzPYikzdRXL3jxL4j9YwAsdUPQO~W1aC5eQXCNTLf6y-e2VMQ~VerzRxBfYzIleUIWGlqWvJ7kyEhF90Z-9DNkkxDlXAiT7H58H8ASlfw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502639,
+      "description_sha256": "8df117d7a175bfc8550932958bf9ecfdd2a25e895caa23b9f1c1bd9f8f7b5bf2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a two-stage noise detection-and-denoising framework designed to enhance model performance by cleaning noisy downstream data before fine-tuning. The global layout is structured horizontally from left to right, divided into four main stages: Downstream Scenarios, Noise Detection, Denoising, and Downstream Fine-tuning. Each stage is visually segmented with distinct background colors—gray for Downstream Scenarios, light blue for Noise Detection, light green for Denoising, and beige for the final fine-tuning step. The entire process flows from raw, potentially noisy data on the left to clean, denoised data ready for fine-tuning on the right.\n\nIn the Downstream Scenarios section, multiple query-answer pairs are shown as stacked rounded rectangles labeled 'Query' and 'Potential Answer', representing downstream data sourced from human annotation, collection in scenarios, or self-evolution. A note indicates this data 'Contain Noise!'. An arrow leads from this data to the Noise Detection stage, passing through a box labeled 'Expert Agents', suggesting these agents process the data.\n\nThe Noise Detection stage features two types of LLMs: 'Vanilla LLM' and 'Reasoning Enhanced LLM'. Both receive the query and generate responses; the Reasoning Enhanced LLM additionally performs inference and reflection steps, depicted with icons of a robot head and a brain. Outputs from both models feed into a central 'Checker' module, represented by a gear icon with a checkmark. The Checker evaluates responses and classifies each data point as either 'Clean' (green border) or 'Noisy' (orange border), based on the outputs from the expert agents.\n\nThe Denoising stage begins with the Clean and Noisy data streams. For Clean data, the query and potential answer are passed directly forward. For Noisy data, a 'Context-enhanced Relabeling' process is initiated. This involves generating a new response via reasoning (indicated by a speech bubble with a person icon), which is then evaluated by a 'Reviewer' module (hexagon icon). The Reviewer produces multiple responses, which are subjected to 'Multi-view Entropy Selection'. This selection mechanism uses entropy calculation, shown with the formula \\(\\frac{1}{N}\\sum_{j=1}^{N}\\log p(y_j|q_i,y_{i<j})\\), to rank responses. Green bars represent selected responses, while gray bars indicate discarded ones. The selected responses are marked as 'Selected' and used to generate a new reference label for the noisy data. This reference is combined with the original query and potential answer to produce a denoised version.\n\nFinally, the Denoised data, consisting of clean query-response pairs, is fed into the 'Downstream Fine-tuning' module, symbolized by a flame icon and an upward arrow, indicating improved model training. Bidirectional arrows between Denoised data and Downstream Fine-tuning suggest iterative refinement. The entire pipeline emphasizes collaborative learning among expert LLMs during detection and context-aware reasoning during denoising to ensure high-quality data for downstream tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

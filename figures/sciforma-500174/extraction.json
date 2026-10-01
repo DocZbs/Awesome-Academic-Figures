@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500174",
+  "record_sha256": "ac88581e69edcd3a521ba5471f60583d5eba2836a0336dc3368921f9f35b0d23",
+  "asset_sha256": "17f2d4bae985fdeed1ead5cdc6d43b2c09d14d57223e8d370f17389bf54894f4",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500174",
+    "title": {
+      "zh": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos · 方法图",
+      "en": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos"
+    },
+    "paper": {
+      "id": "arxiv-2412-10861",
+      "title": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos",
+      "authors": [
+        "Qingyu Xu",
+        "Longguang Wang",
+        "Weidong Sheng",
+        "Yingqian Wang",
+        "Chao Xiao",
+        "Chao Ma",
+        "Wei An"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_id": "2412.10861",
+      "arxiv_first_submitted_at": "2024-12-14T15:17:49Z",
+      "arxiv_updated_at": "2024-12-14T15:17:49Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500174/image/image.jpg?Expires=1790835166&Signature=mcuGxnUWo-l6ghHLXcC4s0rqyJ8ZMG5qqdTUawtgFehHMWipl2aqV9DhI9NvR~JPK4RUkuTJQdWo3G5Iafd69WAnuD-5kyIDHZYPcrHenTLmVC5W4RMekvtxwAJYYvq6QDRqH9AZg8Z4xFlSS8FSTu8h~rsZcKr29QgnUJmva7Vlkeyrrw4QFauxwY6PZ60oUzb5YclVWOI2nZ~F565UhAm0tHv4SkYjOVInXlilS~1~ff0MNvW-479dnjYyT~~S-rfU592Qmx-M8PntkUrg4gqe1g132RkOwNZIIUUwZOP66OrKuxTDIkpLHNFwoDYYZwjnAVQxVM7-iZ0-EzNlvg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500174,
+      "description_sha256": "6f9e5a9f81f59fbf488bd08b089a00b73b4fa21ce22daf1adf2a163cca3eb641",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a heterogeneous transformer decoder designed for generating tracking features \\(\\tilde{T}_k^v\\) and \\(\\tilde{T}_k^t\\). The overall layout is vertically structured with two parallel processing streams, one for visual tracking features (left) and one for textual tracking features (right), both enclosed within a large rounded rectangular container representing the complete decoder module. At the bottom, a gray rectangular block labeled with four inputs — \\(D_k^v\\), \\(T_{k-1}^v\\), \\(T_{k-1}^t\\), and \\(D_k^t\\) — feeds into a yellow rectangular module labeled 'Heterogeneous Graph Transformer' (HGT). This HGT serves as the central information integration component, producing intermediate outputs \\(\\tilde{T}_{k-1}^v\\) and \\(\\tilde{T}_{k-1}^t\\), which are then fed upward into their respective streams.\n\nEach stream consists of a sequence of operations: first, the intermediate output \\(\\tilde{T}_{k-1}^{v/t}\\) is passed through a white rectangular 'Linear' layer. Simultaneously, the corresponding \\(\\tilde{D}_k^{v/t}\\) input is processed via a position encoding symbol (a spiral icon) before being summed (via a circle-with-plus icon) with the output of the Linear layer. This combined signal is then fed into a green rectangular 'Deformable Attention' module. The output of Deformable Attention is added (via sum operation) to the original \\(\\tilde{T}_{k-1}^{v/t}\\) input, forming a residual connection. This summed result is then passed through an orange rectangular 'Add & Norm' module, which performs layer normalization and addition. The final outputs of each stream are \\(\\tilde{T}_k^v\\) and \\(\\tilde{T}_k^t\\), respectively, indicated by upward arrows at the top.\n\nVisual attributes include distinct colors for different functional blocks: gray for input, yellow for the HGT, white for Linear layers, green for Deformable Attention, and orange for Add & Norm. All modules are rectangular with black borders. The connections are represented by solid black arrows indicating data flow direction. Two symbols are defined at the bottom: a spiral icon denotes 'Position Encoding', and a circle with a plus sign denotes 'Sum'. The diagram emphasizes a symmetric dual-path design where visual and textual features are processed in parallel but share the same architectural components and flow logic."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

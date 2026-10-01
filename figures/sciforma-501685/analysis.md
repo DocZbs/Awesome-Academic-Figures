@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Interpretable deformable image registration: A geometric deep learning perspective — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13294
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an architectural overview of a dual-stream feature processing pipeline designed for image transformation tasks. The global layout is horizontal, progressing from left to right, with two parallel streams labeled 'Fixed' (top) and 'Moving' (bottom), representing source and target image inputs respectively. Each stream begins with a series of 3D rectangular blocks symbolizing feature extraction layers—light blue for the Fixed stream and orange for the Moving stream—followed by ellipses indicating intermediate layers. These streams converge into alternating transformation modules, denoted by rectangular blocks containing either the symbol 'τ' (blue/orange split) or 'δ' (solid orange or gradient orange), arranged in sequence from left to right. The 'τ' modules represent transformation operations, while 'δ' modules likely denote deformation or displacement fields. Above each module, upward-pointing arrows indicate output features: φ^L_τ, φ^L_δ, φ^{L−1}_τ, φ^{L−1}_δ, etc., where superscripts denote resolution levels (L being the highest) and subscripts distinguish between transformation (τ) and deformation (δ) outputs. The final module on the right is a vertically stacked block with 'τ' inside, producing φ^1_τ as the lowest-resolution transformation output. Horizontal arrows between modules show the forward flow of data within each stream, while vertical connections from the Fixed stream (blue lines) and Moving stream (orange lines) feed into corresponding modules, indicating that both streams contribute to the transformation computation at each stage. Notably, the caption specifies that the decoder does not pass features across resolutions—only transformations are propagated, which is visually reflected by the absence of cross-resolution feature connections and the presence of only transformation outputs being passed forward. The color coding consistently distinguishes the two input streams and their associated modules, with blue for Fixed and orange for Moving, and the modules themselves are shaded to reflect their dual-input nature. The entire structure emphasizes a hierarchical, multi-resolution processing scheme where transformations are computed and refined progressively from coarse to fine scales.

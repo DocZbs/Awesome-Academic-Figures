@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501900",
+  "record_sha256": "b780a50a62c48e82d58a741e0be04fed34531f950b312ebb40f89fdf3742a686",
+  "asset_sha256": "a63888e7fd0ca7aff110a32c0707565ef2c10a1c7fd588c69ef1eb23d2f84d97",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501900",
+    "title": {
+      "zh": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting · 方法图",
+      "en": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-13654",
+      "title": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting",
+      "authors": [
+        "Yuning Peng",
+        "Haiping Wang",
+        "Yuan Liu",
+        "Chenglu Wen",
+        "Zhen Dong",
+        "Bisheng Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_id": "2412.13654",
+      "arxiv_first_submitted_at": "2024-12-18T09:33:20Z",
+      "arxiv_updated_at": "2025-03-10T13:37:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501900/image/image.jpg?Expires=1790835208&Signature=hrXRDsMwbl~cwYZJ-gmCAbpeo8mHcie1m3QdCvgmskbGEA7jqmDNvaQL8k8zjuEco9ZqVhXKS~fXyDidXyGd0xJjV3RcBVpd0K4vdTzeAiMz6CTDCZWpuXCExsA6FDUDBiMrvizlvv9tlQYhXpPbqsviN0QqjMslo-xQaUrX171iN2anhr4Iv4eA~5q1dVrGm~o3l7XFvSU9cbvDs8QrSyxUOOQmTIoEUyZ6kvZWdvmZ7Sq0FEkvdJr-R1C0zih5uLlDw5kSDb7ra4RzPaDr42OKY-eQ8OSLta~lBQh-lZDPHPenDDLFWgVJ0vJ1s5p04xLX5TtPARFePPuRRheT3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501900,
+      "description_sha256": "c6504b3428497a5ba1ee77fe591fd2d9a34c42eedb09e45ffc0e3141114ba9a3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a granularity-aware segmentation module designed to produce multi-view consistent semantic features by integrating depth information, Gaussian point clouds, and a segmentation model (SAM). The global layout is structured as a pipeline enclosed within a green dashed rectangular boundary, indicating the core processing module. Inputs enter from the left: an RGB Image and an RGB Gaussian representation. These inputs are processed in parallel to generate intermediate representations.\n\nThe RGB Image is first fed into a depth estimation component, producing a Depth map visualized as a heat-map with color gradients from purple (far) to yellow/green (near), showing a table and plant. This Depth map is then used to construct a Min Depth field, depicted as a 3D volumetric cube with a color gradient representing depth values, where red indicates closer regions and blue indicates farther ones. The RGB Gaussian input is also processed through a module labeled 'R' (likely a re-projection or rendering step) to align with the depth data.\n\nFrom the Depth map, another 'R' module generates a Granularity-consistent Prompt Point Sample, shown as a grid of image patches overlaid with white dots, indicating sampled points distributed across different spatial scales. These prompt points are designed to maintain consistency in granularity across the image.\n\nBoth the Depth map and the Granularity-consistent Prompt Point Sample are fed into the SAM (Segment Anything Model) module, represented by a vertical bar chart icon with a snowflake symbol beneath it, suggesting a frozen or pre-trained model. The SAM processes these inputs to generate a Multi-level Mask output, displayed on the right side as three segmented images at different levels of detail: one with fine-grained segmentation, one with medium-level segmentation, and one with coarse segmentation, each highlighting different object parts like tables and chairs with distinct colors.\n\nConnections between modules are indicated by thick gray arrows, showing the flow of data. The RGB Image feeds directly into the Depth map and also into the SAM via the prompt points. The RGB Gaussian feeds into the Min Depth field and indirectly influences the prompt sampling. The Depth map feeds into both the Min Depth field and the prompt sampling. The prompt points and Depth map jointly feed into SAM, which outputs the Multi-level Mask. The entire process emphasizes leveraging geometric cues (depth, Gaussian point cloud) to guide the segmentation model toward consistent, multi-scale segmentation results."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

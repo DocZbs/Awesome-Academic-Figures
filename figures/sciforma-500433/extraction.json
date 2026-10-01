@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500433",
+  "record_sha256": "70d2186d04f8590e5b4ee996629273d7bb56d0c1cf7935cc9ddcd3be3be4b873",
+  "asset_sha256": "398fefbad937e529a94e75703ad0734c703804135be260cc3dc165f6ce1d1b89",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500433",
+    "title": {
+      "zh": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models · 方法图",
+      "en": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11333",
+      "title": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+      "authors": [
+        "Xiaochen Zhu",
+        "Georgi Karadzhov",
+        "Chenxi Whitehouse",
+        "Andreas Vlachos"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11333",
+      "arxiv_url": "https://arxiv.org/abs/2412.11333",
+      "arxiv_id": "2412.11333",
+      "arxiv_first_submitted_at": "2024-12-15T22:47:44Z",
+      "arxiv_updated_at": "2025-05-25T16:17:40Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500433/image/image.jpg?Expires=1790835171&Signature=eCbLL7g0YTqMu9FPIHQ3RM9ziSBL-NPTEvxj4P3mckW60XyiZaBw8KYP~P6-9CL0Taz0F5d0DBFsebwL7nKfoJlT0PYO952u~fFR9YSKdACwwNWij~UO~SlH---HM9mg0RCUnn-l638Qb1tp-DStjn-1qR-2~gBSsh7b1JhXzBj8lBHRhtuOvmVEF5ODueFVuIngeigQuNXAgUDVHf6xHftj9Gf~~K0dvvzAgzb5sKoCRnlXlkKhso8zghusnOmHcBDzC3PKlhGjhidyabXK6tKZyV-yYGvg0VHLJUkpU0MVOEFSMQx-ptYpCc3WLRCBvUzWLY6PHZwmYXismQOvxA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500433,
+      "description_sha256": "5cf6b16bc016c1be2889a61e2939d9c483db5af03584e1c58c9a7ab667b7eab6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural overview of three text generation methods: Autoregressive Encoder-Decoder (top), Latent Diffusion for Text Generation (middle), and Segment-Level Diffusion (Ours, bottom). The global layout is organized into three horizontal sections, each depicting a distinct generative pipeline from left to right, with clear visual separation by horizontal lines.\n\nIn the top section, the Autoregressive Encoder-Decoder model begins with an orange rounded rectangle labeled 'Encoder', which takes inputs i¹ through iⁿ. The encoder outputs are represented as a vertical stack of purple rectangles labeled h⁰, h¹, ..., hⁿ, enclosed in a white rounded box labeled 'Encoder Outputs'. These outputs feed into a green rounded rectangle labeled 'Decoder', which generates outputs o¹ through oᵐ sequentially via autoregressive decoding, indicated by dashed arrows from previous outputs o¹ through o^{m−1} feeding back into the decoder, along with a start token <s>.\n\nThe middle section illustrates Latent Diffusion for Text Generation. It starts with a noise vector ŷ_T (light beige rectangle) that undergoes multiple diffusion steps. Each step involves a blue rounded rectangle labeled 'Diffusion', which processes the latent vector (e.g., ŷ_{T−1}, shown as an orange rectangle) to produce the next latent state. The final denoised latent vector ŷ₀ (brown rectangle) is fed into a green 'Decoder' that generates outputs o¹ through oᵐ autoregressively, similar to the top model. The 'Encoder Outputs' from the top section are shown as a purple rectangle feeding into each diffusion step as conditioning information.\n\nThe bottom section, titled 'Segment-Level Diffusion (Ours)', introduces a novel approach. Instead of processing a single latent vector, it operates on segmented representations. The initial noisy latent states ŷ_T are grouped into segments, each containing multiple latent vectors (e.g., ŷ_T⁰, ŷ_T¹, ..., ŷ_T^j) within a white container labeled ŷ_T. Each segment undergoes independent diffusion steps (blue 'Diffusion' blocks), producing intermediate latent states like ŷ_{T−1} and finally ŷ₀, where each segment's latent vectors (e.g., ŷ₀⁰, ŷ₀¹, ..., ŷ₀^j) are preserved. The 'Encoder Outputs' again condition each diffusion step. The final denoised latent segments are fed into separate green 'Decoder' blocks, one per segment (labeled 'Segment 1', 'Segment j'), enabling parallel autoregressive decoding. Each decoder generates its own output sequence (e.g., o¹ through oᵖ for Segment 1, o^q through o^m for Segment j), with feedback from previous tokens within the segment. This design allows for parallelized decoding across segments while maintaining autoregressive generation within each segment, enhancing both efficiency and control over text generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

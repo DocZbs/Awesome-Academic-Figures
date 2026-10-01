@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-501178",
+  "record_sha256": "bb6c503d9e22cab7012f9492a15c9a87b5c2c94927cc045fb04361653235e224",
+  "asset_sha256": "9717f06cf408fd3f8c57635a08c958061967a4e4028e133b4cb612e831ad8f6c",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501178",
+    "title": {
+      "zh": "Transferable and Forecastable User Targeting Foundation Model · 方法图",
+      "en": "Transferable and Forecastable User Targeting Foundation Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-12468",
+      "title": "Transferable and Forecastable User Targeting Foundation Model",
+      "authors": [
+        "Bin Dou",
+        "Baokun Wang",
+        "Yun Zhu",
+        "Xiaotong Lin",
+        "Yike Xu",
+        "Xiaorui Huang",
+        "Yang Chen",
+        "Yun Liu",
+        "Shaoshuai Han",
+        "Yongchao Liu",
+        "Tianyi Zhang",
+        "Yu Cheng",
+        "Weiqiang Wang",
+        "Chuntao Hong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12468",
+      "arxiv_url": "https://arxiv.org/abs/2412.12468",
+      "arxiv_id": "2412.12468",
+      "arxiv_first_submitted_at": "2024-12-17T02:05:09Z",
+      "arxiv_updated_at": "2025-02-20T14:57:03Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501178/image/image.jpg?Expires=1790835186&Signature=HxCkKgisCWfb1NEuYfcQtXejU~Dey9seTyuBBOtsXVVECm-ucGU2dLNl-B-3LNaMiDZgYJuuFuJQW5tzpCY-HAUOGQ8P9fBhctAXUdKyryR66pXX6OSLVAkim5Gs1k6mQMnYh0cyUPXNQVJxslJGznBsjrZBdbysI4XgbpIW5bmMkwctx9X1FZZSQIUY8BfnO9axu7yXuXbraWYpXvMrO6Cl3apwIlm~VFHGXD5zE-s1yDc07QfSnx5oaSAIKej~apIZw8YCfJurM7lW5yjliJgXodtgbcnLU-F8Bgkl9Q1H76XZLixrvHf8XDwMas66Pv2GAgYtRhyar2MF5mBDMA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501178,
+      "description_sha256": "b1b4e6aeb2e5de0be78fc3369a1f60130b75dce47e454a553655d7d796040fba",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a tabular encoder designed to process both categorical and continuous features using a Transformer-based model. The global layout is vertically structured, with data flowing from bottom to top through a series of processing modules. At the bottom, two distinct input streams are shown: 'Categorical Features' denoted as T_cat = (T_1, T_2, ..., T_C), and 'Continuous Features' denoted as T_cont ∈ R^cont. These inputs feed into separate preprocessing paths.\n\nOn the left, categorical features pass through a 'Column Embedding' module, which outputs a feature vector f_Tcat = (f_T1, f_T2, ..., f_TC)_{C*d}, where each categorical column is embedded into a d-dimensional space. On the right, continuous features first undergo 'Layer Normalization', followed by an 'MLP' (Multi-Layer Perceptron) layer, producing an output labeled (f_Tcont)_d. Both processed feature streams then converge as inputs to the 'Multi-Head Attention' block within the Transformer stack.\n\nThe central component is a Transformer block repeated N times, indicated by the label 'Transformer ×N' on the left side. Each Transformer block consists of four sequential layers: 'Multi-Head Attention', followed by 'Add & Norm', then 'Feed Forward', and another 'Add & Norm'. All these modules are represented as rounded rectangular boxes with bold black borders and centered black text. The connections between them are solid black arrows pointing upward, indicating forward propagation.\n\nAfter the final Transformer block, the output is passed to a 'Mean Pooling' layer, which aggregates the sequence of representations into a single embedding vector e^(tab), shown at the top of the diagram with an upward arrow. This final embedding serves as the encoded representation of the entire tabular input. The diagram uses consistent visual styling throughout: all modules are white-filled rounded rectangles with thick black outlines, and all text is black and centered. There are no colors or additional graphical embellishments beyond the structural flow and labels. The figure is cleanly organized to emphasize the dual-path input processing and the sequential nature of the Transformer stack leading to the final pooled output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

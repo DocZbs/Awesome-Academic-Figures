@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502586",
+  "record_sha256": "d8234dcfdf3d7f262b7c2892387103ccce50420e704a571fc7fd5f030ef6b931",
+  "asset_sha256": "be88f4d138aeddcc5f99086ddae1ee83a7c66c3ffabce0d9739d9ba7818f738a",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502586",
+    "title": {
+      "zh": "YOLOv11 Optimization for Efficient Resource Utilization · 方法图",
+      "en": "YOLOv11 Optimization for Efficient Resource Utilization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14790",
+      "title": "YOLOv11 Optimization for Efficient Resource Utilization",
+      "authors": [
+        "Areeg Fahad Rasheed",
+        "M. Zarkoosh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_id": "2412.14790",
+      "arxiv_first_submitted_at": "2024-12-19T12:29:31Z",
+      "arxiv_updated_at": "2025-07-05T03:32:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502586/image/image.jpg?Expires=1790835225&Signature=RIG1RuatjFhC53ciEzrUzK8r78K7lD-SKEBTs7zy3phHDgJbkgURuKJIvqq6OJYQJOOCo4hi6z4d31jRPdYLkxhmBS1cHGeJ54hiyqNES4fBGLZ~57U3RjqdG46cG9AwzV~opJPBs0fSQUGmL10GtijpwpfW0bwK7yH47-MbsVR7WI9bGGG50khLg23hfEgUW5C7u3cwtQxOsAdj38ZGihHxkyMXm732mbnv0PdYbQhh6TNN1P9aMnMJL2-xKT6TquRC7qHm8R7nuds2Bv3r2dHPZWJu~Wp9dSxXLhHmUf5JAaaxBDnKeDcFbJe8W6zoBa096kWI5qsr~SQwP~5GNg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502586,
+      "description_sha256": "0d6c4f8b522e9c0be993bb943af4d4d692e649c330a137083c6d10999bed3a7b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the YOLOv11-sl architecture designed for small and large object detection, structured as a deep neural network with a backbone, feature pyramid, and detection heads. The global layout is a vertical flowchart on the left representing the backbone, transitioning into a horizontal feature fusion path on the right, culminating in two detection outputs. The input is a 640x640x3 image, which enters the network through a convolutional layer labeled 'P1 Conv' (b0), followed by another 'P2 Conv' (b1) layer. These initial layers are light purple rounded rectangles with white circular labels 'P1' and 'P2' respectively.\n\nThe backbone consists of a sequence of blocks labeled b2 to b10, arranged vertically. Blocks b2, b4, b6, and b8 are yellow rounded rectangles labeled 'C3k2', indicating a C3 module with k=2. Blocks b3, b5, and b7 are light purple rounded rectangles labeled 'Conv' with circular labels 'P3', 'P4', and 'P5' respectively, signifying feature maps at different scales. Block b9 is a teal rounded rectangle labeled 'SPPF', and block b10 is a pink rounded rectangle labeled 'C2PSA', both serving as advanced feature extraction modules.\n\nOn the right side, the feature fusion path begins with an upsample operation (red rounded rectangle, b11) from the P5 feature map (b7) to a higher resolution, which is then concatenated (green rounded rectangle, b12) with the P4 feature map (b5). This fused feature is processed by a 'C3k2' block (b13), followed by another upsample (b14) and concatenation (b15) with the P3 feature map (b3). The resulting feature is passed through a 'C3k2' block (b16) and then to a 'Detect' head (light blue rounded rectangle) for small object detection.\n\nIn parallel, the P5 feature map (b7) is also connected directly to a 'C3k2' block (b17), which feeds into a 'Concat' layer (b18) that merges it with the output of the C2PSA block (b10). This merged feature is processed by another 'C3k2' block (b19) and sent to a second 'Detect' head for large object detection. All connections are represented by black arrows indicating data flow, with branch points labeled b12, b13, b15, b16, b17, b18, and b19. The architecture employs a top-down feature fusion strategy with skip connections to enhance multi-scale detection performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

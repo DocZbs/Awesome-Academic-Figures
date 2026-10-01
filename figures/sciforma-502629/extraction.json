@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502629",
+  "record_sha256": "9d8e274504d4dbef303e2b89c6add9f14d1e3e9c3584646a1aca3d7ea7bdfd8c",
+  "asset_sha256": "a3152e6f56581b3ebd533411bf7313b9e08221109e60918e78e0ea3ab2c3f419",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502629",
+    "title": {
+      "zh": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling · 方法图",
+      "en": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling"
+    },
+    "paper": {
+      "id": "arxiv-2412-14860",
+      "title": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+      "authors": [
+        "Junyi Li",
+        "Hwee Tou Ng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14860",
+      "arxiv_url": "https://arxiv.org/abs/2412.14860",
+      "arxiv_id": "2412.14860",
+      "arxiv_first_submitted_at": "2024-12-19T13:55:48Z",
+      "arxiv_updated_at": "2025-06-20T13:47:25Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502629/image/image.jpg?Expires=1790835223&Signature=OWZNvsUHvM4mvtS5kiQ4wO976SPV6Kx~Wq-sd-KXIoRqpGc1zINYHWRrfkjVPXg1CS~trApj7PkifGsfE90sAXQvIVQjST~b6UBlI5Nycpp4C-0GVEgc78rZxLk4uK1lGrIPT4-tT22dkpqh11-7denJa~gnUCMoQLty~RpkL6zuxyIeQMDfdn-sgHi6qk8T2VpNBaOEOVyBaxv~sXWBuPLI91xPrgiKC2Shd3wq~ySxgN6N7wy1JqzjlMRsWyyeoTWUpkjTdW69cbB257GSssxZAuNnazgMc4ITQVfXkqiJGxtk4Wpu3~kq8veigqJDNZUsS6zuoYdMKUsNj7aMWw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502629,
+      "description_sha256": "221b90cce6334dec758883994ce2828dedd0e7a97fcd17f966576eddf8f5431a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Self-Guided Monte Carlo Tree Search (SG-MCTS) process for answering the input question: 'What natural place is located in or near Gunnison?'. The global layout is a tree-like structure with nodes representing search steps, branching from an initial query node at the top left. The root node, labeled 'Input Question', is a light green rounded rectangle. From this, two primary branches emerge, each leading to a query node. One branch leads to a failed node (white background, dashed border), marked with a reflection note: 'The search results do not provide useful information' in magenta text, indicating a dead end. The other branch leads to a success node (light blue background, solid border), which contains a query ('Gunnison natural place attractions'), a generated sentence ('Gunnison is located near several notable natural places...'), and reward values: R_g = 0.25 and R_a = 1.0. This success node further branches into two child nodes, both also success nodes (light blue), each with their own query, generated sentence, and reward values. One child queries 'the Blue Mesa Reservoir' with R_g = 0.23, R_a = 0.5; the other queries 'Gunnison other natural attractions' with R_g = 0.23, R_a = 0.66. These nodes connect via arrows to additional success nodes, forming a deeper tree. For instance, the 'Blue Mesa Reservoir' node leads to another success node with R_g = 0.32, R_a = 1.0, and the 'other natural attractions' node leads to a success node with R_g = 0.33, R_a = 1.0, which corresponds to 'the Black Canyon'. The figure includes a legend in the bottom left corner defining 'Failed Node' (white, dashed) and 'Success Node' (light blue, solid). At the bottom, three reference boxes [1], [2], and [3] display the source text snippets used to generate the sentences, with key phrases highlighted in bold. The connections between nodes are represented by black arrows, indicating the flow of the search process. The entire diagram uses rounded rectangles for nodes, with text inside specifying the query, generated sentence, and reward metrics. The visual hierarchy emphasizes successful paths through color coding and branching, while failed paths are visually distinguished by dashed borders and reflection annotations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

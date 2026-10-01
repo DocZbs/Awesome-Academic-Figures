@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501497",
+  "record_sha256": "4d2b8037064eea09951cd15f13884b073c961e07e16acaf5a86716db1c10e09c",
+  "asset_sha256": "6f872d5dbd6e75524f33b016bac3724db71ec13f18ba93264422c271c2bcc501",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501497",
+    "title": {
+      "zh": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset · 方法图",
+      "en": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset"
+    },
+    "paper": {
+      "id": "arxiv-2412-12877",
+      "title": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+      "authors": [
+        "Samuel Teodoro",
+        "Agus Gunawan",
+        "Soo Ye Kim",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_id": "2412.12877",
+      "arxiv_first_submitted_at": "2024-12-17T13:00:04Z",
+      "arxiv_updated_at": "2025-03-25T02:49:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501497/image/image.jpg?Expires=1790835192&Signature=sdooZAbxhNnM~FO2TaQOqdrD9WPgUYTjirNt8kaA3ldooJLqxdPFtY3qTPdM58Pis0vjeKjhHhYsfq6YMV~5pSZ7eT~GX8LhYTGNkex2SIum1SEdLOzC~N2DPD7egoGNu7RDYsYmx1aI9EDqg6ovximuPZ4WWJ98Ae3sG~LvL4afYx4CgRS4W6L65i~EECHIeRPz~ZXfH0caLoCXtiNqPGHFoQED4TqCk5ttALRbqqqtn7XTFS8dcFf9Y3uZ0svRq5K5zMviQRakPkz1U9ZpTW8fseCCiCmEYvdSVRLAzKJJyiugeUle2O8-~ancywQisQRl1aiCZW86uUlsL8yJmw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501497,
+      "description_sha256": "8e96b5508d4ee57d1251945f1f241f40cfbcbbe3a62bddd3a2aa7513f8f55a32",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main sections: a top comparative visualization and a bottom technical diagram explaining the proposed method.\n\n[1] Global Layout and Structure:\nThe top section presents three side-by-side bar charts comparing different methods: 'Vanilla Cross Attention [46]', 'Dense Diffusion [32]', and 'Ours Redistribution'. Each chart displays probability distributions across four categories labeled S, T, E, P. Below each chart, red or blue text describes the editing quality ('Unfaithful editing', 'Prone to artifact', 'Faithful editing Less artifact'), with references to Figure 6-(b), 6-(c), and 6-(d) respectively. A dashed horizontal line separates this from the bottom section, which illustrates the mechanism of the proposed method using matrices and color-coded squares.\n\n[2] Visual Modules and Attributes:\nIn the top section:\n- The 'Vanilla' chart shows a blue bar for S at 0.8, and small bars for T, E, P at 0.1, 0.05, 0.05 respectively.\n- The 'Dense Diffusion' chart has a pink bar for S at 0.1, a blue bar for T at 0.8, and small bars for E, P at 0.05, 0.05. Red downward arrows indicate reduction in S and other tokens, while a blue upward arrow indicates increase in T. Text above reads 'Maximize T, minimize other'.\n- The 'Ours' chart shows stacked bars: S has 0.4 (pink on top of blue), T has 0.25 (blue on top of red), E has 0.05 (blue on top of red), P remains 0.05 (blue). Dashed arrows indicate redistribution from S to T and E. Text below states 'Faithful editing Less artifact'.\n\nIn the bottom section:\n- On the left, two vertical columns labeled 'm' and 'Q' show black, brown, white, and gray squares arranged in rows indexed by 'i'.\n- In the center, two horizontal matrices labeled 'A₀,j' and 'A₁,j' represent attention weights. 'A₀,j' has gray, black, and white squares under headers A_S, A_T, A_E, A_P, A_P. 'A₁,j' has red, blue, green, white squares under the same headers. Dashed blue arrows connect A_S, A_T, A_E in A₀,j to corresponding positions in A₁,j.\n- On the right, a legend explains the color coding: gray square = 1 - ΣA₀,j∈P; black square = 0; white square = Unchanged; red square = -λₛ; blue square = +λₛ·λᵣ/Nₜ; green square = +λₛ·(1 - λᵣ). This legend is enclosed in a dashed blue box for unchanged values and a dashed red box for modified values.\n\n[3] Connections and Arrows:\n- In the top section, dashed arrows in the 'Ours' chart point from the top of the S bar to the tops of the T and E bars, indicating probability redistribution.\n- In the bottom section, dashed blue arrows connect the A_S, A_T, A_E positions in the A₀,j matrix to their corresponding positions in the A₁,j matrix, illustrating how attention weights are adjusted. The legend on the right links the colored squares in A₁,j to specific mathematical adjustments involving λₛ, λᵣ, and Nₜ."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

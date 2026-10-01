@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500921",
+  "record_sha256": "1ee26c71aac4a7f27499a3a4d660ccc0fe47f7ef12071cd6aee3a755e2b3f170",
+  "asset_sha256": "326d0f3aabb84ede71592fb4bf1705a2f6ff60a1366e8b06ecb7ae1ca7767f0c",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500921",
+    "title": {
+      "zh": "A LoRA is Worth a Thousand Pictures · 方法图",
+      "en": "A LoRA is Worth a Thousand Pictures"
+    },
+    "paper": {
+      "id": "arxiv-2412-12048",
+      "title": "A LoRA is Worth a Thousand Pictures",
+      "authors": [
+        "Chenxi Liu",
+        "Towaki Takikawa",
+        "Alec Jacobson"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12048",
+      "arxiv_url": "https://arxiv.org/abs/2412.12048",
+      "arxiv_id": "2412.12048",
+      "arxiv_first_submitted_at": "2024-12-16T18:18:17Z",
+      "arxiv_updated_at": "2024-12-16T18:18:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500921/image/image.jpg?Expires=1790835181&Signature=u9WpsGryxsQQON2YVPflAiBhdAkjo6gsqA79RHstpAGu4tvYTG-AaIhmSjsyR2RUUrz9F2NMAlBgEAmjaGRncPpH86rPrtpHCRBaJzJC4PFPmTm~X6y9Hv7tUhKMAxgo3lyJclS4jLfFFdpL480UvXOApdhVhLsUxmwwRqHTTjSvicYjzQvkhgOvXBzhwNfSMsGaR-9FfeNGDBBTIlUvdRXJYuWkYjncttSl3kYsCPPNAcn7Ee4tBJ31FxP8hNdK~iytBYPBXVYW53MIj-7Q4paEkfVdnoGdds8imvi41rhp7DRnvbBW52rMtZ0e6ZSPdnCo2~S-cu5jJEnXhlTygw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500921,
+      "description_sha256": "653f9e80b8a765c19046d134e78d1e54cc876d13bff9b00b5aa000430f4cdc52",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main parts: (a) Constructing LoRA embedding and (b) LoRA retrieval application, illustrating a method for embedding and retrieving LoRA (Low-Rank Adaptation) models based on artistic styles.\n\nIn part (a), the global layout shows a database of LoRAs on the left, represented by a grid of nine sample images depicting various traditional Japanese art styles, including ukiyo-e and woodblock prints. Each image is associated with a colored 3x3 grid icon—orange, green, or red—symbolizing different LoRA models. These LoRAs are stored in a central blue cylindrical database icon. From this database, an orange arrow points upward and rightward to a light-blue dashed rectangular box labeled 'LoRA embedding'. Inside this box, several 3x3 grid icons (orange, blue, red, green) represent embedded LoRA models. Below this box, an orange arrow labeled 'Principal components' points rightward, indicating that Principal Component Analysis (PCA) is applied to extract principal components from the LoRA models to form the embedding space. The visual modules include the database cylinder, the sample images with their corresponding color-coded 3x3 grids, and the embedding box with its internal grid icons. The arrows indicate the flow from raw LoRAs to their PCA-derived embeddings.\n\nIn part (b), the layout illustrates the retrieval application. On the left, a dashed blue rectangle labeled 'Unknown training images' contains three new Japanese-style artworks not seen during embedding construction. Below this, a label 'Query LoRA' points to a green 3x3 grid icon, representing a LoRA model trained on these unknown images. A magnifying glass icon with a green checkmark symbolizes the retrieval process. To the right, three retrieved LoRAs are shown, each paired with a sample image and a green 3x3 grid icon, enclosed in dashed boxes. These retrieved LoRAs are stylistically similar to the query LoRA, demonstrating successful retrieval based on the constructed embedding. The connections show the query LoRA being matched against the embedding space to retrieve semantically similar LoRAs without requiring additional image generation.\n\nOverall, the figure visually abstracts a method where LoRA models are embedded into a low-dimensional space via PCA, enabling efficient retrieval of stylistically similar LoRAs using a query LoRA trained on unseen data. The color-coded 3x3 grids serve as visual proxies for LoRA models, while the arrows and labeled boxes guide the viewer through the embedding construction and retrieval workflow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

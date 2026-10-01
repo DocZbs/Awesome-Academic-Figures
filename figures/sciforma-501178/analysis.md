@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Transferable and Forecastable User Targeting Foundation Model — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12468
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a tabular encoder designed to process both categorical and continuous features using a Transformer-based model. The global layout is vertically structured, with data flowing from bottom to top through a series of processing modules. At the bottom, two distinct input streams are shown: 'Categorical Features' denoted as T_cat = (T_1, T_2, ..., T_C), and 'Continuous Features' denoted as T_cont ∈ R^cont. These inputs feed into separate preprocessing paths.
+
+On the left, categorical features pass through a 'Column Embedding' module, which outputs a feature vector f_Tcat = (f_T1, f_T2, ..., f_TC)_{C*d}, where each categorical column is embedded into a d-dimensional space. On the right, continuous features first undergo 'Layer Normalization', followed by an 'MLP' (Multi-Layer Perceptron) layer, producing an output labeled (f_Tcont)_d. Both processed feature streams then converge as inputs to the 'Multi-Head Attention' block within the Transformer stack.
+
+The central component is a Transformer block repeated N times, indicated by the label 'Transformer ×N' on the left side. Each Transformer block consists of four sequential layers: 'Multi-Head Attention', followed by 'Add & Norm', then 'Feed Forward', and another 'Add & Norm'. All these modules are represented as rounded rectangular boxes with bold black borders and centered black text. The connections between them are solid black arrows pointing upward, indicating forward propagation.
+
+After the final Transformer block, the output is passed to a 'Mean Pooling' layer, which aggregates the sequence of representations into a single embedding vector e^(tab), shown at the top of the diagram with an upward arrow. This final embedding serves as the encoded representation of the entire tabular input. The diagram uses consistent visual styling throughout: all modules are white-filled rounded rectangles with thick black outlines, and all text is black and centered. There are no colors or additional graphical embellishments beyond the structural flow and labels. The figure is cleanly organized to emphasize the dual-path input processing and the sequential nature of the Transformer stack leading to the final pooled output.

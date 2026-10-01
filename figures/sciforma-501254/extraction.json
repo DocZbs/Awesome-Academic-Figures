@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501254",
+  "record_sha256": "b4febfecc37d588c07a681a4675438b395a38c1ce5ad4845a9bebd620c348877",
+  "asset_sha256": "36dfba9fcba0ae5c853b8b471c9791ee27f97cd8dbfd36a48d2583c022d632c6",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501254",
+    "title": {
+      "zh": "PBVS 2024 Solution: Self-Supervised Learning and Sampling Strategies for SAR Classification in Extreme Long-Tail Distribution · 方法图",
+      "en": "PBVS 2024 Solution: Self-Supervised Learning and Sampling Strategies for SAR Classification in Extreme Long-Tail Distribution"
+    },
+    "paper": {
+      "id": "arxiv-2412-12565",
+      "title": "PBVS 2024 Solution: Self-Supervised Learning and Sampling Strategies for SAR Classification in Extreme Long-Tail Distribution",
+      "authors": [
+        "Yuhyun Kim",
+        "Minwoo Kim",
+        "Hyobin Park",
+        "Jinwook Jung",
+        "Dong-Geol Choi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12565",
+      "arxiv_url": "https://arxiv.org/abs/2412.12565",
+      "arxiv_id": "2412.12565",
+      "arxiv_first_submitted_at": "2024-12-17T05:49:16Z",
+      "arxiv_updated_at": "2024-12-17T05:49:16Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501254/image/image.jpg?Expires=1790835190&Signature=litIxiuPVQBkWNKTA536kxNYgBv1yl36Q30F0QKrB0-Cu3abzsN1uNiZpPBuTbwAHW7Blf7-CWwqIE71XRCyI23Tp~D4~-hyzNRDub0ThuzWHn82Hph2AAeE~2HJUKtBvqGiz1gdp90MTIuAfjRQskOOoBAFheJW~qM-ACkbEHQRfz8u~O2PTTx9ljr7H87SmT1y5B9rdBGcDzbQ~~TEZIjLEowBXp6~wum~-wKQUimBztRJrVa6wCI40jPnO5Yjm7wkf1rNk4oZQNeLwXGEdAGiwIAbIFf6DULzUyQgGQA-I08hdM~~omicnetXPqOhZLwt7JgKnN2GSVEIeVOQiA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501254,
+      "description_sha256": "eceb059980a7613996719cd13a720234e663db06d6326c3f4b21fcf49da7254a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a proposed pipeline for SAR image classification using self-supervised learning and undersampling techniques. The global layout is divided into two main horizontal workflows: the top path describes self-supervised pretraining, while the bottom path details the downstream classification process with undersampling strategies.\n\nIn the top section, the 'Train dataset' contains three types of SAR images: Original SAR, Lee filter SAR, and Synthetic SAR, each represented by a grayscale thumbnail. These three 1-channel images are concatenated into a single 3-channel image, indicated by the orange circle labeled 'C' and explained in the yellow box as 'Concat images'. This concatenated input feeds into a Dinov2 model, depicted as a stack of beige rectangular blocks representing convolutional layers, used for self-supervised training. The output of this stage is a pretrained Dinov2 model.\n\nThe bottom section begins with the same 'Train dataset' structure, again showing the three SAR image types with the 'C' concatenation marker. This dataset is processed through an undersampling module, shown as a light green rounded rectangle containing the pretrained Dinov2 model and a blue box labeled 'TomekLinks', indicating the application of the TomekLinks algorithm for handling class imbalance. From this module, two parallel undersampled datasets emerge: one labeled 'Under sampling Train dataset' with a pink background, and another also labeled 'Under sampling Train dataset' but processed via 'NearMiss-3 Under Sampling', indicated by a black arrow pointing from the TomekLinks module. Both undersampled datasets retain the same structure of concatenated Original, Lee filter, and Synthetic SAR images.\n\nThese undersampled datasets feed into a second instance of the pretrained Dinov2 model (same beige block representation), which extracts features. The extracted features are then passed to a KNN Classifier, shown as a purple trapezoid, which produces the final 'Output'. The entire pipeline emphasizes the use of concatenated multi-modal SAR inputs, self-supervised pretraining with Dinov2, and undersampling techniques (TomekLinks and NearMiss-3) to improve classification performance on imbalanced datasets."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

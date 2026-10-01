@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500662",
+  "record_sha256": "832cd4f2fe146fe656ee2eabf8d35b92d3d4c76da8d5885b719d33552923ad47",
+  "asset_sha256": "ac5f3368f81ea9f5a0e3fee96c0096bb6ebf55a16f7cb413f6fe3fcc6574b231",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500662",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500662/image/image.jpg?Expires=1790835174&Signature=R7PWusJVnI08u~L4Ga600z~Ruv4zwgUjrv2ri~UTS9KgNtpOOJyKA1tUU3EQKqBBYIT7PcCjp9GGJHUR-Z~QtHgBWEjNG5PLYpPCdm-K88q1t17Pbba-m7dKqMmUYMjsjdUEQnEkbQN~XSjhQupBqQJEqE2MAYxx3LOStqEX0InR72SIv-DYcHOfCW2mGJ6xgfQoVRxgE5VA63xVMvvuehiGo0I~K-EqEUgpwJeslOgj1yGqvtfCM8oUe2usbH7t9uhezdh7eOjIr92b8cXrLszfW9D7hhz-yKm~Uojy~KoFKgI6Jm019OlMKH71vz3-mdlxf2HhXr69KabhiRzRCQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500662,
+      "description_sha256": "34a988aa8e62d67f2d90a4c5fd9b9633790c15f2125078405dbde1ceae9675e8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Convolutional Neural Network (CNN) architecture designed for image classification, specifically applied to satellite imagery. The global layout is left-to-right, depicting a sequential data processing pipeline from raw input to final probabilistic output. On the far left, an 'Input layer' is shown as a grayscale satellite image of a riverine urban landscape, with two red rectangular regions highlighted to indicate areas of interest or sample patches being fed into the network. These regions are connected via dashed red lines to the subsequent feature extraction stage.\n\nThe central portion of the diagram is enclosed in a dashed red rectangle labeled 'Feature Extraction'. This module consists of three repeating blocks, each comprising a convolutional layer followed by a pooling layer. The first block features light blue rectangular layers labeled 'Convolution', followed by a pooling layer represented by a slightly darker blue rectangle. The second block uses orange-colored rectangles for both convolution and pooling layers. The third block employs gray rectangles for convolution and pooling. Each convolution layer is depicted as a stack of multiple parallel rectangles, symbolizing multiple feature maps. Red squares within these layers indicate receptive fields or filter windows. Dashed red lines connect corresponding positions across the blocks, illustrating the hierarchical progression of feature maps through successive layers. After the third pooling layer, a vertical yellow bar labeled 'Flattern layer' represents the flattening operation that converts the multi-dimensional feature maps into a one-dimensional vector for input into the fully connected network.\n\nTo the right of the feature extraction module lies the 'Fully connected network for Classification', depicted as a multi-layer perceptron. This section consists of four layers of interconnected circular nodes, each node rendered as a light blue circle. The first layer contains 16 nodes, the second and third layers each contain 12 nodes, and the final output layer has 4 nodes. All nodes are densely connected with thin black lines, indicating full connectivity between adjacent layers. The output layer connects to a vertical stack of four colored rectangles labeled 'a', 'b', 'c', and 'd', respectively colored white, yellow, orange, and light blue. These rectangles are enclosed in a dashed red box labeled 'Probabilistic Distribution', signifying the network's output as a probability distribution over four classes. The entire architecture visually conveys the transformation from spatial image data through hierarchical feature learning to a categorical classification result."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

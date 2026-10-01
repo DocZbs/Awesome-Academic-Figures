@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501456",
+  "record_sha256": "4f6ccffece90ca3091a114e2a57d9d04f0d797b1a018774c751172202924a82e",
+  "asset_sha256": "eb75eba610e31d3d52c821701980efc907fba383a8290a09ddc06297be3cba3f",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501456",
+    "title": {
+      "zh": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models · 方法图",
+      "en": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12832",
+      "title": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models",
+      "authors": [
+        "Jinxiang Xie",
+        "Yilin Li",
+        "Xunjian Yin",
+        "Xiaojun Wan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12832",
+      "arxiv_url": "https://arxiv.org/abs/2412.12832",
+      "arxiv_id": "2412.12832",
+      "arxiv_first_submitted_at": "2024-12-17T11:54:16Z",
+      "arxiv_updated_at": "2025-06-22T05:51:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501456/image/image.jpg?Expires=1790835191&Signature=gwSPyqVMkwwlFhlPGAoeTe1P2iidrAV9y6HOxcP3qf~YonVvMu82J2aAxwkv~cs8oJiU2Dio6uJJ~YBBA45nz1gIggGbNXbQcwfUBC3iHEH~jNTmzFaHikfQa2q7FnIqiPrgqDBzxwlmqyXoyzCZKaBCu0QQa2jBpZ-FlJ6CjC-u9ZkIOfdxU0C8In4VuVhvy8t85eeiSt5WUOf6HYQS44mgUyNLPQVSaiqMc5pVoBZqd49f4R4xCOcML1W1TfK2SxCygqcd1WnMqPi9IL2~dTxvSCB9ZWn9qJSiGFP9bVGzfEnMOkfAh04DROtWyWdTFM3RoXFLR-ThoQsLJzwHWA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501456,
+      "description_sha256": "d5f193175e9d29ae51414c906c0714bf6077b82e047033a58050a814ed719c0e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two parallel workflows, labeled (a) and (b), illustrating the DSGram score computation process for two distinct sentences, each emphasizing different revision criteria based on context. Both diagrams share an identical structural layout but differ in input sentences, intermediate scores, and final overall scores.\n\n[1] Global Layout and Structure:\nEach diagram follows a top-down hierarchical flow: starting from an original and corrected sentence at the bottom, progressing through two LLM-based modules, then to scoring components, and culminating in an overall score calculation at the top. The structure is symmetrical, with two main branches diverging from the LLM modules—one for constructing a judgment matrix and one for scoring—both feeding into a final aggregation step.\n\n[2] Visual Modules and Attributes:\n- The bottom-most module is a gray rounded rectangle containing the original and corrected sentences. In (a), the original sentence is casual: “So I think we can not live if old people could not find sciences and technologies and they did not developed.” The corrected version improves grammar and clarity. In (b), the original is more formal: “Here was no promise of morning except that we looked up through the trees we saw how low the forest had swung.”\n- Above this, two beige rounded rectangles represent LLM functions: 'LLMs for Constructing Judgement Matrix' and 'LLMs for Scoring'. These feed into subsequent blue and pink modules.\n- The blue rounded rectangles, labeled 'Calculator* n' and 'Prompt Engineering', represent computational and prompt-based processing steps. The 'Calculator* n' module contains JSON-like request-response data, including a host URL (www6b3.wlf.ramalpha.com) and numerical results. The 'Prompt Engineering' module includes a detailed instruction: 'You're a meticulous sentence revision quality assessor... analyze and grade sentences based on three-step criteria.'\n- The pink rounded rectangles display the three scoring dimensions: 'Semantic Coherence', 'Edit Level', and 'Fluency', along with their numeric values. In (a), these are 8, 8, and 9 respectively; in (b), they are 8, 8, and 3.\n- At the top, a gray rounded rectangle calculates the overall score using a weighted sum formula. For (a): 8*0.268073 + 8*0.29518 + 9*0.436747 = 8.436747. For (b): 8*0.11755 + 8*0.486755 + 3*0.395695 = 6.021525.\n\n[3] Connections and Arrows:\nArrows indicate data flow. From the original/corrected sentence, two arrows lead upward to the two LLM modules. From each LLM, one arrow goes to the corresponding blue module ('Calculator* n' or 'Prompt Engineering'). From these, arrows point to the pink scoring modules. Finally, three arrows from each set of pink modules converge into the top gray box for overall score calculation. The weights used in the final formula are derived from the judgment matrix constructed by the 'LLMs for Constructing Judgement Matrix' and processed by 'Calculator* n', which outputs the weight values shown in the JSON response.\n\nThe caption explains that (a) represents a casual dialogue emphasizing fluency, while (b) is a formal expression emphasizing edit level, reflected in the differing weights and final scores."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

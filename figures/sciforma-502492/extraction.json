@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502492",
+  "record_sha256": "6487865a64509f7bbdaea0eb45ead89b5d3a11c8d9e2606fd3cf39163df2f0fa",
+  "asset_sha256": "17efb7c2dcafe688da9d719a2e5215e5f96557d3b0886d9de22e377e64bb49ba",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502492",
+    "title": {
+      "zh": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information · 方法图",
+      "en": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information"
+    },
+    "paper": {
+      "id": "arxiv-2412-14603",
+      "title": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information",
+      "authors": [
+        "Zheng Ren",
+        "Jingwen Zhou",
+        "Wenguan Zhang",
+        "Jiapu Yan",
+        "Bingkun Chen",
+        "Huajun Feng",
+        "Shiqi Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_id": "2412.14603",
+      "arxiv_first_submitted_at": "2024-12-19T07:49:40Z",
+      "arxiv_updated_at": "2024-12-23T11:40:38Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502492/image/image.jpg?Expires=1790835221&Signature=iFDLEgq426~FLSH4WsGAvCKMXbjCKD5Uc~eSu-sCJf15a9BxWtuls~QLcnmg8MKgd-C2~PF4wKFSARurgCfakcJxOetQ2PAcEl8YYO8l4M-uN5B6mo6lUDzBEhvj6iRpU~5~-I1MQu9t7df9qN0smFcp94M3duxy7pzkqlo8DqJjb-CmnbUCScn3Np0UNbFeKqq-RG9g~ATWYJ~w8hKKZlun405FAeFd9VYIosxG0iktipgIvYn0NM73WmbEwDEm~c8Exj3kLfRgH0wOnv5gjuNB6gjWIbCYU0oyOxuLbCFAJN8Yf1c8kfO5byuwcK45bDpAadvmqirBhgZhAuazDQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502492,
+      "description_sha256": "2b20dfc34dfd4d20b3c7a85466fa63ef4d3324985f1df94e1e2dcf7092889b7a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure consists of two panels, (a) and (b), illustrating different aspects of an optical system modeling approach.\n\nPanel (a) presents a comparison between two methods for estimating initial ray positions in an optical system. The layout features a curved black dashed line labeled 'aperture', which represents the boundary of the optical aperture. Along this curve, blue dots form a series of 'mesh grids' that define discrete sampling points. A red dashed vertical line, labeled 'tangent plane', intersects the aperture curve. A yellow line labeled 'ray' originates from a point on the tangent plane, marked with a red star, representing a 'simple guess' for the initial ray position. In contrast, a blue arrow labeled 'our initial' points to a blue star located at a different position along the aperture curve, indicating the proposed improved initial estimate. The visual distinction emphasizes that the proposed method selects a more accurate starting point on the aperture surface compared to the naive approach.\n\nPanel (b) illustrates the coherent point spread function (PSF) calculation process through a lens system. The global structure spans from left to right, with a horizontal axis labeled 'z' indicating the optical axis direction. On the far left, a vertical dashed line marks the 'object plane'. A thick red arrow labeled 'ray' enters from the object plane and propagates toward a central lens system. The lens system is depicted as two black curved surfaces forming a convex lens, labeled 'optical surfaces'. Above the lens, a red integral expression ∫ n(λ)s ds indicates the optical path length calculation along the ray. After passing through the lens, the ray continues to the right, intersecting a vertical solid line labeled 'image plane'. Near the image plane, a red dashed curve labeled 'wavefront' shows the phase front of the light, with a small blue arrow labeled 'Δr' indicating a local displacement or deviation. A blue dot labeled 'grid' marks a sampling point on the wavefront, connected to the image plane by a dashed red line, suggesting the discretization used in the PSF computation. The entire setup demonstrates how rays propagate through the optical system, accumulate phase via the optical path length, and are sampled at the image plane to compute the PSF.\n\nConnections and arrows: In panel (a), the red arrow labeled 'simple guess' points from the tangent plane to the red star on the aperture, while the blue arrow labeled 'our initial' points to the blue star on the aperture, showing the difference in initial ray selection. In panel (b), the red ray arrow traces the path from the object plane through the lens system to the image plane, with the integral expression positioned above the lens segment to denote the phase accumulation. The blue Δr arrow and the grid point indicate the sampling and wavefront analysis at the image plane. The z-axis arrow provides directional context for the propagation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

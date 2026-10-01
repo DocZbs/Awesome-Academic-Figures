@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-502052",
+  "record_sha256": "633447c23d6a35fe6d836d87d9fc77fe9e62f55e3a7198dc09b5587a9e16cfe7",
+  "asset_sha256": "4733f74dc1d25370e4e281937efb627b9311514caaacd87f7e2433cceeef686f",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502052",
+    "title": {
+      "zh": "Unleashing the Power of Continual Learning on Non-Centralized Devices: A Survey · 方法图",
+      "en": "Unleashing the Power of Continual Learning on Non-Centralized Devices: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-13840",
+      "title": "Unleashing the Power of Continual Learning on Non-Centralized Devices: A Survey",
+      "authors": [
+        "Yichen Li",
+        "Haozhao Wang",
+        "Wenchao Xu",
+        "Tianzhe Xiao",
+        "Hong Liu",
+        "Minzhu Tu",
+        "Yuying Wang",
+        "Xin Yang",
+        "Rui Zhang",
+        "Shui Yu",
+        "Song Guo",
+        "Ruixuan Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13840",
+      "arxiv_url": "https://arxiv.org/abs/2412.13840",
+      "arxiv_id": "2412.13840",
+      "arxiv_first_submitted_at": "2024-12-18T13:33:28Z",
+      "arxiv_updated_at": "2025-05-06T08:55:42Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502052/image/image.jpg?Expires=1790835207&Signature=fcgGcZIoMMKUN-BvmYL1yY3Yp336vm0AG9lpvy7NlxBQvInP0YGlSY6rFUIvfguVbw345QChTp5uKAED5ghBUMzi1lst0zSp3WtEiT0~lG8TrWKkaNdXu2buTclZQE36CI81Tiy10vNU6b3t1n9eZD9kvntfXUB1Q5Ov10YnpNBChdWlF53Kc80Q61fNJX-MK74Q529satTet0RBEaYXWvBe1H7mG7k9V988Ida9e7S8Y233QNB~p-Z0LjnstMnHQanD9i~Zs5pG3R1xZ71KzHWfaGK9o9Mu1NWZjf2riK7VH~1YhyHzgfuY0FCit8tvq-zrEbW2NkVLzvbr6sRvOQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502052,
+      "description_sha256": "aa8e9adcff8a892be3e22e7dddde0503dca909dadff930cf209f3a295c175d9d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct data-level methods for continual learning: Experience Replay, Generative Replay, and Proxy Dataset, each depicted in a separate panel labeled (a), (b), and (c) respectively.\n\nPanel (a) illustrates Experience Replay. The global layout shows a blue neural network labeled 'Local Model (t+1)' receiving input from two sources: a blue database icon labeled 'Local Data (t+1)' and a gray box containing six document icons labeled 'Memory Buffer (t)'. These two components are combined via a plus sign, indicating their aggregation before being fed into the model. A solid blue arrow points from this combined input to the Local Model, representing the training process. The entire panel is enclosed in a light blue background with a rounded border.\n\nPanel (b) depicts Generative Replay. The layout begins with a green neural network labeled 'Local Model (t+1)', which receives input from two sources: a green database icon labeled 'Local Data' and a gray box containing four pixelated square icons labeled 'Synthetic samples'. These are combined via a plus sign. The synthetic samples are generated by a smaller black neural network labeled 'Generator', which itself takes input from a green bell-shaped curve labeled 'Distribution'. Solid green arrows indicate the flow from Distribution to Generator, then to Synthetic samples, and finally to the Local Model. The panel has a light green background with a rounded border.\n\nPanel (c) shows the Proxy Dataset approach. The layout includes two neural networks: an orange one labeled 'Teacher Model (t)' and a brown one labeled 'Student Model (t+1)'. Both models interact with a central orange database icon labeled 'Proxy Dataset'. The Teacher Model outputs a sequence of yellow bars labeled 'Previous Logits (t)', while the Student Model outputs a sequence of orange bars labeled 'Current Logits (t+1)'. These logits are fed into a rounded orange box labeled 'Loss', which computes the difference between them. A dashed orange arrow labeled 'update' points from the Loss box back to the Student Model, indicating parameter updates. Solid yellow and orange arrows connect the models to the Proxy Dataset and to the logits. The panel has a light beige background with a rounded border.\n\nEach panel uses consistent visual attributes: neural networks are represented as interconnected circles, databases as stacked cylinders, and synthetic data as pixelated squares. Colors differentiate the methods—blue for Experience Replay, green for Generative Replay, and orange/brown for Proxy Dataset. Arrows indicate data flow and training updates, with solid lines for direct connections and dashed lines for feedback loops. The figure collectively demonstrates how past knowledge is preserved during continual learning through different data reuse strategies."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

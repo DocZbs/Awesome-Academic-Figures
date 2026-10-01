@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+What Matters in Learning A Zero-Shot Sim-to-Real RL Policy for Quadrotor Control? A Comprehensive Study — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11764
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the SimpleFlight framework, a reinforcement learning (RL) based approach for training quadrotor control policies in simulation for direct zero-shot deployment on real hardware. The global layout is a closed-loop system enclosed within a dashed rounded rectangle, indicating the entire training and deployment pipeline. The workflow proceeds from left to right, starting with system identification (SysID) and domain randomization (DR), moving through simulation components, then to the RL agent, and finally to real-world deployment on a quadrotor, with feedback loops closing the system.
+
+On the far left, a yellow oval labeled 'SysID' with a small arrow pointing to '[DR]' represents the initial step of system identification followed by selective domain randomization. This component feeds into a light blue rectangular block labeled 'Sim', which contains two dark blue rectangular modules: 'Dynamics' and 'Low-level Controller'. These represent the simulated environment's core components, where the quadrotor’s physical behavior and low-level control logic are modeled. Below this block, the label '⑤ Sim' indicates this entire simulation module.
+
+From the 'Sim' block, two thick black arrows emerge, labeled ① and ②, carrying state information to the 'Agent' block on the right. Arrow ①, from 'Dynamics', transmits the state vector 'e_w, R, v' to the 'Actor' module. Arrow ②, from 'Low-level Controller', sends 'e_w, R, v, t' to the 'Critic' module. The 'Agent' block is also light blue and contains two dark blue modules: 'Actor' and 'Critic', representing the policy and value function components of the RL algorithm, respectively. Above the 'Agent' block, a thick dark gray curved arrow labeled '③ r_task + r_smooth' indicates the reward signal fed back to the agent, combining task-specific and smoothness rewards.
+
+A thick dark gray curved arrow labeled 'CTBR' connects the 'Agent' back to the 'Sim' block, signifying the continuous-time behavior representation (CTBR) output by the agent, which serves as the control command to the simulation. This forms the primary training loop within the simulation environment.
+
+An orange arrow labeled 'Deploy' extends from the 'Agent' to a circular image of a real quadrotor on the far right, indicating the final step of deploying the learned policy directly onto physical hardware. A long orange feedback loop curves from the real quadrotor back to the 'SysID' component, suggesting that data or performance metrics from the real system can be used to refine or reinitialize the system identification process, enabling iterative improvement.
+
+The figure uses color coding to distinguish components: yellow for system identification, light blue for simulation and agent blocks, dark blue for internal modules, and orange for deployment and feedback paths. Text labels are clear and positioned near relevant components, with numbered annotations (①–⑤) highlighting key elements in the workflow. The overall structure emphasizes a closed-loop, simulation-to-reality transfer pipeline with a focus on robustness through domain randomization and reward shaping.

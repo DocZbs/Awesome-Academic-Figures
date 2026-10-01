@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502431",
+  "record_sha256": "d317b9fd5c0c2f6d613b9a387adc3802accedf73cfbdb2172f154d647ce6ccb4",
+  "asset_sha256": "e43508d99c44926fb9bb508a4f374d49f6e944d15122fceb8d1c446a309610a6",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502431",
+    "title": {
+      "zh": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection · 方法图",
+      "en": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-14522",
+      "title": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection",
+      "authors": [
+        "Youshen Zhao",
+        "Keiji Iramina"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14522",
+      "arxiv_url": "https://arxiv.org/abs/2412.14522",
+      "arxiv_id": "2412.14522",
+      "arxiv_first_submitted_at": "2024-12-19T04:38:34Z",
+      "arxiv_updated_at": "2024-12-24T00:56:06Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502431/image/image.jpg?Expires=1790835221&Signature=SlO9IwkB8zWmzHyu--EttgnbmcTdBYo1wOrrCuqJKOE68kfFrICEvzJugBJ2Medp1w5CsX2z~D-4VMK7-YgLrZOv~u~ipxEkbsd9AEx~-dCyTMPLQiTSuVpXjRvcwW1h~gtn7MO0VerWGyU~5Im~Ex4FoCYiAa1Caiec4psoM1sVYvef4U6VHFCIZ-wAneKFq4fLhjEv7L5I5DmkQyu8tfhmv4uJdbuThUKfQ4NXsf9IgULKvPYgEryEg4iiwmUlubvWoE7-uP85RxVz10EVCGMWAsp1rAt-LCRc-sxZV1tcyQgG09Iy5g-ndWkbvutpVj0ZHHjLbu9bGEa-Fpu4RQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502431,
+      "description_sha256": "894df6bfbcf5f2ddbf3005f253eb5ee7424ba0994636ac1bb21cdc8ba59d59a7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the CwA-T framework for EEG-based abnormality detection, structured as a left-to-right pipeline with three main stages. The global layout is linear and modular, beginning on the far left with raw EEG signal input, progressing through preprocessing, then a multi-layer channelwise autoencoder, followed by a single-head transformer classifier, and concluding with an interpretability module on the right. Each stage is encapsulated within a rounded rectangular container, with clear directional arrows indicating the flow of data.\n\nIn the first stage, labeled 'Raw EEG signals', a circular electrode cap diagram and multiple wavy lines represent multichannel EEG data. Below this, a green-bordered box illustrates preprocessing steps: (i) downsampling, (ii) segmentation using a sliding window (depicted as vertical dashed lines dividing the signal into segments), and (iii) z-normalization. A red box highlights one segment, indicating the processed unit fed into the next stage.\n\nThe second stage, titled 'Channelwise AutoEncoder', consists of stacked layers (Layer 1, Layer 2, ..., Layer n) enclosed in a light blue background. Each layer contains multiple colored, wavy signal strips (in pastel shades like pink, yellow, green, purple) representing channel-specific features. These strips are arranged vertically within each layer, showing progressive compression or abstraction of the input signals. Solid black arrows connect the layers sequentially, indicating forward propagation through the autoencoder.\n\nThe third stage is the 'Single-head transformer' block, shown as a large rounded rectangle. Inside, three weight matrices (W^Q, W^K, W^V) are depicted above corresponding query (Q), key (K), and value (V) vectors. These feed into a 'Scaled dot-product' block (light blue) and a 'V' block (yellow), which together compute the attention mechanism. The output of this is labeled 'Attention(Q, K, V)' in a pink box. From this, a solid arrow leads to a 'Dense' layer, which produces the final binary classification: 'Normal / Pathological'.\n\nConnections between modules are primarily solid black arrows, indicating direct data flow. Notably, a curved black arrow from the last layer of the autoencoder loops back to the transformer, suggesting the latent representations from the autoencoder are used as input to the transformer. Additionally, two dashed red arrows originate from the transformer and point to the 'Interpretability Module' on the far right. This module includes a circular electrode cap diagram and three small plots of time-series data, indicating that the model's internal representations or attention weights can be visualized for interpretability purposes. The entire diagram uses clean, minimalistic shapes with consistent color coding to distinguish components and data types."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500001",
+  "record_sha256": "2bbaac3a959c59361579b8b6e39e8c652f6d801a570762beb4f382571fa79fc7",
+  "asset_sha256": "1abc0066b8b2edf70f56bb87b751faec21b5b141383ae09c04723cc25eb2ce55",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500001",
+    "title": {
+      "zh": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models · 方法图",
+      "en": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-10582",
+      "title": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models",
+      "authors": [
+        "Runsheng \"Anson\" Huang",
+        "Lara J. Martin",
+        "Chris Callison-Burch"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10582",
+      "arxiv_url": "https://arxiv.org/abs/2412.10582",
+      "arxiv_id": "2412.10582",
+      "arxiv_first_submitted_at": "2024-12-13T21:48:54Z",
+      "arxiv_updated_at": "2025-10-20T21:09:33Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500001/image/image.jpg?Expires=1790835163&Signature=j8ouelAhT9aovV09ZIMhp70v-m44CI~3OTulSU71n4m1DUd2IZx-jL86UTDSrPoptkzKd~w0BpzxZdDGLAIUORUjkB0ADkIbj-MTB5tOSNmmCNXrpX368F71ovqbcH9WFJL14d9wB06zAa08NOOeUL9rkwPmLamBHaGOp2zPfniitUDZ4w2wu0LOsbNFYQHxsYKmylvy4ffCyJ7lRaMuFf-aa7JEYmWBWEeptNCPrdDD0q1BIqcDetMDSCBe1Mj3BEVEY2Cd64VH1fsekFPGfapmjE-VjtyRlmV9DsDWiUbtHCAOB-xzfHhUMm9Q0hzTGnKiF2HpLxkfPHbn-vJplw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500001,
+      "description_sha256": "1557f2c6d8c758df3f6d167a1961227f1aacf1c4411842fdd284d966f86bee35",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a pipeline for generating interactive fiction games by creating alternate storylines from an original plot. The global layout is structured as a flowchart with a primary vertical sequence on the left and a detailed, iterative process enclosed in a dashed purple box on the right labeled 'Create Branch'. The entire process begins with the 'Original Plot P', represented as a blue note-shaped box with the mathematical notation P = [p₁, p₂, ..., pₙ], indicating a sequence of plot points. This original plot feeds into step ①, 'Plot-to-tree', a teal rounded rectangle, which converts the linear plot into a tree structure. From this point, two paths diverge: one continues vertically down to step ⑦, 'Narrate and generate game', while the other enters the 'Create Branch' module.\n\nWithin the 'Create Branch' module, the process is iterative and marked at the top with the label 'For each storyline'. Step ②, 'Extract key events', takes the original storyline as input and outputs 'Key events', which are passed to step ③, 'Generate meta-prompts'. These meta-prompts are then used in step ④, 'Generate new events p_t through p_n', to create alternative narrative events starting from a specific time point t. The output of this step is a modified plot sequence P' = [p₁, p_{t−1}, p'_t, p'_{t+1}, ..., p'_n], where the prime notation indicates altered or newly generated events. This new plot is then processed by step ⑤, another 'Plot-to-tree' block, which converts it into a tree structure. The resulting tree is merged with the original tree in step ⑥, labeled 'Merged tree', producing a new branch within the overall narrative tree.\n\nThe merged tree is then used to generate multiple 'Alternate Storylines', depicted as a stack of blue note-shaped boxes. These alternate storylines feed into step ⑦, 'Narrate and generate game', a teal rounded rectangle, which ultimately produces an 'Interactive Fiction Game', symbolized by a game controller icon below the box. The connections between steps are indicated by arrows: solid blue arrows represent the main data flow, while solid purple arrows indicate the iterative loop for each storyline within the 'Create Branch' module. A gold arrow connects the original plot directly to the final narration step, suggesting a base narrative path. The figure uses consistent visual attributes: teal rounded rectangles for processing steps, blue note shapes for data inputs/outputs, and numbered circles to denote sequential steps. The overall structure emphasizes a modular, iterative approach to narrative expansion, enabling dynamic and branching storytelling in interactive games."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

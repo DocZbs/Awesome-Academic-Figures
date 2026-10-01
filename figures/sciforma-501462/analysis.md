@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12836
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the concept and workflow of machine unlearning, specifically comparing general machine unlearning with recommendation unlearning, and depicting the temporal progression of the unlearning process. The diagram is divided into two main sections: the left side presents 'Machine Unlearning' and the right side presents 'Recommendation Unlearning', separated by a vertical line. Below these two sections is a timeline illustrating the stages of learning and unlearning over time.
+
+In the left section, 'Machine Unlearning', training data is split into two parts: 'Unlearned Data (Forget Set)', represented by a red cylinder, and 'Remaining Data (Retain Set)', represented by a blue cylinder within a dashed box labeled 'Training Data'. The 'Original Model', depicted as a gray neural network icon, is trained on the full dataset. A dashed arrow labeled 'Training' points from the training data to the original model. The 'Retain Set' is then used for retraining, indicated by a solid blue arrow labeled 'Retraining', leading to a 'Retrained Model' shown as a blue neural network icon. This retrained model is connected via a bidirectional green arrow labeled 'Equivalent to' to an 'Unlearned Model', which has a similar structure but with one node highlighted in red and another in yellow, indicating changes or removals. This visualizes the goal of unlearning: producing a model equivalent to one trained only on the retain set.
+
+In the right section, 'Recommendation Unlearning', the setup is similar but includes additional context. Training data is described as 'User-Item Interaction' and visually represented as a grid with blue and red cells, symbolizing interactions. The 'Forget Set' is again a red cylinder, while the 'Retain Set' is a blue cylinder. The 'Original Model' (gray neural network) is trained on all data. Two types of unlearning are shown: 'Input Unlearning' and 'Attribute Unlearning'. For 'Input Unlearning', the 'Retain Set' is used for retraining, resulting in a 'Retrained Model' (blue neural network), which is again equivalent to an 'Unlearned Model' (blue neural network with red and yellow nodes). For 'Attribute Unlearning', the original model attempts to infer a 'Latent Attribute (not participate in training)', shown as a gray grid with a sad face icon, indicating failure. An arrow labeled 'Attribute Unlearning' points from the original model to an 'Unlearned Model' (blue neural network with red and yellow nodes), and a dashed arrow from this model to the latent attribute grid ends with a cross and a smiley face labeled 'Cannot Infer', signifying successful unlearning of the attribute.
+
+At the bottom, a timeline graph shows the progression from T₀ to Tₐ. The x-axis is divided into 'Learning Stage' (from T₀ to Tₑ) and 'Unlearning Stage' (from Tₑ to Tₐ). The y-axis represents some performance metric, shown as a green curve decreasing and stabilizing. Key events are marked: at Tₑ, 'Learning Complete' and 'Unlearning Enabled' (green play button); at T_d, 'Target Determination' (red pin); at T_u, 'Unlearning Execution' (blue cube with a hand); and at T_a, 'Unlearning Addition' (two hands, one with a checkmark, one with an X). This timeline captures the lifecycle of a model undergoing unlearning, from initial training to subsequent unlearning operations.

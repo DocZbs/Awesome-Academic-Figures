@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501746",
+  "record_sha256": "71dfe77b0178541e14dc9376004e09127e750457cf18cd0b2c1b476d75fb069e",
+  "asset_sha256": "4f8aa7dc062114f9bccbe2051f3f7747d5fb710582700fcdf0d32e74a073996c",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501746",
+    "title": {
+      "zh": "Rare Event Detection in Imbalanced Multi-Class Datasets Using an Optimal MIP-Based Ensemble Weighting Approach · 方法图",
+      "en": "Rare Event Detection in Imbalanced Multi-Class Datasets Using an Optimal MIP-Based Ensemble Weighting Approach"
+    },
+    "paper": {
+      "id": "arxiv-2412-13439",
+      "title": "Rare Event Detection in Imbalanced Multi-Class Datasets Using an Optimal MIP-Based Ensemble Weighting Approach",
+      "authors": [
+        "Georgios Tertytchny",
+        "Georgios L. Stavrinides",
+        "Maria K. Michael"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13439",
+      "arxiv_url": "https://arxiv.org/abs/2412.13439",
+      "arxiv_id": "2412.13439",
+      "arxiv_first_submitted_at": "2024-12-18T02:20:51Z",
+      "arxiv_updated_at": "2025-01-31T14:05:16Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501746/image/image.jpg?Expires=1790835200&Signature=T2O0IsfnDkFC~81Lk3DqF5RWiGRnxpoq96JbOjJ4WORAngOczpSvzWLO6l19Cz4T1YrQWt-KikmCjJvooHkHdGItDq5E3a56Htg74HG90aiZcyioWG~ORhJ3UWH5Is3kJRWcaRYPgY6HLhb6CrQqgJh8nz13gw6VHgzLf4PZMhgCVsKVRrXND26alVBjKaIi147TvpzYkW84~nrEDMiYILu7~cnnJwkXW2YeLyNWr4a5HsGHIohpfOnIQz3ZqC-JXMQ5FYxSmGuMns~FKqJf-~m~BV-1ZBnr9EfHiOPxy-9MJ736sFZ6wwi8fqcpTqlbv1nK47IRpY6Lk-MPePvTDA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501746,
+      "description_sha256": "4bd3cae1d73448a9a989aff19a0ad2e47448bc85ed6e9706e1d25c4c51ac490b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage methodology for constructing and evaluating an ensemble classifier using a weighted selection approach based on mixed-integer programming (MIP) and elastic net regularization. The overall layout is divided into three main rectangular sections outlined in orange: '1. Training & Validation' at the top, '2. Weight Calculation' on the bottom right, and '3. Test & Evaluation' on the bottom left. These stages are connected by directional arrows indicating the flow of the process.\n\nIn Stage 1, 'Training & Validation', the dataset, labeled as 'Set E of m Classes', is split into an 80% Training/Validation Set (pink cylinder) and a 20% Test Set (darker pink cylinder). A set C of n classifiers, visually represented by multiple tree-like structures with colored nodes (yellow, green, blue), is applied to the training/validation set. This process employs stratified k-fold cross-validation, depicted as five vertical cylinders, each segmented into five layers (numbered 1–5), where one layer per cylinder is highlighted in orange to indicate the validation fold. The output of this stage is the Mean Validation Accuracy Matrix V = [v_ij]_{n×m}, shown as a green grid icon, which captures the performance of each classifier across classes.\n\nStage 2, 'Weight Calculation', receives the accuracy matrix V as input. This stage is encapsulated in a beige box labeled 'MIP - Elastic Net' and contains a central gear mechanism with interlocking cogs and circular blue arrows, symbolizing optimization. The process outputs a Weight Matrix W = [w_ij]_{n×m}, represented by a blue grid icon, which determines the optimal weights for selecting K classifiers from the original set C. An orange curved arrow points from the weight matrix to the next stage.\n\nStage 3, 'Test & Evaluation', begins with the 'Ensemble Model of K Classifiers', illustrated as a blue neural network-like structure with two brain-shaped nodes. This model receives the weight matrix W as input and processes the reserved Test Set. The final step is 'Inference', depicted with icons including a document with a checkmark, a bar chart, and a green circuit-brain hybrid symbol, representing the evaluation and interpretation of predictions. A black arrow connects the test set to the inference module, completing the workflow. The entire diagram emphasizes a data-driven, optimized ensemble construction pipeline from training through weight calculation to final testing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

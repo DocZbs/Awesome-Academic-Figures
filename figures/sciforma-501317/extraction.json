@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501317",
+  "record_sha256": "924bc2af3760a9b35016e8bb2b22d88a752fe31393097142cc773a7b6a88be38",
+  "asset_sha256": "33f1422e6f7d9ae3cf059edf93b271d58b1c2cbf10310d624ecedd0d0e258739",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501317",
+    "title": {
+      "zh": "Neighbor-Aware Reinforcement Learning for Mixed Traffic Optimization in Large-scale Networks · 方法图",
+      "en": "Neighbor-Aware Reinforcement Learning for Mixed Traffic Optimization in Large-scale Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12622",
+      "title": "Neighbor-Aware Reinforcement Learning for Mixed Traffic Optimization in Large-scale Networks",
+      "authors": [
+        "Iftekharul Islam",
+        "Weizi Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12622",
+      "arxiv_url": "https://arxiv.org/abs/2412.12622",
+      "arxiv_id": "2412.12622",
+      "arxiv_first_submitted_at": "2024-12-17T07:35:56Z",
+      "arxiv_updated_at": "2024-12-17T07:35:56Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501317/image/image.jpg?Expires=1790835191&Signature=OBGRHY8CARxXIu911viPsjRqXjBPm13yUg1Nv-KWV0DQdfe4hzPvVHziuEN4q820W3xwEBUtOgBBexIyhB3j6wQHlrKQJOHCR4LeErN6y13UkN8uhD8rGv2SAHCHFpOzJWGseL5NvgUq9ZKof-PLExpHTNMBHRH-2dglAsmOeAIpXFIyw39WDzG67pWTFrZ5ZS6BhebM6OYxwQd4rZgRbhdWRlPfZQKnSno-GiR1psASi3otAlBimNwlUhJcMxIXei0fLKVFCHEXCJLju9QuDTo4tVCHafvIzipO5O-3t4V4FV~0sbws9loKloq3J5bMFmqodyVrGubyUCtFeyR~FQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501317,
+      "description_sha256": "252cdbb8fbab9dedc20be1daaabc1d5f177437d8342c8c4ab06a900fd93c0a61",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a neighbor-aware reinforcement learning framework for large-scale mixed traffic control, structured as a closed-loop system. The global layout is a rectangular flow diagram arranged in two horizontal rows and two vertical columns, forming a clockwise cycle. The top row contains the 'RV Observation' and 'Policy Network' modules, while the bottom row includes the 'Reward Function' and 'Action Selection' modules. A thick black arrow from the bottom-left corner loops upward to the leftmost input, completing the feedback loop.\n\nEach module is represented as a rounded rectangle with a dark teal background and white text. The first module on the top-left, labeled 'RV Observation', receives an input labeled '[Network state]' via a thick black arrow. Inside this module, four state features are listed: 'Queue length', 'Waiting Time', 'Occupancy map', and 'Downstream state'.\n\nThis observation is passed to the next module on the top-right, titled 'Policy Network', which contains the text 'Rainbow DQN', '3 Hidden Layer', and '512 Units each', indicating the deep neural network architecture used for policy learning. A thick black arrow connects the observation to the policy network.\n\nFrom the policy network, a downward arrow leads to the 'Action Selection' module in the bottom-right, which displays two possible discrete actions: '[Stop]' and '[Go]', separated by 'Or'.\n\nAn arrow from the action selection module points leftward to the 'Reward Function' module in the bottom-left, which contains the mathematical expression: 'R_local + R_conflict + R_neighbor', representing the composite reward function combining local efficiency, conflict avoidance, and neighbor-aware distribution.\n\nFinally, a thick black L-shaped arrow extends from the reward function back to the initial '[Network state]' input, closing the loop and indicating that the reward signal updates the environment state for the next iteration. The entire diagram emphasizes a continuous reinforcement learning process where each connected vehicle (RV) observes its environment, selects an action based on a learned policy, receives a reward based on local and network-wide considerations, and uses this feedback to improve future decisions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

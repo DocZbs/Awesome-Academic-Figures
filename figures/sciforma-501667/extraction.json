@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501667",
+  "record_sha256": "57d6e9995e59cdc94a578583498e533062ab71ceea3dba43f5098664d84581ca",
+  "asset_sha256": "32d0a977bdb59ae24b72d53b57be8f990f13ebe4e552c6c78c1fcdca8949cf76",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501667",
+    "title": {
+      "zh": "C2F-TP: A Coarse-to-Fine Denoising Framework for Uncertainty-Aware Trajectory Prediction · 方法图",
+      "en": "C2F-TP: A Coarse-to-Fine Denoising Framework for Uncertainty-Aware Trajectory Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-13231",
+      "title": "C2F-TP: A Coarse-to-Fine Denoising Framework for Uncertainty-Aware Trajectory Prediction",
+      "authors": [
+        "Zichen Wang",
+        "Hao Miao",
+        "Senzhang Wang",
+        "Renzhi Wang",
+        "Jianxin Wang",
+        "Jian Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13231",
+      "arxiv_url": "https://arxiv.org/abs/2412.13231",
+      "arxiv_id": "2412.13231",
+      "arxiv_first_submitted_at": "2024-12-17T13:42:49Z",
+      "arxiv_updated_at": "2024-12-24T03:46:32Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501667/image/image.jpg?Expires=1790835197&Signature=nWOttLJq9L0kLxcaNLepLD6CxDza0T-kceSSiA8yfbRDZI9kTv4g395wtpHkrF4cV-5wCJhf8BDm2PfWO3LshpAzlpc6Tc8QNDTkt7hzn0gQdOj9hCaNez9uR0Sis9YEHi8~b4809iUFHGbvsz-fh6H~s388vASJ9sgkDNxjIdm~x-T~bZ0TBgEmRk25AvKU60lgTwLnj-B4evxkgqesBXw-8gR9jvqgVtubP1gS6mkOCSADMOLLC9lbMofm0q~g61XU4cvoNwJWMtKx~0zu~F7aMveAye7lXIQi2jRT-b4hWVrDwyiUP6wplH5tUIluSPavlNdw9zizhkEdC1og7A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501667,
+      "description_sha256": "3868c9c3d546a1bdee4a75a556d0b39954fb07eb9b2c343d95d67adf7c1eb4c5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the framework of the proposed C2F-TP model, which consists of two main components: a Spatial-Temporal Interaction Module and a Refinement Module. The global layout is left-to-right, starting with input historical trajectories on the far left, progressing through the interaction module, and ending with predicted trajectories on the far right. The entire pipeline is divided into distinct functional blocks, each enclosed in dashed borders with specific colors: yellow for the interaction module and pink for the refinement module.\n\nOn the left, the 'History Trajectory' section shows a grid of vehicles over time, with a red car representing the target vehicle, blue cars as pooling vehicles, and gray cars as unrelated vehicles. These trajectories feed into the 'Motion Encoder', which comprises an MLP (blue), an LSTM (green), and a Historical Encoding block (yellow). The encoder outputs are used to generate 'Vehicle Waves' (blue wavy lines) and 'Target Waves' (red wavy line), which are combined with a 'Position Vector' (3D blue cube) to form 'Social Encoding' (pink rectangular block).\n\nThis social encoding feeds into the 'Interaction Pooling' block, which uses a multi-head attention mechanism with Q, K, V matrices (light blue, green, orange cubes respectively) and a SoftMax layer (purple) to compute attention weights across n heads. The output is a 'Social Context' vector (blue vertical bar) and a 'Target History Context' vector (pink vertical bar). These are combined and passed to the 'Re-weighted Multimodal Trajectory Predictor'. This predictor includes an LSTM (purple), a Mapping block (red 3D grid), and two SoftMax layers for longitudinal and lateral maneuver probabilities (yellow boxes). The output is a distribution parameterized by μ and σ, from which K Sampled Trajectories are generated via Random Sampling (two blue cubes labeled μ and σ).\n\nThese sampled trajectories enter the 'Refinement Module' (pink dashed border). They are first initialized and then processed by a 'Denoising Module' (blue box) using 'Historical Trajectories' as context. The module performs 'Stepwise Denoising' (indicated by a red arrow and a sequence of red car icons with decreasing noise), producing 'Denoised Trajectories' and finally 'Predicted Trajectories' (topmost red car with a green checkmark). The entire process is designed to capture complex inter-vehicle interactions and refine noisy predictions into accurate, smooth future trajectories."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

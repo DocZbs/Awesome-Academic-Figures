@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500590",
+  "record_sha256": "3303c36a4a1caae653478650f1ebb109d55c7d28b1a08061d29f9fdccef53a02",
+  "asset_sha256": "fff43bfbddffb79d7c4ce1feffd88e38cf4f3ba289aef3d1055a361c7f3e4ea7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500590",
+    "title": {
+      "zh": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer · 方法图",
+      "en": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11540",
+      "title": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer",
+      "authors": [
+        "Jiaxu Wan",
+        "Hong Zhang",
+        "Ziqi He",
+        "Yangyan Deng",
+        "Qishu Wang",
+        "Ding Yuan",
+        "Yifan Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_id": "2412.11540",
+      "arxiv_first_submitted_at": "2024-12-16T08:21:09Z",
+      "arxiv_updated_at": "2025-07-11T10:38:22Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500590/image/image.jpg?Expires=1790835172&Signature=atKWKYz~QCmlaLTNr~htoZj6JESijG9LkuXKHHzxPtvSQmCCOW7~V~vyUh1-4913aT9xGt8KpgzMSDcaR2Jl24-dK0AhOrHw32PCEsoNMJLpNlFDWRWdREP7VxUegW3rXd6K1s1UCFbWj6sDdA7MzUdOjXT1n5Hmhiu~8moGtkNfJwpWrjC75x2ZVb7EXfBfFFOXnun-DQL9-9vCV27rmK7EiU1hCpekavu83-LW7pDjjapooyf0iNHPue3dMg-xI32cB4cqxbOgJC-bb42-4QC0CrW0ZAIgPOWIlCSmX3zSTDFa5T4gaYf~HOxiufJx7oSJLU2o5wtjioX229fYeg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500590,
+      "description_sha256": "830659e20d5934245580336d58632a469f91f63bef753d8ac65cbdc88b46207a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the vertex-based association mechanism used in SPA (Spatial Proxy Association), illustrating how points are associated with proxies located at the vertices of a proxy cubic. The diagram is divided into two main parts: (a) Vertex-based Association and (b) Association Tuple List.\n\nIn part (a), a 3D proxy cubic is represented by a dashed rectangular boundary, with its eight vertices marked by light blue circles labeled as 'Proxy'. These proxies are arranged in two horizontal rows of four, forming the top and bottom faces of the cube. Reddish-pink circles, labeled as 'Point', are positioned outside the cubic and are connected via solid purple arrows to one or more proxy vertices, indicating a point-proxy association. Each point is linked to multiple proxies, typically those closest to it within the cubic structure. Dashed vertical lines connect corresponding top and bottom proxies, emphasizing the cubic geometry. A legend at the top clarifies the visual encoding: reddish-pink circles represent 'Point', light blue circles represent 'Proxy', and an arrow from a point to a proxy denotes a 'Point-Proxy Association'.\n\nPart (b) displays the Association Tuple List, which is a tabular representation of the associations shown above. The table has two rows: the top row lists the 'Point' identifiers (e.g., Point 0, Point 1, ..., Point 4), and the bottom row lists the corresponding 'Proxy' identifiers (e.g., Proxy 0, Proxy 1, ..., Proxy 6). Each column represents a unique point-proxy pair, with dotted vertical lines separating entries. The table is color-coded to match the legend: the top row has a light pink background, and the bottom row has a light blue background. Dashed purple arrows extend downward from specific points and proxies in part (a) to their corresponding entries in the tuple list, visually linking the graphical representation to its structured data form.\n\nThe overall layout is hierarchical and modular, with part (a) providing a spatial visualization of the association process and part (b) offering a structured, tabular summary. The connections between the two parts are indicated by dashed arrows, reinforcing the relationship between the geometric model and its data representation. The figure effectively communicates that in SPA, each point is associated with the proxies at the eight vertices of its respective proxy cubic, and these associations are stored as tuples in a list for further processing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

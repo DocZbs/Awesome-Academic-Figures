@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500108",
+  "record_sha256": "6dd3ef205c54ac3c57248f19902989129cc8fd3fa7d8b904a350478b478142e6",
+  "asset_sha256": "5d39595eb9068e90c48d4ac9c7e3804dadac60a7dfb15d2c3b009afb90463ac9",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500108",
+    "title": {
+      "zh": "Patch-level Sounding Object Tracking for Audio-Visual Question Answering · 方法图",
+      "en": "Patch-level Sounding Object Tracking for Audio-Visual Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-10749",
+      "title": "Patch-level Sounding Object Tracking for Audio-Visual Question Answering",
+      "authors": [
+        "Zhangbin Li",
+        "Jinxing Zhou",
+        "Jing Zhang",
+        "Shengeng Tang",
+        "Kun Li",
+        "Dan Guo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10749",
+      "arxiv_url": "https://arxiv.org/abs/2412.10749",
+      "arxiv_id": "2412.10749",
+      "arxiv_first_submitted_at": "2024-12-14T08:34:44Z",
+      "arxiv_updated_at": "2024-12-14T08:34:44Z",
+      "arxiv_subjects": [
+        "cs.MM",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500108/image/image.jpg?Expires=1790835166&Signature=Jsrqd~l~okyDCnE~aYXsVBlgtcQxAjToyowAKCqnav0nISBp09J~JtcAGRhDAA41Ad--1~2Iqf0XrPCxh-hL-1M730aez2wniT39HOuc2ltopByMQSKUQlS1iI9-8moWIEeWqY-M8E5O8Glr0VFRU3txHuLlCFHb3AxnLXfnc-QN~rRJmryNdzU36yQwHk2o8IJ3WtAgvntzXgN9ViqI5Dc0vyCyLarwR-ZBQ7f0mSyRlhC9Keb0RIoBV5v8hREKTQpglwps0jhm-RhUmJeM85Qv~JUOctdiL9b1v6c8utruNJ2dPYlqU34z6JbR890DV4nKLeY1RhYEMKVcMrN80Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500108,
+      "description_sha256": "65b507eb8ea9dc20f327c69a16e08c574028c1c8365388e4e39eb8dea5625b19",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.MM",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a four-stage multimodal key patch tracking and aggregation framework for visual question answering, structured horizontally into four distinct modules: Motion-driven Key Patch Tracking (M-KPT), Sound-driven Key Patch Tracking (S-KPT), Question-driven Key Patch Tracking (Q-KPT), and Multimodal Message Aggregation (MMA). Each stage is visually separated by color-coded backgrounds—beige for M-KPT, light blue for S-KPT, light green for Q-KPT, and white for MMA—and arranged sequentially from top to bottom.\n\nIn Stage 1 (M-KPT), visual input frames are processed to track salient patches with significant motion. Red dots indicate tracked patches across consecutive frames, forming trajectories. The motion-activation matrix $\\bm{m}_t$ is computed via patch-wise motion intensity between neighboring frames, represented as a grid of orange-colored cells. This matrix, combined with visual features $v_t$ and audio features $a_t$, generates an adjacency matrix $\\mathcal{A}^m_t$ for the motion-driven graph $\\mathcal{G}^m_t$. The graph is depicted as a node diagram where red nodes represent motion-activated patches ($v^i_t$, $v^2_t$), a gray node represents audio feature $a_t$, and edges denote connectivity guided by $\\mathcal{A}^m_t$. The output is a fused representation $v^i_t; a'_t$.\n\nStage 2 (S-KPT) processes both vision and audio inputs. Audio signals are shown as waveforms below video frames, with blue lines linking audio peaks to corresponding visual patches, indicating audio-visual correspondence. The sound-activation matrix $\\bm{s}_t$ is derived as a grid of blue cells. Combined with $v_t$ and $a_t$, it forms the adjacency matrix $\\mathcal{A}^s_t$ for the sound-driven graph $\\mathcal{G}^s_t$. In this graph, teal nodes represent sound-activated patches ($v^i_t$, $v^1_t$), while $a_t$ remains gray. Edges reflect sound-driven connectivity. The output is another fused representation $v^i_t; a'_t$.\n\nStage 3 (Q-KPT) incorporates a textual question (e.g., 'How many guitar sound always?') to refine patch selection. The question $q$ is encoded and used to compute relevance scores (e.g., 0.5, 0.1, 0.3, etc.) for patches from previous stages. Only the top $r\\%$ highest-scoring patches are retained, marked with green stars. These selected patches form the question-driven graph $\\mathcal{G}^q_t$, where green nodes represent question-relevant patches ($v'^i_t$, $v'^1_t$), and a central green node $q_k$ denotes the question embedding. Dashed edges indicate potential connections.\n\nStage 4 (MMA) aggregates multimodal messages. The aggregated audio features $\\bar{a} = \\{a^t\\}_{t=1}^T$ and visual features $\\bar{v} = \\{\\hat{v}^t\\}_{t=1}^T$ (after node pooling) are processed through three independent graph networks: $\\mathcal{G}^{qa}(q; \\bar{a})$, $\\mathcal{G}^{qv}(q; \\hat{v})$, and $\\mathcal{G}^{q\\bar{v}}(q; \\bar{v})$. Their outputs are summed via ⊕ operations to produce the final answer vector $\\bar{q}$, which yields the predicted answer ('one').\n\nConnections between stages are indicated by curved arrows, showing the flow from M-KPT and S-KPT to Q-KPT, and then to MMA. The overall layout emphasizes a hierarchical refinement process: motion and sound cues identify candidate patches, the question filters them, and multimodal aggregation produces the final answer."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

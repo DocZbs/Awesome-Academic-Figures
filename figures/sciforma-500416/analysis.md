@@ -1,0 +1,32 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11277
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure is divided into two main sections: the top section illustrates the structure of Octave Convolutions, and the bottom section shows the generator design incorporating these convolutions.
+
+[1] Global Layout and Structure:
+The top portion is enclosed within a purple dashed boundary labeled 'Octave Convolutions'. It depicts a dual-path processing architecture where input feature maps are split into high-frequency (H) and low-frequency (L) components. These paths process data independently and exchange information before producing output feature maps. Below this, the generator architecture is shown as a horizontal sequence of blocks, starting from H and L inputs on the left and progressing rightward through various convolutional layers.
+
+[2] Visual Modules and Attributes:
+In the Octave Convolutions section, the high-frequency input X_H is represented by a blue cube with dimensions h × w and channel count (1−α_in)c_in. The low-frequency input X_L is a yellow rectangular prism with dimensions 0.5h × 0.5w and channel count α_in c_in. The central processing block is split into two regions: 'High' (light blue background) and 'Low' (light green background). Within the 'High' region, two operations are shown: f(X_H; W_{H→H}) for self-update (dark blue arrow) and f(pool(X_H,2); W_{H→L}) for down-sampling and cross-path communication (red arrow). In the 'Low' region, f(upsample(X_L,2); W_{L→H}) performs up-sampling and cross-path communication (red arrow), while f(X_L; W_{L→L}) handles self-update (dark blue arrow). Outputs Y_H and Y_L are produced via element-wise addition (⊕) of the respective paths: Y_H = Y_{H→H} + Y_{L→H}, and Y_L = Y_{H→L} + Y_{L→L}. The outputs retain their spatial dimensions and channel counts: Y_H is a blue cube with (1−α_out)c_out channels, and Y_L is a yellow prism with α_out c_out channels.
+
+A legend below the Octave Convolutions section clarifies visual encoding: blue cubes denote high-frequency feature maps, yellow prisms denote low-frequency feature maps, red lines indicate information exchange between paths, and dark blue lines indicate information update within each path.
+
+In the generator section, the architecture begins with H (blue cube) and L (green cube) inputs. The subsequent layers are represented as vertical bars: blue bars indicate Standard Convolutions, orange bars indicate Octave Convolutions, and green trapezoids represent Up-sampling operations. The sequence alternates between these types, with the final few layers being standard convolutions. A legend on the right side explicitly defines the color coding for these modules.
+
+[3] Connections and Arrows:
+In the Octave Convolutions block, arrows show the flow of data. From X_H, a dark blue arrow leads to f(X_H; W_{H→H}), and a red arrow leads to f(pool(X_H,2); W_{H→L}). From X_L, a dark blue arrow goes to f(X_L; W_{L→L}), and a red arrow goes to f(upsample(X_L,2); W_{L→H}). The outputs of these functions converge at ⊕ nodes: the red arrow from f(pool(X_H,2); W_{H→L}) and the dark blue arrow from f(X_L; W_{L→L}) feed into the ⊕ for Y_L; the red arrow from f(upsample(X_L,2); W_{L→H}) and the dark blue arrow from f(X_H; W_{H→H}) feed into the ⊕ for Y_H. Thick gray arrows then carry Y_H and Y_L to their respective output representations.
+
+In the generator, blue and green arrows connect the initial H and L inputs to the first layers. Subsequent connections are implied by the horizontal arrangement of blocks, indicating sequential processing. The up-sampling blocks (green trapezoids) are positioned to increase spatial resolution, typically after or between convolutional layers.

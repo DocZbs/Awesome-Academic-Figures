@@ -1,0 +1,102 @@
+{
+  "id": "sciforma-500973",
+  "record_sha256": "5da6246a8208dafa0f91c193de4678e1c4dda50a87374ceb505c5322d1aeeeb3",
+  "asset_sha256": "4d55a8f36a5a2b045caf5a46151156e0c0f8ff5d5164bdbc3264f651eabfc344",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500973",
+    "title": {
+      "zh": "Mastering Board Games by External and Internal Planning with Language Models · 方法图",
+      "en": "Mastering Board Games by External and Internal Planning with Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12119",
+      "title": "Mastering Board Games by External and Internal Planning with Language Models",
+      "authors": [
+        "John Schultz",
+        "Jakub Adamek",
+        "Matej Jusup",
+        "Marc Lanctot",
+        "Michael Kaisers",
+        "Sarah Perrin",
+        "Daniel Hennes",
+        "Jeremy Shar",
+        "Cannada Lewis",
+        "Anian Ruoss",
+        "Tom Zahavy",
+        "Petar Veličković",
+        "Laurel Prince",
+        "Satinder Singh",
+        "Eric Malmi",
+        "Nenad Tomašev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_id": "2412.12119",
+      "arxiv_first_submitted_at": "2024-12-02T18:56:51Z",
+      "arxiv_updated_at": "2025-05-23T01:35:09Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500973/image/image.jpg?Expires=1790835182&Signature=EGeRRuu3afCOXSj9qaOllTLltuSGxBJhYTdNKWpTkN30Buh4kNkxykO-efaAAs2jzCr29eXzO3vsPTyksqrSMsSbVW-9zLbkZmgxUvnt8dWCHnTiqEkFwQIrSfvucy0A~drHWkhMQgXmstkArRhcDNdPbJshjP-CU-hD05yk8LZvzbcKMOJMeBC2RYLOHCLfZ~Q2D42ErakE76UsV5z1xwXUZJ7A8YHnwiWaTw2oVw3EQx31ozUWrvNkYlzjiTSO02PKKXibOrJYx6G-tUt6uQLRxp8VUUzxia0Ij9TCx392W-UxOYw2VpvRFSB1u5C-22fLben-ogRW4oDnmaW6dQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500973,
+      "description_sha256": "a201153799f34a2239cb156ea8739d7656920fd42e3e31c66a960dc75dc7093f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a decision-making process in a chess game using a minimax search with breadth=3 and depth=1, alongside a model's internal search response. On the left side, there is a textual representation of the model’s input prompt and output response, formatted as a log of evaluations for different nodes in the search tree. The prompt includes metadata such as 'Minimax breadth=3 depth=1' and structured XML-like tags like <mav game=chess> and <nav game=chess>, which denote different evaluation modes. For each node (e.g., <root>, <root g3d6>, <root g3g6>, <root c2e2>), the log shows the current state (FEN notation), previous action, top action-value pairs (e.g., g3d6:<ctrl133>, c2e2:<ctrl132>), and the selected best action. The text uses color coding: green for evaluation results, red for selected actions, and black for structural information. The final decision is highlighted as selecting 'g3g6' from the root node.\n\nOn the right side, the corresponding minimax search tree is visualized with three branches stemming from the initial chessboard position at the top. Each branch represents a possible move from the root: Queen to d6 (red arrow), Queen captures on g6 (green arrow), and Rook to e2 (blue arrow). Below each move, the resulting board state is shown. The move 'd6' has a value v(●) = 0.55, 'xg6' has v(●) = 0.52, and 'e2' has v(●) = 0.5. Under each resulting board, the best action from that state is indicated: for 'd6', it's Queen x d6 with v(○) = 0.5; for 'xg6', it's Knight f4 with v(○) = 0.34; for 'e2', it's Knight f4 with v(○) = 0.5. The boards use standard chess notation with pieces rendered in black and white, and highlighted squares indicate the move or target square (e.g., pink for 'd6', green for 'xg6', blue for 'e2').\n\nAt the bottom, the overall values for the three root actions are summarized: v(●, a₁) = 0.5 for 'd6', v(●, a₂) = 0.66 for 'xg6', and v(●, a₃) = 0.5 for 'e2'. This indicates that although the model’s MAV (Model Action Value) assigns the highest value to 'd6', the internal search correctly identifies 'xg6' as the optimal move, which is the only winning move in this context. The figure caption clarifies that the response shown is an actual model output, but only partial action-value pairs are displayed for brevity. The layout is split into two main regions: textual logs on the left and graphical search tree on the right, connected by the shared context of the chess decision process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

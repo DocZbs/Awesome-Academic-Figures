@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502546",
+  "record_sha256": "826cb79f1f6c7ce8099150b87ede7b2757bf830d387aa47d4b47e7e754c1aeb1",
+  "asset_sha256": "326f1be3f0220257885cad5af048a2f0138a78f384744ac3c848f765529035ff",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502546",
+    "title": {
+      "zh": "Event-assisted 12-stop HDR Imaging of Dynamic Scene · 方法图",
+      "en": "Event-assisted 12-stop HDR Imaging of Dynamic Scene"
+    },
+    "paper": {
+      "id": "arxiv-2412-14705",
+      "title": "Event-assisted 12-stop HDR Imaging of Dynamic Scene",
+      "authors": [
+        "Shi Guo",
+        "Zixuan Chen",
+        "Ziran Zhang",
+        "Yutian Chen",
+        "Gangwei Xu",
+        "Tianfan Xue"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_id": "2412.14705",
+      "arxiv_first_submitted_at": "2024-12-19T10:17:50Z",
+      "arxiv_updated_at": "2024-12-19T10:17:50Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502546/image/image.jpg?Expires=1790835225&Signature=JS3rrqdW3Vb9TgP-yy-tuqGm-M8U0Erfho07b51yd7Ga6twZyUV5YwUKUabLXwH7ePtW0ooPB83X-UPkvHymEXoALzJsal2ttE1UrON-gWQ~g4rv10758M7F4nNiYF3RKsJ42kvLPT3dQuTW0kug6P55eidjvISqSrn~1nhDcqtKdgoEojncP8rE3hQADDpfJPfCj1Azryq1CGOqXvBdOzMU06UicaLj0AFzCg3d6~s3rQvyi8nBj1H3JHAvgUBMawpP89EFXExPlplOcsonkbWZDwFK-v6p~jj8jZwoI~~3k8a17MCi5nnMrxX3qfpkoCchaH0ouAEefsFuTMPVlw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502546,
+      "description_sha256": "780ba920bf35da957437914c7c5f1c54b9a7eb0f3fac0cbcc75ee3e310eed16a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a simulation pipeline for generating a 12-stop HDR imaging dataset with event data, labeled as the ESHDR Dataset. The global layout is structured as a flowchart with distinct processing stages arranged from left to right and top to bottom, emphasizing a sequential workflow. The process begins on the lower-left with an 'HDR Scene' depicted as a dark outdoor image with vertical poles and a bright star-like light source. This scene feeds into a 'Motion Simulator', which generates an 'HDR Sequence' shown as a stack of multiple linear RGB frames featuring a moving 'Harmony' product box against the same background. The HDR Sequence then passes through an 'Event Simulator', producing a series of event frames displayed below the ESHDR Dataset block—these are sparse, time-encoded representations with red and blue lines indicating positive and negative pixel changes.\n\nFrom the HDR Sequence, a parallel path leads upward to an 'Unprocess to RAW' step, which converts the HDR data into a raw sensor format. This raw data enters a 'Simulate Degradation' module, represented by a rounded rectangle with a green border, where noise and blur are applied to the image, visually shown as a transition from a clear to a noisy, blurred version of the 'Harmony' box. The degraded output is then processed into LDRs (Low Dynamic Range images) via a 'Process to LDRs' block, which takes an 'EV Value' (Exposure Value) as input to control the exposure level. This results in a set of five LDR images labeled -6EV, -3EV, 0EV, 3EV, and 6EV, arranged horizontally under the 'ESHDR Dataset' title, showing progressive brightness changes from underexposed to overexposed views of the same scene.\n\nVisual modules are primarily rectangular or rounded rectangles with light green backgrounds and black text, except for the 'Simulate Degradation' block, which has a green border and contains two small image examples. The 'ESHDR Dataset' section is highlighted with a large light-blue background and bold blue title. All text labels are in a clean sans-serif font, and arrows indicate the direction of data flow. The connections between modules are solid gray arrows, with some bidirectional arrows (e.g., EV Value to Process to LDRs) indicating parameter input. The figure includes both real image examples and schematic representations, with the final dataset showcasing both LDR images and corresponding event frames, demonstrating the full scope of the simulated data generation process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

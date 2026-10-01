@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501849",
+  "record_sha256": "c9eabffc21e30ab0b7650926593ecbb96fcbbf879b13a5f4c5714d78d7248647",
+  "asset_sha256": "2c06b488fff7e1dca01d64353cb19d2a348322d4cca879b0ac836910a038f3f7",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501849",
+    "title": {
+      "zh": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation · 方法图",
+      "en": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13577",
+      "title": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation",
+      "authors": [
+        "Jiankun Zhu",
+        "Sicheng Zhao",
+        "Jing Jiang",
+        "Wenbo Tang",
+        "Zhaopan Xu",
+        "Tingting Han",
+        "Pengfei Xu",
+        "Hongxun Yao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_id": "2412.13577",
+      "arxiv_first_submitted_at": "2024-12-18T07:51:35Z",
+      "arxiv_updated_at": "2024-12-18T07:51:35Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501849/image/image.jpg?Expires=1790835205&Signature=JVRXbiDQXvW2c4ENE~wR1N3t6GEn9g6yQjANVoEdpZusT7dBiZrjRleMJawJw683ujo6GWTT82Mh8y~fahfxemI2ZtDCmuYFFV1LB-T7bOePYsQ0prO9EdThp0ISx5JiLOELugE2yZFmw212DtqGh30V1jNLNOc~FaSJoyHEcKA7WhWxgbJQyZXdBFOGugfvyEmha2D6UVuz9rc42oiLid8nqICIeVtBoKvUQpVAmyZ5ZZQni-R6AfgBHEo7eOOFb68Mp0cCJEs6HJYro3XUoK3k6UaRMVNCLZSfzZguAAlppu9fTe5n7wqS5cRrHaABoTORmb0kbCIYiq8v-sP4dg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501849,
+      "description_sha256": "e393e72c071f757bcfd9b88306d61a8a080287ee7bc33c8b966a18dbf8053cee",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a masking-based feature enhancement framework involving two primary neural network models: a Source Model and a Bridge Model. The global layout is structured horizontally from left to right, with inputs on the far left, processing modules in the center, and loss computation on the right. At the bottom-left, an original image denoted as x_t is fed into the Source Model, represented as a series of light blue rectangular blocks labeled φ_s. Above it, a masked version of the same image, denoted as x_t^M, is generated using a gray rounded rectangle labeled 'Mask' that applies a checkerboard pattern to obscure parts of the image. This masked image is then input into the Bridge Model, depicted as a series of peach-colored rectangular blocks labeled φ_b. Both the Source Model and Bridge Model process their respective inputs and produce feature representations. The output from the Source Model is directed to a dashed rectangular box labeled 'Cluster adjustment', which contains a background of multicolored overlapping circles, symbolizing clustering or distribution refinement. From this cluster adjustment module, two loss terms, L_kd and L_sl, are computed and sent back to the Bridge Model via a feedback loop indicated by a yellow arrow. Additionally, a gray arrow connects the Source Model directly to the Bridge Model, suggesting alignment or guidance between the two models. The losses L_kd (knowledge distillation loss) and L_sl (self-labeling loss) are explicitly shown as outputs from the cluster adjustment step, with L_kd corresponding to the distillation from the source to the bridge model and L_sl corresponding to the self-supervised learning from the masked input. The diagram emphasizes a dual-path training strategy where the bridge model learns from both the original and masked inputs, guided by the source model, to enhance feature representation through distillation and self-labeling objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501004",
+  "record_sha256": "84312bef652f6a365cc2885077bd6139536c12cc03060d72cf30ff019c9a69b9",
+  "asset_sha256": "493088cb70b32a8f27b0075dee949e4f3e1f3ab80ad1e803df1f4e79b7b43744",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501004",
+    "title": {
+      "zh": "SGPT: Few-Shot Prompt Tuning for Signed Graphs · 方法图",
+      "en": "SGPT: Few-Shot Prompt Tuning for Signed Graphs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12155",
+      "title": "SGPT: Few-Shot Prompt Tuning for Signed Graphs",
+      "authors": [
+        "Zian Zhai",
+        "Sima Qing",
+        "Xiaoyang Wang",
+        "Wenjie Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12155",
+      "arxiv_url": "https://arxiv.org/abs/2412.12155",
+      "arxiv_id": "2412.12155",
+      "arxiv_first_submitted_at": "2024-12-11T09:22:46Z",
+      "arxiv_updated_at": "2025-08-17T16:07:53Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501004/image/image.jpg?Expires=1790835183&Signature=rhGueJtRDiO6O96esJUqHXE1DAJwd3BE4a7qmOgOmgdOKBFFMzbyDyg1dPh6jG0RdnakU48GdBdhYUP1OBODxnsjh632TLR4-13Mp-n8dZM46-K2o65XPLtRmFg6og1v9eM2hH3UxbuWCjMLEKEvSGqLxNMuGvI2HcM9oiKnEEtXc8IrUN2Wu9QNUfHtbBkRBSlz0fXj6hJ5nPnPzMQ-Nbs2-CGQmAJd82dDUeuaNiJFrZEWwZGH25DimxXeBot3scf0toAfZYgcxtrB~prjbIBTLA4yYTE4TOQFvyaeRvlS8XP5iQyMxc3yGY4W1anODJqgUu3l9M96dkRk~4QJlA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501004,
+      "description_sha256": "3c4394d80260e7b9d2cf26dd2105a0db06127dd650c6856fac5a91f42b11a82e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of SGPT, a method for signed graph representation learning, divided into two main phases: (a) Pre-training Task and (b) Downstream Task. The global layout is structured horizontally, with the pre-training phase on the left and the downstream task occupying the central and right portions. The downstream task is further subdivided into two templates: (1) Graph Template and (2) Task Template, which are connected through encoding and prompt mechanisms.\n\nIn the pre-training phase, unsigned graphs are used to train a pre-trained model via link prediction. This involves computing similarity (Sim) between node pairs, such as v0 and v1 (positive example) or v0 and v6 (negative example), represented by blue and red boxes respectively. The pre-trained model is then applied to downstream tasks.\n\nThe downstream task begins with a 'Downstream Signed Graph' centered around a target node v0, depicted within a dashed circle. This graph is decomposed into three parallel channels: Positive Channel (teal), Topological Channel (white), and Negative Channel (red). Each channel extracts 1-hop and 2-hop neighborhood structures from the signed graph. For instance, in the Positive Channel, positive edges (green) are emphasized, while in the Negative Channel, negative edges (red) are highlighted. The Topological Channel focuses on structural connectivity without sign consideration.\n\nThese three channels feed into the 'Graph Template', where each channel’s 1-hop and 2-hop neighborhoods are processed separately. The outputs are then passed to the 'Encoding' module, which generates feature representations for each channel. These encoded features are subsequently fed into two distinct prompt modules: Feature Prompt and Semantic Prompt.\n\nThe Feature Prompt, located on the right side, processes input features x ∈ ℝ^d by combining channel-specific feature tokens P_P, P_T, and P_N (each ∈ ℝ^{r×d}) through an attentive fusion mechanism to produce a fused prompt p ∈ ℝ^d. This is labeled as 'Feature Prompt (Eq.13–15)'.\n\nThe Semantic Prompt, also on the right, uses a bottleneck projection structure. It takes three inputs H_P, H_T, H_N (representing the encoded features from the positive, topological, and negative channels) and combines them via skip connections and a bottleneck projection function f to generate a final embedding E. This is labeled as 'Semantic Prompt (Eq.17)'.\n\nThe outputs from both prompts are then fused via a multi-hop fusion operation (indicated by a vertical concatenation symbol ||) before being combined again in the Task Template. In this template, the fused features undergo another multi-hop fusion step, followed by a semantic prompt that computes similarity scores (Sim) against class prototypes (Class 1 and Class 2), enabling classification.\n\nConnections are shown as directed arrows indicating data flow: from the signed graph to the three channels, then to encoding, then to the two prompt modules, and finally to the task-specific output. The figure uses color-coded boxes (teal for positive, red for negative, white for topological) and distinct shapes (circles for nodes, rectangles for modules) to differentiate components. Text labels clearly denote each module and process, including equations referenced in the paper."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

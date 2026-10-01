@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Answer Set Networks: Casting Answer Set Programming into Deep Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14814
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a reasoning graph used for fine-tuning large language models (LLMs) with an ASN (Abstract Symbolic Network) framework. The global layout is a directed acyclic graph (DAG) with multiple layers of nodes connected by solid and dashed edges, representing logical dependencies and inference paths. The structure begins on the left with two root entities, 'person(p1)' and 'person(p2)', both represented as teal-colored ovals. These are connected via solid black lines to a central conjunction node labeled '∧' (logical AND), which serves as a starting point for deriving further attributes. From this conjunction, dashed lines branch out to derive gender attributes: 'sex(p1,male)', 'sex(p1,female)', 'sex(p2,male)', and 'sex(p2,female)', each also shown as teal ovals. These gender nodes then feed into a network of relationship nodes, such as 'relation(p1,p2,mother)', 'relation(p1,p2,father)', 'relation(p2,p1,son)', etc., again in teal ovals, representing possible familial relationships between the two individuals. Each relationship node connects to multiple intermediate '∧' nodes (white circles with black borders), which act as logical gates aggregating evidence from different paths. Some of these '∧' nodes are linked to rectangular boxes labeled '1=#count', indicating counting or constraint enforcement mechanisms, likely for ensuring consistency (e.g., only one gender per person, or mutually exclusive relationships). These count nodes are connected via orange arrows to other '∧' nodes, suggesting a feedback or constraint propagation mechanism. The entire network converges toward a final yellow circle labeled '⊥' (bottom element, representing a terminal or output node), which receives inputs from many '∧' nodes through solid black lines. This suggests that the model computes a combined probability or confidence score for each possible relationship, and the final output is determined by selecting the path with the highest probability, as stated in the caption. The graph includes both solid black arrows (representing direct logical implications or data flow) and dashed gray arrows (likely representing optional or conditional derivations). The overall workflow follows a bottom-up reasoning process: starting from basic entity and attribute facts, it derives possible relationships, applies constraints, and aggregates evidence to select the most probable relationship type between the two persons.

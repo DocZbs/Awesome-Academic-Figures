@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500217",
+  "record_sha256": "b9e6a3e40b92455ca70a70fc4eb2c2baf28ec176872ea8c25c201fe310264df1",
+  "asset_sha256": "d6a5ade584b7ed6f76a69ab8de2f3b369e788e2b28bc6b958d22b700e6d3b11c",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500217",
+    "title": {
+      "zh": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer · 方法图",
+      "en": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer"
+    },
+    "paper": {
+      "id": "arxiv-2412-10958",
+      "title": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer",
+      "authors": [
+        "Hao Chen",
+        "Ze Wang",
+        "Xiang Li",
+        "Ximeng Sun",
+        "Fangyi Chen",
+        "Jiang Liu",
+        "Jindong Wang",
+        "Bhiksha Raj",
+        "Zicheng Liu",
+        "Emad Barsoum"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10958",
+      "arxiv_url": "https://arxiv.org/abs/2412.10958",
+      "arxiv_id": "2412.10958",
+      "arxiv_first_submitted_at": "2024-12-14T20:29:29Z",
+      "arxiv_updated_at": "2025-03-14T22:22:40Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500217/image/image.jpg?Expires=1790835164&Signature=EPqTHjfBCClpa13bQJ-A8H4ysA48LnKR5E-BG2-l5kiq6hqxF~Ch3ArtjWMvzrOAWiziqwHKzki1bXo0kJNVHqGGakzZ25vfHHUxrGtUaTB20SE566PCrwBE6~7nupAfQ-cln~ohHAs62qzNVk3Ntuf8juXv4ruViw5Hto-tvWbkj5h8U1pRRI5JEJE0-yEdVuU7YtMdZamPIWdJgpXom02VFWZgwKjFKTzryyJ5Qxw435HqfVim1m4IdCgt-oM-XobYNilMJgPQ7aS0o0gkagziX4N034be~YsDl9FNcJ~tniel6UWSQ7jrNVZnh-fgMeuqXxH7HrT6FaWJOOmyuQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500217,
+      "description_sha256": "70009d548c03412f513aac8ae1d5e446d14ffa2c5cc7fa819765da9dc555e04b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct architectures for SoftVQ (Soft Vector Quantization), labeled 'SoftVQ with Product Quantization' on the left and 'SoftVQ with Residual Quantization' on the right, each illustrating a different approach to quantizing latent codes.\n\n[1] Global Layout and Structure:\nThe figure is divided into two side-by-side diagrams. The left diagram shows a parallel processing structure where latent codes are split into G groups, each processed independently against K codewords. The right diagram shows a sequential, iterative structure where quantization is applied layer by layer, with residuals fed back into subsequent layers. Both diagrams follow a top-down data flow from input latent codes to output quantized representations.\n\n[2] Visual Modules and Attributes:\nIn both diagrams, 'Latent Codes' are represented as vertical stacks of peach-colored rectangles enclosed in dashed boxes, labeled with 'L' indicating the number of codes. Codewords are shown as horizontal arrays of purple rectangles within dashed boxes, labeled 'K Codewords' (left) or 'K Codewords' (right). In the left diagram, the latent codes are first split into 'G Groups', each group being a smaller stack of peach rectangles. The codewords are replicated G times via a 'G Replication' step, forming G separate sets of K codewords. Each group then undergoes a sequence of operations: 'Distance' (light yellow rounded rectangle), followed by 'Softmax' (same style), then 'Mat. Mul.' (matrix multiplication, same style). The outputs of these operations are combined to produce the final quantized output, again a stack of peach rectangles.\n\nIn the right diagram, the process is iterative. The latent codes are processed through a loop of 'l Layers'. At each layer, the current latent representation (denoted r_l) is subtracted from the previous output (via a circular minus node), producing a residual. This residual is then passed to a 'Distance' module, followed by 'Softmax', and then 'Mat. Mul.', which multiplies the softmax output with the codewords. The result is added to the previous layer's output (via a circular plus node) to produce the new quantized representation z_l. This z_l becomes the input for the next layer. The final output is a stack of peach rectangles representing the quantized latent codes after l layers.\n\n[3] Connections and Arrows:\nIn the left diagram, arrows indicate the flow: from 'Latent Codes' to 'G Groups', then from each group to its corresponding 'Distance' module. The 'G Replication' block feeds the codewords to each 'Distance' module. Outputs from 'Distance' go to 'Softmax', then to 'Mat. Mul.', which also receives the replicated codewords. The outputs of all 'Mat. Mul.' modules are combined to form the final output.\n\nIn the right diagram, the flow starts from 'Latent Codes' to the first 'Distance' module. The codewords feed directly into 'Mat. Mul.'. The output of 'Mat. Mul.' is added to the previous layer's output (z_{l-1}) to form z_l. A feedback loop connects z_l back to the subtraction node, where it is subtracted from the original latent code (or previous residual) to compute the next residual r_l. This loop continues for 'l Layers'. The final z_l is the output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

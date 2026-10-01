@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Smoothness Really Matters: A Simple Yet Effective Approach for Unsupervised Graph Domain Adaptation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11654
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a knowledge transfer process between two graphs in the context of Graph Neural Networks (GNNs), emphasizing sensitivity to input features. The global layout is divided into three main sections: a 'Source Graph' on the left, a 'Target Graph' in the center-right, and an 'Output' section on the far right, separated by dashed borders. A large black arrow labeled 'Knowledge Transfer' points from the Source Graph to the Target Graph, indicating the direction of information flow.
+
+In the Source Graph, five nodes are connected by edges forming a network. Nodes are represented as circles with numbers inside: node 0, 1, 3, and 4 are green, while node 2 is red. Each node has a rectangular box above it containing two numerical features, e.g., [0.1 | 0] for node 1. According to the caption, the second feature determines the node class: values ≤ 0.2 result in green nodes, and values > 0.2 result in red nodes. Thus, node 2 has a second feature of 0.9 (> 0.2), making it red, while all other nodes have second features ≤ 0.2 (e.g., node 0: 0.1, node 1: 0, etc.), hence green. Node 0 is highlighted with a light yellow translucent oval, suggesting it may be the focus or a point of interest.
+
+The Target Graph mirrors the structure of the Source Graph but replaces node 0 with a gray circle labeled '?', indicating an unknown or predicted node. All other nodes (1, 2, 3, 4) retain their original colors and feature values. The same light yellow oval surrounds the '?' node, maintaining visual continuity with the source. This setup implies that the model must infer the properties of the missing node based on knowledge transferred from the source graph.
+
+On the far right, under the heading 'Output', two components are shown: 'GNN' and 'TDSS'. Below each label is a circular node with its corresponding feature vector. For GNN, a red circle appears with features [0.2 | 0.3], indicating the model predicts a red node (since 0.3 > 0.2). For TDSS, a green circle appears with features [0.2 | 0.1], predicting a green node (since 0.1 ≤ 0.2). This comparison highlights the differing predictions made by the two models when faced with the same ambiguous input (node 0's features are [0.2 | 0.1], which are identical to node 3’s features in the source graph). The figure thus demonstrates how GNNs may be sensitive to small changes or ambiguous inputs, leading to potentially incorrect classifications, whereas TDSS produces a more consistent prediction aligned with the source graph’s pattern.

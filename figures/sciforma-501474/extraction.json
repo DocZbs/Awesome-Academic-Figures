@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501474",
+  "record_sha256": "2e18c25ced8e4e6f4d5f3a4532025816053cd80033dec2b8838bf64fb0dfee39",
+  "asset_sha256": "04662ebece21fd74176a06ac1fab68ee3c9b7855ac3f8c2d53e77fa315c29ed6",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501474",
+    "title": {
+      "zh": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks · 方法图",
+      "en": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12843",
+      "title": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks",
+      "authors": [
+        "Xianlei Long",
+        "Xiaxin Zhu",
+        "Fangming Guo",
+        "Wanyi Zhang",
+        "Qingyi Gu",
+        "Chao Chen",
+        "Fuqiang Gu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_id": "2412.12843",
+      "arxiv_first_submitted_at": "2024-12-17T12:11:04Z",
+      "arxiv_updated_at": "2025-08-13T09:50:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501474/image/image.jpg?Expires=1790835192&Signature=cYocSB4CJeJJAgsva25MTqsLxSD4klRJzDlvlz58j7N5lqo1Lo6t2lcnBAGMG3iW-FDphjVA5~C0a6tIv0185PVAEBoa6JV5PRNTX47D2cjyaNf5IukEhC07BUzcCwC7C8owbi9epM3x0rQ9yOMzitFyxut6hu5blnJQoierCgY9YVKP0yD8k~kmRINtqGkDw5X4JiioH3mqUaR4VsGsMh~100orcZ6JI~ByVe3WJzNZeIQRLuUa3EVd2MEt4joejArV39-BCl8MCyFhuvD6h-IUjhwKaytb2uxiKbIacBHiS4UkH8cAtiyqjyXdkXZRRssykk0HtmnyviwluGtUIA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501474,
+      "description_sha256": "a69c12ebed58c1c794ee97527200b5a03208f08ba2ffe54766a8c21f2dacd40b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of an evolutionary spiking neuron model, structured into distinct functional modules connected by forward (black arrows) and backward (red arrows) propagation paths. The global layout is divided into four main regions: on the top left, a module labeled 'EvAF' displays the evolution of activation functions across epochs; on the top right, a 'Loss Function' box receives feedback signals; in the center, a Leaky Integrate-and-Fire (LIF) neuron dynamics graph shows membrane potential over time; and at the bottom, a 'Weight Matrix' block represents synaptic weights. \n\nIn the EvAF module, three bell-shaped curves represent the activation function's evolution from epoch 1 to epoch N, with each curve centered on a vertical red line indicating the peak. The curves progressively sharpen, suggesting increasing selectivity or focus over training epochs. This module feeds into the central processing flow.\n\nThe central part of the diagram features two sequential computational steps, each consisting of a summation operation (denoted by a circle with a plus sign) that combines inputs U_l^{t-1} and M_l^{t-1} (for the first step) and U_l^t and M_l^t (for the second step). These operations produce outputs that feed into the LIF neuron model. The LIF graph plots membrane potential M_l against time T, showing a ramping potential that reaches a threshold V_th, triggering a spike (labeled '1') and then resetting. The spike events S_l^{t-1} and S_l^t are shown below the Weight Matrix, each marked with a red '1' and connected via red arrows to the Loss Function, indicating backward propagation of error gradients.\n\nThe Weight Matrix, located at the bottom, is represented as a light peach-colored rectangular block. It receives input spikes S_l^{t-1} and S_l^t from the previous layer, which are used to compute synaptic updates during learning. The black arrows indicate forward propagation: from the Weight Matrix to the summation nodes, then to the LIF neuron, and finally to the next layer’s spike output S_{l+1}^{t-1} and S_{l+1}^t. The red arrows denote backward propagation: from the Loss Function to the LIF neuron, then back through the summation nodes and Weight Matrix, enabling gradient-based weight updates. The Loss Function box is positioned at the top right, receiving spike outputs from the LIF neuron and feeding error signals backward through the network. The entire diagram captures the interplay between evolutionary adaptation of activation functions, spiking dynamics, and gradient-based learning in a spiking neural network framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

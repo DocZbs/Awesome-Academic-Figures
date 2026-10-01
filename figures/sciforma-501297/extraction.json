@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501297",
+  "record_sha256": "43923054d008e384b9a412b84b3adc2fc107291b3391e7081870688a1c3d7d15",
+  "asset_sha256": "79c56be258f874b13cf392ee4a64c15cb5733e50b2672d0c96635a196abe26cf",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501297",
+    "title": {
+      "zh": "LLMs are Also Effective Embedding Models: An In-depth Overview · 方法图",
+      "en": "LLMs are Also Effective Embedding Models: An In-depth Overview"
+    },
+    "paper": {
+      "id": "arxiv-2412-12591",
+      "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+      "authors": [
+        "Chongyang Tao",
+        "Tao Shen",
+        "Shen Gao",
+        "Junshuo Zhang",
+        "Zhen Li",
+        "Kai Hua",
+        "Wenpeng Hu",
+        "Zhengwei Tao",
+        "Shuai Ma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_id": "2412.12591",
+      "arxiv_first_submitted_at": "2024-12-17T06:48:24Z",
+      "arxiv_updated_at": "2025-07-25T09:22:04Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501297/image/image.jpg?Expires=1790835190&Signature=WxJyl-hjHyOdS1ldrTi1LsVZUZqiwNkBsmDD4uaSmPX14vJp6uZdQOTNCso9v0GKadeVDgKRPl4ID5MOecTI7OQzmV2H64WwJxB~aamidhU7B6Re6Y6Cu6fotCGoxpJLiajGABnnRDxzt4jFd70JQDcMoZ5IbTU6-NZ2~mAAGAT8vy52DSKYQRJeQ4cLkRQwZLtbxZynh1fNsvmFnCO1OfX3gT9vjyj8-Fha4hjUagXOnrWpqHRmqTJfQZce7I1VQNv~be22n9A~Up8HUjdHqx0OUSAG6vkNEX5g~E3GWNXKNi8LLqvtfdLgmXMp3jADksmrpeBFYbEYZFhwFgtKNQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501297,
+      "description_sha256": "96651d669aaaeffe155ca060155db14bc6122a244d3a8e100707dac3bb4e9247",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage methodology for constructing training data for LLM-based embedding models, organized into distinct modules labeled ① Data adapting, ② Data curation, and ③ Data labeling. The overall layout is a 2x2 grid: the top-left contains Data adapting, bottom-left contains Data curation, and the right column is dedicated to Data labeling, split into two submodules. Each module is enclosed in a rounded rectangle with a dashed border, colored differently for visual distinction—gray for Data adapting, light blue for Data curation, and light green for Data labeling.\n\nIn module ① Data adapting, the process begins with a pair of existing data {q, d}, represented as a black-bordered rounded rectangle. This input flows through a golden gear icon symbolizing transformation, leading to outputs: t (task instruction), q (query), d⁺ (positive document), and {d⁻} (set of hard negative documents). All output elements are shown as white rounded rectangles with black borders.\n\nModule ② Data curation, in light blue, takes three inputs: I (instruction), m (meta-information), and c (few-shot demonstrations), each in a white rounded rectangle. These feed into a central LLMs model, depicted as a blue hexagon with six surrounding nodes (three blue, three white) connected by lines, representing a neural network structure. The LLMs model generates outputs: t, q, d⁺, and {d⁻}, again in white rounded rectangles.\n\nModule ③ Data labeling, in light green, consists of two parallel sub-processes. The top subprocess takes inputs I, q, and c, processes them through an identical LLMs model, and produces outputs t, d⁺, and {d⁻}. The bottom subprocess takes I, d, and c, processes them via the same LLMs model, and outputs t and q. Both submodules use the same LLMs icon and output format.\n\nAll connections between components are represented by solid black arrows indicating the direction of data flow. The figure uses consistent visual attributes: white rounded rectangles for data elements, colored backgrounds for modules, and a standardized LLMs icon. The caption clarifies that d⁺ is the positive document, {d⁻} is the set of hard negatives, m is meta-information for synthetic data, I is the instruction for LLMs, c is optional few-shot examples, and t is the task-specific instruction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

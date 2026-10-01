@@ -1,0 +1,35 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+YOLOv11 Optimization for Efficient Resource Utilization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14790
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the complete architecture of YOLOv11, divided into three main components: Backbone, Neck, and Head, with detailed submodules explained on the right side. The global layout is structured from left to right, starting with the Backbone, followed by the Neck, and ending with the Head. Each component is enclosed in a rounded rectangular box with a light gray background, and the entire architecture is labeled at the bottom as 'a. YOLOv11 Architecture'.
+
+In the Backbone section, input data of size 640×640×3 enters through a Conv layer (b0), followed by a sequence of Conv layers (b1, b3, b5, b7) and C3k2 blocks (b2, b4, b6, b8), each reducing spatial dimensions while increasing channel depth. The feature maps are labeled P1 to P5, corresponding to different resolution levels: P1 (320×320), P2 (160×160), P3 (80×80), P4 (40×40), and P5 (20×20), with channel counts determined by min(64, mc)×w up to min(1024, mc)×w. The final two layers in the Backbone are SPFF (b9) and C2PSA (b10), both highlighted in teal and pink respectively.
+
+The Neck section begins with feature fusion from the Backbone. It receives inputs from b4, b6, and b8 via lateral connections. These are upsampled (Upsample blocks in red) and concatenated (Concat blocks in green) with higher-resolution features. The resulting features pass through C3k2 blocks (yellow) and Conv layers (purple) to form a feature pyramid. Specifically, b15 concatenates b4 and upsampled b6; b12 concatenates b6 and upsampled b8; b18 concatenates b17 and b13; b21 concatenates b20 and b19; and finally, b22 is a C3k2 block feeding into the Head. The Neck outputs three feature maps at resolutions 80×80, 40×40, and 20×20, labeled P3, P4, and P5 respectively.
+
+The Head consists of three Detect modules (light blue boxes), each receiving one of the three feature maps from the Neck and producing detection outputs. The Detect module is detailed in subfigure i: it comprises two parallel branches, each with two Conv layers followed by a Conv2d layer, leading to Bbox Loss and Class Loss outputs.
+
+On the right side, eight submodules are defined:
+
+b. Conv: A basic convolutional block with Conv2d, Batch2Norm2d, and SiLU activation.
+c. Bottle Neck: A residual block with two Conv layers and a shortcut connection if 'shortcut=True', ending in an element-wise addition.
+d. C3K: A block with Conv, followed by two BottleNeck layers, then Concatenation and a 1×1 Conv.
+e. C3K2: Similar to C3K but uses C3K (3×3) blocks instead of BottleNeck.
+f. SPFF: Spatial Pyramid Feature Fusion, consisting of three MaxPool2d layers of increasing kernel sizes, concatenated and followed by a 1×1 Conv.
+g. C2PSA: Channel-wise 2D Positional Self-Attention, including Split, two PSA blocks, Concat, and a 1×1 Conv.
+h. PSA: Positional Self-Attention, containing Attention, Concat, FNN, two 1×1 Convs, and another Concat.
+
+Connections between modules are shown with solid black arrows indicating data flow. Dashed lines indicate optional or conditional paths, such as the shortcut in Bottle Neck. All blocks are color-coded: Conv layers are purple, C3k2 blocks are yellow, Concat blocks are green, Upsample blocks are red, SPFF is teal, C2PSA is pink, and Detect is light blue. Text labels include layer names (e.g., 'Conv'), block identifiers (b0–b22), and feature map dimensions and channel counts. The figure comprehensively describes the hierarchical, multi-scale, and attention-enhanced design of YOLOv11.

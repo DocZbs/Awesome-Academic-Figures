@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501850",
+  "record_sha256": "6889c49538bb606c4b668457dcd43d945132958f1e6d17c0ea35449ce56a7c13",
+  "asset_sha256": "e5cf4c2e86a4c72ed23d0d5006a0d8c7f872d801e29cc1fd1d714f68112d6713",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501850",
+    "title": {
+      "zh": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation · 方法图",
+      "en": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13577",
+      "title": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation",
+      "authors": [
+        "Jiankun Zhu",
+        "Sicheng Zhao",
+        "Jing Jiang",
+        "Wenbo Tang",
+        "Zhaopan Xu",
+        "Tingting Han",
+        "Pengfei Xu",
+        "Hongxun Yao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_id": "2412.13577",
+      "arxiv_first_submitted_at": "2024-12-18T07:51:35Z",
+      "arxiv_updated_at": "2024-12-18T07:51:35Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501850/image/image.jpg?Expires=1790835205&Signature=sfbIBlqQNPGvh7oDfY4Xbt7af7wHgZ-J3qOipv0eBrYL98W5mVzsuVw~slw7X9PBZpbzeT7Jl84m2Kn2GL0I7C9C2IuIp-o65jm0dXTORSxLKLrgRB5FOPTEEv7o4wpVzDjBde4h-JKyZs7Y4ap6L1LBC5E2lW2GQ1W9FmVur4MnHV9DD-HtUv3NEe1BEWcwHw9u08~vCsTt0sFQ4OIU3n7C69l0PsEU8E4WkFTuigRHviDRCSlKBqD1iOFNuA05O9qR6jCO~nUMyXl55p80h88iAfQTTWWFuREppudXOCwxt6xakntJdmYjVZBafo-7izVpuf2u0D~IMyHHLUGywg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501850,
+      "description_sha256": "77da6422f20a1b1aba390b4239e9d4bf8128141294ff4e0301321616700784aa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comparative analysis between standard loss functions and a proposed 'polarity loss' in the context of emotion classification, using numerical examples to demonstrate enhanced differentiation capability. The global layout is divided into two main vertical sections: the left section labeled 'standard loss' and the right section labeled 'our polarity loss', separated by a dashed vertical line. The entire diagram is enclosed within a dashed rectangular border.\n\nOn the left side, three horizontal rows represent outputs from different models: 'Target Model output A' at the top, 'Bridge Model output' in the middle, and 'Target Model output B' at the bottom. Each row begins with a black arrow pointing to a horizontal bar containing eight circular nodes, each representing a probability distribution over emotion categories: 'amuse', 'awe', 'content', 'excite', 'anger', 'disgust', 'sad', 'fear'. These bars have a gradient fill from light yellow to gray, indicating varying confidence levels. The values inside the circles are numerical probabilities (e.g., 0.4, 0.6, 0.9, etc.).\n\nEach model output is associated with a mathematical expression: 'Target Model output A' is labeled φ_t(x_t^A), 'Bridge Model output' is φ_b(x_t), and 'Target Model output B' is φ_t(x_t^B). Between these rows, bidirectional arrows labeled L_sl (standard SL loss) connect the Bridge Model output to both Target Model outputs, with the value 'standard SL loss: 2.07' specified. Additionally, unidirectional arrows labeled L_im (standard IM loss) point upward from Target Model output A and downward from Target Model output B, each with the value 'standard IM loss: 0.93'.\n\nOn the right side, corresponding to each model output on the left, there are smaller horizontal bars with two circular nodes labeled 'pos' and 'neg', representing positive and negative emotion polarity. These bars also have a gradient fill. For Target Model output A, the values are 1 (pos) and 0 (neg); for Bridge Model output, 0.9 (pos) and 0.1 (neg); for Target Model output B, 0.4 (pos) and 0.6 (neg).\n\nTo the right of these polarity bars, the figure shows the breakdown of losses: for each model output, the standard loss is added to the 'polarity IM loss' or 'polarity SL loss' (in red text), resulting in a total loss (also in red). Specifically: for Target Model A, 0.93 + 0.34 = 1.27; for Bridge Model, 2.07 + 0.10 = 2.17; for Target Model B, 2.07 + 1.42 = 3.49; and for Target Model B's IM loss, 0.93 + 1.01 = 1.94. The connections between the left and right sides are indicated by black arrows from the emotion distribution bars to the polarity bars.\n\nThe figure visually emphasizes how the proposed polarity loss adds a finer-grained penalty based on emotional valence, thereby improving model discrimination between similar emotion distributions. The caption clarifies that this approach enhances the model’s ability to differentiate samples by incorporating emotion polarity into both IM and SL loss components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

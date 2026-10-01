@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502793",
+  "record_sha256": "cad848d182d0f2181e2e54f17ab2a56ac22a4c87811bb39ad18558f388b12a10",
+  "asset_sha256": "1f4e15046ed62f1bced9ae98ed7f0b5c91de3dd19cc027a3a52c2200ea3da1ff",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502793",
+    "title": {
+      "zh": "Advanced ingestion process powered by LLM parsing for RAG system · 方法图",
+      "en": "Advanced ingestion process powered by LLM parsing for RAG system"
+    },
+    "paper": {
+      "id": "arxiv-2412-15262",
+      "title": "Advanced ingestion process powered by LLM parsing for RAG system",
+      "authors": [
+        "Arnau Perez",
+        "Xavier Vizcaino"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15262",
+      "arxiv_url": "https://arxiv.org/abs/2412.15262",
+      "arxiv_id": "2412.15262",
+      "arxiv_first_submitted_at": "2024-12-16T20:33:33Z",
+      "arxiv_updated_at": "2024-12-16T20:33:33Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502793/image/image.jpg?Expires=1790835227&Signature=OEFHAJqjR7pURnRN~vKoTZgAMlxrBnAtnNR20nolBbNrjT0KroSf4mKjJk0F91-H2txWHLb2aJqcyOufMRNBMjZYq4-RAPu6R1DpVnufmekyrnWQF9QqSkMeRHCFK8nXh1EN4NYA-1CF1Gtxu3Ko6DFOE0~ryGImzCX0wzBZMHA6~SFPo24WKW4hbNIouR7tPlLhmIzYmuJq5wMXyDiK3PE3p4KHyag0MgVsM3NbGJ8hYV6IjIb1NNZDUu5mPorq7wuCL-BhGwFq4J9VZFpaNgR8-pDZqxksLh4MAddMW3JmDcJRYJ2JhQIKW76gNEPBOd3fTlR4TOWYcCF5XulgIQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502793,
+      "description_sha256": "dc1a63ba292b0241531f02a47400357d3aedd1db5420dc59e7586b4ff746b17e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a preprocessing pipeline for document ingestion in a Retrieval-Augmented Generation (RAG) system, designed to convert various document formats into structured, machine-readable outputs. The global layout is a horizontal flowchart divided into three main sections: input sources on the left, a central processing block labeled 'Parsing' repeated x times (where x corresponds to the number of pages), and an output section on the right. The entire pipeline is enclosed within a large rounded rectangle, indicating a modular, iterative process per page.\n\nIn the input section, three rectangular nodes labeled 'PDF', 'DOCX', and 'PPTX' feed into the central 'Parsing' module. This module contains three sub-components: 'FAST', 'OCR', and 'LLM', each represented as a small rectangle. These components process the input documents to extract content, with 'FAST' and 'OCR' feeding into a 'TEXT' node, and 'LLM' also contributing to 'TEXT'. Additionally, 'FAST' and 'OCR' send data to an 'IMAGES' node, which then connects to a rounded rectangle labeled 'describe image'. The 'LLM' component also contributes directly to the 'TEXT' node. A separate 'SNAPSHOT' node, likely representing a visual or structural capture of the page, feeds into the central 'ASSEMBLER' component.\n\nThe 'ASSEMBLER' is a large rounded rectangle that receives inputs from 'TEXT', 'describe image', and 'SNAPSHOT'. It produces a 'MARKDOWN' output per page, which is then passed to the 'Output' section. The 'Output' section is a vertical stack of five rectangular boxes: 'MARKDOWN (PAGES)', 'SNAPSHOT (PAGES)', 'IMAGES (PAGES)', 'MARKDOWN (DOCUMENT)', and a final rounded rectangle labeled 'extract metadata'. The 'MARKDOWN (PAGES)' output is shown feeding into 'MARKDOWN (DOCUMENT)', indicating concatenation of all page-level markdowns into a full document. The 'extract metadata' step follows this, suggesting post-processing of the assembled document.\n\nBelow the main pipeline, a dashed rectangular box titled 'Page Node' provides a legend for the structure of the output markdown. It defines four types of nodes: 'Header Node' (pink rounded rectangle), 'Text Node' (green rounded rectangle), 'Table Node' (blue rounded rectangle), and 'Image Node' (yellow rounded rectangle). Each node type is associated with a sample content block, illustrating how different content types are represented in the markdown output. For example, the 'Text Node' includes sample human interaction data used for training a classifier, while the 'Image Node' contains a description of a bar chart showing the distribution of interaction types (Conversation, Document_Translation, Services) with approximate counts (1400, 250, 50 respectively). The legend also includes references to figures ('Figure 1: Human Interaction Samples', 'Figure 2: Distribution of examples'), indicating that the markdown output may embed or reference such content.\n\nAll connections are represented by solid black arrows, indicating the direction of data flow. The arrows show that input documents are parsed using multiple methods, resulting in text, images, and snapshots, which are then assembled into page-level markdown. These pages are aggregated into a full document markdown, from which metadata is extracted. The diagram uses consistent shapes (rectangles for processes/data, rounded rectangles for modules or outputs) and colors (pink, green, blue, yellow for node types in the legend) to differentiate components. The overall design emphasizes modularity, parallel processing, and structured output generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501997",
+  "record_sha256": "daca9d2783f77f42bb362b02fe7ba021c81eca476680120e6e8811a2c81b8c9d",
+  "asset_sha256": "32901bb5cfa99d7949b76640b9ae191727a4a9213fa983cf46aa33f86c988998",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501997",
+    "title": {
+      "zh": "RAG-RewardBench: Benchmarking Reward Models in Retrieval Augmented Generation for Preference Alignment · 方法图",
+      "en": "RAG-RewardBench: Benchmarking Reward Models in Retrieval Augmented Generation for Preference Alignment"
+    },
+    "paper": {
+      "id": "arxiv-2412-13746",
+      "title": "RAG-RewardBench: Benchmarking Reward Models in Retrieval Augmented Generation for Preference Alignment",
+      "authors": [
+        "Zhuoran Jin",
+        "Hongbang Yuan",
+        "Tianyi Men",
+        "Pengfei Cao",
+        "Yubo Chen",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13746",
+      "arxiv_url": "https://arxiv.org/abs/2412.13746",
+      "arxiv_id": "2412.13746",
+      "arxiv_first_submitted_at": "2024-12-18T11:28:05Z",
+      "arxiv_updated_at": "2024-12-18T11:28:05Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501997/image/image.jpg?Expires=1790835209&Signature=ag5mLbTukp~QyeGnNjGRgdzDXL62Bq-MzaYmc2KID2zwjStpLSgmu7PubbSl9WLdM0l4NOdo608e8SrWOZaVFWUaC3pLrmgOfJTMVDOXdYzZt7WYbCyYNu8t2AMqhnNm788ct9sPP2t5r~w631Pow4QLIU2huz70QL8rcPjfaBrAr9s2LTtZAw1zeQaXnJz6-Z9d5sfKgBz7lEU1tcOBjeiU80jsshnVK6PALF5uKInRhsK~W0Sz-xhz2obBVE3QKZEWCuTfnO2jYofLRYfTtmxmzQZhCCG1Gc5URcfEwBrf8OOvv-CNDrgdk2pepr1AAV9gjVntV2mnh8rGzWN7IQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501997,
+      "description_sha256": "65f8d4f13dd4b0aa69f5262f07c7ebdb014e32e047338c65c1bc466640293c74",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the construction process of RAG-RewardBench, a benchmark for evaluating and comparing retrieval-augmented generation (RAG) systems. The overall layout is divided into four main vertical sections: Subset, Retriever, Generator, and Judgment, with an additional bottom section labeled RAG-RewardBench that presents evaluation results and model types.\n\n[1] Global Layout and Structure:\nThe diagram is structured as a left-to-right pipeline starting from the 'Subset' of datasets, moving through 'Retriever' and 'Generator' components, then to 'Judgment' for response evaluation, and finally to the 'RAG-RewardBench' evaluation framework at the bottom. The top row shows the data flow from dataset selection to model generation and judgment, while the bottom row displays the benchmark's performance metrics and model categorization.\n\n[2] Visual Modules and Attributes:\nIn the 'Subset' section, datasets are grouped by category: Helpful (pink background, includes MultiFieldQA, SimpleQA, etc.), Harmless (light blue, Privacy, XSTest), Appropriate Abstain (purple, NQ-Noise, PopQA-Noise), Multi-hop Reasoning (orange, MuSiQue, HotpotQA), Conflict Robustness (green, NQ-Counterfactual, etc.), and Fine-grained Citation (light blue, RobustQA-Technology, ELI5). Each group has an icon representing its theme (e.g., heart for Helpful, robot for Conflict Robustness).\n\nThe 'Retriever' module takes a question ('Who won the 1991 Ig Nobel Prize for Peace?') and uses retrieval methods (BM25, E5, DPR, BGE, GTR, Google) to fetch relevant documents. Four retrieved documents are shown, each with a brief excerpt. A magnifying glass icon indicates the retrieval process.\n\nThe 'Generator' module lists major LLM providers and models: OpenAI, Meta, Claude, Cohere, Grok, Qwen2.5, Gemini, Tülu3, InternLM, Mistral AI, and Microsoft Phi-3, each with their respective logos. An illustrated character holding a document symbolizes the generation step.\n\nThe 'Judgment' section displays three sample responses generated by different models (GPT-4o, o1-mini, Claude-3-5-Haiku), each with a timestamp. A yellow sticky note lists evaluation criteria: Accuracy, Relevance, Faithfulness, Informativeness, Clarity, Logic, and Citation Correctness, with scores assigned to Response 1. An illustrated judge with a magnifying glass evaluates the responses.\n\nThe bottom 'RAG-RewardBench' section features a horizontal bar chart ranking models by score (78.3 to 52.7), with color-coded bars corresponding to model types: Generative (robot icon), Discriminative (flag icon), Implicit (lightbulb icon), and RAG (magnifying glass icon). A legend explains these types. Below the chart, a comparison interface shows 'Response 1' vs. 'Response 2' with thumbs-up/down icons indicating preference.\n\n[3] Connections and Arrows:\nArrows indicate the data flow: from 'Subset' to 'Retriever', then to 'Generator', followed by 'Judgment'. From 'Judgment', a downward arrow leads to the 'RAG-RewardBench' evaluation section. Within 'RAG-RewardBench', a bidirectional arrow connects the bar chart to the response comparison interface, suggesting iterative evaluation. The judgment criteria are linked to the specific response being scored."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

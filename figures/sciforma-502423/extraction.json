@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502423",
+  "record_sha256": "62b270797d824e668064397c8948ec13ab1651d5d93f26ac4a9ffb87c55b543a",
+  "asset_sha256": "c954a972ce05372b786b5650f4597664eb00fa9ac94cd51e449348539a3e86f1",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502423",
+    "title": {
+      "zh": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization · 方法图",
+      "en": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14510",
+      "title": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+      "authors": [
+        "Jiayi Wu",
+        "Hengyi Cai",
+        "Lingyong Yan",
+        "Hao Sun",
+        "Xiang Li",
+        "Shuaiqiang Wang",
+        "Dawei Yin",
+        "Ming Gao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_id": "2412.14510",
+      "arxiv_first_submitted_at": "2024-12-19T04:18:51Z",
+      "arxiv_updated_at": "2024-12-19T04:18:51Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502423/image/image.jpg?Expires=1790835221&Signature=Fb1WEExfFuMmLEgEqb5UOaUzJUt4M0npRndAq3qLBkPEu9dsS0qUE8H7~no-tc5pZm4ITEwkme-cR60CWa8s5oyhvXGn7qLa9oN4AjzE-Be0Td1gN4ZkEfnloQLC3P23OW3FaxJvfuoWghQA9G-0-Atga9kjIL2r0H5gOlnDm9jA06plJIpGH8Rs01MEtznFk9n~PJmZ64c2-ALjSxFO0Kg-pPmfL8AZ4UXzQYbSp8wMXaBDYQjpd0pyE1yjJfr5Rxfjdi9YBO2t5fDBV~hr5iACHvhKXhihbSgNm4lbNckOHYKW5AX-UBqkhTRdrsC7RBtYF3Q~1C4uWy-YGyWOiw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502423,
+      "description_sha256": "6a66972f02ef99abcf3fd600ddc5b92585c0ae020cef64c77588cc9535f49d86",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comparative evaluation of four different RAG (Retrieval-Augmented Generation) generator architectures, each processing the same input prompt composed of a question, golden documents [1][2][3], and noisy documents [4][5][6]. The global layout is divided into two main vertical sections: on the left, the input prompt components are shown within a dashed box; on the right, four distinct generator modules are stacked vertically within a larger dashed box labeled 'RAG Generator'. Each generator module outputs a claim and citation pair, accompanied by visual indicators for quality and latency.\n\nThe first module, 'Vanilla LLM', uses a basic robot icon to represent the model. It generates a 'Bad Claim' and 'Bad Citation' ([4][5]), indicated by a sad face emoji and a green clock with a checkmark, suggesting low quality but fast inference.\n\nThe second module, 'Pipeline Generator', features a robot with arrows pointing to smaller assistant icons, symbolizing a multi-stage pipeline. This produces a 'Fair Claim' and 'Fair Citation' ([1][2][4]), marked by a neutral face emoji and a red clock with an exclamation mark, indicating moderate quality but slower performance.\n\nThe third module, 'End-to-End Generator Trained by SFT', uses a robot wearing a graduation cap to denote supervised fine-tuning. It outputs a 'Fair Claim' and 'Fair Citation' ([1][2][5]), with a neutral face emoji and a green clock with a checkmark, implying improved efficiency over the pipeline but still only fair quality.\n\nThe fourth and final module, 'End-to-End Generator Trained by PA-RAG', also uses a graduation-cap robot but with a star accent, representing the proposed method. It generates a 'Good Claim' and 'Good Citation' ([1][2][3]), highlighted by a smiling face emoji and a green clock with a checkmark, demonstrating superior quality and efficiency.\n\nConnections between the input prompt and each generator are implicit through alignment, with no explicit arrows drawn from the prompt to the generators. Instead, each generator processes the full prompt independently. The outputs are presented side-by-side within each module, with consistent rectangular boxes for claims and citations, colored red for bad, black for fair, and orange for good. The emojis and clocks serve as visual cues for quality and speed, respectively. The figure emphasizes that the proposed PA-RAG method achieves better performance while maintaining an end-to-end structure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-501425",
+  "record_sha256": "46abc63e0486834feb044247362c07885265815ca3cfbf91a90a551db169fa56",
+  "asset_sha256": "a4b9a5ab3d7cfb3daa00147e8ff5583107dc3769cba0ee314899e12bd2c1f359",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501425",
+    "title": {
+      "zh": "A Survey of Calibration Process for Black-Box LLMs · 方法图",
+      "en": "A Survey of Calibration Process for Black-Box LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12767",
+      "title": "A Survey of Calibration Process for Black-Box LLMs",
+      "authors": [
+        "Liangru Xie",
+        "Hui Liu",
+        "Jingying Zeng",
+        "Xianfeng Tang",
+        "Yan Han",
+        "Chen Luo",
+        "Jing Huang",
+        "Zhen Li",
+        "Suhang Wang",
+        "Qi He"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12767",
+      "arxiv_url": "https://arxiv.org/abs/2412.12767",
+      "arxiv_id": "2412.12767",
+      "arxiv_first_submitted_at": "2024-12-17T10:31:21Z",
+      "arxiv_updated_at": "2024-12-17T10:31:21Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501425/image/image.jpg?Expires=1790835191&Signature=wMifhC9~r2Qr3ZEIq7ANskcBsa4oFU07-iE7gjcjZjzOqchci2N7RSkdvXVvwiGAmdkg8hWXAIpBdh47q1Cyz9lYDeDhptH0qOPkgOOISgLiFNW5-zYfD~qSO0USUfefqvgM5z31T~J~HQxvWkne7d5LxBHPCU2j3fH6VG1ja8uwJZ4KmhSjZG3MoMhUkL~NRrxs6V~71oMIdvcL~Lq4GPLS4tMOglvJqj6lVtUTidW156strIPrMjXFI96RCiXl1Zhz6K0W42TWLPFPiI0f3KiY1~iEcX39ev52-kKLQOEAZmdX-DMGOER4HIDQQSFqXJoVidGYzyjx9WG-E1ri3g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501425,
+      "description_sha256": "592cded689352d8dab288311b21341b1ea3da05f9ec0052eadc0ccb1d8ad01b2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive framework for the calibration of Large Language Models (LLMs), structured into two main stages: Confidence Estimation and Calibration. The global layout is horizontal, with a left-to-right flow starting from LLM inputs and ending with well-calibrated outputs. On the far left, icons representing LLMs (e.g., GPT, Claude, Llama) are shown, with an arrow indicating 'The response from LLMs' entering the first major module, labeled 'Confidence Estimation' in teal. This module is divided into two overlapping ovals: one for 'White-Box LLMs' containing 'Logit-based methods' and 'Internal state-based methods', and another for 'Black-Box LLMs' containing 'Consistency-based methods' and 'Self-Reflection-based methods'. These methods are represented as rounded rectangles within the ovals. An arrow from this module points downward to a shield icon labeled 'Confidence Value', symbolizing the output of this stage.\n\nThe second major module, 'Calibration', is positioned to the right and is split into two submodules: 'Calibration Methods' (in red) and 'Measurement Methods' (in gray), both enclosed within a larger blue container. The 'Calibration Methods' submodule includes 'White-Box LLMs' with 'Temperature Scaling', 'Model Finetuning', and 'Label Smoothing', and 'Black-Box LLMs' with 'Histogram Binning', 'Proxy models-based methods', and 'Isotonic Regression'. These are also depicted as rounded rectangles. A dashed arrow labeled 'Optimize' connects this submodule back to the Confidence Estimation module, and a solid arrow labeled 'Calibrate' points from Confidence Estimation to Calibration Methods. From Calibration Methods, a thick red arrow labeled 'Calibration Error Reduction' points downward toward the final goal.\n\nThe 'Measurement Methods' submodule contains 'White-Box LLMs' with 'Error-based methods' and 'Black-Box LLMs' with 'Correlation-based methods'. A solid arrow labeled 'Measure' connects Calibration Methods to Measurement Methods. Below this, a gray arrow leads to 'Calibration Error Measurement', which then connects via a dashed arrow to a checkmark icon labeled 'Well-Calibrated'. This final output is linked to 'Correctness Value', which is derived from 'Tasks' indicated by a list icon on the far right. The entire process aims to align confidence values with correctness values, achieving well-calibrated outputs. The figure visually emphasizes that black-box methods are fully integrated into white-box frameworks, whereas white-box methods have limited applicability in black-box settings."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

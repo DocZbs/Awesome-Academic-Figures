@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501056",
+  "record_sha256": "daba399f44875a2e87a259402b89d9f58971144c146926a1708909207ba0ad13",
+  "asset_sha256": "420e77414fa39a823c3a8df0afdf798f0bd1e62b64eb2965f82f36bd8fb11a36",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501056",
+    "title": {
+      "zh": "SitPose: Real-Time Detection of Sitting Posture and Sedentary Behavior Using Ensemble Learning With Depth Sensor · 方法图",
+      "en": "SitPose: Real-Time Detection of Sitting Posture and Sedentary Behavior Using Ensemble Learning With Depth Sensor"
+    },
+    "paper": {
+      "id": "arxiv-2412-12216",
+      "title": "SitPose: Real-Time Detection of Sitting Posture and Sedentary Behavior Using Ensemble Learning With Depth Sensor",
+      "authors": [
+        "Hang Jin",
+        "Xin He",
+        "Lingyun Wang",
+        "Yujun Zhu",
+        "Weiwei Jiang",
+        "Xiaobo Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12216",
+      "arxiv_url": "https://arxiv.org/abs/2412.12216",
+      "arxiv_id": "2412.12216",
+      "arxiv_first_submitted_at": "2024-12-16T00:40:49Z",
+      "arxiv_updated_at": "2024-12-16T00:40:49Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501056/image/image.jpg?Expires=1790835183&Signature=AJzBKbhzgGtNHlp162Z15v0AfDuJfFn2cbTz1~Y4m000viWQ1C8~zMC4-RGLR22sBFl5fmrqiZ-HRKS-y-cNRQU5gAI~zDFPJ17pqmaYARgdL0eP5QToGrtQhoWVwIA4hgPd5LPhbb1Puo6F5yISwpL3fm7ISpC1WbFIG85Cpm4ekDsvg2t6~1kyUKLXTO8wP4QDS-roLso~gWNjwYrPf3eAAqdxU57MnTGw9I0MjHYlZzMLHtW9EKOFM28-7I2g6UXZoqRx9I22CBWSBm06iGX9OHbI0SAeWcxM10gw1XhhIVyx0PMSOaGipgSCxuZ~D88vO1XM-pmQU1ncwfjMiQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501056,
+      "description_sha256": "c4b508afe1fbded542a05278111b784511445553ec434c349a410158066cd37b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a machine learning ensemble framework for detecting sitting posture and sedentary habits. The global layout is a top-down flowchart with distinct stages: training, prediction, and final classification. At the top, a document icon labeled 'Train Set' feeds into a dashed rectangular box containing three base models: SVM (Support Vector Machine), DT (Decision Tree), and MLP (Multilayer Perceptron). These models are represented as colored rectangles—SVM in light orange, DT in yellow, and MLP in light green—with bold black text labels. An arrow from the Train Set points downward to these models, accompanied by the label 'Train base models', indicating that the training data is used to train each model individually.\n\nBelow this training stage, another dashed rectangular box contains three rounded rectangles labeled P1, P2, and P3, representing the probability outputs from the respective SVM, DT, and MLP models. A horizontal arrow from a 'Test Set' document icon on the left enters this prediction stage, feeding input data into the three base models simultaneously. Each model produces its probability output (P1, P2, P3), which are then combined via a downward arrow labeled 'Weighted Voting'.\n\nThis leads to a large, light blue rounded rectangle labeled 'Soft voting', which aggregates the probability outputs from the base models using a weighted voting strategy. From this soft voting module, a single arrow descends to a tag-shaped icon labeled 'Predict sitting posture', with an accompanying text annotation: 'Choosing the class with the highest probability'. This indicates that the final prediction is made by selecting the class associated with the maximum aggregated probability from the soft voting step.\n\nThe visual structure uses consistent dark blue borders and arrows, with clear labeling and color-coding to distinguish between different components. The dashed boxes group related stages: the upper box for model training and the lower box for prediction and probability generation. The entire process follows a logical sequence: training base models on the train set, applying them to the test set to obtain individual probabilities, combining those probabilities via soft voting, and finally selecting the most probable class for the sitting posture prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

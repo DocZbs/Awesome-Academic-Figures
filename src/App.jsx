@@ -1,4 +1,11 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  lazy,
+  Suspense,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -26,6 +33,7 @@ import {
   CornerDownRight,
   FolderDown,
   ChevronDown,
+  FileSearch,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import {
@@ -49,6 +57,8 @@ import {
   filterFigures,
   readUrl,
   fetchResource,
+  loadFigureDetails,
+  figureLabel,
 } from "./gallery.js";
 
 const TYPE_ICONS = {
@@ -58,8 +68,12 @@ const TYPE_ICONS = {
   qualitative: Images,
   data: ChartNoAxesCombined,
   "multi-panel": Layers3,
+  taxonomy: Layers3,
+  teaser: Sparkles,
+  unclassified: Shapes,
 };
 const INITIAL = readUrl();
+const PaperMatcher = lazy(() => import("./PaperMatcher.jsx"));
 const PAGE_SIZE = 12;
 function usePreference(key, kind, onFailure) {
   const read = () => {
@@ -122,6 +136,7 @@ export default function App() {
     new URLSearchParams(location.search).get("figure"),
   );
   const [guide, setGuide] = useState(false);
+  const [matcherOpen, setMatcherOpen] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
   const [task, setTask] = useState("");
   const [notes, setNotes] = useState("");
@@ -348,22 +363,23 @@ export default function App() {
               。
             </h1>
             <p>
-              从顶会获奖论文中，找到你的绘图灵感。
+              从 AI 论文中，找到你的绘图灵感。
               <br />
-              挑选 Figure 1 & 2，把图像与 prompt 交给你的智能体。
+              挑选论文首图与方法图，交给你的绘图智能体。
             </p>
             <div className="hero-buttons">
-              <a href="#gallery" className="button button-primary">
+              <Button
+                variant="primary"
+                icon={FileSearch}
+                disabled={loadState !== "ready"}
+                onClick={() => setMatcherOpen(true)}
+              >
+                用我的论文找图
+              </Button>
+              <a href="#gallery" className="button button-neutral">
                 探索图形画廊
                 <ArrowDown size={17} />
               </a>
-              <Button
-                variant="ghost"
-                icon={BookOpen}
-                onClick={() => setGuide(true)}
-              >
-                怎样使用
-              </Button>
             </div>
             <div className="hero-caption">
               <span className="source-dot" /> 源自真实论文{" "}
@@ -718,11 +734,13 @@ export default function App() {
                         <div className="card-preview">
                           <div className="card-topline">
                             <span className="figure-label mono">
-                              FIGURE {figure.source.number}
+                              {figureLabel(figure)}
                             </span>
-                            <span className="award-badge">
-                              <span /> {figure.paper.awards[0]?.official_name}
-                            </span>
+                            {figure.paper.awards?.length > 0 && (
+                              <span className="award-badge">
+                                <span /> {figure.paper.awards[0].official_name}
+                              </span>
+                            )}
                           </div>
                           <FigureImage
                             figure={figure}
@@ -730,7 +748,7 @@ export default function App() {
                           />
                           <button
                             className="expand-button"
-                            aria-label={`放大 Figure ${figure.source.number}`}
+                            aria-label={`放大 ${figureLabel(figure)}`}
                             title="放大图像"
                             onClick={() => openDetail(figure.id)}
                           >
@@ -893,15 +911,15 @@ export default function App() {
               <div className="tray-thumb" key={figure.id}>
                 <img
                   src={assetUrl(figure, "preview")}
-                  alt={`已选 Figure ${figure.source.number}`}
+                  alt={`已选 ${figureLabel(figure)}`}
                 />
                 <button
                   onClick={() => actions.onSelect(figure.id)}
-                  aria-label={`移除 Figure ${figure.source.number}`}
+                  aria-label={`移除 ${figureLabel(figure)}`}
                 >
                   <X size={12} />
                 </button>
-                <span className="mono">FIG. {figure.source.number}</span>
+                <span className="mono">{figureLabel(figure)}</span>
               </div>
             ))}
           </div>
@@ -989,11 +1007,37 @@ export default function App() {
           <div className="guide-note">
             <BookOpen size={20} />
             <p>
-              当前展示通过授权检查与图像核对的 Figure 1 /
-              2。各会议年份仍在逐步补齐。收藏保存在本机浏览器，不会自动跨设备同步。
+              论文图统一展示，获奖作为标签。详情会标注图号与来源审核状态；尚未核实图号的方法图也会如实标记。收藏保存在本机浏览器，不会自动跨设备同步。
             </p>
           </div>
         </Dialog>
+      )}
+      {matcherOpen && (
+        <Suspense
+          fallback={
+            <Dialog
+              title="用我的论文找图"
+              onClose={() => setMatcherOpen(false)}
+            >
+              <p role="status">正在打开论文匹配…</p>
+            </Dialog>
+          }
+        >
+          <PaperMatcher
+            figures={figures}
+            selectedFigureIds={selected}
+            onOpenFigure={openDetail}
+            onSelectFigure={actions.onSelect}
+            onUseTask={({ task: paperTask, notes: paperNotes, figureIds }) => {
+              setSelected((old) => [...new Set([...old, ...figureIds])]);
+              setTask(paperTask);
+              setNotes(paperNotes);
+              setMatcherOpen(false);
+              setExportOpen(true);
+            }}
+            onClose={() => setMatcherOpen(false)}
+          />
+        </Suspense>
       )}
       {exportOpen && (
         <ExportDialog
@@ -1009,7 +1053,47 @@ export default function App() {
   );
 }
 
-function DetailDialog({
+function DetailDialog(props) {
+  const [loaded, setLoaded] = useState(null);
+  const [failed, setFailed] = useState(false);
+  const [retry, setRetry] = useState(0);
+  useEffect(() => {
+    const controller = new AbortController();
+    setLoaded(null);
+    setFailed(false);
+    loadFigureDetails(props.figure, { signal: controller.signal })
+      .then((figure) => {
+        if (!controller.signal.aborted) setLoaded(figure);
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setFailed(true);
+      });
+    return () => controller.abort();
+  }, [props.figure.id, retry]);
+  if (!loaded)
+    return (
+      <Dialog
+        title={props.figure.title.zh}
+        onClose={props.onClose}
+        className="detail-dialog"
+      >
+        <FigureImage figure={props.figure} full className="detail-media" />
+        <p role="status">
+          {failed
+            ? "图形描述暂时无法加载，你的选择已保留。"
+            : "正在加载这幅图的描述与 prompt…"}
+        </p>
+        {failed && (
+          <Button onClick={() => setRetry((value) => value + 1)}>
+            重新加载
+          </Button>
+        )}
+      </Dialog>
+    );
+  return <ReadyDetailDialog {...props} figure={loaded} />;
+}
+
+function ReadyDetailDialog({
   figure,
   figures,
   onClose,
@@ -1044,7 +1128,7 @@ function DetailDialog({
   return (
     <Dialog
       title={figure.title.zh}
-      eyebrow={`${figure.paper.venue} ${figure.paper.publication_year} / FIGURE ${figure.source.number}`}
+      eyebrow={`${figure.paper.venue} ${figure.paper.publication_year} / ${figureLabel(figure)}`}
       onClose={onClose}
       className="detail-dialog"
       footer={
@@ -1071,9 +1155,15 @@ function DetailDialog({
       <div className="detail-source">
         <div>
           <span className="verified-dot" />
-          <strong>原图已核对</strong>
+          <strong>
+            {figure.reuse.validation.visual_extraction === "reviewed"
+              ? "原图已核对"
+              : "来源索引已核对"}
+          </strong>
           <span>
-            PDF 第 {figure.source.pdf_page_index_1based} 页 ·{" "}
+            {figure.source.pdf_page_index_1based
+              ? `PDF 第 ${figure.source.pdf_page_index_1based} 页 · `
+              : ""}
             {figure.visual.pixel_width} × {figure.visual.pixel_height}
           </span>
         </div>
@@ -1086,7 +1176,7 @@ function DetailDialog({
       {sibling && (
         <button className="sibling-link" onClick={() => onNavigate(sibling.id)}>
           <Layers3 size={17} />
-          同一篇论文的 Figure {sibling.source.number}
+          同一篇论文的 {figureLabel(sibling)}
           <span>{sibling.title.zh}</span>
           <ArrowRight size={17} />
         </button>
@@ -1129,7 +1219,11 @@ function DetailDialog({
       ) : panel === "prompt" ? (
         <>
           <p className="prompt-hint">
-            替换双花括号中的变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。
+            {figure.reuse.prompt_origin === "dataset_generation_caption"
+              ? "这份图形描述由来源数据集生成，尚未经逐图人工核验。请先确认参考图细节，再替换为你的研究内容；描述中的原论文结果不能直接用于你的论文。"
+              : figure.reuse.prompt_status === "draft"
+                ? "这是参考图驱动的通用改绘草稿，尚未逐图重建。智能体应先分析附图，再结合你的真实材料绘制。"
+                : "替换双花括号中的变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。"}
           </p>
           <pre className="prompt-code" tabIndex="0">
             {figure.prompt_text}
@@ -1138,7 +1232,10 @@ function DetailDialog({
       ) : (
         <div className="source-details">
           <h3>原始图注</h3>
-          <p>{figure.source.caption}</p>
+          <p>
+            {figure.source.caption ||
+              "来源索引未提供逐图图注，可打开论文查看。"}
+          </p>
           <h3>授权与原始文件</h3>
           <p>
             {figure.rights.source_license} ·{" "}
@@ -1158,21 +1255,30 @@ function DetailDialog({
               target="_blank"
               rel="noreferrer"
             >
-              作者原文件 · {original.source_path} <ArrowUpRight size={15} />
+              {original.source_kind === "upstream_extracted_figure"
+                ? "来源图文件"
+                : "作者原文件"}{" "}
+              · {original.source_path} <ArrowUpRight size={15} />
             </a>
           ))}
           <h3>论文作者</h3>
           <p>{figure.paper.authors.join(" · ")}</p>
-          <a
-            href={figure.paper.awards[0].official_source_url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            核验官方奖项
-            <ArrowUpRight size={15} />
-          </a>
+          {figure.paper.awards?.[0] && (
+            <a
+              href={figure.paper.awards[0].official_source_url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              核验官方奖项
+              <ArrowUpRight size={15} />
+            </a>
+          )}
           <p className="prompt-hint">
-            图片取自论文；结构描述与 prompt 由维护者重建，尚未经生成验证。
+            {figure.reuse.prompt_origin === "dataset_generation_caption"
+              ? "来源方法图的原论文图号与正文范围尚未核实。图形描述由数据集生成，未经人工逐图验证。"
+              : figure.reuse.prompt_status === "draft"
+                ? "图片与分类来自公开论文图鉴。图号、图注及逐图视觉描述未完成独立审核；prompt 为通用草稿。"
+                : "图片取自论文；结构描述与 prompt 由维护者重建，尚未经生成验证。"}
           </p>
         </div>
       )}
@@ -1203,11 +1309,14 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
     try {
       const archive = {
         "MY_TASK.md": strToU8(
-          `# 我的绘图任务\n\n${task}\n\n## 想借鉴的部分\n\n${notes || "按各图的结构描述结合我的研究进行适配。"}\n\n请查看每个图目录里的参考预览、作者原始图文件、analysis.md、prompt.md、agent.md 和 ATTRIBUTION.md。所有数值与模块关系应使用我自己的真实材料。\n`,
+          `# 我的绘图任务\n\n${task}\n\n## 想借鉴的部分\n\n${notes || "查看参考图的实际结构，结合我的研究进行适配。"}\n\n请查看每个图目录里的参考预览、来源图文件（有作者原文件时一并附上）、analysis.md、prompt.md、agent.md 和 ATTRIBUTION.md。所有数值与模块关系应使用我自己的真实材料。\n`,
         ),
       };
       await Promise.all(
-        figures.map(async (figure) => {
+        figures.map(async (item) => {
+          const figure = await loadFigureDetails(item, {
+            signal: controller.current.signal,
+          });
           for (const [name, text] of Object.entries({
             "analysis.md": figure.analysis_text,
             "prompt.md": figure.prompt_text,
@@ -1219,15 +1328,20 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
           const image = await fetchResource(assetUrl(figure, "reference"), {
             signal: controller.current.signal,
           });
-          archive[`${figure.id}/${figure.assets.reference}`] = new Uint8Array(
-            await image.arrayBuffer(),
-          );
+          const referenceBytes = new Uint8Array(await image.arrayBuffer());
+          archive[`${figure.id}/${figure.assets.reference}`] = referenceBytes;
           for (const original of figure.original_assets || []) {
-            const response = await fetchResource(
-              assetUrl(figure, "originalBase") + original.file,
-              { signal: controller.current.signal },
-            );
-            const bytes = new Uint8Array(await response.arrayBuffer());
+            const bytes =
+              original.file === figure.assets.reference
+                ? referenceBytes
+                : new Uint8Array(
+                    await (
+                      await fetchResource(
+                        assetUrl(figure, "originalBase") + original.file,
+                        { signal: controller.current.signal },
+                      )
+                    ).arrayBuffer(),
+                  );
             const hash = await crypto.subtle.digest("SHA-256", bytes);
             const sha = [...new Uint8Array(hash)]
               .map((value) => value.toString(16).padStart(2, "0"))
@@ -1277,10 +1391,10 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
           <div key={figure.id}>
             <img
               src={assetUrl(figure, "preview")}
-              alt={`参考 Figure ${figure.source.number}`}
+              alt={`参考 ${figureLabel(figure)}`}
             />
             <span>
-              Figure {figure.source.number}
+              {figureLabel(figure)}
               <small>{TYPE_LABELS[figure.classification.primary_type]}</small>
             </span>
             <Check size={17} />

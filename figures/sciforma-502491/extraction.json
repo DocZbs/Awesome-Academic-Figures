@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502491",
+  "record_sha256": "c39b51610698355db43f9da40d9fbc950c2ca62ecb279e7915373ec846106eab",
+  "asset_sha256": "ac6ee32306fb5cb93fea4f53726dd7b1e971bb7617e6792eb663c7b452ea45ba",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502491",
+    "title": {
+      "zh": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information · 方法图",
+      "en": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information"
+    },
+    "paper": {
+      "id": "arxiv-2412-14603",
+      "title": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information",
+      "authors": [
+        "Zheng Ren",
+        "Jingwen Zhou",
+        "Wenguan Zhang",
+        "Jiapu Yan",
+        "Bingkun Chen",
+        "Huajun Feng",
+        "Shiqi Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_id": "2412.14603",
+      "arxiv_first_submitted_at": "2024-12-19T07:49:40Z",
+      "arxiv_updated_at": "2024-12-23T11:40:38Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502491/image/image.jpg?Expires=1790835221&Signature=dtY0ltfn2DKjmojTYJy1DAbsmhI6XSEq2zClbDkJOw8RkRec4kvUu1Q4LkBUatDdt0AuTF3jc2GsOgHUV1ObO3VjB2~8v69lZf8n-gsT-4ycDcI~EhMheOxZ6gb0-woKAZH5T2t12nDtbqipevVytRWhh3c6Aqrduwqv0VnwtWTPyK~z3ElOSL1sEceOKHeZTaNuzUNI~CtPyY4B-cKWOm~VkcPPF~3QHMDJKSMACoqzSVJ02Bc9w6E0EPIzmZKnFPbqAzpeyWNG~MbS0j9jd3oXV1Bg5~nrHtDL-ZeHFkDQKiFHTbawHFTnWgXbKI6dMnFKPOaXAd8uRHDLzQ5vEw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502491,
+      "description_sha256": "d5ce323db7e4115205ab29bb615296a2d953b1e7ec09a4cfcbb37b09583ff733",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a joint optimization pipeline for lens design and image reconstruction, structured as a left-to-right dataflow with bidirectional feedback loops. The global layout consists of three main stages: input sampling, differential optical simulation, and image reconstruction, connected by forward and backward propagation arrows. On the far left, a yellow rounded rectangle labeled 'Random object field' contains a small dog image with a white square highlighting a region; below it, a zoomed-in 'Scene patch' shows a close-up of the dog’s eye. This input feeds into the central light-blue box titled 'Differential optical simulation model', which includes the parameter φ_lens and a 'Customized differential operator'. Inside this module, two outputs are generated: a black square labeled 'Coherent PSF' with a small colored dot at its center, and a grid of color-varying squares labeled 'Image patch field', representing spatially varying blur effects. These two outputs are concatenated via a circular symbol marked 'C' (indicating RGB+XY concatenation), forming the input for the next stage. The rightmost light-blue box is labeled 'Image reconstruction network' with parameter φ_net. It receives the concatenated input and produces two side-by-side images: a 'Blurred patch' (left) showing the degraded eye image, and a 'Reconstructed' version (right) with improved clarity. A black arrow points from the blurred to the reconstructed image, indicating forward processing, while a red arrow returns from reconstructed to blurred, denoting backward propagation. Two purple rounded rectangles represent loss functions: 'Optical evaluations L_optic' connects to the differential optical simulation model via bidirectional black and red arrows, signifying forward and backward optimization of φ_lens. Similarly, 'Network loss L_net' connects to the reconstruction network with bidirectional arrows, guiding the training of φ_net. A legend on the far right clarifies symbols: a circle with an 'X' denotes convolution, a circle with 'C' denotes concatenation (RGB+XY), black arrows indicate forward pass, and red arrows indicate backward pass. The entire pipeline operates iteratively, optimizing both lens parameters and network weights simultaneously to minimize reconstruction error while satisfying optical constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

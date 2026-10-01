@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502384",
+  "record_sha256": "0ab89166678f8e6c5073de83b9d6779d0832118c54f1f08ae01c8c050d4727f3",
+  "asset_sha256": "81854edc8b506ba5d06c5284b578416f6fa015b254bdae55965ba3fc5b178013",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502384",
+    "title": {
+      "zh": "Promptable Representation Distribution Learning and Data Augmentation for Gigapixel Histopathology WSI Analysis · 方法图",
+      "en": "Promptable Representation Distribution Learning and Data Augmentation for Gigapixel Histopathology WSI Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-14473",
+      "title": "Promptable Representation Distribution Learning and Data Augmentation for Gigapixel Histopathology WSI Analysis",
+      "authors": [
+        "Kunming Tang",
+        "Zhiguo Jiang",
+        "Jun Shi",
+        "Wei Wang",
+        "Haibo Wu",
+        "Yushan Zheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14473",
+      "arxiv_url": "https://arxiv.org/abs/2412.14473",
+      "arxiv_id": "2412.14473",
+      "arxiv_first_submitted_at": "2024-12-19T02:47:17Z",
+      "arxiv_updated_at": "2024-12-19T02:47:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502384/image/image.jpg?Expires=1790835217&Signature=mZ6LZBiwPKvAQGccGf4sQvFZUeGLy9lNz3hsV0luO~NaWAkyVx5OFNLgxboun0zcuud1pdl8wsxiroxhWOimDBL3y5FQDMrR9Hun8~4TtCv1ipIOuae1ktDjNK9zvdtgMFW69nLjhAkOxpjUfnW-Rci1OSyyr~9iz6blqE88kb4hEcUPGQ~XT0oQaFAoifBmOWAC8oPcF74esTk9PB2045B5XCN8tBqo0eEvl98egOQFMDw7-AB9~CkTf3YUazoF~h3Usbe5dfeiT~vrhMWR2dACkJeigiIvqnxzxjgVvqQ5xNnzMEzym0EJQwsbnt5XeT-eDE5jU5IXXz1pBr6afg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502384,
+      "description_sha256": "22957c6b7de3a6ea17ed5cc8c6551ef438703c96d54ff78c8d0d3301703d29b4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of three different data augmentation strategies for Whole Slide Image (WSI) analysis, labeled as (a) Patch Augmentation, (b) Generative Augmentation, and (c) Promptable Representation Sampling (PRS). The global layout consists of three vertically aligned, parallel workflows, each depicting a distinct augmentation pipeline leading to MIL Training. Each pipeline is structured from bottom to top, starting with an input WSI represented as a diamond-shaped grid overlaying a histopathological tissue image, progressing through intermediate processing steps, and culminating in MIL Training at the top.\n\nIn all three pipelines, the initial step involves dividing the WSI into patches, visually represented as small square tiles beneath the WSI. In (a) Patch Augmentation, these patches undergo 'Image Transformation' (a blue-bordered gray rectangle, indicating a nonparameterized process), followed by 'Patch Encoding' (an orange-bordered gray rectangle, indicating a parameterized process), and then feed into MIL Training. The transformation step is shown to alter the appearance of the patches, suggesting standard image-level augmentations like rotation or flipping.\n\nIn (b) Generative Augmentation, the same initial patches are first encoded via 'Patch Encoding' (orange-bordered gray rectangle). This is followed by 'Representation Generation' (another orange-bordered gray rectangle), which takes as input a random seed denoted by 'z' (a white box with black text). The output of this step is a set of color-coded feature vectors (green, purple, cyan, red, pink bars), representing generated representations. These are then passed to MIL Training.\n\nIn (c) Promptable Representation Sampling (PRS), the initial patches again go through 'Patch Encoding' (orange-bordered gray rectangle). The next step is 'Representation Sampling' (blue-bordered gray rectangle, nonparameterized), which receives input from a box labeled 'Augmentation Prompts'. This box lists specific augmentation types: ResizedCrop (✓), Flip (✗), ColorJitter (✓), and Solarization (✗), indicating that only certain prompts are selected. Below this box, 'Random Prompts' is noted, suggesting stochastic selection. The output of Representation Sampling is a set of identical gray feature vectors, symbolizing sampled representations, which then proceed to MIL Training.\n\nA legend on the right side clarifies visual elements: solid black arrows denote 'Online Data Flow', dashed gray arrows indicate 'Offline Data Flow', orange borders represent 'Parameterized Process', and blue borders denote 'Nonparameterized Process'. The figure emphasizes that PRS (c) introduces a novel, prompt-driven approach to representation sampling, contrasting it with traditional patch-level transformations (a) and generative feature modeling (b)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

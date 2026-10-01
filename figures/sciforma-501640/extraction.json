@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501640",
+  "record_sha256": "11b4d8132846c3005246c8c4bb06c55fc4c5dcfaebd26da2ee6e97125b31bbcb",
+  "asset_sha256": "8e88dab6a5aab9811ebe2cf375e636ea59f3b89c44cc88682109c6431bb73df0",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501640",
+    "title": {
+      "zh": "MotionBridge: Dynamic Video Inbetweening with Flexible Controls · 方法图",
+      "en": "MotionBridge: Dynamic Video Inbetweening with Flexible Controls"
+    },
+    "paper": {
+      "id": "arxiv-2412-13190",
+      "title": "MotionBridge: Dynamic Video Inbetweening with Flexible Controls",
+      "authors": [
+        "Maham Tanveer",
+        "Yang Zhou",
+        "Simon Niklaus",
+        "Ali Mahdavi Amiri",
+        "Hao Zhang",
+        "Krishna Kumar Singh",
+        "Nanxuan Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13190",
+      "arxiv_url": "https://arxiv.org/abs/2412.13190",
+      "arxiv_id": "2412.13190",
+      "arxiv_first_submitted_at": "2024-12-17T18:59:33Z",
+      "arxiv_updated_at": "2025-01-07T22:06:07Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501640/image/image.jpg?Expires=1790835197&Signature=SGG680Af2bez~V26XjQTyON4iBdDNUjF0kWJLOui8blhgphGi62dpV8zc7qyg4e0j4druySleUUqFo8JQYCdAj4PdI5WCs~aYFpD49YnTwmToe~YpO63yV4WWtPMSSWD-Sw1zlX4kj2vyLG~u58-jUyvWxQTAN8esRxHYCKAjE~lXW-8fnKLQcGdNVCWM9L0NwV9~LPF5u8TMQzYl6UFQr5kCG~4-lhSxmHtKzLbYoerROtr-q6jtfEllsj-4-lPz8l4xvzEvUC6S4zUApX8JUBO5fQ-NQHJI-qec89Bwc53fA-xgddhU0xgAeWChldHveZJISs50tDwY96UlwGq7g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501640,
+      "description_sha256": "3961930f398fc51bf348df1f91cd3b3f89c64ed8233a69f39c11f6fb0d7c21f2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a video generation pipeline, structured as a flowchart with multiple interconnected modules. The global layout is left-to-right, starting from input video X on the far left and progressing through encoding, embedding, denoising, and decoding stages to produce an output video on the far right. The top branch processes the original video X through a VAE encoder (E), producing latent representation Z_x, which is then corrupted by adding noise to form Z_t. This noisy latent is combined with other latent representations via channel concatenation (blue circle) before being fed into a Content Embedder. A separate branch processes keyframes K_1 to K_n from the same video, which are passed through an Augmented Frame Generator. This generator uses optical flow segmentation and region extraction to produce augmented frames G_1 to G_n, which are then encoded by E to yield Z_a. Another branch processes the input video through a Sparse Motion Generator, which outputs sparse motion points P_1 to P_m. These points are encoded by E to produce Z_m, which is fed into a Motion Embedder. The outputs of the Content and Motion Embedders are concatenated and undergo dimensionality reduction before being input into Denoising Transformers. A prompt is also fed into these transformers, which perform iterative denoising to generate a latent sequence. This latent is decoded by a VAE decoder (D) to produce the final output video. The bottom-left inset details the Augmented Frame Generator: it takes a frame and optical flow from X, performs optical flow segmentation, extracts regions using trajectories, and outputs a masked frame. The bottom-right inset shows the Embedder Structure: input frames are converted into N patches, processed by a linear layer, and output as a sequence of length N. Visual modules include rectangular blocks for encoders/decoders (green E/D), blue rectangles for latents (Z_x, Z_t, etc.), beige rounded rectangles for embedders, and light blue cylinders for the Denoising Transformers. The legend indicates that E and D are frozen VAE components, the blue circle denotes channel concatenation, and the green rectangle represents a linear layer. Arrows indicate data flow, with solid lines showing direct connections and curved arrows indicating iterative denoising within the transformer block."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-502353",
+  "record_sha256": "8d5c0ede426d50056b4f7ac22460051358664a988af3f67219c470b3301f292f",
+  "asset_sha256": "388cfda3dcbd1f087db01e14c8933e74a8f47b87fae7e6e6ecb70e918eab24cf",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502353",
+    "title": {
+      "zh": "GenHMR: Generative Human Mesh Recovery · 方法图",
+      "en": "GenHMR: Generative Human Mesh Recovery"
+    },
+    "paper": {
+      "id": "arxiv-2412-14444",
+      "title": "GenHMR: Generative Human Mesh Recovery",
+      "authors": [
+        "Muhammad Usama Saleem",
+        "Ekkasit Pinyoanuntapong",
+        "Pu Wang",
+        "Hongfei Xue",
+        "Srijan Das",
+        "Chen Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14444",
+      "arxiv_url": "https://arxiv.org/abs/2412.14444",
+      "arxiv_id": "2412.14444",
+      "arxiv_first_submitted_at": "2024-12-19T01:45:58Z",
+      "arxiv_updated_at": "2024-12-19T01:45:58Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502353/image/image.jpg?Expires=1790835216&Signature=X~Crec5oQW-B9i9naz~i6GojdjNrDqi4lJhKZ90JwIyTtdEMymB4f7CZbuPqtY9vCET4z~h-GDHmJqn~MCMXAtarzdShniS6mrf1lHWYrRjzXMddN7~kPdhszRseQM6QstmtMe-fw34MfrNpnctAuitSjLJe6WWPsdX8N4Xrb1ESUPHFbHPE5sM0G44VMGvBY-FzhWrAuDpHJ2i55rOv4elJcKYOhBRSGj4HRepQnpWIaCDJ9I26I1QBILHYLCaf6WfWSSypeJYQteCpbXCmoP~5lDeLKlIsLr~gtN8LPFzMdQV2x6qwbXuB7aw0zcYMJrtENydBBbnzkkxaJ4O8Ew__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502353,
+      "description_sha256": "68ded4472e5f4b7efc58599c5c59f8407788de7d780529a815f903b1b81176fa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage inference strategy for 3D human pose estimation, divided into (a) Uncertainty-Guided Sampling and (b) 2D Pose-Guided Refinement. The global layout is horizontal, progressing from left to right, with stage (a) occupying the left half and stage (b) the right half. A legend in the upper right corner defines visual elements: orange squares labeled 'i' represent Pose Tokens, black squares labeled 'M' denote Mask Tokens, gray squares with '?' indicate Low Confidence Tokens, blue snowflake icons signify Frozen Networks, orange flame icons represent Trainable Tokens, and a crossed circle symbolizes Deformable Cross-Attention.\n\nIn stage (a), an input image is fed into an Image-Conditioned Masked Transformer at Y₁ step, where all tokens are initially masked (black 'M'). The model outputs a sequence of tokens, some of which are assigned numerical values (e.g., 2, 6, 7) indicating confidence or token types. These are then subjected to Confidence-based Masking, replacing low-confidence tokens (gray '?') with mask tokens ('M'), while retaining high-confidence tokens (orange 'i'). This process repeats iteratively through Y₂ step up to Y_L step, with each step feeding into the next. At Y_L step, the output token sequence is passed to a Decoder (marked with a blue snowflake, indicating it is frozen), producing an initial 3D pose estimate θ'.\n\nStage (b) begins with the initial estimate θ' being used to initialize a new set of trainable tokens (orange flame icon) at Y_p step. These are processed by another Image-Conditioned Masked Transformer (frozen network, blue snowflake) and then decoded by a Decoder (also frozen) to produce a refined 3D pose θ''. Simultaneously, the input image is processed by a 2D Detector (frozen network, blue snowflake) to obtain 2D pose estimates J_2D. The refinement process involves minimizing a loss function G(Y_p, J_2D, θ') via gradient descent, updating the trainable tokens using the equation Y_{p+1} = Y_p - η∇_{Y_p}G(Y_p, J_2D, θ'), where η is the learning rate. This update loop runs P times, with feedback from the 2D detector guiding the refinement to improve 3D pose accuracy. The final output is a refined 3D body mesh consistent with both the image context and 2D pose constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13912
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the DeepMapping architecture, which processes multiple local coordinate systems to produce a unified global representation. The overall layout is horizontal and modular, divided into two main sections: 'Local coordinates' on the left and 'Global coordinates' on the right. The workflow proceeds from left to right, with parallel processing streams for each of Nm local coordinate inputs (Z₁, Z₂, ..., Zₙₘ), which are vertically stacked and connected by dotted lines labeled ψ, indicating shared parameters or a common transformation across streams.
+
+Each stream begins with an input Zᵢ (i = 1 to Nm) fed into an L-Net module, represented as a light blue rounded rectangle. The output of each L-Net is passed to a green rounded rectangle labeled KF (Kalman Filter), which receives an additional input Uᵢ from above. The KF output then feeds into a yellow rounded rectangle labeled TF (Transformation Function), which also receives Zᵢ as an input. The TF module produces an output labeled Z_global,i, which is directed to a pink rounded rectangle labeled Sampling. This Sampling module extracts features or samples from the global coordinate representation.
+
+All Sampling outputs from the Nm parallel streams converge at a central circular node with a cross inside, symbolizing a summation or aggregation operation. The result of this aggregation is denoted as M_{Nm+1}, which is then passed to the final module, M-Net, depicted as a light blue rounded rectangle similar to the L-Nets. This suggests that M-Net may perform a final mapping or prediction based on the aggregated global information.
+
+The connections between modules are solid black arrows indicating data flow direction. The dotted vertical lines labeled ψ between the L-Nets indicate parameter sharing or a consistent transformation applied across all local coordinate streams. The labels Uᵢ and Zᵢ above each KF and TF module respectively denote auxiliary inputs to those components. The outputs Z_global,i are explicitly labeled before entering the Sampling modules, emphasizing the transition from local to global representations. The final output M_{Nm+1} is shown flowing directly into M-Net, completing the pipeline. The diagram uses distinct colors for different functional blocks: light blue for neural network components (L-Net and M-Net), green for filtering (KF), yellow for transformation (TF), and pink for sampling operations. The visual hierarchy clearly separates local processing from global integration, with the central aggregation point serving as the bridge between the two domains.

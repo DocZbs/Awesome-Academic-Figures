@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501600",
+  "record_sha256": "c1dfab040734f46bfb10a51774b76dc21efbe3ba3ed674b89260d72d6eadd5b9",
+  "asset_sha256": "200531d644370a4b951546fb10245c5ba2f1a5e15d424a471a7ce6cf7f3b843a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501600",
+    "title": {
+      "zh": "Identifying Bias in Deep Neural Networks Using Image Transforms · 方法图",
+      "en": "Identifying Bias in Deep Neural Networks Using Image Transforms"
+    },
+    "paper": {
+      "id": "arxiv-2412-13079",
+      "title": "Identifying Bias in Deep Neural Networks Using Image Transforms",
+      "authors": [
+        "Sai Teja Erukude",
+        "Akhil Joshi",
+        "Lior Shamir"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13079",
+      "arxiv_url": "https://arxiv.org/abs/2412.13079",
+      "arxiv_id": "2412.13079",
+      "arxiv_first_submitted_at": "2024-12-17T16:51:44Z",
+      "arxiv_updated_at": "2024-12-17T16:51:44Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501600/image/image.jpg?Expires=1790835196&Signature=fY15DljQt6bye4Dx0hH1qpV34OUU5FgSIDzDImU5ULkRm7qf32jZwHXpNDG6KJ31C-9m4UPwEMZvFREEAS-IQn2RZRnKT-k~oygSspagpC6BdAEJOavyXOykvgAcbBabJDFwNwOm3KGi-BZnU~3hoJ34473H1dkbfaZfpnNwwaQrAgUKEpL9Fx6EuGBWLPXzfm4WA8NzcYwyVqbzLAZBpBPnPvvpuJiXmV6Yz26LyHt9ByUYEuE5mXrBIp0lRqR9taLv6AyH6AKnwAoyJtnE1fQWfXd1N5GvWtfec4s1uEjkczYakf5orAWioftGaRhTqJFXXks21ELUQL99xSa2rw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501600,
+      "description_sha256": "0b88d2afe36327ea6ec480e6115fd4a01c3d37a9a3fdc931c1dcb5780a9c9b21",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural structure of the VGG16 convolutional neural network, designed for image classification tasks. The global layout is a left-to-right sequential flow, depicting the transformation of an input image through successive layers until producing a final classification output. The diagram begins on the far left with a 3D representation of an input image of size 224 x 224 x 3, shown as a tilted rectangular prism with color patches indicating RGB channels. This input feeds into a series of convolutional and pooling layers arranged in a linear pipeline, progressively reducing spatial dimensions while increasing feature depth.\n\nThe visual modules are represented using colored 3D blocks with labeled dimensions above each group. Green blocks denote convolutional layers followed by ReLU activation; purple blocks represent max pooling layers; light green blocks indicate fully connected layers with ReLU; and a single red block at the end signifies the softmax layer for classification. Each module’s spatial and channel dimensions are explicitly annotated above it: starting from 224 x 224 x 64 after the first convolutional block, then 112 x 112 x 128, 56 x 56 x 256, 28 x 28 x 512, 14 x 14 x 512, and finally 7 x 7 x 512 before transitioning to fully connected layers. The fully connected stages are shown as smaller blocks: 1 x 1 x 4096, followed by another 1 x 1 x 4096, and concluding with a 1 x 1 x 1000 output layer for 1000-class classification.\n\nConnections between modules are implied by the sequential arrangement and alignment of blocks, forming a continuous feed-forward path from input to output. There are no skip connections or branching paths—each layer directly feeds into the next. The diagram includes a legend at the bottom center explaining the color coding: green cubes for 'convolution + ReLU', purple cubes for 'max pooling', light green cubes for 'fully Connected + ReLU', and red cubes for 'softmax'. The overall structure emphasizes the depth and uniformity of the VGG16 design, characterized by stacked 3x3 convolutional layers followed by max pooling operations, culminating in three fully connected layers for classification. The visual progression clearly demonstrates how spatial resolution decreases while feature depth increases through the network, ending with a compact vector of class probabilities."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

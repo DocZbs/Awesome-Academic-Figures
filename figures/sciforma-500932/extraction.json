@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500932",
+  "record_sha256": "f1f340724434a7e11952ac7704aedc97d8c3432fdb58fad6fa71f918f56357c5",
+  "asset_sha256": "7dea2d42fd7f545fc0f572a151efd7e36cfdcb35c1a2a8ab102a4af7a207e9d0",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500932",
+    "title": {
+      "zh": "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats · 方法图",
+      "en": "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats"
+    },
+    "paper": {
+      "id": "arxiv-2412-12072",
+      "title": "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+      "authors": [
+        "Kuleen Sasse",
+        "Carlos Aguirre",
+        "Isabel Cachola",
+        "Sharon Levy",
+        "Mark Dredze"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12072",
+      "arxiv_url": "https://arxiv.org/abs/2412.12072",
+      "arxiv_id": "2412.12072",
+      "arxiv_first_submitted_at": "2024-12-16T18:46:12Z",
+      "arxiv_updated_at": "2025-02-14T21:43:14Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500932/image/image.jpg?Expires=1790835181&Signature=Kd3F8yyjoPNv-39Hks7uRai2cCAVjivPKXMQDAPDbFohpkFndfIVyMcrEbCK2atcBqVoWoFwypNoENeSG3w2L~QAsr31TdlD9aLa0RzwrCXZiMAduIhjL0klbLLcJ2lKLUarKX7cb7IXth9imxZb5fKDNJbwGg6H0HtaeSgnhjiVRKxC-Gr0ysY4KbV34aXQz-emW9awKOGcGMnUCy25ydTdiEkTHmC6t301QVcL83eL8aUWy2pmbyzm03b6wUBn06GnsGoeZ-5hOa3-LC5SYN9-i2ops6VfrVhJRETgIp5XWlOX8b~OZV31QDuGK5p8qqD3OYq~JeSpTI7WLpRkXg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500932,
+      "description_sha256": "41089e2817d9767fc4f2f3b2c15e57d7e10c4aa2f90827dd44e110fa86eca844",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart of the EarShot system, designed to detect dog whistles in social media posts. The global layout is left-to-right, depicting a sequential pipeline starting from raw input data and progressing through embedding, similarity search, and two alternative detection pathways. The process begins on the far left with 'Social Media Posts', represented by logos of Gab (green), Reddit (orange), and Twitter (blue), indicating diverse data sources. These posts are fed into an 'Embed Posts' module, symbolized by a yellow bird-like icon with angry eyes, which transforms the textual content into dense vector representations. The output of this step is visualized as a scattered set of blue dots in a 2D space, representing the embedded posts. Next, a 'Nearest Neighbor Lookup' step is shown, where a red dot labeled 'Post with known dog whistle' serves as a query point, and black lines radiate outward to its closest neighbors among the blue dots, illustrating the retrieval of semantically similar posts. From this point, the pipeline branches into two distinct paths, labeled (1) and (2). Path (1), titled 'LLM Direct', involves a direct query to a large language model, depicted as a cartoon llama icon, which outputs a red whistle symbol, indicating detection of a dog whistle. Path (2), labeled 'BERT/LLM Predict', uses a robot-like icon to represent a BERT or LLM-based binary classifier. This model's output is a golden key icon, labeled 'Keyword Extraction', which then leads to the same red whistle symbol, signifying detection. The figure visually emphasizes that both paths converge on the same detection outcome but differ in computational cost: path (1) is described as more computationally expensive due to direct LLM prompting, while path (2) is cheaper, relying on keyword extraction and binary prediction. All elements are rendered in simple, clean line art with distinct colors—blue for embeddings, red for known dog whistles and detection output, yellow for the embedding model and extracted keywords, and black for structural components and text. The overall structure is linear with a clear fork-and-converge pattern, effectively communicating the dual-path detection strategy of the EarShot system."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

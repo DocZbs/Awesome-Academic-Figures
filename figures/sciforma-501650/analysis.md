@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Forward and Inverse Simulation of Pseudo-Two-Dimensional Model of Lithium-Ion Batteries Using Neural Networks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13200
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic diagram of a Physics-Informed Neural Network (PINN) architecture designed for solving the P2D (Pseudo-Two-Dimensional) model of a Li-ion battery cell. The global layout is left-to-right, depicting a data flow from input variables through neural networks, to approximate solutions and their derivatives, then to loss components, culminating in a composite loss function used for network parameter updates.
+
+On the far left, three blue circular nodes labeled 't', 'x', and 'r' represent the input variables: time, spatial coordinate, and radial coordinate, respectively. These inputs feed into multiple neural networks arranged vertically. The upper group, enclosed in dashed black rectangles and labeled 'Neural Networks', contains several fully connected neural network architectures, each represented by layers of interconnected circles. These networks output approximate solutions, shown in a yellow-dashed box labeled 'Approximate solutions', containing circular nodes labeled c_s,p, c_s,n, ..., ψ_n. Below this, a second group of neural networks, outlined in red-dashed rectangles and labeled 'Networks for Bypassing', also receives the same inputs and outputs variables for bypassing, shown in a red-dashed box labeled 'Variables for Bypassing', containing circular nodes labeled β_p and β_n.
+
+From the approximate solutions and bypassing variables, derivatives are computed and displayed in a green-dashed box labeled 'Derivatives'. This includes partial derivatives such as ∂_t, ∂_x, and ∂_xx, derived from the approximate solutions, and ionic fluxes j_p and j_n, derived from the bypassing variables, shown in a red-dashed box labeled 'Ionic Flux using Bypassing term'.
+
+These outputs feed into five gray rectangular blocks representing different loss terms: L_PDE, L_BC, L_Inter, L_β, and L_SC. Each loss term is connected via lines to the relevant outputs from the previous stages. For instance, L_PDE connects to derivatives like ∂_t and ∂_xx, while L_β connects to β_p and β_n. These individual losses are combined into a total loss function, L_PINN, shown in a light blue rectangular box on the right. The equation for L_PINN is explicitly written as: L_PINN = L_PDE + λ_BC * L_BC + λ_Inter * L_Inter + λ_β * L_β + λ_SC * L_SC, where the weighting coefficients λ are highlighted in red.
+
+Finally, a vertical dashed blue line labeled 'Update' extends downward from the L_PINN box, indicating that the computed loss is used to update the parameters of the neural networks, completing the training loop. The diagram uses color coding to distinguish between different types of components: blue for inputs, yellow for approximate solutions, green for derivatives, red for bypassing-related components, and gray for loss terms. The connections are represented by thin lines, with some colored to match their source or destination modules.

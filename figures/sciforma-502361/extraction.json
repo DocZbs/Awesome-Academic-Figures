@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502361",
+  "record_sha256": "9a95e3c0d949db774c7286fd5b64d15068193b7f1aeff78aff6e71ef4d8777d6",
+  "asset_sha256": "52eaa236c0e125f760551f3dff1b5a00293561380645eaa3a1fe65207c234e67",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502361",
+    "title": {
+      "zh": "CLDG: Contrastive Learning on Dynamic Graphs · 方法图",
+      "en": "CLDG: Contrastive Learning on Dynamic Graphs"
+    },
+    "paper": {
+      "id": "arxiv-2412-14451",
+      "title": "CLDG: Contrastive Learning on Dynamic Graphs",
+      "authors": [
+        "Yiming Xu",
+        "Bin Shi",
+        "Teng Ma",
+        "Bo Dong",
+        "Haoyi Zhou",
+        "Qinghua Zheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14451",
+      "arxiv_url": "https://arxiv.org/abs/2412.14451",
+      "arxiv_id": "2412.14451",
+      "arxiv_first_submitted_at": "2024-12-19T01:59:24Z",
+      "arxiv_updated_at": "2024-12-19T01:59:24Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502361/image/image.jpg?Expires=1790835216&Signature=N2jHQ3RQPVOe6of1329OwSisr4b5rlnkd9F0XCphYqiAOWWqb9qL41Pd9Vjngj1YZ94LV3lVEpQD4kxRRJUsBGMFP4L1J-6w~Is1FZbrZ27NTwr9ieBxqucYZaU7~bxhyh5wMbEUlM6ju4YTOm4~F21VuSFAtUAtHGNibXz7vm4sXDMePDJJV2pQIeQAJFJ2n23V2hls1vCwPEl-nu4hP8vdSkqLAzSUTWlaVfd7rlNiQkRw0dSXbQjUxqicfPPg~VLkkVhhqPHaKCEYAWJLDHI-AUSpN5IPznjT-aqiXhiD2yqJhKwfWA2t4ZvZ11fSTIJpp9YGA5-NEJ3jfag-8g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502361,
+      "description_sha256": "a738621682da0ede28d05762d1a23e99eef91760e6ab9b5456854c8a831aec8e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a contrastive learning framework for graph data, specifically focusing on the projection head component used in CLDG (Contrastive Learning for Dynamic Graphs). The global layout is divided into two main sections: the left side presents the overall contrastive learning pipeline, while the right side provides a detailed breakdown of the 'Projection Head' module.\n\nOn the left, the workflow begins at the bottom with two sets of input graphs, represented as stacked rectangular layers with one layer showing a small graph structure (nodes connected by edges), indicating dynamic or multi-view graph inputs. These inputs are processed by two identical encoder modules, depicted as light green rounded rectangles labeled 'encoder'. Each encoder outputs a feature representation, which is then passed to a corresponding 'projection' module, shown as light blue rounded rectangles. The projections are further transformed by 'readout' modules, represented as beige rounded rectangles, which likely aggregate node features into a global graph embedding. The outputs from the readout modules are visualized as gray horizontal bars containing circles, symbolizing the final embeddings. Dotted lines connect these embeddings across the two branches, forming a cross-branch contrastive loss computation, explicitly labeled 'contrastive loss', indicating that the model learns by pulling similar graph representations closer and pushing dissimilar ones apart. Solid arrows show the forward flow: from input graphs → encoder → projection → readout → embedding. Feedback loops from readout back to the encoder suggest potential iterative refinement or recurrent processing.\n\nOn the right, the 'Projection Head' is detailed within a large light blue rounded rectangle. It consists of a sequential stack of six layers: Linear → L2 Norm → LeakyReLU → Linear → L2 Norm → LeakyReLU. Each layer is represented as a white rounded rectangle with black text. This structure implies a non-linear transformation followed by normalization, repeated twice, to project the encoder's output into a space suitable for contrastive learning. Below this diagram, two gray bars with circles are shown — one longer with seven circles, the other shorter with three — likely illustrating different embedding dimensions or examples of the output vectors from the projection head.\n\nThe visual attributes include distinct colors for functional blocks: green for encoders, blue for projections, beige for readouts, and gray for embeddings. Shapes are consistently rounded rectangles for modules and horizontal bars with circles for embeddings. Connections are solid arrows for data flow and dotted lines for loss computation. The figure caption 'Projection head of CLDG' confirms the focus on this specific component within the broader contrastive learning framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

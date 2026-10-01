@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502324",
+  "record_sha256": "55e068e28a71ff7070614a61730c409bce5cf45c568eeb762f8b4b2cfb8df504",
+  "asset_sha256": "8479ddb8b63b342e7477a4bf81feb0bf053e0b580ddc52b02027a84568947065",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502324",
+    "title": {
+      "zh": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals · 方法图",
+      "en": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+    },
+    "paper": {
+      "id": "arxiv-2412-14363",
+      "title": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "authors": [
+        "Utkarsh Saxena",
+        "Sayeh Sharify",
+        "Kaushik Roy",
+        "Xin Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14363",
+      "arxiv_url": "https://arxiv.org/abs/2412.14363",
+      "arxiv_id": "2412.14363",
+      "arxiv_first_submitted_at": "2024-12-18T22:01:55Z",
+      "arxiv_updated_at": "2025-02-03T21:45:32Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502324/image/image.jpg?Expires=1790835216&Signature=g7MQSen-SNgydFZNkntAi8va6F6Mp4RD-a6jH8Fabr6Xt0mCSdCN7Fyvf84bs4Iurkrywrb7m-VS3D7lqgSHOjOZvnmZOi5rmBVCizWVVFA5hfvkQACf8yRkDwlvtitUHmu6yreDVOC6x6dFyuHHvLOxZ68DQvhP6HyoBb~4dEBOt7m-dHJ0TiCw28DPc4It96YJRzgSQALbSS1KF7x20cqbsqpGseYf0n4ZB5TVY3ewhhZiHKp1C7K2L1rflE31XfKckIaun5FBeysaYkVRwE0QWWYw9J5hLndTYnhNkXEMpCNhK517dynSmzjHzk7zRBAW~ihhVqCActoItsWAnQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502324,
+      "description_sha256": "18f2cc3c82a77edaccbc11991b88832c1a1e5e50d6ef98e90a1df8d3274dcc8f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative analysis of different activation quantization methods, structured into three main methodological diagrams (a, b, c) and two performance evaluation plots (d, e). The global layout is divided into two columns: the left column contains the three methodological workflows, each illustrating a distinct quantization strategy, while the right column displays line graphs comparing quantization signal-to-noise ratio (SNR) across layers for various techniques.\n\nIn section (a), titled 'Outlier channel detection and mixed-precision quantization', the process begins with an input activation matrix X, represented as a grid of gray circles of varying sizes indicating magnitude. Large circles denote outlier activations. This matrix is processed by a quantizer that assigns different precisions based on channel-wise outlier detection: blue squares represent low-precision quantization, and orange squares represent high-precision quantization, resulting in a mixed-precision quantized activation Xq.\n\nSection (b), 'Random rotation and uniform-precision quantization', shows activation X being transformed via a random rotation matrix R, producing activation XR. The rotated activations are then uniformly quantized using a single precision level (all blue squares), yielding Xq. The rotation step is intended to spread out large values across channels, reducing the need for high-precision quantization.\n\nSection (c), labeled 'Static subspace projection, random rotation and mixed-precision quantization (ours)', introduces the proposed method. Activation X is first projected using a static subspace projection matrix U, which is defined as P multiplied by a block diagonal matrix composed of R1 and R2 blocks. This results in activation XU, where large values are redistributed across channels. The quantizer then applies mixed-precision quantization: most values are quantized at low precision (blue), while only a few remaining outliers are assigned high precision (orange), achieving efficient quantization with minimal precision overhead.\n\nOn the right side, plots (d) and (e) compare quantization SNR across attention layers and feed-forward network (FFN) layers, respectively. Both plots have x-axis representing layer index (0 to 30) and y-axis representing quantization SNR. A legend identifies five methods: RTN (gray), Hadamard Rot. (purple), ResQ (orange), Outlier (red), and Outlier+Rot. (blue). In plot (d), ResQ consistently achieves higher SNR than RTN and Hadamard Rot., and performs comparably to Outlier+Rot. In plot (e), ResQ maintains high SNR across FFN layers, outperforming RTN significantly and matching or exceeding Outlier+Rot. in most layers. The visual representation uses line graphs with markers to show trends, emphasizing the robustness and effectiveness of the proposed ResQ method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

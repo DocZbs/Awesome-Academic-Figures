@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502225",
+  "record_sha256": "c95de876f261405978d95eeb8a69bf3f4a5d07cab28fda932e186e628ab1bb7b",
+  "asset_sha256": "58670dc7b2bacfb917b9229c878c445359de8419dd49b690f9acf914e78da6fa",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502225",
+    "title": {
+      "zh": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective · 方法图",
+      "en": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-14135",
+      "title": "Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective",
+      "authors": [
+        "Zhiyuan Zeng",
+        "Qinyuan Cheng",
+        "Zhangyue Yin",
+        "Bo Wang",
+        "Shimin Li",
+        "Yunhua Zhou",
+        "Qipeng Guo",
+        "Xuanjing Huang",
+        "Xipeng Qiu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14135",
+      "arxiv_url": "https://arxiv.org/abs/2412.14135",
+      "arxiv_id": "2412.14135",
+      "arxiv_first_submitted_at": "2024-12-18T18:24:47Z",
+      "arxiv_updated_at": "2024-12-18T18:24:47Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502225/image/image.jpg?Expires=1790835212&Signature=DRl08ikpPRC1KtrpcM8tX04LSz-YPnY1cpnmk0MSYVG~xTq-d-rvp5ulfr-WDQnEkIb~UVKQaXi7imcCMdWwVMd88GsCngWeGFsyIaVrulLGcpYrHS2vXGN79PrOUdGr3-HY0KTZuPR~sKCs9ysSps3W91vteaYAOCeieDODQs6dUXSvE2lVHphNmmLnUNftTClLccBhI1Fc9~CCKYXMnuUKi4EAOyW4c0SyGj60P-qq-9i9aRdTKNBQS4RLwK~Y2BF8NxCm6aT9Ww~y5~7VmMrol3hn5~iOh6bnKbarTLUncRjXN00l8aqvwY9VsIQjLdhnn9b4fGFlROUKKDMtYw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502225,
+      "description_sha256": "9329232b5d6f3dfba7137ace800f70187df02178a7033a3de9d3c87f7c405d46",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative visualization of search tree node definitions across three distinct levels of granularity: Token Level, Step Level, and Solution Level. Each level is enclosed within a dashed red rectangular boundary and arranged horizontally from left to right. At the top of each section is a pink rounded rectangle labeled 'Let w≠1 be ...', serving as the root node for the respective search tree.\n\nIn the Token Level section (leftmost), the root node branches downward into four child nodes: '2' (gray), 'π' (pink), 'Let's' (gray), and 'P' (gray). From 'π', further branches extend to four operators: '(' (pink), ')' (gray), '-' (gray), and '*' (gray). The '(' node then branches to four more tokens: '2' (pink), '-' (gray), 'w' (gray), and '≠' (gray). Red arrows indicate specific paths through the tree, highlighting a sequence starting from the root, selecting 'π', then '(', and finally '2'. All nodes are rectangular with rounded corners; pink nodes denote selected or active paths, while gray nodes represent alternatives.\n\nThe Step Level section (middle) shows a hierarchical structure where the root node branches into three 'Step 1' nodes—two gray and one pink. The pink 'Step 1' node further branches into three 'Step 2' nodes—one pink and two gray. The pink 'Step 2' node then branches into three 'Step 3' nodes—one pink and two gray. Again, red arrows trace a path through the pink nodes, illustrating a sequential progression from Step 1 to Step 3 along the highlighted route.\n\nThe Solution Level section (rightmost) displays the coarsest granularity. The root node branches into three nodes labeled 'Step 1-3; ...The answer is 320' (pink), 'Step 1-3; ...The answer is 561' (gray), and 'Step 1-3; ...The answer is 179' (gray). The pink node further branches into three more solution nodes: 'Step 1-3; ...The answer is 321' (pink), 'Step 1-3; ...The answer is 376' (gray), and 'Step 1-3; ...The answer is 176' (gray). Red arrows again highlight the path through the pink nodes, indicating a refinement or continuation of the selected solution path.\n\nAll connections between nodes are represented by black lines with arrowheads pointing downward, except for the red arrows which emphasize the chosen traversal path in each tree. The consistent use of pink for selected nodes and red arrows across all three sections visually aligns the concept of path selection across increasing levels of abstraction. The figure effectively illustrates how search trees can be structured at varying granularities, from individual tokens to complete solutions, with the pink color consistently denoting the active or preferred branch at each level."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

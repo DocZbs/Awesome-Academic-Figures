@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-501804",
+  "record_sha256": "06336fd5124928ddc85ec96cf8bfb801c69634942419404992b3b17f91066966",
+  "asset_sha256": "a764c5b189d379334339ad8fc0cbe39131a67e0487220b924d3c7ea80bbef7d6",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501804",
+    "title": {
+      "zh": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning · 方法图",
+      "en": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13520",
+      "title": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning",
+      "authors": [
+        "Yi Huang",
+        "Fangyin Cheng",
+        "Fan Zhou",
+        "Jiahui Li",
+        "Jian Gong",
+        "Hongjun Yang",
+        "Zhidong Fan",
+        "Caigao Jiang",
+        "Siqiao Xue",
+        "Faqiang Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13520",
+      "arxiv_url": "https://arxiv.org/abs/2412.13520",
+      "arxiv_id": "2412.13520",
+      "arxiv_first_submitted_at": "2024-12-18T05:45:39Z",
+      "arxiv_updated_at": "2024-12-18T05:45:39Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.DB",
+        "cs.MA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501804/image/image.jpg?Expires=1790835205&Signature=GHHwFe-K1DAS6jC8JNM-GB2gWQGMs5GNotnXk3bCWpd2mOTGiRJe~CqnqktiUayEi2Wjq-wYk5YS2dibkmBUlYoq6OJJM1XVr4h1vWL0QsKdmwqhYpqo59E584o6Od-55ql5kfCr7h6iwAf9wf9geWWzSYeVijB9q-yNq2ji3quUZaDC9hL7CnmOsZU4tfkKTisNjSzceFDnBiADtDqlvqQAT6OT~jiUajxySV2yDgHVaqmw9J7N1TsFufx5~wVL~pV~qchBKUK-ra65bjxz93G6tU97sBMdwen-1fMofbbW4Opos7RHC8krIiunCT7-m0FY45dUSa8nVL2t6~hqPA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501804,
+      "description_sha256": "e1ded25f7e78b20634a297cb5d648c4663e566a8e4045df1b92fc3e1a00d322e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.DB",
+        "cs.MA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the initialization phase of ROMAS, a multi-agent system designed for complex task execution, structured into three main components: Initial Planner (blue), Initial Worker – QR Tasker (yellow), and Initial Monitor (green), all interacting through a central memory system (dashed red line). The global layout is divided vertically into left (planner and worker) and right (monitor) sections, with a central column representing shared memory and resources.\n\n[1] Global Layout and Structure:\nOn the left, the Initial Planner (blue box) handles high-level planning, including agent team generation and task list creation. It receives user input via a speech bubble ('Help me analyze Apple's overall performance in 2023') and communicates with the Initial Worker and Monitor through memory modules. On the right, the Initial Worker (QR Tasker) executes tasks based on the planner’s output, while the Initial Monitor oversees the entire process for errors. The central dashed red line represents the DB-GPT system, containing Database, Toolkit, Short-term memory, Sensory memory, and connecting all components.\n\n[2] Visual Modules and Attributes:\nThe Initial Planner contains four submodules: Profile, Task planning – Agent Team, Task planning – Task list, Self-reflection, and Action. The Profile defines the planner’s goal (generate specialized agent team and plan tasks), constraints (agent roles from AgentSet), and lists available agents: Tasker, Retriever, Extractor, Painter. The Agent Team diagram shows QR Tasker as the root, branching to Indicator Tasker, Document QA Tasker, GraphRAG Tasker, and Summary Tasker, each connected to specific sub-agents (e.g., SQL Retriever, PDF Extractor). The Task list specifies functions for each Tasker (e.g., extract_table(), summarize()). Self-reflection checks rationality of team and task planning. Action stores plans in memory and initializes QR Tasker and Monitor.\n\nThe Initial Worker (yellow) has a similar structure: Profile (goal: rewrite query, distribute sub-query; AgentSet includes Indicator, Document QA, GraphRAG, Summary Taskers), Task planning – Task list (rewriting questions, calling Taskers, collecting results), Self-reflection (checks QA alignment, assignment, format, summary match), and Action (output results or report to monitor).\n\nThe Initial Monitor (green) has Profile (goal: monitor global workers, diagnose errors from memory messages; constraints: correct task list errors or advise planner on team structure) and Action (retrieve memory from Planner, wait for worker calls).\n\nAll modules use rectangular boxes with black borders; text is black except for 'Goal' and 'Constraint' in red. Memory modules are icons (database, toolkit, document) along the central column.\n\n[3] Connections and Arrows:\nArrows indicate data flow and control. From User → Initial Planner (blue arrow). From Initial Planner → Initial Worker (blue arrow) via Short-term memory. From Initial Worker → Initial Monitor (orange arrow) via Sensory memory when errors occur. From Initial Monitor → Initial Planner (orange arrow) for corrective advice. Within each component, arrows flow downward from Profile → Task planning → Self-reflection → Action. Horizontal arrows connect sub-agents to their parent Taskers. Memory icons have bidirectional connections to the respective components, indicating read/write access."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

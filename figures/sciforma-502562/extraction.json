@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502562",
+  "record_sha256": "60ff0ed2e5c73f3749132c72263b7477f8fba43696ce9d849da3812e09f7dc9e",
+  "asset_sha256": "19cb32d775315d5cbcabe5a65463d0780e3a14b8097889fe0231e0db5991cbb4",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502562",
+    "title": {
+      "zh": "On Verbalized Confidence Scores for LLMs · 方法图",
+      "en": "On Verbalized Confidence Scores for LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-14737",
+      "title": "On Verbalized Confidence Scores for LLMs",
+      "authors": [
+        "Daniel Yang",
+        "Yao-Hung Hubert Tsai",
+        "Makoto Yamada"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14737",
+      "arxiv_url": "https://arxiv.org/abs/2412.14737",
+      "arxiv_id": "2412.14737",
+      "arxiv_first_submitted_at": "2024-12-19T11:10:36Z",
+      "arxiv_updated_at": "2026-05-05T09:22:58Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502562/image/image.jpg?Expires=1790835225&Signature=c8Ne-FTRrXaBmVPm3IyNqtM~nVB2IybDFTFh0muYKgrsGzUa1DkXJ8wLn~dRiaYwaW2zMkofIpMAJP5SpJDtmTbCH4sMal3Z9W52q0ILnEu-rYq5yw7bmXMRyLfw8kUeVVEp8~nH8mYQKpdfAwQo6I0MK7KPAHXmmx-389JBUuvkUkJQLeBBkVHX4xYDVjWuZi3eI2NiIexR2N6jtdPMXEunOJybVaHYAYGvmyTWAZ2GrhgfFLZgfC49km9uUQ0ck6zlnDMAvxv7P6fVgL20SOOG3vrB164pGqvIAU-shL0t5SHWQzdzCGiTTzSilzqYrszsurDi~q-GYWG0STgkRQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502562,
+      "description_sha256": "8116f6e0be8940d5a6d04d80242613122935c62fd580da3e484d2c75271305cb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct methodologies for uncertainty quantification in Large Language Models (LLMs), arranged vertically in separate horizontal workflows. Each workflow is labeled with a descriptive subtitle indicating its underlying principle.\n\n[1] Global Layout and Structure:\nThe diagram consists of three parallel horizontal pipelines stacked vertically. Each pipeline begins with an input labeled 'prompt' on the left and proceeds through a series of processing modules to produce an output on the right. The top pipeline is labeled 'based on a proxy model', the middle one 'based on sampling consistency', and the bottom one 'based on verbalized confidence scores (our approach)'. Below all three pipelines, a caption reads: 'Different uncertainty quantification methods for LLMs.'\n\n[2] Visual Modules and Attributes:\nAll modules are represented as rectangular boxes with rounded corners. Two distinct colors are used: dark teal for core LLM components and light blue for auxiliary or derived components.\n\nIn the top pipeline:\n- A dark teal box labeled 'LLM' receives the 'prompt' and outputs an 'answer'.\n- Both the 'prompt' and the 'answer' feed into a light blue box labeled 'proxy-model', which produces a 'confidence score'.\n\nIn the middle pipeline:\n- A dark teal 'LLM' box receives the 'prompt' and generates multiple outputs: 'answer a', 'answer a₁', ..., 'answer aₙ'. These outputs are grouped by a large curly brace on the right.\n- This group feeds into a light blue box labeled 'similarity function', which computes a 'confidence score'.\n\nIn the bottom pipeline:\n- The 'prompt' first enters a light blue box labeled 'prompt method', which transforms it into a 'modified prompt'.\n- The 'modified prompt' is then fed into a dark teal 'LLM' box, which outputs both 'answer + confidence score'.\n\nAll arrows are solid, dark teal lines with arrowheads indicating direction of data flow.\n\n[3] Connections and Arrows:\nEach pipeline follows a clear directional flow from left to right.\n\nTop pipeline: An arrow from 'prompt' points to the 'LLM'; another arrow from 'LLM' points to 'answer'; two arrows branch from 'prompt' and 'answer' respectively to converge at the 'proxy-model'; finally, an arrow from 'proxy-model' leads to 'confidence score'.\n\nMiddle pipeline: An arrow from 'prompt' to 'LLM'; multiple arrows diverge from 'LLM' to the individual answers; these answers are grouped by a brace and connected via a single arrow to the 'similarity function'; an arrow from 'similarity function' leads to 'confidence score'.\n\nBottom pipeline: An arrow from 'prompt' to 'prompt method'; an arrow from 'prompt method' to 'modified prompt'; an arrow from 'modified prompt' to 'LLM'; and finally, an arrow from 'LLM' to 'answer + confidence score'.\n\nThe diagram visually contrasts three approaches: using a secondary proxy model to assess confidence, measuring confidence via internal sampling consistency, and modifying the prompt to elicit both answer and confidence directly from the LLM."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501978",
+  "record_sha256": "8a32d7a98e4cc831624d4437f57f9cfed29668bbd21933af3e80edecdd77b743",
+  "asset_sha256": "580682e991c0d3e1629a334f5ae8df4f4058f0cf930918cc9c3c87fa20265641",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501978",
+    "title": {
+      "zh": "3D Registration in 30 Years: A Survey · 方法图",
+      "en": "3D Registration in 30 Years: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-13735",
+      "title": "3D Registration in 30 Years: A Survey",
+      "authors": [
+        "Jiaqi Yang",
+        "Chu'ai Zhang",
+        "Zhengbao Wang",
+        "Xinyue Cao",
+        "Xuan Ouyang",
+        "Xiyu Zhang",
+        "Zhenxuan Zeng",
+        "Zhao Zeng",
+        "Borui Lu",
+        "Zhiyi Xia",
+        "Qian Zhang",
+        "Yulan Guo",
+        "Yanning Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_id": "2412.13735",
+      "arxiv_first_submitted_at": "2024-12-18T11:14:01Z",
+      "arxiv_updated_at": "2024-12-19T12:59:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501978/image/image.jpg?Expires=1790835209&Signature=op0YJpQ2ghEnZnz0wYIcP9XBI7boQpY5LiZmRF3OARNlqWPsOl9Kub0VF-N8-rN10~qfydl~oHNja4uKJQ4hDQPsRXQTd8qUlHtPrgGXjWShaHWieWONWx42BZomGa~IB6hpUIjX75quQ5C8CTa0jE5fb9Gv5FZq5X6k2MOMzjo87~qAbaYVR7At31t6hZdqUZrmLG8-96pJfo6HufnrmyboRqW~B8beNgQngJIC~3cyie-diAjVz5y8lkc0iEIW07SWAfetwJuPHYuiMOa6sjLeYn3TIIraJblCJwbOkQbX7UWHoTH0hPDx-Q0cHSeu32DxhTvaHk~NTxYXFpODSw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501978,
+      "description_sha256": "a5931014bdd155e399bdce8d250947c3e90fb42d1b2ca7776878d7ac0b27b012",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the general pipeline of Iterative Closest Point (ICP) methods, presented as a flowchart with a clear sequential and iterative structure. The global layout is horizontal, progressing from left to right, with a feedback loop that returns to an earlier stage if convergence is not achieved. The process begins at the far left with the 'Input' label, which feeds into the first processing module labeled 'Matching'. This module is represented as a rounded rectangle with a thick black border and black text, consistent with all other processing steps in the diagram. Following 'Matching', the flow proceeds to 'Minimize the error', another rounded rectangle with identical styling, indicating the next step in the algorithm. From there, the process moves to a decision node labeled 'Converged', also a rounded rectangle, which evaluates whether the algorithm has reached a stable state. If the condition is met (indicated by 'Y' for yes), the flow exits to the right toward 'Output', marking the end of the process. If not converged ('N' for no), a feedback arrow loops back to the 'Update the matrix' module, which is positioned above the main sequence and connected to both the 'Converged' decision and the 'Matching' step. This 'Update the matrix' module is visually identical in style to the others, suggesting it performs a critical parameter adjustment before re-entering the matching phase. All connections are represented by thick black arrows, clearly indicating the direction of data or control flow. The diagram uses no colors beyond black and white, emphasizing clarity and simplicity. The entire pipeline reflects an iterative optimization strategy: match points, reduce error, check for convergence, update transformation parameters if necessary, and repeat until convergence is achieved. The figure effectively captures the core logic of ICP algorithms without including specific mathematical formulations, focusing instead on the high-level procedural flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

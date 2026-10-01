@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11333
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-stage training pipeline for a Semantic Language Diffusion (SLD) model, structured horizontally across three main stages: Text Segmenting, Representation Learning, and Training Diffusion as Inherent Semantic Planner. The layout is divided into two horizontal sections: the top section contains Stage 1 and Stage 2, while the bottom section contains Stage 3.
+
+Stage 1: Text Segmenting begins with a 'Gold Output' box containing a full narrative paragraph about Morgan and her family evacuating from Florida during a hurricane. This text is segmented into discrete parts labeled Segment 0 through Segment n, each displayed in a green rectangular box. For example, Segment 0 reads 'Morgan and her family lived in Florida.', Segment 1 reads 'They heard a hurricane was coming.', and Segment n reads 'They felt lucky they had evacuated when they did.' These segments are visually arranged vertically below the gold output, indicating the segmentation process.
+
+Stage 2: Representation Learning follows immediately to the right. It starts with three example sentences: two green ones ('Morgan and her family lived in Florida.' and 'Morgan lived in Florida with her family.') and one red one ('Shaun Maloney admits guarding his...'). These are processed by a blue trapezoidal block labeled 'Language Autoencoder', followed by another blue trapezoid labeled 'Latent Compression'. The outputs are latent vectors z, z+, and z−, represented as colored bars (green, green, red respectively), which are projected into a 2D 'Latent Space' plot. In this plot, points (x-marks) are scattered, with green points clustered together and a red point isolated, connected by solid black lines to their respective latent vectors. A dashed red line separates the clusters, illustrating contrastive learning. Additionally, a separate pathway shows the latent vector z combined with 'Adversarial Noise' (gray bars), passed through 'Latent Reconstruction' and then 'Language Decoder' blocks (blue trapezoids), resulting in a reconstructed sentence: 'Morgan lives with her family in Florida.' This demonstrates adversarial robustness.
+
+Stage 3: Training Diffusion as Inherent Semantic Planner occupies the lower half of the figure. It begins with an 'Input' box containing 'Title: The Hurricane', which feeds into a yellow trapezoidal 'Pretrained Text Encoder'. The encoder's output, labeled 'Encoder Outputs' in a purple rectangle, conditions the diffusion process. The core component is the 'Conditioned Reverse Process', enclosed in a large rounded rectangle. It consists of a sequence of blue rounded rectangles representing a Diffusion Transformer R(·, t; θ_R), which iteratively denoises latent representations. The process starts with noisy latent vectors ź_T (brown bars) at time T, which are processed by R(·, T; θ_R) to produce less noisy ź_{T−1} (light orange bars). This continues through multiple steps until reaching clean latent vectors ź_0 (light pink bars). Each step involves a blue rounded block labeled R(·, t; θ_R) or R(·, T−1; θ_R), with arrows indicating forward progression. The final clean latents ź_0 are fed into two blue trapezoidal blocks: 'Latent Reconstruction' and 'Language Decoder'. The output is a set of parallel-generated text segments in peach-colored boxes: Segment 0 ('Morgan lives in Florida.'), Segment 1 ('A hurricane strikes her house.'), and Segment n ('Morgan and her family are rescued.'), collectively labeled 'Texts Decoded in Parallel'.
+
+Connections between modules are indicated by solid black arrows, showing data flow. The entire diagram uses consistent visual attributes: green for positive/aligned examples, red for negative/disjoint examples, blue for processing blocks, and distinct colors for latent representations. Text labels are clear and positioned near their corresponding components.

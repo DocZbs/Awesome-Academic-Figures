@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502765",
+  "record_sha256": "206c3724a9aa9662c72335bd990086496579182fd0a62b0ea341222361556680",
+  "asset_sha256": "d22b8bda92c44bd0d77789735aec930378103590e1c63ee1b04d88d2f0c37dd7",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502765",
+    "title": {
+      "zh": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification · 方法图",
+      "en": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-15224",
+      "title": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification",
+      "authors": [
+        "Ruimin Peng",
+        "Zhenbang Du",
+        "Changming Zhao",
+        "Jingwei Luo",
+        "Wenzhong Liu",
+        "Xinxing Chen",
+        "Dongrui Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_id": "2412.15224",
+      "arxiv_first_submitted_at": "2024-12-04T11:31:23Z",
+      "arxiv_updated_at": "2024-12-04T11:31:23Z",
+      "arxiv_subjects": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502765/image/image.jpg?Expires=1790835227&Signature=CH9U8nlsv4b356bKrsXF5gQEN0mtZ~F-oncxna9RQbwOOnV2Ib5HlFbZS~xMRRyCZvzpc-ZwhwpfjL5Jm6l64Il-o9M85FPHLxzQQHFj9uzMXZSdxXn0pWqY5X78cmQkGFvdLXBQx43QsOUOhamcwz2WEfeEaA3GPUWYjTLkcUoQBe1vcSbGLDjCjUZEb-ZD96ZXST8TSnT2exDpLDVqkrSncM2DZHOzPjOBF-8ZUz~sx2XHIEoO7919235WzEznPxv5t6XNKjabiT3rv5jNLRGtPpXXG1mdabb6ByRnqxdAVMcGQrqOOrKvCQwqgLXJOpjyHm3c5XVswgDoJsUQxg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502765,
+      "description_sha256": "d8d28c33fed0e54ef80654c3e4464efec4596a291acc768082e423022919d930",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct machine learning training paradigms: (a) knowledge distillation and (b) mutual learning, each depicted as a separate flowchart. The global layout is horizontal, with both diagrams placed side-by-side, labeled (a) and (b) respectively, and a shared caption below stating '(a) Knowledge distillation; and, (b) mutual learning.'\n\nIn diagram (a), the knowledge distillation process begins with a yellow, stacked rectangular block labeled 'Data' on the left. This data flows via an orange arrow into two parallel processing blocks: a blue 3D box labeled 'Teacher model' with the word 'Fix' above it, indicating it is frozen during training, and a light blue 3D box labeled 'Student model' with 'Train' above it, indicating it is being trained. The teacher model outputs predictions labeled 'Pred_T' in a vertical blue rectangle, while the student model outputs 'Pred_S' in a similar vertical light blue rectangle. A bidirectional curved arrow labeled 'Knowledge Flow' connects Pred_T and Pred_S, illustrating the transfer of knowledge from the teacher to the student. Additionally, a green arrow from a light green rectangular block labeled 'Label' points directly to the student model, indicating that the student is also trained using ground-truth labels.\n\nIn diagram (b), the mutual learning setup starts similarly with a yellow 'Data' block feeding into two parallel light blue 3D boxes labeled 'Student model A' and 'Student model B', both marked with 'Train' above them. Each student model produces predictions: 'Pred_A' (blue) and 'Pred_B' (light blue), respectively. These predictions are connected by a bidirectional curved arrow labeled 'Knowledge Flow', showing that the two student models learn from each other’s outputs. Simultaneously, a green arrow from a light green 'Label' block points to both student models, indicating that they are jointly trained using ground-truth labels. Above the entire diagram (b), a green arrow from a small gray box labeled '(b)' points to the label block, emphasizing the source of supervision.\n\nVisually, the models are represented as 3D rectangular prisms with varying shades of blue—darker for the fixed teacher model, lighter for trainable student models. Predictions are shown as vertical rectangles with rounded corners, colored to match their originating model. Data and labels are represented as stacked yellow and flat light green rectangles, respectively. Arrows are color-coded: orange for data input, green for label input, and blue for prediction outputs and knowledge flow. Text labels are clear and centrally placed within or near the respective components. The overall structure emphasizes the contrast between one-way knowledge transfer in distillation versus peer-to-peer learning in mutual learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501476",
+  "record_sha256": "93c1122210b58c20c8365641414e63a44aa2a05b1fcd858e30ece90a1a60de96",
+  "asset_sha256": "a017162cfdc5132a63ede3f54dd9989a130984745ebf64a9e27395b492640562",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501476",
+    "title": {
+      "zh": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks · 方法图",
+      "en": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12843",
+      "title": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks",
+      "authors": [
+        "Xianlei Long",
+        "Xiaxin Zhu",
+        "Fangming Guo",
+        "Wanyi Zhang",
+        "Qingyi Gu",
+        "Chao Chen",
+        "Fuqiang Gu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_id": "2412.12843",
+      "arxiv_first_submitted_at": "2024-12-17T12:11:04Z",
+      "arxiv_updated_at": "2025-08-13T09:50:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501476/image/image.jpg?Expires=1790835192&Signature=rVz9DRqvm72V~0BiZR1K8J1Y8tBSuKQVtcnX82zdcAdmBKnQNmCVr8CVwYZy2KUxDYxfeuq6TEZOAahLA~vmFdyfvoxM-xc1246tbWQOIQK5WUDpMg~13zoXRrjsYQV1xDmecJK-Gd51mp8jWT2Hv1KugnnboBWRm8B9QCoBoEFf3hgjJqLZD~AKJGWym3dBCoVSoU70u1SW~AXeQRouYST~r2L9fpXxef3jQnCFIxmH4PkEvWxPxa2TPsUnNBR5YrBj8d8NgHgoWqbkhtYTIoREmXepKNEHzw7R4lsBcGqlcPP3XAVVqxDV0pEFQwmBb6raFt57A8xMI94~RZxU-Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501476,
+      "description_sha256": "4805b53843f046125e0d8593c59daa28ffd3586c97c31e25e80ec80a2daf4d77",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of SLTNet, a spiking neural network designed for event-based semantic segmentation. The global layout is a left-to-right feedforward pipeline with skip connections, divided into four main stages: an initial block, three stages of spiking convolution blocks (SCBs), one stage of spiking transformer blocks (STBs), followed by a decoder with three Spike-LD modules and two segmentation heads. The input is an event stream captured by an event camera, visualized as a sparse point cloud, which enters the network as 'Input Event'. This is first processed by a green 'Init Block' and then downsampled via a gray 'Downsampling' module, reducing spatial dimensions from H×W to H/2×W/2 while increasing channel count to C×H/2×W/2.\n\nStage 1 consists of a yellow trapezoidal 'Spike-driven Convolution Block' (SCB), producing output x₁. Stage 2 and Stage 3 follow similarly with SCBs, each halving spatial dimensions and doubling channels (to 4C×H/4×W/4 and 8C×H/8×W/8 respectively), generating outputs x₂ and x₃. Each SCB contains three stacked purple 'Spike-LD Module' layers (labeled D₁, D₂, D₃) as shown in the lower-left inset. These modules are connected sequentially within the SCB.\n\nStage 4 introduces a blue rectangular 'Spike-driven Transformer Block' (STB), applied twice, processing 8C×H/8×W/8 features and outputting x₄. The STB structure, detailed in the lower-center inset, includes three parallel RepConv layers (light green boxes) followed by Batch Normalization (BN, gray boxes) and spike activation (black circle with waveform icon). The outputs q, k, v from these branches feed into a blue 'Spike-driven Multi-head Self-Attention' module. The attention output is processed by another RepConv and BN, then added to the original input via a summation node (circle with plus sign). This is followed by a Linear layer, BN, and another summation, repeated twice (indicated by ×2).\n\nThe decoder comprises three purple trapezoidal 'Spike-LD Module' blocks, each receiving features from the encoder via skip connections: x₁, x₂, and x₃ are fed into the respective FE (Feature Enhancement) modules (pink boxes) before being upsampled and merged with the decoder’s feature flow. The final output passes through two parallel 'Segmentation Head' modules (gray rectangles), generating two segmentation probability maps. The top head produces the final prediction, compared to ground truth (GT) using CE loss L₁. The bottom head generates an early-stage prediction, evaluated with early-stage loss L₂. Both losses are indicated by red curved arrows pointing to the GT image.\n\nVisual attributes include color-coded modules: green for Init Block, gray for Downsampling and BN, yellow for SCBs, blue for STBs, purple for Spike-LD Modules, pink for FE, and light green for RepConv. The spike activation symbol (waveform in circle) appears after each module to denote spiking operations. A legend in the bottom-right corner clarifies symbols: the waveform icon represents 'Spike', pink box is 'FE', and light green box is 'Rep-Conv'. The diagram uses solid black arrows for primary data flow and dashed red arrows for auxiliary connections to the early-stage segmentation head."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

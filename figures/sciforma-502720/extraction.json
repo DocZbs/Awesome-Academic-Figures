@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502720",
+  "record_sha256": "3c246330d3a8d338b5f4fd9c0015bb4be72f048b2fcf3e4064fb02fb67886e2c",
+  "asset_sha256": "0afd74f431a32703d1c9a51cc15fdb80a0fee4dd2e2e9b1dbf8ae9b1895c221d",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502720",
+    "title": {
+      "zh": "Jet: A Modern Transformer-Based Normalizing Flow · 方法图",
+      "en": "Jet: A Modern Transformer-Based Normalizing Flow"
+    },
+    "paper": {
+      "id": "arxiv-2412-15129",
+      "title": "Jet: A Modern Transformer-Based Normalizing Flow",
+      "authors": [
+        "Alexander Kolesnikov",
+        "André Susano Pinto",
+        "Michael Tschannen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15129",
+      "arxiv_url": "https://arxiv.org/abs/2412.15129",
+      "arxiv_id": "2412.15129",
+      "arxiv_first_submitted_at": "2024-12-19T18:09:42Z",
+      "arxiv_updated_at": "2024-12-19T18:09:42Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502720/image/image.jpg?Expires=1790835226&Signature=vTtLHZOxa1QV0KR2Q6kIsj-1vgT9B7i9gy2io9~j8aE72Cuz6rIeC8AKL~QO47MAmmlppuqBN3GfCjmGgNkhCLYjpj2D6C6-r3rwOHYSnZiw99C1EalqXOv1ExEoRzzU0Q~YEscTLPvMQphpzCfvYsvFdrsWEJUyX7xiWcq~rM8MnXdPZi8RkS7GbPt-VftjFPm7BUJ8tU80E-vtV~w-HYgtpltJ5LqoYY8epGETlIygNXY1t4Dda8wfcvXfgSYBBzwDn7qLNgVRv6z3pR7G63xx43NpJwtBilaxZuCRgX1iTI3o848TESbinR04RfBwOqjo9qMSvo-Tpx3fgq~Rqg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502720,
+      "description_sha256": "3473a3663e09f33e62284a9cafa5794f386bed9d79b260641c93f62006211d81",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a single coupling layer within the Jet model, which is repeated N times to form the complete network. The entire process is enclosed within a dashed rectangular boundary labeled 'Repeat N times,' indicating that this module is stacked multiple times to build the full invertible model.\n\nThe workflow begins on the left with 'Image patches' represented as a vertical stack of light blue rectangular blocks. These patches are fed into a hexagonal node labeled 'Split dimensions,' which divides the input into two equal halves. One half proceeds upward, while the other proceeds downward.\n\nThe upper half is passed through a green rectangular block labeled 'ViT,' representing a Vision Transformer module. The output of ViT is a vertical stack of light green rectangles, split vertically into two columns labeled 'scale' and 'bias.' These parameters are used to condition the transformation applied to the lower half.\n\nThe lower half of the split input continues downward and is first multiplied element-wise by the 'scale' values via a circular node marked with '*'. Simultaneously, the 'bias' values are passed through a circular node labeled 'σ', representing a sigmoid activation function, before being added to the scaled lower half via a '+' node. This results in an affine transformation of the lower half conditioned on the upper half.\n\nThe transformed lower half is now represented as a vertical stack of purple rectangles. This transformed half is then merged with the unmodified upper half (still light blue) at a hexagonal node labeled 'Merge dimensions,' combining them back into a single vector of features.\n\nThe final output is shown as a vertical stack of pink rectangles, representing the transformed feature representation after one coupling layer. The entire structure is designed to be invertible, allowing for efficient computation of both forward and backward passes, which is essential for flow-based generative models.\n\nThe diagram emphasizes the modular nature of the coupling layer: splitting the input, using one half to compute transformation parameters via a ViT, applying those parameters to the other half, and then merging the results. The repetition of this layer N times enables the model to learn complex, high-dimensional transformations while maintaining invertibility."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

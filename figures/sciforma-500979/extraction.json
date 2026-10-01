@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-500979",
+  "record_sha256": "bb54aa7ac7d4aba52b6834e49ac891b1ecda5b2e8a1f8c8d01b3874edab74986",
+  "asset_sha256": "5b502f817c8201060fad7b8adfd7ff0aa420df27b629c137c65c5999f3449afb",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500979",
+    "title": {
+      "zh": "AI-driven Inverse Design of Band-Tunable Mechanical Metastructures for Tailored Vibration Mitigation · 方法图",
+      "en": "AI-driven Inverse Design of Band-Tunable Mechanical Metastructures for Tailored Vibration Mitigation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12122",
+      "title": "AI-driven Inverse Design of Band-Tunable Mechanical Metastructures for Tailored Vibration Mitigation",
+      "authors": [
+        "Tanuj Gupta",
+        "Arun Kumar Sharma",
+        "Ankur Dwivedi",
+        "Vivek Gupta",
+        "Subhadeep Sahana",
+        "Suryansh Pathak",
+        "Ashish Awasthi",
+        "Bishakh Bhattacharya"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12122",
+      "arxiv_url": "https://arxiv.org/abs/2412.12122",
+      "arxiv_id": "2412.12122",
+      "arxiv_first_submitted_at": "2024-12-03T12:02:11Z",
+      "arxiv_updated_at": "2025-02-28T06:51:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500979/image/image.jpg?Expires=1790835182&Signature=N91baMOzxOC4git9oOw9fSf3JAdgiIGR~LSyyA5PY0Bgz126qNKHMIwZ-gze-9z0rQqB2jzcBDi3ZaJT5aUj5hzqH8hJ~bFDRtKK8j0Jq9WEjqDpnQoJbasT33ZN-drZIs6gstnE2DESVCA~BC~5OEYhZgqGhdtNPqebhzaiJj4X-Ac7u61scqVYDTXRE7kNCk11IERErR2wnoq-3G23fhtQ6-hAULwMfClqkId0dIcOaGdTwT5OSVz51aB-axbFEd5WTH0SsvDrjFs7jv1b3I0zn7Ls8aIlGe25JxKBFakIasoUTQrou-QdYr5EWCPZm2XMo3Z6h8NYnyiSAq1zIQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500979,
+      "description_sha256": "edcfccfde11cdf70678d6df6b91bccc4032a54f608c989b5d9dd63e8e2809837",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a detailed block diagram of an inverse design model that transforms input spectral data into reconstructed geometric structures. The diagram is divided into three main parts: (a) the complete model pipeline, (b) the spectrum self-attention module, and (c) the multiscale residual network.\n\nIn part (a), the global layout shows a sequential flow starting from an input spectrum of shape (1,1000), represented as a purple waveform. This input first passes through a 'Spectrum Self Attention' block, which outputs a latent space of shape (3,128,256). The latent space then undergoes reflection padding (with a value of 3), followed by downsampling via a 2D convolution layer. Next, the data flows through a 'Multiscale Residual Network' composed of 12 identical blocks, which processes the features. Afterward, upsampling is performed using a 2D transpose convolution, and finally, a 2D convolution output layer generates the reconstructed geometry of shape (3,128,256). The entire process is encapsulated within a light gray rectangular container, with blue arrows indicating the forward pass.\n\nPart (b) provides a detailed view of the 'Spectrum Self Attention' module, which maps the input spectrum to the latent space. The input (1,1000) is first passed through a fully connected (FC) linear layer, producing a vector of size (1,2048). This is then combined with 'Spectrum Position Encoding', which uses a Gaussian function to emphasize specific frequency ranges in the non-linear spectrum. The encoded data is fed into a 'Multi-head Self-Attention' block, whose output (also of size 1,2048) is processed by a multilayer perceptron (MLP). The final output is a latent space representation of shape (3,128,256), visualized as a noisy black-and-white texture. This entire subnetwork is enclosed in a salmon-colored box labeled 'Spectrum Self Attention: Spectrum to latent space'.\n\nPart (c) illustrates the internal structure of the 'Multiscale Residual Network'. It consists of three parallel branches, each processing the same input x. The top branch applies a 1x1 Conv2D, followed by Instance Normalization, another 1x1 Conv2D, and then adds the result to the original input x before normalization. The middle branch uses reflection padding (1), a 3x3 Conv2D, Instance Norm, reflection padding (1), and a 3x3 Conv2D, then adds to x and normalizes. The bottom branch uses reflection padding (2), a 5x5 Conv2D, Instance Norm, reflection padding (2), and a 5x5 Conv2D, then adds to x and normalizes. The outputs of all three branches are concatenated along the channel dimension (R^{3c×w×h}) and passed through a 2D convolution projection layer to produce the final output x of shape R^{c×w×h}. The entire block is contained within a light blue rectangle labeled 'Multiscale Residual Network'. All connections are shown with blue arrows, and the modules are represented as rectangular boxes with black borders and white or light-colored backgrounds, with text labels specifying their functions and parameters."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

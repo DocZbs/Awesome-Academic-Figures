@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500341",
+  "record_sha256": "94aef04443b5e702090eb2d7fc2e4b4ccbe007efedf2f605f9f28530ce071fa3",
+  "asset_sha256": "429519168443b5dbd65cfe7406fde4b8a53c8d99fa21ea20d78754baec0a8f7c",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500341",
+    "title": {
+      "zh": "Early Concept Drift Detection via Prediction Uncertainty · 方法图",
+      "en": "Early Concept Drift Detection via Prediction Uncertainty"
+    },
+    "paper": {
+      "id": "arxiv-2412-11158",
+      "title": "Early Concept Drift Detection via Prediction Uncertainty",
+      "authors": [
+        "Pengqian Lu",
+        "Jie Lu",
+        "Anjin Liu",
+        "Guangquan Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11158",
+      "arxiv_url": "https://arxiv.org/abs/2412.11158",
+      "arxiv_id": "2412.11158",
+      "arxiv_first_submitted_at": "2024-12-15T11:43:53Z",
+      "arxiv_updated_at": "2024-12-15T11:43:53Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500341/image/image.jpg?Expires=1790835171&Signature=w3Hntyodeq9AbwPu3v26WYORRRakTD8uwmu6SOUBRgbMNi9JeqVRd-9Nr6~giRI2wrof~3oA1WKOmeWJk~KtG9mQgPw-c-SoRwymzjGJT-CEox4G7gEK5DnGA-REMJTWWHZ76d3aryUeD~jQ2gsTemOq0iVhIm027qGY8o-s2YWYVczMWLWreqkZol4-5TGrlecycmUXJRQWuaiM7dQCaR53Wl6KhFWNris4rO~SovLBmjW9MZQmGWRwSuYqfVGV--OAR54FCGn20Gs9NlZw-mRkVEosuLd0P52ZagQxhkSx2QaeoaEuTaLD4j6In7o2ELE2w5PQ~t6ZQqsWOs9pjw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500341,
+      "description_sha256": "95c48fbd2d6837c09ec61115c10cf769e4ec026ae39e86f4b93bfbfcda49bbe0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-step framework for detecting concept drift in streaming data using a PU-index-based approach. The overall layout is horizontal, divided into three main stages: Step 1 (Build sliding windows), Step 2 (Build bins), and Step 3 (Drift detection with chi-square test), each enclosed in a rounded rectangular box with a bold title. These steps are connected sequentially from left to right by solid arrows indicating the flow of the algorithm.\n\nIn Step 1, a data stream is represented as a sequence of data blocks D₁ through Dₙ₊₁, with a label 'Antiquated Data' above the initial segment. A condition is specified: if the last drift was detected at time t₁, then antiquated data is discarded. The stream is processed by a gray rectangular block labeled 'Classifier f', which outputs a sequence of PU-indices uₜ₁ through uₙ₊₁ stored in a dashed-boxed area labeled 'PU-index Bank'. Below this, a process titled 'Build window pairs by cut point exploration' shows how the PU-index sequence is split into two windows: one from u₁ to uₙ (light pink) and another from uₙ₊₁ (light green), with corresponding time stamps t₁ to tₙ and tₙ₊₁. This step visually emphasizes the sliding window mechanism and the exploration of cut points to form window pairs.\n\nStep 2, enclosed in a dashed rectangle, details the binning process. It begins with a substep 'a) For each window pair', showing two windows W₁ and W₂ separated by a 'Cutting point'. W₁ contains elements u₁ to uₙ (light pink), and W₂ contains uₙ and uₙ₊₁ (light green). Substep 'b) Build bins by PU-index bucketing algorithm' follows, where a binning structure is created based on the distribution of PU-indices. This is depicted as a horizontal bar divided into intervals: '[0, ?]', '[?, ?]', ..., '[?, 1]', labeled B₁. A note below states 'One bin for {uᵢ | ŷᵢ ≠ yᵢ}', indicating that bins are formed for instances where predicted and true labels differ. The binning is determined by the PU-index distribution, as indicated by an arrow pointing from the text to the bin structure.\n\nStep 3, also within a dashed rectangle, outlines the drift detection using a chi-square test. Substep 'a) Compute the contingency table' shows a 2×k table with entries nᵇ¹, nᵇ², etc., representing counts of instances falling into bins for each window pair. Substep 'b) Compute the p-value' displays the mathematical formula: p = 1 − ∫₀^∞ x^(w/2−1) · e^(-x/2) / (2^(w/2) · Γ(w/2)) dx, which corresponds to the survival function of a chi-square distribution with w degrees of freedom. Finally, substep 'c) Condition of raise drift alarm' specifies the decision rule: if p ≤ α, raise a drift alarm; otherwise, if all window pairs have been examined, conclude no drift; else, return to Step 2. This step is structured vertically with downward arrows connecting the substeps.\n\nThe entire diagram uses consistent visual attributes: rectangular boxes for processes, dashed boxes for grouped subcomponents, color-coded blocks (light pink for past data, light green for new data), and clear directional arrows to indicate the algorithmic flow. Text annotations provide context for each component, including conditions, formulas, and definitions, ensuring the methodology is fully reproducible."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

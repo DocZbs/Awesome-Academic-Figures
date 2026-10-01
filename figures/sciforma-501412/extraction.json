@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501412",
+  "record_sha256": "ccba59f387a45546fcda85f1710b821c2218d776c535d4248bcdcd39347f349d",
+  "asset_sha256": "d350f9cea9f18ba4420f5eca256e726b1b7451ea715f6617120378a8d65d1a95",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501412",
+    "title": {
+      "zh": "Subspace Implicit Neural Representations for Real-Time Cardiac Cine MR Imaging · 方法图",
+      "en": "Subspace Implicit Neural Representations for Real-Time Cardiac Cine MR Imaging"
+    },
+    "paper": {
+      "id": "arxiv-2412-12742",
+      "title": "Subspace Implicit Neural Representations for Real-Time Cardiac Cine MR Imaging",
+      "authors": [
+        "Wenqi Huang",
+        "Veronika Spieker",
+        "Siying Xu",
+        "Gastao Cruz",
+        "Claudia Prieto",
+        "Julia Schnabel",
+        "Kerstin Hammernik",
+        "Thomas Kuestner",
+        "Daniel Rueckert"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12742",
+      "arxiv_url": "https://arxiv.org/abs/2412.12742",
+      "arxiv_id": "2412.12742",
+      "arxiv_first_submitted_at": "2024-12-17T10:06:37Z",
+      "arxiv_updated_at": "2024-12-17T10:06:37Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501412/image/image.jpg?Expires=1790835191&Signature=d73oILcWW0wJQgaEd2tY4d5r8hSIDS18xBTE3rVs31h4zKlwUXm1ZL2DN1-uyK3Zp2qigMCjR0tlZHS5vjM3zE~Kcu1ATYpSQ0S8qCSYGXRePsKLgn5ACHN-9Klp6sREx4DJt1GJrtMprUsrEJKlY5HWAfVHf-du1PAxoIwtgxVjbwTxnNIZqRLKPDMAhrvzpXuKc1u8L4dznBQO1npL6xCiBv1VID5LxTvrO2PDorEw1Sg-EVOP9cHa2WXFIIB1oEMlc5eTq2YfSsynvg89g2TNXwKRIK~e2-00yVeF3dom~SvA2rnOyt61SrW1Udayd5laWFmw-W1cD-zh95HREw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501412,
+      "description_sha256": "930d153849a23c3061113272cc482c62b2f928e11bbdf7888427aa09953d240d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a five-stage methodological pipeline for dynamic MRI reconstruction using continuous basis representation and neural network modeling. The global layout is divided into five labeled panels (a-e), arranged in two columns: panels (a), (b), and (c) on the left column, and (d) and (e) on the right, connected by a large green curved arrow indicating progression from initialization to fine-tuning and inference.\n\nPanel (a) 'Data acquisition' shows a 3D k-space volume with axes k_x, k_y, and time t. It depicts a continuous sampling trajectory represented by dashed lines across multiple time frames, forming a radial pattern with small angular increments—referred to as a 'tiny golden angle radial trajectory'. The data is acquired as a sequence of k-space spokes over time.\n\nPanel (b) 'Discrete temporal basis estimation' begins with binned k-space spoke centers. These are processed via GRASP (a reconstruction algorithm) to produce low-resolution reconstructed images. Subsequently, Singular Value Decomposition (SVD) is applied to these images to extract top-k spatial and temporal basis components, shown as a set of spatial images and corresponding temporal profiles.\n\nPanel (c) 'Initializing continuous representation of bases' takes the interpolated top-k discrete bases and feeds them into two separate neural networks: a Spatial Network (light yellow background) and a Temporal Network (light blue background), each represented as a multi-layer feedforward network with circular nodes and connecting lines. The output is initialized continuous representations of the spatial and temporal bases, depicted as smooth spatial images and temporal curves.\n\nPanel (d) 'Fine-tuning' shows the trained networks being refined. Rotated high-resolution image grids (in x-y-t space) are used as input, with spatial coordinates (x,y) fed into the Spatial Network and temporal coordinate (t) into the Temporal Network. The outputs are rotated spatial bases and temporal bases, which are multiplied together (indicated by a multiplication symbol) to form rotated high-resolution images. These are compared to predicted spokes generated from sampled spokes via the Fourier slicing theorem. A loss function is computed between predicted and sampled spokes, and TV regularization is applied during optimization, guided by Equation ref{eq:fine_tune}.\n\nPanel (e) 'Inference' illustrates the final reconstruction step. A regular x-y-t grid is input into the Spatial and Temporal Networks, which produce their respective outputs. These are multiplied together to yield the final reconstructed image, shown as a high-quality dynamic MRI slice.\n\nConnections throughout the diagram are indicated by arrows: solid red arrows denote data flow or computation steps, while a large green curved arrow links the initial stages (a-c) to the fine-tuning stage (d), and another green arrow connects fine-tuning to inference (e). Text labels clearly identify each module and transformation step."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

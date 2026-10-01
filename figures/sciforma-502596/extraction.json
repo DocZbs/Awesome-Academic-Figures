@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502596",
+  "record_sha256": "69e1f3d933ab11f15b0c1dac1854512a60fa220959b9bd293692b38a573f146a",
+  "asset_sha256": "9e66c8ec252628a5e56d2734182558ea2084da25c79a36be36b81f2c4fc0eb3f",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502596",
+    "title": {
+      "zh": "ResoFilter: Fine-grained Synthetic Data Filtering for Large Language Models through Data-Parameter Resonance Analysis · 方法图",
+      "en": "ResoFilter: Fine-grained Synthetic Data Filtering for Large Language Models through Data-Parameter Resonance Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-14809",
+      "title": "ResoFilter: Fine-grained Synthetic Data Filtering for Large Language Models through Data-Parameter Resonance Analysis",
+      "authors": [
+        "Zeao Tu",
+        "Xiangdi Meng",
+        "Yu He",
+        "Zihan Yao",
+        "Tianyu Qi",
+        "Jun Liu",
+        "Ming Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14809",
+      "arxiv_url": "https://arxiv.org/abs/2412.14809",
+      "arxiv_id": "2412.14809",
+      "arxiv_first_submitted_at": "2024-12-19T12:57:47Z",
+      "arxiv_updated_at": "2025-01-24T13:54:05Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502596/image/image.jpg?Expires=1790835226&Signature=n7tffALvgtkRG~mpL37zZAP-yAbAeH9BTtXF5JXrmf7Rqj8~TTlfTmTJaLVNAptWYaPJIpWg7UbN9nj3IZbVckkukpOQNSwnX1IR2SBFEuvM1Ztygp5jmz6dQlsJ2l8mI12DNzfIhpaQYS8RNnPeEtg~VaS4VKGYQE0E6sROoUUXyYfYu2ottgI83BJ4nyOBJfHBTIWJfPbr7jtDlIPCOiDzg3jkYobLIJcSvaEJCHYvU8LbPeDMsVFZ6uQzkdKL54L3w-fYCOATPbQgjMQjX0OPB4Xy2GL7wYY7X6AaVy9jIscUCFi7yejySi3v4nnvZznyxJ7DknuIb0z9SMpOKg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502596,
+      "description_sha256": "72357ad2e6ae6d33f1039ad69c43feedd5f5beee4ab912e709b846a1f459d5a9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part workflow for a method that analyzes parameter changes in a neural network model when fine-tuned on one-shot data. The left side details the computation of weight differences in the MLP modules of the last n transformer layers, while the right side shows how this process is applied across an entire dataset to filter samples based on the magnitude of these changes.\n\n[1] Global Layout and Structure: The figure is divided into two main vertical sections. The left section explains the core mechanism for computing parameter differences between an original model and a one-shot fine-tuned model. The right section illustrates the application of this mechanism to a dataset, showing the steps of computing differences for each sample, sorting them, filtering based on thresholds, and restoring the original order. The layout follows a clear top-to-bottom and left-to-right flow, with textual annotations guiding the reader through each step.\n\n[2] Visual Modules and Attributes: On the left, two identical model architectures are shown side-by-side: 'Original model' and 'One-shot model'. Each model consists of stacked transformer layers, represented by dashed boxes containing two components per layer: a pink rounded rectangle labeled 'MLP' and a salmon-colored rounded rectangle labeled 'Attention'. Below these layers, a gray box labeled 'Input Emb.' represents the input embedding layer. The bottom-most layer is labeled 'Layer(0) ~ Layer(N-n)', indicating the range of layers considered. Green boxes labeled 'W_up' are connected to the MLP modules in the last n layers of both models, with arrows pointing to computed differences labeled 'diff_n', 'diff_{n-1}', etc., which are then summed vertically to produce a final 'Diff' value. The right side features three tables with light blue headers ('ID', 'Data', 'diff(1e-7)'). The first table lists four data samples with IDs 1–4. The second table shows the same samples with added 'diff' values. The third table displays the sorted version of the second table in ascending order of 'diff'. Below this, three smaller boxes list filtered ID sets: {2,3,4} for Top 75%, {3,4} for Top 50%, and {3} for Top 25%.\n\n[3] Connections and Arrows: On the left, bidirectional arrows connect the 'W_up' matrices of corresponding MLP modules in the original and one-shot models to compute 'diff' values for each layer. These 'diff' values are then summed via downward-pointing arrows to yield the total 'Diff'. On the right, a horizontal arrow labeled 'Do ① for each sample' connects the initial data table to the table with 'diff' values. A vertical arrow labeled 'Sorted in ascending order' points from the 'diff' table to the sorted table. From the sorted table, three diagonal arrows point to the filtered ID sets, each labeled with a selection criterion: 'Select the Top 75% data', 'Select the Top 50% data', and 'Select the Top 25% data'. The figure includes two numbered steps at the top: Step ① describes fine-tuning and computing weight changes, and Step ② outlines applying Step ① to each dataset sample, followed by sorting, filtering, and restoring the original order."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

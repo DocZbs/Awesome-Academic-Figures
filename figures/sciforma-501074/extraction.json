@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501074",
+  "record_sha256": "2820cf6f198cd94d13db41e27e5515ad43bf5d1a6e1ecf8deec2402149ca25f1",
+  "asset_sha256": "f2f223905ed48ecc7aad2116ced4c3be9291291dab0546ecf163244f7d1e5e74",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501074",
+    "title": {
+      "zh": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions · 方法图",
+      "en": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12227",
+      "title": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions",
+      "authors": [
+        "Sanjay Chakraborty",
+        "Ibrahim Delibasoglu",
+        "Fredrik Heintz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12227",
+      "arxiv_url": "https://arxiv.org/abs/2412.12227",
+      "arxiv_id": "2412.12227",
+      "arxiv_first_submitted_at": "2024-12-16T11:13:57Z",
+      "arxiv_updated_at": "2024-12-16T11:13:57Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501074/image/image.jpg?Expires=1790835183&Signature=MW4mVUlnC~kQsDw-xTDJSFk37X8yHeWCEBwaC4Smq8-T5FrnD-I2KmACCyWmkuTq7QfplPGK-hHkjxy43R-uzzj-vVbuzfzx4vU8EWVrYqjt~2MpX-fd8nAHrWS1T-NFf2womH935MN3hBLPrQ5BC9ABJE6CKsbnJPjJSpDERr5AkjI2tsb515sc3sMz0i7tW1P6W5gNgpj9RJruBmVEDqe25uOQfbIdQol1yAG2buNFqNQfOzjakPE6H0tY3T9XceU-SK11svdq9lcA61vpMJfvH8KW7RP9trzj0bPefLqVfLbJN0C-eLsZ7lZgnhFFAALAGjNQiOYgSCI2q26WBA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501074,
+      "description_sha256": "e3f9aefcaeb5f4736eeca46396fb2af7edd8fe79deac689929553d12ce5033d2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the internal architecture of an EDformer block, designed for time series forecasting. The global layout is vertically structured, depicting a data flow from bottom to top. At the bottom, a seasonal component is shown as an orange oscillatory waveform labeled 'Seasonal Part'. An upward arrow labeled 'Reverse' indicates this seasonal part is reversed before being processed further. Above this, a multi-line plot displays three time series frames (Frame-1, Frame-2, Frame-3), each represented by a distinct color (cyan, teal, yellow), with axes labeled 'Value' (vertical) and 'time' (horizontal). These frames feed into an 'Embedding' module, depicted as a pink rectangle. From the embedding, data flows upward into a larger block labeled 'IntBlock', which contains four stacked components: 'Multivariate Attention' (orange rectangle), followed by 'LayerNorm' (light green), then 'Feed-forward' (light blue), and another 'LayerNorm' (light green). Within the Multivariate Attention module, three arrows labeled Q, K, V point upward from the Embedding, indicating query, key, and value inputs. Between the Multivariate Attention and the first LayerNorm, and between the Feed-forward and the second LayerNorm, there are skip connections represented by curved arrows merging with a circular plus symbol, indicating element-wise addition. The output of the second LayerNorm feeds into a 'Projection' module (gray rectangle) at the top, which produces the final output, indicated by an upward arrow labeled 'Output'. To the right of the Projection module, a dashed box labeled 'Trend part' contains a blue line graph showing a long-term trend with fluctuations around a horizontal dashed line, connected to the Projection via a leftward arrow, suggesting the trend component is added or combined with the projection output. The entire IntBlock is enclosed in a gray-bordered box with a label pointing to it from the right. The figure uses distinct colors for different modules: pink for Embedding, orange for Multivariate Attention, light green for LayerNorm, light blue for Feed-forward, and gray for Projection. All modules are rectangular with rounded corners, and all connections are solid black arrows except for the trend input, which is a hollow arrow. The diagram clearly shows the sequential processing within the IntBlock and the integration of seasonal and trend components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

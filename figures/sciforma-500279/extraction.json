@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500279",
+  "record_sha256": "43b384c4f844f5d17f4d0b6349ce3e298db14d1726063da42c7e0d7d39851692",
+  "asset_sha256": "ceff6fafef79ed201baba37f5247a0ab636e8f7a6f907a2263d6f458905c9520",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500279",
+    "title": {
+      "zh": "Deployment Pipeline from Rockpool to Xylo for Edge Computing · 方法图",
+      "en": "Deployment Pipeline from Rockpool to Xylo for Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-11047",
+      "title": "Deployment Pipeline from Rockpool to Xylo for Edge Computing",
+      "authors": [
+        "Peng Zhou",
+        "Dylan R. Muir"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_id": "2412.11047",
+      "arxiv_first_submitted_at": "2024-12-15T04:19:10Z",
+      "arxiv_updated_at": "2024-12-15T04:19:10Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500279/image/image.jpg?Expires=1790835164&Signature=XDtysfLq7Z4imHxM4CQQOvvOPQMMAdHhXUvgoS-zUlnSR5p7P6IpZzvCyQQkghbxSU19so4qBlkvlIHTCpztsbctItHUzrPWc9uw5NMCFxGwVwi6wgKc0rulSU~czQBJgewWZmMm-ahRlY8jh-FXVZaYXXaJgBmFjF5wEN2y7kH1s-5Z781P0Gnon0P2c4z9B9RzrOTFbfefT2phFVgvmASYmmkwYZfbczO6mJP6~inJIOn1eMZaOL7leOXwBeMLKDyskHTaF-G93txnVXCjB1uX96XUVUYEgwWhdtV1fVlnq32XgDOfDm9YYu6pq4-vGnrT1RwxbNIF8zzmHXTJ3w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500279,
+      "description_sha256": "cf3d1c153a12c16a0980112293b4900667383511c15a02ebff3971c0cf87ef94",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a neural network architecture composed of sequential and residual blocks, designed within the Rockpool framework. The global layout is linear and left-to-right, depicting a data flow through a series of processing modules. The structure begins with an initial blue rectangular block labeled 'W', representing a weight matrix or linear transformation, followed by an orange rectangular block labeled 'ReLU', indicating a rectified linear unit activation function. This sequence is repeated after a central residual block, which is enclosed in a dashed blue rectangle and explicitly labeled 'Residual' at the top.\n\nWithin the residual block, the input from the preceding ReLU layer splits into two paths. One path proceeds directly through another blue 'W' block and then an orange 'ReLU' block. The other path bypasses these layers via a direct connection (skip connection) and feeds into a circular node labeled with a '+' symbol, representing element-wise addition. The output of the ReLU block also connects to a smaller blue square labeled 'W_rec', which represents a recurrent weight matrix. An arrow from this 'W_rec' block loops back to the input of the 'W' block within the residual block, indicating a feedback or recurrent connection. The output of the summation node then continues to the next stage: another blue 'W' block followed by an orange 'ReLU' block, completing the sequence.\n\nAll 'W' blocks are rendered as solid blue rectangles with white text, while all 'ReLU' blocks are solid orange rectangles with white text. The residual block is demarcated by a dashed blue border, and the summation operation is shown as a white circle with a black plus sign. Arrows are black, solid lines with arrowheads indicating the direction of data flow. The skip connection is a straight horizontal line entering the summation node from the left, while the recurrent connection is a curved arrow from 'W_rec' back to the 'W' block. The entire diagram is clean, minimalistic, and uses consistent color coding and shapes to distinguish between different types of operations and connections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

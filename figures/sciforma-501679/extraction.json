@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501679",
+  "record_sha256": "0f11e2065818f9c81d1d4945f63522a2dff58b213dfb55552e28c8edbfc127e5",
+  "asset_sha256": "68182f3624d7e94e9731aab0d73055c7c6ce4ca71fa02bd053438a6d6bacd944",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501679",
+    "title": {
+      "zh": "CompactFlowNet: Efficient Real-time Optical Flow Estimation on Mobile Devices · 方法图",
+      "en": "CompactFlowNet: Efficient Real-time Optical Flow Estimation on Mobile Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-13273",
+      "title": "CompactFlowNet: Efficient Real-time Optical Flow Estimation on Mobile Devices",
+      "authors": [
+        "Andrei Znobishchev",
+        "Valerii Filev",
+        "Oleg Kudashev",
+        "Nikita Orlov",
+        "Humphrey Shi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13273",
+      "arxiv_url": "https://arxiv.org/abs/2412.13273",
+      "arxiv_id": "2412.13273",
+      "arxiv_first_submitted_at": "2024-12-17T19:06:12Z",
+      "arxiv_updated_at": "2024-12-17T19:06:12Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501679/image/image.jpg?Expires=1790835197&Signature=mTXfU2X2UrdXW10P5MVn-hgl7GQuNIplp70uzm17jnP--VPWBk2uESkXWuLdi8RzQjVQqksY4op0mv73p4Peh7DHUHdMUcWIY5SGMStPKeU313yumVxnV5iM3EfU8DqgzbUxdgWcUCuW~w7vQkRlQkbwm~lLpqt9oMmAm8FXrK~A1~8Hxe-znbzHHuiPKi9RNvUyHGqM2cEZC3m9aJ-d-dRC2XIlxH2TDzj8qHRpm6ECrgPvZFs930R3MkWUz2Zcgp-TslVL5gDR4SwlwnmSCzvOQO8POh4QjoEYNbevlTMesF7F1M7IFbogWRzhY9mIx334kGe9D-Vvve0cnGLF7A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501679,
+      "description_sha256": "4897167824335b583155a093f1766f73b5cc7d5ba8dcce068cb6a182f6470ede",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison of two distinct architectures for a flow estimator, labeled as 'densely connected' on the left and 'sequentially connected' on the right. Both architectures are vertically stacked sequences of convolutional layers leading to a final 'Flow estimation' module, but they differ significantly in how intermediate features are reused.\n\n[1] Global Layout and Structure:\nThe diagram is divided into two vertical columns. The left column illustrates the densely connected architecture, characterized by multiple skip connections that concatenate feature maps from earlier layers to later ones. The right column shows the sequentially connected architecture, which processes features in a straightforward feed-forward manner without any skip connections. Each column begins with an input layer (represented by a blue rectangle) and ends with a green rectangle labeled 'Flow estimation'. Alongside each column, dashed green boxes indicate the number of input and output channels for each corresponding convolutional block, reflecting the channel dimensions at different stages of processing.\n\n[2] Visual Modules and Attributes:\n- Convolutional Layers: Represented by yellow rounded rectangles labeled 'Conv'. These are the primary processing units in both architectures.\n- Feature Maps/Intermediate Outputs: Represented by solid blue rectangles of varying lengths. Their length visually suggests the spatial dimension or complexity of the feature map, though exact dimensions are not specified; only channel counts are given.\n- Flow Estimation Module: A green rectangle at the bottom of each column, indicating the final output stage.\n- Channel Information Boxes: Dashed green boxes positioned to the left of each Conv layer in the left column and to the left of each Conv layer in the right column. They specify 'in: X out: Y', where X is the number of input channels and Y is the number of output channels for that specific convolutional block. For example, the first Conv layer has 'in: 245 out: 128'.\n- Concatenation Symbol: A red L-shaped bracket located at the bottom-left corner of the figure, explicitly labeled 'represents feature concatenation'. This symbol appears at junctions in the left architecture where multiple feature maps are combined before being fed into a subsequent Conv layer.\n\n[3] Connections and Arrows:\nIn the left (densely connected) architecture, each Conv layer receives inputs from two sources: the output of the previous Conv layer and one or more concatenated feature maps from earlier layers via curved black arrows. Specifically, after each Conv layer, the resulting feature map splits into two paths: one continues forward to the next Conv layer, while the other branches off horizontally and curves downward to be concatenated with a future Conv layer’s input. Red lines indicate the concatenation operation, merging multiple incoming feature maps before feeding them into the next Conv layer. The flow proceeds through five Conv layers, with increasing input channels due to concatenation (from 245 → 373 → 501 → 597 → 661), and decreasing output channels (128 → 128 → 96 → 64 → 32 → 2).\n\nIn the right (sequentially connected) architecture, there are no skip connections. Each Conv layer receives input only from the output of the immediately preceding Conv layer via straight black arrows. The feature maps progress linearly down the stack. The channel dimensions follow the same pattern as the left side: 'in: 245 out: 128', then 'in: 128 out: 128', 'in: 128 out: 96', 'in: 96 out: 64', 'in: 64 out: 32', and finally 'in: 32 out: 2'.\n\nBoth architectures conclude with a final Conv layer whose output feeds into the green 'Flow estimation' block, which produces the final optical flow prediction. The figure's caption clarifies that the channel numbers correspond to the flow estimator block operating at the lowest resolution, implying that these architectures are part of a larger network that may involve downsampling."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500278",
+  "record_sha256": "71eb1e7c32f714cf619617fca72ad487ce0c4d397a42abe695de81ab52f1dcc7",
+  "asset_sha256": "bac5d8e6bd0a3f8a0669909fce82fde2b73ccf52ba0831d760b9be7f62657cdf",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500278",
+    "title": {
+      "zh": "Deployment Pipeline from Rockpool to Xylo for Edge Computing · 方法图",
+      "en": "Deployment Pipeline from Rockpool to Xylo for Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-11047",
+      "title": "Deployment Pipeline from Rockpool to Xylo for Edge Computing",
+      "authors": [
+        "Peng Zhou",
+        "Dylan R. Muir"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_id": "2412.11047",
+      "arxiv_first_submitted_at": "2024-12-15T04:19:10Z",
+      "arxiv_updated_at": "2024-12-15T04:19:10Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500278/image/image.jpg?Expires=1790835164&Signature=eXiRNFazQQjvow1agiaUo1rvJdnJA6p9jK4P0T2S2FSFFsbSWvbeSNHO4i6kepJLZGv5b2vY3SHoQfwsAYE8u5lFi2er86R6LOigCIqTg3Sv88CyqS7rbnk4DtQEpP-1A0r5BEfRTZeXzA-VlfN2K7vpxE60WSHk7IqlP52YAo~DxA9c1xqd~FwowO0CsdpkxzvGlFnYepyaF1gdvBQvXrXdDczRY8Gqr8AtcCRn8f~WTseCd7if9KwUDaZkdSGtldLo-1dmTNH77utdXFDszHeU8KTHiXudzhbGrUbhztAJjiB3RSyg4fqu8QWNnM2W-k5A6BTnF7dkHfphrB-3JA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500278,
+      "description_sha256": "ed05cecc9856b1669bc329a24f668fb718276aa55fe172998ad0a33dd6461b20",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating the Xylo deployment pipeline in Rockpool, detailing the sequential steps required to deploy a neural network onto the Xylo hardware development kit (HDK). The global layout is horizontal, with a primary top row of processing stages connected by orange zigzag arrows indicating data or object flow. Below this main path, two auxiliary branches diverge and converge back into the main workflow, representing intermediate transformations. All modules are represented as rectangular boxes with teal borders and white backgrounds, containing descriptive text and associated code snippets or function calls. Each arrow is labeled with the type of object being passed between stages.\n\nStarting from the left, the first stage is 'Build a network in Rockpool', which uses components from `rockpool.nn.modules` and `rockpool.nn.combinators`. This produces a 'Module object', which flows via an orange zigzag arrow to the next stage: 'Extract graph', implemented via `.as_graph()`. This step outputs a 'GraphModule object', which then feeds into 'Map to HW specification' through `x.mapper()`, producing a 'spec dictionary'.\n\nFrom here, the workflow splits. One branch proceeds directly to 'Get a HDK configuration' using `x.config_from_specification()`, which takes the 'spec dictionary' as input and outputs a 'config object'. This 'config object' is then used in two parallel paths: one leads to 'Deploy to Xylo' via `x.XyloSamna()`, and the other to 'Simulate the HDK' via `x.XyloSim()`.\n\nThe second branch from 'spec dictionary' goes to 'Quantize network', utilizing `rockpool.transform.quantize_methods`. This step also consumes the 'spec dictionary' and produces another 'config object', which merges with the config object from the previous branch before proceeding to both deployment and simulation stages.\n\nAll connections are depicted with orange zigzag arrows, emphasizing the directional flow of data objects between stages. The diagram clearly separates the construction phase (left), transformation phase (middle), and deployment/simulation phase (right), with explicit labeling of intermediate data types such as 'Module object', 'GraphModule object', 'spec dictionary', and 'config object'. The visual structure emphasizes modularity and the stepwise refinement of the network representation toward hardware-compatible form."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

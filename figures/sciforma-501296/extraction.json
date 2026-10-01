@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501296",
+  "record_sha256": "b148f2e8e8f49144dc955858a2a7cdee7288c60e71bc0ac9f3dbe04ac6c785d5",
+  "asset_sha256": "c84bcf35e7b9035abd5965f5b267ccccd1f66a53e6b565344df23400717647de",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501296",
+    "title": {
+      "zh": "LLMs are Also Effective Embedding Models: An In-depth Overview · 方法图",
+      "en": "LLMs are Also Effective Embedding Models: An In-depth Overview"
+    },
+    "paper": {
+      "id": "arxiv-2412-12591",
+      "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+      "authors": [
+        "Chongyang Tao",
+        "Tao Shen",
+        "Shen Gao",
+        "Junshuo Zhang",
+        "Zhen Li",
+        "Kai Hua",
+        "Wenpeng Hu",
+        "Zhengwei Tao",
+        "Shuai Ma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_id": "2412.12591",
+      "arxiv_first_submitted_at": "2024-12-17T06:48:24Z",
+      "arxiv_updated_at": "2025-07-25T09:22:04Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501296/image/image.jpg?Expires=1790835190&Signature=FvtVqpLmIkQRYar~5rw8rusT9BuVnYVRRkrE21r92NyPGN3lUQweFAqJwKNYJP1KhSuGczE2716uzRj9LKLmqmTpS3a8OvBwUkFj3lxEFSeomIVhPhTopyeKe8pk5ZSCcUapx-JzLXvHTRW6cHTDULi~ggqe0Y6AcB3nAdNH~fGDoBS4rkSqO557ZIuUC6JkWlqTZsKrPRov6aKuTqrwOfm6x9RuigUZJfw0cfqmEz6-dff3MucFF8WQz-gE7c4RPD4Gm~8x~DO8LW---blxYKKCld-hMlbTJmUvjNJ5fJeNdXx-4btJJJmhX0SXHP8YvCsxQP4z0RsiGKliYKCHoQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501296,
+      "description_sha256": "8deea15836acba91912553cdf11dcb200374f62d5cc8b1059998726aba9e503d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Matryoshka Embedding framework, which enables adaptive retrieval and classification by generating hierarchical embeddings of varying dimensions. The global layout is divided into two main sections: 'Inference' on the left and 'Training' on the right, separated by a central vertical bar representing the embedding vector z ∈ ℝ^d. This vector is depicted as a gray rectangular column containing nested colored blocks—red, orange, blue, yellow, and gray—from top to bottom—symbolizing progressively larger sub-vectors of increasing dimensionality. These correspond to different levels of the Matryoshka structure.\n\nOn the inference side, two modules are shown within rounded beige boxes. The upper module, labeled 'Adaptive Retrieval', contains two sequential steps: 'Shortlisting' (light blue rectangle) followed by 'Re-ranking' (green rectangle), connected by a black downward arrow. The Shortlisting step receives input from the red block (z₁:d/16) via an orange arrow, while Re-ranking receives input from the blue block (z₁:d/4) via a gray arrow. Below this, the 'Adaptive Classification' module displays a visual progression of increasingly complex feature representations, starting with small red blocks and culminating in a full-length gray bar composed of all colored segments. A dashed black arrow points from the top red block to the bottom gray bar, indicating the hierarchical expansion of features. A solid black arrow connects the entire embedding vector z to this module, suggesting it uses the full embedding for classification.\n\nOn the training side, five loss functions are computed from different prefixes of the embedding vector: ℒ(z₁:d/16) from the red block (red arrow), ℒ(z₁:d/8) from the orange block (orange arrow), ℒ(z₁:d/4) from the blue block (blue arrow), ℒ(z₁:d/2) from the yellow block (yellow arrow), and ℒ(z₁:d) from the full vector (gray arrow). These losses are aggregated using a summation symbol (⊕) to form the total loss ℒ(z), indicated by a black arrow leading to the final output. At the bottom of the embedding vector, a small icon resembling a Matryoshka doll (a red bowl with a green figure inside) visually reinforces the nesting concept. The figure uses color-coded arrows to link each sub-vector to its corresponding loss function, emphasizing the multi-scale training objective. All components are arranged to show a clear separation between inference (left) and training (right), with the embedding vector serving as the central bridge."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

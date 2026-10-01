@@ -1,0 +1,103 @@
+{
+  "id": "sciforma-502238",
+  "record_sha256": "ed328c730698eb0021f8d13efe5e6696a5e1d449fcfac65d19cdb487eb976839",
+  "asset_sha256": "f8502a79d9729fac93f9ac80eb780d4f3c709482530a12606440a27376f25313",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502238",
+    "title": {
+      "zh": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks · 方法图",
+      "en": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-14161",
+      "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+      "authors": [
+        "Frank F. Xu",
+        "Yufan Song",
+        "Boxuan Li",
+        "Yuxuan Tang",
+        "Kritanjali Jain",
+        "Mengxue Bao",
+        "Zora Z. Wang",
+        "Xuhui Zhou",
+        "Zhitong Guo",
+        "Murong Cao",
+        "Mingyang Yang",
+        "Hao Yang Lu",
+        "Amaad Martin",
+        "Zhe Su",
+        "Leander Maben",
+        "Raj Mehta",
+        "Wayne Chi",
+        "Lawrence Jang",
+        "Yiqing Xie",
+        "Shuyan Zhou",
+        "Graham Neubig"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14161",
+      "arxiv_url": "https://arxiv.org/abs/2412.14161",
+      "arxiv_id": "2412.14161",
+      "arxiv_first_submitted_at": "2024-12-18T18:55:40Z",
+      "arxiv_updated_at": "2025-09-10T08:35:19Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502238/image/image.jpg?Expires=1790835212&Signature=oQAmV6USJ1JVpbkyTmMuE-oOFs5ZewwCf2CV7oiwK0oi1smdN0QnFmPP8bj-e11JmxSrzbEsbXcVaYxrxpXagOa6mUgCHj0UruJBuDm9FXuRU~jDz0oHl1mGMUjhL8oF4oCLZg~~HbJZgWj-DAvpB-snTSXWODTMU4c-heAK-UCR9boekYpv66XEUQd9I8mvXGAWSSQhQuxuy65jh3Uh4U7b6VjLUPaXkSQVbDPUiDWdu5YfBEpY46dvUc5SKAm99zZZQoBxW~~IcN2DRJlpl~mnVcGdtIT9bJdlLHp4Y11k1jtROf03Uq4ZuA6TYC1BY-pbHuIHUljNf2LnzJX7eg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502238,
+      "description_sha256": "ba1a0ab4b10d0a1b24aacb357137296f908fa5d9a301214bedfaf191a2ef0824",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of OpenHands' default CodeAct + Browsing agent architecture, which serves as the baseline agent for all experiments. The global layout is structured as a left-to-right workflow, beginning with an 'Event History' module on the far left, progressing through an 'Agent' component, then showing a sequence of actions and observations in a central vertical stack, and concluding with a set of execution environments on the right. The entire process is framed by two main feedback loops: one from 'Action' to the execution environments and another from those environments back to 'Observation', which feeds into the Agent.\n\nThe visual modules are color-coded and shaped consistently to denote different types of components. The 'Event History' is a yellow rectangle labeled '[Past Action(s) & Observation(s)]', positioned above a white box containing a robot icon and the label 'Agent'. From the Agent, a blue arrow labeled 'Action' points to a central dashed yellow rectangle containing seven numbered steps, each represented as a colored box. Steps [1], [3], [5], and [7] are orange boxes representing observations: [1] Message (instruction), [3] BrowserOutputObservation (API Server Repo URL), [5] CmdRunObservation (git clone output), and [7] IPythonRunCellObservation (server start confirmation). Steps [2], [4], and [6] are light blue boxes representing actions: [2] BrowseInteractiveAction (browser input commands), [4] CmdRunAction (git clone command), and [6] IPythonRunCellAction (Python server startup code). Each step includes specific code or output text, such as '<execute_browse>' tags or 'git clone git://repos/apiserver'.\n\nOn the right side, a dashed gray rectangle contains three gray boxes representing execution environments: 'Browser' with a Playwright Chromium icon, 'Interactive Python (IPython) Server' with a Jupyter logo, and 'Bash Shell' with a terminal icon. A blue arrow labeled 'Action' points from the central action/observation stack to this group, indicating that actions are dispatched to these environments. An orange arrow labeled 'Observation' returns from the environments to the central stack, completing the feedback loop. The diagram uses consistent arrow styles—solid blue for actions, solid orange for observations—to indicate data flow direction. The overall structure emphasizes a sequential, iterative process where the Agent receives historical context, generates actions, executes them across multiple environments, and processes the resulting observations to continue the task."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

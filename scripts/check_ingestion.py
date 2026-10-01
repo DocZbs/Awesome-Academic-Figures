@@ -70,8 +70,14 @@ class SourceSafety(unittest.TestCase):
                 self.assertEqual(f["rights"]["publication_status"], "approved")
                 self.assertIn(f["rights"]["source_license"], {"CC-BY-4.0", "CC0-1.0"})
                 self.assertTrue(f["rights"]["license_evidence_url"].startswith("https://"))
-                self.assertEqual(f["reuse"]["validation"]["visual_extraction"], "reviewed")
-                self.assertIn(f["source"]["number"], [1, 2])
+                review = f["reuse"]["validation"]["visual_extraction"]
+                self.assertIn(review, {"reviewed", "source_index_verified"})
+                if f["source"].get("number") is None:
+                    self.assertEqual(review, "source_index_verified")
+                    self.assertIn(f["source"].get("number_status"), {"source_index_leading_figure", "dataset_figure_number_unresolved"})
+                else:
+                    self.assertIn(f["source"]["number"], [1, 2])
+                self.assertRegex(f["metadata_sha256"], r"^[a-f0-9]{64}$")
                 if f["source"].get("method") == "arxiv_source_original":
                     self.assertRegex(f["source"]["arxiv_version"], r"v\d+$")
                     self.assertTrue(f["original_assets"])

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502046",
+  "record_sha256": "d45ef3bd411ac85ca42cad1cc7d43d2251f11d78b700a9ee7ab65e1042d11eb1",
+  "asset_sha256": "3dfc736f14b78d421934d1d16b1f8cf569ab324223b81b0728296fe1dadc95fb",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502046",
+    "title": {
+      "zh": "Maybe you are looking for CroQS: Cross-modal Query Suggestion for Text-to-Image Retrieval · 方法图",
+      "en": "Maybe you are looking for CroQS: Cross-modal Query Suggestion for Text-to-Image Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-13834",
+      "title": "Maybe you are looking for CroQS: Cross-modal Query Suggestion for Text-to-Image Retrieval",
+      "authors": [
+        "Giacomo Pacini",
+        "Fabio Carrara",
+        "Nicola Messina",
+        "Nicola Tonellotto",
+        "Giuseppe Amato",
+        "Fabrizio Falchi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13834",
+      "arxiv_url": "https://arxiv.org/abs/2412.13834",
+      "arxiv_id": "2412.13834",
+      "arxiv_first_submitted_at": "2024-12-18T13:24:09Z",
+      "arxiv_updated_at": "2024-12-18T13:24:09Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502046/image/image.jpg?Expires=1790835207&Signature=jUrnNhuPofffJ7WD5HMjigfHw8hAgA~xPxoeH6mCvepR3d55s~Nxj3JyhLL1AVnnHJJdVaGR-h-DhYwJhc7stMMS2YUCUXQ2HOmPzMtDZhaGpM83GkTiJFUN0cQHNV-zFTRkPzqZvGXNBwk~L0diiSFRd6Qky-uU0tIoREncp8m20vwqOvlAq~ozFQlvX47KFyLbniys-9FC6muF77uaX12JE3UWyz9usTLLMpukn~wQUWvdj76OavTim8dkDXwp2qDtjvbdU3MriO3cktWtI7dXsqH~LW735ReMMJtHANxjC1XYlbnkR42URrA4PAOUc4fqvuLtxH0irKYUlD~lXw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502046,
+      "description_sha256": "6c8259b33ad60499360f704e44d3a1fa6b950e23fa669c5ed1bfeab6bdc57cc9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a cross-modal query suggestion framework designed to enhance search by generating refined queries based on visual results. The global layout is left-to-right, depicting a sequential pipeline: starting from an initial text query, progressing through cross-modal retrieval, clustering of visual results, and finally producing suggested queries via a dedicated suggestion module.\n\nOn the far left, an 'Initial Query' labeled q₀: “sport race” is shown as input. This query is directed into a cylindrical component labeled ℒ, representing the 'Cross-modal Search' system (e.g., CLIP), which processes the query against an image collection. An arrow from the query points to this module, indicating the flow of information.\n\nThe output of the cross-modal search is a result set R(q₀, ℒ), displayed as a large rounded rectangular container containing multiple clusters of images. These clusters are visually grouped into distinct colored boxes: C₁ (pink), C₂ (blue), and C₃ (yellow), with ellipses suggesting additional clusters. Each cluster contains representative images—C₁ shows horse and cart racing and chariot racing; C₂ displays snow sports like skiing and snowboarding; C₃ features motocross and dirt bike racing. Each cluster box includes a label at the top (C₁, C₂, C₃) and vertical ellipses below the images to indicate more items within each group.\n\nAn arrow leads from the entire result set container to a green rectangular block labeled 'Cross-modal Query Suggestion', marked with the symbol ℱ. This module takes the clustered visual results as input and generates a list of suggested queries.\n\nOn the far right, the output is presented as a curly-bracketed list titled 'Suggested Queries Q'. It lists specific query suggestions: ŝ₁: “horse race”, ŝ₂: “snow race”, ŝ₃: “bike race”, followed by vertical ellipses to denote further suggestions. These correspond directly to the visual clusters C₁, C₂, and C₃ respectively, demonstrating how the system infers semantically coherent sub-topics from the retrieved images.\n\nThe diagram uses clear directional arrows to show data flow: from the initial query to the search engine, then to the result clusters, and finally to the suggestion module producing the refined queries. The color-coding of clusters aids visual distinction and aligns with the semantic grouping logic. The overall structure emphasizes a modular, interpretable pipeline where visual content drives query refinement."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

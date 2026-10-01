@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A comprehensive GeoAI review: Progress, Challenges and Outlooks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11643
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architectural flow of DeepLab V3+, a semantic segmentation model, presented as a directed data processing pipeline. The global layout is horizontal, progressing from left to right, with two main parallel branches: a high-level feature extraction path (top) and a low-level feature refinement path (bottom), which converge in a decoder module. A large dashed red rectangle labeled 'Decoder' encloses the bottom branch, indicating its role in upsampling and feature fusion.
+
+The process begins with an input 'Image' (light orange rounded rectangle) fed into a 'Hote Conv' block (light blue rounded rectangle), which serves as the initial convolutional layer. From this point, the flow splits into two paths.
+
+In the top path, a large dashed red box groups five parallel operations: four convolutional layers and one pooling operation. These are: a '1*1 convolution' (light orange), three '3*3 convolution' layers (one light pink, one light gray, one light blue), and 'Image Pooling' (light yellow). Each of these produces a feature map represented by a square of corresponding color. These five feature maps are then concatenated into a multi-channel feature stack (depicted as a group of five vertically aligned squares with the same colors as their sources). This concatenated output is passed through a final '1*1 convolution' (light blue) to reduce dimensionality, followed by an 'upsample by 4' operation (light yellow) to increase spatial resolution.
+
+In the bottom path, the output of 'Hote Conv' is directly processed through a '1*1 convolution' (light orange) to extract 'Low level features', as labeled. This is followed by a light gray square (representing a feature map), then a 'concatenation' block (light blue) where the upsampled high-level features from the top path are merged. The concatenated features pass through a dark blue block (likely representing a more complex module such as an atrous spatial pyramid pooling or a residual block), then a '3*3 convolution' (light pink), and finally another 'upsample by 4' (light yellow) to further increase resolution.
+
+The output of the second upsampling step in the decoder is directed to a final 'Prediction' block (light blue rounded rectangle), which generates the segmentation output. All connections are indicated by solid black arrows, showing the unidirectional flow of data. The diagram uses color-coding to distinguish different types of operations and their outputs, with consistent color mapping between operation labels and their resulting feature maps.

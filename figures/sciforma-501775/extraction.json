@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501775",
+  "record_sha256": "95fd5aa4b2e0fb1a36fa4312b755fa1c71cde198344e3e0c356a1a986db95401",
+  "asset_sha256": "c3ff99504f0fd3899e5bdddd631bc60229dd5473280c43df255306c0bb5b0a5a",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501775",
+    "title": {
+      "zh": "Curriculum Learning for Cross-Lingual Data-to-Text Generation With Noisy Data · 方法图",
+      "en": "Curriculum Learning for Cross-Lingual Data-to-Text Generation With Noisy Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-13484",
+      "title": "Curriculum Learning for Cross-Lingual Data-to-Text Generation With Noisy Data",
+      "authors": [
+        "Kancharla Aditya Hari",
+        "Manish Gupta",
+        "Vasudeva Varma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13484",
+      "arxiv_url": "https://arxiv.org/abs/2412.13484",
+      "arxiv_id": "2412.13484",
+      "arxiv_first_submitted_at": "2024-12-18T04:00:18Z",
+      "arxiv_updated_at": "2024-12-18T04:00:18Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501775/image/image.jpg?Expires=1790835200&Signature=wKgdE9dGdy-6aT7tVLkAGeosamM1lrUEH~ilgEYVzWna4R0mK2WHRvaKT4TR0YLgrT8RmgUNPpAC1eb-tu1O4O~brojjWRWpXdLV3dkycbRTKH~h6lYJ8ZWjn3yA~Iy-gkS3JL6VfUgc2xjfgQhU9sVUrziCZetnrtVnRUMQBsWvwrtwoYfx~ee-cHKxZpnoU0LJeDNOrS9N04Je2CR5wLFxCSWg6j4EWN3zU9nsAaa6iCIKW5mQQL0sc2~N0haupShDYGlcbmMbTrEQh1NLDsPY-PjnUWsaWNYc27gADh9JpOCkjD5lA5XjGOKgXodzRUIXYdk1kmZgTNneN~J3DA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501775,
+      "description_sha256": "39ddcf14191f7bb5ea7feb2319761b346d61ea557781809f6234787da5ff171e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct curriculum learning schedules for training, labeled (a) Expanding and (b) Annealing, each depicted as a series of horizontal rows representing successive training phases, with progression indicated by a vertical arrow labeled 'Training Phases' pointing downward on the left side. In both subfigures, rectangular blocks represent shards, with each block containing white text indicating the shard number (Shard 1, Shard 2, or Shard 3). The blocks are shaded in varying tones of blue, with lighter blue for earlier phases and darker blue for later phases, suggesting progression or increasing complexity.\n\nIn subfigure (a) Expanding, the training begins with a single Shard 1 in the first phase. In the second phase, Shard 2 is added alongside Shard 1, forming a two-block row. In the third phase, Shard 3 is introduced, resulting in a row with all three shards. This illustrates a progressive expansion where new shards are incrementally added over time.\n\nIn subfigure (b) Annealing, the training starts with all three shards (Shard 1, Shard 2, Shard 3) in the first phase. In the second phase, Shard 3 is removed, leaving only Shard 1 and Shard 2. In the third phase, Shard 2 is also removed, leaving only Shard 1. This demonstrates a reverse process where shards are gradually removed as training progresses, focusing on simpler components toward the end.\n\nEach row corresponds to a training phase, and the horizontal arrangement within each row indicates the set of shards active during that phase. The visual contrast between the two schedules highlights different strategies: expanding increases model complexity over time, while annealing reduces it. The figure uses consistent block shapes and text formatting across both subfigures, with color gradients reinforcing the temporal progression from top to bottom."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

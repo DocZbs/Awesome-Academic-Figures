@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501072",
+  "record_sha256": "4d826bdb216448249355750add31379f9db56a29647a72fe0ecf8eed1f6df98f",
+  "asset_sha256": "88bc936c7550a5feb8323f372ec9e3cdb840a124e6dd896efe7ec5f92c2ec855",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501072",
+    "title": {
+      "zh": "Apollo-Forecast: Overcoming Aliasing and Inference Speed Challenges in Language Models for Time Series Forecasting · 方法图",
+      "en": "Apollo-Forecast: Overcoming Aliasing and Inference Speed Challenges in Language Models for Time Series Forecasting"
+    },
+    "paper": {
+      "id": "arxiv-2412-12226",
+      "title": "Apollo-Forecast: Overcoming Aliasing and Inference Speed Challenges in Language Models for Time Series Forecasting",
+      "authors": [
+        "Tianyi Yin",
+        "Jingwei Wang",
+        "Yunlong Ma",
+        "Han Wang",
+        "Chenze Wang",
+        "Yukai Zhao",
+        "Min Liu",
+        "Weiming Shen",
+        "Yufeng Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12226",
+      "arxiv_url": "https://arxiv.org/abs/2412.12226",
+      "arxiv_id": "2412.12226",
+      "arxiv_first_submitted_at": "2024-12-16T11:01:20Z",
+      "arxiv_updated_at": "2024-12-16T11:01:20Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501072/image/image.jpg?Expires=1790835183&Signature=ss8X9WKE7yS1VsTqBH0kzhGL5dzf-1PqGeNgR5jnnE2teDAOx81g~Uv1CvY4o-dRHO6DZYRa1AYK8prBTMveYhV9EY3bgq440Hca4H~5JJptubcVSJFjIQv8RvJfc98Dk0tXI4r3ZK48~Xtg2KkdTNhIxq4jNcEoOeIsSDG0Oy8kn1St8oF~7ceNSwt~2H5EuMMa2N7iKpkuZ7yGqHGkoZOE6jYrp5Qz8oK67wUms3ao13QMWgVtKA7uQEtHcrgko7u2IFITXLzooQUFMQMLouP3ojMLGlu6hijRBSvYn0fxEbEuWFEvu1sT79bzH-~0Sk2IjAHZJA1Upr74QW3GEQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501072,
+      "description_sha256": "147afbe5009ce71ea9de34dfea3ed5228fe5135ab4ec60b3be07bb14ed78d851",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of Apollo-Forecast, a time series forecasting system designed to handle noisy data efficiently through a multi-stage processing pipeline. The global layout is left-to-right, depicting a sequential workflow from raw input signals to final forecasted output. On the far left, two input signals are shown: a smooth purple 'Desired Signal' and a jagged orange 'Noise Signal', which together form the 'Historical Time Series' represented by a green waveform. This historical data feeds into the central processing block, the 'Anti-Aliasing Quantization Module' (AAQM), enclosed in a dashed box. Inside AAQM, two frequency domain plots are displayed, labeled X(w), showing triangular waveforms representing quantization levels. The top plot shows full quantization with red triangles, while the bottom plot shows a filtered version with blue dashed triangles indicating dropped chunks. Below these plots, sequences of colored boxes represent tokenized data: green boxes (2,4,1,0) and blue boxes (2,1,3,4) correspond to inference chunks, while orange boxes (2,3,5,2) represent input tokens derived from the quantized signal. A legend at the top left clarifies that yellow, light blue, and cyan boxes denote 'Inference Chunks', while purple 'x' marks indicate 'Dropped Chunks'.\n\nFrom the AAQM, the input tokens flow into the 'Time Series Forecasting Model', a pink rounded rectangle. This model outputs to a 'Race Decoding' block, which contains two parallel models: a 'Main Model (Slow)' depicted with yellow and light blue boxes and a 'Draft Model (Fast)' with yellow and purple 'x' boxes. These models operate in a speculative fashion, where the fast draft model generates initial predictions, and the slow main model verifies or corrects them. The output from Race Decoding is sent to the 'Dequantization Module', a yellow rounded rectangle, which performs the reverse process of quantization to reconstruct the signal. The dequantized output is labeled 'Predict Tokens' and leads to the final 'Forecast Time Series', shown as an orange waveform with labeled token values (e.g., 2,2,4,3) above it, indicating the predicted sequence. Arrows clearly show the data flow: from Historical Time Series → AAQM → Input Tokens → Forecasting Model → Race Decoding → Dequantization Module → Forecast Time Series. The figure also includes a note that X represents the frequency domain, emphasizing the spectral processing within the AAQM. The entire system is designed to reduce computational cost through selective chunk processing and speculative decoding, while maintaining accuracy via anti-aliasing quantization and model verification."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

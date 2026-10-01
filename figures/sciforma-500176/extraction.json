@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500176",
+  "record_sha256": "54d972e5b8a20df4350b439d6e43954b29cd21daa255b35dc2aaa3c9367ac860",
+  "asset_sha256": "516893afb38281efa1c09001d6e975a61580390467275bad00e8e45d1d878539",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500176",
+    "title": {
+      "zh": "TinySubNets: An efficient and low capacity continual learning strategy · 方法图",
+      "en": "TinySubNets: An efficient and low capacity continual learning strategy"
+    },
+    "paper": {
+      "id": "arxiv-2412-10869",
+      "title": "TinySubNets: An efficient and low capacity continual learning strategy",
+      "authors": [
+        "Marcin Pietroń",
+        "Kamil Faber",
+        "Dominik Żurek",
+        "Roberto Corizzo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10869",
+      "arxiv_url": "https://arxiv.org/abs/2412.10869",
+      "arxiv_id": "2412.10869",
+      "arxiv_first_submitted_at": "2024-12-14T15:43:38Z",
+      "arxiv_updated_at": "2025-09-13T15:21:16Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500176/image/image.jpg?Expires=1790835166&Signature=CWBHQZ-97UCobS2IfWpUQRQD~jXkxgIiPTiN~GJcLhUnr~jmUTlmnBkJQIXdYZwstJIQvF07VymOcdbR1whAlJ9FIUjrENcrvWCoB8Q4xWBj0IFy60YkmMot~VermjVD9xuafvXn3AFW3u5YMzrjkNl6Rr4Hu7G1UAjg8PrciouIavmEXohGX4I20IedFZJl-q6fbKYmLAFu8OjwXLcpe9wFJMZLBR-RwPvwUcqdEjrngR9mn3mwK90KYi1aU3s554t4UzWZNlITNhxDGmR~J7hXqHOOuV-tx7Tq50hR~XDrKi8EcYTJuhe~rqMJ5Wiw8UJpHCvPFajD0ve8QkZ1wg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500176,
+      "description_sha256": "19d02937343b65e65077027dfbfd2b22114d73dd57eb407cd04273d5e713a6fa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the TinySubNetworks (TSN) framework for continual learning, comparing two scenarios: (a) disjoint weight sharing with no value overlap between tasks, and (b) value-based weight sharing where overlapping weight values are shared across tasks. The global layout is split into two side-by-side diagrams, each depicting a neural network structure with two layers of nodes (N₀,₁, N₀,₂ in Layer 0; N₁,₁, N₁,₂, N₁,₃ in Layer 1; N₂,₁, N₂,₂ in Layer 2), connected by weighted edges labeled wᵢ,ⱼ,ₖ. Each node is represented as a light green circle. The left diagram (a) corresponds to Task 1 (red) and Task 2 (blue), while the right diagram (b) includes Task 1 (red) and Task 3 (orange). The color coding is indicated in legends at the top-right of each panel.\n\nIn both diagrams, the network structure is identical, but the weight values and codebooks differ based on the sharing strategy. In diagram (a), weights are disjoint—each task maintains separate codebooks and weight values. For example, Layer 1 codebook for Task 1 (red) contains entries like '00: 0.4576', '01: 0.3456', etc., while Task 2's codebook (blue) has distinct values such as '0: 0.2453', '1: -0.1898'. Similarly, Layer 2 codebooks for each task have unique mappings. The weights on edges are shown as binary or ternary codes (e.g., 'UUU' or '10U') corresponding to these codebooks. Below each network, replay memories are shown as tables listing outputs from nodes (e.g., 'out N₁,₁ sample 1 ... sample N') for each task, colored accordingly. A Kullback-Leibler (KL) divergence metric is computed between the replay memories of different tasks, and if KL > threshold, weights are not shared (as indicated by dashed lines between nodes and separate codebooks).\n\nIn diagram (b), when KL ≤ threshold, weight sharing occurs. The codebooks for Task 1 and Task 3 now share common entries. For instance, the Layer 1 codebook for Task 3 (orange) mirrors Task 1’s codebook exactly ('00: 0.4576', '01: 0.3456', etc.), indicating shared weight values. Similarly, Layer 2 codebooks for both tasks are identical. The weights on edges reflect this sharing—edges from N₀,₁ to N₁,₁ now carry the same code '00' for both tasks, and the corresponding weight value is shared. Dashed lines between nodes indicate potential connections that are active only under sharing conditions. Replay memories for Task 1 and Task 3 are also aligned, and the KL divergence is used to trigger sharing. The figure emphasizes that TSN uses a reduced bit-width format for weights, enabling efficient storage and computation through codebook-based quantization, with dynamic sharing based on similarity measured via KL divergence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500988",
+  "record_sha256": "13949bdc167f695b93ac11c60a6c76e578eed4461feb3b80f46b7524beeeeff6",
+  "asset_sha256": "c067b8c13d00ae1245ccb01f4963ab1493acbb974248b3552f6cdb9bd0a1d8de",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500988",
+    "title": {
+      "zh": "Harnessing Transfer Learning from Swahili: Advancing Solutions for Comorian Dialects · 方法图",
+      "en": "Harnessing Transfer Learning from Swahili: Advancing Solutions for Comorian Dialects"
+    },
+    "paper": {
+      "id": "arxiv-2412-12143",
+      "title": "Harnessing Transfer Learning from Swahili: Advancing Solutions for Comorian Dialects",
+      "authors": [
+        "Naira Abdou Mohamed",
+        "Zakarya Erraji",
+        "Abdessalam Bahafid",
+        "Imade Benelallam"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12143",
+      "arxiv_url": "https://arxiv.org/abs/2412.12143",
+      "arxiv_id": "2412.12143",
+      "arxiv_first_submitted_at": "2024-12-09T22:47:41Z",
+      "arxiv_updated_at": "2024-12-09T22:47:41Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500988/image/image.jpg?Expires=1790835182&Signature=YrQn3ZN527Vql2kLyaymPjbtdBdu1ZfvkdK82kmPp3XIersWuoKwNRXErebUafUUPs-B4Ts5W9ERP6jZ2RcIahCRY-ZZHC1VOXFnizlyXANDjh6FmWj5twCm2MDpCZZFBAFo8sffQ-1T52WuycNCSxCugSgL3RKz1KZbQvDVp4e8mSu6olZHJCjhSk6sWGm6KZpD0U-yWXgnZnCdSe4AU6lHXik060BCj607rPd-NqCn-hcXh-HtY2O6cIqVDXj0dNchDcL2gArAlFSsH80rjWwqnG6CpzZGxSM6TescpjrGHlDTYhySrQu5D3A-I1BZcxaemP9I540LBDQLFTxIrg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500988,
+      "description_sha256": "c206aad1644fc46940a9cfb6072c3c98b3ef97bf60a4940b96072e2314cc202a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a data construction pipeline for building a Comorian-English neural machine translation (NMT) corpus, titled 'NMT Data Construction'. The overall layout is a top-down flowchart with five main components arranged vertically and horizontally, connected by directional arrows indicating the sequence of operations.\n\n[1] Global Layout and Structure: The diagram begins at the top left with a light blue cylinder labeled 'Comorian - English seed Corpus', which serves as the initial data source. From this, an arrow leads to a light blue oval labeled 'Unique Words', representing the extraction of distinct vocabulary from the seed corpus. This oval connects via an arrow labeled 'Searching Comorian words' to a light blue cylinder labeled 'Swahili - English Corpus', marked with a circled number '2' above it, indicating a secondary data source. A vertical arrow from this corpus points downward to another light blue cylinder labeled 'Comorian - English extended Corpus', with a text box beside it describing 'Data filtering': 'We keep the sentences that have more than 80% of Comorian words and we remove all the foreign words in them.' Below this, two diverging arrows lead to two final output corpora: a green cylinder labeled 'Comorian - English Meaningful Corpus' and a pink cylinder labeled 'Comorian - English extended Corpus'. Additionally, a magenta hexagonal icon labeled 'Phi-3' is positioned on the left side, connected by an arrow labeled 'Detect Meaningful Sentences' to the 'Comorian - English extended Corpus' cylinder.\n\n[2] Visual Modules and Attributes: All data storage components are represented as cylinders, colored light blue except for the final outputs — one green and one pink — to distinguish between filtered and unfiltered extended corpora. The 'Unique Words' module is an oval, also light blue, signifying a processed set of vocabulary. The 'Phi-3' module is a stylized hexagon with internal circuit-like patterns, colored magenta, symbolizing a machine learning model or AI system. Text labels are black, sans-serif, and placed adjacent to or inside the modules. The circled number '2' above the Swahili-English Corpus highlights its role as a key external resource. The data filtering instruction is presented in a separate text box with italicized font for emphasis.\n\n[3] Connections and Arrows: The flow starts from the 'Comorian - English seed Corpus' to 'Unique Words', then to the 'Swahili - English Corpus' via a rightward arrow labeled 'Searching Comorian words'. From there, a downward arrow leads to the 'Comorian - English extended Corpus', accompanied by the data filtering explanation. From this central extended corpus, two arrows branch out: one to the green 'Meaningful Corpus' and one to the pink 'extended Corpus'. Additionally, the Phi-3 model sends an arrow labeled 'Detect Meaningful Sentences' into the 'Comorian - English extended Corpus', indicating its role in identifying semantically coherent sentences within the extended dataset. All arrows are solid black lines with arrowheads pointing in the direction of data flow, clearly delineating the processing steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

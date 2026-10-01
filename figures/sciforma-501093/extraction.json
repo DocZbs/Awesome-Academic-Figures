@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501093",
+  "record_sha256": "7178a093e520dd3bdf9c1de2551cc28285738415b110aae1f5810c0263718ec8",
+  "asset_sha256": "042883b70c75132e3594c77f507706e8f008c2c94f7eccf163fb0474324b24ab",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501093",
+    "title": {
+      "zh": "Graph-Guided Textual Explanation Generation Framework · 方法图",
+      "en": "Graph-Guided Textual Explanation Generation Framework"
+    },
+    "paper": {
+      "id": "arxiv-2412-12318",
+      "title": "Graph-Guided Textual Explanation Generation Framework",
+      "authors": [
+        "Shuzhou Yuan",
+        "Jingyi Sun",
+        "Ran Zhang",
+        "Michael Färber",
+        "Steffen Eger",
+        "Pepa Atanasova",
+        "Isabelle Augenstein"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12318",
+      "arxiv_url": "https://arxiv.org/abs/2412.12318",
+      "arxiv_id": "2412.12318",
+      "arxiv_first_submitted_at": "2024-12-16T19:35:55Z",
+      "arxiv_updated_at": "2025-03-20T15:13:26Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501093/image/image.jpg?Expires=1790835184&Signature=IXQw6jB0gQjxRypVKyVms9ZIKxSpE9hJuivzn1oYj0UIw8~RDm2LxwC-NMcbrEIr5jvPuwRP-rmrpwBThEPmSTVlewm1CTFcV6dKBl3hlyOCMrFKl6aK-Anl4TOcwdQelCfeTh949ZYXInW5F5ARLewN93CGqW-sndyzfFhlZ8O6yAu2cERJig5zCitojJeBRlAP8h6LN-rfer-bQNmC2tf9rTs8KIigWlpzm5zlhSUC9LEXen3Wx~-7vcIHU7KV3U5h8jSY2h1km2OIJ9Pr1-jFuPnmy57BKeQajVCq9ii6VlVTn4Mk7Fy7LgH4Vw9C0QMrZhbPD5vlMElfd4KG6w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501093,
+      "description_sha256": "8582950b99a5f081e0298666049b87e8a73ac2021fcaaa54158b3c6dc1413da7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative visualization of two reasoning processes for natural language inference (NLI), illustrating the difference in explanation faithfulness between a standard Language Model and a modified model called G-TEX. The layout is vertically divided into two sections: the top section represents the baseline Language Model, and the bottom section represents the enhanced G-TEX model.\n\nIn the top section, the premise 'An old man poses in front of an advertisement' and the hypothesis 'A man walks by an ad' are displayed at the top. Specific tokens—'poses', 'advertisement', 'walks', and 'ad'—are highlighted with dashed gray boxes, labeled as 'token interactive explanations (unused)', indicating that although these tokens are relevant, they are not utilized in the model’s reasoning process. A solid black arrow points from this input pair to a salmon-colored rounded rectangle labeled 'Language Model'. Below this, the model outputs a contradiction judgment, annotated with a green checkmark and an orange-bordered box stating 'Contradiction because an old man is a man.' This explanation is marked with a red 'X', indicating it is incorrect or unfaithful, as it ignores the core conflict between 'poses' and 'walks'. Dotted gray arrows loop back from the output to the input tokens, visually representing unused token-level interactions.\n\nIn the bottom section, the same premise and hypothesis are shown again, but now specific tokens are highlighted with colored boxes: 'poses' and 'walks' are in green, and 'advertisement' and 'ad' are in yellow. These correspond to two types of token interactive explanations: green for 'token interactive explanation 1' and yellow for 'token interactive explanation 2', as indicated in the legend. Curved arrows connect these highlighted tokens across the premise and hypothesis: a green arrow links 'poses' to 'walks', and a yellow arrow links 'advertisement' to 'ad', emphasizing their semantic relationships. A solid black arrow leads from the input to a blue rounded rectangle labeled 'G-TEX'. The output below is a correct contradiction judgment, marked with a green checkmark and an orange-bordered box stating 'Contradiction because a man cannot pose and walk at the same time.' This explanation is also marked with a green checkmark, signifying its faithfulness and correctness. The visual structure highlights how G-TEX incorporates relevant token interactions to generate a more accurate and faithful explanation compared to the baseline model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

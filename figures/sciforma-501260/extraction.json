@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501260",
+  "record_sha256": "351ce13e36a8e2e6e2dc3211f39cf34c8ab88d4ace1b609cc5a6612fb4edd243",
+  "asset_sha256": "74f5b4f80896aefc4bcdb72031507d900c8140c774dbd26691ad155d944741e0",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501260",
+    "title": {
+      "zh": "SIDE: Socially Informed Drought Estimation Toward Understanding Societal Impact Dynamics of Environmental Crisis · 方法图",
+      "en": "SIDE: Socially Informed Drought Estimation Toward Understanding Societal Impact Dynamics of Environmental Crisis"
+    },
+    "paper": {
+      "id": "arxiv-2412-12575",
+      "title": "SIDE: Socially Informed Drought Estimation Toward Understanding Societal Impact Dynamics of Environmental Crisis",
+      "authors": [
+        "Lanyu Shang",
+        "Bozhang Chen",
+        "Shiwei Liu",
+        "Yang Zhang",
+        "Ruohan Zong",
+        "Anav Vora",
+        "Ximing Cai",
+        "Na Wei",
+        "Dong Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12575",
+      "arxiv_url": "https://arxiv.org/abs/2412.12575",
+      "arxiv_id": "2412.12575",
+      "arxiv_first_submitted_at": "2024-12-17T06:11:46Z",
+      "arxiv_updated_at": "2024-12-17T06:11:46Z",
+      "arxiv_subjects": [
+        "cs.SI",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501260/image/image.jpg?Expires=1790835190&Signature=V39PXqaXLU-fp0lgjK0WeXOv-WN8bdIHvgnon~hdaQO0FZrSu1TUiqOZwbDE41F5dw0qKyZ6Vvq5qcBvLVNy-ciKg-XVUcQdHMcp5QeZjhfe4EHhqaXNpAY2uwCStC--DtP2ZH7tLZAt4j9-CX8uTlhSMNljBLXGuL-47rXoxoWcxV6eu5prCNsJAFsSB4Yq4KDKURCchvFg1fCy~KdxPsCxyah95fZMWV0Q6D1OA7KycRMvmPIe0-gFljK0fBTJreiocGiYqD3RoyQWpNZ5b8nkZZG5K~-M8VbmhSJ3jM8YN8fWVqf7VWcoObu68THKK~IaF2bs4Hd9p2GmsA9fCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501260,
+      "description_sha256": "af0c4a0e73f256f5439874da537dac410416ac5de57add796bbddac80638d337",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SI",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SIDE (Severity-Impact Joint Estimation) framework, which integrates social and physical data to jointly predict future drought severity and societal impact. The global layout is structured as a two-branch pipeline converging into a decoder for joint estimation. On the left, two input streams are shown: 'Social Input' (represented by a blue document icon) and 'News Input' (green newspaper icon), both enclosed in a blue-bordered box. These inputs feed into a central processing module labeled 'BERTopic', which performs 'Topic-Determinant Mapping' using a cluster-like icon (yellow, green, blue dots) and a Y-shaped symbol representing mapping logic. This module outputs a grid of quantified societal impact values, denoted as M_{t-T_L:t}, with time steps t-1 and t indicated, visually represented by blue and green blocks respectively. This module is enclosed in a large blue-bordered box.\n\nOn the bottom left, a separate yellow-bordered box contains 'Drought Severity' data, symbolized by a yellow waveform icon, with the mathematical notation D_{t-T_L:t} indicating historical severity data over a lookback window. Both the quantified societal impact and drought severity streams are processed through distinct encoders: the societal impact stream passes through a blue 'Encoder', while the drought severity stream goes through a yellow 'Encoder'. These encoders feed into a yellow box labeled 'Social-Physical Cross-Attention', which combines the two modalities. The output of this cross-attention block flows into a gray 'Add & LayerNorm' block, followed by a 'Feed-Forward' block, forming a standard transformer encoder layer structure.\n\nThe outputs from the final feed-forward block and the quantified societal impact module are combined and fed into a gray hexagonal 'Decoder' block. Additionally, the drought severity input also directly connects to the decoder. The decoder produces the final joint estimation, shown in a green box labeled 'Severity-Impact Joint Estimation', with predicted outputs denoted as \\hat{D}_{t+1:t+T_P} for future drought severity and \\hat{M}_{t+1:t+T_P} for future societal impact over a prediction horizon T_P. The connections are color-coded: blue arrows represent the social input pathway, yellow arrows represent the physical (drought severity) pathway, and black arrows indicate the final integration and decoding process. The overall structure emphasizes a dual-encoder, cross-attention, and decoder architecture for joint forecasting."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

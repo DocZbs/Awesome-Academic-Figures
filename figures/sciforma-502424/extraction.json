@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502424",
+  "record_sha256": "9d52d50ccdade835dce061cdb0190cc300218b5c16c24c00c53a73e195cabc44",
+  "asset_sha256": "e7d22cd659a682cf1b17b61bd08dffbef7ca64ed624277b7b2036b212dfe96fc",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502424",
+    "title": {
+      "zh": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization · 方法图",
+      "en": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14510",
+      "title": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+      "authors": [
+        "Jiayi Wu",
+        "Hengyi Cai",
+        "Lingyong Yan",
+        "Hao Sun",
+        "Xiang Li",
+        "Shuaiqiang Wang",
+        "Dawei Yin",
+        "Ming Gao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_id": "2412.14510",
+      "arxiv_first_submitted_at": "2024-12-19T04:18:51Z",
+      "arxiv_updated_at": "2024-12-19T04:18:51Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502424/image/image.jpg?Expires=1790835221&Signature=Y5UN9X-Hk9GcFbkLpM~FpbCzEMetCq9RrR5~VOGl3VsM7FH8C-uYrJg~60Q1PpnI5hw-wMhreY3mUIFA9I6sd74vJrJZ6qDnv~wCDgEs6f7HUoY2LkzjMy3CI~wlPckiLYm4ZRlorsrp8yumsUyuibO~SWiCLDjYHzdlgHcOgt0eGnee-vM6ejUVdq2dOktPj~ZoYqf-i392DVVTFhzTFJ7BTErc2AUQWK~jlpZ4Q4fxbC7Y5HD2l1~54e8X2G3oDh8mdfhxEYa1SAsTYLiISf-HgW73-W-BCpZoiApan58HlEtk0Ab4WbzmQrU0helgg30k392CalV4VEJsUys6rQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502424,
+      "description_sha256": "0677aec5b93814f98c43a8ef66307b5a964519dadfe149eae2d42a5fc74b4408",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of preference data construction for three distinct evaluation dimensions: Response Informativeness, Response Robustness, and Citation Quality. The layout is divided into three vertically aligned, color-coded panels—light blue on the left, light yellow in the center, and light orange on the right—each representing one dimension. Each panel is structured into sections labeled 'Construct Input', 'Construct Chosen', and 'Construct Rejected', separated by dashed horizontal lines.\n\nIn the leftmost blue panel ('Preference Data For Response Informativeness'), the Construct Input includes Instruction (Inst), Question (Que), and Golden Docs (GD). The Construct Chosen section shows input as Inst + Que + GD, processed via a combination of a green GPT-like logo and 'Citation Rewrite', yielding a 'Superior Answer'. The Construct Rejected section uses Inst + Que + Partial GD, processed by a black robot icon and 'Doc Id Align', resulting in an 'Inferior Answer'.\n\nThe central yellow panel ('Preference Data For Response Robustness') mirrors the structure. Its Construct Input includes Inst, Que, GD, and Noisy Docs (ND). The Construct Chosen uses Inst + Que + GD + ND, processed by 'Doc Id Align' (represented by a black robot icon), producing a 'Superior Answer'. The Construct Rejected also uses Inst + Que + GD + ND but processes it through the same robot icon, yielding an 'Inferior Answer'. A curved pink arrow points from the 'Superior Answer' in the blue panel to the 'Complete Answer' box in this panel, indicating a flow or dependency.\n\nThe rightmost orange panel ('Preference Data For Citation Quality') begins with a top-level input box labeled 'Inst + Que + Docs', which feeds into a black robot icon. This robot outputs two columns: 'Claims' (c1, c2, c3) and 'Citations' ([t1], [t2], [t3]), with checkmarks and crosses indicating validity. A 'Citation Rewrite' step transforms these citations into a refined list ([t1], [t2], [t3]) with all checkmarks. Below, the panel splits into Group 1 and Group 2. Group 1's Construct Input includes Inst+Que+Docs with c1+[t1] marked valid and c2; its Construct Chosen is [t2] (valid), and Construct Rejected is [t2] (invalid). Group 2's Construct Input includes Inst+Que+Docs with c1+[t1] (valid), c2+[t2] (valid), and c3 (valid); its Construct Chosen is [t3] (valid), and Construct Rejected is [t3] (invalid). All boxes are rounded rectangles with gray borders, and text is black. The robot icons are stylized black figures with white eyes and a mouth. The figure visually contrasts superior vs. inferior processing paths across constructs, emphasizing alignment and rewriting steps for generating preference data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

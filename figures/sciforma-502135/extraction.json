@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502135",
+  "record_sha256": "d06d32c3b89e429b8236d731b89e48fa3965355f9f3edf179130510e1e78bf59",
+  "asset_sha256": "853189fc67bd4c7a6baccb7c7ba0e2374a8c5ca3fc011398ed233c1febb977ff",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502135",
+    "title": {
+      "zh": "Spatio-Temporal Forecasting of PM2.5 via Spatial-Diffusion guided Encoder-Decoder Architecture · 方法图",
+      "en": "Spatio-Temporal Forecasting of PM2.5 via Spatial-Diffusion guided Encoder-Decoder Architecture"
+    },
+    "paper": {
+      "id": "arxiv-2412-13935",
+      "title": "Spatio-Temporal Forecasting of PM2.5 via Spatial-Diffusion guided Encoder-Decoder Architecture",
+      "authors": [
+        "Malay Pandey",
+        "Vaishali Jain",
+        "Nimit Godhani",
+        "Sachchida Nand Tripathi",
+        "Piyush Rai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13935",
+      "arxiv_url": "https://arxiv.org/abs/2412.13935",
+      "arxiv_id": "2412.13935",
+      "arxiv_first_submitted_at": "2024-12-18T15:18:12Z",
+      "arxiv_updated_at": "2024-12-18T15:18:12Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502135/image/image.jpg?Expires=1790835212&Signature=UT7MN50AdCSxyJbqMZCE2DL6MWXYi-tpCPFXPpjGt6bs-blKnMuh5zuBI7qb4-vXTn74FoH1rClahME1z5C6V1IbDM63OKr0L-l0IEE7DcHJ2SZoTQYBydvLMfQQVfzR62qduD9NToIuPqPR5CtjMLT724SY9J6lC6LzE8d3moUd~LpjJD-iW~pZXoo8LyH9xi0fzmOhriH09oYPTe-999~qXvdwh4DglacQCd0iZFKC2y1NM~AYFNTnBX8L4eB6qjxtvJy5vcXuNeZ5b7UdsWNzqqD0DYB0yToH0wfZPHTWTJzn5x8Qg-fi~qiFmPLVfruNVWIqgCErnBKoxROtog__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502135,
+      "description_sha256": "83a801def8cd0ce525b97b4f7f5cc528e4653f95b7198e4b90fd845b304d29c2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the proposed AGNN_GRU model, structured as an encoder-decoder framework. The global layout is horizontally divided into two main components: the Encoder on the left and the Decoder on the right, each enclosed within dashed rectangular boundaries. The Encoder processes historical input data to generate a contextual representation, while the Decoder uses this representation along with current inputs to predict future outputs.\n\nIn the Encoder section, the bottom-most component is a gray rounded rectangle labeled '[X^t, ..., X^k; y^t, ..., y^k; G]', representing the input sequence of node features, historical labels, and graph structure G. This input feeds into a blue rounded rectangle labeled 'Graph Neural Network (TransformerConv)', indicating a GNN layer based on the TransformerConv operation. The output of this GNN is added element-wise to the previous hidden state via a circular '+' node. The result is passed to a light green rounded rectangle labeled 'GRU', which denotes a Gated Recurrent Unit. The GRU's output is then fed into an orange rounded rectangle labeled 'MLP' (Multilayer Perceptron), which produces the final encoded representation, shown as a gray rounded rectangle labeled '[ŷ^t, ..., ŷ^k]'.\n\nThe Decoder section begins with a gray rounded rectangle at the bottom labeled '[X̄^{k+1}, ..., X̄^T; ŷ^k]', representing the future node feature sequences and the last predicted label from the encoder. This input is processed by a light green rounded rectangle labeled 'GRU', followed by a yellow rounded rectangle labeled 'Luong Attention'. The Luong Attention mechanism takes as additional input the encoded sequence '[ŷ^t, ..., ŷ^k]' from the Encoder, allowing it to attend over the entire history. The output of the attention module is passed to an orange rounded rectangle labeled 'MLP', which generates the final predictions, shown as a gray rounded rectangle labeled '[ŷ^{k+1}, ..., ŷ^T]'.\n\nConnections between modules are represented by solid black arrows indicating the direction of data flow. A horizontal arrow connects the Encoder’s GRU output to the Decoder’s Luong Attention module, enabling the attention mechanism to access the full encoded context. Additionally, a feedback loop from the Encoder’s output (the MLP result) back to the Decoder’s Luong Attention is implied through the direct connection, reinforcing the attention mechanism’s reliance on the encoder’s representation. The overall workflow follows a sequential processing pattern: historical data is encoded using a GNN and GRU, and the resulting representation is used by the decoder—augmented with future inputs and Luong Attention—to generate future predictions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

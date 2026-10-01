@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500434",
+  "record_sha256": "f4510cbcec348668d04518eae30132374bd897969abad97be5aae032cae53da2",
+  "asset_sha256": "252a1216b8fc3d4b7a94e9b47683acb5652eb841b4195965893dfbdfc55a132d",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500434",
+    "title": {
+      "zh": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models · 方法图",
+      "en": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11333",
+      "title": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+      "authors": [
+        "Xiaochen Zhu",
+        "Georgi Karadzhov",
+        "Chenxi Whitehouse",
+        "Andreas Vlachos"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11333",
+      "arxiv_url": "https://arxiv.org/abs/2412.11333",
+      "arxiv_id": "2412.11333",
+      "arxiv_first_submitted_at": "2024-12-15T22:47:44Z",
+      "arxiv_updated_at": "2025-05-25T16:17:40Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500434/image/image.jpg?Expires=1790835171&Signature=LIaEo9qvYSd4TSWQul4H3l0VL~BsU0qsu4y52XfpeWOOZ5QpjntSH5OqOVbH--IWXkJdsfrftYv0suFYGtfKPMhDl3raB0VaVWNf9uo6vMrQFLgC3WcG0OlAPqMkcGarUoc0gq0eTwQLEyyJin7ksgvx72m9phxVW7NS4d5~77ImP2ibvYF-WxAL-EQHq3fexxbejjqmCAGLX1L~my~MvcTH2Ur3eZOKMy-ngsS4eempDTb1MIkcKSJmC9q4uE1ZMSobBpllDYK07vzi8l-s2Ou7r~NCao2SjJdOv~1SSh3wjoTcKOwjoJBeqtawZ28Vn6UrqfB-ToCNSJXE8cgM3g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500434,
+      "description_sha256": "cc4df67b870751c4f2116db6070bcbc27bf2fbc0c3b2e98ae01fb54c79ee2011",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage training pipeline for a Semantic Language Diffusion (SLD) model, structured horizontally across three main stages: Text Segmenting, Representation Learning, and Training Diffusion as Inherent Semantic Planner. The layout is divided into two horizontal sections: the top section contains Stage 1 and Stage 2, while the bottom section contains Stage 3.\n\nStage 1: Text Segmenting begins with a 'Gold Output' box containing a full narrative paragraph about Morgan and her family evacuating from Florida during a hurricane. This text is segmented into discrete parts labeled Segment 0 through Segment n, each displayed in a green rectangular box. For example, Segment 0 reads 'Morgan and her family lived in Florida.', Segment 1 reads 'They heard a hurricane was coming.', and Segment n reads 'They felt lucky they had evacuated when they did.' These segments are visually arranged vertically below the gold output, indicating the segmentation process.\n\nStage 2: Representation Learning follows immediately to the right. It starts with three example sentences: two green ones ('Morgan and her family lived in Florida.' and 'Morgan lived in Florida with her family.') and one red one ('Shaun Maloney admits guarding his...'). These are processed by a blue trapezoidal block labeled 'Language Autoencoder', followed by another blue trapezoid labeled 'Latent Compression'. The outputs are latent vectors z, z+, and z−, represented as colored bars (green, green, red respectively), which are projected into a 2D 'Latent Space' plot. In this plot, points (x-marks) are scattered, with green points clustered together and a red point isolated, connected by solid black lines to their respective latent vectors. A dashed red line separates the clusters, illustrating contrastive learning. Additionally, a separate pathway shows the latent vector z combined with 'Adversarial Noise' (gray bars), passed through 'Latent Reconstruction' and then 'Language Decoder' blocks (blue trapezoids), resulting in a reconstructed sentence: 'Morgan lives with her family in Florida.' This demonstrates adversarial robustness.\n\nStage 3: Training Diffusion as Inherent Semantic Planner occupies the lower half of the figure. It begins with an 'Input' box containing 'Title: The Hurricane', which feeds into a yellow trapezoidal 'Pretrained Text Encoder'. The encoder's output, labeled 'Encoder Outputs' in a purple rectangle, conditions the diffusion process. The core component is the 'Conditioned Reverse Process', enclosed in a large rounded rectangle. It consists of a sequence of blue rounded rectangles representing a Diffusion Transformer R(·, t; θ_R), which iteratively denoises latent representations. The process starts with noisy latent vectors ź_T (brown bars) at time T, which are processed by R(·, T; θ_R) to produce less noisy ź_{T−1} (light orange bars). This continues through multiple steps until reaching clean latent vectors ź_0 (light pink bars). Each step involves a blue rounded block labeled R(·, t; θ_R) or R(·, T−1; θ_R), with arrows indicating forward progression. The final clean latents ź_0 are fed into two blue trapezoidal blocks: 'Latent Reconstruction' and 'Language Decoder'. The output is a set of parallel-generated text segments in peach-colored boxes: Segment 0 ('Morgan lives in Florida.'), Segment 1 ('A hurricane strikes her house.'), and Segment n ('Morgan and her family are rescued.'), collectively labeled 'Texts Decoded in Parallel'.\n\nConnections between modules are indicated by solid black arrows, showing data flow. The entire diagram uses consistent visual attributes: green for positive/aligned examples, red for negative/disjoint examples, blue for processing blocks, and distinct colors for latent representations. Text labels are clear and positioned near their corresponding components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

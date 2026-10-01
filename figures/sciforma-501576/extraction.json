@@ -1,0 +1,100 @@
+{
+  "id": "sciforma-501576",
+  "record_sha256": "7b708532af61067a7eb020346dbcee1ec837b89a1708496a6b664f7b4ec882e8",
+  "asset_sha256": "f0d80c2b11babf6fbcc2e01e868be690ae90037b0f241b7a7d6e8d4719029688",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501576",
+    "title": {
+      "zh": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments · 方法图",
+      "en": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments"
+    },
+    "paper": {
+      "id": "arxiv-2412-13049",
+      "title": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments",
+      "authors": [
+        "Joshua Groen",
+        "Simone Di Valerio",
+        "Imtiaz Karim",
+        "Davide Villa",
+        "Yiewi Zhang",
+        "Leonardo Bonati",
+        "Michele Polese",
+        "Salvatore D'Oro",
+        "Tommaso Melodia",
+        "Elisa Bertino",
+        "Francesca Cuomo",
+        "Kaushik Chowdhury"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_id": "2412.13049",
+      "arxiv_first_submitted_at": "2024-12-17T16:13:37Z",
+      "arxiv_updated_at": "2025-11-07T21:46:37Z",
+      "arxiv_subjects": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501576/image/image.jpg?Expires=1790835197&Signature=VNWv~tA06yGUcJ0MyU9tRC8DFBcHZuVKfCph-nphWRdQu~2KMwBiX~mHSmH03rsyZcygAzvQU9seoAnoSMUQ0ltuYaSfmfCuco1QYXhE4wfHcLISViJZeKL6PGmJ7VReVFNoRdQ9PvqQeJXC~7bv4cg8hZmUsGLMomhIq1KAy4JvC4QxkEAfKo1672N~JCDUHw7pImG3~8By3hA1rsBRCIRDg1zBBpMHmSiITO7GD0D5TO1OQtpHlWGAci~Kek4U8p9mzH6uFf4PD~ypJ8XeXJ5zp9ceqecnC~IY-UQb7bAM6LNXnQHtF3ptaxs1IjMpZzFVqcjVmjekSx~hfiyQtw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501576,
+      "description_sha256": "17dcdaa4142fccc547a49e9167847832ddefd37cfe60487b3af4a698c50fc64f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a three-stage pipeline for network traffic analysis and anomaly detection, designed for deployment in both a production-ready private 5G network and its digital twin environment. The global layout is linear and left-to-right, depicting a sequential data flow from raw packet capture to final decision output. The first stage, labeled 'Packet Acquisition & Filtering', is represented by a rectangular document icon with a funnel symbol inside, indicating data ingestion and initial filtering. This module receives input from a cloud icon connected via a network switch, which is further linked to a yellow rectangular block labeled 'PTP' (likely Precision Time Protocol), suggesting timestamp synchronization or time-stamped packet capture. A large green arrow points from this stage to the second stage.\n\nThe second stage, 'Pre-Process', is depicted as a cylindrical database icon, symbolizing data storage and transformation. Inside this cylinder, text indicates that source and destination MAC addresses are converted into integer values, as shown by an arrow pointing from 'Source & destination MAC' to 'Integer'. This suggests a feature extraction or encoding step. A light blue arrow leads from the pre-processing stage to the third stage.\n\nThe third stage, 'Decision', is enclosed within a diamond-shaped boundary, signifying a decision point or classification module. Inside this diamond, two distinct purple hexagonal icons represent different decision-making components. The top hexagon contains a stylized brick wall with a clock-like symbol, possibly representing a rule-based or threshold-based detection mechanism. The bottom hexagon displays a neural network structure with interconnected nodes, indicating a machine learning or deep learning model for classification. To the left of the decision module, a vertical array of numbered boxes (1, 2, 3, 4, 5, ..., N) with diagonal blue stripes represents the processed feature vector fed into the decision module, likely the integer-encoded MAC address features from the pre-processing stage. The entire pipeline visually conveys a clear workflow: raw packets are acquired and filtered, then pre-processed into numerical features, and finally classified using a hybrid decision engine combining rule-based and machine learning approaches."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

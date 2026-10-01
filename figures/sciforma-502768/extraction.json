@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502768",
+  "record_sha256": "baff47e7be3379337853e3ec0c273f2de31548c859b2941296ebeb940c3685fe",
+  "asset_sha256": "628b4f59e1a0377bf8cc75c6469474c08388860ceddd96c8dbcfc74e2788c23c",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502768",
+    "title": {
+      "zh": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification · 方法图",
+      "en": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-15224",
+      "title": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification",
+      "authors": [
+        "Ruimin Peng",
+        "Zhenbang Du",
+        "Changming Zhao",
+        "Jingwei Luo",
+        "Wenzhong Liu",
+        "Xinxing Chen",
+        "Dongrui Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_id": "2412.15224",
+      "arxiv_first_submitted_at": "2024-12-04T11:31:23Z",
+      "arxiv_updated_at": "2024-12-04T11:31:23Z",
+      "arxiv_subjects": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502768/image/image.jpg?Expires=1790835227&Signature=Zr1epiZbGQBfpqWz1MrJjycuNgkCr0trxDXV6O1jJjKwf1NTTK0FjITWwNcWzwuFlzA-Rt19qBjOPOi6QcXE9fxp69MP17RE8Htr3epUNSx6Fd5Jw-jrEoiHek4KNXLpmQyUxM4xjwDHzGXG0TtE3xvwNu-d15e8PaJWMJjZilyZwkPk3GkgMRvLbFS~bwCI7-1cdVlLXFng4QGXv-IgiBEgCYU1cMIk~g1Xb6QXSYArHYS~KELflH-8fZ40uSroRJBLuGLgyUZtDltvtwAoPVRb6g9PiSV0FTDH3ybDqeE9qr10FleBFpdOIcZHvtzozjFwfnE2gm4qI7pNmfTOFw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502768,
+      "description_sha256": "5445b8b6e8f76ced12f97cdd8278b5a76450dd2cdb3db4348abeb8755c80a7da",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the MBMD Transformer architecture with mutual distillation, presented in three parts: (a) training and test phases, (b) overall model structure, and (c) auxiliary data processing for a specific brainwave component (δ wave). \n\nIn part (a), the training phase begins with raw EEG data being decomposed via Wavelet Packet Decomposition (WPD) into multiple frequency bands—labeled δ, θ, α, β, γ, and other—collectively termed 'auxiliary data'. These auxiliary signals, along with the original raw EEG data, are fed into separate MBMD Transformer Encoder modules. Each encoder processes its input and outputs a probability distribution (p_δ, p_θ, ..., p_other, p_data). A classifier is applied to each output, and the predictions are compared against ground truth labels using cross-entropy loss (L_CE). Additionally, mutual distillation is implemented: the probability distributions from each branch are used to compute Kullback-Leibler divergence losses (Σ L_kl(p_b^distill || p_data^distill) and Σ L_kl(p_data^distill || p_b^distill)), which encourage consistency between the auxiliary and main data branches. In the test phase, only raw EEG data is input to the MBMD Transformer Encoders, followed by the classifier to produce final predictions.\n\nPart (b) details the internal structure of the MBMD Transformer. It consists of two parallel encoder blocks: a standard Transformer Encoder Block and a Multi-Branch Encoder Block. The standard block includes a Multi-Head Attention layer (blue), followed by Add & Norm (yellow), then a Feed Forward layer (light blue), and another Add & Norm. The Multi-Branch Encoder Block is more complex: it starts with Multi-Head Attention, followed by Add & Norm, then a Wavelet Attention module (pink), and finally another Add & Norm. Below the Wavelet Attention, six parallel Feed Forward Networks (FFNs) are arranged in a 2x3 grid: FFN_γ, FFN_other, FFN_α, FFN_β, FFN_δ, and FFN_θ, each corresponding to a frequency band. All these FFNs feed into the subsequent Add & Norm layer. Both encoder blocks receive input embeddings, which are combined via element-wise addition before entering the encoders. The outputs from both encoders are concatenated and passed through a Classifier composed of Linear and Softmax layers.\n\nPart (c) focuses on how auxiliary data (e.g., δ wave) is processed within the Multi-Branch Encoder Block. The δ wave's patch embeddings are first fed into a Multi-Head Attention layer, followed by Add & Norm. Then, instead of a general Wavelet Attention, a specialized version (dashed red border) is applied, which selectively activates only the FFN_δ and FFN_θ modules (highlighted with dashed borders), while the others (FFN_γ, FFN_other, FFN_α, FFN_β) are inactive or masked. This selective activation ensures that each auxiliary branch processes only relevant frequency components. The output passes through another Add & Norm layer before being integrated into the overall model. The diagram uses consistent color coding: yellow for Add & Norm, blue for attention mechanisms, light blue for FFNs, pink for Wavelet Attention, and green for classifier components. All connections are directed arrows indicating data flow, with the mutual distillation loop shown as a feedback path in part (a)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

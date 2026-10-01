@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500504",
+  "record_sha256": "60957ef7013469d515278b4417f7fc7cd018b1d59b0e27f562aca15d494a17c7",
+  "asset_sha256": "d1870e97bf024e425d6f835ba581a47a446965810f3627ea7acf09f4cbffa99d",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500504",
+    "title": {
+      "zh": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL) · 方法图",
+      "en": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL)"
+    },
+    "paper": {
+      "id": "arxiv-2412-11434",
+      "title": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL)",
+      "authors": [
+        "Alberto Silvio Chiappa",
+        "Briti Gangopadhyay",
+        "Zhao Wang",
+        "Shingo Takamatsu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11434",
+      "arxiv_url": "https://arxiv.org/abs/2412.11434",
+      "arxiv_id": "2412.11434",
+      "arxiv_first_submitted_at": "2024-12-16T04:21:35Z",
+      "arxiv_updated_at": "2025-05-16T21:21:13Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500504/image/image.jpg?Expires=1790835172&Signature=IVUngRqXI1lrI-hXroJbNgWpHYPf-zsjoqaE0vopwZHAB9mHlUV6VwwbEQOEWWBedpsTr0k7P~VGsqPE5ogoAOiPIeuXVZHBg0bPDcSMdXaRM48YICAkgNVHz22My5e5DM7be4hEoNUoHp~C2pJOFonf-dWxqrddtgVlsMWoqsLUkfw~roJI32zCMlFvunphmMTX8dyTmrZxWS5OZV5gSswEsZxTPGBK7XsUCxRroGu6rK69QRFP943VJOpSSM3ZNgWbfD-kJ2hY4F5J4p1FUETuZuazjrWzramrJEn93iI7bATCbCgnl3lbE1ZRapTj3X9doOlQotDEX3JOgGQYBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500504,
+      "description_sha256": "eb7faff9abf13bcaba4a47f79812daa530bb910c8e69a709cd25ca2e39b2fab1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Real-Time Bidding (RTB) simulation framework, structured as a horizontal workflow from left to right. The global layout consists of four main stages: impression opportunities, advertisers, bids, and a second-price auction mechanism. On the far left, a vertical green-bordered column labeled 'Impression opportunities' (denoted by μ_t,i) contains multiple blue-shaded rectangular blocks, representing data points from a dataset. Each block corresponds to an impression opportunity for an advertiser. These are fed into a series of robot icons labeled 'Advertisers', arranged vertically. The top robot is highlighted in blue and labeled 'Agent', indicating the active agent in the simulation; the remaining robots are gray, representing other advertisers. Each robot processes its input and outputs a bid, shown as a vertical column of red-shaded rectangles labeled 'b_t,i'. The top bid column is outlined in yellow, signifying it is 'Generated' (as per the legend), while the others are green, indicating they are from the 'Dataset'. The generated bid from the agent replaces the original bid of the impersonated advertiser, while the bids of other advertisers remain unchanged. These bid columns are then combined via curved black arrows into a matrix-like structure, symbolizing the aggregation of all bids for the auction. This matrix is followed by an ellipsis and a single vertical red-shaded column, leading to the final stage: a 'Second-price auction' block. This block displays a heatmap-style grid where the top D winning bids are highlighted in a blue rectangle, and the corresponding next-top bids (used to determine prices) are highlighted in a red rectangle. The legend at the bottom right clarifies that green borders denote 'Dataset' elements and yellow borders denote 'Generated' elements. The entire process simulates how an agent, by impersonating an advertiser, influences the bidding landscape and affects the outcome of a second-price auction, where winning slots and prices are determined based on the highest and second-highest bids respectively."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

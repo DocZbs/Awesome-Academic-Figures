@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500558",
+  "record_sha256": "06b7c3833069846184186a4b66027069209b79488c354553bb9bf191e69580db",
+  "asset_sha256": "779de8b3a4849ac8554ed2e5650b0019fd0de48937a4d5bea44ab1a33cb6391a",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500558",
+    "title": {
+      "zh": "Exploring More from Multiple Gait Modalities for Human Identification · 方法图",
+      "en": "Exploring More from Multiple Gait Modalities for Human Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-11495",
+      "title": "Exploring More from Multiple Gait Modalities for Human Identification",
+      "authors": [
+        "Dongyang Jin",
+        "Chao Fan",
+        "Weihua Chen",
+        "Shiqi Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11495",
+      "arxiv_url": "https://arxiv.org/abs/2412.11495",
+      "arxiv_id": "2412.11495",
+      "arxiv_first_submitted_at": "2024-12-16T07:15:13Z",
+      "arxiv_updated_at": "2024-12-16T07:15:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500558/image/image.jpg?Expires=1790835172&Signature=WFlMQ4zAfvEdwLNiTJ81COQ-cFWsfUQx5XJg5CyMJWipfx6H-aWfsui2XLB56vYQ~tJbQl7CToeyCQ67x~EmOXaOH1NDZASEdVGxwvh0nb7Pgwi8FRjv5ddb~sdYxGU0mdzg0Cv-1xnggDEa-dn0AcB1~bZImNJR4KDradnH93~HvhgSjIeAtT9BVqMEoCnH~X7TLm0MhUj8TNR8xYib0cSP0MgIG3DzwF6xEwgIWXoTO~V3ezyemEWemU29~xV~lu3Ca8WgkCEKyuPwrtV9m7Apjpk5tq8UXORihrdc-hj9-71n9S61~LnZx1RjEdZALm1MVfAyA2Mx1yeuFBKFAw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500558,
+      "description_sha256": "0898373813dfe7035be6d40a18dfeb311b44f7fe1e45833e6bdee4fa647f2cef",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct architectural diagrams side-by-side, separated by a vertical line. On the left is the pipeline of MultiGait++, and on the right is the architecture of MultiGait^(s+p+f), as indicated in the caption.\n\n[1] Global Layout and Structure:\nThe left side shows a complex dual-branch network structure with an additional commonality extraction and characteristic differentiation module at the bottom. The right side displays two parallel architectures labeled (a) MultiGait* and (b) MultiGait*+#, both featuring sequential convolutional stages followed by a fusion block and output stage.\n\n[2] Visual Modules and Attributes:\nOn the left, the MultiGait++ pipeline begins with two input branches: Appearance Branch (represented by grayscale silhouette images labeled 'cat') and Motion Branch (represented by color motion maps). Each branch passes through Conv0 and Stage1 blocks, producing feature maps f_ap and f_mo respectively. These converge into a central C^2 module (gray rounded rectangle), which feeds into a Common Branch (dashed box containing Stage2 and Stage3 blocks). Outputs from the Appearance and Motion branches also feed directly into Stage2 and Stage3 blocks within the Common Branch. The outputs from these stages are fused in a Fusion block (gray rounded rectangle), followed by Stage4 and a Gait Head (rounded rectangle).\n\nBelow this main flow, two submodules are shown: (a) Commonalities Extraction and (b) Characteristic Differentiation. In (a), features f_ap and f_mo are processed through E_ap and E_mo (gray rectangles), then passed through Softmax, Min, and Min-Max Norm operations (represented by small grid icons), generating masks m_ap and m_mo. In (b), these masks are used to compute adjusted features f'_ap, f'_co, and f'_mo using equations: f'_ap = f_ap * m_ap * (1 - m_co), f'_co = (f_ap + f_mo)/2 * m_co, and f'_mo = f_mo * m_mo * (1 - m_co), where m_co represents Common Concerns and (1 - m_co) represents Different Concerns.\n\nOn the right, both architectures start with input I* or I# (square boxes) feeding into Conv0, followed by sequential stages S1, S2, S3, and S4 (trapezoidal shapes). For (a) MultiGait*, the output flows directly to S4. For (b) MultiGait*+#, two streams are shown: one from I* and another from I#, each passing through Conv0, S1, S2, S3. These streams merge into a Fusion block (large gray rectangle), which has a cloud-shaped annotation listing three fusion methods: (a) Concat, (b) Attention, (c) Addition. The fusion output proceeds to S4. Labels indicate Input-level, Middle-level, and High-level processing stages along the paths.\n\n[3] Connections and Arrows:\nIn MultiGait++, arrows show data flow from inputs to Conv0 and Stage1, then to C^2. From C^2, arrows split to feed both the Common Branch and direct Stage2/Stage3 blocks. Outputs from these converge into the Fusion block, leading to Stage4 and Gait Head. Dashed arrows connect C^2 to the Commonalities Extraction and Characteristic Differentiation modules. Within these modules, arrows show transformations from f_ap/f_mo to masks m_ap/m_mo, and then to adjusted features f'_ap/f'_co/f'_mo.\n\nIn MultiGait* and MultiGait*+#, solid arrows indicate forward propagation from input to Conv0, then sequentially through S1-S4. In MultiGait*+#, two parallel streams converge into the Fusion block via arrows from S3 of each stream. The Fusion block outputs to S4. A dashed arrow from the Fusion block points upward to a Gait Head in the top diagram, indicating the final classification output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

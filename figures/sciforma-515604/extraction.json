@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-515604",
+  "record_sha256": "a56386ade0c44f283ab87491ccf44be281622a7816a8523cc9e1e1fb7b320635",
+  "asset_sha256": "659ef1cca68b38acf1927792b5c003e9cf6807ebdc9766fe0dae3943836c379f",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-515604",
+    "title": {
+      "zh": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy · 方法图",
+      "en": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy"
+    },
+    "paper": {
+      "id": "arxiv-2502-04898",
+      "title": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy",
+      "authors": [
+        "Ricardo Coimbra Brioso",
+        "Leonardo Crespi",
+        "Andrea Seghetto",
+        "Damiano Dei",
+        "Nicola Lambri",
+        "Pietro Mancosu",
+        "Marta Scorsetti",
+        "Daniele Loiacono"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_id": "2502.04898",
+      "arxiv_first_submitted_at": "2025-02-07T13:04:25Z",
+      "arxiv_updated_at": "2025-02-07T13:04:25Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/515604/image/image.jpg?Expires=1790835471&Signature=pkxepTnnkNQ7h10gywmEWq~t24KUnrxzb0R9ozG5-6qQabNmUgJ5G0I0sSJxY9JnBnLOdfAxGDWpJG3VyJHAO7iw9LIGJ4JryAfhaKnCztr8~STtdY20W6oFgNwFik5CKKZ8QEDy~WD4q3f5bM93c~XN5LHisvoBA1XjHR5xj8NGxHa2yZ15cf3r9rl639VKtgmjGU2MbB8IGVyJlSldr20ywE0Ztv4pvEjBg087~FqytblNpCorP9E-Xhwc~XhGHEmjC7L0uccrXRWBE3rkr46NrNOwBkgdgnSnwWQwjeY0UCuFkoIm8YE6di6ujNzgXwE-ItwDOD5RJV~KsH3SKQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 515604,
+      "description_sha256": "2e4a819411c755b9c9f94a0fd1fe7fef1ebf98a5bc47ce932a971e900b89a85a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a completion network designed for inpainting Cone Beam Computed Tomography (CBCT) images, using a combination of convolutional and deconvolutional layers, along with discriminators for adversarial training. The overall layout is divided into two main horizontal workflows: the top row represents the generator network responsible for reconstructing missing regions in CBCT volumes, while the bottom row shows the global and local discriminator networks used to evaluate the realism of the generated outputs.\n\n[1] Global Layout and Structure:\n\nThe diagram is structured horizontally from left to right, depicting the data flow through the network. The top row begins with input NIfTI volumes (CT or CBCT), which are preprocessed into 160x160x3 TIFF 16-bit format, including CT, gap mask, and CBCT slices. This input passes through a series of convolutional, downsampling, and upsampling blocks to produce a 160x160x1 sCBCT output. The bottom row features two separate discriminator branches: the Global Discriminator processes the full inpainted CBCT volume (160x160x1), while the Local Discriminator focuses on a cropped region (96x96x1) to assess fine-grained details. Both discriminators output a Real/Fake classification, feeding into an adversarial loss function.\n\n[2] Visual Modules and Attributes:\n\nThe network components are represented by rectangular blocks with distinct colors and labels indicating their function. Purple blocks denote Downsampling Blocks, typically followed by convolutional operations, reducing spatial dimensions while increasing feature depth. Yellow blocks represent Upsampling Blocks, often paired with deconvolutional layers to increase spatial resolution. Gray blocks indicate standard convolutional layers, with some marked as Dilated Convolution (orange arrows) for capturing broader receptive fields without increasing parameters. The number below each block indicates the number of feature channels (e.g., 64, 128, 256), while the label above specifies the spatial dimensions (e.g., 160x160, 80x80, 40x40). The final output of the generator is labeled 'sCBCT' with dimensions 160x160x1 in TIFF 16-bit format. The discriminators use similar block structures but end with a fully-connected layer (green arrow) leading to a binary Real/Fake decision.\n\n[3] Connections and Arrows:\n\nRed arrows signify Convolution operations, blue arrows indicate Deconvolution (used in upsampling), orange arrows represent Dilated Convolution, and green arrows denote Fully-connected Layers. The generator’s flow starts with a 160x160x3 input, passing through multiple downsampling stages (purple blocks) to reduce spatial size and increase channel count, then transitions to upsampling stages (yellow blocks) to reconstruct the output. The discriminators receive the inpainted CBCT as input; the Global Discriminator processes the entire 160x160x1 volume, while the Local Discriminator focuses on a 96x96x1 region (highlighted with a red dashed box). Both discriminators output to a shared Real/Fake classifier via green arrows, forming the adversarial training loop. A legend in the bottom-right corner clarifies the meaning of each arrow color and block type, ensuring clarity in interpreting the network’s structure and data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

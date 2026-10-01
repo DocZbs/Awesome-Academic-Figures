@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500157",
+  "record_sha256": "f309571145340e461c1d1ba3545c1f9abcff38e5cc495ba33d35080c7d8e9b99",
+  "asset_sha256": "d85bff121558f9828ff86a047fee3e41e42a93e32491c0c68eb9c6f764669279",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500157",
+    "title": {
+      "zh": "Deep Learning Models for Colloidal Nanocrystal Synthesis · 方法图",
+      "en": "Deep Learning Models for Colloidal Nanocrystal Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-10838",
+      "title": "Deep Learning Models for Colloidal Nanocrystal Synthesis",
+      "authors": [
+        "Kai Gu",
+        "Yingping Liang",
+        "Jiaming Su",
+        "Peihan Sun",
+        "Jia Peng",
+        "Naihua Miao",
+        "Zhimei Sun",
+        "Ying Fu",
+        "Haizheng Zhong",
+        "Jun Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10838",
+      "arxiv_url": "https://arxiv.org/abs/2412.10838",
+      "arxiv_id": "2412.10838",
+      "arxiv_first_submitted_at": "2024-12-14T14:18:59Z",
+      "arxiv_updated_at": "2024-12-14T14:18:59Z",
+      "arxiv_subjects": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.app-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500157/image/image.jpg?Expires=1790835166&Signature=rqn5qOh8rXgr27ImsU7lHnh0Z0RN7rH3Ra6I3Pd4nEh59nmcQCTp1lotL2gcGsROH7q7D-NwsNEi6NRxOB4DWJDVKaRFD9D8Wb25KbfiY-H86xKiTfK346DZ9shv3fM6Nf0Iu1IipSLGiWxEk4wXRAZA7Z1HsT7nS0Fe229awLirqlO84WT4Hbd4cDVkki4TMXMGESLwrFaMgY95RKCtj8U3UmXFCRHuAtlnpDUitjOjUjdgELEEXKc1xdijsZl3VepxkHWC-mgUWblvCaPvnDQFI9qg4yoCMXvFhjBXTRX~73lys5INHyaUhY6ZaZsZnVytL~F0z0~shxhgx~t7pA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500157,
+      "description_sha256": "b4c9bad9fa2d851edf55610c2802f41f8fec21bc28e2d0e91f7a27911b1d33a4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.app-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a dual-pathway machine learning framework for predicting nanomaterial properties from both imaging data and synthesis recipes. The top pathway begins with a TEM image dataset (labeled ①), showing grayscale transmission electron microscopy images of star-shaped nanoparticles at 100 nm scale. These images are fed into a segmentation network, depicted as a series of stacked gray rectangular blocks representing convolutional layers, which processes the images to extract particle regions. The output is then used in a semi-supervised learning module, shown as a box containing two side-by-side images labeled 'Weak & Full labels' — one with sparse, coarse masks and the other with dense, precise masks — connected by a red circular arrow indicating iterative refinement. This process leads to clustering, where individual particles are grouped and labeled (e.g., Star-4, Star-6), with example images highlighted in red boxes. The resulting segmentation outputs, showing numbered star shapes (1, 2, 3), are passed as labels to the bottom pathway.\n\nThe bottom pathway starts with a synthesis recipe dataset (labeled ②), represented by icons of an experimenter, lab equipment, and literature, symbolizing experimental and literature-derived data. This data is converted into two types of descriptors: condition descriptors (in orange) including temperature (thermometer icon), time (clock icon), and concentration (flask icon); and chemical descriptors (in blue) including precursor, ligand, and solvent, each illustrated with molecular structures. These descriptors feed into a reaction intermediate block, shown as a chemical reaction A + B → AB, which also includes a 'Data augmentation' label below it, suggesting synthetic data generation. The augmented data is then processed through a deep learning model, visualized as a sequence of alternating light pink and light green vertical bars, representing neural network layers. The final outputs are predictions of nanomaterial properties: 'Size', illustrated with wavy lines, and 'Shape', shown with three distinct nanoparticle morphologies — a star, a cube, and a sphere — all within teal-colored boxes. A black arrow labeled 'As labels' connects the top pathway's segmentation results to the bottom pathway's deep learning model, indicating that the segmented particle features serve as supervisory signals for training the property prediction model. The overall layout is horizontal and modular, with clear left-to-right data flow, and uses color-coded blocks and icons to distinguish data types and processing stages."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-502781",
+  "record_sha256": "765f6784f855bb590f006f3f8785276854235319234b489dcd855913fdcabb1b",
+  "asset_sha256": "c88ab0ede0e96dd23c55839482c8906fc567bc60cb0252bd91a1e93b26992d3d",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502781",
+    "title": {
+      "zh": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\" · 方法图",
+      "en": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\""
+    },
+    "paper": {
+      "id": "arxiv-2412-15242",
+      "title": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\"",
+      "authors": [
+        "Robert Wasenmüller",
+        "Kevin Hilbert",
+        "Christoph Benzmüller"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15242",
+      "arxiv_url": "https://arxiv.org/abs/2412.15242",
+      "arxiv_id": "2412.15242",
+      "arxiv_first_submitted_at": "2024-12-13T12:12:47Z",
+      "arxiv_updated_at": "2024-12-13T12:12:47Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502781/image/image.jpg?Expires=1790835227&Signature=kcLUcW3JZLkqTMr~sPMSFLGUWCsXVFd2uPS9TNqHIhbogI5lOaUUF9CVYYRWLGXX1QpcuvCk1r5t8khTnvRmxjb1CKMgVOSTcRRaxXJTJwuBzdKDxoFxt6SV7NP28TPWT~9B80ExgQs3MWRfRW9tP~tZiM3yXzutKUujY1I13g3NrTeIFt1sc1gRf0rsFMURq-trA2yeZ2-ln-RuH7qqMPWFNUCGpSGu4Xx9yg27CethFctYWel3ZhkLdnSkl8umVst~TXYMRLg4GtsFEI5dllWsVoRag7BPrO5i0Id1V7jhLW9VZx5ufT77yhI4-va4OI5N0PhOKOjTwPG-b2QXTg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502781,
+      "description_sha256": "5763ad74f16306b18d3a8d1f458b75120e0bb1dd75caf045ad2458867551e508",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a proactive prompt-based dialog policy planning framework using two distinct large language models (LLMs): an Actor LLM and a Dialog LLM, operating in a sequential pipeline over each conversation turn. The global layout is a directed flowchart arranged horizontally from left to right, with feedback loops connecting the components. At the top, three numbered steps describe the process: (1) optional reasoning and planning by the Actor LLM, (2) selection of the next action from a predefined set, and (3) message generation by the Dialog LLM based on the selected action.\n\nVisual modules include four primary components, all rendered as gray-filled shapes with black borders and centered black text. On the far left is a document-shaped box labeled 'Proactive Prompt with set of acts', which feeds into the 'Actor LLM'—a rounded rectangle. The 'Actor LLM' is positioned centrally and serves as the decision-making module. To its right is another rounded rectangle labeled 'Dialog LLM', responsible for generating user-facing messages. Below these two LLMs is a document-shaped box labeled 'Dialog History', which maintains the conversation context. On the far right is a stylized human head silhouette labeled 'User', representing the external participant in the dialogue.\n\nConnections are represented by thick black arrows with solid arrowheads, indicating the direction of information flow. The 'Proactive Prompt with set of acts' sends input to the 'Actor LLM'. The 'Dialog History' also provides context to both the 'Actor LLM' and the 'Dialog LLM'. The 'Actor LLM' outputs the 'next act' to the 'Dialog LLM', as indicated by an arrow labeled 'Provides next act'. The 'Dialog LLM' then generates a message and sends it to the 'User', as shown by an arrow labeled 'Sends message to user'. In response, the 'User' sends a message back to the agent, which is captured in the 'Dialog History', completing the feedback loop. This structure enables iterative, context-aware interaction where the Actor LLM optionally performs reasoning before selecting an action, and the Dialog LLM produces natural language output based on that action, all grounded in the evolving dialog history."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

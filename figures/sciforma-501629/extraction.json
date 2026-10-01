@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501629",
+  "record_sha256": "ef72c865fc4d832a3486326b0f71164e6945250d4a1bac44e7873d11c85b7ccd",
+  "asset_sha256": "163b49652f9a5333bcd3ad93108ac4e4cba32136ae84fefa220a34e1721cb4b2",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501629",
+    "title": {
+      "zh": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection · 方法图",
+      "en": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-13174",
+      "title": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection",
+      "authors": [
+        "Jui-Che Chiang",
+        "Hou-Ning Hu",
+        "Bo-Syuan Hou",
+        "Chia-Yu Tseng",
+        "Yu-Lun Liu",
+        "Min-Hung Chen",
+        "Yen-Yu Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13174",
+      "arxiv_url": "https://arxiv.org/abs/2412.13174",
+      "arxiv_id": "2412.13174",
+      "arxiv_first_submitted_at": "2024-12-17T18:53:43Z",
+      "arxiv_updated_at": "2025-01-14T14:48:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501629/image/image.jpg?Expires=1790835197&Signature=t-DziSmVEwGKFIu5PfCUhYjVQfGFP11QdEfSxdBGv4U7SaQ~zJ5g-wr~gt15Y2bfoVkKABgmT0sVdA~4hEv7DDKXbKJavA0UVEpFuJQ2P5xCoKAnrwVzhpsN64tQm3EHJpEDNK4hujROgDNEOJEvj~LgWdjmig3AJVzRwdXlybtdOEi8gp0~UTw0uzL61qAY1T2InqvsGp1TQxY8ihk5tVe4zJg22ilfWHBt602qdUFpN6U~lLL6lZ42HAfTw8TzHV0OOidH3K1-d-hk9LYNeocHglu2qOZSU1YeaTbwnu8RWafF1QmKExLMcyTLjjSdCft2ouPHY~XLt0XH6Z26yw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501629,
+      "description_sha256": "52282f00e33770ea621db1be57a5da61ec9cfe922174ef8448b12d31801141ce",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a method for occlusion-aware feature recovery in image processing, structured into three main stages labeled (a), (b), and (c), progressing from input image patches to recovered heatmap features.\n\n[1] Global Layout and Structure:\nThe diagram flows horizontally from left to right, divided into three distinct sections by vertical dashed lines. Section (a) shows the input: a grid-divided face image with individual patches labeled P_i. Section (b) represents the initial processing stage involving attention computation. Section (c) details the occlusion detection and feature recovery pipeline, culminating in the output: a heatmap of recovered facial features.\n\n[2] Visual Modules and Attributes:\nIn section (a), the input image is segmented into a 4x4 grid of patches; one patch is highlighted with a blue square and labeled P_i. Below this, two rectangular tokens are shown: a blue rectangle labeled X_i (representing the patch token) and a red rectangle labeled M_i (the learnable occlusion token). In section (b), an orange rounded rectangle labeled 'Attention' receives inputs from X_i and M_i. Its outputs are two new tokens: a blue rectangle labeled X_i' (modified patch embedding) and a red rectangle labeled M_i' (modified occlusion embedding). In section (c), a green rounded rectangle labeled 'Occlusion Detection' takes X_i' and M_i' as inputs. A yellow rounded rectangle labeled 'Feature Recovery' follows, receiving inputs from both Occlusion Detection and M_i'. The final output is a heatmap visualization of facial features, displayed as a grid with glowing outlines of eyes, nose, and mouth, where the purple square highlights the recovered region corresponding to the original P_i patch.\n\n[3] Connections and Arrows:\nArrows indicate data flow. From (a) to (b), arrows connect P_i to X_i and M_i. Both X_i and M_i feed into the Attention module. From Attention, arrows lead to X_i' and M_i'. In (c), X_i' and M_i' both feed into Occlusion Detection. An arrow from Occlusion Detection points to Feature Recovery, and another arrow from M_i' also points to Feature Recovery. The output of Feature Recovery connects via a purple arrow to the recovered heatmap, specifically to the region corresponding to the original P_i patch. Additionally, a feedback loop exists from Feature Recovery back to Occlusion Detection, suggesting iterative refinement or contextual feedback during occlusion assessment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

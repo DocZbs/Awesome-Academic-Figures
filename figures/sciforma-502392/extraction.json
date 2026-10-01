@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-502392",
+  "record_sha256": "296c632170a2e753aa4af2683796887f57ce429f3824b2f25ce86a100139ba66",
+  "asset_sha256": "2375c487dbc8f8df21779d7618df17fb3cfd6fbfa472881284988a451e071107",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502392",
+    "title": {
+      "zh": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering · 方法图",
+      "en": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-14480",
+      "title": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering",
+      "authors": [
+        "Saumya Saxena",
+        "Blake Buchanan",
+        "Chris Paxton",
+        "Peiqi Liu",
+        "Bingqing Chen",
+        "Narunas Vaskevicius",
+        "Luigi Palmieri",
+        "Jonathan Francis",
+        "Oliver Kroemer"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14480",
+      "arxiv_url": "https://arxiv.org/abs/2412.14480",
+      "arxiv_id": "2412.14480",
+      "arxiv_first_submitted_at": "2024-12-19T03:04:34Z",
+      "arxiv_updated_at": "2025-09-24T13:49:49Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502392/image/image.jpg?Expires=1790835217&Signature=FP6CRDuSBLb73y8ZlRBnYynixsPGUwzX2rnYZXqdIY7y4alonG90UkqPitQj0p5spft3rRMPLrAOy5pwKmp3xU4F0VXHaPtu4hxNtrrp166d~S8F8WsLiwuuVhHom~Z~K8ijZkhwZ1Dwp6~dDaHMmrntXeWIYvoeUj3QiNcW9VgYlSeVYGdWOVwoRgdVAkVR5Qyvor7Avt9zn5Qsc8YtgrHE9hsQvr71hnc4701sGt3j2i6ltgcKu6Biei72WsUdsrHQHOTATVptW1aLXuspmR3zCQcYOkxB5chooZkUS5QaasKfnw~twNXbTdrxmdN43FpYzatGgJnfzgtPnyUojA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502392,
+      "description_sha256": "c4433094c3f1e454a3a01ce8c608a6564348cba2e5f43e34a1461089cf0b9db3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of an embodied visual-language model (VLM)-based planning system for answering spatial questions in dynamic environments. The global layout is a left-to-right workflow, beginning with sensor inputs from a mobile robot equipped with RGBD cameras, progressing through real-time scene representation construction, task-relevant information selection, scene graph enrichment, and culminating in a VLM-based planner that generates answers and actions. The entire process operates within a continuous planning loop, where the robot’s actions feed back into the system for iterative refinement.\n\nOn the far left, the robot is depicted with RGBD sensors, providing raw RGBD images, semantic segmentation maps, and camera poses as inputs. These are fed into a central processing block labeled 'Real-time updates', which contains two parallel modules: '3DSG construction' (blue rounded rectangle) and '2D occupancy mapping' (pink rounded rectangle). The 3DSG construction module builds a 3D metric-semantic hierarchical scene graph (3DSG), visually represented by a small graph icon with blue and orange nodes. The 2D occupancy mapping module generates a 2D occupancy grid, shown as a colorful 3D point cloud visualization with clustered frontiers highlighted in yellow and green. Both outputs are updated continuously.\n\nFrom this central block, two streams diverge. The 3DSG is passed to a 'Scene graph enrichment' module (yellow rounded rectangle), which enhances the graph structure with additional contextual information, producing an 'Enriched 3DSG'—visually depicted as a more complex graph with green leaf nodes added to the original blue and orange nodes. Simultaneously, the image buffer (a stack of images icon) feeds into a 'Task-relevant Image Selection' module (light blue rounded rectangle), which selects a subset of relevant images from the collected visual memory. This selection is triggered by a user query, exemplified by the text 'Where did I leave my water bottle?' entering the top of the diagram.\n\nBoth the enriched 3DSG and the selected task-relevant images are then fed into the 'VLM Planner' (large pink rounded rectangle with a stylized neural network logo). The planner also receives a history of past states and actions, indicated by a clock icon labeled 'History'. Based on these inputs and the embodied question, the VLM Planner outputs three components: an 'Answer' (represented by a lightbulb icon), a confidence assessment ('Confident?'), and the next action to execute ('Action: Goto object / Goto frontier'). The confidence check is visualized as a decision box with a green checkmark or red cross. If confident, the process terminates with a 'Done!' indicator (green arrow). Otherwise, the action is executed, and the robot continues exploring, feeding new sensor data back into the system to restart the planning loop.\n\nThe diagram uses color-coded boxes to differentiate functional modules: blue for 3DSG-related processing, pink for occupancy and planning, yellow for enrichment, and light blue for image selection. Arrows indicate data flow, with thick black lines denoting primary pathways and thinner lines for auxiliary inputs like history or queries. Text annotations such as 'Planning loop' and 'Real-time updates' emphasize temporal dynamics. The visual elements are consistent with the caption, which describes the system as using sensor data to build a 3DSG and 2D occupancy map, enriching the scene graph, selecting task-relevant images, and employing a VLM planner to answer questions and plan actions iteratively."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

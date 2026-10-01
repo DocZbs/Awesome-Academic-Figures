@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502512",
+  "record_sha256": "4c384af711b97df711373f7c03d9a1b330e57d370ba61a9f87b6eb821c41e147",
+  "asset_sha256": "cc915efb85caa1912d71cbbb4fce202010ab81adf77a6fcaac852db55e15dd8a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502512",
+    "title": {
+      "zh": "Speak-to-Structure: Evaluating LLMs in Open-domain Natural Language-Driven Molecule Generation · 方法图",
+      "en": "Speak-to-Structure: Evaluating LLMs in Open-domain Natural Language-Driven Molecule Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14642",
+      "title": "Speak-to-Structure: Evaluating LLMs in Open-domain Natural Language-Driven Molecule Generation",
+      "authors": [
+        "Jiatong Li",
+        "Junxian Li",
+        "Weida Wang",
+        "Yunqing Liu",
+        "Changmeng Zheng",
+        "Yatao Bian",
+        "Dongzhan Zhou",
+        "Xiao-yong Wei",
+        "Qing Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14642",
+      "arxiv_url": "https://arxiv.org/abs/2412.14642",
+      "arxiv_id": "2412.14642",
+      "arxiv_first_submitted_at": "2024-12-19T08:51:16Z",
+      "arxiv_updated_at": "2026-05-22T16:03:13Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502512/image/image.jpg?Expires=1790835225&Signature=dYAaajWO6CuEy3-PEUWLTNhiWpwr6xpLg56Pw7iYzkGfbDtliXQ-hC7GU5hEAL4PFAt1Z0QRTHcREh5ZFOuYZ14lE4jb~OLSSflzBix6ueB-WkxuWX04aWdH~csPx0-~GPATe4bpp3Hgcr3pWi9AEP0-DlAOrf7IWJevy0ze0FwVivmOzVGZytjbMq2QJCDYEYXBtZU6ilMaUxgUbGJ7gK1QhdvWSzNosbsezUlrP6hAe6FfaFk2myvyOCBcxwaM6mAhWei4tKDwwjf9EBSzKqPCtAbfLyl3Vabo4ZRXGQj2PYeOKzbHKrGQ6~YVIpk-CvwH9kON29i3LQrHCV5ijg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502512,
+      "description_sha256": "c5cf24abd3eb0f01934a1e0aefc573bba0da3139751316d428ceadaf9e67a4d4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative data construction workflow for two molecular benchmark datasets: S²-Bench and OpenMolIns, organized into three main vertical stages: 'Data Sampling', 'Chemical Property Calculation', and 'Wrap in Prompt Templates'. The layout is divided horizontally into two rows, one for each dataset, with shared structural elements across both.\n\nIn the top row for S²-Bench, the 'Data Sampling' stage begins with a light blue cylinder labeled 'Zinc 250K', from which molecules are randomly sampled for each subtask and stored in another cylinder labeled 'Test Samples'. This is followed by the 'Chemical Property Calculation' stage, where a blue circular node labeled 'RDKit' processes the test samples. RDKit outputs two types of information: 'Number of Functional Groups' (illustrated with chemical structures like -OH, -COOH, and benzene ring) and 'Chemical Properties' (including LogP, MR, QED). These properties are then used in the 'Wrap in Prompt Templates' stage, where three distinct tasks are defined: MolEdit (e.g., 'Please remove a hydroxyl from the molecule c1ccccc1O'), MolOpt (e.g., 'Please optimize the molecule c1ccccc1O to have a lower LogP value'), and MolCustom (e.g., 'Please generate a molecule with 6 carbon atoms and 1 oxygen atom'). Each task is presented in a rounded rectangle with a bold label above the instruction.\n\nIn the bottom row for OpenMolIns, the 'Data Sampling' stage starts with two light blue cylinders: 'Zinc 250K' and 'PubChem 10m'. These are checked for overlap via a diamond-shaped decision node labeled 'Overlap?'. If overlap exists ('Yes'), the overlapping molecules are dropped; if not ('No'), the non-overlapping molecules are combined into a new cylinder labeled 'OpenMolIns Samples'. This sample set is then processed by the same 'RDKit' node in the 'Chemical Property Calculation' stage, which again outputs functional groups, chemical properties (LogP, MR, QED), and an additional category: 'Number of Atoms, Bonds, and Functional Groups' (with examples like C, O, single/double/triple bonds, and -OH group). In the final stage, 'Wrap in Prompt Templates', the same three tasks (MolEdit, MolOpt, MolCustom) are shown, but now with example question-answer pairs. For instance, MolEdit shows 'Q: Please remove a hydroxyl... A: c1ccccc1', indicating the expected output. A new element, 'Automatic Molecule Structure Operations', is introduced as a blue circular node connected to RDKit, suggesting automated processing before prompt generation. All text is black, with labels in bold for clarity, and the background of the main sections is light gray with purple headers. The figure uses arrows to indicate data flow, with solid lines for direct processing and dashed lines for conditional logic."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

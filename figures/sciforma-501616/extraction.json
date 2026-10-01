@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501616",
+  "record_sha256": "316185dea6dc592a5c1648a2605abd8d25b3c4dbb420c1438b57f3358197957d",
+  "asset_sha256": "38a8e11c866cb5cfde287e18771d1736ee00f3b092fbfab335707bd2e05b0bd2",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501616",
+    "title": {
+      "zh": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method · 方法图",
+      "en": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method"
+    },
+    "paper": {
+      "id": "arxiv-2412-13134",
+      "title": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method",
+      "authors": [
+        "Jiate Li",
+        "Meng Pang",
+        "Binghui Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_id": "2412.13134",
+      "arxiv_first_submitted_at": "2024-12-17T17:53:32Z",
+      "arxiv_updated_at": "2024-12-17T17:53:32Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501616/image/image.jpg?Expires=1790835197&Signature=ooPhoeo86UzRwGFde~t9XsT6KAVibeVfJhf-6ckopy8Q8xT0CZty5cEaIuonDpFJs1GasAlywFzVjcpb6wSmyD8WIDAAfXBh75JaLOBy5mJWWJwrds7vCIRPwmyN639oIXjnm-yxTClyVTktmsb~Hkx48Xx4-NSfQAGDQ8gX8q2VIcbWE7hFwdzvOb2sOPJUeuaIKuZv0XUY5QyQIKY7OZOWsN3a7Z5dW-XoQtjOTEIw8jCv4nOvQzszixxAbvOIED80KF6oA695Yd36GmmO5cDknoSgWh1I~kkSp0SwuDcU-jQL-ZGcLsm4sdXrJw~P5qXo6rwtTGcB9jgd6lpk2g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501616,
+      "description_sha256": "3d6ca3b9e173a7829a5ae548842cfb649b6200c52ef0c8e3bc4cd6fd7aa681da",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a training pipeline for a policy network and its associated Global State Embedding (GSE), structured into four main stages labeled a, b, c, and d, each enclosed in distinct dashed boxes with different border colors: red for stage a, yellow for stage b, purple for stage c, and black for stage d. The overall layout is modular and sequential, progressing from left to right and top to bottom, depicting a reinforcement learning framework involving LSTM networks, GSE states, and Q-value estimation.\n\nStage a, titled 'Obtain the GSE state of the updated LSTM-q'', begins with an 'Embedding Sequence Batch' represented by a series of light cyan rectangular blocks, each containing a small colored dot (blue, purple, pink), labeled x_b. This batch feeds into a red-colored LSTM block labeled 'LSTM-q'' which processes the sequence and outputs a GSE state, denoted as S^q', shown as a group of red rectangular blocks with corresponding colored dots. This stage is enclosed in a red-dashed box.\n\nStage b, titled 'Obtain the GSE state from LSTM-p and the policy action', starts with a yellow-colored LSTM block labeled 'LSTM-p' receiving input from the embedding sequence batch (via a vertical arrow from stage a). The output of LSTM-p is a GSE state S^p, depicted as a group of orange rectangular blocks with colored dots. This GSE state is then fed into a fully connected neural network, symbolized by a white circular node graph labeled μ_θ, which produces a 'Policy Action' a_θ, represented as a stack of orange rectangular blocks with colored dots. This stage is enclosed in a yellow-dashed box.\n\nStage c, titled 'Forward to obtain the Q_θ value of the policy action and the updated Q' value of the batch action', shows two parallel forward passes. The policy action a_θ from stage b is fed into a neural network labeled 'Q_θ network' (white circular node graph), producing 'Q_θ Values' as a stack of pink rectangular blocks with colored dots. Simultaneously, the original 'Action Batch' a_b (stack of yellow blocks with colored dots) is passed through a separate network labeled 'Q' network' (another white circular node graph), yielding 'Q' Values' as a stack of pink blocks with colored dots. A thick black arrow connects the GSE state S^q' from stage a to the Q' network, indicating it is used as part of the input or context for computing Q' values. This stage is enclosed in a purple-dashed box.\n\nStage d, titled 'Calculate the loss and update the policy network and LSTM-p', contains a black-bordered box with a mathematical expression: Loss = MSE(a_θ, a_b) * decrease(Q_θ, Q'). Below this, two update rules are specified: μ_θ -> μ_θ' and LSTM-p -> LSTM-p'. This indicates that the policy network parameters (μ_θ) and the LSTM-p model are updated based on the computed loss, which combines the mean squared error between the generated policy action and the batch action, weighted by a term reflecting the improvement in Q-values (decrease in Q_θ relative to Q').\n\nConnections between modules are indicated by solid black arrows showing data flow: from embedding batch to both LSTM-q' and LSTM-p; from LSTM-q' to S^q'; from LSTM-p to S^p; from S^p to μ_θ; from μ_θ to a_θ; from a_θ to Q_θ network; from a_b to Q' network; and from S^q' to Q' network. The final loss computation in stage d depends on outputs from stages b and c, completing the feedback loop for training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-502643",
+  "record_sha256": "930c523130d0430b6cbe9bed77f2cf36f0949fad70f239bedd8ea04ddac20faa",
+  "asset_sha256": "9ef9f6b64585416b62a0c8725abb4893455354c3b952c0ba99e96fc0539541fa",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502643",
+    "title": {
+      "zh": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis · 方法图",
+      "en": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-14933",
+      "title": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis",
+      "authors": [
+        "Daniil Averkov",
+        "Tatiana Belova",
+        "Gregory Emdin",
+        "Mikhail Goncharov",
+        "Viktoriia Krivogornitsyna",
+        "Alexander S. Kulikov",
+        "Fedor Kurmazov",
+        "Daniil Levtsov",
+        "Georgie Levtsov",
+        "Vsevolod Vaskin",
+        "Aleksey Vorobiev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_id": "2412.14933",
+      "arxiv_first_submitted_at": "2024-12-19T15:10:31Z",
+      "arxiv_updated_at": "2024-12-19T15:10:31Z",
+      "arxiv_subjects": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502643/image/image.jpg?Expires=1790835223&Signature=wgKLLvl7K21GyawHqr85M8-Gpt59fVMrXc~nxJpogZZlqAWy1xekIwgcUTY76LOkNq1GuWzi3Ofa3RF~m8ChbrewA2cXRqs8UPRGu5l~D9xr5EJikFxF6nxjd8MWk~iwdhy2H44CH5k~VnI7Ysx86ZUH127vSsk-00f7ieIzPQRopjYFPSJ9iBF9WyIJTz6ZsCoSpYZcRSBGon9TXcu4P5e1CXtmkMi0vXmfIljwfW8zbw0IfqIZCN83-a-of2Dde1usjFmQPdIs-UNV0tzGXbBBUw0MIdyrysH57XsHCLAICBC~bYFIyK5LEbwqTuFAJ6OykQ1QmAIa7MvC4~veUQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502643,
+      "description_sha256": "f75748f2a344bdc5328a7dd477468c969e4ee27d12851793c09d2271e3d06678",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two side-by-side diagrams illustrating a Boolean circuit and its corresponding And-Inverter Graph (AIG) representation, both computing the SUM₃ function. The left diagram shows the original circuit, while the right diagram displays its AIG form. The global layout is horizontal, with the two representations placed adjacent to each other, each with inputs at the top and outputs labeled 'sum' and 'carry' at the bottom. The circuit operates over the basis B₂ excluding the XOR (⊕) and XNOR (≡) gates, as specified in the caption.\n\nIn the left diagram (the circuit), there are three input nodes, x₁, x₂, and x₃, represented as circles at the top. These feed into a network of logic gates, depicted as square boxes, which perform operations such as OR (∨), AND (∧), and a custom binary operation >, defined as a ∧ ¬b. The gates are arranged in a hierarchical structure with multiple levels. The output gates, which produce the final 'sum' and 'carry' values, are drawn with bold outlines to distinguish them from internal gates. Wires connecting the gates are solid lines, except for those representing negated signals, which are shown as dashed lines. The connections follow a top-down flow, with inputs feeding into intermediate gates, whose outputs feed into subsequent gates, culminating in the two output gates.\n\nThe right diagram (the AIG representation) is structurally similar but simplified. It also has three input nodes x₁, x₂, and x₃ at the top, connected via solid and dashed lines to a network of square nodes, which represent AND gates in the AIG. The dashed lines again indicate negated inputs. The AIG uses only AND gates and inverters (implied by dashed edges), consistent with standard AIG conventions. The output nodes for 'sum' and 'carry' are also shown at the bottom, with the final gates producing these outputs having bold outlines, matching the convention used in the left diagram. The structure is more compact, reflecting the canonical form of AIGs where all non-AND operations are decomposed into ANDs and negations.\n\nConnections between nodes are directed from top to bottom, indicating data flow. In both diagrams, solid lines denote direct (uncomplemented) connections, while dashed lines denote negated (complemented) connections. The arrows are implicit in the direction of the lines, flowing downward from inputs to outputs. The output gates are clearly marked with bold borders, and the labels 'sum' and 'carry' are placed directly below their respective output nodes. The figure includes a caption explaining the basis of the circuit, the meaning of bold gates and dashed wires, and the definition of the > operator as a ∧ ¬b."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

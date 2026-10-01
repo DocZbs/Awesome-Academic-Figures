@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502064",
+  "record_sha256": "2cad4b6e5b9943e2263a7b5b31476658b1e2147c2815e935916af36dd9c9e36a",
+  "asset_sha256": "c8ab8750ab8bfdddd3072763e41be1bcdab5e499e240c89e07143a6f3934bffc",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502064",
+    "title": {
+      "zh": "A Concept-Centric Approach to Multi-Modality Learning · 方法图",
+      "en": "A Concept-Centric Approach to Multi-Modality Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13847",
+      "title": "A Concept-Centric Approach to Multi-Modality Learning",
+      "authors": [
+        "Yuchong Geng",
+        "Ao Tang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13847",
+      "arxiv_url": "https://arxiv.org/abs/2412.13847",
+      "arxiv_id": "2412.13847",
+      "arxiv_first_submitted_at": "2024-12-18T13:40:21Z",
+      "arxiv_updated_at": "2026-01-22T20:02:38Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502064/image/image.jpg?Expires=1790835207&Signature=JCQLKC0s59kIhc-nRu89dosbsTTcHKjQT6QjWeX4CW5aJARByCBMEwmrYhodtz0LWIwu6G-DKijqOJbxkhgxLD3SNAdKU1CLfNcP4oDTaCZk~IiHbaRYutep38~3KIXawnnsF0~nGssBFecW4rKYmnPj8-I3LmFF8Hf5VEGFkN3qAca4xLJJr1kpBa3epocJ9Buk24efmKOnuGpl6MtIHsJ9VxO25qBZTn2mnAATFm8kwvkiKKBrz0jYdYpXXi3UNKJfpOLA5-EkdJrNTqxcwgpVaSSvfkzqAaAplmvY4Szu6NAg6V1V4v8bkeatPFkbpQ86-gl1QYm5AJkplV~Wrw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502064,
+      "description_sha256": "4a11b437c569555f04f19bdc3075663bc6bea448a4129774c28ce82fd50bfa0a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multimodal framework for image-text matching, structured into three main vertical sections: Vision Modality, Abstract Concept Space, and Natural Language Modality. The layout is duplicated in two identical rows, emphasizing the consistency of the process. Each row follows a left-to-right data flow, starting from visual input on the left, processing through modality-specific encoders, and converging in a shared abstract concept space at the center, before connecting to natural language inputs on the right.\n\nIn the Vision Modality section (left, light blue background), a visual input, represented as a yellow cylinder labeled x_i^{vision}, is fed into a trapezoidal encoder block labeled f_vision. This encoder outputs a set of parameters {ω_min^v, ω_Δ^v}, which are then sent to the Abstract Concept Space.\n\nThe Abstract Concept Space (center, light beige background) is depicted as a large rounded rectangle containing multiple overlapping rectangular regions labeled c_1, c_2, ..., c_n, representing distinct abstract concepts. Within this space, the vision-derived parameters are mapped to specific concept regions, shown as shaded areas (e.g., Ω_1^{vision} in blue, Ω_2^{vision} in gray). Similarly, language-derived parameters are mapped to corresponding regions (e.g., Ω_1^{NL} in yellow, Ω_2^{NL} in orange), indicating cross-modal alignment. The overlapping regions suggest semantic correspondence between modalities.\n\nIn the Natural Language Modality section (right, light cream background), two textual descriptions are presented as scroll-shaped boxes: 'A yellow small rubber cylinder' (labeled x_1^{NL}) and 'A red large rubber sphere' (labeled x_2^{NL}). These texts are processed by a trapezoidal encoder labeled f_NL, producing two sets of parameters: {ω_min^{nl 1}, ω_Δ^{nl 1}} and {ω_min^{nl 2}, ω_Δ^{nl 2}}. These are sent to the Abstract Concept Space, where they align with the respective concept regions.\n\nConnections are shown as solid black arrows. From the vision encoder, one arrow points to the Abstract Concept Space. From each language encoder output, two separate arrows point to the concept space, linking each text to its corresponding concept region. The figure visually emphasizes that the shared concept space enables cross-modal comparison, allowing the model to compute cross-entailment probabilities to determine if an image and a text form a semantically coherent pair. The design highlights the interpretability of the concept space, contrasting it with typical black-box latent spaces. The duplication of the entire diagram in two rows reinforces the repeatability and generalizability of the framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

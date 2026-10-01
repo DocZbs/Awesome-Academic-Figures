@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500655",
+  "record_sha256": "8f602f178c1ab90f72563bc047ee02556c0546f62e6e51e648ce9e6d8f6e751f",
+  "asset_sha256": "07f8f36bce15dd9cd8f67ce74b63772824f0eceaa402986adbad9cfe588c5f30",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500655",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500655/image/image.jpg?Expires=1790835174&Signature=LEzNxpuFJ6Ke2OFTNcq68~-ZsdcANJqHnTOAE4CaDNbWSUbzieIvHj8EubchWFNmrmVOR0AIM~y-GRPm03rtA-F98f8R5UCWzgNukc7lt~Ud33rNGKGfGGS7VN0R9XsK5dMiIiCS465EOykcLU5TMTFi1SQqJp9xbA0Vn2-R1NCYj1Z20xOnHY29kC7lNvoLP7qFs-OIS~~E1HGcXV2QkL9I57ksLttapLAyNL9Ctc4wRRKoliCkxsrQTLMb1JR1~mbthjx0xT5DCPMhiVwcJlZyDXXtVB1KZ6XmW~roFjeL7LDgIEO3QTR73pUCfN6iDHVIaiWcrCam42~QRzd3Zg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500655,
+      "description_sha256": "f2a0ef292c0880d3dc6710c690d377f6e07c17b45558f3a2dbf5308e6bf59c3e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an attention-based processing pipeline for satellite image patches, structured as a top-down flowchart. At the bottom, labeled 'Input patches', four distinct aerial images are shown, each feeding into a corresponding 'E' block, representing the Embedding module. These E blocks are light orange rectangles, arranged horizontally, and serve as the initial feature extraction stage. Above each E block, there is a row of four 'SC' blocks (Score calculation), depicted as light blue rectangles, which compute scores for each input patch. The SC blocks are followed by a row of 'N' blocks (Scores normalization), also light blue rectangles, where the scores are normalized. Notably, the color intensity of the N blocks varies from light to dark blue across the sequence, indicating a gradient of importance: the rightmost N block is darkest, signifying higher importance, while the leftmost is lightest, indicating lower importance. This gradient is visually reinforced by a vertical bar on the far right, labeled 'More important' at the top (dark blue) and 'Unimportant' at the bottom (light blue), showing a continuous scale of importance. The outputs from all N blocks are then fed into a central yellow rectangular block labeled 'Score weighting + Results aggregation', which combines the weighted scores. Finally, arrows lead upward from this aggregation block to four output patches at the top, mirroring the input patches but potentially refined or transformed based on the attention weights. The entire process reflects an attention mechanism where different input patches are assigned varying levels of importance during processing, with more important patches contributing more significantly to the final output. A legend in red text on the lower left clarifies: 'E: Embedding', 'SC: Score calculation', and 'N: Scores normalization'. The overall layout is hierarchical, moving from input at the bottom through embedding, scoring, normalization, and aggregation, to output at the top, with clear directional arrows indicating data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

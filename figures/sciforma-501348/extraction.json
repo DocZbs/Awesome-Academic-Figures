@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501348",
+  "record_sha256": "58e4fef519c7c1b9cca1d78a7e903e146ca4ac4703566f239791ba2d71181468",
+  "asset_sha256": "871b26203c5712caa1c31ccacc0e66aa945a523e531451d1c58936cf68f2fa64",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501348",
+    "title": {
+      "zh": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification · 方法图",
+      "en": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-12651",
+      "title": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification",
+      "authors": [
+        "Huachao Yan",
+        "Kailing Guo",
+        "Shiwei Song",
+        "Yihai Dai",
+        "Xiaoqiang Wei",
+        "Xiaofen Xing",
+        "Xiangmin Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_id": "2412.12651",
+      "arxiv_first_submitted_at": "2024-12-17T08:20:02Z",
+      "arxiv_updated_at": "2024-12-17T08:20:02Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501348/image/image.jpg?Expires=1790835191&Signature=Vr5Ar-zkYTE54WnqSMWcN91o7Ex2jVEBx6tncbyJssttBJZnqu0soh4Fvcr3GzPQxIk8RwfsdRsXJQMCPiuKQadhr4yDcm0awHHvt8Kc4xvExUsBPgB2qtuX9LLy2hroW0zb4np8wqq28Gb9XQlsUGvxxn8OdVVa~oM1OrcsPMfBDsiAFIZ7kYUamrddBLJSIZRtQks9iMiKUexK1N7sOl5yCW5Iti5Vx4kCS5zWxF4xTAiC0hlXQGdsmCRgzAfm8aNM6c40nF6p1pe7mCR1HfPJV9PzykhZ1W6gnr15YRdJOXSndg1UbXVcyTPiZvbn~XkfVnqQR2AOg~Oxq~VSrg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501348,
+      "description_sha256": "96a8e0dae240905a3d8095313c0851a9ada6179a911040a2fe49490a17fdcb02",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct fusion strategies, labeled (A) Fusion Strategy1 (FusionS1) and (B) Fusion Strategy2 (FusionS2), within a hierarchical graph convolutional network (HFGCN) framework designed for seizure onset zone (SOZ) identification using intracranial electroencephalography (sEEG) data represented as graph data. Both diagrams share a common left-to-right processing flow starting from an input graph data representation of a brain with multicolored nodes (red for epileptic, yellow for nonepileptic) and edges, denoted by X. This input is fed into a sequence of three Graph Convolutional Layers (GCL1, GCL2, GCL3), each depicted as a small graph with colored nodes and edges, producing intermediate feature representations Ĥ₁, Ĥ₂, and Ĥ₃ respectively.\n\nIn both strategies, parallel branches are introduced after each GCL layer. These branches consist of a Disentangled Graph Convolution Layer (DGCL1, DGCL2, DGCL3), shown as a graph with dashed lines indicating disentanglement, which processes the corresponding Ĥ output. The output of each DGCL is denoted as H̃₁, H̃₂, H̃₃. Each H̃ is then passed through an L2 norm operation, represented by a yellow rectangular box. The normalized outputs are weighted by scalar weights w₁, w₂, and w₃ (w₃ implied but not labeled) and combined via element-wise multiplication (indicated by a red circle with an 'X' symbol) to produce the final output Ĥout, which is visualized as a traffic light-like bar with three colored circles (yellow, red, blue) feeding into a brain illustration showing classified regions.\n\nThe key difference between the two strategies lies in how the DGCL branches are integrated with the main GCL stream:\n\nIn (A) FusionS1: After each GCL layer, the output Ĥ is directly fed into the corresponding DGCL. The DGCL output H̃ is then normalized and weighted. The weighted outputs are combined via element-wise multiplication to form Ĥout. There is no explicit fusion of the DGCL output back into the main GCL stream before the next layer.\n\nIn (B) FusionS2: After each GCL layer, the output Ĥ is split. One path goes to the corresponding DGCL. The other path proceeds to the next GCL layer. Crucially, the output of each DGCL (H̃) is first combined with the original Ĥ from the previous GCL layer via element-wise addition (indicated by a blue circle with a '+' symbol) before being normalized. This fused representation is then weighted and combined with others via element-wise multiplication to produce Ĥout.\n\nBoth diagrams include legend boxes explaining the symbols: a blue circle with a '+' denotes 'Element Wise Addition', and a red circle with an 'X' denotes 'Element Wise Multiplication'. The color coding for brain nodes (red = Epileptic, yellow = Nonepileptic) is consistent across both panels. The overall layout is horizontal, with a clear progression from input on the left to output on the right, enclosed within light blue rounded rectangles for each strategy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

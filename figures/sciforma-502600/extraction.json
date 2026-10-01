@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502600",
+  "record_sha256": "70d0956a6a3606185b24a0ff0a4d40935741188542b6bb6bc9c1b3a486051992",
+  "asset_sha256": "2de694db94d3acc9d59883a313738b075ed1628b39f082f911398f621db3b7e4",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502600",
+    "title": {
+      "zh": "Answer Set Networks: Casting Answer Set Programming into Deep Learning · 方法图",
+      "en": "Answer Set Networks: Casting Answer Set Programming into Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14814",
+      "title": "Answer Set Networks: Casting Answer Set Programming into Deep Learning",
+      "authors": [
+        "Arseny Skryagin",
+        "Daniel Ochs",
+        "Phillip Deibert",
+        "Simon Kohaut",
+        "Devendra Singh Dhami",
+        "Kristian Kersting"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_id": "2412.14814",
+      "arxiv_first_submitted_at": "2024-12-19T13:09:06Z",
+      "arxiv_updated_at": "2024-12-19T13:09:06Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502600/image/image.jpg?Expires=1790835223&Signature=oLHKWxxUc57aCQmgCqr-iFf5dIzA8gZhZxz04NFYeqUEHdtn1Ugr0gIz-h-CQIIChY3Lm9ldIqUfyJWnE369BhcPZD-ogEWsGCuWGXsi1DPnnjsoUFOcH9aK-nYcp~VYW9F-isDvj3yDL6mC-OOPxfB8mXTQVIIcpDSEYgZYLsDpu~g2IVV9UonyY91rSbExc2B9g6p1FwGvTNJCgbyI-9em-wX5fgDfP2knZhsVefp9PGX8~mpm6DKRyMke59BRosbsZpOnvGnObnjGdQtfX0Dn7OxqkX-cnOzNLIXzCO~nyQ2169K8W9pXBy-htmyMV88R55PDI4hFiWSZKqraOA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502600,
+      "description_sha256": "2a251607e18ae029fbb56084ed016e5526a23b2f4267d1728b2e575d0f3a5e51",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a neural-probabilistic predicate structure, specifically modeling the relationship between an image and its digit components. The global layout is a directed acyclic graph (DAG) with a top-down flow, starting from a root node and progressing through intermediate nodes to a final decision or output node. The structure is enclosed within a large curved boundary, suggesting a single logical unit or module.\n\nAt the top, a circular node labeled 'T' (in black) serves as the initial input or trigger, connected by a solid arrow to an oval-shaped node labeled 'img(i)' (in teal). This 'img(i)' node represents the image variable and acts as the primary source for generating digit components. From 'img(i)', three dashed arrows extend downward to three separate oval nodes: 'digit(i,0)', 'digit(i,1)', and 'digit(i,2)', all in teal. These represent the individual digit components extracted or inferred from the image, indexed by position (0, 1, 2). The dashed lines indicate a probabilistic or generative relationship, rather than a deterministic one.\n\nEach of these digit nodes connects via a solid arrow to a central rectangular node labeled 'l=#count', which is black-bordered and white-filled. This node functions as a counting or aggregation mechanism, likely computing the number of digits or some related metric. A red solid arrow extends downward from this rectangle to a circular node labeled '∧' (logical AND or conjunction), indicating a conditional or logical evaluation step based on the count.\n\nFrom the '∧' node, two paths diverge: one solid arrow leads to a yellow circular node labeled '⊥' (bottom, representing false or failure), and another solid arrow curves upward and to the right, looping back to the 'img(i)' node, forming a feedback or recursive loop. This suggests that the outcome of the logical evaluation may influence or retrigger the processing of the image, possibly for iterative refinement or validation.\n\nThe visual attributes include distinct shapes (circles for inputs/outputs, ovals for variables, rectangles for operations), colors (teal for image/digit variables, black for logic/control, yellow for failure), and line styles (solid for deterministic flow, dashed for probabilistic/generative links, red for critical or decisional flow). The caption provides context: the predicate 'img(i).' is associated with a neural-probabilistic rule '#npp(digit(i), [0,1,2]) :- img(i)', meaning that given an image i, the system probabilistically generates digits at positions 0, 1, and 2, and the count of these digits is used in a logical condition."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

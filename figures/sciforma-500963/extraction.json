@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500963",
+  "record_sha256": "2bbc26587c2907e13cf9cca6e2fdeb87fd7d80698dde5e405ef9a5fbe30310cc",
+  "asset_sha256": "a5917b737de0d3588ff9477929158961b25b075ea5cf8ae6705337e8e69ed648",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500963",
+    "title": {
+      "zh": "Reservoir Computing Generalized · 方法图",
+      "en": "Reservoir Computing Generalized"
+    },
+    "paper": {
+      "id": "arxiv-2412-12104",
+      "title": "Reservoir Computing Generalized",
+      "authors": [
+        "Tomoyuki Kubota",
+        "Yusuke Imai",
+        "Sumito Tsunegi",
+        "Kohei Nakajima"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12104",
+      "arxiv_url": "https://arxiv.org/abs/2412.12104",
+      "arxiv_id": "2412.12104",
+      "arxiv_first_submitted_at": "2024-11-23T05:02:47Z",
+      "arxiv_updated_at": "2024-11-23T05:02:47Z",
+      "arxiv_subjects": [
+        "nlin.CD",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500963/image/image.jpg?Expires=1790835182&Signature=D8lPKWB344ouoZ0wXtSOG1Kb3As2MpC6iCtPiQlasT-n6skNwmCwpWC8u9fq2HEE9EqKAUD7RJ-fYYwZ3uttnNsTtYZuB79ah2Zjb9h7nty5BBaupuKOR~FzTBJNgAvvcRZ~TelZTtJT4pyzWEQDqX1pOpokugvNL~gbPztXNLrRIu-Po8Y5kK68MHbi0bhy~b-93WJnyD6oh27wI1SY9Sy8AworV78HB27XMLOgv9v-IMTWSv5HZugyu~DprbHgReZpXFyP8paJKA5caDydxxwuSpMSmIuY8hB8VvFw1hKrAwYa2AUF4ndmgBtYIxh061DuNw-MtPRruldVApep7A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500963,
+      "description_sha256": "d99c5e51ca0050a3eb49e73c2ea27bbc5458e7b6ccbcfa075b3e7631b80ed021",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "nlin.CD",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two examples, labeled (a) and (b), illustrating the Time-Invariant (TI) transformation of time-varying (TV) reservoir states into TI outputs, demonstrating the concept of Time-Invariant Processing Capacity (TIPC). Each panel follows a consistent layout: on the left, the input signal x_t is expressed as a sum of orthogonal components, each associated with a specific order of time-varying or time-invariant input. These components feed into a reservoir state x_t, represented as a vertical bar segmented into discrete levels (labeled 0, 1, 2, etc.), where each segment corresponds to a coefficient C_tot. The segments are color-coded and patterned: solid colors indicate TI contributions, while hatched patterns indicate TV contributions. The color scheme denotes the degree of input: purple for degree 0, green for degree 1, orange for degree 2, and red for degree 3.\n\nIn panel (a), the reservoir state x_t is composed of zeroth-order TV input (purple, solid) and first-order TV input (green, hatched). This state is then transformed via a time-invariant operation, shown as a gray box containing the equation X_t^2 + Y_t^2 (= r_t^2), which computes the squared norm of the state. The result feeds into the output y_hat_t, represented as a vertical bar with a green gradient from 0.0 to 1.0, indicating the normalized TIPC. The output is decomposed into contributions from first-order TI input (green) and second-order TI input (orange), as indicated by arrows pointing to the output bar. The mathematical expression for y_hat_t includes summations over P_1 and P_2 functions, weighted by powers of ρ and σ, reflecting the expansion in orthogonal bases. The color bars under the equation correspond to the input degrees, matching the legend.\n\nIn panel (b), the reservoir state x_t includes zeroth-order TV input (purple, solid) and first-order TI input (green, solid). The state is processed through a transformation box containing the equation -X_tY_t/2 + Z_t (= εu_t), leading to the output y_hat_t, again shown as a green gradient bar. The output is attributed solely to first-order TI input (green), as indicated by the arrow and the equation y_hat_t = εP_1(u_t). The orthogonal basis P_1(u_t) is underlined with a green bar, consistent with the TIPC decomposition color coding.\n\nConnections between components are shown as directed arrows: blue arrows from input terms to the reservoir state, green arrows from the reservoir state to the transformation block, and orange/green arrows from the transformation block to the output. The figure emphasizes that after normalization, the squared norm of the coefficient vector yields the TIPC, which is visualized in the color-coded bars. The TIPC decomposition C_tot is thus a summary of both TI and TV capacities, with distinct visual encoding for each."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

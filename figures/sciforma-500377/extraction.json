@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-500377",
+  "record_sha256": "6a77248761c7069cc4aa9c479ae91bf446ca2c22392757bdea9db38be68d4683",
+  "asset_sha256": "7fd047dc108923b5ed02843dc8861a34535892193b75fadc87a3ac580eee32e4",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500377",
+    "title": {
+      "zh": "ProFe: Communication-Efficient Decentralized Federated Learning via Distillation and Prototypes · 方法图",
+      "en": "ProFe: Communication-Efficient Decentralized Federated Learning via Distillation and Prototypes"
+    },
+    "paper": {
+      "id": "arxiv-2412-11207",
+      "title": "ProFe: Communication-Efficient Decentralized Federated Learning via Distillation and Prototypes",
+      "authors": [
+        "Pedro Miguel Sánchez Sánchez",
+        "Enrique Tomás Martínez Beltrán",
+        "Miguel Fernández Llamas",
+        "Gérôme Bovet",
+        "Gregorio Martínez Pérez",
+        "Alberto Huertas Celdrán"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11207",
+      "arxiv_url": "https://arxiv.org/abs/2412.11207",
+      "arxiv_id": "2412.11207",
+      "arxiv_first_submitted_at": "2024-12-15T14:49:29Z",
+      "arxiv_updated_at": "2024-12-15T14:49:29Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC",
+        "cs.NI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500377/image/image.jpg?Expires=1790835171&Signature=Toq6Mjkwqw-shHkgWOJYq3Wm32nQwLED2iEyYHu8KdEO~s4SCGB0RKwwMiMar69QCEBSZR1-ZpdBzQD3dTOQcwHf5V2LxnsJtOtzETHarD66BD-t1mg1ofzcCHLM4j-DfNDdLOZDrqNMpy8XgbZ0~p45lXpUoRqpTl7b7z~RxaDstbZwmZH22D3ZkUVZ4owmvv-cgzANTkO2W6trPsvBPaD8C9XPWQE31fBM8CMm9XrVE9Va1tzfLXFkxok-7lL4I4EKdoZmoOELNutev7oeOot17N1nocNxcAhIHqkVHAiPqSbLa5fS8sYXNjLqJYGfe-i5TbcWpYsnPbN6KjH3Hw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500377,
+      "description_sha256": "8028a1ef1505178572389aff2af36851920e0bce9af4726cd9e7901fefb51108",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC",
+        "cs.NI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ProFe algorithm for model training in Decentralized Federated Learning (DFL), structured into two main sections: the local training process at Node n and the global model and prototype aggregation across multiple nodes. The top section details the training pipeline within a single node, while the bottom section shows the inter-node communication and aggregation mechanism.\n\n[1] Global Layout and Structure:\nThe diagram is vertically divided. The upper portion focuses on Node n, depicting the teacher-student framework for local training using local data. The lower portion displays a network of four interconnected nodes (Node n+1 to Node n+4), representing the decentralized aggregation phase. A legend in the bottom-left corner defines the neural network layers used: light blue rectangles denote Conv2d layers, orange for MaxPool2d, green for Flatten, and pale yellow for Linear layers.\n\n[2] Visual Modules and Attributes:\nAt Node n, 'Local Data' is represented by a pink vertical cylinder icon feeding into both the Teacher and Student models. The Teacher model is a sequence of layers (Conv2d, MaxPool2d, Flatten, Linear) shown as colored rectangles arranged horizontally within a rounded gray box. Its output feature vector ft is passed through a softmax layer to produce yt, which is compared with ground truth y via cross-entropy loss L_CE. The Teacher also outputs a prototype vector ft,1, which is used to compute MSE loss with the prototype c̄ stored in a separate module labeled 'c̄', consisting of a series of pale yellow Linear layers indexed from c(0) to c(n).\n\nThe Student model, similarly structured but with fewer layers, receives local data and produces feature vector fs, which is processed through softmax to yield ys. This is compared with y via L_CE. Additionally, the Student’s first linear layer output fs,1 is used to compute MSE loss with the same prototype c̄. The Teacher’s output yt is also used to compute knowledge distillation loss βL_KD for the Student.\n\nThe prototype c̄ is updated via MSE loss from both Teacher and Student outputs. The Student model’s parameters and the prototype c̄ are shared and aggregated with other nodes.\n\n[3] Connections and Arrows:\nArrows indicate data and gradient flow. Local Data feeds both Teacher and Student. The Teacher’s output ft flows to softmax → yt → L_CE (with y). ft,1 connects to c̄, with an arrow labeled L_MSE pointing back to the Teacher’s first linear layer. Similarly, fs,1 from the Student connects to c̄, with L_MSE feedback to the Student’s first linear layer. The Teacher’s yt also connects to the Student’s final layer with an arrow labeled βL_KD. The Student’s fs flows to softmax → ys → L_CE (with y).\n\nIn the lower section, bidirectional arrows connect all pairs among Nodes n+1 to n+4, indicating peer-to-peer communication. Two distinct aggregation paths are shown: blue arrows labeled 'Student model sharing and aggregation' connect Node n to Nodes n+1 and n+2, and green arrows labeled 'Prototype sharing and aggregation' connect the c̄ module to Nodes n+1 and n+2, illustrating how both the student model weights and the prototype vectors are shared and updated across the network."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

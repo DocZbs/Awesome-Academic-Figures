@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501993",
+  "record_sha256": "7e7d0dd457335ac10c1e979a0ff252be41b7e490b78c56b44746848f0106b809",
+  "asset_sha256": "491855ad2c7fa46ebc293d654d56d2be4226dce5c97fb9537aea0f44885b5896",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501993",
+    "title": {
+      "zh": "Learning Complex Word Embeddings in Classical and Quantum Spaces · 方法图",
+      "en": "Learning Complex Word Embeddings in Classical and Quantum Spaces"
+    },
+    "paper": {
+      "id": "arxiv-2412-13745",
+      "title": "Learning Complex Word Embeddings in Classical and Quantum Spaces",
+      "authors": [
+        "Carys Harvey",
+        "Stephen Clark",
+        "Douglas Brown",
+        "Konstantinos Meichanetzidis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13745",
+      "arxiv_url": "https://arxiv.org/abs/2412.13745",
+      "arxiv_id": "2412.13745",
+      "arxiv_first_submitted_at": "2024-12-18T11:26:51Z",
+      "arxiv_updated_at": "2024-12-18T11:26:51Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501993/image/image.jpg?Expires=1790835209&Signature=l9SFwqYJ6rhEZCGwgUwj1rOqS7UMEUeQk5zhGPVWEHYXyngt7RUYhj74Z-ZKpbdoweVBoSVEwjJfHAt1LD3sqJRVCc8wSva6uAfXDpd4gXbhdb0CHLLqRYFV~t5CF8jO4dh~kJZiRLqqLk2vKpodFidB7bbzeL~JB4laQmdc8m2w1zFZzoBhW-TiSE9Vns53vzs7AmDlw~npPxCpnPYUTE7mrmQMW35YW9CEuJbMiNto2Yx4YMW-4I~vGr9CR25wZoX56SKA08tCU76JQLCkQ8mjI6o8uHqb~Al8Na78jx8wtu4x8f0rYac05JDy7Rq~zB~ebHmKZdkRqqESfIET0Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501993,
+      "description_sha256": "19d8a01b6461487c6d9e7c534dfd35f62af9fbbbc48d3ed5877f1763db8dc1ad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct architectural diagrams illustrating different implementations of the Skip-gram model, arranged side-by-side from left to right. The global layout is divided into three main sections: the original Skip-gram model on the left, a unitary implementation in the upper right, and a quantum circuit-based binary representation in the lower right. Each section is self-contained and labeled accordingly.\n\nIn the leftmost diagram, representing the original Skip-gram model, a one-hot representation of a word vector |w_i> is input into a rectangular module labeled 'Proj(θ)', which projects the input into a continuous space. From this module, four directed arrows branch out to separate output vectors labeled w_{i-2}, w_{i-1}, w_{i+1}, and w_{i+2}, each represented as a vertical bar with a single black segment indicating the active dimension. This structure visually conveys the model’s goal of predicting context words given a central word.\n\nThe upper right diagram illustrates a unitary implementation. It begins with a one-hot representation |w_i> of size [|V|,1], which is fed into a square module labeled 'Û(θ)', representing a unitary transformation parameterized by θ. The output is another vector of size [|V|,1], expressed as the sum over j in context(i) of c_j |w_j>, indicating a linear combination of context word vectors. The dimensions of the input, transformation, and output are explicitly annotated below each component.\n\nThe lower right diagram shows a quantum circuit implementation using a binary representation |b_i>. Two parallel quantum circuits are depicted, each consisting of multiple qubits (represented as horizontal lines) initialized with black triangles (possibly denoting initial states or inputs). The circuits include a series of gates: the first set includes labeled gates such as v_1(θ_1), v_6(θ_6), etc., followed by a repeated block labeled 'x N_l' containing additional gates. The final stage features measurement operations symbolized by stylized 'A' shapes. The output probability for each bit b_j is given by P_{b_j} = |c_j|^2. Below the circuits, annotations specify N_q = log(|V|) for the number of qubits, and the central block is labeled 'PQC(log(|V|), N_l)', indicating a Parameterized Quantum Circuit with log(|V|) qubits and N_l layers. The entire structure is enclosed in dashed boxes to group related components.\n\nConnections between modules are shown via solid black arrows, indicating the direction of data flow. In the left and upper right diagrams, these are simple feed-forward connections. In the quantum circuit, connections are implicit in the circuit layout, with wires carrying qubit states through successive gates. The figure uses consistent visual elements: rectangular blocks for classical modules, horizontal lines for quantum wires, and specific symbols for gates and measurements. Text labels are placed adjacent to components to denote their function, parameters, or dimensions. The overall design emphasizes the evolution from classical to quantum-inspired representations of the Skip-gram model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

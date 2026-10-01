@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502458",
+  "record_sha256": "dc5df11345e658eb6d19b0378ab4a76fd73f373852f0f14a01354620f7646f36",
+  "asset_sha256": "4fba8f1c58e325e55212f5d2c436f76499fd40ba6cc0b9e2fdd2787eaf46ebb2",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502458",
+    "title": {
+      "zh": "Downscaling Precipitation with Bias-informed Conditional Diffusion Model · 方法图",
+      "en": "Downscaling Precipitation with Bias-informed Conditional Diffusion Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-14539",
+      "title": "Downscaling Precipitation with Bias-informed Conditional Diffusion Model",
+      "authors": [
+        "Ran Lyu",
+        "Linhan Wang",
+        "Yanshen Sun",
+        "Hedanqiu Bai",
+        "Chang-Tien Lu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14539",
+      "arxiv_url": "https://arxiv.org/abs/2412.14539",
+      "arxiv_id": "2412.14539",
+      "arxiv_first_submitted_at": "2024-12-19T05:36:52Z",
+      "arxiv_updated_at": "2024-12-19T05:36:52Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CV",
+        "physics.ao-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502458/image/image.jpg?Expires=1790835221&Signature=FOsnLkrJjgoFxa8UPmaGp-eeBG7172S2H9aAMq1QiR1qWHD8h84o7JQPwnpAlzhzPh5GXZEOexqe7J3sSc5nHlyduipo-LOYar-Lvx36-FwkfpcLVyAX4oKssIO2A4ZobqhRgmZRmxXEcF3Wq9Ql2FnFUieDYq88p~sJ2n8iYUe6y9q~tr7hwhR3CZQ02mM4yMZilGgWLdJwcSDBe2aLn43MiFP-2TvmzRhM8jKdnDo5LkJ5xfTYLAhvpntdEj1Ys~sr4VkwifVMYS24r2nKLiGDTgXh9~ZTf2na7Z2JKo3PZXKN3FN3wT9pTFr76sJM9tqW-~0tnOu7pcAbEYp~dA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502458,
+      "description_sha256": "29d89403accfe30bf010af8970ed7c0d177a4ff22e26fcd09861530d678c0a49",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CV",
+        "physics.ao-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall pipeline of a diffusion-based image restoration framework, divided into two main phases: the diffusion process and the denoise process. The global layout is structured horizontally across two primary sections: the upper section depicts the forward diffusion process, while the lower section details the reverse denoise process. Both sections are enclosed within distinct background colors—light green for the diffusion phase and light blue for the denoise phase—to visually separate the two stages.\n\nIn the diffusion process (top section), the input consists of three components: a high-resolution precipitation image (colorful heatmap), a low-resolution image (grayscale, pixelated), and a topography image (black-and-white, tree-like structure). These inputs are concatenated and fed into the diffusion process, which gradually adds noise over T steps. This is visualized as a sequence of grayscale images progressing from Z₀ (initial noisy image) to Zₜ (fully noisy, almost uniform gray texture), indicating increasing noise levels. The progression is marked by intermediate frames labeled '...' and 'T steps', emphasizing the iterative nature of the process.\n\nThe denoise process (bottom section) operates in reverse. It begins with an input composed of the same three components as before, but now includes an additional component labeled 'Bias from Low resolution images', which is derived from the low-resolution input and used to guide the denoising. This input is combined with a noisy image from the diffusion process via a circular fusion node (depicted as a beige circle with cross lines), symbolizing concatenation or feature merging. The resulting combined signal is fed into a 'Denoise U-Net Model', represented as a rectangular module with internal layers shown as horizontal arrows and vertical bars in alternating green and blue, indicating encoder-decoder architecture with skip connections. The U-Net outputs a predicted clean image, labeled 'Z0 pred', which is shown as a restored colorful heatmap alongside its grayscale counterpart. This output is then fed back into the denoise process through a feedback loop labeled '... T steps ...', indicating iterative refinement over multiple steps until convergence.\n\nConnections are depicted using solid blue arrows. From the initial input, an arrow leads to the diffusion process. From the final noisy state Zₜ, an arrow points downward to the denoise process, where it connects to the fusion node. Another arrow links the fusion node to the Denoise U-Net Model. The output of the U-Net feeds back into the denoise process loop and also produces the final reconstructed image. Additionally, a direct arrow from the 'Bias from Low resolution images' box connects to the fusion node, highlighting the bias-informed sampling strategy that guides the denoising by reducing discrepancies between high- and low-resolution inputs at each step.\n\nThe figure uses color coding consistently: blue and red heatmaps represent precipitation data, grayscale images denote noisy or low-resolution inputs, and the U-Net model is highlighted with green and blue bars to indicate its internal structure. Text labels such as 'Input', 'Diffusion process', 'Denoise process', 'Z0 pred', and 'Bias from Low resolution images' are clearly placed to annotate each component. The caption clarifies that during training, the U-Net learns to predict noise in corrupted high-resolution images, while during inference, it iteratively denoises pure noise into high-resolution precipitation outputs, guided by bias correction from low-resolution inputs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

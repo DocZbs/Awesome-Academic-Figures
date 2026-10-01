@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501768",
+  "record_sha256": "eddcd1f3626c3ab98ecf3b79dfae2a7b850f33ea31af2c36d7ee8b09ae6bbab5",
+  "asset_sha256": "a6770cfe2b9ff7bbbd078cc104dfb4191dc8c9dd716a621d1945229a2994891f",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501768",
+    "title": {
+      "zh": "Enabling Region-Specific Control via Lassos in Point-Based Colorization · 方法图",
+      "en": "Enabling Region-Specific Control via Lassos in Point-Based Colorization"
+    },
+    "paper": {
+      "id": "arxiv-2412-13469",
+      "title": "Enabling Region-Specific Control via Lassos in Point-Based Colorization",
+      "authors": [
+        "Sanghyeon Lee",
+        "Jooyeol Yun",
+        "Jaegul Choo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13469",
+      "arxiv_url": "https://arxiv.org/abs/2412.13469",
+      "arxiv_id": "2412.13469",
+      "arxiv_first_submitted_at": "2024-12-18T03:35:55Z",
+      "arxiv_updated_at": "2025-01-25T11:59:47Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501768/image/image.jpg?Expires=1790835200&Signature=Y386QChFMe8vPzf7y4KrJI1IrS5Zi2p~YfM3qTXFgPQ5HQ5A11JNUO8kN6XaXTa1CfOks2eiBXYrDHliMv1SqMJzrpRXgjjzadUtbPQhpuqlMVHc8PaKwTJyafduIkMPxqN-0o8Q-cevQRETHbu37DmY6k7y5xeWsElWnxAnhRrTXNTZ7vkee78quE2AH4UM6jcKchjQsHGXEKRvFE6dvBhGMpbg0UYQsnOkyiG0a4sp~r2dSWqp0G6w5jf4-4OOQJiPDBqqo200IDExmFjreysWeOjhc~0cBQ4yZMnaDyDk~8dTBzAJl-czLI2Rp5vNm~wmTwLbna306vk0h6LJnA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501768,
+      "description_sha256": "29329fbdc1772bc6daa7475eb9a9ac23fa2c50bcc71e11f9949ae03f44e5a7b8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the construction of a Localization Attention Mask, M_l, used in a vision model for selective attention based on user-provided color hints. The global layout is left-to-right, beginning with an input image divided into a 3x3 grid of patches, where four distinct regions are highlighted with colored lassos (red, yellow, green, orange) and marked with corresponding colored squares at their centers. These lassos represent user-specified regions of interest. An arrow points from this input to a sequence of processing steps.\n\nThe first stage involves generating multiple conditional masks, denoted M_c, one for each color hint. Each M_c is represented as a 3x3 grid of colored tiles (e.g., pink, light green, red), where the tile corresponding to a patch inside the lasso is filled with a patterned texture (dots or stripes) indicating a value of 1, while others are plain, indicating 0. Below each M_c, a grayscale version of the input image is shown with only the relevant lasso active, visually linking the mask to its source region.\n\nNext, an unconditional mask, M_u, is generated. It is also a 3x3 grid (in peach/orange tones), where patches not covered by any lasso are marked with a dotted pattern (value 1), and those under lassos are plain (value 0). This mask captures regions outside all specified areas.\n\nFinally, the localization attention mask M_l is formed by concatenating M_u and all M_c masks. This is depicted as a stack of overlapping grids, with M_u at the bottom and the M_c masks layered on top, each contributing its patterned regions. The concatenation operation is symbolized by a ⊕ symbol between M_u and the M_c stack.\n\nThe figure includes a legend at the bottom: 'M_c: Conditional Masks', 'M_u: Unconditional Mask', and 'M_l: Localization Attention Mask'. The overall workflow shows how user-defined regions (via lassos) are translated into structured attention masks that guide the model’s focus during inference."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

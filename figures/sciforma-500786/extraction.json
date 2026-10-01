@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500786",
+  "record_sha256": "306113db8b602880ec67b1c8bf561277c6621fb5bdbc8aefedfa7f0b83d31bd6",
+  "asset_sha256": "0028df38704c04a86865a89945ef30b276d172ada77aa5e0704393643d1c71c4",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500786",
+    "title": {
+      "zh": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data · 方法图",
+      "en": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-11800",
+      "title": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data",
+      "authors": [
+        "Mulugeta Weldezgina Asres",
+        "Christian Walter Omlin",
+        "The CMS-HCAL Collaboration"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11800",
+      "arxiv_url": "https://arxiv.org/abs/2412.11800",
+      "arxiv_id": "2412.11800",
+      "arxiv_first_submitted_at": "2024-12-16T14:11:28Z",
+      "arxiv_updated_at": "2026-06-04T08:23:17Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500786/image/image.jpg?Expires=1790835177&Signature=U~kGJzmifNBsvFIs4RRF65Kg0RlfVQJi9qUGAV9oxeeFqxQCSLS5cdtpSQgxwuQYkLszgFVQmOoD5rl0L-0GKLbDFuwAMJYvEWk5uBShMFxi1pFtwK~UXwmfVLG1w3jSJP2KtVMfeQZTk4z5BsmpJFhFb3gztFd0hGrzwvLhuTYSjJuqi1EnGKd9hY123yuEKJIResKc9eHXewFzqhY7CfW3sAoeZ~Z2YglDxhnpRZ9DWnu7jzDuNfFD36tPb4CP9JI5nbQlVJsgbK-v7zUoS3qDLcyc22Mx9DS~AMiPGJXSpeWIZl9S49ZCs9mAS0Et4qgKeGkLnvbnCiIWvKIIOw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500786,
+      "description_sha256": "e865e6ab3bb4696fb539db7bc529e23de1790a8d16b720594b9b7fb8be545825",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the AnomalyCD framework, designed for anomaly causal discovery and causality query inference in a high-energy physics monitoring context, specifically for HCAL (Hadron Calorimeter) systems. The diagram is divided into two main sections: 'Anomaly Causal Graph Discovery' at the top and 'Anomaly Causality Query Inference' at the bottom.\n\nIn the upper section, data sources include an 'Online DQM' database providing '3D Histogram Map Data', and an 'ngCCM Server' supplying 'Sensor Data' along with inputs from 'Other sensors'. These data streams are split via a 'Data splitter' symbolized by a circle with a plus sign. The 3D histogram map data feeds into a 'DQM AD Model', while sensor and other sensor data are processed by multiple anomaly detection (AD) models: 'ngCCM AD Model', 'RM AD Model', and an 'Online-AD' module, all represented as rounded rectangles with distinct colors—light blue for the first three and light red for Online-AD. Each AD model contains a small icon of a computer monitor with a cube, indicating computational processing.\n\nOutputs from these AD models converge at an 'Anomaly result aggregator', depicted as a circle with an 'X' symbol, which combines the results into 'Anomaly Flag Data' stored in an orange cylinder-shaped database. This binary anomaly flag data is then used to construct a 'Temporal Causal Graph Structure', shown as a rounded rectangle with a light orange fill and a small purple network icon inside. From this graph structure, a 'Temporal Causal Bayesian Model' is built, represented as a yellow rounded rectangle with a gear icon, indicating a probabilistic modeling component. This Bayesian model feeds into a 'Causality Inference Engine', a purple rounded rectangle with a green gear-and-network icon, which performs causal reasoning.\n\nThe lower section, titled 'Anomaly Causality Query Inference', shows how users interact with the system. A user icon (blue silhouette) submits a 'Causality Query' to the same 'Causality Inference Engine' from the upper section. The engine processes the query and outputs two types of visualizations: 'Dashboard Causal Networks', represented by a purple rounded rectangle with a small purple network icon, and 'Dashboard Causality Inference', shown as a purple rounded rectangle with icons of a document and a bar chart, indicating report or visualization output.\n\nThe overall layout is modular and sequential, emphasizing a pipeline from raw data ingestion through anomaly detection, causal graph construction, Bayesian modeling, and finally to interactive causality querying and dashboard visualization. The connections are solid black arrows indicating data flow, with dashed lines showing optional or indirect relationships (e.g., from DQM AD Model to Anomaly Flag Data). The figure uses color-coding to differentiate components: light blue for AD models, red for Online-AD, orange for anomaly flags, yellow for the Bayesian model, purple for the inference engine and dashboards, and green for the engine's icon. The diagram includes legend symbols for 'Data splitter' and 'Anomaly result aggregator' below the main modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

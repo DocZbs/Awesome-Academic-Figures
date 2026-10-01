@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501151",
+  "record_sha256": "830d6b665f3876ed0eab676361d23e651f00779f33a0074f631d8319f4bebec1",
+  "asset_sha256": "c417a82479b9a337bf9b687c3e04cad034b934ab67a1c1cd7cd8059671a992b6",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501151",
+    "title": {
+      "zh": "FactEHR: A Dataset for Evaluating Factuality in Clinical Notes Using LLMs · 方法图",
+      "en": "FactEHR: A Dataset for Evaluating Factuality in Clinical Notes Using LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12422",
+      "title": "FactEHR: A Dataset for Evaluating Factuality in Clinical Notes Using LLMs",
+      "authors": [
+        "Monica Munnangi",
+        "Akshay Swaminathan",
+        "Jason Alan Fries",
+        "Jenelle Jindal",
+        "Sanjana Narayanan",
+        "Ivan Lopez",
+        "Lucia Tu",
+        "Philip Chung",
+        "Jesutofunmi A. Omiye",
+        "Mehr Kashyap",
+        "Nigam Shah"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12422",
+      "arxiv_url": "https://arxiv.org/abs/2412.12422",
+      "arxiv_id": "2412.12422",
+      "arxiv_first_submitted_at": "2024-12-17T00:07:05Z",
+      "arxiv_updated_at": "2025-08-05T19:06:49Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501151/image/image.jpg?Expires=1790835186&Signature=NnO-MVufoOMHgPohx7JAd12Pd-WZmZVyYiHrQfcWoZbVPq1FLlunmTFW75Fvqq9HuQnG-CC~ceUlulcBY-oTie76oG6Xhub9sMSRtbj1gZtLoWk9OoA7RelUyhc5Cyo6MbqlOU-d20Ev7WAgCOHBJcQcBczitzXCoy9~Paz-6Y8ayow2jPLjqeBCvt4eS1gka7juJwDNivk6viqav7kWeMBBbuTlPEzOpgvdy3ployRZAjQ6hgum~ZImzCcpo9qyUray-qlpX5~hGbYYTF5ctfNCWgh696Dmia0Sxq-N2PnQqPQl3x8kwfGualV2K7gJLkQBvmdO0tn2kkBsg50nzA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501151,
+      "description_sha256": "34f2ef9bb9354427c32fcded8a7e608623cb054a44cab340d0f96e058e3c1929",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end pipeline for generating and evaluating fact decompositions from clinical notes using large language models (LLMs). The layout is divided into two main horizontal sections: the top section details the fact decomposition process and its evaluation, while the bottom section describes the dataset and validation approach.\n\nIn the top-left, under 'Fact decomposition with LLMs', a stack of clinical notes is shown feeding into a gray box labeled 'NOTE', which contains sample text including admission/discharge dates and a history of present illness describing a 58-year-old right-hand dominant white female with hypertension. An arrow points from this note to a black diamond-shaped icon labeled 'LLM' with a neural network motif, indicating the model processes the note. From the LLM, an arrow leads to a light blue box titled 'FACTS', listing seven atomic facts extracted from the note, such as 'Patient is 58 year old.' and 'Blood pressure was 132/82.'\n\nTo the right, under 'Evaluating entailment of generated facts', two evaluation metrics are shown: 'Fact precision' and 'Fact recall'. In the 'Fact precision' section, each generated fact (hypothesis) is paired with the original note (premise), and a green checkmark or red X indicates whether the hypothesis is entailed by the premise. For example, 'Patient is 58 year old.' is entailed (✓), but 'Patient is an Asian female.' is not (✗). This section includes icons of a GPT logo and a human expert, indicating automated and human evaluation.\n\nIn the 'Fact recall' section, the original note (premise) is compared against composite hypotheses formed from multiple facts. For instance, a hypothesis combining several facts ('The patient is a 58-year-old right-hand dominant white female...') is entailed (✓), while another ('On physical examination, the patient is in no acute distress...') is not (✗), again with both automated and human evaluation icons.\n\nThe bottom row shows a general data processing flow: raw notes are transformed into structured fact sets, followed by an expert icon and a green box asking about 'Completeness?', 'Correctness?', and 'Clinical atomicity?' with checkmarks for correctness and atomicity, and a red X for completeness. To the right, a yellow banner labels the 'FACT-EHR Dataset', specifying it contains 1 million premise-hypothesis pairs plus 3.4k expert-annotated pairs. The entire figure uses consistent color coding—gray for notes, light blue for facts, green for correct entailment, red for incorrect—and clear directional arrows to indicate data flow and evaluation steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

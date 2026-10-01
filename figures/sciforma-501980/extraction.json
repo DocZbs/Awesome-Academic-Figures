@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501980",
+  "record_sha256": "e9e3d90efc3e4e1119ad179f52b8c520113c8a21306944ffff174d8382648601",
+  "asset_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501980",
+    "title": {
+      "zh": "3D Registration in 30 Years: A Survey · 方法图",
+      "en": "3D Registration in 30 Years: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-13735",
+      "title": "3D Registration in 30 Years: A Survey",
+      "authors": [
+        "Jiaqi Yang",
+        "Chu'ai Zhang",
+        "Zhengbao Wang",
+        "Xinyue Cao",
+        "Xuan Ouyang",
+        "Xiyu Zhang",
+        "Zhenxuan Zeng",
+        "Zhao Zeng",
+        "Borui Lu",
+        "Zhiyi Xia",
+        "Qian Zhang",
+        "Yulan Guo",
+        "Yanning Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_id": "2412.13735",
+      "arxiv_first_submitted_at": "2024-12-18T11:14:01Z",
+      "arxiv_updated_at": "2024-12-19T12:59:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501980/image/image.jpg?Expires=1790835209&Signature=UUqeCG7R5IdSnmCZL6RV9ikXPCm1No8Hs4WGU8YxoTiTrjgQxupenrbBKBoHHvbi0SwWyERdfuagJeywBD~~ngkWr7ePQ37VxVKgB-29Q1g8Ok~TvWkLI8tPPIILsg8hWmtoUMaFBnOraDNO05hHhHAL3bTLP96N5FmXV0-6GWW7h1wptj~Noc5v8ZcEMV60Vystj2yCVIpMntSW5g-IcqUVIcz9OAgHow~CHp-Hr-lD6wo~oLFcRU~dKyLwEjqn7UqNkeAQxLFyWDtP42L-TwiiVT3FeEv6L8VsplNntKvsrej4bveL1GFGsIHahAiSBZJPvY8AeCboO56OV6bZaQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501980,
+      "description_sha256": "4981340bad757339532dd2a8b9e4d733bb56e2a7c98d92577e7ed4b942e17939",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating a multi-view registration approach based on low-rank matrix decomposition. The global layout is structured in two horizontal rows connected by feedback loops. The top row represents the pairwise registration and global motion estimation phase, while the bottom row details the matrix reconstruction and decomposition process. The entire workflow is cyclic, with arrows indicating iterative refinement between stages.\n\nIn the top row, the left box labeled 'Pair-wise registration' contains a network diagram where each blue dot represents a range scan, and lines with arrows denote relative motions between scans. A single red dot indicates the reference scan anchored to the global coordinate system. This module feeds into the 'Global motions' box on the right, which shows a central red dot (the global reference) connected via arrows to surrounding blue dots (other scans), symbolizing estimated global transformations M_i and M_j. A bidirectional curved arrow labeled M_ij = M_i^{-1}M_j connects these two boxes, representing the relationship between relative and global motions.\n\nThe bottom row begins with a 'Reconstructed sparse matrix' box, displaying a black-and-white grid where black squares indicate unobserved relative motions, white squares represent highly reliable ones, and grey shades denote varying reliability levels. This matrix is processed through a 'Completion' step, resulting in a 'Matrix with Completion' box showing a similar grid but with more filled-in grey values, indicating imputed data. The next stage, 'Weighted LRS decomposition', outputs a 'Decomposed low-rank matrix' box, which features a grid with a distinct red row at the top, highlighting block elements used for recovering global motions.\n\nConnections between modules are shown using solid green arrows: from 'Pair-wise registration' to 'Reconstructed sparse matrix', then sequentially through 'Completion' and 'Weighted LRS decomposition' to 'Decomposed low-rank matrix'. A green arrow labeled 'Recovery' points upward from the decomposed matrix to the 'Global motions' box, closing the loop. Additionally, a large curved green arrow connects the 'Global motions' box back to 'Pair-wise registration', indicating an iterative refinement process. The figure caption explains that the red dot in the top row denotes the global reference scan, and in the bottom row, the grey scale in the matrices reflects reliability, with black being unobserved and white being very reliable. The red row in the final matrix corresponds to block elements used for global motion recovery."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

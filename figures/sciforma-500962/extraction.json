@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500962",
+  "record_sha256": "1f736258d7062ac9ab46ffb1811ce07012f9fae8eb47bea185a5cc54fc984065",
+  "asset_sha256": "59dd0814f13a689596752a680ef388fd116eda2bd5f8ead998b6f58f51185afd",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500962",
+    "title": {
+      "zh": "Reservoir Computing Generalized · 方法图",
+      "en": "Reservoir Computing Generalized"
+    },
+    "paper": {
+      "id": "arxiv-2412-12104",
+      "title": "Reservoir Computing Generalized",
+      "authors": [
+        "Tomoyuki Kubota",
+        "Yusuke Imai",
+        "Sumito Tsunegi",
+        "Kohei Nakajima"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12104",
+      "arxiv_url": "https://arxiv.org/abs/2412.12104",
+      "arxiv_id": "2412.12104",
+      "arxiv_first_submitted_at": "2024-11-23T05:02:47Z",
+      "arxiv_updated_at": "2024-11-23T05:02:47Z",
+      "arxiv_subjects": [
+        "nlin.CD",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500962/image/image.jpg?Expires=1790835182&Signature=sWd~a61X3BfNtw0qFNLtccgdADfNbQuGS0RiPHWdLRRLx9nUNiGph8HvkJpAJ7DBt0D3v1AJN~54VFnykk~bX8TGlgoAIt1RjBilI~MrMwjVwobyA-MsKfzCLP-JISDBLVf3~y73ZCgNP67bNeSnNEpwtx69vLl4NniBkRVseNWklmB7lBtGQ-1XAegtcrb6Mg1lCgBEzXLvvRuJqPYWARafqFva-GWhvm79gshOdZjaiO4pLWPBOgDXotASvuBc1CfdTreQsj6ZM3chcEMSOPXVnDBNjqK4n1ujmcnDFvdWEplTe9QVjPh9pm5vunoGrP03zEQd4sROied-jeX-Jg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500962,
+      "description_sha256": "4a71b943cd700001cdab10f4ab689c78592dad4c72fcc4b7727b905667b33931",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "nlin.CD",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two architectures labeled (a) and (b), illustrating conventional Reservoir Computing (RC) and Generalized Reservoir Computing (GRC), respectively. Both diagrams share a similar global layout: an Input column on the left, a central Reservoir module, and an Output column on the right. Each component is vertically aligned, with arrows indicating data flow from left to right.\n\nIn panel (a), the Input is represented as a vertical stack of black circular nodes labeled u_t. These feed into the Reservoir, depicted as a cluster of five interconnected black nodes arranged in a loose oval shape. Each node in the Reservoir has concentric green ripples around it, symbolizing the presence of node-wise Echo State Property (ESP). The connections between Reservoir nodes are curved black arrows forming a recurrent network structure. Below the Reservoir, the label 'State x_t with ESP' is written in green. From the Reservoir, multiple arrows point to the Output, shown as a vertical stack of green-ringed black nodes labeled ŷ_t. This output is generated directly from the Reservoir states via a linear or nonlinear readout, as stated in the caption.\n\nPanel (b) mirrors the structure of (a) but introduces a key modification. The Input u_t again feeds into the Reservoir, which now contains four nodes with red ripples and one with green ripples, indicating that some nodes lack ESP ('State x_t without ESP', labeled in red below). The same recurrent connections exist among the nodes. However, instead of direct output, the Reservoir’s state is passed through a rectangular box labeled 'Time-Invariant Transformation' containing the mathematical expression f(x_t). This transformation removes time-dependence from the state before producing the final Output ŷ_t, which again consists of green-ringed nodes, signifying that the output now possesses ESP. The caption clarifies that this TI transformation can be implemented via a nonlinear readout with memory.\n\nThe visual distinction between green and red ripples serves as a critical attribute: green indicates ESP is present, red indicates it is absent. The arrows consistently denote directional information flow. The overall structure emphasizes that conventional RC (a) inherently produces outputs with ESP due to the reservoir’s internal dynamics, whereas GRC (b) allows for reservoirs without ESP, compensating via a post-processing TI transformation to achieve ESP in the output. The figure thus illustrates that conventional RC is a special case of GRC."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

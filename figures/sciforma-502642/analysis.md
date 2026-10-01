@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14933
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a side-by-side comparison of a computational circuit and its equivalent straight-line Python program for computing the SUM₃ function, which adds three binary inputs. The global layout is horizontally divided into two main sections: on the left, a graphical representation of a Full Adder circuit; on the right, a textual Python implementation of the same logic. Both components are aligned vertically to emphasize correspondence between circuit gates and program statements.
+
+In the circuit diagram, three circular input nodes labeled x₁, x₂, and x₃ are positioned at the top. These feed into intermediate logic gates arranged in a hierarchical structure. The first layer consists of two XOR gates (denoted by ⊕ symbols inside circles), producing intermediate values labeled 'a' (from x₁ ⊕ x₂) and 'b' (from x₂ ⊕ x₃). Below these, an OR gate (denoted by ∨ symbol) computes 'c' from 'a' and 'b'. The second layer includes another XOR gate that computes w₀ from 'a' and x₃. Finally, a third XOR gate computes w₁ from 'c' and w₀. The outputs are labeled 'carry' (corresponding to w₁) and 'sum' (corresponding to w₀), with their respective gates rendered in bold to indicate they are output gates, as noted in the caption.
+
+All gates are represented as circles with black outlines and centered symbols. Input nodes are also circles but contain only variable labels. Directed arrows connect inputs to gates and gates to subsequent gates or outputs, indicating data flow. The arrows are solid black lines with arrowheads pointing toward the receiving gate or output label.
+
+On the right side, the Python code defines a function `sum3(x1, x2, x3)` that mirrors the circuit’s computation. It sequentially assigns intermediate variables: `a = x1 ^ x2`, `b = x2 ^ x3`, `c = a | b`, `w0 = a ^ x3`, and `w1 = c ^ w0`. The function concludes with `return w0, w1`, directly mapping to the circuit’s output labels 'sum' and 'carry'. The code uses standard Python syntax with indentation for clarity, and bitwise operators (^ for XOR, | for OR) correspond exactly to the circuit gates.
+
+Connections between the circuit and the code are implicit through variable naming and computational order. For example, the variable 'a' in the code corresponds to the output of the first XOR gate in the circuit, and 'w0' corresponds to the final sum output gate. The bolded output gates in the circuit visually align with the returned values in the code, reinforcing the equivalence. The entire figure serves to illustrate how a hardware circuit can be translated into a software program while preserving logical structure and output semantics.

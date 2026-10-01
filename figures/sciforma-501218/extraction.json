@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-501218",
+  "record_sha256": "bc4eac5fd3c3bf588852b9a1ac5968f6920f2cf853be2371d710034f9635fddb",
+  "asset_sha256": "78a5b070e5bd6b81e7183db715f7c9ecee93cf618e439f76e4399fd08b1c2ceb",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501218",
+    "title": {
+      "zh": "Unleashing the Potential of Model Bias for Generalized Category Discovery · 方法图",
+      "en": "Unleashing the Potential of Model Bias for Generalized Category Discovery"
+    },
+    "paper": {
+      "id": "arxiv-2412-12501",
+      "title": "Unleashing the Potential of Model Bias for Generalized Category Discovery",
+      "authors": [
+        "Wenbin An",
+        "Haonan Lin",
+        "Jiahao Nie",
+        "Feng Tian",
+        "Wenkai Shi",
+        "Yaqiang Wu",
+        "Qianying Wang",
+        "Ping Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12501",
+      "arxiv_url": "https://arxiv.org/abs/2412.12501",
+      "arxiv_id": "2412.12501",
+      "arxiv_first_submitted_at": "2024-12-17T03:05:27Z",
+      "arxiv_updated_at": "2024-12-17T03:05:27Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501218/image/image.jpg?Expires=1790835190&Signature=Lxvb7oWDx2r3xeaiOVGVq4MOgfIuh3KwKY-5Rjld~oi2McgyPZGQNI7aCR3NwAaJRRxBy-eaJL5Ka8izK17mcgqHRGzgzFrAQZKVigfkg7STHTbA9-C3I8Y65A6dKA7VVSKQo4CMk6HaGI1-ST2hoYjcpI5Hy4FO0Vezr0i-shbYyH5Q-OhBOI8SIIHinyIi-lwozbi~zXo2pK~j2A5KhMwVJcqHR2TE9mbxgkPaKS8j7OvOQWo4n7aMZa3bl3RKps8Hxlk5MqC0oLxcVqPmeXrdHthlealAaO1Lv11EEGefmFMBy5hA0QplGhPosV~LcHMTR~~CRrLzizwJ5bfCBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501218,
+      "description_sha256": "b457dd727c14f2346a28e83c7f88cc364115820a8b0ab098e2d3042879b4707c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an end-to-end framework for logit adjustment in open-set recognition, designed to mitigate bias and confusion in classification outputs. The global layout is divided into two main stages: feature extraction and logit calibration. On the left, input data X^u is processed by two parallel backbones: a frozen 'Biased Backbone' (yellow trapezoid labeled f_bias with a snowflake icon) and a trainable 'Trainable Backbone' (blue trapezoid labeled f_θ with a flame icon). The biased backbone feeds into a frozen 'Biased Classifier' (light blue rectangle labeled g_bias), producing 'Biased Logits' for known classes only. The trainable backbone connects to a trainable 'Trainable Classifier' (stacked light blue and purple rectangles labeled g_φ), generating 'Original Logits' for both known and novel classes. These two streams converge into a central calibration module enclosed in a large rounded rectangle labeled 'Logit Adjustment'. Inside this module, the 'Biased Logits' are transformed via a 'Transfer Matrix' (a heatmap with red-to-blue gradient indicating max to min values) into 'Transfer Logits' for novel classes. The 'Original Logits' are split into known and novel components. A 'Bias Mitigation' block (beige rectangle with ⊖ symbol) subtracts the biased logits from the known-class original logits. Simultaneously, a 'Confusion Mitigation' block (beige rectangle with ⊕ symbol) adds the transfer logits to the novel-class original logits. Between these blocks, an 'Entropy-based Weighting' mechanism (curved red line labeled 'Entropy') dynamically adjusts the contribution of each mitigation step based on entropy. The resulting outputs are combined into 'Calibrated Logits', shown as a bar chart with distinct known (teal) and novel (lavender) class distributions, separated by a dashed vertical line. Finally, the calibrated logits are passed through the Sinkhorn-Knopp (S-K) algorithm to produce the final pseudo-label ŷ. The figure includes visual indicators: flame icons denote trainable components, snowflake icons denote frozen components, and the entire process emphasizes balancing bias reduction and novel class activation through structured logit manipulation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

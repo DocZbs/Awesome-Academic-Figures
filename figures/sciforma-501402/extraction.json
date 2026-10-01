@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501402",
+  "record_sha256": "e435c3afe91f3ec34cfa35d44861ceb6b512dd4653dee1345514706e7dab9201",
+  "asset_sha256": "f1ed1d005c6e345777a5fef70745aa6e00b09a2ccd81dca9ac989a3b5ccca751",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501402",
+    "title": {
+      "zh": "EventFull: Complete and Consistent Event Relation Annotation · 方法图",
+      "en": "EventFull: Complete and Consistent Event Relation Annotation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12733",
+      "title": "EventFull: Complete and Consistent Event Relation Annotation",
+      "authors": [
+        "Alon Eirew",
+        "Eviatar Nachshoni",
+        "Aviv Slobodkin",
+        "Ido Dagan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12733",
+      "arxiv_url": "https://arxiv.org/abs/2412.12733",
+      "arxiv_id": "2412.12733",
+      "arxiv_first_submitted_at": "2024-12-17T09:55:41Z",
+      "arxiv_updated_at": "2024-12-17T09:55:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501402/image/image.jpg?Expires=1790835191&Signature=bvn-zgDrH2M5ocphj7FTYzl03mUdXfzosji3o3EerDVicJK9cGqDh8C~PKH~MQvTJgEM53CZuKptvsErG~xw4kL~lLvRco182Ve66lzWeSNIc0ivyK99MCm96w3UeKEDc6EB8YlpA-mo~2ADc6~MwNpT6nPVp7bDZBi8ebrz9duvBhLzFYDeHUZEck13fI6t9hyu4lP3P7GKG725JAryRZRuJxDcaJbaFCi6qH5-O5g1YSxleOYSJgi3P171KmcJrb~F5e5sAFXn-w8~N2wA2Z8l1DbtznaLmZKxOkrsHaUl0hnXQeBww-4nev~bTY4c5aeBolTqdSaxCYZG5-B~cQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501402,
+      "description_sha256": "c440b029a396ce2117e4aea7247a9774a2ab055372f0d07adec0906e5575adca",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a user interface for a temporal relation annotation task within the EventFull system, specifically Task-2: Temporal Relation. The global layout is divided into two main vertical sections: a left panel containing the textual context and annotation interface, and a right panel displaying a dynamic graph visualization of event relationships.\n\nIn the left panel, a news article excerpt serves as the context for annotation. Key event mentions are highlighted: 'investigation (41)' is marked with a green background, and 'search (7)' is marked with a red background, indicating they are the current focus for annotation. Other event mentions such as 'crash (5)', 'recovered (24)', 'descent (38)', etc., are shown in bold but not highlighted, signifying they are part of the event set but not currently under annotation. Below the text, a question asks 'Which event started first?' with four radio button options: 'investigation (41)', 'search (7)', 'Both started at the same time', and 'Uncertain'. Navigation buttons labeled 'Prev Task' and 'Next Task' are located at the bottom of this panel.\n\nThe right panel features a directed graph where each node represents an event mention from the text, labeled with the event name and its unique identifier in parentheses (e.g., 'crash (5)'). Nodes are circular and colored red, with small gray icons resembling a gear or starburst near some nodes, possibly indicating interaction points or status. The graph displays temporal relations between events using labeled edges. Solid black lines represent 'BEFORE' relations, dashed gray lines represent 'EQUAL' relations, and dotted gray lines represent 'UNCERTAIN' relations. The labels are written in blue text along the edges. For example, 'investigation (41)' has solid edges pointing to 'crash (5)', 'scattered (36)', and 'recovered (24)', all labeled 'BEFORE', while it has a dotted edge to 'killed (1)' labeled 'UNCERTAIN'. The graph also includes a thick purple line connecting 'investigation (41)' to 'search (7)', labeled with '???' to indicate an unresolved or pending annotation.\n\nConnections and arrows are directional, originating from the source event and pointing to the target event. The graph is interactive, allowing annotators to click on two nodes to select a relation, which then updates the graph with the chosen label. The visual representation dynamically reflects the annotator's progress, with newly annotated relations appearing in the graph. The top-right corner of the interface contains buttons for file operations: 'Choose File', 'Load', 'Save', and 'Export', with the current file named '131d3_temporal.json'. The overall structure supports a workflow where annotators read the context, identify event pairs, select the appropriate temporal relation from the options, and see the result immediately reflected in the graph visualization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501475",
+  "record_sha256": "c09a327abea7ae2f59c812f5a9bb9680c213b0ec234b61d3d4b09ea44a83e575",
+  "asset_sha256": "3dd0da5a766e240730b5458dc56605fd56a85b356387f534fd45b66e098230d2",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501475",
+    "title": {
+      "zh": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks · 方法图",
+      "en": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12843",
+      "title": "SLTNet: Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks",
+      "authors": [
+        "Xianlei Long",
+        "Xiaxin Zhu",
+        "Fangming Guo",
+        "Wanyi Zhang",
+        "Qingyi Gu",
+        "Chao Chen",
+        "Fuqiang Gu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_url": "https://arxiv.org/abs/2412.12843",
+      "arxiv_id": "2412.12843",
+      "arxiv_first_submitted_at": "2024-12-17T12:11:04Z",
+      "arxiv_updated_at": "2025-08-13T09:50:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501475/image/image.jpg?Expires=1790835192&Signature=Z2q2joBCpnijTNYF~~AkxlVWjjP96UAUA3Vso0zCk9Nt2bTp6ssLKmdUswEQffIxbK78JknHip5jjw2lsyTCyhHNoEd54n2kLCayNRkqG36DbYv1YE-MLq1RaVmvccZxkTp2vYSQ8mHVzEyaoiS1OeEE-i-asZbhtI7hMluJpYZ6EYdqKfQHJLfXhOECQW4WudcNT9CLUF7cCo6hVRP9q-De7Puw9k9sX3Dah3bd6g2gqVAli9BbDYi1FaAcvMWrHD7Sn04N8hlaNSPv5giuWAyUl5rJX6GtPUgW8x8fajO-dGC-CJbm5t7V4e5wlSD6Yy6ngQtp2036yRq0xUg4DA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501475,
+      "description_sha256": "7c06b008d57f4ce129af53a80459e6a6f6a0b4c5fddc4b48e6bc808190841352",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the detailed architecture of the Spike-LD module, a spiking neural network component designed for efficient feature extraction. The global layout is divided into two main regions: the left side contains the full Spike-LD block, enclosed by a dashed border, while the right side provides expanded views of two key submodules: BN+ESN and CA (Channel Attention), along with a legend for symbols used.\n\nThe Spike-LD module begins with an input x, which first passes through a BN+ESN layer (light blue rounded rectangle with purple text). This is followed by a sequence of convolutional layers: Conv1x1 (light purple), Conv3x1 (light green), another BN+ESN, then Conv1x3 (light green), and again a BN+ESN. From this point, the flow splits into two parallel branches. Both branches start with a Conv3x1,DW layer (light green), followed by BN+ESN (light blue). The left branch continues with Conv1x3,DW (light green) and BN+ESN, while the right branch uses Conv1x3,DW,D (light green, indicating dilated convolution) and BN+ESN. Each branch ends with a CA module (light yellow). The outputs of both CA modules are combined via element-wise addition (indicated by a circle with a plus sign) and fed into a final Conv1x1 layer (light purple). The output of this layer is added to the original input x through a residual connection, forming the final output of the Spike-LD block.\n\nOn the right side, the BN+ESN submodule is shown in detail. It consists of a BN layer (light blue) feeding into a series of three spiking neurons represented by circular icons with waveforms (ESN), which produce binary spike outputs (depicted as vertical lines). The CA submodule is also detailed: it starts with GAP (Global Average Pooling, light pink), followed by Conv1x1 (light purple), then Sigmoid (light yellow). The output of Sigmoid is multiplied channel-wise (represented by a triangle icon labeled 'membrane') with the input feature map, producing the attention-weighted output.\n\nThe legend at the bottom right clarifies the symbols: the waveform circle denotes ESN (Evolutionary Spiking Neuron), the vertical lines represent Binary spike outputs, and the triangle symbol indicates Channel-wise product operation. The color coding helps distinguish between different types of operations: BN+ESN layers are light blue, convolutional layers are light green or light purple, and CA components are light yellow or pink. All connections are indicated by solid black arrows showing the forward data flow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

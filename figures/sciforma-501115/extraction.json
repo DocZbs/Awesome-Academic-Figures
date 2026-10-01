@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501115",
+  "record_sha256": "5744484ded21494619b9174306edfe1f0ec95c8e74df88c345d65bd547777974",
+  "asset_sha256": "edaa4a91e579a56c77c21fd069870bae357d59688dcd56ae4cc43cbe4a45cb71",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501115",
+    "title": {
+      "zh": "Interpretable LLM-based Table Question Answering · 方法图",
+      "en": "Interpretable LLM-based Table Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-12386",
+      "title": "Interpretable LLM-based Table Question Answering",
+      "authors": [
+        "Giang Nguyen",
+        "Ivan Brugere",
+        "Shubham Sharma",
+        "Sanjay Kariyappa",
+        "Anh Totti Nguyen",
+        "Freddy Lecue"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12386",
+      "arxiv_url": "https://arxiv.org/abs/2412.12386",
+      "arxiv_id": "2412.12386",
+      "arxiv_first_submitted_at": "2024-12-16T22:44:31Z",
+      "arxiv_updated_at": "2025-06-28T18:26:11Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501115/image/image.jpg?Expires=1790835185&Signature=GUTCf4OxcUfI8WVvfmYz6yPeMEmLZOlX8oyEHgP0NVp3XifSDmHEK~Pl7wNgxhHARbVz0yWH2tjRnC-T1GQnQzNvDfXgb4p6dgoSW1Gy2fqgRH7T2uYRZsiW3oHJpEi1I5t7-8ygAPYWabfpepHEKmoSETTPd92ZksOTVuEnA2Nkla79O8S5gEJgPHSkcoI3F2oMjkWbCl7-W3DQIFADV8qopCirAD5F1y4F4SvlFY4-UcCJaiLvbNQmDRW~c8I8EPF2antGIRc6LJlqMhLyfd-rRbn4PaPK~run1l7yVTwnFfmumvQCZfEzRC3FTPVg5wriiMqikAyvZsrwhloVOw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501115,
+      "description_sha256": "c2befdc1f34510ce30013fdfbd5af152664caed38d4ba40d5a14ac71222dd4be",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Plan-of-SQLs (POS) framework, a method for answering natural language questions over tabular data by decomposing the reasoning process into atomic steps, each translated into executable SQL queries. The global layout is divided into two main regions: on the left, the input data and question are presented; on the right, the processing pipeline is shown with intermediate tables and execution steps.\n\nOn the left side, a dashed gray box contains Table T titled 'wildcats football team', with columns: game, opponent, result, wc_pts, and opponents. The 'opponents' column is highlighted in yellow. Below the table, the question [Q] asks: 'True or False? The wildcats kept the opposing team scoreless in 4 games.' Above the table, a green box labeled '[GT] True' indicates the ground truth answer.\n\nThe central processing pipeline begins with the NL Atomic Planner, represented as a beige rounded rectangle with a neural network icon above it. This module receives the table T and question Q as input and outputs a step-by-step plan in natural language. The plan consists of three steps: S1 (gray background): 'Order the table by 'opponents' in ascending order.', S2 (red background): 'Select rows where 'opponents' is 0.', and S3 (blue background): 'Use a `CASE` statement to return TRUE if the number of rows is equal to 4, otherwise return FALSE.' These steps are enclosed in a large rectangular box with a curved arrow pointing from the planner to them.\n\nFrom this plan, the Step-to-SQL module (purple rounded rectangle with a neural network icon) processes each step sequentially. It takes the current table and one step at a time to generate corresponding SQL queries. The SQL Engine (pink rounded rectangle) executes these queries.\n\nThe workflow proceeds as follows:\n\nStep 1 (indicated by a gray circle labeled '1'): The NL Atomic Planner generates the plan. Step 2 (indicated by a gray circle labeled '2'): Step-to-SQL converts S1 into an SQL query using Table T, which is executed by the SQL Engine to produce Table T1. Table T1 is displayed below the planner, showing rows ordered by 'opponents' in ascending order. Rows with 'opponents' = 0 are highlighted in green, while others remain yellow.\n\nStep 3 (indicated by a red circle labeled '3'): Step-to-SQL processes S2 using Table T1, generating a query to select rows where 'opponents' is 0. The SQL Engine executes this, producing Table T2, which includes only those rows (games 2, 4, 5, 9), all highlighted in green.\n\nStep 4 (indicated by a blue circle labeled '4'): Step-to-SQL processes S3 using Table T2, generating a query that counts the rows and returns TRUE if the count equals 4. The SQL Engine executes this, yielding the final answer 'True' in a small white box labeled 'answer'.\n\nArrows connect the modules and tables to show data flow: from the planner to the plan, from the plan to Step-to-SQL, from Step-to-SQL to the SQL Engine via SQL queries, and from the SQL Engine to intermediate tables T1 and T2, and finally to the answer. The figure visually demonstrates how complex reasoning is broken down into atomic, executable steps, enabling transparent and verifiable tabular QA."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

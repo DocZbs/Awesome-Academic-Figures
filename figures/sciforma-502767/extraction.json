@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502767",
+  "record_sha256": "f49b7ff83c92c48facb2bf972f0bc80e937281a52ab020aa07fe29c59c213a91",
+  "asset_sha256": "52b3d458a2a48ef1f3a65e1eedf6d6f34c10bb57680756984f0f11ba4db73be4",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502767",
+    "title": {
+      "zh": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification · 方法图",
+      "en": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-15224",
+      "title": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification",
+      "authors": [
+        "Ruimin Peng",
+        "Zhenbang Du",
+        "Changming Zhao",
+        "Jingwei Luo",
+        "Wenzhong Liu",
+        "Xinxing Chen",
+        "Dongrui Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_url": "https://arxiv.org/abs/2412.15224",
+      "arxiv_id": "2412.15224",
+      "arxiv_first_submitted_at": "2024-12-04T11:31:23Z",
+      "arxiv_updated_at": "2024-12-04T11:31:23Z",
+      "arxiv_subjects": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502767/image/image.jpg?Expires=1790835227&Signature=jqEprpzIETBrVvi7bmRUJYAKTf5jIoeDbdLTWt8b~osY3YEp5bwgz2jAH6ccnBJileAx585hB9xA~OwJLC5W6OWR81r9sLPxD0UjYr4F7SNRTIhLg6LtK8t52Uvc7AzXgRnI8qxbMPuWxRNDgFZSj~TXjP5~rMsBbrdqqDoJ14KNHu-hIaZRJfYtKqGTJGVwWiHscAz8Cjv02XrIzqmNYO63PwEcU1aqrbqJZtopsncdViKKd4Ba8sPBIQTWfqevMDwBzMpsIvt-4lWSS2rWaZSp8esHR0A3IoGsl9mGNet1j1WDvMTO~0U99rwouPRFZ-APlUCmWQNccMT5bGVMTw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502767,
+      "description_sha256": "f9611b8108355808d5d10565e187e88eb46646b03e954143025b29454638e8be",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a vanilla Vision Transformer (ViT) architecture adapted for EEG signal classification. The global layout is left-to-right, depicting a sequential data processing pipeline from raw EEG signals to classification output. On the far left, three raw EEG waveforms are shown in blue, purple, and teal. These signals undergo a 'patchify' operation, which divides each waveform into smaller, fixed-length segments represented as individual rectangular patches. These patches are arranged in a grid format, with multiple rows corresponding to different channels or time segments, and each patch retains its original color to indicate channel identity. Below this grid, a horizontal sequence of colored rectangles represents the flattened patch embeddings, where each rectangle corresponds to one patch and maintains the same color coding as the original waveform it originated from.\n\nThis sequence of patch embeddings is fed into an 'Input Embedding' module, depicted as a gray rounded rectangle. The output of this module is combined with 'Positional Encoding', symbolized by a sine wave icon connected via a circle with a plus sign, indicating element-wise addition. This combined embedding serves as input to the central component: 'N× Transformer Encoder Blocks', enclosed in a large light-gray rounded rectangle. Each encoder block contains two main submodules: a 'Multi-Head Attention' layer (blue rounded rectangle) followed by an 'Add & Norm' layer (yellow rounded rectangle), and then a 'Feed Forward' network (light-blue rounded rectangle) followed by another 'Add & Norm' layer. The connections within each block show residual connections: the output of each submodule is added to its input before normalization, forming a skip connection.\n\nThe output from the final Transformer encoder block is passed to a downstream classifier. This is represented on the right side of the diagram within a light-green rounded rectangle labeled 'Classifier'. Before entering the classifier, the outputs from all positions (patches) are averaged using an 'Average' operation, symbolized by a small yellow square above a horizontal bar composed of multiple yellow rectangles, each representing a token's output. The averaged representation is then processed by a 'Linear' layer (green rounded rectangle) followed by a 'Softmax' layer (light-green rounded rectangle), which produces the final classification probabilities. A feedback loop is shown from the top of the 'Transformer Encoder Blocks' back to the 'Average' step, suggesting that the entire sequence of outputs from the encoder is used for averaging, not just the final state. All arrows indicate the direction of data flow, with solid black lines connecting modules, and the overall structure emphasizes a feed-forward architecture with residual connections within the encoder blocks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

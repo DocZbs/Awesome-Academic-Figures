@@ -24,15 +24,20 @@ and source links may be published.
 
 Every approved figure includes:
 
-- Exact paper title, authors, venue/year, official award source, and collection date.
+- Exact paper title, authors, venue/year, collection date, and an official source for any award tag.
 - Exact arXiv version or final proceedings version and a license evidence URL.
 - Original source path and SHA-256 for source-extracted files.
 - An attribution statement, license URL, and a description of preview conversion.
 - Explicit review status; reconstructed prompts are not claimed to be author prompts.
 
-`scripts/build_catalog.py` rejects unapproved rights, missing evidence, unreviewed
-figures, unsafe asset paths, and mismatched original checksums. Maintainers must
-review the content itself before marking a figure approved.
+`scripts/build_catalog.py` rejects unapproved rights, missing evidence, unsupported
+review states, unsafe asset paths, and mismatched original checksums. It accepts
+individually reviewed source originals and explicitly labeled `source_index_verified`
+imports. The latter binds an immutable upstream image index to the matching
+publisher/version license and original-image checksum; it does **not** claim an
+independent visual inspection of every crop. Known crop or third-party rights
+problems are quarantined and excluded from publication. Batch sampling is recorded
+separately and never presented as exhaustive verification.
 
 The repository's MIT license covers its code and maintainer-written text only.
 Paper images, source figure files, and quoted captions retain their own licenses,

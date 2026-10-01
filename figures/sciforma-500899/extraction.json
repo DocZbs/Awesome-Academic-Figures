@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500899",
+  "record_sha256": "31a130f9e5229e7c482d5d1822c5270fd0365a812d0370ab9d765ac6f92e394b",
+  "asset_sha256": "1280a3c21317fb4d0f0daab9e03f64b448d5954a2cffe0dca1105738dd606bbf",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500899",
+    "title": {
+      "zh": "Fairness Shields: Safeguarding against Biased Decision Makers · 方法图",
+      "en": "Fairness Shields: Safeguarding against Biased Decision Makers"
+    },
+    "paper": {
+      "id": "arxiv-2412-11994",
+      "title": "Fairness Shields: Safeguarding against Biased Decision Makers",
+      "authors": [
+        "Filip Cano",
+        "Thomas A. Henzinger",
+        "Bettina Könighofer",
+        "Konstantin Kueffner",
+        "Kaushik Mallik"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11994",
+      "arxiv_url": "https://arxiv.org/abs/2412.11994",
+      "arxiv_id": "2412.11994",
+      "arxiv_first_submitted_at": "2024-12-16T17:21:12Z",
+      "arxiv_updated_at": "2024-12-16T17:21:12Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500899/image/image.jpg?Expires=1790835177&Signature=N0t8fPkUvIwmOnT4tGWDEVzTDDe7eIyyzK~QZzt9~BegLpaneGNN1LF1yKHV9Sfx0Z0tdXQKETnmd2kbcnlYTmLWbrr73d72kCScJf93fCYnX1j~y8y1-s-syfGLrKVMbkvQzgDINXcD0BKiKe-ijnWa0is9jVfy9RqlGUdr9w3qVG1rwIBNZjg1Pvk67EbqkCjW6zmTya03Mw8vQaodCXkvuJTGga5W3p7e3VI7RH~X9lB3GHEscXA0fUdwGYCRPcxTWfMXQ9vF5o0w15NLLZeRMS7iUPHgIzj7X0l7vbh44CgFr2ObBy3IVoeR0aWWarwyQNEVmkB~tyAsd6DAvw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500899,
+      "description_sha256": "f8538c9099b7a1eb11880524ff5ca85465773de640df7055ed9d4609efe546d6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an operational diagram of fairness shields, illustrating a two-stage decision-making process designed to promote fairness in automated systems. The global layout is horizontal and linear, with components arranged from left to right: input data, a sub-symbolic classifier, a fairness shield module, and the final output decision. At the bottom, a row of stylized human icons represents diverse individuals, varying in shading from light gray to black, symbolizing different demographic groups. One icon is outlined in a box, indicating a selected or focused individual whose sensitive feature—gender—is explicitly labeled and fed into the system.\n\nThe central components are two rectangular modules. On the left, a gray rectangle labeled 'Sub-symbolic classifier' receives 'input features' such as gender, age, etc., from the human icons below. This classifier outputs a 'recommended decision' (accept?/reject?) to the next module. On the right, a yellow rectangle labeled 'Fairness shield' receives this recommended decision along with an additional input: 'intervention cost', which flows from the classifier to the shield. The fairness shield also receives the 'sensitive feature' (specifically, gender) directly from the highlighted individual. Based on these inputs, the fairness shield computes and outputs the 'final decision' (accept/reject), which is directed back toward the user or system.\n\nVisual attributes include distinct colors: the classifier is gray, the fairness shield is yellow, emphasizing its role as a corrective or protective layer. All text labels are in black sans-serif font, clearly positioned near arrows or modules. Arrows indicate the direction of information flow: from input features to the classifier, from the classifier to the fairness shield (both recommended decision and intervention cost), and from the fairness shield to the final decision. A vertical arrow connects the sensitive feature to the fairness shield, highlighting its direct influence on fairness assessment. The diagram uses simple, clean lines and minimalistic shapes to focus on the logical flow rather than aesthetic detail.\n\nThe workflow follows a clear sequence: raw input features are processed by the sub-symbolic classifier to generate a preliminary recommendation. This recommendation, along with an associated intervention cost (likely representing the cost of modifying the decision), is sent to the fairness shield. Simultaneously, the sensitive attribute (gender) is provided to the shield to enable fairness-aware evaluation. The fairness shield then adjusts the recommendation if necessary, producing a final decision that aims to balance accuracy and fairness. The caption at the bottom, 'Figure 1: The operational diagram of fairness shields,' confirms the purpose of the diagram as a schematic representation of this fairness-enhancing mechanism."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501706",
+  "record_sha256": "692c731a1c278697c2d519f2c9dd3dc0fb643ba528c58096ed7d066bac25bc41",
+  "asset_sha256": "adc19e939f5c3b24810e02660312a4c2880a1705e60705c64594fd8fc033ce4b",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501706",
+    "title": {
+      "zh": "Multi-Agent Motion Planning For Differential Drive Robots Through Stationary State Search · 方法图",
+      "en": "Multi-Agent Motion Planning For Differential Drive Robots Through Stationary State Search"
+    },
+    "paper": {
+      "id": "arxiv-2412-13359",
+      "title": "Multi-Agent Motion Planning For Differential Drive Robots Through Stationary State Search",
+      "authors": [
+        "Jingtian Yan",
+        "Jiaoyang Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13359",
+      "arxiv_url": "https://arxiv.org/abs/2412.13359",
+      "arxiv_id": "2412.13359",
+      "arxiv_first_submitted_at": "2024-12-17T22:17:42Z",
+      "arxiv_updated_at": "2024-12-17T22:17:42Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501706/image/image.jpg?Expires=1790835200&Signature=Ka2sIXyeuj3d3mNdKX~vdIcVbkVVR8l-PU9TjTpSdU4SfupDAucR~rF05ho76eaNOME1J8LiXoIPAyMjbYyJ8PZgFdbShWtFZd2uaiiKR0~o13C2KtWinNkXtjBaqZsYsrBLCd6EBkz78pmeLsK5fbSSSaghvpMjORU6x4Mm1oA~zyDjtrlbMb76hel6~FPM~rIgDJTeuKVW3EhrY3ghvlL5F5JRNfqz-~F~a-02Wc4dhAgbSp~Ho0HpdE5L8gzhrJ4hg0YqIDaij696BUwB6Cjihr7dh~cuDZ01ivwlj3KxhhdFUFNgfDHWr4XcpBJgFWjOw9ZCiaxn8P3ODNf20Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501706,
+      "description_sha256": "5ea3b850ccbc36b28141f7fab9f17d6beeedde162f120d29145ec6b4745bb0ef",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-part system overview for a multi-agent pathfinding (MAPF) framework, divided into three main components labeled (a), (b), and (c), each illustrating a distinct stage of the planning process.\n\n[1] Global Layout and Structure:\nThe figure is horizontally segmented into three panels: (a) on the left, (b) in the center, and (c) on the right, separated by vertical lines. Panel (a) represents the input environment and obstacle information from a MAPF-based planner. Panel (b) illustrates the SSIPP (Safe Interval Path Planning) module, which generates candidate paths. Panel (c) shows the SPS (Smooth Path Smoothing) module, responsible for refining these paths. The flow proceeds from left to right, indicating a sequential pipeline: MAPF input → SSIPP candidate generation → SPS smoothing.\n\n[2] Visual Modules and Attributes:\nPanel (a) is titled 'MAPF-based Planner' and contains two gray rectangular boxes listing occupied grid positions and their time intervals: '(0,0) occupied from [5.0, INF)' and '(2,0) occupied from [3.0, 6.0)', with an ellipsis indicating more such entries. This panel serves as the input to the next stage.\n\nPanel (b), titled 'SSIPP', features a 2D grid map at the bottom with black and white squares representing obstacles and free space. Two circular agents, labeled v5 and v6, are shown moving along orange trajectories across the grid. Above the grid, a series of vertical bars represent temporal occupancy over time; green bars indicate safe intervals, dark green bars indicate stationary safe intervals, and gray bars represent temporal obstacles. These bars are connected by blue arrows, showing progression through time. To the right, within a dotted oval labeled 'Candidate Paths', two time-vertex plots are shown. Each plot has a vertical axis labeled 'Time' and a horizontal axis labeled 'Vertices' (v0, v1, v2, v3). Green and gray vertical segments represent safe and obstructed time intervals at each vertex, respectively. An arrow points from the grid to the first candidate path, and a downward-pointing triangle below the second path indicates selection or processing.\n\nPanel (c), titled 'SPS', contains a legend identifying two solvers: a red line for 'Bézier Curve Solver' and a blue line for 'Binary Acceleration Solver'. Below this, a 2D graph plots 'Time' on the vertical axis and 'Vertices' (v0, v1, v2, v3) on the horizontal axis. A red curve, representing the Bézier solution, starts at v0, includes a vertical segment labeled 't_wait' to avoid a green obstacle bar, then curves smoothly to v3, ending with a checkmark. A blue curve, representing the Binary Acceleration solution, follows a similar path but ends with a cross, indicating failure or rejection. A dashed blue line labeled 'v_l' represents a velocity limit constraint.\n\n[3] Connections and Arrows:\nA thick green arrow connects panel (a) to panel (b), indicating that the MAPF planner's output (occupied grid cells and time intervals) feeds into the SSIPP module. Within panel (b), blue arrows link the temporal bars above the grid, showing the sequence of states over time. Another arrow points from the grid to the first candidate path in the 'Candidate Paths' section. A large blue arrow connects panel (b) to panel (c), signifying that the generated candidate paths are passed to the SPS module for smoothing. Inside panel (c), the red and blue curves originate from v0 and terminate at v3, with the red curve being accepted (checkmark) and the blue curve rejected (cross)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

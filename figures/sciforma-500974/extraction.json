@@ -1,0 +1,102 @@
+{
+  "id": "sciforma-500974",
+  "record_sha256": "4aff701e5f20561110342d34505c86858afa0226bd8c9e674e0357f08150a90d",
+  "asset_sha256": "371c7680aadb9cda2bf8569e214e990f78a1147eec644448d315640dd4d088bf",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500974",
+    "title": {
+      "zh": "Mastering Board Games by External and Internal Planning with Language Models · 方法图",
+      "en": "Mastering Board Games by External and Internal Planning with Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12119",
+      "title": "Mastering Board Games by External and Internal Planning with Language Models",
+      "authors": [
+        "John Schultz",
+        "Jakub Adamek",
+        "Matej Jusup",
+        "Marc Lanctot",
+        "Michael Kaisers",
+        "Sarah Perrin",
+        "Daniel Hennes",
+        "Jeremy Shar",
+        "Cannada Lewis",
+        "Anian Ruoss",
+        "Tom Zahavy",
+        "Petar Veličković",
+        "Laurel Prince",
+        "Satinder Singh",
+        "Eric Malmi",
+        "Nenad Tomašev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_id": "2412.12119",
+      "arxiv_first_submitted_at": "2024-12-02T18:56:51Z",
+      "arxiv_updated_at": "2025-05-23T01:35:09Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500974/image/image.jpg?Expires=1790835182&Signature=HWpnUNHq18S1wvlgjw9xDOsOSoVS97~o7Y6RVa2LYcEL7Vp3muOow6h~VYq5KfB11ghc~IfoGSP6184T8Jpi4iIJTnlCFyMtek-w9AegVwXatMbF0LcDlgWtYKQixuhpQCPlJdiuMgSkCYZPViptI65kZy7Ew55jN4V964f0I2AumBEh0DZMHD4xJ0JpSv~BlzViTAzAO8bOrkoF4u3Ey-new7eDG3-kGfz58glhte~UZb3Iv6MsN9663-LABxXMJBY-AxZgTAQw0ukq1eMG7INXzM-hHuiKwjdIsSm86dprzZHZUsrfVGRYdflim1NUsIDW8mL22U24OWcHmyrDwg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500974,
+      "description_sha256": "67db3833da363648c0f68a554108c4555ff3bfcc1d4106fe9f9f799cf35ee581",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two subfigures, (a) and (b), illustrating the core components of an asynchronous Monte Carlo Tree Search (MCTS) framework with dynamic virtual counts, used for decision-making in sequential environments such as games or planning tasks.\n\nIn subfigure (a), the global layout is a tree structure representing the search space, with nodes denoting states (s₁, s₂, s₃) and edges representing actions (a₁, a₂, a₃). The tree is traversed using blue arrows indicating the selection phase of MCTS, where a path from the root to a leaf node is chosen based on a policy. At the leaf nodes, red arrows indicate the expansion and simulation phases: each selected state-action pair (sᵢ, aᵢ) is sent to an evaluation module labeled 'MAV(s, a)', which stands for a model-based value function or a policy-value network. These evaluations are performed asynchronously, as emphasized by the text 'Evaluate asynchronously!' below a cylindrical buffer containing a batch of state-action pairs {(s₁, a₁), ..., (s_b, a_b)}. A gray box explains the batch size b: it involves running b simulations, queuing b new evaluations, and waiting to process b results. The dashed lines from the pink-dashed nodes represent unexplored child states, indicating the tree's potential for growth. The MAV module sends feedback (via red arrows) back to the tree, updating the values of visited nodes, enabling the learning process.\n\nSubfigure (b) illustrates the concept of dynamic virtual counts, a mechanism to simulate the effect of multiple parallel evaluations. The tree structure here shows numerical values (+2, +4, +8) inside nodes, representing accumulated visit counts or virtual counts. The blue arrows again denote the selection path, while the red arrows show the propagation of virtual updates. For instance, when a node receives a virtual count update (e.g., +4), it propagates this to its parent, and subsequent selections may lead to further virtual increments (e.g., +8). This allows the algorithm to simulate the effect of multiple evaluations without waiting for them to complete, thus accelerating the search. The dashed lines again represent unexpanded children.\n\nVisually, the figure uses distinct colors and shapes: light blue circles for visited states, pink dashed circles for newly expanded or simulated states, and a beige cloud for the MAV module. The arrows are color-coded: blue for selection, red for action/simulation/feedback, and black for structural connections. The layout is hierarchical, with the root at the top and branches extending downward, reflecting the tree search process. The asynchronous nature of the evaluation is highlighted by the buffer and explicit text, while the dynamic virtual counts are shown through incremental numerical values in the nodes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

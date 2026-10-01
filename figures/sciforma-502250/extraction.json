@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502250",
+  "record_sha256": "184b20ad43182d0d2f1abfff17df5b9d93e9866fb5aa9a7dcbed4dfeb279d750",
+  "asset_sha256": "a3f927569a6d3013877f134497a2f6a68e82fdc14dec5abdaa5bfdceef403c8c",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502250",
+    "title": {
+      "zh": "Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces · 方法图",
+      "en": "Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces"
+    },
+    "paper": {
+      "id": "arxiv-2412-14171",
+      "title": "Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces",
+      "authors": [
+        "Jihan Yang",
+        "Shusheng Yang",
+        "Anjali W. Gupta",
+        "Rilyn Han",
+        "Li Fei-Fei",
+        "Saining Xie"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14171",
+      "arxiv_url": "https://arxiv.org/abs/2412.14171",
+      "arxiv_id": "2412.14171",
+      "arxiv_first_submitted_at": "2024-12-18T18:59:54Z",
+      "arxiv_updated_at": "2025-07-02T21:00:36Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502250/image/image.jpg?Expires=1790835212&Signature=FbXQEbUnvUnsl0stAOWyMaDtC-lcitjI3X2qa7BMisLIsN4AoSBgAU4aU5ea4zqbyLGVu8zyliWRxYNpzdc0~lns4MqgRXLhzg4qa0ICJ602JwlvXEj-Hc5kchciO9rOgnsB9QDBTxlJhf8ztpSSWqbzE2y6K94-TTPYRR1TLls9tVa7pTripdtO2qBnzkwp5VhDJt9FNkkbLSipHD2BmdQTBLEfAz1tA3lQWwyb4fwKTqt0QPgKLlcQ8-6e92CeWIwVlT9wkFUPDUkUJpuo--Cen6xBZ0X3iXlPH3nws-XhfbDRFSj6XVZgc0DcI5Hax7FSb2zwMkl0bi4TAQb6HQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502250,
+      "description_sha256": "30c01c8daab2de0510de12053e386a9d4b14ae87298bd70174f767dfc8b683c5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a benchmark curation pipeline for creating a high-quality visual question answering (VQA) dataset, specifically VSI-Bench, from raw video scans and annotations. The pipeline is structured as a left-to-right workflow with four main stages: Dataset Collection, Dataset Unification, QA Pairs Generation, and VSI-Bench. Each stage is represented by a light blue rounded rectangle containing relevant visual elements and text, connected by dark purple arrows indicating the flow of data and processing.\n\nIn the first stage, 'Dataset Collection', two components are shown: 'Video Scans' (a screenshot of a living room video with a progress bar and color-coded indicators) and 'Annotations' (a 3D-rendered room with highlighted objects like a green chair and red box). Below this stage, a curved arrow labeled 'Incomplete' with a red 'X' points to a gray, low-quality video frame, indicating that incomplete or poor-quality data is filtered out.\n\nThe second stage, 'Dataset Unification', shows 'Meta Information' in the form of a code snippet with JSON-like structure, including fields such as 'scene_name', 'room_type', and 'objects'. A curved arrow labeled 'Misannotated' with a red 'X' points downward to a 3D model of a cluttered room with multiple colored objects, signifying that mislabeled or inconsistent annotations are identified and removed during this phase.\n\nThe third stage, 'QA Pairs Generation', splits into two methods: 'Annotated by Human' (depicted as a browser window showing a task interface with instructions and an action log) and 'Generated by Template' (a list of example questions in red text, such as 'How many {object}(s) are in this room?' and 'What is the size of this room?'). A curved arrow labeled 'Ambiguous QA Pairs' with a red 'X' points to a sample QA interface with a question about object appearance order and multiple-choice options, indicating that ambiguous or poorly formed questions are flagged and discarded.\n\nRunning horizontally beneath these three stages is a light green band labeled 'Human-in-the-loop Quality Review', emphasizing that human oversight is applied at each step to filter out low-quality inputs. This quality control process ensures only valid data proceeds to the final stage.\n\nThe final stage, 'VSI-Bench', displays the output: a collection of curated video scans (multiple frames from different rooms) and a box labeled 'Curated QA Pairs' containing a sample Q&A: 'Q: What is the length of the table? A: 150 cm'. This represents the final, high-quality benchmark dataset ready for use.\n\nAll visual modules use consistent shapes (rounded rectangles, browser windows, code snippets), colors (light blue for stages, red for errors, green for quality review), and text labels to clearly communicate the pipeline's logic and quality assurance mechanisms."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

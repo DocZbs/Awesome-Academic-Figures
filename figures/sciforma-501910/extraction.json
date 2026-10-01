@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501910",
+  "record_sha256": "ff1657713e8e6fd00afcd304e4672ac09ba9ce5f7ef0466e4cd3218a268bd7ae",
+  "asset_sha256": "9a8058a7c0c202172b57a637d289bda6747e39b90c79c1b646e9a0c6921c99cf",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501910",
+    "title": {
+      "zh": "Exploring Multi-Modal Data with Tool-Augmented LLM Agents for Precise Causal Discovery · 方法图",
+      "en": "Exploring Multi-Modal Data with Tool-Augmented LLM Agents for Precise Causal Discovery"
+    },
+    "paper": {
+      "id": "arxiv-2412-13667",
+      "title": "Exploring Multi-Modal Data with Tool-Augmented LLM Agents for Precise Causal Discovery",
+      "authors": [
+        "ChengAo Shen",
+        "Zhengzhang Chen",
+        "Dongsheng Luo",
+        "Dongkuan Xu",
+        "Haifeng Chen",
+        "Jingchao Ni"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13667",
+      "arxiv_url": "https://arxiv.org/abs/2412.13667",
+      "arxiv_id": "2412.13667",
+      "arxiv_first_submitted_at": "2024-12-18T09:50:00Z",
+      "arxiv_updated_at": "2025-05-31T19:01:54Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ME"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501910/image/image.jpg?Expires=1790835209&Signature=G5fvENFFOalYrbl35z1e5Qfpt7vtlpWKfLV6o-HCuw-rNutQ6ABEhPvix~NfPXGjuNjNbF4BUE6mevYZTIyOy-xNLZ7c8onmAp8DsXwM0DHiiwzfq~q6YpUhUnFUSkz7fI7zOw3bw0E0SJvdtZSOGucTfR5uij60i32vJ1xbX7269VNdo6bgI3vmLBOfK00cZEnz563xC6fqiEAchhdodNuqDNXpb8BqRZSfZ-8ABzJ6p4jqQiGx-p0aCFJswkBzuy0Uu-RurtDMUouf~7wY34bcY0QzAQOPBZG2ZJ8kcC1kb-8EN1QtO6vvSnQt9YipZGCZsS8Zm8ZywF2EnfaxCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501910,
+      "description_sha256": "64cf06ae31d878fc77b9e2e437fa687170c2b275e10f4d953f03b356462bcdac",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ME"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-agent framework for causal graph refinement through data augmentation and constraint enforcement, divided into three main parts: (a) an overview of the entire system, (b) the internal structure of the Data Augmentation Agent (DA-agent), and (c) the internal structure of the Causal Constraint Agent (CC-agent).\n\nIn part (a), the global layout shows a pipeline starting from two inputs: 'Meta Data' (represented by a table icon, labeled with variable/data names) and 'Data Samples' (represented by a bar chart icon). These inputs feed into two parallel components: a 'Causal Graph Estimator' (orange box, containing SCD algorithms such as PC, ES, DirectLiNGAM) which produces an 'Initial Causal Graph G₀' (black box with a network icon), and a 'Data Augmentation Agent (DA-agent)' (blue box with a robot icon) which generates 'Contextual Data' (document icon). The 'Initial Causal Graph G₀' is then processed by the 'Causal Constraint Agent (CC-agent)' (green box with a robot icon), which outputs 'Causal Constraints' (black box with a simple graph icon). Both 'Contextual Data' and 'Causal Constraints' are fed into the 'Causal Graph Refiner' (pink box, also containing SCD algorithms), which produces the final 'Refined Causal Graph G' (black box with a complex network icon). A lightbulb icon above the refined graph indicates the output of the refinement process.\n\nPart (b) details the DA-agent. It receives Meta Data and Data Samples as input. Inside, a 'Search LLM' (robot icon) iteratively interacts with a 'Toolkit' (dashed blue box containing Web API and Log API icons) to retrieve data. The retrieved data is stored in a database icon labeled 'Retrieved Data', which is then processed by a 'Summary LLM' (robot icon) to produce summarized contextual data. The Search LLM maintains a 'Call History' (stacked rectangles) to track interactions. The iterative loop between the Search LLM and Toolkit is indicated by a curved arrow labeled 'Iterate'.\n\nPart (c) details the CC-agent. It takes the Initial Causal Graph G₀ and Contextual Data as inputs. These are processed by a 'Prompt Builder' (browser window icon) to generate prompts for a 'Knowledge LLM' (robot icon), which then feeds into a 'Constraint LLM' (robot icon) to derive causal constraints. The final output is a graph icon representing the generated constraints. The flow is linear from left to right within this module.\n\nAll agents are represented by robot icons, and data or intermediate results are shown in rectangular boxes with appropriate icons and labels. Arrows indicate the direction of data flow, with dashed lines used for internal loops or toolkits. The color coding distinguishes modules: blue for DA-agent, green for CC-agent, orange for the estimator, pink for the refiner, and black for data or graph representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

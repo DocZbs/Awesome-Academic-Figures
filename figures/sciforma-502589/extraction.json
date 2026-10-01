@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502589",
+  "record_sha256": "58e4d28f58ef633a265fd62af90e9ebcaad83a58293f7e67a548d41137632e7c",
+  "asset_sha256": "a13f2230f5c3910c2fa5d33ae60b3f4e9840b64c0c33f31f1c54b69435f92d78",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502589",
+    "title": {
+      "zh": "Extending TWIG: Zero-Shot Predictive Hyperparameter Selection for KGEs based on Graph Structure · 方法图",
+      "en": "Extending TWIG: Zero-Shot Predictive Hyperparameter Selection for KGEs based on Graph Structure"
+    },
+    "paper": {
+      "id": "arxiv-2412-14801",
+      "title": "Extending TWIG: Zero-Shot Predictive Hyperparameter Selection for KGEs based on Graph Structure",
+      "authors": [
+        "Jeffrey Sardina",
+        "John D. Kelleher",
+        "Declan O'Sullivan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14801",
+      "arxiv_url": "https://arxiv.org/abs/2412.14801",
+      "arxiv_id": "2412.14801",
+      "arxiv_first_submitted_at": "2024-12-19T12:47:21Z",
+      "arxiv_updated_at": "2024-12-19T12:47:21Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502589/image/image.jpg?Expires=1790835225&Signature=FfofNk9Hf~aZw7pYDb2LAYV8LMengT9cVGGST2rYfxl3Xr7~xdHVk6F2MLVXkXeMQA5WAtfpBffJvr-lMq5~Y2lXBlihuYDtMaMy7brGtYPGi1FPKJXeBogA2229fkBwGPE3F6cW4Qj688m7GNYQm1gP7XNVo1i2PCqMCZGAACVPGSKuQtvzHVFktg8wwMydG1kzOptDxuJLeBKNQBW7OS-645tcGCYKwNoApzVmobWfLYERuvyYGedMdYfX7TAShW88zhdM8WK89kJQkHQKCK-8PDVqkZSpRBh6zpJ3hm0ueMZHcQQ6yiVVJWiTUMFAVn57GKprgEWIQwC7ILfjoQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502589,
+      "description_sha256": "3424de1745caebceea8332e5533d922faa3e8dcdd27a43e119dbd283d0df21c7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic overview of the rank-based evaluation process for Knowledge Graph Embedding (KGE) models, specifically in the context of link prediction. The overall layout is structured vertically into three main stages: Link Prediction Query at the top, KGE Scoring Function in the middle, and Rank Extraction at the bottom right, connected by directional arrows indicating the flow of computation.\n\nIn the top section labeled 'Link Prediction Query', a knowledge graph is depicted within a rectangular box. This graph contains several circular nodes representing entities such as Legolas, Sauron, Saruman, Pippin, Sam, Frodo, and Witch King. Directed edges between these nodes represent relationships like 'Friend-of' and 'Enemy-of'. A central black-outlined node marked with a '?' indicates an unknown entity to be predicted. Specifically, the query focuses on predicting the 'Friend-of' relationship from Pippin to this unknown entity. Arrows point from Pippin to the '?' node, and other relationships are shown connecting the known entities to provide contextual information.\n\nBelow this, the 'KGE Scoring Function' section illustrates how scores are computed for candidate entities. It begins with the same query structure: Pippin → ? with the 'Friend-of' relation. Then, multiple scoring operations are shown using the function f applied to different candidate triples: f(Pippin — Friend-of → Sam), f(Pippin — Friend-of → Gimli), f(Pippin — Friend-of → Sauron), and f(Pippin — Friend-of → Legolas). Each application of the function yields a corresponding score: score_Sam, score_Gimli, score_Sauron, and score_Legolas. These scoring operations are visually represented as mathematical expressions with arrows pointing from each function application to its resulting score.\n\nTo the right, the 'Ranked List (sorted by score)' is displayed as a vertical table with numbered rows from 1 to n. The scores are sorted in descending order based on their computed values. For example, score_Gimli is ranked first, followed by score_Sam, then score_Legolas, and finally score_Sauron at position n. Thick black arrows connect each computed score from the scoring function to its corresponding position in the ranked list.\n\nFinally, the 'Rank Extraction' stage at the top right shows the result of the evaluation: a boxed equation stating Rank(Gimli) = 1, indicating that Gimli was assigned the highest rank among all candidates. A thick upward arrow connects this result back to the ranked list, emphasizing that the rank is extracted directly from the sorted scores. The entire diagram uses black-and-white graphics with clear labels, mathematical notation, and directional arrows to convey the logical workflow from query formulation through scoring and ranking to final rank extraction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

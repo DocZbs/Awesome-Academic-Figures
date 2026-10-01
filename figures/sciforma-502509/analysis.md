@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Shapley Value Estimation Speedup for Efficient Explainable Quantum AI — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14639
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a quantum circuit implementation of the unitary operator $U_V^/pm$ for a weighted voting game. The global layout consists of three horizontal registers stacked vertically: the top register labeled $|\psi\rangle_{\text{P1}}$ represents the primary input state, the middle register labeled $|0\rangle_{\text{Aux}}$ serves as an auxiliary register initialized to zero, and the bottom register labeled $|0\rangle_{\text{Ut}}$ is the utility register, also initialized to zero. These registers are depicted as horizontal lines extending across the circuit.
+
+The circuit proceeds from left to right. The top register $|\psi\rangle_{\text{P1}}$ contains multiple qubits, represented by horizontal lines, with some connected via vertical control lines to boxes below. These control lines originate from specific qubits in the top register and connect to rectangular boxes in the auxiliary register. The auxiliary register contains a sequence of rectangular boxes labeled $+w_0$, $+w_1$, ..., $+w_{n-1}$, each representing an addition operation of a weight $w_i$ to the auxiliary register. Each box is connected to one control line from the top register, indicating that the weight is conditionally added based on the state of the corresponding qubit in $|\psi\rangle_{\text{P1}}$. The boxes are arranged sequentially, separated by ellipses indicating continuation.
+
+After the last weight addition box ($+w_{n-1}$), the auxiliary register feeds into a large rectangular gate labeled $x \geq q$, which performs a comparison between the accumulated vote count (stored in the auxiliary register) and a threshold $q$. This gate has two curly braces on its left and right sides, both labeled $x$, indicating that the input and output of this gate are associated with the variable $x$. The output of this comparison is written to the utility register $|0\rangle_{\text{Ut}}$, which is shown as a single horizontal line at the bottom. The gate is designed such that if the vote count in the auxiliary register is greater than or equal to $q$, the utility register is set accordingly.
+
+The connections between components are represented by straight horizontal and vertical lines. Control lines from the top register to the weight addition boxes are vertical, while data flow within the auxiliary and utility registers is horizontal. The circuit is structured to compute the outcome of a weighted voting game: given an input state encoding a subset of players and a binary variable $x$ (indicating inclusion or exclusion of a specific player’s vote), the circuit computes the total vote count in the auxiliary register and then checks if it meets or exceeds the threshold $q$, outputting the result in the utility register. The caption clarifies that the circuit outputs $|V^-(S_h)\rangle$ when $x=0$ and $|V^+(S_h)\rangle$ when $x=1$, where $S_h$ is a subset defined in the paper. The auxiliary register holds the total vote count just before the comparison gate, and after the gate, the auxiliary register can be cleared by subtracting each player’s contribution.

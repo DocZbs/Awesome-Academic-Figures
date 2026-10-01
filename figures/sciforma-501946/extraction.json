@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501946",
+  "record_sha256": "7d0914235d372784aec451c5f42fc5537739d9ce825d50604a099201fda90b24",
+  "asset_sha256": "e39094f74a6ab020434005b14562e246e65c483e7194dac8cad8bdd38c9efd32",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501946",
+    "title": {
+      "zh": "Physics-Based Adversarial Attack on Near-Infrared Human Detector for Nighttime Surveillance Camera Systems · 方法图",
+      "en": "Physics-Based Adversarial Attack on Near-Infrared Human Detector for Nighttime Surveillance Camera Systems"
+    },
+    "paper": {
+      "id": "arxiv-2412-13709",
+      "title": "Physics-Based Adversarial Attack on Near-Infrared Human Detector for Nighttime Surveillance Camera Systems",
+      "authors": [
+        "Muyao Niu",
+        "Zhuoxiao Li",
+        "Yifan Zhan",
+        "Huy H. Nguyen",
+        "Isao Echizen",
+        "Yinqiang Zheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13709",
+      "arxiv_url": "https://arxiv.org/abs/2412.13709",
+      "arxiv_id": "2412.13709",
+      "arxiv_first_submitted_at": "2024-12-18T10:51:59Z",
+      "arxiv_updated_at": "2024-12-18T10:51:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501946/image/image.jpg?Expires=1790835209&Signature=KDVzJcb5SF3hzwBNOYN4jJDdVcCMPqNXPuC1JPWT6OcghqlXvUNdFJMju6G1M4JZzNxfUaeoy4fkbZsPAiBqETYke9o-L4cesalwKDSwJS8x6scXXdUPgd-GbtTpu5N0cq5lfedWBV6t34iFc09cVHxD-xev5AeCrkQlAiWZIw5gp53J4gTkXtbFV84SaANLdZ4ixsElI3Ad2N9oBF4SaqTGHnHlZyMXvBvUyKrXeCpMBAnWxMaBVLzegiZm6SahyfwJT2nv8WgI1tChiYHvLNQUyZIEs~G7ugrUa76dAaK1syX0Qq8esOUHqu1rYUF0VBs58mKcCzEGVdBjz4jcJw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501946,
+      "description_sha256": "e0a9a52dd86b21c26bba5e2ecb5d91d313a136107b4c80e6fcd9651e55bd0d93",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a pipeline for generating 2D segmentation maps from 3D human body models using the SMPL framework. The global layout is structured as a top-down workflow: starting from a standard SMPL human body model on the top left, progressing through random variations in motion and identity, then rendering with random camera poses, and finally producing 2D segmentation maps from arbitrary viewpoints at the bottom left.\n\nIn the top-left section, a 3D human body model is shown in a T-pose, segmented into 31 distinct regions using a color-coded scheme (e.g., purple, green, blue, yellow, red, etc.), each representing a semantic body part. Text labels indicate '6890 Vertices' and '31 Segments', with an arrow pointing downward from vertices to segments, emphasizing the segmentation process. This model is labeled 'Standard SMPL Human Body'.\n\nAn arrow labeled 'Random Motions' and 'Random Identities' points rightward to a group of three 3D human figures in dynamic poses (e.g., walking, gesturing), demonstrating how the same segmentation is preserved across different body shapes and motions. The colors of the segments remain consistent across these varied instances, highlighting the homeomorphism property of SMPL-based models.\n\nFrom this group of 3D models, a thick black downward arrow leads to a rounded rectangular box labeled 'Rendering'. Below this box, another arrow points upward from a 3D coordinate grid labeled 'Random Camera Pose', which contains multiple red triangular frustums scattered throughout the space, symbolizing diverse camera positions and orientations.\n\nA thick black leftward arrow connects the 'Rendering' box to a large rectangular panel at the bottom left, titled '2D Segmentation Maps From Arbitrary Views'. This panel displays a grid of 12 small images against a black background, each showing a 2D projection of a human figure in a different pose and view (front, side, back, angled, distant, close-up), with the same color-coded segmentation preserved. These images represent the output of the rendering process under varying camera extrinsics.\n\nThe entire diagram visually conveys the methodological flow: starting from a standardized 3D model with predefined vertex segmentation, generating diverse 3D instances via random motions and identities, rendering them from random camera poses, and finally obtaining consistent 2D segmentation maps suitable for training or evaluation in computer vision tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

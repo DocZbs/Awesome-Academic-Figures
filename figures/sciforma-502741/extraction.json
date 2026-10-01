@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502741",
+  "record_sha256": "2587032d35fac67ce5933a37d7167634dce2bb0e0b642d1d280e42f69f338f09",
+  "asset_sha256": "4a1ff6c5c91aad4c57e4fc790e191c9551d50e75e2a3d09b2decfce0d01235ca",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1344,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502741",
+    "title": {
+      "zh": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues · 方法图",
+      "en": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues"
+    },
+    "paper": {
+      "id": "arxiv-2412-15190",
+      "title": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues",
+      "authors": [
+        "Sagar Soni",
+        "Akshay Dudhane",
+        "Hiyam Debary",
+        "Mustansar Fiaz",
+        "Muhammad Akhtar Munir",
+        "Muhammad Sohail Danish",
+        "Paolo Fraccaro",
+        "Campbell D Watson",
+        "Levente J Klein",
+        "Fahad Shahbaz Khan",
+        "Salman Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15190",
+      "arxiv_url": "https://arxiv.org/abs/2412.15190",
+      "arxiv_id": "2412.15190",
+      "arxiv_first_submitted_at": "2024-12-19T18:57:13Z",
+      "arxiv_updated_at": "2025-04-07T06:19:02Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502741/image/image.jpg?Expires=1790835227&Signature=Ox4xKFt2F3PlH0ovR2Zos-Qhbgiv7dUTKn93FWCWrcjk1peUcFbq1h7XlUiUZI-TpIMtKbIT-f2tBxIyUw~1s71tMpjzk9aKKi7UvurUDSEoE10VU2BG5fydwifROJ00TqtGF1yFUq5-MoROtRRZ5cBG45PTCNiBnPb~h-5P4VbcS3lgWWWoo1aUkRd8Gj5nJie8MLdbtNV0vHaapZ9aVW1YKvC10G~A1py7KZ77VnEcaWwWO-BAftUEaR7vfoZnAA-eZ-4CDdZINp18mU8LnDI0RcQ9onWDrEJcrn13XmF3k8JTN2kqDxAsHtA4nHyHfFzfEeIFVJFYpK7L7Vjfjg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502741,
+      "description_sha256": "206bd85abbb7a84b53ea4942b6f51b29074055c610bec66d2e578e09ba12f854",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive data preparation and filtering pipeline for generating question-answer (QA) instruction pairs from satellite imagery and OpenStreetMap (OSM) labels. The global layout is structured vertically in a top-down flow, beginning with two primary input sources at the top: 'Satellite imagery' on the left and 'OSM labels and coordinates' on the right. These inputs feed into two parallel filtering stages—'Label-based filtering' and 'Image-based filtering'—which converge to produce high-quality image-label pairs. These pairs are then processed by the InternLM-XComposer2-VL 7B model to generate QA pairs using a predefined prompt template.\n\nIn the top section, the 'Satellite imagery' box contains six example satellite images arranged in a 2x3 grid, depicting various land cover types such as urban areas, forests, and water bodies. Adjacent to it, the 'OSM labels and coordinates' box displays a grid with three labeled features: Feature A (red), Feature B (blue), and Feature C (green dashed), indicating spatially referenced OSM data points.\n\nThe data flows downward via thick gray arrows. The first processing stage is 'Label-based filtering', where satellite images are evaluated based on the number of associated OSM labels. Three examples are shown: an image with 3 labels (accepted, green), one with 2 labels (rejected, red), and one with 4 labels (accepted, green). This stage filters out images with fewer than 3 labels.\n\nParallel to this, the 'Image-based filtering' stage assesses image quality. Three example images are shown: one cloudy (rejected, red), one with insufficient coverage (rejected, red), and one clear (accepted, green). This stage removes low-quality images regardless of label count.\n\nAfter both filtering stages, the accepted images are combined with their associated OSM labels. On the left, a filtered image is paired with a list of labels (e.g., Label 1, Label 2, ...). On the right, the same image is shown alongside a placeholder for generated QA pairs (e.g., Question 1, Answer 1; Question 2, Answer 2; ...).\n\nThese processed image-label pairs are then fed into the InternLM-XComposer2-VL 7B model, represented by a logo with Chinese characters (书生) and the model name. The model uses a prompt template shown at the bottom: a green box containing '<ImageHere>' followed by the instruction 'Write a question and answer pair about this satellite image ...'. The prompt also includes the list of labels and specifies which label’s QA pair should be generated. The entire process is designed to produce high-quality, instruction-following QA data for training vision-language models."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

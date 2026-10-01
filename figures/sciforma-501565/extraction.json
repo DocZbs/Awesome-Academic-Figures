@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501565",
+  "record_sha256": "6387e69cc2e495b15c62f6b6fe5673322025325a10a11422f07e0d1b19ca58d6",
+  "asset_sha256": "c297e2ee947c7859362e57c6c35167bba6d710f05caa32999914e9b6266db21c",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501565",
+    "title": {
+      "zh": "Relational Neurosymbolic Markov Models · 方法图",
+      "en": "Relational Neurosymbolic Markov Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13023",
+      "title": "Relational Neurosymbolic Markov Models",
+      "authors": [
+        "Lennert De Smet",
+        "Gabriele Venturato",
+        "Luc De Raedt",
+        "Giuseppe Marra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_id": "2412.13023",
+      "arxiv_first_submitted_at": "2024-12-17T15:41:51Z",
+      "arxiv_updated_at": "2024-12-17T15:41:51Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501565/image/image.jpg?Expires=1790835197&Signature=huKXJEQaKD0woUxE9~QjKyXMey4UcFgwtTJ5T21Runxqq5i32x~FwB34MgKl~9FMayPTbV7xzBTECjJu3XZHXFKE~R4BqmeMpmakNus~4Nq0Dd8ZI0l4BYhb97IuqSH6Jzy6HQW-xz68~Xu6OTvH0lLVdRl-CeCsiXnk35BFdUH3zwBkrycIS0ztmLsmdicvA7fNHOjEV98QyHXrptASHW3y5xJ3tHVhgNk5VeztUfgJGdt5yeRpucvewIvFrw9BSBO99Qm4CWVoS3MZGeoOxO8f9kEhzQ219wk99-UUe5RWxzUMcJ8bAeYpbBPJWi6WGv34Khh6b~zn8VK2zyL8ew__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501565,
+      "description_sha256": "81bff1e7bb1a5305be669a9fd1ce0468b739ec2b59dd91e75cb33ff8b622df5d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a rolled-out graphical model, structured as a directed acyclic graph (DAG) with a temporal or sequential progression from left to right. The global layout consists of three horizontal layers: a top layer containing initial and context nodes, a middle layer representing state and action variables across time steps, and a bottom layer for observation or sensor nodes. The structure is unfolded over multiple time steps, indicated by repeating patterns labeled with indices 0, 1, 2, and an ellipsis (...) suggesting continuation.\n\nVisual modules include circular nodes in two distinct colors: light blue for latent or decision-related variables and light green for observed or sensor variables. The top-left corner features a square node labeled 'Im' in light blue, representing an initial model or input. From this node, two directed edges emerge: one labeled φ^m pointing to a circular node 'M', and another labeled φ^P pointing downward to 'P₀'. Node 'M' is connected via multiple parallel edges to each subsequent 'P_t' node (P₀, P₁, P₂, ...), indicating a shared influence across time steps. A separate circular node 'C' at the top center connects to all 'H_t' nodes (H₀, H₁, H₂, ...) via individual directed edges, suggesting a global context or constant parameter affecting hidden states.\n\nEach time step t contains a sequence of three nodes: 'P_t' (light blue), 'H_t' (light blue), and 'S_t' (light green). 'P_t' receives input from 'M' and 'C', and also from the previous 'H_{t-1}' (except for P₀, which has no predecessor). 'P_t' feeds into 'H_t', which then connects to 'S_t'. Additionally, 'S_t' feeds back into 'P_{t+1}', forming a feedback loop. The 'S_t' nodes are also connected to 'P₀' and 'H₀', implying that observations from later time steps may influence the initial state estimation or policy. All connections are represented by solid black arrows, indicating directed dependencies. The caption notes that this is a rolled-out version of a more compact model (referenced as Figure~\\ref{fig:markov-game}), and the query node G is omitted to avoid cluttering the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

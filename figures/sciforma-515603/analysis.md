@@ -1,0 +1,19 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy — arXiv 2025.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2502.04898
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents the ARTInp framework, which consists of two main components: a Completion Network and a Translation Network, arranged vertically. The top section, labeled 'Completion Network', processes sagittal slices of cone-beam CT (CBCT) data with gaps. It begins with an input block showing an original CBCT volume with a gap, alongside an original CT and a gap mask, indicated by a 3D coordinate system (x, y, z). This input feeds into a Generator module, depicted as a pink hourglass-shaped structure, which produces a synthesized CBCT (sCBCT) output. The sCBCT is shown as a sagittal slice with a green dashed line indicating the gap region. This output is then combined with the original CBCT to form an inpainted CBCT, displayed as a sagittal slice with a red dashed line marking the reconstructed area. The inpainted CBCT is evaluated by two discriminators: a Global Discriminator and a Local Discriminator, both represented as pink triangular shapes. The Global Discriminator receives the full inpainted image, while the Local Discriminator focuses on the region around the gap, indicated by a yellow dashed box. Both discriminators output a 'Real/Fake' classification, with the Local Discriminator's output connected via a dashed red arrow, suggesting adversarial training feedback.
+
+The bottom section, labeled 'Translation Network', processes axial slices derived from the inpainted CBCT via a 'Sagittal to Axial Slice' transformation, indicated by a coordinate system (x, y). The inpainted CBCT axial slice serves as input to another Generator, also shown as a pink hourglass. This Generator produces a synthesized CT (sCT), displayed as an axial slice. The sCT is then paired with the original CT for evaluation by a Discriminator, represented as a pink triangle, which outputs a 'Real/Fake' decision. A dotted vertical line separates the sCT from the original CT within the Discriminator’s input, emphasizing the comparison. The entire framework is labeled 'ARTInp' at the center, bridging the two networks. All modules are enclosed in dashed rectangular boxes, and arrows indicate the flow of data between components, with solid lines for forward propagation and dashed lines for adversarial feedback or auxiliary connections.

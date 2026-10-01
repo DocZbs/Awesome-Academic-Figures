@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500692",
+  "record_sha256": "3023d0abd8efbae4abd36327584f52c2e517b9546f98998f18273753eb420dae",
+  "asset_sha256": "d679bb60d93a239b9ca169bb74015bba35ca4e035a35bd97c96eb248859c3729",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500692",
+    "title": {
+      "zh": "DINO-Foresight: Looking into the Future with DINO · 方法图",
+      "en": "DINO-Foresight: Looking into the Future with DINO"
+    },
+    "paper": {
+      "id": "arxiv-2412-11673",
+      "title": "DINO-Foresight: Looking into the Future with DINO",
+      "authors": [
+        "Efstathios Karypidis",
+        "Ioannis Kakogeorgiou",
+        "Spyros Gidaris",
+        "Nikos Komodakis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11673",
+      "arxiv_url": "https://arxiv.org/abs/2412.11673",
+      "arxiv_id": "2412.11673",
+      "arxiv_first_submitted_at": "2024-12-16T11:26:46Z",
+      "arxiv_updated_at": "2025-11-28T18:40:16Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500692/image/image.jpg?Expires=1790835174&Signature=P0qi3lYbgzvxstCrByhbm0L64-uwYUN6F9EV-S3Mes1WF8B8qLrXHqXz~BASsADs~xrnCAeMS8Q9BGQvneFcVWQo9XUJV7AQHGS7mbqrTo6TXHjBOB-eGq-FI3JMlIDf5G4~lqPcZ8BWzrR5yXhfERoYZiOTkT4Zxr6ioCbhJlrCAsj8Qy4MQv-ATBKEVO0kHeMxn01J81FMrex-gqbE8WJN-wiq3NDAOTabmTxV~kOK8-NUDh71IyWBn1v8hnswl2yhqF0PE8WKsXAGDxFBCiVLJXuTrXmtDnLWbmm7a6QIV59-3BADF5jBX8dZxaKc2DHYFxgTYvYyKEFDj8pOqQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500692,
+      "description_sha256": "c67e83d3f8bde8d65b37197d9c692eb43dc00770accc3e5d6ed89bab625ec2e4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical target feature construction pipeline for a masked feature transformer, designed to build a compact and informative feature space from a frozen Vision Transformer (ViT) encoder. The global layout is structured into three main vertical sections: on the left, the Vision Transformer module processes input images; in the center, concatenated hierarchical features are formed; and on the right, these features are compressed via token-wise PCA to produce final target features.\n\nIn the leftmost section, labeled 'Vision Transformer', four stacked rectangular blocks, each labeled 'Transformer Block' and shaded light purple, represent successive layers of the ViT encoder. These blocks receive input from six small grayscale image patches arranged in two rows of three at the bottom, indicating the visual input data. Each Transformer Block outputs feature maps that are directed rightward via black arrows to the central module.\n\nThe central module, labeled 'Concat' and shaded light yellow with rounded corners, receives feature outputs from all four Transformer Blocks. Inside this module, the features are visually represented as a grid of 4 rows and 3 columns of small light purple squares, symbolizing the concatenation of multi-layer features along the depth dimension. This forms a hierarchical feature representation where each row corresponds to features extracted at a different Transformer layer.\n\nFrom the Concat module, a thick black arrow leads downward and rightward to a rounded rectangular box labeled 'Concatenated Hierarchical Features'. This box contains a grid of nine larger, slightly blurred light purple squares arranged in a 3x3 pattern, representing the aggregated feature tensor after concatenation across layers.\n\nAbove this, a blue rectangular box labeled 'Token-wise PCA' receives input from the Concatenated Hierarchical Features via an upward arrow. This module performs dimensionality reduction on each token individually, transforming the high-dimensional concatenated features into a more compact representation.\n\nFinally, an upward arrow from the Token-wise PCA box points to a grid of six light blue squares arranged in two rows of three, labeled 'Target Features'. These represent the final output features used by the downstream masked feature transformer. The entire flow emphasizes a hierarchical extraction and compression strategy to create efficient, semantically rich features for subsequent modeling tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

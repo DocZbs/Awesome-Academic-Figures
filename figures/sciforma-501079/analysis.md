@@ -1,0 +1,29 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+The impact of AI on engineering design procedures for dynamical systems — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12230
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates an approach for multi-criteria design of complex multibody systems using adaptive hybrid modeling. The global layout is a left-to-right workflow diagram, starting from a real multibody system on the far left and progressing through hybrid modeling, optimization, and ending at an application for a complex vehicle multibody system on the far right. The diagram includes feedback loops and auxiliary data inputs, emphasizing adaptivity and integration of physical and machine learning components.
+
+On the left, a gray rectangular box labeled 'Real multibody system' contains stacked horizontal rectangles representing 'Component 1', 'Component 2', ..., up to 'Component m'. These components are shaded dark gray and arranged vertically. A dashed curved arrow connects the components internally, indicating coupling or interaction within the real system. From this box, two arrows emerge: one labeled 'System knowledge' points to a central processing block titled 'Hybrid modeling', and another labeled 'Partial measurements' points downward to a purple rectangular box labeled 'Measurements from experiments & simulations'.
+
+The 'Measurements from experiments & simulations' box feeds upward into the 'Hybrid modeling' block via an arrow labeled 'Data'. The 'Hybrid modeling' block is a white rectangle positioned centrally, acting as the core transformation stage. It receives both system knowledge and data inputs and outputs to the next stage.
+
+To the right of 'Hybrid modeling' is a larger gray box labeled 'Hybrid system model'. Inside this box, components are represented similarly but with color-coded distinctions: 'Component 1' and 'Component 2' are shaded pink, while 'Component m-1' and 'Component m' are shaded light blue. A vertical blue bar runs along the right edge of this box, possibly indicating a boundary or interface. Dashed curved arrows inside this box indicate internal coupling between components, mirroring the real system’s structure. This hybrid model integrates physical and machine learning components, as indicated by the legend at the bottom right: pink corresponds to 'Physical model', light blue to 'ML model', and the blue bar represents 'Discrepancy model'. The dashed lines denote 'Coupling' between components.
+
+An arrow labeled 'Adaptivity' connects the 'Hybrid system model' back to the 'Hybrid modeling' block, forming a feedback loop that enables iterative refinement based on performance or discrepancies.
+
+From the 'Hybrid system model', an arrow leads to a white box labeled 'Multiobjective optimization', which then connects to the final output box: 'Application: Complex vehicle multibody system'. This signifies the use of the optimized hybrid model in practical engineering applications.
+
+At the bottom right, a legend clarifies visual attributes: pink rectangles represent 'Physical model', light blue rectangles represent 'ML model', the blue vertical bar represents 'Discrepancy model', and dashed lines represent 'Coupling'. The overall workflow emphasizes the fusion of domain knowledge, experimental data, and machine learning to create an adaptive hybrid model suitable for multiobjective optimization in complex systems.

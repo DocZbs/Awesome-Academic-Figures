@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500572",
+  "record_sha256": "0bcee8e86ea5de3527e6c474798dc4c2f00267ac27dde9bf221e5beaee10d381",
+  "asset_sha256": "043996758273e80f3af2f7552ca53abcc03eaad45913401a7fc406fa22464668",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500572",
+    "title": {
+      "zh": "DART: An AIGT Detector using AMR of Rephrased Text · 方法图",
+      "en": "DART: An AIGT Detector using AMR of Rephrased Text"
+    },
+    "paper": {
+      "id": "arxiv-2412-11517",
+      "title": "DART: An AIGT Detector using AMR of Rephrased Text",
+      "authors": [
+        "Hyeonchu Park",
+        "Byungjun Kim",
+        "Bugeun Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11517",
+      "arxiv_url": "https://arxiv.org/abs/2412.11517",
+      "arxiv_id": "2412.11517",
+      "arxiv_first_submitted_at": "2024-12-16T07:51:09Z",
+      "arxiv_updated_at": "2025-02-04T10:52:02Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500572/image/image.jpg?Expires=1790835172&Signature=M9NojuXZ--hlFzE~WhzKP-GEopXeLMySrR7FtltOgGQeEz1PyLuVgKPPULA91Cfj~ZK3HB3jriyqdAnsvza~SyQYafHBl75EkNrqIHnc87RWdXemMw15eV70gIXgejVOB-8dQJr94YzJwTRFWhBfhzUzgI-hZm7WPr46dk1ZCWpaaymhVbWbi2ha7GnI3vVlxaaJ77qsIfhSxeWn2aNPIRRQ~viEdTGeJm0urvZdRhkTVLEOyb~hQ30XaESvjPmTshTivKkLz3L0jv0nvjlZJHPT7A2HVH7RTRSQxCN-vUWeUK~O8snF46I9J4GUvWQJCnlhoU7WVsKaYuSK4YWKeQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500572,
+      "description_sha256": "3925003aaccc66ac840924e6cc4adf684366eee40252600409bab62e762dfa2f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DART framework, a methodological pipeline for evaluating and classifying AI-generated text based on semantic gap analysis. The overall layout is structured into four main stages, numbered 1 through 4, arranged vertically from top to bottom, representing a sequential workflow.\n\nStage 1 begins with an initial text input denoted as T₀, represented by a light blue document icon. This text undergoes iterative rephrasing operations, indicated by arrows labeled 'Rephrase', producing successive versions T₁ and T₂, shown as progressively darker blue document icons. This stage emphasizes the generation of multiple paraphrased variants of the original text.\n\nStage 2 involves processing these rephrased texts through a 'Semantic Parser' module, depicted as a wide horizontal rectangular box spanning the width of the diagram. The parser outputs structured semantic representations labeled A₀, A₁, and A₂, corresponding to T₀, T₁, and T₂ respectively. These representations are shown as colored rectangular blocks: A₀ is light blue, A₁ is medium blue, and A₂ is dark blue. Each block contains a semantic frame structure: '(g / generate-01 :ARG0 (h / human) :ARG1 (t / text))' for A₀, and '(g / generate-01 :ARG0 (m / machine) :ARG1 (t / text))' for A₁ and A₂, indicating a shift from human to machine as the agent in the semantic frame.\n\nStage 3 consists of two parallel 'Semantic Gap Scorer' modules, each receiving one or more semantic representations. The left scorer receives A₀ and A₁, while the right scorer receives A₁ and A₂. These scorers compute precision and recall metrics, visualized as horizontal bar charts. For the left scorer, precision p₁ and recall r₁ are shown with light blue bars; for the right scorer, precision p₂ and recall r₂ are shown with dark blue bars. The bars indicate the degree of overlap or alignment between the semantic representations being compared.\n\nStage 4 features an 'AIGT Classifier' module, a large horizontal box at the bottom of the diagram. It receives the precision and recall values (p₁, r₁, p₂, r₂) from Stage 3 via a curved arrow, integrating them to make a final classification decision. Below this classifier, a bar chart displays the output classification results for the original text T₀, with four distinct categories represented by icons: a purple human face emoji, a purple interlocking rings logo (resembling OpenAI's), a beige llama (symbolizing Llama models), and a blue starburst. The heights of the bars indicate the confidence or probability assigned to each category, with the llama icon having the tallest bar, suggesting it is the most likely source of the text.\n\nThe entire diagram uses a consistent color scheme—light to dark blue—to represent progression and transformation, with clear directional arrows indicating data flow. Text labels are placed above or beside components for clarity, and the structure emphasizes a pipeline from raw text input to final AI-generated text classification."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

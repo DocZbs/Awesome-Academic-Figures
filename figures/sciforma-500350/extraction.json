@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500350",
+  "record_sha256": "b1bd66b2b8810c91ed5463228d3401a8676ae024db6ba3c13778f226ee81af7e",
+  "asset_sha256": "03ac80c09a604254537ce7f9ec58b6308abd926bdf0117c1cbf71a0a01c62c84",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500350",
+    "title": {
+      "zh": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer · 方法图",
+      "en": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11177",
+      "title": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer",
+      "authors": [
+        "Hanxiao Lu",
+        "Hongyu Cai",
+        "Yiming Liang",
+        "Antonio Bianchi",
+        "Z. Berkay Celik"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_id": "2412.11177",
+      "arxiv_first_submitted_at": "2024-12-15T13:04:29Z",
+      "arxiv_updated_at": "2024-12-22T07:53:33Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500350/image/image.jpg?Expires=1790835171&Signature=P1rOW0zNUiD8zg6GoT~kj8aOrUUc-XDfrBsBgnlSixQ18hZGei~IhUKxSVRPuKPoNH9KcXToQpORQwmOkceGSQ0eRWBHyK8-bEug82xspSKKCSoUcgc9jCF5RVlA6gWu47iZF4VZXFkHjEQkk6R~t4pfB7IuK0dyryPFd2yOnYp~JTyghpaXZQxAI8821JBudUs6lPmLXf3u5hiZQoPYmdSJVBg1rIteJqe8e9liBnebu8ysxrouMd~17BKxBA-AHw9ExfUBuEddpvVwvXmfyIw-FvM3ubfQpkgJq2pThmi0SQkvLHMcL4jSJzBmaNO4jUMVimTEbXDwjgG9IRpjQw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500350,
+      "description_sha256": "73009b4881e209922e6e2926e37dc5d4e00ee61b63e5eb473446771c865fe2fa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct two-stage architectural frameworks for training a Transformer-based model on binary code, labeled as (a) Traditional two-stage architecture and (b) Two-stage framework with multi-modality. Both architectures are structured into three main vertical sections: Data Pre-processing, (i) MLM Pretraining, and (ii) Fine-tuning Task.\n\nIn (a), the traditional approach begins with Data Pre-processing, where a Binary File is manually extracted into Raw Byte sequences (e.g., '55 48 89 E5 EB 08'). This raw byte sequence is then passed through an 'Apply Mask' step, replacing one byte with '[MASK]' (e.g., '55 48 89 [MASK] EB 08'), which feeds into the MLM Pretraining stage. Here, the masked input undergoes 'Embed Input' via a 'Raw Byte Embedding' layer before being processed by a light blue rounded rectangle labeled 'Transformer'. The output predicts the masked token, shown as '[MASK] = E5'. A large blue arrow labeled 'Transfer' indicates the pre-trained Transformer is used in the Fine-tuning Task, where the same raw byte embedding process is applied to the full original sequence ('55 48 89 E5 EB 08') to perform a 'Target Task'.\n\nIn (b), the multi-modal framework enhances the pre-processing stage. The Binary File undergoes Reverse Engineering to extract multiple high-level modalities: Assembly Code, Control Flow Graph (CFG), and Dynamic Trace. These are then subjected to Feature Engineering, producing sequences of tokens for each modality (e.g., CFG: 't1 t2 t3 t4 t5 t6 t7 t8'; Dynamic Trace: 't1 t2 t3 t4 t5 t6 t7 t8'; Assembly: 'push rbp mov rbp, rsp jmp 0x1E'). These are concatenated into a single input stream. The 'Apply Mask' step masks tokens across these modalities (e.g., masking 't7' in CFG, 't4' in Dynamic Trace, and 'rbp' in Assembly). In the MLM Pretraining stage, this masked multi-modal input is embedded via a 'Concatenated Embedding' layer before being fed into the Transformer. The output predicts multiple masked tokens simultaneously, shown as '[MASK] = E5, [MASK] = 21, [MASK] = 0x1E ...'. The pre-trained model is transferred to the Fine-tuning Task, where the input is now an 'Assembly Embedding' layer processing the full assembly instruction sequence ('push rbp mov rbp, rsp jmp 0x1E'), leading to the Target Task.\n\nVisually, both architectures use rectangular boxes with rounded corners for modules, color-coded for clarity: light blue for Transformers, yellow for Raw Byte Embedding, purple for Concatenated Embedding, red for Assembly Embedding, and green for prediction outputs. Arrows indicate data flow, with thick gray arrows for pre-processing steps and a large blue arrow for model transfer. The figure uses dashed boxes to group related components, such as the high-level modalities in (b). Text labels are clear and positioned near relevant components, with specific examples of byte sequences and assembly code provided for illustration."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

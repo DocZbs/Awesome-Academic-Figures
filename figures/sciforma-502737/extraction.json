@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502737",
+  "record_sha256": "94737f46576dad30c60dff53215b7c24143202b87cf304f9ddc99bd079167f47",
+  "asset_sha256": "a7d7009b57afd358fdbd7a9981bc94e841c699d811179c3af8812db09de3fedf",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502737",
+    "title": {
+      "zh": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning · 方法图",
+      "en": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15182",
+      "title": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning",
+      "authors": [
+        "Marius Memmel",
+        "Jacob Berg",
+        "Bingqing Chen",
+        "Abhishek Gupta",
+        "Jonathan Francis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15182",
+      "arxiv_url": "https://arxiv.org/abs/2412.15182",
+      "arxiv_id": "2412.15182",
+      "arxiv_first_submitted_at": "2024-12-19T18:54:06Z",
+      "arxiv_updated_at": "2025-08-18T16:14:04Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502737/image/image.jpg?Expires=1790835227&Signature=vSY~2f~UBV-eYUwuinl~UOhBAzeUB7K~N7neyJdrpKMw~mUmAFFGdLtHMSj9H15XLo-vOacP9PMRSX~uiExE2w8PUXsE5mjrVbSRqjo9pk1YXhe7g~DUtdMVDIV9aX42fF~KtNDv19eu3dh-gWUc5szvwnjUz7EsjglIRTGMIc0Ajuw-vsZ5c6w~v6r4gLdzzgtyqHA9K7Ewwa5hd1sGrg4s7DksaorE6i9zPbbk1dp7o~nucMD1e4P-ZjC6GJ9tOAPgJpNXakSEIGZvu9DwLFl7a35BQLA2oLoZFkNK4wjc67k5QG-OOYa4CLeKlMju38Cj4m1XPD8FZEZ3wkbj8Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502737,
+      "description_sha256": "83ca0e797dc6b6d9f831f6bf393cfad4681051d95b61d88435d5c07b04046186",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a robotic policy learning framework designed to train robust policies using a combination of offline data, few demonstrations, and retrieval-based augmentation. The global layout is structured as a left-to-right workflow: starting from data sources on the left, progressing through a central processing module, and culminating in policy deployment on the right. On the far left, labeled 'Offline Dataset' in blue, four real-world robot interaction images depict diverse kitchen tasks such as object manipulation, cooking, and cleaning, representing a broad but static dataset. Above center, labeled 'Few Demonstrations' in yellow, two images show a robotic arm performing a sink-related task (e.g., washing or placing an object), serving as sparse expert demonstrations. Below center, labeled 'Retrieval Dataset' in magenta, two similar sink-task images are shown, representing retrieved sub-trajectories from the offline dataset that are semantically aligned with the few demonstrations. These three data sources feed into a central oval-shaped module titled 'Dynamic Time Warping' (DTW), which visually represents trajectory alignment via three colored paths—blue (offline trajectories), yellow (few demonstrations), and magenta (retrieved trajectories)—interconnected by arrows indicating alignment and warping operations. The DTW module outputs augmented trajectories that are then fed into a rectangular box labeled 'Augmented Policy Learning', depicted with a single robot image performing a sink task, symbolizing the training phase where the policy learns from enriched data. Finally, on the far right, under 'Robust Policy' in green, four sequential robot images show the policy executing the task successfully across varying conditions (e.g., different object placements or lighting), demonstrating generalization and robustness. Green arrows connect the Augmented Policy Learning block to each of these output images, indicating deployment outcomes. The entire diagram uses color-coded borders and labels (blue, yellow, magenta, green) to distinguish data types and stages, with clear directional arrows showing the flow from data collection to policy execution. The caption clarifies that the method retrieves sub-trajectories using Dynamic Time Warping (DTW) to train robust policies during deployment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

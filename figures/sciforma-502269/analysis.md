@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14203
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a two-phase methodology pipeline for constructing high-quality training data and iteratively optimizing a language model through self-improvement. The overall layout is divided into two main sections: 'Data Construction' on the left and 'Model Optimization' on the right, separated by dashed vertical lines. The Data Construction section contains a 'Text Module' and an 'Image Module', while the Model Optimization section includes 'SFT' (Supervised Fine-Tuning) and 'Model Training' stages.
+
+In the Data Construction phase, the Text Module begins with 'Manual Annotation' of 'Seed Tasks', represented by a light blue rounded rectangle with a pencil icon. This feeds into 'Self-Instruct', which generates 'Instructions' (red arrow), leading to 'Script Generation'. These scripts, labeled '<Instruction, Images>', are passed to the Image Module (light blue rounded rectangle). The outputs from both modules converge into a 'Verification Module' (light blue diamond), which classifies data into 'Valid Data' (green arrow) or 'Invalid Data' (green arrow). Valid Data is transmitted via red arrows to the Model Optimization phase, while Invalid Data flows via purple arrows to the 'Base Filter' (orange rounded rectangle with a flame icon).
+
+The Model Optimization phase starts with 'SFT', where 'Valid Data' is used to fine-tune the 'Base Model' (orange rounded rectangle with flame icon). The Base Model also receives 'Instructions' directly from the Text Module. The Base Filter, trained on Invalid Data, is used to filter subsequent data. For Model Training, when n=1, BlenderLLM_{n-1} (light blue rounded rectangle with flame icon) is initialized; otherwise, BlenderLLM_n (light blue rounded rectangle with snowflake icon) is used. The Base Model generates 'Scripts' that feed into 'Blender' (orange rounded rectangle with eye icon), producing '<Instruction, Images>' pairs. These are processed by a 'Cascade Filter' (light green rounded rectangle containing two diamonds: 'Coarse Filter' and 'Fine Filter', both with snowflake icons), which outputs 'Valid Pairs' (red arrow) for training.
+
+Connections are color-coded: red arrows indicate 'Data Transmission', purple arrows denote 'Data Input', green arrows represent 'Data Output', yellow arrows signify 'SFT', flame icons denote 'Training', and snowflake icons denote 'Freezing'. The pipeline emphasizes iterative refinement: each iteration uses the previous model's output to generate new data, filtered and used to train the next version, forming a self-improving loop.

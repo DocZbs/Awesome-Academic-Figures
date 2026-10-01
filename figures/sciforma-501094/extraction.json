@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501094",
+  "record_sha256": "a02b3517303e8008e3fb30a2d467afd667e78c52d0a12b4913bd0d28c874f92b",
+  "asset_sha256": "2872fd6f111f5ca8fbd890cf46353a115720008f52bc3b1c4169e668d775afb0",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501094",
+    "title": {
+      "zh": "Graph-Guided Textual Explanation Generation Framework · 方法图",
+      "en": "Graph-Guided Textual Explanation Generation Framework"
+    },
+    "paper": {
+      "id": "arxiv-2412-12318",
+      "title": "Graph-Guided Textual Explanation Generation Framework",
+      "authors": [
+        "Shuzhou Yuan",
+        "Jingyi Sun",
+        "Ran Zhang",
+        "Michael Färber",
+        "Steffen Eger",
+        "Pepa Atanasova",
+        "Isabelle Augenstein"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12318",
+      "arxiv_url": "https://arxiv.org/abs/2412.12318",
+      "arxiv_id": "2412.12318",
+      "arxiv_first_submitted_at": "2024-12-16T19:35:55Z",
+      "arxiv_updated_at": "2025-03-20T15:13:26Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501094/image/image.jpg?Expires=1790835184&Signature=ZbQDNFcuQ0uvmCX2KQ83mFVkM7lFAX~Uovm4INDrwTLVumdhLfGyFGHIH54RiPds~-3zhUbMQyZ5QMP9m24sef0xi~PeW8g2nzKohEpiwCyx4uJmf-DRqHKXeqzVW~n-psjYB5TmL8wIz1-C~PuHxt38~plzYpvxhTWID8lVoU~eMky8n3yKjwoDPZe3Xp9a-asfm9cmyqduf8M4YPz7mBHwJpOaB28~EcFxKullyonO1SP-xIATmv9cT8D3rEwCW6NbEXdMVXRlqHUdJWxLfo7pPrO2iynV1Uk5ECLPW0ZpoJPhDQd7gcxI6No2LfI~USt7A2XIp4-eecn7QU4q0g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501094,
+      "description_sha256": "a6c4ab1eef3cec920bd5a166cfb79519a2d98e9d74a6052f498d8c0ab9ac4af6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a four-step framework for improving Natural Language Entailment (NLE) reasoning through post-hoc explanation integration and graph-based modeling. The global layout is a horizontal workflow divided into four main stages, each labeled with a blue rounded rectangle: '1. Base model training', '2. Highlight explanations extraction', '3. Graph structure construction', and '4. GNN integration', culminating in 'More faithful NLE'.\n\nIn stage 1, a T5 model, depicted as a pink rounded rectangle with a flame icon, is trained on a given NLE task. An example input includes a premise ('An old man poses in front of an advertisement') and a hypothesis ('A man walks by an ad'), leading to a predicted label 'Contradiction' shown in green text below the model.\n\nStage 2 involves extracting three types of highlight explanations from the trained model. These are presented as white rounded rectangles branching from the T5 model: 'Highlight token' (e.g., 'man, person, walk, pose...'), 'Token interactive' (e.g., '(man & person), (walk & pose)'), and 'Span interactive' (e.g., '(walk by & pose in front of)'). These represent atomic tokens, pairwise token interactions, and span-level interactions respectively.\n\nStage 3 constructs a graph structure from these extracted explanations. A small undirected graph is shown with four nodes: 'man' (orange), 'pose' (blue), 'person' (pink), and 'walk' (green), connected by gray edges. This graph visually represents the relationships among the highlighted elements, where nodes correspond to tokens or spans and edges denote their interactions.\n\nStage 4 integrates this graph into the model via a GNN layer. The model architecture is shown as a vertical stack of layers within a magenta-dashed border: two 'Encoder layer' blocks (blue), one 'GNN layer' (orange), followed by two 'Decoder layer' blocks (green). Dotted lines between layers indicate multiple similar layers. An arrow from the graph points to the GNN layer, indicating the graph structure is fed into it.\n\nFinally, the output is a more faithful NLE explanation: 'The label is contradiction, because a man cannot pose and walk at the same time.' The words 'contradiction', 'pose', and 'walk' are color-coded in green, orange, and brown respectively, aligning with the node colors in the graph, emphasizing the reasoning path derived from the integrated graph structure."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

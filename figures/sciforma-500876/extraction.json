@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500876",
+  "record_sha256": "65328d508c0a1bfc50ee79ec4c208f2644c9e9075c91cde3359e12ca9ebbf516",
+  "asset_sha256": "71f92719db1a1c52de2f3016506c5c92105eb75b367bd005e0ce3b249e79f5ae",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500876",
+    "title": {
+      "zh": "Advancing Comprehensive Aesthetic Insight with Multi-Scale Text-Guided Self-Supervised Learning · 方法图",
+      "en": "Advancing Comprehensive Aesthetic Insight with Multi-Scale Text-Guided Self-Supervised Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-11952",
+      "title": "Advancing Comprehensive Aesthetic Insight with Multi-Scale Text-Guided Self-Supervised Learning",
+      "authors": [
+        "Yuti Liu",
+        "Shice Liu",
+        "Junyuan Gao",
+        "Pengtao Jiang",
+        "Hao Zhang",
+        "Jinwei Chen",
+        "Bo Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11952",
+      "arxiv_url": "https://arxiv.org/abs/2412.11952",
+      "arxiv_id": "2412.11952",
+      "arxiv_first_submitted_at": "2024-12-16T16:35:35Z",
+      "arxiv_updated_at": "2024-12-16T16:35:35Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500876/image/image.jpg?Expires=1790835177&Signature=JfqMPUZiP4pKYHvs8BYsDl3vddl07JRnPhkloIy5n30nB17LYxLhgYII0qC7GxmDknszd0bb03KcRhGUsHV5koR6WR~1e0IxiTw0B7uU0hQ~jcL-9fgLQfTiz3WB01oSq63c0a0DjFrz2mUt9ElZQkV1vNhSdceUjZzhhmsgmQ-44FChv-3MOUclaXHwt7Lh2J6LUQ-UI0yS9FK8dqcbq1C~NefkMaU-D1in~xb9S3~yTJT6uQIXYJpCtJ6UbVj~3GRFxlcaxtjzUclYPM2UVlbqKKLQv9NM0RoCVKV9E9fDCJhCHj1gIKLrD4-hNqgJU0BeMdeyRnnan1y9qhtXIQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500876,
+      "description_sha256": "d7c8623d87677df8a42376ae8e3bdc2a49cf093f534294e0eb9c1aad62af2911",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of CALM, a model designed for aesthetic assessment using a combination of visual and language processing components. The global layout is left-to-right, starting with two input sources on the far left: 'Massive Unlabeled Images' and 'A few Labeled Images', both enclosed in dashed rectangular boxes. The unlabeled images are represented by three small thumbnails (a sunburst, a deer, and a statue), while the labeled images show three different scenes (a person walking, a group of people, and a vehicle). These inputs feed into a green trapezoidal block labeled 'visual encoder'. A dashed arrow from the unlabeled images to the visual encoder is annotated with 'text-guided self-supervised learning', indicating the pretraining mechanism.\n\nFrom the visual encoder, a solid black arrow leads to a large yellow rounded rectangle titled 'multi-scale feature alignment module'. This module contains four vertically stacked components. On the far left is a salmon-colored vertical rectangle labeled 'Fully Connection', which receives the output from the visual encoder. To its right are three identical salmon-colored blocks, each labeled 'Qformer', representing query-based transformers. Each Qformer has multiple small orange squares beneath it, symbolizing queries, and is associated with a specific level of aesthetic queries: 'high-level aesthetic queries' for the first, 'middle-level aesthetic queries' for the second, and 'low-level aesthetic queries' for the third. Above each Qformer, a black line connects to a corresponding feature representation: H^thematic_v, H^high_v, H^middle_v, and H^low_v, respectively, indicating the multi-scale visual features being aligned.\n\nFrom the multi-scale feature alignment module, four solid black arrows extend to the right, each connecting to one of four input tokens in a light blue rounded rectangle labeled 'large language model'. These tokens are '<low>', '<middle>', '<high>', and '<thematic>', corresponding to the four feature levels. Below the large language model, an upward arrow points to an instruction token '<instruction>' with the example text X_q: 'Can you give me the aesthetic score?'. An output arrow from the model points downward to an answer token '<answer>' with the example text X_a: '6.5.' This demonstrates the end-to-end process where the model generates a numerical aesthetic score based on the aligned visual features and the given instruction.\n\nThe visual modules are color-coded: the visual encoder is green, the multi-scale feature alignment module and its internal components are shades of yellow and salmon, and the large language model is light blue. All text labels are in black, with mathematical notations (H^thematic_v, etc.) in standard font. The connections are solid black lines with arrowheads, except for the dashed line indicating the self-supervised learning path. The overall structure emphasizes a pipeline from raw image data through feature extraction and alignment to language-based aesthetic scoring."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

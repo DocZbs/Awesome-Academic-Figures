@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501537",
+  "record_sha256": "6169be8361e61533072e692be1cf38df0109e0008d2b067a374d0593b6694905",
+  "asset_sha256": "ba32f525e93529f5a1b96fb0139e70885d7c2ad90a70d368703f4669db96ec35",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501537",
+    "title": {
+      "zh": "Adaptations of AI models for querying the LandMatrix database in natural language · 方法图",
+      "en": "Adaptations of AI models for querying the LandMatrix database in natural language"
+    },
+    "paper": {
+      "id": "arxiv-2412-12961",
+      "title": "Adaptations of AI models for querying the LandMatrix database in natural language",
+      "authors": [
+        "Fatiha Ait Kbir",
+        "Jérémy Bourgoin",
+        "Rémy Decoupes",
+        "Marie Gradeler",
+        "Roberto Interdonato"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12961",
+      "arxiv_url": "https://arxiv.org/abs/2412.12961",
+      "arxiv_id": "2412.12961",
+      "arxiv_first_submitted_at": "2024-12-17T14:44:27Z",
+      "arxiv_updated_at": "2024-12-17T14:44:27Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501537/image/image.jpg?Expires=1790835197&Signature=LPNqOzoFl~DXqfpAOkh2zbmI9ym8AyvR-bZEc3RwxL1SUM9xOJdcUzGB7Ltw4QAPQzJ4iW1zRzQE7WOd6~xWZvq9zwb7d2DevdkRdamJYHTYC6NgQpSBTHSx~4TF5QOabcH5DRalqq0OA0yuvjjizhiqU7oHSNo5vmPzbcg2GM2NucCUyAVPcJPtINFMIAfM3lkH9~4abqLG0RqIpxHBGH1IbLbyu7m0AbMW8i850Lu~NB4TWsda3C0nOs0udRD28KMXM8NkDkcCqLU2UUUruCa98k8TIrF6QJGftmbw4hXISB1mSLXcsEAKYEE1xKq2hLs8zYkRXOkWS9SO2UeY-g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501537,
+      "description_sha256": "a7ee257915d0a4d1f8fe4585637da91c06827ed6970df1a0d37906bd6d22e74b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-agent pipeline designed for optimizing query generation from natural language questions, specifically targeting data retrieval from the LAND MATRIX database using GraphQL. The global layout is divided into two main vertical sections: Agent1 on the left and Agent2 on the right, connected by a data flow arrow indicating information transfer. Each agent is enclosed in a dashed rectangular boundary, emphasizing their modular roles within the system.\n\nAgent1 begins with an input question: 'Where are the investments in Forestry?'. Below this, a prompt instructs a Language Model (LLM) to identify entities present in the question based on predefined values for the entity 'current_intention_of_investment', which includes a list such as Agriculture, Forestry, CONVERSATION, Renewable energy power plants, INDUSTRY, LAND_SPECULATION, MINING, OIL_GAS_EXTRACTION, and TOURISM. This prompt is displayed in a light gray rounded rectangle. The LLM processes this and outputs '[current_intention_of_investment: 'Forestry']' in a black-bordered rounded rectangle. This output is then passed to a gray oval labeled 'List of values', which represents the extracted information. A blue curved arrow connects this oval to Agent2, signifying the transfer of extracted data.\n\nAgent2 is structured to generate a GraphQL request. It receives three components: Context, Question, and Instruction. The Context is presented in a yellow rounded rectangle and contains three elements: the schema of the LAND MATRIX database, the values of attributes mentioned in the question, and examples of similar questions with their corresponding requests. The Question is shown in a blue rounded rectangle and reiterates the original input: 'Where are the investments in Forestry?'. The Instruction is in a teal rounded rectangle and states: 'You are a GraphQL expert, given the input question and the context, please create a correct GraphQL query.' These three components are arranged vertically within Agent2’s dashed boundary. An upward arrow from the Instruction leads to an LLM, which then produces a 'GraphQL request' at the top of the diagram, enclosed in a black-bordered rounded rectangle.\n\nConnections and arrows are used to indicate the flow of information. A downward arrow from the prompt in Agent1 points to the LLM, which then outputs to the 'List of values' oval. A blue curved arrow from this oval flows to the Context section in Agent2. Within Agent2, a vertical sequence of arrows connects the Context, Question, and Instruction to the LLM, culminating in the GraphQL request. The figure visually emphasizes the collaborative workflow where Agent1 extracts relevant parameters from the user's question, and Agent2 uses these parameters along with contextual knowledge to generate a precise GraphQL query. The caption clarifies that this pipeline involves using one LLM to extract user-defined filters, which are then incorporated into the prompt for a second LLM to produce the final query."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

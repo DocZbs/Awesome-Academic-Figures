@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Extending TWIG: Zero-Shot Predictive Hyperparameter Selection for KGEs based on Graph Structure — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14801
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of link prediction using Knowledge Graph Embedding (KGE) models and a simulation approach using the TWIG model. The layout is divided into four main sections arranged in a 2x2 grid: top-left shows a 'Knowledge Graph', top-right displays 'Link Prediction Queries', bottom-left details 'KGE Models for Link Prediction', and bottom-right illustrates the 'TWIG Model for Simulation'.
+
+In the top-left section, the 'Knowledge Graph' is depicted as a directed graph with circular nodes representing entities such as Legolas, Sauron, Saruman, Gimli, Pippin, Sam, Frodo, and Witch King. Directed edges labeled 'Friend-of' or 'Enemy-of' connect these nodes, indicating relationships. For example, Legolas is connected to Sauron via 'Enemy-of', and Gimli is connected to both Legolas and Sauron via 'Friend-of' and 'Enemy-of' respectively.
+
+The top-right section, 'Link Prediction Queries', contains multiple query patterns derived from the knowledge graph. Each query consists of two known entities connected by a relation (e.g., 'Saruman --Friend-of--> ?'), where one entity is unknown (represented by a '?' node). These queries are arranged in two columns, with dashed lines indicating additional similar queries not fully shown. A thick arrow points from the knowledge graph to this section, indicating that the queries are generated based on the graph.
+
+The bottom-left section, 'KGE Models for Link Prediction', outlines the processing pipeline. It begins with 'Input Triples' represented as a triple (S, P, O), where S and O are circular nodes and P is a labeled edge. This input feeds into a block labeled 'Node and Edge Embeddings', which outputs three embedding vectors: e_S, e_P, and e_O, each visualized as a horizontal bar with segmented cells. These embeddings are passed to a 'Scoring Layer' defined by the function f(e_S, e_P, e_O) -> R, which computes a score for the triple. The output is a ranked list titled 'Ranks assigned to all triples among their possible corruptions', listing items like N_1, N_2, N_3, etc., indicating the ranking of candidate triples.
+
+The bottom-right section, 'TWIG Model for Simulation', mirrors the KGE pipeline but is simplified. It also starts with 'Input Triples' (S, P, O) and proceeds directly to a 'Ranking of scored triples' box, which similarly lists ranks assigned to triples among their possible corruptions (N_1, N_2, N_3, ...). This suggests that TWIG simulates the KGE process without explicitly showing intermediate embedding layers.
+
+Connections between sections include a thick arrow from the 'Link Prediction Queries' to both the KGE and TWIG models, indicating that both models process the same set of queries. Additionally, a bidirectional arrow connects the KGE and TWIG models, suggesting a comparison or interaction between them. The overall structure emphasizes the flow from a knowledge graph to generated queries, then to two different modeling approaches for link prediction and simulation.

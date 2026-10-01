@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500762",
+  "record_sha256": "3dc077c1111ff3deb4075c2635be8d6556bbb45b57058309dc27b653c82e8109",
+  "asset_sha256": "f0b9227376ffd1c831501f6afdac2a6445a58a3348b461f2a01a4774a89e629b",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500762",
+    "title": {
+      "zh": "What Matters in Learning A Zero-Shot Sim-to-Real RL Policy for Quadrotor Control? A Comprehensive Study · 方法图",
+      "en": "What Matters in Learning A Zero-Shot Sim-to-Real RL Policy for Quadrotor Control? A Comprehensive Study"
+    },
+    "paper": {
+      "id": "arxiv-2412-11764",
+      "title": "What Matters in Learning A Zero-Shot Sim-to-Real RL Policy for Quadrotor Control? A Comprehensive Study",
+      "authors": [
+        "Jiayu Chen",
+        "Chao Yu",
+        "Yuqing Xie",
+        "Feng Gao",
+        "Yinuo Chen",
+        "Shu'ang Yu",
+        "Wenhao Tang",
+        "Shilong Ji",
+        "Mo Mu",
+        "Yi Wu",
+        "Huazhong Yang",
+        "Yu Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11764",
+      "arxiv_url": "https://arxiv.org/abs/2412.11764",
+      "arxiv_id": "2412.11764",
+      "arxiv_first_submitted_at": "2024-12-16T13:31:26Z",
+      "arxiv_updated_at": "2025-05-22T13:18:40Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500762/image/image.jpg?Expires=1790835177&Signature=V1QPqs70O-V~3S4BIvrYFu9SjRaVIoBI-Z8J7n7SHFjs7rEDOkWt31iZIvb6xTRWxpOzFwidp5OSZPSJFA47uY-zpjl7IJ-hnN3y2ebMskl8rtjJO4XQDXH7eFLS5lmg5InnvdUNz1QoocS6HuwzlzvYN5342W5~j4KaG5DKN5lWGGELMYLUD07ZSe0p70BbsqnM9fhvJSJgPqeYn8nKpM9uiFzlNyGaIO6gZCvSIdtavRQE1ZLH4F18BeZrBqtDWe~WwxO4iS1eWybisNgRMEgX6IMLzWQa~JzmJgDs15oiN4ee2-X3uhyYwkFl2fjNnv~wsswAiyzUHGwKHZnFAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500762,
+      "description_sha256": "ece2c7f4687c9e84033075f9c48019be6fdfe0b7d9a69c6a802d4ef56a01e9bb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SimpleFlight framework, a reinforcement learning (RL) based approach for training quadrotor control policies in simulation for direct zero-shot deployment on real hardware. The global layout is a closed-loop system enclosed within a dashed rounded rectangle, indicating the entire training and deployment pipeline. The workflow proceeds from left to right, starting with system identification (SysID) and domain randomization (DR), moving through simulation components, then to the RL agent, and finally to real-world deployment on a quadrotor, with feedback loops closing the system.\n\nOn the far left, a yellow oval labeled 'SysID' with a small arrow pointing to '[DR]' represents the initial step of system identification followed by selective domain randomization. This component feeds into a light blue rectangular block labeled 'Sim', which contains two dark blue rectangular modules: 'Dynamics' and 'Low-level Controller'. These represent the simulated environment's core components, where the quadrotor’s physical behavior and low-level control logic are modeled. Below this block, the label '⑤ Sim' indicates this entire simulation module.\n\nFrom the 'Sim' block, two thick black arrows emerge, labeled ① and ②, carrying state information to the 'Agent' block on the right. Arrow ①, from 'Dynamics', transmits the state vector 'e_w, R, v' to the 'Actor' module. Arrow ②, from 'Low-level Controller', sends 'e_w, R, v, t' to the 'Critic' module. The 'Agent' block is also light blue and contains two dark blue modules: 'Actor' and 'Critic', representing the policy and value function components of the RL algorithm, respectively. Above the 'Agent' block, a thick dark gray curved arrow labeled '③ r_task + r_smooth' indicates the reward signal fed back to the agent, combining task-specific and smoothness rewards.\n\nA thick dark gray curved arrow labeled 'CTBR' connects the 'Agent' back to the 'Sim' block, signifying the continuous-time behavior representation (CTBR) output by the agent, which serves as the control command to the simulation. This forms the primary training loop within the simulation environment.\n\nAn orange arrow labeled 'Deploy' extends from the 'Agent' to a circular image of a real quadrotor on the far right, indicating the final step of deploying the learned policy directly onto physical hardware. A long orange feedback loop curves from the real quadrotor back to the 'SysID' component, suggesting that data or performance metrics from the real system can be used to refine or reinitialize the system identification process, enabling iterative improvement.\n\nThe figure uses color coding to distinguish components: yellow for system identification, light blue for simulation and agent blocks, dark blue for internal modules, and orange for deployment and feedback paths. Text labels are clear and positioned near relevant components, with numbered annotations (①–⑤) highlighting key elements in the workflow. The overall structure emphasizes a closed-loop, simulation-to-reality transfer pipeline with a focus on robustness through domain randomization and reward shaping."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

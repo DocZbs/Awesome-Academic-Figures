@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501238",
+  "record_sha256": "04976f0cdda86f998e4c1cf808f145baf1d41d61d48ac1a0bb426e0937a90fc4",
+  "asset_sha256": "12dc611154706aa707f796a5262e458e574d5b8268f792452c39d2ef4de4d819",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501238",
+    "title": {
+      "zh": "When to Speak, When to Abstain: Contrastive Decoding with Abstention · 方法图",
+      "en": "When to Speak, When to Abstain: Contrastive Decoding with Abstention"
+    },
+    "paper": {
+      "id": "arxiv-2412-12527",
+      "title": "When to Speak, When to Abstain: Contrastive Decoding with Abstention",
+      "authors": [
+        "Hyuhng Joon Kim",
+        "Youna Kim",
+        "Sang-goo Lee",
+        "Taeuk Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12527",
+      "arxiv_url": "https://arxiv.org/abs/2412.12527",
+      "arxiv_id": "2412.12527",
+      "arxiv_first_submitted_at": "2024-12-17T04:38:08Z",
+      "arxiv_updated_at": "2025-05-16T06:29:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501238/image/image.jpg?Expires=1790835190&Signature=epF9WubOcqXABu14VWi3PRF7gJiR5UV2gyA5x1VoTM7xGcvp3vxjrYzAm7MqPeaX88ji~4NHnD1ET9dKN4lu2YOf2wKVPtUrtkC-SCBhRnH~QmV-7cql5JLsh0~6mkHDZFDmjRhEyoesBdRhG-V--qxl4VIuT5E277jDPTmOFOwSx-~LV3uo2RQIoEOq1lC0CAjCdYJDMbRYwkNoJpJRQps6HwOpJ1AOqfFkp7SIBdSFtWZ72qHGueMKymvzPFXBKWdeeKAkp95pJkOgvOsFqnFk~Wd3RFSdIzLIqYTpDkjihP3lr2iSwTTGOeeL9rS4J4FRFD1~XLsVdy0PxWT-vQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501238,
+      "description_sha256": "612b8e70d59ae5c71d234729c300a732fbaeb8d65b85f315908c9e73d8579ce0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating the controlled analysis setup process, structured as a sequential pipeline with feedback loops for quality assurance. The global layout is horizontal, progressing from left to right, with a clear start point on the far left and a partial continuation to the right, indicating that the process extends beyond what is shown. The entire diagram is enclosed within a light gray rectangular background, giving it a contained, modular appearance.\n\nThe visual modules consist of distinct shapes and colors to differentiate types of operations. The process begins with a gray cylinder labeled 'Raw Data', representing the initial data source. This is followed by a series of rectangular boxes with rounded corners, filled with light purple and outlined in dark blue, denoting processing stages: 'Pre-processing', 'Feature Extraction', and 'Data Cleaning'. A diamond-shaped decision node, colored light pink with a red border, labeled 'Quality Check?', introduces a conditional branch in the workflow.\n\nThe connections between modules are represented by solid black arrows, indicating the direction of data flow. The main forward path starts from 'Raw Data' to 'Pre-processing', then proceeds to 'Feature Extraction'. From 'Pre-processing', a parallel branch leads down to 'Data Cleaning', which then feeds back into 'Feature Extraction' via an arrow labeled 'cleaned', suggesting that cleaned data is re-injected into the feature extraction stage. After 'Feature Extraction', the data flows to the 'Quality Check?' decision node. If the check fails ('no'), the flow returns to 'Data Cleaning' for further refinement; if it passes (implied 'yes' path), the process continues to the next stage, which is partially visible and labeled 'Analysis Model', indicating the subsequent phase of the pipeline.\n\nThe diagram emphasizes a controlled, iterative approach to data analysis, where preprocessing and cleaning are interdependent, and quality checks enforce a feedback loop to ensure data integrity before proceeding to feature extraction and modeling. The caption below the figure reads: 'Figure 1: Visualization of the controlled analysis setup process.'"
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

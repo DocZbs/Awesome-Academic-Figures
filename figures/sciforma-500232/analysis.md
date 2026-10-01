@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Entropy-Regularized Process Reward Model — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11006
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a methodological framework for constructing process and outcome reward data, particularly focusing on a model named \ModelName, which leverages entropy-regularized sampling trajectories to compute process rewards. The global layout is structured horizontally, progressing from left to right, with distinct color-coded regions representing different stages: problem input, solution generation, reward computation, and reward types.
+
+On the far left, a light blue box presents the initial problem: 'Half the value of $3x-9$ is $x+37$. What is the value of $x$?' with the golden answer specified as 83. Adjacent to it, a purple box labeled $a^1$ describes the first step of the solution: translating the word problem into the equation $\frac{1}{2}(3x-9) = x+37$. Below these, an orange box defines notation: $a^i$ denotes the i-th step of the solution $a$, and $a^{i,j}$ denotes the i-th step of the j-th finalized solution.
+
+From the problem and first step, a gray arrow leads to a yellow region representing the full solution trajectory: $a = [a^1, a^2, a^3, ..., a^L]$, which culminates in an answer of 85. This is marked as incorrect with $y=0$ and a red cross, indicating failure to match the golden answer. This entire path represents the outcome reward, defined as $r = y$, shown in a light green box on the far right.
+
+Beneath the main solution path, a pink region displays multiple parallel solution trajectories, each corresponding to a different sampled solution path. These are labeled $a^{2,1}, a^{2,2}, a^{2,3}$, etc., indicating the second step of the first, second, third, etc., finalized solutions. Each trajectory proceeds through steps $a^{3,1}, a^{3,2}, ...$, up to $a^{L1,1}, a^{L2,2}, a^{L3,3}$, and produces an answer. For example, the first trajectory yields 83 with $y_1=1$ (correct, marked with a green check), the second also yields 83 with $y_2=1$, and the third yields 87 with $y_3=0$ (incorrect, marked with a red cross). A note below this region clarifies that $y_i$ denotes the correctness of the i-th step.
+
+To the right of the pink region, three light green boxes detail different reward calculation methods. The top one, 'Hard-label', computes $r_i = \max_i y_i$, selecting the maximum correctness across steps. The middle, 'Soft-label', computes $r_i = \frac{1}{n} \sum_{i=1}^n y_i$, averaging correctness over all steps. The bottom, 'Entropy-regularized label', computes $r_i = \frac{1}{\eta} \ln \mathbb{E}_{a^{[i]} \sim \pi_0} e^{\eta y(a,x)}$, which is the core innovation of \ModelName, using entropy regularization to compute the process reward from the sampling distribution.
+
+Arrows connect components logically: from problem to first step, then to the full solution and its outcome; from the first step to multiple parallel solution paths; and from each solution path to its final answer and correctness label. The reward computation blocks are positioned to the right, indicating they are derived from the solution paths. The figure thus visually conveys how \ModelName constructs process rewards via entropy-regularized sampling, contrasting with hard and soft labeling approaches, while outcome rewards are simply based on final correctness.

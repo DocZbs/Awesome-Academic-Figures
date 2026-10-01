@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500161",
+  "record_sha256": "9212965de0d822ade080f23ea068bb3d66ea41e21552cafc1b12b79e1f9ac205",
+  "asset_sha256": "b630f752f2658cfccb10e126d6c6f8ff2054b1fb4abdfa5b417320187df30817",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500161",
+    "title": {
+      "zh": "Attention-driven GUI Grounding: Leveraging Pretrained Multimodal Large Language Models without Fine-Tuning · 方法图",
+      "en": "Attention-driven GUI Grounding: Leveraging Pretrained Multimodal Large Language Models without Fine-Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-10840",
+      "title": "Attention-driven GUI Grounding: Leveraging Pretrained Multimodal Large Language Models without Fine-Tuning",
+      "authors": [
+        "Hai-Ming Xu",
+        "Qi Chen",
+        "Lei Wang",
+        "Lingqiao Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10840",
+      "arxiv_url": "https://arxiv.org/abs/2412.10840",
+      "arxiv_id": "2412.10840",
+      "arxiv_first_submitted_at": "2024-12-14T14:30:05Z",
+      "arxiv_updated_at": "2024-12-14T14:30:05Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500161/image/image.jpg?Expires=1790835166&Signature=tC3BjRZvW7uyydayNtUijjX1DSrHZMYbNxdl3M4Rkt5IbsCU1qCAzZ~bKfc-YrUgOuiaj32Ui8LOiBvHcwLVyOA4n23LAcyyseF611ExFIWf-UnH8XqgymOUSJjn~GP77efOd9AfV09i08p5iz3TiryZXcmk9cfYmQgdqIPpSx3MqXDi~bTk41gOLACn9W4Tf0ze-AUNI8Vrtw1rOqtVCDx-dzmrsx0gYVXL3a4glkFZEZb4i5SjAGR8mgZ9n9ppZgcxU9A7nxKs8yZAGFcv1ZYPrffnh02LrfbfmAQTICic4t9Fy0VUdTJLMMKHAklbooS-T5hJjYe5Tef2wW81dA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500161,
+      "description_sha256": "90dc91cf512cbc8efb611b2f64d77356b83f66f74bbbdf7ca1e96663e4bf4c54",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two main components: the top section illustrates the overall Attention-driven Grounding Pipeline (TAG), while the bottom section details the Self-Attention Head Selection module. The global layout is divided horizontally by a dashed line, with the top row showing the end-to-end pipeline and the bottom row focusing on the internal mechanism of head selection.\n\nIn the top pipeline, the process begins with N Head Attention Maps, represented as a stack of grid-like matrices, where each matrix corresponds to an attention map from one of N heads. These maps are structured with rows labeled 'Text Tokens' and columns labeled 'Visual Query Tokens', indicating attention scores between text and visual query tokens. A curved arrow points from this stack to a combined representation of Text Tokens and Visual Query Tokens, forming a 2D grid. This grid then feeds into a rounded rectangular box labeled 'Self-Attention Head Selection'. The output of this module is another 2D grid, again with axes labeled 'Text Tokens' and 'Visual Query Tokens'. This is followed by a multiplication operation (denoted by 'X') with a 'Cross-Attention Map'—a grid with axes labeled 'Visual Query Tokens' and 'Visual Patch Tokens'. The result is a new grid labeled 'Visual Patch Tokens'. Subsequent operations include averaging by columns, reshaping, and max-normalization, transforming the grid into a 2D feature map with dimensions Height × Width. Finally, a thresholding operation using a parameter δ produces a binary mask over the same spatial dimensions, highlighting the grounded region.\n\nThe bottom section, titled 'Self-Attention Head Selection', elaborates on the core module. It starts with a stack of N Heads, each represented as a grid with 'Text Tokens' along the vertical axis and 'Visual Query Tokens' along the horizontal axis. These grids are summed by rows, producing a set of column vectors. These vectors are then unfolded into a 2D matrix where each row corresponds to a head and each column to a token position. The matrix is sorted by rows based on the values in each row, allowing for ranking of heads per token. The next step selects the top-K heads per row, indicated by a box containing only K heads (e.g., h5, h2, h23). The selected heads are then averaged across heads to produce a final attention map, which is a grid with 'Text Tokens' on the vertical axis and 'Visual Query Tokens' on the horizontal axis. All grids and matrices are rendered in beige with black borders, and arrows indicate data flow. Text labels are placed adjacent to or within modules to clarify their function. The entire diagram uses consistent visual styling: rectangular boxes for modules, grid structures for attention maps, and solid black arrows for data flow. The figure includes explicit mathematical notation such as 'sum by rows', 'unfold', 'sort by rows', 'select topK heads by rows', and 'average by heads' to describe the operations performed at each stage."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

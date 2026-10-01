@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502777",
+  "record_sha256": "61672742205212015f7c11b3f9b1408328396b3efd013f34ef7ec0cb76af64ae",
+  "asset_sha256": "92f2d5b6f664281dfd7921fa34a3753f3024eceb288af4c3b3f026a73fb5a7b6",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502777",
+    "title": {
+      "zh": "Modeling Story Expectations: A Generative Framework using LLMs · 方法图",
+      "en": "Modeling Story Expectations: A Generative Framework using LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-15239",
+      "title": "Modeling Story Expectations: A Generative Framework using LLMs",
+      "authors": [
+        "Hortense Fong",
+        "George Gui",
+        "Bo Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15239",
+      "arxiv_url": "https://arxiv.org/abs/2412.15239",
+      "arxiv_id": "2412.15239",
+      "arxiv_first_submitted_at": "2024-12-13T04:53:34Z",
+      "arxiv_updated_at": "2026-07-13T20:45:08Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "econ.GN",
+        "stat.ME"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502777/image/image.jpg?Expires=1790835227&Signature=h6z3Sm5nfJDlCruDpHR6M-p1bIrNgNMvy8XHD~cntXH6O9Yvt2hi7Fo~eKNzhDRKS6a4U6GIwE5IEQbLQHaH50zkbr0afG~z1fEfpXgk2AMYkcCmv7l-v4T15XYJAeWM9eVVSUeRVzINeMf3FGstZwQdsHzNiNbtMkNF-8SWgwRDCVrexMGJHz29QVyGOynp~QQREdZ9YYFllSAY4l3uvKWbwP7VVbJeTHsC5ZwcpqxGeOslO~Ci9LzoOObQFt-NWUopm4KSkNK6MQ0-bRFZ-V8yftz9MBP7xB4fIty0lVQB~hETx2AEYiCu4v6s7EuvJqR8Bsk7p~Ndb1zQW-7piA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502777,
+      "description_sha256": "8b929c206b177338380c1ac230882c2038b4a0dfd5747214ac9d62d84af48316",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "econ.GN",
+        "stat.ME"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a linear, left-to-right workflow illustrating the proposed method for predicting story engagement using a pre-trained language model. The global layout consists of five rectangular modules connected sequentially by rightward-pointing arrows, indicating a clear data processing pipeline. All modules are rounded rectangles with black borders; the first, third, fourth, and fifth modules have a light lavender fill, while the second module is filled with a light green color, visually distinguishing the core model component.\n\nStarting from the left, the first module is labeled 'Story Input' in bold, with 'Story Text' written below it in regular font, indicating the raw input data. This connects via a solid arrow to the second module, labeled 'Pre-trained LLM' in bold, which represents the large language model used to process the input. The light green color emphasizes this as the central computational engine.\n\nThe output of the LLM flows into the third module, titled 'Imagined Stories' in bold, followed by a list: 'Imagined Story 1', 'Imagined Story 2', an ellipsis ('...'), and 'Imagined Story N', signifying that the model generates multiple possible continuations or interpretations of the input story. This module is also lavender-filled.\n\nFrom here, a solid arrow leads to the fourth module, labeled 'Features' in bold, with three listed features beneath: 'Expectations', 'Uncertainty', and 'Surprise'. These represent the psychological or narrative characteristics extracted from the imagined stories, likely computed through analysis of the generated texts.\n\nFinally, a solid arrow points to the last module, labeled 'Engagement' in bold, which denotes the predicted outcome or target variable — the level of reader engagement inferred from the extracted features.\n\nThe entire diagram is captioned 'Figure 1: Overview of Proposed Method', positioned above the flowchart. The visual design uses consistent font styles and sizes across all labels, with bold text for module titles and regular text for sub-items, ensuring clarity and readability. No mathematical equations or additional annotations are present within the diagram itself."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

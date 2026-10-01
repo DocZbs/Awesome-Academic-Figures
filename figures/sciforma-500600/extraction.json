@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-500600",
+  "record_sha256": "ccae1bc26342131c8b825fa4cc58430958048cbadc61a1774eaaf78921b6620e",
+  "asset_sha256": "f38e469f03cfc809ce5cdce6a107f501cf5fd1fc8ebb38db1748c049b62dd920",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500600",
+    "title": {
+      "zh": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning · 方法图",
+      "en": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-11561",
+      "title": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning",
+      "authors": [
+        "Yu Zhao",
+        "Yifang Ban"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11561",
+      "arxiv_url": "https://arxiv.org/abs/2412.11561",
+      "arxiv_id": "2412.11561",
+      "arxiv_first_submitted_at": "2024-12-16T08:47:55Z",
+      "arxiv_updated_at": "2024-12-16T08:47:55Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500600/image/image.jpg?Expires=1790835174&Signature=LxRkJ9MNWwSqDM89nKlgOhezAbIw0ydjwHbwqVInhjSrahFJj6IMTTxJFlbwN3N2Pi7i4le12naBgPh3Bfwh6O~luA~UTjScnL~AIhVPJSDASODwcuVpa8kop3VhD~YL~BufUgvvToWYDZ-S~Olj5SQjnW3eDGX09BuItZTyYiXrkgL9YrIHgt3RCTeWZTqJfacuUPiLR3wz72geWKd4aqc1oMbdMNyp6929OI8VzIxAjH1hAb0zz-T7IMDhwpo7x86k2wBoDcczeFqKEKiPl9d6IZzaqAmKV1M9LXc2HpkzGDIvpEljwX6rzJjZwUlLg-5Q4GTv6IwGiiVcj4BFEw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500600,
+      "description_sha256": "ff2a177ef55f5025deb115a8947526909c600e8a56fff4e72f914f31dcadad11",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flowchart illustrating a processing pipeline for RCM Compact-pol MLC data using ESA SNAP software, designed to generate three final output images: Ground Range Detected (GRD) image, M-chi decomposition image, and Compact-pol Radar Vegetation Index (CpRVI) image. The global layout is hierarchical and top-down, with a clear sequence of processing steps organized into distinct stages. At the top, a single rounded rectangular box labeled 'RCM Compact-pol MLC' serves as the input source. From this, three parallel processing branches diverge: 'Calibrate', 'Compact-pol Decomposition', and 'Compact-pol Radar Vegetation Index'. Each of these is represented by a light gray rounded rectangle with black text and a thin dark gray border. These three modules feed into a central processing step labeled 'Terrain Correction', which is also a light gray rounded rectangle. Following this, the data flows into 'Speckle Noise Filtering', another similarly styled box. From this final processing stage, three output boxes branch out horizontally at the bottom: 'Ground Range Detected image (GRD)', 'M-chi decomposition image', and 'CpRVI image', each in the same visual style as the other modules. All connections between modules are represented by solid black arrows pointing downward or to the right, indicating the direction of data flow. The diagram uses consistent visual attributes across all nodes—uniform size, color, and shape—to emphasize the structured, sequential nature of the workflow. There are no mathematical equations or additional annotations within the diagram itself; the entire process is described through the labeled boxes and directional arrows. The caption clarifies that this pipeline is implemented in ESA SNAP and produces the three specified output images from the initial RCM MLC product."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

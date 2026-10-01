@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-502300",
+  "record_sha256": "b7f9c91b66ea65807dad33409c4e634b9808b1a1d271e437e2c4e5f59afc277d",
+  "asset_sha256": "0b258053cec7fa110d12269b82a70b3f40c91059b7bbc2dbec2cb0ccd338e4f4",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502300",
+    "title": {
+      "zh": "Split Learning in Computer Vision for Semantic Segmentation Delay Minimization · 方法图",
+      "en": "Split Learning in Computer Vision for Semantic Segmentation Delay Minimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14272",
+      "title": "Split Learning in Computer Vision for Semantic Segmentation Delay Minimization",
+      "authors": [
+        "Nikos G. Evgenidis",
+        "Nikos A. Mitsiou",
+        "Sotiris A. Tegos",
+        "Panagiotis D. Diamantoulakis",
+        "George K. Karagiannidis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14272",
+      "arxiv_url": "https://arxiv.org/abs/2412.14272",
+      "arxiv_id": "2412.14272",
+      "arxiv_first_submitted_at": "2024-12-18T19:07:25Z",
+      "arxiv_updated_at": "2024-12-18T19:07:25Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.DC",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502300/image/image.jpg?Expires=1790835216&Signature=b2qJ4SJSKp4XWpAiu8GAJ7WmUyoFlLGs1DTXRiqu8TH8awtpSMCVZnQTsrIGj8MXjlSk3nG-UIl6e32W8~4Tdn14Mh2pMw0h0lGpqDe3T-RMlwA1tM3nnyFAiljc5baTBHAc7aZM1oZIT3~D6Gux97yNpi~bI7-7sI9VDLW~HFVZYBf23GikIqu3KhBlg2E0AHw670So0kcZJRrS-NzUEENVo-5y5b3C6IKoiskhp9A0UpAVGyaQsQgw4xXTFW~5PfElYytAYLXedwbjFE8pnbEOvm7TM-KONUd9Zq6chTjttOwgSREaQVcBE9LiMXc5xoADFdS78~d90T-44-hNEQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502300,
+      "description_sha256": "fb4779ceb8f66bbabc29ddb67455b2b50008879e1f98167367a0036488495624",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.DC",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a deep neural network architecture for computer vision semantic segmentation, structured as an encoder-decoder framework with skip connections and additional index data transmission. The global layout is horizontally oriented, divided into two main sections by a vertical dashed line: the left side represents the encoder (downsampling path), and the right side represents the decoder (upsampling path). The input data, labeled as C_in × H × W, enters from the left and passes through a convolutional layer (Conv), followed by a series of stacked Basic Modules (BM), each represented as a blue-bordered rectangle. These BMs are connected sequentially with arrows indicating forward propagation. After each stack of BMs, a red oval labeled 'Downsampling MaxPooling' is shown, accompanied by a green cloud icon indicating feature transformation: channel count increases (C ↑), while height and width decrease (H ↓, W ↓). This downsampling process is repeated across multiple levels.\n\nIn the encoder, at each level, a local feature extraction mechanism is depicted: a 2×2 kernel window (K_h × K_w) is shown with four elements e1, e2, e3, e4. The maximum value within this window (e.g., e2 or e3) is selected and passed to a subsequent BM stack via a blue curved arrow. The selected element's index (e.g., 2 or 3) is also transmitted as part of 'Additional Transmitted Index Data', shown at the bottom of the diagram as a dashed black line connecting the encoder to the decoder. This index data is crucial for reconstructing features during upsampling.\n\nThe decoder mirrors the encoder structure but in reverse. It begins with 'Upsampling MaxUnpooling', indicated by a red oval and a green cloud showing C ↓, H ↑, W ↑. Each upsampling stage is followed by a stack of BMs. The key innovation lies in the reconstruction process: the transmitted index data (e.g., 2 or 3) is used to place the corresponding feature value (e.g., e) back into the correct position within a 2×2 kernel window in the upsampling stage. For instance, if index 2 is received, the value 'e' is placed in the top-right position (e2) of the kernel; if index 3 is received, it is placed in the bottom-left position (e3). This is visually represented by blue arrows from the index boxes (red squares labeled 2 or 3) to the respective positions in the kernel grid.\n\nThe final output of the decoder is processed through a FullConv layer, producing the output data of size C_out × H × W. The entire architecture emphasizes the preservation of spatial information through the transmission of index data, enabling more accurate feature reconstruction during upsampling. The visual modules include rectangular BM blocks (blue borders), kernel windows (dashed grids with labeled elements), index boxes (red squares), and functional ovals (red for pooling/unpooling, green for feature transformation). Connections are shown with solid orange arrows for main data flow, blue curved arrows for feature selection, and dashed lines for index data transmission."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

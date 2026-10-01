@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502032",
+  "record_sha256": "0d04c87f4f639f7f49c2583a8de481704a00d9cf5bc6575bb08a637e00f1c73a",
+  "asset_sha256": "ef0e2052295718dd57f7f439accfaa36cdfa256f4ee633d92dbe29426b0b0737",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502032",
+    "title": {
+      "zh": "AI-Powered Algorithm-Centric Quantum Processor Topology Design · 方法图",
+      "en": "AI-Powered Algorithm-Centric Quantum Processor Topology Design"
+    },
+    "paper": {
+      "id": "arxiv-2412-13805",
+      "title": "AI-Powered Algorithm-Centric Quantum Processor Topology Design",
+      "authors": [
+        "Tian Li",
+        "Xiao-Yue Xu",
+        "Chen Ding",
+        "Tian-Ci Tian",
+        "Wei-You Liao",
+        "Shuo Zhang",
+        "He-Liang Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13805",
+      "arxiv_url": "https://arxiv.org/abs/2412.13805",
+      "arxiv_id": "2412.13805",
+      "arxiv_first_submitted_at": "2024-12-18T12:53:16Z",
+      "arxiv_updated_at": "2024-12-18T12:53:16Z",
+      "arxiv_subjects": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502032/image/image.jpg?Expires=1790835207&Signature=aqzWlyZcs1iimkoTKKV6GqmyIozMv5ri8Qokj2ljD4lKf0yht8joskt98Qe8KbVEKFEcQf0pvmPoNClHi0sAJcJ9j8fxDkJRsgzL88dC5e7DHbVco1E8L3ga11UdJagxnHTHI7ryekSfNtdBARgV8EarL66svfeI~Fd8HYfPdn3v~KqvUqNyFL5DGzGkeDgD4~5kod0sCB2ncxY5VbSyytPXtjZqv5mZyBv9v2umQdyLfInuqJHpli2zNDo3V3szN8vHTcGh8orRCYRBnUc-~D55i0Dacqqz8FU1O3AU-A21Jl6f72ei3sS4dPR3vy7l0M9pzjNuLBScl0sUUcsMaw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502032,
+      "description_sha256": "04f5c69fccea193bde98f5e527a96e9d3906ff3dc6092c7477789673d767c83a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the Qtailor framework, a reinforcement learning-based method for optimizing quantum circuit topologies. The global layout is structured into four main components: Reward Replay (left, beige background), Agent (top center, light green), Environment (bottom center, light blue), and Action (right, light gray). These components are interconnected through a cyclic workflow indicated by numbered arrows (1–5), representing the sequence of operations in each training step.\n\nIn the Reward Replay module, a dashed box labeled 'Time-Consuming Evaluation' contains three brown rounded rectangles: 'Compute Depth', 'Count Gates', and 'Circuit Compilation'. Below these, a mapping diagram shows 'Topology' (a graph of qubits Q1–Q4 with connections) being mapped to a 'Circuit' (a quantum circuit diagram with qubit lines and gates). A dotted arrow labeled 'Mapping: qi→Qi' connects them. Adjacent to this, a dashed box labeled 'Reward Function' (with text 'Detailed in section 2.1 eq(4)') receives input from the evaluation and outputs a reward 'r'. This reward is saved into a 'Memory' component (a stack of boxes labeled '<at, rt>') via a 'Save' arrow. A 'Match' arrow from Memory to Reward Function allows for lookup: if a query matches a stored action-reward pair, the reward is retrieved; otherwise, a 'Miss' triggers the time-consuming evaluation. The Memory also receives a 'Query' from the Environment.\n\nThe Agent module contains two neural network diagrams: 'Critic' and 'Actor', both depicted as layered networks with circles and connecting lines. They exchange feedback and action signals via bidirectional dashed arrows. The Agent receives a 'State (Flattened Matrix)' from the Environment (arrow 1), which is a 4x4 matrix with binary entries (e.g., M12=1, M23=1, etc.), representing the current connectivity between qubits Q1–Q4. The Agent outputs an 'Action' (arrow 2), specified as a pair like '<4,1>' indicating a connection between qubits Q4 and Q1.\n\nThe Environment module displays the 'Current Topology' as a graph of four qubits (Q1–Q4) with orange edges showing connections. It also includes the flattened state matrix, with orange-highlighted cells indicating active connections. An arrow labeled 'Query' (4) points from Environment to Memory, using the action as a key to retrieve the reward.\n\nThe Action module illustrates the effect of the action: a 'Before' state (Q1 connected to Q2, Q4 connected to Q1) and an 'After' state (Q1 connected to Q2 and Q4, Q3 connected to Q2), showing the new edge added by the action. Arrow 3 indicates the application of the action to the topology.\n\nFinally, arrow 5 sends the reward 'r' from Reward Replay to the Agent, completing the loop. The entire process is described in the caption: (1) Agent gets state from Environment; (2) Agent outputs action; (3) Action modifies topology; (4) Query memory for reward; (5) Reward is sent back to Agent for next iteration."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

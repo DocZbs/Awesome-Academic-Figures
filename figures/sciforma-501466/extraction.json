@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501466",
+  "record_sha256": "d210ed8c0b5ca67148137310b123ba2b56ac88bcbb2f75522678bab9066ef8f1",
+  "asset_sha256": "3de516f3fdb80fdcad238e33447bc3ecebd7d4dc7b3218d79542b606f3926305",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501466",
+    "title": {
+      "zh": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions · 方法图",
+      "en": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12836",
+      "title": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions",
+      "authors": [
+        "Yuyuan Li",
+        "Xiaohua Feng",
+        "Chaochao Chen",
+        "Qiang Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_id": "2412.12836",
+      "arxiv_first_submitted_at": "2024-12-17T11:58:55Z",
+      "arxiv_updated_at": "2025-12-03T06:36:26Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501466/image/image.jpg?Expires=1790835192&Signature=qefkfFkT6Y4iVYd8F418n4bHBE6A~9B6Dzw2HVQ~qhX24~9~WCQFAygaDVbvhYDd0KC6IerqHHDmqv79tMp-mJ7xVo1obr8GiEkLmN2SSBjEpFcOi194una9jwrVgNq34aa-GuVFp6QyRnT-UkUSFJutNTcl8DMWjZwJP5o9cFXae0S2ikmgFavXwSv8Nz45Gs2mfmkIXptWiv9BPShNWIbQ1FHocFK0C9nHeWnE~HClILuKijURGCUAIJRXvpyIQ4nUyRGPiwgSRAISHVBj~nMwQy1ZjugwEFM1wssEkwqsXCRHisxwCVN~ExFrcvFNP9ZPYRBprJjOJJS-y~wPzw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501466,
+      "description_sha256": "b048cf2f5dc772b5c3c29011c6c42711fe3949941e927659fd9cab91d8988f43",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two approaches to attribute unlearning in recommendation systems: in-training and post-training, both aiming to achieve two primary goals. Goal #1, located at the bottom of the diagram within a dashed rectangular box, is to make the sensitive attribute indistinguishable from the model’s outputs. Goal #2, positioned at the top within a similar dashed box, is to maintain comparable recommendation performance between the original and unlearned models.\n\nThe global layout is structured horizontally into two main stages: '1. Training stage' on the left and '2. Post-training stage' on the right, separated by a horizontal bracket beneath them. The workflow begins on the far left with 'Training Data (e.g., User-Item Interaction)', represented by a gray cylindrical database icon. A thick black arrow points from this data to the 'Original Model', depicted as a neural network-like graph with gray nodes and black edges. From the Original Model, a downward black arrow leads to a red sad face emoji labeled 'Can infer attribute', indicating the model's ability to infer the sensitive attribute before unlearning.\n\nTwo unlearning pathways diverge from this point. The first, 'In-training attribute unlearning', is shown as a blue curved arrow looping back from the Original Model to the Training Data, suggesting that unlearning occurs during training and can utilize the training data. The second pathway, 'Post-training attribute unlearning', is represented by a straight blue arrow moving rightward from the Original Model to the 'Unlearned Model'. This Unlearned Model is visually distinct, shown as a neural network graph with multicolored nodes (red, blue, yellow, cyan) and black edges, symbolizing a modified internal state. Below it, a green happy face emoji labeled 'Cannot infer attribute' indicates successful unlearning.\n\nAbove both models, two document icons are connected by a bidirectional green arrow labeled 'comparable', emphasizing Goal #2: the recommendation performance of the Original Model and Unlearned Model should remain equivalent. Black arrows point upward from each model to its respective document icon, reinforcing this comparison.\n\nThe visual modules include the database icon for training data, two neural network graphs for the models (gray for original, multicolored for unlearned), emoticon icons (red sad face and green happy face) to denote inference capability, and document icons for performance output. Text labels are used throughout to describe stages, processes, and outcomes. The connections are primarily black or blue arrows, with directional flow indicating the sequence of operations and relationships between components. The figure effectively contrasts the two unlearning strategies while highlighting their shared objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

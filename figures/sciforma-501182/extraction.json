@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501182",
+  "record_sha256": "94e957e7649a86c4dc1cd20acca3f770b746a59246ae18832c6d74ef327dd4dd",
+  "asset_sha256": "e865c0bd41c74409a499210f8d8c138891c7195bf588748acb64a451ea07a71f",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501182",
+    "title": {
+      "zh": "Knowledge Boundary of Large Language Models: A Survey · 方法图",
+      "en": "Knowledge Boundary of Large Language Models: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-12472",
+      "title": "Knowledge Boundary of Large Language Models: A Survey",
+      "authors": [
+        "Moxin Li",
+        "Yong Zhao",
+        "Wenxuan Zhang",
+        "Shuaiyi Li",
+        "Wenya Xie",
+        "See-Kiong Ng",
+        "Tat-Seng Chua",
+        "Yang Deng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12472",
+      "arxiv_url": "https://arxiv.org/abs/2412.12472",
+      "arxiv_id": "2412.12472",
+      "arxiv_first_submitted_at": "2024-12-17T02:14:02Z",
+      "arxiv_updated_at": "2025-05-27T03:21:26Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501182/image/image.jpg?Expires=1790835186&Signature=i-qqn6jxJZ0s6Ev9eIdh1gYQDySVvHi6uM5VRdM8-uHrHwkxaqUCbMZ5A6wJmur9D~ch31toVS~Dtg76SaWBBnl5Dj1GxqRq-yn0p-GMoh1Ip4r5OsrDIna77uY2mk50dGCb147WljX8Fozoejq2euL9B4-gnME691XtNGkg9OeAJ3YQy8KXbdy-W5rR9ZuHgonDXDxftRdG1E35vsTp85-kosvE1Ck4xSQoHiagQkhIc3rMiMTnD4zJCByC6XCVion605CdJYzzW61Mhuuuf~i2wsj~3v31saKrZ~BeXOW65paUKbfZc~lDeRcqA8bxE6LqO~NjxIV6rAJw7Ykgfw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501182,
+      "description_sha256": "98815d75fa8d71fe48f51c29abaa1b31fc9751b470fea745f8c6d3295c3d0dad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of three mitigation techniques—Retrieval, Editing, and Fine-tuning—for addressing model-specific unknown knowledge in large language models. The global layout is structured as a horizontal workflow divided into three parallel, vertically stacked modules, each enclosed in a dashed rectangular box. On the left side, an initial 'Query' input is shown feeding into a central model represented by a stylized neural network icon (resembling the OpenAI logo), which produces an incorrect 'Response' marked with a red 'X'. This indicates the baseline failure case before applying any mitigation technique.\n\nOn the right side, the same 'Query' is processed through the three mitigation methods, leading to a correct 'Response' marked with a green checkmark, demonstrating the effectiveness of these approaches.\n\nEach module contains a labeled box with a distinct color: Retrieval (orange), Editing (green), and Fine-tuning (blue). These boxes are followed by visual representations of their respective inputs and processes.\n\nIn the Retrieval module, an icon depicting documents with a magnifying glass symbolizes 'External Knowledge', which is combined via a '+' sign with three blank square boxes labeled 'Parameters'. An arrow leads to three output squares labeled 'Inference', with the last one containing a double quotation mark symbol, indicating generated text or response.\n\nIn the Editing module, a molecular-like graph with a central red node represents 'Location', indicating the specific part of the model being edited. This is combined with three 'Parameters' boxes, leading to three output boxes labeled 'Model Editing', where the last box has diagonal hatching, suggesting modification or update.\n\nIn the Fine-tuning module, three document icons above a database cylinder represent 'Data', which is combined with three 'Parameters' boxes. The output consists of three hatched boxes labeled 'Supervised Fine-tuning', indicating updated parameters after training.\n\nArrows connect the Query to each module’s input, and from each module’s output to the final model icon on the right, which then generates the correct Response. Dashed arrows indicate the baseline path without mitigation, while solid arrows show the enhanced paths through each technique. The figure visually contrasts the failure of the unmitigated model with the success achieved through these three distinct strategies."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

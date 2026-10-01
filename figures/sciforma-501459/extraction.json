@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501459",
+  "record_sha256": "74f7b33903efb9de34a24b93c90704ea3255a59de7361a23b8b561eedd2904e4",
+  "asset_sha256": "f9da64febc6dee753c84948f81c0ae015a536ac2331ce33a8e1225943de635f4",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501459",
+    "title": {
+      "zh": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions · 方法图",
+      "en": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12836",
+      "title": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions",
+      "authors": [
+        "Yuyuan Li",
+        "Xiaohua Feng",
+        "Chaochao Chen",
+        "Qiang Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_id": "2412.12836",
+      "arxiv_first_submitted_at": "2024-12-17T11:58:55Z",
+      "arxiv_updated_at": "2025-12-03T06:36:26Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501459/image/image.jpg?Expires=1790835191&Signature=s4p3XGOdhXcDN9ZWKa4ecssgk~b5EgyVXuOkjSpgDu8qoVHp3vaG907hWD8vVFcJcgPUE1hbMIfu3imgry-ScpZBi8UcENwKCGRp5wUR-sifXjGJigb4oTbrH693uWqS5vS6kmfpdyNisTr80h-lvHvEm-Gm3DtemzAvxmEFazoPMDYqc~Y1Mfl9fboiLZRZ--7GRqtsIS8h4rtRZuUalwhzgSvFQrtV8jbpmeVPdDT1Yw2IWcuwaqy2hrRRX~DnprN~DtNe60i92ervmkt6r4~9y00HKtftYq1FyD6gXheDw5nRX6l2zzvaDWQOJBiCO~5Tlo54bnO752hKRvy5rg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501459,
+      "description_sha256": "e1ba5718d013d0c3268637e1aae6ce7e41b411ac40029079069f92f4469d657b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison between two unlearning paradigms: Machine Unlearning and Recommendation Unlearning. The layout is divided into two main vertical sections by a vertical black line, each illustrating a distinct unlearning framework with its own data flow, model transformations, and evaluation criteria.\n\nIn the left section labeled 'Machine Unlearning', the global structure begins with a dashed rectangular box containing two data components: 'Unlearned Data (Forget Set)' represented by a red cylinder, and 'Remaining Data (Retain Set)' represented by a blue cylinder. These are part of the broader 'Training Data' indicated above. A dashed arrow labeled 'Training' leads from the Retain Set to an 'Original Model', depicted as a gray neural network icon. From this Original Model, a solid black arrow labeled 'Machine Unlearning' points downward to an 'Unlearned Model', shown as a multicolored neural network icon with nodes in red, yellow, and cyan. Simultaneously, a blue arrow labeled 'Retraining' connects the Retain Set to a 'Retrained Model', also a multicolored neural network. A green double-headed arrow labeled 'Equivalent to' links the Retrained Model and the Unlearned Model, indicating they should produce identical outputs. This entire process emphasizes removing the influence of the Forget Set while preserving the model's performance on the Retain Set.\n\nThe right section, titled 'Recommendation Unlearning', extends the concept to a recommendation system context. It starts with 'Training Data (e.g., User-Item Interaction)', visualized as a grid with blue and red cells representing interactions. This data is partitioned into a 'Forget Set' (red cylinder) and a 'Retain Set' (blue cylinder), enclosed within a dashed box. Training proceeds from the Retain Set to an 'Original Model' (gray neural network). From here, two unlearning paths diverge. First, a solid black arrow labeled 'Input Unlearning' leads to an 'Unlearned Model' (multicolored neural network), which is again equivalent via a green double-headed arrow to a 'Retrained Model' derived from retraining on the Retain Set. Second, a diagonal black arrow labeled 'Attribute Unlearning' points to another 'Unlearned Model'. This path is evaluated against a 'Latent Attribute (not participate in training)', shown as a gray grid. An arrow from the Original Model to this grid is marked with a sad face and labeled 'Inferring', indicating the model can infer the attribute. In contrast, the arrow from the Attribute Unlearned Model to the same grid is crossed out with an 'x' and labeled 'Cannot Infer', accompanied by a happy face, signifying successful attribute removal. The visual modules consistently use cylinders for data sets (red for forget, blue for retain), neural network icons for models (gray for original, multicolored for unlearned/retrained), and arrows to denote processes like training, retraining, and unlearning. Text labels are clear and positioned near relevant components, with key terms such as 'Equivalent to' and 'Cannot Infer' emphasizing the evaluation criteria. The figure effectively contrasts general machine unlearning with the more nuanced recommendation unlearning, which includes both input and attribute-specific unlearning objectives."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

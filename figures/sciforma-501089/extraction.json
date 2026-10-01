@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501089",
+  "record_sha256": "a2106e1605557d5a2d072559df65f8835ee64819e88fe4a4c1f67bed829596ce",
+  "asset_sha256": "d3abb572679f35e02ec44a0e979dabc294a0da3dc6c116d12c057d0957f0cf09",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501089",
+    "title": {
+      "zh": "Towards a Universal Synthetic Video Detector: From Face or Background Manipulations to Fully AI-Generated Content · 方法图",
+      "en": "Towards a Universal Synthetic Video Detector: From Face or Background Manipulations to Fully AI-Generated Content"
+    },
+    "paper": {
+      "id": "arxiv-2412-12278",
+      "title": "Towards a Universal Synthetic Video Detector: From Face or Background Manipulations to Fully AI-Generated Content",
+      "authors": [
+        "Rohit Kundu",
+        "Hao Xiong",
+        "Vishal Mohanty",
+        "Athula Balachandran",
+        "Amit K. Roy-Chowdhury"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12278",
+      "arxiv_url": "https://arxiv.org/abs/2412.12278",
+      "arxiv_id": "2412.12278",
+      "arxiv_first_submitted_at": "2024-12-16T19:00:19Z",
+      "arxiv_updated_at": "2025-09-03T01:29:21Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501089/image/image.jpg?Expires=1790835184&Signature=D5ZQra1E-vIp8LVaBh3NAF5SqwOBToxvEf~6KGiJikrqAV4mrSbZNy~xiXi~Gq-Lh0Tw~X6JSuwNF0ZEPYgMSFWD6GoSwyJp2iqZL-xumSCuhYjtbThFNHOstrQGc0sgA1wtwd6WN9JKnEl8KsPu0Y3hyNrXPX2i4Fk3gAorTOvWkFF03Tj~gCaRaLU6NRegMc0IXFllc7VmDerHkxbbzfEzueElb3fUqsw38axoUpu4eeG2LtVFhzuz09iTqQugFY9OVdQqDG-AXB6BVDuwVka~PjlljRGQhT7Do2GLpIRoj-EzbYxS1~ZDn0q4mmL-y92io96wkN3WiHcXPk985Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501089,
+      "description_sha256": "d1b2bc49cf9e0f208ba9c1cdcdd1faf2bb3a2ebdff7c5a8f75f39ddebc8f0c23",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of deepfake detection methodologies, structured into three horizontal sections: 'Existing Methods', 'Full-Frame with CE Loss', and 'UNITE'. On the left, a beige rounded rectangle labeled 'Modern Fake Media' displays four examples of synthetic media: 'Text-to-Video' showing an elderly woman cooking, 'Background Inpainted' depicting a person in front of pyramids, 'GTA-V Game' featuring a man in a game environment, and 'Face Manipulation' showing a news anchor with altered facial features. These examples feed into the three detection pipelines via thick blue arrows.\n\nIn the top section, 'Existing Methods', a light blue trapezoid labeled 'Face Detector' receives input images and outputs face regions or a question mark if none is found. This feeds into another light blue trapezoid labeled 'Face Classifier'. The output performance is indicated on the right: a green checkmark for 'Face Manipulations' (indicating >85% performance), red crosses for 'Background Manipulations' and 'T2V/I2V Content' (indicating <50% performance).\n\nThe middle section, 'Full-Frame with CE Loss', uses a lavender trapezoid labeled 'Multi-Head Transformer Encoder' to process full frames. It outputs four colored squares representing 'Attention Features' (green, magenta, red, purple), which are fed into a lavender trapezoid labeled 'Full-frame Classifier'. Performance results show a green checkmark for 'Face Manipulations', a red cross for 'Background Manipulations', and a green wavy line for 'T2V/I2V Content' (indicating >50% performance).\n\nThe bottom section, 'UNITE', mirrors the middle pipeline but uses salmon-colored trapezoids for the encoder and classifier. Crucially, it introduces an 'AD Loss' component depicted as a 2D scatter plot with two clusters: one of red triangles around a central star and one of green diamonds around another star, connected by a curved arrow from the attention features to the AD Loss. This indicates the loss encourages diverse attention patterns. Performance results show green checkmarks for all three categories: 'Face Manipulations', 'Background Manipulations', and 'T2V/I2V Content'. A legend in the bottom-right corner defines the symbols: green checkmark for performance >85%, green wavy line for >50%, and red cross for <50%."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

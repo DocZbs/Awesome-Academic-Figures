@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502274",
+  "record_sha256": "4dbb8868f86cb709973343660218d25d565d1f55f76dae980a52e2b1ca27795c",
+  "asset_sha256": "450f5c007d34996b721e9dc50ff427a0d713ba3a7e23c5176613fa41af0ca20f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502274",
+    "title": {
+      "zh": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection · 方法图",
+      "en": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-14211",
+      "title": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection",
+      "authors": [
+        "Aroj Subedi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_id": "2412.14211",
+      "arxiv_first_submitted_at": "2024-12-18T02:00:53Z",
+      "arxiv_updated_at": "2024-12-18T02:00:53Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502274/image/image.jpg?Expires=1790835212&Signature=cTjVsPcQIGCHWujrBw1keg6YG7~jRc8cFF8GefPUPaBd2aUkJB1Paj7JswBbIF1IwcdqrC~VmHsNR9W8~XNBJCDxY5bZ41~sQKKVefB3TVZzIDNYDWPgUx~XuzT3~p5-LpVTvrzBAMGNWb60gZEggO7VsuABFCvpfeRLF406SmEDEfUNOwNDqVh88LiPm~0TiGzti2p~cpWzeswELt~fjF3BEoCgeyQCYaeBdeOujs2Rxeeoaa~4iDK-J73aZieP5fTFd4y3crOI~c1ujPU0yA~j3VIOg6zWs8vqWL3maKzEazIOhTKjm9HIKiLz~qKt1dUPCoA0FpnMhS~bm9jQ~g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502274,
+      "description_sha256": "844f7119eb521b2612e4ffabc9913f0579547a8b135f988bb8ca73219b1f6d50",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of an SPPF (Spatial Pyramid Pooling Fast) block, a component commonly used in convolutional neural networks for feature extraction. The global layout is a vertical flowchart with a light green background, arranged sequentially from top to bottom, depicting the data processing pipeline. The structure begins at the top with an incoming arrow indicating input, proceeds through a series of computational modules, and ends with an outgoing arrow at the bottom, signifying output. The entire block is labeled 'SPPF' in bold black text at the bottom-left corner.\n\nThe visual modules are represented as rounded rectangles, each containing a module name and its parameters in black text. The first module is a 'Conv' layer, colored light blue, with parameters k=1, s=1, p=0, indicating a 1x1 convolution with stride 1 and zero padding. This is followed by three consecutive 'MaxPool2d' layers, each colored light gray, with identical parameters: k=5 (kernel size 5x5), p=k/2 (padding equal to half the kernel size, i.e., 2). These pooling layers are stacked vertically, forming a pyramid-like structure. After the third MaxPool2d, there is a 'Concat' layer, colored light purple, which combines features from multiple scales. Finally, another 'Conv' layer, identical in color and parameters to the first (light blue, k=1, s=1, p=0), follows the Concat layer.\n\nConnections between modules are shown using solid black arrows. The primary forward path flows sequentially from the first Conv to the first MaxPool2d, then through the next two MaxPool2d layers, to the Concat layer, and finally to the last Conv layer. Additionally, there are skip connections: arrows branch from the output of the first MaxPool2d and the second MaxPool2d, bypassing the subsequent layers, and converge into the Concat layer. These skip connections enable multi-scale feature fusion, allowing the network to retain spatial information at different resolutions. The final Conv layer outputs the processed features, indicated by a downward arrow exiting the block. The diagram emphasizes the hierarchical pooling and concatenation mechanism central to the SPPF design, facilitating efficient spatial pyramid pooling."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

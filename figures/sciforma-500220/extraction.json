@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500220",
+  "record_sha256": "0086db8bf098fc51cb604d51980492e076f2feadc7899b01bc3717f516385ec3",
+  "asset_sha256": "1f09a28832d69eadf6516bf81c965d8adfbfbdad0d0205afe82e318e3ca46b86",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500220",
+    "title": {
+      "zh": "FlowDock: Geometric Flow Matching for Generative Protein-Ligand Docking and Affinity Prediction · 方法图",
+      "en": "FlowDock: Geometric Flow Matching for Generative Protein-Ligand Docking and Affinity Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-10966",
+      "title": "FlowDock: Geometric Flow Matching for Generative Protein-Ligand Docking and Affinity Prediction",
+      "authors": [
+        "Alex Morehead",
+        "Jianlin Cheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10966",
+      "arxiv_url": "https://arxiv.org/abs/2412.10966",
+      "arxiv_id": "2412.10966",
+      "arxiv_first_submitted_at": "2024-12-14T20:54:37Z",
+      "arxiv_updated_at": "2025-03-24T16:50:30Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM",
+        "q-bio.QM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500220/image/image.jpg?Expires=1790835164&Signature=UB0tMIaMyeekSBQhl0cvzN1qztpqymZPgX5R41NeU1GeY2KeE-DWiWyB2nfagvWt6aenhXINq~RMe6m-FNsqyhZ0P3MEq5m9N0Q0H2w3sNBrKFcesaG1jIevSnrM2zWmBHPn0FFgtKewibskPP7DAgELCkFdKHwGR5rU0S5gzYpwGvD7hxsS0Z19hp824pPiDZXyAVeHBx3v482q1RL8Qz0nKtSwteBlMxEysva-LV~5es5qZkD1rKKA4VtUU3~jECi-KA~ITkVwdeH1g1LPeU-bzcuuT2puNgQV6kKCXkWk2-sQHzrSlA1Fm24tb9CEovg-a6Bwp5tgVnQIJTV~mA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500220,
+      "description_sha256": "a6406365fb3bf27949bf98f7f10a23c73dfb5a022b54e05e0cf8bc3be0730d69",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.BM",
+        "q-bio.QM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the FlowDock framework for biomolecular docking, structured as a horizontal workflow from left to right within a light blue rounded rectangular container labeled 'FlowDock'. The global layout is divided into three main stages: input processing on the left, core modeling in the center, and output visualization on the right. The inputs include a protein sequence (e.g., 'PESADLRALAKHLY...') and a ligand SMILES string (e.g., 'COc1cc(-c2c(C=O)NS...'). The protein sequence feeds into two parallel modules: ESMFold (a green rectangle) which generates an apo protein structure (a teal ribbon diagram labeled 'Apo' with mathematical notation x₀^P ∈ ℝ^{N^P×3}), and PLM: ESM2 (another green rectangle) which provides protein embeddings as part of the 'Protein Inputs'. The ligand SMILES string is processed by a Harmonic Prior module (orange rectangle), producing an initial ligand conformation (a small molecular diagram labeled 'x₀^L ∈ ℝ^{N^L×3}') at time t=0. These inputs converge into a central cyan-colored rectangular block representing the core FlowDock model. This block contains four internal components: 'Encoding and Contact Predictor', 'Contact Maps', 'Flow ODE', and 'Equivariant Prediction Heads'. The 'Encoding and Contact Predictor' receives both protein and ligand inputs and outputs contact maps, which feed into the 'Flow ODE'. The 'Flow ODE' also receives a 'Block Adjacency' signal from the apo structure and produces intermediate representations that are passed to the 'Equivariant Prediction Heads'. The outputs of this central block are shown at time t=1: predicted atom positions for the protein (x₁^P ∈ ℝ^{N^P×3}) and ligand (x₁^L ∈ ℝ^{N^L×3}), depicted as a holo protein structure (labeled 'Holo') and a bound ligand diagram respectively. Additionally, the model predicts binding affinity (pK) and confidence (pDDT). On the far right, the final output is visualized as an 'All-Atom Complex' — a combined ribbon diagram showing the protein-ligand interaction. Arrows indicate data flow: from inputs to the central model, through its internal components, and finally to the outputs. The timeline progresses from t=0 (initial states) to t=1 (final predictions), emphasizing the continuous transformation modeled by the Flow ODE."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501482",
+  "record_sha256": "122a79547b04c4300dbe79aab00f077478c058060a2ebb68d6679379eb573a2f",
+  "asset_sha256": "2dc6e0be3f3630328f94d2432e59dbd74e07421fe5dd04a89b21543a37369d4f",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501482",
+    "title": {
+      "zh": "Selective Shot Learning for Code Explanation · 方法图",
+      "en": "Selective Shot Learning for Code Explanation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12852",
+      "title": "Selective Shot Learning for Code Explanation",
+      "authors": [
+        "Paheli Bhattacharya",
+        "Rishabh Gupta"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12852",
+      "arxiv_url": "https://arxiv.org/abs/2412.12852",
+      "arxiv_id": "2412.12852",
+      "arxiv_first_submitted_at": "2024-12-17T12:26:14Z",
+      "arxiv_updated_at": "2024-12-17T12:26:14Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501482/image/image.jpg?Expires=1790835192&Signature=ZKm88bgSwAQtAS61W3FYVTzokYlBUveu5YrY258eOia4p1u1t05eoYSmHfAkW3vZCcHdfMGCad6fasuPUG8K-o49WVhLnA5PUMp0MWKHBkb7kOJSJUYqhkVRjkw1UYpq1zPOO7Vs2QLAHg4RxU8HDIppf97n6HBFDkXycvSJfLS~1vPqLOvkqVIKJpO4ZdSQpCWlY~w4f~it3qKWDdweUXFgOB5yETlNF6KCEp2t1imWEwcgry6BkvmFNVAcI5bAh0o-XGwfDsZPExn3r3cOaaf0ruyJuXSw5mp3D-41UPgVBeHyr1-cVTR38GYuoCw1tysqYqN3WJBW-IXIW3r2VQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501482,
+      "description_sha256": "be18066e464918cbec38073a0f7ea5822d6107e31dc76da1496a2dd7ab477333",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Selective Shot Learning (SSL) pipeline for generating explanations for code snippets using a large language model (LLM). The global layout is horizontal, progressing from left to right: input data on the far left, three parallel selection modules in the center, and the LLM inference stage on the right. The entire process begins with a query code snippet q and a set of training data consisting of code-explanation pairs, denoted as d_i. The training data is visually represented as a rounded rectangle containing multiple Python code examples with comments, while the query q is shown below it as a user icon followed by the code 'os.mkdir(path)' inside a rectangular box.\n\nIn the center, three distinct selection methods are presented vertically stacked, each enclosed in a light gray box with a blue title. The first, 'Token-based Selection (Selection_token)', processes both d_i and q through a 'Preprocess' step (rectangle), followed by 'Tokenize' (rectangle), and computes 'Jaccard similarity' (hexagon) between tokenized outputs. The second, 'Emb-based Selection (Selection_semantic)', uses CodeBERT (rectangle) to generate embeddings d̄_i and q̄ from d_i and q respectively, then calculates 'Cosine similarity' (hexagon) between them. The third, 'Code Named Entity based Selection (SSL_ner)', employs a 'Code-NER' module (icon with labeled entities like function, library, algorithm, variable) to label both the training data and the query, producing 'Entity Labelled Training data' and 'Entity Labelled Query'. These labeled versions are then compared via 'Entity similarity' (hexagon).\n\nEach selection method outputs a ranked list of code demonstrations, which are visualized as a vertical list containing '#1 Snippet: Explanation:', ..., '#k Snippet: Explanation:', followed by the query and its snippet. These lists are passed to the rightmost section labeled 'top-k selection', where the top-k examples are chosen. This section feeds into an LLM, represented by a cube icon, which generates the final 'Explanation' as output. All three selection paths converge at this stage, indicating that any of the three methods can be used to select demonstrations for the LLM. Arrows clearly indicate the flow: from inputs to selection modules, from selection modules to demonstration lists, and finally from demonstrations to the LLM. The diagram emphasizes modularity and flexibility in selecting relevant code examples for few-shot learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

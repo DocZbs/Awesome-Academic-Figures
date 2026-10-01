@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-502642",
+  "record_sha256": "e692eb4445f69f6c39106958d6ef14280d731e26d73f796c22bd8d0f53b2cd90",
+  "asset_sha256": "7ec861be4f1426ef63ae2493c54072cd5b29d9ee42a56f08f03c2565c0a14e67",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502642",
+    "title": {
+      "zh": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis · 方法图",
+      "en": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-14933",
+      "title": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis",
+      "authors": [
+        "Daniil Averkov",
+        "Tatiana Belova",
+        "Gregory Emdin",
+        "Mikhail Goncharov",
+        "Viktoriia Krivogornitsyna",
+        "Alexander S. Kulikov",
+        "Fedor Kurmazov",
+        "Daniil Levtsov",
+        "Georgie Levtsov",
+        "Vsevolod Vaskin",
+        "Aleksey Vorobiev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_id": "2412.14933",
+      "arxiv_first_submitted_at": "2024-12-19T15:10:31Z",
+      "arxiv_updated_at": "2024-12-19T15:10:31Z",
+      "arxiv_subjects": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502642/image/image.jpg?Expires=1790835223&Signature=UMA6atbHugkHeYKv1hZWIOjEPAV6CGTSmpOpFExsaxtbXKqssFaCrReNwoUhh4lwDI2lVK6RuEz4iea0C~5bonTABvTXC86wUEpoDzPOe1b45cywZeL1Cb2J1PQ1fgtoBeVPp1gpkZOzv02m1w3a8MO4naQvRKBgt~nagcB~dlEWcCLUXtdhZH4aDqNicRcX5AGj0nqY1IBZWqv9CZH7F7ArIB6DHi8-5IxXrOW-em3EjnSB8ArNylrZ7-FeSphrVGd9zUJHY1TRTxbDgwyBxqjhRMjgtjcT6R9WNNZD1qC-aoNnHbe44CLwF5kRFYys0KTeUge0ulguxfqgfEDtOQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502642,
+      "description_sha256": "7494fc08a2b1e389ad63df321ebd68c6cd2c4001c2847c4545d2d116e681523b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison of a computational circuit and its equivalent straight-line Python program for computing the SUM₃ function, which adds three binary inputs. The global layout is horizontally divided into two main sections: on the left, a graphical representation of a Full Adder circuit; on the right, a textual Python implementation of the same logic. Both components are aligned vertically to emphasize correspondence between circuit gates and program statements.\n\nIn the circuit diagram, three circular input nodes labeled x₁, x₂, and x₃ are positioned at the top. These feed into intermediate logic gates arranged in a hierarchical structure. The first layer consists of two XOR gates (denoted by ⊕ symbols inside circles), producing intermediate values labeled 'a' (from x₁ ⊕ x₂) and 'b' (from x₂ ⊕ x₃). Below these, an OR gate (denoted by ∨ symbol) computes 'c' from 'a' and 'b'. The second layer includes another XOR gate that computes w₀ from 'a' and x₃. Finally, a third XOR gate computes w₁ from 'c' and w₀. The outputs are labeled 'carry' (corresponding to w₁) and 'sum' (corresponding to w₀), with their respective gates rendered in bold to indicate they are output gates, as noted in the caption.\n\nAll gates are represented as circles with black outlines and centered symbols. Input nodes are also circles but contain only variable labels. Directed arrows connect inputs to gates and gates to subsequent gates or outputs, indicating data flow. The arrows are solid black lines with arrowheads pointing toward the receiving gate or output label.\n\nOn the right side, the Python code defines a function `sum3(x1, x2, x3)` that mirrors the circuit’s computation. It sequentially assigns intermediate variables: `a = x1 ^ x2`, `b = x2 ^ x3`, `c = a | b`, `w0 = a ^ x3`, and `w1 = c ^ w0`. The function concludes with `return w0, w1`, directly mapping to the circuit’s output labels 'sum' and 'carry'. The code uses standard Python syntax with indentation for clarity, and bitwise operators (^ for XOR, | for OR) correspond exactly to the circuit gates.\n\nConnections between the circuit and the code are implicit through variable naming and computational order. For example, the variable 'a' in the code corresponds to the output of the first XOR gate in the circuit, and 'w0' corresponds to the final sum output gate. The bolded output gates in the circuit visually align with the returned values in the code, reinforcing the equivalence. The entire figure serves to illustrate how a hardware circuit can be translated into a software program while preserving logical structure and output semantics."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

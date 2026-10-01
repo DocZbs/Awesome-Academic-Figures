@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501464",
+  "record_sha256": "65ed3551cf3b83a912f2f26e836d4706a2bd44297591533a17642ed5ba20d7e8",
+  "asset_sha256": "d4ee13bba12fdec87417bb0c5cd587fd7d50fdcba1309b62c1be4aff35adbd80",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501464",
+    "title": {
+      "zh": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions · 方法图",
+      "en": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12836",
+      "title": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions",
+      "authors": [
+        "Yuyuan Li",
+        "Xiaohua Feng",
+        "Chaochao Chen",
+        "Qiang Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_id": "2412.12836",
+      "arxiv_first_submitted_at": "2024-12-17T11:58:55Z",
+      "arxiv_updated_at": "2025-12-03T06:36:26Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501464/image/image.jpg?Expires=1790835192&Signature=eotL8886HukS6GadpEU3IWma3wtgPOFpPwsjV2OEoqc2CDnsJESGVr-Jf72VfPRGnKlIBdHmTxRA5UlQmlIbIHTrJ54Z0WEspQnMUQdzGuUOFhOVBIFy~Zs9GTOkLroOs3RjjuKH97h4jTW9rXz6Anio6dCI8Z~NkA2nU13yy0siGZ9EOj9l60na40Z4622jQ0ODHumvj43eXhtOQJaZFFApQexXBl2DbKTdEDf0wny2zDvXrN~ZGDhQQUVBTpzeH9jeesLXun39NTo2Ri2P~iUDVKRXMAiu35ytsSoPI3txa0EI8vTvHAn-TSAKDjJ83QISn2mRra3OucRKwT7IMg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501464,
+      "description_sha256": "f65e9a6ef756cd1abe37042db8fe70d1d0c7212fcbeb97b6aab02e49c8866a2c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive overview of exact unlearning methodologies in machine learning and recommendation systems, structured into four main sections: Machine Unlearning, Recommendation Unlearning, Retrain from Scratch, and Ensemble Retraining Framework, along with a timeline illustrating the unlearning process stages.\n\n[1] Global Layout and Structure:\nThe figure is divided into two primary horizontal panels. The top panel contrasts general Machine Unlearning on the left with Recommendation Unlearning on the right, separated by a vertical line. Below this, the bottom panel displays two alternative retraining strategies—Retrain from Scratch and Ensemble Retraining Framework—on the left, and a temporal timeline of the unlearning lifecycle on the right. Each section is labeled with a gray caption box beneath it.\n\n[2] Visual Modules and Attributes:\nIn the Machine Unlearning section, Training Data is represented as a gray cylinder, split into a red 'Unlearned Data (Forget Set)' and a blue 'Remaining Data (Retain Set)' within a dashed box. These feed into an 'Original Model' (gray neural network icon), which undergoes training to produce an 'Unlearned Model' (multicolored neural network). A retrained model (blue neural network) is shown via a 'Retraining' arrow from the Retain Set, and a green double-headed arrow indicates equivalence between the retrained and unlearned models.\n\nIn the Recommendation Unlearning section, Training Data is depicted as a grid (e.g., user-item interaction matrix) with red and blue cells indicating the Forget Set (red cylinder) and Retain Set (blue cylinder). The Original Model (gray neural network) is trained on the full dataset. An 'Input Unlearning' path leads to a retrained model (blue neural network), equivalent to the unlearned model. Additionally, 'Attribute Unlearning' is shown, where the original model attempts to infer a 'Latent Attribute' (grid) but fails (indicated by a red 'x' and a sad face), while the unlearned model cannot infer it (green smiley face).\n\nThe Retrain from Scratch section shows a pink box labeled 'D' (data) feeding into a yellow box labeled 'θ₀' (model parameters), with a blue arrow indicating unlearning to a new model 'θ*'.\n\nThe Ensemble Retraining Framework section illustrates parallel and sequential training. In parallel training, data subsets D₁, D₂, D₃ (pink boxes) each train a model θ₁, θ₂, θ₃ (yellow boxes), which are combined into θ₀/θᵤ. In sequential training, models are trained sequentially with feedback loops, also resulting in θ₀/θᵤ. Black arrows denote learning, blue arrows denote unlearning.\n\nThe timeline on the right shows a horizontal axis from T₀ to Tₐ, marked with phases: Learning Stage (T₀ to Tₑ), then Unlearning Stage (Tₑ to Tₐ). Events include 'Learning Complete' (green curve), 'Unlearning Enabled' (play button), 'Target Determination' (red bell), 'Unlearning Execution' (blue cube), and 'Unlearning Audition' (hand with checkmark and cross). The timeline visually maps the progression from learning to unlearning.\n\n[3] Connections and Arrows:\nArrows indicate data flow and transformation. Dashed arrows represent training processes. Solid black arrows denote learning workflows; solid blue arrows denote unlearning workflows. In the ensemble framework, black arrows show data-to-model mapping, while blue arrows show parameter updates during unlearning. The green double-headed arrow signifies functional equivalence between retrained and unlearned models. In attribute unlearning, a black arrow from the original model to the latent attribute is crossed out, while the unlearned model has no such arrow, emphasizing inability to infer.\n\nThe figure uses consistent color coding: red for forgotten/unlearned data, blue for retained/retrained data/models, gray for original models, and yellow for learned parameters. Text labels clarify each component and stage, with LaTeX notation used for data subsets (Dᵢ) and parameters (θ₀, θᵤ, θ*)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500764",
+  "record_sha256": "91ed39dec77bc336891e447eee32bae7f914b1fd302601ba2d8c8fb893008b9e",
+  "asset_sha256": "0e08efe88cadbee84468e751855ae8e3cfd56a8e57aee2660f6e2cc2a93906d1",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500764",
+    "title": {
+      "zh": "No More Adam: Learning Rate Scaling at Initialization is All You Need · 方法图",
+      "en": "No More Adam: Learning Rate Scaling at Initialization is All You Need"
+    },
+    "paper": {
+      "id": "arxiv-2412-11768",
+      "title": "No More Adam: Learning Rate Scaling at Initialization is All You Need",
+      "authors": [
+        "Minghao Xu",
+        "Lichuan Xiang",
+        "Xu Cai",
+        "Hongkai Wen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11768",
+      "arxiv_url": "https://arxiv.org/abs/2412.11768",
+      "arxiv_id": "2412.11768",
+      "arxiv_first_submitted_at": "2024-12-16T13:41:37Z",
+      "arxiv_updated_at": "2024-12-17T09:30:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500764/image/image.jpg?Expires=1790835177&Signature=efC-rGtYygb1u-ar4GQZ5yIsagu2yYn1px0sjTSEb6jBITxKlWwC45BQEVfJeA4QhSdXURj4E0QJGvJ6Oc7XjapUb4JRsr4hjitiybvPJm9c3yGAdiLht3NfFHfI804TATprLB3wn--qwVjFjiLqFMzOh-nzVU6JXJGBcQ7fPT38exkuG-cal4OTEfE5CS4mLKYz4oBB4~CkBn0jxU6kqm~OEUTNSd~5R6BguG0MEIEvHfhubg8rx7pABhhL2o4zup2SbB2m~6whX4KZzlXZha3wdd7q6jSL5BX4~qnCHYjWIS~SD~iHscD3F-er4kU86IboAm-nswBrHFXnFcApSQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500764,
+      "description_sha256": "a541573376f6b0a8effd6872aae800bb8d520b7ed9b83dd3d1c7da1c7d656986",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative visualization of local gain behaviors across four optimization methods—Adam-mini, Adam(W), SGD, and SGD-SaI—during the training process, using a Vision Transformer (ViT) as an example. The layout is structured along a horizontal timeline from Step 0 to Step t, indicating progression through training steps. At Step 0, the initial gradient g₀ is shown, derived from the model’s blocks (e.g., Block.0.QK, Block.0.V, etc.), partitioned into two schemes: 'Adam-mini Partition' and 'PyTorch Default Partition'. The Adam-mini partition groups parameters per block component (QK, V), while the PyTorch default partitions them as QKV units. A visual representation of a block's gradient matrix highlights individual gradient elements versus the whole block gradient. These gradients feed into the calculation of local gains α₀, which are then used to compute the update direction D₀.\n\nThe central part of the figure categorizes the optimizers into two groups: Adaptive Gradient Methods (Adam-mini, Adam(W)) and Non-Adaptive Gradient Methods (SGD, SGD-SaI). For adaptive methods, local gains are continuously recalculated at each step. Adam-mini computes partition-wise adaptive local gains based on its specific partitioning, shown as color-coded grids (yellow, red, green) representing different gain values per partition. Adam(W) calculates adaptive local gains per element based on PyTorch defaults, also visualized as varied color grids. In contrast, non-adaptive methods have fixed local gains. SGD uses fixed local gains pre-defined by PyTorch defaults, shown as uniform light blue grids. SGD-SaI computes partition-wise pre-conditioned local gains once at the start, depicted with dashed borders and distinct color patterns.\n\nAt Step t, the figure shows how these local gains evolve. For Adam-mini and Adam(W), local gains vary across partitions and change over time, indicated by bidirectional arrows and text stating 'Different local gains throughout training, and vary across partitions.' For SGD and SGD-SaI, local gains remain fixed throughout training but still vary across partitions, as noted by 'Fixed local gain throughout training, and vary across partitions.' The visual modules use consistent color-coding: green for Adam-mini, yellow for Adam(W), light blue for SGD, and pink for SGD-SaI. Each module contains grid representations of local gains, with colors indicating magnitude or type. The figure includes explanatory text boxes and arrows connecting gradients to local gain calculations and then to update directions, emphasizing the dynamic nature of adaptive methods versus the static nature of non-adaptive ones. The overall structure clearly contrasts the adaptivity of local gain computation across the four methods, supporting the caption’s claim about their differing behaviors during training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

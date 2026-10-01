@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500098",
+  "record_sha256": "9248d50fc6bcae3392c873b3cb0ff1d5addd67cfb5bcef7da725af429ed9a7e8",
+  "asset_sha256": "e24bf4fbe81c5b34adf0e4a30c884b52c9496ba1f24ab99aadda3b04b594dc45",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500098",
+    "title": {
+      "zh": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions · 方法图",
+      "en": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions"
+    },
+    "paper": {
+      "id": "arxiv-2412-10739",
+      "title": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions",
+      "authors": [
+        "Jingyu Zhang",
+        "Yilei Wang",
+        "Lang Qian",
+        "Peng Sun",
+        "Zengwen Li",
+        "Sudong Jiang",
+        "Maolin Liu",
+        "Liang Song"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10739",
+      "arxiv_url": "https://arxiv.org/abs/2412.10739",
+      "arxiv_id": "2412.10739",
+      "arxiv_first_submitted_at": "2024-12-14T08:19:30Z",
+      "arxiv_updated_at": "2025-02-27T13:17:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500098/image/image.jpg?Expires=1790835163&Signature=n-xMpK2lTYLhqpwNRMBm5h9Xldgh1aPYXtAtr2MUTUINHP1S4B-LtCZEKqitERGugrKKCCbTtE-1PSF-ADwE0nKhBsq~siwD5iwpobsRxu8RNl5zpxpfJoUoeTCw0tASec0bzZSnLVCn~uDb0gAy1PppkzX~WQ9LuRhPmAvA7OTkKs3qnufzcx3y9i-1DHceuOuz0CuIKLXTMGdULaGKnF3YNzpCV-4yE--hGpRYFqMJephgA19qzzOyKH~4GPO~0vwd8oa7tH0PfCxkWSuvraIf2nc~rY11DjGT8-sAji8mhegF97ksntmJlfRejQRiZuDJv3hIbyWRu7XUaD6h-w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500098,
+      "description_sha256": "ecbb48a219726b20f161be7984ddd2d9f58fea3d9d75b0488401010bf6101565",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of the proposed DSRC framework, which consists of two parallel branches: a Teacher model (top, shaded pink) and a Student model (bottom, shaded blue), both sharing identical network structures. The framework implements a three-stage knowledge distillation strategy—Distillation After Encoding (DAE), Distillation After Fusion (DAF), and Distillation After Prediction (DAP)—to facilitate effective knowledge transfer from the teacher to the student. Additionally, a point cloud reconstruction module is integrated to enhance collaborative representation fusion among agents.\n\n[1] Global Layout and Structure:\n\nThe diagram is vertically divided into two main horizontal sections: the Teacher model at the top and the Student model at the bottom. Both models process point cloud inputs through an encoder, followed by feature fusion and detection heads. A central vertical column connects the two models via three distillation modules (DAE, DAF, DAP) and a message exchange mechanism. On the left side, a point cloud reconstruction module processes multi-view point clouds derived from the student’s input, generating dense object and background components. The rightmost part shows the final prediction outputs from both models, with the student’s output used during inference.\n\n[2] Visual Modules and Attributes:\n\n- **Teacher Model (pink background)**: Receives 'Teacher Point Cloud P_i^T' (visualized as a 3D scene with highlighted objects). This passes through an 'Encoder' (a gray box with interconnected circles) producing features F_i^T (a red 3D block). These features are fused (gray 'Fusion' box) into H_i^T (a multicolored 3D block), then fed to 'Detection Heads' (green box) to generate predictions.\n\n- **Student Model (blue background)**: Receives 'Student Point Cloud P_i^S' (a sparser 3D scene). It follows the same structure: Encoder → F_i^S (blue 3D block) → Fusion → H_i^S (multicolored 3D block) → Detection Heads → prediction.\n\n- **Point Cloud Reconstruction Module (left, orange box labeled 'Point cloud Reconstruction')**: Takes 'Multi-view Point Cloud' (a 3D scene with multiple views) and reconstructs it using loss L_rec, outputting 'Dense Object' and 'Background' components. These are used to enrich the student's input.\n\n- **DAE (Distillation After Encoding, yellow box)**: Located between the encoders of both models. It takes F_i^T and F_i^S, applies a decoder-like structure (red and blue blocks with cross connections), and uses losses L_d (distillation loss) and L_rec (reconstruction loss) to align features.\n\n- **Message Exchange (oval with cars and envelope)**: Represents inter-agent communication, where features {F_j^T} and {F_j^S} from neighboring agents are exchanged bidirectionally.\n\n- **DAF (Distillation After Fusion, orange box)**: Connects H_i^T and H_i^S with a bidirectional arrow labeled L_h (hierarchical loss), ensuring alignment of fused features.\n\n- **DAP (Distillation After Prediction, green box)**: Compares outputs from detection heads: C_i^T vs C_i^S (class features) and R_i^T vs R_i^S (regression features), using KL divergence (D_KL) and prediction loss (L_p).\n\n- **Prediction Outputs (right)**: Two 3D scenes showing bounding boxes around detected objects, one from each model. During inference, only the student’s prediction (blue data flow) is used.\n\n[3] Connections and Arrows:\n\n- Black arrows indicate data flow within each model: from point cloud → encoder → fusion → detection heads.\n\n- Red arrows (teacher) and blue arrows (student) show the distinct data paths. The teacher’s path is active during training but discarded at inference.\n\n- Bidirectional arrows connect the DAE, DAF, and DAP modules between teacher and student, indicating knowledge distillation.\n\n- A black arrow from 'Multi-view Point Cloud' to 'Point cloud Reconstruction' feeds into the student’s input, enhancing its representation.\n\n- Message exchange is shown as bidirectional arrows between vehicles in the oval, with features {F_j^T} and {F_j^S} flowing to/from the DAF module.\n\n- The final prediction from the student model (blue arrow) leads to the inference output, while the teacher’s prediction is shown for comparison but not used in deployment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

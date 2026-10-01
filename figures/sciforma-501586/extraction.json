@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501586",
+  "record_sha256": "5bfbc3d35ebe0e976e6ed7589405f678010dbe7eb21b53712bb5bae4c22d0c4a",
+  "asset_sha256": "a53744d472e13571c1eeb8968c2c39cd257028cb534993ef6a1d07ae344b1506",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501586",
+    "title": {
+      "zh": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks · 方法图",
+      "en": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13053",
+      "title": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks",
+      "authors": [
+        "Mátyás Vincze",
+        "Laura Ferrarotti",
+        "Leonardo Lucio Custode",
+        "Bruno Lepri",
+        "Giovanni Iacca"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13053",
+      "arxiv_url": "https://arxiv.org/abs/2412.13053",
+      "arxiv_id": "2412.13053",
+      "arxiv_first_submitted_at": "2024-12-17T16:15:04Z",
+      "arxiv_updated_at": "2024-12-17T16:15:04Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501586/image/image.jpg?Expires=1790835197&Signature=QHJG6SnrnSI-UysMGj5pxufYsiDkmhDQAtvpEWwpcpwZ55dbo9LzB4ywvrjS-UAqilRsQNnXgA4e2F6x5PZ56FvLw2EEKDZ5Jgl9r8uuSmGzYpVBI-3yys40rpIsqI2dywaBD-iKT8u2wdzW4xFN~u9vAkGsM-mD6gf7-6DxpF~0EfyM3GzKYmAtxMKEIAnA14zDiRxfn-9MgiTXTUdpbX2hR~sO~ZQZyi92OVOujQWOqGRsJXD3giINDhWVTB-U6ocg3wjIvj1GLmwSg7kCy2UFrug9eqMin5hdU8y2Vuh6RNOV3RDNVLeXaydHceUVVFfONnLoEZ2ntGv7I8il4Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501586,
+      "description_sha256": "9b837e48536c74521488bcada1d9947cfe21cb21029d4bf351514abaa9112f2b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a decision tree structure for 'Expert 2' in the Reacher-v4 environment, as indicated by the caption. The global layout is hierarchical and binary, with a root node at the top branching into two main paths based on a condition, and each subsequent node further splitting until reaching terminal leaf nodes labeled 'YES' or 'NO'. The tree is organized from top to bottom, with decisions flowing downward through conditional tests.\n\nThe visual modules consist of rounded rectangular nodes. The internal decision nodes are white with gray borders and contain mathematical inequalities involving parameters such as Θ²₅x_T, Θ²₆y_T, and Θ²₁₀Δ_y, along with numerical thresholds (e.g., ≤ -0.003, ≤ 0.012, etc.). These conditions are written in black text using standard mathematical notation. The terminal leaf nodes are colored: 'NO' nodes are light blue with dark blue text, while 'YES' nodes are light pink with dark red text. All nodes are uniformly sized and aligned to maintain clarity in the flow.\n\nConnections between nodes are represented by solid black lines. From the root node, which contains the condition 'Θ²₅x_T ≤ 0.012', two branches extend: one labeled 'T' (True) to the left, leading to the next condition 'Θ²₅x_T ≤ -0.003', and another labeled 'F' (False) to the right, leading to 'Θ²₆y_T ≤ -0.014'. Each subsequent node continues this pattern, with branches labeled 'T' or 'F' indicating the outcome of the test. For example, from 'Θ²₅x_T ≤ -0.003', a 'T' branch leads to a 'NO' leaf, and an 'F' branch leads to 'Θ²₆y_T ≤ 0.487', which then splits into 'NO' (via 'F') and 'YES' (via 'T'). Similarly, the right subtree from 'Θ²₆y_T ≤ -0.014' branches to 'NO' (via 'T') and 'Θ²₁₀Δ_y ≤ -0.293' (via 'F'), which further splits into 'NO' (via 'F') and 'YES' (via 'T').\n\nThe tree represents a logical decision-making process where each internal node evaluates a condition, and the path taken depends on whether the condition is true or false, ultimately leading to a binary classification ('YES' or 'NO') at the leaves. The structure suggests a model used for policy or action selection in a reinforcement learning context, where specific state features (like x_T, y_T, Δ_y) are tested against learned thresholds to determine expert behavior."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

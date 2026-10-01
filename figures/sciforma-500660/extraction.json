@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500660",
+  "record_sha256": "00d9256f6b237d8f2b457d0de6febd2a2325e44c594d798fd66e296d1a6703a4",
+  "asset_sha256": "c8497388de390fd26be1ac108dd6da5dcc3cdff880827444608bd57c2310b049",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500660",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500660/image/image.jpg?Expires=1790835174&Signature=PM18hCtd-WbVMdPmgnBiwsKf0mqQ9e7lh-r6rGgANpf7vAimyh8nMfJrejXnSyqU~BiwHcFL98RlxXAD6EgKgGE672AhzOzQhGRy3odsuxq5TzCX-NarERR-a39hzmtdK9s~io1tovajdKw4CkJkhS-WOSRa973btnyPleGx~mPXybRCtWPVoGoeHYjj0LRBSQhRiwdTZ6ZZmcQoKny0HZFrQ3jTfqtdwjD6VUbQ6b4D1ztWkRbwz5WblORqczM0E0nlIVW7cqoUH7581cQNSaA2bDF4rvAqu9FS2IK8BEimFomTNjVuhPttfaZyEL7q0xyUQ8D9vj2W0NVAW9N0xA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500660,
+      "description_sha256": "2f2c5586de05b6cef371103c3de75bccf2d2653bf0d305c18271534af47c7792",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural flow of DeepLab V3+, a semantic segmentation model, presented as a directed data processing pipeline. The global layout is horizontal, progressing from left to right, with two main parallel branches: a high-level feature extraction path (top) and a low-level feature refinement path (bottom), which converge in a decoder module. A large dashed red rectangle labeled 'Decoder' encloses the bottom branch, indicating its role in upsampling and feature fusion.\n\nThe process begins with an input 'Image' (light orange rounded rectangle) fed into a 'Hote Conv' block (light blue rounded rectangle), which serves as the initial convolutional layer. From this point, the flow splits into two paths.\n\nIn the top path, a large dashed red box groups five parallel operations: four convolutional layers and one pooling operation. These are: a '1*1 convolution' (light orange), three '3*3 convolution' layers (one light pink, one light gray, one light blue), and 'Image Pooling' (light yellow). Each of these produces a feature map represented by a square of corresponding color. These five feature maps are then concatenated into a multi-channel feature stack (depicted as a group of five vertically aligned squares with the same colors as their sources). This concatenated output is passed through a final '1*1 convolution' (light blue) to reduce dimensionality, followed by an 'upsample by 4' operation (light yellow) to increase spatial resolution.\n\nIn the bottom path, the output of 'Hote Conv' is directly processed through a '1*1 convolution' (light orange) to extract 'Low level features', as labeled. This is followed by a light gray square (representing a feature map), then a 'concatenation' block (light blue) where the upsampled high-level features from the top path are merged. The concatenated features pass through a dark blue block (likely representing a more complex module such as an atrous spatial pyramid pooling or a residual block), then a '3*3 convolution' (light pink), and finally another 'upsample by 4' (light yellow) to further increase resolution.\n\nThe output of the second upsampling step in the decoder is directed to a final 'Prediction' block (light blue rounded rectangle), which generates the segmentation output. All connections are indicated by solid black arrows, showing the unidirectional flow of data. The diagram uses color-coding to distinguish different types of operations and their outputs, with consistent color mapping between operation labels and their resulting feature maps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

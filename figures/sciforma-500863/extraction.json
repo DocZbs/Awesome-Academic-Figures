@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500863",
+  "record_sha256": "0302f1b2c0a8f3bcec50e5bf406962c5f231253fd7c76d0e0f264ae0455650a4",
+  "asset_sha256": "54d1587626ce04f64673babb5177658e0d9be2175f6f2feaaa50ccd7d2fea6ab",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500863",
+    "title": {
+      "zh": "Does VLM Classification Benefit from LLM Description Semantics? · 方法图",
+      "en": "Does VLM Classification Benefit from LLM Description Semantics?"
+    },
+    "paper": {
+      "id": "arxiv-2412-11917",
+      "title": "Does VLM Classification Benefit from LLM Description Semantics?",
+      "authors": [
+        "Pingchuan Ma",
+        "Lennart Rietdorf",
+        "Dmytro Kotovenko",
+        "Vincent Tao Hu",
+        "Björn Ommer"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11917",
+      "arxiv_url": "https://arxiv.org/abs/2412.11917",
+      "arxiv_id": "2412.11917",
+      "arxiv_first_submitted_at": "2024-12-16T16:01:18Z",
+      "arxiv_updated_at": "2024-12-19T17:57:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500863/image/image.jpg?Expires=1790835177&Signature=QkHmsktpvfKJlfWG-qoJzywbOYAyB6ZzC30zQvGKMg-0Ngf481jxW9lgkR1occu-oCe1zMx-WPvsa6EdHuMkxLO5rHZQngf0rrlxL1yk6bpq~Jx82EB7vMOkx9HqUFgL8TsFRr2IR545oFlUzR8k5gYYvwIO1o6zKJslTqAzcVUcsEqA7iup8FnaLauy~mtuLCPbrWIAAggZcdJ1uUjs~ETULO~OD8yXSVwr0800BTENvIUEWtjSibeytbe9~rZJeaAOE~0Q3jqNkHYKI5Df6oGfTkhsU03eqv9900e6ZDZtzu-cYqiLVB7tHX6p6mDaVwZoi9sulD71SIJfcqzFOw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500863,
+      "description_sha256": "e4e3136a6b40afe8a4e8fa145458f882a70bebd25eaec400474aa2a2bd2f25fe",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a method for refining semantic descriptions of visual objects using large language models (LLMs) to extract meaningful, discriminative features from a local neighborhood of candidate labels. The global layout is a left-to-right workflow: starting with an input image of a penguin on the far left, progressing through a series of processing stages, and ending with a filtered set of refined semantic attributes on the right. The entire process is divided into three main visual modules connected by arrows indicating data flow.\n\nThe first module, on the left, shows the input image of a penguin in a snowy environment. This image is mapped into a latent space represented as a blue circular region labeled 'local neighborhood,' where data points (small circles with concentric rings) are scattered. A subset of these points, highlighted in light blue with a red square marker, represents the local neighborhood around the input image. Dashed lines connect the input image to this neighborhood, indicating embedding or feature extraction.\n\nThe second module, in the center, is a larger beige oval containing a graph structure of semantic attributes generated by LLMs. At the top, a green circle labeled 'penguin' feeds into a purple hexagon icon labeled 'LLMs,' which outputs a tree-like graph of descriptive phrases such as 'short neck,' 'large head,' 'thick feather,' and 'snowy scene.' These are then integrated into a larger graph within the beige oval, where nodes represent attributes like 'grayish breast,' 'distinct eye ring,' 'a white belly,' 'small feet,' 'white eyebrow,' 'rusty red cap,' 'a small songbird,' 'small beak,' 'elongated body,' and 'a long tail.' The graph is color-coded: green for general or common features, blue for features related to the penguin’s body, red for features associated with a 'rusty red cap' (possibly a different bird), and purple for features linked to 'a long tail' or 'rufous cap.' The central node, a small penguin image, acts as the anchor point connecting these attributes. Dashed lines from the blue neighborhood on the left point to specific nodes in this graph, indicating that the LLM-generated attributes are selected based on proximity in the latent space.\n\nThe third module, on the right, shows the result after filtering. A pair of red scissors symbolizes the pruning step. The beige oval is now split by dashed lines into regions, and only the most discriminative attributes remain. The green cluster ('snowy scene,' 'elongated body') and the blue cluster ('distinct eye ring') are retained, while the red ('rusty red cap') and purple ('a long tail,' 'rufous cap') clusters are removed. The central penguin image remains, now surrounded only by the most specific, non-ambiguous features that distinguish it from other candidates in the local neighborhood.\n\nConnections between modules are shown via solid black arrows: from the input image to the latent space, from the LLM to the attribute graph, and from the full graph to the pruned graph. The dashed lines indicate relationships or selection criteria within the latent space. The figure visually conveys the core idea: LLMs generate rich semantic descriptions, but only those that are locally discriminative—i.e., that help distinguish the target object from similar candidates—are kept, ensuring the final set of attributes provides more specific vision-language cues than the class name alone."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

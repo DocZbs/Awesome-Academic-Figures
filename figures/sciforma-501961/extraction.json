@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501961",
+  "record_sha256": "6c9520f9a844503deb2066d7621708dd4a9260ed2439999b525badcf173025aa",
+  "asset_sha256": "87a3138dee01cbd758a0a5b3be47219d704bca902f4383881024840dd4141922",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501961",
+    "title": {
+      "zh": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks · 方法图",
+      "en": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13724",
+      "title": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks",
+      "authors": [
+        "Muhammad Sohail Ibrahim",
+        "Muhammad Usman",
+        "Jeong-A Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_id": "2412.13724",
+      "arxiv_first_submitted_at": "2024-12-18T11:04:58Z",
+      "arxiv_updated_at": "2025-05-13T11:19:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501961/image/image.jpg?Expires=1790835209&Signature=SVchSV3mx868f3xiv0x6KCNKVxHpZTgOmMPQtIFZPwe3ljECdop9xy1PnZXE4dYaCI4i2x-CXX51-554JAIjf22kmWqJLX8Sh55Vyf0e2zdK4Ha-XLFq9-sCHvYIUIPbgZouyygwUKz~zM5VGMPIQn4xht4tAFGuyGMV~AIa416xwgYjETH2oflMsaDGKZPUcVsbHYwGin4FF2vTxQs9wrnQ2hNu4RXgGyMVHoQ75MKRrjJ~Xy8b0C5FIWYe-v0MGE~MS5ThZLMFzhFTP8PAo-WTCHUTIJUKeL9b9W3hncwKAXay1ybnvdUbYXKDVWhKBIfzV0JoIXmwhZlPcV~VpQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501961,
+      "description_sha256": "eda10a2094d8435cec903486df8995ac415355d1575b9946789a4773fe72c1a4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the internal architecture of a proposed Pixel Processing Unit (PPU), which is designed to perform spatial convolution operations through a hierarchical structure of window processing units (WPUs). The global layout consists of two main components: a left-side block labeled 'PPU' containing multiple WPUs and an online adder tree, and a right-side detailed view of a single WPU, labeled 'WPU-S', showing its internal computation graph.\n\nIn the PPU block, N parallel WPUs (WPU-1 to WPU-N) receive input feature maps (IFM-1 to IFM-N) and corresponding kernel weights (K-1 to K-N) via downward arrows. Each WPU processes its respective input and kernel pair. The outputs from all WPUs are fed into a multi-level 'Online Adder Tree', depicted as a gray inverted trapezoid, which aggregates the results hierarchically. The final output of the adder tree is directed to a component labeled 'END-U', which also sends a feedback signal labeled 'To Control' back to the control logic, indicating a possible loop or synchronization mechanism. The entire PPU block is shaded light blue, emphasizing it as a unified processing unit.\n\nThe right-hand side of the figure provides a zoomed-in view of a single WPU, designated as 'WPU-S'. This module contains K*K local processing elements, each represented by a circle with a black 'X' symbol, labeled OLM-1 to OLM-K*K. These OLMs (likely representing Operation Logic Modules) are connected via solid arrows to intermediate summation nodes, shown as circles with a '+' symbol. The summation nodes form a tree-like structure, where outputs from multiple OLMs are combined at each level using addition operations. Dashed lines between nodes indicate optional or conditional connections, possibly representing skip connections or dynamic routing. The final summation node at the bottom produces the output of the WPU-S, indicated by a downward arrow. The entire WPU-S structure is enclosed in a black-bordered box, clearly separating it from the PPU block.\n\nConnections between the two blocks are shown via dashed lines, indicating that the WPU-S is a representative instance of the general WPU structure within the PPU. The overall workflow follows a dataflow model: inputs are processed in parallel by individual WPUs, then summed hierarchically by the online adder tree, and finally passed to the END-U for further control or output. The design emphasizes parallelism, hierarchical aggregation, and modular computation, suitable for efficient spatial convolution in hardware accelerators."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-502090",
+  "record_sha256": "d4b961952a3153385309013b6300704820c286179a3b22bd386414a259ff8182",
+  "asset_sha256": "e7c20481be4a95fc5311955f21a382088f0161e885d1ac7a040a0cbb7e793501",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502090",
+    "title": {
+      "zh": "Navigating limitations with precision: A fine-grained ensemble approach to wrist pathology recognition on a limited x-ray dataset · 方法图",
+      "en": "Navigating limitations with precision: A fine-grained ensemble approach to wrist pathology recognition on a limited x-ray dataset"
+    },
+    "paper": {
+      "id": "arxiv-2412-13884",
+      "title": "Navigating limitations with precision: A fine-grained ensemble approach to wrist pathology recognition on a limited x-ray dataset",
+      "authors": [
+        "Ammar Ahmed",
+        "Ali Shariq Imran",
+        "Mohib Ullah",
+        "Zenun Kastrati",
+        "Sher Muhammad Daudpota"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13884",
+      "arxiv_url": "https://arxiv.org/abs/2412.13884",
+      "arxiv_id": "2412.13884",
+      "arxiv_first_submitted_at": "2024-12-18T14:23:54Z",
+      "arxiv_updated_at": "2024-12-18T14:23:54Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502090/image/image.jpg?Expires=1790835208&Signature=Ycfip-vpnqG~CaFj0PnQYeSmEg~mrVaeWJQmDle~C3yc4xUvkVm5r915pPP7T~iYRT1eDNeDP2w2mExhtirxKBUyx3RSPl-0QOCVaW1pSj3ZPlhFIAlsNNxkViTWbs2r8Vt~vd-O1~kCNFk8iWSmvMj~Sa9wFygGgh2VI2Ni3NzOO3YBuUlfl8dANFXPYHmyF2lf-xoFr8nSL7x8yhSwVkoShyOEQQ8oaY83A4ig~QpzVjW7AoRcebMoPHlwxh7vA6DwOLNA1QlQX0vNd~tJqG-4SThfK~XrXmCW~GbcgTMGvmBBKQKIadacmz7uLoBiFZgx7GHoEvDCKA7zqDfDNA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502090,
+      "description_sha256": "a8719f937df60b4587de23e6e79f58b861774353dfb367df2a0fb2c6b8aab3ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a plug-in module pipeline designed for fine-grained wrist pathology recognition, structured as a sequential flow from input image processing through feature extraction, noise suppression, feature combination, and final classification. The global layout is left-to-right, beginning with an input X-ray image of a wrist on the far left, progressing through a multi-stage backbone network, followed by weakly supervised selectors, a combiner, and concluding with a fully connected layer leading to a classification bar chart.\n\nThe visual modules are organized into distinct functional blocks. On the far left, the 'Input Image' is represented as a grayscale X-ray image of a wrist, labeled with 'L' indicating orientation. This feeds into a vertical stack of three rounded rectangular blocks labeled 'Backbone Block₁', 'Backbone Block₂', and 'Backbone Blockₙ', arranged sequentially from bottom to top within a large rounded rectangle. These blocks represent successive layers of a deep neural network, each producing a feature map denoted as F₁, F₂, ..., Fₙ, respectively. Each feature map is visually represented as a 3D cube with dimensions specified as ℝᴴ×W×C, where H, W, and C denote height, width, and channel dimensions.\n\nFrom each Backbone Block, a feature map Fᵢ is directed to a corresponding 'Weakly Supervised Selector' module, depicted as a rounded rectangle with light purple fill and dark text. These selectors process the feature maps to identify and suppress noise areas, with arrows pointing upward or downward from each selector labeled 'Noise Area'. The outputs of these selectors are then fed into a tall vertical rectangular block labeled 'Combiner', which aggregates the processed features into a unified representation shown as a grid of pinkish-purple squares, symbolizing a flattened feature vector of size ℝᴺ×C.\n\nFollowing the combiner, the aggregated features pass through a bracketed sequence of vertical bars representing a pooling or reduction operation, indicated by the notation '∑', before entering a blue rectangular block labeled 'FC' (Fully Connected layer). The FC layer outputs a classification result displayed as a horizontal bar chart with four categories: 'Bone anomaly', 'Fracture', 'Metal', and 'Soft tissue'. The 'Bone anomaly' category is highlighted with a red bar, indicating the predicted class with highest confidence.\n\nConnections between modules are represented by solid black arrows indicating data flow direction. The backbone blocks are connected vertically via upward-pointing arrows labeled with feature maps F₁, F₂, ..., Fₙ. Horizontal arrows connect each backbone block’s output to its respective weakly supervised selector. Outputs from the selectors feed into the combiner via horizontal arrows. From the combiner, a rightward arrow leads to the pooled representation, followed by another arrow to the FC layer, and finally to the classification bar chart. The diagram uses consistent color coding: backbone blocks are light purple with blue gradients, selectors are light purple, the combiner is lavender, and the FC layer is light blue. Text labels are black and clearly legible, with mathematical notations such as ℝᴴ×W×C and ℝᴺ×C included to specify tensor dimensions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

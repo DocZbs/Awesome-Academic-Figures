@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Physically Interpretable World Models via Weakly Supervised Representation Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12870
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a conceptual diagram illustrating the process of learning physically meaningful latent representations from high-dimensional visual observations. The global layout is structured horizontally from left to right, depicting a data flow from an underlying physical state through observations to latent representations. At the top, three circular nodes labeled 'State Space' (containing variable x), 'Observation Space' (containing variable y), and 'Latent Space of Standard World Model' (containing variable z) are arranged sequentially. Below these, another circular node labeled 'Interpretable Latent Space' contains variable z*. A cloud-shaped graphic labeled 'Weak supervision' is positioned beneath the observation space node, containing a map-like visualization with a blue circle and a red pin labeled 'Pine Island Dr', symbolizing vague or sparse supervisory signals linking observations to physical states.
+
+Visual modules include circular nodes for variables x, y, z, and z*, each clearly labeled with their respective mathematical symbols. The cloud graphic represents weak supervision and includes a stylized map element to convey spatial or contextual guidance. Text labels are placed adjacent to each node to denote their semantic roles: State Space, Observation Space, Latent Space of Standard World Model, and Interpretable Latent Space. The figure uses distinct line styles to represent different types of mappings: dotted lines indicate 'Unknown Mapping', solid arrows represent 'Intrinsic Autoencoding (one stage)', and dash-dotted arrows denote 'Extrinsic Autoencoding (two stages)'. These are explained in a legend at the bottom of the figure.
+
+Connections and arrows show the relationships between components. A dotted line connects x to y, indicating an unknown mapping from the true physical state to observations. From y, a solid arrow points directly to z, representing one-stage intrinsic autoencoding where observations are mapped to a standard latent space. Additionally, a dash-dotted arrow from y to z* signifies two-stage extrinsic autoencoding, where observations are mapped to an interpretable latent space via external supervision. A dashed vertical arrow connects z to z*, illustrating that the interpretable latent space is derived from or aligned with the standard latent space, possibly through a refinement or projection step. The weak supervision cloud is connected by a dotted line to both x and y, emphasizing its role in providing indirect, sparse guidance for learning meaningful representations. The diagram thus contrasts two paradigms: direct encoding to a generic latent space versus guided encoding to an interpretable one, with weak supervision enabling the latter.

@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502783",
+  "record_sha256": "afe4918f9f8188497b261c5842271fa7037e54d92b81e0b80013225ebf561665",
+  "asset_sha256": "008835b45256dc93a34de8ae99318f8f5af3e345c071343a9c237a217297ca9b",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1280,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502783",
+    "title": {
+      "zh": "RoundTripOCR: A Data Generation Technique for Enhancing Post-OCR Error Correction in Low-Resource Devanagari Languages · 方法图",
+      "en": "RoundTripOCR: A Data Generation Technique for Enhancing Post-OCR Error Correction in Low-Resource Devanagari Languages"
+    },
+    "paper": {
+      "id": "arxiv-2412-15248",
+      "title": "RoundTripOCR: A Data Generation Technique for Enhancing Post-OCR Error Correction in Low-Resource Devanagari Languages",
+      "authors": [
+        "Harshvivek Kashid",
+        "Pushpak Bhattacharyya"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15248",
+      "arxiv_url": "https://arxiv.org/abs/2412.15248",
+      "arxiv_id": "2412.15248",
+      "arxiv_first_submitted_at": "2024-12-14T19:59:41Z",
+      "arxiv_updated_at": "2025-02-23T15:14:08Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502783/image/image.jpg?Expires=1790835227&Signature=I7mbDlWYWQjfWicfjtP4xqqisGbt-QGGEAYlAcASLpULAzobp1pGdrug7wZAB-tfmZF7Wt-adkpvNg1QVTKtysCVO1w~kfU1Nofl9eqA~Rf4XxnClY9RrNdVGUKVv-h-0x9PiDCejq93ZUNkSBT~FTMZ4OvpQXjbTPZ-gtMMlBQBj6Uf1LUJIhjtU7ohw2M7hs~CnNIPDGTDk8jFIHeSoykhoS4-l16R9TQ1Q6O8-Pnk80Mx1HmfqVpriTkwPMZDiOUiaSiDb7gkvj62-JlqmjuMG4Zk7Gudyv7U4mCKNG6hrm~NgXjLRzyvvDpgKdTlK4uTmvxz62p68XuvcEP1AA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502783,
+      "description_sha256": "7884d03fb99bfe9482283c370902a1113b3925a576e7380a221fba943f3416f9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a sequential data generation pipeline named RoundTripOCR, designed to create artificial post-OCR error correction training data. The global layout is a vertical flowchart with five distinct stages arranged top-to-bottom, connected by downward-pointing arrows indicating the progression of data through the system. Each stage is represented by either a rectangular box or an oval, with text labels describing the component or operation.\n\nStarting at the top, the first module is a rectangular box labeled 'Sentence from monolingual corpus <Text T>', representing the initial input: a plain text sentence denoted as T. This flows into the second module, an oval-shaped node labeled 'Image generation using PIL', which signifies the process of converting the text into an image using the Python Imaging Library (PIL). The output of this step is captured in the third module, another rectangular box labeled '<Text T, Image I>', indicating a paired dataset consisting of the original text T and its corresponding generated image I.\n\nFrom here, the data proceeds to the fourth module, an oval labeled 'OCR using Tesseract', representing the application of the Tesseract optical character recognition engine on the generated image I to produce a recognized text output. Finally, the fifth and last module is a rectangular box labeled '<Text T, Image I, OCR output T'>', which denotes the complete triplet output of the pipeline: the original text T, the generated image I, and the OCR-generated text T'. As per the figure caption, in this triplet, the original text T serves as the ground truth or corrected OCR output, while T' represents the noisy OCR output that may contain errors, making this dataset suitable for training error correction models.\n\nAll connections between modules are simple, straight, downward-pointing arrows, indicating a strictly linear, unidirectional workflow without any feedback loops or branching paths. The visual style is minimalistic, using black outlines and black text on white backgrounds, with no color coding or additional graphical embellishments. The shapes consistently differentiate between data states (rectangles) and processing operations (ovals), providing clear semantic distinction throughout the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

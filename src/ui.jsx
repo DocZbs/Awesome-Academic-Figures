@@ -1,4 +1,4 @@
-import { assetUrl } from "./gallery.js";
+import { assetUrl, figureLabel } from "./gallery.js";
 import React, { useEffect, useRef, useState } from "react";
 import {
   Check,
@@ -19,7 +19,7 @@ export function PaperSource({ paper }) {
         <span className="eyebrow">PAPER ARCHIVE</span>
         <span>
           {paper.venue} {paper.publication_year} ·{" "}
-          {paper.awards[0]?.official_name}
+          {paper.awards?.[0]?.official_name || "AI 研究论文"}
         </span>
       </div>
       <h3>
@@ -29,6 +29,14 @@ export function PaperSource({ paper }) {
         </a>
       </h3>
       <div className="paper-source-meta">
+        {paper.publication_date && (
+          <span>
+            论文集发布日期{" "}
+            <time dateTime={paper.publication_date.replaceAll("/", "-")}>
+              {paper.publication_date.replaceAll("/", "-")}
+            </time>
+          </span>
+        )}
         <span>
           图鉴收录{" "}
           <time dateTime={paper.collected_at}>
@@ -52,13 +60,15 @@ export function PaperSource({ paper }) {
           </a>
         )}
         <a href={paper.url} target="_blank" rel="noreferrer">
-          会议论文集
+          {paper.venue === "arXiv" ? "论文来源" : "会议论文集"}
           <ExternalLink size={14} />
         </a>
-        <a href={paper.pdf_url} target="_blank" rel="noreferrer">
-          论文 PDF
-          <ExternalLink size={14} />
-        </a>
+        {paper.pdf_url && (
+          <a href={paper.pdf_url} target="_blank" rel="noreferrer">
+            论文 PDF
+            <ExternalLink size={14} />
+          </a>
+        )}
       </div>
     </section>
   );
@@ -189,7 +199,9 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
       src={`${assetUrl(figure, full ? "reference" : "preview")}?v=${version}`}
       width={figure.visual.pixel_width}
       height={figure.visual.pixel_height}
-      alt={`${figure.paper.title} 的 Figure ${figure.source.number}：${figure.title.zh}`}
+      alt={`${figure.paper.title} 的 ${figureLabel(figure)}：${figure.title.zh}`}
+      loading="lazy"
+      decoding="async"
       onError={() => setFailed(true)}
     />
   );

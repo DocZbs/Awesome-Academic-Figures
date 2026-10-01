@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-500272",
+  "record_sha256": "9975fa863c2c8be72dac51b9ddb50de459689e60ae61c16146eeb5f1d969b81a",
+  "asset_sha256": "c8b622aa475e4635e001eec9e70d42c6b3ce6e69d9e93ef62e3ee802cef9f029",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500272",
+    "title": {
+      "zh": "AirMorph: Topology-Preserving Deep Learning for Pulmonary Airway Analysis · 方法图",
+      "en": "AirMorph: Topology-Preserving Deep Learning for Pulmonary Airway Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-11039",
+      "title": "AirMorph: Topology-Preserving Deep Learning for Pulmonary Airway Analysis",
+      "authors": [
+        "Minghui Zhang",
+        "Chenyu Li",
+        "Fangfang Xie",
+        "Yaoyu Liu",
+        "Hanxiao Zhang",
+        "Junyang Wu",
+        "Chunxi Zhang",
+        "Jie Yang",
+        "Jiayuan Sun",
+        "Guang-Zhong Yang",
+        "Yun Gu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11039",
+      "arxiv_url": "https://arxiv.org/abs/2412.11039",
+      "arxiv_id": "2412.11039",
+      "arxiv_first_submitted_at": "2024-12-15T03:35:00Z",
+      "arxiv_updated_at": "2025-05-08T14:24:13Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500272/image/image.jpg?Expires=1790835164&Signature=tSKpdJY4KGuYIAWUn30b72jrn2smMCkbx9~NafV1sy7Um-pvT9KrbNyy6VPAgLWrKuOD9yC69cOcGAzfmDlGo2l0LF5sKbuXiMNkrpsJ~H-AP66BDMRqhmraHRfE8~6Zqc5oCnPeEuGvh7aBb7xWFsG6X~zjEvH2y3-O2xDrfYKoj~xm2ZsNws0tN2ZXNSWSaupIaXmkWSGjdRHI-cA4SsYoPeIPRL3rk4ZjtTPKGa4csd6DaZNFVOBxYfhYdttaXwcSRdDf2~PInb-mY5pfJk3x7SNDUCXK3Y61xIT~veOe8kQvZvoJ7viBPZrCYOdQDOA8UEZMfbEnAFsEBIyq-Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500272,
+      "description_sha256": "533c6943edf1ab410f6b99d5077e8d08b46542da09d2f5a34fb0398ea6d70119",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive overview of the AirMorph framework for automated extraction and analysis of subsegmental bronchial anatomy from thoracic CT scans, structured into five main panels labeled a through e.\n\nPanel a: Overall Pipeline. This section outlines the three-stage workflow of AirMorph. It begins with input lung morphology from CT scans, depicted as a pair of lungs with red airways. The first stage uses a CNN model (represented by a grid of interconnected gray circles) to generate a binary airway tree (shown as a red branching structure). The second stage extracts graph features (illustrated as two light blue circular graphs with nodes and edges) from this binary tree. The third stage employs a Transformer model (another grid of interconnected gray circles) to produce anatomically labeled airway branches at lobar, segmental, and sub-segmental levels. The final output shows color-coded sub-segmental branches labeled LB^1+2a, LB^1+2b, LB^1+2c, indicating distinct anatomical regions.\n\nPanel b: Fine-grained Evaluation. This panel compares the performance of different models—UNet, nnUNet, GCN, TNN, AirwayAtlas—and ground-truth using a graph-based visualization. Each model’s output is shown as a tree structure with nodes colored according to a legend: green for LB10, light green for LB10a, orange for LB10b, red for LB10b+c, yellow for LB10c, pink for LB9a, blue for LB9b, gray for Miss Detection, and red circle for Wrong Prediction. The ground-truth tree serves as the reference standard.\n\nPanel c: Anatomical Branching Difference Analysis. This section is divided into two parts. c.1: Intra-Segmental Branching Pattern Statistics displays a Sankey diagram showing transitions from RB2, RB3, and RB1 to One-Stem or Two-Stem branching patterns, with percentages indicating frequency (e.g., RB2 → One-Stem: 90.38%). c.2: Inter-Segmental Branching Pattern Statistics presents another Sankey diagram illustrating transitions between RB1, RB2, RB3 and branching types like 1→3, 2→1, etc., with associated labels A1, A2, A3 and percentages (e.g., A1: <1%, A3: 5.06%).\n\nPanel d: Signature Definition. This panel defines six quantitative airway signatures: Stenosis (minimum diameter d_min), Ectasia (maximum diameter d_max), Tortuosity (curvature between points S, P, E), Divergence (angle θ between branches), Length (distance along a path), and Complexity (number of leaf nodes relative to ancestor). Each signature is illustrated with a schematic diagram and labeled accordingly.\n\nPanel e: Signature Application on Pulmonary Atelectasis. This section demonstrates clinical application. It includes image patches from CT scans along Z-, Y-, and X-axes, each with a red arrow indicating a region of interest. Corresponding 3D views show airway structures labeled RB³, RB⁴, RB⁶, with RB⁴ marked as 'Absence'. Three radar charts display signature values (Complexity, Length, Divergence, Ectasia, Stenosis, Tortuosity) for normal distribution (light blue), RB³ (dark blue), RB⁴ (green), and RB⁶ (purple), visually comparing structural abnormalities."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

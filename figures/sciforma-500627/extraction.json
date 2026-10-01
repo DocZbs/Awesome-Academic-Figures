@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500627",
+  "record_sha256": "804674b472db3f6ec035a33bdaddb4af9afc5a051a7b0e8b8deb9efdbaa96ac4",
+  "asset_sha256": "472e6ce2efbf944c0476e11e489773b23d80ece81a3cad24bb39c10176a209a0",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500627",
+    "title": {
+      "zh": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models · 方法图",
+      "en": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11605",
+      "title": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "authors": [
+        "Jiale Cheng",
+        "Xiao Liu",
+        "Cunxiang Wang",
+        "Xiaotao Gu",
+        "Yida Lu",
+        "Dan Zhang",
+        "Yuxiao Dong",
+        "Jie Tang",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11605",
+      "arxiv_url": "https://arxiv.org/abs/2412.11605",
+      "arxiv_id": "2412.11605",
+      "arxiv_first_submitted_at": "2024-12-16T09:47:43Z",
+      "arxiv_updated_at": "2025-03-16T09:43:15Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500627/image/image.jpg?Expires=1790835174&Signature=lIP0HHAW2eJNeuJG-wUYxHbl0h43ZloOhUWGeOCUUiB-neqpHtE7-kfuYiMugXdtJDy5VJXNmhvICiOxj6WujtOyW248ED-305mngrqk4q4F8lpyJmiqVc3lty-qq1H2nSJ0rOP06mAFxRFFR7n2gIBzqA06XEnCIQknysZhN53XllcghxQBZ46PoJemzvzDUQudtsaYGuPwcHUOS9cfCSUHlTlkdnh1Xh4TEHJva6VREs8iH7PmPIZD-epOwa0z6OB75cziMapfWXGCS-zy3I59VMljtsekYjPSV0qrmefBDDKrBji-Jh1DJAw1tLsDu0eNz4xUUe3DZ3fGNPHx6Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500627,
+      "description_sha256": "2159d536d86cfd5c642f707cc1e67a96dd12e0b2d148dbdc05fe09e20ad4c165",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an iterative training framework for improving an actor model M_t and a refiner model R_t through a cycle of negative data collection, tree search refinement, and model training. The global layout is divided into three main sections: 'Negative Data Collection' at the top left, 'Tree Search Refinement' on the right, and 'Model Training' at the bottom left, connected by large blue arrows indicating the flow between stages.\n\nIn the 'Negative Data Collection' section, a prompt x is input into the actor model M_t (light blue rounded rectangle), which generates a response y. This response is then evaluated by the refiner model R_t (light yellow rounded rectangle), which outputs a judgment j. If the judgment is negative (indicated by a red 'x' symbol), the triplet {x, y, j} is stored as negative data in a gray cylinder-shaped database. A dashed arrow from this database points back to the 'Model Training' section, indicating that this data will be used for training in the next iteration.\n\nThe 'Tree Search Refinement' section employs a breadth-first search strategy to improve negative responses. Starting from a root node containing a negative data triplet {x, y₀, j₀}, the tree expands into multiple branches, each representing a potential refined response. Each node contains a triplet {x, y_i, j_i}, and nodes marked with a red 'x' represent still-invalid responses. One branch leads to a correct response {x, y₈, j₈}, marked with a green check. Below this branch, a detailed breakdown shows two operations performed by the refiner R_t: (1) refining y₃ → y₈ and (2) judging y₈ → j₈. Dashed orange lines connect the tree structure to the refiner, illustrating how it operates on each branch.\n\nThe 'Model Training' section at the bottom left shows how the collected data is used to train the models for the next iteration. Two training processes are depicted: DPO Training for the actor M_{t+1} (light blue rounded rectangle) uses 'Actor Data' from a blue cylinder containing triplets {x, y₈ > y₀}, where y₈ is better than the original y₀. RFT Training for the refiner R_{t+1} (light yellow rounded rectangle) uses 'Refiner Data' from a yellow cylinder containing pairs {x, y_i → j_i} and {x, y₃, j₃ → y₈}, capturing the refinement process. Solid blue arrows point from the trained models M_{t+1} and R_{t+1} back to the 'Negative Data Collection' section, closing the loop for the next iteration.\n\nThe entire framework emphasizes continuous self-improvement, with the refiner guiding the refinement of responses via tree search, and both models being updated based on the quality of generated and refined outputs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

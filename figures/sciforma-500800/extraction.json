@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500800",
+  "record_sha256": "282004d2781b556c76923b430b78b71cf7087964191d95985d39ee2be9a07e68",
+  "asset_sha256": "c99792b2170e25d3f722d64612df685b5aac1939f56fdd2d40f2b2ce9aa5ba38",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500800",
+    "title": {
+      "zh": "Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory · 方法图",
+      "en": "Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory"
+    },
+    "paper": {
+      "id": "arxiv-2412-11810",
+      "title": "Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory",
+      "authors": [
+        "Wadjih Bencheikh",
+        "Jan Finkbeiner",
+        "Emre Neftci"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11810",
+      "arxiv_url": "https://arxiv.org/abs/2412.11810",
+      "arxiv_id": "2412.11810",
+      "arxiv_first_submitted_at": "2024-12-16T14:23:31Z",
+      "arxiv_updated_at": "2024-12-16T14:23:31Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500800/image/image.jpg?Expires=1790835177&Signature=atkUrsJOPvIEGTTKrrK0e3KWLGqPDsmRPwEBQUDePm4wtNxLOaOV0P8Gk78At1qbTev7KKXgddfqEPCf07~KqiFSbhnVAe04sM5NhadV07sU45zI3ghbSCUxUq~OxZ3WlV2-m2-PefWodersGbUyWPQF-ACm4aXnRpRa5-W-V3O6ISRA1NmZcfK7rQ4UhzmgZl37Tx5mFdMHuEwnKd9yEt0vv-5uMZJFbZEZ-bMFWmCzXZ~ed6tYa~Xsrsb~p5vCC0GalSFuPo~BuF5H0z6eGubNxwYJ2PP2YOU7--uXD2KOmGbtHMvCDfYs2H8a7FR2Uza1uF544POfgh58kRqbZQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500800,
+      "description_sha256": "0a737de5d87f21664113d0f48ad007ea1d4a052e6adc7a95d5963121ab833545",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of Backpropagation Through Time (BPTT) and several gradient-checkpointing strategies used in training recurrent neural networks or sequence models. The layout is horizontally structured into two main sections: the top section illustrates 'Plain BPTT', while the bottom section details 'Standard Checkpointing' along with associated execution traces and memory characteristics.\n\nIn the top section, labeled 'Plain BPTT', a linear sequence of 9 circular nodes (s_in, s_0 through s_7) is connected by solid red arrows, representing the forward pass through time steps. Each node is a light green circle with black text, symbolizing a state at a given time step. This section includes a caption on the right stating: '1 Forward Pass, 1 Backward Pass, Local Mem. Requirement: T', indicating that this method requires storing all intermediate activations, leading to O(T) memory complexity.\n\nThe bottom section, labeled 'Standard Checkpointing', shows a similar sequence of states but with strategic recomputation points. The sequence begins with s_in, followed by s_0, s_1, s_2, s_3, etc., up to s_7. However, only certain states (s_in, s_2, s_3, s_5, s_7) are marked as 'Recomp' (recompute), indicated by green circles, while others are shown as white circles within dashed rectangular boxes, signifying they are not stored locally but recomputed during backward pass. These dashed boxes represent chunks of computation that are recomputed when needed.\n\nBelow the state sequence, there are three horizontal arrows illustrating the computational flow: a black arrow labeled 'Forward' indicates the initial forward pass; a blue arrow labeled 'Re-Forward₁' and another labeled 'Re-Forward₂' show the recomputation steps during backward propagation; and a red arrow labeled 'Backward' represents the gradient backpropagation phase. A legend clarifies the symbols: dashed rectangles denote 'Chunk', green circles denote 'Local' storage, and pink circles (not present in this specific diagram) would denote 'Remote' storage.\n\nThe caption for this section reads: '1 Forward Pass, 1 Recomp. Pass, 1 Backward Pass, Local Mem. Requirement: √T', highlighting the reduced memory footprint achieved by recomputing intermediate states instead of storing them all.\n\nThe overall figure is titled 'Figure 1: Comprehensive overview of Backpropagation Through Time (BPTT) and various gradient-checkpointing strategies.' The visual design uses consistent node shapes and colors, with clear directional arrows and annotations to convey the workflow and memory trade-offs between plain BPTT and standard checkpointing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

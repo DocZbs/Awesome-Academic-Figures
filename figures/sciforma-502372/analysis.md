@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14462
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of the Mask-aware Dual Diffusion Model (MADD), which jointly denoises an RGB image feature z and an object mask m over a sequence of time steps from t=T down to t=0, conditioned on foreground object features f, background object features b, and a text prompt p. The global layout is divided into two main parts: a top timeline showing the diffusion process and a central green-shaded box containing the core model components.
+
+In the top section, a sequence of circular nodes labeled (z_t, m_t) for t=0 to T represents the state at each time step. Orange arrows indicate the forward diffusion process (t → t+1), while green arrows represent the reverse denoising process (t → t−1), as noted in the caption. The process starts from a noisy state (z_T, m_T) and iteratively refines it toward the clean output (z_0, m_0).
+
+The central green box contains the core model structure. At its center is a shared U-Net architecture, depicted as a beige block with multiple layers and skip connections. This U-Net receives concatenated inputs from two expert modules: one processing the previous mask m_{t−1} and the other processing the previous image feature z_{t−1}. These expert modules are shown as trapezoidal blocks labeled 'expert' and feed into the U-Net via dashed lines, indicating they may be specialized subnetworks or attention mechanisms.
+
+On the right side, the conditioning inputs are processed. The text prompt p is passed through a 'Resize' module (labeled R) before being fed into the U-Net. The background image b is encoded by a VAE encoder (ε), producing a latent representation that is concatenated with the current image feature z_t. The foreground image f is processed by a DINO model, which outputs a feature vector that is passed through an MLP before being concatenated with the U-Net’s input. Both the VAE-encoded background and the DINO-MLP-processed foreground are combined with the current z_t and m_t via concatenation (indicated by 'c' symbols) to form the input to the U-Net.
+
+At the bottom of the figure, the final outputs are shown: the predicted mask m̂ = m_0, represented as a black-and-white silhouette, and the predicted image feature ŷ = z_0, both conditioned on c (context), m_1, and z_1. The figure includes a legend indicating that 'c' denotes concatenation, and the green arrows in the top timeline correspond to the reverse denoising process.

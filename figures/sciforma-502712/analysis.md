@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Associative memory inspires improvements for in-context learning using a novel attention residual stream architecture — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15113
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the AMICL algorithm applied to a sequence of label-object pairs, structured into three distinct steps labeled (a), (b), and (c), each depicting a stage in the process of recovering missing data in a sequence.
+
+In part (a), the global layout shows a horizontal sequence of alternating object and label tokens: o¹, l¹, o², l², o³, l³, o⁴, l⁴. Each token is represented as a colored square with a white border, where object tokens (o¹ to o⁴) are filled with solid colors (blue, orange, green, purple respectively) and label tokens (l¹ to l⁴) are white with colored borders matching their corresponding object. The sequence ends with a black-bordered rectangle enclosing the final object token o¹ (blue) and a gray dashed square containing a question mark, indicating a corrupted or missing label token. This represents the 'local pattern' at the end of the sequence that is partially corrupted due to missing data.
+
+Part (b) presents a different view of the same sequence, now with yellow rectangles grouping each consecutive pair of tokens (o¹-l¹, o²-l², etc.) as 'complete local patterns'. These yellow groupings span from the beginning of the sequence up to the final object token o¹, which is followed by a gray dashed square with a question mark, again indicating the missing label. The yellow boxes visually emphasize the search space for matching complete patterns within the context.
+
+Part (c) shows the result of the completion step. The final corrupted pair (o¹, ?) is now enclosed in a black rectangle, but the missing label is replaced with l¹, matching the first complete local pattern (o¹, l¹) from the beginning of the sequence. This completed pair is also highlighted with a yellow rectangle, indicating it was selected as the nearest match. The rest of the sequence remains unchanged, with the same color-coded tokens as before.
+
+There are no explicit arrows connecting the parts, but the logical flow is sequential: (a) identifies the corrupted local pattern, (b) searches for matching complete patterns in the context, and (c) completes the corrupted pattern using the best match. The visual elements—colored squares for tokens, yellow rectangles for grouped pairs, black rectangles for the target corrupted pair, and gray dashed squares for missing data—are consistent across all parts. The figure effectively communicates the algorithm’s mechanism of pattern matching and completion within a sequence context.

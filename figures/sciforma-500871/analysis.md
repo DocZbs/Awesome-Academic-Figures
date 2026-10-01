@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Hierarchical Meta-Reinforcement Learning via Automated Macro-Action Discovery — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11930
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a three-layered hierarchical reinforcement learning architecture designed for task representation learning, macro-action discovery, and primitive action generation. The global layout is structured into three distinct horizontal blocks: a top 'High-level' block in light blue, a middle 'Intermediate-level' block in light peach, and a right-side 'Low-level policy' block in light green. These blocks are arranged left-to-right and top-to-bottom, with data flow indicated by arrows connecting them. A vertical dashed line separates the output of each layer from its downstream inputs, emphasizing modularity.
+
+In the High-level block, a Markov Decision Process (MDP_t) is processed by a Recurrent-LSTM unit denoted as φ_h, which takes the previous hidden state h_{t-1} as feedback and outputs the current hidden state h_t. This h_t is then passed through a categorical distribution Cat(φ_y(h_t)) to produce the task representation y_t. The MDP_t is defined as (s_t, a_t, s_{t+1}, r_{t+1}), and the entire process is labeled as 'Recurrent-LSTM'. The output y_t is sent to both the Intermediate-level and Low-level policy blocks.
+
+The Intermediate-level block contains a Variational Autoencoder (VAE) structure. It receives y_t and the current state s_t as inputs. The VAE-Encoder, represented by a brown trapezoid labeled ψ_z, maps these inputs to a latent variable z_t drawn from a Gaussian distribution N(z_μ, z_σ). This latent variable z_t is then fed into the VAE-Decoder, another brown trapezoid labeled ψ_s, which also takes s_t^ego (the ego-state, i.e., the state excluding the agent’s own state) as input. The decoder reconstructs s_{t+M}^ego, a future ego-state. The output z_t is sent to the Low-level policy block. The block is labeled 'VAE-Encoder' and 'VAE-Decoder' below the respective components.
+
+The Low-level policy block, in light green, contains a circular node labeled π_θ, representing the policy network. It takes three inputs: y_t from the high-level, z_t from the intermediate-level, and s_t from the environment. The policy outputs the primitive action a_t. The block is explicitly labeled 'Low-level policy'.
+
+Connections are shown as black arrows: MDP_t feeds into φ_h; h_t flows to the categorical function producing y_t; y_t and s_t feed into the VAE-Encoder; z_t and s_t^ego feed into the VAE-Decoder; y_t and z_t are sent to the low-level policy; and s_t is directly fed to the low-level policy. A feedback loop from h_t back to φ_h indicates recurrence. The dashed vertical lines after y_t and z_t emphasize the separation of layers, aligning with the caption’s note that gradients do not overflow between layers, preserving independence. The figure visually encodes the hierarchical decomposition of decision-making: high-level task representation, intermediate macro-action discovery via VAE, and low-level primitive action selection.

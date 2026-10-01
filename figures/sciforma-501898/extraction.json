@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501898",
+  "record_sha256": "f728a9d6d39ddd9cec02e1969b43ae5354e4fb046b9914e52878887ad6c85fe4",
+  "asset_sha256": "cd8ee094645decef84476e7cb0e9745076cfb4f7ab99a4a86be0485812bbcbfd",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501898",
+    "title": {
+      "zh": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting · 方法图",
+      "en": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-13654",
+      "title": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting",
+      "authors": [
+        "Yuning Peng",
+        "Haiping Wang",
+        "Yuan Liu",
+        "Chenglu Wen",
+        "Zhen Dong",
+        "Bisheng Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_id": "2412.13654",
+      "arxiv_first_submitted_at": "2024-12-18T09:33:20Z",
+      "arxiv_updated_at": "2025-03-10T13:37:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501898/image/image.jpg?Expires=1790835205&Signature=CYc2z1n0sSWwsaDtIjhBbXTSAe9yX66eEqijtAH8wAsotUISUGEPhQkzWS-b1EoQgOfUQnKQcRNm-v9UWCRp8-yyDa9vvKtM9zvSc73wk34AUAnM7kTWah7OwwQi67fDwK29PT-myYwLl~FifBhJ4JrK~T5F0K9RG3BkpiOVJwlSGYYHBpjUHh-koILGaDJvRHyrIGdYUDIkNxKDXZrKmAx4VkXkd9dtk6w66US1b1wiA5M8nx2AsTcqRn6RSHD~bZcPD5kp2VIDypevViUph2u99O361iKOT-j4H3MD-B1NgjgK0rn07sLuVhpEfZixVpVpbmWGn3c15QMBHYVf~A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501898,
+      "description_sha256": "dff141f8232d8e1eaf0ae0cc847c1bb1215131b9bbfbdc727135ca4f4f8a3615",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a granularity-aware segmentation method that determines the number of sampling points per image patch based on depth information and local information density. The global layout is left-to-right, showing a three-stage pipeline: depth-aware sampling calculation, quantized density modeling, and sample drawing. On the left, a 3D volume labeled 'Min Depth Field' is shown with color-coded depth values (red for near, blue/purple for far), containing a small black cube centered on a red circular region representing a selected patch. A black arrow from this cube points to a 2D 'Depth Map' rendered as a gradient image, which in turn connects via another arrow to a real-world image divided into a 3x3 grid of patches. Below this, the text 'Calculate the n_sample per patch' indicates the purpose of this stage. A curved gray arrow leads from the patched image to the middle section, which contains a 3x3 grid of grayscale textured patches numbered 1 through 9. Beneath this grid is a bar chart labeled 'Quantized Gaussian kernel density P', with bars corresponding to the nine patches, indicating a discrete probability distribution derived from the local Gaussian density. This section is captioned 'Local sampling based on constant information density'. Finally, a rightward arrow leads to the rightmost panel, which shows the same 3x3 grid of the original image now overlaid with white dots distributed unevenly across the patches—denser in regions with higher probability (e.g., patch 9) and sparser elsewhere. This panel is labeled 'Drawing samples according to P'. The entire diagram uses grayscale and color coding to represent depth and density, with clear bounding boxes around modules and directional arrows to indicate data flow. Text labels are placed directly below or beside components for clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

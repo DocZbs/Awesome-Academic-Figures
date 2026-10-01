@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502716",
+  "record_sha256": "ccdc6828388fe0f8842ee4b5c542655daabe0b1c3c48041ff68595f23faaa834",
+  "asset_sha256": "3a9826166e32c9f471cc81bffed699c32747ab882134b09e7992578b33392e0e",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502716",
+    "title": {
+      "zh": "Parallelized Autoregressive Visual Generation · 方法图",
+      "en": "Parallelized Autoregressive Visual Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-15119",
+      "title": "Parallelized Autoregressive Visual Generation",
+      "authors": [
+        "Yuqing Wang",
+        "Shuhuai Ren",
+        "Zhijie Lin",
+        "Yujin Han",
+        "Haoyuan Guo",
+        "Zhenheng Yang",
+        "Difan Zou",
+        "Jiashi Feng",
+        "Xihui Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15119",
+      "arxiv_url": "https://arxiv.org/abs/2412.15119",
+      "arxiv_id": "2412.15119",
+      "arxiv_first_submitted_at": "2024-12-19T17:59:54Z",
+      "arxiv_updated_at": "2025-04-03T02:34:24Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502716/image/image.jpg?Expires=1790835226&Signature=cvAWIweRdMIU9RA0RBpz44oFjr6TKJhqDpFZTZtWH84VYCqlcp1zEuCjsvLG5m8dohnd8Lwml9EBx4gENUR2MqYsoTrEOH5R4O~609BlxCSOX87nDEavBqwvqTuLYJngOjNeOjE~sONcTXa3VvWnU2tDd7OA~ppuJ1AZz9ypPx4mwq2ctO1b7VI60T9ZMGtHJEfAH9LBv062u9C1hU8QrgfKdmokhO3bpVWlHLY-t8MLnsSgRY5S8Tdcb66t8US1mePilfD--3yWS-UcyUYOgJTfdmWqEmda4gliEo3KAG3XnzrRggde-~xzGrPj~mM7Gx7HrFkwArHaP6iUF2dcDA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502716,
+      "description_sha256": "8a7a94f808a90f13d4b2fdc862b4c81e517230827bbc3662bf4cfe9a2ca5a716",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a parallel autoregressive generation framework, divided into two main parts: (a) Model Implementation and (b) Visible Tokens during Generation.\n\nIn part (a), the global layout is a top-down flow diagram showing the input sequence flowing through an Autoregressive Transformer to produce a target sequence. The input sequence begins with a CLS Token (gray box labeled 'C'), followed by tokens 1, 2, 3 (colored yellow, green, purple respectively), then token 4 (pink), and a set of learnable tokens M1, M2, M3 (light blue boxes). After these, the input continues with grouped tokens: 5a, 5b, 5c, 5d (each in distinct pastel colors), followed by 6a, 6b, 6c, 6d, and 7a, 7b, 7c, 7d, all grouped in dashed boxes. These groups represent parallel decoding units. The Autoregressive Transformer (a large rounded rectangle) receives the input sequence and outputs the target sequence, which mirrors the input structure but includes the predicted tokens. The output tokens 5a–5d, 6a–6d, and 7a–7d are labeled 'Parallel Predicted Tokens' and are shown above the transformer, indicating they are generated in parallel within each group. Arrows point from each input token to the transformer and from the transformer to the corresponding output token, illustrating the forward pass. A label below the learnable tokens reads 'Learnable Tokens for parallel decoding', emphasizing their role in transitioning the model into parallel prediction mode.\n\nPart (b) compares the visible context during generation between the proposed method ('Ours') and traditional single-token prediction. It consists of two side-by-side matrices, each with rows labeled 'Output' (tokens 1, 2, 3, 4, 5a, 5b, 5c, 5d, 6a, 6b, 6c, 6d) and columns labeled 'Input' (same tokens plus C, M1, M2, M3). In both matrices, shaded teal cells indicate tokens that are visible (i.e., accessible via attention) during the prediction of the corresponding output token. In the left matrix ('Ours'), when predicting token 6b, the model can access all tokens from the previous group (5a–5d) and earlier tokens, but not tokens from the current group (6a, 6c, 6d) or future ones. This reflects group-wise full attention within the group. In contrast, the right matrix ('Traditional Single token prediction') shows that when predicting token 6d, the model has access to all previous tokens, including 6a, 6b, and 6c, demonstrating the full causal attention mask typical of standard autoregressive models. The caption clarifies that without full attention, the parallel approach would restrict visibility to only tokens up to the same position in the previous group (e.g., 6b could only see up to 5b), but the proposed method enables group-wise full attention to allow access to the entire previous group, thus maintaining contextual coherence while enabling parallelization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500999",
+  "record_sha256": "aa581d46588bd00c8fc3caffca03d8e7451f0fd82b9605e1320e7762b17b81e6",
+  "asset_sha256": "533133fe9e2643e3422ef1110bc4d8406cde70040039dd70c96b27171d088978",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500999",
+    "title": {
+      "zh": "SMARTCAL: An Approach to Self-Aware Tool-Use Evaluation and Calibration · 方法图",
+      "en": "SMARTCAL: An Approach to Self-Aware Tool-Use Evaluation and Calibration"
+    },
+    "paper": {
+      "id": "arxiv-2412-12151",
+      "title": "SMARTCAL: An Approach to Self-Aware Tool-Use Evaluation and Calibration",
+      "authors": [
+        "Yuanhao Shen",
+        "Xiaodan Zhu",
+        "Lei Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12151",
+      "arxiv_url": "https://arxiv.org/abs/2412.12151",
+      "arxiv_id": "2412.12151",
+      "arxiv_first_submitted_at": "2024-12-11T06:09:12Z",
+      "arxiv_updated_at": "2024-12-11T06:09:12Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500999/image/image.jpg?Expires=1790835182&Signature=mvVYiTeY8H3WAAxWUpHs1SmWdzptvRcUblMTD3m~02tcoUmVh21vn2Qpu2h-WjHKY551Ai41indq0x-wb3fDf7VmoANpOnmoXoHVSfFZzreWTw-oqRWnDAqJ4~T2lDtPa0M0i42LGwDbcCGMeFhvMhL-A64tOHaI~EZeUZC2brWDLI~pxKqoPbrTlNn8zxLKNY7oycdp1u~dX~JCIJJiVEJVDD-aJ3K2fX5huB9zuywa8Bk6dVE84o20bMSuKPZVqhNwCGdU6SFJhX3moW6cd4GDvIiRstBnUv4JJYQAM-JodQCKOSpR2LzAdnxtf5XvLcXuvTeYYHvL6sqchMS5nw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500999,
+      "description_sha256": "9db64175ada3d69b261adbf617bc8fffdd57edfb3e89f35fa35b9ece374e32e8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram of three reasoning frameworks—Original ART, ART (V), and SMARTCAL—for answering complex question-answering (QA) tasks using tools. The global layout is divided into two main sections: the left side details the Original ART and ART (V) methodologies, while the right side outlines the SMARTCAL framework, which is structured into three sequential steps: Self-Evaluation (SE), Confidence Prior Collection (CPC), and Augmented Reasoning (AR). At the top, a QA input example is given: 'Where was Robert E. Clary educated?'. Above this, five cylindrical icons represent available tools: Search, String Operations, Code Exec, Arithmetic, and CoT Internal Knowledge, collectively labeled as 'Tool Box with Examples' under the 'Tool Framework (ART)' header.\n\nOn the left, the Original ART Reasoning process begins with a 'Tool Use Model f(x)', symbolized by a robot icon plus a wrench, which generates reasoning traces. These traces are shown in green boxes with step-by-step queries and answers, such as '[search] Use a search engine...' followed by results like 'Robert E. Clary was educated at the University of California, Los Angeles.' Some traces include incorrect or incomplete answers marked with red crosses. A dashed arrow from the Tool Use Model points to a box titled 'Find Similar Tool Use Examples', which filters examples based on shared subtasks (e.g., string operations, web search). This filtered set is then added to the reasoning process. Below this, 'Verbalized Tool Confidence' is introduced in ART (V), where confidence scores (e.g., [80], [90]) are appended to each reasoning step, indicating the model's certainty as a percentage. For instance, a step might read 'Q1: [search] [80] Who was Robert E. Clary?' with a confidence score of 80.\n\nOn the right, the SMARTCAL framework is enclosed in a dashed box and divided into three steps. Step 1: Self-Evaluation (SE) involves a 'Teacher Model g(x)' (robot icon) processing the QA input alongside 'Question Familiarity' and 'Example Similarity' modules. These are summarized into 'Tool Use Instructions', which caution against using tools not selected in similarity results and emphasize reliance on own knowledge when appropriate. Step 2: Confidence Prior Collection (CPC) includes 'Step-wise Confidence Calculation' using a formula: C_t_i = (1/K) * Σ(C_j) for j=1 to K, where t_i is a development set item. This is paired with a 'Calibration Performance Table' listing confidence intervals (e.g., [5, 45, 55, 65, 75, 85]) and corresponding accuracy intervals (e.g., [0, 33, 43, 47, 67, 78]). Adjacent to this is 'Conf Score Edit Instructions', guiding users to adjust confidence scores based on accuracy: decrease if accuracy is lower than confidence, increase if higher. Step 3: Augmented Reasoning (AR) integrates instructions from Steps 1 and 2 into a 'Calibration Model h(x, d)' (robot + wrench), which produces refined reasoning traces. These traces include confidence scores (e.g., [72], [85]), answer type checks (e.g., 'Does the information help answer the question?'), and internal knowledge usage. The final output correctly identifies 'United States Military Academy' as the answer, marked with a green check. The entire SMARTCAL process aims to reduce tool abuse by incorporating self-evaluation, confidence calibration, and augmented reasoning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

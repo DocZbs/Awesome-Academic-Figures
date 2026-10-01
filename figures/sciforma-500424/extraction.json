@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500424",
+  "record_sha256": "58076e48983c64080ba5f854a3b3b5360f33b79fe421286cd391262ef741717a",
+  "asset_sha256": "e5e065345ce443b5090dafb039d549451700ef331e08d7acac9daf8f1df84bea",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500424",
+    "title": {
+      "zh": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers · 方法图",
+      "en": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2412-11293",
+      "title": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers",
+      "authors": [
+        "Ashish Parmanand Pandey",
+        "Alan John Varghese",
+        "Sarang Patil",
+        "Mengjia Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11293",
+      "arxiv_url": "https://arxiv.org/abs/2412.11293",
+      "arxiv_id": "2412.11293",
+      "arxiv_first_submitted_at": "2024-12-15T19:56:56Z",
+      "arxiv_updated_at": "2025-05-12T17:41:35Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500424/image/image.jpg?Expires=1790835171&Signature=syj~HlL9bN3PQmfSk1rSP2LfCnoXk9GstAtDCwvwhJUCgjLkBH8i-j9-79tF~Woww3SvrVNyxFboAtm3v-wXyimkcnOQ4Xtr3l5gib~uf0hT4AuE~BBOWDwxOmBe37ZzHCbwmYumN533jaBb~t4VIAuv1NKMUYbP9cYSUv6x0DeI-Qwq4t3Y41d5CrBE~0dKUNzoGnXorpiX5Msx4-i0oS0G8ZltF2rt1nWKPrG3KnuELUffdwnRREzW~6GPFnjSAQQB6B3Th46huO6l2oJ1YpjL3zSmOE-e~4VqRjGPUKElKD3OcGtHVEWLWmp6nBl0OQSTGz2UtdNxR8jAQiMjIg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500424,
+      "description_sha256": "62600b6da685221ba332ceb8a42610748f95d7584225bd44f5996ada74f0a656",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the ST-TransformerG2G model, an enhancement of the original TransformerG2G model that incorporates Graph Convolutional Networks (GCNs) to better capture spatial dependencies in dynamic graphs. The global layout is left-to-right, depicting a sequential processing pipeline starting from discrete-time dynamic graph inputs on the far left, progressing through multiple processing stages, and culminating in two output representations on the far right.\n\nOn the left side, under the label 'Discrete-time dynamic graph G', a series of graph snapshots G_{t-l} through G_t are shown, where l ∈ {1,2,3,4,5} indicates a lookback window of five time steps. Each graph snapshot is represented as a small undirected graph with nodes (circles) and edges (lines), with one node highlighted in green to indicate a specific node of interest. Each graph snapshot is processed by a blue rectangular block labeled 'GCNS' (Graph Convolutional Networks), which consists of three GCN layers as described in the caption. The output of each GCN block is a node embedding vector, denoted as x_i^{t-l}, x_i^{t-1}, ..., x_i^t, stacked vertically in a green columnar structure representing the temporal sequence of embeddings for a given node i.\n\nThese node embedding sequences are then fed into the central component labeled 'Encoder'. This encoder begins with a light orange vertical rectangle labeled 'Positional Encoding', which adds positional information to each node embedding token. The encoded tokens enter a standard Transformer encoder block, depicted as a large white box containing four sequential modules: a green rectangle labeled 'Self-attention', followed by a light blue rectangle labeled 'Add & normalize', then a green rectangle labeled 'Feed forward', and finally another light blue rectangle labeled 'Add & normalize'. These modules form a single Transformer layer, and the diagram implies this structure may be repeated, though only one layer is shown.\n\nAfter the Transformer encoder, the output passes through a white box labeled 'Pointwise convolution + tanh', which applies a pointwise convolution operation followed by a tanh activation function. From this module, two parallel branches diverge. The upper branch leads to a blue rectangle labeled 'Linear Mapping', producing a vector output μ_i^t, represented as a vertical stack of light blue rectangles on the far right. The lower branch leads to a light orange rectangle labeled 'Nonlinear Mapping', producing a vector output σ_i^t, represented as a vertical stack of light orange rectangles. According to the caption, these outputs define a multivariate normal distribution N(μ_i^t, Σ_i^t), where Σ_i^t is a diagonal matrix with σ_i^t as its diagonal elements, indicating the variance for each dimension of the node's latent representation at time t.\n\nAll connections between modules are indicated by solid black arrows, showing the direction of data flow from left to right. The color coding is consistent: blue blocks represent GCN or linear operations, green blocks represent self-attention or feed-forward components, light orange represents positional encoding or nonlinear mapping, and light blue represents normalization or residual addition steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

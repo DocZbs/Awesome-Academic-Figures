@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501720",
+  "record_sha256": "ebbe1384a094dc0fa247a55b0e3a866ffceb27dfac87df573f1cc81827a3796c",
+  "asset_sha256": "0be3227f58f9dc68b85e40b07d0d3299812e8e49bde97c9441e64064294c7126",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501720",
+    "title": {
+      "zh": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation · 方法图",
+      "en": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13394",
+      "title": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation",
+      "authors": [
+        "Burak Ekim",
+        "Girmaw Abebe Tadesse",
+        "Caleb Robinson",
+        "Gilles Hacheme",
+        "Michael Schmitt",
+        "Rahul Dodhia",
+        "Juan M. Lavista Ferres"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13394",
+      "arxiv_url": "https://arxiv.org/abs/2412.13394",
+      "arxiv_id": "2412.13394",
+      "arxiv_first_submitted_at": "2024-12-18T00:10:44Z",
+      "arxiv_updated_at": "2025-04-08T21:00:47Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501720/image/image.jpg?Expires=1790835200&Signature=D4G3FB8CLGh-hqwTy3I1nxgDrYtb~U0IyXLwrt5h2P4luYj9pFVtiCuX37IbL1i2lQBIldgWGqAA07N5gXGhU6KpMdiqbGso1H9ar9UrfXygHSdyUT3WURrLjuZi9dhq9l0ZBOsasIHBYSgGe1~p~7MfmYB6vTOHH86nVHEmoKdHsIBZULNty6DM-~Leqd9Yfo-sQ9tyonliMm3Zenge0rSkZdRrYCNI9zO2C-gNmL~-HLexIDTNnH6dmB3awz5CIFPfErCu0kSawdjP484Bqo7aFPnkzXzCzg-WGLh~RyJ4FYuAZ1VEpAGDCtyWBW-60VZLioCn4fczyCranurMPg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501720,
+      "description_sha256": "cc72c01c3dd1d5bd6986c422838e2df7b25158c5112e92ffc7c97c10425d82d8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a two-phase OOD detection method, divided into 'Fit g' (training phase) and 'Deploy g' (inference phase). The global layout is horizontal and split vertically into two rows: the top row illustrates the training process, while the bottom row shows the deployment process. A legend at the bottom defines visual symbols: blue diamonds represent ID samples, gradient-colored diamonds (blue-orange) represent WILD samples (unknown distribution), solid blue circles denote ID activations, gradient-colored circles (blue-orange) denote WILD activations, solid orange circles denote surrogate OOD activations, and solid blue circles denote surrogate ID activations.\n\nIn the 'Fit g' phase, a cluster of blue and gradient-colored circles (representing ID and WILD activations) is shown on the left. These activations are processed by a dotted rectangular box labeled 'Surrogate ID and OOD Label Assignment', which assigns surrogate labels to the WILD activations. The output is a new cluster of activations where blue circles represent surrogate ID activations and orange circles represent surrogate OOD activations. This labeled dataset is then fed into a binary classifier denoted as g(θ), represented by a gray arrow pointing to the classifier block.\n\nIn the 'Deploy g' phase, a single gradient-colored diamond (WILD sample) is input into a trapezoidal module labeled 'Pre-trained Model f(·)', which contains a snowflake icon symbolizing the frozen model. The model outputs a prediction, but more importantly, it also produces 'Internal Activations' (indicated by a dashed line) that are passed to the function g(·, θ). This function, which was trained in the top phase, takes the internal activation (represented as a gradient-colored circle) and the learned parameters θ to output a decision. Two gray arrows from g(·, θ) point to flags: a blue flag labeled 'ID' and an orange flag labeled 'OOD', indicating the final classification result.\n\nConnections are shown via solid gray arrows for data flow and dashed lines for auxiliary or internal signals. The dashed line from the pre-trained model to g(·, θ) explicitly marks the 'Internal Activations' being used for OOD detection. The dashed arrow from the binary classifier g(θ) in the top row to g(·, θ) in the bottom row indicates that the same classifier is deployed after training. The entire diagram visually conveys that the method learns a binary classifier on surrogate labels derived from ID and WILD samples during training, and then applies this classifier to internal activations of new samples during inference to determine if they are in-distribution or out-of-distribution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

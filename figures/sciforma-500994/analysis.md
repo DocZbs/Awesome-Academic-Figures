@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12150
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an architectural diagram of a multi-task scene analysis system based on efficient RGB-D segmentation, labeled as ESANet. The global layout is divided into two main horizontal sections: the top section illustrates the core segmentation network, while the bottom section shows subsequent scene analysis tasks derived from the network’s outputs.
+
+In the top section, the central component is the ESANet model, which consists of three primary modules: a yellow trapezoidal 'RGB Encoder', a blue rectangular 'Depth Encoder', and an orange trapezoidal 'Decoder'. The RGB Encoder receives input from a series of RGB images shown in a grid on the left, depicting a robot capturing scenes over time. The Depth Encoder receives corresponding depth images, also displayed in a grid below the RGB images. Both encoders feed into the Decoder, which produces segmented output images shown on the right, where objects and people are color-coded by semantic class. The entire top section is framed with a red border and labeled 'Semantic Segmentation' vertically along the left edge.
+
+The bottom section, labeled 'Subsequent Scene Analysis Tasks' vertically on the left, displays four downstream applications. These are arranged horizontally and include: 'Stronger Multi-Task Person Perception', 'Free Space Detection', 'Floor Refinement', and 'Semantic Mapping'. Each task is represented by a white rectangular box with black text. Below each box is a visual example: 'Stronger Multi-Task Person Perception' shows a 3D scene with a person highlighted; 'Free Space Detection' displays a top-down view of navigable space; 'Floor Refinement' shows multiple frames being processed to refine floor boundaries; and 'Semantic Mapping' presents a 3D reconstructed environment with labeled objects.
+
+Connections between components are indicated by arrows. From the top section, the outputs of the Decoder are connected via blue arrows to all four downstream tasks. Additionally, the Depth Encoder has a direct blue arrow pointing to the 'Semantic Mapping' task, indicating that depth information contributes directly to this module. However, the diagram does not show a direct connection from the Depth Encoder to the Semantic Mapping module bypassing the Decoder — instead, the connection is indirect through the Decoder’s output. The figure includes a caption stating that the Depth Encoder is not directly connected to the Semantic Mapping module, clarifying that the connection is mediated through the Decoder’s output. This is further emphasized by the True/False question on the right side of the figure, which states that the diagram shows a direct connection — a claim marked as False in the answer section.

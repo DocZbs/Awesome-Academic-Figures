@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-501177",
+  "record_sha256": "c672e49d8cf1e07eae7c11b4242db00414a21a79cb89f4a371c4cb15990e63e2",
+  "asset_sha256": "ffe3b8d90abb481370531f07a7a0e5160b04a0005825d8e5557e360326a14b30",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501177",
+    "title": {
+      "zh": "Transferable and Forecastable User Targeting Foundation Model · 方法图",
+      "en": "Transferable and Forecastable User Targeting Foundation Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-12468",
+      "title": "Transferable and Forecastable User Targeting Foundation Model",
+      "authors": [
+        "Bin Dou",
+        "Baokun Wang",
+        "Yun Zhu",
+        "Xiaotong Lin",
+        "Yike Xu",
+        "Xiaorui Huang",
+        "Yang Chen",
+        "Yun Liu",
+        "Shaoshuai Han",
+        "Yongchao Liu",
+        "Tianyi Zhang",
+        "Yu Cheng",
+        "Weiqiang Wang",
+        "Chuntao Hong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12468",
+      "arxiv_url": "https://arxiv.org/abs/2412.12468",
+      "arxiv_id": "2412.12468",
+      "arxiv_first_submitted_at": "2024-12-17T02:05:09Z",
+      "arxiv_updated_at": "2025-02-20T14:57:03Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501177/image/image.jpg?Expires=1790835186&Signature=E1i8latd7WvTasB2X7PWOjLFf31MbpfptipxNejO4PRSBvAS8OzNhNw~QCUsWlPExX1kZg33viPc5qCIaC0fTBvMpXdu2HoqjSV45nV87READpGKxBMAa6Vhc3PSuc0PAV86q~F43nvAV8cEmRjK2AwJ72bb38mAvrx06S2hN2K4y1p3Ufcxda1aLcaPcq~Ng70a565jPriSzmbdwnLPIO1MeRPeNZxPatMSEgujZoAnYemQSTLhOxTZorlFAP6QPPOemVwpYRx1eCPFrk5iD0mo4auu3F6OkJpyoLxwu2-zMNRhAdC9kdZGKU-r40IcBKzcOa88POTYLd5KEMKpqA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501177,
+      "description_sha256": "b9558a2412cb272f751418b0fd05a5599b075ff9ce1bcebd9c190ef78a7a5b73",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two self-supervised pre-training tasks for modeling user behavioral sequences, structured as two distinct subfigures labeled (a) and (b). Both subfigures share a common architectural layout: a temporal sequence of input features at time steps from x_{t-3} to x_{t+4}, processed through an encoder-decoder framework with autoregressive generation and loss computation.\n\n[1] Global Layout and Structure:\nEach subfigure is horizontally divided into two main regions: a left region processing past inputs (x_{t-3} to x_t) and a right region generating future predictions (x_{t+1} to x_{t+4}). The entire structure is sequential, moving left to right across time steps. The top of each subfigure contains a loss computation block connected to the generated outputs. The bottom of each subfigure labels the three input modalities: B (blue squares), M (orange squares), and S (green squares), which represent different behavioral features. Time steps are marked below each column of inputs/outputs.\n\n[2] Visual Modules and Attributes:\n- Input Features: Represented by colored squares (B: blue, M: orange, S: green) at each time step. These are fed into the encoder.\n- Encoder Module: Denoted by trapezoidal shapes labeled 'g_enc', which processes the input features and produces latent representations.\n- Latent Representation: Shown as light blue squares labeled 'z_t' (for current time step) or 'z_{t+k}' (for future steps), output by the encoder.\n- Autoregressive Generator: Represented by circular nodes labeled 'g_ar', which takes the latent representation and generates the next output feature (colored square) in the sequence.\n- Output Features: Colored squares (same colors as inputs) generated by the autoregressive module, representing predicted behaviors.\n- Loss Computation Blocks: Rectangular boxes at the top of each subfigure. In (a), it is labeled 'Contrastive Learning Loss L_CL'; in (b), 'Cyclic Regularization L_CR'.\n- Context Vector: A brown square labeled 'c_t' (in both subfigures) and 'c_{t+4}' (in (b)) that serves as a context or condition for the loss functions.\n\n[3] Connections and Arrows:\nIn both subfigures, solid arrows indicate data flow: from input features to g_enc, then to z_t, then to g_ar, and finally to the generated output. The generated outputs are passed forward to the next time step’s g_ar via horizontal arrows, forming an autoregressive chain. In (a), dashed arrows connect the context vector c_t to the Contrastive Learning Loss block, and also connect the generated outputs (from x_{t+1} to x_{t+4}) to the same loss block, indicating that the loss is computed based on these predictions and the context. In (b), solid arrows connect c_t and c_{t+4} to the Cyclic Regularization L_CR block, suggesting that this loss compares the context at time t with the context at time t+4, likely enforcing periodicity or cycle consistency in the learned representations. The overall workflow in (a) involves forecasting future behaviors and using contrastive learning to align representations under different contexts, while (b) focuses on cyclic regularization to enforce temporal consistency over a cycle length of 4 steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-501490",
+  "record_sha256": "46c8f6eb5f5dd39f654f46022105545608d65117e92ff54ce3d24221e3a7e48d",
+  "asset_sha256": "86057d1f9b04b42e9af2908621f39ca19cc657bf6b2325b3479ecb456e5d4d87",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501490",
+    "title": {
+      "zh": "Geodesic Flow Kernels for Semi-Supervised Learning on Mixed-Variable Tabular Dataset · 方法图",
+      "en": "Geodesic Flow Kernels for Semi-Supervised Learning on Mixed-Variable Tabular Dataset"
+    },
+    "paper": {
+      "id": "arxiv-2412-12864",
+      "title": "Geodesic Flow Kernels for Semi-Supervised Learning on Mixed-Variable Tabular Dataset",
+      "authors": [
+        "Yoontae Hwang",
+        "Yongjae Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12864",
+      "arxiv_url": "https://arxiv.org/abs/2412.12864",
+      "arxiv_id": "2412.12864",
+      "arxiv_first_submitted_at": "2024-12-17T12:47:53Z",
+      "arxiv_updated_at": "2025-04-23T11:52:59Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501490/image/image.jpg?Expires=1790835192&Signature=JVSUarVsMze6IOwF2xPjDj~mL-qNnAhkiROZ9DehuAR~w-ctX8~TEQGagVGiMV67NLio8mDUjJfdbjHnVAE3B61alOZLnmR1NaEk8kyP6xtf34CQ7ZUIUtlDp~YtzU-ibre~edJ0lM3rzJcRHjEsvdG7zhAsZUgX687t6DQ31PZ4SUYU1QVZRVVC3H9gxNHeqw9kJdC67MYnVe~JqOOGuzpihOUx3cFLbmBpSvnfTOUPi9KB2fWNB6qqTBsLlxivvjvttaeOvuFED0XW6WnoKZnkmRbsVzpSJHcyPbcFNMPkLSwHYbopvjINQyTM3Q576tBWUOi3vDm7MBmJNY6UXA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501490,
+      "description_sha256": "47004facbe7df5959efae14e472da55ac8cb4a066d35acf8722825a51dd0e9af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of GFTab, a semi-supervised learning framework for tabular data, structured into five main stages: Tab corruption, Tree-based embedding, Feature representation, Basis of the subspace, and Geodesic flow kernel. The global layout is a horizontal workflow divided into five dashed-boxed sections, progressing from left to right, with labeled data processed separately from unlabeled data. A legend at the bottom indicates green arrows represent unlabeled data flows and red arrows represent labeled data flows.\n\nIn stage 1, 'Tab corruption', unlabeled tabular data is split into continuous and categorical variables. Continuous variables are processed through a VSN (Variational Self-Normalization) module, while categorical variables are handled directly. This leads to two types of corruption: hard corruption (represented by a grid with some cells masked in brown) and soft corruption (grid with partially faded cells), producing corrupted versions of the input data.\n\nStage 2, 'Tree-based embedding', processes labeled tabular data. It uses tree-based models (depicted as tree structures with nodes) to generate embeddings, which are then represented as color-coded feature vectors (rectangular blocks with orange, gray, and beige shades).\n\nStage 3, 'Feature representation', is the core of the model. Two parallel pathways process the corrupted data: one for hard-corrupted data (x_hard^cont, x_hard^cat) and one for soft-corrupted data (x_soft^cont, x_soft^cat). Each pathway feeds into a 'Feature representation' module (light blue rounded rectangle), followed by an 'MLP head' (yellow rounded rectangle). The hard-corrupted path outputs z_hard, while the soft-corrupted path outputs z_soft. For the labeled data, the soft-corrupted feature representation connects to a classifier (orange rectangle), which computes cross-entropy loss (white rectangle below it). The tree-based embeddings from stage 2 feed into the soft-corrupted feature representation via a red arrow, indicating labeled data usage.\n\nStage 4, 'Basis of the subspace', takes both z_hard and z_soft outputs and applies PCA (Principal Component Analysis) to each, generating low-dimensional representations.\n\nStage 5, 'Geodesic flow kernel', visualizes the learned representations in a manifold space. The z_hard and z_soft points (brown and blue circles, respectively) are shown on a curved surface, connected by a geodesic curve. This stage computes the 'Geodesic similarity loss', which is fed back into the model to guide training.\n\nThe entire pipeline integrates self-supervised learning (via corruption and reconstruction) with supervised learning (via labeled data and classifier) and geometric regularization (via geodesic similarity), enabling effective representation learning for tabular data under limited labels."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

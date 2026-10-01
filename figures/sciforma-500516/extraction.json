@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500516",
+  "record_sha256": "22cc7d94db756ccc7ed39f5c55bbe52bb80774c7a40c24472524cc400ef2de7d",
+  "asset_sha256": "2167bff10703d6d63cb0b949617da83729e6f878e190804f04363617195a8f0f",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500516",
+    "title": {
+      "zh": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization · 方法图",
+      "en": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-11450",
+      "title": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization",
+      "authors": [
+        "Yiping Zhang",
+        "Yuntao Shou",
+        "Wei Ai",
+        "Tao Meng",
+        "Keqin Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11450",
+      "arxiv_url": "https://arxiv.org/abs/2412.11450",
+      "arxiv_id": "2412.11450",
+      "arxiv_first_submitted_at": "2024-12-16T05:08:15Z",
+      "arxiv_updated_at": "2024-12-16T05:08:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500516/image/image.jpg?Expires=1790835172&Signature=nIbWjkedRndfW1MgcHCsKBtarSzTIGG9-jT38KTilxVtRoQ2le~XzZGx8figxxvwI3bMZfktLmG22uv59kGWzRSXQacfCbwgpO~xw9Rxu~jqVv1smUGoT0S8fxP2PeEgUAzxYpFgJd3prROZS76ttlNJCI0hVzKErRmC8z9T~pTVRxFdKUgZbBYxm-K1l-ZBZIYBDz-152ttTwOPHTy-5cUX2urWhijIS2ZUMVi8XyQABB2sTF3Tu2l4Ko0yAaa04ScKySYIJnmjRo8JKP9i1VHWldsW6TRfEITq3Ii5Y8c91nCkOoCd3kpsbrDo15g7HuwjkLBoWnla3MUQWg7zEA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500516,
+      "description_sha256": "8be9b8e34a17e7a3c9cbf04f199bb1dfaab65c107f956e7a16aace6f563c44a8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural design of EMAGCN, a graph neural network framework aimed at capturing discriminative features by integrating both global and local structural information through multi-hop attention mechanisms. The overall layout is a left-to-right pipeline composed of three main stages: Multi-hop Attention Diffusion, Adaptive Decay Aggregation, and Enhanced Information Propagation, culminating in the output of a Discriminative Multi-hop Feature Matrix.\n\nIn the first stage, labeled 'Multi-hop Attention Diffusion' on a vertical light yellow bar, the process begins with a hierarchical representation of node neighborhoods. This stage is divided into two sections: 'Local' and 'Global'. The 'Local' section shows a 1-hop attention mechanism, depicted as a central red node connected to four surrounding purple nodes within a dashed circular boundary, representing immediate neighbors. The 'Global' section contains two concentric attention layers: 2-hop attention, where the central red node connects to purple nodes, which in turn connect to outer yellow nodes, all enclosed in a dashed circle; and 3-hop attention, extending further with additional yellow nodes in an outer ring, also within a dashed boundary. Above these, a label 'K-hop aggregation' with ellipsis indicates the generalization to higher-order hops. All attention layers are visually represented as undirected graphs with nodes connected by thin lines, and each layer is color-coded with distinct node colors (red for center, purple for 1st hop, yellow for 2nd/3rd hops) and dashed circles to demarcate hop boundaries.\n\nThe second stage, 'Adaptive Decay Aggregation', is shown as a vertical light green rectangular block. It receives the multi-hop attention outputs from the first stage via a rightward green arrow, indicating the flow of information. This module is responsible for weighting and aggregating features across different hops, likely using an adaptive decay function to prioritize closer neighbors while still incorporating distant context.\n\nThe third stage, 'Enhanced Information Propagation', is another vertical light green block, positioned after the second stage and connected by a second green arrow. This stage further refines the aggregated features, possibly through additional propagation or transformation steps, to enhance the discriminative power of the learned representations.\n\nFinally, the output is a grid-like structure labeled 'Discriminative Multi-hop Feature Matrix', rendered as a light green checkerboard pattern of square cells, symbolizing a feature matrix where each cell represents a learned feature vector for a node, enriched by multi-hop contextual information. The entire pipeline is enclosed within a dashed rectangular border, emphasizing it as a self-contained module. The figure uses consistent color coding (purple for labels, green for process blocks, and varied node colors for hop levels) and clear directional arrows to convey the sequential flow of data processing from raw graph structure to a refined feature matrix."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

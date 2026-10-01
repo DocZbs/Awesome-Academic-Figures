@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502749",
+  "record_sha256": "0dd48d5657e92e59d2f11856ed15d85882403e16f545e70385d804fcf983b780",
+  "asset_sha256": "c0c155e5407418f9bb5a55d6f660fe2f0dea09e6c370770c510a434f4781f638",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502749",
+    "title": {
+      "zh": "DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation · 方法图",
+      "en": "DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation"
+    },
+    "paper": {
+      "id": "arxiv-2412-15200",
+      "title": "DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation",
+      "authors": [
+        "Wang Zhao",
+        "Yan-Pei Cao",
+        "Jiale Xu",
+        "Yuejiang Dong",
+        "Ying Shan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15200",
+      "arxiv_url": "https://arxiv.org/abs/2412.15200",
+      "arxiv_id": "2412.15200",
+      "arxiv_first_submitted_at": "2024-12-19T18:58:46Z",
+      "arxiv_updated_at": "2024-12-19T18:58:46Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502749/image/image.jpg?Expires=1790835227&Signature=CKvvnRPnDLu~DGmPgfgOMt~F734oHVYNT7RwVliogsF9HuqIoRMEcQfD61t~fCQWnR~QNgoj9gf1vNPdzcL-xpLr6eN9c5tB68HbZmdpzuhutzxLAsmhnnI4keU4pKrEoXPksIt7tYDuM71HSOcoA7qhAEk3yMK3lj60cXDg~qJfrL71DUaTkyqw-XcmgMgPZ3-xwoCnnS60NHy0nBQfr9o-KHDt7vdjc-bCUBz5co5gJ9MGOlTQY0YUedOk1-SW98YgdHb45bcVnIYuY8K0TzoNIEPSrEQPbQGe8mXPF5actnGijzABstvSAzFHZ-bhPay~7Lz4nvlKyNKKKvnN2A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502749,
+      "description_sha256": "16081126e5988b3d6c94f524e772d7d727f53097b14fe84676933d905499feac",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the DI-PCG (Diffusion-based Image-to-Procedural Content Generation) framework, structured into three main sections: Generator Programs and Parameters on the left, the core Diffusion Model pipeline in the center, and Generation Results on the right. A vertical dashed line separates the left section from the central pipeline, indicating the transition from procedural representation to image-conditioned generation.\n\nOn the left, under 'Generator Programs', a code snippet shows example functions such as align_bezier(), join_objects(), make_seat(), make_limb(), and solidify(), representing a procedural modeling system. Below this, a list of 'Generator Parameters' includes attributes like \"has_arm\": Bool, [0, 1], \"width\": Float, [0.3, 0.8], \"thickness\": Float, [0.02, 0.1], \"back_type\": Int, [0,1,2,3], \"seat_mid\": Float, [0.7, 0.8], and \"leg_offset\": Float, [0.0, 0.2]. These parameters define the shape and structure of 3D objects, exemplified by sample chair models shown below the parameters. The samples include chairs with different armrests, seat materials, and back designs, illustrating the diversity generated by varying these parameters.\n\nIn the center, the core diffusion process begins with a 'Condition Image'—a wooden chair—fed into a DINOv2 model, which outputs 'Image embedding tokens' represented as colored squares (blue, green, orange, pink). These tokens are then combined with 'Noisy Parameters' (also represented as colored squares) through a series of DiT (Diffusion Transformer) blocks, each consisting of three components: a light blue 'Multi-Head Self-Attention' module, a peach-colored 'Multi-Head Cross-Attention' module (which receives the image embeddings), and a light green 'Point-wise Feed-forward' module. This block is repeated N times, forming the backbone of the denoising process. The output is 'Denoised Parameters', which are then passed through an inverse mapping φ⁻¹ to project them back into the original parameter space with correct ranges.\n\nOn the right, the 'Generation Results' show three distinct 3D chair models generated from the denoised parameters. An upward arrow labeled 'Generator Program' indicates that these parameters are fed back into the procedural generator to produce the final 3D outputs. Below the results, a specific set of denoised parameters is displayed: \"has_arm\": False, \"width\": 0.45, \"thickness\": 0.04, \"back_type\": 1, \"seat_mid\": 0.71, \"leg_offset\": 0.08, demonstrating how the model produces precise, interpretable parameters that correspond to visually coherent and geometrically clean 3D shapes. The entire pipeline emphasizes learning to map image conditions to procedural parameters via a diffusion model, enabling controlled, high-quality 3D content generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

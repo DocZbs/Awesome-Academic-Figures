@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501717",
+  "record_sha256": "ef70f1a445a088b44f24abf0345eb958df374ae8bb5c96c31e86b57554e790fa",
+  "asset_sha256": "d29fae670c7d33ccb2f830decb15c9e90b1a535d61b93b4c24199245b63b3b77",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501717",
+    "title": {
+      "zh": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild · 方法图",
+      "en": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild"
+    },
+    "paper": {
+      "id": "arxiv-2412-13393",
+      "title": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild",
+      "authors": [
+        "Muhammad Usama Saleem",
+        "Ekkasit Pinyoanuntapong",
+        "Mayur Jagdishbhai Patel",
+        "Hongfei Xue",
+        "Ahmed Helmy",
+        "Srijan Das",
+        "Pu Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_id": "2412.13393",
+      "arxiv_first_submitted_at": "2024-12-18T00:10:00Z",
+      "arxiv_updated_at": "2025-03-19T14:49:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501717/image/image.jpg?Expires=1790835200&Signature=tUdq2VygRLOncH7eWYBE34oa2su~p~VmWIYGqugGAoaoJv6BRGCvIOyv6cRZ4KhcGb4uh-tP-gLth6LKtXq11UKEthKtwjwWu69BDTgIOeBcMH2APBkfZEeImXMH52W7NjQdLPAW0Dwk9TUNaB7dMr8bu1pdbnFpOcMp5Vc4qvlHFc-L0N~nmMcCDysZVBF1G4JhxS1-89yhUXUAg9GSyQ881z~RbtQ6pOgxa~iehDifvrVKRJkV5UtU9hEA5ejjusxUcURU1plziohcBnu-7hXjQKUdJP77bspAMbbptagi2Hvhpu-6sZcBhxYNT3BQggvPi1-m8foGFtZhLZmRfg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501717,
+      "description_sha256": "53d5fdfea2150cdef7ab85fc1f001cb26f5b4dbab417804dbfff3024e7b15761",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a two-stage deep learning framework for precise mesh reconstruction, comprising the Graph-based Anatomical Pose Refinement (GAPR) module and the Context-Guided Masked Transformer. The global layout is left-to-right, with GAPR on the left and the Context-Guided Masked Transformer on the right, connected by data flow arrows. A legend at the top indicates color coding: light red for Mano Pose, light blue for 2D Pose, black for Mask, and a snowflake icon for Frozen Network.\n\nOn the far left, the Graph Transformer Block is enclosed in a rounded gray box. It receives input Qc and processes it through a Graph Convolutional Network (GCN), which splits into two parallel paths: one feeding into a Convolutional layer (Conv) and the other into a Multi-Head Attention (MHA) layer. Both outputs are summed via a circular plus symbol, then passed to a Squeeze-and-Excitation (SE) block. The SE output is added back to the original GCN output via another summation, forming the residual connection. This block outputs refined features that feed into the GAPR module.\n\nThe GAPR module is depicted as a larger rounded gray box containing multiple stacked Graph Transformer blocks, each labeled 'Graph Transformer Learnable Adjacency Matrix' and shaded light red. These blocks are repeated xG times, indicating a stack of G identical layers. Their outputs are fused together via a vertical 'Fusion' block, producing an output labeled QGGPM. Below this structure, a row labeled 'Pose Queries' shows a sequence of colored boxes: light blue (2D Pose), black (Mask), followed by three light red boxes labeled '1', '6', '3', collectively denoted as Qc. This indicates that the queries are composed of 2D pose features, masked regions, and anatomical pose indices (likely corresponding to hand joints or parts). Dashed lines connect the Graph Transformer Block on the left to the GAPR module, suggesting that the refined features from the Graph Transformer Block are used to initialize or guide the GAPR process.\n\nThe output QGGPM from GAPR is fed into the Context-Guided Masked Transformer on the right, which is also enclosed in a rounded gray box. This module consists of N stacked transformer layers (indicated by xN and ellipsis). Each layer contains three components in sequence: Self Attention, Cross Attention, and Feed Forward Network, all shaded light blue. The QGGPM signal serves as both the query and key for the Self Attention mechanism, while the Cross Attention layer likely integrates additional contextual information (not explicitly shown but implied by 'Context-Guided'). The final output of this transformer stack is passed upward, presumably for mesh reconstruction or further processing.\n\nArrows indicate the data flow: from the Graph Transformer Block to GAPR, from GAPR’s Fusion block to the Context-Guided Masked Transformer, and from the transformer’s final layer to the output. The dashed lines from the Graph Transformer Block to GAPR suggest a supervisory or initialization signal rather than direct feature propagation. The entire pipeline emphasizes the integration of anatomical pose dependencies (via learnable adjacency matrices in GAPR) and contextual cues (via the masked transformer) to achieve accurate 3D mesh reconstruction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

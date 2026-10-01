@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501325",
+  "record_sha256": "8d9155a3f000650ed1e2686ca26ddd9f85806835d669ada9202a87643fe3ceda",
+  "asset_sha256": "5a0b8d0834e3a4456c0868645b53b667715f355706ab2b532f2c973fd0c189f6",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501325",
+    "title": {
+      "zh": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA · 方法图",
+      "en": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA"
+    },
+    "paper": {
+      "id": "arxiv-2412-12632",
+      "title": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA",
+      "authors": [
+        "Zhiyuan Chang",
+        "Mingyang Li",
+        "Xiaojun Jia",
+        "Junjie Wang",
+        "Yuekai Huang",
+        "Qing Wang",
+        "Yihao Huang",
+        "Yang Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_id": "2412.12632",
+      "arxiv_first_submitted_at": "2024-12-17T07:49:49Z",
+      "arxiv_updated_at": "2025-05-26T01:35:19Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501325/image/image.jpg?Expires=1790835191&Signature=DJbvgZJ4caDGEJaBPrptkgFgz7X8SU3hngk6Mi-Wa1Nw37Ju3p7HnO-SFhR0iyWo-sP-BOessANHPKopqgDtnF4sEdYIF3S2bX~lgdYIAvQp7QxS0k7liVsb5TPp5lHFf3RkBHHnwzjmFBtu-2UPWEc2rovgcTaQ3Px7npjf47tISPqY6zPfyQSUK6eNfU5HLGd2I5p~iNCqspGIkxc7agW~cON~etzaNSDtAFRYOqxrhO4iVjMUb3Yi1f1zioFKYnrIoFtxJmX6UI~T-W4WYRZda~~pDgB2vB1746FHNvOEv5Hqtz9FOh0nMpPxkPjLvPuV5ueSzKeXfVCyIMqguw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501325,
+      "description_sha256": "ddac8fe951078ad7f87e1698f16abae5595a168e8a46e7a605ec56f92acb6a5c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a methodological framework for constructing a CoE (Construct of Evidence) from external knowledge (EK) to answer a user question, using a specific example about drug stores and their CEO. The global layout is divided into three main vertical sections: on the left, the user question and its components; in the center, a three-step reasoning pipeline represented as a vertical stack of decision boxes; and on the right, the external knowledge source and the final output. The central pipeline is enclosed in a rounded rectangular container with a light gray background, and each step is marked by a small icon of a head with a lightning bolt, symbolizing cognitive processing.\n\nIn the left section, the user question is presented: 'Which state does the drug stores, of which the CEO is Warren Bryant, are located?' Below this, the answer 'Hawaii' is given in blue. The intent is specified as 'State location of business,' followed by 'Evidence Nodes' (drug stores, CEO, Warren Bryant) and 'Evidence Relations' (have (drug stores, CEO) and is (CEO, Warren Bryant)). These components are listed in black text, with key terms highlighted in orange or pink for emphasis.\n\nThe central reasoning pipeline consists of three sequential decision boxes, each with a downward-pointing gray arrow leading to the next. The first box asks: 'Is EK oriented towards state location of business intent?' The phrase 'state location of business' is highlighted in pink. A green checkmark appears to the right, indicating a positive evaluation. The second box asks: 'Does EK contain Evidence Nodes drug stores, CEO, Warren Bryant that bridge the user question to the final answer?' The evidence nodes are again highlighted in pink, and another green checkmark confirms their presence. The third box queries: 'Does EK contain Evidence Relations between different entities have (drug stores, CEO) and is (CEO, Warren Bryant)?' The relations 'have' and 'is' are highlighted in pink, and a green checkmark indicates their existence.\n\nOn the right side, the 'External Knowledge (EK)' is presented as a block of text describing: 'Warren Bryant was the CEO of Longs Drugs Store Corporation out of California prior to the retail chain's acquisition by CVS/Caremark. Longs Drugs is an American chain with approximately 40 drug stores throughout the state of Hawaii.' Key terms such as 'Warren Bryant', 'CEO', 'Longs Drugs Store', 'drug stores', and 'Hawaii' are color-coded in orange or blue for emphasis. An arrow points from this EK block to the central pipeline, indicating input. At the bottom right, a lightbulb icon labeled 'External Knowledge constructs CoE' signifies the output of the process — the construction of the CoE based on the validated evidence nodes and relations.\n\nThe visual modules use consistent styling: rounded rectangles for decision boxes, icons for cognitive steps, and color-coding (orange for entities, pink for key phrases, blue for answers) to enhance readability. All connections are shown via arrows: a gray arrow from the user question to the first decision box, downward arrows between the decision boxes, and a gray arrow from the EK block to the pipeline. The final output is indicated by a lightbulb icon connected to the last decision box, completing the flow. The figure caption, 'Example of CoE and the CoE features,' summarizes the purpose of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

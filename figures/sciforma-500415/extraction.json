@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-500415",
+  "record_sha256": "3ed9ed340917a5528dfb59ba24ac16576bed9507365c7867919cdc1e7237ccd6",
+  "asset_sha256": "3bf6a783abdbc36012f9e2d286572257d7a88001be7f8739ba81477f60a4b53f",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500415",
+    "title": {
+      "zh": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity · 方法图",
+      "en": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity"
+    },
+    "paper": {
+      "id": "arxiv-2412-11277",
+      "title": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity",
+      "authors": [
+        "Sooyoung Kim",
+        "Joonwoo Kwon",
+        "Junbeom Kwon",
+        "Jungyoun Janice Min",
+        "Sangyoon Bae",
+        "Yuewei Lin",
+        "Shinjae Yoo",
+        "Jiook Cha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11277",
+      "arxiv_url": "https://arxiv.org/abs/2412.11277",
+      "arxiv_id": "2412.11277",
+      "arxiv_first_submitted_at": "2024-12-15T18:49:20Z",
+      "arxiv_updated_at": "2025-10-25T06:08:55Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500415/image/image.jpg?Expires=1790835171&Signature=g8M2~CKnXiGShq4eOKcbqDU~dzKM4Dj2tf0U4HIl9LpXiNwz0IgwzHwrTi9CckVgwdMJmQ~UVYj4HtGuadswO~Rj-d~NxCUcfMQ4oMcmncBFJ65OHemjf0Xg57xXqPG~kE7yWSBZ6HkCRqLOyXaSQAZwhWNa~STOUkmK7~rjS-MqG-iqQycOkvFCdFx8vIoodY0PPNI87ahuvyqIU-PNJPQzFvmbl1Gm1S2VQCurbpGXEioGnDbt~LNyugbGcOcJC4GrQ-M0Yp8O8XjNnYwzrw0ZJu71jTaxVC2nVKomFVR8buiSg~TiTOhCMJwtT1VgMf-Gr5ifu04jkMvVFpj4tQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500415,
+      "description_sha256": "31f428413d87957583c4abe23c8fec7fed6059ce178241c396bfa758eec2966c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the overall architecture of a proposed generative model for brain imaging synthesis, specifically for converting structural MRI (T1) into diffusion tensor imaging (DTI) fractional anisotropy (FA) maps, along with downstream applications. The diagram is divided into two main sections: the top section details the core model architecture, while the bottom section illustrates its versatility in downstream tasks.\n\n[1] Global Layout and Structure:\nThe figure is organized into two vertically stacked blocks, each containing a primary generative adversarial network (GAN) pipeline and a secondary application block. The top block shows the full GAN architecture, including generator, discriminators, and loss functions. The bottom block mirrors the top but includes additional downstream applications. Each block is enclosed in a rounded rectangle with a yellow border for the GAN and a purple border for the downstream tasks. The layout follows a left-to-right data flow, starting from input images, passing through encoding and generation, and ending with output and loss computation.\n\n[2] Visual Modules and Attributes:\nIn the GAN pipeline, the input consists of two images: 'Content (T1)' — a structural MRI scan shown as a grayscale brain slice — and 'Ground Truth (FA)' — the target DTI FA map, also displayed as a grayscale brain slice with highlighted regions. The 'Frequency Feature Encoder' (yellow trapezoid) processes the T1 image to extract latent embeddings, which are split into high-frequency (H, blue cube) and low-frequency (L, green cube) features. These features feed into the 'Generator' (pink parallelogram), which produces the 'Output (FA)' — a synthesized FA map. The output is compared against the ground truth via multiple losses: 'Pixel Loss' (dark gray rectangle) computes pixel-wise error; 'VGG Loss' (dark gray rectangle) measures perceptual similarity using a pre-trained VGG network; and two discriminators evaluate realism. The 'Discriminator' (gray rectangle) assesses the entire output image as real or fake. The 'Brain-focused Patch Discriminator' (light orange rectangle) evaluates random patches from both real and generated images, with example patches shown in colored boxes (green, red, yellow for real; blue, cyan, orange for fake). The 'Batch-wise brain-focused region' (green box) highlights the region of interest for patch sampling.\n\nThe downstream applications are shown below the GAN. On the left, 'From T1 to DTI' uses the trained model ('Macro2Micro', green bowtie-shaped module) to convert sMRI (T1) to DTI (FA). This is used for 'Downstream Predictions' such as ADHD, Sex, and Intelligence. On the right, 'From DTI to Tractography' demonstrates further processing: axial, coronal, and sagittal slices of the generated FA maps are processed by 'Macro2Micro' to produce stacks of 3D tractography, which are then averaged to generate final 3D tractography visualizations.\n\n[3] Connections and Arrows:\nArrows indicate data flow and loss backpropagation. From 'Content (T1)', a blue arrow leads to the 'Frequency Feature Encoder'. Dashed blue and green arrows from the encoder lead to H and L features, respectively, which enter the 'Generator'. A solid black arrow from the 'Generator' points to 'Output (FA)'. From 'Output (FA)', a dashed red arrow feeds into the 'Brain-focused Patch Discriminator', and a solid green arrow goes to the 'Discriminator'. The 'Ground Truth (FA)' connects to both discriminators via dashed red arrows. Losses are computed as follows: 'Pixel Loss' receives inputs from both Ground Truth and Output (FA); 'VGG Loss' receives inputs from Content (T1) and Output (FA); the discriminators provide feedback to the generator via dashed red arrows. In the downstream section, 'sMRI (T1)' flows through 'Macro2Micro' to 'DTI (FA)', which then branches to predictions and tractography. For tractography, axial, coronal, and sagittal slices feed into 'Macro2Micro', producing 3D tractography stacks, which are averaged to yield final 3D tractography outputs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

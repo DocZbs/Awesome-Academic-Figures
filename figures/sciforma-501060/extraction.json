@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501060",
+  "record_sha256": "96817b51493f9b80d093ff9dc043e14c03428828aa072ca44f54feb27285d7d7",
+  "asset_sha256": "7eaa511fb0b072a57594281a9a13c3097b141e8f2585813b7829f0991aedd552",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501060",
+    "title": {
+      "zh": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization · 方法图",
+      "en": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12218",
+      "title": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization",
+      "authors": [
+        "Ka Wai Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_id": "2412.12218",
+      "arxiv_first_submitted_at": "2024-12-16T01:57:53Z",
+      "arxiv_updated_at": "2025-02-23T21:26:57Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501060/image/image.jpg?Expires=1790835183&Signature=h-mGy5~VnEQYIPCjFzbhB0Fz9ACLi1YM0BMjTrLVGRgbxvYAIFH0ZftjXESmQWTJmelLafSoEZnl5dGqTdtLA-djkppowYeYOz-9GUf-Pw7SrS6kT7erSYe7VYCaar~MVgfjqqR5HMkqVTCoI6d4JGlIEoc12in27yRPuZ1ataO~DLH-uY6abEiGZ0GOsZe3P7F4DvcyKKw9OfrsUMVD~vN4~Yzxo5a1lgiZRlfaLUdJz1R9qOM53EJ8O1KecQSi6nZGxCB4WJTnqzXI7cofu~X-8zYoVq4kkfdnoEwToBoMkYb4ncP62EJRQJ9ZucawBeFKf5IOc1V9g82hE-gu3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501060,
+      "description_sha256": "d9da9c15eb7638e8b6ec4ccabbf50115270075ceec8ddb5edaee0d856a5c3fce",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is a flowchart illustrating the Edge Feature Computation process, structured as a top-down algorithmic workflow with decision points and loops. The global layout begins at the top center with a rounded rectangle labeled 'Start', leading vertically through a sequence of rectangular processing steps and diamond-shaped decision nodes, branching into parallel paths before converging toward an 'End' node on the left side. The main vertical path proceeds from initialization to traversal, then splits into two major branches: one handling sparse matrix operations and edge mapping, and another managing dense matrix computations via GEMM. These branches eventually converge back into a final computation loop before termination.\n\nVisual modules consist primarily of rectangles for processes and diamonds for decisions, all outlined in black with black text. The 'Start' and 'End' nodes are rounded rectangles. Key process boxes include 'Initialize Shared Memory Variables', 'Traverse Most TC Blocks in the Current Row Window', 'Initialize sparse_A and sparse_AToX_index', 'Set the Edge of sparse_A and Map the Columns of sparse_A to the Rows of dense_X', 'Initialize dense_X with Column-Major Storage, Initialize dense_Y with Column-Major Storage', 'Copy Values from input in dense_X and dense_Y to the Target Location', and 'Call wmma to Load dense_X and dense_Y and Perform GEMM Computation'. Decision diamonds include 'Is Traversal Complete?' (appearing twice), 'Has Thread Traversal Completed?', and 'Is the Edge within the Column Range of the Current TC Block?'. All text is centered within shapes, using a standard sans-serif font.\n\nConnections are represented by solid black arrows indicating the direction of execution flow. From 'Start', the arrow leads to 'Initialize Shared Memory Variables', then to 'Traverse Most TC Blocks...'. This connects to the first 'Is Traversal Complete?' decision. If 'No', it proceeds to 'Initialize sparse_A and sparse_AToX_index'; if 'Yes', it loops back to 'Traverse the Remaining TC Blocks in the Current Row Window' and then rechecks traversal completion. From 'Initialize sparse_A...', the flow reaches 'Is the Edge within the Column Range...'. If 'Yes', it goes to 'Set the Edge of sparse_A...'; if 'No', it loops back to the same decision. After setting the edge, the flow splits: one branch continues to the right-hand dense computation path, while the other connects to the second 'Is Traversal Complete?' decision. From this second decision, 'Yes' leads to 'Store Dense Results into Sparse EdgeValList' and then 'End'; 'No' leads to 'Perform Scalar Multiplication and Addition Operations on the Non-Zero Elements in the Matrix', which loops back to the same decision. On the right, after initializing dense matrices, the flow enters 'Has Thread Traversal Completed?'. If 'Yes', it loops back to the initialization step; if 'No', it proceeds to copy values, then calls wmma for GEMM computation, and finally merges back into the main flow before the second traversal check. All connections are unidirectional, with explicit 'Yes'/'No' labels on decision branches."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

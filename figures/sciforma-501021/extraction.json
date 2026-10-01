@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501021",
+  "record_sha256": "88f8a84361d45b5299e3f3b7f9eaa66d786987f5f199fc509a4d72f38e1904cb",
+  "asset_sha256": "ab46d709de02afe5416fcc8cff9cb782f711c58e114136186694be61fb525c17",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501021",
+    "title": {
+      "zh": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective · 方法图",
+      "en": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-12165",
+      "title": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective",
+      "authors": [
+        "Javon Hickmon"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12165",
+      "arxiv_url": "https://arxiv.org/abs/2412.12165",
+      "arxiv_id": "2412.12165",
+      "arxiv_first_submitted_at": "2024-12-11T19:58:31Z",
+      "arxiv_updated_at": "2024-12-11T19:58:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501021/image/image.jpg?Expires=1790835183&Signature=pQD6Ujmwf2F77icA0cyQfw-w2L6UXe1v5~73QwxfQB3dj4n~bhAhGMFyfOVU72QOBH4-Mfo9hdHhhM1kKHO0pB8I0XXVEAxGbJ4lkSskzkaLBTPAqVUP0~v9sqAlUWxMljKIidZb3X6qqZhuBFwJL7YLQvCa5sFer7ig9vUP7GB7fkpwTwQnXX~-G0FyLi46oGCkXWHkZ7kGqzSCTUOphKOiAf0jeyEANwLhILr9bn1ECTjtZb~MDlVvptUuOYtqKDBiFOEa63f7FouFnBEfvcYbp0DwEQe50Oq6QIcIDccSgAq4wC3guSCvmLz6rXMqBmb9IwgNet7jK1qjZyAyWQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501021,
+      "description_sha256": "be4ca5ce8066d1eef3392cd96f70ce5954c841baacfa8e074f736026993363a5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage process for creating a zero-shot classifier using text-based labels and applying it to image classification. The top section, labeled '2. Create dataset classifier from label text', shows how class labels are transformed into text embeddings. A vertical stack of blue rectangular boxes represents class names such as 'plane', 'car', 'dog', and 'bird', with an ellipsis indicating additional classes. These labels are combined with a fixed text template, 'a photo of a {object}.', shown in a central blue box, forming a set of descriptive phrases for each class. This combined text input is fed into a light purple trapezoidal module labeled 'Text Encoder', which processes the text and outputs a set of N text embeddings, denoted as T₁, T₂, ..., Tₙ, each represented by a light purple rectangle. These embeddings form the classifier’s class representations.\n\nThe bottom section, labeled '3. Use for zero-shot prediction', demonstrates the inference phase. An unlabeled image is processed by a light green trapezoidal module labeled 'Image Encoder', producing an image embedding I₁, shown in a light green square. This image embedding is then compared with each of the precomputed text embeddings T₁ through Tₙ via dot product operations, resulting in similarity scores I₁·T₁, I₁·T₂, ..., I₁·Tₙ, displayed in gray rectangles. The highest similarity score, highlighted in light blue (I₁·T₃), corresponds to the most likely class. The final output is the class label associated with the highest score, shown in a blue box as 'a photo of a dog.', indicating the predicted class. The diagram uses solid black arrows to indicate data flow: from class labels to the text encoder, from the text encoder to the text embeddings, from the image encoder to the image embedding, and from the image embedding to the similarity scores, culminating in the predicted class label. The layout is horizontal and sequential, with the top row dedicated to classifier creation and the bottom row to prediction, clearly separating training-time and inference-time components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

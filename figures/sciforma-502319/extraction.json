@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502319",
+  "record_sha256": "9c4ecc29de44f75dd63bc99fa7152147aec4d6b4e38dc02f4c3ea8a76ffd4256",
+  "asset_sha256": "aa00760bf1b3bf27e3eac40e9412473ef29e4f24e4d37fec57d8c437f4677fdc",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502319",
+    "title": {
+      "zh": "Enabling Realtime Reinforcement Learning at Scale with Staggered Asynchronous Inference · 方法图",
+      "en": "Enabling Realtime Reinforcement Learning at Scale with Staggered Asynchronous Inference"
+    },
+    "paper": {
+      "id": "arxiv-2412-14355",
+      "title": "Enabling Realtime Reinforcement Learning at Scale with Staggered Asynchronous Inference",
+      "authors": [
+        "Matthew Riemer",
+        "Gopeshh Subbaraj",
+        "Glen Berseth",
+        "Irina Rish"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14355",
+      "arxiv_url": "https://arxiv.org/abs/2412.14355",
+      "arxiv_id": "2412.14355",
+      "arxiv_first_submitted_at": "2024-12-18T21:43:40Z",
+      "arxiv_updated_at": "2024-12-18T21:43:40Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502319/image/image.jpg?Expires=1790835216&Signature=F4XQlhiYifVASKi4swE3GvRZZ~cs6nDIw6noiGIWJrm3QVcI-7afAVM9WNku81MfH88~dhNAGPF~SZMHTv1vH3SEYGDpJ0DlwSLXZGE0T2jB70Kqil3Jvwy-LqgGsglhGyK1WfxaR10QL6PwIyjgrdIUOeh4BP3E5PFSbNOrGOsG46ZRcVENxdv4cC8o1syjInuo-4I5V8pVGwDLSf3RQeJ56s~qJxIYDDt3fMPROYZt25QPpRmYtJVBWqC7iYVU8xtQBn041rK3Wa1Vzfv4YluntDByMrKftmYkLC0SIE4qNVk-UO9Ed-CgW~Qx7161OrVBOVzkRR8Rb122OKtZcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502319,
+      "description_sha256": "d809dfd927105cb7680e1693311b9215ae9110103dba4443d5a91a8daba77c81",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two contrasting frameworks for environment interaction in reinforcement learning (RL), labeled (a) Sequential Interaction and Learning and (b) Asynchronous Multi-process Interaction and Learning. The global layout is split into two side-by-side diagrams, each depicting an agent interacting with an environment through a learning and inference process. Both diagrams feature a robot icon representing the Agent on the left, a stylized Earth globe representing the Environment on the right, and intermediate components for Learning and Inference positioned between them.\n\nIn diagram (a), the agent’s learning process is represented by a single orange brain-shaped module labeled 'Learning' inside a human head silhouette. A red arrow labeled 'Parameters' points downward from the Learning module to a black cloud-shaped module labeled 'Inference'. Another red arrow labeled 'Action' extends from the Inference module to the Environment. A red arrow labeled 'State, Reward' returns from the Environment to the Learning module, forming a closed loop. This illustrates a sequential paradigm where learning and inference are blocking operations—each step must complete before the next begins, preventing the environment from progressing during these phases.\n\nDiagram (b) introduces an asynchronous multi-process framework. Here, the Learning component consists of three stacked orange brain-shaped modules, each labeled 'Learning', indicating multiple concurrent learning processes. Each Learning module has a red self-loop labeled 'τ_L', signifying independent learning frequencies. Similarly, the Inference component comprises two black cloud-shaped modules labeled 'Inference', each with a red self-loop labeled 'τ_θ', denoting separate inference processes operating at their own rates. Red arrows labeled 'Parameters' connect each Learning module to each Inference module, showing parameter sharing across processes. From each Inference module, a red arrow labeled 'Action' points to the Environment, while a red arrow labeled 'State' returns from the Environment to each Inference module. Additionally, a large red curved arrow labeled 'τ_M' loops around the Environment, indicating its own independent progression frequency. This setup reflects a more realistic scenario where the environment, inference, and learning processes operate concurrently and asynchronously.\n\nThe visual attributes include consistent use of gray robot icons for agents, blue-green Earth globes for environments, orange brain shapes for learning, and black clouds for inference. All connections are red arrows with clear labels. The figure caption clarifies that τ_M represents the environment’s frequency, τ_θ the inference frequency, and τ_L the learning frequency. In the sequential case, the total frequency is τ_M + τ_θ + τ_L, whereas in the asynchronous case, each process runs independently. The diagram emphasizes that multiple self-loops denote parallel, asynchronous execution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

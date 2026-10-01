@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501295",
+  "record_sha256": "8925286ac2ea360eb1c481b06f26545645f63fae6a9a25681c70481045fa3cb6",
+  "asset_sha256": "15f8878cdd5bfcc360bbd15d11b061dad5c3da2d582f51db6d7303b51e3c6d25",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501295",
+    "title": {
+      "zh": "LLMs are Also Effective Embedding Models: An In-depth Overview · 方法图",
+      "en": "LLMs are Also Effective Embedding Models: An In-depth Overview"
+    },
+    "paper": {
+      "id": "arxiv-2412-12591",
+      "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+      "authors": [
+        "Chongyang Tao",
+        "Tao Shen",
+        "Shen Gao",
+        "Junshuo Zhang",
+        "Zhen Li",
+        "Kai Hua",
+        "Wenpeng Hu",
+        "Zhengwei Tao",
+        "Shuai Ma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_id": "2412.12591",
+      "arxiv_first_submitted_at": "2024-12-17T06:48:24Z",
+      "arxiv_updated_at": "2025-07-25T09:22:04Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501295/image/image.jpg?Expires=1790835190&Signature=hiwVJOCBDoA9ZhF4sboqxwwSRx2KoTp33rIn5tPF7TEfRonZR1eRgtOlW4-hqnmyfAgeb2iJAx-FNqe4jl4dKw7HNS03zwLurzIKbj3ynb4gOfhNZyF3gTvs-SaqomzZ7L-tgHg0zx3-lGxNdkI6XdZFi0iMaCW592EzWewfYZRoKiWRUSVxkEZ7AGYepTlqhHUo8MTXNntNJeY8TzXY4ZEpKzZdeyGrlwJT2ITV0iM3-Uld0wDGYz5GC9rL3bthfjSy~OS7zFrRyuhB2pA~yCLUB2MeU7IYuq9SbizoAa~g4F6fiyJiIc~m730SDqf6~PovT~hnBbJW~OIsJZ7qCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501295,
+      "description_sha256": "ea7f343c8a89a1abe931e3ae43eb1655f7be74c166fef40b172ee235752ad9bb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a contextual expansion framework for embedding models, structured in a top-down flow. At the top left, a purple rounded rectangle labeled 'Query' represents the input text. From this query, three distinct context sources are derived via dashed arrows: 'Neighbor documents', 'In-context examples', and 'Generated context'. The first source, 'Neighbor documents', is depicted as a stack of three check-listed documents, with a red label 'RMs' (retrieval models) above the arrow indicating that retrieval models are used to fetch these documents. The second source, 'In-context examples', is shown as a book icon with a blue banner labeled 'EXAMPLE', and a red 'LLMs' label above the arrow, signifying that large language models generate or select these examples. The third source, 'Generated context', is illustrated as a notepad with a pencil and several small circles above it, also connected by a dashed arrow from the query with a red 'LLMs' label, indicating LLMs are responsible for generating this context. These three context types are then combined with the original query into a unified input stream labeled 'Query + Context', represented by a wide beige trapezoid that funnels down to the next stage. Below this, a gray rounded rectangle contains a neural network diagram with multiple layers of interconnected nodes, symbolizing a large language model (LLM), accompanied by a small flame emoji and the label 'LLM' in blue. A solid black arrow points downward from this LLM block to the final output, labeled 'Output embedding', which is the result of processing the enriched query-context input. The overall layout is hierarchical and sequential, emphasizing how diverse context sources—retrieved, example-based, and generated—are integrated before being processed by an LLM to produce a contextualized embedding. The visual design uses color coding: purple for input, red for model labels (RMs, LLMs), blue for LLM components, and beige for the context aggregation layer. All text labels are clear and positioned directly beneath or adjacent to their corresponding visual elements."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

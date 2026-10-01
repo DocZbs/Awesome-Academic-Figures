@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500952",
+  "record_sha256": "b786f0ff0a395d54cc4e15f8661dffd4ae12c462bfc44c3d3d74faec3ebdd885",
+  "asset_sha256": "7a891d1c902eeb39ad8faaa5e1db39a7867586a07dec21f0f5a9a59b58ca4826",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500952",
+    "title": {
+      "zh": "Causal Diffusion Transformers for Generative Modeling · 方法图",
+      "en": "Causal Diffusion Transformers for Generative Modeling"
+    },
+    "paper": {
+      "id": "arxiv-2412-12095",
+      "title": "Causal Diffusion Transformers for Generative Modeling",
+      "authors": [
+        "Chaorui Deng",
+        "Deyao Zhu",
+        "Kunchang Li",
+        "Shi Guang",
+        "Haoqi Fan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12095",
+      "arxiv_url": "https://arxiv.org/abs/2412.12095",
+      "arxiv_id": "2412.12095",
+      "arxiv_first_submitted_at": "2024-12-16T18:59:29Z",
+      "arxiv_updated_at": "2024-12-17T18:45:55Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500952/image/image.jpg?Expires=1790835181&Signature=oir27wIuUFJYD2rsU75PO5tQh4cDrtaXCpMpBP2y281qg4iAJmZNV7WBziu7Vo8GjZo-OHC6WZit~c7z10c3LjStMs69u7L7WKVdIDdwfNhEJlzHxNeefqiJBn4pl66V0LsfuJks3jrt3PJf-0ipgV1CQLPLz7gCSUDeoypqbxfDwrNLLqoeYQbL~aPq~Iv07PHXzYN8pMrmhJQtmvnoUSmdiUBMYnMz59tOuiBHEYVZVbghseP-ERj01lafwLCV6uN~areQ9Rvs42p4-pKulIqYBuzON7reaS0-RVsBpRCK7gVYk0gYVaAXmROqLZ7~ZR1o~JMzIuh7UnMtU4SR1A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500952,
+      "description_sha256": "d81befb52181ec72bf817b05952b640f03b50de6de1dea60b32743022267b294",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a conceptual comparison between two architectural designs: DiT (Diffusion Transformer) and CausalFusion, depicted side-by-side as subfigures (a) and (b), respectively. The global layout is horizontal, with both diagrams arranged left-to-right, each illustrating a distinct processing pipeline for image denoising under diffusion modeling.\n\nIn subfigure (a) labeled 'DiT', the structure consists of two stacked horizontal layers. The bottom layer is a light gray rounded rectangle labeled 'AdaLN' (Adaptive Layer Normalization), which receives inputs from two sources: a single gray square labeled 'cond' (conditioning input) connected via a curved arrow, and a sequence of six light green squares labeled collectively as 'noise x_t'. These noise tokens are vertically aligned and feed upward into the top layer. The top layer is a light blue rounded rectangle labeled 'Full Attention', which processes all six noise tokens simultaneously through full attention mechanisms. From this layer, six upward-pointing arrows lead to six identical light blue squares above, representing the output tokens. The design emphasizes that DiT processes the entire set of image tokens at once, leveraging full attention across all tokens and incorporating conditioning via AdaLN.\n\nSubfigure (b) labeled 'CausalFusion' illustrates a different paradigm. It features a single large light blue rounded rectangle labeled 'Causal Attention', which spans horizontally across multiple input groups. Inputs include a gray square labeled 'cond' on the far left, followed by a group of dashed-boxed light blue squares labeled 'visible x_0,κ_1:s−1' (representing previously denoised tokens), and another group of dashed-boxed light green squares labeled 'noise x_t,κ_s' (representing current noisy tokens to be denoised). The 'cond' input connects via a curved arrow to the causal attention module. The visible tokens are connected via curved arrows to the causal attention block, indicating they are used as context for generating the next tokens. The noise tokens also feed into the causal attention module, but only those within the current subset κ_s are processed. The output is shown as three light blue squares enclosed in a dashed box, positioned above the causal attention block, indicating that only a subset of tokens is generated per step. An ellipsis (...) follows the last noise token group, suggesting the process continues iteratively. This architecture reflects a causal, sequential denoising strategy where only a random subset of tokens is processed at each step, conditioned on previously reconstructed tokens, mimicking masked feature prediction approaches.\n\nConnections are represented by straight vertical arrows for direct token flow and curved arrows for conditioning or contextual dependencies. The color coding distinguishes inputs: gray for conditioning, light green for noisy tokens, and light blue for outputs or visible tokens. Dashed boxes denote subsets of tokens being processed at each step in CausalFusion, emphasizing the partial observation mechanism."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

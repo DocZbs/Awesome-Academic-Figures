@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501024",
+  "record_sha256": "07fa2de2c76d998e93f49d956020832eb6dffd27b619df33aa0f86bcaf207d44",
+  "asset_sha256": "1621abe1224da65f0fa994d5fcc5796c0c31d133c5b57e39b09bbec935391c19",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501024",
+    "title": {
+      "zh": "Greek2MathTex: A Greek Speech-to-Text Framework for LaTeX Equations Generation · 方法图",
+      "en": "Greek2MathTex: A Greek Speech-to-Text Framework for LaTeX Equations Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12167",
+      "title": "Greek2MathTex: A Greek Speech-to-Text Framework for LaTeX Equations Generation",
+      "authors": [
+        "Evangelia Gkritzali",
+        "Panagiotis Kaliosis",
+        "Sofia Galanaki",
+        "Elisavet Palogiannidi",
+        "Theodoros Giannakopoulos"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12167",
+      "arxiv_url": "https://arxiv.org/abs/2412.12167",
+      "arxiv_id": "2412.12167",
+      "arxiv_first_submitted_at": "2024-12-11T22:29:44Z",
+      "arxiv_updated_at": "2024-12-11T22:29:44Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501024/image/image.jpg?Expires=1790835183&Signature=uPx-VuN~TGHKqJ4fylXLA8HtW5HQj5JrYzz4FuHDFMXx0oJyREq2qhKb-uTb5YMEhrOOq3QMfoNwpyWrmo4s4AWI57eFxOs2o6ED5iKpXORfx9dH7s3qB54E~9m91MpOigGiOEtOJQ7nYbld4398x8Oxa29xJwdVIHycDQBUbek16glkJfCeefeWTNYOsesA~gOPthVLdTqqthhMfjgk-Jgg6hp9w-SankECIJDn~4qWfh~TCXxMwlfBzcLAioVQ~2buTAMQ4hj06OK8-2nOkNlcl0NOqLxd0ieJWqgie93-qYzqYDBZi5l~sb1mLihvnijTdMe8sovQ9Tymi7l-qA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501024,
+      "description_sha256": "91a1f98fad748a5b2012009744dce3caee0c275a6a370669c879454b4659416e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a multi-stage system architecture designed for converting spoken audio into LaTeX-formatted mathematical equations. The global layout is linear and left-to-right, depicting a sequential pipeline starting from an audio input on the far left and ending with output LaTeX equations at the bottom right. The structure consists of three main processing stages connected by directional arrows, with intermediate outputs labeled for clarity.\n\nThe first visual module on the left is a light blue rounded rectangle labeled 'Fine-tuned XLS-R' with the Meta logo above it. Inside this box is a black icon representing an audio waveform enclosed within a detection frame, symbolizing speech recognition. This module receives input from a black silhouette of a human head speaking, indicated by sound waves emanating toward the module. An arrow leads from this module to the next stage.\n\nThe second stage is represented by a document icon with a microphone symbol and the red text label 'Audio Transcription'. Below this icon, a block of Greek text appears: “αλφα συν ανοιξε παρενθεση βτα πολλαπλασιασμος με γαμα κλείσε παρένθεση”, which translates to 'alpha plus open parenthesis beta times gamma close parenthesis'. This transcription serves as the intermediate output from the speech recognition step and is passed to the next module.\n\nThe third module is a beige rounded rectangle labeled 'GPT3.5', featuring the OpenAI logo (a black interwoven knot) on the left and a cartoon robot sitting at a laptop on the right. This module processes the transcribed Greek text and generates the final output. A downward arrow extends from this module to the bottom of the diagram, pointing to the output labeled 'LATEX equations'. Below this label is the rendered LaTeX equation: α + (β · γ), demonstrating the successful conversion of spoken mathematical expression into formal notation.\n\nAll connections between modules are depicted using solid black arrows indicating the flow of data. The overall design emphasizes a clear, step-by-step transformation from spoken language to structured mathematical notation, leveraging fine-tuned speech recognition and large language model interpretation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

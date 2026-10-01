@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501721",
+  "record_sha256": "aff4e0592766ff593127c18cf3e841e830115e890cdb1bb75ef6528996bf1a49",
+  "asset_sha256": "c9c064d1974bad050c7aeaaa77421d5c0e7ec1d0e87513ab89b687c3f266389e",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501721",
+    "title": {
+      "zh": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation · 方法图",
+      "en": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13394",
+      "title": "Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation",
+      "authors": [
+        "Burak Ekim",
+        "Girmaw Abebe Tadesse",
+        "Caleb Robinson",
+        "Gilles Hacheme",
+        "Michael Schmitt",
+        "Rahul Dodhia",
+        "Juan M. Lavista Ferres"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13394",
+      "arxiv_url": "https://arxiv.org/abs/2412.13394",
+      "arxiv_id": "2412.13394",
+      "arxiv_first_submitted_at": "2024-12-18T00:10:44Z",
+      "arxiv_updated_at": "2025-04-08T21:00:47Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501721/image/image.jpg?Expires=1790835200&Signature=cakGsoNA2p2929LsDN6gVfTOxAjMewEI2CnML5BXvVy1508rsnPY6IZLo-UGNo-q9kc~Z2r5P-lE6rK7kT6Uu8oKj0OmeKUVoU-ktVOWyFZXXmyOUFNUoCDW2moTJ7Lzxr119M6JSySpJbWiOGg0tsfWTLMWyO30jgaXazlaOOQgs3peHNbLJldThHc97rSsTvSRTorRJKMCsWZJkH2R0QRBBbgslVft2IRgP~dEFOjEy~zcp0XjVosSQBJL-6AHd-h7-DsI4WdC5BDpY1AzFJZOQxk41E4CNlki4kNfGr1L2Pu6Y-y1sByVGqp7GdGAoUqLiG5S3YoCJ3~bh1QvhQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501721,
+      "description_sha256": "98448e7fe467a79e26a61a7d79e448185828289396aea62c5568b246f72634a6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a four-step framework for out-of-distribution (OOD) detection using a pre-trained feature extractor and a learned binary classifier. The global layout is horizontal, divided into four distinct stages labeled Step 1 through Step 4, each with its own title and visual components, progressing from left to right.\n\nStep 1: Sampling — This stage shows two data sources: D_ID, represented by a blue cylinder, and D_WILD, depicted as a globe with green and blue patches. Arrows labeled 'sampling' lead from each source to respective sample outputs: x_ID (a solid blue diamond) and x_WILD (a gradient blue-orange diamond). A legend below clarifies that blue diamonds represent ID samples and gradient diamonds represent WILD samples (which may be ID or OOD).\n\nStep 2: Feature Extraction — The sampled inputs x_ID and x_WILD are fed into a pre-trained feature extractor, shown as a trapezoidal block labeled 'Pre-trained Feature Extractor' with a snowflake icon and symbol f. An arrow from this block points to a 'Prediction' box, indicating downstream use. From the feature extractor, an arc labeled 'Activations of layer L' leads to two sets of circular nodes: z_ID(x; f, L) (solid blue circles) and z_WILD(x; f, L) (gradient blue-orange circles). The legend identifies these as ID Activation and WILD Activation (ID or OOD), respectively.\n\nStep 3: Assigning Surrogate Samples — The feature representations from Step 2 are combined into Z_combined = Z_ID ∪ Z_WILD. These are visualized as two clusters enclosed in oval boundaries. The left cluster contains mostly gradient circles with one solid blue circle, labeled y(C_k) = OOD, indicating surrogate OOD assignments. The right cluster contains mostly solid blue circles with one gradient circle, labeled y(C_k) = ID, indicating surrogate ID assignments. The legend specifies that solid blue circles are Surrogate ID Activations and orange circles (not present here but defined in legend) are Surrogate OOD Activations.\n\nStep 4: Fit a Binary Classifier g — The labeled feature set Z_labeled = {(z, y) | z ∈ Z_combined, y ∈ {ID, OOD}} is shown as two groups: orange circles (surrogate OOD) on the left and blue circles (surrogate ID) on the right. A dashed line labeled g separates the two classes, representing the decision boundary of the binary classifier. Below, the equation ŷ = g(z; θ) indicates that the classifier g, parameterized by θ, predicts the class label ŷ for a given feature vector z. The classifier g is used during deployment to flag OOD inputs.\n\nThe figure uses consistent color coding: blue for in-distribution (ID), orange for out-of-distribution (OOD), and gradient blue-orange for WILD samples or activations whose true distribution is unknown. Shapes include cylinders, globes, diamonds, trapezoids, rectangles, and circles. All connections are directed arrows or arcs, indicating data flow and transformation across steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

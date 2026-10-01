@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500784",
+  "record_sha256": "fa38e54198e99876335d7889e908c9d5feef53bfbe131f35ed87b0eb7df66076",
+  "asset_sha256": "0ee1c47754faf07bd63c674581f6a646bacd988d2d26d1ce993670b6d45bc1e0",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500784",
+    "title": {
+      "zh": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data · 方法图",
+      "en": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-11800",
+      "title": "Scalable Temporal Anomaly Causality Discovery in Large Systems: Achieving Computational Efficiency with Binary Anomaly Flag Data",
+      "authors": [
+        "Mulugeta Weldezgina Asres",
+        "Christian Walter Omlin",
+        "The CMS-HCAL Collaboration"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11800",
+      "arxiv_url": "https://arxiv.org/abs/2412.11800",
+      "arxiv_id": "2412.11800",
+      "arxiv_first_submitted_at": "2024-12-16T14:11:28Z",
+      "arxiv_updated_at": "2026-06-04T08:23:17Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500784/image/image.jpg?Expires=1790835177&Signature=o-I79el1eUOBCpeW6AOSCwHk9zdsuNnyfFGpqHc6ibdT8u8DZE7CExurpSq5HfqtLh6y5uAGON-XaEQWSBAnwjKWu6-LSzFBSmlfesg28RJEqSvWHGIjSZyPkzzBNpLmlpXLIF7HhEC~dMMxMYMqTG2VVFOfqwWBjRGhKEI1~gi9f3H8WkI7BQGnaYcHLfEXqt8gQZucdGpusbLxz7B9ISPmcfMB9ILFJ2bhHt0ODucI1uHqQ-HN8mc-MW-mVDXNEoie3zuosV-5qxCscjH~aukBrogIoKvuectgf28PwaF2ii3svYLlRh99dWOAuuD48R7EQmesulBDFiN31MubAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500784,
+      "description_sha256": "1ac58348c4e54282ef64c69c081c40cb8f61a8f44c40d55ba6ccea692dc77586",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a temporal causal structure involving three time series, denoted as X¹, X², and X³, each represented as a sequence of nodes indexed by time t, t+1, t+2, t+3, and t+4. The global layout is a three-row, five-column grid where each row corresponds to one time series: the top row for X³, the middle row for X¹, and the bottom row for X². Each node is a circular shape with black borders and contains the variable label (e.g., X¹_t) in black text centered within it. All nodes are aligned horizontally within their respective rows, forming a linear progression from left to right, indicating the forward flow of time. Arrows between consecutive nodes in each row are horizontal, pointing right, representing the autoregressive or temporal propagation within each time series.\n\nThe visual modules consist of these circular nodes, each labeled with a superscript index (1, 2, or 3) and a subscript indicating the time step (t through t+4). The nodes are uniformly sized and spaced, with consistent black outlines and white fill. There are no color distinctions or additional graphical embellishments; all elements are monochrome.\n\nConnections between the time series capture both instantaneous and lagged causal effects. Specifically, there are diagonal arrows from X¹_t to X²_{t+1}, indicating a time-lagged causal influence from X¹ at time t to X² at time t+1. Additionally, vertical arrows connect X¹_t to X³_t, representing an instantaneous causal effect from X¹ at time t to X³ at the same time step. These connections are drawn as solid black lines with arrowheads pointing from cause to effect. The figure also includes horizontal arrows within each row, showing the temporal evolution of each series independently. The caption clarifies that this structure models a time series with both time-lag effects (X¹_{t−1} → X²_t) and instantaneous effects (X¹_t → X³_t), referencing Peters et al. (2017). The diagram does not include any equations or annotations beyond the node labels and arrows, and the overall structure emphasizes the directed acyclic nature of the causal relationships across time."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

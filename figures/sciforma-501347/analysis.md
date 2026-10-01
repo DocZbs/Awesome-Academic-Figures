@@ -1,0 +1,32 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12651
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents two versions of the hierarchical fusion-based graph convolution network (HFGCN) framework, illustrating the construction of graph structure data and the end-to-end processing pipeline for epileptic brain region classification. Both diagrams share a similar core architecture but differ in input preprocessing.
+
+[1] Global Layout and Structure:
+Each diagram is horizontally structured, flowing from left to right. On the far left, input data is represented as brain images with colored nodes indicating contact sites. This input feeds into a 'Build Graph' module, which generates a graph representation. The central part of the diagram contains a sequence of three Graph Convolutional Layers (GCL1, GCL2, GCL3), each followed by a corresponding Disentangled Graph Convolution Layer (DGCL1, DGCL2, DGCL3). These layers are arranged in a cascading fashion, with outputs from one layer feeding into the next. The final output is processed through a classification head labeled 'cls', producing a prediction on a brain image with red (epileptic) and yellow (nonepileptic) nodes. A legend at the bottom right clarifies these color codes. The entire processing pipeline is enclosed within a light blue rounded rectangle, labeled 'The Framework of HFGCN' in the lower diagram.
+
+[2] Visual Modules and Attributes:
+- Input: The top diagram shows a single brain image with multicolored nodes labeled 'Build Graph'. The bottom diagram shows two separate inputs: 'All Contact Sites Latent Features' (brain with multicolored nodes) and 'CCEP Connections' (brain with blue nodes and red edges), both converging into the 'Build Graph' module.
+- Graph Convolution Layers (GCL1–GCL3): Represented as gray rectangles containing small graphs with nodes (red, yellow, blue) connected by lines. Each layer produces an output denoted as Ĥ₁, Ĥ₂, Ĥ₃ respectively.
+- Disentangled Graph Convolution Layers (DGCL1–DGCL3): Shown as orange-bordered rectangles with similar internal graph structures, but with dashed red lines indicating disentanglement or attention mechanisms. Outputs are labeled as H̃₁, H̃₂, H̃₃.
+- L2 norm: Yellow rectangular blocks placed after each DGCL, normalizing the output features. Weight parameters w₁^SD and w₂^SD are shown as red arrows connecting these blocks to subsequent operations.
+- Element-wise Addition: Represented by a blue rectangle with a ⊕ symbol, combining outputs from GCL and DGCL layers.
+- Element-wise Multiplication: Represented by a pink rectangle with a ⊗ symbol, used to fuse normalized outputs with weights.
+- Classification Head (cls): A vertical stack of three circles (yellow, red, blue) indicating class probabilities, leading to the final output brain image.
+
+[3] Connections and Arrows:
+Data flows from left to right. In both diagrams, the input graph X enters GCL1. The output Ĥ₁ from GCL1 is fed into GCL2, and so on. Simultaneously, Ĥ₁ is also passed to DGCL1, whose output H̃₁ is added element-wise to Ĥ₁ (via ⊕), then normalized via L2 norm. This normalized output is multiplied element-wise (⊗) by weight w₁^SD and fed forward. Similarly, Ĥ₂ from GCL2 goes to DGCL2, and its output H̃₂ is combined with Ĥ₂, normalized, and multiplied by w₂^SD. The resulting Ĥ₁^SD and Ĥ₂^SD are then combined with Ĥ₃ from GCL3 and H̃₃ from DGCL3, respectively. The final fused feature H^out (denoted as Ĥ₂^SD) is passed to the cls module for classification. Red arrows indicate the flow of weights w₁^SD and w₂^SD from L2 norm blocks to multiplication operations. Black arrows denote standard data flow between modules.

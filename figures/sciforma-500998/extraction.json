@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500998",
+  "record_sha256": "226c52328b2e9874215eeed10586ed72d35607e18fe9aa4008c7cc10250cec6a",
+  "asset_sha256": "6258e4fa45bdd10cf07fccdf8c09f8700bd4e4a456a13f9a921dd07ab01ee465",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500998",
+    "title": {
+      "zh": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature · 方法图",
+      "en": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature"
+    },
+    "paper": {
+      "id": "arxiv-2412-12150",
+      "title": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature",
+      "authors": [
+        "Lingdong Shen",
+        " Qigqi",
+        "Kun Ding",
+        "Gaofeng Meng",
+        "Shiming Xiang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12150",
+      "arxiv_url": "https://arxiv.org/abs/2412.12150",
+      "arxiv_id": "2412.12150",
+      "arxiv_first_submitted_at": "2024-12-11T05:29:54Z",
+      "arxiv_updated_at": "2024-12-11T05:29:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500998/image/image.jpg?Expires=1790835182&Signature=ZexNHF417RQlTahSUrvPiqkqaINs8ZyovCW2uDxEOKO6WDWISsI7k0OvS7Ye6QIjgF~2wcIHXwUTnM9PlsqGHFHPBJV0t5hOb7-7cToHtT8KmQzmIbes7DMkLgCVbec4CgU3AK~NCulyCAcuoYbP6EgdtatRX~xprS57lKH4f8lwhL9fGVGRxv3ZdSu7RJpKsPjffMMVVWGReHH~tjVB0zfMziDCgKOv1V6HShVf90yb0k0g-c6e7KPEkhwv6OR7G4ZQJE~kKluiN9UqQpPKKNu5UoCE3UWhr6sGkeN4i7UJ8VsVgo3ZmHh7os9D0QaDBl2G1ALYXtfcDbB5levAxg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500998,
+      "description_sha256": "ef238511204fcb0204f09b5c8d9f791eaeef6dde656a2bcb1bb8246cc6b91725",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive deep learning pipeline for depth reconstruction from raw Time-of-Flight (ToF) measurements, structured into three main sections: an overview of the training/testing setup, a detailed network architecture, and qualitative results.\n\n[1] Global Layout and Structure:\nThe diagram is divided into three primary regions. On the left, a top-down workflow outlines data sources (Real ToF camera for testing, FLAT dataset for training/validation) feeding into a 'Raw measurement' block, which then passes through two parallel modules—'Motion module' and 'Multi-reflection module'—before converging into 'Depth reconstruction'. Below this, qualitative results are shown as side-by-side visualizations for multi-reflection and motion scenarios, displaying depth maps and corresponding depth error heatmaps. The right half of the figure contains two stacked neural network architectures enclosed in dashed red boxes: the top one processes raw measurements, and the bottom one refines depth estimates using per-pixel kernels and warping.\n\n[2] Visual Modules and Attributes:\nThe top-right network begins with an input tensor labeled 'i_ψ', sized 384×7×7, followed by a sequence of convolutional blocks. These include standard convolution layers (white cubes), convolutional layers with 2x2 max pooling (yellow cubes), and upsampling layers with skip connections (blue cubes). Each block is annotated with kernel size (e.g., 5x5, 3x3) and output channel count (e.g., 64, 128, 256, 512). The network ends with a 'Warping' operation producing output 'v' of size 512×384. The bottom-right network takes 'Depth' as input, processed via 'Arctan, Eq. 3' and 'Unwrap, Eq. 4', then feeds into a 'Per-pixel kernel' module (a 3x3 kernel with 384 channels) which convolves with the depth map. This is followed by a similar sequence of convolutional and upsampling layers, ending with an output of size 512×384. A legend at the bottom clarifies the symbols: white cubes = convolution layer, pink = convolution kernel, yellow = convolution + pooling, blue = upsampling + skip connection.\n\n[3] Connections and Arrows:\nIn the top-right network, arrows indicate forward propagation from left to right, with skip connections (dashed lines) linking early layers to later ones during upsampling stages. The output 'v' connects downward via a 'Warping' arrow to the bottom network. In the bottom-right network, the 'Depth' input flows through processing blocks, then combines with the per-pixel kernel via a convolution operation (* symbol), continuing through the network with skip connections. The final output is fed back to the depth reconstruction stage in the left panel. The entire system forms a closed-loop refinement process where raw measurements are processed, warped, and refined iteratively.\n\nNote: Although the multiple-choice question and answer section below claims 8 convolution layers in the top-right section, the visual count shows 12 distinct convolutional blocks (including those within yellow and blue cubes), consistent with the figure caption stating 12 layers. The discrepancy in the answer section is noted but the diagram itself visually supports 12 layers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-500430",
+  "record_sha256": "344542dc58b02c08baa3e0a25b99c888b3d3fb14df2b2063ccb3cc283091d36d",
+  "asset_sha256": "e528c5eddb0272e2a8facb946ea6d8166f4b19ca3aad41cecc170b47a9e177f7",
+  "original_file": "original.jpg",
+  "pixel_width": 1664,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500430",
+    "title": {
+      "zh": "Sonicmesh: Enhancing 3D Human Mesh Reconstruction in Vision-Impaired Environments With Acoustic Signals · 方法图",
+      "en": "Sonicmesh: Enhancing 3D Human Mesh Reconstruction in Vision-Impaired Environments With Acoustic Signals"
+    },
+    "paper": {
+      "id": "arxiv-2412-11325",
+      "title": "Sonicmesh: Enhancing 3D Human Mesh Reconstruction in Vision-Impaired Environments With Acoustic Signals",
+      "authors": [
+        "Xiaoxuan Liang",
+        "Hong Zhou",
+        "Zhaolong Wei",
+        "Yansong Li",
+        "Shujian Yu",
+        "Jeremy Gummeson"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11325",
+      "arxiv_url": "https://arxiv.org/abs/2412.11325",
+      "arxiv_id": "2412.11325",
+      "arxiv_first_submitted_at": "2024-12-15T22:04:26Z",
+      "arxiv_updated_at": "2026-09-25T04:44:52Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500430/image/image.jpg?Expires=1790835171&Signature=aDyDG91Sea8ZZ60cqkVm1mvvlUginiMbXJ1M-pkqDAF2eL7etHc6sJHcc~ZCzacTbc6X1C76muCATUHamRu1mG2jImx5DCq5d-TqtE7QcufAE1f-RCXWYBNEFVpxTjD~vL~NTZF4wT3hGzUoEdW5RkyM-aXeaFYm~9rFy5vritsR7mHO8xT88FC6yEHVXPB5uRArgK6aUTFxEHO1T-qXbPbNUGl10Ni~DL4HTdxmwa7FkhpcbCqV2s1yXF1K2~xUmPrAYEi8~3hoeZh5rDu-pPxyTuw2yFjNlxfSq8yoQ4JdmoEBqvBxUvanusBJ3lA0bFFkul68zybdMN35EzFdhQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500430,
+      "description_sha256": "b8aef7fdf14e3b782c340daa9b730c6fd4b39b955c339fe7ab51c650d97ee912",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Registration Module designed to align 2D joint data from an image space with 3D joint data from a canonical 3D space. The layout is horizontally oriented with two parallel processing streams: one for 2D space inputs and another for Canonical 3D space inputs, both converging at a shared loss computation stage.\n\nIn the top stream, labeled '2D space', a dark blue rectangular box labeled '2D joints' serves as the input. This is connected via a solid black arrow to a light blue rounded rectangle labeled 'CNN', representing a convolutional neural network. The output of the CNN is passed to a tan-colored rectangular box labeled 'Pixel Embedding'.\n\nIn the bottom stream, labeled 'Canonical 3D space', a red-bordered rounded rectangle labeled '3D joints' acts as the input. This connects via a solid black arrow to a tan-colored trapezoid labeled 'MLP', indicating a multi-layer perceptron. The MLP's output feeds into a blue rounded rectangle labeled 'Canonical Embedding'.\n\nBoth embedding outputs — 'Pixel Embedding' and 'Canonical Embedding' — are directed via separate arrows to a green rounded rectangle labeled 'LOSS', which represents the loss function used to compute the discrepancy between the two embeddings during training. The arrows indicate a unidirectional flow of information from inputs through the respective networks to the final loss computation. There are no feedback loops or bidirectional connections shown. The diagram uses distinct shapes and colors to differentiate components: rectangles for data inputs and embeddings, rounded rectangles for neural network modules and loss, and a trapezoid for the MLP. All text labels are in black, sans-serif font, and positioned centrally within their respective boxes. The overall structure emphasizes a dual-path registration framework where 2D and 3D joint representations are independently embedded and then compared in a common latent space via a loss function."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

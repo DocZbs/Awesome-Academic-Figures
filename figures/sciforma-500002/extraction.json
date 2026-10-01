@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500002",
+  "record_sha256": "edc4114bd4b7010475e7e4d6903c50674f9ce2ef175a03dc3d9b1eef94583d23",
+  "asset_sha256": "9086292dacbefe2fe460d4bf13493e781d73d72a914dbaf1622115a81172bcfc",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500002",
+    "title": {
+      "zh": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models · 方法图",
+      "en": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-10582",
+      "title": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models",
+      "authors": [
+        "Runsheng \"Anson\" Huang",
+        "Lara J. Martin",
+        "Chris Callison-Burch"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10582",
+      "arxiv_url": "https://arxiv.org/abs/2412.10582",
+      "arxiv_id": "2412.10582",
+      "arxiv_first_submitted_at": "2024-12-13T21:48:54Z",
+      "arxiv_updated_at": "2025-10-20T21:09:33Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500002/image/image.jpg?Expires=1790835163&Signature=d~a7D2ETM1SCyi5rSDHFPMZ9b8Gakbz690MnV9V8h-SkCYMpiu7wXOE4Cw1dwjBnFWtnf7HNG9wrYXPTr5AjBrJh3Gb4JUzkXrzbf0Xg7tCLFJxE6P3rupicFL1J4jFThQHqjgJuyMZ7UU0TtUasUQdOEvUhcY~kIfj0IRzd8NTiScv2oJw03SHvJeC-dynt23XGDxzaUOzc-p~ccbh~W~Tov~a7zDSXKNRsHtWd7R9dnxq1APLK3jiRTOB1TR9xu6-P8mY-uUwQ9U4A~tvTnOolMCkp88ENglYBcsF-RU09-l4vMcqLeJyZ7ieuvHfjk-T7zLH3a6aQEf7Jlu~7lQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500002,
+      "description_sha256": "bf344d3262965c3207282767d7c11bde55a72a3fc2b771879a35e2da7608b51c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure depicts a branching decision tree structure representing a sequential decision-making process over time steps. The global layout is hierarchical and top-down, consisting of three circular nodes arranged in a tree-like fashion: one parent node at the top and two child nodes below it, connected by directed arrows indicating the flow of progression from one time step to the next.\n\nEach node is a circle with a dark blue border and white fill, containing four labeled components arranged in two rows: the top row contains 'S_t' and 'G_t', while the bottom row contains 'KD_t' and 'AD_t'. These abbreviations correspond to State, Goal, Key Decision, and Alternate Decision, respectively, as specified in the caption. The subscript 't' denotes the current time step, which increments to 't+1' in the child nodes.\n\nAt the top of the diagram, an incoming arrow points to the root node, labeled with 'E^1_{t-1} = {e_1, e_2, e_3}', indicating the input event set from the previous time step. From this root node, two outgoing arrows branch downward to two identical child nodes. Each of these arrows is labeled with an event set: the left arrow is labeled 'E^1_t = {e_1, e_2, e_3}' and the right arrow is labeled 'E^2_t = {e_1, e_2, e_3}'. This suggests that at each time step, the same set of events can lead to different branches or outcomes, possibly representing alternative decision paths or scenarios.\n\nThe child nodes mirror the structure of the parent node but with updated time indices: they contain 'S_{t+1}', 'G_{t+1}', 'KD_{t+1}', and 'AD_{t+1}', reflecting the evolution of state, goal, key decision, and alternate decision into the next time step. The symmetry between the two child nodes implies that both branches follow the same internal structure and update mechanism, differing only in the path taken (as indicated by E^1_t vs E^2_t).\n\nThere are no additional visual elements such as colors, shading, or annotations beyond the described labels and arrows. The diagram emphasizes the temporal progression and branching nature of the decision process, where each node encapsulates the core components of the decision state at a given time, and transitions are triggered by event sets leading to subsequent states."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

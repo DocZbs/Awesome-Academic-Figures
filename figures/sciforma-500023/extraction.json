@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500023",
+  "record_sha256": "66a65f68ef441ce881a0a89f19b3dc7cc7b9f157ea7db28d0d70845c665d335e",
+  "asset_sha256": "cb144c97bb2268261f1db69e25319208c058d6c8d6ca9af95fa4f0ad50541f79",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500023",
+    "title": {
+      "zh": "Model-driven deep neural network for enhanced direction finding with commodity 5G gNodeB · 方法图",
+      "en": "Model-driven deep neural network for enhanced direction finding with commodity 5G gNodeB"
+    },
+    "paper": {
+      "id": "arxiv-2412-10644",
+      "title": "Model-driven deep neural network for enhanced direction finding with commodity 5G gNodeB",
+      "authors": [
+        "Shengheng Liu",
+        "Zihuan Mao",
+        "Xingkang Li",
+        "Mengguan Pan",
+        "Peng Liu",
+        "Yongming Huang",
+        "Xiaohu You"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10644",
+      "arxiv_url": "https://arxiv.org/abs/2412.10644",
+      "arxiv_id": "2412.10644",
+      "arxiv_first_submitted_at": "2024-12-14T02:09:36Z",
+      "arxiv_updated_at": "2024-12-14T02:09:36Z",
+      "arxiv_subjects": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500023/image/image.jpg?Expires=1790835163&Signature=X5Zl1JKekRHGZx88TmfwaIsI516WgkS4i8aFj30VM3c7VKw2GCuHzvMmFPOYcK4LpmR3-lH1W-2uD0Cw7FHZMNUt9qDXdCayCwnx2L64m8vKW-xb7jwkyx7X1nP-~6BSPf1KKKo5cQ9Eg1-V-YgOWAhemK8H0ofEPJ-7xj4Q~myFbFXRdmo62LS9MO2jI0g4wzS9JEu3YQaqa6cYltEsNGQbQK3-DCiThNyNBjIvT8tfHAXfvmpcmQ-QfIH8vDAhBMCVbLH0MacwQzeebsT2x5F63yN-Mpt0jKNZoJXJ5m~YMJTRiRI5KLBJaec33Pzl37MvF-8QLkYv7Yu9jHbAMQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500023,
+      "description_sha256": "687b85552c0a990f48fdd965e61e4b5aa60ea539cd8d7269c78ecef3a319275d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the iterative framework of the MoDL-SSR (Model-Based Deep Learning for Spatial Spectrum Reconstruction) module, presented in two parts: (a) an overview of the entire iteration process, and (b) a detailed breakdown of the alternating optimization between a 1D-CNN calibrator and a spatial spectrum reconstruction step across multiple iterations.\n\nIn part (a), the global layout begins with an input coarray spectrum η, represented as a smooth curve labeled with the equation ŷ = Pη. This input is processed by a 1D-CNN composed of Q layers, each containing a convolutional layer (Conv), batch normalization (BN), and ReLU activation, depicted as stacked rectangular blocks with red, white, and teal colors respectively. The output of this CNN is denoted as z. This calibrated signal z is then fed into an SCG-Based Spatial Spectrum Reconstruction block, visualized as concentric circular contours representing an optimization landscape. Within this block, a dashed arrow indicates the conjugate gradient direction, a green dot represents sparsity modification, and a red star marks the sparse solution. The result of this reconstruction is the updated spatial spectrum η^(i+1), shown as a sharp peak on a spectrum plot. A large blue feedback loop connects the output back to the CNN input, indicating iterative refinement.\n\nPart (b) expands on the iterative structure, showing three stages: 1st iteration, i-th iteration, and l-th iteration, enclosed within dashed boxes. Each stage consists of two main modules: a 'Calibrator' implemented as a 1D-CNN with identical architecture (three stacked blocks: Conv, BN, ReLU) and labeled C_w, followed by a 'Spatial Spectrum Reconstruction' block. The input to each iteration is η^i, which is transformed into z^i by the calibrator, then processed by the reconstruction module to produce η^(i+1). These stages are connected sequentially via arrows, forming a chain of iterations. A prominent blue box labeled 'Shared Weights' sits below the iterations, with upward arrows linking it to each calibrator, emphasizing that the same CNN weights are reused across all iterations. The initial input is again ŷ = Pη, and the final output after l iterations is η^l. The figure includes a legend at the bottom of part (a) defining symbols: dashed arrow for Conjugate Gradient, green circle for Sparsity Modification, and red star for Sparse Solution. The overall structure emphasizes an alternating optimization scheme where the CNN calibrates the spectrum and the SCG-based reconstruction refines it iteratively, with shared weights ensuring consistency across iterations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

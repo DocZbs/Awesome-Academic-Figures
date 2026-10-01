@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502220",
+  "record_sha256": "78e52f5b831154b79891cba2605b12a1fdf8b355a70060e06fc393830c13f15a",
+  "asset_sha256": "f41ea49edcbd4bdc74636f15d3f938fc59de697d8b2a2902de45456abdf3ddc8",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502220",
+    "title": {
+      "zh": "jinns: a JAX Library for Physics-Informed Neural Networks · 方法图",
+      "en": "jinns: a JAX Library for Physics-Informed Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-14132",
+      "title": "jinns: a JAX Library for Physics-Informed Neural Networks",
+      "authors": [
+        "Hugo Gangloff",
+        "Nicolas Jouvin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14132",
+      "arxiv_url": "https://arxiv.org/abs/2412.14132",
+      "arxiv_id": "2412.14132",
+      "arxiv_first_submitted_at": "2024-12-18T18:21:41Z",
+      "arxiv_updated_at": "2024-12-18T18:21:41Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502220/image/image.jpg?Expires=1790835212&Signature=i7rsHprjMF3WV7qjsS3Wklaj7Burf4vv7S-l2E1JcMVIqp42WwdKimE2vzY6Zh7inu-nsWeG6p-NCqjXbzXuTacfB0B~cG3rSaMVHjg7e5aGVAfXtBDMvR9P4FhMK6VSoEe~usS0rGpvA6sG~jiibgYGmjoaNz1n1md3jtnaFO3IOeArrAKusbHFkSj0gQVD2MNYAWIXec-qjJzxt2IY-TMUxg8C1OT8bu9mv9bd6riVh0dKEyhFQiHlgxQf5jUdYAbQPltuYKaikXqzvUVkMLaeeiBbzhtmnsXNRHJ-nPGD036MQQlN7XDqImud-m3rFe9zJ8E4o-J1vCHEOSKSLA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502220,
+      "description_sha256": "546ba950e18586f7eed58062b33decb196b1d2191201e15e3680e34854fb468c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the typical user workflow for the jinns framework, structured as a central computational engine surrounded by five interconnected modules: loss, parameters, data, utils, and validation. The global layout is centered around a hexagonal node labeled 'jinns.solve(...)', which represents the core optimization routine responsible for minimizing the global loss function L(ν, θ) via JIT-compilation. This central node receives inputs from three primary sources: loss, parameters, and data, indicated by solid black arrows pointing toward it. Additionally, a dashed arrow from the validation module points to the central solver, suggesting optional or feedback-based interaction.\n\nThe 'loss' module, depicted as a rounded rectangle with a pinkish background, contains a list of loss components including dynamic loss (N₀[uₙ] ≈ 0), boundary and initial condition (BC + IC) losses, and normalization terms. These contribute to the 'Global Loss' L(ν, θ), shown as a smaller nested box within the loss module, which feeds into the solver.\n\nThe 'parameters' module, represented as a large purple oval with a dashed outline, houses two rectangular submodules: 'ν nn_params' and 'θ eq_params', indicating neural network parameters and equation-specific parameters respectively. These are passed directly to the solver.\n\nThe 'data' module, a green rounded rectangle, includes three subcomponents: 'collocation', 'Observations', and 'Parameters', representing different types of input data used during training. These also feed into the solver.\n\nThe 'utils' module, a gray rounded rectangle on the lower left, lists auxiliary functionalities such as network types (PINNs, Separable PINNs, HyperPINNs), saving/loading mechanisms, and plotting tools. A solid arrow connects this module to the solver, indicating that these utilities support or configure the solving process.\n\nFinally, the 'validation' module, a light blue rounded rectangle on the lower right, includes 'Custom validation score' and 'Validation set'. It connects to the solver via a dashed arrow, implying that validation is an optional or post-processing step, possibly used for monitoring or evaluating model performance during or after training.\n\nAll modules are visually distinct through color coding and shape: rounded rectangles for functional blocks, a hexagon for the solver, and ovals for parameter containers. Text labels are clear and concise, with mathematical notation (e.g., L(ν, θ)) and LaTeX-style formatting used where appropriate. The diagram emphasizes a modular, flexible design where users can customize loss functions, parameters, data sources, and validation strategies while leveraging the core jinns.solve() routine for optimization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

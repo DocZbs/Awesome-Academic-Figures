@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502482",
+  "record_sha256": "4511ce9110c2597efe62eff5f93ef033dff875f640d0b295815a469795dea6d2",
+  "asset_sha256": "1452d0ecdf95e287f982bcbbf269331e05c0694aaa3d747936ada4da6e2cead7",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502482",
+    "title": {
+      "zh": "Spike2Former: Efficient Spiking Transformer for High-performance Image Segmentation · 方法图",
+      "en": "Spike2Former: Efficient Spiking Transformer for High-performance Image Segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14587",
+      "title": "Spike2Former: Efficient Spiking Transformer for High-performance Image Segmentation",
+      "authors": [
+        "Zhenxin Lei",
+        "Man Yao",
+        "Jiakui Hu",
+        "Xinhao Luo",
+        "Yanye Lu",
+        "Bo Xu",
+        "Guoqi Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14587",
+      "arxiv_url": "https://arxiv.org/abs/2412.14587",
+      "arxiv_id": "2412.14587",
+      "arxiv_first_submitted_at": "2024-12-19T07:13:15Z",
+      "arxiv_updated_at": "2024-12-19T07:13:15Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502482/image/image.jpg?Expires=1790835221&Signature=JGCDZHonFzxBeG~bcB04y69dVx6rIkOli4dgQTWabAimAH7tQkSzTO1gAGUMp7LWrkY3vpS9bontkSoHBlJm6FB6IrYwV-gxKlKjbRaTHhyLIDvsgcR6c9MpDA9yFFvJWaTgfsW3OvQ7fr~JPR2mUgDm4XprnzmTW0kkKZYi6ihPHeE0rncH5Uze5VkRol0wNsWTdL42ZApUSloP6nZRnlf0VfE2KtUjatybHAe90IBHpduUz2pjWep4BJJFZWdc6yyN6GL1OzN8fstg-q3ihJmRhXp2fUjlNAowOPzhsyngBQHIHCOMqwWE38Q9MhuawpVU-bbvu6RV5-Or44R9rA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502482,
+      "description_sha256": "b748b8901e87f17c9166a58515a1ceb3bc2a61a9a8eba7c6d40e9dc816d5cd4a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the offset-sampling operation within Spike-Driven Deformable Attention (SDDA), comparing two approaches: spiking in the query versus spiking in the attention weights. The diagram is divided into two main sections, separated by a large green downward arrow, indicating a transition from an ineffective to an effective method.\n\nIn the top section, labeled 'Spiking in Query' with a red 'X', the process begins with a grid labeled 'Spike Query', where green spike symbols are placed in various cells, representing active query elements. A gray curved arrow labeled 'Offsets Sampling' points from this grid to a second grid labeled 'Sampled Query', which contains fewer spikes, indicating a reduction in information due to sampling. This sampled query is then multiplied (indicated by a black circle with a cross) with an empty grid labeled 'Attention Weight', resulting in information deficiency. The red text 'Information Deficiency' emphasizes the problem with this approach.\n\nThe bottom section, labeled 'Spiking in Attention Weight' with a green checkmark, presents the improved method. It starts with a grid labeled 'Query', containing only yellow-highlighted cells (no spikes), representing the original query without spiking. The same 'Offsets Sampling' operation is applied, producing a 'Sampled Query' grid with highlighted cells. This sampled query is then multiplied with a grid labeled 'Spike Attention Weight', which contains numerous green spike symbols distributed across its cells. The green text 'Preserve Information' highlights that this method retains the necessary information for accurate attention computation.\n\nThe visual modules consist of 5x5 grids with dark blue borders, where cells are either empty, highlighted in pale yellow, or contain green spike symbols. Text labels are color-coded: red for problematic components ('Spike Query', 'Sampled Query', 'Information Deficiency'), black for neutral components ('Query', 'Sampled Query'), and green for beneficial components ('Spike Attention Weight', 'Preserve Information'). The connections include a red rightward arrow between the query and sampled query grids, a gray curved arrow indicating the sampling operation, and a black multiplication symbol between the sampled query and attention weight grids. The large green downward arrow connects the two sections, signifying the shift from an inferior to a superior strategy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

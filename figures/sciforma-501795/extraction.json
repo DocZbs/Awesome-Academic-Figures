@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501795",
+  "record_sha256": "66e8e6ce63792a9e968db02cffa04fa55754ff593c69fb6f23044ce56b76698a",
+  "asset_sha256": "e34a447203a97c35fdb0aa6db044e335d602719f8b448c02347444daafc586a9",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501795",
+    "title": {
+      "zh": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval · 方法图",
+      "en": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-13510",
+      "title": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval",
+      "authors": [
+        "Rui Cai",
+        "Zhiyu Dong",
+        "Jianfeng Dong",
+        "Xun Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13510",
+      "arxiv_url": "https://arxiv.org/abs/2412.13510",
+      "arxiv_id": "2412.13510",
+      "arxiv_first_submitted_at": "2024-12-18T05:19:09Z",
+      "arxiv_updated_at": "2024-12-18T05:19:09Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501795/image/image.jpg?Expires=1790835201&Signature=c3livpe3dCR0T-waVCeNPTiHDCg0j6zKsjDtGFex71UDhLuWSxhuivpoYGql-hDuH~MoTj2Gc0~GnC-rZEL5HyG8IrA3QclFLW81MRtzkxiKqE68Fd7-zqYGThDNy4jqgCAiuUCZGrRvMq9xiShTzKQBZGuJpx2~uoe9ebobKwHUQcqm0pt7K-8iNx4RiHc179jOi6CtIEA1B1vAbAe3jKnx2cHcNkolfkr9s2rAenlOoOKajqxpRlLqc6zEwjfQD9G3xpt1EgAvNc2c8-NGIUWVvsL64BeuFp5tikYvNNBfaCxXF7Q3~MtUBGvB-2OgOkZOVA7tM~kyupcQvEO4Kw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501795,
+      "description_sha256": "1e6cc8b7d3d5f624196b2d1d93d5a15693f7c5130c0e5e79d026a0343d55b34d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the proposed Dynamic Adapter with Semantics Disentangling (DASD) framework, designed for cross-modal and cross-lingual alignment in vision-language tasks. The global layout is divided into three main vertical branches: the leftmost 'Dynamic Parameter Generation' module, the central 'Target-Language Branch' (Φ^T), and two right-side branches for 'Source-Language' (Φ^S) and 'Visual' (Φ^V) inputs. These are interconnected via alignment mechanisms and parameter injection pathways.\n\nIn the leftmost section, labeled 'Dynamic Parameter Generation', the process begins with a Transformer Layer-1 processing the target-language caption S^T (e.g., '一只猫坐在鹅卵石地面上。'), which is machine-translated from the source-language caption. This layer outputs two feature streams: f^sr (semantic-related) and f^sa (semantic-agnostic), extracted through separate MLPs and decoupled via a dotted red arrow. These features are then processed by individual MLP&reshape blocks, generating a weight matrix W^z. This matrix is shown as a blue rectangle with 'In Dim' and 'Out Dim' labels, indicating dimensionality transformation. The W^z matrix is then injected into the target-language branch.\n\nThe central branch, Φ^T, consists of L stacked Transformer layers, each followed by a 'Dynamic Adapter' block (depicted as a beige rectangle with a red flame icon). The Dynamic Adapter receives the W^z matrix via dashed blue arrows, which represent parameter injection. The adapter modifies the transformer's behavior dynamically based on the input-specific parameters. The top of this branch outputs γ^T, a representation vector.\n\nOn the right, the source-language branch Φ^S processes the source-language caption S^S ('A cat sitting on the cobblestone ground.') through an L-layer Transformer (gray box with snowflake icon), producing γ^S. Similarly, the visual branch Φ^V processes an image/video input through a K-layer Transformer, yielding γ^V. Both γ^S and γ^V are connected to γ^T via dashed red arrows labeled 'Cross-Lingual Alignment' and 'Cross-Modal Alignment', respectively, indicating alignment objectives between representations.\n\nAt the bottom right, a detailed inset shows the structure of the Dynamic Adapter. It includes a Down Projection layer feeding into ReLU, then Up Projection. The W^z matrix is inserted into this pathway via a thick black arrow labeled 'Insert W^z', modifying the adapter’s internal computation. The output flows back through Down Projection and ReLU before being up-projected again, forming a bottleneck-like structure.\n\nAll modules are color-coded: orange for feature extraction in the left module, beige for Dynamic Adapters, gray for Transformers, and blue for projections and W^z. Text annotations specify component functions, such as 'decoupling' and 'Up/Down Projection'. The figure uses solid black arrows for data flow, dashed blue for parameter injection, and dashed red for alignment constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

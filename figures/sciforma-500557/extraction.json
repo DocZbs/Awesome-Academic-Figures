@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500557",
+  "record_sha256": "64da93557dc5f21833f19b8e9ecd32ece61afeb71b81f148f2fa1a4fc5e4e072",
+  "asset_sha256": "fbba9658a024311d1bbc04c6550dcfb06de0bc06181fe5c52e0d811487fa2bfa",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500557",
+    "title": {
+      "zh": "Exploring More from Multiple Gait Modalities for Human Identification · 方法图",
+      "en": "Exploring More from Multiple Gait Modalities for Human Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-11495",
+      "title": "Exploring More from Multiple Gait Modalities for Human Identification",
+      "authors": [
+        "Dongyang Jin",
+        "Chao Fan",
+        "Weihua Chen",
+        "Shiqi Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11495",
+      "arxiv_url": "https://arxiv.org/abs/2412.11495",
+      "arxiv_id": "2412.11495",
+      "arxiv_first_submitted_at": "2024-12-16T07:15:13Z",
+      "arxiv_updated_at": "2024-12-16T07:15:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500557/image/image.jpg?Expires=1790835172&Signature=eL3vLqDeWSXVr6dJlZ1H2fs2eAgJp35PPP7jOF1LCYK7KavaPrZAPjHzEwpCqaOUazvImR0INYNw4QCb7GwmgHj7Q9Q2XN-~M5Boz3v-j0pFp~KW-N3Y5XV6xVI6WZVSabZplO-vJIe1eNyOqr0LZyr6hni1gLzmv1o~NgK-dIS03Dd0ZMDQqVoDdvhco0qgXhfet0efnpPzVWWbNXQTD5r809P9jzuEaOvrtPZAvFAvlQ5ol4a5SsakDzetSOK04RaPPdbYxJLZQrVWUukAmI1rIWs7BoKWzsCQcFcvrb9ZGpMsN0flHE9l68d6UwGeQPdBNAM7fVpNlff82PNyVw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500557,
+      "description_sha256": "9602a2a3fcec0371bd600318b28efee0e108b590bfed0b24c61ea2a0f7baef73",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two architectural variants of the MultiGait model, labeled (a) MultiGait* and (b) MultiGait*+#, arranged vertically. Both architectures are feed-forward networks processing input data through sequential convolutional and feature extraction stages, with (b) introducing a multi-modal fusion mechanism.\n\n[1] Global Layout and Structure:\nThe diagram is divided into two horizontal rows, each representing a distinct model configuration. The top row, (a) MultiGait*, shows a single-stream architecture where an input I* passes through a series of modules: Conv₀ followed by four successive stages S₁, S₂, S₃, and S₄, culminating in an output arrow. The bottom row, (b) MultiGait*+#, displays a dual-stream architecture. It features two parallel streams: one processing input I* and the other processing input I#. Each stream follows the same structure: Conv₀ → S₁ → S₂ → S₃. The outputs of both streams at stage S₃ are fed into a central 'Fusion' module, which then produces a final output S₄. A cloud-shaped annotation is connected to the Fusion module, listing three fusion strategies: (a) Concat, (b) Attention, and (c) Addition. Below the two streams, labels indicate the semantic levels of the features: 'Input-level' under the initial Conv₀ blocks, 'Middle-level' under S₁ and S₂, and 'High-level' under S₃ and the Fusion block.\n\n[2] Visual Modules and Attributes:\nAll processing modules are represented as trapezoidal shapes, oriented with the wider base on the left, indicating a reduction in feature dimensionality or spatial resolution from left to right. The input nodes I* and I# are square boxes. The initial convolutional layer is labeled 'Conv₀'. Subsequent stages are labeled S₁, S₂, S₃, and S₄, with S₄ being the final output stage. The Fusion module is a tall, light-gray rectangle with the word 'Fusion' written vertically inside. The cloud annotation is a black-outlined, irregular cloud shape containing the three fusion options in black text. All text within the diagram is in a standard sans-serif font, and all lines and borders are black. The entire diagram uses monochrome styling with no color coding.\n\n[3] Connections and Arrows:\nIn (a) MultiGait*, a solid black line connects I* to Conv₀, then sequentially to S₁, S₂, S₃, and finally to S₄, ending in a rightward-pointing arrow. In (b) MultiGait*+#, two parallel paths exist: I* connects to its Conv₀, which connects to S₁, then S₂, then S₃; similarly, I# connects to its Conv₀, then S₁, S₂, and S₃. From the S₃ outputs of both streams, solid arrows point to the Fusion module. A single arrow exits the Fusion module to S₄, which then leads to a rightward-pointing arrow. Additionally, a curved line extends from the Fusion module to the cloud annotation, indicating the available fusion methods. The connections are unidirectional, following a left-to-right data flow, and there are no feedback loops or skip connections shown."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

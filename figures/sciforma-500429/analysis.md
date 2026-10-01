@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Sonicmesh: Enhancing 3D Human Mesh Reconstruction in Vision-Impaired Environments With Acoustic Signals — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11325
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of SonicMesh, a multimodal 3D human mesh reconstruction framework that integrates RGB visual data and acoustic signals. The global layout is horizontally structured, progressing from left to right: input modalities on the far left, feature extraction and fusion in the center, and final mesh reconstruction on the far right. The diagram is divided into two parallel processing streams—one for RGB input and one for acoustic input—each undergoing similar feature extraction steps before converging for global fusion.
+
+Each stream begins with an input modality: an RGB camera icon labeled 'RGB' and a blue square labeled 'Acoustic'. The acoustic input first passes through a Gaussian Mixture Model (GMM), represented by a yellow oval, before entering the backbone network. Both streams then feed into a CNN block (light blue rectangle) followed by a 'Backbone' module (dark blue parallelogram), which outputs two branches: 'Pixel Embedding' (orange rectangle) and 'Local Feature' (light green rectangle). These are combined via element-wise addition (indicated by a ⊕ symbol) and passed to a 'Modal Masking' block (yellow rectangle), followed by a 'Pooling' operation (dashed light blue rectangle), producing modality-specific loss terms L^im (green) and L^ai (orange).
+
+From the backbone, each stream also produces a global feature: E^im (purple parallelogram) for RGB and E^ai (purple parallelogram) for acoustic. These are processed by separate CNNs to generate global features G^im (teal rectangle) and G^ai (orange rectangle), which are then fed into a 'Global Integrated Module' (gray rectangle). This module fuses the global features and combines them with a '3D Template' (red rectangle) via element-wise addition (⊕), resulting in 'Global Fused Features' (teal rectangle labeled G).
+
+The fused features are then processed through a multi-layered 'Self-Attention + Dynamic Residual MLP' block (large gray box with three vertical columns of feature dimensions: 2051, 512, and 64). Each column contains stacked teal, orange, and green rectangles representing feature channels, with curved lines indicating self-attention connections between layers. The output of this block is denoted as G^T (yellow rectangle), which feeds into an 'MLP' (yellow trapezoid) to produce a 'Coarse Mesh'. This coarse mesh is further refined into a 'Reconstructs Mesh', depicted as a pink 3D human figure with arms outstretched.
+
+Two 'Registration Module' blocks (light green trapezoids) are shown above each input stream, connected in a feedback loop to the respective CNNs, suggesting iterative alignment or optimization. The entire pipeline emphasizes cross-modal fusion and hierarchical refinement, culminating in a detailed 3D human mesh reconstruction.

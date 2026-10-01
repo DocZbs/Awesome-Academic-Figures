@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500878",
+  "record_sha256": "b34c39b33befa643aef3100fa049b5a4316910b4365f9ff743d36d552475b07a",
+  "asset_sha256": "85daa5319955f9dedd22402114e97c3e13706b439d2304482e9e8924a349c16e",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500878",
+    "title": {
+      "zh": "Gramian Multimodal Representation Learning and Alignment · 方法图",
+      "en": "Gramian Multimodal Representation Learning and Alignment"
+    },
+    "paper": {
+      "id": "arxiv-2412-11959",
+      "title": "Gramian Multimodal Representation Learning and Alignment",
+      "authors": [
+        "Giordano Cicchetti",
+        "Eleonora Grassucci",
+        "Luigi Sigillo",
+        "Danilo Comminiello"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11959",
+      "arxiv_url": "https://arxiv.org/abs/2412.11959",
+      "arxiv_id": "2412.11959",
+      "arxiv_first_submitted_at": "2024-12-16T16:41:51Z",
+      "arxiv_updated_at": "2025-02-12T13:25:10Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500878/image/image.jpg?Expires=1790835177&Signature=Hj7qoVHPTbUjhb0HFbH6IYfZqoFYsDbjI8IBUIdMqw9VqsxVui-f6S2tD6BvUhvU3R3GDCILapMvV8XVwMhLxv0eqGC6rljHjlHQ78Gx8AdAaz-3wgP1S7ToqoJqAB4j-Y34l8bckm9fRnvkzCX6-a~I3F3~hnp1aFu2LtCo3JD9La8ehY22aAU3u5WVG3X6BTj6l4ZOErcmNl2Ve5wtBz53RpqTvz0fcRega9NeMV~rzb~N8PJYvP1DQmvjxz~PHsazKXMU2bKteXYCnIv2KeS65j~Zdhiw85oJL99sYKSWLA~kOFHoh38hQ2Itp-vDm5La0a3U3Jpor-KOAJXP-A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500878,
+      "description_sha256": "d26a156c8a157989f4c9822f34177399e8636a6df28e924e90cbf829820661c0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison illustrating the core intuition behind the GRAM (Geometric Representation Alignment Measure) framework, using two distinct scenarios to demonstrate how semantic alignment across modalities affects the geometric volume of a parallelotope formed by embedding vectors. The global layout is split into two symmetrical panels, each containing a 3D coordinate system (x, y, z axes) with origin at O, a shaded conical region representing the embedding space, and multiple modalities projected as points connected by dashed lines forming a parallelotope. Each panel includes visual examples of input data (video frames and audio waveforms) linked to their corresponding modality points, along with a descriptive caption and a concluding statement about volume size.\n\nIn the left panel, labeled 'Semantically aligned data → small volume', the embedding vectors for Modality1 (blue), Modality2 (green), and Modality3 (orange) are closely clustered, forming a narrow, low-volume parallelotope. These modalities correspond to a dog barking in a reverberant environment: video frames show a black dog on a red surface, an audio waveform represents the barking sound, and a thermal image (Modality1) shows a heat signature of the dog. A green curved arrow connects the text description 'A black dog in the foreground barking in a reverberant environment' to the Modality2 point, indicating semantic grounding. The visual elements are color-coded: Modality1 is blue, Modality2 is green, Modality3 is orange, and Modalityk (a general placeholder) is gray. The parallelotope is shaded in light pink, and the coordinate axes are marked with ticks from -1 to 1.\n\nIn the right panel, labeled 'Semantically misaligned data → large volume', the same structure is shown but with embedding vectors spread out widely, resulting in a large-volume parallelotope. The modalities here represent a woman playing guitar in a closed space: video frames show racing cars, an audio waveform is present, and a thermal image (Modality1) shows a hand. The text description 'A woman playing the guitar at large volume in a closed space' is linked via a green arrow to Modality2, highlighting the mismatch between the text and the visual/audio inputs. The color coding remains consistent: Modality1 (blue), Modality2 (green), Modality3 (orange), Modalityk (gray). The parallelotope is again shaded light pink, and the coordinate system is identical to the left panel.\n\nConnections are represented by curved arrows: black arrows link video frames to Modalityk, orange arrows link audio waveforms to Modality3, and blue arrows link thermal images to Modality1. Dashed lines connect the origin to each modality point, forming the edges of the parallelotope. The figure visually conveys that when modalities are semantically aligned, their embeddings are close, leading to a small parallelotope volume; conversely, misalignment results in a large volume, which serves as a quantitative measure of alignment quality."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

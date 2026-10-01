@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502271",
+  "record_sha256": "98e8d2cf8954b6113f14802ebad7cf8a0bc763a02644280b0559690d96123a4e",
+  "asset_sha256": "97cd4dc54e2ea9d31b8f3c6892f8f1694d29cf23b01fc213d0601bc99962f94e",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502271",
+    "title": {
+      "zh": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection · 方法图",
+      "en": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-14211",
+      "title": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection",
+      "authors": [
+        "Aroj Subedi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_id": "2412.14211",
+      "arxiv_first_submitted_at": "2024-12-18T02:00:53Z",
+      "arxiv_updated_at": "2024-12-18T02:00:53Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502271/image/image.jpg?Expires=1790835212&Signature=bN-Z-9NGO6lvmbNuLvha6KEZST2MprpAmOWh9lZNujYrDvV2rw7jgjIxAdKbFCMAbUZr65OnhVOyJ8t3Fml2mlAWrt887yH8kD4kEEwUnxrKRr0cPuqXTYVXfkd-mUcO83rJzuD9zpDmSHzieQtyVRgUYB4IQWWFrCPvmPFJum-9ydKZDu2J5ILRjcyGO7lbpKOymM0-s8cRoPBuR~f77zZNvyYm~d0RExaL4-ivYxFuOd1z7tpIb8exEEBtHr1-suW6059OE6xXOBGA6m1z1L2aNrSeuHzGxIU43stFEbdexdpJGznaJRc342rIz4wGz8C90ybD0~GWi6GdVU7JHA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502271,
+      "description_sha256": "fe8d47e620e55f73e30929c8c09bf68aa3b05262977c9abea118e013241be45c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is a flowchart illustrating the step-by-step process for constructing a confusion matrix in a YOLOv8 object detection model. The global layout is vertical, starting from the top and progressing downward through a series of decision points and processing steps, with branches for different outcomes converging toward the final step. The structure follows a clear sequential logic, beginning with obtaining detections from the model and ending with the completion of the confusion matrix construction.\n\nVisual modules consist of rectangular boxes for processing steps and diamond-shaped nodes for decision points. All shapes have black borders and white backgrounds, with black text inside. The text within each module is centered and uses a standard sans-serif font. The processing steps are enclosed in rounded rectangles, while decision points are rhombuses. Each decision node has two labeled outgoing arrows: 'Yes' and 'No', indicating the path taken based on the condition evaluated.\n\nThe flow begins at the top with a box labeled 'Obtain detections from the model'. This leads to a diamond-shaped decision node asking whether the 'Confidence score of detections > Confidence Threshold'. If 'No', the flow proceeds to a box labeled 'Discard the detections', which then connects to the next decision point. If 'Yes', the flow continues to a processing box: 'Calculate IoU score of the remaining detections'.\n\nFrom there, another decision node checks if 'Calculated IoU > IoU Threshold'. If 'No', it leads to a box stating 'Mistakenly identified background as class category (X)', followed by the instruction to 'Increment the entry of (X, Background) in the confusion matrix'. If 'Yes', the flow moves to a third decision node: 'Predicted class category == correct'. If 'No', it goes to a box labeled 'Mistakenly identified category (X) as class category (Y)', with the instruction to 'Increment the entry of (Y, X) in the confusion matrix'. If 'Yes', it proceeds to a box labeled 'Correctly identified category (X) as class category (X)', with the instruction to 'Increment the entry of (X, X) in the confusion matrix'.\n\nAll three outcome paths (correct, false positive, false negative) converge into a single decision node: 'All true labels discussed?'. If 'No', the flow goes to a box labeled 'Missed detecting class category (X) even though it was present in the image', with the instruction to 'Increment the entry of (Background, X) in the confusion matrix'. If 'Yes', the flow proceeds to the final box: 'Complete building confusion matrix'.\n\nArrows are solid black lines with arrowheads indicating direction. All connections are orthogonal or straight, ensuring clarity. The flowchart is self-contained, with no external inputs or outputs beyond the initial detection data and the final confusion matrix. The caption at the bottom reads: 'Flowchart: Construction of Confusion Matrix in YOLOv8 model', summarizing the purpose of the diagram."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

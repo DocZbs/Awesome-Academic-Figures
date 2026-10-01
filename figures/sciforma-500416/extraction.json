@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-500416",
+  "record_sha256": "4e0fe4522781a1400278c01c30c409d29250bf9f077c943a44e01f8a6ed05d23",
+  "asset_sha256": "643e9ebe45783ba013e1cca3811dc3ed277f851a0e1fdf845bed3b51e7ba6747",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500416",
+    "title": {
+      "zh": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity · 方法图",
+      "en": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity"
+    },
+    "paper": {
+      "id": "arxiv-2412-11277",
+      "title": "Macro2Micro: A Rapid and Precise Cross-modal Magnetic Resonance Imaging Synthesis using Multi-scale Structural Brain Similarity",
+      "authors": [
+        "Sooyoung Kim",
+        "Joonwoo Kwon",
+        "Junbeom Kwon",
+        "Jungyoun Janice Min",
+        "Sangyoon Bae",
+        "Yuewei Lin",
+        "Shinjae Yoo",
+        "Jiook Cha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11277",
+      "arxiv_url": "https://arxiv.org/abs/2412.11277",
+      "arxiv_id": "2412.11277",
+      "arxiv_first_submitted_at": "2024-12-15T18:49:20Z",
+      "arxiv_updated_at": "2025-10-25T06:08:55Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500416/image/image.jpg?Expires=1790835171&Signature=J1bbT4jJEET5AJRF0uaEjm-sTGEWF5XDtFII8tUlYvZmA~Kg4WxHainGOgTjWHFodbFzfdFAr167NoO5zKA78wu01IexfHHDtJUBm6gFboL5Hb-yA4cRrIAdVuJYHRQn~s83w4473fnPFeVsSQM3H~2AKZ1OS3H0gHoeFKMGQCWe1I25qlviLUuQ7LQSKhHDyQ1rTp5LaMlwFrfnKJz1Pzmh~Ng08luGWeMTZqUKv0Lkod4CcZNWpGNbb~ZGsUh1nYZhCf06xE4H-wL8EZ5k~RLUVfzwgpSQzvcMe9Kd5kKgwPnwUhWWP3PfjN5lu4orGA8PbrmhSNcou1hrtdIuLw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500416,
+      "description_sha256": "9c53359651f8acb74f9986445ea9db708805a46054f0fae43962981579c02713",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main sections: the top section illustrates the structure of Octave Convolutions, and the bottom section shows the generator design incorporating these convolutions.\n\n[1] Global Layout and Structure:\nThe top portion is enclosed within a purple dashed boundary labeled 'Octave Convolutions'. It depicts a dual-path processing architecture where input feature maps are split into high-frequency (H) and low-frequency (L) components. These paths process data independently and exchange information before producing output feature maps. Below this, the generator architecture is shown as a horizontal sequence of blocks, starting from H and L inputs on the left and progressing rightward through various convolutional layers.\n\n[2] Visual Modules and Attributes:\nIn the Octave Convolutions section, the high-frequency input X_H is represented by a blue cube with dimensions h × w and channel count (1−α_in)c_in. The low-frequency input X_L is a yellow rectangular prism with dimensions 0.5h × 0.5w and channel count α_in c_in. The central processing block is split into two regions: 'High' (light blue background) and 'Low' (light green background). Within the 'High' region, two operations are shown: f(X_H; W_{H→H}) for self-update (dark blue arrow) and f(pool(X_H,2); W_{H→L}) for down-sampling and cross-path communication (red arrow). In the 'Low' region, f(upsample(X_L,2); W_{L→H}) performs up-sampling and cross-path communication (red arrow), while f(X_L; W_{L→L}) handles self-update (dark blue arrow). Outputs Y_H and Y_L are produced via element-wise addition (⊕) of the respective paths: Y_H = Y_{H→H} + Y_{L→H}, and Y_L = Y_{H→L} + Y_{L→L}. The outputs retain their spatial dimensions and channel counts: Y_H is a blue cube with (1−α_out)c_out channels, and Y_L is a yellow prism with α_out c_out channels.\n\nA legend below the Octave Convolutions section clarifies visual encoding: blue cubes denote high-frequency feature maps, yellow prisms denote low-frequency feature maps, red lines indicate information exchange between paths, and dark blue lines indicate information update within each path.\n\nIn the generator section, the architecture begins with H (blue cube) and L (green cube) inputs. The subsequent layers are represented as vertical bars: blue bars indicate Standard Convolutions, orange bars indicate Octave Convolutions, and green trapezoids represent Up-sampling operations. The sequence alternates between these types, with the final few layers being standard convolutions. A legend on the right side explicitly defines the color coding for these modules.\n\n[3] Connections and Arrows:\nIn the Octave Convolutions block, arrows show the flow of data. From X_H, a dark blue arrow leads to f(X_H; W_{H→H}), and a red arrow leads to f(pool(X_H,2); W_{H→L}). From X_L, a dark blue arrow goes to f(X_L; W_{L→L}), and a red arrow goes to f(upsample(X_L,2); W_{L→H}). The outputs of these functions converge at ⊕ nodes: the red arrow from f(pool(X_H,2); W_{H→L}) and the dark blue arrow from f(X_L; W_{L→L}) feed into the ⊕ for Y_L; the red arrow from f(upsample(X_L,2); W_{L→H}) and the dark blue arrow from f(X_H; W_{H→H}) feed into the ⊕ for Y_H. Thick gray arrows then carry Y_H and Y_L to their respective output representations.\n\nIn the generator, blue and green arrows connect the initial H and L inputs to the first layers. Subsequent connections are implied by the horizontal arrangement of blocks, indicating sequential processing. The up-sampling blocks (green trapezoids) are positioned to increase spatial resolution, typically after or between convolutional layers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

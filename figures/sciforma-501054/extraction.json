@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501054",
+  "record_sha256": "93d5c88663fa20b3dcef29881a4066efb19a2e8ba7a7f1a6fd9eb297818633e8",
+  "asset_sha256": "7ffca563aabd97075f46d31f00fe75313fc45dafeb51e06ff0c8383f08d00635",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501054",
+    "title": {
+      "zh": "Finding a Wolf in Sheep's Clothing: Combating Adversarial Text-To-Image Prompts with Text Summarization · 方法图",
+      "en": "Finding a Wolf in Sheep's Clothing: Combating Adversarial Text-To-Image Prompts with Text Summarization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12212",
+      "title": "Finding a Wolf in Sheep's Clothing: Combating Adversarial Text-To-Image Prompts with Text Summarization",
+      "authors": [
+        "Portia Cooper",
+        "Harshita Narnoli",
+        "Mihai Surdeanu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12212",
+      "arxiv_url": "https://arxiv.org/abs/2412.12212",
+      "arxiv_id": "2412.12212",
+      "arxiv_first_submitted_at": "2024-12-15T22:12:36Z",
+      "arxiv_updated_at": "2024-12-15T22:12:36Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501054/image/image.jpg?Expires=1790835183&Signature=WSLQdvjZ0z6VBZqe4w~lJgUmZ2ccuWHZAuON2QajUwVM~5H08UkcmNm9meruCEYNuGrlZY1udYbT9aXytvZTJR737RN99FA36ScUac48lLjfw37fM86i19DQUC97JO-B2jLvsFL-kp4xTj97u6wjx55rrhdDD3GfQP-O5XynOKmRFH3fqc-xlTB7DG92cDWIUWX6wATb5VBNGJq5zoyqsCNvDNV9pzp9ePbXgdV5k6KB9ch6Q4PfK1HST65rq89Klwpd6EtpmqZ-TXm-D8VwVLc0lTj0ILqFFYdDd6VO8LbPpqG0jT0q0irf3L2nrBT4sKXyybcdgF7~f06dH1AtNQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501054,
+      "description_sha256": "684219e9e4d11e0178d8068ea613d740a550323052b5cf07272609e2e4d9e7ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a divide-and-conquer attack (DACA) strategy designed to bypass content detection filters by obfuscating inappropriate prompts while preserving their harmful intent. The diagram is structured into four labeled subfigures (a), (b), (c), and (d), arranged horizontally from left to right, with dashed vertical lines separating the initial states from the attack process and its outcome.\n\n[1] Global Layout and Structure:\nThe overall layout presents a comparative workflow: on the far left, an appropriate prompt (a) passes the filter, while an inappropriate prompt (b) is blocked. The central part of the diagram details the DACA attack process, which transforms the inappropriate prompt into an obfuscated version (c) that evades detection. Finally, on the far right, a summarization step (d) attempts to remove redundant or 'fluffy' content from the obfuscated prompt, resulting in a condensed version that still fails the filter. Each stage includes a content detection filter represented as a rectangular box at the top, with arrows indicating whether the prompt passes (green checkmark) or fails (red cross).\n\n[2] Visual Modules and Attributes:\nSubfigure (a) displays an 'Appropriate Prompt' in a rounded rectangle: 'Demogorgon as guest star in friends series', accompanied by a sheep icon labeled 'Sheep'. This prompt passes the Content Detection Filter, indicated by a green checkmark above the filter box.\n\nSubfigure (b) shows an 'Inappropriate Prompt': 'A white male is threatening a Chinese man with a knife.', in a similar rounded rectangle, with a wolf icon labeled 'Wolf'. This prompt is blocked by the filter, marked with a red cross.\n\nSubfigure (c) represents the core of the attack: the inappropriate prompt from (b) is fed into a gray rectangular module labeled 'DACA', which performs 'Stepwise obfuscation via LLM backbone' and contains a teal circular logo resembling the OpenAI logo. The output is an 'Obfuscated Prompt' — a long, detailed narrative describing the same threatening scene but with added descriptive elements (e.g., clothing, atmosphere, environmental damage). This obfuscated prompt is visually distinct due to its length and complexity, and it successfully bypasses the filter, indicated by a green checkmark. Below this box is a sheep icon with a wolf face inside, labeled 'Wolf in sheep's clothing', symbolizing the deceptive nature of the attack.\n\nSubfigure (d) introduces a 'Summarizer' module — a green rounded rectangle labeled 'Summarization via small encoder or LLM', described as the 'Proposed method for \"removing the fluff\"'. This module processes the obfuscated prompt from (c) and outputs a 'Summarized Prompt': 'Jake, a skilled stunt performer, threatens an Asian male with a knife, creating a tense and dangerous atmosphere.' This summarized version retains the harmful intent but is concise. Despite being distilled, it still fails the content detection filter, marked with a red cross. The icon below is again the wolf, reinforcing that the harmful essence remains.\n\n[3] Connections and Arrows:\nArrows indicate data flow and decision outcomes. From (b), a solid arrow points to the DACA module. From DACA, a solid arrow leads to the obfuscated prompt (c), which then connects via a solid arrow to the Summarizer. The Summarizer outputs to the summarized prompt (d). Dashed arrows connect each prompt to its respective Content Detection Filter, with green checks or red crosses indicating pass/fail status. The dashed vertical lines separate the initial prompt evaluation from the attack and summarization phases, emphasizing the transformation process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

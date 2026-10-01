@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500795",
+  "record_sha256": "b9752f2fea84bb77b3a5304f551e433a3b08dea9434c001033039689d6fcb018",
+  "asset_sha256": "27b7d9948eff9c0f3f4c372c18d00a1357eb94bca3ba38714de6187edb9fe64c",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500795",
+    "title": {
+      "zh": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models · 方法图",
+      "en": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11803",
+      "title": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models",
+      "authors": [
+        "Boyang Xue",
+        "Fei Mi",
+        "Qi Zhu",
+        "Hongru Wang",
+        "Rui Wang",
+        "Sheng Wang",
+        "Erxin Yu",
+        "Xuming Hu",
+        "Kam-Fai Wong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11803",
+      "arxiv_url": "https://arxiv.org/abs/2412.11803",
+      "arxiv_id": "2412.11803",
+      "arxiv_first_submitted_at": "2024-12-16T14:14:27Z",
+      "arxiv_updated_at": "2025-05-23T03:05:52Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500795/image/image.jpg?Expires=1790835177&Signature=ZLe4HBLM9DRxYog9mxeXSdFda1autUc325zcoEwDEWgnCe2dclMYB-qLOOiGh2QNf9Y~UmStIfn1fGE2MMQ7quHwn9sfA3bjbHgrqB3OuMccfVClx1ZzZZ2qGFAqain9Puh~lPQpwqo-mzncUbHZgwwlipPC5-OGUEZ8W9P5uguSFw8Cdg5knlB5~NV9zbPxzUMI0R2VMd8HtIjPRUiH0dSfJloOFiN6xgvLvQBQ7-3W0TMb68ttKZseUawuyviurUFYIYHzPqQZg5rzwpiENirHvRFBn0oGU3a4M-Z14wq2T7ug2vjPFWg9VM7vJuRq8Z-XQBilRqwnIS8MaMu4tw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500795,
+      "description_sha256": "7873f439c5458d2c9827dc14b7a136a1c067b69fe3cda9aa7bab95fc430528ab",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the two-stage alignment process of the UAlign framework, divided into Stage 1: Supervised Fine-Tuning (SFT) and Stage 2: Proximal Policy Optimization (PPO), depicted in parts (a) and (b) respectively.\n\nIn Stage 1 (part a), the UAlign Dataset D is sampled to produce tuples (xi, yi, ci, ei, zi), where xi represents an input question, yi the correct answer, ci the confidence score, ei the entropy score, and zi auxiliary information. An example input xi is shown as 'Which car company produces a model called Eos?'. This input is processed by Uncertainty Estimation Models, represented by a blue robot icon, which outputs confidence (Conf. 0.75) and entropy (Entro. 1.33) values. These uncertainty estimates are then combined with the original input and ground truth answer yi ('Volkswagen') to form an enriched sample. This enriched sample is fed into a Reward Model, depicted as a beige robot icon, which is trained via SFT to output a binary label 'True', indicating alignment with the desired behavior. The SFT process is indicated by blue arrows pointing from the input to the model and then to the output.\n\nStage 2 (part b) shows the PPO phase. A new query, 'Which Shakespeare comedy is set in Messina, Italy?', is processed by the Uncertainty Estimation Models (blue robot), which outputs confidence (0.5) and entropy (0.69). This uncertainty-aware input is then passed to the Policy LLM (green robot), which generates responses. The Policy LLM interacts with a Reference LLM (gray robot) and a Reward Model (beige robot) through a bidirectional PPO loop, represented by a large blue circular arrow labeled 'PPO'. The legend clarifies that blue arrows indicate updates with gradient descent, while gray arrows denote no gradient descent. The Reward Model provides feedback to guide the Policy LLM’s optimization, while the Reference LLM serves as a baseline for comparison during policy updates. The figure notes that although only one uncertainty estimation model is shown for simplicity, the actual framework employs two such models."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

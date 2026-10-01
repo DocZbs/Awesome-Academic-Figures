@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502239",
+  "record_sha256": "1b0879922cd7d59835b81b171ba00f39f056daf52d2ccedc54297d0429dee5d2",
+  "asset_sha256": "722f781ec05010b0372e968672787b13ce92a5c253ea387505f98363b5333b64",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502239",
+    "title": {
+      "zh": "MetaMorph: Multimodal Understanding and Generation via Instruction Tuning · 方法图",
+      "en": "MetaMorph: Multimodal Understanding and Generation via Instruction Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14164",
+      "title": "MetaMorph: Multimodal Understanding and Generation via Instruction Tuning",
+      "authors": [
+        "Shengbang Tong",
+        "David Fan",
+        "Jiachen Zhu",
+        "Yunyang Xiong",
+        "Xinlei Chen",
+        "Koustuv Sinha",
+        "Michael Rabbat",
+        "Yann LeCun",
+        "Saining Xie",
+        "Zhuang Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14164",
+      "arxiv_url": "https://arxiv.org/abs/2412.14164",
+      "arxiv_id": "2412.14164",
+      "arxiv_first_submitted_at": "2024-12-18T18:58:50Z",
+      "arxiv_updated_at": "2024-12-18T18:58:50Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502239/image/image.jpg?Expires=1790835212&Signature=U-QvVWsI~zhysB8AS1xyF7ASrRu96wUbALPqMeDfV7hdbbs4FCavH2P5buURBnF2HgAEGLfzB5MuyPFmm6ulCnpxKs9jd4FOoRL7YQ-4FaJ67Lo~-~2fD734WDxbXSaIPvo4EBFPcvGnfxu9Df9eA92s-Z~dztRTDAniHL9KA1uojzm2qyCcuC5vpTySSjK5dgVb2UcbWJbx2rqIJc85QwtYD~seLHdU9tBbOwBlhF-4Nycc7-mMnI4oYQvzBistVocNabsHmGmUZamhQN92K~UNHK7-wbMpI0-fEcHm6BQXcdJYltd0ogOSp~llxYxf79e21oJ6EOfjKgv6r9TC5Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502239,
+      "description_sha256": "173361e3c764bada0a58efd769b74f70831954c9029a712238615345616cc878",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-panel layout illustrating the training, inference, and application examples of a multimodal autoregressive model called VPIT (Visual-Predictive Instruction Tuning). The left panel, labeled 'VPIT', shows the training architecture: a large autoregressive model (depicted as a red-to-blue gradient rectangle) is fine-tuned to generate both text and visual tokens. It includes two distinct heads — a red 'Text Head' and a blue 'Vision Head' — each marked with a flame icon indicating trainable parameters. Below the main model, a blue 'Adapter' (also with a flame icon) connects to a 'Vision Encoder' (blue rectangle with a globe icon), which processes image inputs (represented by a photo icon). Text inputs are shown as a document icon. The middle panel, titled 'Inference', displays the operational flow during deployment. The same autoregressive model receives mixed text and image inputs (document and photo icons) and produces outputs through its 'Text Head' and 'Vision Head'. The visual tokens generated by the Vision Head are passed through a 'Projector' (purple rectangle) to an 'Adapted Diffusion Model' (purple rectangle), which is responsible for rendering the visual content. A dashed line indicates this optional visualization path, emphasizing that the diffusion model is not part of the core autoregressive generation but is used for decoding visual tokens into images. The right panel, 'Examples', demonstrates a conversational interaction. A user requests: 'Generate an image of the animal resulting from a monarch caterpillar's metamorphosis.' The model responds with a placeholder '<image_start><image_end>' and generates a butterfly image. The user then asks, 'What's the animal in this image?' and the model replies, 'The animal in the image is a butterfly,' showing its ability to process and reason about the generated visual content. The entire diagram uses consistent color coding: red for text-related components, blue for vision-related components, and purple for the external diffusion model. All modules are rectangular, with labels inside, and connections are shown via solid or dashed arrows to indicate data flow and optional pathways."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

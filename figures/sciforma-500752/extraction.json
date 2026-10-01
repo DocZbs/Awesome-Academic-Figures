@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500752",
+  "record_sha256": "7dbea980299f15c3e1da5dbbec2746cfdc4df52368291bc9f2ffabd0d0d9865e",
+  "asset_sha256": "6d231600cc7c6275191aad59e650b97f853428fa5437c347546df3faaae6b86d",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500752",
+    "title": {
+      "zh": "Generative Inbetweening through Frame-wise Conditions-Driven Video Generation · 方法图",
+      "en": "Generative Inbetweening through Frame-wise Conditions-Driven Video Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11755",
+      "title": "Generative Inbetweening through Frame-wise Conditions-Driven Video Generation",
+      "authors": [
+        "Tianyi Zhu",
+        "Dongwei Ren",
+        "Qilong Wang",
+        "Xiaohe Wu",
+        "Wangmeng Zuo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11755",
+      "arxiv_url": "https://arxiv.org/abs/2412.11755",
+      "arxiv_id": "2412.11755",
+      "arxiv_first_submitted_at": "2024-12-16T13:19:41Z",
+      "arxiv_updated_at": "2024-12-16T13:19:41Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500752/image/image.jpg?Expires=1790835177&Signature=e8JXYqbvdLA-58w9jbwuKJ8VYoy2Ll6QSwHLOkQtnyyxrMDx1jKciTAH2DZMGXarjHZdp~SQd2XTHwNEUQ-8JgttxQ0LcmIABLUz1aeVi7SvDeG6dli0t9etNvQ0TTh8Shg4xqkI4cmErZPeU8SE2eMUecjAZIEG~CxvodxYfD9g3JHpTi8bHdzzc567S2J1cxM66vGLRemPyJdFBnaizxQ4sU3ViIhe31wmUJRTnBS2G14s9nQsm0iuNbSGLIu3iYwIVfixZVzOJgjPX8rmC~k0wafBwud0iwp4q35RxgbvB1sg48XetNqdgujIbCBcBAt5MNRD3CJIPwJ3Yiq3iA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500752,
+      "description_sha256": "fce09876dbee38e061f04e6f4e86b4a4fe84964794cc9a723ffb65d1f90e96ff",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a method for generating intermediate frame-wise conditions, denoted as c₁→N and c_N→1, through interpolation between two initial conditions, c₁ and c_N, derived from a start frame I_start and an end frame I_end. The global layout is horizontally structured: on the far left, two real images labeled I_start and I_end depict a person in different poses, with overlaid colored lines indicating keypoint correspondences; a note below states 'Same color indicates corresponding matches'. A vertical line separates this input section from the central processing region, which is enclosed in a dashed rectangular box labeled 'Interpolate' at the top. Inside this box, two rows of intermediate frames are shown, each row representing a sequence of interpolated conditions progressing from one endpoint to the other. The top row represents the forward interpolation c₁→N, starting from c₁ (shown to the left of the box) and ending at c_N (shown to the right), while the bottom row represents the backward interpolation c_N→1, starting from c_N and ending at c₁. Each intermediate frame contains a stylized human figure composed of multicolored line segments (red, green, blue, purple, etc.), representing tracked keypoints or body parts, with consistent coloring across frames to indicate continuity of correspondence. Between the two rows, a bidirectional curved arrow labeled c₁→N and c_N→1 emphasizes the reciprocal interpolation process. The visual modules consist primarily of rectangular frames containing these stylized figures, with labels c₁ and c_N placed beneath their respective initial frames outside the dashed box. The connections are represented by the implicit progression along the rows within the interpolation box, guided by the directional arrows and the sequential ellipses ('...') indicating omitted intermediate steps. The entire diagram conveys a symmetric, bidirectional interpolation framework for generating temporal conditions between two given pose configurations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

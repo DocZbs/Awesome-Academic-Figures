@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502350",
+  "record_sha256": "640580a577c88f673691afb023ec42f30c6d1611037d1011394f0165e0d48caf",
+  "asset_sha256": "57b1e9258e39e94486924fd952ca1e8ff420b6b18594a1aff25f274d26524132",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502350",
+    "title": {
+      "zh": "ORBIT: Cost-Effective Dataset Curation for Large Language Model Domain Adaptation with an Astronomy Case Study · 方法图",
+      "en": "ORBIT: Cost-Effective Dataset Curation for Large Language Model Domain Adaptation with an Astronomy Case Study"
+    },
+    "paper": {
+      "id": "arxiv-2412-14436",
+      "title": "ORBIT: Cost-Effective Dataset Curation for Large Language Model Domain Adaptation with an Astronomy Case Study",
+      "authors": [
+        "Eric Modesitt",
+        "Ke Yang",
+        "Spencer Hulsey",
+        "Chengxiang Zhai",
+        "Volodymyr Kindratenko"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14436",
+      "arxiv_url": "https://arxiv.org/abs/2412.14436",
+      "arxiv_id": "2412.14436",
+      "arxiv_first_submitted_at": "2024-12-19T01:35:47Z",
+      "arxiv_updated_at": "2024-12-19T01:35:47Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502350/image/image.jpg?Expires=1790835216&Signature=hb3ESuTfT-JE3Y5njHYZUrBtM7VnCoYUsyAfP-OVjJj-wxhU3wVSB37uc8D1IDbP3B~U0Xeyd0g-tsz7xEbxYnQTHWDqExCgTEFSAhBrluQXCrnFLjBfwvLnOhDOd94D7b4rJqNgYxo8glNIgIhniLYZXMoV-XT-Ng0NjL82JBGn-QwTKogeC~fSJ56Se-XI-sO0PATVV2dqMcy~wZFKSGLXi1Y5Q2Btw5iFQ7dThsZN0VnELye5Yj3L5H9XRyMgJez8YW3k13HMboYORabWVgbt40YTeEH1AWTtvOmrS9yFDKAFbK31TbZEtuEQsr2ca6v65FC1YDLehqFomItH1Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502350,
+      "description_sha256": "7dd42f9f85bbe16276720e4cc9e01db9ebc2fa467c046fabfa44d560a036b817",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive filtering pipeline for curating a high-quality, educationally relevant dataset from Common Crawl, ultimately leading to the ORBIT dataset. The pipeline is visually segmented into four distinct colored regions—orange, yellow, green, and blue—each representing a stage or set of techniques applied sequentially. The overall layout is horizontal, left-to-right, with each stage connected by solid black lines indicating data flow.\n\nIn the orange region on the far left, the process begins with 'Common Crawl' as the raw input source, depicted as a white rectangular box with the label in gray and gold text. This is followed by a series of oval-shaped modules: 'WARC', 'URL', 'FastText', and 'Deduplication'. These represent standard preprocessing steps, including web archive parsing, URL extraction, initial content classification via FastText, and removal of duplicate documents. This section corresponds to common filtering methods formalized in prior work (cited as Wenzek et al., 2020).\n\nThe yellow region follows, containing a single oval module labeled 'C4 Filters'. This represents large-scale semantic filtering techniques adapted from Raffel et al. (2023), which likely involve content quality and toxicity filtering based on learned representations.\n\nThe green region introduces additional semantic filters specific to educational content. It contains two ovals: 'Fineweb heuristic', which likely applies domain-specific rules or heuristics to select content from the Fineweb-Edu corpus, and 'BERT Edu', a BERT-based classifier trained to identify educational relevance within the filtered data.\n\nFinally, the blue region on the right highlights the authors’ contributions. It includes two ovals: 'GloVe Thresholding', which uses GloVe word embeddings to filter content based on semantic similarity thresholds, and 'BERT-Astro', a specialized BERT classifier fine-tuned to detect educational relevance specifically in astronomy-related content. The pipeline concludes with an icon depicting a telescope observing celestial bodies, symbolizing the final astronomy-focused dataset.\n\nAll modules are connected by straight black lines, indicating a linear, sequential workflow. The visual design uses consistent oval shapes for processing steps, with clear labeling inside each. The color-coding serves to distinguish between general preprocessing (orange), broad semantic filtering (yellow), educational relevance filtering (green), and domain-specific contributions (blue)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

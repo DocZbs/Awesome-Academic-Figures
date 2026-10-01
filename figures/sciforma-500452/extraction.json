@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500452",
+  "record_sha256": "59b0c41acbaf33f2c3b456abdf07a60513b9ceda68363a75799ad0ce36db7c86",
+  "asset_sha256": "b474f359e4819e382c291e53dca4d4d52aabeea17fbac0a8bd24458faec7e220",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500452",
+    "title": {
+      "zh": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions · 方法图",
+      "en": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions"
+    },
+    "paper": {
+      "id": "arxiv-2412-11365",
+      "title": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+      "authors": [
+        "Wonyong Seo",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_id": "2412.11365",
+      "arxiv_first_submitted_at": "2024-12-16T01:37:51Z",
+      "arxiv_updated_at": "2025-03-24T02:37:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500452/image/image.jpg?Expires=1790835171&Signature=QNfbiStZ1nC6mkgeEIEKGqzpNDOB-vsAvo4rzLcZetfXWjPc14tYuR7yxHyZNk4NfRos16Cym06vY-zbt8Cdo-P6SuW9HaPV5vkViT-OeTr7p-jW8u9gXFhBARjIH3xGl7jgbDyXUs18UDIc7stChPlJ4N94tSQ2~Wq9KMR5pDhuQ3~ytgmzbw1JsObhRdl-DwfLzqYuY799PyAYM4pS4NDn-EOj4v0~fp-60dAqMw1pWP2odmqnr6e-a-dCuh7O-YXG~vQHVl2IPl7Fx1zoJPCqNXNbuVOt88vl45U7dvIJ5AfSrQi4DgHwUzGNUebkrGj2hrXV9eXErTmBG82dKA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500452,
+      "description_sha256": "cc6a775e499ee0dff5e63481316c3251dfd1fa0971ecc00090397ec22a74fcda",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of BiM-VFI with Knowledge Distillation for VFI-Centric Flow Supervision (KDVCF), comprising two parallel processes: Student Process P_s (top, beige background) and Teacher Process P_T (bottom, purple background, used only during training). The global layout is horizontally structured from left to right, showing data flow through multiple modules, with vertical alignment between corresponding components in student and teacher processes. On the far left, an 'Image Pyramid' is shown with multiple levels (0 to L-1), each containing three images (I_0^l, I_t^l, I_1^l) representing frames at different scales. These pyramid levels feed into feature extraction modules: MFE (Motion Feature Extractor) for the student process and CFE (Content Feature Extractor) for the teacher process. Both are depicted as gray trapezoids producing features F_0^{l,m}, F_t^{l,m} (student) and F_0^{l,c}, F_1^{l,c} (teacher). \n\nThe core of the architecture consists of BiMFN (Bidirectional Motion Field Network) modules, shown as salmon-colored rectangles. In the student process, a single BiMFN takes input features (F_0^{l,m}, F_t^{l,m}) and motion masks M_{t→0,1}^{l,uni} and M_{t→0,1}^{l,P_s} (from Eq. 1) to generate motion vectors V_{t→0}^{l+1,P_s}, V_{t→1}^{l+1,P_s}, and output O^{l+1,P_s}. These motion vectors are then processed by CAUN (Cross-Attention Upsampling Network), a blue trapezoid, which also receives content features (F_0^{l,c}, F_1^{l,c}) as input. CAUN outputs refined motion vectors V_{t→0}^{l,P_s} and V_{t→1}^{l,P_s}, which are fed into SN (Synthesis Network), a green trapezoid. SN combines these with input frames (I_0^l, I_1^l) and content features to produce the final interpolated frame ŷ^{l,P_s} and optical flow O^{l,P_s}. \n\nIn the teacher process, two BiMFNs are stacked vertically. The top BiMFN processes features (F_0^{l,m}, F_t^{l,m}) with motion masks M_{t→0,t}^{l,P_T} and zero vectors for other inputs, generating motion vectors V_{t→0}^{l+1,P_T} and O^{l+1,P_T}. The bottom BiMFN processes features (F_t^{l,m}, F_1^{l,m}) with motion masks M_{t→t,1}^{l,P_T} and zero vectors, generating V_{t→1}^{l+1,P_S} and O^{l+1,P_S}. These motion vectors are passed to CAUN (dashed outline, indicating training-only) and then to SN (also dashed), producing ŷ^{l,P_T} and O^{l,P_T}. Dashed lines indicate connections active only during training, while solid lines represent inference-time paths. A stop-gradient symbol (#) is defined in the legend, indicating where gradients are blocked. The teacher process provides supervisory signals (motion vectors and features) to the student process via dashed arrows, enabling knowledge distillation. The figure includes visual representations of intermediate outputs like motion fields (colorful heatmaps) and synthesized frames, enhancing interpretability."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

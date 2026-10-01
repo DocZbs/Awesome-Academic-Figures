@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501018",
+  "record_sha256": "80977239e41a74b2c36087b042f38d32926ae66f7b002cbdc462e735920dfa9a",
+  "asset_sha256": "7e16f5806c051cedbcb94619f0cc99fdcc06db906eeef53d9236f1875e135b20",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501018",
+    "title": {
+      "zh": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection · 方法图",
+      "en": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-12164",
+      "title": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection",
+      "authors": [
+        "Lingzhi Shen",
+        "Yunfei Long",
+        "Xiaohao Cai",
+        "Imran Razzak",
+        "Guanming Chen",
+        "Kang Liu",
+        "Shoaib Jameel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_id": "2412.12164",
+      "arxiv_first_submitted_at": "2024-12-11T19:12:22Z",
+      "arxiv_updated_at": "2025-03-02T15:12:38Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501018/image/image.jpg?Expires=1790835183&Signature=aVZT~~dco~Pnr-JnfYjeHH0v6g6nRDGl8JIMuVuHwMoVzjQHhw3dWd6odh5T4IjFo9zOw6oYh7OebR6MzOTWArzM7Yy-Y3m7Q7bKMv-Ov-T5tWFlvOWHBmv5~G1pvpWr-3Bi9aSI5jfP~cPGv4W-tiT~Lp4YDMR58JzK0pHsOwXivBIhEQYtvEVjN3YNjmZl5bKSh03YRJ8dja2arCxiuAwRvQgz7rVm98QvNBl~3i6Nsa~i1DiHg120TcZiASidx3fEidsZ6SBaihQrqlAnla-QpkjLXI7g9hZCgWMMjsBHRysO26EVO3b3P7~IGB443884P3xXmvcDLRGdokP4ZQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501018,
+      "description_sha256": "a121950e34d296fa04b2a1adcbcc09e23ad81db84a7f9008088642f0e788f315",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a novel veto-based decision-making model designed to compute a final output probability \\(\\hat{y} = P_{mix}\\) through a structured conditional logic flow. The global layout is hierarchical and centered around an 'Output' module at the top-middle, which feeds into a green circular node labeled \\(\\hat{y} = P_{mix}\\), representing the final prediction. This central output node receives inputs from two veto mechanisms—'Veto 1' on the left and 'Veto 2' on the right—via dashed arrows, indicating feedback or override paths. These vetoes also receive direct feedback from the output node via solid arrows, forming a closed-loop control structure.\n\nThe core logic begins at the bottom with a light peach-colored rectangular box containing five input features: \\(o_{ip}/o_{is}/o_t/o_{mm}/o_{mix}\\). These inputs pass through a 'Sigmoid' activation function, leading to a 'Confidence' module (also light peach), which produces a confidence score \\(P_i\\). From here, the flow branches based on the condition \\(\\theta_{low} < P_i < \\theta_{high}\\), represented by a light blue rounded rectangle. If this condition is true ('Y'), the flow proceeds directly to the 'Output' module. If false ('N'), it splits into two parallel branches.\n\nOn the left branch, if \\(P_i > \\theta_{high}\\) (light blue rounded rectangle), then if \\(P_i > P_{mix}\\) (another light blue rounded rectangle), the flow triggers 'Veto 1' (gray rounded rectangle), which sets \\(P_{mix} = P_i\\). A dashed arrow from 'Veto 1' points back to 'Output', indicating a potential override. On the right branch, if \\(P_i < \\theta_{low}\\) (light blue rounded rectangle), then if \\(i \\in Majority\\) (light blue rounded rectangle), the flow triggers 'Veto 2' (gray rounded rectangle), which updates \\(P_{mix} = (\\text{Max } P_i + P_{mix})/2\\). Similarly, a dashed arrow from 'Veto 2' points back to 'Output'.\n\nThe 'Output' module receives inputs from all three paths: the direct 'Y' path from the middle condition, and the 'N' paths from both veto branches. Solid arrows labeled 'N' connect the 'Veto 1' and 'Veto 2' modules to 'Output', indicating that if either veto is triggered, the output is updated accordingly. The final \\(\\hat{y} = P_{mix}\\) is computed based on the updated \\(P_{mix}\\) value, which may have been modified by either veto mechanism. The diagram uses consistent visual attributes: gray rounded rectangles for veto and output modules, light blue rounded rectangles for conditional checks, and light peach rectangles for input and confidence layers. Solid arrows denote primary data flow, while dashed arrows indicate feedback or override connections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502310",
+  "record_sha256": "501609e0a78f8b2cd9730aa7c82de596ab7fd1ab72257bfbdc84f64706909b53",
+  "asset_sha256": "412dd2a50bb245f29b3fca7a30d25b09d778fe1f475207e62665818baea16303",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502310",
+    "title": {
+      "zh": "Covariances for Free: Exploiting Mean Distributions for Training-free Federated Learning · 方法图",
+      "en": "Covariances for Free: Exploiting Mean Distributions for Training-free Federated Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14326",
+      "title": "Covariances for Free: Exploiting Mean Distributions for Training-free Federated Learning",
+      "authors": [
+        "Dipam Goswami",
+        "Simone Magistri",
+        "Kai Wang",
+        "Bartłomiej Twardowski",
+        "Andrew D. Bagdanov",
+        "Joost van de Weijer"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14326",
+      "arxiv_url": "https://arxiv.org/abs/2412.14326",
+      "arxiv_id": "2412.14326",
+      "arxiv_first_submitted_at": "2024-12-18T20:40:14Z",
+      "arxiv_updated_at": "2025-10-10T15:12:56Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502310/image/image.jpg?Expires=1790835216&Signature=gOkAsUDPVj~PHiEcanh8ZvFQmxD3CjbhVuGC2mNwu0KFV4ZiY12n3VySmdlTz9Vqy7qAFemscXTB1GEktkQlTqQnYhYCoPb-wPQ9A4d~NMRHx-r3b~aAuNgKWjjmMw~GthCHs7em74qL49Upqb9cIVZVUgKVDJo-sxITOTGfKZA-7sQVhwcswlsMOe1MX87dkB3BRIGjnejNe4FwGvYTttfnZGwEjIg6pcz0tQii9u5ZqT3MSNiMQjsQwbo9qx5Yx~S~aiuhrk-p65WaV8c1vnpksNUk6HwSWZKVuAVUpRTH1ZV4yMYgvr0icW~snDOsDeJWhf2Q1XE3ym27mwXALA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502310,
+      "description_sha256": "803174fb73680b7cccb8143d630940d274c3144105890ae193932b2acb5aef4d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the FedCOF (Federated Learning with COvariances for Free) framework, a federated learning method that enables clients to communicate only class-specific summary statistics to a central server for training a linear classifier. The global layout is divided into two main regions: the left side represents multiple clients (Client 1 through Client k), each processing local data, and the right side represents the FedCOF Server, which aggregates information and initializes the classifier.\n\nOn the client side, each client is enclosed in a dashed rectangular box. Within each client, a purple cylinder labeled 'Data' with subscript X_k (for Client k) feeds into a light blue trapezoidal module labeled f_θ, representing a feature extractor or encoder. A small blue star icon above f_θ indicates a trainable parameter or model. The output of f_θ is visualized as a 2D scatter plot showing two classes: one represented by red stars within a red dashed ellipse (labeled Σ₁) and another by green stars within a green dashed ellipse (labeled Σ_C). These ellipses represent the class covariances estimated locally at the client. From this visualization, the client computes and transmits the class mean estimates (denoted as hat{μ}_{k,c}) and class sample counts (n_{k,c}) to the server. This transmission is shown as an arrow from the client's plot to the server, with a small star icon indicating the transmitted data points.\n\nThe server side is enclosed in a large rounded rectangle labeled 'FedCOF Server'. It receives the class means and counts from all clients. Step (A) shows the aggregation process: the server combines the received class means to compute an unbiased estimator of the population class covariances, denoted as hat{Σ}_1 and hat{Σ}_C, which are represented by solid ellipses (in contrast to the dashed ellipses of the local estimates). The text below step (A) explicitly labels these as 'Unbiased Estimator of μ_c, Σ_c', indicating that both class means and covariances are estimated. Step (B) shows the initialization of the linear classifier: the estimated second-order statistics (hat{μ}_c, hat{Σ}_c) are fed into the same f_θ module (identical in shape and color to the client's module) to initialize the classifier. Below this, the text 'Initialize Linear Classifier' clarifies the purpose. The figure also includes a note that the between-class scatter matrix is removed during this initialization, as discussed in the referenced section.\n\nThe visual modules are consistently styled: data is a purple cylinder, the feature extractor f_θ is a light blue trapezoid with a blue star, and class distributions are shown as ellipses with stars. Dashed ellipses denote local, potentially biased estimates (Σ₁, Σ_C), while solid ellipses denote the server's unbiased estimates (hat{Σ}_1, hat{Σ}_C). Arrows indicate the flow of data and computation, with specific steps (A) and (B) labeled to guide the viewer through the server-side process. The overall structure emphasizes privacy-preserving communication (only means and counts) and the server's role in computing accurate second-order statistics for classifier initialization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

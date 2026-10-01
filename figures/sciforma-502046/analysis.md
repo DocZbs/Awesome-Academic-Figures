@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Maybe you are looking for CroQS: Cross-modal Query Suggestion for Text-to-Image Retrieval — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13834
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a cross-modal query suggestion framework designed to enhance search by generating refined queries based on visual results. The global layout is left-to-right, depicting a sequential pipeline: starting from an initial text query, progressing through cross-modal retrieval, clustering of visual results, and finally producing suggested queries via a dedicated suggestion module.
+
+On the far left, an 'Initial Query' labeled q₀: “sport race” is shown as input. This query is directed into a cylindrical component labeled ℒ, representing the 'Cross-modal Search' system (e.g., CLIP), which processes the query against an image collection. An arrow from the query points to this module, indicating the flow of information.
+
+The output of the cross-modal search is a result set R(q₀, ℒ), displayed as a large rounded rectangular container containing multiple clusters of images. These clusters are visually grouped into distinct colored boxes: C₁ (pink), C₂ (blue), and C₃ (yellow), with ellipses suggesting additional clusters. Each cluster contains representative images—C₁ shows horse and cart racing and chariot racing; C₂ displays snow sports like skiing and snowboarding; C₃ features motocross and dirt bike racing. Each cluster box includes a label at the top (C₁, C₂, C₃) and vertical ellipses below the images to indicate more items within each group.
+
+An arrow leads from the entire result set container to a green rectangular block labeled 'Cross-modal Query Suggestion', marked with the symbol ℱ. This module takes the clustered visual results as input and generates a list of suggested queries.
+
+On the far right, the output is presented as a curly-bracketed list titled 'Suggested Queries Q'. It lists specific query suggestions: ŝ₁: “horse race”, ŝ₂: “snow race”, ŝ₃: “bike race”, followed by vertical ellipses to denote further suggestions. These correspond directly to the visual clusters C₁, C₂, and C₃ respectively, demonstrating how the system infers semantically coherent sub-topics from the retrieved images.
+
+The diagram uses clear directional arrows to show data flow: from the initial query to the search engine, then to the result clusters, and finally to the suggestion module producing the refined queries. The color-coding of clusters aids visual distinction and aligns with the semantic grouping logic. The overall structure emphasizes a modular, interpretable pipeline where visual content drives query refinement.

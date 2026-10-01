@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501848",
+  "record_sha256": "b2966ed2b6298b34b39c17ab4591326c2ce7b35c7eaf97a5b4051ab6ece8f719",
+  "asset_sha256": "4f9f5a9936efb6a23d4bf88785116e219b7d29f319c4836e1892c737612e9d05",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501848",
+    "title": {
+      "zh": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation · 方法图",
+      "en": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13577",
+      "title": "Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation",
+      "authors": [
+        "Jiankun Zhu",
+        "Sicheng Zhao",
+        "Jing Jiang",
+        "Wenbo Tang",
+        "Zhaopan Xu",
+        "Tingting Han",
+        "Pengfei Xu",
+        "Hongxun Yao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_url": "https://arxiv.org/abs/2412.13577",
+      "arxiv_id": "2412.13577",
+      "arxiv_first_submitted_at": "2024-12-18T07:51:35Z",
+      "arxiv_updated_at": "2024-12-18T07:51:35Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501848/image/image.jpg?Expires=1790835205&Signature=XRD2R~YDgtbEPfISNRBGBDiKxscRJAIc-YW0JSomHXNVCcdqODzgkhoBTdsTHK606lTTfmI6xBteo6wRelil2zunikV5gzlT74HZMz47FRPVoAylD~dfMfa~aibpO1Lzl7uKubOZAYBPfUX22zD16g2ohZix5qQsQBP9ihss5Q2dv31~c6VLuzSDu49TN9WiI9XRcpsr-MCz7AesZ4wP4JRdgYv~ODtvsMo1PbhckDs--DA0a6Z2bwp289dMCZcjWtikj5dHiSq7-0yHkQFt0wzWaclp-2tdNRj3K3l93sgomwqBdr6U-vZTdrCG~son3kMkQabYdGn~T6RB81dGaQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501848,
+      "description_sha256": "0c2dd2c44c7f27c90b97a093fdd4a03e55d683d421881ff6c20cfffdc0f96483",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of two approaches for Source-Free Domain Adaptation (SFDA): conventional methods (a) and the proposed method (b). The layout is divided into two main panels, each enclosed in a dashed oval, with panel (a) on the left and panel (b) on the right. Both panels are vertically aligned under the overarching labels 'Source Training' at the top and 'Target Adaptation' at the bottom.\n\nIn panel (a), 'Conventional SFDA Methods', the source training phase involves labeled source data feeding into a blue rectangular module labeled 'Source Model'. This model contains a neural network diagram (blue nodes connected by lines) followed by a classifier (blue trapezoid). The output is labeled 'Source Label', and the process is supervised. During target adaptation, the source model is initialized to a green rectangular module labeled 'Target Model', which has a similar internal structure but with green nodes and a green classifier. Unlabeled target data feeds into this target model, and the adaptation is performed unsupervised. A dashed arrow labeled 'DA' connects the source and target models, indicating direct domain adaptation. The entire process is depicted as a simple two-stage flow: initial source training followed by direct adaptation to the target domain.\n\nPanel (b), 'Our Method', introduces a more complex three-stage architecture. It begins with labeled source data (illustrated with images of a dog and a person) feeding into the 'Source Model φ_s' (blue module), which consists of a feature extractor (blue network) and a classifier (blue trapezoid). This model produces outputs connected to loss functions: L_ce (cross-entropy loss) and L_kd, L_sl (knowledge distillation and self-supervised losses). The source model's weights are transferred via an 'Initial' arrow to the 'Bridge Model φ_b' (peach-colored module), which also includes a feature extractor (orange network) and a classifier (peach trapezoid with a lock icon, indicating it is frozen or not updated). The bridge model receives input from both labeled source data (via 'DMG' — Domain Mapping Generation) and unlabeled target data (illustrated with images of a ship and a lighthouse) via 'TMA' — Target Model Adaptation. The bridge model’s feature extractor is updated using Exponential Moving Average (EMA) from the source model. The bridge model then generates pseudo-labels for the target data, which are used to train the 'Target Model φ_t' (green module) through 'Alignment'. The target model has a green feature extractor and classifier, and it is trained using unlabeled target data. The target model’s outputs connect to multiple loss functions: L_align, L_sl (alignment and self-supervised losses), and L_im (image-level loss). The overall flow shows a decoupled training strategy where the bridge model acts as an intermediary to improve pseudo-label quality before adapting the final target model.\n\nConnections are color-coded: blue arrows represent source data flow, orange arrows indicate DMG and bridge model interactions, and green arrows denote TMA and target model training. Loss functions are shown as colored rectangles with mathematical symbols, positioned to the right of the respective models they correspond to. The figure emphasizes that the proposed method avoids direct adaptation by introducing a bridge model to mitigate domain shift and enhance adaptation performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

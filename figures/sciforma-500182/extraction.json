@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-500182",
+  "record_sha256": "c01e81c67e5a10ff8a58c8b535fd30884b70596ba53e29859e007d6607fca543",
+  "asset_sha256": "de3b0de57befb4f7d7a9bfb98930c0503445779af5dff7280d460c83046cc1dd",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500182",
+    "title": {
+      "zh": "BgGPT 1.0: Extending English-centric LLMs to other languages · 方法图",
+      "en": "BgGPT 1.0: Extending English-centric LLMs to other languages"
+    },
+    "paper": {
+      "id": "arxiv-2412-10893",
+      "title": "BgGPT 1.0: Extending English-centric LLMs to other languages",
+      "authors": [
+        "Anton Alexandrov",
+        "Veselin Raychev",
+        "Dimitar I. Dimitrov",
+        "Ce Zhang",
+        "Martin Vechev",
+        "Kristina Toutanova"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10893",
+      "arxiv_url": "https://arxiv.org/abs/2412.10893",
+      "arxiv_id": "2412.10893",
+      "arxiv_first_submitted_at": "2024-12-14T16:49:52Z",
+      "arxiv_updated_at": "2024-12-14T16:49:52Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500182/image/image.jpg?Expires=1790835166&Signature=usJ1z9ElJlI9OXmzSG2-5sKNib1vJfTnJJoSmO3u1KNPaXuB2uq~ZZKsjDsM1rRVBiRbhzu~mxxQ6BqsFJdNAj7dWbf2QRkKcDoqLMNRQdeIswEYBcw0noOJptY5Ie6WiDwi1rtfV0ZnX8n-Y7ghtfETRjmX3jcvkO0O0m3YdttSFgSqSY4ZYhYvXhn8et3katxOZveDh9Ow25VhoeYvFcWuEDJGl8siJum0oX1pu7AGC7rArZpTAbCg3H195dTMBAkcak~Xf6waLp0J3tPgMRmcC7FV2K7uTogSODAAigZlaCe5zTA1eZhBb3ehNRR2iSfjikzKNp~CLioYXkzDNQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500182,
+      "description_sha256": "30de5551f74e618f5656fe867d2a4b894abfaad145f7cee6a7c868a3c31c390c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the BgGPT training process, structured as a flowchart with a vertical progression of stages. The global layout consists of two main input sources on the left: 'Start Model Gemma-2' and 'Instruct Model Gemma-2-it', both represented as gray rectangular boxes. These feed into a central column of operations labeled 'Continuous pretraining', which is enclosed in a light gray background rectangle spanning the entire height of the diagram. This central column contains alternating green and purple boxes representing training steps and merge operations, respectively. The process is divided into four sequential phases, each involving two training steps followed by a merge operation.\n\nVisual modules include green rounded rectangles labeled 'Train on G1', 'Train on G2', etc., indicating training on specific data partitions G1 through G8. Each training step is followed by a merge operation shown in purple rounded rectangles, such as 'Merge G1 ⊕ G2', where ⊕ denotes a merging or combination operation. The final merge operation, 'Merge G7 ⊕ (G8 ⊕ IT)', is highlighted in red and explicitly labeled as the 'BgGPT base model', signifying the output of the entire pipeline. The 'IT' component appears in multiple merges, suggesting it represents an instruction-tuning component derived from the 'Instruct Model Gemma-2-it'.\n\nConnections are represented by black arrows indicating the direction of data flow. From the 'Start Model Gemma-2', two parallel arrows lead to 'Train on G1' and 'Train on G2', whose outputs converge at the first merge node. Similarly, subsequent training steps branch out from the previous merge result, with 'Train on G3' and 'Train on G4' receiving input from the first merge, and so on. The 'Instruct Model Gemma-2-it' connects directly to the 'Merge G4 ⊕ IT' node, indicating that the instruction-tuned component is introduced at this stage. The final merge node receives inputs from 'Train on G7', 'Train on G8', and the intermediate 'Merge G8 ⊕ IT', which itself is fed from 'Train on G8' and the 'Instruct Model'. All connections are unidirectional, forming a clear, hierarchical, and sequential workflow. The figure caption clarifies that the training data is partitioned into eight segments G1–G8, and the process alternates between training (green boxes) and merging (⊕ operations), culminating in the BgGPT base model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

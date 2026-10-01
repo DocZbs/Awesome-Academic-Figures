@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500160",
+  "record_sha256": "3895406e9c7bf653b12c0b76c737247f6cba2fb798ac5ec883b8c00275caee47",
+  "asset_sha256": "fb5c4da4bba976d728ed5e7c2c8277c45955d5ca27a29dc7fcc4dd3186d800a4",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500160",
+    "title": {
+      "zh": "Deep Learning Models for Colloidal Nanocrystal Synthesis · 方法图",
+      "en": "Deep Learning Models for Colloidal Nanocrystal Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-10838",
+      "title": "Deep Learning Models for Colloidal Nanocrystal Synthesis",
+      "authors": [
+        "Kai Gu",
+        "Yingping Liang",
+        "Jiaming Su",
+        "Peihan Sun",
+        "Jia Peng",
+        "Naihua Miao",
+        "Zhimei Sun",
+        "Ying Fu",
+        "Haizheng Zhong",
+        "Jun Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10838",
+      "arxiv_url": "https://arxiv.org/abs/2412.10838",
+      "arxiv_id": "2412.10838",
+      "arxiv_first_submitted_at": "2024-12-14T14:18:59Z",
+      "arxiv_updated_at": "2024-12-14T14:18:59Z",
+      "arxiv_subjects": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.app-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500160/image/image.jpg?Expires=1790835166&Signature=RVnNTHR896f5Q0bEhZce-1sRO1e8ZB5ifIYEgcEDo0DBDSN8B094w6BH1ZfaxFEEKS5NNQgpTBzQxDDVqTk5br3Hqhtwxj8jTKjSgTZ-MQy0CfYLwjs7INBH~bdhsIeQu1mMg0p3-Xmt3dkR46n2wOkmFH4w~CFFGnrjomYY~v8WMf9ryoxc~5C6-JyO1X0RQ~i-9BsrvQtyj96wfOFWKYtGZ6ThW5CzLFGr9Ktwumv9iw56vmvGL18orjdzVcdKE0~kLjsWRg-EAluguYie4QlbiiQ45SNp8LhmokD0Fy16fSOdB~8C8iKxdhXUPNeMB3P3i1WPgEPX50wcR6-n8A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500160,
+      "description_sha256": "c6d4415e26d2d0314c97feb598505cf47e6c9042f8fc996ef064db3d36eaf58a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.app-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part workflow for generating chemical descriptors from material recipes using computational methods and graph neural networks (GNNs). Part (a) outlines the pretraining phase: starting with a list of chemical formulas extracted from recipes—PbO, Se, OA, and TOP—these are processed through two parallel pathways. The first uses the Materials Project database to obtain known 3D crystal structures for PbO and Se, depicted as ball-and-stick models within cubic unit cells. The second applies Density Functional Theory (DFT) with geometry optimization to generate 3D molecular structures for OA and TOP, shown as extended chain-like organic molecules. These four 3D structures are then fed into a GNN model, represented as a hexagonal ring of nodes with input feature vectors (colored green, purple, and gray), which undergoes a 'Pretrain-finetune' process. The output is a set of chemical descriptors, each corresponding to one of the four components, visualized as colored rectangular blocks labeled PbO, Se, OA, and TOP.\n\nPart (b) illustrates the inference or application phase for predicting properties of composite materials. It begins with a vertical stack of input features, including temperature variables (T_i, T_j, ...) and molecular identifiers (Mol.PbO, Mol.Se, Mol.OA, Mol.TOP) alongside their respective chemical components (PbO, Se, OA, TOP). These inputs are transformed into initial atomic configurations: PbO is shown as a simple diatomic unit (gray and red spheres), while Se, OA, and TOP are represented as their respective 3D molecular structures. These initial configurations are combined to form an intermediate configuration, which is then subjected to DFT-based geometry optimization, resulting in a refined structure. This optimized structure is passed to the same GNN model as in part (a), again represented by a hexagonal node network with input feature vectors. The output is a vertical stack of predicted properties or descriptors, including 'Mol.', 'PbO-OA', and 'PbO-OA', indicating the model's ability to predict properties of composite systems. The entire diagram uses consistent visual elements: black arrows indicate data flow, dashed boxes group related steps, and color-coded blocks denote different chemical entities. The GNN is consistently depicted as a hexagon with six nodes, emphasizing its role as a central processing module in both phases."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

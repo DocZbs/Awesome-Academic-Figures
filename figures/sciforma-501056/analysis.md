@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SitPose: Real-Time Detection of Sitting Posture and Sedentary Behavior Using Ensemble Learning With Depth Sensor — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12216
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a machine learning ensemble framework for detecting sitting posture and sedentary habits. The global layout is a top-down flowchart with distinct stages: training, prediction, and final classification. At the top, a document icon labeled 'Train Set' feeds into a dashed rectangular box containing three base models: SVM (Support Vector Machine), DT (Decision Tree), and MLP (Multilayer Perceptron). These models are represented as colored rectangles—SVM in light orange, DT in yellow, and MLP in light green—with bold black text labels. An arrow from the Train Set points downward to these models, accompanied by the label 'Train base models', indicating that the training data is used to train each model individually.
+
+Below this training stage, another dashed rectangular box contains three rounded rectangles labeled P1, P2, and P3, representing the probability outputs from the respective SVM, DT, and MLP models. A horizontal arrow from a 'Test Set' document icon on the left enters this prediction stage, feeding input data into the three base models simultaneously. Each model produces its probability output (P1, P2, P3), which are then combined via a downward arrow labeled 'Weighted Voting'.
+
+This leads to a large, light blue rounded rectangle labeled 'Soft voting', which aggregates the probability outputs from the base models using a weighted voting strategy. From this soft voting module, a single arrow descends to a tag-shaped icon labeled 'Predict sitting posture', with an accompanying text annotation: 'Choosing the class with the highest probability'. This indicates that the final prediction is made by selecting the class associated with the maximum aggregated probability from the soft voting step.
+
+The visual structure uses consistent dark blue borders and arrows, with clear labeling and color-coding to distinguish between different components. The dashed boxes group related stages: the upper box for model training and the lower box for prediction and probability generation. The entire process follows a logical sequence: training base models on the train set, applying them to the test set to obtain individual probabilities, combining those probabilities via soft voting, and finally selecting the most probable class for the sitting posture prediction.

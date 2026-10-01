@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501035",
+  "record_sha256": "6cefa44fdb7b2a61da8ccf04114c53c5430104b8b687354b23f4ee8a2c7da6b2",
+  "asset_sha256": "0b01fdf0bc0302253301c3ff5386d31c84bad5777a496be0bb68bb37e951bb67",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501035",
+    "title": {
+      "zh": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks · 方法图",
+      "en": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12194",
+      "title": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks",
+      "authors": [
+        "Yi Hao Puah",
+        "Anh Tu Ngo",
+        "Nandish Chattopadhyay",
+        "Anupam Chattopadhyay"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_id": "2412.12194",
+      "arxiv_first_submitted_at": "2024-12-14T06:38:01Z",
+      "arxiv_updated_at": "2024-12-14T06:38:01Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501035/image/image.jpg?Expires=1790835183&Signature=K5~BHw9OaXBN0AEwEkospS0LSkm0Ev6~Dlf93wCIuvmkqKrWu9nN5te9VFBuhAR915k0WrwojF6D5lZ8zlnIZHUflJooGweAz7E7yivJMbyTbUlcTUB1SN2DfFmusUUR9uEd9STk6T63eJEDx0Hb3Jiyw6kdXBh8mK0jmcumtW4os4qP7bBtaL6NzwQEU1MrlClS5gVzbp9HNBWS1tl-iCWIaWiFn7~s15Hl0Lvp-pTzY~r8z3gf2wLwdvFlNdJa0QNh8p~D80mUVDC02DvwCmfw54LHgefXRS6uhvnZgcYXNYKr~8~Mio4Bme1nc7yUy6jyQc4huahQLhLHjfhD9Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501035,
+      "description_sha256": "05a5023f14e07a859e77e4457dda8ff269fe5ea036f9189289e4794f30cef70c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the BlockDoor framework, designed to detect and thwart backdoor attacks on watermarked machine learning models by identifying three distinct types of trigger-based attacks. The global layout is divided into two main sections: the left side shows the initial setup and detection process, while the right side details the three specific trigger types and their corresponding detection mechanisms within the BlockDoor system.\n\nOn the left, a 'Watermarked Model' is depicted as a black grid with a green fingerprint icon, symbolizing a model protected by a watermark. This model is subjected to a 'Check for watermarks' process, represented by a red question mark. If the check fails, a red padlock icon appears, indicating a compromised or potentially backdoored model, which then triggers an alert shown by a running stick figure carrying a bag, symbolizing an attack or breach.\n\nTwo data sets are input into the system: the 'Test Set', containing test samples and labels (represented by blue folder and document icons), and the 'Trigger Set', containing trigger samples and labels (represented by purple key and document icons). These are used in two parallel paths: 'Inference' and 'Verification'.\n\nThe 'Inference' path uses the Test Set to evaluate the model's performance. A diamond-shaped decision node labeled 'Accuracy as Expected?' checks if the model’s accuracy meets expected standards. If yes, a green thumbs-up icon indicates success; if not, it may suggest tampering.\n\nThe 'Verification' path, marked by a red magnifying glass, routes the Trigger Set through a pink rectangular module labeled 'Wrapper', which contains the 'BlockDoor' system. Inside this wrapper, the same 'Accuracy as Expected?' decision node is applied to the Trigger Set. If accuracy is not as expected, a red thumbs-down icon appears, signaling a detected backdoor.\n\nOn the right side, three detailed diagrams illustrate the three types of triggers that BlockDoor can detect:\n\n1. **Adversarial Trigger**: Shown in a white box with a purple border, this trigger uses a modified input that passes through an autoencoder. The output is either an adversarial image (if the model is compromised) or a normal image. The reconstructed image is then fed to a 'Potential Watermarked Model' to predict a label. The presence of an adversarial output indicates a backdoor.\n\n2. **Out-of-Distribution (OOD) Trigger**: Depicted in a green-bordered box, this trigger uses an OOD detection model. An image input is classified as either OOD or from the original distribution. If the model outputs a label for an OOD sample, it suggests a backdoor, as the model should not respond to out-of-distribution inputs.\n\n3. **Random Labels Trigger**: Shown in a white box with a purple border, this trigger uses a secondary model (e.g., VGG16 BN) to generate a label y from convolutional layer outputs. The potential watermarked model produces a label x. If label y does not equal label x, the system flags a backdoor. A random image with a label (e.g., 'Label (Not X)') is shown with a red 'X' if mismatched, or a green checkmark if matched, indicating whether the model is behaving correctly.\n\nThe entire system is designed to verify the integrity of a watermarked model by testing its response to both normal and trigger inputs, using the BlockDoor wrapper to detect anomalies in accuracy, thereby preventing backdoor attacks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

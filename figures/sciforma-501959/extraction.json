@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501959",
+  "record_sha256": "810354e71d198b51353e94ad3fe03fd61ae235be92e14a7e5d74037c50d241d9",
+  "asset_sha256": "cce6ff5603f073f2ed7474c307593689064b0214b54cab3d7b8f9fc99e09ad98",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501959",
+    "title": {
+      "zh": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks · 方法图",
+      "en": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13724",
+      "title": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks",
+      "authors": [
+        "Muhammad Sohail Ibrahim",
+        "Muhammad Usman",
+        "Jeong-A Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_id": "2412.13724",
+      "arxiv_first_submitted_at": "2024-12-18T11:04:58Z",
+      "arxiv_updated_at": "2025-05-13T11:19:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501959/image/image.jpg?Expires=1790835209&Signature=qywJP2mKzjquFXOk7UOEETvsthEhiw3YpA~nJwU10VzRdqMlxR61DMsxhxHf9OI29X0pwh9fl0OpX9vBc2tzWrjpOhwXRuECrXat~fC-Yd8j0PCTCZF2oYLPs2OC8buHDjBmpbHewWDt070TUuBtBTiCtl~NcS-deEsFAH7lxUZGOEdemkWyDTJWLuFF5wm0fH~UDa9hxpt6PcopUg7t2kauPmmUpirX5p0XNQ7Gv7KyCdtJI5OmfwNDaFjLcG2VCcc39~JzXZVp5~NcruV8KYaUHLxAIECc6YZWkWC2SnLo~B7516mc6MEHuWI5YZm1apOIzSd0sf~as05L5DT8kQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501959,
+      "description_sha256": "7221815ebf7015a3e410c3ed9309dba7d1f37d52a609223d8324c7d1997f8598",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an overall architectural design for a hierarchical processing system, likely used in deep learning or computer vision applications, featuring a multi-level pyramid structure for feature extraction and activation management. The global layout is organized into three main vertical zones: a left-side control and memory interface section, a central processing pipeline composed of multiple pyramid levels, and a right-side interconnect system for activation buffer communication.\n\nOn the left, a blue rectangular block labeled 'CCU' (Control and Configuration Unit) serves as the primary controller. It connects via solid black arrows to a light green vertical rectangle labeled 'DRAM Interface', which in turn interfaces bidirectionally with a gray cylinder labeled 'DRAM' at the bottom, representing external memory access. The CCU also sends control signals to each level of the pyramid via solid black lines.\n\nThe central processing pipeline consists of Q levels, denoted as 'Pyramid Level-1', 'Pyramid Level-2', ..., up to 'Pyramid Level-Q', each represented by a gray rounded rectangle. Each pyramid level outputs to a light blue rounded rectangle labeled 'Activation Buffer'. From each Activation Buffer, a solid black arrow leads to a dashed blue rounded rectangle labeled 'MaxPool', indicating a max-pooling operation. The MaxPool output then feeds into the next pyramid level, forming a cascading hierarchy. The final Pyramid Level-Q outputs to its own Activation Buffer, which has no subsequent MaxPool, suggesting it is the last stage in the processing chain.\n\nDotted green arrows, as specified in the caption, represent filter or weight data. These originate from the DRAM Interface and branch out to each pyramid level, indicating that weights are loaded from memory and distributed to all levels for computation. Additionally, there are dotted green arrows from the DRAM Interface to the Activation Buffers, possibly indicating weight updates or initialization.\n\nOn the right side, a tall light green rectangle labeled 'Activation Buffer Interconnects' is shown with bidirectional solid black arrows connecting it to each Activation Buffer in the central pipeline. This suggests a shared memory or communication bus that allows the activation buffers to exchange data or be synchronized across levels.\n\nThe entire system is enclosed within a large curved bracket on the right, visually grouping the pyramid levels and their associated components, emphasizing the modular and hierarchical nature of the architecture. The use of different colors and line styles—solid black for data/control flow, dotted green for weights, and dashed outlines for MaxPool—helps distinguish functional roles within the system."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

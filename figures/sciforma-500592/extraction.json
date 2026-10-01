@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500592",
+  "record_sha256": "d2497d0e6639913be5f54fd0533cdcf9721830b2d6a56ddb01d848d4b6aaa1f3",
+  "asset_sha256": "260ddbec8bb8cb3ee0787e606b9a86cd5f5b4db27a9a1c551c5cd03c5a1601f7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500592",
+    "title": {
+      "zh": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer · 方法图",
+      "en": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11540",
+      "title": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer",
+      "authors": [
+        "Jiaxu Wan",
+        "Hong Zhang",
+        "Ziqi He",
+        "Yangyan Deng",
+        "Qishu Wang",
+        "Ding Yuan",
+        "Yifan Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_id": "2412.11540",
+      "arxiv_first_submitted_at": "2024-12-16T08:21:09Z",
+      "arxiv_updated_at": "2025-07-11T10:38:22Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500592/image/image.jpg?Expires=1790835172&Signature=GDH2y-v2BV4nlHRVxGEKixPuTfKe1~bc5gu42enen80ce3lJYQcnOyMDMfl2tdM0hXawuaHLbvjA83PiJ8g0rAIUVWXXpbRLa7QMoCR~VYl715muPkoEQR2CzggLpvm9~7-AaTEttuRXKhApryEsabOdvlslBZrewWrhO~1bMYaOEfgMWfkEXc8QUZFOOBZBny9iSmgv29ynePXlrGY5BpnsOY8~nkbWpGcMMLI7pIQ2QbXIHoSqpPyD7zZNWPvRqLCvwPqfhPp5PGzghycUJpLlN8hQJi2o7PkkQZn6siS0CLOF9Lgf2-61~ivtOr3tcs6P4fdTvgMKq3QDUb-Khg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500592,
+      "description_sha256": "391e17a56aca6c3a17f2823a5c6774c352ccd8abd0ca73adc727815ea46af6a6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct architectural modules for feature interaction and fusion in a neural network context, labeled (a) Sparse Proxy Attention (Point to Proxy) and (b) SA-based Proxy Fusion. Both diagrams are vertically structured, showing a data flow from bottom to top, with input features at the base and output features at the top.\n\nIn diagram (a), the Sparse Proxy Attention module begins with two input features: 'Proxy Feature' of size m × d and 'Point Feature' of size n × d. These inputs are processed by three separate linear layers: 'Query Linear', 'Key Linear', and 'Value Linear'. The 'Query Linear' layer takes the Proxy Feature and outputs a Query tensor of size m × h × d/h. The 'Key Linear' and 'Value Linear' layers take the Point Feature and produce Key and Value tensors, both of size n × h × d/h. These three tensors are then fed into a block labeled 'Sparse Matmul & Softmax', which is enclosed within a dashed orange rectangle indicating a grouped operation. This block receives an additional input labeled 'TRE' (likely Temporal or Structural Encoding) on its left side. The output of this block feeds into a 'Sparse Matmul' layer, which produces an intermediate result. Finally, this result is passed through a 'Concat & Output Linear' layer, yielding the 'Output Feature' of size m × d.\n\nDiagram (b), SA-based Proxy Fusion, follows a similar structure but with key differences. It also starts with 'Proxy Feature' (m × d) and 'Point Feature' (n × d). The 'Query Linear' layer processes the Proxy Feature to generate a Query tensor of size m × h × d/h. The 'Key Linear' and 'Value Linear' layers process the same Proxy Feature to produce Key and Value tensors, both of size m × h × d/h — note that here, the Key and Value are derived from the Proxy Feature rather than the Point Feature. These three tensors are then input into a 'Self-Attention with TRE' block, which also receives the 'TRE' input on its left. The output of this self-attention block is passed to a 'Concat & Output Linear' layer, resulting in the 'Output Proxy Feature' of size m × d.\n\nVisually, all linear layers are represented as gray rectangular boxes. The 'Sparse Matmul & Softmax' block in (a) is a light pink rectangle, while the 'Sparse Matmul' block above it is a light yellow rectangle, both enclosed in a dashed orange border. In (b), the 'Self-Attention with TRE' block is a gray rectangle. All connections are indicated by solid black arrows pointing upward, signifying the forward pass. The figure includes explicit dimension annotations for each tensor, and the two subfigures are clearly labeled at the bottom with their respective titles."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

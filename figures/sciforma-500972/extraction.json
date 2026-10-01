@@ -1,0 +1,102 @@
+{
+  "id": "sciforma-500972",
+  "record_sha256": "6ebd0fae433d9b7b055d9d360edcacc7eee08ce264065a219b44bfda071ef46a",
+  "asset_sha256": "0a52a66b3a8ded44700d36cd5f8a8504dd12d27f890092a1de4ba96b22e08779",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500972",
+    "title": {
+      "zh": "Mastering Board Games by External and Internal Planning with Language Models · 方法图",
+      "en": "Mastering Board Games by External and Internal Planning with Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12119",
+      "title": "Mastering Board Games by External and Internal Planning with Language Models",
+      "authors": [
+        "John Schultz",
+        "Jakub Adamek",
+        "Matej Jusup",
+        "Marc Lanctot",
+        "Michael Kaisers",
+        "Sarah Perrin",
+        "Daniel Hennes",
+        "Jeremy Shar",
+        "Cannada Lewis",
+        "Anian Ruoss",
+        "Tom Zahavy",
+        "Petar Veličković",
+        "Laurel Prince",
+        "Satinder Singh",
+        "Eric Malmi",
+        "Nenad Tomašev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_url": "https://arxiv.org/abs/2412.12119",
+      "arxiv_id": "2412.12119",
+      "arxiv_first_submitted_at": "2024-12-02T18:56:51Z",
+      "arxiv_updated_at": "2025-05-23T01:35:09Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500972/image/image.jpg?Expires=1790835182&Signature=pBAqN5G4nS1BxpA0A9RJBIgx~zW0MJbh7bO4kaUE~eyEW6Z-jctTV1nbQgyi0ZLoyRNBKXp2imLShxenvolWssoWmFZroNNUMMWIuMqBS-5UtUg~E20w79DxFgywiX-yFjdY6AXprKTeCew5MtMUVGKGq-~~IHK9b-aua1QUJsdVGXWe7wAkwlGjLq1HjaVW~CTX69IY32tP1OjhixnmH683mV9KuCOl6oQML~3UjURR7tDUhwo86bW20-tHCQwK5Qp5WqSvtLoUSt5h93cu3ETsH1dbbvET0esgEZ588logXKLvApQE2EovXVT5yktX9Lvt4Z9hP40y0u3SCjcwtQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500972,
+      "description_sha256": "ba5e08c60d9c1450bea8aaacfca8c410a32cb38a23d2c9f7593788e564050699",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a state-tracking Monte Carlo Tree Search (MCTS) framework augmented with a learned world model, specifically applied to a chess game. The global layout is hierarchical and tree-like, starting from a root node at the top, which displays a chessboard configuration labeled 'Root node of search'. This board shows pieces in mid-game positions, with the white king highlighted in yellow on e8, indicating the current player's perspective. From this root, three primary branches extend downward, each representing a possible move: queen to a3 (♕a3), bishop to b5 (♗b5), and knight to c7 (♘c7). These branches lead to circular nodes, symbolizing intermediate states in the search tree.\n\nThe central focus of the diagram is a highlighted path through the tree, marked by thick blue arrows. This path follows the move ♗b5 to a light-blue circular node labeled 's', representing the current state. From 's', a red arrow points to a cloud-shaped module labeled 'MAV(s, a)', which stands for Model-based Action Value function. This module represents the learned world model that takes the current state 's' and an action 'a' (here specified as ♛×c6) as input. A red arrow from 'MAV(s, a)' leads to a gray rectangular box listing four sequential steps: 1. New state, s'; 2. Check if s' is terminal; 3. Legal moves a₁, ..., aₙ; 4. Action values Q^(b)(s', aᵢ). This box encapsulates the output of the world model, which simulates the transition to a new state and computes the action values for the next level of the search.\n\nFrom the 'MAV(s, a)' module, a red arrow also points back to the state 's', indicating feedback or evaluation. The output state 's'' is represented by a pink dashed circle, signifying a newly generated state after applying the action. From 's'', dashed lines branch out to represent potential next actions: a₁ = ♜h7, a₂ = ♟g5, and aₙ = ♛a1, each leading to unrendered child nodes, suggesting further expansion in the search tree. The visual modules use distinct shapes and colors: the chessboard is a grid with shaded squares; state nodes are circles (light gray for unselected, light blue for current, pink dashed for new); the world model is a beige cloud; and the step list is a gray rectangle. Text labels include chess notation, state variables (s, s'), and mathematical expressions like Q^(b)(s', aᵢ). The connections are primarily directed arrows: black for general tree edges, blue for the selected path, and red for interactions with the world model. The overall structure conveys a loop where the MCTS explores the game tree, and at each node, the learned model predicts the next state and action values, enabling efficient simulation and decision-making."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

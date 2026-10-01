@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-500883",
+  "record_sha256": "ce740e79261fc334e23818d5db39191c418139a981de551e979a300ab814c5d4",
+  "asset_sha256": "248d8308712df8e454be3299f9e1b2bb70d5f88dc799cc56f27d2b8a8b7b8886",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500883",
+    "title": {
+      "zh": "Inferring Functionality of Attention Heads from their Parameters · 方法图",
+      "en": "Inferring Functionality of Attention Heads from their Parameters"
+    },
+    "paper": {
+      "id": "arxiv-2412-11965",
+      "title": "Inferring Functionality of Attention Heads from their Parameters",
+      "authors": [
+        "Amit Elhelo",
+        "Mor Geva"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11965",
+      "arxiv_url": "https://arxiv.org/abs/2412.11965",
+      "arxiv_id": "2412.11965",
+      "arxiv_first_submitted_at": "2024-12-16T16:45:33Z",
+      "arxiv_updated_at": "2025-06-01T15:37:01Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500883/image/image.jpg?Expires=1790835177&Signature=lHW250caJNoonZjgLTDNgnPkNdh4WUGV-bi4En4WVPPRLDj0z28qa7w7~cDwggSjUE~VEx6BVxVPEGIvNNr7NpcbwXuhq0mOavW5LQvBW0jg78TVM~o1daBmciRc38t2QdPSkXYmdORifEqKIiIOS-ULODeBga4Qmd1wQrvD-0Dm8hM0afOwFVcNg-q5jkReTBROsMGW1fskL2LmfE9RElOMRYktjZjGi5mjRAlvF9HSm2WbDjLUtc722UvwRuoseOiKHqEImE5vGG7KtQQsCAtoVRri0-uHCZ8QmuMsbPIr~eLz-8~NRkVCEK-iUYqPsYGXN0PRMpkTmOqn450~hw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500883,
+      "description_sha256": "4c30045f14847c7f84c971af35482cc96bc2c80b0869073011f240c4c3fd17d8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a framework for inferring the functionality of attention heads in large language models (LLMs) by analyzing their parameter mappings. The global layout is divided into two main sections: an upper section depicting the architectural components of a multi-head attention layer and its projection to the vocabulary, and a lower section demonstrating two methods for interpreting the head’s functionality through token pair analysis.\n\nIn the upper section, a multi-head attention layer is shown as a teal-bordered box containing multiple attention heads, each represented by a vertical stack of two rectangular blocks labeled W^1_VO (teal) and W^1_QK (gray), extending to W^n_VO (yellow) and W^n_QK (gray) for the nth head. A magnifying glass labeled 'h' points to one such head, indicating focus on individual head parameters. From this head, a curved arrow leads to a large square matrix labeled M, representing the projection of the head’s parameters onto the vocabulary space. This matrix has dimensions |V| × |V|, where |V| denotes the size of the vocabulary, and is visually depicted as a grid with varying shades of yellow and beige, indicating different weight values or attention scores between token pairs.\n\nThe lower section, enclosed in a dashed border, is titled 'Inferring functionality by analyzing mappings between tokens' and presents two distinct approaches. Section A, labeled 'Evaluating the head’s implementation of a predefined operation,' shows a sub-matrix with rows labeled 'France,' 'Germany,' 'Egypt' and columns labeled 'Cairo,' 'Paris,' 'Berlin.' The cells are shaded in yellow and gray, with higher yellow intensity indicating stronger attention scores. Below this matrix, the label 'Country to capital' is displayed with a score of 0.7, suggesting the head’s performance in mapping countries to their capitals.\n\nSection B, labeled 'Inspecting the head’s salient operations,' displays another sub-matrix with rows 'Tomas,' 'Donna' and columns 'tommi,' 'Don,' 'Tom.' Again, yellow shading indicates strong attention links, particularly between 'Tomas' and 'Tom,' and 'Donna' and 'Don.' Below this, the label 'Name variations' is shown with a score of 0.9, indicating a high correlation for name-related transformations. A small robot icon is placed next to this label, adding a visual cue for the concept of name variation detection.\n\nArrows connect the multi-head attention layer to the matrix M, and from M to both sections A and B, illustrating the flow from model parameters to functional interpretation. The overall structure emphasizes that the framework treats each attention head as a matrix M over the vocabulary, and then analyzes specific sub-matrices to evaluate predefined operations (A) or discover salient operations (B) based on token-to-token mappings."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

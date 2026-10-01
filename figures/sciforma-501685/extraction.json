@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501685",
+  "record_sha256": "a9c6a087c0f8d2c750c05db4181fb2ec1b12db2053fdac1d20bdde7ac6fc36a1",
+  "asset_sha256": "bcac16d6eee1a194c8d14686784eb257633fdb0cf2009a2404f006bd449437ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501685",
+    "title": {
+      "zh": "Interpretable deformable image registration: A geometric deep learning perspective · 方法图",
+      "en": "Interpretable deformable image registration: A geometric deep learning perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-13294",
+      "title": "Interpretable deformable image registration: A geometric deep learning perspective",
+      "authors": [
+        "Vasiliki Sideri-Lampretsa",
+        "Nil Stolt-Ansó",
+        "Huaqi Qiu",
+        "Julian McGinnis",
+        "Wenke Karbole",
+        "Martin Menten",
+        "Daniel Rueckert"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13294",
+      "arxiv_url": "https://arxiv.org/abs/2412.13294",
+      "arxiv_id": "2412.13294",
+      "arxiv_first_submitted_at": "2024-12-17T19:47:10Z",
+      "arxiv_updated_at": "2025-03-10T12:42:18Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501685/image/image.jpg?Expires=1790835197&Signature=tw0opsOCk48aCPNoQdu-nXsockwZtwBoPPn8g5U4i~Z5TZR3Y14ZWfWEa05tHBw0KAowMZVv99KUGW0lAXrLJwcrnDDktm8c~F-KtVBAIvfCLRDIDFihaZ-VMNbDRntzEp-TK9vyXnmOf6dag-cwexz-hmUmQP-a-VwA-yqEvozTVrDBKTODXZc4HZiRFZejlHKP3QXIn~guHcK5oU7p3aJc9j3RJYBdEyUmrDCksqXeVeLps7Dhho~-uTD3fW6rjpzHbQCXTQMfTTsMiILLMd29ac851m2AcpMJLxFl~NH6HwugNKmbt8Nsq1B75yc0Mh776ZMynPjLTKWHAZ4s5g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501685,
+      "description_sha256": "38ca091a67f841641230ee0ce230cae118347587f81b517b9436c51505ae9c0f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an architectural overview of a dual-stream feature processing pipeline designed for image transformation tasks. The global layout is horizontal, progressing from left to right, with two parallel streams labeled 'Fixed' (top) and 'Moving' (bottom), representing source and target image inputs respectively. Each stream begins with a series of 3D rectangular blocks symbolizing feature extraction layers—light blue for the Fixed stream and orange for the Moving stream—followed by ellipses indicating intermediate layers. These streams converge into alternating transformation modules, denoted by rectangular blocks containing either the symbol 'τ' (blue/orange split) or 'δ' (solid orange or gradient orange), arranged in sequence from left to right. The 'τ' modules represent transformation operations, while 'δ' modules likely denote deformation or displacement fields. Above each module, upward-pointing arrows indicate output features: φ^L_τ, φ^L_δ, φ^{L−1}_τ, φ^{L−1}_δ, etc., where superscripts denote resolution levels (L being the highest) and subscripts distinguish between transformation (τ) and deformation (δ) outputs. The final module on the right is a vertically stacked block with 'τ' inside, producing φ^1_τ as the lowest-resolution transformation output. Horizontal arrows between modules show the forward flow of data within each stream, while vertical connections from the Fixed stream (blue lines) and Moving stream (orange lines) feed into corresponding modules, indicating that both streams contribute to the transformation computation at each stage. Notably, the caption specifies that the decoder does not pass features across resolutions—only transformations are propagated, which is visually reflected by the absence of cross-resolution feature connections and the presence of only transformation outputs being passed forward. The color coding consistently distinguishes the two input streams and their associated modules, with blue for Fixed and orange for Moving, and the modules themselves are shaded to reflect their dual-input nature. The entire structure emphasizes a hierarchical, multi-resolution processing scheme where transformations are computed and refined progressively from coarse to fine scales."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

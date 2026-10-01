@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501473",
+  "record_sha256": "d70ae997c887708232200acea25cb2804c72bf509646f50933603c8a343b641c",
+  "asset_sha256": "a241aca27c0cd618a42ad6dd0a4bc031d3eb337cc4321908fc8c7051329880e5",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501473",
+    "title": {
+      "zh": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs · 方法图",
+      "en": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12841",
+      "title": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs",
+      "authors": [
+        "Ruikang Ni",
+        "Da Xiao",
+        "Qingye Meng",
+        "Xiangyu Li",
+        "Shihui Zheng",
+        "Hongliang Liang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_id": "2412.12841",
+      "arxiv_first_submitted_at": "2024-12-17T12:10:38Z",
+      "arxiv_updated_at": "2024-12-17T12:10:38Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501473/image/image.jpg?Expires=1790835192&Signature=bTILLU~93TU4zQBWoXouODBm2fRLvH41ZLSCAA~7OxS1fUcLEySsyfSOp0vWvlPsmaShHB41it2m0DDPdw2IFBMUor7fRtnXI2yDnMTOQ8sFht1bhY~nP9ud208buuRwtSoj9zB2VReMDKG2ozT-VritbQ3KnGRjMxFmHjfwSEbWo0MSjAamSMS5RLlHrAm2SVCWVssvIeDN50vU7y3-PUSKPQUr7oAuChKAscbnOJ4AZPGKK8VbInQjkiu4DnBMtyGb4npgc3sVnLfjoXGUhWdmtJ8PokoVxAwqxSPmv-W5P~s65tAhI-q0p8ZcHuVhzcuazPllzbrWZcFYVS6TBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501473,
+      "description_sha256": "db4287934cc1430369d4c69828389e45080923b3dc3872afc797682ab3faa0b9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two types of intervention methods applied to an attention matrix within a transformer-based model, labeled as (a) weak intervention and (b) strong intervention. The global layout consists of two horizontal rows, each representing one intervention type. Each row contains three main components: an original attention matrix on the left, a modified attention matrix in the center, and the resulting updated attention matrix on the right, connected by arrows indicating the transformation process.\n\nIn both rows, the attention matrices are displayed as grids with rows and columns corresponding to tokens in the input sequence: '<s>', '_Apple', '_is', '_a', '_kind', '_of', '_fruit'. The values in the matrices represent attention weights, with decimal numbers ranging from 0.00 to 1.00. The token '_of' is highlighted in yellow in the original matrices, indicating it is the target of intervention.\n\nIn part (a), 'weak intervention', the central component is a gray box labeled 'Attention matrix for other heads', which contains only the row corresponding to the '_of' token, highlighted in cyan. This row is shown being replaced into the original matrix, replacing the yellow-highlighted row. The resulting matrix on the right shows the updated attention weights for the '_of' token, with the cyan row now integrated into the original matrix, while all other rows remain unchanged.\n\nIn part (b), 'strong intervention', the central component is a gray box labeled 'Manually-generated attention matrix', again showing only the row for '_of', but this time highlighted in red. The values in this row are [0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00], indicating a complete focus on the second token ('_Apple'). This row replaces the original yellow-highlighted row in the left matrix, producing the final matrix on the right, where the '_of' token now exclusively attends to '_Apple'.\n\nArrows indicate the flow of information: a thick black arrow points from the central modified row to the left matrix, and a double black equals sign connects the central row to the right matrix, symbolizing replacement or assignment. The figure visually demonstrates how selectively modifying a single row in the attention matrix—either by using a learned or manually crafted version—can alter the model’s behavior, with 'weak' intervention preserving some original context and 'strong' intervention enforcing a specific, deterministic attention pattern."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

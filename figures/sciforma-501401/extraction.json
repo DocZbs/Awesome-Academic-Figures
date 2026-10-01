@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501401",
+  "record_sha256": "3f216bdd201c28bc95f294654eb6845e9cfcad3332efb1565de0387abe03c7b8",
+  "asset_sha256": "9e91723052347b36d3e0c7201230be2ac85cd53f2d3a080702fb156dfb9c3896",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501401",
+    "title": {
+      "zh": "EventFull: Complete and Consistent Event Relation Annotation · 方法图",
+      "en": "EventFull: Complete and Consistent Event Relation Annotation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12733",
+      "title": "EventFull: Complete and Consistent Event Relation Annotation",
+      "authors": [
+        "Alon Eirew",
+        "Eviatar Nachshoni",
+        "Aviv Slobodkin",
+        "Ido Dagan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12733",
+      "arxiv_url": "https://arxiv.org/abs/2412.12733",
+      "arxiv_id": "2412.12733",
+      "arxiv_first_submitted_at": "2024-12-17T09:55:41Z",
+      "arxiv_updated_at": "2024-12-17T09:55:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501401/image/image.jpg?Expires=1790835191&Signature=aEFa-CW7yHF8hA7Bl4y2B5cnK06s9uRB9on3DtD4wtCH92xRfdom319A5yV--iw9IcEhj~RiW7fSQf01EmGS8iZkK6bsEMcf-lChq2bTxEU~wIS529uoP8hI0ZFcBwmYjL5TbQTxpEYF66fvJ2Qj91NRkd7aLZmP0Bw6JccanTQkBJSm3ksHnvNA0FcC9UW0UZoT~LCQpoyi8r0MXDI7jRbjafjjbJL3q0S4G8lF6vfaOTfAflkP65pSH6~QHRyY4mV1vHWLh3Gv-N3HWw3rtXCfmqbk9Tl1Bax-HLrxOkpg~kPpIl3DIuvm~m8A3CgKv87QRrCEh2pxBmkZJEhB9w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501401,
+      "description_sha256": "c0e70a4e0218c9e8f88f3bca84e1e43328545afc9d295e6dea6b733d399392ec",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage annotation pipeline for event relations, structured as a left-to-right workflow. The global layout consists of four main components: an initial input box labeled 'Targeted Events' on the far left, followed by three sequential annotation stages labeled [1] Temporal Relation Annotation, [2] Coreference Relation Annotation, and [3] Causal Relation Annotation. These stages are connected by thick black arrows indicating the flow of the process.\n\nIn the 'Targeted Events' box, a vertical list of horizontal bars represents events, with some bars highlighted in orange or blue, suggesting different types or categories of selected events. This serves as the input to the first stage.\n\nStage [1] Temporal Relation Annotation begins with three gray rectangular modules stacked vertically: 'Prioritization Strategy', 'Consistency Checking', and 'Transitive Relations Detection'. Each module has a curved arrow pointing to a central diagram depicting a network of four dark blue circular nodes representing events. The nodes are connected by labeled edges: solid blue arrows labeled 'Before' indicate definite temporal precedence; dashed green lines labeled 'Vague' represent uncertain temporal relations; and a dotted black line labeled 'Equal' denotes simultaneous events. The connections from the three gray modules to this diagram suggest they are processing or validation steps applied during temporal annotation.\n\nStage [2] Coreference Relation Annotation is represented by a diagram containing several dark blue circular nodes grouped into clusters enclosed by dashed circles. These clusters indicate sets of event mentions that refer to the same underlying event, illustrating coreference resolution. There are no explicit labels within this stage, but the grouping visually conveys the concept of event mention clustering.\n\nStage [3] Causal Relation Annotation shows a similar setup to Stage [2], with dark blue circular nodes grouped into dashed circles. However, it includes two orange arrows labeled 'Caused', connecting one node outside a cluster to a node inside another cluster, and one node inside a cluster to another node inside the same cluster. These arrows indicate causal relationships between events, with the directionality showing the cause-effect flow.\n\nThe entire diagram uses consistent visual attributes: dark blue circles for events, black thick arrows for stage transitions, and colored lines (blue, green, black, orange) for different types of relations. Text labels are placed directly on or near the relevant elements for clarity. The figure effectively illustrates a stepwise annotation process starting from event selection, progressing through temporal, coreference, and finally causal relation annotation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

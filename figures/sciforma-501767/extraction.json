@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501767",
+  "record_sha256": "9ea95ce1d77b0fe668eb37bfce61cb22981ee0594b8097df57e8a6da1a1aff79",
+  "asset_sha256": "fcebefabd509ec36770c92774b763903335741738bce1f2d6c8e9a002ab2d28f",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501767",
+    "title": {
+      "zh": "Enabling Region-Specific Control via Lassos in Point-Based Colorization · 方法图",
+      "en": "Enabling Region-Specific Control via Lassos in Point-Based Colorization"
+    },
+    "paper": {
+      "id": "arxiv-2412-13469",
+      "title": "Enabling Region-Specific Control via Lassos in Point-Based Colorization",
+      "authors": [
+        "Sanghyeon Lee",
+        "Jooyeol Yun",
+        "Jaegul Choo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13469",
+      "arxiv_url": "https://arxiv.org/abs/2412.13469",
+      "arxiv_id": "2412.13469",
+      "arxiv_first_submitted_at": "2024-12-18T03:35:55Z",
+      "arxiv_updated_at": "2025-01-25T11:59:47Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501767/image/image.jpg?Expires=1790835200&Signature=R49id~1fl3NwJd9n3BkvpcrB5F1qjiuHosMIINtmz7WHv~dhzpSHgK~weQF8K38m5OzqXdiHn7RRr68YQwAu1SDo-8htnO76eIv6ur29oqMrX6CRVwTJr0OFYPi2HtqBXGAsrVYRVReZIaVsPBcnxOeg62yIX3yTkYiQ61uF4lywcaZo20Lxli61XAuuUxR0FTgpQOKRtN-wLyWxaI4OKb5mcqKkq0YRmJlIJOjQO0reKveqEl3DC1iTV6Q3RtPVXhedJ4AeeHfOLLWJcnglHoCiVNSTJ7iBVbVpUtNAX-NjzCU0xfm~hxOdseurSWOmIsHOMc488YO2y-6dHK4~nQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501767,
+      "description_sha256": "dedd4b1e4a0ac8dae3146ab436c98194bc3f7855d6ba7fcc685a73f934437694",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end framework for interactive image colorization, structured into two main stages: Step 1. UI Simulation and Step 2. Forward Process. The global layout is horizontally segmented, with Step 1 on the left depicting user interaction simulation, and Step 2 occupying the central and right portions, illustrating the neural network architecture and data flow. A dashed vertical line separates these two steps.\n\nIn Step 1, UI Simulation, two sampling methods are shown: Lasso Sampling and Color Hint Sampling. Both use the same grayscale fruit-and-drink image as input. In Lasso Sampling, users draw freeform lassos (highlighted in red, yellow, green, orange) around regions of interest; small colored squares inside indicate sampled points. In Color Hint Sampling, users click on specific pixels within the image to extract color hints, represented by colored squares at those locations. These interactions produce paired data: lassos define spatial regions, and color hints provide target colors for those regions.\n\nStep 2 begins with the Forward Process. The grayscale image is divided into patches, forming a grid. Each patch corresponds to a token in the model. The Localization Attention Mask module generates a mask M_l, where each element in the mask corresponds to a patch and is colored differently (e.g., green, pink, yellow) based on whether the patch falls within a lasso region. This mask is then applied during attention computation.\n\nBelow this, the Hint Encoder processes the color hints. It receives two types of tokens: unconditional tokens T_u (orange rectangles) and conditional tokens T_c (light green rectangles), which are passed through a Linear Projection Layer. The output of the Hint Encoder produces key (K) and value (V) vectors for cross-attention.\n\nThe core of the forward process is the Transformer’s Decoder-only Architecture, specifically a localized cross-attention mechanism. The query (Q) comes from the grayscale image tokens T_g (pink rectangles), which are processed via a Linear Projection + Positional Embedding layer. The Q, K, and V are used to compute the attention score QK^T, scaled by √d, and passed through Softmax. The resulting attention map is then element-wise multiplied (⊙) with the localization attention mask M_l, ensuring that only relevant color hints influence the corresponding image regions.\n\nThis modulated attention output is fed into the Decoder, which generates an ab-channel color prediction Î_ab ∈ ℝ^{H×W×2}. This is then added to the original grayscale image I_g to produce the final predicted color image I_pred ∈ ℝ^{H×W×3}, shown as a vibrant, fully colored version of the input image.\n\nConnections are indicated by arrows: dashed blue lines link the sampled lassos and color hints to their respective processing modules. Solid black arrows show the data flow from the Hint Encoder and grayscale tokens into the cross-attention block, and from there to the Decoder. The final output is shown with a ⊕ symbol indicating addition with the grayscale image to form the full-color result."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10861
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a heterogeneous transformer decoder designed for generating tracking features \(\tilde{T}_k^v\) and \(\tilde{T}_k^t\). The overall layout is vertically structured with two parallel processing streams, one for visual tracking features (left) and one for textual tracking features (right), both enclosed within a large rounded rectangular container representing the complete decoder module. At the bottom, a gray rectangular block labeled with four inputs — \(D_k^v\), \(T_{k-1}^v\), \(T_{k-1}^t\), and \(D_k^t\) — feeds into a yellow rectangular module labeled 'Heterogeneous Graph Transformer' (HGT). This HGT serves as the central information integration component, producing intermediate outputs \(\tilde{T}_{k-1}^v\) and \(\tilde{T}_{k-1}^t\), which are then fed upward into their respective streams.
+
+Each stream consists of a sequence of operations: first, the intermediate output \(\tilde{T}_{k-1}^{v/t}\) is passed through a white rectangular 'Linear' layer. Simultaneously, the corresponding \(\tilde{D}_k^{v/t}\) input is processed via a position encoding symbol (a spiral icon) before being summed (via a circle-with-plus icon) with the output of the Linear layer. This combined signal is then fed into a green rectangular 'Deformable Attention' module. The output of Deformable Attention is added (via sum operation) to the original \(\tilde{T}_{k-1}^{v/t}\) input, forming a residual connection. This summed result is then passed through an orange rectangular 'Add & Norm' module, which performs layer normalization and addition. The final outputs of each stream are \(\tilde{T}_k^v\) and \(\tilde{T}_k^t\), respectively, indicated by upward arrows at the top.
+
+Visual attributes include distinct colors for different functional blocks: gray for input, yellow for the HGT, white for Linear layers, green for Deformable Attention, and orange for Add & Norm. All modules are rectangular with black borders. The connections are represented by solid black arrows indicating data flow direction. Two symbols are defined at the bottom: a spiral icon denotes 'Position Encoding', and a circle with a plus sign denotes 'Sum'. The diagram emphasizes a symmetric dual-path design where visual and textual features are processed in parallel but share the same architectural components and flow logic.

@@ -1,0 +1,28 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Leveraging Large Language Models for Effective Label-free Node Classification in Text-Attributed Graphs — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11983
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the pipeline of a proposed algorithm for graph-based semi-supervised learning with active annotation and multi-round self-training, structured into two main stages: 'Initial Annotation with LLMs' and 'Multi-Round Self-Training'.
+
+[1] Global Layout and Structure:
+The diagram is horizontally divided into two major sections. The left section, labeled 'Initial Annotation with LLMs', begins with raw text documents (TAG G) and ends with a set of labeled samples stored in databases. The right section, labeled 'Multi-Round Self-Training', is enclosed in a large dashed box and contains a looped process involving GNNs, sample selection, label refinement, and graph rewiring. A blue arrow connects the output of the initial annotation stage to the start of the self-training loop, indicating the flow of data.
+
+[2] Visual Modules and Attributes:
+In the left section, 'TAG G' is represented by five document icons in different colors (blue, orange, green), connected in a star-like network. These are processed by BERT/Sentence-BERT (symbolized by a cartoon character with 'BERT' text) to produce a graph G, X, shown as a node graph with colored nodes (orange, blue, green) and associated feature vectors (rectangular bars). Below this, 'Active Node Selection' includes two components: 'Smoothed Attributes' (light blue rectangle) and 'Subspace Clustering' (light blue rectangle), which together form cluster centers A (a small circular plot with colored dots). This feeds into an LLM module (green square with a white neural network icon, labeled 'LLMs') with a budget B_ini. The output is 'Labeled Samples' stored in three cylindrical databases (orange, blue, green), representing (V_tr, y_tr).
+
+In the right section, the process starts with GNNs (stacked blue rectangles with a node graph inside, labeled 'GNNs'), which take the graph G, X as input. The output is a matrix Y^(r) (a grid of colored cells). This is followed by two bar charts: one labeled 'Entropy' (with orange and blue bars) and another labeled 'Disharmony' (with blue and green bars), used for 'Informative Sample Selection'. The selected samples are split into 'Certain Samples V_ct' (colored document icons) and 'Uncertain Samples V_ut' (gray document icons). These feed into 'Hybrid Label Refinement', which uses an LLM (same green icon) with a budget B_ref to produce refined labels Ŷ (a grid similar to Y^(r)). The refined labels are then fed back into a second GNNs block. Above this, a separate path shows 'Graph Rewiring': an MLP (light blue rectangle) processes the graph, leading to edge modifications (dashed lines with cross marks on edges) before feeding into the final GNNs block.
+
+[3] Connections and Arrows:
+A thick gray arrow from TAG G points to the BERT module, which outputs to the graph G, X. From G, X, a thick blue arrow leads to the first GNNs block. The output of GNNs flows through Y^(r) to the Entropy and Disharmony metrics, which feed into the Informative Sample Selection step. From there, two paths emerge: one to Certain Samples and another to Uncertain Samples, both leading to Hybrid Label Refinement. The output of Hybrid Label Refinement (Ŷ) is sent to the second GNNs block. Simultaneously, the first GNNs output also feeds into Graph Rewiring via an MLP, whose output modifies the graph structure before being passed to the second GNNs. A feedback loop from the second GNNs block (via a gray arrow) returns to the Labeled Samples database, indicating iterative training. Additionally, a gray arrow from the Labeled Samples database points to the first GNNs block, showing the use of initial labels in the self-training loop.

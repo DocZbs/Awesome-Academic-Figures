@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501086",
+  "record_sha256": "24926a0b868333d55c9f8de1aa2a86e778751fcd1f8418ea0115b30e94cfe3ad",
+  "asset_sha256": "b67af3434a15ca8f0d33913e19d472e294a13f1ccacc30ddeea748ddd667974e",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501086",
+    "title": {
+      "zh": "OmniPrism: Learning Disentangled Visual Concept for Image Generation · 方法图",
+      "en": "OmniPrism: Learning Disentangled Visual Concept for Image Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12242",
+      "title": "OmniPrism: Learning Disentangled Visual Concept for Image Generation",
+      "authors": [
+        "Yangyang Li",
+        "Daqing Liu",
+        "Wu Liu",
+        "Allen He",
+        "Xinchen Liu",
+        "Yongdong Zhang",
+        "Guoqing Jin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12242",
+      "arxiv_url": "https://arxiv.org/abs/2412.12242",
+      "arxiv_id": "2412.12242",
+      "arxiv_first_submitted_at": "2024-12-16T18:59:52Z",
+      "arxiv_updated_at": "2026-04-10T10:12:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501086/image/image.jpg?Expires=1790835184&Signature=W-1o~nF10QxLrSzV~3of7zxu9LXsuYXkE88wjptSjzvD041Ssfil31gXZWANFZ3oLqAXgJ7~ItfTZZwWRBsfsQ1nq6lMzs27eb2RcN7OWyIsfvfjgW1CTkjkDrAdZtSq8fZHkMUgQ7HlNnKDLNrgKXbE3kVeu7ILos4sDr0624rGoWwM8rB5Y0qLB99YohCw-TMfO3IlpGj9PTMMCnTFJpaaOgOCiVS6eUyvRzdIF2Xu70fOFXbq2kwnQWMKrZvgoK~kLztThqgHEh~on-7QCHmquy2SosRaloeIhq3ZsMVIxmqDDxA~nSeo1wELuGeSaUkMp6t4NdEspRnns2zgLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501086,
+      "description_sha256": "d10c4ee3fa1978cd88690d054f375a29f261c169d93ec34f527a4f67dd3a2752",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive data construction pipeline for generating paired image datasets under three distinct conceptual categories: 'Content', 'Style', and 'Composition'. The overall layout is divided into four main sections labeled (a), (b), (c), and (d), separated by dashed horizontal lines. Section (a) illustrates the 'Content' Concept Construction Pipeline, section (b) the 'Style' Concept Construction Pipeline, section (c) the 'Composition' Concept Construction Pipeline, and section (d) provides example templates for content and style concepts.\n\nIn section (a), a user icon and a GPT-4o icon are shown on the left, indicating human input and AI generation. The user instructs GPT-4o to generate two prompts: a reference prompt T_ref describing a subject in a scenario (e.g., 'A coyote prowls through the desert') and a target prompt T_tar describing the same subject with an additional subject in a different scenario (e.g., 'A coyote and parrots engage under sunset'). The concept guidance T_cg is specified as 'coyote'. The reference prompt T_ref is fed into a model labeled FLUX, which generates a reference image I_ref. This image is then processed by SAM (Segment Anything Model) using T_cg to produce a mask, which is subsequently used by Kolors along with T_tar to generate the target image I_tar. All models are represented as gray rectangles, images as colored squares, and masks as black silhouettes. Arrows indicate the flow of data from prompts to images.\n\nSection (b) details the 'Style' pipeline. Again, GPT-4o generates two prompts: T_ref ('A lobed maple leaf') and T_tar ('A spiraled conch shell'), with T_cg as 'style'. T_ref and T_style (a style-specific prompt) are input into SDXL, producing a temporary image I_temp. This image is then processed by Instant-Style, which uses T_ref to generate I_ref and T_tar to generate I_tar. The visual elements follow the same conventions: gray boxes for models, colored squares for images, and arrows for data flow.\n\nSection (c) shows the 'Composition' pipeline. GPT-4o generates a list of artistic style words (e.g., 'cyberpunk', 'watercolor') and then produces T_ref ('Two people doing morning exercise') and T_tar ('Pastel, two people doing morning exercise'), with T_cg as 'composition'. The reference image I_ref is processed to extract a depth map, which is then fed into ControlNet along with T_tar to generate the target image I_tar. The depth map is shown as a grayscale image, and ControlNet is depicted as a gray box.\n\nSection (d) displays two large gray boxes at the bottom: 'Content Template' and 'Style Template T_style'. The Content Template lists various animals with associated descriptive adjectives (e.g., 'Swan': ['elegant', 'white', 'long-necked']). The Style Template provides structured JSON-like entries for different art styles, including 'Name', 'Prompt', and 'Negative Prompt' fields, with examples like 'misc-disco' and 'sai-fantasy art'. These templates serve as the source material for generating the prompts used in the pipelines above. The entire figure emphasizes the role of GPT-4o in generating diverse prompts and the use of specialized models (FLUX, Kolors, SAM, SDXL, Instant-Style, ControlNet) to create paired images for training or evaluation purposes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

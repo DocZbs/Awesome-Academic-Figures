@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A Concept-Centric Approach to Multi-Modality Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13847
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-stage conceptual framework for a concept-centric multi-modality learning system, organized from left to right into distinct phases: Learning Concept Space, Learning Projection Models, and Downstream Applications. Each stage is visually separated by background color—beige for the first, light blue for the second, and light peach for the third—and connected by dashed arrows indicating the flow of the pipeline.
+
+In the first stage, 'Learning Concept Space', a cylindrical node labeled 'Dataset: D' in purple represents the training data. An arrow labeled 'Indicates' points from this dataset to a rounded rectangle containing probability expressions such as P(y₁|y₂) = 0.45 and P(yₘ|yₙ) = 0.12, symbolizing the conditional relationships between concepts. This probability block is connected via a downward arrow labeled 'Reflected' to a large rectangular box titled 'Learning Concept Space'. Inside this box, multiple colored rectangles (orange, gray, green, blue, etc.) represent individual concepts y₁ through yₘ, arranged in a grid-like layout with some overlapping, suggesting a learned relational structure among them.
+
+The second stage, 'Learning Projection Models', begins with two input sources: a 3D image of a dark blue cube feeding into a trapezoidal module labeled f_vision, and a scroll-shaped node containing the text 'A red small rubber sphere' feeding into another trapezoid labeled f_nlp. These modules represent vision and natural language processing encoders, respectively. Their outputs converge into a central box labeled 'Learning Projection Models', which contains overlapping colored rectangles similar to those in the concept space, but now including two specific regions: a brown rectangle labeled Ω^nlP and a blue rectangle labeled Ω^vision. These represent modality-specific projections of the inputs onto the shared concept space, with the overlapping areas indicating alignment or correspondence between modalities.
+
+The final stage, 'Downstream Applications', starts with an oval-shaped container labeled 'Diverse multi-modality inputs', containing smaller trapezoids labeled f₁, f₂, ..., fₓ, fᵧ, representing various input features. A thick black arrow labeled 'Independent projections' leads from this container to a box with overlapping colored rectangles, mirroring the structure in the previous stage. A text label inside this box states, 'Unified at one place where inference is conducted', emphasizing that all projected representations are combined in a single space for task execution. The entire diagram uses consistent visual elements: rounded rectangles for data or probability blocks, trapezoids for model components, and colored rectangles for concepts or projections. Arrows indicate data flow, with solid lines for direct connections and dashed lines for high-level transitions between stages.

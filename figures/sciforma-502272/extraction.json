@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502272",
+  "record_sha256": "a0945adea89122c41e4284a5e2fff08b714e2b43bc3d2d0ebefe94b421d97eb8",
+  "asset_sha256": "b8db5de606d308a7c4c467838e934c3c1f885d33df788d3138110b976f85c2e7",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502272",
+    "title": {
+      "zh": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection · 方法图",
+      "en": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-14211",
+      "title": "Improving Generalization Performance of YOLOv8 for Camera Trap Object Detection",
+      "authors": [
+        "Aroj Subedi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_url": "https://arxiv.org/abs/2412.14211",
+      "arxiv_id": "2412.14211",
+      "arxiv_first_submitted_at": "2024-12-18T02:00:53Z",
+      "arxiv_updated_at": "2024-12-18T02:00:53Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502272/image/image.jpg?Expires=1790835212&Signature=cRPvW69lLkbB6IDapPvZosdC0iLDIkhDKydoaQw8xhaq8-wavz~~LLcWINGuN-P8t0cyiEFPoDEfR4u6n6fl9n63fa2jpH0PwCgnweKgaEm9p3SvFcZsAYQOAk6IXf9B-S7Jnqglyr~6wfrlIb3qxS-f76X1E0XoX0l03~SitcL8UEWHGjCrt470hQ5j-BQgYZKSaAQbgBXtuP4UZV-dgsHao7TePYXmOqz8GU8LfmdeBAsCHozvQU7RgWa9~ZGA6sHIg-1NAKZy3DtULxxjp6WF6Mda8aY4XdHd5lc9ZpSEdbUHJaYXlc~u~uS9YWggaxw64PlU0-XxZ4N1Y6Wbcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502272,
+      "description_sha256": "260e73db0c9c7d8a12b5e3e9ae6a254f55ad7ac12beab91b916607bb88e9a5e1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural structure of the YOLOv8s model, divided into three main sections: Backbone, Neck, and Head, separated by vertical dashed lines. The global layout is a top-down flowchart where data flows from left to right and top to bottom, starting from an input tensor of size 640×640×3 at the top-left corner. The Backbone section on the left processes the input through a series of convolutional layers (Conv), C2f blocks, and an SPPF block, progressively reducing spatial dimensions while increasing feature channel depth. Each module is represented as a rounded rectangle with a label indicating its type, parameters, and an index number in the top-right corner. Conv layers are light blue, C2f blocks are beige, and the SPPF block is light green. Parameters such as kernel size (k), stride (s), padding (p), shortcut status, and number of repetitions (n) are specified within each block. Output dimensions are labeled along the arrows connecting modules. The Neck section in the middle performs feature fusion using Upsample layers (light orange) and Concat layers (lavender), combining features from different scales. These operations create multi-scale feature maps that are then processed by additional C2f blocks. The Head section on the right contains three Detect modules (pink rectangles), each receiving feature maps from the Neck and producing detection outputs. The Detect modules are connected to the Neck via horizontal arrows, indicating the final processing stage for object detection. The entire diagram uses solid black arrows to indicate the direction of data flow, with dimensions annotated along the arrows to show the shape of the feature maps at each stage. The structure emphasizes a hierarchical design with downsampling in the Backbone, feature fusion in the Neck, and parallel detection heads in the Head."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501016",
+  "record_sha256": "ccba1236ca174b8b6a100610886c6c1f22427536c8e41a438152b0d3e13d8e26",
+  "asset_sha256": "99566edb5b4cfd18f17337086f92c84f483d27b3ed8e7933e5d63bd8ae855a0d",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501016",
+    "title": {
+      "zh": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection · 方法图",
+      "en": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-12164",
+      "title": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection",
+      "authors": [
+        "Lingzhi Shen",
+        "Yunfei Long",
+        "Xiaohao Cai",
+        "Imran Razzak",
+        "Guanming Chen",
+        "Kang Liu",
+        "Shoaib Jameel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_id": "2412.12164",
+      "arxiv_first_submitted_at": "2024-12-11T19:12:22Z",
+      "arxiv_updated_at": "2025-03-02T15:12:38Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501016/image/image.jpg?Expires=1790835183&Signature=vMT-WsPi8E1aJmILzfjEeDwpUoYpNirZ33lMsUsTyzTMeyTi2aQo~UuJE5eq16WlqTJUMdevfEo-8SA9SaLezln0MLxlZsaLaf01t742nE18C6BFZsUL9TYYjOOeo5n-F1OlRoGWXD8Eio~LXEM5sPBuYW1ARKvjwr0mD-nrXEG5nXYolMsf1i3ocnIhK~2JTh0QVPteBNtzzK0lSnfi4eTTBu6W2gqWwmbAj5xm-i46CgYXLga6fbynJL5K5RLmJNUYBub8sCfdqO8IxElHFOMpaJYAmHXRuHEV5kX9TzgKXmk5Aef0WeZ4kv7yHYVTkChnk20qkV0cPxZBkxIxDQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501016,
+      "description_sha256": "f072adea4ef3258639a62fe16db3905ae1dc40dd45f031c5ab825f63241f8855",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural framework of GAMED, a multimodal decision-making system that processes image and text inputs through parallel modality-specific pipelines before fusing them for final classification. The global layout is horizontally segmented into four main stages: Feature Extraction, Expert Review & Opinions, Distribution Adjustment, and Decision Making. Vertically, the architecture is divided into four parallel modules: Image Pattern Module (yellow), Image Semantic Module (peach), Fusion Module (light blue), and Text Module (light green), each processing distinct input modalities or fused representations.\n\nEach module follows a consistent workflow: feature extraction via specialized models, followed by expert-based refinement using MMoE-Pro (represented by three stylized human icons), coarse prediction, and adaptive normalization via AdaIN. The Image Pattern Module begins with a Filter feeding into IRNv2, producing feature vector f_ip, which is projected to r_ip. This feeds into Coarse Prediction, generating output o_ip. An MLP computes mean μ_ip and standard deviation σ_ip, which are used by AdaIN to produce e_ip. The Image Semantic Module uses DA (Data Augmentation) followed by MAE-ViT to extract f_is, which is processed by MMoE-Pro to yield two branches r_is^0 and r_is^1. These feed into Coarse Prediction to produce o_is, followed by MLP and AdaIN to generate e_is.\n\nThe Text Module receives text input (shown as a word cloud) and passes it through KE (Knowledge Enhancement) and ERNIE2.0 for feature extraction f_t. MMoE-Pro splits this into r_t^0 and r_t^1, leading to Coarse Prediction (o_t), MLP (μ_t, σ_t), and AdaIN to produce e_t.\n\nThe Fusion Module integrates outputs from the three modality modules. It takes concatenated features from the previous stages and processes them through MMoE-Pro to generate r_mm^0 and r_mm^1. These are fed into Consistency Learning, producing o_mm. An MLP computes μ_mm and σ_mm, which are used by AdaIN to generate e_mm. Additionally, a separate branch labeled r_x leads to e_x.\n\nAll coarse predictions (o_ip, o_is, o_mm, o_t, and o_mix) are collected in a dashed box labeled 'Coarse Predictions'. These are concatenated with e_mix (from a separate dashed box containing MMoE-Pro and Coarse Prediction for mixed features) and fed into a gradient-colored 'Veto Voting' block. This block produces the final predicted label ŷ, symbolized by a circled y.\n\nThe diagram includes visual cues such as rectangular blocks for models (e.g., IRNv2, MAE-ViT, ERNIE2.0), rounded rectangles for processing steps (e.g., Coarse Prediction, AdaIN), small 3D cubes for feature vectors (f, r, e), and arrows indicating data flow. The color coding distinguishes modules: yellow for image pattern, peach for image semantic, light blue for fusion, and light green for text. The bottom horizontal axis labels the stages of the pipeline, while the left side shows input datasets (image and text) feeding into the respective modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500880",
+  "record_sha256": "b193ae2f5812ca72d182a2124e648310ec5ab9637dd112dc9dec7780b3cb0da3",
+  "asset_sha256": "1d2199d96491842e7f53351dc8d35d3e4ba6d2b28927439eac0e715fdd4c8537",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500880",
+    "title": {
+      "zh": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks · 方法图",
+      "en": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11964",
+      "title": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks",
+      "authors": [
+        "Whitney Sloneker",
+        "Shalin Patel",
+        "Michael Wang",
+        "Lorin Crawford",
+        "Ritambhara Singh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11964",
+      "arxiv_url": "https://arxiv.org/abs/2412.11964",
+      "arxiv_id": "2412.11964",
+      "arxiv_first_submitted_at": "2024-12-16T16:45:26Z",
+      "arxiv_updated_at": "2024-12-16T16:45:26Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500880/image/image.jpg?Expires=1790835177&Signature=ST6xkdWhZ5b3U9XkVUBc1VjCd7nyHPcIe0IEv6oX5-rCqCR69sGD7PFKUuY3ux36tJO-TPlziGqCIYQKqZChPy9ey~9BkLpmhEdVTCDIUWpaO7duHSPfl8b7gNwSe2lfqnJO2thdm~4uUIvzqnQTU~xm8Opy7bLKtA53xbG6C5jxEpbmL9abiAzpFPbPGs4u8kZOvA6sSpq9xueuFCakTRjptCw8Qhz5L65aISO80fZuegjXC4ynncC2270QXxyx1cW2b3tg~KfVAvcJ8i~rnIFWxqxdlRJCx9YUuSKefb3YtjU-kOX-0ovKDh95uUDE3OIHqYyxSfOosgAOBXItrw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500880,
+      "description_sha256": "68c4ab7cf55996205ed836b4a6ed13054e19003dd4c98ba3e64db2e5afc274a8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural workflow illustrating how different explainability methods process a Graph Neural Network (GNN) model to identify important edges, with a focus on BetaExplainer’s unique capability for uncertainty quantification. The global layout is horizontally structured into three main stages: input components on the left, explanation methods in the center, and output representations on the right. On the far left, two distinct inputs are combined via a blue plus sign: the top component is a multi-layered GNN depicted as a fully connected neural network with gray nodes and edges, featuring red input nodes and blue output nodes; the bottom component is a graph structure composed of beige circular nodes connected by blue arrows indicating directed edges, representing the underlying graph data. These combined inputs feed into two central explanation modules labeled 'Other Explainers' and 'BetaExplainer', each represented by a magnifying glass icon — the former in light gray and the latter in dark gray, visually distinguishing them. From each explainer, a black arrow leads to an output graph on the right, both consisting of beige circular nodes with blue directional arrows. However, the output from BetaExplainer includes additional light gray dashed arrows, symbolizing uncertainty quantification, which are absent in the output from Other Explainers. This visual distinction emphasizes BetaExplainer’s ability to not only identify important edges but also to assign a measure of confidence or uncertainty to those edges. The bottom-right corner explicitly labels this feature as 'Uncertainty Quantification'. The overall flow conveys that while both explainers analyze the same GNN and graph input, BetaExplainer uniquely provides probabilistic edge importance masks with uncertainty estimates, addressing a limitation present in conventional explainers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Advanced ingestion process powered by LLM parsing for RAG system — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15262
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a preprocessing pipeline for document ingestion in a Retrieval-Augmented Generation (RAG) system, designed to convert various document formats into structured, machine-readable outputs. The global layout is a horizontal flowchart divided into three main sections: input sources on the left, a central processing block labeled 'Parsing' repeated x times (where x corresponds to the number of pages), and an output section on the right. The entire pipeline is enclosed within a large rounded rectangle, indicating a modular, iterative process per page.
+
+In the input section, three rectangular nodes labeled 'PDF', 'DOCX', and 'PPTX' feed into the central 'Parsing' module. This module contains three sub-components: 'FAST', 'OCR', and 'LLM', each represented as a small rectangle. These components process the input documents to extract content, with 'FAST' and 'OCR' feeding into a 'TEXT' node, and 'LLM' also contributing to 'TEXT'. Additionally, 'FAST' and 'OCR' send data to an 'IMAGES' node, which then connects to a rounded rectangle labeled 'describe image'. The 'LLM' component also contributes directly to the 'TEXT' node. A separate 'SNAPSHOT' node, likely representing a visual or structural capture of the page, feeds into the central 'ASSEMBLER' component.
+
+The 'ASSEMBLER' is a large rounded rectangle that receives inputs from 'TEXT', 'describe image', and 'SNAPSHOT'. It produces a 'MARKDOWN' output per page, which is then passed to the 'Output' section. The 'Output' section is a vertical stack of five rectangular boxes: 'MARKDOWN (PAGES)', 'SNAPSHOT (PAGES)', 'IMAGES (PAGES)', 'MARKDOWN (DOCUMENT)', and a final rounded rectangle labeled 'extract metadata'. The 'MARKDOWN (PAGES)' output is shown feeding into 'MARKDOWN (DOCUMENT)', indicating concatenation of all page-level markdowns into a full document. The 'extract metadata' step follows this, suggesting post-processing of the assembled document.
+
+Below the main pipeline, a dashed rectangular box titled 'Page Node' provides a legend for the structure of the output markdown. It defines four types of nodes: 'Header Node' (pink rounded rectangle), 'Text Node' (green rounded rectangle), 'Table Node' (blue rounded rectangle), and 'Image Node' (yellow rounded rectangle). Each node type is associated with a sample content block, illustrating how different content types are represented in the markdown output. For example, the 'Text Node' includes sample human interaction data used for training a classifier, while the 'Image Node' contains a description of a bar chart showing the distribution of interaction types (Conversation, Document_Translation, Services) with approximate counts (1400, 250, 50 respectively). The legend also includes references to figures ('Figure 1: Human Interaction Samples', 'Figure 2: Distribution of examples'), indicating that the markdown output may embed or reference such content.
+
+All connections are represented by solid black arrows, indicating the direction of data flow. The arrows show that input documents are parsed using multiple methods, resulting in text, images, and snapshots, which are then assembled into page-level markdown. These pages are aggregated into a full document markdown, from which metadata is extracted. The diagram uses consistent shapes (rectangles for processes/data, rounded rectangles for modules or outputs) and colors (pink, green, blue, yellow for node types in the legend) to differentiate components. The overall design emphasizes modularity, parallel processing, and structured output generation.

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500342",
+  "record_sha256": "5c700c3b44e670c9789752ef2030eac0b606af311e2b89f8a948c8fd6a779b18",
+  "asset_sha256": "f5d0e2d64bda0fa865e331a38c68b06a62989ea55902e359a10a140058c435d7",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500342",
+    "title": {
+      "zh": "Cultural Palette: Pluralising Culture Alignment via Multi-agent Palette · 方法图",
+      "en": "Cultural Palette: Pluralising Culture Alignment via Multi-agent Palette"
+    },
+    "paper": {
+      "id": "arxiv-2412-11167",
+      "title": "Cultural Palette: Pluralising Culture Alignment via Multi-agent Palette",
+      "authors": [
+        "Jiahao Yuan",
+        "Zixiang Di",
+        "Shangzixin Zhao",
+        "Zhiqing Cui",
+        "Hanqing Wang",
+        "Guisong Yang",
+        "Usman Naseem"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11167",
+      "arxiv_url": "https://arxiv.org/abs/2412.11167",
+      "arxiv_id": "2412.11167",
+      "arxiv_first_submitted_at": "2024-12-15T12:30:52Z",
+      "arxiv_updated_at": "2026-01-02T13:06:56Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500342/image/image.jpg?Expires=1790835171&Signature=GXeJzQkWFOPUSsudfAVlXyEeui9jOTi1drWtZex8SJNJFzmqy33us5HBq9xxWRBOYNGxO5vhBWDMF9S2oHWbR-2IGZulv9yWs1MX0d8MlQNi1HRvv2dS-~X0ypB5wHURrPzqVSAqQ95Y8Obxzg-9mGJBWvBTu7YLy9zNmszOVmO4cbrC~Aur-pw0EQCGR2sv7Y8XD5WQFdmckKSImKe-Z4fPmSNkU-uZQIQjisz-jHtD6UwZP3FhhmxT1ZBwIk5kEIRal9bpms58rqy0s~-iOMOPpjELO8rU7EaACKUkNPrbPst1lxlHP3MdzxQiW52YdB58Gp0W9h6XhNbb-i~73A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500342,
+      "description_sha256": "b2ac3cd9dd148b43c74f07cd8b0ab30de390d6cf8ca22026f26a1f5011acf717",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of a cultural-aware response generation system called Cultural Palette, structured into three main components: (A) Pentachromatic Cultural Palette Dataset, (B) Cultural MoErges, and (C) Multi-agent Cultural Palette. The overall layout is divided into two primary sections: an upper workflow depicting a three-step refinement process for culturally sensitive responses, and a lower section illustrating the underlying model architectures and training mechanisms.\n\nIn the upper workflow, Step 1: Continent-aware Response involves a chatbot specialized in a specific continent generating a response to a user query. This step uses a prompt instructing the model to provide culturally sensitive answers tailored to the specified continent. The output flows to Step 2: Cross-continent Feedback, where the response is reviewed for cultural clarity, ensuring the target continent’s perspectives are prominent and free from interference by other continents. A self-judge mechanism evaluates the response; if it passes, the process proceeds; otherwise, it triggers refinement. Step 3: Continent-specific Aggregation further refines the response by amplifying unique perspectives of the target continent and excluding cultural interference from others. This loop continues until the response meets criteria or reaches a maximum iteration limit.\n\nThe Pentachromatic Cultural Palette Dataset is visually represented with five colored dots corresponding to Africa (teal), America (orange), Asia (blue), Europe (pink), and Oceania (green), indicating the five continents used for cultural alignment. The dataset is used for training via Continent-level ORPO, which employs a loss function combining continent-specific SFT loss and cross-continent contrastive alignment. The ORPO loss formula is shown as L_ORPO = (1/n) Σ [ℓ(Preferred, Query) + λ Σ (-log σ(log pθ(Preferred|Query) / pθ(Rejected|Query)))], where preferred responses are from the target continent and rejected ones are from the other four.\n\nComponent (B) Cultural MoErges illustrates a mixture-of-experts architecture. Five continent-specific agents (Africa, America, Asia, Europe, Oceania), each represented by a robot icon with a distinct color matching the dataset, feed into separate Feed-Forward Networks (FFNs). These FFNs converge into a palette icon symbolizing aggregation. A Meta Agent receives inputs from a query P and continent information, processes them through a hidden state p and weight W_g, and computes a gate G to dynamically select expert contributions. The final output is generated by the Meta Agent.\n\nComponent (C) Multi-agent Cultural Palette shows a hierarchical structure where the Meta Agent oversees a Cultural Draft (CD) module. CD generates responses from multiple continental perspectives, e.g., 'Africa:(A), {Reason}; America:(A), {Reason}', etc. The Meta Agent then performs Self-regulated (SR) reasoning, considering diverse perspectives, and produces a Final Answer. A JSD (Jensen-Shannon Divergence) metric compares the generated probability distribution P_gen with the gold standard P_gold to evaluate quality. The entire process starts from a query P and involves all five continent agents, emphasizing multi-agent collaboration.\n\nThe figure also includes external components: PRISM, depicted as a colorful scatter plot, and GPT-4o, shown as a green logo, which likely serve as data sources or base models. The visual style uses rounded rectangles for steps, arrows for flow, and color-coded elements for continent identification. Text annotations clarify roles, such as 'Preferred: One Specific Continent' and 'Rejected: Four Other Continents', reinforcing the contrastive learning objective."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

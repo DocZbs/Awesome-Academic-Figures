@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502386",
+  "record_sha256": "d66824ac05c623966b0876c443e0d569ed26ed1ff91eb68eaf87aaf5df052d6c",
+  "asset_sha256": "588107c20c728cae842f13f411f9fbbe75b0e8de4bcc73e90cd8b11c8c840f04",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502386",
+    "title": {
+      "zh": "MegaPairs: Massive Data Synthesis For Universal Multimodal Retrieval · 方法图",
+      "en": "MegaPairs: Massive Data Synthesis For Universal Multimodal Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-14475",
+      "title": "MegaPairs: Massive Data Synthesis For Universal Multimodal Retrieval",
+      "authors": [
+        "Junjie Zhou",
+        "Zheng Liu",
+        "Ze Liu",
+        "Shitao Xiao",
+        "Yueze Wang",
+        "Bo Zhao",
+        "Chen Jason Zhang",
+        "Defu Lian",
+        "Yongping Xiong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14475",
+      "arxiv_url": "https://arxiv.org/abs/2412.14475",
+      "arxiv_id": "2412.14475",
+      "arxiv_first_submitted_at": "2024-12-19T02:49:55Z",
+      "arxiv_updated_at": "2024-12-19T02:49:55Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502386/image/image.jpg?Expires=1790835217&Signature=Y-EZB3o1Bx2gQaWsM7f-3P60xe4F2OTECgt7rJC6Mhj0WGAcBUQGW~Aw0UiMe7EFd49yx85wrlP-CnmfnRwQwbisO1DZNIAmPcLd-qlhZYfS9AmZtl3jdldTLasmjGSBEX7tSIkVyOO6pNqXIh0S5ObRpSS0BTKlzMIKqQsgEvDXN~2PBn6GKCxCosy7Ej08fl2MqiQ-N0U96WbK3Y3yCImZfGOJ3VUCX8H8kfswERihfFCeOb5G79VW4CZSmJP88YtsXuRGQrBsNjm4d2klesTwchUyust34GifDXV5fZjNpzwb-oWsq6DcSGXGqfcmuHwfdT-ZIMgCm9yeW7-gJg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502386,
+      "description_sha256": "259c0b9173f94ba1dc4f2ab51da7bde8a8110f4ac38dce13365e64ebbf60f19c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage pipeline for constructing multimodal triplets from an image-text dataset, consisting of image pair mining and instruction generation. The overall layout is divided into two horizontal sections labeled (a) and (b), each depicting a distinct phase of the process.\n\nIn section (a), the global structure begins with a 'Query Item' on the left, represented by a rounded rectangle with a light peach background. This contains an image of a white Toyota concept car and its associated caption: 'How 2020 Toyota Yaris Concept Hints To Design Future Toyota.' An arrow labeled 'Query Item Sampling' points from a database icon labeled 'Large-scale Image-Text Dataset' to the Query Item, indicating the source of the query. From the Query Item, an arrow leads to a central pink rounded rectangle labeled 'Multiple Similarity Models,' which includes icons of a magnifying glass over an image and a document, symbolizing visual and textual similarity computation. This module outputs to a light blue rounded rectangle on the right titled 'Retrieved Images,' which displays six smaller images: the original concept car, its interior, a different exterior view, a racing car, a black sedan, and a blue futuristic car, illustrating diverse retrieved results.\n\nSection (b) details the second stage, starting with a stack of light blue rounded rectangles labeled 'Mined Image Pairs,' showing the concept car exterior and its interior. An arrow leads to a gray rounded rectangle containing a black horse icon and the label 'MLM' (Multimodal Language Model), with the task 'Summarize the Relationships.' Below this, sample text reads: 'The images both relate to Toyota vehicles.... The source image highlights the futuristic exterior of ..., while the target focuses on the practical interior seating....' Another arrow connects to a similar gray box with a cat icon and 'LLM' (Large Language Model), labeled 'Generate instructions,' listing example prompts such as 'What does the inside of this car look like?' and 'What is visible when the door is opened?'. Finally, an arrow leads to a stack of light green rounded rectangles titled 'Resulted Triplet Data,' showing the same exterior and interior images with the generated instruction 'What does the inside of this car look like?' displayed below them.\n\nAll connections are represented by solid black arrows indicating the flow of data and processing steps. Text labels are primarily in black or red, with key components highlighted using distinct background colors: peach for the query, pink for similarity models, light blue for retrieved and mined images, and light green for the final triplet output. The figure visually conveys how diverse image pairs are mined via multiple similarity models and then enriched with natural language instructions through sequential multimodal and language modeling stages to form structured triplet data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

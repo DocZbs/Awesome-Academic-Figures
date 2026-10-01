@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500166",
+  "record_sha256": "3e41d6d1d7aa6ff16a509d639f4fb721284f81f96029339a4b40d46c34321874",
+  "asset_sha256": "34d3b65df88d92ac90568f7dceec8e694bdfd551614af6d02ed26f08130bc26c",
+  "original_file": "original.jpg",
+  "pixel_width": 1664,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500166",
+    "title": {
+      "zh": "Robust Persian Digit Recognition in Noisy Environments Using Hybrid CNN-BiGRU Model · 方法图",
+      "en": "Robust Persian Digit Recognition in Noisy Environments Using Hybrid CNN-BiGRU Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-10857",
+      "title": "Robust Persian Digit Recognition in Noisy Environments Using Hybrid CNN-BiGRU Model",
+      "authors": [
+        "Ali Nasr-Esfahani",
+        "Mehdi Bekrani",
+        "Roozbeh Rajabi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10857",
+      "arxiv_url": "https://arxiv.org/abs/2412.10857",
+      "arxiv_id": "2412.10857",
+      "arxiv_first_submitted_at": "2024-12-14T15:11:42Z",
+      "arxiv_updated_at": "2025-02-11T07:01:26Z",
+      "arxiv_subjects": [
+        "cs.SD",
+        "cs.CV",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500166/image/image.jpg?Expires=1790835166&Signature=PFimKAbA9p2L~Pyyc3jQNi0I02X0tuieBqAyGS4OStqufkfvTKYGgBlmRCWqxX16WYAKK2G1LmSbo9MM5DlLDcAIcG8DEM6l510dUfJjzkTRtPIW0jAghes12RIRW4PC-7TNalQkzTKTWXx7~hjaDkxzau6Z53uK3ZDp6BwkDgi7sdj7VydkNxZ1K1qSpka5BGyJBoszDa14amrStQ1UZ~4Bh2vf7XDNNXUEwydAkLkVXlxdHU0v9T0QsCP0y4VEkf4eVh~1U8PceuKoDbJ1Qvr2k4n6JhJ8DnpKNmxwWGRPIAZKpD8PDDa2w4-pnmoMbuWqJPeAyL68f36CGHrUPw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500166,
+      "description_sha256": "ae2c63aec467a77acd5cc9c7892a8b0926238e22dc37a59a3affc3ecd7110dc0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SD",
+        "cs.CV",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a block diagram illustrating the Mel-Frequency Cepstral Coefficients (MFCC) feature extraction pipeline, commonly used in speech and audio processing. The global layout is a two-row horizontal flowchart: the top row represents the forward processing stages from raw input to intermediate spectral features, while the bottom row continues the processing to produce the final output representation. The entire diagram flows from left to right, with arrows indicating the direction of data transformation.\n\nIn the top row, the process begins with an 'Input' represented by a blue waveform icon, symbolizing a raw audio signal. This input is first processed by a rounded rectangular module labeled 'Pre-Emphasis', which applies a high-pass filter to amplify higher frequencies. The output then proceeds to a 'framing' module, where the continuous signal is divided into short, overlapping time frames. Next, a 'Window' module applies a window function (e.g., Hamming or Hanning) to each frame to reduce spectral leakage. Following this, the 'FFT & Power Spectrum' module computes the Fast Fourier Transform of each windowed frame to obtain its power spectrum, representing frequency content over time.\n\nFrom the 'FFT & Power Spectrum' module, a vertical arrow descends to the bottom row, connecting to the 'Mel Scale Filtering' module. This step maps the linear frequency scale of the power spectrum to the Mel scale, which approximates human auditory perception, using a set of triangular bandpass filters. The filtered outputs are then passed to a 'Log()' module, which takes the logarithm of the filter bank energies to compress the dynamic range and approximate the human ear's response to loudness. The result is fed into a 'DCT' (Discrete Cosine Transform) module, which decorrelates the log filter bank coefficients and produces the final MFCCs, typically retaining only the first 12–13 coefficients for efficiency and discriminative power.\n\nThe final output is visualized on the far left of the bottom row as a spectrogram-like heatmap, labeled 'OutPut', with a color gradient ranging from dark purple to bright yellow-green, indicating varying intensity levels across time and frequency (or cepstral coefficients). The entire diagram uses consistent visual attributes: all processing modules are white rounded rectangles with blue borders and black text; all connections are solid blue arrows with arrowheads indicating direction. The figure is captioned 'MFCC block diagram~\\cite{dave2013feature}', indicating its source."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502201",
+  "record_sha256": "b1c6495767afdbaefa81ff2820698942bc7f6e1e796ba49d755ca31903641c5f",
+  "asset_sha256": "d90bb09d33eb52d30eca32f86c1f4b23034a91cc1cdd9027e7519bd2bdf16ef1",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502201",
+    "title": {
+      "zh": "A Simple yet Effective Test-Time Adaptation for Zero-Shot Monocular Metric Depth Estimation · 方法图",
+      "en": "A Simple yet Effective Test-Time Adaptation for Zero-Shot Monocular Metric Depth Estimation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14103",
+      "title": "A Simple yet Effective Test-Time Adaptation for Zero-Shot Monocular Metric Depth Estimation",
+      "authors": [
+        "Rémi Marsal",
+        "Alexandre Chapoutot",
+        "Philippe Xu",
+        "David Filliat"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14103",
+      "arxiv_url": "https://arxiv.org/abs/2412.14103",
+      "arxiv_id": "2412.14103",
+      "arxiv_first_submitted_at": "2024-12-18T17:50:15Z",
+      "arxiv_updated_at": "2025-11-28T16:18:07Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502201/image/image.jpg?Expires=1790835212&Signature=q7WIU--3sED-n8kpmo92NWyRBgkypDzXY0cMIdi1MjF5lXjQnBjqOPtUNU7GrYQrqX0jW~GJiVLCVVhk2q08AOSKuZOAtdJrGnq2tULfVjILl3fOX~gaYsnH9j5cMJ4GcIgPeSGYomlTpnMZzdmB0luDbmkeEqIL78U7PyM1WFitIrCbXR4FrIDNVb30ixGTnn-~FN8meDoD3Dl-wFB1QfQkEKC4YEtLbFLO~PyOUzRfWLkfSXFMtyxWnE~LLXBX3mIKAmxhy7FU3AHZIFs2QQu7AKZ-zyMrti01SmaLo2r0ThZUOm9k7bspMiCNZomkDf1KIZh6jQbsQFiFpQ8gGg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502201,
+      "description_sha256": "1f544b2465f23cae14f0d58d5b19c2f7cdf1f4cc267077d150a305ed398e0672",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-branch pipeline for recovering metric depth from a monocular image using an additional sensor for scale calibration. The global layout is horizontal, left-to-right, with two parallel processing streams converging at a central estimation step before producing the final output. The top branch begins with a camera icon labeled 'Camera', feeding into a rectangular image labeled 'I' depicting a street scene. This image is processed by a light blue trapezoidal module labeled 'Depth Anything', which outputs a color-coded disparity map 'd'—a heatmap ranging from red (near) to blue (far). This disparity map is then passed through a rounded rectangular orange module labeled 'Rescaling', which produces the final metric depth map 'D', shown as a similar heatmap but with adjusted intensity and scale. The bottom branch starts with an icon labeled 'One additional sensor', representing a device like a LiDAR or IMU, which generates a 3D point cloud visualized as scattered blue dots in a coordinate system labeled 'Point cloud'. Both the disparity map 'd' and the point cloud are fed into a rounded rectangular orange module labeled 'RANSAC', which estimates the scaling parameters 'α, β' represented in a green circle. These parameters are then sent to the 'Rescaling' module to adjust the disparity map into metric depth. Arrows indicate the data flow: from camera to image I, to Depth Anything, to disparity d; from sensor to point cloud, to RANSAC; and from both d and point cloud to RANSAC, and from RANSAC to rescaling, and finally to D. The diagram emphasizes that the RANSAC step uses correspondences between the point cloud and disparity values to compute α and β, enabling metric recovery. The visual elements use distinct shapes and colors: cameras and sensors as icons, images as rectangles, neural networks as trapezoids, processing steps as rounded rectangles, and parameters as circles. Text labels are placed above or below each component, with mathematical variables (I, d, D, α, β) positioned above their respective representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

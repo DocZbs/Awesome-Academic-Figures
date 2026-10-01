@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+A comprehensive GeoAI review: Progress, Challenges and Outlooks — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11643
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a Convolutional Neural Network (CNN) architecture designed for image classification, specifically applied to satellite imagery. The global layout is left-to-right, depicting a sequential data processing pipeline from raw input to final probabilistic output. On the far left, an 'Input layer' is shown as a grayscale satellite image of a riverine urban landscape, with two red rectangular regions highlighted to indicate areas of interest or sample patches being fed into the network. These regions are connected via dashed red lines to the subsequent feature extraction stage.
+
+The central portion of the diagram is enclosed in a dashed red rectangle labeled 'Feature Extraction'. This module consists of three repeating blocks, each comprising a convolutional layer followed by a pooling layer. The first block features light blue rectangular layers labeled 'Convolution', followed by a pooling layer represented by a slightly darker blue rectangle. The second block uses orange-colored rectangles for both convolution and pooling layers. The third block employs gray rectangles for convolution and pooling. Each convolution layer is depicted as a stack of multiple parallel rectangles, symbolizing multiple feature maps. Red squares within these layers indicate receptive fields or filter windows. Dashed red lines connect corresponding positions across the blocks, illustrating the hierarchical progression of feature maps through successive layers. After the third pooling layer, a vertical yellow bar labeled 'Flattern layer' represents the flattening operation that converts the multi-dimensional feature maps into a one-dimensional vector for input into the fully connected network.
+
+To the right of the feature extraction module lies the 'Fully connected network for Classification', depicted as a multi-layer perceptron. This section consists of four layers of interconnected circular nodes, each node rendered as a light blue circle. The first layer contains 16 nodes, the second and third layers each contain 12 nodes, and the final output layer has 4 nodes. All nodes are densely connected with thin black lines, indicating full connectivity between adjacent layers. The output layer connects to a vertical stack of four colored rectangles labeled 'a', 'b', 'c', and 'd', respectively colored white, yellow, orange, and light blue. These rectangles are enclosed in a dashed red box labeled 'Probabilistic Distribution', signifying the network's output as a probability distribution over four classes. The entire architecture visually conveys the transformation from spatial image data through hierarchical feature learning to a categorical classification result.

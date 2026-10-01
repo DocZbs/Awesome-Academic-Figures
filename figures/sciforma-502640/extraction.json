@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502640",
+  "record_sha256": "79df077a9a0602d601435ba280f56c546d5f8f4f5b95e5657e11c8c782d5f515",
+  "asset_sha256": "c7fcc779697e5f16cea2843dccf5a2974406a449acfe9750cae6510030fc0631",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502640",
+    "title": {
+      "zh": "Automatic Spectral Calibration of Hyperspectral Images:Method, Dataset and Benchmark · 方法图",
+      "en": "Automatic Spectral Calibration of Hyperspectral Images:Method, Dataset and Benchmark"
+    },
+    "paper": {
+      "id": "arxiv-2412-14925",
+      "title": "Automatic Spectral Calibration of Hyperspectral Images:Method, Dataset and Benchmark",
+      "authors": [
+        "Zhuoran Du",
+        "Shaodi You",
+        "Cheng Cheng",
+        "Shikui Wei"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14925",
+      "arxiv_url": "https://arxiv.org/abs/2412.14925",
+      "arxiv_id": "2412.14925",
+      "arxiv_first_submitted_at": "2024-12-19T15:02:50Z",
+      "arxiv_updated_at": "2024-12-20T14:01:54Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502640/image/image.jpg?Expires=1790835223&Signature=Ay4N-ORo5nsMoEmaGDN8ifuSp-pt4Z6fJPSeyETyG4ekQBAcTJkibHSK169eWd28E7VAw2U4wPCVtzm4ErjQjsCfOv1MRrZt6-rY57GsNzSmEmjmndr~wYmKyVX9dxFGXRFZF29N~gnnV8bIiJIxiFw7wWKaksmJo8QU0T8QcXBZyDF8PYJKRvB6LBYL6imNx3qKVFiP-8fkz~GnfOM~9UQUtn8-kOVG~BKgu10i~R85v4bxe9f6ekzx1Vk4qto-xio38t4pQMq~zQmdpQoaaw15OKp7aPp2hcmA3Tl~gwYAMXfAInWFFgraL-ezOaWLZKpXw-4bBvq1wBnfDJofNQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502640,
+      "description_sha256": "2df5b02cfd2d3dc077dda4f9cbd903aaad5d487b47f9887383ba6aaf5c355ad3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative overview of three hyperspectral imaging (HSI) calibration methods: (a) Synchronous Spectral Calibration, (b) Asynchronous Spectral Calibration, and (c) Automatic Spectral Calibration (Proposed). The global layout is structured into three horizontal sections, each illustrating a distinct calibration approach with input and output data represented as stacks of spectral images, where each layer corresponds to a different wavelength band, visually arranged in a rainbow-like sequence from red to purple. The input images on the left show a scene with a whiteboard or natural landscape, while the output images on the right display the calibrated result.\n\nIn section (a), Synchronous Spectral Calibration, a stack of spectral images is fed into a module labeled 'Devision', depicted as a black circle with a diagonal white stripe. A separate 'Whiteboard Recording' process, shown as a line graph plotting intensity against wavelength (400–1000 nm), provides a spectral reference curve that is also input into the Devision module. The output is a calibrated stack of images, indicating that the calibration is performed using synchronized spectral data and a known whiteboard reference.\n\nSection (b), Asynchronous Spectral Calibration, follows a similar structure but omits the whiteboard recording. Instead, only the raw spectral image stack is processed by the same Devision module, which now receives no external spectral reference. This implies that the calibration is performed without real-time synchronization with a known light source, potentially leading to less accurate results.\n\nSection (c), Automatic Spectral Calibration (Proposed), introduces a novel deep learning-based approach. The raw spectral image stack is processed by a model called the 'Spectral Illumination Transformer (SIT)', enclosed in a light green rounded rectangle. The SIT architecture is detailed within this box and consists of multiple components: Encoder 1 through Encoder N, each containing a block labeled 'SFEU' (Spectral Feature Enhancement Unit) and connected via arrows indicating sequential processing. These encoders are followed by Decoder N down to Decoder 1, each also containing an SFEU block, with connections between encoders and decoders marked by circular nodes with a cross symbol, suggesting attention or fusion mechanisms. The final output is a calibrated spectral image stack, demonstrating the end-to-end automatic calibration capability of the proposed method without requiring external references.\n\nConnections across all three sections are represented by solid black arrows, indicating the flow of data from input to output. In (a) and (b), the Devision module acts as the central processing unit, while in (c), the SIT model serves this role. The figure uses consistent visual attributes: spectral image stacks are rendered as overlapping color layers, the Devision module is a black circle with a white diagonal stripe, and the SIT model is a light green container with internal blocks colored brown, blue, and pink to differentiate encoder and decoder stages. Text labels are placed directly below or beside modules for clarity. The overall design emphasizes the progression from manual, reference-dependent methods to an automated, deep learning-driven solution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

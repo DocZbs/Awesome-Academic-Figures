@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500451",
+  "record_sha256": "d5869c2c569f3724785495fd71782b2886420d93a777f92714e70f1048545c99",
+  "asset_sha256": "c934c1a0b639077970bd71275275d9a898f166672a78ab8348dab973f7e04f5b",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500451",
+    "title": {
+      "zh": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions · 方法图",
+      "en": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions"
+    },
+    "paper": {
+      "id": "arxiv-2412-11365",
+      "title": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+      "authors": [
+        "Wonyong Seo",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_id": "2412.11365",
+      "arxiv_first_submitted_at": "2024-12-16T01:37:51Z",
+      "arxiv_updated_at": "2025-03-24T02:37:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500451/image/image.jpg?Expires=1790835171&Signature=UwQKlE2m4RV5tHZSU5arkQm1U1TkXGhCG1fkonc-5deQg6arSh-o1Tt3nwpzbY7snmlvn3LDnUELnCqdElid7856y074XUlDnJV~YkvKlMvO0fvaAixgOtgQ~sYH82gyhf3xgeSLKKR-gEmNkeWPVyNwSS5COEe8oPpWjzrkyyAHL1KRb~vCjhwdTMWEtwxkv01SdyetZrZaxkJKXoQdd2o4kUwOGXzZEp16w7ieP5-bWn1uD4zKXLKxgWihgcuo~tmsHSPoa05P~H8Txh0-xBWfYGRsO6OfKndnmEyGZfUw1mCR46HM~ETc~0doNrKKjw8MRlyhLJXHiJmV2BhacA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500451,
+      "description_sha256": "72a884bcdddbbb2f61076c112cf90d97bc65df62b34c2b8aa695f30644f0b4f1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the detailed architecture of the Content-Aware Upsampling Network (CAUN), designed for motion estimation and optical flow refinement. The global layout is a multi-stage, hierarchical pipeline arranged from left to right, with multiple parallel branches converging into a final upsampling stage. The network processes feature maps from two input frames, denoted by F₀^l,c,2 and F₁^l,c,2, at a low resolution [H/4, W/4, C₁], and combines them with estimated optical flows (ṽ_t→0^l and ṽ_t→1^l) to produce refined flow outputs at higher resolutions.\n\nThe structure begins on the left with two circular nodes labeled 'W', representing warping operations (backwarping), which take feature maps and flow vectors as inputs. These warped features are then fed into a blue rectangular block labeled 'Conv' (convolution). The output of this convolution is passed to an orange block labeled 'PixelShuffle ×2', which increases spatial resolution by a factor of 2. This is followed by another 'Conv' block, and then a 'Reshape' block (purple), which transforms the tensor into a kernel format K^l×2.\n\nParallel to this, additional branches process the same warped features through 'Bilinear Upsample ×2' blocks (green), which upsample the flow vectors to match intermediate resolutions. These upsampled flows are combined with the feature maps via 'W' warping nodes before being processed through further 'Conv' layers. The architecture includes multiple such stages, each progressively increasing resolution: first by ×2, then by ×4, using both PixelShuffle and Bilinear Upsample operations.\n\nAt the core of the network, after several convolutional and upsampling layers, the features are reshaped into two sets of kernels: K^l×4_t→0 and K^l×4_t→1, each with dimensions [H/4, W/4, 9, 16]. These kernels are then used in two separate 'Adaptive Upsample ×4' blocks (light blue), which take the original low-resolution flow vectors ṽ_t→0^l and ṽ_t→1^l as inputs and produce high-resolution outputs v^l_t→0 and v^l_t→1.\n\nAdditionally, there is a lower branch that takes the K^l×2 kernels and applies 'Adaptive Upsample ×2' to generate intermediate flow estimates v^l×0.5_t→0 and v^l×0.5_t→1. The entire network uses color-coded blocks to distinguish operations: blue for convolution, orange for PixelShuffle, green for bilinear upsampling, purple for reshape, and light blue for adaptive upsampling. All connections are directed arrows indicating data flow, with annotations specifying tensor dimensions and operation types. The diagram also includes a small 'Backwarp.' label with a 'W' symbol at the bottom-left, emphasizing the backwarping operation used throughout."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

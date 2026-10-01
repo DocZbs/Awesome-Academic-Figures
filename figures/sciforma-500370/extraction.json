@@ -1,0 +1,102 @@
+{
+  "id": "sciforma-500370",
+  "record_sha256": "d5b6d1470989ebcd34b6a6dd031b39732029b63b7a1be66009c01925922c6c08",
+  "asset_sha256": "37245d438f38735449564e73974de4cbc613c1c39bbe27ca4d1c5e8c320775d1",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500370",
+    "title": {
+      "zh": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control · 方法图",
+      "en": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control"
+    },
+    "paper": {
+      "id": "arxiv-2412-11198",
+      "title": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control",
+      "authors": [
+        "Mariam Hassan",
+        "Sebastian Stapf",
+        "Ahmad Rahimi",
+        "Pedro M B Rezende",
+        "Yasaman Haghighi",
+        "David Brüggemann",
+        "Isinsu Katircioglu",
+        "Lin Zhang",
+        "Xiaoran Chen",
+        "Suman Saha",
+        "Marco Cannici",
+        "Elie Aljalbout",
+        "Botao Ye",
+        "Xi Wang",
+        "Aram Davtyan",
+        "Mathieu Salzmann",
+        "Davide Scaramuzza",
+        "Marc Pollefeys",
+        "Paolo Favaro",
+        "Alexandre Alahi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11198",
+      "arxiv_url": "https://arxiv.org/abs/2412.11198",
+      "arxiv_id": "2412.11198",
+      "arxiv_first_submitted_at": "2024-12-15T14:21:19Z",
+      "arxiv_updated_at": "2024-12-15T14:21:19Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500370/image/image.jpg?Expires=1790835171&Signature=ucCBABXd2xisoSbBIph5iN7xjJz~W4aT4Yk8mke~3DKLXP2qLyrdaA7fcHk-GPgDj5gWylP~vgRDdBysrkN5YeFNxB9sClR9UcA7zruIC9BUaBnIdOr7s46SG0y2jp~rypbfV4cJMJdI1fwNoy-eMZ6~l3KEjkVf5yo21CAy97Ma00GzObqRGKoTjj2VrLdCmaO7Kf7EStWRwExgSuSeTKlb6yE769VWh4swL1BCSdNExx7V55xd1D4fXzPgOwvL21~P1WYARMT6bwaubRed6COQ~iZFja9CjdcAVxBPffk36kpIK~39diVfG8OO5Co35O84k~hFOX9q-wWFSiei0A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500370,
+      "description_sha256": "69b66ef16d4c6ca5053ace9823f687e3972f541c30baf3bf17698f629628e910",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a generative model called GEM, designed to predict future frames and future depth frames from a reference frame and noisy latent representations of image and depth modalities. The global layout is a left-to-right dataflow pipeline, starting with three input streams: a reference frame, future frames, and future depth frames. These inputs are processed through separate variational autoencoders (VAEs) or encoders to extract latent representations. The reference frame passes through a frozen encoder (pink trapezoid with snowflake icon) to produce latents. The future frames and future depth frames are encoded via VAEs (also pink trapezoids with snowflake icons), producing latents that are then corrupted with noise to form 'Noisy Latents' (gray cubes). These noisy latents, along with the reference latents, are concatenated (indicated by a circle with 'C') and fed into the core denoising network, denoted as D₀.\n\nThe central component is the denoiser network D₀, depicted as a gray box containing multiple blocks. It consists of three blue input blocks, one yellow middle block, and three red output blocks. This network is conditioned on three external modalities: ego trajectories, DINOv2 features, and human poses. Ego trajectories are integrated via a 'Cross-Atten LoRA' module (green rectangle with flame icon, indicating trainable parameters), which applies cross-attention at every block of the network. DINOv2 features (from ObjectNet, shown as black feature maps with colored points) and human poses (from PoseNet, shown as stick figures) are fed into the network after being processed by green trapezoidal modules labeled 'ObjectNet' and 'PoseNet', respectively. These features are concatenated (via 'C' circles) to the output of each block in the input layers of the denoiser, as indicated by arrows pointing from the green modules to the input blocks.\n\nAfter processing, the denoised latents are split into two branches. Each branch passes through a modality-specific output projection layer: P_image (purple rectangle with flame icon) for image modality and P_depth (another purple rectangle with flame icon) for depth modality. These projections generate latents specific to each modality, which are then decoded by separate VAE decoders (pink trapezoids with snowflake icons) to reconstruct the final outputs: 'Future Frames' (a sequence of RGB images) and 'Future Depth Frames' (a sequence of depth maps).\n\nThe legend at the bottom clarifies visual attributes: a circle with 'C' denotes concatenation; a snowflake icon indicates frozen components; a flame icon marks trainable components; pink trapezoids represent encoder/decoder modules; blue bars are input blocks; red bars are output blocks; yellow bars are middle blocks; and purple rectangles are modality output projections. The entire pipeline is designed to generate multimodal future predictions conditioned on both visual and motion cues, with explicit handling of different modalities through dedicated projection and decoding paths."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

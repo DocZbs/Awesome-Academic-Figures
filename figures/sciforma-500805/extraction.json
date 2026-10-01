@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500805",
+  "record_sha256": "c68501f0c8f68174ca7b755fd020c1defd3d0ab047e42284bb5304ddc29a8ed6",
+  "asset_sha256": "084fc2219e5cab4e14f3060831076be17699be39b1154820dca6057fbb6030e1",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500805",
+    "title": {
+      "zh": "ColorFlow: Retrieval-Augmented Image Sequence Colorization · 方法图",
+      "en": "ColorFlow: Retrieval-Augmented Image Sequence Colorization"
+    },
+    "paper": {
+      "id": "arxiv-2412-11815",
+      "title": "ColorFlow: Retrieval-Augmented Image Sequence Colorization",
+      "authors": [
+        "Junhao Zhuang",
+        "Xuan Ju",
+        "Zhaoyang Zhang",
+        "Yong Liu",
+        "Shiyi Zhang",
+        "Chun Yuan",
+        "Ying Shan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11815",
+      "arxiv_url": "https://arxiv.org/abs/2412.11815",
+      "arxiv_id": "2412.11815",
+      "arxiv_first_submitted_at": "2024-12-16T14:32:49Z",
+      "arxiv_updated_at": "2025-05-04T08:10:51Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500805/image/image.jpg?Expires=1790835177&Signature=qcu6y6oB-yLRnJSD-3FmJ0eZ2AwohPKlwkhpw-gqoZ7F6uc~zJNgbT8~BA6yOPntxyzeEgGgWy0ep5Vsjo7lswupQThB~cbs1qpBidQJF3K-fK2bjz53b0UAuVtH3Lp3S5YoXCbLtR8gpPpWQS4Tv5gceucFJbu7EDzq46fQfQlShfPhQHm3R6LhiRaEhKpYBYO7iKZj2KuYP-VEQY4QJd3Dtcn~CtxvMFBe3MTUQhItzT4q~fsKkPG4YUmIlzhAVq1UeBIcZlXErqkO6oeWKXGFcUJFLHRVFy29JwbB43E5bBud~C~9dWMAGFNnDPMpx5OHJ6DcEg6t6Dpi1WzO-A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500805,
+      "description_sha256": "6d9b42cd14e50425247fa54c683feffddf0bb1a50a49af9a2642b7fb6e3b7a41",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of ColorFlow, a framework composed of three interconnected pipelines: the Retrieval-Augmented Pipeline (RAP), the In-context Colorization Pipeline (ICP), and the Guided Super-Resolution Pipeline (GSRP). The layout is divided into three main sections arranged horizontally and vertically, with clear directional flows indicated by arrows.\n\nIn the top-left section, the Retrieval-Augmented Pipeline (RAP) begins with a grid of black-and-white comic panels. A query is issued to a Reference Image Pool, which contains a collection of colored comic images. This retrieval process selects relevant reference images, which are then cropped to extract specific regions. These cropped images are fed into the next stage.\n\nBelow RAP, the In-context Colorization Pipeline (ICP) starts with downsampling the input black-and-white image. The downsampled image passes through a green trapezoidal module representing an encoder, followed by a pink rectangular block labeled 'Colorization Guider'. This guider consists of two orange CNN blocks, each marked with a flame icon, indicating iterative or dynamic processing. The output from the guider feeds into a series of blue rectangular modules, each containing 'QKV' labels and flame icons, suggesting multiple attention layers or transformer blocks operating over T steps. These modules process the image features and produce a colorized output, which is then upsampled to match the original resolution. A black square icon labeled 'Downsample' appears again, possibly indicating a feedback loop or alternative path. The final output of ICP is a colorized version of the input comic panel.\n\nOn the right side, the Guided Super-Resolution Pipeline (GSRP) takes the colorized output from ICP as input. It processes this image through an Encoder-Decoder structure, both represented by green trapezoids. Alongside the main flow, there are three parallel branches, each consisting of a small blue square labeled 'C' (likely for context or conditioning) connected to an orange square with a flame icon, suggesting guided refinement steps. The decoder outputs a higher-resolution, refined colorized image. This result is compared against the original image, stored in a gray-bordered box labeled 'Original Image', and also fed back into the Reference Image Pool for future iterations. A circular arrow labeled 'Next Image' indicates the pipeline's ability to process sequential frames, maintaining color consistency across the comic sequence.\n\nConnections between modules are shown via solid arrows, indicating data flow direction. Dashed arrows denote optional or feedback paths. The entire diagram uses hand-drawn style elements, including scissors for cropping, a paint palette for colorization, and a magnifying glass for super-resolution, enhancing visual clarity. Text labels are placed directly on or near the corresponding modules, with pipeline names enclosed in colored banners at the top of each section."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

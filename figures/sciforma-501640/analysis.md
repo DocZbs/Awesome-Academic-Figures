@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+MotionBridge: Dynamic Video Inbetweening with Flexible Controls — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13190
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of a video generation pipeline, structured as a flowchart with multiple interconnected modules. The global layout is left-to-right, starting from input video X on the far left and progressing through encoding, embedding, denoising, and decoding stages to produce an output video on the far right. The top branch processes the original video X through a VAE encoder (E), producing latent representation Z_x, which is then corrupted by adding noise to form Z_t. This noisy latent is combined with other latent representations via channel concatenation (blue circle) before being fed into a Content Embedder. A separate branch processes keyframes K_1 to K_n from the same video, which are passed through an Augmented Frame Generator. This generator uses optical flow segmentation and region extraction to produce augmented frames G_1 to G_n, which are then encoded by E to yield Z_a. Another branch processes the input video through a Sparse Motion Generator, which outputs sparse motion points P_1 to P_m. These points are encoded by E to produce Z_m, which is fed into a Motion Embedder. The outputs of the Content and Motion Embedders are concatenated and undergo dimensionality reduction before being input into Denoising Transformers. A prompt is also fed into these transformers, which perform iterative denoising to generate a latent sequence. This latent is decoded by a VAE decoder (D) to produce the final output video. The bottom-left inset details the Augmented Frame Generator: it takes a frame and optical flow from X, performs optical flow segmentation, extracts regions using trajectories, and outputs a masked frame. The bottom-right inset shows the Embedder Structure: input frames are converted into N patches, processed by a linear layer, and output as a sequence of length N. Visual modules include rectangular blocks for encoders/decoders (green E/D), blue rectangles for latents (Z_x, Z_t, etc.), beige rounded rectangles for embedders, and light blue cylinders for the Denoising Transformers. The legend indicates that E and D are frozen VAE components, the blue circle denotes channel concatenation, and the green rectangle represents a linear layer. Arrows indicate data flow, with solid lines showing direct connections and curved arrows indicating iterative denoising within the transformer block.

@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500232",
+  "record_sha256": "1058553e7097a71e54711ca3e574956c64b0aae273dfc54939bdde3fa9f353fc",
+  "asset_sha256": "9cef8e95934623ae6f6d8a64ed5e6b6f190c249d38adcc57264b01db1f7aa6c0",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500232",
+    "title": {
+      "zh": "Entropy-Regularized Process Reward Model · 方法图",
+      "en": "Entropy-Regularized Process Reward Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-11006",
+      "title": "Entropy-Regularized Process Reward Model",
+      "authors": [
+        "Hanning Zhang",
+        "Pengcheng Wang",
+        "Shizhe Diao",
+        "Yong Lin",
+        "Rui Pan",
+        "Hanze Dong",
+        "Dylan Zhang",
+        "Pavlo Molchanov",
+        "Tong Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11006",
+      "arxiv_url": "https://arxiv.org/abs/2412.11006",
+      "arxiv_id": "2412.11006",
+      "arxiv_first_submitted_at": "2024-12-15T01:09:23Z",
+      "arxiv_updated_at": "2025-09-18T22:47:30Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500232/image/image.jpg?Expires=1790835164&Signature=jFY8FEKLFrJkitPjRid5V3vtsQcWRwuS39T-VZWMQT0zBc3fz2eZhaTHgLJqKftsiPf3PjJcATpAwzPHXKkbTt2s1yiU0Kr820EC7JDI1iCCZ0awqj65vVzOezof-P87kjv8je9JAwUnjcMEJz27iBdJ~mCq8HUKDXwuTEr4kHXjxwyOVPc~uez3AQ7oaHi2biXCMNg-r5CTJj~Rjv92pis9qX2Gk~tJ4JBYwq-liV1Q8lOXozBFmrADVrn06MovcoxE8m-bHPjZhSQAYoOVM1JUxsGzQsWwJ95NcN-5hSv8vu4sBgwCz65V-eCygG3RPJioeiDAC-qL8staPftexg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500232,
+      "description_sha256": "201fa6f0743c06eafef2f66d65d3913b897d6872b8472d7277ce7f46e1ce3a58",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a methodological framework for constructing process and outcome reward data, particularly focusing on a model named \\ModelName, which leverages entropy-regularized sampling trajectories to compute process rewards. The global layout is structured horizontally, progressing from left to right, with distinct color-coded regions representing different stages: problem input, solution generation, reward computation, and reward types.\n\nOn the far left, a light blue box presents the initial problem: 'Half the value of $3x-9$ is $x+37$. What is the value of $x$?' with the golden answer specified as 83. Adjacent to it, a purple box labeled $a^1$ describes the first step of the solution: translating the word problem into the equation $\\frac{1}{2}(3x-9) = x+37$. Below these, an orange box defines notation: $a^i$ denotes the i-th step of the solution $a$, and $a^{i,j}$ denotes the i-th step of the j-th finalized solution.\n\nFrom the problem and first step, a gray arrow leads to a yellow region representing the full solution trajectory: $a = [a^1, a^2, a^3, ..., a^L]$, which culminates in an answer of 85. This is marked as incorrect with $y=0$ and a red cross, indicating failure to match the golden answer. This entire path represents the outcome reward, defined as $r = y$, shown in a light green box on the far right.\n\nBeneath the main solution path, a pink region displays multiple parallel solution trajectories, each corresponding to a different sampled solution path. These are labeled $a^{2,1}, a^{2,2}, a^{2,3}$, etc., indicating the second step of the first, second, third, etc., finalized solutions. Each trajectory proceeds through steps $a^{3,1}, a^{3,2}, ...$, up to $a^{L1,1}, a^{L2,2}, a^{L3,3}$, and produces an answer. For example, the first trajectory yields 83 with $y_1=1$ (correct, marked with a green check), the second also yields 83 with $y_2=1$, and the third yields 87 with $y_3=0$ (incorrect, marked with a red cross). A note below this region clarifies that $y_i$ denotes the correctness of the i-th step.\n\nTo the right of the pink region, three light green boxes detail different reward calculation methods. The top one, 'Hard-label', computes $r_i = \\max_i y_i$, selecting the maximum correctness across steps. The middle, 'Soft-label', computes $r_i = \\frac{1}{n} \\sum_{i=1}^n y_i$, averaging correctness over all steps. The bottom, 'Entropy-regularized label', computes $r_i = \\frac{1}{\\eta} \\ln \\mathbb{E}_{a^{[i]} \\sim \\pi_0} e^{\\eta y(a,x)}$, which is the core innovation of \\ModelName, using entropy regularization to compute the process reward from the sampling distribution.\n\nArrows connect components logically: from problem to first step, then to the full solution and its outcome; from the first step to multiple parallel solution paths; and from each solution path to its final answer and correctness label. The reward computation blocks are positioned to the right, indicating they are derived from the solution paths. The figure thus visually conveys how \\ModelName constructs process rewards via entropy-regularized sampling, contrasting with hard and soft labeling approaches, while outcome rewards are simply based on final correctness."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500792",
+  "record_sha256": "9ad48272cde6651660f911821abd53dd77f2c6b55b0e6273c137f3a5050e6bd6",
+  "asset_sha256": "7a974e629126e82518e066076c7906d525c32775b2a3232aa060b0a93e853a3d",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500792",
+    "title": {
+      "zh": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models · 方法图",
+      "en": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11803",
+      "title": "UAlign: Leveraging Uncertainty Estimations for Factuality Alignment on Large Language Models",
+      "authors": [
+        "Boyang Xue",
+        "Fei Mi",
+        "Qi Zhu",
+        "Hongru Wang",
+        "Rui Wang",
+        "Sheng Wang",
+        "Erxin Yu",
+        "Xuming Hu",
+        "Kam-Fai Wong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11803",
+      "arxiv_url": "https://arxiv.org/abs/2412.11803",
+      "arxiv_id": "2412.11803",
+      "arxiv_first_submitted_at": "2024-12-16T14:14:27Z",
+      "arxiv_updated_at": "2025-05-23T03:05:52Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500792/image/image.jpg?Expires=1790835177&Signature=Dy55xKP1JbPDpah85ZOdDo8QlyBrLM16yV5nVD9NoYDwLZnfJS77XmQzsbz-vCZkxu9C5YGd7tWMVgsYrYgFj3Szo-ceT4XSiAtrOVG8KaZHn~UYiwMz-5zWVqL9NyEuP6vuirz~3uua1N1bTQL0wWsgTIUmn8qfLW8~rEi7AdmfLFnqjsns2GpjDchAhSR1v9vUovX0whMEnYZK37IurhMAF2i65d0vr8awnPJC9lO~1mRbCzU6vATesp~irMBvF-Mb4OXF2SnTFRXcyakArER1Yyxny07pAJqSJdAIzJmZPIyTrXuEnbxmwhjlEoek7MXF-h~F255rgCMx2--0vQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500792,
+      "description_sha256": "fa73165fc0d8ea9e602f54aa4a459a25d730dba6bd41e3550b1f4568ff393e99",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two scenarios, labeled (a) and (b), demonstrating how different uncertainty estimation strategies influence the response generation of a Policy LLM when answering a question about which country has the fourth largest land area in the world. The overall layout is divided into three main columns: 'Question', 'Uncertainty Estimations', and 'Response'. A dashed horizontal line separates scenario (a) from scenario (b).\n\nIn both scenarios, the 'Question' column features a user icon with a laptop, emitting a yellow speech bubble containing the query: 'Which country has the fourth largest land area in the world?'.\n\nIn scenario (a), the 'Uncertainty Estimations' column displays a gray rounded rectangle listing five candidate answers: 'The U.S.', 'It’s U.S.', 'China.', 'It’s Brazil.', and 'Canada.'. The first two are marked with green checkmarks, indicating correctness, while the last three are marked with red crosses, indicating incorrectness. This set of candidates flows via a gray arrow to a blue cartoon robot icon labeled 'Uncertainty Estimation Models'. From this model, another arrow leads to a peach-colored rounded rectangle displaying 'Conf. 40%', representing confidence. This confidence score then flows via an arrow to a green cartoon robot icon labeled 'Policy LLM', which emits a peach-colored speech bubble stating 'I’m not sure.', marked with a red cross to indicate an incorrect or suboptimal response.\n\nIn scenario (b), the same question is posed. The 'Uncertainty Estimations' column again shows the same five candidate answers, but now the correct ones ('The U.S.', 'It’s U.S.') are enclosed in a dashed green box, while the incorrect ones ('It’s Brazil.', 'Canada.', 'China.') are enclosed in a dashed red box, visually emphasizing the distinction between correct and incorrect candidates. The flow proceeds similarly through the blue 'Uncertainty Estimation Models' robot to a peach-colored box that now includes both 'Conf. 40%' and 'Entro. 1.33', indicating that entropy is also considered as part of the uncertainty measure. This enriched uncertainty signal flows to the green 'Policy LLM' robot, which now emits a peach-colored speech bubble stating 'It’s the U.S.', marked with a green checkmark to indicate a correct and optimal response.\n\nThe figure thus contrasts two approaches: (a) using only confidence, leading to a cautious but incorrect response, and (b) using both confidence and entropy, enabling the Policy LLM to select the correct answer despite moderate confidence. The visual elements include distinct icons for users, uncertainty models, and policy LLMs, color-coded feedback marks (green checks and red crosses), and labeled boxes for metrics. The overall structure emphasizes the importance of incorporating multiple uncertainty measures to improve the reliability and accuracy of LLM responses."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

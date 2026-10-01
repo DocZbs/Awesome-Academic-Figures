@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501535",
+  "record_sha256": "144ab2f1c5b987549bae167c8fdce04374f634bb348a1c8b8dd05d9531a73f5b",
+  "asset_sha256": "33fbd4fc534278420234bb6d7f4b42557cb889fb5f87104e61f3b3b5f8d5d14d",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501535",
+    "title": {
+      "zh": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning · 方法图",
+      "en": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12953",
+      "title": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning",
+      "authors": [
+        "Moritz Reuss",
+        "Jyothish Pari",
+        "Pulkit Agrawal",
+        "Rudolf Lioutikov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12953",
+      "arxiv_url": "https://arxiv.org/abs/2412.12953",
+      "arxiv_id": "2412.12953",
+      "arxiv_first_submitted_at": "2024-12-17T14:34:51Z",
+      "arxiv_updated_at": "2024-12-17T14:34:51Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501535/image/image.jpg?Expires=1790835197&Signature=wFFqH2TOCSBfWXaf2jVMk7OeC4QBM~xd9GA0TNMkC10dxankVVnd0w2BdMqApHV4k~gFv3G~fJJQf6zYrl8I8Wkp~IhcTECCw6RiQ1kg~TJrYFp6OIJVFYuw1InuX7azwntGKRsW4L3CmFAieeXQBIakERS5gUWkXKPcC04XS91CUFvrJK04QCtmnC-cQtEYS6mRT0ZnrlbZhOjA5pak0HgxwuGz61Ok~WtOMdZgOuY614xN0HCXvvPtpifgcxdDvAiF0labNpPYQAZk9A7sm2gvUTLc4KDsqSSLvW~nPjnG3jlhLKWToQOWOMExMETJgB7lyp-mFcbCyk8OMcEudQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501535,
+      "description_sha256": "010698d8c52c55fc8c9969db793d85739a54654dab68b736b496d3cb97805a57",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the MoDE (Mixture-of-Denoising Experts) architecture, divided into two main parts: the overall model structure on the left and a detailed view of the denoising process on the right. The global layout is horizontal, with the left side showing a stacked transformer-like architecture and the right side illustrating the internal mechanism of the router and expert selection during denoising. A dashed vertical line separates these two sections, with the right side labeled 'Denoising Process' and an arrow indicating progression from φ(σ_T) to φ(σ_0), representing the denoising trajectory.\n\nOn the left, the main architecture consists of a vertical stack of blocks enclosed in a large beige rectangle, labeled with 'N ×' on the left side, indicating N repeated layers. Each block contains four components arranged vertically: 'Add & Norm' (light orange), 'Router + Experts' (light pink), 'Noise Conditional Multi-Head Attention' (light yellow), and another 'Add & Norm' (light orange). At the top, a light orange box labeled 'Linear' feeds into the first 'Add & Norm'. Below the stack, multiple input sources are shown as colored boxes connected by lines to the bottom of the stack: 'Noise' (blue), 'Goal' (purple), 'Static Camera' (green), 'Wrist Camera' (green), and 'Actions' (orange). These inputs feed into corresponding modules: 'MLP + Sinusoidal', 'CLIP-Text', 'FiLM ResNet-18', 'FiLM ResNet-18', and 'Actions', respectively. The 'Actions' input is also shown at the top, suggesting it may be used in both input and output stages.\n\nOn the right, the denoising process is detailed for two time steps: φ(σ_T) and φ(σ_0). Each time step contains a 'Router + Experts' module (light pink background). Inside this module, a 'Router()' box (pink) receives input from the previous layer and outputs to a 'Select & Weight' box (red). The router selects among four expert modules (E₁ to E₄), depicted as blue boxes with dashed outlines, indicating they are conditionally activated. The selected experts are connected via solid lines to the 'Select & Weight' box, while unselected ones are connected with dashed lines. The 'Select & Weight' box then feeds into an 'Add & Norm' block (light orange), followed by a 'Linear' layer (light orange). Between the two time steps, a series of small colored circles (blue, green, orange) represent intermediate states or token flows, with an ellipsis indicating continuation. The final output is labeled 'Action' with three pink squares, indicating the generated action sequence.\n\nConnections are represented by arrows: solid arrows indicate active data flow, while dashed arrows indicate potential or inactive paths. The router dynamically selects a subset of experts based on the current noise level σ, enabling efficient computation. The visual attributes include distinct colors for different functional components: light orange for normalization and linear layers, light yellow for attention, light pink for router modules, red for selection and weighting, and blue for expert models. Text labels are clear and positioned within or adjacent to each component. The figure effectively illustrates how the MoDE architecture leverages a mixture-of-experts approach within a transformer framework for scalable action generation through a denoising process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502360",
+  "record_sha256": "8a696858d042b4132c49fb7c795e076065c387f7a2a62ac1fceec3dabd08bbb8",
+  "asset_sha256": "ac4a6b648a6e790f3f6221d2fc71b892a6c4db170849d7a01335f098319c2f81",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502360",
+    "title": {
+      "zh": "CLDG: Contrastive Learning on Dynamic Graphs · 方法图",
+      "en": "CLDG: Contrastive Learning on Dynamic Graphs"
+    },
+    "paper": {
+      "id": "arxiv-2412-14451",
+      "title": "CLDG: Contrastive Learning on Dynamic Graphs",
+      "authors": [
+        "Yiming Xu",
+        "Bin Shi",
+        "Teng Ma",
+        "Bo Dong",
+        "Haoyi Zhou",
+        "Qinghua Zheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14451",
+      "arxiv_url": "https://arxiv.org/abs/2412.14451",
+      "arxiv_id": "2412.14451",
+      "arxiv_first_submitted_at": "2024-12-19T01:59:24Z",
+      "arxiv_updated_at": "2024-12-19T01:59:24Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502360/image/image.jpg?Expires=1790835216&Signature=jyCN3TTgaDjadk1aOSKt~rWYCnEWyhE~-GXPdTRrmwkXBj254Oav5bczNlCtrlcQE9J-xiIMaqUfpcUTSMIgK1pA4RRGspdvA3V34kWmjeJ6ettCAF2fLNUeTmnWrSC-jebFWGH1NFBX4MYYdDtU5nhd-mtplyyfJf60OgpzB2jI-4DVZWi6uIJGSPKujEkS27ak8ZDnch6UWLRwlBVt1NqGpl3Fn7XLDqW9moT4jD0myE9xfTHJ8cBYg05po2DI42ckBqeFhh1wAEm0-HJG0YhR-wRh2WuRo~B47tAry2gwTzNmw5NUWe9tDRgWtyxwU9Mcir3B69He6prEbo2S-w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502360,
+      "description_sha256": "a6e2c9a72d6fd58d6c2aab918581776d91915e4c6b4eabede89f19e352d566d0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates four candidate timespan view sampling strategies for Contrastive Learning on Dynamic Graphs (CLDG), organized into two rows and two columns, each depicting a different approach to generating temporal views from dynamic graph data. The global layout is divided into two main sections: the top row shows the underlying graph structures and their evolution over time, while the bottom row presents corresponding temporal sampling patterns using time-axis diagrams.\n\nIn the top-left panel, the graph structure evolves over time, with nodes represented as circles (blue, gray, or orange) connected by edges. The orange node appears to be a central or special node in the first graph, which transitions to a more distributed structure in subsequent graphs. The top-right panel shows a similar evolution but with a different initial configuration, where the orange node is again prominent, followed by a shift to a more uniform gray-node network. These panels visually represent how dynamic graphs change over time, with Δt denoting a time interval between snapshots.\n\nThe bottom row contains four time-series diagrams, each labeled 'View 1' and 'View 2' along vertical axes, with horizontal axes marked 't' for time. Each diagram spans a time window Δt, indicated by a bracket above the axis. In the bottom-left pair, light blue boxes represent sampled graph views at specific time points; these are aligned vertically across View 1 and View 2, suggesting synchronized sampling. The boxes contain small embedded graph icons, indicating that each sample corresponds to a graph snapshot. The two diagrams in this pair show different alignment patterns: the left one has overlapping samples, while the right one has offset samples, implying different temporal sampling strategies.\n\nThe bottom-right pair uses colored boxes (light blue, purple, red) to represent sampled views. The left diagram shows overlapping samples in both views, with some time intervals having different colors, possibly indicating different types of views or features. The right diagram shows non-overlapping, staggered samples, with red and purple boxes appearing in alternating positions, suggesting an asynchronous or shifted sampling strategy. The color coding may differentiate between view types or feature representations.\n\nConnections and arrows are minimal, primarily used to indicate the direction of time (rightward arrows on t-axes) and to mark the time interval Δt. There are no explicit connecting lines between the top and bottom panels, but the visual correspondence implies that the time-series diagrams below correspond to the graph evolution shown above. The figure as a whole demonstrates various ways to sample temporal views from dynamic graphs for contrastive learning, emphasizing different temporal alignments and sampling offsets between views."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

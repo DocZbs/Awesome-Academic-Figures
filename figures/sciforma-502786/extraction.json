@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-502786",
+  "record_sha256": "b3c533fef7c0e7963fca6f855470e71714c0922402f0d87940a2d5fa0b9ae6ac",
+  "asset_sha256": "9df2a1c0bbf0510440c2e4eb239cb217d0d03fd1615a4df31e8c2cd2b12fd470",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502786",
+    "title": {
+      "zh": "LitLLMs, LLMs for Literature Review: Are we there yet? · 方法图",
+      "en": "LitLLMs, LLMs for Literature Review: Are we there yet?"
+    },
+    "paper": {
+      "id": "arxiv-2412-15249",
+      "title": "LitLLMs, LLMs for Literature Review: Are we there yet?",
+      "authors": [
+        "Shubham Agarwal",
+        "Gaurav Sahu",
+        "Abhay Puri",
+        "Issam H. Laradji",
+        "Krishnamurthy DJ Dvijotham",
+        "Jason Stanley",
+        "Laurent Charlin",
+        "Christopher Pal"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15249",
+      "arxiv_url": "https://arxiv.org/abs/2412.15249",
+      "arxiv_id": "2412.15249",
+      "arxiv_first_submitted_at": "2024-12-15T01:12:26Z",
+      "arxiv_updated_at": "2025-03-21T14:56:58Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.DL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502786/image/image.jpg?Expires=1790835227&Signature=UNZxlBDMzB49-g01MIxDGAu5Nz9x2tjdwazDqV3igUq1BIiY9nzjW7USWEcKj6Jxn15AwXy4FqL4dquIoKtJspyDsgiInuAnzqcjgZ~PeQrxGcRMHOrqSnKjL5naYFddEnJOW-10HI-GCrJuAC0ouG~X5FgtXCj7d7FdGuKrQxXD7aEzmXLZGInHhaPkrcfxDI8fHqC~vF-dbxGwkystGbrwOvA~dqg2g09epKdomtmFjFOiXkOR7dUhoals8KnWdIuQTrTg54lqM4OJXRAmYUh25HHr9feBdaXcHcM1YICeuHVdjmXCd5H71G1TcyCorUYXcPVfmbO322lgmmIRIg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502786,
+      "description_sha256": "d736623cb0024700d5a44cbb6590ab1a3d32919d6d631937409efc5b3be2cd7b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.DL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a top-to-bottom flowchart illustrating a data processing pipeline for creating and querying FAISS indexes using 150M SPECTER2 embeddings. The global layout is linear and vertical, divided into three main sections: Input, Search Process, and Output, each enclosed in a light gray rectangular container with rounded corners. The entire diagram is set against a dark gray background, enhancing contrast and readability.\n\nAt the top, under the 'Input' section, two rectangular boxes represent the initial data sources. The left box, labeled 'Query File', is connected by a downward arrow to the 'Search Process' section. The right box, labeled '908 JSONL.GZ Files', feeds into an intermediate step called 'Index Creation'. This step contains two nested boxes: the upper one reads 'Create 908 FAISS Indices', and the lower one reads '908 FAISS Index Files', indicating the output of this phase. Both the 'Query File' and the '908 FAISS Index Files' are connected via arrows to the 'Search Process' section.\n\nThe central 'Search Process' section is the largest container and contains four sequential steps, each represented by a dark gray rectangular box with white text. The first step is 'Search Across all Indices', which receives inputs from both the query file and the index files. This leads to 'Collect Top K=100 Results from Each Index', followed by 'Combine and Sort All Results', and finally 'Select Overall Top K=100 Results'. These steps are connected by solid downward arrows, indicating a strict sequential workflow.\n\nAt the bottom, under the 'Output' section, a single box labeled 'Final Results File' receives input from the last step of the search process. This signifies the final deliverable of the pipeline.\n\nAll text within the boxes is centered and uses a clean, sans-serif font. The arrows are thin, solid lines with classic arrowheads, clearly indicating the direction of data flow. The diagram emphasizes a modular, step-by-step approach, where index creation is a preprocessing stage, and the search process is a multi-stage retrieval mechanism designed to aggregate and rank results across multiple FAISS indexes before producing a consolidated output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

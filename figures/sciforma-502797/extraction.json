@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502797",
+  "record_sha256": "0c1994b75f7360152f744be5942afcd9d99243387c0bacbddebbb68294eb085e",
+  "asset_sha256": "cb5981df18a0774ba2a469e88ea2b6459326153de42a55c07d187d4d0d8159bd",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502797",
+    "title": {
+      "zh": "On the Structural Memory of LLM Agents · 方法图",
+      "en": "On the Structural Memory of LLM Agents"
+    },
+    "paper": {
+      "id": "arxiv-2412-15266",
+      "title": "On the Structural Memory of LLM Agents",
+      "authors": [
+        "Ruihong Zeng",
+        "Jinyuan Fang",
+        "Siwei Liu",
+        "Zaiqiao Meng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15266",
+      "arxiv_url": "https://arxiv.org/abs/2412.15266",
+      "arxiv_id": "2412.15266",
+      "arxiv_first_submitted_at": "2024-12-17T04:30:00Z",
+      "arxiv_updated_at": "2024-12-17T04:30:00Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502797/image/image.jpg?Expires=1790835227&Signature=P0W7QCxIrysAPm-r6POTmjM6LddDQ~h7BFM18slszptdRFQMld4RUdSDHeBOIsO61BttfYvx3H6o5XdKAJooEvd~1~3X0lfPiiusfkGqk2NpDy1jd6CZsSyevFHRMzVywe6j7YlNTQcUMeWNAGu5bMdEqIuzevgOqn8uvX-3Bo~T-Ajg0HPjZcC5rzuuVFyItB-Vr9WuZmyxAfOYMWrKIFXgsngb5YkzXsznnKBRhUZTXclkKlRfY0LwmCi1vio5SPsuRIKUQsmuO~8hFBwcRaQVqLCfzYisHLY75CeXnDxyQOrbdmpF~BverB2voU7Ctx7FnW5Miwo5Z52DSKXSqQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502797,
+      "description_sha256": "01ad417af0f2497b150133c1abbfe85da4052ab3700d81d62e1a48d0bae587b2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a high-level architectural framework for LLM-based agents, emphasizing the role and integration of memory modules within the agent system. The global layout is divided into two main regions by a vertical dashed line: the left region, enclosed in a light blue dashed border, represents the external environment comprising the User and External Information sources; the right region, enclosed in a light purple dashed border, represents the core LLM-based Agents system. The User is depicted as a cartoon avatar with dark hair and rosy cheeks, labeled 'User', positioned above a large rectangular box labeled 'External Information (e.g., Preference, Database, Wikipedia, ...)', indicating diverse data sources that can be accessed by the agent. A bidirectional arrow connects the User to the 'Action' component within the agent system, signifying interactive communication. A unidirectional arrow from the 'External Information' box points to the 'Tools' component, showing that external data feeds into the agent’s tool usage. Within the LLM-based Agents region, four white rectangular modules are vertically aligned: 'Action', 'Planning', 'Tools', and 'self-evolve'. Each of these modules has a bidirectional arrow connecting it to the 'Memory Module', which is highlighted with a yellow dashed border and positioned to the right. The Memory Module contains two sub-components: 'Structural Memory', shown as a pink rectangle, and 'Memory Retrieval', shown as a green rectangle. These sub-components represent different aspects of memory handling—structural organization and retrieval mechanisms—within the agent. All connections between the agent components and the memory module are bidirectional, indicating continuous interaction and feedback loops. The figure visually emphasizes that memory is central to the agent's operation, influencing action, planning, tool use, and self-evolution. The caption clarifies that the focus of the study lies on memory modules, particularly their structural design and retrieval methods."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

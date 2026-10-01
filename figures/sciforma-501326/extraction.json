@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501326",
+  "record_sha256": "09488131b72352d31115ae8f7dcd56971a60e7d461e11c2afd3900a6df793206",
+  "asset_sha256": "a404b6e52664268a7e8785c12e1442dcf412a230da5b656ec993e9c458b15e08",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501326",
+    "title": {
+      "zh": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA · 方法图",
+      "en": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA"
+    },
+    "paper": {
+      "id": "arxiv-2412-12632",
+      "title": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA",
+      "authors": [
+        "Zhiyuan Chang",
+        "Mingyang Li",
+        "Xiaojun Jia",
+        "Junjie Wang",
+        "Yuekai Huang",
+        "Qing Wang",
+        "Yihao Huang",
+        "Yang Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_id": "2412.12632",
+      "arxiv_first_submitted_at": "2024-12-17T07:49:49Z",
+      "arxiv_updated_at": "2025-05-26T01:35:19Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501326/image/image.jpg?Expires=1790835192&Signature=YOtrGFEblKl8CfifG2CJEQ8PZD-QUEVk6hzroft3KHS1NH-U6gSfyTDRefAZgexZpClZfDkrkT-effBTvW1x~B5g4Idka52spNFMN6OVxF4dOq9atT9S~Bul0YQA34SpHmGq1B60AyiAQQhZsf0Z~eRM4r84mQ4CJ68u6b86B8kNFB71s2yC1JonLDNTNj-vj2a3bBWWWbmB5FE6cKtcolS94h-cJAsVdgSCcvj~ZN39VJ4qhl8AClyINp37ayy7~8~ImR5VyeccCo5w6gEySehmKaZ6fVBii0WKIXmk-AhycFdpL1B-zwiC-bD7DKI2MAo-BdPeuP0thiDMEDJu6Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501326,
+      "description_sha256": "83ea9d829ebc8220aa118c399a09980bb7111806e37dc2810cb1d91a34c4fdd3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a CoE (Chain of Evidence) discrimination framework, structured as a left-to-right data processing pipeline. The global layout consists of four main stages: Question input, Information Extraction, Intent construction with External Knowledge, and Feature Discrimination leading to a binary decision. The entire process is visually organized in a horizontal flow from left to right, with clear modular boundaries and directional arrows indicating data flow.\n\nStarting from the left, the 'Question' is represented by a black square icon containing a question mark and horizontal lines, symbolizing a textual query. This feeds into the 'Information Extraction' module, depicted as a blue folder icon with document-like content, labeled in bold blue text. An arrow points from the Question to this module, indicating the first step of processing.\n\nThe output of Information Extraction flows into a large rounded rectangular container labeled 'Intent' on the left side. Inside this container, multiple yellow rectangular boxes are stacked vertically, each labeled 'Evidence Node₁', 'Evidence Node₂', ..., 'Evidence Nodeₙ', representing extracted evidence elements. These nodes are connected by curved black lines to labels on the right side of the container: 'Relation₁₂', 'Relation₂ₙ', etc., indicating relationships between pairs of evidence nodes. A large curly brace on the left groups all evidence nodes under the 'Intent' label. Below this container, the text 'External Knowledge' is shown alongside three blue book icons, suggesting that external data sources are integrated into the Intent construction phase. A line connects the External Knowledge to the Intent container, indicating its contribution.\n\nFrom the Intent container, a thick black arrow leads to the next stage: 'Feature Discrimination', labeled in bold blue text at the top. This stage is represented by a light blue rounded rectangle containing a vertical list of features: 'Intent', 'Entailment + Evidence Node', 'Containment + Evidence', 'Relation Inference'. Above this box, a small blue magnifying glass icon with a yellow handle symbolizes analysis or scrutiny. A horizontal line extends from this module to a decision point labeled 'CoE Existed?' in bold blue text.\n\nFrom this decision point, two paths diverge: one leads to a green checkmark (✓), indicating a positive outcome (CoE existed), and the other to a red cross (✗), indicating a negative outcome (CoE did not exist). These are standard symbols for binary classification results. The overall structure emphasizes a sequential, logic-driven process where raw questions are transformed through extraction and integration of evidence and relations, then analyzed via feature-based discrimination to determine whether a valid Chain of Evidence exists."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

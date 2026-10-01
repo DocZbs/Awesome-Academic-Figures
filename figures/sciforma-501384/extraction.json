@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501384",
+  "record_sha256": "19ef8ee510a0c9efdd56afbf6f1b1c7ac70d1b77fb5f485f76d22d852bc81542",
+  "asset_sha256": "e3683dc8461ab66aef4009d459d202ded6b00f6ca5cbc72226825c180ce5030b",
+  "original_file": "original.jpg",
+  "pixel_width": 1664,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501384",
+    "title": {
+      "zh": "Unsupervised UAV 3D Trajectories Estimation with Sparse Point Clouds · 方法图",
+      "en": "Unsupervised UAV 3D Trajectories Estimation with Sparse Point Clouds"
+    },
+    "paper": {
+      "id": "arxiv-2412-12716",
+      "title": "Unsupervised UAV 3D Trajectories Estimation with Sparse Point Clouds",
+      "authors": [
+        "Hanfang Liang",
+        "Yizhuo Yang",
+        "Jinming Hu",
+        "Jianfei Yang",
+        "Fen Liu",
+        "Shenghai Yuan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12716",
+      "arxiv_url": "https://arxiv.org/abs/2412.12716",
+      "arxiv_id": "2412.12716",
+      "arxiv_first_submitted_at": "2024-12-17T09:30:31Z",
+      "arxiv_updated_at": "2025-01-19T16:32:25Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501384/image/image.jpg?Expires=1790835192&Signature=Jfo1EVNqKd1K6obuuw5KUuKnUAs28Tp4TYgpqBvhp5zrvRK7Q0qOTE0DmH2zcMQc0Z5wG2Gv0kz8weyqbQImkJpy-Okad-CCRyJDSFPRmMnMRWpO~BK6-el8J12OCyHX8azHSwOlhaymey93~JFm55X2QJYx0bW-DHdfdd82s6QXKfmH-Zj5h5MR9n64rursYeOtIBii5tyo~iL6pLuui69oMEf1mSZ5sJrPx0GTsAhvbPc-IxbJ6lWE~~nKmN6DWbFldE3MN-Kdvyf-SiC0DCTcieKgNGywdlwSZOPMd3PDcwYIxwrTdIciIhyVA-~q48IbMEeyApSsaOvCptTkug__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501384,
+      "description_sha256": "2eaae73361c123be6639e944ae81798aaf1fffb90ba989aa27067ded9218aab0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive system overview for UAV trajectory estimation from LiDAR point cloud sequences. The global layout is left-to-right, depicting a pipeline starting from raw sensor input on the far left and progressing through clustering, filtering, scoring, and finally trajectory estimation on the right. The diagram is structured into distinct functional modules connected by solid and dashed arrows indicating data flow and evaluation paths.\n\nOn the left, a purple rounded rectangle labeled 'LiDAR' feeds into another purple box labeled 'Temporal Concat.', representing temporal concatenation of point cloud frames. This produces a 'Point Cloud Temporal Sequence P_i', visualized as a stack of gray rectangular blocks. Below this, a colorful 3D point cloud image illustrates the raw input data.\n\nFrom the temporal sequence, two parallel clustering pathways emerge. The upper path leads to 'Global Cluster C_k^global', depicted as a stack of translucent purple cubes labeled 'Cluster i', 'Cluster j', 'Cluster k'. This is generated via a DBSCAN module shown as an orange rounded rectangle. The lower path leads to 'Local Cluster C_local^k', represented as multiple stacks of smaller translucent cubes, each labeled with frame numbers (frame 1, frame 2, ..., frame n), indicating per-frame clustering. Both clustering outputs are derived from the same input sequence via a 'Global-Local Cluster' process.\n\nFrom the global clusters, two metrics are computed: 'V_k^global / Num_k^global' and 'V_k,i^local', which feed into a 'Voxel' module (blue cube with internal grid) and a 'Density' module (stack of blue cubes). These modules compute spatial features such as voxel volume and density, denoted by 'ρ_k^global', 'ρ_k^local', and 'R_k^frame'.\n\nThe local clusters also contribute to a 'RMSE Evaluation' block (red rectangle), indicating performance assessment of the clustering over time.\n\nThe voxel and density features are combined with the sampled UAV point cloud (shown as scattered colored dots labeled 'Recent Point clouds' and 'Old Point Cloud') to perform 'Scoring' (light orange rectangle). This scoring step filters out non-UAV points, producing an 'Extracted point cloud' that feeds into the final 'Trajectory Estimation' module (light blue rounded rectangle).\n\nThe trajectory estimation module outputs both a 'Predicted Trajectory' (green dashed line) and compares it against a 'Ground Truth' (red dashed line), with the RMSE evaluation block also receiving feedback from this comparison, closing the loop for performance validation.\n\nAll connections are indicated with arrows: solid arrows denote primary data flow, while dashed arrows represent auxiliary or feedback paths, such as from clustering results to feature computation and from trajectory estimation back to evaluation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500881",
+  "record_sha256": "da82163e47f8af0a1aaf214254c7440132c8f2ff144f71e8e8cbcedfe097a77f",
+  "asset_sha256": "add062e285db3ccbd36a947b9bb3290d7f20b6cf8c36a23d08b3bbf424464054",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500881",
+    "title": {
+      "zh": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks · 方法图",
+      "en": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11964",
+      "title": "BetaExplainer: A Probabilistic Method to Explain Graph Neural Networks",
+      "authors": [
+        "Whitney Sloneker",
+        "Shalin Patel",
+        "Michael Wang",
+        "Lorin Crawford",
+        "Ritambhara Singh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11964",
+      "arxiv_url": "https://arxiv.org/abs/2412.11964",
+      "arxiv_id": "2412.11964",
+      "arxiv_first_submitted_at": "2024-12-16T16:45:26Z",
+      "arxiv_updated_at": "2024-12-16T16:45:26Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500881/image/image.jpg?Expires=1790835177&Signature=VsbFLfP9oRIXqKAsDN4xBQzHjK2G6JcrC6YX3fW57q4tjytEE8g5skSjM~Q3dsAdt7ozzfADDN3sH5UajKCrd8C6AguHu7AGHh7W6QJmQ6ZLkt0AUpzsg7a8~knsacCl-j2yP4tsJnPq3Sk8dsGo6RBrQDyT5KBING-skjvBxDSZ64tOxHb9rDVXckQVfJTgMYLg7628WqV1KjlaOqzXA8j~CavVJ~2e0fuiT-GIXCbQWasGfRqd8WIP5eKGmWh1zQQvGzhw2mQ81USwmWgj6bHlmH35BnSUPMaAW2PCXl8eCyMuarC3Ec9JT8-5K3UJ129LG4oThnxolCjFGNwdLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500881,
+      "description_sha256": "7216b81c20111b91ba4e5534de0a733ae7801ecdd70ffe020cfe7aaa01bbf8c0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the three-step workflow of the BetaExplainer method for generating edge importance scores in a Graph Neural Network (GNN) context. The global layout is structured into three main vertical stages: Step One (Initialize Inputs), Step Two (Train BetaExplainer), and Step Three (Return Edge Mask), with an overarching central processing block labeled 'Update Probabilities & Get New Masked Results' that connects Steps Two and Three. The top-left corner contains a gray cube labeled 'Trained GNN', indicating the input model, alongside a representation of the 'Original Graph' composed of yellow circular nodes connected by blue arrows, with associated parameters α and β. This section also includes the output of the trained GNN, denoted as f(X,G) = [0, 0, ..., n, n], representing node predictions or embeddings.\n\nIn Step One, the process begins with initializing inputs: the trained GNN, the original graph structure, and the Beta distribution parameters α and β. These are fed into Step Two, which is visually represented as a vertical sequence of three masked graph states, each showing progressively more edges removed (indicated by dashed lines and reduced connectivity). Each state is annotated with a vector of values: [1,1,1] at the top (fully connected), then [0.25,0.5,0.75], and finally [0.10,0.55,0.9], illustrating the iterative masking process where edge probabilities are updated. This step is labeled 'Train BetaExplainer'.\n\nThe central beige box, titled 'Update Probabilities & Get New Masked Results', describes the core optimization loop. It contains a diagram of a 'Masked Graph' with some edges dashed to indicate masking, and shows the GNN results on this masked graph as f(X,Gs) = [0, 1, ..., 1, n]. A feedback loop arrow connects the masked graph output back to itself, emphasizing iterative refinement. The objective function is explicitly stated: minimize the KL-divergence D_KL(f(X,G) || f(X,Gs)) between the original GNN output and the masked graph output, ensuring the masked graph preserves predictive performance as much as possible.\n\nAt the bottom, a light green box labeled 'Edge Mask: One Probability Per Edge' displays a sample vector [0.26, 0.91, ..., 0.45, 0.6], representing the final output — a probability score for each edge in the graph, indicating its importance. This corresponds to Step Three: 'Return Edge Mask', which concludes the process. The entire diagram uses consistent visual elements: yellow circles for nodes, blue arrows for edges, dashed lines for masked edges, and color-coded boxes (gray, beige, green) to distinguish input, processing, and output stages. Text labels are placed directly within or adjacent to the relevant components, and mathematical notation is used precisely to convey the optimization goal."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

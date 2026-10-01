@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500916",
+  "record_sha256": "e423544832b353dca459489e8b70a341784cf5b74dcf5b1b67c3e45efe7c3f56",
+  "asset_sha256": "2069d1f414ab78256a689def26e95ab8a7e61ce3f5ce991a1a141d28a8ba33eb",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500916",
+    "title": {
+      "zh": "LeARN: Learnable and Adaptive Representations for Nonlinear Dynamics in System Identification · 方法图",
+      "en": "LeARN: Learnable and Adaptive Representations for Nonlinear Dynamics in System Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-12036",
+      "title": "LeARN: Learnable and Adaptive Representations for Nonlinear Dynamics in System Identification",
+      "authors": [
+        "Arunabh Singh",
+        "Joyjit Mukherjee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12036",
+      "arxiv_url": "https://arxiv.org/abs/2412.12036",
+      "arxiv_id": "2412.12036",
+      "arxiv_first_submitted_at": "2024-12-16T18:03:23Z",
+      "arxiv_updated_at": "2026-05-30T13:13:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500916/image/image.jpg?Expires=1790835181&Signature=sX0oK4Pig1iKHf0Cn1-36Goo7RjVVt65Cs0dTpuOdes7S7I-nC3ddTejM4NeNZgXb3nvOL-mDy7kvL6TIvwm-zfst0SkniX-U2jYB7laQTwizDXeYCdQ3Daghx0u8OkJ4JBo~YXSeFgDE48-Ksayp7nI~XAOIKs9fdI8Z4XDhacln-VgjxnMLBKmGlBZ3nrztrQTiIb1Omtm6w-LFLHlMjCgaM4x5HutaM77IRhSF39bign4L3G3pvN-ccZK4~8gi2fs2OY3dqDAVh3ZOAuJSB5gP0cey80kR1g7rPyZsjvX6GcnM-EmcRBFXC9ItHqBJG5ecRRkdVR3EtaUUI~NFw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500916,
+      "description_sha256": "8418f952d3ef545b438701ea819292d6dc6146dbadaa8a739f4242ef82eeea5a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a dual-branch neural network architecture designed for learning a basis function library and a feature selection matrix, which are jointly trained using Model-Agnostic Meta-Learning (MAML). The global layout is horizontal and modular, with two parallel processing streams converging into a single MAML training block on the right. Each stream begins with an input labeled 'State and Control Inputs', represented as a cloud-shaped node with diagonal green stripes, from which a vector X is fed into both branches via thick dark blue arrows.\n\nIn the top branch, X is processed by a small neural network denoted by ψ, depicted as a purple multi-layered graph with five nodes: three in the first layer, one in the second, and one in the third. This network outputs two basis functions, m₁ and m₂, which are grouped under a curly brace and combined into a matrix Θ(X;ψ) = [m₁(X)  m₂(X)]. The matrix is shown as a rectangular bracketed array with vertical dividers separating the two output vectors, and the entire structure is labeled Θ(X;ψ) below it.\n\nIn the bottom branch, the same input X is processed by a larger, deeper neural network denoted by φ, shown as a gray multi-layered graph with multiple nodes per layer (three in the first, four in the second, four in the third, and one in the fourth). The outputs of this network are n coefficient vectors, e₁ through eₙ, each associated with a state feature, and are grouped under a large curly brace. These are collected into a column vector ε(X;φ) = [e₁(X); e₂(X); ...; eₙ(X)], displayed as a tall rectangular bracketed array with a vertical ellipsis between entries, and labeled ε(X;φ) below.\n\nBoth outputs, Θ(X;ψ) and ε(X;φ), are directed via thick dark blue arrows to a rounded rectangle on the right labeled 'MAML Training', which has a light blue diagonal striped fill. The MAML block receives inputs from both branches, indicating that the parameters ψ and φ of the two networks are optimized together during meta-training. The figure thus represents a framework where a basis function library and a feature selection matrix are co-learned from state-control inputs using a meta-learning approach."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

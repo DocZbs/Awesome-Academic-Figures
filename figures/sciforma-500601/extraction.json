@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-500601",
+  "record_sha256": "160dc822dda9aa12807c89a3eabdf1b7f66a99e367f489ee0e8efa04a94ad6fe",
+  "asset_sha256": "01051e3c7802d3d15d6280dae42ed45a4e879cd4653cf9187f6b6a5c512e053e",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500601",
+    "title": {
+      "zh": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning · 方法图",
+      "en": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-11561",
+      "title": "RADARSAT Constellation Mission Compact Polarisation SAR Data for Burned Area Mapping with Deep Learning",
+      "authors": [
+        "Yu Zhao",
+        "Yifang Ban"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11561",
+      "arxiv_url": "https://arxiv.org/abs/2412.11561",
+      "arxiv_id": "2412.11561",
+      "arxiv_first_submitted_at": "2024-12-16T08:47:55Z",
+      "arxiv_updated_at": "2024-12-16T08:47:55Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500601/image/image.jpg?Expires=1790835174&Signature=dj0cR2BiPrq9oxrUv6GPGNwDc3O22vI0xo1cKS8F5USXtcRUzvcYK4oRBbOeMTr2iLp-ZucBHEF~TOhori3R1t6Q-D2MTr4tI8jn8B7168smctAO2RyeuFE6S3B2DKMUfQwtGXRdCdEkMXPYRWH4kUiKSSxO9wviT81BElJwVmfQF33EwpUFV539se6--YvBcG9pupn1SJjiEj3ZBsKKsE5JXK2fEc6GW1BMFSU18fcW7~i5hZ63wDre1-yyTOtrp9uCf6Epb0ODq7haeJCgHaC18DodzKqWgldFrRVSCiWAO-atayN1f9jIey6GZoBIpJqwyL6mNLE~qfb748AEkg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500601,
+      "description_sha256": "08c8f0d08d1504dd112cb4aaa1872fd6f6ff124696d910d4030f4e399a5e2455",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a processing pipeline for generating a Log-Ratio Image from pre- and post-fire Compact-pol GRD (Ground Range Detected) data using ESA SNAP software. The global layout is a top-down flowchart with two input sources at the top, followed by sequential filtering steps, a branching path for pre-fire data processing, and a final computation step leading to the output. All nodes are rendered in light gray with dark gray borders and black text, maintaining consistent visual styling throughout.\n\nAt the top, two rounded rectangular nodes represent the inputs: 'Post-Fire Compact-pol GRD' on the left and 'Pre-Fire Compact-pol GRD' on the right. Both inputs feed into a diamond-shaped decision node labeled 'Filter on Beammode SC30MCP[A-D]', indicating a filtering operation based on specific beam modes. From this node, the flow proceeds downward to another diamond-shaped node labeled 'Filter on Orbit [asc/dec]', which applies an orbit-based filter distinguishing ascending and descending passes.\n\nFrom the 'Filter on Orbit' node, the workflow splits into two paths. The right branch leads to a rounded rectangle labeled 'Median of Pre-Fire Image', representing a statistical processing step applied specifically to the pre-fire dataset. The left branch continues directly from the orbit filter to a circular node, symbolizing a computational operation. The median pre-fire image and the filtered post-fire data converge at this circular node, where they are combined to compute the log-ratio.\n\nFinally, the output of the circular node is directed to an oval-shaped node labeled 'Log-Ratio Image', signifying the final product of the pipeline. This oval shape visually distinguishes the output from intermediate processing steps. All connections between nodes are represented by solid black arrows indicating the direction of data flow, ensuring clarity in the sequence of operations. The diagram emphasizes a structured, sequential workflow with conditional filtering and a merge operation before producing the final log-ratio image."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

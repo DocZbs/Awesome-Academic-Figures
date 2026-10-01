@@ -1,0 +1,31 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SGPT: Few-Shot Prompt Tuning for Signed Graphs — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12155
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the overall framework of SGPT, a method for signed graph representation learning, divided into two main phases: (a) Pre-training Task and (b) Downstream Task. The global layout is structured horizontally, with the pre-training phase on the left and the downstream task occupying the central and right portions. The downstream task is further subdivided into two templates: (1) Graph Template and (2) Task Template, which are connected through encoding and prompt mechanisms.
+
+In the pre-training phase, unsigned graphs are used to train a pre-trained model via link prediction. This involves computing similarity (Sim) between node pairs, such as v0 and v1 (positive example) or v0 and v6 (negative example), represented by blue and red boxes respectively. The pre-trained model is then applied to downstream tasks.
+
+The downstream task begins with a 'Downstream Signed Graph' centered around a target node v0, depicted within a dashed circle. This graph is decomposed into three parallel channels: Positive Channel (teal), Topological Channel (white), and Negative Channel (red). Each channel extracts 1-hop and 2-hop neighborhood structures from the signed graph. For instance, in the Positive Channel, positive edges (green) are emphasized, while in the Negative Channel, negative edges (red) are highlighted. The Topological Channel focuses on structural connectivity without sign consideration.
+
+These three channels feed into the 'Graph Template', where each channel’s 1-hop and 2-hop neighborhoods are processed separately. The outputs are then passed to the 'Encoding' module, which generates feature representations for each channel. These encoded features are subsequently fed into two distinct prompt modules: Feature Prompt and Semantic Prompt.
+
+The Feature Prompt, located on the right side, processes input features x ∈ ℝ^d by combining channel-specific feature tokens P_P, P_T, and P_N (each ∈ ℝ^{r×d}) through an attentive fusion mechanism to produce a fused prompt p ∈ ℝ^d. This is labeled as 'Feature Prompt (Eq.13–15)'.
+
+The Semantic Prompt, also on the right, uses a bottleneck projection structure. It takes three inputs H_P, H_T, H_N (representing the encoded features from the positive, topological, and negative channels) and combines them via skip connections and a bottleneck projection function f to generate a final embedding E. This is labeled as 'Semantic Prompt (Eq.17)'.
+
+The outputs from both prompts are then fused via a multi-hop fusion operation (indicated by a vertical concatenation symbol ||) before being combined again in the Task Template. In this template, the fused features undergo another multi-hop fusion step, followed by a semantic prompt that computes similarity scores (Sim) against class prototypes (Class 1 and Class 2), enabling classification.
+
+Connections are shown as directed arrows indicating data flow: from the signed graph to the three channels, then to encoding, then to the two prompt modules, and finally to the task-specific output. The figure uses color-coded boxes (teal for positive, red for negative, white for topological) and distinct shapes (circles for nodes, rectangles for modules) to differentiate components. Text labels clearly denote each module and process, including equations referenced in the paper.

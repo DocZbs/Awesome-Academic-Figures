@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501613",
+  "record_sha256": "fa9f2168ae2be1d05d23fd818682b5cc63324ac1ef15e633f816d446670a7f1e",
+  "asset_sha256": "a4e00531dd898c923c6b22561f18ab1474c27da51118db83d429174c65379e7b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501613",
+    "title": {
+      "zh": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method · 方法图",
+      "en": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method"
+    },
+    "paper": {
+      "id": "arxiv-2412-13134",
+      "title": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method",
+      "authors": [
+        "Jiate Li",
+        "Meng Pang",
+        "Binghui Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_id": "2412.13134",
+      "arxiv_first_submitted_at": "2024-12-17T17:53:32Z",
+      "arxiv_updated_at": "2024-12-17T17:53:32Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501613/image/image.jpg?Expires=1790835196&Signature=qhrq254xyyjUdHfJTCJX4m4zD1AZ3e87fzEqKZ0LXRtYFgw6U8kAQ6MUjOuj2NpI7y6ewZxM8osFtMzKjNLrgee5aqAuO5soFU5k1PBV~Z1jD7SMazEaNQvswTm187aR2ZjQslp~QCbi-tpsya7I4muvcMn2L2nBfjtkU4qnc~VHOP2iLsM-ilfulvSZgMBKUgwDyxZ6sjG4lCA5Ch7-YUe3OzMG2HwE9Ez1cgA-fOi~cXtDnRS8RwQwNI41bPjR0mkDfgbZLlrNETy-d5gcrqgANUhdhVA-3Se7vh6Rj3TPU8ccenH5RVkL8bWIcpcKjCOieY6Up2vXlgBq9RSEbA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501613,
+      "description_sha256": "f2aedbb151809e0b732063cdffddf550c192637a548574caf76522f58867f641",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the proposed Graph Sequence Embedding (GSE) method, divided into two main components: (a) Static Degree Embedding and (b) Dynamic Sequence Embedding. The global layout is structured into two horizontal sections separated by dashed borders—light blue for part (a) and orange for part (b)—with a clear top-to-bottom and left-to-right data flow.\n\nIn section (a), labeled 'Static Degree Embedding', an adjacency matrix sequence is represented as a series of T time steps, each containing a light blue square box labeled with a hat symbol over A followed by a subscript (e.g., Â₁, Â₂, ..., Âₜ). Each adjacency matrix feeds into a light green rectangular module labeled 'F', which computes a static degree feature. The output of this module is a teal rectangular box labeled X₁, X₂, ..., Xₜ, representing the degree embedding for each time step. These embeddings form the input sequence for the next stage.\n\nSection (b), labeled 'Dynamic Sequence Embedding', processes the sequence of degree embeddings using a recurrent neural network structure composed of LSTM units. This section features a chain of yellow rectangular boxes labeled 'Cell', representing individual LSTM cells. Each cell receives an input from the corresponding Xₜ (via a light green arrow) and passes its hidden state (h₁, h₂, ..., hₜ₋₁) and cell state (c₁, c₂, ..., cₜ₋₁) to the next cell. The hidden state is passed via a yellow arrow, while the cell state is passed via a blue arrow, both marked with a small circle labeled 'C' to denote the connection between states. The final hidden state, denoted as hₜ, is explicitly labeled as equal to S, and is fed into a final yellow box labeled 'GSE'. This final output is annotated with the caption: 'Final Hidden, serves as the represented state S'.\n\nThe connections between modules are indicated by arrows: solid blue arrows represent the forward pass from adjacency matrices to degree embeddings, and solid light green arrows connect the degree embeddings to the LSTM cells. Within the LSTM chain, yellow arrows indicate the hidden state propagation, and blue arrows indicate the cell state propagation. The entire process is designed to transform a sequence of graph adjacency matrices into a single, compact representation S through a combination of static feature extraction and dynamic sequence modeling."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

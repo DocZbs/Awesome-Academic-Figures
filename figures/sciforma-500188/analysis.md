@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+SusGen-GPT: A Data-Centric LLM for Financial NLP and Sustainability Report Generation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10906
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the SusGen System Pipeline, structured into two main sections: 'Financial NLP Tasks' on the left and the 'SusGen System' on the right. The global layout is horizontal, with the left side listing various financial natural language processing tasks and the right side depicting the core system architecture that processes these tasks. The left section contains eight rectangular boxes arranged in a grid-like format, each representing a distinct NLP task. These include 'Relation Extraction' (light blue), 'Financial Question Answering' (light purple), 'Headline Classification' (light yellow), 'Financial Table Question Answering' (light peach), 'Name Entity Recognition' (light pink), 'Text Summarization' (light cyan), 'Sentiment Analysis' (light yellow-green), and 'ESG Question Answering' (light green). Below these, a larger green rectangle labeled 'Sustainability Report Generation' spans the full width, indicating it as a primary output or focus task. All boxes have rounded corners and black borders.
+
+On the right, the 'SusGen System' is enclosed within a large rounded rectangle. Inside, the central component is a square box labeled 'SusGen-GPT', featuring a stylized green llama icon with circuit-like patterns, symbolizing a large language model. This box receives a 'Prompt' from the Financial NLP Tasks via a solid black arrow originating from the group of tasks. A dashed red arrow labeled 'RAG' points upward from a dashed-bordered box labeled 'Annual Report', which contains an icon of a document with charts and coins, indicating retrieval-augmented generation using external financial documents. From SusGen-GPT, a solid black arrow labeled 'Response' leads to a gradient-filled rounded rectangle labeled 'Answer', transitioning from pink to gray. Below this, another dashed-bordered box labeled 'TCFD Report' contains an icon of a document with a pie chart and green leaves, signifying a sustainability-focused output. A dashed red arrow connects the 'Answer' box to the 'TCFD Report' box, suggesting the answer is used to generate or inform the final report.
+
+Connections are clearly marked: the prompt flows from the NLP tasks to SusGen-GPT; RAG retrieves context from the Annual Report to enhance the model’s response; and the generated Answer is directed toward producing the TCFD Report. The visual design uses color coding to differentiate tasks and components, with consistent shapes (rounded rectangles) for modules and distinct line styles (solid vs. dashed) to denote direct input versus retrieval or output pathways.

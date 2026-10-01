@@ -1,0 +1,40 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13049
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents two sequence diagrams side by side, illustrating message flows in a Precision Time Protocol (PTP) network under normal operation and during two distinct attacks: Spoofing and Replay. Each diagram contains three vertical timelines labeled 'Master', 'Slave', and 'Attacker', representing the respective entities involved in the communication.
+
+[1] Global Layout and Structure:
+The figure is divided into two main panels. The left panel depicts the Spoofing Attack scenario, while the right panel shows the Replay Attack scenario. Both panels follow a top-to-bottom chronological order, with time progressing downward along each entity’s timeline. Messages are represented as arrows between these timelines, indicating direction and timing of communication.
+
+[2] Visual Modules and Attributes:
+In both diagrams, the Master, Slave, and Attacker are represented as vertical lines extending from top to bottom. Messages are labeled with their type (e.g., 'Announce', 'Sync', 'FollowUp', 'Delay Req', 'Delay Resp') and are drawn as arrows connecting the timelines.
+
+In the left panel (Spoofing Attack):
+- Black solid arrows represent normal PTP messages: 'Announce' from Master to Slave and Attacker, followed by 'Sync' and then 'FollowUp' (dotted line).
+- Red dashed arrows illustrate the spoofing attack: the Attacker sends multiple 'Announce' messages back to both Master and Slave, attempting to impersonate the Master and gain control over the Best Master Clock Algorithm (BMCA).
+
+In the right panel (Replay Attack):
+- Black solid and dotted lines again denote normal traffic: 'Sync' and 'FollowUp' messages from Master to Slave and Attacker at timestamps T1 and T1'.
+- Red dashed arrows depict the replay attack: the Attacker captures a legitimate 'Sync' message sent at T1 and retransmits it to the Slave at a later time (labeled Tx), followed by a replayed 'FollowUp' message.
+- Additional timestamps are marked: T2 and T2' (Slave reception times), T3 (Slave’s response initiation), and T4 (Master’s receipt of Delay Resp).
+- The Slave initiates a 'Delay Req' message to the Master at T3, which is responded to with 'Delay Resp' at T4.
+
+[3] Connections and Arrows:
+In the left panel, the normal sequence begins with the Master sending 'Announce', 'Sync', and 'FollowUp' messages to both Slave and Attacker. The Attacker then launches the spoofing attack by sending repeated 'Announce' messages (red dashed arrows) to both Master and Slave, disrupting the BMCA.
+
+In the right panel, the normal sequence includes Master sending 'Sync' at T1 and 'FollowUp' at T1', followed by another 'Sync' at T1' and 'FollowUp' at T1'. The Attacker intercepts the first 'Sync' message (at T1) and replays it to the Slave at time Tx, causing timing disruption. The Slave responds with 'Delay Req' at T3, and the Master replies with 'Delay Resp' at T4, completing the delay measurement phase. The red dashed arrows clearly indicate the malicious retransmission of previously captured messages, highlighting the attack vector.
+
+The figure effectively contrasts normal PTP behavior with two common attack types, using color-coding (black for normal, red for attack) and arrow styles (solid for direct, dotted for FollowUp, dashed for attack) to distinguish message types and attack flows.

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501258",
+  "record_sha256": "2311c92ad6ad2fe3dc562809802400cb1dae258ca50941b279873eb49e7b2bdc",
+  "asset_sha256": "82d97b1d2ab18bfcb088a78a9861f07abc731b68e7ab293d2b45ba3c7d81aa30",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501258",
+    "title": {
+      "zh": "ChatDiT: A Training-Free Baseline for Task-Agnostic Free-Form Chatting with Diffusion Transformers · 方法图",
+      "en": "ChatDiT: A Training-Free Baseline for Task-Agnostic Free-Form Chatting with Diffusion Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2412-12571",
+      "title": "ChatDiT: A Training-Free Baseline for Task-Agnostic Free-Form Chatting with Diffusion Transformers",
+      "authors": [
+        "Lianghua Huang",
+        "Wei Wang",
+        "Zhi-Fan Wu",
+        "Yupeng Shi",
+        "Chen Liang",
+        "Tong Shen",
+        "Han Zhang",
+        "Huanzhang Dou",
+        "Yu Liu",
+        "Jingren Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12571",
+      "arxiv_url": "https://arxiv.org/abs/2412.12571",
+      "arxiv_id": "2412.12571",
+      "arxiv_first_submitted_at": "2024-12-17T06:03:05Z",
+      "arxiv_updated_at": "2024-12-17T06:03:05Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501258/image/image.jpg?Expires=1790835190&Signature=MQUZVTHmbkSVYurR91Ii1wOT0wagMJtY2uab8EOyIBW1kKKzrppYeMkNcoL3B1prJtmtJoQwGlgFVr-JMg9qC~qSkJPu6DVO91M3-sxZOKg0EIGJ6IKbQcwco2qXtdy-Vo~vMn0qVlhPySgGD~sGK1bp5dvl6DlXag0k8ErbCIOholyJqJ62F9HtLUG2BrSYguZv1QmJ-sOC3qIDgL7G1hptbq4EGuh1ncPYqPJFjQ~EbI8rWinY~mKslReP~etCwG~BCs9tW-UFaMzA6~N0yXVhF0KHHnsYZtKaCkw23jYK1gW9knb9urEUbfAwn1NdsQfCAlj0tf1Qt1oaJ7lSUQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501258,
+      "description_sha256": "58e92d641f7d88591899f376f1a444be598cef194b26ee70b805c5430e79a9b5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the ChatDiT multi-agent framework, structured as a sequential pipeline composed of three main agents: Instruction-Parsing Agent, Strategy-Planning Agent, and Execution Agent. The entire process begins with a rounded rectangular node labeled 'User Input (Instruction & Images)', which feeds into the first agent. This initial input is processed by three sub-agents within the Instruction-Parsing Agent: Counting Agent (with the function 'Estimate Output Count'), Description Agent ('Input Image Description'), and Prompting Agent ('Output Image Description'). These sub-agents are represented as rectangular boxes with rounded corners, arranged vertically within a larger rectangular container labeled 'Instruction-Parsing Agent'. Curved arrows connect the User Input to each of these three sub-agents, indicating parallel processing.\n\nFrom the Instruction-Parsing Agent, a solid arrow leads to the Strategy-Planning Agent, which contains two sub-agents: Referencing Agent ('Reference Selection & Grouping') and Panelizing Agent ('In-Context Prompt Generation'). These are also depicted as rounded rectangles inside a larger container. A downward arrow connects the Referencing Agent to the Panelizing Agent, showing a dependency or sequential flow within this agent.\n\nThe Strategy-Planning Agent outputs to the Execution Agent via a solid arrow. The Execution Agent comprises two components: In-Context Toolkit ('Grouped & Masked Multi-Image Generation Pipelines') and Markdown Agent ('Optional'). Both are shown as rounded rectangles within the Execution Agent’s container. The In-Context Toolkit receives the primary flow from the Strategy-Planning Agent and produces the final output through a solid arrow leading to a rounded rectangle labeled 'Final Output (Images & Optional Article)'.\n\nAdditionally, a dashed arrow connects the Panelizing Agent to the Markdown Agent, indicating an optional or conditional path. Another dashed arrow links the Markdown Agent directly to the Final Output, suggesting it contributes to the final result only when activated. All agents and sub-agents are enclosed in distinct rectangular boundaries with bold titles at the top. Text labels are black, and all shapes have thin black borders. The overall layout is horizontal, left-to-right, with clear separation between the three main agents, emphasizing the modular and sequential nature of the framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

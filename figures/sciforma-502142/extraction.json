@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502142",
+  "record_sha256": "b2a8e91e3718f7e298e7582e7d3d3653bb920fa359befba3481597058bbea3dd",
+  "asset_sha256": "1f304bf9946ded8fc9a70e4da9489ee5050e2fb6fd194a1e460f3aa89d6f4f37",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502142",
+    "title": {
+      "zh": "Prompting Strategies for Enabling Large Language Models to Infer Causation from Correlation · 方法图",
+      "en": "Prompting Strategies for Enabling Large Language Models to Infer Causation from Correlation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13952",
+      "title": "Prompting Strategies for Enabling Large Language Models to Infer Causation from Correlation",
+      "authors": [
+        "Eleni Sgouritsa",
+        "Virginia Aglietti",
+        "Yee Whye Teh",
+        "Arnaud Doucet",
+        "Arthur Gretton",
+        "Silvia Chiappa"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13952",
+      "arxiv_url": "https://arxiv.org/abs/2412.13952",
+      "arxiv_id": "2412.13952",
+      "arxiv_first_submitted_at": "2024-12-18T15:32:27Z",
+      "arxiv_updated_at": "2024-12-18T15:32:27Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502142/image/image.jpg?Expires=1790835212&Signature=GdhwpQq4hSedFMgTI5rDKTDrzlu6Bqd9-927v57~EgKZGUiL4GuCgT8oIQCOkVFW3Ot90FyfsSKEngb9C7InX2rgJWaLFdVfco-1cUfxWW16JwdqkZdm0ksyaWHGUlJ9HLhqJdxaFYxUt6IvG6dH~6GiTuqJO-eY5t1Bu51-2Akuo2OcL9OKh0QU4SgA6t3D9RxWLtyer10HpjVE507PBfkhMsVeg1xsojHh9wD9Wbh9J69lI1-5LRPTHJPYat3ylLiEBGCVenoPkbr6OyYpnatVtnHg5xZZa6edp5v3KUTHIaWvuSU8LzyvNSeqC0sceUQXhZSq1VV-vOhK7HVe6Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502142,
+      "description_sha256": "286bc57ccfeabe2cb7f3f63fab3f85dd5b6d88448a234373dacf5b9eb5f0dedd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an eight-step sequential prompting framework for causal inference using a large language model (LLM), structured as a vertical flowchart with eight subquestions labeled SubQ1 through SubQ8. Each row corresponds to one subquestion, arranged vertically from top to bottom, representing a step-by-step decomposition of the PC algorithm for causal graph discovery. On the left side of each row is a rectangular box containing the subquestion prompt, which includes contextual premises and references to prior answers via color-coded placeholders such as '[Answer to SubQ1]', '[Answer to SubQ2]', etc. These placeholders are highlighted in distinct colors—yellow for SubQ1, orange for SubQ2, green for SubQ3, magenta for SubQ4, light blue for SubQ5, red for SubQ6, purple for SubQ7—to visually indicate the chaining of outputs from previous steps into subsequent prompts. The right side of each row contains a gray rectangular box labeled 'LLM', indicating the processing unit, followed by another box showing the LLM’s output, split into 'Reasoning: [...]' and 'Answer: [Answer to SubQi]' or '[Final Answer]' for SubQ8. Arrows connect each subquestion box to the corresponding LLM box, and then from the LLM box to the output box, demonstrating the data flow. The entire sequence is framed by a large curly brace on the left labeled 'Few-shot CoT prompting is added before each subquestion', indicating that each subquestion is preceded by few-shot chain-of-thought examples not shown in the diagram. The subquestions progressively guide the LLM through stages of the PC algorithm: initializing with a fully connected undirected graph (SubQ1), applying the first step to infer conditional independencies (SubQ2), finding paths of length 2 (SubQ3), identifying v-structures (SubQ4), orienting them (SubQ5), orienting other edges based on directed edges (SubQ6), applying the third step to further orient remaining edges (SubQ7), and finally evaluating a hypothesis against the inferred causal graph (SubQ8). The placeholders '[Premise]' and '[Hypothesis]' denote user-provided inputs, while '[...]' represents expected reasoning text from the LLM. The visual structure emphasizes the iterative, dependency-driven nature of the process, where each step builds upon the answer of the previous one, forming a coherent causal inference pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

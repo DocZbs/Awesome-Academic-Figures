@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501346",
+  "record_sha256": "0d8e1849c1c7adf0125cdc5f61a3be4f62202eaf87222018cae4abda3a325321",
+  "asset_sha256": "72c80dbbad17b905d886046c4dc45844ba64c8f57c0555b0e15c466052ab5068",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501346",
+    "title": {
+      "zh": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification · 方法图",
+      "en": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-12651",
+      "title": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification",
+      "authors": [
+        "Huachao Yan",
+        "Kailing Guo",
+        "Shiwei Song",
+        "Yihai Dai",
+        "Xiaoqiang Wei",
+        "Xiaofen Xing",
+        "Xiangmin Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_id": "2412.12651",
+      "arxiv_first_submitted_at": "2024-12-17T08:20:02Z",
+      "arxiv_updated_at": "2024-12-17T08:20:02Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501346/image/image.jpg?Expires=1790835191&Signature=heMS1T3~T4Ys7eFiOKf4Ih7XRizARCfSOsWmRD4LjlRyTpOhc9doH4qWi7mxVL2~aLxilt2o2CrJLJS-oqqp3roIWFQJ4-UKPjW0ZLeor4Sy7Iu20b1cCd4K5vnMlG57FgGWxfrDdtyDi1LaTMSSdMtMpym90IQRMpksWOD-oOENSOTh~yUut2lR-edfCQajtmlmk6pgUtNqyjBRkI7UILMPjgnGPQONxSM1ULPWEhMLDHH8PKVFuXoNHFjB023vHwKexoY7coatJWuUUokoOdtr6OC2aYJEgmhjrm8MDaasu-36KsrlYFnG6U3HY2AZiCBtwmsF40DC6fDhX~oZkg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501346,
+      "description_sha256": "1692b56ca4a20ff1fa99e7388a2119ec8f0dc715e915bccb95e8a95d714edfa1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part methodology for processing intracranial electroencephalography (sEEG) data using a shared attention-based autoencoder (sATAE). Part A outlines the overall pipeline, while Part B provides a detailed breakdown of the sATAE architecture.\n\nIn Part A, the global layout is a left-to-right flowchart divided into three main stages: raw sEEG input, preprocessing, and the shared attention-based autoencoder. The raw sEEG data is represented as three stacked rectangular blocks labeled 'Wake', 'Sleep', and 'Onset', each containing a textured pinkish background to indicate time-series signals. These inputs are directed via a thick red arrow to the 'Preprocess' module, which is enclosed in a light gray rounded rectangle. Within this module, the data from 'One Electrode Site' undergoes 'Time Frequency Analysis', visualized as a colorful spectrogram (purple to orange gradient) labeled 'Power Feature'. This is followed by a vertical stack of six horizontal bars labeled 'six bands' (Δ, θ, α, β, γ1, γ2), representing frequency band power, which are then concatenated into a single feature vector labeled 'Concated Feature'. A second thick red arrow leads from this preprocessed feature to the 'Shared Attention based Autoencoder' block, which is outlined in a light beige rounded rectangle. Inside, the process begins with an input cube (beige), followed by a trapezoidal 'Attention Encoder' (yellow-orange), which outputs a multi-layered cube labeled 'Latent Feature' (with colored layers: blue, purple, orange, yellow, pink, green). This latent feature is then fed into a trapezoidal 'Decoder' (light blue), producing an output cube (blue).\n\nPart B expands on the internal structure of the 'Shared Attention based Autoencoder'. The layout is horizontally linear, showing the encoding and decoding phases. On the far left, multiple stylized brain icons represent the 'Input', each with multicolored electrodes inserted. These inputs feed into the encoding phase, which consists of five sequential orange rounded rectangles labeled 'Layer1' through 'Layer5'. Between Layer2 and Layer3, and between Layer4 and Layer5, there are 'Attention Block1' and 'Attention Block2' respectively—these are highlighted in red-bordered yellow boxes. Each attention block connects to the corresponding layer pair via black lines and a circular multiplication symbol (⊗), indicating the application of attention mechanisms. The output of Layer5 is a set of brain icons labeled 'Latent Feature', visually similar to the input but with a different electrode color pattern. This latent feature is then processed through the decoding phase, consisting of five sequential light blue rounded rectangles labeled 'Layer1' through 'Layer5'. The final output is another set of brain icons labeled 'Output', matching the input format. The entire process is annotated with directional arrows and labels: 'Encoding' (yellow arrow) spans from input to latent feature, and 'Decoding' (blue arrow) spans from latent feature to output. The title 'Shared Attention based Autoencoder' is centered below the diagram, emphasizing the core model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

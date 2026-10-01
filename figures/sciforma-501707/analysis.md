@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Bringing Multimodality to Amazon Visual Search System — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13364
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents two architectural variants of a Multimodal Information Matching (MIM) model: a 3-tower and a 4-tower configuration, each designed for cross-modal retrieval tasks involving images and text. Both architectures are structured as parallel towers, where each tower processes a specific input modality using dedicated encoders.
+
+In the top panel labeled '(a) 3-tower MIM model', there are three main processing towers. The first tower, on the left, takes a 'Query image' as input and feeds it into a blue rectangular block labeled 'Image encoder'. The second tower, in the center, processes a 'Product image' through another identical blue 'Image encoder'. These two image encoders share weights, indicated by a bidirectional arrow between them and explicitly noted in the legend as 'shared weights'. The third tower, on the right, processes 'Product text' via an orange rectangular block labeled 'Text encoder'. Above each encoder, a sequence of tokens is shown: for the image encoders, these are represented as white and green squares (with the green square denoting the [CLS] embedding), while for the text encoder, they are orange and green squares. The [CLS] embedding is highlighted in the legend as a green square. The encoders are connected via bidirectional arrows labeled 'contrastive loss' in the legend, indicating that the model is trained using contrastive learning objectives to align representations across modalities.
+
+The bottom panel, labeled '(b) 4-tower MIM model', extends the 3-tower design by adding a fourth tower on the far right. This new tower processes a 'Text query' through an additional orange 'Text encoder'. The two text encoders (for product text and text query) share weights, as indicated by a bidirectional arrow between them and confirmed in the caption. The image encoders remain unchanged from the 3-tower model, still sharing weights between themselves. All four towers are connected via bidirectional arrows representing contrastive loss, ensuring alignment among all input types. The inputs are visually exemplified: the query image shows a close-up of a keyboard with illuminated keys, the product image displays a full black mechanical keyboard, the product text reads 'Logitech G610 Orion Red Backlit Mechanical Gaming Keyboard 920-007839 (Renewed)', and the text query is 'Logitech mechanical keyboard'.
+
+The overall layout is horizontal, with each tower arranged side-by-side and inputs positioned below their respective encoders. The visual modules consist of colored rectangles (blue for image encoders, orange for text encoders) with internal token representations above them. The connections are depicted as bidirectional arrows, with distinct styles for shared weights (double-headed arrow with open ends) and contrastive loss (solid double-headed arrow). The legend on the right clarifies these symbols and defines the [CLS] embedding as a green square. The figure effectively illustrates the progression from a 3-tower to a 4-tower model by introducing an additional text encoder for handling short text queries, while maintaining shared weights within modality-specific encoders.

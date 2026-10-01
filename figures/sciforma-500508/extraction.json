@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500508",
+  "record_sha256": "a73947032d7c3c355b8e144ca7f79522a5528061be9b3f94f25944ee13ca082f",
+  "asset_sha256": "52bd67fd9bccfb39d5101e700036e1c6e3a4f7aac71e43ee0be9f54f09c64b5a",
+  "original_file": "original.jpg",
+  "pixel_width": 1664,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500508",
+    "title": {
+      "zh": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models · 方法图",
+      "en": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11441",
+      "title": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models",
+      "authors": [
+        "Yuning Han",
+        "Bingyin Zhao",
+        "Rui Chu",
+        "Feng Luo",
+        "Biplab Sikdar",
+        "Yingjie Lao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11441",
+      "arxiv_url": "https://arxiv.org/abs/2412.11441",
+      "arxiv_id": "2412.11441",
+      "arxiv_first_submitted_at": "2024-12-16T04:47:55Z",
+      "arxiv_updated_at": "2025-02-28T04:36:39Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500508/image/image.jpg?Expires=1790835171&Signature=hM8KDV0Nzf1272y4sqrgjfS4KaCHHOw7665fZ1Zkk0hNxD-wj0nsmtd8zB~hYf32XynRWqBgG5Xu9JWlUvx89CAa26kcngZzwKrOu35iUw2eJyd7ASDgV1o4khT4qiwu7a1LPHPtlC7bFgApSebe~BHPyT5EdkGxcfKO20bOUE~0sdOFKJ-3ygh9UPUjImOQTbFhK-PYo8Xjp5Ul5K-95NT6xVc-UerNDIw56egPXoNfmvN8R8N1-t5yxXBV6XP-ZQZ4F~zyeZgwrAZbDxlzRtlM~aWhA3JIVWA~eY33q6t2FZeoDV-6N4S0wmRn3T8yGsIg~aTfZmyojiIA3Gcn-A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500508,
+      "description_sha256": "cd2456b1903c84f40028d6bc09a8a683b1176ff41167f48d42f11ac6634ac6d7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the workflow of a framework for generating non-additive adversarial triggers, specifically designed to attack a classifier through iterative optimization. The global layout is a horizontal flowchart enclosed within a dashed green border, depicting a closed-loop system where the output of one stage feeds back into an earlier stage for refinement. The process begins on the left with a Gaussian noise input, represented as a 2x4 grid of colored squares (blue, orange, green, yellow), labeled 'Gaussian Noise' with the notation z ~ N(0,1). This noise is fed into a neural network-like 'Generator', depicted as a multi-layered structure with cyan, yellow, and red circular nodes connected by arrows, symbolizing the transformation of random noise into structured output. The generator produces two outputs: a 'Trigger τ', shown as a small, colorful, abstract pattern resembling a textured mosaic, and 'Non-additive Noise', presented in a blue rounded rectangle. These two outputs are combined with the original image from the 'Image Dataset'—shown as a sample face image—to form the perturbed input. The combination is achieved via two operations: first, the original image xi is spatially transformed using the non-additive noise (denoted by ⊗), then the trigger τ is added (denoted by ⊕), resulting in the final adversarial input xi ⊗ f + τ, which is visually represented as the same face image but with a subtle overlay indicating modification. This adversarial input is then fed into a 'Classifier C', shown as a yellow rounded rectangle, which evaluates whether the adversarial attack is successful. This decision is represented by a blue diamond-shaped node labeled 'Is adversarial attack successful?'. If the attack fails, a red feedback loop directs the result back to the generator, accompanied by the instruction 'Iteratively optimize the generator to produce stronger trigger τ', indicating a reinforcement learning or gradient-based optimization process. The entire pipeline emphasizes the iterative nature of trigger generation, where the generator is refined based on the success of the attack, aiming to produce increasingly effective non-additive triggers. The visual attributes include distinct shapes (rectangles, circles, diamonds) and colors (yellow for classifier, blue for noise and decision, red for feedback) to differentiate components, while mathematical symbols (⊗, ⊕) and labels (xi, τ, z) provide technical precision. The caption clarifies that ⊗ denotes a spatial transformation operation, reinforcing the non-additive nature of the attack."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

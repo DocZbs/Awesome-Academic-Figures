@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502738",
+  "record_sha256": "5cfca95cd7cd0cee9682840e4d532c7cf117a64cd5f4a78e6ac973878595e480",
+  "asset_sha256": "43a0779fd40ff2588204dad22a848daa3621ca5c01de160d03129c59875158d1",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502738",
+    "title": {
+      "zh": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning · 方法图",
+      "en": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-15182",
+      "title": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning",
+      "authors": [
+        "Marius Memmel",
+        "Jacob Berg",
+        "Bingqing Chen",
+        "Abhishek Gupta",
+        "Jonathan Francis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15182",
+      "arxiv_url": "https://arxiv.org/abs/2412.15182",
+      "arxiv_id": "2412.15182",
+      "arxiv_first_submitted_at": "2024-12-19T18:54:06Z",
+      "arxiv_updated_at": "2025-08-18T16:14:04Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502738/image/image.jpg?Expires=1790835227&Signature=FZT8x6qiDWRyMqBE49PYpCGMIxiePyYRsSwmfkkxjt7golMgnXRDhSq0ZWhzE~eJTMgWBb3etotdfBpd5DbVJCL3s0zJj6u8wABpFUaJmTO5~rX0x0hLhTl2BZF-jxeDtRNdDoO4zlYMguSm7kvvZn6Wt009~-38EJFiQJDVxFi4zoOjyGKh9X-ihx7zEnvDaV8D9MoqbW-6p6ghL3wOETcfNYoWaBqy1tDm5pxV6Socr~TDA5gsQxBGe-pCg64-ww4h3JjJAzDEOgJ8u-~r2IiMAByavlws~f1QuWUniRNI6y0xlgKyaw63xELUxBim0P8Eiz8ksBIbN5K2kh0qSQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502738,
+      "description_sha256": "613b3f7de0ff1337d2a04b5f83b2d7f928d406b20e66926ec5d7154c598655c6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a retrieval-augmented policy learning framework, structured as a four-stage pipeline from left to right. The global layout consists of four main rectangular sections, each representing a distinct phase in the method, connected by directional arrows indicating data flow.\n\nIn the first section, two input sources are shown: 'Few-shot Demonstrations D_target' at the top, depicted as a stack of yellow-bordered video frames with the instruction 'Put the white pen in the red plastic cup', and 'Offline Dataset D_prior' below, shown as two stacks of blue-bordered video frames with instructions 'Pick up the marker and put it in the mug' and 'Push the button on the toaster'. These inputs feed into the second section, labeled 'Encode D_target, D_prior with Vision Foundation Models' (Sec. 4.3), where each dataset is processed by a green trapezoidal 'Encoder' block. The encoders are noted to use models such as DINOv2 or CLIP, transforming the visual demonstrations into embeddings.\n\nThe third section, titled 'Segment D_target into sub-trajectories' (Sec. 4.2), shows the encoded D_target being broken down into multiple yellow curved trajectories marked with points t^i_{a:b}, t^i_{b:c}, etc., representing segmented sub-trajectories. These segments are then processed by a pink rectangular block labeled 'Dynamic Time Warping' (Sec. 4.4), which aligns them with sub-trajectories from D_prior, represented as blue and magenta curved paths with circular nodes. The output of this matching process is described as 'Match segments in D_target to sub-trajectories in D_prior to obtain D_retrieval', forming a set of retrieved trajectories shown as magenta curves.\n\nThe final section, 'Retrieval-augmented Policy Learning' (Sec. 4.5), combines the original D_target (yellow trajectory) with the retrieved D_retrieval (magenta trajectories) via a union operation (∪), resulting in a combined dataset D_retrieval ∪ D_target. This merged dataset is fed into a green trapezoidal 'Policy' block, which outputs Δactions, indicating the learned action adjustments. The entire pipeline emphasizes leveraging prior knowledge through retrieval to enhance policy learning from limited demonstrations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

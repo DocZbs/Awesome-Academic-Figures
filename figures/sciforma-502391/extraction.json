@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-502391",
+  "record_sha256": "2ad347a207fed08e3c9c572db56a242a49361e3c7de6f04b4c9495122269ea92",
+  "asset_sha256": "2b7d49c502829949bb2c4e68c21469f11f2beceb82287fcbe2efc9eafe6ce13c",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502391",
+    "title": {
+      "zh": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering · 方法图",
+      "en": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-14480",
+      "title": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering",
+      "authors": [
+        "Saumya Saxena",
+        "Blake Buchanan",
+        "Chris Paxton",
+        "Peiqi Liu",
+        "Bingqing Chen",
+        "Narunas Vaskevicius",
+        "Luigi Palmieri",
+        "Jonathan Francis",
+        "Oliver Kroemer"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14480",
+      "arxiv_url": "https://arxiv.org/abs/2412.14480",
+      "arxiv_id": "2412.14480",
+      "arxiv_first_submitted_at": "2024-12-19T03:04:34Z",
+      "arxiv_updated_at": "2025-09-24T13:49:49Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502391/image/image.jpg?Expires=1790835217&Signature=iJbjHg8KAjIoIIGMCyQh2cStRXHg3fYug2e2Jic1p~B8Sze5lBYdAGjryubJb-K4I-wAyLkhdiG34ZPIH1fFy7tIpNON-H~-y~JxtsWDBHv-fQHQJRarNU0mtfLE9KAi9F7IZOXLGsCLQwjeuN71WieU5y9kC2puU-SWqCnBJjOB9wm0BSwP3Ac-lpPIjp04JC5FEe2NQE1fC4AXW~AZLesjhJ0CqIOWcAPvCDrMk4Ku4Cgu7DM5c-0ZitKYQm~faZnBeT7v7RmoOIEullUO1-KRxE4NTOgZQhqvMMR3trkT9Jw3h6oZEp2o7XS~rNz7B9gnUtnK66X9~c3hP95MDQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502391,
+      "description_sha256": "1821faaf35751cbb3e4d4960487d478e3b80e21a83d0bcd5053ee68b57cb765b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a system architecture for embodied question answering in unseen environments, leveraging real-time 3D metric-semantic hierarchical scene graphs and task-relevant visual memory to ground a vision-language model (VLM) planner. The global layout is left-to-right, depicting a data flow from sensor input through scene representation and memory formation to planning and decision-making.\n\nOn the far left, a robotic platform equipped with a RGBD camera is shown, posing the question 'Where is the backpack? A. On the chair B. On the table'. This query initiates the process. The RGBD sensor captures both color and depth images, while semantic segmentation provides labeled object masks (e.g., chair, table, trash_can), and pose estimation gives the robot’s 3D position (x, y, z axes indicated). These inputs feed into the central component: a Real-time 3D scene graph, depicted as a 3D reconstructed environment with labeled objects (e.g., cabinet, chest_of_drawers, chair, backpack) connected by edges forming a hierarchical structure. The scene graph is rendered with translucent blue outlines around objects, and object labels appear in white text boxes. A JSON snippet below the scene graph shows structured data including object IDs, names, positions, and edge connections, indicating the graph's programmable format.\n\nFrom the scene graph, two types of information are extracted and fed into the VLM Planner: first, a 'Task relevant visual memory'—a set of cropped images highlighting key objects (e.g., backpack on chair, trash_can)—connected via colored arrows (purple and blue) from the scene graph to these thumbnails. Second, the structured JSON representation of the scene graph is also passed to the planner. The VLM Planner is symbolized by a black circular logo resembling the GPT-4 or similar large language model icon, indicating its role as a vision-language reasoning engine.\n\nThe output of the planner is shown on the right in two sequential planning steps, each enclosed in a rounded rectangle with distinct background colors. Planning Step 1 (red border, beige fill) describes reasoning based on prior knowledge: 'Objects like the chair or table might have the backpack...'. It proposes an action '<Goto_object_node> (chair)', marks confidence as False, and gives a tentative answer: 'Likely on the chair...'. Planning Step 2 (green border, beige fill) reflects updated reasoning after visual confirmation: 'The backpack is visually confirmed to be on the chair...'. It selects 'No action', marks confidence as True, and finalizes the answer: 'On the chair'. The transition between steps implies iterative refinement using new sensory evidence.\n\nArrows indicate data flow: from sensors to scene graph, from scene graph to visual memory and JSON, then to the VLM Planner, and finally to the planning steps. The entire pipeline emphasizes the integration of geometric, semantic, and visual memory to enable grounded, context-aware reasoning for embodied QA."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

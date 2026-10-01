@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500204",
+  "record_sha256": "eeec827ec6f6412239639d9e0870537553098a7d58a72dc04420406a64b7fe36",
+  "asset_sha256": "9126167a44dcc3c256e4a983549bae28fe5204cf5086738b71a6cae82c696fe3",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500204",
+    "title": {
+      "zh": "SegHeD+: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints and Lesion-aware Augmentation · 方法图",
+      "en": "SegHeD+: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints and Lesion-aware Augmentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-10946",
+      "title": "SegHeD+: Segmentation of Heterogeneous Data for Multiple Sclerosis Lesions with Anatomical Constraints and Lesion-aware Augmentation",
+      "authors": [
+        "Berke Doga Basaran",
+        "Paul M. Matthews",
+        "Wenjia Bai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10946",
+      "arxiv_url": "https://arxiv.org/abs/2412.10946",
+      "arxiv_id": "2412.10946",
+      "arxiv_first_submitted_at": "2024-12-14T19:44:25Z",
+      "arxiv_updated_at": "2024-12-14T19:44:25Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500204/image/image.jpg?Expires=1790835164&Signature=Z~mIjMDK7T3oWtV8PhOghKN2~q0gIawMwDf1cXQYEL579mVQxIpl2TfToIicdivHgtbWiJjiR5NlVnQUV1br3Ps8GX3Ak-vfPVOkA5zwWym09hdtbDq7qJSVieTGsale9ISFNK0D8N4-saL2ZGh0KrswlBG-NcNf8-u5JsoHe2xTXu2acEhedNj63v2kPMPYjDuz-ZbFNKGqE0Dktb8D7iE0s-PfSZWn8ydpA8NkWnUPzOFjsMDtLdHd9oyMLPaw1uUI8P1uIiEczGxID8E1vfsXvjY6IKzhgPZii3asrGpt8yPYFnNddfWZYK-hjq9F2XdwzGvB~BLWIChTVCi8lw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500204,
+      "description_sha256": "b65a6eed3263a65fab4a318196cdba2c360b2c263ea4bf53ff290ba8d976cdda",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture and workflow of the SegHeD+ framework for brain lesion segmentation using heterogeneous medical imaging data. The global layout is structured as a left-to-right data processing pipeline, divided into three main horizontal sections: input data on the left, the core model in the center, and output results on the right. A dashed rectangular boundary encloses the central processing unit and its associated heterogeneous inputs, emphasizing the model’s ability to handle diverse data types.\n\nOn the left, the 'Input brain images' section is enclosed in a light blue box and contains four distinct input modalities: x^t1 (a brain slice with two gray circular lesions), x^t2 (another slice with one gray lesion), x^t2_wm (a brain slice with thick black outlines representing white matter, no lesions), and y^t1_a (a slice with two red circular lesions labeled as available annotations). Below these, a note states 'if available', indicating optional inputs.\n\nThe central part of the diagram features two yellow boxes labeled 'Heterogeneous images' and 'Heterogeneous labels'. The 'Heterogeneous images' box contains two subcategories: 'Cross-sectional' (one brain slice with two red lesions) and 'Longitudinal' (two slices showing lesion progression over time, both with red lesions). The 'Heterogeneous labels' box includes three subcategories: 'New lesion labels' (two slices with red lesions, indicating newly appeared lesions), 'Baseline and new lesion labels' (two slices with red and green lesions, where green marks new lesions), and 'Vanishing lesion labels' (two slices with solid gray lesions and one dashed blue lesion, indicating disappearance).\n\nAll these heterogeneous inputs converge into a central purple rectangular module labeled 'SegHeD+', which represents the core deep learning model. This module processes the varied inputs and generates outputs through four distinct segmentation heads.\n\nThe bottom section, enclosed in an orange box, displays the 'Longitudinal data output' and 'Cross-sectional data output'. The 'Cross-sectional data output' is shown in a dotted box and contains one output image s^t1_a with two red lesions. The 'Longitudinal data output' includes three outputs: s^t2_a (two red lesions), s^t2_n (one green lesion indicating new lesions), and s^t2_v (one dashed blue lesion indicating vanishing lesions). Arrows from the SegHeD+ module point to each of these outputs, illustrating the model's capability to produce segmentation masks for all lesions across time points, as well as specifically identifying new and vanishing lesions.\n\nThe visual modules use consistent shapes—rounded rectangles for data groups and boxes for individual images—and colors to denote lesion types: red for all lesions, green for new lesions, and dashed blue for vanishing lesions. Text labels are placed directly within or adjacent to each module for clarity. The connections are represented by solid black arrows, indicating the flow of data from inputs through the model to outputs. The overall design emphasizes the model’s flexibility in handling diverse input formats and producing comprehensive, temporally-aware segmentation results."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500540",
+  "record_sha256": "75c3b4dad88d89c70592d80df8a6cb33b3ba8104d048c9a3aea65332b914e4be",
+  "asset_sha256": "b8e068ec1aff406dfbb9002192bd215e68aed42694617a49e4f0e065e74e4f84",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500540",
+    "title": {
+      "zh": "Vertical Federated Unlearning via Backdoor Certification · 方法图",
+      "en": "Vertical Federated Unlearning via Backdoor Certification"
+    },
+    "paper": {
+      "id": "arxiv-2412-11476",
+      "title": "Vertical Federated Unlearning via Backdoor Certification",
+      "authors": [
+        "Mengde Han",
+        "Tianqing Zhu",
+        "Lefeng Zhang",
+        "Huan Huo",
+        "Wanlei Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11476",
+      "arxiv_url": "https://arxiv.org/abs/2412.11476",
+      "arxiv_id": "2412.11476",
+      "arxiv_first_submitted_at": "2024-12-16T06:40:25Z",
+      "arxiv_updated_at": "2024-12-16T06:40:25Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500540/image/image.jpg?Expires=1790835172&Signature=iv30r9CAuKz0Ot7j-QbbxNnsIlELNTTya-NPjvZUBGJdiSvYuadCLYSyAShm1Y2ZMegI6R5PZa9wxMRuTZ8okVnVxLJM2FqMOK5YmISMoFEjR6MpRZLFm~JPpaHwEgRANRWJ5UBUguesGSXH~e5i9oZZHS5de1xXcUfO-HATbY62wR7JDgPJfM9knWxRAmrcUtrcpGJRfyZJrqTtHyHYKRBaOamYZnuY1HWG45bsSYEXCUaFlWIKaC~fKp9h-lmEPuhvLP2oyBQLl4YEJBjhHGjKSI0xlTxkuUBdxIUfXQPeOiHAG4TwV1IDoIh2QSyT8jtKM11eKJVMDzI0N~ehcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500540,
+      "description_sha256": "4db5f4d95e0e9fe491fa09f8f3fa996c10acfc032965012945ec20386634d837",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a Vertical Federated Learning (VFL) framework, structured into two main vertical sections: the 'Party Side' on the left and the 'Coordinator Side' on the right. The global layout is hierarchical and flow-based, progressing from bottom to top, with data inputs at the base and model output at the top. The Party Side contains two parallel processing streams, one for Party A and one for Party B, each handling their own private input data. These streams are visually distinguished by color: Party A’s components are shaded pink, while Party B’s are shaded beige. Each party’s stream consists of two stacked convolutional layers, which process their respective input data stored in cylindrical data containers labeled 'Party A's Input Data x_A' and 'Party B's Input Data x_B'. Arrows indicate the forward pass of data through these layers, culminating in outputs labeled L_A and L_B, respectively. On the Coordinator Side, these outputs are concatenated in a horizontal orange block labeled 'Concatenation', which feeds into a blue 'Fully Connected Layer' that produces the final 'Output'. This side is enclosed by a large curly brace labeled 'Coordinator Side', while the Party Side is similarly bracketed. The figure also includes vertical dashed arrows on both sides, representing backward propagation of gradients. For Party A, the gradient f'_A(L_A) = ∇L_A(W_A; x_A) is shown flowing downward, and for Party B, f'_B(L_B) = ∇L_B(W_B; x_B, y) flows downward. At the top, the coordinator computes the overall loss L_C = f_C(L_A ⊕ L_B; W_C), where ⊕ denotes concatenation, and the gradient f'_C(L_C) = ∇L_C(W_C) ⊕ ∇L_B(W_C) is shown propagating back to the parties. All mathematical expressions are written in LaTeX-style notation alongside the corresponding arrows, indicating the functional dependencies and gradient computations. The visual modules are rectangular blocks with rounded corners, except for the data containers, which are cylindrical. Text labels are centered within each module, and all connections are solid black arrows, except for the gradient paths, which are dashed. The overall structure emphasizes the separation of data ownership between parties and the coordination required for joint model training without direct data sharing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

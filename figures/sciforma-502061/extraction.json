@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502061",
+  "record_sha256": "0cf0eadfa6405038396d7c09e6fec8359e686f0f3e3e300659b7c3a8c976bf70",
+  "asset_sha256": "6b93d5cd52586284b3a1cd3f4f8fcd0f91773b3241d14ba1cebd780d5af7bb04",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502061",
+    "title": {
+      "zh": "CRM: Retrieval Model with Controllable Condition · 方法图",
+      "en": "CRM: Retrieval Model with Controllable Condition"
+    },
+    "paper": {
+      "id": "arxiv-2412-13844",
+      "title": "CRM: Retrieval Model with Controllable Condition",
+      "authors": [
+        "Chi Liu",
+        "Jiangxia Cao",
+        "Rui Huang",
+        "Kuo Cai",
+        "Weifeng Ding",
+        "Qiang Luo",
+        "Kun Gai",
+        "Guorui Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13844",
+      "arxiv_url": "https://arxiv.org/abs/2412.13844",
+      "arxiv_id": "2412.13844",
+      "arxiv_first_submitted_at": "2024-12-18T13:37:36Z",
+      "arxiv_updated_at": "2024-12-18T13:37:36Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502061/image/image.jpg?Expires=1790835207&Signature=jvCRJdI~a8poAdSV~upL72Fd4Q1JfOThrBxNmV7t10lDq26LuCplEeKIsps42qYKv1jgYHpUGSWGp~2BsjmsUnTGh4oZXLtNkISQ6wIWvgdaGqZGweq9Y8cIzQNOmoFx~Nq~Ue59DZn4LIqTg1A9y1hbYANIF8X7oLkiO~k0zppgzL18zBCH-InJhUQ7NL~jIpv3kVG4dZDOZmkPZUPtfgv6XiLSisf5Zrd0iUGXdLKv4F213mhdpk0eZiYq2zVTcq8Sbk2d0ty5yr8kOAVONKvzdKf7wvfv0ukhxjDSVByL6rZ1FZw-Sob9bgaI-Ak9J~dJLhaKSmQ2AmuN4XvbQg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502061,
+      "description_sha256": "f6ca94a9ca792f5df8e448bb68c46bd511067fa7cfdd9ab78e340f65084642c5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative illustration of two variants of the Decision Transformer architecture, labeled as (a) Origin Decision Transformer and (b) Controllable Retrieval Decision Transformer (CRM Decision Transformer), designed for sequential decision-making tasks, particularly in the context of recommendation systems.\n\n[1] Global Layout and Structure:\nThe figure is vertically divided into two main sections, separated by a horizontal line. The top section (a) illustrates the original Decision Transformer, while the bottom section (b) shows the modified CRM version. Each section contains a large gray rounded rectangle at the top representing the core model, with multiple light blue rectangular blocks below it, each corresponding to a time step or token in the input sequence. Arrows point from these blocks upward into the model, indicating input flow. Above the model, a label specifies the prediction goal: 'To predict next action_{n+1}' for (a) and 'To predict next item_{n+1}' for (b). A single blue circle at the top right represents the predicted output.\n\n[2] Visual Modules and Attributes:\nIn section (a), each light blue block contains three distinct tokens: a pink pentagon labeled with the cumulative reward-to-go (∑_{i=1}^{n+1} reward_i), a blue square labeled 'state_1' through 'state_n', and a blue circle labeled 'action_1' through 'action_n'. The final block contains only the reward-to-go and state_{n+1}, with no action token, as the model predicts the next action. The tokens are color-coded: pink for reward-to-go, blue square for state, and blue circle for action. The labels are positioned directly beneath each shape.\n\nIn section (b), each light blue block contains two tokens: a pink pentagon labeled with the cumulative watch-time-to-go (∑_{i=1}^{n+1} watch_i) and a blue circle labeled 'item_1' through 'item_n'. The final block contains only the watch-time-to-go and 'watch_{n+1}', with no item token, as the model predicts the next item. The pink pentagon represents the watch-time-to-go, and the blue circle represents the item. This reflects the adaptation of the model for recommendation, where the state is implicitly represented by the sequence of previously interacted items (actions).\n\n[3] Connections and Arrows:\nBlack arrows originate from each token within the light blue blocks and point upward into the respective Decision Transformer model, indicating that all tokens are fed as inputs. The model processes these inputs to produce a single output, represented by a blue circle, which is connected via an arrow from the model to the prediction target: 'action_{n+1}' in (a) and 'item_{n+1}' in (b). The sequence of blocks is shown with ellipses (...) between them, indicating that the full sequence may extend beyond what is explicitly drawn. The structure emphasizes a causal, masked autoregressive setup where the model uses past observations to predict the next element in the sequence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

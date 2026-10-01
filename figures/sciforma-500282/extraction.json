@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500282",
+  "record_sha256": "f7172ff322c0627105a58abce0cb86f65b9099133354f1460b94b0932ab6e609",
+  "asset_sha256": "501c1551a7a98cf6dfda113c10e022fa0ff3e794b587f9dab6df8fadf1be4610",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500282",
+    "title": {
+      "zh": "Deployment Pipeline from Rockpool to Xylo for Edge Computing · 方法图",
+      "en": "Deployment Pipeline from Rockpool to Xylo for Edge Computing"
+    },
+    "paper": {
+      "id": "arxiv-2412-11047",
+      "title": "Deployment Pipeline from Rockpool to Xylo for Edge Computing",
+      "authors": [
+        "Peng Zhou",
+        "Dylan R. Muir"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_url": "https://arxiv.org/abs/2412.11047",
+      "arxiv_id": "2412.11047",
+      "arxiv_first_submitted_at": "2024-12-15T04:19:10Z",
+      "arxiv_updated_at": "2024-12-15T04:19:10Z",
+      "arxiv_subjects": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500282/image/image.jpg?Expires=1790835164&Signature=VG5o1IY8sQmWp-thxtuNqyZwJrZpqKDjxuo9GcIWAjG3DFadWfg3b3rmEHMQd7SR7rrL7VWmFOlJzAdMQRziYgoLIphqXYZ9JH5WtP7qXXtY-YxRPtFqgVDYVVdeep1pTahoPDF29sRcUvaauflBrzcZOUc2KBBjPKbffUPTfRJaHYHbZ8bxQkIIRgTyo6sktl2XcT-4HzzlO31bHRnrqP6avjn79A7CqSSUSSgGlT~de0uuW~GbPsNk0N-hizoARfMR2PFoVVHpEPzMV8WMvc46Yd6wFX01gJafGST0u1sR4sICVetLNDq~jsL1u2AWLPUHERnfC5js2f3m8dQQxw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500282,
+      "description_sha256": "6110e7153652e3fb1eb5fd6fc9c7bc396515e498738d4de0a2f670e8fd02f086",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the functionality of the `connect_modules()` function in the Rockpool framework, which is used to chain together computational modules by linking their output and input nodes. The global layout is divided into two horizontal sections: the top section shows the input to the function, and the bottom section shows the resulting connected structure after applying the function, indicated by a large black downward arrow between them.\n\nIn the top section, the function call `connect_modules(` is shown on the left, followed by two identical module representations enclosed in parentheses. Each module consists of a rectangular box containing two internal components: a blue square with a black triangular arrow pointing right (representing an output node or processing unit), and a purple square with a white speaker-like icon (representing an input node or receiver). On either side of each module’s rectangle, there are vertical stacks of three gray dashed circles, symbolizing input and output ports or node groups. These gray circles are connected to the internal components via small black arrows, indicating data flow direction — from the left stack into the blue component, and from the purple component to the right stack. A comma separates the two module arguments within the function call.\n\nThe large black downward arrow below this setup signifies the transformation or execution of the `connect_modules()` operation.\n\nIn the bottom section, the result is displayed as a single, horizontally concatenated structure. The two previously separate modules are now linked end-to-end: the right-side gray circle stack of the first module is directly connected to the left-side gray circle stack of the second module, forming a continuous chain. The internal components (blue and purple squares) remain unchanged within each module, and the data flow continues seamlessly from the leftmost gray stack through the first module, then into the second module, and finally to the rightmost gray stack. This visualizes how the function establishes a direct connection between the output of one module and the input of another, enabling sequential computation across modules.\n\nThe figure uses consistent visual attributes: gray dashed circles for node groups, solid rectangles for modules, blue squares with right-pointing arrows for output units, purple squares with speaker icons for input units, and black arrows for data flow. The overall design emphasizes modularity and composability, central to the Rockpool framework's architecture."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

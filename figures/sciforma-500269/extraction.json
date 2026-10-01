@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500269",
+  "record_sha256": "359406967dc04225be6391c262005475fc7763bb89d949e47a0ea80c0066178c",
+  "asset_sha256": "55c84cb44b23f1b07a29aba241f8c6acd64bd48332695119c777f9b5abe06272",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500269",
+    "title": {
+      "zh": "AURORA: Automated Unleash of 3D Room Outlines for VR Applications · 方法图",
+      "en": "AURORA: Automated Unleash of 3D Room Outlines for VR Applications"
+    },
+    "paper": {
+      "id": "arxiv-2412-11033",
+      "title": "AURORA: Automated Unleash of 3D Room Outlines for VR Applications",
+      "authors": [
+        "Huijun Han",
+        "Yongqing Liang",
+        "Yuanlong Zhou",
+        "Wenping Wang",
+        "Edgar J. Rojas-Munoz",
+        "Xin Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11033",
+      "arxiv_url": "https://arxiv.org/abs/2412.11033",
+      "arxiv_id": "2412.11033",
+      "arxiv_first_submitted_at": "2024-12-15T03:06:22Z",
+      "arxiv_updated_at": "2024-12-15T03:06:22Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500269/image/image.jpg?Expires=1790835164&Signature=cUYv0OX2LIbjOhhluEPiOHI3WLqLS8bxO71-vCr3xunSqBIWOSTBa~AHbR6h44EBUILM-iaBGBGV3zwHd7xYRtcq94Y07NJBLi~YS~cZON4UlOblC15eASEGNQLWbkHRe7jw6ndOzgnpR5WLcrfYkPzpqLro1pkW3PciLQbQ-qofMErfViDizstLyriW1YNi4KknTT~0-citeU2C01Mus1k3aELzAuVTAVbMgQbss9XAPXQV0H0hzeQbMPsYtO2IqRFrpLiFFtPoDJTqpkJP~AKg~UlNG19yJscOUaLeef7Ng3FivNilKizhkFpSOzt8PqvAW9QrCrBX9bRb9YC2Bw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500269,
+      "description_sha256": "dbd32ac2db2e1a6e2385618d9878cd162b28bac67df9635fbf6652e1cd9891c6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive pipeline for generating room outline options from user-captured RGB-D images. The global layout is structured as a top-down flowchart with two main processing branches: one for geometric foundation modeling and another for 3D reconstruction and segmentation, both converging toward the final output of virtual and hybrid room outlines. On the left, a green human icon labeled 'capture' feeds color and depth images into the system. These images are processed through a vertical blue module labeled 'GS-based SLAM', which outputs 3D Gaussians with camera poses, depicted as a top-down view of a room with scattered points. This is followed by a 'surface reconstruction' module, refining the 3D Gaussians into a more coherent, textured 3D representation shown as a top-down view with smoother surfaces. A feedback loop from the refined 3D Gaussians connects upward to a 'Geometric foundation model' box, which generates normal images—three color-coded semantic views of the room (e.g., red for table, green for chair, purple for wall)—used to enhance surface reconstruction. The refined 3D Gaussians are then converted into a point cloud via a light green module labeled 'GS to point cloud conversion'. This point cloud undergoes '3D instance segmentation', separating components into distinct colored clusters representing walls, floors, and furniture. The segmented data is split: walls and floors feed into a purple 'envelope extraction' module, producing a clean floor plan with surrounding walls; furniture segments are matched against a '3D database' via a yellow 'model registration' module, yielding CAD models. These two outputs are combined to generate two outline options: 'virtual outline', where the entire room is replaced with CAD models, and 'hybrid outline', which blends reconstructed geometry with selected CAD models. A bidirectional arrow labeled 'choose' connects these outputs back to the user, indicating interactive selection. The visual modules are color-coded: blue for SLAM and reconstruction, green for conversion and segmentation, purple for envelope extraction, and yellow for model registration. All connections are gray arrows, with some forming feedback loops or branching paths, clearly delineating the data flow and decision points in the pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

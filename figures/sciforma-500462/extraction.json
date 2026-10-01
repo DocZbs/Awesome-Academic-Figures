@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500462",
+  "record_sha256": "a8740bc4bf8114516173324d947a7ae43fcf30ea444510c52b196fecc4aba848",
+  "asset_sha256": "74605e1a7df70a5caa556f100afff7b9cd55a72208a781b2c734e72e4a75cfc2",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500462",
+    "title": {
+      "zh": "Adapting Segment Anything Model (SAM) to Experimental Datasets via Fine-Tuning on GAN-based Simulation: A Case Study in Additive Manufacturing · 方法图",
+      "en": "Adapting Segment Anything Model (SAM) to Experimental Datasets via Fine-Tuning on GAN-based Simulation: A Case Study in Additive Manufacturing"
+    },
+    "paper": {
+      "id": "arxiv-2412-11381",
+      "title": "Adapting Segment Anything Model (SAM) to Experimental Datasets via Fine-Tuning on GAN-based Simulation: A Case Study in Additive Manufacturing",
+      "authors": [
+        "Anika Tabassum",
+        "Amirkoushyar Ziabari"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11381",
+      "arxiv_url": "https://arxiv.org/abs/2412.11381",
+      "arxiv_id": "2412.11381",
+      "arxiv_first_submitted_at": "2024-12-16T02:11:19Z",
+      "arxiv_updated_at": "2024-12-16T02:11:19Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "eess.IV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500462/image/image.jpg?Expires=1790835171&Signature=bMjciD5QDqK3OfJSWhPk2V0EMZ9iMZFUuKlAI5gdahDbgUenR96AGUZ~1g3OvmUSLBV-Ruaos6LgYxbEFTkHNlI2Sl4c5DUovBC2FGFJK70xHiJqczCi-xKoYfLH3TmHTpRwZJthFSHEXwFlER22TTaIPZ5TnSSfXFRGA2JC-kWq3IFjiMM8ihjKYgw6CFHaODmN6lNxjYryQwXMzTHazVOII3toi7UIfheFq9kXGF~YuRCMgEvfggptFJeR6grQcBWVS1alALS225kAEVQcjUlDwPElFZyB3oAtl9QpV7DByTLrWhMxS8BfxzFyYxBTwmxHgYdDL~8cAdFYwX-TqA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500462,
+      "description_sha256": "c9c272499a42e5b08394fb452b2a54e94256043f77be6899f0fff722068afbbb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "eess.IV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture and inference pipeline of a parameter-efficient fine-tuned SAM (PEFT-SAM) model for multiclass segmentation, divided into two main parts: (a) the Conv-LoRa architecture and (b) the multiclass mask aggregation pipeline.\n\nIn part (a), the global layout shows a hierarchical flow starting from a source image at the bottom left. The source image feeds into two parallel pathways: one directly into a large blue rectangular block labeled 'Pretrained weights of Image encoder', representing the frozen backbone of SAM; the other into a green trapezoidal stack consisting of 'Encoder', 'MoE Conv', and 'Decoder', which represents the trainable, MoE-based low-rank structure introduced by Conv-LoRa. These two pathways converge via a circular plus symbol (⊕), indicating feature fusion, feeding into a green trapezoid labeled 'Multi-class Light-weight Mask Decoder'. This decoder also receives input from a blue rectangular block labeled 'Prompt encoder', which takes a 'Box' as input. The final output is a 'Prediction' shown as a small grayscale image with segmented regions. A legend box indicates that blue components are 'Frozen' and green components are 'Trainable'.\n\nPart (b) presents a separate inference pipeline for generating multiclass semantic masks. Three yellow rectangular blocks represent individually fine-tuned SAM models: 'Finetune SAM Material Mask', 'Finetune SAM Pore Mask', and 'Finetune SAM Inclusion Mask'. Each corresponds to a binary mask for a specific class in XCT imaging. These three outputs converge into a central circular plus symbol (⊕), labeled 'Multiclass semantic mask', signifying the aggregation of individual class masks into a unified multiclass segmentation result.\n\nThe visual modules are color-coded: blue for frozen components (pretrained image encoder and prompt encoder), green for trainable components (MoE Conv, Encoder, Decoder, and lightweight mask decoder), and yellow for the fine-tuned SAM variants in the inference stage. Shapes include rectangles for modules, trapezoids for encoder/decoder stacks, circles for fusion operations, and small images for input/output data. All connections are directed arrows indicating data flow, with the dashed vertical line separating the architectural design (a) from the inference aggregation (b)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

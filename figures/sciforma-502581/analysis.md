@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+YOLOv11 Optimization for Efficient Resource Utilization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14790
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the YOLOv11-Small architecture designed for small object detection, structured as a deep neural network with a clear top-down flow and lateral connections forming a feature pyramid. The global layout is vertically oriented, with blocks labeled b0 through b16 arranged sequentially from top to bottom on the left side, representing the backbone network. On the right side, a parallel branch processes features from multiple levels via upsampling and concatenation operations before feeding into a detection head. The input is specified at the top center as '640x640x3', indicating a 640x640 pixel RGB image, which feeds into block b0.
+
+Visual modules are represented by rounded rectangles with distinct colors and labels. Blocks b0, b1, b3, b5, and b7 are light purple-blue gradient boxes labeled 'Conv' followed by a circular label containing 'P2', 'P3', 'P4', or 'P5', denoting feature pyramid levels. Blocks b2, b4, b6, b8, b13, and b16 are golden-yellow boxes labeled 'C3k2', representing C3 modules with kernel size 2. Block b9 is a teal-green box labeled 'SPPF', indicating a Spatial Pyramid Pooling Fast module. Block b10 is a magenta-pink box labeled 'C2PSA', representing a C2 Partial Self-Attention module. On the right branch, two green gradient boxes labeled 'Concat' denote concatenation of feature maps, while two red gradient boxes labeled 'Upsample' indicate upsampling operations. The final detection head is a light blue box labeled 'Detect'.
+
+Connections are shown as black arrows indicating data flow. The main backbone begins at b0 (Conv P1), which connects to b1 (Conv P2). From b1, the flow proceeds through alternating Conv and C3k2 layers: b1 → b2 → b3 → b4 → b5 → b6 → b7 → b8 → b9 → b10. Lateral connections branch off from specific backbone layers to the right-side feature fusion path: b15 (from b4) connects to the first Concat; b13 (from b6) connects to the second Concat; and b12 (from b7) connects to the same second Concat. These concatenated features are then upsampled via Upsample blocks (b14 and b11) and passed through C3k2 layers (b13 and b16). The final feature map from b16 (C3k2 P3) feeds into the Detect module. Additionally, there is a feedback connection from b1 (Conv P2) back to b0 (Conv P1), suggesting a residual or skip connection. The entire structure forms a hybrid backbone with multi-scale feature fusion, enabling effective small object detection.

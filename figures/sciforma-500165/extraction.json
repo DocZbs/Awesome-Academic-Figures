@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500165",
+  "record_sha256": "6bc367d6ed4cd90dd8cb6a92390c3dcaeecb17afadb371d6292a1bce6d061a95",
+  "asset_sha256": "d2c5e949243aa58a9d1958123a282cbea6767c9deb53864f4f8fe073173f7406",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500165",
+    "title": {
+      "zh": "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices · 方法图",
+      "en": "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices"
+    },
+    "paper": {
+      "id": "arxiv-2412-10856",
+      "title": "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices",
+      "authors": [
+        "Wonkyo Choe",
+        "Yangfeng Ji",
+        "Felix Xiaozhu Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10856",
+      "arxiv_url": "https://arxiv.org/abs/2412.10856",
+      "arxiv_id": "2412.10856",
+      "arxiv_first_submitted_at": "2024-12-14T15:11:07Z",
+      "arxiv_updated_at": "2025-10-28T13:45:25Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500165/image/image.jpg?Expires=1790835166&Signature=gkFZixINMzx4paDn9sFv75tLb-1pjHpG56Gea~O6ovR4-qH95Z3h3nYAmOgWyhk7RdPBECHQaPOsGy~9Vi2wUIxKh2euHmAQi~fyicIfqdBCEmhuDmvM~5YG~NYL0wDk2wx25wCgKYfdT1T97pnqyLFEfmMh1s6U-VC7QcnBvqvsFNQx7w7G-pj5uaSKxF2tUjW1SBhFtvi2tKYcGdTC-Dd6mS9KUtLRJAjiaQiieklIi9SgVbb9y7jFmFuUiaTLz6KlVRYgZk83TcVLmxVOuFkqgaxT9UtwCzpmRxwMy-dR458VZvMfMZEm-3jrE8vZEhZc8oKdbyObgSZDvH4iDQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500165,
+      "description_sha256": "547ccfe419f2c8eb7fe53ae5180ecc14a3a17138fceb20878361b1e0ec04744f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a three-step hierarchical head architecture for efficient token prediction at inference time, combining cluster-level selection with selective loading of token heads and approximation of logits for unselected clusters. The global layout is vertically segmented into three main steps, each with distinct components and visual representations.\n\nStep 1: Compute embedding cluster probabilities. This step begins with the computation C = XH₁, where H₁ represents the cluster head. A table displays four clusters C₁ through C₄ with associated probabilities: C₁=0.45 (highlighted green), C₂=0.04, C₃=0.01, and C₄=0.50 (also highlighted green). Based on thresholds p_min=0.95, k_min=2, k_max=4, the selected clusters are {C₁, C₄} since their combined probability (0.95) meets or exceeds p_min. The unselected clusters are {C₂, C₃}. This selection process is visually emphasized by coloring the selected clusters green.\n\nStep 2: Build the token head H₂ and compute 'known' logits. This step is subdivided into three parts. Part (a) shows loading only relevant neurons from the original head H, represented as a vertical stack of neurons h₁, ..., h₆₀₀, ..., h₁₂₉₆. The selected neurons form H₂ = {(h₁,h₆₀₀), (h₁₂₉₆)} = {H₂,₁, H₂,₂}, indicating two token heads corresponding to selected clusters. Part (b) computes logits using XH₂, yielding logits₁ = XH₂,₁ = [0.03, 0.39] (shown in orange boxes) and logits₂ = XH₂,₂ = [0.01] (shown in green box). Part (c) uses scatter() to place these known logits into a final logit vector, replacing positions for unselected clusters with -∞. The resulting vector has alternating finite values (0.03, 0.39, 0.01) and -∞ placeholders, visually indicating which logits are computed and which are masked.\n\nStep 3: Approximate 'unknown' logits for unselected clusters (C₂, C₃). This step applies Equation (9): logits_unknown = logits_known × (P_unknown / P_known). The equation is displayed in a red-bordered box. The result is a final logit vector incorporating both known logits (orange and green boxes) and approximated unknown logits for unselected clusters (blue boxes with diagonal stripes). The final vector includes values 0.15, 0.03, 0.39, 0.02, 0.01, 0.01, where the blue-striped boxes represent the approximated logits for C₂ and C₃. Arrows connect Step 2's output to Step 3, showing the flow from known logits to the final combined vector. The figure uses color coding consistently: green for selected clusters, orange for known logits from selected clusters, and blue striped for approximated unknown logits, aligning with the caption’s description of hierarchical heads and selective computation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

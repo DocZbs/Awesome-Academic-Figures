@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502305",
+  "record_sha256": "d0edda50a0dc28bdac070d8e87539644a71f2214538fed16c0d8c68fbdd28f7d",
+  "asset_sha256": "4adfe7aad7cabfc45b5dea1d4b3dbd63a410574c6e385727f835b6d19e1cc2f3",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502305",
+    "title": {
+      "zh": "SAFERec: Self-Attention and Frequency Enriched Model for Next Basket Recommendation · 方法图",
+      "en": "SAFERec: Self-Attention and Frequency Enriched Model for Next Basket Recommendation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14302",
+      "title": "SAFERec: Self-Attention and Frequency Enriched Model for Next Basket Recommendation",
+      "authors": [
+        "Oleg Lashinin",
+        "Denis Krasilnikov",
+        "Aleksandr Milogradskii",
+        "Marina Ananyeva"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14302",
+      "arxiv_url": "https://arxiv.org/abs/2412.14302",
+      "arxiv_id": "2412.14302",
+      "arxiv_first_submitted_at": "2024-12-18T20:10:42Z",
+      "arxiv_updated_at": "2024-12-20T07:56:22Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502305/image/image.jpg?Expires=1790835216&Signature=M2SadCXC38R8zXAvGt2Nboeb0YCz~EkvIw1OP2uegCGV9Oi1YJY35Mxz1GttuewuOU9GgH1l~9rtZE~JdKpjxXhLgg1-xkyi0m9Zqse840yTpVnvO0FYy-cegEf7ZyZCTRUZn4NcUsA-X3~NwhAJEDivxriXo3btN637EbUlFiYqaHSunJm-4qGFUix5NE5itXLAljlUp~dkA-fVf8EXiGRXfts~yiYFaNm6AEUK2mbMD1kzDuZZoyH0mLEUmZuHj2Bj1kP6gMVP17Xt1frgwGnEXe~x0ZFFF9JFpLa6jFDd2QDtBaAVcu~RgqnOo9GToFoIjyunG6MgH3~CDKubSA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502305,
+      "description_sha256": "d521050727ca402606c3b1250b0f55f59b161f873f8210536c5367f31688c17c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the SAFERec model, which is designed for recommendation systems and consists of three main modules: the History Encode Module, the User Representation Module, and the Frequency-aware Module. The global layout is left-to-right, showing a sequential data flow from input history to final relevance scores and objective function evaluation.\n\nOn the far left, the History Encode Module receives a sequence of user purchase baskets, represented as multi-hot vectors. Each basket (labeled b1, b2, ..., bn-1, bn) is visualized as a row of four light blue square placeholders, indicating encoded items. To the left of these rows, icons of food items (apple, burger, pizza, chicken, carrot, cake, fish) represent the actual items in the baskets. These basket multi-hot vectors are fed into the History Encode Module, which outputs a set of history vectors.\n\nThese history vectors are then passed to the User Representation Module, which is enclosed in a rounded rectangle. Inside this module, a Transformer block processes the history vectors, followed by Fully Connected (FC) Layers. The output of this module is labeled 'User representation', a vector capturing the user’s interests based on their transaction history.\n\nThe User representation is then sent to the Frequency-aware Module, which also receives the history vectors directly from the History Encode Module. This module performs analysis of user-item interaction frequencies and produces two outputs: 'Item Embeddings' and a set of 'Relevance scores'. The Relevance scores are shown as a vertical stack of seven light blue squares, each corresponding to a potential item in the next basket (bn+1), which is displayed on the far right with the same food icons as the input baskets.\n\nThe Relevance scores are then used in an 'Objective function' block, which compares them against the ground truth next basket (bn+1) to compute loss or evaluate performance. The objective function is connected back to the Relevance scores and the next basket, indicating a training loop where the model is optimized to predict the correct next items.\n\nAll modules are represented as rounded rectangles with black borders and black text. The data flow is indicated by solid black arrows. The input baskets and output next basket are visually aligned with item icons, while intermediate representations are shown as light blue squares. The entire diagram uses a clean, monochromatic color scheme with black text and light blue for data placeholders, emphasizing clarity and modularity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500196",
+  "record_sha256": "945057ed331883192e7aef77af535dd39975c57932202cdc970330e141f7fff9",
+  "asset_sha256": "24037cdc6d572daecb5c30e2d60bdf56f14d7e2802ef73e4a6738a64d72e090c",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500196",
+    "title": {
+      "zh": "Video Representation Learning with Joint-Embedding Predictive Architectures · 方法图",
+      "en": "Video Representation Learning with Joint-Embedding Predictive Architectures"
+    },
+    "paper": {
+      "id": "arxiv-2412-10925",
+      "title": "Video Representation Learning with Joint-Embedding Predictive Architectures",
+      "authors": [
+        "Katrina Drozdov",
+        "Ravid Shwartz-Ziv",
+        "Yann LeCun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10925",
+      "arxiv_url": "https://arxiv.org/abs/2412.10925",
+      "arxiv_id": "2412.10925",
+      "arxiv_first_submitted_at": "2024-12-14T18:33:29Z",
+      "arxiv_updated_at": "2024-12-14T18:33:29Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500196/image/image.jpg?Expires=1790835166&Signature=Lr1BQ3VcOr2yLoaGO9srRBA63qkuux5Bp1QLwLXvoiS0MuCrvkIZFyQ7UDWwjKfX0-ch~IdS4UUKt9A7eO4~fQJWbHdP5dYsoDL0lUOE2kdxdyXUqu-bce8~5oa4TdtYV8qA5OROa5sq0zFoxaBiRItcyEq8rwxoias7UNLkAB1IOGc1~yFIIdZC-x~tQvb0jH1JtfAtDsv2Qy0LJYbEw7JvrH5BqojKf0vsmNBtVBcKLG7200DCf6DnSGARN-aPisE2m3w7LLEg5IeFQIYNTOle~i0gHmiseznJqkD66QOfmS4XcKDz786-JMU~M93W8dwo0yoYofQrE0ZfaOToVQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500196,
+      "description_sha256": "fd3264845fcd669bcd6a5ab1e2c4d1eb4847216e119ae58f5e98547f0ba6a82a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two architectures for self-supervised video representation learning: (a) Video JEPA with Variance-Covariance Regularization (VJ-VCR) and (b) a Generative model. Both diagrams share a similar global layout, starting from an input frame x and a target frame y, processed through encoders, prediction modules, decoders, and loss functions, with optional latent variable z. The structure flows left-to-right, with inputs at the bottom, encoders in the middle, and losses at the top or right.\n\nIn both diagrams, the input x is fed into an encoder Enc(x), producing a hidden representation h_x. This h_x is then passed to a prediction module Pred([h_x, z]), which also receives the optional latent variable z via a dashed arrow. The output of this module is denoted as ŷ̃_y (in diagram a) or ũ_y (in diagram b), representing a predicted hidden representation of the target. This predicted representation is then passed to a decoder Dec(ũ_y) to reconstruct the target frame, yielding ŷ.\n\nIn diagram (a), VJ-VCR, additional regularization is applied. The hidden representation h_x is passed to a VC(h_x) module (red-bordered rectangle), which applies variance-covariance regularization. Similarly, the target y is encoded by Enc(y) to produce h_y, which is also passed to VC(h_y) for regularization. A discriminator-like loss D(ũ_y, h_y) compares the predicted hidden representation ũ_y with the true hidden representation h_y. Additionally, another loss D(ŷ, y) compares the reconstructed frame ŷ with the original target y. The target y also feeds directly into the D(ŷ, y) loss via a dashed arrow.\n\nIn diagram (b), the Generative model, the architecture is simpler. The VC(h_x) module is still present, applying variance-covariance regularization to h_x. However, there is no VC(h_y) module, nor is there a D(ũ_y, h_y) loss. Instead, only the reconstruction loss D(ŷ, y) is computed, comparing the decoded output ŷ with the original target y. The target y is connected to this loss via a solid arrow.\n\nAll modules are represented as rounded rectangles or circles. Encoders, predictors, and decoders are white rounded rectangles with black borders. VC modules are red-bordered rectangles with white fill. Loss functions D are red-bordered rectangles with white fill. Inputs x and y are gray circles. The latent variable z is a gray circle connected via dashed lines, indicating it is optional. Solid arrows indicate direct data flow; dashed arrows indicate auxiliary or optional connections. The figure uses consistent notation: h_x and h_y denote hidden representations, ŷ̃_y/ũ_y denote predicted hidden representations, ŷ denotes reconstructed outputs, and D denotes MSE loss either in hidden or pixel space."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

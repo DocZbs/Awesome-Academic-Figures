@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501467",
+  "record_sha256": "b6cb3b025966a6fcf19128e007d2c28fbed6108d40af8e0d10127d5f03830650",
+  "asset_sha256": "a25d6d284f2d8f97d5442e6f3813ddbe6f37b45e97f5ed667f2ea7fbfbde8309",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501467",
+    "title": {
+      "zh": "Exposing the Vulnerability of Decentralized Learning to Membership Inference Attacks Through the Lens of Graph Mixing · 方法图",
+      "en": "Exposing the Vulnerability of Decentralized Learning to Membership Inference Attacks Through the Lens of Graph Mixing"
+    },
+    "paper": {
+      "id": "arxiv-2412-12837",
+      "title": "Exposing the Vulnerability of Decentralized Learning to Membership Inference Attacks Through the Lens of Graph Mixing",
+      "authors": [
+        "Ousmane Touat",
+        "Jezekael Brunon",
+        "Yacine Belal",
+        "Julien Nicolas",
+        "César Sabater",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12837",
+      "arxiv_url": "https://arxiv.org/abs/2412.12837",
+      "arxiv_id": "2412.12837",
+      "arxiv_first_submitted_at": "2024-12-17T12:02:47Z",
+      "arxiv_updated_at": "2025-11-13T15:25:12Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501467/image/image.jpg?Expires=1790835192&Signature=UWE9VrRHXbVFnVMqpZXim74~czVzK66aic2b2Grd4~OA3cuTAoPBNy99rRHbyRVWHcqbx~BhmkF4XTVS47mMONu4vEVysPi10-lXX3ZtPKku4aQvG0fVrksKBw8naOIMwC3wVluKkPcnHnRwBL15vkJol8EUxzCsd1QkRYGpffmqbhLLzi~jobQP9cmYiDIOQNWNuQ3LkCQX2vWCNFuveF1DPtLFyuQI01J4ICDDXd340WfNqZYw6B7dlIuZMhvAvEd35-ApBjLVR8PYi58rq-4k2FQGg6V79RnSy0LmxtYJCuFLZtFru-7qizQewbgSkyZiHVn-g-fBhqprIg2XBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501467,
+      "description_sha256": "8ba7e12e40a698f8ebed0b7d317df85a04b849b1fc0612de7e0a5d1bce96ee3d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two side-by-side diagrams illustrating the model update and aggregation processes in two different distributed learning frameworks: Gossip Learning (left) and SAMO (right). Both diagrams share a similar global layout, consisting of three input nodes labeled y₁, y₂, and y₃ on the left, a central processing node labeled x in the middle, and three output nodes labeled z₁, z₂, and z₃ on the right. All nodes are represented as purple circles with black text. The central node x contains the mathematical symbols 'Σ + ♻️', indicating summation and recycling or iterative update operations. The connections between nodes are directed arrows in dark teal, each labeled with a numbered circle (1 through 5) to denote sequential steps in the process.\n\nIn the Gossip Learning diagram (left), the flow begins with y₁ sending data to x via arrow 1, y₂ sending data to x via arrow 3, and y₃ sending data to x via arrow 4. These inputs are aggregated at x, which then outputs to z₁ via arrow 5, to z₂ via an unlabeled arrow (implied step 5), and to z₃ via another unlabeled arrow (also implied step 5). The numbering suggests that steps 1, 3, and 4 occur before the aggregation at x, followed by step 5 for all outputs. The diagram implies a centralized aggregation where multiple peers send updates to a central node, which then broadcasts the updated model.\n\nIn the SAMO diagram (right), the structure is similar but the sequence of operations differs. Here, y₁ sends data to x via arrow 1, y₂ sends data to x via arrow 2, and y₃ sends data to x via arrow 3. After aggregation at x, the outputs to z₁, z₂, and z₃ are all labeled with arrow 5, indicating a synchronized broadcast step. This suggests a more coordinated or synchronous update mechanism compared to Gossip Learning, where the order of input reception may vary.\n\nBoth diagrams are captioned beneath them: 'Model Update and Aggregation in Gossip Learning' for the left and 'Model Update and Aggregation in SAMO' for the right. The visual distinction lies primarily in the ordering of input steps (arrows 1, 2, 3, 4) and the uniform labeling of output steps (all 5s in SAMO), highlighting differences in the timing and coordination of model updates between the two methods."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

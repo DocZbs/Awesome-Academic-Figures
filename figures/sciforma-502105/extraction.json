@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502105",
+  "record_sha256": "689d93ed92b1eae0f89bc00d5bbee0a9ee319976376daa10c1f23d1d85fa3a8f",
+  "asset_sha256": "58de8441b6f1b8bc7a22409464d1aa90b8ed50ed7e14673e0fd7e05fa6474e40",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502105",
+    "title": {
+      "zh": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed · 方法图",
+      "en": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed"
+    },
+    "paper": {
+      "id": "arxiv-2412-13912",
+      "title": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed",
+      "authors": [
+        "Zidong Han",
+        "Ruibo Jin",
+        "Xiaoyang Li",
+        "Bingpeng Zhou",
+        "Qinyu Zhang",
+        "Yi Gong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13912",
+      "arxiv_url": "https://arxiv.org/abs/2412.13912",
+      "arxiv_id": "2412.13912",
+      "arxiv_first_submitted_at": "2024-12-18T14:53:10Z",
+      "arxiv_updated_at": "2024-12-18T14:53:10Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502105/image/image.jpg?Expires=1790835212&Signature=Zd79r8lZkfsQQZSfgyua~5Jwa-AYV2BzyYIA5hpXUUEVtixPM0TFUTAOzM3UtYjZtHsRWioocZBqGFO92uOygUcBqmm3d6jCzOoBPOxaVOikn57ErPD5uygIfQikAaPJav0kJrw3k8lv9fOaEADKibiLQiEBwDCVsKSv5W-~lPxewaTabE2hz6AmqfaTe5HY6QPSVHs21Mdc3JzgwTi8iwF5TvTDROP81PEdQourzi7BycZP36nBD6WBGfHvwN7JljC6YWXPas~UqS0pY8fJH0IGRZUv7EAsmpXo3MmEdZX5LBiVAv7hxgpulcIKG17i7tiGfNYxV6~rcfecgLUUGQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502105,
+      "description_sha256": "dbda990835db5177d7b25d699668418158c8746811a8a32516fbdc2f5495f712",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DeepMapping architecture, which processes multiple local coordinate systems to produce a unified global representation. The overall layout is horizontal and modular, divided into two main sections: 'Local coordinates' on the left and 'Global coordinates' on the right. The workflow proceeds from left to right, with parallel processing streams for each of Nm local coordinate inputs (Z₁, Z₂, ..., Zₙₘ), which are vertically stacked and connected by dotted lines labeled ψ, indicating shared parameters or a common transformation across streams.\n\nEach stream begins with an input Zᵢ (i = 1 to Nm) fed into an L-Net module, represented as a light blue rounded rectangle. The output of each L-Net is passed to a green rounded rectangle labeled KF (Kalman Filter), which receives an additional input Uᵢ from above. The KF output then feeds into a yellow rounded rectangle labeled TF (Transformation Function), which also receives Zᵢ as an input. The TF module produces an output labeled Z_global,i, which is directed to a pink rounded rectangle labeled Sampling. This Sampling module extracts features or samples from the global coordinate representation.\n\nAll Sampling outputs from the Nm parallel streams converge at a central circular node with a cross inside, symbolizing a summation or aggregation operation. The result of this aggregation is denoted as M_{Nm+1}, which is then passed to the final module, M-Net, depicted as a light blue rounded rectangle similar to the L-Nets. This suggests that M-Net may perform a final mapping or prediction based on the aggregated global information.\n\nThe connections between modules are solid black arrows indicating data flow direction. The dotted vertical lines labeled ψ between the L-Nets indicate parameter sharing or a consistent transformation applied across all local coordinate streams. The labels Uᵢ and Zᵢ above each KF and TF module respectively denote auxiliary inputs to those components. The outputs Z_global,i are explicitly labeled before entering the Sampling modules, emphasizing the transition from local to global representations. The final output M_{Nm+1} is shown flowing directly into M-Net, completing the pipeline. The diagram uses distinct colors for different functional blocks: light blue for neural network components (L-Net and M-Net), green for filtering (KF), yellow for transformation (TF), and pink for sampling operations. The visual hierarchy clearly separates local processing from global integration, with the central aggregation point serving as the bridge between the two domains."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

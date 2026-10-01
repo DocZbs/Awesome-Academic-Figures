@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500303",
+  "record_sha256": "f8a313adce1778869c915848953d5281d325328b342f11f0d776f445693b0805",
+  "asset_sha256": "41d6da66c630b54494f6c64048063dc9baf2d71053b89b298d9d58c49dcc5ba1",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500303",
+    "title": {
+      "zh": "Deep Spectral Clustering via Joint Spectral Embedding and Kmeans · 方法图",
+      "en": "Deep Spectral Clustering via Joint Spectral Embedding and Kmeans"
+    },
+    "paper": {
+      "id": "arxiv-2412-11080",
+      "title": "Deep Spectral Clustering via Joint Spectral Embedding and Kmeans",
+      "authors": [
+        "Wengang Guo",
+        "Wei Ye"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11080",
+      "arxiv_url": "https://arxiv.org/abs/2412.11080",
+      "arxiv_id": "2412.11080",
+      "arxiv_first_submitted_at": "2024-12-15T06:40:22Z",
+      "arxiv_updated_at": "2024-12-15T06:40:22Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500303/image/image.jpg?Expires=1790835170&Signature=rUN-kvs1WSjzpRQmiHiOZ5z3eszgsfLoB54470-Ql30nw10Xxplnh~GQFXWarlWUlO5s-AsS6CICjkjn-y5QcFsmor370JrLGl-7ajsNxKPXSYr~8W7nG3~A9D5pemfwDiK7kWBcRJfoYjrKcQtVJMGaIpR20XsNymW4IvSWv6FgctiH4ewgOfd4-Aw~MxIefNmtBYAwvKRrBJadmiPO1ypLZd8sHoPexHFCmNvMBpWZ0uZKJxmFE9dbrrDW-xYbWv74OmzeptJdjm1egUxH2V-A5k6~~xb1MwCGT5nkvI7eoBnu6Or97ILprKVND-~P0s4WvNbb1O8FHEuaFXP8wg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500303,
+      "description_sha256": "ece02b1b71b60b4f608d2330ab33114a983dfbfa84ba6dad375913ac2fb543d3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of the proposed Deep Spectral Clustering (DSC) framework, which integrates an autoencoder-based embedding process with spectral clustering and a greedy K-means module to achieve effective clustering. The global layout is structured as a left-to-right pipeline, beginning with input data on the far left and progressing through two main modules—Spectral Embedding Module and Greedy K-means Module—before producing a target matrix on the far right. These two modules are enclosed within dashed rectangular boundaries, indicating distinct functional stages. A feedback loop from the final output connects back to a loss function at the top, labeled 'Spectral Embedding Loss + Greedy Kmeans Loss', which guides the training process.\n\nOn the left, the input consists of multiple sample images (e.g., a duck, a cone, a cat), which are fed into an Encoder represented by a stack of three gray rectangular blocks. The encoder outputs autoencoder embeddings, denoted by a light blue cube labeled 'H'. This embedding is then processed in the Spectral Embedding Module. From 'H', two parallel paths emerge: one leads to the construction of a KNN Graph, depicted as a small graph with red, blue, and green nodes connected by edges, which is then converted into an Affinity matrix—a grid with dark brown squares indicating connections. The other path involves applying power iteration (symbolized by ⊗^T) to 'H' to produce spectral embeddings, represented by another light blue cube labeled 'Z'.\n\nThe Spectral Embedding Module also includes a matrix multiplication step (denoted by ⊗) between 'H' and the affinity matrix to compute 'Z'. The resulting spectral embeddings 'Z' are then passed to the Greedy K-means Module. Here, 'Z' undergoes K-means clustering, visualized as three clusters of points (red circles, blue triangles, green squares) grouped into distinct regions. The output of K-means includes a Centroid matrix (a small grid with colored squares corresponding to cluster centers) and a Within-class scatter matrix (a stack of circular plots showing intra-cluster distributions). These are used to compute a Rotation matrix (a grid with shaded squares), which is then multiplied (via ⊗) with 'Z' to yield Rotated embeddings, represented by a light blue cube labeled 'T'.\n\nFinally, the rotated embeddings 'T' are mapped to a Target matrix 'Y', also a light blue cube, which represents the predicted cluster assignments. The entire pipeline is supervised via the loss function at the top, which combines spectral embedding loss and greedy K-means loss, and receives inputs from both 'Z' and 'T' to optimize the model parameters during training. The figure includes a legend at the bottom-left corner defining the symbols: ⊗ for matrix multiplication and ⊗^T for power iteration. All major components are labeled with clear text, and the flow is indicated by directed arrows, emphasizing the sequential and modular nature of the architecture."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

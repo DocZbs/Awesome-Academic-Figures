@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500671",
+  "record_sha256": "44aa76ee697be1bc04601fd5a9ff6f5b988d9d52ab32ea8c6a5ca61e25cb4bf9",
+  "asset_sha256": "f2218ac35cb72b5bb5056a9593e666369532fa7d59bf5551a97b0fedbbbd2fa7",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500671",
+    "title": {
+      "zh": "SE-GCL: An Event-Based Simple and Effective Graph Contrastive Learning for Text Representation · 方法图",
+      "en": "SE-GCL: An Event-Based Simple and Effective Graph Contrastive Learning for Text Representation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11652",
+      "title": "SE-GCL: An Event-Based Simple and Effective Graph Contrastive Learning for Text Representation",
+      "authors": [
+        "Tao Meng",
+        "Wei Ai",
+        "Jianbin Li",
+        "Ze Wang",
+        "Yuntao Shou",
+        "Keqin Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11652",
+      "arxiv_url": "https://arxiv.org/abs/2412.11652",
+      "arxiv_id": "2412.11652",
+      "arxiv_first_submitted_at": "2024-12-16T10:53:24Z",
+      "arxiv_updated_at": "2024-12-16T10:53:24Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500671/image/image.jpg?Expires=1790835174&Signature=DYaGCP~Lhl3Fq6WnfaPEuYHsYJL3I2Kx3rRAzyNE-LHWh25lKbVxX56AINRPdhiVHzhneZlnUDjawIPkcRrXOqNiEOj7PHZ3-Fca1ILCEs1zClDFb50urG5FXt99BeSJfehOxTyGizxTxgWdsPNk5qhxE0nsweZaGFVyIqhCYDt3hMWEHq3Ocha2PjEeO0nFdK4crDpsl3dxDoC5thZpHuxzaJ0Ba8dmWRn90gRm~CSeNwsCyiX3XYR3mZ-6S1ENwm5W8r9RCEg1lsiI9EjQr5XKZbxgEK7YjJ5NHQJN6YEjlHG~iLN0JWtawMn4~MIitTi90hdhWSV6NGVdoqXhmw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500671,
+      "description_sha256": "bc300ab26e0b948bbc46f90019295d5f1b58f27da343b152d9aca05e51fe1b8e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall process of constructing an intra-relation graph from textual input, following a structured pipeline. The global layout is left-to-right, beginning with raw text input on the far left, progressing through processing stages, and culminating in the construction of a graph structure on the right. The entire workflow is depicted as a linear sequence with branching and aggregation steps.\n\nOn the far left, a document icon labeled 'text' represents the input data. This text is fed into a light green rectangular module labeled 'LTP', which stands for Language Technology Platform, indicating a natural language processing component responsible for parsing or extracting linguistic features. From the LTP module, a single arrow branches out to a vertical stack of four rounded rectangular blocks, collectively labeled 'eventblock'. Each eventblock contains three circular nodes arranged horizontally: the first node is yellow, the second is cyan, and the third is purple. These colors correspond to a legend on the right side of the figure, where yellow denotes 'entity', cyan denotes 'relation', and purple denotes 'element'. The numbers inside the circles (e.g., 1, 2, 3) likely represent identifiers or types for these components within each event block.\n\nA large rightward-pointing arrow connects the eventblocks to the final output: a dashed rectangular box labeled 'intra-relation graph'. Inside this box, a network graph is shown, composed of interconnected nodes. The nodes are colored according to the same legend: yellow for entities, cyan for relations, and purple for elements. The graph displays multiple connections between these nodes, forming a complex web. For example, a central yellow node (labeled '1') is connected to several other nodes, including a cyan node ('2'), another yellow node ('2'), and a purple node ('3'). Other nodes such as cyan '1', purple '1', and yellow '3' are also interconnected, illustrating the relational structure among entities, relations, and elements.\n\nThe legend, positioned to the right of the intra-relation graph, explicitly defines the color coding: a yellow circle labeled 'entity', a cyan circle labeled 'relation', and a purple circle labeled 'element'. This legend ensures clarity in interpreting the graph's components.\n\nConnections throughout the diagram are represented by solid black arrows, indicating the direction of data flow. The primary flow moves from the text input → LTP → eventblocks → intra-relation graph. The branching from LTP to multiple eventblocks suggests that the LTP processes the text to extract multiple event-related structures, each represented as a triplet of entity-relation-element. These eventblocks are then aggregated or transformed into the intra-relation graph, where the relationships among the extracted components are modeled as a graph structure, enabling further analysis or reasoning over the semantic content of the text."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

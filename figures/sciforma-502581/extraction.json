@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502581",
+  "record_sha256": "b8169cc362bf3100e3c7c6690545b486da744c65adf67392d373d1068203bda3",
+  "asset_sha256": "51ee3106768b54b93b19407e6524cf8cb300a2ff9d444a8b097c6bf3a215056e",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502581",
+    "title": {
+      "zh": "YOLOv11 Optimization for Efficient Resource Utilization · 方法图",
+      "en": "YOLOv11 Optimization for Efficient Resource Utilization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14790",
+      "title": "YOLOv11 Optimization for Efficient Resource Utilization",
+      "authors": [
+        "Areeg Fahad Rasheed",
+        "M. Zarkoosh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_id": "2412.14790",
+      "arxiv_first_submitted_at": "2024-12-19T12:29:31Z",
+      "arxiv_updated_at": "2025-07-05T03:32:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502581/image/image.jpg?Expires=1790835225&Signature=PSLYHG2bVSFIBSZu1Yhmyuzds33sroZNGEU8GyDuhi5HYqrqsTU8ZKCqbBjcy2V-bcF86NzrQFec-UgHvfuJJFl8QSln7-Ee5byOJ1-zg07jOZlbqbWQ0lXRRwLfaz~tuUp8NR~JM0qZ9Gc1NgYA~QwlYP3LH-qCAcsgTYxdHSt7bqXD9Iuy-cF5nYSzBOP5MExJ85c5UEv~ZI5zpMVLA5roesxKnReoEgFJ~FwianBemzx~~Ti0-XS8CI1bxdY1Za1sqc4ZTd8uwh~KY12LfXn3Li5Sy60QDgqqISV0nUghbinGmFBZPXFk6Y5VZKTSTSaDCr0X0YXDj3B-HWFF2g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502581,
+      "description_sha256": "5efeb5fbd8a82e5ee21712fd83bf0f3dc7c23c5d2dd148a9736907b8380893fe",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the YOLOv11-Small architecture designed for small object detection, structured as a deep neural network with a clear top-down flow and lateral connections forming a feature pyramid. The global layout is vertically oriented, with blocks labeled b0 through b16 arranged sequentially from top to bottom on the left side, representing the backbone network. On the right side, a parallel branch processes features from multiple levels via upsampling and concatenation operations before feeding into a detection head. The input is specified at the top center as '640x640x3', indicating a 640x640 pixel RGB image, which feeds into block b0.\n\nVisual modules are represented by rounded rectangles with distinct colors and labels. Blocks b0, b1, b3, b5, and b7 are light purple-blue gradient boxes labeled 'Conv' followed by a circular label containing 'P2', 'P3', 'P4', or 'P5', denoting feature pyramid levels. Blocks b2, b4, b6, b8, b13, and b16 are golden-yellow boxes labeled 'C3k2', representing C3 modules with kernel size 2. Block b9 is a teal-green box labeled 'SPPF', indicating a Spatial Pyramid Pooling Fast module. Block b10 is a magenta-pink box labeled 'C2PSA', representing a C2 Partial Self-Attention module. On the right branch, two green gradient boxes labeled 'Concat' denote concatenation of feature maps, while two red gradient boxes labeled 'Upsample' indicate upsampling operations. The final detection head is a light blue box labeled 'Detect'.\n\nConnections are shown as black arrows indicating data flow. The main backbone begins at b0 (Conv P1), which connects to b1 (Conv P2). From b1, the flow proceeds through alternating Conv and C3k2 layers: b1 → b2 → b3 → b4 → b5 → b6 → b7 → b8 → b9 → b10. Lateral connections branch off from specific backbone layers to the right-side feature fusion path: b15 (from b4) connects to the first Concat; b13 (from b6) connects to the second Concat; and b12 (from b7) connects to the same second Concat. These concatenated features are then upsampled via Upsample blocks (b14 and b11) and passed through C3k2 layers (b13 and b16). The final feature map from b16 (C3k2 P3) feeds into the Detect module. Additionally, there is a feedback connection from b1 (Conv P2) back to b0 (Conv P1), suggesting a residual or skip connection. The entire structure forms a hybrid backbone with multi-scale feature fusion, enabling effective small object detection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

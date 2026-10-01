@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501916",
+  "record_sha256": "37fe780166c835984964c589243f6d406be0e36a8a6ea7f17b58e57f90781f50",
+  "asset_sha256": "1571bb3b33512707a435cda57547e659527876704292073101a23d9773f5e63d",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501916",
+    "title": {
+      "zh": "On Enhancing Root Cause Analysis with SQL Summaries for Failures in Database Workload Replays at SAP HANA · 方法图",
+      "en": "On Enhancing Root Cause Analysis with SQL Summaries for Failures in Database Workload Replays at SAP HANA"
+    },
+    "paper": {
+      "id": "arxiv-2412-13679",
+      "title": "On Enhancing Root Cause Analysis with SQL Summaries for Failures in Database Workload Replays at SAP HANA",
+      "authors": [
+        "Neetha Jambigi",
+        "Joshua Hammesfahr",
+        "Moritz Mueller",
+        "Thomas Bach",
+        "Michael Felderer"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13679",
+      "arxiv_url": "https://arxiv.org/abs/2412.13679",
+      "arxiv_id": "2412.13679",
+      "arxiv_first_submitted_at": "2024-12-18T10:07:54Z",
+      "arxiv_updated_at": "2024-12-18T10:07:54Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501916/image/image.jpg?Expires=1790835208&Signature=ZeXcYCN1BLOIYgzU-K6OqA5t9CwWf3ZlYdXbPTUIZYe7wNI0WoagRgzD070gmbfC7hmQva1-x4-4iIJ056d1lfcLGM0Hbwi~YOduz4RgiS47iQEnvwA4xmS9IB61wNhVTy05OXscCnBXcYFQi94tCoYOw5ERleG8rU5noQwk3mQcnRnvpkAKZ8h1iWnF-M9QT0vQuEeiPwGjKCZaM-8MBsRKbhX8v7BYcQQ1OofFgUcyp3h02KA2oa0AxF-d0fM1X2Z08yHOZ7jJpeM2n37AX07YMTWUtFECZpV6yx~0IHqOQ3XJTY13~DVLstrL4A-EwSHYgf8-u~jZIllC2gpuyA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501916,
+      "description_sha256": "b300f314fae0012b10a4e5007723d0670e5b45510a9a99077216ed598063c591",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-part framework for constructing new training data to support root cause attribution in failure analysis. The overall layout is divided into two main sections: the lower section titled 'Training Data Curation for Contextualizing Failures' and the upper section titled 'Root Cause Attribution Framework'. These sections are separated by dashed rectangular boundaries, indicating distinct but interconnected phases of the process.\n\nIn the lower section, the process begins with 'Replay Data Tables', represented as a cylinder symbol denoting a database. This data flows into a box labeled 'Failed Events', which acts as an intermediate processing step. From 'Failed Events', two parallel paths emerge: one leads to 'Extract Statements', and the other to 'Extract Label'. The 'Extract Statements' module feeds into a GPT-4 model, depicted by its distinctive interwoven knot logo, which generates a 'Summary'. This summary, along with outputs from 'Extract Label', contributes to three final data components: 'Summary', 'Current Features', and 'Label', all contained within a nested dashed rectangle. These components collectively form the curated training data.\n\nThe upper section, 'Root Cause Attribution Framework', begins with the 'Failed Events' also feeding into a module labeled 'MIRA', which stands for a root cause attribution model. MIRA's output is directed to an operator, represented by a human icon, labeled 'Operator Analyses Results'. The operator then provides 'Operator Approval', which feeds into a module called 'Retraining Post Cross Validation'. This retraining module sends updated results back to MIRA, forming a feedback loop. Additionally, the 'Retraining Post Cross Validation' module outputs 'Classification Results', which are stored in another database cylinder and then fed into the 'Extract Label' module in the lower section, creating a closed-loop system where classification outcomes inform future data curation.\n\nAll connections are represented by solid black arrows indicating the direction of data or control flow. The visual modules are primarily rectangular boxes with black borders and black text, except for the database symbols (cylinders) and the GPT-4 logo. The entire diagram uses a monochrome color scheme with no shading or gradients. The structure emphasizes a pipeline from raw replay data through automated extraction and AI summarization to human-in-the-loop validation and iterative model retraining, ensuring that the training data is continuously refined based on real-world operator feedback and classification performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

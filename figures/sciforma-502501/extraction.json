@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502501",
+  "record_sha256": "09a40d80ab19fa931896b299cff8a5aa99677b2cd7456316bbef2cd6ba84fbfa",
+  "asset_sha256": "15bd5d401dedd925773b904d22e22c4096c6cae13640a928549bc2b36099d83b",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502501",
+    "title": {
+      "zh": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers · 方法图",
+      "en": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers"
+    },
+    "paper": {
+      "id": "arxiv-2412-14623",
+      "title": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers",
+      "authors": [
+        "Younhun Kim",
+        "Myung-Joon Kwon",
+        "Wonjun Lee",
+        "Changick Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14623",
+      "arxiv_url": "https://arxiv.org/abs/2412.14623",
+      "arxiv_id": "2412.14623",
+      "arxiv_first_submitted_at": "2024-12-19T08:21:28Z",
+      "arxiv_updated_at": "2024-12-19T08:21:28Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502501/image/image.jpg?Expires=1790835225&Signature=LEDdc9B1Gdu4fe9bNPHTTY2543M8vUXKf7PNjDCZsjVgFtaLTYsUrSVsf7dXpi6dFlPV7GydRBO-M0j5bs3ctPTB9mz4QJlupYbxdoVzbplckpZmF50VyFS0liYqoTFiAgFSZblWYumeCmFDiDWgdjDgDeqwRoHCiVTPYQOdJd7ld-1zTYf5~wJuQKpsKB1kDUJelWb7jGzaL9AsblPbQY-9EItZdtka3qoJv26oT7eeopMyXo61LaAkdNl5wNP6pRT1UCRzde9WtLV4Z11QBSVBOfdY2pSENNSrgXhTVC9hzviS~jDHosmAT9J5aUSanI5HwluQ9T~0XfCFNr1MKQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502501,
+      "description_sha256": "f11452d0d621f710094ca175c4b602f046ca5c52201a9c67c44e11afecc420a3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the FRIDAY training process, divided into two distinct phases, each depicted in separate panels labeled (a) and (b), with a shared global layout structured horizontally across the image. The entire diagram uses a clean, modular design with rounded rectangular blocks representing neural network backbones, vertical stacks of colored boxes denoting feature embeddings, and green trapezoidal blocks symbolizing multi-layer perceptrons (MLPs). Arrows indicate data flow and connections between components, with specific loss functions labeled at the end of processing chains.\n\nIn panel (a), titled 'Phase 1: Training a face recognizer (closed-set identification)', the leftmost component is a vertical list labeled 'Closed Set', containing sample face images indexed by ID=0, ID=1, ..., ID=N. These images feed into a large light-blue rounded rectangle labeled 'Face Recognizer Backbone'. An unlocked padlock icon next to this block indicates it is trainable during this phase. The output of the backbone is a vertical stack of feature vectors, represented as a column of blue and light-blue boxes, labeled z^f. This embedding vector is then passed to a green trapezoid labeled 'MLP', which produces a predicted class label ŷ^f. This prediction is connected to a loss function labeled L_cls, indicating classification loss for closed-set identification. The background of this phase is a pale yellow rectangle, visually grouping all components.\n\nPanel (b), titled 'Phase 2: Frozen face recognizer guides Deepfake detector training', shows a similar structure but with modifications. The 'Face Recognizer Backbone' from Phase 1 is now shown with a locked padlock icon, indicating it is frozen. Its output, again labeled z^f, is passed to a new component: a yellow rounded rectangle labeled 'Deepfake Detector Backbone'. The input to this backbone is a single face image, visually distinct from the closed-set images in Phase 1, suggesting it may be a deepfake or real image from an open set. The Deepfake Detector Backbone outputs another embedding vector, labeled z^d, represented as a vertical stack of light-blue boxes. This embedding is fed into a second green MLP, producing a prediction ŷ, which connects to a classification loss L_cls. Additionally, there is a direct connection from the frozen Face Recognizer's embedding z^f to the Deepfake Detector's embedding z^d, leading to a loss term labeled L_cos, which represents a cosine similarity loss. This connection implies that the embeddings are being pushed apart to reduce identity bias during training. The background of Phase 2 is also a pale yellow rectangle, maintaining visual consistency.\n\nThe overall layout is horizontal, with Phase 1 on the left and Phase 2 on the right, clearly demarcating the two stages of training. The color coding is consistent: blue for the face recognizer, yellow for the deepfake detector, and green for the MLPs. The use of padlock icons effectively communicates the trainable vs. frozen state of the face recognizer backbone. The figure caption below summarizes the process: Phase 1 learns a face recognizer; Phase 2 freezes it and trains a Deepfake detector while reducing identity bias."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

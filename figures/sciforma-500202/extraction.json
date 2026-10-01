@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500202",
+  "record_sha256": "4f72c7f5bd20307395303dbb6d692dd587e69ed0c22a31e297608ec0400ba3bb",
+  "asset_sha256": "c94506b74b55954646ea712eae64951ddf694386dc9a5f49dde4bc45025f32db",
+  "original_file": "original.jpg",
+  "pixel_width": 640,
+  "pixel_height": 1600,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500202",
+    "title": {
+      "zh": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport · 方法图",
+      "en": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport"
+    },
+    "paper": {
+      "id": "arxiv-2412-10945",
+      "title": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport",
+      "authors": [
+        "M. Giselle Fernández-Godino",
+        "Wai Tong Chung",
+        "Akshay A. Gowardhan",
+        "Matthias Ihme",
+        "Qingkai Kong",
+        "Donald D. Lucas",
+        "Stephen C. Myers"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10945",
+      "arxiv_url": "https://arxiv.org/abs/2412.10945",
+      "arxiv_id": "2412.10945",
+      "arxiv_first_submitted_at": "2024-12-14T19:43:48Z",
+      "arxiv_updated_at": "2024-12-18T18:46:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500202/image/image.jpg?Expires=1790835164&Signature=if~yQubvL9zidkwg-yQb7Ix9sZ6SLIrkQ7-Mo1BiAdk8RZnWpE6Q-RlN2YILqjEk0z4wwMnaxhWIU3N2hEQQa-E2XtyKpP~9UYx39TwzKcDihP6QfqZnSkC6ptB4k8Fi9mTb3l990pWsmHFGILvWYEmANwB41NKzLa6iOpkbR0XNDXISWUdShHKNMNsHL6dLjE5pnIJtpfr2UtxzCJT4rrkz4aqdUieO1Ru2BI2BnVALt8iFLB1ykvob85evhv21d~wEfc49AWl7tUGRTOWNqyyNky-wo0Kc-Up-bzPzJukO2TFkrW0aZVEF-2XNrfORS36Xnl-MT7HZHQcS1a445A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500202,
+      "description_sha256": "f3c53236b5436592b4211c004e73c3fcf8c90db6706b599a004234eb7f601ce6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a DualStage Temporal 3D UNet-SR model, divided into two parallel vertical pipelines: the Temporal Module on the left and the Spatial Refinement Module on the right. Both modules are structured as sequential stacks of neural network layers, connected by downward-pointing arrows indicating the flow of data from top to bottom.\n\n[1] Global Layout and Structure:\nThe diagram is organized into two distinct columns under respective headings: 'Temporal Module' and 'Spatial Refinement Module'. Each column contains a vertically stacked sequence of rectangular blocks representing different layers or operations. The layout is symmetrical in structure but differs in specific components and layer parameters. The overall design suggests an encoder-decoder architecture with downsampling followed by upsampling stages, typical of UNet variants.\n\n[2] Visual Modules and Attributes:\nEach module consists of rectangular boxes with rounded corners, colored to differentiate layer types. Blue rectangles represent Conv3D layers; lime green rectangles denote MaxPool3D layers; dark purple rectangles indicate ConvLSTM or Skip Connection layers; and teal rectangles signify ConvTrans3D (transposed convolution) layers.\n\nIn the Temporal Module:\n- The first layer is a Conv3D with kernel size (5, 7×16).\n- This is followed by MaxPool3D, then Conv3D with (7×16, 7×32), another MaxPool3D, Conv3D with (7×32, 7×64), MaxPool3D, and finally a ConvLSTM with (7×64, 7×64).\n- The decoder portion consists of three successive ConvTrans3D layers with decreasing spatial dimensions: (7×64, 7×32), (7×32, 7×16), and (7×16, 1).\n\nIn the Spatial Refinement Module:\n- It begins with a Conv3D layer using kernel size (1, 7×16).\n- Followed by MaxPool3D, then Conv3D with (7×16, 7×32), another MaxPool3D.\n- A Skip Connection layer (dark purple) labeled 'Skip Conn.: (7×16, 7×32)' is present, suggesting a feature concatenation or addition from the temporal branch.\n- The decoder comprises four ConvTrans3D layers: (7×32, 7×32), (7×32, 7×16), (7×16, 7×8), and finally (7×8, 1).\n\nAll layers include parenthetical notation specifying kernel sizes or output channel dimensions, formatted as (spatial_kernel_size, channel_size) or similar.\n\n[3] Connections and Arrows:\nWithin each module, solid black arrows connect the layers sequentially from top to bottom, indicating forward propagation. There is no explicit cross-module connection shown except for the 'Skip Conn.' layer in the Spatial Refinement Module, which implies an external input from the Temporal Module at that stage. The arrows are simple, straight lines pointing downward, maintaining clarity of the processing order. No feedback loops or branching paths are depicted within either module."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

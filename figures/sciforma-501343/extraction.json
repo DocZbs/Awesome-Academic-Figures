@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501343",
+  "record_sha256": "9dd01e6695a7ac7a3af6354965f2448344eb83ed5d63446f9a780c18797e9ed1",
+  "asset_sha256": "a1ce55006ca315d35c55a320a705572fc0b3aedde3d5c58a756c01a0abd3ba48",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501343",
+    "title": {
+      "zh": "ClustEm4Ano: Clustering Text Embeddings of Nominal Textual Attributes for Microdata Anonymization · 方法图",
+      "en": "ClustEm4Ano: Clustering Text Embeddings of Nominal Textual Attributes for Microdata Anonymization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12649",
+      "title": "ClustEm4Ano: Clustering Text Embeddings of Nominal Textual Attributes for Microdata Anonymization",
+      "authors": [
+        "Robert Aufschläger",
+        "Sebastian Wilhelm",
+        "Michael Heigl",
+        "Martin Schramm"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12649",
+      "arxiv_url": "https://arxiv.org/abs/2412.12649",
+      "arxiv_id": "2412.12649",
+      "arxiv_first_submitted_at": "2024-12-17T08:16:04Z",
+      "arxiv_updated_at": "2024-12-17T08:16:04Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501343/image/image.jpg?Expires=1790835191&Signature=SxfCpFqzz1bHhex3SErutal4ovWFTFcJyuOXfBuJbZN-u3Q2d-GmaK9DMsVD3fyjW5d8~sxL8AtqwGwtdMmrC3l4m1UBtdQ~JTIBlWCM-0~GJklm6a5~nlXITQshsoYnRlDiXd5~9xbhaekcHfKcat8q7t7bTNCO8lRGHG-SxvRSgvLP4nvZbsR491crDXkt0nIoiVmXOkliKQcrvM8r6KHa~71pS~LWncrjbx-ERZlxQutQ8zxwF-FnMYwBnGMXh0~mjxBYzR5MuF3oxi50yAB8BLZSryKBO62TCSUSXLkvvhE4ZSQypTvda9iH2oFMDVhIs-0UbmW2nibXa8Qmyw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501343,
+      "description_sha256": "fa24ee349ff37e5b9405975d45a17067e0f7f270dc1a3017cf6abffdf5f4b649",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a dataflow diagram for a privacy-preserving data anonymization pipeline named 'ClustEm4Ano'. The overall layout is horizontal, progressing from left to right, depicting a sequential workflow starting from raw tabular data and ending with anonymized tabular data. The diagram consists of rectangular nodes representing data or intermediate outputs, rounded rectangles representing processing steps, and dashed boxes indicating inputs or outputs that are not directly processed but are derived or consumed. Solid arrows indicate data flow or control dependencies between components.\n\nAt the far left, a dashed rectangle labeled 'tabular data' serves as the initial input. This flows into a light blue rounded rectangle labeled 'define QI/SA', which includes a small human pictogram indicating user-defined parameters. From this step, two dashed boxes emerge: 'QI' (quasi-identifiers) and 'SA' (sensitive attributes), both derived from the definition step. These two outputs feed into the next processing stage.\n\nThe next component is a light blue rounded rectangle labeled 'extract set of values', marked with 'Python' underneath, indicating the implementation language. This module receives inputs from both 'QI' and 'SA' and produces an output labeled 'VGHs' (Value Generalization Hierarchies), represented by a dashed box. This step is followed by another light blue rounded rectangle labeled 'create VGHs', also marked 'Python', which receives additional inputs from four external configuration modules: 'clustering method', 'embedding model', 'privacy models', and 'suppression limit'. Each of these configuration modules is a solid rectangle with a human pictogram, signifying they are user-provided parameters. The 'create VGHs' module generates the 'VGHs' output, which then flows to the final processing step.\n\nThe last processing module is a light blue rounded rectangle labeled 'anonymize', with 'ARX API (Java)' written beneath it, indicating the anonymization tool used. This module receives the 'VGHs' as primary input and also takes direct inputs from the four user-configurable modules ('clustering method', 'embedding model', 'privacy models', 'suppression limit'), suggesting these parameters influence the anonymization process. The output of this step is a dashed rectangle labeled 'anonymized tabular data', marking the end of the pipeline.\n\nThe diagram uses consistent visual attributes: light blue rounded rectangles for computational steps, dashed rectangles for data or derived outputs, and solid rectangles for user-defined configuration inputs. All arrows are solid black lines with arrowheads indicating direction. The human pictograms consistently denote user-provided or configurable elements. The workflow is logically structured: data is first preprocessed by defining sensitive and quasi-identifying attributes, then generalized using clustering and embedding techniques to create value hierarchies, and finally anonymized using the ARX API with specified privacy constraints."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

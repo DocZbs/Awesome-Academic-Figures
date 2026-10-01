@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500843",
+  "record_sha256": "0c199ca55cf92dce813386e86001146a47f2ea7e5c14c0f650577d23e864ab1c",
+  "asset_sha256": "cb18ec27ec5bbb4079106cd1d59a1a976645876a1b1dd40a0db24bbe045f401c",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500843",
+    "title": {
+      "zh": "Investigating Mixture of Experts in Dense Retrieval · 方法图",
+      "en": "Investigating Mixture of Experts in Dense Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-11864",
+      "title": "Investigating Mixture of Experts in Dense Retrieval",
+      "authors": [
+        "Effrosyni Sokli",
+        "Pranav Kasela",
+        "Georgios Peikos",
+        "Gabriella Pasi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11864",
+      "arxiv_url": "https://arxiv.org/abs/2412.11864",
+      "arxiv_id": "2412.11864",
+      "arxiv_first_submitted_at": "2024-12-16T15:20:13Z",
+      "arxiv_updated_at": "2024-12-16T15:20:13Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500843/image/image.jpg?Expires=1790835177&Signature=dPYzns1zgBIvSPyXzxUcGFXvDcz5U2Z1NkNDgiN0UN48DGhCTMNPmN01zxV1LS54PJ22VkZZrUXYaCl0S6ySNShmBA99v6wLhma9NKRvlxumRrWxRAlM~HncgELkIA~GaBzY~lyzL7oFm2ggddaqz~lTPfKE8PQIvSAaPtAmdrCZcoIb5cBMyJOywXOkD~-JbNYD2rDVwlLypcHarEBukjfi90n58XnyZM9t9iqrksE5U4U1v~RbWaQPxTGR1UtwpyfNdufyEuIUNXNLPRYSuAw9iUKcISz-H4-dK44a98te42CT0Q7D0mVi7WKB36s0wteGxQt9DHtd8Ll1mdwPMg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500843,
+      "description_sha256": "207b677448e02d5f8d8428952340b58d84db0ffb6b1cc02f2d66373e74cfb6ad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the SB-MoE architecture, which is structured into two parallel processing streams: one for query embeddings and another for document embeddings. Each stream contains a dedicated MoE (Mixture-of-Experts) layer, labeled 'Query-level MoE Layer' and 'Document-level MoE Layer', respectively. Both MoE layers are visually represented as large purple rectangular containers, indicating their modular and distinct roles within the architecture.\n\nEach MoE layer consists of multiple experts—labeled 'Expert 1', 'Expert 2', ..., 'Expert n'—represented as rounded rectangles with a light beige fill and black borders. These experts receive input from a shared embedding representation: 'Query Embedding Representation' for the query side and 'Document Embedding Representation' for the document side. These input representations are shown as rounded rectangles with a light gray fill at the bottom of each respective stream.\n\nAbove the experts in each MoE layer is a 'Pooling' module, depicted as a yellow rounded rectangle. The outputs from all experts feed into this pooling operation, which aggregates their contributions. The pooled output is then combined with the original input embedding representation via an addition operation, symbolized by a white circular node with a '+' sign. This summed result becomes the 'Output Query Embedding' or 'Output Document Embedding', shown as light gray rounded rectangles above each MoE layer.\n\nA 'Gating Function', represented as a green rounded rectangle, is positioned to the left of each MoE layer. It receives the input embedding representation and determines which experts should be activated for processing that input. The gating function's output directs the flow to the appropriate experts within the MoE layer.\n\nFinally, the 'Output Query Embedding' and 'Output Document Embedding' are fed into a 'Similarity' module, shown as a light blue rounded rectangle at the top center of the diagram. This module computes a similarity score between the two final embeddings, likely used for ranking or retrieval purposes. Arrows indicate the direction of data flow: from input representations to gating functions, to experts, through pooling and addition, to output embeddings, and finally to the similarity computation. All connections are solid black lines with arrowheads, clearly delineating the computational path."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

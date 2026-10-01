@@ -1,0 +1,100 @@
+{
+  "id": "sciforma-501575",
+  "record_sha256": "e9475307a662ef162571f270b390234417378584501488aaaf6a85e1ad0cd5a8",
+  "asset_sha256": "3b6e89a94967d89ea1c11f7dff79a80b6f7cc31e925f9a5014c18e44c7a6dd54",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501575",
+    "title": {
+      "zh": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments · 方法图",
+      "en": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments"
+    },
+    "paper": {
+      "id": "arxiv-2412-13049",
+      "title": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments",
+      "authors": [
+        "Joshua Groen",
+        "Simone Di Valerio",
+        "Imtiaz Karim",
+        "Davide Villa",
+        "Yiewi Zhang",
+        "Leonardo Bonati",
+        "Michele Polese",
+        "Salvatore D'Oro",
+        "Tommaso Melodia",
+        "Elisa Bertino",
+        "Francesca Cuomo",
+        "Kaushik Chowdhury"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_id": "2412.13049",
+      "arxiv_first_submitted_at": "2024-12-17T16:13:37Z",
+      "arxiv_updated_at": "2025-11-07T21:46:37Z",
+      "arxiv_subjects": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501575/image/image.jpg?Expires=1790835197&Signature=Z0n0ey89VF3ceF-ZWMmzg~dVWQGYsVNQQ0VxpRDX8gvPT4V9Z3KTAf9j6qLr32bfom5fLsb7n3Uio1dZ0bOmOR3dTdcderzNKoSauABKjsO0Ko~7~80xZ4k5cwGq4fl~sndzSmHDJwFO05tqJfqpZoF7Q5fXD9f3meNO-YiA0FXID5Ri9Xtmq0hg1D8XIKRZYi0X~fSrROvUtp02tYYdO~cc5wzCJ24RjcIUDm7UlKEdDJKlWqcqjjcARtfbrGx4fzZU5rCaT9FfrC84sPMaiudx988bLvbHc05zAod2Ktvw4R7rAtoDmFhD6TpLBlOiSMsQoogrK~p32f88Oaw3YA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501575,
+      "description_sha256": "e7936afcd9f96a52775e42137aec9ef4b3dfe665cfe504261d0c0edb0e59b717",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a transformer-based model designed for binary classification over sequential data. The global layout is left-to-right, depicting a clear data flow from input features through a multi-layer transformer encoder to a classification head. On the far left, the input is represented as a matrix of shape (Sequence Length = S, Features = F), where S can be 16, 32, or 40, and F represents the number of feature dimensions. The features are explicitly labeled as Source, Destination, Length, Sequence ID, Message Type, and Inter arrival time, arranged as columns in the matrix. This input matrix feeds into a stack of two transformer encoder layers, shown as stacked gray rounded rectangles. Each encoder layer contains two main components: a Multi-Head Attention module (green rounded rectangle) and a Feed Forward module (light blue rounded rectangle), both followed by Add & Norm blocks (yellow rounded rectangles). The Multi-Head Attention block has three green sub-blocks indicating multiple attention heads, and the entire encoder stack is labeled with '2' at the bottom to denote two layers. A dashed line with '3' points to the Multi-Head Attention block, possibly indicating three attention heads. The output from the transformer stack is then passed to a classification head on the right. This head consists of a Linear Layer (light blue trapezoid) with hidden layer size LL = 256, followed by a Dropout Layer (pink rectangle) with dropout rate DO = 0.2, and another Linear Layer (light blue trapezoid) also with LL = 256. The second linear layer includes a red checkmark symbol, indicating a sigmoid activation function as per the caption. The final output is a single binary classification result, indicated by an upward arrow labeled 'Binary Classification'. The input to the first linear layer is specified as Output = F × S, suggesting the flattened representation from the transformer. All connections between modules are shown with light green arrows, indicating the forward pass direction. The overall structure emphasizes a sequential processing pipeline from raw feature sequences to a final binary decision."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

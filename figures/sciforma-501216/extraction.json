@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501216",
+  "record_sha256": "f289d48f06ba08dd49bdf115df91952325a48b2b2ce6e7a86f9b374210243ab5",
+  "asset_sha256": "b5f5cc251001153f75893bd012c8a084ad7ae55da92b0f205f8e7140e4c1e74d",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501216",
+    "title": {
+      "zh": "LinguaLIFT: An Effective Two-stage Instruction Tuning Framework for Low-Resource Language Reasoning · 方法图",
+      "en": "LinguaLIFT: An Effective Two-stage Instruction Tuning Framework for Low-Resource Language Reasoning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12499",
+      "title": "LinguaLIFT: An Effective Two-stage Instruction Tuning Framework for Low-Resource Language Reasoning",
+      "authors": [
+        "Hongbin Zhang",
+        "Kehai Chen",
+        "Xuefeng Bai",
+        "Yang Xiang",
+        "Min Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12499",
+      "arxiv_url": "https://arxiv.org/abs/2412.12499",
+      "arxiv_id": "2412.12499",
+      "arxiv_first_submitted_at": "2024-12-17T03:03:17Z",
+      "arxiv_updated_at": "2025-02-17T13:20:15Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501216/image/image.jpg?Expires=1790835190&Signature=CYoB92ojjINv~AgqqpW7IG2YhfYBDV~VmW0kTBX9NJDvmtmoBOZQ9strZ2DmUaqTN4VrbQmfOMNOgCId1GctJvdy85eyTNtw7bJ2f~h2KKemnKWzaza~S9EIbvAtROBw1gYvEnywcY2Wc37GZdNVc-oRx~LLR8f6S~vJY3W76v1lAbd2WF3j-cDgC3mbWH5YMDGgBO0DppDoiepYQgfNdyynCbf2sEm6YI2WvyDIZGyfUlR3fh7~Q1Dp-kCqoE~EdRTudXdbZoSA7dwhU3H2LfCS14wwVWIGYZ5jr7K4URr8bHYTyjXVNsO4AqY85bCW7k-QQ7jZlD36fZ6sbkyYgw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501216,
+      "description_sha256": "6692a36c1895b6f787ab542bb891bfd781b9648325f1833e96116f3549f82ac9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the LinguaLIFT approach, divided into two stages: Stage-I Language Align and Stage-II Task Transfer. The layout is split vertically into two panels, each with a distinct background color—light green for Stage-I and light purple for Stage-II—to differentiate the phases. Each panel contains a flowchart illustrating the model architecture and data flow, along with example inputs and outputs at the top and bottom.\n\nIn Stage-I (Language Align), the process begins with a Code-Switched Input, shown as a Bengali-English mixed sentence: 'It (টেক্স Tom 3 ঘন্টা) to মও the entire লন! He can মও each (সেকশন) in 30 মিনিট! How many (সেকশনস) does his লন have?'. This input is processed by a Multilingual Encoder, depicted as a blue rounded rectangle with a snowflake icon, which feeds into a Language Alignment Layer, shown as a pink rounded rectangle with a flame icon. Simultaneously, an Instruction ('Translate the following code-switched Bengali sentence to pure English:') is passed through an Embedding Layer, represented as a blue rounded rectangle with a snowflake icon. The outputs from both layers, labeled H_enc and H_ins respectively, are concatenated via a yellow chain-link icon labeled 'concatenation' and fed into a Large Language Model, shown as a light blue rounded rectangle with a snowflake icon. The output is a fully translated English sentence: 'It takes Tom 3 hours to mow the entire lawn. He can mow each section in 30 minutes. How many sections does his lawn have?'.\n\nIn Stage-II (Task Transfer), the same architectural components are reused but with different inputs and purposes. The Language Alignment Layer is now shown in light blue with a snowflake icon, indicating it is frozen. The input is a Task-Specific Input: 'It takes Tom 3 hours to mow the entire lawn. He can mow each section in 30 minutes. How many sections does his lawn have?', accompanied by a math icon. The Instruction is 'Solve the following math problem:', processed by the same Embedding Layer. The Multilingual Encoder processes the task-specific input, and its output H_enc, along with H_ins from the embedding layer, are concatenated and fed into a Large Language Model, now shown in pink with a flame icon, indicating fine-tuning. The output is a step-by-step solution: 'To find out the number of sections Tom’s lawn has, we need to determine how many 30-minute intervals are in 3 hours. There are 60 minutes in 1 hour. So, 3 hours will have 3 * 60 = 180....'\n\nConnections between modules are indicated by black curved arrows, showing the direction of data flow. The concatenation step is visually emphasized with a yellow chain-link icon. The figure uses consistent visual attributes: rounded rectangles for modules, colored backgrounds for stages, and icons (snowflake for general processing, flame for active/fine-tuned layers) to denote functionality. Text labels such as 'H_ins', 'H_enc', and 'concatenation' clarify intermediate representations and operations. The overall structure emphasizes a two-phase training strategy: first aligning multilingual representations via code-switched tuning, then transferring task-solving capabilities to low-resource languages by fine-tuning on English-only instruction data while keeping the alignment layer fixed."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

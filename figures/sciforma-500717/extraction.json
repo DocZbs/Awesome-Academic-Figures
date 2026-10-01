@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500717",
+  "record_sha256": "b75b7b0862cb9a43cfffd588a6d90ce7c8abf23b967a2f5e09fcaffb3a78f9f2",
+  "asset_sha256": "a39ab0ab6232398287912dca86f79a9ad00ed5f090bce710571077140cc42da6",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500717",
+    "title": {
+      "zh": "AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration · 方法图",
+      "en": "AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration"
+    },
+    "paper": {
+      "id": "arxiv-2412-11706",
+      "title": "AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration",
+      "authors": [
+        "Wenhao Sun",
+        "Rong-Cheng Tu",
+        "Jingyi Liao",
+        "Zhao Jin",
+        "Dacheng Tao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11706",
+      "arxiv_url": "https://arxiv.org/abs/2412.11706",
+      "arxiv_id": "2412.11706",
+      "arxiv_first_submitted_at": "2024-12-16T12:28:22Z",
+      "arxiv_updated_at": "2025-05-24T17:39:32Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500717/image/image.jpg?Expires=1790835177&Signature=g~cqyhKsDA3c5GvGNbnYgWjXF4pHJvERfV5MSO7bg3c6xLf-ezbLjdYqX2Ps3XNikkwnbAbI8rZNq7s3zo79TqEdubKCjuTDmn3eSoizZivWq5s7qUWFB4b93ihCqHfjQGlIjVWPWlTRlNAFNX6pXFsEzK1t8ZzIhBf2VKrr51Go3p-tAwoE7zKCIYdjhp82mB5YlSZjvQRVbSjJwhYCyRwFKDRzbx91c1OADP2M2UhOERO8pvqgrTyw-2BjTHgxYcoiH7w-wAaDlCqVjiDsdnsLKzYvP6Jjj8ca-u8mM8W1y9ObjkLBLul38dO0ybKHzU32eih03sq3KVrwZltIZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500717,
+      "description_sha256": "20403102a6a61285960d9098f28f077c0967ff0322fa03096297919005af8dbd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two distinct architectural strategies for reducing and restoring sequence length in vision transformers: (a) Symmetric Reduction and Restoration (SymRnR) and (b) Asymmetric Reduction and Restoration (AsymRnR). The global layout is split into two side-by-side diagrams, each illustrating a complete processing pipeline from input to output, with clear labeling and color-coded components to differentiate stages.\n\nIn both diagrams, the process begins with an 'input H' represented as a grid of image patches showing a dog, symbolizing a high-resolution feature map. The first step in both pipelines is a 'reduce' operation, depicted as a blue-bordered box, which compresses the input by discarding or aggregating certain patches, shown visually by hatching patterns over some grid cells.\n\nIn diagram (a), SymRnR, the reduced input is then split into two paths: one labeled 'to Q' in an orange box, and another labeled 'to K&V' in a red box. These paths feed into a gray 'attention' module, which processes the reduced sequences. The output of the attention module is then passed to a 'restore' block, also in gray, which reconstructs the full sequence length, returning the image to its original grid structure.\n\nDiagram (b), AsymRnR, differs in the timing of reduction. After the initial 'input H', the data splits into two paths: 'to Q' and 'to K&V'. Each path undergoes a separate 'reduce' operation—shown with different hatching patterns (orange for Q, red for K&V)—before entering the attention module. This allows for independent reduction rates for query and key-value features. The attention module then combines these reduced representations, followed by a 'restore' step to recover the original sequence length.\n\nVisually, the 'reduce' blocks are colored blue, while the 'to Q' and 'to K&V' boxes are orange and red respectively, indicating their functional roles. The 'attention' and 'restore' modules are consistently gray, signifying standard processing steps. Arrows indicate the flow of data: from input to reduce, then branching to Q and K&V paths, converging at attention, and finally to restore. The figure emphasizes that AsymRnR offers greater flexibility by allowing asymmetric reduction and supports pre-reduction operations like 3D rotary position encoding, enhancing compatibility with advanced techniques."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

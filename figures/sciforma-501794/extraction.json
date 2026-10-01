@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501794",
+  "record_sha256": "534a555465978da2b15dae420b1953526c9193e57fbbeee4d96e9139d51d0a8c",
+  "asset_sha256": "e3509e78155cbac842f1366be7c75ea22af5fa490e0bcf3e774ec63026d18707",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501794",
+    "title": {
+      "zh": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval · 方法图",
+      "en": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-13510",
+      "title": "Dynamic Adapter with Semantics Disentangling for Cross-lingual Cross-modal Retrieval",
+      "authors": [
+        "Rui Cai",
+        "Zhiyu Dong",
+        "Jianfeng Dong",
+        "Xun Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13510",
+      "arxiv_url": "https://arxiv.org/abs/2412.13510",
+      "arxiv_id": "2412.13510",
+      "arxiv_first_submitted_at": "2024-12-18T05:19:09Z",
+      "arxiv_updated_at": "2024-12-18T05:19:09Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501794/image/image.jpg?Expires=1790835200&Signature=HvfulBJC1zrBtY3cvprOOV9zXN64j5FCOw6AdLbooK8EMEicFap37dHaR5lNM~q7yqwp5UiKMz~s4Iq2uOvmMX5gaxjd3qlNYp8S4KnmdYNRWd~ZHu1wy2ct4dwgw-vypxyXqhVv8U4s~OkHrbsuANzrD3MjiM1WPRzof-9EpNLeRRuJWZU1GqRmD34JSl9T4NTLb-t9ZIvFwK9MR-FbVcvvxif~KFAXUo1CKeoWS~BatCUJdndhABN~5WR7Xv1zQ9sz9VJKaY4VRTMu8oGFMJCBEqZkQIHTGRK8ZCT0iNC7rpo4C6JOYPhuS52fo5~NNdMaPyftUBJf2SNM7RXDlw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501794,
+      "description_sha256": "b3ffb2ccc4858b7c4be3e4fb232dc7224d3c6d1375b973e0990cd848ebafdf29",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into three main parts labeled (a), (b), and (c), each illustrating different aspects of a proposed framework for cross-lingual caption refinement (CCR). \n\nPart (a) demonstrates the variability in textual expression for the same image content. On the left, an image shows a cat sitting on a cobblestone ground. Three Chinese captions are provided, each with an English translation in parentheses: '地上坐着一只猫。' (On the ground sitting a cat.), '一只猫坐在鹅卵石地面上。' (A cat sitting on the cobblestone ground.), and '鹅卵石地面上有一只猫。' (On cobblestone ground there is a cat.). Each caption is linked via dashed blue arrows to the image. To the right, under the heading 'Expressions', colored rectangular boxes represent semantic components extracted from each caption: Location (yellow), Action (orange), Agent (blue), Object (green). The first caption yields Location, Action, Agent; the second yields Agent, Action, Object; and the third yields Location, Object. This illustrates that different linguistic expressions can convey the same underlying semantics.\n\nPart (b) presents a typical adapter setup for target-language encoding. A dashed blue box labeled 'Target-Language Caption' contains the Chinese text '一只猫坐在鹅卵石地面上.' This input feeds into a light green rounded rectangle labeled 'Pretrained Text Encoder', which has a blue snowflake icon indicating it is frozen (not trainable). The output of this encoder is added to a peach-colored square labeled 'A' with a red flame icon, signifying it is trainable. The result is passed through a solid blue vertical bar, representing the final encoded output. This section highlights the standard approach where a fixed adapter is applied to a frozen pretrained model.\n\nPart (c) introduces the proposed DASD framework for CCR. Again, the input is a 'Target-Language Caption' in a dashed blue box with the same Chinese text. This input is processed by a tall blue rectangle labeled 'Semantics Disentangling'. This module splits the caption into two streams: 'Semantic-related Features' (in a dashed gray box containing examples like 'key actions, event participants ...') and 'Semantic-agnostic Features' (in a dashed light blue box with examples like 'caption length, way of expression ...'). The 'Semantic-related Features' are fed into a 'Pretrained Text Encoder' (light green, with a blue snowflake icon, indicating it is frozen). The output of this encoder is then added to a peach-colored square labeled 'DA' (Dynamic Adapter), marked with a red flame icon, indicating it is trainable. The 'Semantic-agnostic Features' are also connected to the DA module, suggesting they influence its parameters dynamically. The combined output passes through a solid blue vertical bar, similar to part (b). A legend on the right clarifies the icons: a blue snowflake means 'Frozen' and a red flame means 'Trainable'. This structure emphasizes that the proposed method dynamically adapts based on both semantic and non-semantic characteristics of the input caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

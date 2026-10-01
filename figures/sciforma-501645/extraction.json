@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501645",
+  "record_sha256": "096ae8c6fbad77d9765e962daa1afcc5f5a8e985a442e995cd17d6eeeead5028",
+  "asset_sha256": "5ee6bae171a83aaed02d438218e3573880f6ecd0e75b94ff3992c267c1d51960",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501645",
+    "title": {
+      "zh": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models · 方法图",
+      "en": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13195",
+      "title": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models",
+      "authors": [
+        "Gaoyang Zhang",
+        "Bingtao Fu",
+        "Qingnan Fan",
+        "Qi Zhang",
+        "Runxing Liu",
+        "Hong Gu",
+        "Huaqi Zhang",
+        "Xinguo Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13195",
+      "arxiv_url": "https://arxiv.org/abs/2412.13195",
+      "arxiv_id": "2412.13195",
+      "arxiv_first_submitted_at": "2024-12-17T18:59:50Z",
+      "arxiv_updated_at": "2025-08-25T17:59:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501645/image/image.jpg?Expires=1790835197&Signature=ayK2wtYNDZrnGxz7eQUa4mI-cL-OO~VGmiErJL6o~QW2X5uyrt-SrtwXnMZZMriGDACMKQ9jq8Dk~J3TZmCmqy9embXX3uMcmjhFo1GiNVtOIpS8rCDqmc4fuXTRZjXYEcN6gis6946fuCzVDaeQuyU7essDf~DAIvqhOAM0rZ2VUsySrHkoxFmfr7Z58Hd0P8beei2g-wZUIlq8mlh0rTpSGokduv~0IrY5DnIj9LWyit-qtIA0bJpWaUGorjj-kNCO1o1KqvUMklEbgvntUuvg91s1XGOvl1I1f80IKXDM7KVkxHdlzX19lSi-szM4ZQ6MD6lAWTxj131-EmzLXQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501645,
+      "description_sha256": "7d87f93665056e9269ede36f0700315e1793c7a7e008939d2d912ba79296d32e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage pipeline for a Spatial Constraints-Oriented Pairing data engine, designed to extract and describe meaningful object relationships from images. The layout is divided into three main sections: 1. Relationship Reasoning, 2. Spatial Constraints Enforcement, and 3. Relationship Decoding, arranged vertically from top to bottom.\n\nIn Section 1, 'Relationship Reasoning', a base image is shown at the bottom left, containing multiple objects (motorcycle, person, truck, chair, etc.) with bounding boxes and labels. Above this, a complete graph connects six colored nodes (blue, yellow, teal, orange, white, purple), representing all possible object pairs. A central box states 'Total pairs extracted: 15', indicating the number of object pairings considered. Arrows point from the image to the graph, showing the extraction process.\n\nSection 2, 'Spatial Constraints Enforcement', is horizontally segmented into five modules, each enforcing a specific constraint on the extracted pairs. Each module contains a small icon, a title, a visual example of the constraint applied to the image, and a mathematical formula. From left to right:\n- 'Visual Significance' uses a green square icon and requires the area ratio of the union of two bounding boxes to the entire image to exceed a threshold τv.\n- 'Semantic Distinction' uses a red infinity symbol icon and enforces that the categories of the two objects must be different.\n- 'Spatial Clarity' uses a green square with a red line icon and requires the Euclidean distance between centroids normalized by the minimum diagonal of the two boxes to be less than τu.\n- 'Minimal Overlap' uses a red square icon and enforces that the area of overlap divided by the minimum area of the two boxes is less than τo.\n- 'Size Balance' uses a green and red bar icon and requires the ratio of the minimum to maximum area of the two boxes to exceed τs.\nEach module's visual example shows the image with highlighted bounding boxes and lines or overlays illustrating the constraint. Arrows from the 'Total pairs extracted' box point to each of these five modules, indicating that all 15 pairs are filtered through these constraints.\n\nSection 3, 'Relationship Decoding', begins with a reduced graph showing only five connected node pairs (blue-teal, blue-orange, teal-orange, teal-purple, orange-purple), labeled 'Unambiguous pairs: 5'. This indicates the surviving pairs after constraint filtering. From this graph, two outputs are generated: 'Image Crops' and 'Formatted Texts'. Five image crops are displayed, each showing a close-up of one of the unambiguous object pairs. Below each crop, a corresponding textual description is provided, such as 'A motorcycle is positioned to the left of a person.' or 'There's a truck, to the left of it is a motorcycle.' These texts are formatted to accurately reflect the spatial relationship between the two objects in the crop. Curved arrows connect the 'Unambiguous pairs' graph to both the image crops and the formatted texts, illustrating the decoding step.\n\nThe overall flow is sequential: starting from the full set of object pairs, applying multiple spatial and semantic filters, and finally generating concise, accurate image-text pairs for the remaining unambiguous relationships."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

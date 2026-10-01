@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500835",
+  "record_sha256": "af1f4c6a9a394fe51f0b50d043146f830f9e6f286bb5cce007e40a10e1324c3e",
+  "asset_sha256": "30d62c6c2581a64f09f9a38c0370502b99f7f9777b511d9b461298026710d682",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500835",
+    "title": {
+      "zh": "Sonar-based Deep Learning in Underwater Robotics: Overview, Robustness and Challenges · 方法图",
+      "en": "Sonar-based Deep Learning in Underwater Robotics: Overview, Robustness and Challenges"
+    },
+    "paper": {
+      "id": "arxiv-2412-11840",
+      "title": "Sonar-based Deep Learning in Underwater Robotics: Overview, Robustness and Challenges",
+      "authors": [
+        "Martin Aubard",
+        "Ana Madureira",
+        "Luís Teixeira",
+        "José Pinto"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11840",
+      "arxiv_url": "https://arxiv.org/abs/2412.11840",
+      "arxiv_id": "2412.11840",
+      "arxiv_first_submitted_at": "2024-12-16T15:03:08Z",
+      "arxiv_updated_at": "2024-12-16T15:03:08Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500835/image/image.jpg?Expires=1790835177&Signature=iUgjXjJuspClt8xwJeuGI4IrltqD2ZybKRKe0zYF-6el2GCh6Bh3NUZKLM4ZgVlr39LTjo8gPYfswoBPKGTmmwyTECEGMUKm02DDFWQ1tKLgB0U~GDOdDRR~6v-PHyuoJtqM2-Ql1AspSvSusJgPdvjqKGFlE9W3EKJQvwG0bVikD63ZMoa3XQBcjJmoiOpbEvw4CXxNnofx9akFah2ZdUo2ley2mBEk9Ox7Ky-i7g0rjblVfa1fZjA7A4uUR5SpnMYRUuBa-l7UayNQM6zJwVSYVF6DyHJ8xkrPyyD~q9jIhIo1qcPz~4pBXIwi3Hwzs-U4reQXTbNt1pjxC78Flw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500835,
+      "description_sha256": "8559820ee986d7908747f3cd5fb045b10f4959a31de19ccfa16438d6c01cb94d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a structured workflow for ensuring robustness in sonar-based deep learning models, divided into three main phases: Pre-Training, Post-Training, and Inference, each enclosed in distinct dashed boundaries with different colors—blue for Pre-Training, yellow for Post-Training, and green for Inference. The global layout is vertical, progressing from top to bottom, with feedback loops connecting later stages back to earlier ones, indicating iterative refinement.\n\nIn the Pre-Training phase, the process begins with a light blue rounded rectangle labeled 'Define Well Suited Computational Vision Model', followed by 'Transfer Learning', then 'Define Well Suited Dataset', and finally 'Data Augmentation'. All these modules are connected sequentially by solid blue arrows, indicating a linear progression. These components form the foundational setup for training the model.\n\nThe Post-Training phase consists of three decision nodes, each represented by an orange diamond with a black border. These are 'Neural Network Verification', 'Adversarial Attack Detection', and 'Out-of-Distribution' (OOD), along with 'Uncertainty Quantification'. The 'Data Augmentation' module feeds into all three decision nodes via blue arrows. Each decision node has two possible outcomes: 'Yes' or 'No', indicated by labeled arrows. A 'Yes' outcome from any of these nodes leads to a red arrow pointing to a pink rounded rectangle labeled 'Unsafe Output' in the Inference phase. A 'No' outcome from each decision node leads to a green arrow, converging toward the next stage.\n\nThe 'Neural Network Verification' node, if 'No', proceeds to 'Adversarial Attack Detection'; if 'Yes', it bypasses the next step and connects directly to the final safe path. Similarly, 'Out-of-Distribution' and 'Uncertainty Quantification' both have 'No' paths leading to the next stage. If any of these checks return 'Yes', the flow terminates in 'Unsafe Output'.\n\nIn the Inference phase, the green arrows from the 'No' branches of all three decision nodes converge into a light green rounded rectangle labeled 'Reproduce the Dataset Collection Set-Up', which includes parameters like frequency and vehicle altitude. From this, a green arrow leads to another light green rounded rectangle labeled 'Safe Output'.\n\nFeedback loops are present: red arrows from 'Unsafe Output' loop back to 'Define Well Suited Dataset' and 'Define Well Suited Computational Vision Model', suggesting re-evaluation and retraining when safety criteria are not met. Additionally, a blue arrow from 'Reproduce the Dataset Collection Set-Up' loops back to 'Data Augmentation', indicating potential refinement of the data pipeline based on inference results.\n\nThe figure uses color coding consistently: blue for training steps, orange for decision/verification steps, green for safe paths, and red for unsafe paths. Text within each module is centered and clearly legible. The overall structure emphasizes a safety-critical, iterative design for deploying robust sonar-based deep learning systems."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

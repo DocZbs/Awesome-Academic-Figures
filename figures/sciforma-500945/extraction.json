@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500945",
+  "record_sha256": "ce9e9d50ce6c6c6da55aa85834a6c67c07f087b1ed7ef9037048cf115daf9c20",
+  "asset_sha256": "b23eb30e48d7f3846cb3333712f6c30cb3dedbf9a6ea4e924c347b6a65ee8fef",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500945",
+    "title": {
+      "zh": "Wonderland: Navigating 3D Scenes from a Single Image · 方法图",
+      "en": "Wonderland: Navigating 3D Scenes from a Single Image"
+    },
+    "paper": {
+      "id": "arxiv-2412-12091",
+      "title": "Wonderland: Navigating 3D Scenes from a Single Image",
+      "authors": [
+        "Hanwen Liang",
+        "Junli Cao",
+        "Vidit Goel",
+        "Guocheng Qian",
+        "Sergei Korolev",
+        "Demetri Terzopoulos",
+        "Konstantinos N. Plataniotis",
+        "Sergey Tulyakov",
+        "Jian Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_id": "2412.12091",
+      "arxiv_first_submitted_at": "2024-12-16T18:58:17Z",
+      "arxiv_updated_at": "2025-04-26T13:48:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500945/image/image.jpg?Expires=1790835181&Signature=Ijkj1VtbFsqNAtbvhFemG8lHqVwVk8lnszz9RSJe-kqnvClA-dwyROrgtsUPSgunuSLZQCkAo-98yAsSJW-t2LduQm-6QLZWFpj0nNuhMdjyoFROxjrQK4bbOw-9SWL4RDd1k01w26zX6Y~cn-ssi2JUjE-1iMzTJPvr06DQq1KqhiE5ZF4CLN5BvZoRHMzi0PMOzVpzS88g5ONaA9gN2BTmxjtHlu4ECAeSwVXsVRp5iMUWnE8J-~M4Dtq-icqsG6sy8F3nIpaQF9pvIo0zbFrdxGQJGJ0l8rnosYZQ4~NhozMHWJWWvPejM~gkela8AqVPSYhfuScrdZIkVOeLMw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500945,
+      "description_sha256": "699395aebf5e6450e02722dc0761bad3ffc62395355e350a13fe5e2f028d5664",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Dual-branch Camera-guided Video Diffusion Model, designed to generate video frames conditioned on both a source video clip and a conditional image, with camera embedding guidance integrated through two distinct branches: a LoRA-based branch on the left and a ControlNet-inspired branch on the right. The global layout is divided into three main vertical streams: the left branch processes camera embedding p (B,T=49,H=480,W=720,6), the central stream handles the source video clip x (B,T=49,H=480,W=720,3) and conditional image y (B,H=480,W=720,3), and the right branch also processes the same camera embedding p. These streams converge into a shared transformer backbone.\n\nIn the left branch, the camera embedding p first passes through a Conv3D layer (in_c=6, out_c=16, kernel=(4,8,8), stride=(4,8,8), pad=(2,0,0)), followed by a Zero-Init Conv3D layer (in_c=16, out_c=16, kernel=(3,3,3), stride=(1,1,1), pad=(1,1,1)). The output is then reshaped and fed into a Conv2D layer (in_c=16, out_c=3072, kernel=2, stride=2), which is flattened. This branch is color-coded in light blue and green for the Conv3D and Conv2D layers respectively.\n\nIn the center, the source video clip x is processed by a 3D-Encoder ε, producing latent z (B,t=13,h=60,w=90,c=16). Random noise is added to z, forming z_t. The conditional image y is encoded by another 3D-Encoder ε, producing a latent of shape (B,h=60,w=90,c=16), which undergoes zero padding to match dimensions with z_t. The two latents are then concatenated via a circular 'C' node. The concatenated result is passed through a Conv2D layer (in_c=32, out_c=3072, kernel=2, stride=2), which is then flattened. The 3D-Encoder blocks are depicted as trapezoids in purple, while the Conv2D block is in light green.\n\nIn the right branch, the same camera embedding p is processed by a Conv3D layer (in_c=6, out_c=3072, kernel=(4,8,8), stride=(4,8,8), pad=(2,0,0)), followed by BatchNorm3D, an Activation layer (SiLu by default), MaxPool3D (kernel=(1,2,2), stride=(1,2,2)), Flatten, Layer Normalization, another Activation, and finally a Zero Linear layer (3072,3072). This branch uses light gray, beige, and orange for BatchNorm3D, Activation, and Layer Normalization respectively.\n\nAll three branches converge: the left branch’s flattened output, the center’s flattened output, and the right branch’s output after the Zero Linear layer are combined via a circular 'C' node. The combined features pass through a Customized Linear layer (6144,3072), then enter a series of Transformer Blocks. Each Transformer Block in the main sequence is augmented with a Cam-LoRA module (gray rectangle attached to the left). The right branch’s output is also fed into a series of Copied Transformer Blocks (light gray rectangles), which are connected to the main transformer stack via Zero Linear layers and element-wise addition (indicated by '+' nodes). Dotted lines between Transformer Blocks indicate repeated structure. The final output from the last Transformer Block is passed to an Unpatchify Module, producing the final latent of shape (B,t=13,h=60,w=90,c=16). The figure omits text tokens, diffusion time embeddings, positional embeddings, and some reshaping operations for clarity. The connections are directed arrows indicating data flow, with explicit concatenation ('C') and addition ('+') nodes at merge points."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

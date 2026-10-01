@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500216",
+  "record_sha256": "3d8ff7a53d387a89f9908aca5b07f0dedab7be8351eb95e90871b62fd5f1d296",
+  "asset_sha256": "4f738ba1a0b2702126de49a1b82cf735c9d5f557d77f530bf6dd0dd2de204553",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500216",
+    "title": {
+      "zh": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer · 方法图",
+      "en": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer"
+    },
+    "paper": {
+      "id": "arxiv-2412-10958",
+      "title": "SoftVQ-VAE: Efficient 1-Dimensional Continuous Tokenizer",
+      "authors": [
+        "Hao Chen",
+        "Ze Wang",
+        "Xiang Li",
+        "Ximeng Sun",
+        "Fangyi Chen",
+        "Jiang Liu",
+        "Jindong Wang",
+        "Bhiksha Raj",
+        "Zicheng Liu",
+        "Emad Barsoum"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10958",
+      "arxiv_url": "https://arxiv.org/abs/2412.10958",
+      "arxiv_id": "2412.10958",
+      "arxiv_first_submitted_at": "2024-12-14T20:29:29Z",
+      "arxiv_updated_at": "2025-03-14T22:22:40Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500216/image/image.jpg?Expires=1790835164&Signature=OEI8N66ICbzQrjtx5W6WKYwmoZRo5sPbACBBZjx7TN3aODcwsUELN15bNYAhwi~adEWb~H8djxEiXZywTx07Hy2H78BYMyCImDs~Avtmz8YYaSuSaIf7PXWEkzJdg9uUKRBk1ggZHv8rC0DTJPYjBx~HELpiXrX~RGNi0BEkFY2IbmKluNG7BeUGX9wuIyaghQzSIh5kOW2DED8YOcZy48PolgjgxoTZ53S-9JmNzhGrJxxG4ahkPCt7sINRvQc7ZTnfGQ0z9tvSx88VFlx0hkSxGBeRbdfnKTFqQ0-W7PAasp8nVorBQ2PGMwIP3bZhuGIpquwp7mYfSsUBj8Ffqg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500216,
+      "description_sha256": "e4760f3caa30780e8aa34018fdacf9567ee1121698c5cec77c57ab96b6536a4b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of SoftVQ, a fully differentiable vector quantization method integrated within a Vision Transformer framework. The diagram is divided into two main sections: the left side depicts the encoder-decoder architecture, while the right side details the SoftVQ mechanism and representation alignment.\n\n[1] Global Layout and Structure:\nThe figure is horizontally split into two primary regions. The left region shows the standard Vision Transformer (ViT) encoder-decoder pipeline, with inputs at the top and outputs at the bottom. The right region focuses on the SoftVQ module and its interaction with pre-trained representations. A vertical dashed line separates these two regions, emphasizing the modular design. The overall flow proceeds from top to bottom on the left, and from top to bottom on the right, with cross-connections between the two sides.\n\n[2] Visual Modules and Attributes:\nOn the left, at the top, there are two dashed rectangular groups labeled 'Image Tokens' (N tokens, light blue squares) and 'Latent Tokens' (L tokens, light orange squares), concatenated together as input to the 'Vision Transformer Encoder E', represented by a large light blue rounded rectangle. Below the encoder, the output latent tokens (light orange squares) are shown feeding into the right-side SoftVQ module.\n\nFurther down on the left, another dashed group labeled 'Mask Tokens' (N tokens, light gray squares) is concatenated with the latent tokens (light orange squares) as input to the 'Vision Transformer Decoder D', depicted as a large light teal rounded rectangle. The decoder's output is 'Reconstructed Image Tokens' (light blue squares), shown at the bottom left.\n\nOn the right, at the top, a dashed group labeled 'Codewords' (K tokens, light purple squares) feeds into a vertical stack of three light yellow rounded rectangles labeled 'Distance', 'Softmax', and 'Mat. Mul.' respectively. These represent the differentiable quantization steps. An arrow labeled 'SoftVQ' points from the codewords to the 'Mat. Mul.' block, indicating the soft quantization process.\n\nBelow this, the output of the matrix multiplication is shown as a dashed group of light orange squares, labeled 'Representation Alignment'. Directly beneath it is another dashed group of light green squares labeled 'Pre-trained Image Tokens', indicating the target space for alignment.\n\n[3] Connections and Arrows:\nA solid black arrow connects the output of the Vision Transformer Encoder E (latent tokens) to the 'Distance' block on the right. Another arrow connects the 'Distance' block to 'Softmax', then to 'Mat. Mul.'. From 'Mat. Mul.', an arrow leads back to the concatenation point before the Vision Transformer Decoder D, where it merges with the Mask Tokens. Additionally, a vertical arrow runs from the Codewords directly to the 'Mat. Mul.' block, forming the SoftVQ computation path. Finally, a horizontal arrow connects the output of 'Mat. Mul.' to the 'Representation Alignment' block, which is visually aligned below the pre-trained image tokens, suggesting a comparison or alignment objective."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

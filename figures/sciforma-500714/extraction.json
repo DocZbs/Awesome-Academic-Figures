@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500714",
+  "record_sha256": "f2d29ad588368353c226061bfd44f90c1d02dc3e922ac784c6ccba0389990881",
+  "asset_sha256": "af17c831b1dcd4847b404f7f27ebd7c262b712a8d36695d054fcea81b0c91643",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500714",
+    "title": {
+      "zh": "Flex-PE: Flexible and SIMD Multi-Precision Processing Element for AI Workloads · 方法图",
+      "en": "Flex-PE: Flexible and SIMD Multi-Precision Processing Element for AI Workloads"
+    },
+    "paper": {
+      "id": "arxiv-2412-11702",
+      "title": "Flex-PE: Flexible and SIMD Multi-Precision Processing Element for AI Workloads",
+      "authors": [
+        "Mukul Lokhande",
+        "Gopal Raut",
+        "Santosh Kumar Vishvakarma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11702",
+      "arxiv_url": "https://arxiv.org/abs/2412.11702",
+      "arxiv_id": "2412.11702",
+      "arxiv_first_submitted_at": "2024-12-16T12:25:57Z",
+      "arxiv_updated_at": "2024-12-16T12:25:57Z",
+      "arxiv_subjects": [
+        "cs.AR",
+        "cs.CV",
+        "cs.DC",
+        "cs.ET",
+        "eess.IV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500714/image/image.jpg?Expires=1790835177&Signature=Vu4GKI7ixNFoqeQ~5Cxl3J0~Vo1nXhvMR7Ri0VSQdDFqTHpiwdss18Kvw5OucdiinSnv7fYXu8T538aLGqOpxp2XhSaLwE~Ll0cC4smRBRBTzPSjMRe6DV36Jje2svVcKVQx~c2dvJQXoXOY1-8D4izKGqa62-6Be9b87AkXrS7YypPIqtcsXfFvmFH16S5UNJ4D-8QfOabRiaHhq4wN56iepkN5KkhW7SQGdxxLfl1hKd18untPNdtw0Msn2lgp7-5wIeWvEJR51VbHRexxtgXFcnV9GkkwRqE-fy5Dj57FCrBEecOqMhtTt~A10ERfZF3C28uvO5C0FDyQK4JW7A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500714,
+      "description_sha256": "a12cfc9b1a183a305d38631a5b8f5a13d834cc357033ccf2a7b57954544e94b7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AR",
+        "cs.CV",
+        "cs.DC",
+        "cs.ET",
+        "eess.IV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a detailed architectural design of a SIMD (Single Instruction, Multiple Data) fixed-point configurable activation function (AF) unit, capable of computing Sigmoid, Tanh, ReLU, and Softmax functions. The diagram is divided into two main parts: (a) the high-level block diagram of the overall architecture, and (b) the detailed internal circuitry of the CORDIC stages and supporting components.\n\nPart (a) shows the global layout as a pipeline consisting of two primary processing blocks: 'Hyperbolic CORDIC Stages' (light green rectangle) and 'Linear CORDIC stages' (light blue rectangle). Inputs Xo, Yo, and Zo enter the system; Zo is first demultiplexed via a DEMUX block, which also receives a ReLU control signal. The Hyperbolic CORDIC Stages process these inputs under clock (CLK) control and produce outputs Sinh x and Cosh x. These are fed into a purple circular adder to compute e^x = Sinh x + Cosh x. This result is stored in a FIFO buffer labeled with elements e^x1 through e^xn. The e^x output is then routed through multiple multiplexers (MUX, pink trapezoids) to select between different computation paths. One path feeds into another adder (purple circle) where it is added to 1, controlled by a MUX selecting either 0 or Zo[N-1], with an additional Sig/Soft control input. The outputs from this stage are labeled Num and Denom, which feed into the Linear CORDIC stages. The Linear CORDIC stages also receive a tan signal from the same adder. The final output is selected by a MUX at the end, driven by the Num and Denom signals. A 'sel_af[1:0]' control signal selects the specific activation function mode.\n\nPart (b) provides the detailed internal structure of the CORDIC stages. It illustrates a series of CORDIC Stage 0, Stage 1, ..., up to Stage n, each containing P-stage SIMD LBS Shifters for X, Y, and Z data paths (each 32-bit wide, labeled [31:0]). Each stage includes a Sign-Extract block and a ROM lookup table feeding into a SIMD Add_Sub unit. The diagram also shows vertical SIMD datapaths on the left, indicating support for 2x16/1x32-Bit, 2x8/1x16-Bit, and 2x4/8-Bit configurations. Below the CORDIC stages, there are four horizontal bars representing different SIMD configurations: 1x 32-Bit, 2x 2 x 16-Bit (TM), 2 x 4 x 8-Bit (TM), and 2 x 8 x 4-Bit (TM), each associated with a [5,4] parameter. At the bottom, two detailed sub-blocks are shown: a '5-stage SIMD Logarithmic barrel shifter' with adaptable stages (Stage 1 to Stage 5) and control signals (ctrl, Mux_in, Shift_sel), and a 'SIMD Configurable Add_Sub Block' illustrating 4-bit, 8-bit, 16-bit, and 32-bit Add/Sub SIMD modes using full adders (FA) and carry chains (Cout, Ci). All connections are depicted with directed lines, indicating data flow from left to right and top to bottom, with control signals often shown as dashed lines or labeled arrows."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

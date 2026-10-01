@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502261",
+  "record_sha256": "51035d85e294ea93b625e0e3df1718d905bee2523d1569851f03b28c2fb2149d",
+  "asset_sha256": "d9a461a9307a028008bb105d96addba4a63c7dfdba5438264794174407c772c4",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502261",
+    "title": {
+      "zh": "Ontology-Aware RAG for Improved Question-Answering in Cybersecurity Education · 方法图",
+      "en": "Ontology-Aware RAG for Improved Question-Answering in Cybersecurity Education"
+    },
+    "paper": {
+      "id": "arxiv-2412-14191",
+      "title": "Ontology-Aware RAG for Improved Question-Answering in Cybersecurity Education",
+      "authors": [
+        "Chengshuai Zhao",
+        "Garima Agrawal",
+        "Fan Zhang",
+        "Tharindu Kumarage",
+        "Zhen Tan",
+        "Yuli Deng",
+        "Ying-Chih Chen",
+        "Huan Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14191",
+      "arxiv_url": "https://arxiv.org/abs/2412.14191",
+      "arxiv_id": "2412.14191",
+      "arxiv_first_submitted_at": "2024-12-10T21:52:35Z",
+      "arxiv_updated_at": "2025-11-24T20:05:08Z",
+      "arxiv_subjects": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502261/image/image.jpg?Expires=1790835212&Signature=d~op519Sw2HAdY2AeJ4BfxvzZ30nY7gAtPeRtEgEX2f3K9NKZZUVxPMzywRvhp~mpnICYFw2p7coL0Q7N81TEduJvAmERg7tcQY2iLnXM9KLG5-EmPf441szD0U0dFKk16Wn7Ikc6qyBe97EOqyjCWRfRbBP7twSEFerk1K2l~7HAprkj-1K~BtTG0IOCpeFqZ8JWjZIVJw-0h1wRvfHpxFIn~e-lwoSRaw2vNKo12kLPWral8BS3h3fSAyMNpQKmzT3NgunxTvsTEq9Vj~UcAhY3XPLGOuhC1kjOW8KsZAEVf~S6Qgx4W5aV4MDT0PuGfLvZ7uui6N8mjMkAnssuw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502261,
+      "description_sha256": "972377b253fc78df67fb65447394b53450b77d4930f1dae687f3703444e3201d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the CyberRAG framework, a retrieval-augmented generation system designed for answering questions based on document content, with human expert instruction and ontology-based validation. The global layout is left-to-right, depicting a pipeline starting from user input (Question) and Document, progressing through encoding, retrieval, generative modeling, and ending with Answer Validation and output. The structure is modular, with distinct components connected by color-coded data flows as defined in the legend: green for Question, blue for Document, purple for Answer, red for Human Instruction, and yellow for Ontology.\n\nOn the far left, a green speech bubble labeled 'Question' contains the example query: 'What criteria are used to determine the severity level of a vulnerability?'. This question flows into a green 'Query Encoder', represented as a horizontal autoencoder-like structure, which processes the query. The encoded query is then sent to a 'Retriever' module, depicted as a magnifying glass over binary data with a '10' in the center, symbolizing retrieval of relevant information. A blue 'Document' box, containing sample text about vulnerability severity, is processed by a blue 'Document Encoder', also shown as an autoencoder, and its output is fed into the Retriever via a blue line labeled 'Retrieve'.\n\nThe retrieved information, along with the original question, is passed to the central 'Generative Language Model', illustrated as a purple AI chip with 'AI' in the center. This model generates an answer, which is then directed to the 'Answer Validation' module. The validation process is guided by two inputs: 'Human Expert Instruction' and 'Ontology'. The Human Expert Instruction is shown as a red gear icon with a person and checkmark, accompanied by two pink instruction boxes: one instructing the model to 'Answer the user's QUESTION using the DOCUMENT text above...' and another asking to 'Please judge if the QUESTION and ANSWER align well with...'. These instructions are connected to the Generative Language Model and Answer Validation via red lines.\n\nThe Ontology, represented by a yellow network graph, provides structured knowledge such as '(app, has_a, feature)', '(function, uses, tool)', and '(user, uses, system)'. This is linked to Answer Validation via a yellow line. The Answer Validation module itself is a decision tree with checkmarks and crosses, indicating a pass/fail judgment. If the answer passes, it proceeds to the final 'Answer' output, shown as a purple lightbulb held in a hand, with a caption stating: 'Factors such as potential impact, exploitability, and affected systems are considered...'. If the answer does not pass, the flow loops back to the Generative Language Model for refinement. The entire process is governed by the data flow legend on the right, which clarifies the meaning of each colored connection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

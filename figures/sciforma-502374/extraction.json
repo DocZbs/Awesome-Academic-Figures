@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502374",
+  "record_sha256": "a13001f6bbab7d548a1a09bc1a703221fd2c26e1f49545b87a5281305abd52fe",
+  "asset_sha256": "d1bd2ee577154306ee800741ffd05435c8c1f41e5e62d8fffad8fb9c0e6ef8fc",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502374",
+    "title": {
+      "zh": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations · 方法图",
+      "en": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations"
+    },
+    "paper": {
+      "id": "arxiv-2412-14464",
+      "title": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations",
+      "authors": [
+        "Tung Do",
+        "Thuan Hoang Nguyen",
+        "Anh Tuan Tran",
+        "Rang Nguyen",
+        "Binh-Son Hua"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_id": "2412.14464",
+      "arxiv_first_submitted_at": "2024-12-19T02:23:55Z",
+      "arxiv_updated_at": "2024-12-19T02:23:55Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502374/image/image.jpg?Expires=1790835217&Signature=QGNfB8gcrOuTBW2JtO3oY0ppQt5rBP~zgKPNgcH-oM-lPP7SxV6Tv6fKjn5b8IK0D9O7cOmk-mMpB81OKOpbtUdjjIHFUr0fwJiyeqA4-zMxMSnGcv4k7baYXv50mUTkdPtUP7FuUIf7nJ5R2nqYEMdrTUqXTKfWfUDNArre14lyzIQyKTbzZ28wSxQQD0RM9KRbIO6xHZiO3nZdu787LL-ThU-oZMXYPMcQ3KG7IhBN6bJhehC9dfKlY0SrdOzUSYKcAiP1NPG3SoWdnUleb~1-EErXHPStRjLDMe7xhr~NXAL8FBTIWdKq7jdqTVjDdtXn8sAsvENxlJKXnACFcQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502374,
+      "description_sha256": "12166b78cf7a6c615b37703890fe07abca184c2b4dd4a1c8b054f35ee693fbcd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage 3D reconstruction pipeline, focusing on Stage 1, which reconstructs 3D representations from either single-view or few-view input images. The global layout is left-to-right, depicting a sequential flow from input images through multiple decoding stages to rendered outputs and loss computation. On the far left, two input pathways are shown: one labeled 'Single view' with input \\(\\mathcal{I}_{input}(1)\\) and another labeled 'Few views' with inputs \\(\\mathcal{I}_{input}(2)\\) up to \\(\\mathcal{I}_{input}(n)\\). Each input image is associated with a 3D bounding box containing a sequence of small orange cubes representing extracted features or keypoints. These feature sequences from all views are fed into a shared 'Volume Decoder', indicated by a light blue trapezoidal module. A dashed arrow labeled 'Cross Attn' connects the input feature sequences to the Volume Decoder, suggesting cross-attention mechanism for aggregating multi-view information. The output of the Volume Decoder is a 3D volume represented as a cube with internal color gradients (red, yellow, green), annotated with dimensions \\(C \\times D_c \\times H_c \\times W_c\\). This volume is passed to the next module, the 'Triplane Decoder', also depicted as a light blue trapezoid. The Triplane Decoder transforms the 3D volume into a set of three orthogonal planes—front, side, and top views—forming a triplane representation. This is visually shown as three intersecting planes with color gradients, annotated with dimensions \\(C \\times 3 \\times H_f \\times W_f\\). Below the Triplane Decoder, a dashed rectangular box contains an expanded view of the triplane structure, showing the three planes with their respective color-encoded features and intermediate convolutional layers (represented as stacked rectangles). From the triplane representation, a solid arrow labeled 'Render' leads to two outputs: a rendered image \\(\\mathcal{F}_{pred}\\) showing a colored human figure against a dark background, and a grayscale silhouette image \\(\\mathcal{I}_{pred}\\). The silhouette \\(\\mathcal{I}_{pred}\\) is compared with a target silhouette \\(\\mathcal{I}_{target}\\) via a bidirectional arrow labeled \\(\\mathcal{L}_{recons}\\), indicating the reconstruction loss used for training. The entire pipeline emphasizes lifting 2D inputs to 3D representations using volume and triplane decoders, enabling novel view synthesis and reconstruction supervision."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

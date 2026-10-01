@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501758",
+  "record_sha256": "8e60cc189a496d0f4e9c0d6e4d8964e5afdd3dc0bd527a3763b9ce5668f3684e",
+  "asset_sha256": "71a731e7b4f5c3167bc5b376ae4afaec17bad9b5ef68dbc2a32eb3623fab2e6a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501758",
+    "title": {
+      "zh": "FlexPose: Pose Distribution Adaptation with Limited Guidance · 方法图",
+      "en": "FlexPose: Pose Distribution Adaptation with Limited Guidance"
+    },
+    "paper": {
+      "id": "arxiv-2412-13463",
+      "title": "FlexPose: Pose Distribution Adaptation with Limited Guidance",
+      "authors": [
+        "Zixiao Wang",
+        "Junwu Weng",
+        "Mengyuan Liu",
+        "Bei Yu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13463",
+      "arxiv_url": "https://arxiv.org/abs/2412.13463",
+      "arxiv_id": "2412.13463",
+      "arxiv_first_submitted_at": "2024-12-18T03:18:11Z",
+      "arxiv_updated_at": "2024-12-18T03:18:11Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501758/image/image.jpg?Expires=1790835200&Signature=Ac7hkvhXZtrLUErnXq6evSSkhY6BDz1qURGW5H16vU-wCMqzqgWrFN7wFiUbfr3Llnb~iljDnENTJPafKbtcZ7YtdjTZlgNodvQB1KTgHGWYXPoFcR~6Yg54ewoTi1bJ8-4YlQse4vXr04NRh2DCIg2v38EMIrqU0lIoMACNzbppSs486xYJIr3KnhoMcOFHpip4IyjcCHd86lwSmJrQ5GPffnpoOy0z3Rre0gTzssDFzDM-yhIQ2arg4gFfYabGKIFLxRuGZkVcvE7Ns9BRsTl9MLMDVEP78~LvUChbqzD~fQYEE9Q3WtQzc5rV0Vm8S59NOlTeOhktnijZq2PeZg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501758,
+      "description_sha256": "468fea38136a363fa4bed7a133f8590915b3cefd0e85ded639f39cab92049aad",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the FlexPose framework for pose distribution adaptation, structured into three main stages: Generic Pose Distribution Estimation, Pose Distribution Adaptation, and Target Pose Sampling. The global layout is horizontal, progressing left to right, with each stage visually separated by color-coded regions and labeled arrows indicating the flow. On the far left, the source domain S is represented by a set of joint coordinates (blue triangles), which are converted via function α(·) into skeleton images x. These images are fed into a generator g_s composed of two modules: φ (a gray box with an orange flame icon, indicating a trainable module) and δ_s (a gray box with an orange flame icon, also trainable). This generator learns the source pose distribution. Below this, a large light-blue cloud contains scattered blue triangles representing the source pose distribution, with φ and δ_s shown as gray circles connected to it.\n\nIn the middle section, the adaptation phase begins. A pose-mixup operation combines source poses y_i and y_j using a weighted sum λy_i + (1−λ)y_j = y*, producing a mixup pose (highlighted with an orange border). These mixup poses are converted into skeleton images and fed into the adaptation process. The source generator’s δ_s module is combined with a new trainable module τ (orange box with flame icon) to form the target generator’s δ_t module (green box with flame icon). The φ module remains frozen (gray circle with blue snowflake icon). The adaptation is visualized as a dashed red arrow moving from the source pose cloud (blue triangles) toward a green-shaded region containing green squares (target poses) and yellow-green squares (mixup poses), symbolizing the shift in pose distribution. The label 'Adaptation' spans across this section, with a legend indicating orange flames denote modules to update and blue snowflakes denote modules to freeze.\n\nOn the right, the target domain T* is shown with joint coordinates (green squares), which are converted via β(·) into skeleton images. These are generated by the adapted target generator g_t, consisting of the frozen φ module and the updated δ_t module (both now green boxes with blue snowflakes, indicating they are part of the final target generator). The resulting target pose distribution is depicted as a green cloud containing green squares (target poses) and blue squares (adapted poses), with the generator g_t shown below. The final output is the estimated target pose annotations ^T, shown as a sequence of green, blue, green, and blue squares, corresponding to the target and adapted poses. A vertical bar on the far right labels the outputs as 'Joint Coord.' and 'Skeleton Image'.\n\nThe bottom of the figure includes three labeled banners: 'Generic Pose Distribution Estimation' under the source stage, 'Pose Distribution Adaptation' under the middle stage, and 'Target Pose Sampling' under the target stage. A legend at the bottom-left defines symbols: red arrow for transfer direction, blue triangle for source pose, green square for target pose, yellow-green square for mixup pose, and dark blue square for adapted pose. The overall structure emphasizes a progressive transformation from source to target pose distributions through generative modeling and adaptation with limited target data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

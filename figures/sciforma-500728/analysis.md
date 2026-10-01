@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Discrepancy-Aware Attention Network for Enhanced Audio-Visual Zero-Shot Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11715
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the DAAN (Dual-Attention and Gradient Modulation Network) architecture, designed for multimodal learning involving audio, visual, and textual inputs. The global layout is horizontally structured into three main sections: input feature extraction on the left, core processing in the center, and gradient modulation and convergence control on the right, with loss computation shown at the bottom-left.
+
+On the left, two input streams are processed: an audio waveform (blue) and a video frame (orange), each passing through a 'Feature Extractor' module represented by trapezoidal shapes. These extractors output feature maps labeled 'a' (blue grid) and 'v' (orange grid), respectively. These features feed into the central Quality-Discrepancy Mitigation Attention (QDMA) unit, which is enclosed in a dashed blue box for audio and dashed orange box for visual features.
+
+Within QDMA, each modality undergoes a self-attention mechanism with Query (Q), Key (K), and Value (V) components, followed by Softmax operations (yellow rectangles). The outputs pass through 'Weighted Subtraction' blocks, then 'Refinement' layers (stacked blue/orange boxes), and Temporal Convolutional Networks (TCNs, light green rectangles). Temporal Embedding (white rectangles) is added before the outputs are combined via element-wise addition (⊕ symbols) to produce φ_a (blue) and φ_v (orange).
+
+A Cross-Attention module (vertical orange gradient rectangle) connects the audio and visual features, producing cross-modal representations φ_a^crs and φ_v^crs. These are projected via 'Projection' blocks (blue and orange trapezoids) into latent spaces, then decoded by 'Decoder' blocks (blue and orange trapezoids) to reconstruct original features (φ_a^rec, φ_v^rec). The reconstruction outputs are compared with original inputs for loss calculation.
+
+On the right, the Convergence Rate module (gray rectangle) computes gradients θ_a^+, θ_a^-, θ_v^+, θ_v^- from the decoders. These gradients are normalized and used to update parameters via stochastic gradient descent (SGD), with separate paths for Optimal Modality (blue) and Sub-optimal Modality (orange), guided by Optimization Rate signals. This process is part of the Contrastive Sample-level Gradient Modulation (CSGM) block, which dynamically adjusts gradients at the sample level to mitigate content discrepancies.
+
+At the bottom, a textual input ('Tractor', depicted as a globe icon) passes through a green 'Feature Extractor', 'Projection', and 'Decoder' chain to produce ρ_w. The loss function L is computed at the bottom-left, combining contrastive loss L_c, temporal loss L_t, and reconstruction loss L_r. Parameters θ_w^+, θ_w^- and ρ_w^+, ρ_w^- are involved in this computation, with gradients flowing back to update the network. The entire architecture emphasizes dynamic gradient modulation and cross-modal alignment to handle quality and content discrepancies across modalities.

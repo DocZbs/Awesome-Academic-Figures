@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Machine learning in wastewater treatment: insights from modelling a pilot denitrification reactor — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14030
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a schematic overview of the full wastewater treatment process at Veas, structured into three main stages: mechanical, chemical, and biological treatment. The layout is horizontal, progressing from left to right, beginning with an 'Inlet' symbolized by a chevron-shaped box. From the inlet, flow proceeds through 'Screens', which divert waste to a separate hexagonal 'Waste' box. The main stream continues to 'Aerated grit chambers', which separate sand, directed to a hexagonal 'Sand' box. Above these chambers, a semi-circular container labeled 'AlCl₃ and FeCl₃(H₂O)x' represents chemical addition during mechanical treatment.
+
+From the aerated grit chambers, the flow splits into multiple parallel process lines, indicated by dashed lines extending downward to 'Process line 2' through 'Process line 8', suggesting redundancy or scalability. The primary path continues into the chemical treatment phase, where a 'Sedimentation' rectangular box receives input from the polymer addition (semi-circular container labeled 'Polymer'). Sedimentation produces sludge, shown flowing to a hexagonal 'Sludge' box.
+
+The sedimentation output feeds into 'Process line 1', enclosed within a large rectangular boundary labeled 'Biological treatment'. This section is subdivided into two main phases: 'Nitrification' and 'Denitrification'. In the nitrification stage, four reactors (Reactor 1 to Reactor 4) receive flow from sedimentation. These reactors feed into a central 'Buffer volume' box. Methanol is added via a semi-circular container above the buffer volume. From the buffer volume, flow is distributed via 'Pumps' (diamond-shaped box) to four reactors in the denitrification stage (also labeled Reactor 1 to Reactor 4), which then discharge to an 'Outlet' chevron-shaped box.
+
+Dashed lines throughout the diagram represent backwashing lines, connecting various components such as sedimentation to reactors and buffer volume to denitrification reactors, indicating recirculation paths.
+
+In the lower right corner, a green-bordered rectangular box labeled 'Pilot' highlights a specific subsystem being modeled in the paper. Inside this box, methanol is fed into a diamond-shaped 'Pump', which directs flow to a rectangular 'Denitrification reactor'. This pilot setup is connected via dashed lines to the main buffer volume and denitrification reactors, indicating integration with the larger system.
+
+All boxes are outlined in black, with labels inside using standard sans-serif font. Shapes include rectangles for processes, diamonds for pumps, chevrons for inlet/outlet, hexagons for waste/sand/sludge, and semi-circles for chemical inputs. The green box is distinctively colored to emphasize the pilot system. The caption clarifies that dashed lines denote backwashing and that details of the pilot are in Appendix \ref{sec:veas_detailed}.

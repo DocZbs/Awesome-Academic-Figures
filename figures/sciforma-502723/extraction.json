@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502723",
+  "record_sha256": "248d982aa86a4f63c28a55fb1a62915b0c26ccc4727fc98d9bb36aa3451b97ff",
+  "asset_sha256": "5fdf37b7aea528ac40f254ecb091201e969508b0378a934111d71bb400eab028",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502723",
+    "title": {
+      "zh": "Probabilistic Strategy Logic with Degrees of Observability · 方法图",
+      "en": "Probabilistic Strategy Logic with Degrees of Observability"
+    },
+    "paper": {
+      "id": "arxiv-2412-15135",
+      "title": "Probabilistic Strategy Logic with Degrees of Observability",
+      "authors": [
+        "Chunyan Mu",
+        "Nima Motamed",
+        "Natasha Alechina",
+        "Brian Logan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15135",
+      "arxiv_url": "https://arxiv.org/abs/2412.15135",
+      "arxiv_id": "2412.15135",
+      "arxiv_first_submitted_at": "2024-12-19T18:17:04Z",
+      "arxiv_updated_at": "2025-01-06T03:35:50Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502723/image/image.jpg?Expires=1790835226&Signature=p4~6uX6tdGKURGjdlp1YmXQPMP-1V9Epn1ev~WagC8nvWIJsizbIWcZp6oogjfDM97rnkig~~FEv18LFx19l3Et3E5LL3mPuJp4YD13VgXcmAshxI3MfD6grkByM3aAmIcltFtziELTpqpqacfjYOG0j0IgfhdXlBk~46ZWb88rn3Yt6iOjVqI1-xbb1p-oBUA9zjAVdVsU6MLbHjMuU1Z8c~dpGIM6lrnWbWbRPy1Cv-dpcDhSI5T500oscngrinAz0CR3sp3FHazydEtmqHijzMfhz8MLqceRFocMhf4dTrTZJ63T5P54t19aQzuFht~gFbzuY~ZpWnnxVpMR-dA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502723,
+      "description_sha256": "073b97d868a061b7eaf47d1fbecf916e5c6045e29703729b5aff751c1e450fc2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a simple message interception scenario modeled as a finite-state machine or probabilistic automaton with four states: s₀, s₁, s₂, and s₃. The global layout is hierarchical and centered around state s₀ at the bottom, which acts as the initial or central decision state. From s₀, transitions branch out to s₁, s₂, and s₃, forming a fan-out structure. Each state is represented by a circular node with a bold black outline and a shadow effect, labeled with its respective identifier (s₀, s₁, s₂, s₃) in italicized serif font at the center. All nodes are white-filled circles.\n\nState s₀ has a self-loop indicating transitions that keep the system within s₀ under certain conditions. The self-loop is annotated with three transition labels: (wait, wait), 1; (wait, copy), 1; and (send, wait), 1 — suggesting deterministic transitions (probability 1) for these input-action pairs. From s₀, there are three outgoing directed edges: one to s₁ labeled (send, copy), 0.1; one to s₂ labeled (send, copy), 0.1; and one to s₃ labeled (send, copy), 0.8. These indicate probabilistic transitions triggered by the action 'send' with 'copy' as the associated event or context, with probabilities summing to 1.0 (0.1 + 0.1 + 0.8).\n\nEach of the terminal states s₁, s₂, and s₃ also has a self-loop. The self-loop on s₁ is labeled (*, *), 1, meaning any input-action pair leads to staying in s₁ with probability 1. Similarly, s₃ has a self-loop labeled (*, *), 1, indicating it is an absorbing state for all inputs. State s₂’s self-loop is labeled (wait, *), 1, meaning that if the action is 'wait', regardless of the input, the system remains in s₂ with probability 1. This suggests s₂ is a waiting state that only responds to 'wait' actions.\n\nAll transitions are represented by solid black arrows with arrowheads pointing to the destination state. The transition labels are placed near the middle of each edge and consist of a tuple (input, action) followed by a comma and a probability value. The figure uses a clean, minimalistic style with no background colors or additional graphical elements. The overall structure conveys a probabilistic state machine where s₀ decides the next state based on the 'send' action with 'copy', distributing probability mass among s₁, s₂, and s₃, while each target state either absorbs all further inputs or waits for specific actions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

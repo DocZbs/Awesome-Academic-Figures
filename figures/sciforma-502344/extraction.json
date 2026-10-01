@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502344",
+  "record_sha256": "75c347c0b36fe982a1709418cbff2fa71c99cbe7548a443947b8eb0f6b578d9c",
+  "asset_sha256": "d9a3b693d5ee546d6bdbf07047788a225e35e6ceeeb3c79df9cf462fef94856a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502344",
+    "title": {
+      "zh": "Enhancing Diffusion Models for High-Quality Image Generation · 方法图",
+      "en": "Enhancing Diffusion Models for High-Quality Image Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14422",
+      "title": "Enhancing Diffusion Models for High-Quality Image Generation",
+      "authors": [
+        "Jaineet Shah",
+        "Michael Gromis",
+        "Rickston Pinto"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14422",
+      "arxiv_url": "https://arxiv.org/abs/2412.14422",
+      "arxiv_id": "2412.14422",
+      "arxiv_first_submitted_at": "2024-12-19T00:23:15Z",
+      "arxiv_updated_at": "2024-12-19T00:23:15Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502344/image/image.jpg?Expires=1790835216&Signature=DBahtbT4knpDysFHzve-7lcunvDw8NPVB~ldAePL4JI7AiZvvZxjGtc867gt2MB190QJvIb8spKBtJDU6fU0dWN65gjPUWA6oc7dCmws4drMc8uUs4P-KAxtiFd3Lw6JcXFSiwUWHIA-4J9fw65gf8V4aIIjx2~xgbFXWt2bDZ6wUkwXzM1UUlr01DRK1ZyJSwLTk-pbQQy~uEcjIoYkzficJoNrhAJ~SXvd9A6hfT5DVGpX686iANoCEe1~V9Q98CpIWzzv-wGtVScaI54ov5oniTUyQVlBwWGR9w6~cF40xMvlAga5EUifGfl0vDmA8ngUsVahEaTtznoUS9htkw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502344,
+      "description_sha256": "e13b2c3465d564da9f60682db9396eab467f00237d357d75b486508be1a8a929",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the end-to-end process of Denoising Diffusion Probabilistic Models (DDPM), divided into two main phases: the Forward Diffusion Process and the Reverse Diffusion Process. The global layout is horizontal and bidirectional, with the forward process progressing from left to right (top half) and the reverse process moving from right to left (bottom half), connected by a central inference loop. At the top, a pink rectangular header labeled 'Forward Diffusion Process' introduces the noise addition phase. Below it, a sequence of six image representations shows a sunflower image progressively degraded by noise across timesteps 0 to T. Each image is labeled with its timestep index beneath it. The initial image at timestep 0 is clear, while subsequent images become increasingly noisy until timestep T, where the image is fully randomized noise. Above this sequence, mathematical expressions define the forward diffusion: q(x_t|x_0) = N(x_t; √ᾱ_t x_{t-1}, (1 - ᾱ_t)I) and x_t = √ᾱ_t x_0 + √(1 - ᾱ_t)ε, indicating that each step adds Gaussian noise to the previous state. The cumulative distribution q(x_{1:T}|x_0) = ∏_{t=1}^T q(x_t|x_{t-1}) ≈ N(0, I) is shown at the far right, signifying that after T steps, the data converges to a standard normal distribution. A dashed arrow connects this to p(x_T) := x_T ~ N(0, I), which serves as the starting point for the reverse process. The bottom half, under a blue header labeled 'Reverse Diffusion Process', depicts the denoising phase. It begins at timestep T with pure noise and proceeds backward toward timestep 0. The reverse transition probability is defined as p_θ(x_{t-1}|x_t) = N(x_{t-1}; μ_θ(x_t, t), Σ_θ(x_t, t)), with the corresponding sample equation ŷ_{t-1} = μ_θ(x_t, t) + √Σ_θ(x_t, t) ε. This process uses a neural network, represented as a box labeled ε_θ(x_t, t), which predicts the noise ε added at each step. The network's output feeds into the reverse transition formula to reconstruct the previous state. A large cyan arrow points from the final noise state back to the reverse process, emphasizing the starting point. The overall reverse process is mathematically expressed as p_θ(x_0) = ∫ p(x_T) ∏_{t=1}^T p_θ(x_{t-1}|x_t) dx_{1:T}, representing the learned generative distribution. Dashed arrows between the forward and reverse processes indicate the correspondence between states at each timestep. Solid arrows denote the direction of data flow, while dotted lines represent the iterative nature of both processes. The figure uses color-coded headers (pink for forward, blue for reverse), rectangular boxes for equations and model components, and image thumbnails to visually represent the degradation and reconstruction of data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

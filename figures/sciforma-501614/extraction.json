@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501614",
+  "record_sha256": "f3a124035077de89f357d6d6c0c1e4b971522bfcb0f74b377335b952962cbe92",
+  "asset_sha256": "3e5c9fbfc9fc9e9320990df626a2bedcd5c7ee17854a8715814688a18c25d9d7",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501614",
+    "title": {
+      "zh": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method · 方法图",
+      "en": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method"
+    },
+    "paper": {
+      "id": "arxiv-2412-13134",
+      "title": "Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method",
+      "authors": [
+        "Jiate Li",
+        "Meng Pang",
+        "Binghui Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_url": "https://arxiv.org/abs/2412.13134",
+      "arxiv_id": "2412.13134",
+      "arxiv_first_submitted_at": "2024-12-17T17:53:32Z",
+      "arxiv_updated_at": "2024-12-17T17:53:32Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501614/image/image.jpg?Expires=1790835197&Signature=V8TXZiaYWNWANwqVZ9mP9rP3SaAbbrhOqdR7Rku0axxGWayRMUFfCEdDhwzL5A8QGzC2K2gNqnzCE3lKVTi~uvI4jpOyiXVxSgnpTYJSSKIJC0lo-8V6l0wQYEE--ID7eReE2N-BbUO6glQQs1KPpJoOSsjAGrX65GYjxeJLp7zupHRRZYccYxfarcvkcESa0X56RKMchTv9hoUDrOBdlZDUujlF8CImCfrztFvpjIyyngYSkOFLIDKJaZDhqE~InnHlC5p5G7EUtEfeDOpU~K-QfTkLlD0wdR01jeXeI6w~2vJxPEEbQHlTOaFoD1lRPEsU6fk7Kaj18FrJe32Tbg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501614,
+      "description_sha256": "fd4934849315e1b1b553e57db3774ec217516e218b985e3a3ac7c40739fc36af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of an agent interaction framework designed for graph structure optimization, likely within a reinforcement learning context. The global layout is a left-to-right sequential pipeline, starting from an input adjacency matrix sequence and ending with a reward signal stored in a replay buffer. The process is modular, with distinct stages for feature extraction, embedding, policy decision-making, action execution, and reward computation.\n\nThe first module on the left is labeled 'Adjacency Matrix Sequence' and consists of multiple stacked blue squares, each containing the symbol Â_k, representing a time-series or sequence of graph adjacency matrices. This input is processed by a light green rectangular block labeled 'F', which extracts 'Degree Feature'. The output of this step is passed to another light green block labeled 'Degree Embedding', denoted by χ_k, which produces a sequence of embedded representations.\n\nNext, the degree embeddings are fed into an LSTM-p module, depicted as a stack of yellow blocks, indicating a Long Short-Term Memory network specifically tuned for processing graph sequences. The output of this LSTM is a state representation S_k^p, shown as a yellow square. This state is then input into a 'Policy Network', represented as a multi-layered neural network with white circular nodes and connections, labeled μ_θ. The policy network outputs an action, denoted a_k, which is visualized as two possible operations: 'delete edge' (represented by a broken connection between two nodes) or 'add edge' (represented by a new connection between two nodes). These actions modify the current graph structure.\n\nThe modified graph is represented as a new adjacency matrix sequence, Â_{k+1}, shown as a stack of blue squares similar to the initial input but updated. This updated graph is then processed by a dark gray rectangular block labeled 'M', which stands for LPDG (likely a graph-based model or metric). The output of M is a scalar 'Reward r_k', which is sent to a vertical bar-like structure labeled 'Replay Buffer', indicating storage for experience replay in reinforcement learning. A feedback loop connects the replay buffer back to the policy network, suggesting that past experiences are used to update the policy during training.\n\nAll modules are connected by solid black arrows indicating the flow of data and control. The action selection step includes a small circle with the letter 'R' inside, possibly denoting a random or stochastic component in the action selection process. The entire diagram emphasizes a closed-loop reinforcement learning system where the agent learns to modify graph structures based on feedback from the environment (via rewards), using a combination of graph embedding, sequential modeling, and policy optimization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

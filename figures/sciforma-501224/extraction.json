@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501224",
+  "record_sha256": "4effff0c49e62b4771991471ff40c0d19d99d5084d139c8060adb9a9840b07ae",
+  "asset_sha256": "e7b7a0209673e19cf3ad659bb498611be9d07a08b0df5acf67aaf94ef9f3e5d1",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501224",
+    "title": {
+      "zh": "3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting · 方法图",
+      "en": "3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-12507",
+      "title": "3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting",
+      "authors": [
+        "Qi Wu",
+        "Janick Martinez Esturo",
+        "Ashkan Mirzaei",
+        "Nicolas Moenne-Loccoz",
+        "Zan Gojcic"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12507",
+      "arxiv_url": "https://arxiv.org/abs/2412.12507",
+      "arxiv_id": "2412.12507",
+      "arxiv_first_submitted_at": "2024-12-17T03:21:25Z",
+      "arxiv_updated_at": "2025-03-24T19:39:23Z",
+      "arxiv_subjects": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501224/image/image.jpg?Expires=1790835190&Signature=JfPXgb-Zni0LUCpif-dJgnbS78RcprXFDlepvC04oY8mCLlQalxp0pVr7FBcFLNKtasyKn68aRPfjz~6J5ywLlxWV1vO52rwDBAyibz2fFGBFEdbdsqOoq5Ls~OEIcU6SPe6dctAUbZlj73OofDj-Xr1FtjkPtkimdvzhOdKqs-oghg4lQEtB2qxLzuptWLGi-kFdwph7zl8vYqpoqWDgkQAjnQb11g69WcDazQve8tyPzCJXxGNK3qd4Oiq~~MvXisSQfxnsB46aWdw3Ja~Mlr0XUjh3wS-VgwmPzRHgfCTU8PqWIZFChJP~JtTjy0Me8RkzHAkei6LI~RgX~sk~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501224,
+      "description_sha256": "4ee3d68060996fb5e0904c81f887981fdbc4f20eb96ce9a0cd08c87fea9fb6a0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative visualization of three methods for projecting a 3D Gaussian particle (represented by a green elliptical distribution with mean μ and covariance Σ) onto a 2D image plane using a nonlinear transformation v = g(x). The layout is horizontal, divided into three distinct panels labeled 'Monte Carlo Sampling', 'Linearization (EWA)', and 'Unscented Transform (UT)', each illustrating a different approach to estimating the resulting 2D distribution.\n\nIn the left panel, 'Monte Carlo Sampling', the original 3D Gaussian is shown above a grid representing the 2D image plane. A gray arrow labeled 'v = g(x)' indicates the nonlinear projection. The result is depicted as a yellow shaded region within a dashed black ellipse on the grid, representing the true projected distribution. Labels point to this region: 'true mean νμ' and 'true covariance Σ′', indicating this method yields the most accurate estimate at the cost of computational expense.\n\nThe middle panel, 'Linearization (EWA)', shows the same 3D Gaussian above a grid. The projection is again indicated by a gray arrow. The result is a red dashed ellipse centered at a red dot labeled 'νμ^EWA = g(μ)', representing the mean obtained by applying the function g to the original mean μ. The covariance is approximated by the formula 'Σ′_EWA = J W Σ W^T J^T', written below the grid, where J is the Jacobian matrix of g evaluated at μ. This method introduces approximation errors, especially under high distortion, due to linearization.\n\nThe right panel, 'Unscented Transform (UT)', displays the 3D Gaussian above a grid with multiple blue dots inside it, representing sigma points chosen to capture the distribution's statistics. These points are projected via 'v = g(x)' (gray arrow) onto the 2D plane, forming a set of blue dots. From these, the mean 'νμ^UT' and covariance 'Σ′_UT' are estimated, shown as a blue dashed ellipse centered at a blue dot. This method avoids linearization by directly transforming sample points and reconstructing the distribution, offering better accuracy than EWA without the full cost of Monte Carlo.\n\nEach panel uses consistent visual elements: green ellipses for the 3D Gaussian, grids for the 2D plane, and arrows for the transformation. Colors differentiate results: yellow for true values, red for EWA estimates, and blue for UT estimates. The figure effectively contrasts the trade-offs between accuracy and computational cost among the three methods."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

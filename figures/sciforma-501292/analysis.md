@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12588
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the HierSphere framework for multi-faceted summarization, structured as a two-step hierarchical process. The global layout is a top-down flowchart with a clear division into two main stages: Step 1: Local Summarization and Step 2: Merge and Modify. On the right side, these steps are labeled with corresponding icons — a blue document icon with a pencil for Step 1 and a red human silhouette holding a pencil for Step 2 — indicating the progression from automated local processing to human-in-the-loop refinement.
+
+In Step 1, multiple input documents are grouped into clusters, each cluster being processed independently to generate a local summary. These clusters are visually represented as light green rounded rectangles at the bottom level. For example, 'Doc 1: ...' and 'Doc 2: ...' feed into 'Summary 0'; 'Doc 6: ...' and 'Doc 7: ...' feed into 'Summary 1'; and 'Doc 16: ...' and 'Doc 17: ...' feed into 'Summary 3'. The ellipsis between 'Summary 1' and 'Summary 3' indicates that additional such clusters exist beyond those shown. Each document group is connected via a blue upward arrow to its corresponding summary box, signifying the summarization operation.
+
+Step 2 involves merging and modifying the generated local summaries to produce a final, coherent summary. This is depicted by multiple blue arrows pointing from each 'Summary X' box (e.g., Summary 0, Summary 1, Summary 3) toward a single, larger, peach-colored rounded rectangle at the top labeled 'Final Summarization'. This top node represents the consolidated output of the entire process, integrating insights from all local summaries.
+
+All boxes are uniformly styled with rounded corners; the document groups and local summaries are light green, while the final summary is peach-colored to distinguish it as the ultimate output. Text within each box is black, bold, and centered. The arrows are solid blue lines with arrowheads, clearly indicating the direction of data flow from documents to local summaries and then to the final summary. The figure’s structure emphasizes a hierarchical aggregation: local summarization first, followed by a merge-and-modify phase that synthesizes the results into a unified summary.

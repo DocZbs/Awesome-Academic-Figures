@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-500840",
+  "record_sha256": "d97564bc40dc4fae686bc0615e67a100a147ecf91be7d3b7a36e48988d9a214c",
+  "asset_sha256": "12ed472aa644c46b8500db8107962abab455586a821f90340dfb7eee00e773a2",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500840",
+    "title": {
+      "zh": "Causal Invariance Learning via Efficient Nonconvex Optimization · 方法图",
+      "en": "Causal Invariance Learning via Efficient Nonconvex Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-11850",
+      "title": "Causal Invariance Learning via Efficient Nonconvex Optimization",
+      "authors": [
+        "Zhenyu Wang",
+        "Yifan Hu",
+        "Peter Bühlmann",
+        "Zijian Guo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11850",
+      "arxiv_url": "https://arxiv.org/abs/2412.11850",
+      "arxiv_id": "2412.11850",
+      "arxiv_first_submitted_at": "2024-12-16T15:11:02Z",
+      "arxiv_updated_at": "2026-01-07T18:04:52Z",
+      "arxiv_subjects": [
+        "stat.ME",
+        "cs.LG",
+        "math.OC",
+        "math.ST"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500840/image/image.jpg?Expires=1790835177&Signature=NBPqYW-BmMEggDpSTO36D-66RmXVQoPkiGeGV~~HqwJFmqQHc~DsQ3fHn68xYPIX1J2Tvnidix~RvTAVJdL1qPD4iZ49newQi0zGrUBZVjWRHQi98BUxrPBPIX9Fl~kVaeE7M5VobSjefIH1gHHUjBzjr6uAzjzGC2HS3jiUkClI3iwQPGzpdU3wLYCSVdYUhZz9EN2vZ9v0fm2X4rlHmjLH4SDfcPFvfYLk3kPILXkopjFqgBiM36pLnyjNV9fPuAecHpUX5BqyDRkr-XjONmE6QZlnMaVVuh8kEGzgk44tJIN9f0Ps4HtP~ZSFBlcqmrS8rEakYAmoCA1udljnMg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500840,
+      "description_sha256": "6c66cd676b027c7833836f96f8b68adeee49b71ed1f0d1dbf27e3f9e1c4e7f79",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ME",
+        "cs.LG",
+        "math.OC",
+        "math.ST"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative illustration of causal structures across two environments, labeled Env-1 and Env-2, each containing a sequence of variables connected by directed edges representing causal relationships. The global layout consists of four horizontally aligned rectangular panels stacked vertically. The top panel, labeled 'Env-1', is colored light yellow and contains a single scenario: '(No Intervention)'. Below it, three panels grouped under 'Env-2' (indicated by a large left-facing brace) are colored light green and represent three intervention scenarios: '(Limited Intervention)', '(Weak Intervention)', and '(Strong Intervention)' from top to bottom.\n\nEach panel displays a directed acyclic graph (DAG) with five circular nodes arranged horizontally, representing variables X₁, X₂, Y, X₃, and X₄, with superscripts indicating the environment (e.g., X₁⁽¹⁾ for Env-1, X₁⁽²⁾ for Env-2). The central node Y⁽²⁾ is consistently colored dark blue across all panels, while other X nodes are white unless intervened upon. Directed black arrows connect the nodes, forming a main chain X₁ → X₂ → Y → X₃, with an additional curved arrow from X₁ to X₃, indicating a direct causal effect.\n\nIn Env-1 (No Intervention), all X nodes are white circles with black borders, and no hammers are present, signifying no external intervention. In Env-2, the three scenarios differ in the type and extent of interventions, visually marked by hammer icons above or near the affected variables. Red hammers denote 'strong' interventions, blue hammers denote 'weak' interventions, and absence of hammers indicates no intervention.\n\nIn the 'Limited Intervention' panel, only X₃⁽²⁾ has a red hammer, indicating a strong intervention on this variable. In the 'Weak Intervention' panel, X₁⁽²⁾ and X₂⁽²⁾ have blue hammers (weak interventions), and X₃⁽²⁾ has a red hammer (strong intervention); X₄⁽²⁾ also has a blue hammer. In the 'Strong Intervention' panel, all four X variables (X₁⁽²⁾, X₂⁽²⁾, X₃⁽²⁾, X₄⁽²⁾) are marked with red hammers, indicating strong interventions on all of them. The visual distinction between intervention types is clear through color-coding of the hammers, and the consistent structure of the DAG allows for direct comparison of how different intervention patterns affect the same underlying causal model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502197",
+  "record_sha256": "72104339d1ab09fa804fd493eb782f3a9f48b18cf1c18b758803a39a845ceafc",
+  "asset_sha256": "4c857bfbb2bf44924382be53489783a65ae6e7d93f194a682ecd491dbd03b58b",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502197",
+    "title": {
+      "zh": "SEKE: Specialised Experts for Keyword Extraction · 方法图",
+      "en": "SEKE: Specialised Experts for Keyword Extraction"
+    },
+    "paper": {
+      "id": "arxiv-2412-14087",
+      "title": "SEKE: Specialised Experts for Keyword Extraction",
+      "authors": [
+        "Matej Martinc",
+        "Hanh Thi Hong Tran",
+        "Senja Pollak",
+        "Boshko Koloski"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14087",
+      "arxiv_url": "https://arxiv.org/abs/2412.14087",
+      "arxiv_id": "2412.14087",
+      "arxiv_first_submitted_at": "2024-12-18T17:34:32Z",
+      "arxiv_updated_at": "2025-10-10T20:24:20Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502197/image/image.jpg?Expires=1790835213&Signature=GxBbrjk93VLnei8ExFnIyolXdJDpYq4s9C0fXfFc2BmSKIH4WMy-gq1pLhK2zZ~mnHe2V7hURLhf74wOw2udA77Hr49~OhR~u8PXEwlwr~7xtxxMORBPl2wb9-XNyma5MB25ZHEWBySyjsYjzu8Tn0DYeK5fq6aIqS7OrCIl3Fc1wOVZFqIo2-RU9mbXAnh0gf5S41gNtDgCfXoTCIXIIMls6wIDY9It0~L-dX6-3Ru3QK~t1LxHT5-f-3FtjckzM6-XMNXExq8YNZGfsk6Nft9xo0D4jAZ268VnzfeI1YzJ-BaxPTLUkNsoHSMIA4dcH1StI09Z4DYhrgknA4s5WA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502197,
+      "description_sha256": "d811e262c18ff5bef34b6677e01a7efc6b274aa776773b7e7f8bd453221b2c01",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a neural network architecture designed for token-level sequence labeling, such as named entity recognition, using a hybrid approach combining a pre-trained language model with an expert-based routing mechanism and recurrent processing. The global layout is vertically structured, progressing from top to bottom: starting with an input sequence at the top, passing through multiple processing stages, and ending with output sequence labels at the bottom. The architecture is divided into distinct functional modules, each represented by specific shapes and colors, connected by directed arrows indicating data flow.\n\nAt the top, the input sequence is shown as a horizontal bar labeled 'Input sequence', containing individual tokens like 'bottleneck', 'stent', 'and', 'the', 'timing', 'of', 'myocardial', 'infarction', etc., enclosed in rounded rectangles. This sequence feeds into a purple rounded rectangle labeled 'DeBERTa', representing a pre-trained transformer-based encoder that processes the entire input sequence to generate contextualized embeddings.\n\nBelow DeBERTa, a large light-blue rectangular container encapsulates a routing module. At the center of this container is a diamond-shaped node labeled 'topK', which acts as a selector or router. From this node, multiple arrows branch out to N expert modules, labeled 'Expert 1', 'Expert 2', ..., 'Expert N-1', 'Expert N', each represented as a small rounded rectangle. These experts are likely specialized sub-networks or heads that process different parts of the embedding space based on the top-K selection criterion.\n\nThe outputs from all experts are then fed into a purple rounded rectangle labeled 'Reassemble sequence', which combines the processed outputs from the selected experts back into a coherent sequence representation. This reassembled sequence is then passed to another purple rounded rectangle labeled 'LSTM', indicating a Long Short-Term Memory network that further processes the sequence to capture temporal dependencies.\n\nThe outputs from both the 'Reassemble sequence' and 'LSTM' modules converge at a circular node with a cross inside, symbolizing a fusion operation—likely element-wise addition or concatenation—combining the two representations into a unified feature vector.\n\nThis fused representation is then passed to the final module, a purple rounded rectangle labeled 'Token classification head', which performs the actual classification task for each token in the sequence. The output of this head is shown as a horizontal bar labeled 'Output sequence labels', mirroring the input format but with predicted labels such as 'B' (beginning of an entity) and 'I' (inside of an entity), displayed in green-colored tokens for entities and white for non-entity tokens. The labels correspond to the input tokens, indicating the model's prediction for each position in the sequence.\n\nAll connections are represented by solid black arrows pointing downward or horizontally, indicating the direction of information flow. The color coding is consistent: purple for major processing blocks (DeBERTa, LSTM, Reassemble sequence, Token classification head), light blue for the expert routing group, yellow for input/output sequences, and green for labeled entity tokens in the output. The diagram clearly visualizes a multi-stage pipeline where contextual embeddings are routed through specialized experts, reassembled, enhanced with recurrence, fused, and finally classified."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

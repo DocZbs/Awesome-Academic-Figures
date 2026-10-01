@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502500",
+  "record_sha256": "d3fa3af9bd8dd4d7bd6c1180c36a7e37568b80ec0fcf69296f71319066c10c60",
+  "asset_sha256": "0c35e34b1c71fa6d98eb0be55f730e4de7d024534cd402598b0883a146b344ab",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502500",
+    "title": {
+      "zh": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers · 方法图",
+      "en": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers"
+    },
+    "paper": {
+      "id": "arxiv-2412-14623",
+      "title": "FRIDAY: Mitigating Unintentional Facial Identity in Deepfake Detectors Guided by Facial Recognizers",
+      "authors": [
+        "Younhun Kim",
+        "Myung-Joon Kwon",
+        "Wonjun Lee",
+        "Changick Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14623",
+      "arxiv_url": "https://arxiv.org/abs/2412.14623",
+      "arxiv_id": "2412.14623",
+      "arxiv_first_submitted_at": "2024-12-19T08:21:28Z",
+      "arxiv_updated_at": "2024-12-19T08:21:28Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502500/image/image.jpg?Expires=1790835225&Signature=B1OViYL8N-rHORvPx7n-r2f-Umqo5TBJmMuzs0G6zrG1rOS7zS4lgfuZUsjF5JPAr~ywLVEcAlmE~Y8ks4axcGkijhKDPaGOtOAcGY9oM~0ix7yeIaZ33yp96KoZTYKR6-tBSLqKL8kjCssURaUSnuO4I4wco5KNB-A7eeQG7XydNlnFXCy3o51PHz6OgTLMYLyPQdP~YYI7~-QAPDB-NblUWp4S5RSvPpr4QQLxeMMmyV7azsTkS5OWgX1zBOK-yrrbf9AyQRkNddTEEA7tyku8kl1Pi6y6~GkWhRcXEr2jFhn0d3AqkQh4rTHH0n02C9sqSB4D9~qxxtHBcc1eLw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502500,
+      "description_sha256": "ab2f06d1ecadbb302c60c0b2ef0814045e0b94313abf6e4e7b3b53b2e384eec1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the FRIDAY (Proposed) method, designed to mitigate unintended facial identity learning in deepfake detectors during training. The global layout is a two-dimensional feature space divided into two main regions by a horizontal dashed blue line labeled 'Face Recognizer', which represents the decision boundary of a face recognition model. Above this line is a light green region representing identity ID = 1, and below it is a light orange region for identity ID = 2. Each region contains two clusters: one of circles (representing real images) and one of triangles (representing fake images), indicating the embedding distributions for real and fake samples of each identity. The ideal scenario is shown by a vertical dotted line labeled 'Ideal', which separates real and fake embeddings perfectly within each identity group. However, the actual decision boundary of the 'Deepfake Detector' is depicted as a black diagonal line crossing both identity regions, indicating that the detector is influenced by identity information. This is visually emphasized by the fact that the detector’s boundary cuts through both real and fake clusters for each ID, leading to biased predictions. To correct this, the proposed FRIDAY method applies a 'Push-away' mechanism, illustrated by a large blue curved arrow pushing the deepfake detector’s decision boundary away from the face recognizer’s boundary. This adjustment aims to decouple identity information from the deepfake detection process. Four real-world face images are included at the corners: top-left shows a real image of ID=1, top-right a fake image of ID=1, bottom-left a real image of ID=2, and bottom-right a fake image of ID=2, each connected by lines to their corresponding embedding points in the feature space. The text 'FRIDAY (Proposed)' is written in red at the top right, emphasizing the proposed solution. A small lock icon next to 'Face Recognizer' suggests that the face recognizer's identity information is being protected or leveraged securely. The overall structure illustrates a conceptual workflow where the face recognizer’s identity-aware embeddings are used to guide the deepfake detector to learn a more robust, identity-invariant decision boundary."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

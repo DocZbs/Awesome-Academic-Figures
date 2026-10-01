@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-502253",
+  "record_sha256": "bdad9ce9f4dbdc0088a0ea2a75f02165791d3392898fe68756b979be7b43fa3c",
+  "asset_sha256": "d2af4b0b7fe6d826b042c2ae34bb0b0dd33c16d51e3fafc7d784d79f1827b10a",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502253",
+    "title": {
+      "zh": "Learning from Massive Human Videos for Universal Humanoid Pose Control · 方法图",
+      "en": "Learning from Massive Human Videos for Universal Humanoid Pose Control"
+    },
+    "paper": {
+      "id": "arxiv-2412-14172",
+      "title": "Learning from Massive Human Videos for Universal Humanoid Pose Control",
+      "authors": [
+        "Jiageng Mao",
+        "Siheng Zhao",
+        "Siqi Song",
+        "Tianheng Shi",
+        "Junjie Ye",
+        "Mingtong Zhang",
+        "Haoran Geng",
+        "Jitendra Malik",
+        "Vitor Guizilini",
+        "Yue Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14172",
+      "arxiv_url": "https://arxiv.org/abs/2412.14172",
+      "arxiv_id": "2412.14172",
+      "arxiv_first_submitted_at": "2024-12-18T18:59:56Z",
+      "arxiv_updated_at": "2024-12-18T18:59:56Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502253/image/image.jpg?Expires=1790835212&Signature=wfSA5CNDZe0b-fugvPgU3exPRrGTKJBb08zHXaz~DOKi5qWCQ1kscIGk57pgtUORipZ4LK0d3ahgpNFc-Bw7EWX5W7fLTGbLmVWrqrNZoiB7tMywZ4ereF~92Pn9sqTkUVDD-Z9lk1KCoNkxakDwMGMgymnMXTJ0USy0B7~uMebGlJcrNTcB6RWcEXOfX32xqEl3cq4Qf4JiCtBMrxR3JsiOTZJTsJb4TTKVTwrz0coD~j5cLA9GlNUcW9zfiV1lswf6HevNRz~gQZS8xZp5NQeHZPUvXgiSqsbZ2b6JNo1XHlt3aWp-uWpSxz23QPxorP0DKvH8O1KEdwnQTWXnXA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502253,
+      "description_sha256": "9d171ac7072d9870476784a03ee80f0e8b40548f40413a6bb84f998c507689d1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a dual-mode text-to-robot control architecture, labeled as UH1, designed for humanoid robot execution based on natural language commands from a user. The global layout is linear and left-to-right, depicting a pipeline starting from user input, passing through two parallel processing paths within UH1, and culminating in robot execution. The structure consists of four main components: a user input module, the UH1 processing unit with two internal submodules, an RL Policy module, and an Execution module representing the robot.\n\nThe User module, located on the far left, is a rounded rectangle with a light gray background. It contains a black user icon followed by the label 'User' and a list of example natural language commands such as 'Wave hand', 'Open bottle', 'Play violin', and an ellipsis indicating more commands. This module serves as the source of high-level textual instructions.\n\nThe central component is the UH1 module, a larger rounded rectangle with a light gray background and the label 'UH1' at the top. Inside UH1 are two stacked rectangular submodules with a salmon-pink fill color. The top submodule is labeled 'Text-to-Keypoint', and the bottom one is labeled 'Text-to-Action'. These represent two distinct control pathways: one generates intermediate human-like keypoint trajectories, while the other directly produces low-level robotic actions.\n\nFrom the Text-to-Keypoint submodule, a thick black arrow points rightward to the RL Policy module. This module is a rounded rectangle with a light green background and contains a joystick icon alongside the label 'RL Policy'. This signifies a reinforcement learning policy that takes the generated keypoints as input and outputs control signals for the robot in a closed-loop manner.\n\nFrom the Text-to-Action submodule, a thicker black arrow extends directly to the Execution module on the far right, bypassing the RL Policy. This indicates an open-loop control mode where actions are executed immediately without feedback.\n\nThe Execution module is a rounded rectangle with a light blue background and the label 'Execution' at the top. Inside it is a simple line drawing of a humanoid robot holding a black rectangular object, symbolizing physical action execution.\n\nThe connections clearly differentiate the two control paradigms: the upper path (Text-to-Keypoint → RL Policy → Execution) represents goal-conditioned, closed-loop control, while the lower path (Text-to-Action → Execution) represents direct, open-loop control. The figure visually emphasizes this distinction through separate arrows and module placements, aligning with the caption's explanation that UH1 can generate either high-level keypoints for policy-based control or direct robotic actions for immediate execution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

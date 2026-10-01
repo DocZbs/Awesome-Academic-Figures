@@ -22,13 +22,14 @@ DESIGN.md owns taste and generates runtime tokens. Light theme only. Generated s
 | Capability | Canonical owner | Source of truth | Allowed variants | Verification |
 | --- | --- | --- | --- | --- |
 | Selection | App/usePreference and FigureActions | Product brief | current task | browser |
-| Form | ExportDialog | This contract | reference task | browser |
+| Form | ExportDialog / PaperMatcher | This contract | reference task / transient paper input | browser |
+| Select/Listbox | PaperMatcher native select | This contract | four graphic purposes; platform popup accepted | keyboard and native popup |
 | Scrollbar | src/styles.css | DESIGN.md | global baseline | computed style |
 | Toast | Feedback | This contract | polite inline status | browser |
 | Dialog | Dialog | This contract | detail / guide / export | focus and Escape |
 | Search | Gallery search | This contract | local, IME-safe | browser |
 
-No select/listbox, date picker, server CRUD or destructive operation is implemented. Filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
+The matcher purpose field uses a native select; its platform-owned popup is intentionally accepted. No date picker, server CRUD or destructive operation is implemented. Gallery filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
 
 ## Paper provenance
 
@@ -75,3 +76,25 @@ Required commands: npm run format:check; npm run check; npm run check:tokens; np
 ## Licensed source originals and thin gallery
 
 The catalog is the authority for counts, venue and year filters. Assets may live at an absolute GitHub URL; local preview must not mirror the bulk figure collection. Source detail displays the exact arXiv/proceedings version and license evidence. Source-derived exports include the original author file, extraction record, TeX layout excerpt and attribution, plus the existing reference/analysis/prompt/agent/user-task files. Verify original SHA-256 before creating a download. Unknown rights or incomplete composites are excluded from the public catalog. Prompt reconstruction remains explicitly untested.
+
+
+## Unified gallery and document matching
+
+All approved figures share one gallery. Awards are evidence-backed paper tags and
+an optional filter, never a prerequisite for inclusion. Imported leading images
+without verified numbering are labeled “论文首图 / Teaser”; Figure 1/2 filters
+include only known numbers. Source-index checking and individual visual checking
+are distinct public states; generic adaptation prompts remain explicitly drafts.
+Long analysis/prompt/agent texts load only for a detail view or selected export.
+
+PaperMatcher reuses Dialog, Button, Feedback and FigureImage. PDF/text/Markdown
+files are read in the browser; paper text is held only in component memory, never
+placed in URLs, browser storage, analytics or outbound matching requests. Native
+file input supplies local file selection. Reset discards the working document.
+The initial recommender uses multilingual topic terms, text relevance and graphic
+purpose/type; it gives reasons rather than claiming a model has read every paper
+or guaranteeing that the top result is objectively best. Empty text, unsupported
+files, textless/scanned PDFs, password protection, size/page limits and stale
+parsing attempts need visible recovery. Reference selection and task handoff reuse
+the existing export flow. A paper preview may open a nested figure dialog while
+preserving the matcher document in memory.

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501726",
+  "record_sha256": "cb6363cf9c3cda943bbadc3b8c9cd4e0eb9402dff0490783f1e90520a3dc7ac1",
+  "asset_sha256": "f9f1e68eab0555462c2c4e4e23ad8acd2a4339a51f6646ebcde40efbfbe45bb6",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501726",
+    "title": {
+      "zh": "Exploring Transformer-Augmented LSTM for Temporal and Spatial Feature Learning in Trajectory Prediction · 方法图",
+      "en": "Exploring Transformer-Augmented LSTM for Temporal and Spatial Feature Learning in Trajectory Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-13419",
+      "title": "Exploring Transformer-Augmented LSTM for Temporal and Spatial Feature Learning in Trajectory Prediction",
+      "authors": [
+        "Chandra Raskoti",
+        "Weizi Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13419",
+      "arxiv_url": "https://arxiv.org/abs/2412.13419",
+      "arxiv_id": "2412.13419",
+      "arxiv_first_submitted_at": "2024-12-18T01:31:08Z",
+      "arxiv_updated_at": "2024-12-18T01:31:08Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501726/image/image.jpg?Expires=1790835200&Signature=LT3h2H~tmFyyXugndnrGqzkjzf7DLF3O8L8n11DbTWE-0m1TcioM7CU1w-gdyfS4-tnUkjcXpHWNLDyarwfU7NeplgwkqjAHKvgRQ1NWZfgA7H3PTHYB2Ctg1taoFg-oBhJ0szG6z9Gs8TTrCvgXWZCq5G8JmCisNDDC5chBj77Jo8L5LR2~IQJMD82HdH1c3eM6Gd0385qM62VcE2JUeRtdPUB7E7Ih6bLiZ1oSby4MAb-wDrUXD0lSqkU8JAy9JbZfozuXKBj9P0YRfG1EtZTEWtX~M9YiXEnyhKPSCYpCk8R93TDhHzqxSkl5sCe1IgILQZ35jZ4FWSs77SauAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501726,
+      "description_sha256": "54deef1c35cd5b8b77198e4e8ee683d36a342dc183d04344800a0b0097c5b867",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end neural network architecture designed for trajectory prediction, structured as a dual-branch encoder-decoder system. The global layout is horizontal, with two parallel processing streams converging before feeding into a single decoder. The top branch processes 'Historical Trajectory' data, denoted by the input sequence X_{t-T+1}, ..., X_t, while the bottom branch handles 'Spatial Trajectory' data, represented by G_{t-T+1}, ..., G_t. Both branches begin with a rounded rectangular module labeled 'LSTM', which encodes the input sequences into hidden states: H^v_t for the historical branch and S^v_t for the spatial branch. These LSTM outputs are then fed into subsequent 'Transformer' modules, also depicted as rounded rectangles, which further refine the representations into Z^v_t (from historical data) and Z^{nbrs}_t (from spatial data). The spatial branch includes an additional component: a 'Spatial Mask' (a parallelogram-shaped node) that is applied via a circular node with a cross symbol, indicating element-wise multiplication or masking operation, producing a modified embedding labeled 'soc_enc'. This 'soc_enc' is then combined with Z^v_t at a circular node with a plus symbol, representing concatenation, forming a joint feature vector described as Concat(Z_t, soc_enc) ∈ ℝ^{B×(T+C·G)×d}. This concatenated feature is finally passed to the 'Decoder' module, a rounded rectangle, which generates the predicted future coordinates (x̂, ŷ) for the target vehicle over five time steps. All connections are directed arrows, indicating the flow of data from left to right, with clear labeling of intermediate representations and operations. The visual style uses black outlines, white fill, and standard geometric shapes: parallelograms for inputs, rounded rectangles for model components, and circles for operations. Text labels are placed inside or adjacent to each component, with mathematical notations and dimensions explicitly shown where relevant."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

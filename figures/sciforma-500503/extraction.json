@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500503",
+  "record_sha256": "23cff08cb7f915ac81a981b30e19b1fedc174e465509896cee921175f599ce9e",
+  "asset_sha256": "1a9aa57b2ae28809d570ba0e23ce086bd999e5fd534473984fe2676d63b20766",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500503",
+    "title": {
+      "zh": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL) · 方法图",
+      "en": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL)"
+    },
+    "paper": {
+      "id": "arxiv-2412-11434",
+      "title": "Auto-bidding in real-time auctions via Oracle Imitation Learning (OIL)",
+      "authors": [
+        "Alberto Silvio Chiappa",
+        "Briti Gangopadhyay",
+        "Zhao Wang",
+        "Shingo Takamatsu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11434",
+      "arxiv_url": "https://arxiv.org/abs/2412.11434",
+      "arxiv_id": "2412.11434",
+      "arxiv_first_submitted_at": "2024-12-16T04:21:35Z",
+      "arxiv_updated_at": "2025-05-16T21:21:13Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500503/image/image.jpg?Expires=1790835172&Signature=njXhXLLIThL8jXr4g-9-dMHHug7A1AzQbDaErfUERo8zQc06xKCDzy9MF-PVGPQ9C~XtiGBcAWjFF-wHnHjdfa5A7rK8nki53U1oRSOo~Q~ulcUvvpcF6Ma-RUiXdvGvnbRqVroaFUthO~dMJm-zdJeI2hmeand9S7r7vP1L8U4mFfNTqQavCqz3dHfBkGFA-yGML8F69Bb1lSppfbnI4O0nw7lSg05~UP4gQ6RhVtS-Lvj3vQX1bygnNI3bqGG5oK-9IqWQOupncuhaHK-XmFmpUQWeGyKUo30sFYHo45nRXij6I~eG7FdvqsoaXS4M2lLxBcYdLqsjpLLpI9RQGw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500503,
+      "description_sha256": "983567464871aab9f742862763770a7e7acc2d96cfeb953fb4e198d76c53eca5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Oracle Imitation Learning (OIL) framework for training an auto-bidding agent in a simulated bidding environment. The global layout is a horizontal workflow from left to right, depicting data inputs, processing modules, outputs, and feedback loops. On the far left, two input streams are shown: 'Past data' represented by green wavy lines, and optionally 'Future data' represented by red wavy lines. These data streams are combined with 'Current IOs' (represented as vertical blue gradient bars) to form the input for two distinct agents: the 'Agent' and the 'Oracle'. Both agents are depicted as robot icons; the Agent is black-and-white, while the Oracle is outlined in yellow, visually distinguishing their roles.\n\nThe Agent receives only 'Past data' + 'Current IOs', whereas the Oracle receives 'Past data' + 'Future data' + 'Current IOs'. Each agent processes its respective inputs and produces a set of bids: the Agent generates 'Predicted bids' (shown as a vertical red gradient bar), and the Oracle generates 'Optimal bids' (also a vertical red gradient bar). These bid outputs are then fed into a central 'Imitation loss' module, which is a red-bordered rectangle. This module computes the discrepancy between the predicted and optimal bids, serving as the training signal for the Agent.\n\nThe 'Predicted bids' from the Agent are further passed to a 'Bidding environment simulator', depicted as a sequence of stacked red blocks with internal connections, symbolizing a dynamic simulation process. This simulator advances the campaign state based on the agent’s actions. A feedback loop from the simulator back to the top of the diagram indicates that the next 'Current IOs' are generated from the simulated environment, closing the loop for iterative learning.\n\nThe connections are primarily black arrows indicating forward data flow, with red arrows specifically showing the feedback path from the 'Imitation loss' back to the Agent for parameter updates. The figure emphasizes that the Oracle, having access to future information, acts as a ground-truth model whose behavior the Agent imitates through supervised learning. The caption clarifies that at each time step, both entities observe conversion probabilities of available IOs and place bids, with the Agent using only historical and current data, while the Oracle leverages future data to determine optimal bids. The Agent’s bids drive the simulation, and the Oracle’s bids serve as the target for imitation learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

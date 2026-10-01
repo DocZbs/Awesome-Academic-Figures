@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502218",
+  "record_sha256": "e19bdfa7b9701164a32319e36a2c68caeddcc4a405a1e56e52ad310648d5f280",
+  "asset_sha256": "037ac13b8f1d58f43968abe7a1ebd3a15248c6fd90bb670fccf169634245d180",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502218",
+    "title": {
+      "zh": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities · 方法图",
+      "en": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities"
+    },
+    "paper": {
+      "id": "arxiv-2412-14123",
+      "title": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities",
+      "authors": [
+        "Guillaume Astruc",
+        "Nicolas Gonthier",
+        "Clement Mallet",
+        "Loic Landrieu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14123",
+      "arxiv_url": "https://arxiv.org/abs/2412.14123",
+      "arxiv_id": "2412.14123",
+      "arxiv_first_submitted_at": "2024-12-18T18:11:53Z",
+      "arxiv_updated_at": "2025-05-09T09:50:12Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502218/image/image.jpg?Expires=1790835212&Signature=i2ltVqZI8YnpIcZiDsVfCcR0fvc-GKhZ6QOmLplhmw-rp08A0hg9Rj2QSz1NrfPPG5o7JGbiTFgUmtP-WGiQQwR2WUGWYlGw-5nA46Ikfit0JUy0stz0hltkNUcgY8Tq9Bfy4tqzEFlGtuPjTkgAZBb6VFrJ6MhRKuhwS04zxNwXz7XpjMsWWxLSdLoWb4i5i45~b8QaFj1zArv-cy23BOFsy0T7NAAqJXFsn2iYVkGLcjecS27zqIFillMuVBgJNQD7p9U0sDv3Nnb-8zsMXGkpPPNTEVBALnblx3R3PMZjSE8EmPb6yNRPppy2FTF24inqOPhFJLrH72KtNviLEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502218,
+      "description_sha256": "e1b513fa493c78b4adeff57788b39bb73b071e540532176add921e48a961ad7f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Scale-Adaptive Patch Encoding process, structured as a left-to-right data flow pipeline. The global layout consists of four main stages connected sequentially by arrows, each representing a transformation step in the encoding process. The initial input is a patch denoted as x_p^m, represented as a black square with dimensions labeled Δ_m × Δ_m × T_m × C_m, indicating spatial resolution, temporal dimension, and channel count. This input is processed through a series of operations: splitting, encoding, and merging.\n\nIn the first stage, the input patch is split into smaller sub-patches of fixed size δ_m pixels, as indicated by the label 'split in sub-patches' and the accompanying text 'size: δ_m pixels'. This operation results in a grid of sub-patches, visually depicted as a 2×2 arrangement of white squares embedded within two vertical black bars, symbolizing the partitioned structure. The output dimensions at this stage are specified as (Δ_m/δ_m)^2 × (δ_m^2 × T_m × C_m), reflecting the number of sub-patches and their individual feature volume.\n\nThe second stage involves encoding these sub-patches using a modality-specific projector, denoted as ℙ (mathcal{P}). This is shown as an arrow labeled 'encode sub-patches' leading to a 2×2 grid of cyan squares, each representing an encoded sub-patch. The output dimensions here are (Δ_m/δ_m)^2 × E, where E is the embedding dimension, indicating that each sub-patch is transformed into a fixed-size E-dimensional vector.\n\nThe third stage merges all encoded sub-patches using a shared spatial transformer module, denoted as ℒ (mathcal{T}), as indicated by the label 'merge sub-patches'. This module processes the entire set of sub-patch embeddings and outputs a single vector of size E, represented as a white square labeled f_p^m. The final output is thus a compact, E-dimensional representation of the original patch, independent of the input resolution Δ_m, since the sub-patch size δ_m remains constant across scales.\n\nThe visual modules are distinguished by color and shape: the input patch is a black square, sub-patches are white squares, encoded sub-patches are cyan squares, and the final output is a white square. All modules are connected by solid black arrows indicating the direction of data flow. The figure includes mathematical annotations above each stage to specify the tensor dimensions at each step, ensuring clarity on the transformation of data shapes. The caption explains that the fixed sub-patch size allows the same network to handle patches of varying resolutions, making the architecture scale-adaptive."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501150",
+  "record_sha256": "25ca519ecbfe56589ea708b1df11664880ab3eb0a3acdf88a5520528b0b15c22",
+  "asset_sha256": "e92c69ce0c70a03a6e8925ffef435a7e4b68867d96fc9508d9efd642e229f4dd",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501150",
+    "title": {
+      "zh": "DeepSN: A Sheaf Neural Framework for Influence Maximization · 方法图",
+      "en": "DeepSN: A Sheaf Neural Framework for Influence Maximization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12416",
+      "title": "DeepSN: A Sheaf Neural Framework for Influence Maximization",
+      "authors": [
+        "Asela Hevapathige",
+        "Qing Wang",
+        "Ahad N. Zehmakan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12416",
+      "arxiv_url": "https://arxiv.org/abs/2412.12416",
+      "arxiv_id": "2412.12416",
+      "arxiv_first_submitted_at": "2024-12-16T23:49:51Z",
+      "arxiv_updated_at": "2024-12-16T23:49:51Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501150/image/image.jpg?Expires=1790835186&Signature=OnZS63-Nbmjcv1aGe~FOk87ZOKkBiXpqVdREeCNUC6ucR1C4q3cPnCR6EGbKSCgvQcAweQ8AKO31g3783a9hVpKz2el-NLdL05oww1w4GvEF58AxDqg6sb-XALdd1vQO96gSGyzmoi4g9dMA5wTSzckRtXiw6BaWszMaPw1MSP-HIcZ0Fj3YHadryjz-JiMA70YPnSCSFkYsCw67Bb4WB0aEYZcCT~f-3unnivj9S3CRyLX4~MPg1cPxKe0ueMbLHBCSxdlLkCZkRBy86Rs-Nzxw-9maYdNZXHcmuf4-8eG1yJYeiRdbQsBXcYD2DI5iawmOEqhacOmtDkygVSH1Rw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501150,
+      "description_sha256": "7fe495c6967a7f25054a42daf8a90257ab8a05eeabc0e06e715b72f4b33766e9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DeepSN framework, which is divided into two main phases: (a) learning to estimate influence using a sheaf GNN, and (b) optimizing seed selection through subgraph analysis, an Influence Maximization (IM) model, and the trained sheaf GNN. The global layout is left-to-right, with phase (a) on the left and phase (b) on the right, connected by a flow of data and processing steps.\n\nIn phase (a), the process begins with an input graph G, represented as a simple undirected graph with white circular nodes and black edges. This graph is processed by computing its Sheaf Laplacian, depicted as a 5x5 grid matrix with varying shades of gray indicating different values. An arrow labeled 'Sheaf Diffusion Reaction' points from the Sheaf Laplacian to a box containing two submodules: 'Pointwise Dynamics' and 'Coupled Dynamics'. Pointwise Dynamics shows a small graph with five nodes, each colored differently (cyan, red, green, pink, yellow), suggesting distinct states or features. Coupled Dynamics displays another small graph with three nodes, one gray and two yellow, with arrows between them indicating dynamic interactions. These dynamics modules output a weighted graph G^w, shown as a graph with six nodes and edges labeled with weights such as 0.5, 0.7, 1.0, 0.4, 0.8, and 0.3, representing the learned influence weights.\n\nThis weighted graph G^w is then processed by the Louvain Algorithm, indicated by a labeled arrow, to identify and extract Subgraphs. These subgraphs are shown as two separate, lightly shaded clusters of interconnected nodes, representing communities or modules within the network.\n\nPhase (b) begins with these subgraphs feeding into an IM Model, depicted as a multi-layered neural network with fully connected layers (represented by circles connected by lines). From the IM Model, a bidirectional arrow labeled 'Vertex Set Selection' connects to a Sheaf GNN, also shown as a multi-layered neural network structure. Another bidirectional arrow labeled 'Network Training' links the Sheaf GNN back to the IM Model, indicating an iterative training process where the two models refine each other. The final output of this phase is a graph G, identical in structure to the initial graph but with nodes colored according to a legend: red for Seed Vertex, green for Activated Vertex, and orange for Susceptible Vertex. This final graph visually represents the result of optimized seed selection and influence propagation.\n\nThe figure includes a legend in the top right corner, clearly defining the color coding for vertex states: red for Seed Vertex, green for Activated Vertex, and orange for Susceptible Vertex. The entire diagram uses clean, black lines for connections and arrows, with clear labels for each component and step, ensuring a logical and sequential representation of the DeepSN framework's methodology."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

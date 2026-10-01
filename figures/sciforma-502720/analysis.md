@@ -1,0 +1,29 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Jet: A Modern Transformer-Based Normalizing Flow — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15129
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a single coupling layer within the Jet model, which is repeated N times to form the complete network. The entire process is enclosed within a dashed rectangular boundary labeled 'Repeat N times,' indicating that this module is stacked multiple times to build the full invertible model.
+
+The workflow begins on the left with 'Image patches' represented as a vertical stack of light blue rectangular blocks. These patches are fed into a hexagonal node labeled 'Split dimensions,' which divides the input into two equal halves. One half proceeds upward, while the other proceeds downward.
+
+The upper half is passed through a green rectangular block labeled 'ViT,' representing a Vision Transformer module. The output of ViT is a vertical stack of light green rectangles, split vertically into two columns labeled 'scale' and 'bias.' These parameters are used to condition the transformation applied to the lower half.
+
+The lower half of the split input continues downward and is first multiplied element-wise by the 'scale' values via a circular node marked with '*'. Simultaneously, the 'bias' values are passed through a circular node labeled 'σ', representing a sigmoid activation function, before being added to the scaled lower half via a '+' node. This results in an affine transformation of the lower half conditioned on the upper half.
+
+The transformed lower half is now represented as a vertical stack of purple rectangles. This transformed half is then merged with the unmodified upper half (still light blue) at a hexagonal node labeled 'Merge dimensions,' combining them back into a single vector of features.
+
+The final output is shown as a vertical stack of pink rectangles, representing the transformed feature representation after one coupling layer. The entire structure is designed to be invertible, allowing for efficient computation of both forward and backward passes, which is essential for flow-based generative models.
+
+The diagram emphasizes the modular nature of the coupling layer: splitting the input, using one half to compute transformation parameters via a ViT, applying those parameters to the other half, and then merging the results. The repetition of this layer N times enables the model to learn complex, high-dimensional transformations while maintaining invertibility.

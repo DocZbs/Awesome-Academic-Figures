@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502518",
+  "record_sha256": "31d82a7ed0137e9fea4124fc397bbcc94098dee966ef3b7c40f5596cf6678e73",
+  "asset_sha256": "ad77303ee9d753b77a5ad983c56bb72994e3f8427f547b2b26c715751e91b970",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502518",
+    "title": {
+      "zh": "Length Controlled Generation for Black-box LLMs · 方法图",
+      "en": "Length Controlled Generation for Black-box LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-14656",
+      "title": "Length Controlled Generation for Black-box LLMs",
+      "authors": [
+        "Yuxuan Gu",
+        "Wenjie Wang",
+        "Xiaocheng Feng",
+        "Weihong Zhong",
+        "Kun Zhu",
+        "Lei Huang",
+        "Tat-Seng Chua",
+        "Bing Qin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14656",
+      "arxiv_url": "https://arxiv.org/abs/2412.14656",
+      "arxiv_id": "2412.14656",
+      "arxiv_first_submitted_at": "2024-12-19T09:07:38Z",
+      "arxiv_updated_at": "2024-12-19T09:07:38Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502518/image/image.jpg?Expires=1790835225&Signature=IwLPwTwOhkZ2FQC1T9TeYJeJ~9RsyQYvUw1r09gFE6Rhpyn0ZSDyhTxcDJRhC3DK0ZkXTKStZ5388Y8w4wn04ZpEPrMXjcTbzb7mYEvyi9xBSRJUnFmplW5i26BI8dyiDifyDeDRwuyi7N4oFd6a-Wj1NP87MVpBHZGDf0jSr~SJVrAQxQaFEubukMI3xiYuy0NNXuQIu9yEWlR-uG6Z2JTAzJz4NwZqytmPSy4dub1S9WOweC2zHXisVZstNltDHNrAVoSyj2T~oU2llmUF0nTLjoR99qG5HEzoAWKXQbCP7b8OavLdC-VEESo6N4w7QybD0wYLd9cMf5dztIBGmA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502518,
+      "description_sha256": "af94245bbcc1f413c7dd41eda04ac8b1fa7f6fae567dcadb1bd0ba3cc3b85eb9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the sampling process of a Metropolis-Hastings framework designed for generating sequences under a target distribution that combines both the language model's output probability and a length constraint. The global layout is horizontal, depicting a sequential sampling process from left to right, with vertical dashed lines marking discrete time steps or iterations. On the far left and right, two vertical axes labeled 'y' represent the probability density function P(y|x) of the language model (LLM), shown as a black curve, and the length constraint function f(y), shown as a red curve. These curves visually anchor the target distribution π(y|x) ∝ f(y)P(y|x), which the algorithm aims to sample from.\n\nThe central part of the diagram shows a sequence of states represented as circular nodes: y₀ through y₇. Solid gray circles denote accepted states, while dotted circles denote rejected candidates, as indicated by the legend in the bottom-right corner. The process begins at y₀, sampled from the LLM’s distribution P(y|x). From each accepted state y_{i−1}, a candidate state y_i is proposed using the proposal distribution p(y_i | y_{i−1}, x), depicted by solid arrows. This proposal is then evaluated against the target distribution. If accepted, it becomes the next state; if rejected, the process remains at the previous state, indicated by a dashed arrow labeled 'Reject'. An 'Accept' label marks transitions where the candidate is accepted.\n\nTo improve efficiency, the framework introduces an importance distribution q(y_i | y_{i−1}, x), derived by incorporating the length constraint f(y) into the proposal mechanism. This is shown in the top-left box, which lists both the proposal distribution p(y_i | y_{i−1}, x) and the importance distribution q(y_i | y_{i−1}, x). The importance distribution is visually represented by shaded regions (blue and green) under the curves, indicating the probability mass associated with transitions. For example, the blue shaded region corresponds to p(y₂ | y₃, x), and the green shaded region corresponds to q(y₅ | y₆, x), illustrating how the importance distribution guides sampling toward more favorable regions under the combined target distribution.\n\nThe top-right box highlights the two components of the target distribution: P(y|x) — the LLM’s output distribution — and f(y) — the length constraint — emphasizing that the goal is to maximize the product π(y|x) ∝ f(y)P(y|x). The diagram shows the progression from y₀ to y₇, with intermediate rejections and acceptances, ultimately converging toward states that satisfy both the linguistic probability and the desired length properties. The visual flow, including solid and dashed arrows, clearly delineates the stochastic decision-making process inherent in the Metropolis-Hastings algorithm, enhanced here by the importance sampling technique."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501455",
+  "record_sha256": "82cf1b15f1857778e8ee30c42b3810f3a6a83ff424e88aff59473020e7b7c2f2",
+  "asset_sha256": "ada81f548aecfcd41a48cc60fe9763df87b7bb09cd81448dd555d4db3ea15091",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501455",
+    "title": {
+      "zh": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models · 方法图",
+      "en": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12832",
+      "title": "DSGram: Dynamic Weighting Sub-Metrics for Grammatical Error Correction in the Era of Large Language Models",
+      "authors": [
+        "Jinxiang Xie",
+        "Yilin Li",
+        "Xunjian Yin",
+        "Xiaojun Wan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12832",
+      "arxiv_url": "https://arxiv.org/abs/2412.12832",
+      "arxiv_id": "2412.12832",
+      "arxiv_first_submitted_at": "2024-12-17T11:54:16Z",
+      "arxiv_updated_at": "2025-06-22T05:51:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501455/image/image.jpg?Expires=1790835191&Signature=LHhsndPnioB-tyf9MJklQxBftlWNwGx1MwbmvUEiv8M6vLsq5HY33qpYZrJsrUPFm4JaQ8UTaJrU85KidsvQEYhirrcQxYJg-WkkkHd7fCJnHrc8bI8YonLNhYhUrqZf3GQ~ScsjRNgC7vXG6j5DsPFq1GktGO6A7YxWoSKkjJlvDoieHlT2FmuZeyItLyy-YxCFyUwt8jpYDnfpE13vyE2VY0pMwV0sgMgKvTx8Szzz1VGvMTYxnltjzAt~EWwammnQPl9UW6Lr0Q-RamfeZ4wpcp5IpnUy2ydEPMrNSPUmNnXtB7rsdyPKbDarFzHsDsX6gnmIDFiFgLCNoWf5FQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501455,
+      "description_sha256": "62fda9204af3ff154cc4c15453d4e42895f69cd88e90c8d05ae96980e08f0947",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the DSGram method, a framework for evaluating sentence corrections using large language models. The global layout is a left-to-right flowchart, starting from the input on the far left and progressing through two main processing stages before converging to an overall score on the right. The entire process is structured into distinct modules connected by directed arrows indicating data flow.\n\nOn the left, the process begins with 'Input a Pair of Sentences', represented by an icon of a document with a pencil, labeled with 'Original sentence' and 'Corrected sentence'. This input flows into a module labeled 'Large Language Models', depicted as a colorful speech bubble, with examples such as GPT-4 and LLaMA3 listed above it. From this module, two parallel pathways diverge: one leads to a parallelogram labeled 'Judgement Matrix', and the other enters a dashed rectangular box titled 'Generate Scores of Sub-Metrics'.\n\nWithin the 'Generate Scores of Sub-Metrics' box, three parallelograms represent individual sub-metrics: 'Semantic Coherence', 'Edit Level', and 'Fluency'. Below these, the label 'Output Scores' indicates the result of this stage. These scores are then passed to a final parallelogram labeled 'Overall Score'.\n\nThe second major pathway proceeds from the 'Judgement Matrix' into another dashed rectangular box titled 'Generate Dynamic Weights'. Inside this box, a grid of four colored squares—blue (labeled '1'), orange ('3'), red ('1/3'), and dark blue ('1')—is shown under the label 'Consistency Check'. An arrow from this grid points to a gray calculator icon labeled 'Call Calculator', with the intermediate step labeled 'Calculate Weights'. From the calculator, an arrow labeled 'Normalization' leads to a parallelogram labeled 'Dynamic Weights', with the label 'Output Weights' beneath it. This module outputs the dynamic weights, which are then fed into the computation of the 'Overall Score'.\n\nThe final 'Overall Score' parallelogram receives inputs from both the 'Output Scores' of the sub-metrics and the 'Output Weights' from the dynamic weight generation module, indicating that the overall score is computed as a weighted combination of the sub-metric scores using the dynamically generated weights. All connections are represented by solid black arrows, clearly showing the direction of information flow. The visual elements use consistent shapes (parallelograms for data outputs, rectangles for processes, icons for inputs and tools), colors (primarily black and white with color accents in the LLM icon and weight grid), and clear textual labels to convey the method’s logic."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

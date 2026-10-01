@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501688",
+  "record_sha256": "1b9acdf117c60b1b85ab579d894c8ceb69a29e33ed8c45226224fcfe38f793b4",
+  "asset_sha256": "95f756566bb47a696c5fa6d8c2ac6c12cd31e8b8d08e1649855663e542415cf9",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501688",
+    "title": {
+      "zh": "In-context learning for medical image segmentation · 方法图",
+      "en": "In-context learning for medical image segmentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13299",
+      "title": "In-context learning for medical image segmentation",
+      "authors": [
+        "Eichi Takaya",
+        "Shinnosuke Yamamoto"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13299",
+      "arxiv_url": "https://arxiv.org/abs/2412.13299",
+      "arxiv_id": "2412.13299",
+      "arxiv_first_submitted_at": "2024-12-17T19:59:08Z",
+      "arxiv_updated_at": "2025-02-28T06:19:59Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501688/image/image.jpg?Expires=1790835197&Signature=shrlmJvAJ5xUJeYA8ir5ZGsqxsqESyICCvG86ekV8AnIzkU0L~9O63ypC4xzDfMtnNJVSdCcqsrK5wIvE4hiXJHpQpp~et8Xzo95bBiFT57EFwJiZlqNrQpXa0hqeboxY2aq3ThGIUgAvb2Vs6m2aosaTrVKVg0PW-8AWX5uM4Wq4LpXG66mxmy1tHePfAlbTe-vJ~3iONkEwYxNQG3nqv0lNmox3Fd6NNWgHqrB79e63iRzUvz5TnQ5LXIF4BeQxijH16IeUNz2-NcbuBD30Cw6t7wfKTqITGUEcaq1UmXiMGtTPvLz~Yfq6eOPAKtwH2OttV6MN7fRZd1S8GgnWw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501688,
+      "description_sha256": "699a8eb9ffaeed369cbd04625a3692332b5ac0b122aff8a8b76042537f4bc67a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of in-contest cascade segmentation, illustrating a sequential inference process involving multiple stages of prediction and support generation. The global layout is horizontal, showing a left-to-right progression through three main stages, with intermediate steps indicated by ellipses. Each stage consists of a top input layer, a central processing module, and a bottom output layer, connected vertically by arrows indicating data flow.\n\nIn each stage, the top layer comprises a series of gray parallelograms representing input query features, labeled 'Query'. These inputs feed into a central processing unit, depicted as a light orange rectangular box containing a hierarchical network structure. This internal structure consists of four levels of small orange rectangles connected by gray arrows, forming a tree-like or cascaded architecture, where each level processes information from the previous one and passes it forward. The central processing unit is repeated across all stages, maintaining consistent visual attributes.\n\nBelow each processing unit, a black arrow labeled 'Predict' points downward to the output layer, which consists of a sequence of blue parallelograms representing predicted support features. In the first and third stages, these outputs are labeled 'Pseudo Support' with a blue brace above them, while in the middle stage, they are labeled 'Initial Support', also with a blue brace. The 'Initial Support' stage has two output streams, indicating dual predictions or branching outputs.\n\nConnections between stages are shown via dashed black arrows: a leftward arrow labeled 'Backward Inference' connects the third stage to the second, and a rightward arrow labeled 'Forward Inference' connects the second stage to the third. These indicate iterative refinement or feedback loops between stages, suggesting a bidirectional inference mechanism. The ellipses between stages imply that the sequence continues beyond what is shown, forming a longer cascade.\n\nThe figure emphasizes a cyclic or iterative process where predictions from one stage inform the next, with pseudo-supports generated in outer stages and initial support computed in the central stage, possibly serving as a reference or anchor point. The visual design uses color coding—gray for queries, orange for processing units, and blue for outputs—to distinguish components, and consistent shapes and alignment to convey a structured, modular pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13575
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comparative illustration of three distinct strategies for long-form story generation, organized into three main panels labeled (a), (b), and (c), each enclosed in a dashed rectangular boundary. The overall layout is structured as a 2x2 grid with panel (c) occupying the bottom half spanning both columns, while panels (a) and (b) are positioned side-by-side at the top.
+
+Panel (a), titled 'Hierarchical outline', depicts a linear, top-down workflow. It begins with a white rounded rectangle labeled 'Premise' at the top. This connects via a solid blue downward arrow to a light blue rounded rectangle labeled 'Plan a rough outline'. A second blue arrow leads to another light blue box labeled 'Plan a detailed outline', followed by a third blue arrow to a final light blue box labeled 'Write content'. All boxes have black borders and black text; arrows are thick and solid blue.
+
+Panel (b), titled 'Interactive non-hierarchical outline', shows a similar starting point with a white 'Premise' box, but uses green arrows and light green boxes. From 'Premise', a green arrow points to 'Plan partial detailed outline'. Below this, an icon of a human head in profile with a purple brain network inside is labeled 'Interactive'. A green arrow from this icon leads to 'Write partial content'. A thick curved green arrow loops from 'Write partial content' back to 'Plan partial detailed outline', indicating an iterative process. All elements use green tones for arrows and boxes, with black text.
+
+Panel (c), titled 'Dynamic Hierarchical outlining with Memory-Enhancement Module (Ours)', represents the proposed method. It starts with a white 'Premise' box connected by an orange arrow to a light orange rounded rectangle labeled 'Plan a rough outline'. From there, an orange arrow leads to a dashed-boxed group containing two more light orange boxes: 'Plan detailed outline i' and 'Write content i', arranged vertically. Between these two, a circular orange double-headed arrow indicates an iterative loop between planning and writing at stage i. To the right of this group is a gray rectangular module labeled 'Memory-Enhancement Module'. Inside this module, a black database cylinder icon is connected via dotted lines to a network of blue circles of varying sizes, symbolizing memory or knowledge graph. Two orange arrows connect this module to the workflow: one labeled 'Relevant Content' points from the module to 'Plan detailed outline i', and another labeled 'Update at stage i' points from 'Write content i' back to the module, indicating feedback and updating. All elements in this panel use orange for arrows and boxes, with black text.
+
+A large orange curved arrow on the far right side of the figure, outside all panels, points from the top-right toward the bottom-right, visually suggesting progression or improvement from the earlier methods to the proposed method in (c). The figure’s caption explains that (a) is rigid and inflexible, (b) is flexible but lacks high-level guidance, and (c) combines the strengths of both to improve story coherence and reduce contextual conflicts.

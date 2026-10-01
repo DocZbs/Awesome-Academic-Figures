@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501008",
+  "record_sha256": "c7b619f2d77e7b02efdd78052d1b1f65873804720ca8bf687081f7268a3eaf73",
+  "asset_sha256": "0c2ee09806a660193f12ef65af14ca9e40cec5bed8f0a978506a0dc03f580508",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501008",
+    "title": {
+      "zh": "What Makes In-context Learning Effective for Mathematical Reasoning: A Theoretical Analysis · 方法图",
+      "en": "What Makes In-context Learning Effective for Mathematical Reasoning: A Theoretical Analysis"
+    },
+    "paper": {
+      "id": "arxiv-2412-12157",
+      "title": "What Makes In-context Learning Effective for Mathematical Reasoning: A Theoretical Analysis",
+      "authors": [
+        "Jiayu Liu",
+        "Zhenya Huang",
+        "Chaokun Wang",
+        "Xunpeng Huang",
+        "Chengxiang Zhai",
+        "Enhong Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12157",
+      "arxiv_url": "https://arxiv.org/abs/2412.12157",
+      "arxiv_id": "2412.12157",
+      "arxiv_first_submitted_at": "2024-12-11T11:38:11Z",
+      "arxiv_updated_at": "2024-12-11T11:38:11Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501008/image/image.jpg?Expires=1790835183&Signature=dJO9F~jGjqdleZGaMiQ0hBRlMhrtUd7jGwcR5pgbuebRh5nYkeoHA~MSqm5eZsLUmjPZP4fvfnp9MN8vmxEQ2dm2Y8gg9PsbxNuqQL8wB92y1l26AktsDC5jqjCJ0cO--hVt0~wKN0yuK01V7Mp7miJq5PpsvUTu3AC4QTv8aazztCWak1UIdAAkJWs2J2E~n69PumvNsn4Ryr3-~fo7NA~z7lBqjiGXsIv8C78qmA~13B~W7btMNcKRhJb4807cO33Sek77ODJaKZxhdAnpGYM1F-CESjyav57kG5qc0Afs9sw5RzP27CVzwy17K7zJRqSrPsRCFjfbUIFp4XZkqA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501008,
+      "description_sha256": "40318293706e99cb72ba74e9cdca8da1474b22657411b2d5b7ef37fc115aab15",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the LMS3 method, a framework for selecting effective demonstrations for few-shot prompting in large language models (LLMs). The global layout is left-to-right, depicting a pipeline starting from input problem and demonstration pool, through model processing and scoring, to final demonstration selection and k-shot prompting. On the far left, two inputs are shown: a 'Test Problem X_test' box containing a mathematical question about the domain of a function f(x), and below it, a cylindrical 'Demonstration Pool D' containing example problems and solutions, such as Problem 1 and Solution 1 for a different function g(x). These inputs feed into a central 'Large Language Model' block, represented by a vertical beige rectangle with three weight matrices labeled W_K, W_Q, and W_V, each depicted as a 2x2 grid of gray squares. From this model, two outputs are generated: h_test (a light blue rounded rectangle) and W_K^T · W_Q h (another light blue rounded rectangle). These are used in two parallel scoring modules. The upper module, 'LLM-oriented Semantic Similarity', computes Sim(X) = ||h_test - W_K^T · W_Q h||, shown in a light blue rounded rectangle with the formula. The lower module, 'Inference Stability of Demonstration', computes stab(X) = ||W_V h|| / √d, shown in a light green rounded rectangle with the formula. Both scores are visualized as bar charts — blue for similarity and orange for stability — which are combined into a single 'Score(X)' via a curly brace. This score feeds into an orange rectangular block labeled 'Demonstration Rejection', which filters out low-scoring demonstrations. The output of this rejection step is a 'k-shot prompting' box on the far right, with a light blue background and rounded corners, containing a structured prompt: examples from the demonstration pool followed by a 'Now it's your turn!' section with instructions ('Take a deep breath', 'Think step by step', 'I will tip $200') and finally the test problem Q. All text is black, except for the formulas which are centered within their respective blocks. The connections between components are solid black arrows indicating data flow direction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

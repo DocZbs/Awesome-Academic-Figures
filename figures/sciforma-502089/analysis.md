@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Navigating limitations with precision: A fine-grained ensemble approach to wrist pathology recognition on a limited x-ray dataset — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13884
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a data curation pipeline for a medical imaging classification task, structured as a flowchart with four main stages represented by tables and directional arrows. The global layout is left-to-right and top-down, beginning with an initial raw dataset at the bottom-left, progressing through filtering and splitting operations, and ending with train and test datasets on the right side.
+
+[1] Global Layout and Structure: The diagram starts with a large table at the bottom-left labeled 'Class' and 'Instances', representing the original dataset with eight classes: Boneanomaly (192), Bonelesion (42), Foreignbody (8), Fracture (13550), Metal (708), Periostealreaction (2235), Pronatorsign (566), and Softtissue (439). An upward arrow labeled 'Extract' points from this table to a second table positioned above it, which contains a subset of the original classes: Boneanomaly (87), Bonelesion (21), Fracture (10026), Metal (76), Periostealreaction (4), Pronatorsign (35), and Softtissue (117). This indicates a data extraction step where only specific classes are selected. From this extracted dataset, a horizontal arrow labeled 'Filter' leads to a third table on the right, which further removes the 'Bonelesion' and 'Periostealreaction' classes, resulting in a filtered dataset containing Boneanomaly (87), Fracture (10026), Metal (76), and Softtissue (117). Finally, two diagonal arrows branch downward from this filtered dataset: one labeled '80% Train Data' pointing to a table on the lower-left, and another labeled '20% Test Data' pointing to a table on the lower-right. These represent the train-test split.
+
+[2] Visual Modules and Attributes: All modules are rectangular tables with dark gray headers and white data rows. Each table has two columns: 'Class' (left) and 'Instances' (right). Text within the tables is black, sans-serif, and left-aligned. The class names are written in title case. The 'Instances' column contains numerical values or descriptive text such as 'To be downsampled'. The final train and test tables show reduced instance counts: Train set has Boneanomaly (70), Fracture ('To be downsampled'), Metal (61), Softtissue (94); Test set has Boneanomaly (17), Fracture ('To be downsampled'), Metal (15), Softtissue (23). The 'To be downsampled' text indicates that the Fracture class will undergo data reduction in subsequent processing steps.
+
+[3] Connections and Arrows: The connections are solid black lines with arrowheads indicating direction. The 'Extract' arrow goes upward from the raw dataset to the extracted dataset. The 'Filter' arrow goes rightward from the extracted dataset to the filtered dataset. Two diverging arrows originate from the filtered dataset: one slants down-left labeled '80% Train Data', and the other slants down-right labeled '20% Test Data'. These labels are rotated along the arrow paths for readability. The entire process reflects a sequential data preprocessing workflow: extraction of relevant classes, filtering out unwanted ones, and partitioning into training and testing subsets for model development.

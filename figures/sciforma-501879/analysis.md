@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Unifying Attribution-Based Explanations Using Functional Decomposition — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13623
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a hierarchical flowchart illustrating the derivation and relationships among various interaction indices in cooperative game theory, structured as a top-down progression from general to specific models. The global layout is vertical, with five main rectangular nodes arranged sequentially from top to bottom, and two additional nodes branching out from the fourth node, forming a tree-like structure. All nodes are outlined with thick black borders and contain bolded titles followed by mathematical formulas or descriptive text. The connections between nodes are represented by solid black arrows pointing downward, each labeled with the axiomatic conditions that justify the transition from one model to the next.
+
+At the top, the 'Linear' model is defined by the formula φ_S(v) = Σ_{T ⊆ N} α_T^S v(T), representing a general linear combination of the game values over all subsets. An arrow labeled 'Interaction Null' leads downward to the 'Marginal Contribution' model, defined as φ_S(v) = Σ_{T ⊆ N\S} α_T^S Δ_S v(T), where Δ_S v(T) denotes the marginal contribution of coalition S to subset T. From here, an arrow labeled 'Dummy Partnership' and 'Interaction Monotonicity' points to the 'Probabilistic' model, which states that for every subset S ⊆ N, the set {α_T^S | T ⊆ N\S} forms a probability distribution. This is followed by an arrow labeled 'Interaction Anonymity' leading to the 'Cardinal-Probabilistic' model, given by φ_S(v) = Σ_{T ⊆ N\S} α_{|T|}^{|S|} Δ_S v(T), indicating that the coefficients depend only on the sizes of S and T.
+
+From the 'Cardinal-Probabilistic' node, two branches diverge. The left branch, labeled 'Reduced Partnership Consistency' and '2-Efficiency', leads to the 'Banzhaf Interaction' model, defined as φ_S(v) = Σ_{T ⊆ N\S} (1 / 2^{n - |S|}) Δ_S v(T), where the coefficient is uniform across all subsets T of size n - |S|. The right branch, labeled 'Reduced Partnership Consistency' and 'Efficiency', leads to the 'Shapley Interaction' model, defined as φ_S(v) = Σ_{T ⊆ N\S} (|S| / (|S| + |T|)) * (n / (|S| + |T|))^{-1} Δ_S v(T), incorporating a weighting based on the relative sizes of S and T. Additionally, a direct downward arrow from the 'Cardinal-Probabilistic' node, labeled 'Interaction Distribution' and 'Interaction Efficiency', points to the 'Shapley-Taylor Interaction' model at the bottom. This model is defined piecewise: φ_w,S^k(v) equals Δ_S v(∅) if |S| < k, and E_{π ∈ Π(N)} [φ_S,π^k(v)] if |S| = k, where the expectation is taken over all permutations of the player set N.
+
+All text within the nodes and along the arrows is in black, using a clear serif font. The figure is monochromatic, relying on structure and labeling to convey information. The caption summarizes the figure as a depiction of different interaction indices and their corresponding axioms, emphasizing the logical derivation path from basic linear models to more specialized interaction indices through the imposition of specific axiomatic constraints.

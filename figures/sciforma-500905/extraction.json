@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-500905",
+  "record_sha256": "fb77d5bc8e516e6286e1f9e690ec6546ad3e48ee61b09336b96470153ace163f",
+  "asset_sha256": "921c38279e7e7f93417da74fa7a0ace0389e9f69f6fc8d4984c2d6d5c3441b8d",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500905",
+    "title": {
+      "zh": "SpeechPrune: Context-aware Token Pruning for Speech Information Retrieval · 方法图",
+      "en": "SpeechPrune: Context-aware Token Pruning for Speech Information Retrieval"
+    },
+    "paper": {
+      "id": "arxiv-2412-12009",
+      "title": "SpeechPrune: Context-aware Token Pruning for Speech Information Retrieval",
+      "authors": [
+        "Yueqian Lin",
+        "Yuzhe Fu",
+        "Jingyang Zhang",
+        "Yudong Liu",
+        "Jianyi Zhang",
+        "Jingwei Sun",
+        "Hai \"Helen\" Li",
+        "Yiran Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12009",
+      "arxiv_url": "https://arxiv.org/abs/2412.12009",
+      "arxiv_id": "2412.12009",
+      "arxiv_first_submitted_at": "2024-12-16T17:36:02Z",
+      "arxiv_updated_at": "2025-03-30T02:39:14Z",
+      "arxiv_subjects": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500905/image/image.jpg?Expires=1790835181&Signature=Wjun0LptufeAqwOqt86v2K8JC4HwcEtCka6SwrCqSa~TelCdpEBdsyQBEHNsglYI2U7WjbxZyjRHmLv3LnG2ya4Fv7-jWK9tPvL8H1RWRNX~kPKWB~iQAMwtqc1nfC2vXPTagmPt~kn2Nwa2StNGkKhbjhnw5grNm0~rkKFVeqkfKg1RUSbD9vSb0D8e3mCFp3azvlJpliEKHR3JZdYkt8LTyhia~-XWGALUEBADY-8S0PiJ1HgydTBnnUN-bCMsMPfiIKR~9z7wVV21qCra5-oxc~1XRpGuo4kqvouPLJKu9RYJ1E2jyXmKN-W~aTZ3jUdyvAJrmVQYtu8ApwSsMA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500905,
+      "description_sha256": "f5cf1482dc26cae9772fb4a4db46f1c4de4816a78abd004957b542388726c5e1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-phase token pruning framework for speech-text processing, designed to reduce computational load while preserving semantic information. The global layout is left-to-right, starting with an 'Input' section on the far left, progressing through two sequential pruning phases, followed by a concatenation step, and ending with the 'Pruned Input' output on the far right. The input consists of two vertical stacks: 'Speech Tokens' (yellow background, labeled S1 to Sn) and 'Text Tokens' (green background, labeled T1 to Tk), each flanked by gray 'Other Token' markers at top and bottom. These inputs feed into two main processing blocks: 'Speech-Text Similarity Calculation' (blue box) and 'Binarized Attention Estimation' (larger blue box), which support the pruning phases.\n\nIn the first phase, 'First Phase Pruning', the original speech tokens are pruned based on similarity scores derived from the 'Speech-Text Similarity Calculation' module. This module computes cosine similarity between normalized speech and text embeddings, applies frame-wise adaptation, then performs top-k selection to generate a 'Preserved Index'. This index guides the pruning, resulting in a pruned set Sp1 (containing S1, S3, ..., Sn). The second phase, 'Second Phase Pruning', further refines Sp1 using the 'Binarized Attention Estimation' module. This module takes Sp1 and the first layer Q, K weights from a 'Speech LLM' (gray box), applies binarization to produce S^b, then computes Q' and K' via weight matrices W_Q^b and W_K^b. A matrix multiplication (MatMul) follows, then softmax, and finally top-k selection to generate another 'Preserved Index', leading to the final pruned set Sp2 (S1, S3, ..., Sn).\n\nConnections are shown as black arrows indicating data flow. From the input, both speech and text tokens feed into the similarity calculation block. The preserved index from this block directs the first pruning. The pruned output Sp1 feeds into the binarized attention estimation block, which also receives the Speech LLM's Q,K weights. The output of this block (preserved index) drives the second pruning. The final pruned speech tokens (Sp2) are concatenated with the original text tokens (T1 to Tk) in the 'Concat With Other Tokens' block, producing the final 'Pruned Input' containing pruned speech tokens (yellow) and full text tokens (green). A legend at the bottom right clarifies token types: yellow for speech, green for text, and gray for other tokens. The entire process is structured to progressively reduce speech token count using both cross-modal similarity and attention-based binarization, ensuring efficient yet semantically meaningful input for downstream tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

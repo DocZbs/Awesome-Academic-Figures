@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502559",
+  "record_sha256": "35df4648d74c856bef57451874cd85f4f762c667d029365a4266e7398bb57323",
+  "asset_sha256": "d11031bbf63162d0754e04f28fdfcd5021851f719042b46c06df6c236fc7ae6e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502559",
+    "title": {
+      "zh": "FROC: Building Fair ROC from a Trained Classifier · 方法图",
+      "en": "FROC: Building Fair ROC from a Trained Classifier"
+    },
+    "paper": {
+      "id": "arxiv-2412-14724",
+      "title": "FROC: Building Fair ROC from a Trained Classifier",
+      "authors": [
+        "Avyukta Manjunatha Vummintala",
+        "Shantanu Das",
+        "Sujit Gujar"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14724",
+      "arxiv_url": "https://arxiv.org/abs/2412.14724",
+      "arxiv_id": "2412.14724",
+      "arxiv_first_submitted_at": "2024-12-19T10:47:31Z",
+      "arxiv_updated_at": "2024-12-19T10:47:31Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502559/image/image.jpg?Expires=1790835225&Signature=rhq0BpLFhX3WeIICqMvNuFF7ySl2Zj6P8bQDsEBomkyzqixK7R1GOmSczNCrp2BMq-ELXLFMp99LSdsTV~4bvRDvZKy~5Bcu5nEeq9EBCWqqp7e4PjoidpVclEvB5Y7nLDxgUywmKxpTqmeqpWOyCSLUW6lHum4BlQaO4K2hQ1FHeUOTDBKJ6f9AN5GHLpGHarE8yRE8PatgQr-B1FJUOTOO0qK1JY~L8xhMu7v2R7zjpyqadQQAdr4kTsOOoSnxSvxh2HqpnqLKxoubMKIgRfJZVN7qIs~W~HnoGmRNwZd2CqHyjtfdW377OHXsQEdlVikecXSMWeNx9TOOceSNpQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502559,
+      "description_sha256": "d1682b2f20f25e7c0ec27f72a0f31a6805e23489434b405188895068c4392251",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a structured computational or geometric graph representing a sequence of states or positions labeled Q with superscripts 'up' and 'down', indexed by i. The global layout is a diamond-shaped lattice structure centered around node Qi^down, with connections extending to adjacent nodes in both temporal and spatial directions. The structure is arranged such that each node is represented as a small gray circle with a crosshatch pattern, and labels are placed near or directly on these nodes.\n\nThe visual modules consist of several key nodes: Qi^up, Qi^down, Qi+1^up, Qi+1^down, Qi−1^up, Qi−1^down, Ui, Li, Ri, and Di. These nodes form a central diamond shape with Ui at the top, Di at the bottom, Li on the left, and Ri on the right, connected by solid gray lines forming a rhombus. The nodes Qi^up and Qi^down are positioned above and below this central diamond, respectively, and are connected to it via dashed and solid lines. Specifically, Qi^up is connected to Ui by a solid gray line and to Li by a dashed gray line. Similarly, Qi^down is connected to Di by a solid gray line and to Ri by a solid gray line.\n\nConnections between nodes are color-coded and styled to indicate different types of relationships. Blue solid lines connect Qi^up to Qi−1^up and to Qi+1^up, indicating an upward progression or sequence. Red solid lines connect Qi^down to Qi−1^down and to Qi+1^down, indicating a downward progression. A dashed gray line connects Qi^up to Li, which, according to the caption, represents the 'LeftShift transportation' of the point from Qi^up to Ui. This suggests a transformation or mapping operation. All other connections within the central diamond (Ui–Li, Li–Di, Di–Ri, Ri–Ui) are solid gray lines, forming a closed loop.\n\nThe figure's logic follows a dual-path structure: one path for 'up' states (blue lines) and another for 'down' states (red lines), both progressing through indices i−1, i, and i+1. The central diamond represents a local transformation or processing step involving the current state Qi^up and Qi^down, mapped to intermediate points Ui, Li, Ri, Di. The dashed arrow from Qi^up to Li emphasizes a specific directional operation—LeftShift—which may imply a shift or projection into the local coordinate system defined by the diamond. The overall structure suggests a method for propagating or transforming data across discrete steps, possibly in a time-series or spatial grid context, where each step involves both forward propagation (blue/red lines) and local processing (diamond structure)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

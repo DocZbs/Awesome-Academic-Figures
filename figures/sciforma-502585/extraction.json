@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502585",
+  "record_sha256": "ce4c8406090163e4ca30de53d1382c5e6f7d10485bee454e36c58406cbc5a3eb",
+  "asset_sha256": "65ac185d864768da453b1bef7b470bfe3a12318e682d8dbdd5ad542c0b17b853",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502585",
+    "title": {
+      "zh": "YOLOv11 Optimization for Efficient Resource Utilization · 方法图",
+      "en": "YOLOv11 Optimization for Efficient Resource Utilization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14790",
+      "title": "YOLOv11 Optimization for Efficient Resource Utilization",
+      "authors": [
+        "Areeg Fahad Rasheed",
+        "M. Zarkoosh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_id": "2412.14790",
+      "arxiv_first_submitted_at": "2024-12-19T12:29:31Z",
+      "arxiv_updated_at": "2025-07-05T03:32:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502585/image/image.jpg?Expires=1790835225&Signature=A1V~NZYxgnzOo10HjhMJa5ZSC2ayGQa3UYC5-dcsNJtDnjdOmjiUHIDdPkr1zpoDhTa7JxGM7ptS-GQFMBgkBo9RSFLIu210HsySLEJ-o7dRsf4BMKEgJJKmSFGPgRWxiMUsiYyqRlLjNO27G4PanV~bcIBELYoBn3uLacyN0cJ4msKry2BfiJvMNTi32IVqda9HvoBy9kD~OCkoKbQapwch23R07jUWzsWqIfdevXyI1yL~xS9I6zd9-wWnpvfMMfi0tNT84kkOr7Kb~JoumetUZUMU5gT5dlfIEIw-nhJYnzwP3ziVtBCboEB1fFBJ~x6gW1WTufG-KhNoS3j--g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502585,
+      "description_sha256": "7f577acfe9a1154c56153b97611bfe4696c484c4a91bd0dc1b2a634898983d47",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the YOLOv11-ml architecture designed for medium and large object detection, structured as a deep neural network with a clear top-down flow and multiple skip connections. The global layout is vertically oriented, with the input at the top right and outputs at the bottom right, forming a backbone with feature extraction, upsampling, and detection branches. The architecture begins with an input of size 640x640x3, which feeds into block b0, a light purple rounded rectangle labeled 'Conv' with a circular label 'P1'. This connects to block b1, another light purple 'Conv' block labeled 'P2', which then feeds into block b2, a yellow rounded rectangle labeled 'C3k2'. From here, the main backbone proceeds downward through alternating yellow 'C3k2' blocks and light purple 'Conv' blocks, each marked with a circular 'P' label (P3, P4, P5) indicating feature pyramid levels. These blocks are sequentially numbered from b2 to b10, with b9 being a teal 'SPPF' block and b10 a pink 'C2PSA' block. \n\nThe visual modules are color-coded: yellow blocks represent C3k2 (CSP-like structures), light purple blocks denote standard Conv layers, green blocks indicate Concatenation operations, red represents Upsample, and light blue denotes Detect heads. Circular labels within some blocks (P1, P2, P3, P4, P5) specify the feature pyramid level. The left column contains the primary backbone path, while the right side features a detection branch with two 'Detect' heads (light blue) connected to feature maps from different levels. \n\nConnections and arrows show data flow: the main backbone flows downward from b0 to b10. At b4, a horizontal arrow connects to b14 (a light purple 'Conv'), which leads to a green 'Concat' block (b15). This concatenates with output from b13 (yellow 'C3k2') and feeds into b16 (yellow 'C3k2' with 'P4' label), which connects to the first 'Detect' head. Similarly, from b6, a horizontal arrow connects to a green 'Concat' block (b12), which receives input from b11 (red 'Upsample'). The 'Upsample' block (b11) takes input from b10 ('C2PSA') and feeds into b19 (yellow 'C3k2' with 'P5' label), which connects to the second 'Detect' head. Additionally, b17 (light purple 'Conv') and b18 (green 'Concat') form a vertical path between b16 and b19. The diagram includes explicit block identifiers (b0 to b19) along the edges, guiding the flow and structure. The overall design emphasizes multi-scale feature fusion via skip connections and upsampling, culminating in two parallel detection heads for improved performance on medium and large objects."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

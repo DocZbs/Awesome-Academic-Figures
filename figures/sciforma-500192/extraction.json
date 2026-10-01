@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500192",
+  "record_sha256": "30b24a2267a57d27e56e9d9379941723c9724cdc4e6bbe03467bf9c287c73958",
+  "asset_sha256": "abbba87b35c7f4417e29262beede3ca5209e13d42948c42ad98484b78e92d2c9",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500192",
+    "title": {
+      "zh": "Quantifying Extreme Opinions on Reddit Amidst the 2023 Israeli-Palestinian Conflict · 方法图",
+      "en": "Quantifying Extreme Opinions on Reddit Amidst the 2023 Israeli-Palestinian Conflict"
+    },
+    "paper": {
+      "id": "arxiv-2412-10913",
+      "title": "Quantifying Extreme Opinions on Reddit Amidst the 2023 Israeli-Palestinian Conflict",
+      "authors": [
+        "Alessio Guerra",
+        "Marcello Lepre",
+        "Oktay Karakus"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10913",
+      "arxiv_url": "https://arxiv.org/abs/2412.10913",
+      "arxiv_id": "2412.10913",
+      "arxiv_first_submitted_at": "2024-12-14T17:52:28Z",
+      "arxiv_updated_at": "2024-12-14T17:52:28Z",
+      "arxiv_subjects": [
+        "cs.SI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500192/image/image.jpg?Expires=1790835166&Signature=aE83KjK2z37Omf45hVJsHvOIaOLex6xtDjNatUitTVMid4YltmZZkZFsEpFpvyYR1XAXPlMQSovrL4HL4kWChzJLJ2orXk~VstUjvrgyyVQEQzREvToPAVjoRHjzRpKMG63HP7lv24kuc9lpWG8PNvN60QRs7ng5kK6G5bs8fxxsW~1H5~9eooVoAuxpoDXgOBG~XsCzTjEqiF2Y1Rz0jipNYNbaffPP0WqIFWfI-FN8tX8Jai3XHeESu7nVPFDYBpGd43N0N3U9TgsuTzNsEJc52HVPGUb55jF91ZfE82n3VHV~h9Y1XGRhSa9s7vk76yXOEk0Y59XGyo0A7sl2AA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500192,
+      "description_sha256": "2eb6651255cd1996bc7930021f8c8fac8e4a36172a4120869f0835ef3b76d75c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a flow diagram illustrating the computational pipeline for calculating an 'Extremism Score' from Reddit data, structured as a top-down process. At the top, a cloud icon labeled 'Reddit API' feeds into a green, rounded rectangular box titled 'Data Set Storage', which contains a database symbol, indicating the initial data acquisition and storage phase. From this storage, a solid black arrow leads downward to a light blue, rounded rectangular block labeled 'Preprocessing & Preparation'. This module lists four sub-processes: Cleaning, Lowercasing, Upvote-count, and Flair-filtering, arranged horizontally within the block.\n\nFrom the preprocessing stage, three solid black arrows branch out to three distinct colored modules representing different sentiment and similarity feature extractions. The leftmost is a red rounded rectangle labeled 'Anger Score (α) via vaderSentiment'. The center is a yellow rounded rectangle labeled 'Polarity Score (p) via TextBlob'. The rightmost is a light yellow rounded rectangle labeled 'Similarity Score (s) via TextBlob'.\n\nThe Polarity Score (p) flows into a gray square box containing the absolute value operator '|·|', producing an output labeled '|p|'. This value then enters a gray circular node with a cross symbol, which combines it with inputs from the Anger Score (α) and Similarity Score (s), resulting in an output labeled 'χ'.\n\nA dashed blue line connects the Anger Score (α) to a gray rectangular box labeled 'mean(·)', which in turn connects via another dashed blue line to a gray circular node with a cross symbol. This node also receives input from a gray box labeled '1/(·)', forming a feedback loop or normalization path. The output of this loop is connected by a dashed blue line to the main 'χ' node, suggesting a dynamic adjustment or normalization factor.\n\nThe main 'χ' output proceeds to another gray circular node with a cross symbol, producing 'χ_norm'. This is followed by a purple rounded rectangle labeled 'Length weighting', yielding 'χ_norm^l'. Then, a dark blue rounded rectangle labeled 'Upvote weighting' processes this to produce the final output.\n\nThe final result is displayed in a light green, rounded rectangular box at the bottom, labeled 'Extremism Score, χ_norm^{l,u}', indicating the fully weighted and normalized extremity metric. Solid black arrows denote direct data flow, while dashed blue lines indicate auxiliary or feedback connections, such as normalization or mean-based adjustments, contributing to the robustness of the scoring mechanism."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

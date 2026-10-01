@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501017",
+  "record_sha256": "92b3d20b69b2128a7dcfae8cba5c6df5b4c7df83974086296440f29d13d8d3fd",
+  "asset_sha256": "3a8d18a5dac42d32b6a8b8e9bd7e59c8f2dad15c628b53a2b4e9585560b74b67",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501017",
+    "title": {
+      "zh": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection · 方法图",
+      "en": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-12164",
+      "title": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection",
+      "authors": [
+        "Lingzhi Shen",
+        "Yunfei Long",
+        "Xiaohao Cai",
+        "Imran Razzak",
+        "Guanming Chen",
+        "Kang Liu",
+        "Shoaib Jameel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_url": "https://arxiv.org/abs/2412.12164",
+      "arxiv_id": "2412.12164",
+      "arxiv_first_submitted_at": "2024-12-11T19:12:22Z",
+      "arxiv_updated_at": "2025-03-02T15:12:38Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501017/image/image.jpg?Expires=1790835183&Signature=YkZ9i943~qjz0rSFdwoz2hCsDOpIt8PG5~RcXXQtXPum6ct5OeOjfG8qc7aZPYtLGshcF13fLVFqBcg1zI8MbRnPr9jKw4ZQ5psudxLcZkD2NZwtQAHLGShUjzJSnJ4RaXWUU5~ggaMZERqQwzwB6DsOlaVYmmlfL2YRdndf~VtUe8Uqgq5QLEQeYonyUhuC3m~osK0ZZwXQOyOPR153JBKfPQVt0ujtECQDYMkUQo6w63vkk7HVjC0fDFAU7CpcXxakNgqO4Lfr6nCtJerspSz-iFz7ztC4EhPkUC9q7gO2cx6gNEq1yAQ18hFzLIR0-UmGlTEWIWMPqaHRbKkFTA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501017,
+      "description_sha256": "7509962669ab815b61fd4495c97629308e68eb252c74eff31b30a3aa25dc05c6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is divided into two main parts: the left side illustrates the architecture of MMoE-Pro, while the right side details a four-module pipeline for enhancing representations through adaptive feature distribution adjustment.\n\n[1] Global Layout and Structure:\n\nThe left portion presents a dual-path structure with two parallel processing streams, each containing multiple experts and gates. Inputs labeled r^0_is/t/mm and r^1_is/t/mm enter the top of the diagram and are processed through expert networks and gating mechanisms. The bottom section shows shared attention blocks feeding into three experts (Expert 0, Expert 1, Expert 2), which then connect to two separate gating units (Gate A and Gate B). Outputs from these gates are combined via weighted summation (indicated by ⊕ symbols) and fed into cross-layer connections before producing final outputs. The right portion displays a sequential pipeline composed of four distinct modules: Coarse Prediction, Consistency Learning, Mu, and Sigma, arranged vertically. These modules feed into an AdaLN block, which produces enhanced representations e_ip/is/t/x and e_mm.\n\n[2] Visual Modules and Attributes:\n\nOn the left, the experts are represented as colored rectangular boxes: Expert 0 is orange, Expert 1 is blue, and Expert 2 is green. Each expert receives input from a shared attention block consisting of Linear-SiLU-Linear layers. The attention blocks are gray rectangles with dashed outlines. Gates A and B are gray rectangles with 'Softmax' labels above them, indicating they compute routing weights. The summation nodes (Σ) are circular and connected to the gates. The inputs r^0_is/t/mm and r^1_is/t/mm are depicted as horizontal bars with three colored circles (green, orange, blue), representing multi-modal features. The outputs are similarly structured.\n\nOn the right, the Coarse Prediction module contains a Linear-SiLU-Linear stack with dim=64, followed by a Sigmoid activation. The Consistency Learning module has an identical structure but uses 1-Sigmoid. Both modules receive inputs r_ip/is/t and r_mm respectively. The Mu and Sigma modules each consist of Linear-SiLU-Linear stacks with dim=1, producing μ_ip/is/t/mm and σ_ip/is/t/mm. These outputs are fed into an AdaLN block (pink-to-green gradient rectangle), which also takes e_mm as input. The final outputs are e_ip/is/t/x and e_mm, shown as vertical bars.\n\n[3] Connections and Arrows:\n\nIn the left diagram, arrows indicate data flow: inputs go to attention blocks, which feed into experts. Experts connect to gates, whose outputs are summed and routed via multiplicative gates (⊗) to produce intermediate representations. Cross-layer connections link outputs from one layer to inputs of another. On the right, arrows show a clear forward pass: r_ip/is/t goes to Coarse Prediction, r_mm to Consistency Learning. Their outputs (after Sigmoid/1-Sigmoid) control the Mu and Sigma modules. The outputs μ and σ from Mu and Sigma are fed into AdaLN along with e_mm, producing the enhanced representations. All connections are solid black arrows, except for dashed lines indicating structural grouping within modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

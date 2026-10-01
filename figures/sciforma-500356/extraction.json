@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500356",
+  "record_sha256": "efe24882ab7b9273fb9436fae5e008d170f71f3b4c70dd587705a52dfe7bcaad",
+  "asset_sha256": "0c1ed50f0d72f0e919d8c182ec177bcbf1aa176b351915830459392c7897e569",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500356",
+    "title": {
+      "zh": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation · 方法图",
+      "en": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11183",
+      "title": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation",
+      "authors": [
+        "Bohan Li",
+        "Xin Jin",
+        "Jianan Wang",
+        "Yukai Shi",
+        "Yasheng Sun",
+        "Xiaofeng Wang",
+        "Zhuang Ma",
+        "Baao Xie",
+        "Chao Ma",
+        "Xiaokang Yang",
+        "Wenjun Zeng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_id": "2412.11183",
+      "arxiv_first_submitted_at": "2024-12-15T13:26:51Z",
+      "arxiv_updated_at": "2025-08-22T08:05:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500356/image/image.jpg?Expires=1790835171&Signature=v7ZaktPNMpJOrwTu2ujR9xa9Zf9KhIyGx1ijmOGwC2M3JRK5iREiZMVK2O5gC8IzE9FMM2YGtyBhnhivRgeBd0WXkvoanW7N1jHlWiKIN0QsPn1VXknoe-ugpApxPokeJlCjtVkmH1xWnDrdpPyM~sBqOJ6fZSAjHyx0IhUq8Kp8iuY0Y8YAV5~xO8jZaKLfswYCnNtfnaLpspGXBw6~xTeKZzIh66AymtPEmpNZYGsKD282O8My~gLLqNPgDyjADamqCEeVOva82oi471S--rYlCC3tiDaENqcYe3x0JtL8yvuVKGrvu8VCAoi5EPFUUza4FHOtMbS9mJYktZ0m3A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500356,
+      "description_sha256": "7c5c1b3d6b1c8749e82a6d4f52978d6f4b99fd678156f099c6269eb7cd59222d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the OccScene framework, divided into two main phases: Training (left side) and Inference (right side), separated by a vertical dashed line. The global layout is horizontal, with data flow moving from left to right in both phases, and includes feedback loops and parallel processing streams.\n\nIn the Training phase, a sequence of real images or video frames labeled as y is fed into an encoder E_VAE (pink trapezoid) which adds noise to produce a noisy version. This noisy input is then processed by a Diffusion UNet (light blue diamond-shaped block) containing an MDA (Mamba-based Dual Alignment) module. The Diffusion UNet receives a text prompt X_text as conditioning. The output of the Diffusion UNet is denoised by a decoder D_VAE (pink trapezoid) to produce y_0, which is compared to the original y via a Reconstruction Loss (dashed arrow). Simultaneously, the output of the Diffusion UNet is passed through a Perception Model (gray rounded rectangle) to generate a predicted semantic occupancy map X_occ. This is compared to the ground-truth semantic occupancy X̃_occ using a Perception Loss, forming a second training objective. The Perception Model also receives the output of D_VAE, creating a feedback loop. The D_VAE is shown to be shared between the training and inference paths.\n\nIn the Inference phase, the process begins with random Gaussian noise y_T ~ N(0,I) and a text prompt X_text. These are fed into the same Diffusion UNet with MDA module. The output of the Diffusion UNet is passed through D_VAE to generate a denoised image or video y_0. Additionally, the Diffusion UNet’s output is fed into the Perception Model to generate a semantic occupancy map X_occ. The Perception Model’s output is then fed back into the Diffusion UNet as part of an iterative denoising process, indicated by multiple steps connected by 'Iterative Denoising' labels. The final outputs are the generated image/video y_0 and its corresponding semantic occupancy X_occ. The MDA module within the Diffusion UNet is highlighted as enabling sequential alignment of semantic occupancy and diffusion latent with camera trajectory awareness. The visual modules include pink trapezoids for VAE components (E_VAE, D_VAE), light blue diamonds for the Diffusion UNet, gray rounded rectangles for the Perception Model, and various image representations (real images, noisy images, semantic occupancy maps). Arrows indicate data flow, with solid arrows for forward propagation and dashed arrows for loss computation. Text annotations specify the type of loss, the nature of inputs/outputs, and the iterative process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

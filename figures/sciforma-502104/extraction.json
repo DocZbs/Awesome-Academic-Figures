@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502104",
+  "record_sha256": "5aadd2e851481d95c5b07d47e4632372c3ea33830ff6ea43f83049ea605de5c0",
+  "asset_sha256": "9d01a07306b9bc603d495c51e4ad2f9adf03a45f2acf9b6f538010f92dd58d08",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502104",
+    "title": {
+      "zh": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed · 方法图",
+      "en": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed"
+    },
+    "paper": {
+      "id": "arxiv-2412-13912",
+      "title": "Energy-Efficient SLAM via Joint Design of Sensing, Communication, and Exploration Speed",
+      "authors": [
+        "Zidong Han",
+        "Ruibo Jin",
+        "Xiaoyang Li",
+        "Bingpeng Zhou",
+        "Qinyu Zhang",
+        "Yi Gong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13912",
+      "arxiv_url": "https://arxiv.org/abs/2412.13912",
+      "arxiv_id": "2412.13912",
+      "arxiv_first_submitted_at": "2024-12-18T14:53:10Z",
+      "arxiv_updated_at": "2024-12-18T14:53:10Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502104/image/image.jpg?Expires=1790835212&Signature=n4pfHudVgCR4YIqp8phhOZZyOhSr-KdxYTYLY4NScPJu-JfI8il9gb9YJRirpkwjfMf9H5h47vjQrlTZA6SphQfckSiUwiyMfFLEHOJ9nrexsP6~lL8ZIuviSpfj3XaYmKiI60GLB59cp6lpf~P5SJm0Aa2zgheleA0K~eMxm-7hgPH7YBsX3sGZ81pnTxB3hiunDGcfiinf-G56OzvbDaGofPNfbgdeLYUyVnpi~ZLK3qiXgKlPfm1Z2oBfbwD~LV1AB0GqGkVibxiSTlYtbiOnS-pVozoxj~Gy3pG2ugwmPniAiwwV8JKHPNWRrn4jvCyMZxF0ZfRbCCAPYSm0xA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502104,
+      "description_sha256": "976e5729e77aa936b970e96377ad8f6e60bcadc4e3de1b8f3ba1b5b232d0c516",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a system schematic for a robot navigation and mapping framework, structured into distinct spatial and functional components. The global layout is divided into two main regions: an external environment represented by a large red-bordered rectangle labeled 'Task Area', and an external data processing infrastructure located outside this area. Within the Task Area, a blue-bordered inner rectangle defines the operational space where the robot operates. A black circular node at the bottom-left corner of the Task Area marks the 'Start/End point' for the robot’s SLAM routine, indicated by a solid blue arrow originating from this point and extending toward the Robot Platform. This blue arrow symbolizes the SLAM routine execution path within the task environment.\n\nA gray triangular icon labeled 'Access point' is positioned at the lower boundary of the Task Area, serving as a communication gateway between the robot and the external Data Center. A dashed line with an open arrowhead connects the Access Point to the Robot Platform, representing the 'Wireless link' as defined in the legend on the left side of the diagram. This wireless connection enables real-time data exchange between the robot and the Data Center.\n\nOutside the Task Area, the Data Center is depicted as a green rectangular block composed of two stacked submodules: the upper one labeled 'Data Center' and the lower one labeled 'Map Reconstruction'. A solid black arrow points from the Access Point to the Data Center, indicating the flow of sensor data or map information for reconstruction and processing.\n\nThe Robot Platform is shown both as a standalone orange rectangle inside the Task Area and as a detailed internal architecture in a separate pink-bordered box below the main diagram. This detailed view reveals the platform's core components: a central white rectangle labeled 'MCU' (Microcontroller Unit), which receives inputs from three subordinate modules—'Wireless module', 'Odometry', and 'LiDAR'—each represented as light pink rectangles. Solid black arrows point from each of these modules to the MCU, illustrating the data flow into the central processing unit. A dotted vertical line connects the standalone Robot Platform in the Task Area to its detailed internal structure, emphasizing that the latter is a breakdown of the former.\n\nThe legend on the left side of the diagram clarifies the visual symbols used: a dashed arrow with an open head denotes the 'Wireless link'; a solid blue arrow represents the 'SLAM routine'; and a filled black circle indicates the 'Start/End point'. The overall workflow begins with the robot initiating its SLAM routine from the Start/End point, collecting sensor data via LiDAR and odometry, processing it locally through the MCU, and transmitting relevant data wirelessly to the Access Point. From there, the data is forwarded to the Data Center for Map Reconstruction, completing the closed-loop system for autonomous navigation and environmental mapping."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

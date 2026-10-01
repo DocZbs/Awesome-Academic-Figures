@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501472",
+  "record_sha256": "91626d93ee38f5a84923255cd33b49ebf8a7029c34e575e0c89d7eae4b8eaf28",
+  "asset_sha256": "8843493bb74beb2a2eebd7c58442d241f3dba0afc2e9b9b86d1c4dc9ddd34082",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501472",
+    "title": {
+      "zh": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs · 方法图",
+      "en": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12841",
+      "title": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs",
+      "authors": [
+        "Ruikang Ni",
+        "Da Xiao",
+        "Qingye Meng",
+        "Xiangyu Li",
+        "Shihui Zheng",
+        "Hongliang Liang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_id": "2412.12841",
+      "arxiv_first_submitted_at": "2024-12-17T12:10:38Z",
+      "arxiv_updated_at": "2024-12-17T12:10:38Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501472/image/image.jpg?Expires=1790835192&Signature=gDSCKONEmd5b-F4SNBWN9isvEY~iMLdK-p0fDTJWrYvqjzD1w5ADhN7VsIikHn2CcdBJ5df5Jal1onICH4g3VdK1OPr1emxfdpe5TAdsmF7T601ACl~VerPghkYHShDYivkESddJWUCY2SVHONzu0pPs6dY90dwiq9t4ne1KzMxf~cEdTryYVI4oUBZKV1cnJG7cZIy8TloFR5bj5l1oW9Ij1qwFrIsFcM-uiov2fH-U-D339yDVwd~UkjrL1ERlZUJwq1qeHfhQOfPGS2U8IvScbxZOgf7FJLZ3BMNoL506SFVXc6zyQFhOshjiRWXi~1lP0YTf93RZ-xE-s0GF0w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501472,
+      "description_sha256": "0bc241ac7635659f9e0411799443e51e23df609ae03fdf3da8060ceeffe9b601",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a detailed breakdown of neural circuitry within the Vicuna-33B model for solving Generalized Attribute Reasoning (GAR) tasks, illustrating how different head types process and route information through attention mechanisms. The global layout is divided into five main panels: (a) Classification, (b) sub-circuit of affirmative rel.² head (True head), (c) sub-circuit of negative rel.² head (False head), (d) Affirmative Generation, and (e) Negative Generation. Each panel shows a flow of information from input tokens (represented as K, V, Q with colored labels indicating token types like 'Donna', 'has', 'apple') through various attention heads to produce outputs such as 'Yes/No' or generated entities like 'vehicle' or 'shirt'.\n\nVisual modules are represented as rectangular boxes with rounded corners, color-coded by function: green for Rel.² heads, yellow for Loc. heads, purple for Ind. heads, red for Pred. heads, and pink for Ppred. heads. Each box contains a label specifying the head type (e.g., 'Rel.² / Q->A') and numerical values (e.g., '14.18 14.46') representing attention weights or activation scores. The inputs are shown as vertical lists of tokens with color-coded labels (K for Key, V for Value, Q for Query) and associated text (e.g., 'Donna has a kind of fruit'). Outputs are indicated at the end of each circuit, such as 'END !' for classification or specific entities for generation.\n\nConnections are depicted as directed arrows showing data flow between modules. Blue arrows indicate primary data paths, while red arrows denote critical routing decisions or final output pathways. In panels (b) and (c), dashed boxes group related heads into sub-circuits, with dotted lines indicating continuation. Panel (d) includes numbered annotations ('to ①', 'to ②') linking intermediate results to subsequent processing steps. The legend at the top defines head classes: (P)Pred. = (Pre-)Predicting Heads, Loc. = Local Syntactic Heads, Rel. = Relating Heads, Ind. = Induction Heads, NRel. = Neg-Relating Heads, and XX² = Higher-Order XX Heads. Sketch circuits in the top-right corner illustrate query-and-key-wise attribution for relating heads and query-wise attribution for predicting heads, using simplified diagrams with labeled arrows (e.g., 'K → Loc. → V'). The figure also includes subcaptions for each panel specifying the task type (e.g., 'Classification: GendersOfPersons/=,KindsOfThings/∈[g2c]'). Overall, the diagram abstracts the model’s internal reasoning process, emphasizing how different head types collaborate to solve GAR tasks through structured information routing and attention-based computation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

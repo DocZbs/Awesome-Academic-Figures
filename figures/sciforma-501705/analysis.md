@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Multi-Agent Motion Planning For Differential Drive Robots Through Stationary State Search — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13359
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the process of searching for reachable safe intervals in a path planning or motion control context, likely for autonomous systems navigating through discrete vertices over time. The global layout is divided into two main sections: on the left, a 3D bar chart represents time intervals associated with vertices v₀ to v₃ along a horizontal axis labeled 'Vertices', with a vertical axis labeled 'Time'. The bars are segmented into gray and green portions, indicating different states or constraints. Dashed blue lines mark lower and upper bounds, labeled n_lb and n_ub respectively, defining a feasible range. Three stages—(a), (b), and (c)—are shown sequentially with yellow arrows indicating progression. In stage (a), only the first vertex has a green segment within the bounds; in (b), the second vertex also gains a green segment; in (c), the third vertex’s green segment extends upward, reaching the upper bound, and a dashed line connects the top of this segment to the next vertex, suggesting propagation or constraint satisfaction. A large blue arrow points from this left section to the right section, which is enclosed in a dotted rectangle titled 'Reachable Safe Intervals'. This right section contains six smaller plots arranged in two rows and three columns, corresponding to stages (a), (b), and (c). Each column contains two plots: an upper plot with 'Speed' on the vertical axis and 'Vertices' on the horizontal axis, and a lower plot with 'Time' on the vertical axis and 'Vertices' on the horizontal axis. In each column, the lower plot mirrors the bar chart from the left side, showing green bars at specific vertices. The upper plots depict speed profiles: in column (a), a triangular speed profile is shown with a red checkmark, indicating validity; in column (b), a similar profile appears but with a red cross, indicating invalidity; in column (c), a trapezoidal speed profile is shown with a red checkmark, indicating validity. All plots include a small blue cylinder at v₀ with an arrow pointing right, symbolizing the start of motion. The visual modules use consistent color coding: green for active or safe intervals, gray for inactive or constrained regions, blue for axes and motion indicators, and red for validation symbols. Text labels such as 'Vertices', 'Time', 'Speed', and stage identifiers (a), (b), (c) are clearly placed. The connections between the left and right sections are indicated by the large blue arrow, while internal connections within the right section are implied by the alignment of plots under each stage. The figure effectively demonstrates how time-based constraints translate into feasible speed profiles across vertices, with validation markers indicating whether the resulting motion plan satisfies safety criteria.

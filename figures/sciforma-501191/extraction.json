@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501191",
+  "record_sha256": "b2309aea79a672ef572b603049de7f6fa07803210b374bc4b6e832ee080d440a",
+  "asset_sha256": "1d43a22f733d13f768d25111af8e7f01bfd025165dc1ad7ea1c4cae42df32878",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501191",
+    "title": {
+      "zh": "Boosting Long-Context Management via Query-Guided Activation Refilling · 方法图",
+      "en": "Boosting Long-Context Management via Query-Guided Activation Refilling"
+    },
+    "paper": {
+      "id": "arxiv-2412-12486",
+      "title": "Boosting Long-Context Management via Query-Guided Activation Refilling",
+      "authors": [
+        "Hongjin Qian",
+        "Zheng Liu",
+        "Peitian Zhang",
+        "Zhicheng Dou",
+        "Defu Lian"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12486",
+      "arxiv_url": "https://arxiv.org/abs/2412.12486",
+      "arxiv_id": "2412.12486",
+      "arxiv_first_submitted_at": "2024-12-17T02:43:54Z",
+      "arxiv_updated_at": "2025-05-23T09:33:32Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501191/image/image.jpg?Expires=1790835186&Signature=cl5GsGvYUAKKIvX0Gc3U-3QjHraTD78MDVea1FzIGCBk34x4LIc1-MKk1n6R2XFRTy0~vOJGBDvewRQcR2-8mGgWGy3w9LROWRB0d4YH~aum9SXqjylBq4OcuopdQRXTpq0FXAw-lNynGnqRWzYKaTToKShbdfMp-h4Bo2c6uX4fL3Se02gUzgt8HDKUYwY60Iqrj0ZyCw03e50uvt9pV~R3i4zbgN81UMLIWreOgFu4ogAbRmTllS3NwGmMg-Jzbk1AR8jt~-wzXDX2gWEdgblK9fAxN1s428UMMBX~1osahFkuDt-3bukXqUjX70PIyAPXN-BVAdHdol70K3J9qQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501191,
+      "description_sha256": "8b18b126f3aadda5fb8fc0c33ba6a280d6e5cc8893607888a1001637362f1a24",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural diagram illustrating three approaches to information retrieval and generation: Standard RAG, Efficient Long LLM, and the proposed ACRE method. The layout is divided into two main vertical sections by a dashed vertical line. On the left side, Standard RAG and Efficient Long LLM are shown as separate workflows, each leading to an 'Inferior Answer' symbolized by a blue speech bubble with a question mark and a red 'X'. On the right side, the ACRE method is depicted, culminating in a 'Good Answer' represented by a green checkmark inside a speech bubble.\n\nIn the left section, Standard RAG is enclosed in a gray rounded rectangle and connects via a solid arrow to the inferior answer. Below it, a horizontal dashed line labeled 'Discrete evidence' indicates fragmented or isolated pieces of retrieved information. Similarly, Efficient Long LLM, also in a gray rounded rectangle, points to an inferior answer, with a light blue triangular shape beneath it labeled 'Incomplete evidence', suggesting limited context coverage due to model constraints.\n\nThe right section details the ACRE architecture. At the top, ACRE is shown in a purple rounded rectangle, leading to the good answer. Below this, a horizontal bar labeled 'Refilled Activation' contains a sequence of colored circles: red, red, gray, gray, red, red, blue, blue — indicating activations being selectively refilled. An annotation reads 'Refilling with query-relevant activations.'\n\nBeneath the refilled activation bar, two layers of cache are illustrated: 'L2 Cache' and 'L1 Cache'. The L2 Cache consists of multiple gray oval groups, each containing two dark gray circles, representing stored activations. Dashed arrows point from these L2 Cache groups upward to the Refilled Activation bar, indicating retrieval and refilling. The L1 Cache is shown as a horizontal bar with red circles on the left and blue circles on the right, labeled 'Query' at the far right end. A dashed arrow from the Query points to the L1 Cache, and another dashed arrow from the L1 Cache points to the L2 Cache, with the label 'Grasp the Global Information.' This suggests that the query interacts with the L1 Cache to access relevant global context, which then informs the L2 Cache for refilling.\n\nThe bottom of the diagram features a light blue shaded area spanning the width of the right section, with small vertical tick marks along its base, possibly representing a continuous context or memory space. The overall structure emphasizes that ACRE leverages a bi-layer KV cache mechanism with query-guided refilling to overcome the limitations of discrete evidence in RAG and incomplete evidence in long LLMs, thereby achieving superior performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

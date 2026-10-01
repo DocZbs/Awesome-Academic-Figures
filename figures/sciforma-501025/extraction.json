@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501025",
+  "record_sha256": "7b3f18ba26be2c7beed225423178306ca575d22e055e7f88336dc0ff4df42ae0",
+  "asset_sha256": "2da8cbbc72087b22d63308d22e1c255aab0eb0825ba3e9f6b8df5a1f32daa873",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501025",
+    "title": {
+      "zh": "A Decomposition Modeling Framework for Seasonal Time-Series Forecasting · 方法图",
+      "en": "A Decomposition Modeling Framework for Seasonal Time-Series Forecasting"
+    },
+    "paper": {
+      "id": "arxiv-2412-12168",
+      "title": "A Decomposition Modeling Framework for Seasonal Time-Series Forecasting",
+      "authors": [
+        "Yining Pang",
+        "Chenghan Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12168",
+      "arxiv_url": "https://arxiv.org/abs/2412.12168",
+      "arxiv_id": "2412.12168",
+      "arxiv_first_submitted_at": "2024-12-12T01:37:25Z",
+      "arxiv_updated_at": "2024-12-12T01:37:25Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501025/image/image.jpg?Expires=1790835183&Signature=ekzrXZW45cPk1To4rNV0GqzHfmS3fCmfXBTFmLrhhBHsdF7~JcYHmoQFuvXyN1~DCp3oAVh3O76Z496w4wgJi0zKi0ZNdaIDFzT4vGS3zkyHZPywtDqRRxR-YETG2LBNHPWvw88LC~IQNiVv8jSMvLjFF9sddn2NVL-7BHM8kyXDoPpd~3dEcHr1Zr9GzmR1KlLocpvivpSfh~efekUV4ULZzu-En~lY~F5d-pQ9x6EdBRB0QN0OcKfUIN3JbOZ1jR~CQYhPZQcZmj8pGcd1vxdRFEjnpyi-KNNSoACAxieJflgwGr0QW14X9Qs48R5qO5c2ldXdWIWStO5~19N-VQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501025,
+      "description_sha256": "97aec75b8968dc43e30ccee26b3decc328d05dd35d2d4076a9c5b2dbeb7b67d0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a seasonal component prediction module named SDNet, which processes an input sequence X_p to produce an output y_p. The global layout is a left-to-right data flow pipeline, divided into two main stages: a multi-scale feature extraction stage on the left, and the core SDNet processing block on the right, enclosed within a dashed rectangular boundary labeled 'SDNet'.\n\nIn the first stage, the input X_p enters a 'Multi-scale' block, represented by a dotted rectangle. Inside this block, X_p is combined via a circular summation node with two components: TFE (Temporal Feature Encoding) and PE (Positional Encoding), both indicated by downward arrows pointing to the summation node. The result of this combination is passed to an 'Embedding' module, depicted as a pink rectangle. A dashed line extends from the Embedding module to the SDNet block, indicating the input to the subsequent processing stages.\n\nThe SDNet block contains multiple stacked layers, each represented as a light blue rectangular box with a dark blue border. Each layer includes a horizontal substructure composed of two modules: a 'Local module' (light green rectangle) followed by a 'Global module' (light orange rectangle), connected by a solid arrow indicating sequential processing. These modules are embedded within a larger light blue box, suggesting they form a unified processing unit per layer. Above these layers, small black squares are shown, possibly representing attention weights or feature maps, with dashed lines connecting them to the topmost layer, implying some form of feedback or cross-layer interaction.\n\nOutputs from all the stacked layers are directed to a vertical 'Merge' module, shown as a tall light blue rectangle. This module combines the outputs from the multiple layers. The merged output then flows into a 'Feed forward' module, represented as a light yellow rectangle. The output of the feed forward module is then sent to an 'Add & Norm' module, shown as a light orange rectangle, which performs residual connection and normalization. A skip connection from the 'Merge' module directly feeds into the 'Add & Norm' module, forming a residual structure. Finally, the output of the 'Add & Norm' module is the predicted seasonal component y_p.\n\nAll connections between modules are represented by solid black arrows, indicating the direction of data flow. Dashed lines are used for auxiliary connections, such as the one from the Embedding module to the first layer of SDNet and the feedback lines from the top layer to the upper part of the stack. The entire SDNet block is labeled at the bottom center with the bold text 'SDNet', identifying the core model component."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

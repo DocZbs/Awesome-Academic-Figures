@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501851",
+  "record_sha256": "bd66a2dc812aad82ac7ebc8f3446ae1357acea7008ae87850479368d05442af3",
+  "asset_sha256": "15aefbca3d3616806528c26bd5de5d50df9b22867bbab7c79fe4b5eb455997c8",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501851",
+    "title": {
+      "zh": "Socio-Culturally Aware Evaluation Framework for LLM-Based Content Moderation · 方法图",
+      "en": "Socio-Culturally Aware Evaluation Framework for LLM-Based Content Moderation"
+    },
+    "paper": {
+      "id": "arxiv-2412-13578",
+      "title": "Socio-Culturally Aware Evaluation Framework for LLM-Based Content Moderation",
+      "authors": [
+        "Shanu Kumar",
+        "Gauri Kholkar",
+        "Saish Mendke",
+        "Anubhav Sadana",
+        "Parag Agrawal",
+        "Sandipan Dandapat"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13578",
+      "arxiv_url": "https://arxiv.org/abs/2412.13578",
+      "arxiv_id": "2412.13578",
+      "arxiv_first_submitted_at": "2024-12-18T07:57:18Z",
+      "arxiv_updated_at": "2024-12-18T07:57:18Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501851/image/image.jpg?Expires=1790835205&Signature=tc-KAnyjn95mFQTjB-PVU1pYYdyGP2~mMxwnx7iHd3N--MBpDYaoxjjQw-sQBw7K2e2rygAuVLhGmisFsU3pk7Ws1-b4lJA45T46wDIctmuX8NWcqXKxCjsHyrnf1ocHTHUnygguBmwsSAC86YIpb7y8qSoCQQdhP1mM4nh0b7Xkw~uoudMtVcPMQn2sKFtI6t0-lXJhO8XoT2T3B3Yg5AAXHFuy1GdmSDqrWhpjlqkVoJvO~9EZl5AkYZEHqlprbW10Vs8xiiMOp80VphqVwh3VDAI5NcMpHtbI0FzPy3DKQ5L6Tyj2gAlO8mF64H15FCp4OZla844zC6~qBn05bA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501851,
+      "description_sha256": "63faafe58dc2b68d42f577cf8ca325339127fb371b58637b42d7fcb94b8694a1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage data generation pipeline for creating hate speech examples with diverse perspectives, specifically labeled as HATE-PA (Agreement) and HATE-PD (Disagreement). The global layout is horizontally structured into two main phases: 'Diversity-focused Generation' on the left and 'Persona-driven generation' on the right, separated by dashed lines indicating distinct stages.\n\nIn the first phase, a blue robot icon represents an automated generator tasked with producing implicit hate sentences targeting Indians, specifically of the 'Inferiority' type. This is indicated by a blue speech bubble stating: 'Generate implicit Inferiority sentences spreading Hate towards Indians.' Below the robot, metadata specifies 'Target: Indian', 'Type: Inferiority', and 'Task: Hate'. The output of this stage is a sample sentence in a dashed blue box: 'How can anyone take Indians seriously ...', labeled 'HATE-GEN'.\n\nThis generated sentence is then passed to the second phase, where a second robot icon, accompanied by persona details ('38 years', 'Journalist', 'Britain'), is instructed via a blue speech bubble to 'Write a reddit post around the input sentence from your perspective.' From this robot, two divergent outputs branch out, representing different responses to the same input.\n\nThe top branch leads to a red-dashed box containing the text: 'No offense, but Indians should focus more on improving their education system...', labeled 'HATE-PA' with a red rectangular tag reading 'Agreement'. The bottom branch leads to a green-dashed box with the text: 'How sad and ignorant to spread such lies about Indians ...', labeled 'HATE-PD' with a green rectangular tag reading 'Disagreement'. These outputs demonstrate how the same hate-inducing prompt can elicit either agreement or disagreement based on persona-driven generation.\n\nThe connections between components are shown using solid black arrows, indicating the flow from generation to persona-based response. The entire process is framed as a pipeline for generating diverse hate-related content with controlled perspectives, emphasizing both the diversity of hate expressions and the influence of personal identity on response alignment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

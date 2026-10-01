@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500967",
+  "record_sha256": "876b9ea965f5d357f7fca4ffc1a34a42d9e6dec2f9e756f07302887f1078d4cc",
+  "asset_sha256": "977dae4b9547bc23982248327014a924521f505908c32ebc0bada98df56cc2f0",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500967",
+    "title": {
+      "zh": "Generative Modeling of Neural Dynamics via Latent Stochastic Differential Equations · 方法图",
+      "en": "Generative Modeling of Neural Dynamics via Latent Stochastic Differential Equations"
+    },
+    "paper": {
+      "id": "arxiv-2412-12112",
+      "title": "Generative Modeling of Neural Dynamics via Latent Stochastic Differential Equations",
+      "authors": [
+        "Ahmed ElGazzar",
+        "Marcel van Gerven"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12112",
+      "arxiv_url": "https://arxiv.org/abs/2412.12112",
+      "arxiv_id": "2412.12112",
+      "arxiv_first_submitted_at": "2024-12-01T09:36:03Z",
+      "arxiv_updated_at": "2026-02-08T07:58:45Z",
+      "arxiv_subjects": [
+        "q-bio.NC",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500967/image/image.jpg?Expires=1790835182&Signature=vqEDHgN4gSNEYG3Phtanm1R2ICTIMqeVIPrnryP9xOPbXm4yjfIhN~WljXkatQFrKgpwacIFoWKU6ek-MlYJxRR5YPTeJqhgpCrcHiL8Suoq4jJCN7rRLOqv2733tuFqHxD-KkPgCjlap2sPO0OSY2CeQRVRaGnqX~6RGKijHVMeDDipf8BjjazGiU8XjPlTW7scel3CrdfqlYvvNqHgCdbmAHsKn7MqPicDxZ-hYJVMuko2E-aeoxFBhZqhVS~cutPR6q482c8gAcaesMtwBeA~RD0qqfC1W2bA6FqHaBW~uPkTDp9JKMuXL4RkcnyjC84LulRAp0t9SSLAqxYhFw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500967,
+      "description_sha256": "d8f59164bd75406b4598e2899cd31f1a991e6c56aa40f083cbb64ec044341e04",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.NC",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part schematic illustrating a probabilistic generative framework for modeling neural and behavioral data, divided into an inference phase (Panel A) and a generation phase (Panel B). Both panels share a common top-down structure: a stimulus input v, processed by a Stimulus Encoder, which outputs a latent representation ηθ. This latent space is modeled using stochastic differential equations (SDEs), with Panel A showing both a generative SDE (amortized prior) and an augmented SDE (approximate posterior), while Panel B uses only the generative SDE.\n\nIn Panel A (Inference), the Stimulus Encoder (red trapezoid) receives visual stimulus v (represented as layered black and blue rectangles) and produces ηθ. The latent trajectory evolves through time via the generative SDE (dashed blue line) and the augmented SDE (dashed pink line), with points xt and xt̃ denoting states along these paths. The approximate posterior q(zt|y) is inferred from observed data y (binary spike trains) and b (continuous behavioral trace), which are fed into the Observation Encoder (purple trapezoid, labeled γφ). The outputs of the Observation Encoder are concatenated and used to condition the augmented SDE, allowing the model to learn the posterior distribution over latent states. The generative SDE represents the amortized prior p(x(0)), which is initialized from a standard normal distribution (light blue bell curve). The connection between the Observation Encoder and the latent dynamics is shown via green arrows from the encoder output to the latent state ct, indicating parameterization of the posterior SDE.\n\nIn Panel B (Generation), after training, the same Stimulus Encoder processes v to produce ηθ, which is then used to sample from the learned generative SDE. The latent states from this SDE are decoded by two separate decoders: the Neural Decoder (teal trapezoid, labeled λθ) generates synthetic neural activity ŷ (binary spike trains), and the Behavioral Decoder (teal trapezoid, labeled ρθ) generates synthetic behavior b̂ (continuous trace). These decoders receive inputs from multiple points along the latent trajectory, indicated by black lines connecting the SDE path to each decoder. The outputs ŷ and b̂ are shown below the decoders, visually matching the format of the original observations in Panel A.\n\nThe global layout is symmetrical across both panels, with a top-down flow from stimulus to latent space to outputs. The visual modules are color-coded: red for the Stimulus Encoder, purple for the Observation Encoder in Panel A, and teal for the decoders in Panel B. The SDE trajectories are represented as wavy dashed lines, with blue for the generative prior and pink for the approximate posterior in Panel A. Arrows indicate the direction of information flow, with solid arrows for direct processing and dashed arrows for probabilistic or latent dynamics. The figure includes labels for all key components, including mathematical notations such as ηθ, γφ, λθ, ρθ, and the SDE types, ensuring full methodological clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

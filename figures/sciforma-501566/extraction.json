@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501566",
+  "record_sha256": "419284911cadf71b2e8d5edcaa0a1d084fb17c75b5f7499592f2944d8e4bee94",
+  "asset_sha256": "2a4f2d4c21c5eabcb93f44138d4f2676e6247746943b54479910c6a726e914d1",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501566",
+    "title": {
+      "zh": "Relational Neurosymbolic Markov Models · 方法图",
+      "en": "Relational Neurosymbolic Markov Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13023",
+      "title": "Relational Neurosymbolic Markov Models",
+      "authors": [
+        "Lennert De Smet",
+        "Gabriele Venturato",
+        "Luc De Raedt",
+        "Giuseppe Marra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_id": "2412.13023",
+      "arxiv_first_submitted_at": "2024-12-17T15:41:51Z",
+      "arxiv_updated_at": "2024-12-17T15:41:51Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501566/image/image.jpg?Expires=1790835197&Signature=IW1luTcV5Qt8vQz8orMFDpYFc7jdreN3IlFKa5I71P2NZXhcGysPb9eKtYK3irpy3yQocoFZrSt8QQrbaklWFPek1bTpPcUGAXhs32vpUum~MRO2-UXZwjg9VS8JfDdV6garN9GeeU9h0XFo-T4zNib-g1Hoayavpgx-C5uDUqo4YIckbyBspWpMgz5jONv8a4yihEx-rNtXRbMozkhrEjV9zVaHiMB6kHwkAVo9a2g4vT6XNZzjIcQ-mt44qg5NhgcrI9UbWM4pxsAPeNrqNz42xKhRYlTE4jMJBRKS8H8bg3JimZKUt3z5XifbLhkOH5OVWUWlFdfkLOgjzPoczA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501566,
+      "description_sha256": "86c05458a20d75229de8087eb7abc8204bf87ee09ef10bd3719887b006535ad5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "Figure 1 presents three probabilistic graphical model representations labeled a: HMM, b: NeSy, and c: MM, illustrating distinct system architectures. The global layout is horizontal, with each model displayed side-by-side, separated by spacing, and each accompanied by a lowercase label beneath it. The caption below the entire figure clarifies that blue nodes denote hidden states and green nodes denote observations.\n\nIn subfigure a (HMM), the structure consists of two time steps, t−1 and t. At each time step, there is a blue circular node representing the state variable X_t and a green circular node representing the observation Z_t. A directed arrow points from X_{t−1} to X_t, indicating temporal state transition. Additionally, arrows point downward from each X_t to its corresponding Z_t, signifying that observations are conditionally dependent on the current state. All nodes are filled with light blue (for states) or light green (for observations), with black borders and centered black text.\n\nSubfigure b (NeSy) shows a simpler, non-temporal structure. It contains two blue circular nodes: an upper node labeled N and a lower node labeled S. A single directed arrow labeled ϕ points from N to S, indicating a direct dependency or transformation from the neural component N to the symbolic component S. Both nodes share the same visual style: light blue fill, black border, and centered black text.\n\nSubfigure c (MM) depicts a more complex temporal model with two time steps. Each time step includes a blue circular node labeled N_t (top) and S_t (middle), and a green circular node labeled Z_t (bottom). Directed arrows labeled g point upward from S_{t−1} to N_{t−1} and from S_t to N_t, suggesting that the neural component at each time step is influenced by the previous symbolic state. A horizontal arrow connects S_{t−1} to S_t, indicating state evolution. Downward arrows from each S_t to Z_t show that observations depend on the symbolic state. The nodes follow the same color-coding: blue for states (N_t and S_t), green for observations (Z_t), with consistent black borders and centered labels.\n\nAll connections are represented by solid black arrows with arrowheads indicating directionality. The figure uses a clean, minimalistic design with no background or grid, emphasizing clarity of the probabilistic dependencies. The overall structure conveys a progression from a standard HMM to a hybrid NeSy model and finally to a more sophisticated MM framework integrating neural and symbolic components across time."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

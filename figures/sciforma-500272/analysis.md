@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+AirMorph: Topology-Preserving Deep Learning for Pulmonary Airway Analysis — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11039
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a comprehensive overview of the AirMorph framework for automated extraction and analysis of subsegmental bronchial anatomy from thoracic CT scans, structured into five main panels labeled a through e.
+
+Panel a: Overall Pipeline. This section outlines the three-stage workflow of AirMorph. It begins with input lung morphology from CT scans, depicted as a pair of lungs with red airways. The first stage uses a CNN model (represented by a grid of interconnected gray circles) to generate a binary airway tree (shown as a red branching structure). The second stage extracts graph features (illustrated as two light blue circular graphs with nodes and edges) from this binary tree. The third stage employs a Transformer model (another grid of interconnected gray circles) to produce anatomically labeled airway branches at lobar, segmental, and sub-segmental levels. The final output shows color-coded sub-segmental branches labeled LB^1+2a, LB^1+2b, LB^1+2c, indicating distinct anatomical regions.
+
+Panel b: Fine-grained Evaluation. This panel compares the performance of different models—UNet, nnUNet, GCN, TNN, AirwayAtlas—and ground-truth using a graph-based visualization. Each model’s output is shown as a tree structure with nodes colored according to a legend: green for LB10, light green for LB10a, orange for LB10b, red for LB10b+c, yellow for LB10c, pink for LB9a, blue for LB9b, gray for Miss Detection, and red circle for Wrong Prediction. The ground-truth tree serves as the reference standard.
+
+Panel c: Anatomical Branching Difference Analysis. This section is divided into two parts. c.1: Intra-Segmental Branching Pattern Statistics displays a Sankey diagram showing transitions from RB2, RB3, and RB1 to One-Stem or Two-Stem branching patterns, with percentages indicating frequency (e.g., RB2 → One-Stem: 90.38%). c.2: Inter-Segmental Branching Pattern Statistics presents another Sankey diagram illustrating transitions between RB1, RB2, RB3 and branching types like 1→3, 2→1, etc., with associated labels A1, A2, A3 and percentages (e.g., A1: <1%, A3: 5.06%).
+
+Panel d: Signature Definition. This panel defines six quantitative airway signatures: Stenosis (minimum diameter d_min), Ectasia (maximum diameter d_max), Tortuosity (curvature between points S, P, E), Divergence (angle θ between branches), Length (distance along a path), and Complexity (number of leaf nodes relative to ancestor). Each signature is illustrated with a schematic diagram and labeled accordingly.
+
+Panel e: Signature Application on Pulmonary Atelectasis. This section demonstrates clinical application. It includes image patches from CT scans along Z-, Y-, and X-axes, each with a red arrow indicating a region of interest. Corresponding 3D views show airway structures labeled RB³, RB⁴, RB⁶, with RB⁴ marked as 'Absence'. Three radar charts display signature values (Complexity, Length, Divergence, Ectasia, Stenosis, Tortuosity) for normal distribution (light blue), RB³ (dark blue), RB⁴ (green), and RB⁶ (purple), visually comparing structural abnormalities.

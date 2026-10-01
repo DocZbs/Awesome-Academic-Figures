@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500351",
+  "record_sha256": "25cea96018b6522be13c70f5d4795566d28a18d627484105e3774e484098900b",
+  "asset_sha256": "10e3cf7f5feb6ef8eafdc75fe01279f81188db9f917e36859d78df9a7bee07de",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500351",
+    "title": {
+      "zh": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer · 方法图",
+      "en": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11177",
+      "title": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer",
+      "authors": [
+        "Hanxiao Lu",
+        "Hongyu Cai",
+        "Yiming Liang",
+        "Antonio Bianchi",
+        "Z. Berkay Celik"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_id": "2412.11177",
+      "arxiv_first_submitted_at": "2024-12-15T13:04:29Z",
+      "arxiv_updated_at": "2024-12-22T07:53:33Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500351/image/image.jpg?Expires=1790835171&Signature=i3KwFPKTewH8EBJ50KEElZp4E5S~TOUb8LfCDmSRLhbK7KJQrRyyRxf4pBewUZH6k8BrjOIzgzTBMWYYYIREZJ1siysP9wKdXHIA8tcRh2ejqASB5hL2NdVChRMD1qcwbAON2uHnKFL5rNWkGkyvj52m4A5jVshEHvfpbtjQA6vvSs8U4cWQ9resR9Xe2EUM8gtbJ~5sNYkkHd1sa~ysVcqIiDo36xl33W-hizli7osZfVT8L8uowg3gs0g5rfuDjMhtGuXy5932GyhOCztnzWO6HTQwoXyVHDdlcpAjIsB~RO7YGwe447YddQj9pNc3UnwBtlZlIOdyONxjffg0qQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500351,
+      "description_sha256": "a336da1718e643adfe1344bf336279bbfdc6881e2dd2b779a9e0927aa658e448",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical, teacher-student learning framework for binary code analysis, structured as a pipeline of eight progressively complex tasks, each represented by a rectangular module with a gray header and a sample disassembled binary code snippet below. The global layout is a top-down flowchart with numbered steps from 1 to 8, arranged in two main columns: the left column contains tasks 1–4 and 6–8, while the right column contains tasks 2, 3, 5, and auxiliary components. Arrows indicate the flow of information and dependencies between tasks.\n\nTask 1, 'Predict [MASK] byte', begins with a 'Binary File' input showing raw bytes and assembly. In this step, masked language modeling replaces certain bytes with '[MASK]' (highlighted in yellow), and the model predicts them based on context. This output feeds into Task 2, 'Predict Start of Instruction', which uses instruction boundary recovery to identify instruction boundaries, with highlighted bytes (red) indicating predicted starts. Task 2 is labeled 'Boundary Knowledge' and has a dashed border.\n\nFrom Task 2, the flow proceeds to Task 3, 'Predict Start of Function and End of Function', which performs function boundary recovery using the recovered instruction boundaries. This step highlights function start and end points (e.g., 'push rbp' and 'ret') in red and purple respectively. Task 3 feeds into Task 4, 'Function Signature Prediction', where the model predicts function signatures based on byte sequences around function boundaries, with signature bytes shaded in light purple.\n\nTask 4 connects to Task 5, 'Function Similarity Detection', which compares function signatures to detect similarity. Two candidate functions are shown on the right: 'Candidate_1' (green arrow, labeled 'Similar pair') and 'Candidate_2' (red arrow, labeled 'Distinct pair'), illustrating how similar functions have similar signatures while dissimilar ones do not.\n\nTask 5 feeds back into Task 6, 'Function Name Prediction', which uses function signatures to predict function names. This step is linked to 'File-level Knowledge' via a curved arrow. Task 6 then connects to Task 7, 'Compiler Provenance', which identifies compiler-specific patterns in prologue and epilogue (highlighted in cyan and green respectively). Task 7 further connects to Task 8, 'Malware Classification', which leverages compiler fingerprinting within code segments (highlighted in yellow).\n\nEach module displays a disassembled code snippet with hexadecimal offsets, raw bytes, and assembly mnemonics. Highlighted colors denote predictions or features: yellow for masked bytes, red for instruction/function starts, purple for function ends, cyan/green for prologue/epilogue, and light purple for function signatures. Text annotations explain dependencies, such as 'Prediction helped by instruction patterns in Prologue, Epilogue' and 'Prediction helped by byte sequence around function boundary'.\n\nThe entire system operates on raw byte sequences, with addresses and assembly shown only for illustrative purposes. Model weights act as interfaces between adjacent tasks, forming a teacher-student learning hierarchy where foundational knowledge (e.g., instruction boundaries) enables higher-level tasks (e.g., malware classification)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

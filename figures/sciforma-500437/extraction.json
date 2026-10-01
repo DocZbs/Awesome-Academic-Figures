@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500437",
+  "record_sha256": "5cf58a6ab146b50d5cb54a3f246fc40ab8d66a07e3c1c6b29df0c9d9cbf2e5e3",
+  "asset_sha256": "8828f55287e547a671bd07cf291af6b0f1dc67bfdc5ae3af2e9b8f3b0f58a7ea",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500437",
+    "title": {
+      "zh": "Deep Random Features for Scalable Interpolation of Spatiotemporal Data · 方法图",
+      "en": "Deep Random Features for Scalable Interpolation of Spatiotemporal Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-11350",
+      "title": "Deep Random Features for Scalable Interpolation of Spatiotemporal Data",
+      "authors": [
+        "Weibin Chen",
+        "Azhir Mahmood",
+        "Michel Tsamados",
+        "So Takao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11350",
+      "arxiv_url": "https://arxiv.org/abs/2412.11350",
+      "arxiv_id": "2412.11350",
+      "arxiv_first_submitted_at": "2024-12-16T00:32:04Z",
+      "arxiv_updated_at": "2024-12-16T00:32:04Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500437/image/image.jpg?Expires=1790835171&Signature=Hv0jMaVM81wWN6dXtXY4t6-dPWbOCi2YIw4ZNdjUsChkbqVpRhSJiWhtFswmR0z5AYUXw~GqJn3XWXHFt0o1ipz5rF2~8GUk5TnOgctLhmln~BwH9~BTPQvxdfYpV7kNqkP9cKG35GuS8C5h3BOyF90VK6edt7RGk2NHjvVcKN9LbM7Y6G9zLzs41QJN2SCp2Y2IR52XISJZqqMkwZ9rTUjFwXp9ixiUezyHJndhy415MQIJPcj2bjnoOfdt8YClOwhadHZwAciBLW2aZD3B2Wb7GZDD2zz~-0YwWdbb8HMsuxf2XZAsiOBJuHYh8HPjESqEJECr5XPxfSEhrG0qsg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500437,
+      "description_sha256": "c8f998c39a564b6be4b3d08bc6393692ae914d2acc4801d558bd877aa8d9fb46",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a spatiotemporal modeling framework using deep random features. The global layout is structured from left to right, beginning with input coordinates, progressing through a deep neural network module, and ending with output generation and loss computation. At the top center, an icon of a satellite labeled 'Observations' indicates external data sources feeding into the loss function via a dashed line.\n\nOn the left, within a dashed rectangular boundary labeled 'Input coordinates', two submodules are shown: 'Spatial' and 'Temporal'. The 'Spatial' submodule contains two representations: a blue parallelogram with a point labeled 'x' and subscript 'ℝ²', representing Euclidean space, and a green circle with a point labeled 's' and subscript '𝕊²', representing spherical space. The 'Temporal' submodule displays a black arrow labeled 't' pointing rightward with subscript 'ℝ', indicating continuous time. Solid lines connect both spatial and temporal inputs to the central processing unit.\n\nThe central component is a large rounded rectangle labeled 'Deep Random Features', depicted as a stack of multiple identical networks to represent ensembles. Inside, a multi-layered feedforward neural network is shown with gray circular nodes connected by black lines. Each layer has multiple neurons, and skip connections are indicated by dashed lines connecting earlier layers to later ones. The network includes labeled components: φ¹, Θ¹, φ², Θ², ..., φ^ℓ, Θ^ℓ, where φ denotes feature maps and Θ represents parameters. A highlighted yellow vertical section around φ^ℓ emphasizes the random feature mapping. Below this network, a dashed box labeled 'Skip connections' underscores the architectural design.\n\nOutputs from the Deep Random Features module split into two streams: one represented by stacked blue blocks and the other by stacked red blocks. These streams are combined via a circular operator labeled 'C', symbolizing concatenation or fusion, leading to a final output block composed of purple stacked rectangles labeled 'Output'.\n\nA circular node labeled 'Loss' with the mathematical symbol ℒ receives inputs from both the 'Observations' (via dashed line) and the 'Output' (via dashed line), indicating supervised training. The loss function is used to optimize the model.\n\nIn the bottom-right corner, a beige rounded rectangle provides the mathematical definition of the random feature mapping: φ^ℓ(x) = cos(ωx + b), where x ∈ ℝ^B, ω ~ p(ω), and b ~ U([0, 2π]). This specifies that the random features are generated using cosine functions with randomly sampled frequencies and biases.\n\nThe overall workflow is: spatiotemporal coordinates are fed into an ensemble of deep random feature networks, which process them through multiple layers with skip connections; the outputs are fused and produce a final prediction; this prediction is compared against observations to compute a loss, guiding model optimization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

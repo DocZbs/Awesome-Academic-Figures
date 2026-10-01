@@ -1,0 +1,35 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Optical aberrations in autonomous driving: Physics-informed parameterized temperature scaling for neural network uncertainty calibration — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13695
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a multi-task deep learning architecture designed for semantic segmentation and simultaneous prediction of effective Zernike coefficients (specifically α₃, α₄, α₅) under optical aberrations caused by windshields. The overall layout is divided into three main sections: a data augmentation pipeline on the left, a central U-Net-based restoration and segmentation network, and a downstream calibration module on the right.
+
+[1] Global Layout and Structure:
+The diagram flows from left to right. On the far left, a data preparation stage generates perturbed images using a Fourier-optics model applied to clean images (without windshield). This augmentation is marked as 'Only used during training'. The central part features a U-Net-like architecture with an encoder, bottleneck, and two coupled decoders: one for image restoration and another for semantic segmentation. Skip connections are shown for both high- and low-resolution features, with dashed lines indicating the flow. On the right, a ResNet classifier processes residual batches to predict Zernike coefficients, followed by a calibration block that incorporates physics-based inductive bias to produce calibrated confidence scores and final semantic segmentation maps.
+
+[2] Visual Modules and Attributes:
+- The input data sources are represented as cylindrical containers labeled 'Images without windshield' and 'Images with windshield'.
+- The Fourier-optics module is a rectangular box with a wavy line inside, receiving an expected value E[α₃, α₄, α₅] as input during training.
+- The central network consists of a KOR-enhanced Encoder (trapezoid), Bottleneck (rectangle), KOR-enhanced Restorer (trapezoid), and KOR-enhanced Decoder (trapezoid). These components are connected via solid arrows, with dotted skip connections labeled 'Skip connections for high-resolution features' and 'Skip connections for low-resolution features'.
+- Loss functions are annotated alongside outputs: 'Restoration loss (L1-norm)' for the restored batch, 'Cross-Entropy loss' for the logits tensor, and 'Zernike coefficients loss (L2-norm)' for the coefficient prediction.
+- The ResNet block is a trapezoid, leading to a set of predicted coefficients {α₃, α₄, α₅}.
+- The calibration module includes a red-dashed box labeled 'Inductive calibration bias', containing a physics-based term T_cal = M(ω, α), which feeds into a 'Calibrated confidence scores' block and then to the 'Semantic segmentation map'.
+
+[3] Connections and Arrows:
+- Clean images pass through Fourier-optics to create a perturbed batch; this batch merges with the original windshield images at a black circular node before entering the encoder.
+- The encoder outputs to the bottleneck, which connects to both decoders. The restorer decoder outputs a 'Restored batch', while the segmentation decoder outputs a 'Logits tensor'.
+- The restored batch is subtracted from the original perturbed batch to form a 'Residual batch', which is fed into the ResNet for Zernike coefficient prediction.
+- The logits tensor and the predicted coefficients are combined at a black circular node, feeding into the calibration block. The physics-based term T_cal is derived from the predicted coefficients and used to adjust the logits, producing calibrated confidence scores that lead to the final semantic segmentation map.
+- Dotted lines represent skip connections between encoder and decoder layers, preserving spatial information across resolutions.

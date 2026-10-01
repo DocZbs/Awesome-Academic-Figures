@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500353",
+  "record_sha256": "ab5cdfb61af70d99d56ce819fdfecc456f51176fcfcd89b270cb0bd29f6754cd",
+  "asset_sha256": "867562c77bb7b2834953060809cdd240f03ede2b7b3e6896a6695a22e17d8c3e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500353",
+    "title": {
+      "zh": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer · 方法图",
+      "en": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11177",
+      "title": "A Progressive Transformer for Unifying Binary Code Embedding and Knowledge Transfer",
+      "authors": [
+        "Hanxiao Lu",
+        "Hongyu Cai",
+        "Yiming Liang",
+        "Antonio Bianchi",
+        "Z. Berkay Celik"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_url": "https://arxiv.org/abs/2412.11177",
+      "arxiv_id": "2412.11177",
+      "arxiv_first_submitted_at": "2024-12-15T13:04:29Z",
+      "arxiv_updated_at": "2024-12-22T07:53:33Z",
+      "arxiv_subjects": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500353/image/image.jpg?Expires=1790835171&Signature=kjSGBWpgjExVo5JLnqE8E9aUZempA01nYzLTmbFzWoUqCGuPwltD4BsQaK0U4J2xomiNatZwLOEIFoP245rBDpimsCQ~fbLhCSClNpBnstj6267FckRhectkMsUpMrS~B2Vja4rBoPzs~V6t9r0MQYP88KEU5T6qqKUXzgncH77Z7WGaCPnpCTmdEC0xYby9cxmEGDA9e~4iCITDGqt9nmEZqaRDPbbcBQhVrl2kmJ6L7M2JW-0Z3u44MjSEY09utXfdXsgaEeojyb6JJ0xxUUbTF027lJas9n3eCra6F7kDqLbtGXFaIkHqW-mnCRC7ZtFtNJ6YJYRdnVTmk52elQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500353,
+      "description_sha256": "eac97e0009ab97efaf032c3f2cfbf1b1b595a75eccf7a2ca6edf1fa2d92ce8f4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two distinct knowledge transfer configurations, labeled C-A and C-B, for a multi-task learning framework applied to binary code analysis. The global layout is structured as a directed graph with nodes representing different analytical tasks and arrows indicating the flow of information or dependency between them. The entire diagram is organized into two main vertical pathways: one on the left and center, and another on the right, with C-A and C-B denoting two alternative task ordering strategies.\n\nIn the central part of the diagram, 'Function Boundary Recovery' serves as a core module, receiving input from 'Instruction Boundary Recovery', which in turn is derived from 'Masked Language Modeling'. From 'Function Boundary Recovery', there are two primary downstream paths: one leading to 'Compiler Provenance' and then to 'Malware Classification', and another leading to 'Function Similarity Detection'.\n\nConfiguration C-A, located at the top and spanning horizontally, represents a forward knowledge transfer path where 'Function Signature Prediction' is the central task, feeding into 'Function Similarity Detection' and also receiving input from 'Function Name Prediction'. This configuration suggests a bidirectional relationship between function name and signature prediction, with similarity detection as an output.\n\nConfiguration C-B, located on the right side within a dashed box, presents an alternative, sequential knowledge transfer path. It begins with 'Function Similarity Detection', followed by 'Function Signature Prediction', and finally 'Function Name Prediction'. This implies a cascading dependency where each task's output informs the next.\n\nAll modules are represented as rectangular boxes with black borders and plain black text. There are no color distinctions or special shapes used; all connections are solid black arrows indicating directionality. The arrows show clear dependencies: for example, 'Masked Language Modeling' feeds into 'Instruction Boundary Recovery', which then feeds into 'Function Boundary Recovery'. Similarly, 'Function Boundary Recovery' feeds into both 'Compiler Provenance' and 'Function Similarity Detection'. The two configurations C-A and C-B are visually separated by dashed rectangles and labeled in gray text in the upper-right and lower-right corners respectively, emphasizing their distinct architectural arrangements.\n\nThe figure’s purpose, as indicated by the caption, is to compare these two knowledge transfer strategies in the context of binary code analysis tasks such as function recovery, malware classification, and function naming/signature prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

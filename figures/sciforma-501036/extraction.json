@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501036",
+  "record_sha256": "95ab08cc2464c4bb3219fcd4b26aa97923a25e52ea3e0ec25cd30cc78af5284c",
+  "asset_sha256": "e1f74d2c640e41e195e4e08fa9339932526a88055dd23753f9e7f4fdd6a668ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501036",
+    "title": {
+      "zh": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks · 方法图",
+      "en": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12194",
+      "title": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks",
+      "authors": [
+        "Yi Hao Puah",
+        "Anh Tu Ngo",
+        "Nandish Chattopadhyay",
+        "Anupam Chattopadhyay"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_id": "2412.12194",
+      "arxiv_first_submitted_at": "2024-12-14T06:38:01Z",
+      "arxiv_updated_at": "2024-12-14T06:38:01Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501036/image/image.jpg?Expires=1790835183&Signature=WbdlhkBEJrS537uvVqkrvJZgbilfIv~bTP3E2QDlS68OAlnHKtLE6uSMrZfgxSysbWcuFihnzX0f~DUi5GY9p99l58aeZDDtV46uZKA8nNxdEP8wWaNsfsps3EL5U8Y6VIwfZ7Mh6sSn5eh4q68OrezmzvRkBWySpWThTVRf2s~Dv820sQT93y~dcpmE~t9WLzxnaWXUppoJAQXQcG9J1JPNc8Svk0VQF5gJ5vFtLPO6JHk7qEl0-xrzz3f1rXW3t~okQlowcF-bV5K2j9a2ZmYEdqkQ64d545w34L-GfNaaFDAcMrSpWNVWgqDQ0XtPpyH~QHuRg3liZE1sGpcXwg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501036,
+      "description_sha256": "00bff88f89c64e9f37a1e0b18bd26070f060d27c4ddd42bdb33dc3a36d7b37cd",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic diagram illustrating a watermarking scheme for machine learning models using backdooring, where trigger samples are employed for verification. The global layout is structured as a horizontal workflow from left to right, divided into three main stages: model training, watermarking (backdooring), and verification. The process begins on the far left with 'Data Domain D', represented by a cylindrical database icon, which feeds into two distinct data sets: 'Train data' and 'Test Set'. The 'Train data' is depicted as a blue folder and is used for 'Model Training', symbolized by a green human head with gears, resulting in a 'Trained Model' shown as a black grid of squares. Concurrently, a 'Key Generation' phase, enclosed in a dashed oval, produces a 'Trigger Set' consisting of 'Trigger Samples' (purple folder) and 'Trigger Labels' (purple document), which are later used for verification.\n\nThe central part of the diagram shows the 'Marking (Backdooring)' stage, also enclosed in a dashed oval. Here, the 'Trained Model' undergoes a 'Watermarking' process, indicated by a green padlock icon, transforming it into a 'Watermarked Model', visually distinguished by a fingerprint overlay on the grid. This stage is connected to the 'Trigger Set' via a dashed line, indicating that the trigger information is embedded during watermarking.\n\nFollowing this, the diagram branches into three parallel inference and verification paths. The first path shows the 'Trained Model' being tested on the 'Test Set' (blue folder and document) through 'Inference', leading to a decision diamond labeled 'Accuracy as Expected?', which is followed by a green thumbs-up icon if successful. The second path mirrors this for the 'Watermarked Model', also testing on the 'Test Set' and verifying accuracy. The third path, labeled 'Verification' and enclosed in a dashed oval, tests the 'Watermarked Model' specifically on the 'Trigger Set' (purple folder and document) to confirm the presence of the watermark. This verification step also includes an 'Inference' arrow and leads to the same decision diamond and thumbs-up icon, ensuring the model responds correctly to trigger inputs.\n\nVisual modules include icons for data (folders and documents), models (grids), processes (head with gears, padlock, magnifying glass), and decisions (diamonds). Colors are used to differentiate data types: blue for general test/train data, purple for trigger-specific data, and green for processes and success indicators. Arrows indicate the flow of data and control, with solid lines for direct processing and dashed lines for auxiliary or conditional connections. The diagram emphasizes that the watermarking process should not degrade normal performance (as shown by accurate test set results) while enabling reliable verification via trigger samples."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

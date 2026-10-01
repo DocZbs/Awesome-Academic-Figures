@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500568",
+  "record_sha256": "efaa72ea66ad159c2ebd5cfcc100f18769bf758a3b000946a89e6f80dfaaed5d",
+  "asset_sha256": "9a7306f1a4bc594adf7f3aa054cad004400208781910add634f2c252e54d7e7e",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500568",
+    "title": {
+      "zh": "Constructing Confidence Intervals for Average Treatment Effects from Multiple Datasets · 方法图",
+      "en": "Constructing Confidence Intervals for Average Treatment Effects from Multiple Datasets"
+    },
+    "paper": {
+      "id": "arxiv-2412-11511",
+      "title": "Constructing Confidence Intervals for Average Treatment Effects from Multiple Datasets",
+      "authors": [
+        "Yuxin Wang",
+        "Maresa Schröder",
+        "Dennis Frauen",
+        "Jonas Schweisthal",
+        "Konstantin Hess",
+        "Stefan Feuerriegel"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11511",
+      "arxiv_url": "https://arxiv.org/abs/2412.11511",
+      "arxiv_id": "2412.11511",
+      "arxiv_first_submitted_at": "2024-12-16T07:39:46Z",
+      "arxiv_updated_at": "2025-10-15T11:01:52Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500568/image/image.jpg?Expires=1790835172&Signature=RsByedh1KFl0E~jPDUs0D10LeZaYs3Men8GVYcLPcl4h2xNvVmmb~1sPqsII1ZHO3mxhup3QqPn2qCnBHybavwnhxQsm7vS3yT10KCPgWM9NJvqMOwm3GxlG~HpK0YvNxtcPZ11YAjyJlr54WOarK5nqMbBZHleKq6aHxNNPUBuPvPvzdZNphT0SYlB5WehsgLYMzezLyS1XY4jKXHeVu8Y-6-hwMsgrjtI11k4V4NyR63Z1zm42EJWLVIuvk7npYSyOsT9HMoeBxgrcCHkz~2xhkYdD1YGw1l1NSQNsb~xtTZnvN9eU2JbGfsdNOwtEjzaLWjfB2fDKQbnCpHa4Lg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500568,
+      "description_sha256": "c1d023abda72aede2b3e7a987f0d9363ed415e5caabe9803d00f0e503e4ff63b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a method for constructing confidence intervals (CIs) for the average treatment effect (ATE) using two observational datasets from the same population but under different assumptions. The global layout is horizontal and modular, divided into four main steps labeled A through D, with two distinct data sources on the left feeding into a central processing pipeline that culminates in the final CI construction.\n\nOn the left, two datasets are shown: D¹ (small but unconfounded) and D² (large but confounded). D¹ is represented by a light blue box containing three blue human icons, with checkmarks indicating 'Consistency', 'Overlap', and 'Unconfoundedness'. It is connected to a causal diagram showing variables X → A → Y, with no unmeasured confounder U. Below it, D² is shown in a green box with multiple green human icons, marked with 'Consistency' and 'Overlap' only; its causal diagram includes a red U node pointing to A, indicating confounding. The notation n ≪ N indicates D¹ is much smaller than D².\n\nFrom D¹, nuisance parameters (μ₀(x), μ₁(x), π¹(x)) are estimated and passed to Step B: influence function estimation, which outputs Ŷ̃ₙ(x) in a light blue rounded rectangle. From D², a DR-Learner (with subtypes S-Learner, AIPW, T-Learner, RA-Learner listed inside a circular node) is used to estimate τ̂₂(x), which is then aggregated over D² in Step A: Measure of fit, yielding τ̂₂ = Σⱼ₌₁ᴺ τ̂₂(xⱼ). This aggregate is further restricted to D¹ to produce τ̂₂(x), x ∈ D¹.\n\nStep C: Rectifier Δ̂_τ combines the influence function output Ŷ̃ₙ(x) with the D¹-restricted τ̂₂(x) via subtraction: Σᵢ₌₁ⁿ τ̂₂(xᵢ) - Ŷ̃ₙ(xᵢ). This rectifier term is then added to the measure of fit (Step A) to form the final estimator.\n\nStep D: Constructing CIs for ATE in D¹ shows the final formula: Cα^PP = (τ̂^PP ± z₁₋α/2 √(σ̂Δ²/n + σ̂τ₂²/N)), displayed in a light blue rounded rectangle. The entire process is visually connected by arrows indicating data flow and computation sequence, with each step clearly labeled and color-coded for clarity: light blue for D¹-related components and influence function, green for D²-related components and DR-learner outputs, and white for intermediate calculations and final output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

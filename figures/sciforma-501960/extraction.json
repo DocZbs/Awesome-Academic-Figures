@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501960",
+  "record_sha256": "8f019b27cd3b5c003594e2c1746a10dee2b1a34182d3787fc982cf6c3156d233",
+  "asset_sha256": "260dde738a79cfed884f71d40bb071487c614d21d736a0224cfe32010d0dd15d",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501960",
+    "title": {
+      "zh": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks · 方法图",
+      "en": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13724",
+      "title": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks",
+      "authors": [
+        "Muhammad Sohail Ibrahim",
+        "Muhammad Usman",
+        "Jeong-A Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_id": "2412.13724",
+      "arxiv_first_submitted_at": "2024-12-18T11:04:58Z",
+      "arxiv_updated_at": "2025-05-13T11:19:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501960/image/image.jpg?Expires=1790835209&Signature=WLj0D~mwAKj~vmF9VM3ZVgvsF5ZMkvSNA5eVL8xESWB~MEc~8p4OFJzSgFu4eU9-662LOK7y5--EdbTHfLEsTDF4LhnY1mAUw1c33lxG~8MDqqdTLyQzn1wyBOuJY267jrDuo3KOIVxAduWAo0W9PT-QaSvAbt5m3O8z4P-oJUxHxdhbR~cG2WIUk~4fK75ij5z7AOF40e29McKbDWBHzpMF5oBXAoQTjJ-a4-YC5hT5L2AHYO-v7qf~~sf-Oth~9ATo1N~6g~Pp0LsqXTYHDo3Gme50TbsVUjTQfa4juSNQdILLnWk85cAmtwTrQv56Nyp9htPA8EjkxYv3XUj-zQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501960,
+      "description_sha256": "8363e9e5b7d6debb52aff5566f816132a6e738fb42eba435c02b36f192d649b3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a tile/pyramid-level architectural design for a parallel processing system, structured as a multi-stage, multi-processor pipeline. The global layout is horizontally segmented into stages, with vertical columns representing processing stages (from stage 1 to stage M), and rows representing parallel processing units (PPUs) organized by group (PPU-1, PPU-2, ..., PPU-P). On the far left, a control unit labeled 'CCU' (Control and Configuration Unit), depicted as a blue rectangle, interfaces with a 'DRAM Interface' shown as a gray cylinder. The CCU manages data flow between DRAM and the processing array. Data from DRAM flows through the CCU to multiple 'Input Buffer' modules, each represented as a beige rounded rectangle, one per PPU row. These input buffers feed data to the corresponding PPU in each stage.\n\nEach processing stage contains a set of PPU blocks arranged vertically: PPU-1-k, PPU-2-k, ..., PPU-P-k, where k ranges from 1 to M. Each PPU is a light blue rectangle with a label indicating its group and stage index (e.g., PPU-1-1, PPU-2-2). Above each column of PPUs, there is a 'Kernel Buffer', shown as a light green rounded rectangle, which supplies kernel data to all PPUs in that stage. The Kernel Buffer connects to each PPU in the column via green arrows, indicating kernel data distribution. The Input Buffer for each PPU row connects to the corresponding PPU in each stage via orange arrows, indicating data input flow.\n\nProcessing proceeds from left to right across stages. Within each stage, the output of a PPU is passed to the next PPU in the same row via black arrows, forming a horizontal chain within each PPU group. For example, PPU-1-1 outputs to PPU-1-2, which then outputs to PPU-1-3, and so on up to PPU-1-M. This creates a pipelined execution flow within each row. Dotted lines between PPU blocks indicate continuation of the pattern for intermediate stages or PPU groups not explicitly drawn.\n\nAt the end of each stage, the final PPU in each row (e.g., PPU-1-M, PPU-2-M, etc.) outputs data to an 'Output Buffer', shown as a dark gray rounded rectangle. There is one Output Buffer per PPU row, positioned below the last PPU in that row. The connections from the last PPU to the Output Buffer are solid black arrows. The entire structure is designed to support parallel processing across PPU groups and pipelined execution across stages, with shared kernel data per stage and dedicated input/output buffers per PPU row. The figure caption 'Tile/Pyramid Level Design' suggests this architecture is part of a hierarchical or tiled computation framework, likely used in accelerators for tasks such as convolutional neural networks or image processing, where data is processed in tiles and kernels are reused across stages."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502425",
+  "record_sha256": "9b04f252c72560d22f8d88ed7600ac21eba1ac3ba4ef8dc4d803e11bbe617e68",
+  "asset_sha256": "1eeb7cf05e150c7991f887613faee99f6b404a2599d67cf37b4fb7d2c033f620",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502425",
+    "title": {
+      "zh": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization · 方法图",
+      "en": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14510",
+      "title": "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+      "authors": [
+        "Jiayi Wu",
+        "Hengyi Cai",
+        "Lingyong Yan",
+        "Hao Sun",
+        "Xiang Li",
+        "Shuaiqiang Wang",
+        "Dawei Yin",
+        "Ming Gao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_url": "https://arxiv.org/abs/2412.14510",
+      "arxiv_id": "2412.14510",
+      "arxiv_first_submitted_at": "2024-12-19T04:18:51Z",
+      "arxiv_updated_at": "2024-12-19T04:18:51Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502425/image/image.jpg?Expires=1790835221&Signature=I62hgV2K0lMenAhGcT5rg4XlYw3bJGdpoVibIW4AnuU7-Gz7mKButYOdis-OtOc4PUOs5RlNsvD19JDemJusiYjFA0UqVPFCByM~ivEToTYz1nT8Zz3v~~YwoP5pxQWavdrWh0qHXfOi51rY7atxqjm~SvupNpgubLMektymqF1-RmCZ6fjSeAKXi-AR5R0jbc07UXlp44vtqhYMI-Alwoc55Jh2n71GE4n~3K-Nc7hCcIz5cFYoWY7TemgD-H~ybwMc7EH1eC6vkhrq8sCxL0~7pdIq45dssnxGC4wCIDSOG~w~8XAQ~C8UMS1sYKuHEYFukG1aEGCnIAfojtVqfQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502425,
+      "description_sha256": "2cba8f9ef2fa822bc901718efdb8c4f0d59019219a90cd468508231a4af5d451",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a four-stage pipeline for constructing instruction fine-tuning data, organized into distinct colored sections labeled 1 through 4. The global layout is horizontal, with each stage represented as a vertically stacked module within a colored rectangular container: Stage 1 (light blue), Stage 2 (light yellow), Stage 3 (light green), and Stage 4 (light orange). Each stage contains rounded rectangles representing data or processing components, connected by arrows indicating the flow of information.\n\nStage 1, 'Existing Dataset Data Point', begins with two input components: a 'Question' box and a 'Short Answers' box listing SA1, SA2, SA3. These are visually linked via a black arrow to Stage 2.\n\nStage 2, 'Get Golden Docs', receives the question and short answers. It first retrieves 'Top-100 Docs' represented by three stylized document icons (black, pink, gray) followed by an ellipsis. A funnel icon symbolizes filtering, leading to 'Up to 5 Golden Docs', which are listed with citation markers [1], [2], [3], etc., each associated with one or more short answers (e.g., [1]...SA1..., [2]...SA2...SA3...). This output feeds into Stage 3.\n\nStage 3, 'Construct Response', takes inputs including 'Instruction', 'Question', 'Short Answer Hint', and 'Golden Docs'. These are processed by a teal-colored GPT-like logo (representing a large language model), producing two outputs: 'Claims' (with labeled claims C1 and C2, each tied to specific short answers) and 'Citations' (listing citation numbers such as [1] or [1][3]). An arrow from this stage leads to Stage 4.\n\nStage 4, 'Citation Rewrite', consists of three sub-steps. Step 1: 'Citation Verification' takes a premise (C2) and hypothesis ([1][3]) as input, passes them to an 'NLI Model' (Natural Language Inference), which outputs either a green checkmark (✓) leading to Step 3 or a red cross (✗) leading back to Step 2. Step 2: 'Citation Construction' generates a 'Powerset of Golden Docs' (symbolized by stacked layers), which is traversed to produce combinations like [1][2][3], feeding back to Step 1. Step 3: 'Citation Simplification' evaluates combinations such as C2 + [1] and C2 + [2][3] using the NLI Model. If the model returns a red cross (✗), it triggers a decision box stating '[1] is irrelevant remove [1]', indicating removal of redundant citations. Green checkmarks (✓) indicate valid citations. All components are connected with solid black arrows, and decision outcomes are indicated by colored symbols (✓/✗). The entire process illustrates a systematic approach to generating high-quality instruction-tuning data by verifying and refining citations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

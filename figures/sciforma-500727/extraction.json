@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500727",
+  "record_sha256": "094b7858bf2f7f06674cc302329b8da3efe6c3cd57ceec06151f5899562b85d8",
+  "asset_sha256": "ea314be2107cb9b6284bbacaf9c5c86bf8d5ba4ffed34efd316c56c932fd5e14",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500727",
+    "title": {
+      "zh": "Discrepancy-Aware Attention Network for Enhanced Audio-Visual Zero-Shot Learning · 方法图",
+      "en": "Discrepancy-Aware Attention Network for Enhanced Audio-Visual Zero-Shot Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-11715",
+      "title": "Discrepancy-Aware Attention Network for Enhanced Audio-Visual Zero-Shot Learning",
+      "authors": [
+        "RunLin Yu",
+        "Yipu Gong",
+        "Wenrui Li",
+        "Aiwen Sun",
+        "Mengren Zheng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11715",
+      "arxiv_url": "https://arxiv.org/abs/2412.11715",
+      "arxiv_id": "2412.11715",
+      "arxiv_first_submitted_at": "2024-12-16T12:35:56Z",
+      "arxiv_updated_at": "2024-12-16T12:35:56Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.MM",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500727/image/image.jpg?Expires=1790835177&Signature=UQggKhBo7Ih8BUyU0to-h98MuhSALqrWQFxIHML7YWf3Mn0j8RYTNCp6Ou3L0TWTW0NY2fyoarAraH-NdIrBMsu3H2jxhjB5rvGU2h03wLvAyLzAnmfulNMFWHgBiaNdlRx6V8zNpm8XFzRiUDNaW-IkTen5xoh-MJ0keC5ExtukloYwPiubf3SUUor2vzBJ10cx2bkseJ6O76FZF-tbYxnK5nEyVPEjnyEOn0ad12z-epk1zWECPX~0dHiWFpR524J-oE5PDEHfMkAjVt84Tqs0XrdE-B6q1h0i1vwqyvWLR2OImP3URzjsfGJxMedXOo5oQaQyD4R78l3no0IXkg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500727,
+      "description_sha256": "2c94c351a110b2f05c4e15ee93a9e51ae9c17cfa81bf409f66cf211167e1ce6b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.MM",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two distinct types of discrepancies in audio-visual datasets: quality discrepancies and content discrepancies, depicted in subfigures (a) and (b), respectively.\n\nIn subfigure (a), the global layout is divided into two parallel modalities: 'Visual Modality' at the top and 'Audio Modality' at the bottom, enclosed within a large rounded rectangle. The visual modality is represented by a filmstrip containing sequential video frames, with two highlighted segments (in brown) indicating regions of interest. These segments are connected via dashed orange arrows to smaller images showing object detection bounding boxes (red rectangles) around cars and other objects, labeled 'Feature Extraction'. Similarly, the audio modality is shown as a blue waveform, with two highlighted segments (in light blue) linked via dashed blue arrows to smaller waveform snippets, also labeled 'Feature Extraction'. The extracted features from both modalities—represented as stacked orange cubes for visual and blue cubes for audio—are fed into a central gray box labeled 'Information Entropy', which computes entropy values (shown as bar charts). The output of this computation influences the feature extraction process through feedback loops (dashed arrows), suggesting an adaptive weighting mechanism where the visual modality contributes more due to higher information content, leading to potential bias in model predictions.\n\nSubfigure (b) presents two sample cases, 'Sample1' and 'Sample2', each illustrating content discrepancies within the same semantic category ('Play Basketball'). Each sample contains a filmstrip of video frames and a corresponding audio waveform. In Sample1, the visual frames focus on a basketball player in action, and the audio waveform is highlighted in orange; the feature extraction produces an orange grid pattern. In Sample2, the visual frames emphasize the basketball itself, and the audio waveform is highlighted in blue; the feature extraction yields a blue grid pattern. Both samples undergo 'Training', indicated by yellow downward-pointing arrows, resulting in different parameter updates shown as 2x2 matrices with theta symbols (θ) representing learned weights. The matrices for Sample1 transition from a diagonal structure to an identity matrix, while Sample2 transitions to a zero matrix in the top-left and bottom-right blocks. These differences lead to distinct 'Evaluation' outcomes, shown in blue downward arrows: Sample1 outputs 'Play Basketball (player)' with 'player' in red, and Sample2 outputs 'Play Basketball (ball)' with 'ball' in red, highlighting how varying emphasis in audio-visual content leads to divergent recognition results despite the same activity.\n\nThe overall structure uses color-coded elements (orange for visual, blue for audio) and directional arrows to convey data flow and processing stages. Text labels are placed directly below or beside components for clarity. The figure effectively communicates how quality imbalances between modalities and content variations within samples can affect model behavior in audio-visual learning tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

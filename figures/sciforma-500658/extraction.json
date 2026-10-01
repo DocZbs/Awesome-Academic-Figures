@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500658",
+  "record_sha256": "7732e7eda8dbfb3174bae44e32a6de86f24c0406d30179426e20aa8edcdd447d",
+  "asset_sha256": "f6d13f55f506ed79f473055a358a6cb41644d08211dd8dba2de7a4409c969b3a",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500658",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500658/image/image.jpg?Expires=1790835174&Signature=NHTY6lOcadHMRl0PF8eIrutzNtJEp~GIRJGLCg-1e4caUQKjSNG5Bkgew3J9oezHZqVy9LNVqbh1ZiUaRdt5l~VTTRC48G-wkasURbH92dMgItotzZsVdgjQdLBQUuuf5J8D7U8ehnk7~13~mLcbQdznSt26Hedo~2nqU4Bu8XqRDepn-7KoEhR8Z-73Vuf6O95zurUahd0n7vq466s5BZgpzZfgAV5iM4sehDspkJ4Ke978G6Uj46tDomDxcnQhM7rDTtVHl9wXl1HWrahrXFdUOI02xrLLSGAwGTzooJknd9DYBjSJbS4jGqRlZvduFVI0NekdQe5ZSdVyPjQD3w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500658,
+      "description_sha256": "300deb65e6baeb810dfa2a4d4bc4e5fde065eb32e979f22089604b65704de634",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-step workflow for automatic seasonal crop mapping, structured into two main phases: dataset creation and model training/generalization. The entire process is divided into three labeled sections by dashed red boxes: 'Step 1: dataset creation', 'Step 2: training model', and 'Step 2: generalization'.\n\nIn Step 1, dataset creation begins with three input sources: 'Phenological analysis' (light blue rounded rectangle), 'Historical authoritative crop Maps' (light yellow rounded rectangle), and 'Historical satellite data' (light gray rounded rectangle). These inputs are processed to generate two outputs: 'Timely enhanced crop maps' (light blue rounded rectangle) and 'Trained model' (light orange rounded rectangle). Specifically, 'Phenological analysis' and 'Historical authoritative crop Maps' both feed into 'Timely enhanced crop maps' via arrows labeled 'generate'. Meanwhile, 'Historical satellite data' serves as 'input data' to the 'Trained model', while 'Timely enhanced crop maps' provide 'ground truth' for training.\n\nIn Step 2, the 'Trained model' is used in two ways. First, it receives 'ground truth' from 'Timely enhanced crop maps' during the training phase. Second, in the generalization phase, the trained model is applied to new data. This phase starts with 'Current season satellite data' (light orange rounded rectangle), which is fed into a CNN model named 'FPN3D' (light gray rounded rectangle). The output of FPN3D is a sequence of 'Dynamic crop map' instances (stacked light blue rounded rectangles), representing time-series predictions. These dynamic maps are then passed to another CNN, labeled 'Aggregator' (light yellow rounded rectangle), which consolidates them into the final output: 'In-Season crop map' (light orange rounded rectangle).\n\nAll connections are represented by solid black arrows with labels indicating the nature of the data flow: 'generate', 'ground truth', 'input data'. The color coding helps distinguish between data types: light blue for intermediate or dynamic maps, light yellow for authoritative or reference data, light gray for raw or input data, and light orange for models or final outputs. The layout is left-to-right and top-to-bottom, emphasizing a clear pipeline from historical data to real-time crop mapping."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

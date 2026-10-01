@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500944",
+  "record_sha256": "4fd62c477486a2847152deaa27ea91d70868895042d03df3e09f6999cb4d8358",
+  "asset_sha256": "d4e3cdd1b196f180674769e3b6ac8a79d2bab23089fee1bf2bd34aa4eac405f4",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500944",
+    "title": {
+      "zh": "Wonderland: Navigating 3D Scenes from a Single Image · 方法图",
+      "en": "Wonderland: Navigating 3D Scenes from a Single Image"
+    },
+    "paper": {
+      "id": "arxiv-2412-12091",
+      "title": "Wonderland: Navigating 3D Scenes from a Single Image",
+      "authors": [
+        "Hanwen Liang",
+        "Junli Cao",
+        "Vidit Goel",
+        "Guocheng Qian",
+        "Sergei Korolev",
+        "Demetri Terzopoulos",
+        "Konstantinos N. Plataniotis",
+        "Sergey Tulyakov",
+        "Jian Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_id": "2412.12091",
+      "arxiv_first_submitted_at": "2024-12-16T18:58:17Z",
+      "arxiv_updated_at": "2025-04-26T13:48:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500944/image/image.jpg?Expires=1790835181&Signature=j04RILYFTUbSjQ~qDdNqcYObbAaq4Y~nHfAHXadIQyCf8nnnBDXK9EzdugpnnmenVrEPwy5LWRHykhpLEAkhKp5NPvnFEMPGh6NVFwHSI4Cp4rpwCEJzVU5yxitecgbDFdYdbimBIBPi2bNEtEXN05cqDGtv2ODI6PphVhvUyd39LqOCaNBr39FW84Oppt-qNQ2faVK8zQwR4V6JLDmSy9nS-W3bFQrmQlEZ5FQI0spvg1MQQGAjvXFcV4xbiQt0VaHL358-IMCR~o1H5QOqu7-sElp3riw~L9ml48OtAUrl3gdaEG7wp63XS2OP7AbsRQRPJQtOVPh8xQUEPHM-BA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500944,
+      "description_sha256": "e2549cd3ea26d0812cdbc4bea497a8d66aa0e193f6f6c4b0bcfde7be94cc4e7b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an end-to-end pipeline for 3D-aware video generation from a single image, named Wonderland, consisting of two main stages: a camera-guided video diffusion model and a Latent Large Reconstruction Model (LaLRM). The global layout is left-to-right, starting with input on the far left, progressing through the diffusion model, then transitioning to the LaLRM for 3D reconstruction, and ending with novel view synthesis on the right. The entire process is structured into distinct visual modules connected by arrows indicating data flow.\n\nOn the left, the input consists of a 'Single Image' of a teddy bear in an urban street scene, along with two camera embeddings: one labeled 'Camera Embedding' (blue stack) and another labeled 'lora cam' (also blue stack), which is associated with noise. These inputs are processed via an 'Encoding' step, followed by 'Patchify', which converts the image into a grid of patches. The patches are then passed through a 'Linear' layer to produce 'Visual Token' (pink rectangular blocks). Simultaneously, the 'Camera Embedding' is fed into a 'ctrl cam' module (purple trapezoid) to generate 'Camera Token' (light blue rectangular blocks). The 'lora cam' embedding is processed similarly to generate 'VisCam Token' (gray rectangular blocks). These tokens are combined using element-wise sum operations (indicated by '+' symbols) before being fed into a dual-branch Transformer architecture.\n\nThe central part of the diagram shows the dual-branch Transformer structure. The top branch, enclosed in a pink dashed box, processes the 'Camera Token' and includes several 'Transformer Block' units (beige rectangles). The bottom branch, enclosed in a light blue dashed box, processes the 'VisCam Token' and includes 'Cam-LoRA' modules (brown rectangles) integrated within the Transformer Blocks. Green lines labeled 'Zero-linear' connect the top branch to the bottom branch, indicating cross-attention or feature sharing. The output of this dual-branch network is a 'Generated Video Latent' (a colorful, striped texture image).\n\nThis latent representation is then processed by the LaLRM. The latent is split into two streams: one undergoes '3D Patchify & Linear' and the other '2D Patchify & Linear'. These are concatenated (indicated by a 'C' symbol) and passed through N identical 'Transformer Block' units (beige rectangles). The output is then processed by a 'Linear & Unpatchify' module, resulting in a 3D scene reconstruction shown as a transparent cube containing the teddy bear in the street environment, with multiple camera viewpoints (black cameras) projecting onto it. Finally, the reconstructed 3D scene is rendered from different angles, producing a sequence of 'Novel View' images (four frames showing the bear from various perspectives), with a curved arrow indicating continuous view rotation.\n\nThe legend at the bottom clarifies the visual elements: blue stacks represent 'Camera Embedding', pink blocks are 'Visual Token', light blue blocks are 'Camera Token', gray blocks are 'VisCam Token', brown blocks are 'Cam-LoRA', green lines are 'Zero-linear', beige rectangles are 'Transformer Block', '+' symbols denote 'Element-wise Sum', and 'C' denotes 'Concatenate'. The overall workflow demonstrates how camera guidance enables precise pose control during video latent generation, which is then used by the LaLRM to efficiently reconstruct a high-fidelity 3D scene for novel view synthesis."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

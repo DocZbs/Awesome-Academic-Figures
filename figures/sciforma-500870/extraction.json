@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500870",
+  "record_sha256": "481580ae89c8c582426269ad3c529951e04110aeeddb66d7c959521f89bbd7da",
+  "asset_sha256": "b634e6e22f8d999af65ced0b34a818c9c91bb1a54af677a10cadf1026c376dc4",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500870",
+    "title": {
+      "zh": "Hierarchical Meta-Reinforcement Learning via Automated Macro-Action Discovery · 方法图",
+      "en": "Hierarchical Meta-Reinforcement Learning via Automated Macro-Action Discovery"
+    },
+    "paper": {
+      "id": "arxiv-2412-11930",
+      "title": "Hierarchical Meta-Reinforcement Learning via Automated Macro-Action Discovery",
+      "authors": [
+        "Minjae Cho",
+        "Chuangchuang Sun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11930",
+      "arxiv_url": "https://arxiv.org/abs/2412.11930",
+      "arxiv_id": "2412.11930",
+      "arxiv_first_submitted_at": "2024-12-16T16:15:36Z",
+      "arxiv_updated_at": "2024-12-16T16:15:36Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500870/image/image.jpg?Expires=1790835177&Signature=NuNhbJP3ZGv9owQNNfkPFbCmYLCNjkFGQJmDJXiJ2~9HaLItMn3veo~wakStrKHqYwGOACkmPUwVXGf2pRlHlJOP9660oki8endUyZFIsXzEk4HaD6~tC4EcJ9F05WQn-QkNN6KmeO0by8Nr1m1YwpPt7zVI1uZXD7LI6-2Mvktg0gPeeeiNQTGs13ApHTRVgidfEwzuGakn9tMbLR9aGjEUk5Pi~ctoXIL55EYZ8Mc7lnJTXwhcGDVPf7VquiqhxuFek1MbU1m3yf8OR1QyuhNJlgXSA5KkyF3TFQPuTz34IvQe3K-WlYXFCfCvwsfaJyBreZ2VdZ0Yjn5~J~OqXA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500870,
+      "description_sha256": "0635c08b0fc2b0b92c98683bc8af84713fa9e27eadf7369e646447cf62fccb4d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part architectural overview of a hierarchical meta-learning framework called HiMeta, designed for multi-task reinforcement learning. The left side illustrates the conceptual workflow, while the right side details the computational structure.\n\n[1] Global Layout and Structure: The figure is divided into two main regions by a vertical dashed line. On the left, a conceptual path diagram shows how macro-actions guide navigation from an initial state st toward a sequence of intermediate goals g1^1, ..., gn^(n-1), ultimately reaching the final goal g_task^n. Two example task trajectories, Task1 and Taskn, are shown with curved blue paths, each marked with yellow triangular flags at intermediate goal states and green flags at the final goal. Red arrows indicate macro-actions that steer the agent along the path. Below the paths, the symbol π? suggests uncertainty or the need to learn a policy. On the right, a structured block diagram represents the two-stage architecture: the 'Macro-Action Stage' at the top and the 'Primitive-Action Stage' at the bottom, both enclosed in rounded rectangles with dark blue borders.\n\n[2] Visual Modules and Attributes: In the Macro-Action Stage, a gray rectangular box labeled 'HiMeta' sits at the top, serving as the central high-level decision module. From HiMeta, two downward-pointing blue arrows lead to two task-specific sequences: Task1 and Taskn. Each task is represented as a horizontal row of four square boxes, alternating between light blue and beige, containing '+' or '-' symbols. These represent high-level directional action predictions. In the Primitive-Action Stage, below each task sequence, there is a corresponding row of four boxes with numerical values (e.g., .5, -2, .7, -4 for Task1; .1, .3, .9, -4 for Taskn), also alternating in color. These represent the learned policy parameters π, which generate primitive actions based on the macro-action guidance. The labels 'Task1', 'Taskn', 'π', 'Macro-Action Stage', and 'Primitive-Action Stage' are written in bold, dark blue font. The title 'Goal: g_task^n' and 'Goal state: g_task^1...n-1' appear at the top left, with green and yellow flags respectively, indicating the final and intermediate goal states.\n\n[3] Connections and Arrows: A red arrow labeled 'Macro-Action' points from the 'Goal: g_task^n' label toward the first intermediate goal, visually linking the high-level goal to the macro-action concept. In the right-side diagram, two thick blue arrows descend from the HiMeta box to the task sequences, indicating that HiMeta produces the high-level action predictions for each task. Further, two additional thick blue arrows connect each task's macro-action sequence to its corresponding primitive-action parameter vector (π), showing the flow of information from the macro-level to the primitive-level policy. The entire diagram emphasizes a hierarchical decision-making process where HiMeta provides abstract directional guidance, which is then translated into concrete action parameters by the lower-level policy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

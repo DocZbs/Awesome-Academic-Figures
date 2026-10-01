@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-500673",
+  "record_sha256": "754b7dc6ad13f0f5a50dd635387b1edeb036bc52776d0aeb1de2bb3a21a4ef8a",
+  "asset_sha256": "d6e68e538eed2d11da66a579e22ad02fb6d6e1d9347d6ee8512d630cd55863a4",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500673",
+    "title": {
+      "zh": "Smoothness Really Matters: A Simple Yet Effective Approach for Unsupervised Graph Domain Adaptation · 方法图",
+      "en": "Smoothness Really Matters: A Simple Yet Effective Approach for Unsupervised Graph Domain Adaptation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11654",
+      "title": "Smoothness Really Matters: A Simple Yet Effective Approach for Unsupervised Graph Domain Adaptation",
+      "authors": [
+        "Wei Chen",
+        "Guo Ye",
+        "Yakun Wang",
+        "Zhao Zhang",
+        "Libang Zhang",
+        "Daixin Wang",
+        "Zhiqiang Zhang",
+        "Fuzhen Zhuang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11654",
+      "arxiv_url": "https://arxiv.org/abs/2412.11654",
+      "arxiv_id": "2412.11654",
+      "arxiv_first_submitted_at": "2024-12-16T10:56:58Z",
+      "arxiv_updated_at": "2025-01-16T03:04:10Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500673/image/image.jpg?Expires=1790835174&Signature=UiB0FSrt5JRCWxJJUhNfhfiSkZjdJRNI9XELHQRcbpgeIif9rbi5In4jMw1W~V2PYgqP8cuh-lJKt2vqngKWl8Y6tJTMvrqgNKDs3EVUuuYIchfJGsyUFDZRoo6KiqVGJIUICbG682xGMFXFtCcMPAfFXK909toGDXbv3sGzNV75w9WuZVKUXQ4TwI5p682Vxa90dY68jCgIcZ-cs7~myjYV4OJDAJ9ILduQt-GkrXDzvVNaT33awFfm97ViVZzMfZ1jf5Q2~n0vHBzxvccCaR06Oo0S7OFJJ8yR6eOGcsBZIxDIruSAlqxlIGkLXGTmDcvPbvay1PdB0Z5JZdz4BQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500673,
+      "description_sha256": "5860ce7c0a3964055cdfcb98f73bf785d3af6fac27a3d07ff67740d453f7c145",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a knowledge transfer process between two graphs in the context of Graph Neural Networks (GNNs), emphasizing sensitivity to input features. The global layout is divided into three main sections: a 'Source Graph' on the left, a 'Target Graph' in the center-right, and an 'Output' section on the far right, separated by dashed borders. A large black arrow labeled 'Knowledge Transfer' points from the Source Graph to the Target Graph, indicating the direction of information flow.\n\nIn the Source Graph, five nodes are connected by edges forming a network. Nodes are represented as circles with numbers inside: node 0, 1, 3, and 4 are green, while node 2 is red. Each node has a rectangular box above it containing two numerical features, e.g., [0.1 | 0] for node 1. According to the caption, the second feature determines the node class: values ≤ 0.2 result in green nodes, and values > 0.2 result in red nodes. Thus, node 2 has a second feature of 0.9 (> 0.2), making it red, while all other nodes have second features ≤ 0.2 (e.g., node 0: 0.1, node 1: 0, etc.), hence green. Node 0 is highlighted with a light yellow translucent oval, suggesting it may be the focus or a point of interest.\n\nThe Target Graph mirrors the structure of the Source Graph but replaces node 0 with a gray circle labeled '?', indicating an unknown or predicted node. All other nodes (1, 2, 3, 4) retain their original colors and feature values. The same light yellow oval surrounds the '?' node, maintaining visual continuity with the source. This setup implies that the model must infer the properties of the missing node based on knowledge transferred from the source graph.\n\nOn the far right, under the heading 'Output', two components are shown: 'GNN' and 'TDSS'. Below each label is a circular node with its corresponding feature vector. For GNN, a red circle appears with features [0.2 | 0.3], indicating the model predicts a red node (since 0.3 > 0.2). For TDSS, a green circle appears with features [0.2 | 0.1], predicting a green node (since 0.1 ≤ 0.2). This comparison highlights the differing predictions made by the two models when faced with the same ambiguous input (node 0's features are [0.2 | 0.1], which are identical to node 3’s features in the source graph). The figure thus demonstrates how GNNs may be sensitive to small changes or ambiguous inputs, leading to potentially incorrect classifications, whereas TDSS produces a more consistent prediction aligned with the source graph’s pattern."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

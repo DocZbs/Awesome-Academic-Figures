@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501022",
+  "record_sha256": "b71cfdafa81da51abfba5aef281b83b276328b1c5f7d38d06f73cb51d8b8e947",
+  "asset_sha256": "5d9002d1ba2b7cf3f3d37b53d100961c3474fa11b6466e428df0afd42103bc0b",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501022",
+    "title": {
+      "zh": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective · 方法图",
+      "en": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-12165",
+      "title": "Multimodal Approaches to Fair Image Classification: An Ethical Perspective",
+      "authors": [
+        "Javon Hickmon"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12165",
+      "arxiv_url": "https://arxiv.org/abs/2412.12165",
+      "arxiv_id": "2412.12165",
+      "arxiv_first_submitted_at": "2024-12-11T19:58:31Z",
+      "arxiv_updated_at": "2024-12-11T19:58:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501022/image/image.jpg?Expires=1790835183&Signature=JGzD5VDJyAt-AkBSOlCIsaWxEoPOLubCsQfUP-qLv0axDPoYPXKHxe31TdlqJRIV~92etysKE8873Sw5lzEEVOMiKu6dpUF9OJZ-dI52xckcG-NyX-M5xIwlTdWTvaYiOG0WMhrRnjLb9LOoypR91DIpwxjXvhEj1~rA442jKFxya2hI8YEdGByelXbqiU8qjYdEh8L130jX2xYt2~NMAcs93acUHhZSQqp5KT23mh6q4pRFR03MV2p1U6oGZuQ8Kc-VV5Ed9eKAppPn-P22YURisFmHWmeNDpBEDV3xLUNvfmzwwEEZxJ0H7jswLTqdSuwc4F7gVb~J958dE-4LGA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501022,
+      "description_sha256": "c33f6948191ba7e5a08c85423c1623549ac257bc1886e8c622809d1629728101",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical visual recognition pipeline composed of three main modules: Navigator, Scrutinizer, and Teacher, arranged in a feedback loop. The global layout is left-to-right, starting with an input image of a Yellow-headed Blackbird perched on a wooden post against a green background. This image flows into the Navigator module, depicted as a white parallelogram with black border and labeled 'Navigator' in bold black text. The Navigator outputs a modified version of the input image, now overlaid with multiple orange rectangular bounding boxes highlighting regions of interest—specifically the bird’s head, body, and tail. These highlighted regions indicate the Navigator’s focus areas for further analysis. From this annotated image, the flow proceeds to the Scrutinizer module, another white parallelogram labeled 'Scrutinizer', which processes the selected regions and outputs the final classification result: 'Yellow headed Blackbird', written in black text within a rectangular box connected by a thick black arrow. Below the main flow, the Teacher module—a white parallelogram labeled 'Teacher'—receives input from the Scrutinizer’s output and sends a feedback signal back to the Navigator via a curved black arrow labeled 'feedback'. This feedback loop suggests a training or refinement mechanism where the Teacher evaluates the Scrutinizer’s output and guides the Navigator to adjust its region selection for improved accuracy. All modules are connected by thick black arrows indicating data flow direction. The visual style is clean and schematic, using consistent shapes and colors: white parallelograms for processing units, black borders and text, and orange rectangles for region annotations. The figure emphasizes a two-stage process: coarse region localization by the Navigator followed by fine-grained scrutiny by the Scrutinizer, with iterative improvement enabled by the Teacher’s feedback."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

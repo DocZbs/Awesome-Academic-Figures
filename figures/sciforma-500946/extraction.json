@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500946",
+  "record_sha256": "104df4e105186edf94ec6905ca82bc37fea9461acc5a91f58269c721126a8a27",
+  "asset_sha256": "4a04732fef887eef222e177d760868238076cc0df40c32ea96fef583b7ce57f6",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1344,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500946",
+    "title": {
+      "zh": "Wonderland: Navigating 3D Scenes from a Single Image · 方法图",
+      "en": "Wonderland: Navigating 3D Scenes from a Single Image"
+    },
+    "paper": {
+      "id": "arxiv-2412-12091",
+      "title": "Wonderland: Navigating 3D Scenes from a Single Image",
+      "authors": [
+        "Hanwen Liang",
+        "Junli Cao",
+        "Vidit Goel",
+        "Guocheng Qian",
+        "Sergei Korolev",
+        "Demetri Terzopoulos",
+        "Konstantinos N. Plataniotis",
+        "Sergey Tulyakov",
+        "Jian Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_url": "https://arxiv.org/abs/2412.12091",
+      "arxiv_id": "2412.12091",
+      "arxiv_first_submitted_at": "2024-12-16T18:58:17Z",
+      "arxiv_updated_at": "2025-04-26T13:48:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500946/image/image.jpg?Expires=1790835182&Signature=V-RVN4YKD3v67nhaSV3QhGiDJs6mnguM7gRcNGsYTHK9yLSap4KGYsRP7Pp5rqdnftHK9NLWODY5aK3bobLn5kwW2TBUmG1kMlFROU3JkNuAmCUcb5Pb3XDS8NRG9w~seq3FWFGJvaFz3Ze0mDCCUzrbZTxZ0Br-eJDVANclZVCniMZbzCh43gZDdskWxgsQZkCogrpx2nfboH~aFggEfxhtDc~xOAoNjt~FmLjReKe0L4h8pnDtaoKgoE7B9EhCjEG3wBtpaZeC3n5EOrLD3PSllMp3FfaO9N4xaGIut11J-vvUV9e3cjhEJsuWQ8lGv7uRLLr05Jy1dYIUszmDtQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500946,
+      "description_sha256": "38df9827b4f7c023913f9a13dbc328105c237990b0b62d782b456968f3dd1710",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Latent Large Reconstruction Model (LaLRM), a feed-forward neural network designed to regress 3D Gaussian Splatting (3DGS) representations from a video latent and camera embeddings. The global layout is vertically structured, with two parallel input streams converging into a shared processing pipeline before producing the final output. The left stream processes the 'Video Latent' z, with shape (B, t=13, h=60, w=90, c=16), while the right stream processes the 'Camera Embedding' p, with shape (B, T=49, H=480, W=720, 6). Both inputs are processed independently through convolutional layers: the video latent passes through a light green rounded rectangle labeled 'Conv2D' with parameters (in_c=16, out_c=1024, kernel=2, stride=2), and the camera embedding passes through a light blue rounded rectangle labeled 'Conv3D' with parameters (in_c=16, out_c=1024, kernel=(4,16,16), stride=(4,16,16), pad=(2,0,0)). Each output is then flattened and passed to an orange rounded rectangle labeled 'Layer Normalization', producing outputs o_l and o_p, both with shape (B, N_l, d_l). These normalized outputs are concatenated at a circular node labeled 'C'. The concatenated feature vector is then fed into a beige rounded rectangle labeled 'Linear' with dimensions (2048, 1024). The output of this linear layer is passed to a gray rounded rectangle labeled 'Transformer Block', which is repeated 24 times as indicated by 'x 24' on a feedback loop arrow returning to the block's input. After the transformer stack, the features are passed to a light blue rounded rectangle labeled 'ConvTranspose3D' with parameters (in_c=1024, out_c=12, kernel=(5,8,8), stride=(4,8,8), pad=(2,0,0)), producing an intermediate tensor of shape (B, 49, 240, 360, 12). This is followed by a green rounded rectangle labeled 'Various Activations', leading to the final output G, which has shape (B, num_points = 4,233,600, feature = 12). All connections are represented by solid black arrows indicating the forward flow of data, with the exception of the feedback loop to the Transformer Block. The figure uses distinct colors to differentiate module types: light green for 2D convolutions, light blue for 3D convolutions and transposed convolutions, orange for normalization, beige for linear layers, gray for the transformer, and green for activation functions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

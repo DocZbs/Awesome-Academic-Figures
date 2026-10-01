@@ -1,0 +1,104 @@
+{
+  "id": "sciforma-501333",
+  "record_sha256": "b28ec89d33e7da5d8d145513da503cbcdfe056dde758a8479246a5f683cbfa60",
+  "asset_sha256": "39b4e947b7b41548f00985911c7d17c2587ddc67392484e9b58ddd2e6ed21034",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501333",
+    "title": {
+      "zh": "TrainMover: An Interruption-Resilient Runtime for ML Training · 方法图",
+      "en": "TrainMover: An Interruption-Resilient Runtime for ML Training"
+    },
+    "paper": {
+      "id": "arxiv-2412-12636",
+      "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
+      "authors": [
+        "ChonLam Lao",
+        "Jiaqi Gao",
+        "Jiamin Cao",
+        "Zhipeng Zhang",
+        "Pengcheng Zhang",
+        "Jiangfei Duan",
+        "Zhilong Zheng",
+        "Yu Guan",
+        "Yichi Xu",
+        "Yong Li",
+        "Zhengping Qian",
+        "Aditya Akella",
+        "Minlan Yu",
+        "Ennan Zhai",
+        "Dennis Cai",
+        "Jingren Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12636",
+      "arxiv_url": "https://arxiv.org/abs/2412.12636",
+      "arxiv_id": "2412.12636",
+      "arxiv_first_submitted_at": "2024-12-17T07:59:31Z",
+      "arxiv_updated_at": "2026-05-15T08:04:19Z",
+      "arxiv_subjects": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501333/image/image.jpg?Expires=1790835191&Signature=QbOQS42eeA1HaSzbeNQzJAwGbQfh4tBRf4vtqqoa0E7O4-Cem-8UOCfQXaIJgXGhItcGst-v00xcY7VkoBgfjRMfTtI5VUFKYl0F66FOspKKX7BTB0dH62frvjTNUu7GSy5otOMNoqKbHPwVnFV3Av0MYav3AoCNwyt8gYoOnN7UDopt~oAj85q7TlC5P-6~oorWHIaYumq4w5X62v8ws-GgOw5gSRLZW4UFJo6HR7HThXCpv8Hd8dahLJH1qJdkmhTiDhJ~MlTJqttPHZ~m6SyLM3GMEYuoojyvEI7s9DnA3l0~vY1IvNnLr0Xk11LFECaPEZx3ymPR~50Eol4Cfw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501333,
+      "description_sha256": "730cf70fd738dd5f4104c9057023ed26199138c425d53e0fb9f6dee0b78ade1f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the 'Sandbox lazy initialization workflow' for a distributed computing system, depicting how computation and communication modules interact across iterations, with dynamic participation of nodes (helpers, leavers, joiners) and the role of remote storage and a sandbox environment. The global layout is structured horizontally into three main phases: Iteration 0, Iteration n-1, and Iteration n, each enclosed in a dashed rectangular box to denote distinct stages of execution. Vertically, the diagram shows multiple parallel processing streams labeled Helper 0, Leaver 0, Leaver 1, Joiner 0, and Joiner 1, representing different worker roles or processes. A legend at the top indicates that light blue rectangles represent Computation steps, beige rectangles represent Communication steps, and teal rectangles represent Tensors.\n\nIn Iteration 0, each process (Helper 0, Leaver 0, Leaver 1) executes a sequence of Computation → Communication → Computation steps, with solid arrows indicating data flow. The Communication step in each stream outputs a tensor, which is saved via a green dashed arrow labeled 'Save' to a gray box labeled 'Remote Storage'. This storage contains a stack of teal Tensor blocks, symbolizing persisted intermediate results.\n\nBetween Iteration 0 and Iteration n-1, the diagram uses an ellipsis (...) to indicate repeated iterations where the same pattern continues. In Iteration n, the system introduces new participants: Joiner 0 and Joiner 1. Their computation streams are shown below the previous ones. These joiners do not have prior state; instead, they load previously saved tensors from Remote Storage into a red-bordered box labeled 'Sandbox', indicated by a green dashed arrow labeled 'Load'. Inside the Sandbox, the loaded tensors (teal blocks) are inserted between Computation and Communication steps, enabling the joiners to resume computation from the saved state.\n\nThe Communication steps in Iteration n are connected vertically by thick black arrows, suggesting synchronization or aggregation across processes. The overall workflow demonstrates a lazy initialization mechanism: new joiners do not start from scratch but load checkpointed tensors from remote storage into a Sandbox environment, allowing them to catch up with ongoing computation without disrupting existing processes. The visual distinction between computation (blue), communication (beige), and tensor (teal) elements, along with directional arrows and labeled actions ('Save', 'Load'), clearly conveys the data flow and state management strategy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

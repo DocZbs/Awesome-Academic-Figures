@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502372",
+  "record_sha256": "2dc681d696186ad13f114f4968d79c48949d3f3f4ac7e58282365efc602bb079",
+  "asset_sha256": "0d81f896090ab19f6187186879265c44b22e032ec99e9955875d0b344f67b349",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502372",
+    "title": {
+      "zh": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion · 方法图",
+      "en": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion"
+    },
+    "paper": {
+      "id": "arxiv-2412-14462",
+      "title": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
+      "authors": [
+        "Jixuan He",
+        "Wanhua Li",
+        "Ye Liu",
+        "Junsik Kim",
+        "Donglai Wei",
+        "Hanspeter Pfister"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14462",
+      "arxiv_url": "https://arxiv.org/abs/2412.14462",
+      "arxiv_id": "2412.14462",
+      "arxiv_first_submitted_at": "2024-12-19T02:23:13Z",
+      "arxiv_updated_at": "2025-04-20T20:58:33Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502372/image/image.jpg?Expires=1790835217&Signature=VUeGpzRsLF2s6XYjXwhlmvk466sPbdV5wLvE9c75KLMjdL2cvjOWLMWKiNLi~3RrS4hrp2OwXSwNfoy9XAyYNreW47skoq8JFMJBnohhTNzxWBAc3An1jVBo3G-RWcsmKZPnyy5gAeLxMd1NC~PjOkrSdebnY6jiUgHj8~JRP2pg1~WbxO30XCDICe~u-SBPlVmzC3cK2y4P1BeQ~T~UA6HQZvh5yxd9xyNhd~z0gDJ2em1ACNi293ffbJa2JfxZcAaoVb~hmE0tpo~uur3lUtJ4cgaqiru1xz14RY1iMSaHeyqIzJK7taL5jWAaHFwxru-KlQNKR~zAfXywGPOu5Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502372,
+      "description_sha256": "604ccbbc5cbe2e01e4d263a0fd0efcc3254601ac7f22cdad36df45ace1dfe5c8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Mask-aware Dual Diffusion Model (MADD), which jointly denoises an RGB image feature z and an object mask m over a sequence of time steps from t=T down to t=0, conditioned on foreground object features f, background object features b, and a text prompt p. The global layout is divided into two main parts: a top timeline showing the diffusion process and a central green-shaded box containing the core model components.\n\nIn the top section, a sequence of circular nodes labeled (z_t, m_t) for t=0 to T represents the state at each time step. Orange arrows indicate the forward diffusion process (t → t+1), while green arrows represent the reverse denoising process (t → t−1), as noted in the caption. The process starts from a noisy state (z_T, m_T) and iteratively refines it toward the clean output (z_0, m_0).\n\nThe central green box contains the core model structure. At its center is a shared U-Net architecture, depicted as a beige block with multiple layers and skip connections. This U-Net receives concatenated inputs from two expert modules: one processing the previous mask m_{t−1} and the other processing the previous image feature z_{t−1}. These expert modules are shown as trapezoidal blocks labeled 'expert' and feed into the U-Net via dashed lines, indicating they may be specialized subnetworks or attention mechanisms.\n\nOn the right side, the conditioning inputs are processed. The text prompt p is passed through a 'Resize' module (labeled R) before being fed into the U-Net. The background image b is encoded by a VAE encoder (ε), producing a latent representation that is concatenated with the current image feature z_t. The foreground image f is processed by a DINO model, which outputs a feature vector that is passed through an MLP before being concatenated with the U-Net’s input. Both the VAE-encoded background and the DINO-MLP-processed foreground are combined with the current z_t and m_t via concatenation (indicated by 'c' symbols) to form the input to the U-Net.\n\nAt the bottom of the figure, the final outputs are shown: the predicted mask m̂ = m_0, represented as a black-and-white silhouette, and the predicted image feature ŷ = z_0, both conditioned on c (context), m_1, and z_1. The figure includes a legend indicating that 'c' denotes concatenation, and the green arrows in the top timeline correspond to the reverse denoising process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

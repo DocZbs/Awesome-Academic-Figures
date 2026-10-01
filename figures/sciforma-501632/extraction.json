@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501632",
+  "record_sha256": "1ddeef0b479cad885ab2db2ffe4f4a79068b701ee46eb1f8b15f997780c93c23",
+  "asset_sha256": "0581a81bc3ebba46935668ead159a53084ed4f3349143813960579595e9259e9",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501632",
+    "title": {
+      "zh": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection · 方法图",
+      "en": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-13174",
+      "title": "ORFormer: Occlusion-Robust Transformer for Accurate Facial Landmark Detection",
+      "authors": [
+        "Jui-Che Chiang",
+        "Hou-Ning Hu",
+        "Bo-Syuan Hou",
+        "Chia-Yu Tseng",
+        "Yu-Lun Liu",
+        "Min-Hung Chen",
+        "Yen-Yu Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13174",
+      "arxiv_url": "https://arxiv.org/abs/2412.13174",
+      "arxiv_id": "2412.13174",
+      "arxiv_first_submitted_at": "2024-12-17T18:53:43Z",
+      "arxiv_updated_at": "2025-01-14T14:48:32Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501632/image/image.jpg?Expires=1790835197&Signature=F-UZOGOlGuV~w9i98Stwxxw9DTfKCgD--HLDuf4~OUlrzRl4HnTXmpdo1FD23H5V6l9GAQtSAongqG~PSkRWOlOR39ZgKS8joh0bqz4zg6kb8Nywdn4lovXbeKfgZkuVu7Ja3FiKWjE7A-fsjDpUqMjOenZeqZ-smcXmWy0aYd13eHBipyKffBV1r82TtM0KbBHB48YK32isDM~Y667UC7jS5esldUBdCjQYFzIVWPkfKXpmg2UulRVks7Z7pTjUN~-nA-2ozHfjq6luTYmgTE~MrYhC09ZXjwyzq2k6GLR7C-g42u2BoSZQPqQHPLM86UMzBM4AS5wW5WwhCNMKdA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501632,
+      "description_sha256": "1196f4ca954a6b4b60cfa32850f2cfcb816c7405b90e0d77532222680e7c859a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the integration of ORFormer into an existing Facial Landmark Detection (FLD) method to enhance robustness against occlusions. The global layout is horizontal, depicting a data processing pipeline from left to right: an input face image with occlusion (a hand covering part of the face) enters the system on the left, passes through the FLD method module in the center, and outputs a detected facial landmark map (blue dots overlaid on the face) on the right. Below the main pipeline, a secondary branch shows how ORFormer processes the same occluded input image to generate occlusion-aware heatmaps, which are then fed into the FLD method as auxiliary information.\n\nThe central component labeled 'FLD Method' is enclosed in a gray box and consists of a sequence of modules. It begins with a trapezoidal 'Feature extractor' (light gray), followed by a composite block composed of a blue rectangle (representing 'Feature maps') adjacent to a red rectangle ('ORFormer’s heatmaps'), indicating the fusion of standard features with occlusion-recovery cues. This fused representation is then processed by four identical 'Backbone' modules, each depicted as a diamond-shaped structure with internal horizontal lines, symbolizing deeper feature processing stages. The entire FLD method outputs the final landmark predictions.\n\nBelow the main pipeline, the ORFormer module is shown as a rounded rectangular box with an orange border and a snowflake icon, signifying its role in occlusion reasoning. It receives the occluded face image as input and produces a heatmap output—shown as a black square with glowing yellow regions highlighting facial areas not occluded (e.g., eyes, nose, mouth). An arrow connects this heatmap to the red rectangle within the FLD method, indicating that ORFormer’s heatmaps are concatenated or fused with the feature maps at the early stage of the FLD network.\n\nA legend in the bottom-right corner clarifies the visual elements: the diamond shape represents the 'Backbone', the light gray trapezoid is the 'Feature extractor', the blue rectangle denotes 'Feature maps', and the red rectangle signifies 'ORFormer’s heatmaps'. The figure visually emphasizes that ORFormer’s heatmaps provide spatial guidance for recovering occluded facial features, thereby improving the FLD method’s performance under partial occlusion."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501878",
+  "record_sha256": "d6a43ab19eaa0d16838710952874139b5d5844eab502ce176e349dff8bf97570",
+  "asset_sha256": "2b67f4e60025b63cfbfa707378305bcba26a8bc540b18ca79c5cf941070b662c",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501878",
+    "title": {
+      "zh": "Unifying Attribution-Based Explanations Using Functional Decomposition · 方法图",
+      "en": "Unifying Attribution-Based Explanations Using Functional Decomposition"
+    },
+    "paper": {
+      "id": "arxiv-2412-13623",
+      "title": "Unifying Attribution-Based Explanations Using Functional Decomposition",
+      "authors": [
+        "Arne Gevaert",
+        "Yvan Saeys"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13623",
+      "arxiv_url": "https://arxiv.org/abs/2412.13623",
+      "arxiv_id": "2412.13623",
+      "arxiv_first_submitted_at": "2024-12-18T09:04:07Z",
+      "arxiv_updated_at": "2024-12-18T09:04:07Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501878/image/image.jpg?Expires=1790835205&Signature=XH-1hIJKO9TlIl4GmyvmynMnSqx9dQV84KGW2tsNNKkN1dbRNLAtPU1qQoKDTCITjWWW9Uk3PG1w4LuWpLXumNwpla6i~K85-09e0uqMz5NF5udgVJfi2Jj2A~ad67bzvU4TX~H7s7~MnVzJtv2BzB6Ty7yHKMXM2Qd3giwZE0J1R0N1nUo~sYBfesW7rZo1JAOlFhIAu5Ed3PVjNgro2Y18EQhqkprnFvfead2R~mWfDiV77-9wnYAzDujCnqLj8nPbCbbM4dSvqWrIKR~u9RzHgUuJKnoUWOTyGAkmMTEGU-urbtXKuxwGJoblGi2sVJhuUDF2pU7RgO9dmk-v~g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501878,
+      "description_sha256": "69d0830056106ed15c3826fe73623a99aee25dbe35a61c2d3f070c04da0ea8a6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a hierarchical flowchart summarizing the derivation of various solution concepts in cooperative game theory, culminating in the Shapley value. The global layout is a top-down tree structure with five main rectangular nodes connected by directed arrows, each labeled with an axiom or property that defines the transition between levels. All nodes are black-bordered rounded rectangles with black text, and the diagram is vertically aligned with branching occurring at the third level.\n\nAt the top, the 'Linear' node contains the formula φ_i(v) = Σ_{S⊆N} α_S^i v(S), representing a general linear value function. A downward arrow labeled 'Null' connects it to the next node, 'Marginal Contribution', which displays φ_i(v) = Σ_{S⊆N\\i} α_S^i Δ_i v(S), indicating a refinement where contributions are based on marginal changes when player i joins coalition S.\n\nFrom 'Marginal Contribution', an arrow labeled 'Dummy Monotonicity' leads to the 'Probabilistic' node. This node states: ∀i ∈ N : {α_S^i | S ⊆ N \\ i} forms a probability distribution, meaning the weights α_S^i for each player i must sum to one over all subsets S not containing i.\n\nFrom 'Probabilistic', two branches diverge. The left branch, labeled 'Anonymity', leads to 'Cardinal-Probabilistic', defined by φ_i(v) = Σ_{S⊆N\\i} α_{|S|}^i Δ_i v(S). Here, the weight depends only on the size of the coalition S, reflecting anonymity. The right branch, labeled 'Efficiency', leads to 'Random-Order', defined by φ_i^w(v) = Σ_{π∈Π(N)} w(π) Δ_i v(π^i), where the value is computed by averaging marginal contributions over all permutations π of players, weighted by w(π).\n\nBoth 'Cardinal-Probabilistic' and 'Random-Order' converge via downward arrows to the final node at the bottom: 'Shapley'. This node contains the well-known Shapley value formula: φ_i(v) = (1/n) Σ_{S⊆N\\i} (n-1 choose |S|)^{-1} Δ_i v(S), which is derived under both anonymity and efficiency constraints. The diagram visually represents how the Shapley value emerges as the unique solution satisfying these axioms within the probabilistic framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

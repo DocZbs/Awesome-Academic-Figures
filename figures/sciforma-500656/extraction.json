@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500656",
+  "record_sha256": "ca36a73f3103a68b7c83a7b4c1fcebbc1a3ff1ebdbe994570eceb4a7bebf5ff3",
+  "asset_sha256": "0f688ede45249fa496d57b500f98df6b63c8b4a019a1328b863a01629ede41d9",
+  "original_file": "original.jpg",
+  "pixel_width": 960,
+  "pixel_height": 1088,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500656",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500656/image/image.jpg?Expires=1790835174&Signature=L2IkH7ocTO-Nzb4q5YWOeORvjzMo0lhcv~ipkOVv81P9h2UGU7mlq82-cEVU1nhQ4ob63MPo~IOBiEzMAUKtqyZYviLXSNmsYJ9D3G~yUQ7r3PT~4pNLcngprspkIlJQjJYgFW6InSPpjRM~lFu2SBN71Ra0WVqD3TB2D6LdWxz2EI8vwapGsy6oFfhilHAAs1dnQjsxhK8zx3Dj1oeahc40EE3kLMxgX4krXStSpKtRkwh9sFE-JZyJWU2Xq3Tl0U8oMnixN7Iy98ZPWAxMp9W2-ef7JUmlC-fdoFclD3i-Fx5Zm~79BXCG9zQ4bNVBv4RYgMVOma0-H4B6MP4YAg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500656,
+      "description_sha256": "6a26c13415c591bcb461f8ae1973b72e34c01e543fa208bb4a7c408cb4963220",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Transformer model, as introduced in Vaswani et al. (2017), consisting of two primary components: an Encoder and a Decoder, each composed of N identical layers (denoted by 'Nx'). The overall layout is divided into two vertical columns, with the Encoder on the left and the Decoder on the right, connected by cross-attention mechanisms.\n\nIn the Encoder section, inputs are first converted into input embeddings (light orange rectangle), which are then combined with positional encoding (pink rectangle) via element-wise addition (indicated by a '+' circle). This combined signal feeds into the first layer of the encoder stack. Each encoder layer contains two sublayers: a Multi-Head Attention module (light gray rectangle) followed by a Feed Forward network (light blue rectangle). Both sublayers are preceded by an Add and Norm operation (light yellow rectangle), which performs residual connection and layer normalization. The output of the Feed Forward layer is fed back into the Add and Norm block before proceeding to the next encoder layer. The entire encoder stack processes the sequence through N such layers.\n\nOn the Decoder side, the process begins with output embeddings (light orange rectangle), derived from outputs shifted right (as indicated below the box), which are also combined with positional encoding (pink rectangle) via addition. The first sublayer in each decoder layer is a Masked Multi-Head Attention module (light gray rectangle), designed to prevent attending to future positions during training. This is followed by another Add and Norm block. The second sublayer is a Multi-Head Attention module that attends to the encoder’s output, enabling the decoder to access the entire encoded sequence context. This is followed by another Add and Norm block. The third sublayer is a Feed Forward network (light blue rectangle), followed by a final Add and Norm block. The entire decoder stack consists of N identical layers.\n\nConnections between modules are represented by solid black arrows indicating the flow of information. A key cross-connection exists from the encoder’s output to the decoder’s second Multi-Head Attention layer, allowing the decoder to attend to the encoder’s representations. After the final decoder layer, the output passes through a Linear layer (light blue rectangle) and then a Softmax function (light orange rectangle), producing output probabilities.\n\nVisual attributes include distinct colors for different module types: light orange for embedding and softmax layers, pink for positional encoding, light gray for attention mechanisms, light blue for feed-forward networks, and light yellow for Add and Norm blocks. All modules are rectangular with rounded corners. The Encoder and Decoder stacks are enclosed in dashed red rectangles labeled 'Encoder' and 'Decoder' respectively in red text. The label 'Nx' appears vertically beside each stack to denote the number of repeated layers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

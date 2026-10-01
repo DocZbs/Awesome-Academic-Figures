@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501375",
+  "record_sha256": "1686978844491d60e560728cb27f4c440bf55fed133e29d6990036206d8861bd",
+  "asset_sha256": "85104834e817849ef950bb00de7e4b5b04b66e9068f1bf7cfead99127278cb31",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501375",
+    "title": {
+      "zh": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks · 方法图",
+      "en": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12700",
+      "title": "ParMod: A Parallel and Modular Framework for Learning Non-Markovian Tasks",
+      "authors": [
+        "Ruixuan Miao",
+        "Xu Lu",
+        "Cong Tian",
+        "Bin Yu",
+        "Zhenhua Duan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12700",
+      "arxiv_url": "https://arxiv.org/abs/2412.12700",
+      "arxiv_id": "2412.12700",
+      "arxiv_first_submitted_at": "2024-12-17T09:16:53Z",
+      "arxiv_updated_at": "2024-12-17T09:16:53Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501375/image/image.jpg?Expires=1790835192&Signature=fs1L2fZk2zwteTHzCIQ9eIBNLxe0HJqfOq2sqLaDRZPYpJmMK6ZuE1uU-Zovlf6n2u05Q2lQ-PE4rutKThyJVRb~Cs4Dgr2UsjPvkUMGciLdWn-z6mEQGU4cRg0-11RcRFxDIiNG4EQapTXJar-XjkVuf43dOABVQFXKQW~BQDlBen6T53zkio56b-AyFr2SSkBFulxnCdZAPWWnI50AgxtcDuewyOesOGlXJxO1k5Smuq9fgDTnK6VEkSepFM1fqm8fw5nlqbEUxy98vVtl1KU904zwICxXkSzhDg2L0Ri3c0xQuVJQftAxcWE~JYmVL7zsErBIvDmFHFKib2quCw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501375,
+      "description_sha256": "ef61b09284daa992487807b02dd54e0ea39294046023a25d1ff17bcb58f33079",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the ParMod framework, which integrates task modularization via formal logic with reinforcement learning through phased agent-environment interaction. The global layout is divided into two main sections: on the left, a task decomposition module based on a Deterministic Finite Automaton (DFA) derived from Linear Temporal Logic (LTL_f), and on the right, a multi-phase reinforcement learning process involving agents interacting with an environment modeled as a Markov Decision Process (MDP). The DFA is enclosed in a dashed black box and consists of five states labeled q1 to q5, connected by directed edges forming a hierarchical structure. State q1 is highlighted with a red dotted border, q2 and q3 with green dotted borders, and q4 with a blue dotted border; q5 is uncolored with a double circle indicating a terminal state. An orange arrow labeled 'LTL_f' points from outside the DFA to q1, indicating the logic-to-automaton translation. A dashed gray arrow labeled 'task modularization' extends from the DFA to the right-hand side, connecting it to the learning phases.\n\nOn the right, three sequential phases—phase0, phase1, and phase2—are shown as vertically stacked blocks, each enclosed in a dashed box with distinct colors: red for phase0, green for phase1, and blue for phase2. Each phase contains a neural network represented as a multilayer perceptron with input, hidden, and output layers, enclosed in a solid blue rectangle. Below each network is an agent icon (a stylized human head with gears), and below that, a bidirectional orange arrow labeled 'interaction' connects the agent to the environment. Between phases, orange arrows labeled 'network update' point from one phase’s network to the next, indicating iterative model refinement. Additionally, dashed gray arrows from the DFA states q1, q2/q3, and q4 point to the respective phases, suggesting that each phase corresponds to a specific modularized subtask.\n\nBeneath the phases, a large white rounded rectangle labeled 'environment (MDP⊗)' represents the extended environment. It contains several components: 'initial state buffers' shown as three colored folder icons (red, green, blue) corresponding to the phases; symbols for 'states' (S) and 'actions' (A); a reward shaping mechanism depicted as a dashed box with states q1, q2/q3, q4, and q5, where transitions are annotated with +r or -r rewards; a purple sine-wave-like curve labeled 'reward function'; and a small diagram of a transition distribution using circles, diamonds, squares, and triangles. An orange forked line connects the 'task modularization' label to the environment block, emphasizing the integration of modularized tasks into the learning setup. The overall workflow begins with LTL_f specification leading to DFA construction, which is then decomposed into subtasks mapped to sequential learning phases. In each phase, the agent interacts with the environment, updates its network, and receives shaped rewards guided by the modularized task structure, enabling efficient and structured reinforcement learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

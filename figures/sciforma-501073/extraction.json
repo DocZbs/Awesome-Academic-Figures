@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501073",
+  "record_sha256": "34055095710bac28163494dbb8b7743f81e3b67c1b4a9d38dab7908978259ec5",
+  "asset_sha256": "fc6ea434f4cd687f3ca1c55699c1e69104fa464c8e590cfe6d7d7dae79d188db",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501073",
+    "title": {
+      "zh": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions · 方法图",
+      "en": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12227",
+      "title": "EDformer: Embedded Decomposition Transformer for Interpretable Multivariate Time Series Predictions",
+      "authors": [
+        "Sanjay Chakraborty",
+        "Ibrahim Delibasoglu",
+        "Fredrik Heintz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12227",
+      "arxiv_url": "https://arxiv.org/abs/2412.12227",
+      "arxiv_id": "2412.12227",
+      "arxiv_first_submitted_at": "2024-12-16T11:13:57Z",
+      "arxiv_updated_at": "2024-12-16T11:13:57Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501073/image/image.jpg?Expires=1790835183&Signature=FWhKOjKiuXp0LmXuKI1U~chVTVv96vx7tRPvQ9D7KAP49x0kzTxMep05UQY6SJcIFSKwLx4cZlqA8mJuL2aImGduGuRQsStHj3Ywr7KDMkbRJ5VIoRateXBoxjqVTPuKJiKvljRik~s595k-HnEzP~2fIxNjpJbFEPjboO1acvo1bPEvM1cY0qw~dVvaIba9mZkiBXZNu7NGOqQayMETn3sCUPvyCPaFDfdnwAQU6KJKZWRkM-49eZQr~HiuRmRK22308BVJf0e3UgtdbQXQcCEB5fliNAsaUCcA6vFwZVoeA17fd~DW7vCCchPLKiG2kXMz6fXMmEpDrK4Mw-f~gQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501073,
+      "description_sha256": "68cf4e6e0a1e3c21c0d0e28e2bf4fcc45dcbfaef7bbf08ca7a25c276654b1ae3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of EDformer, a time series forecasting model that decomposes input data into trend and seasonal components before processing them through an encoder for prediction. The global layout is structured as a left-to-right workflow, beginning with the 'Time Series Input' on the top-left, which is visually represented as a black jagged line overlaid with a smoother blue curve indicating the underlying trend. This input undergoes decomposition via a labeled arrow pointing to two separate outputs: the 'Seasonal Part', shown as a yellow oscillating waveform, and the 'Trend-cyclical part', depicted as a blue wavy line. The seasonal component is then processed through a multivariate domain transformation: it flows rightward into an oval-shaped module labeled 'Embedding', which converts it into a multivariate representation. From there, a downward arrow labeled 'Reverse' leads to a stacked plot of three time series labeled 'Frame-1', 'Frame-2', and 'Frame-3', each represented by distinct colored lines (cyan, teal, yellow) plotted against axes labeled 'Value' (vertical) and 'Time' (horizontal), with dashed horizontal lines separating the frames.\n\nThese frames are then fed into the main encoder block, which occupies the lower central portion of the diagram and is enclosed within a large rounded rectangle labeled 'Encoder'. Inside this encoder, the frames first pass through a 'Multivariate Self-Attention on Frames' module, visualized as a sequence of colored blocks (green, blue, purple, pink, light blue) connected by arrows, indicating sequential processing with attention mechanisms. Following this, the output is passed through a 'Layer Norm' block, represented by stacked teal and yellow cubes. Next comes a 'FFN on series' module, depicted as a neural network diagram with interconnected nodes in purple, orange, and pink, leading to a green output node. Another 'Layer Norm' block follows, again shown as stacked cubes. Finally, the output from the encoder is combined with the 'Trend part' (the blue wavy line from the initial decomposition) via a 'Projection' operation symbolized by a circle with a plus sign inside. This combined signal is then directed to the 'Forecasting' box on the far left, indicated by a thick black arrow pointing leftward, completing the predictive pipeline.\n\nVisual modules include rectangular boxes for inputs and outputs, ovals for embedding, stacked cubes for layer normalization, neural network diagrams for FFNs, and multi-colored block sequences for attention mechanisms. Colors are used consistently: yellow for seasonal components, blue for trend components, and varied colors (cyan, teal, yellow) for the multivariate frames. Text labels are placed adjacent to or inside each module for clarity. Connections are primarily unidirectional arrows indicating data flow, with explicit labels such as 'Decompose', 'Reverse', 'Projection', and 'Forecasting' to denote operations. The diagram also includes a clear hierarchical structure: decomposition precedes encoding, and the encoded features are fused with the trend component before forecasting."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

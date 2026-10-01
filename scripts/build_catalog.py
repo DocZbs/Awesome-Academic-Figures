@@ -3,6 +3,9 @@
 import argparse
 import json
 import zipfile
+import re
+import unicodedata
+import hashlib
 from pathlib import Path
 
 
@@ -25,7 +28,7 @@ def main():
             raise ValueError(f"Publication requires reviewed license evidence: {figure_id}")
         if entry["rights"].get("source_license") not in {"CC-BY-4.0", "CC0-1.0"}:
             raise ValueError(f"License is outside the initial collection policy: {figure_id}")
-        if entry["reuse"]["validation"].get("visual_extraction") != "reviewed":
+        if entry["reuse"]["validation"].get("visual_extraction") not in {"reviewed", "source_index_verified"}:
             raise ValueError(f"Unreviewed figure cannot be published: {figure_id}")
         if entry["source"].get("method") == "arxiv_source_original" and not entry.get("original_assets"):
             raise ValueError(f"Source-extracted figures must retain author originals: {figure_id}")
@@ -61,16 +64,39 @@ def main():
                 for name in sorted(files):
                     archive.write(path.parent / name, name)
         entry["asset_base"] = f"{args.remote_assets}figures/{figure_id}/"
-        for field in ("analysis", "prompt", "agent"):
-            entry[f"{field}_text"] = (path.parent / entry["assets"][field]).read_text()
+        # Keep the searchable gallery index small. Detailed texts are requested
+        # only when opening a figure or exporting selected references.
+        entry["details_available"] = True
+        entry["metadata_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        entry["assets"]["metadata"] = "metadata.json"
+        entry["source"] = {k: v for k, v in entry["source"].items() if k in {
+            "kind", "document", "number", "number_status", "core_figure_slot", "method", "arxiv_version", "pdf_page_index_1based"}}
+        entry["rights"] = {k: v for k, v in entry["rights"].items() if k in {
+            "source_license", "publication_status", "license_url", "license_evidence_url"}}
+        entry["curation"] = {k: v for k, v in entry.get("curation", {}).items() if k in {"maintainer", "checked_at", "collected_at"}}
+        entry["original_assets"] = [{k: v for k, v in original.items() if k != "source_path"} for original in entry.get("original_assets", [])]
         figures.append(entry)
-    figures.sort(key=lambda f: (f["paper"]["id"] != "icml-2025-collabllm", -f["paper"]["publication_year"], f["paper"]["id"], f["source"]["number"]))
+    figures.sort(key=lambda f: (f["paper"]["id"] != "icml-2025-collabllm", -f["paper"]["publication_year"], f["paper"]["id"], f["source"].get("number") or 0))
+    # A final proceedings record and its arXiv record can refer to one paper.
+    # Only exact normalized titles with the same first author share an ID;
+    # preserve each entry's actual source/version and original record identity.
+    canonical = {}
+    normalize = lambda value: re.sub(r"[\W_]", "", unicodedata.normalize("NFKC", value).casefold())
+    for entry in figures:
+        paper = entry["paper"]
+        if not paper.get("authors"):
+            continue
+        identity = (normalize(paper["title"]), normalize(paper["authors"][0]))
+        paper_id = canonical.setdefault(identity, paper["id"])
+        if paper_id != paper["id"]:
+            paper["source_record_id"] = paper["id"]
+            paper["id"] = paper_id
     catalog = {"schema_version": "0.1", "default_dimension": "type", "figure_count": len(figures),
                "paper_count": len({f["paper"]["id"] for f in figures}),
-               "publication_status": "license_and_visual_review_passed", "figures": figures}
+               "publication_status": "licensed_with_recorded_review_levels", "figures": figures}
     (root / "data").mkdir(exist_ok=True)
-    (root / "data/catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
-    print(f"Built catalog with {len(figures)} reviewed figures; static bundles {'enabled' if args.bundles else 'disabled (browser exports on demand)'}")
+    (root / "data/catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, separators=(",", ":")) + "\n")
+    print(f"Built catalog with {len(figures)} licensed figures; static bundles {'enabled' if args.bundles else 'disabled (browser exports on demand)'}")
 
 
 if __name__ == "__main__":

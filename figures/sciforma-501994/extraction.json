@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501994",
+  "record_sha256": "aa16904389b978f9a9f57314a84d636206c81a4a2c2b896a2263654c30ae42dc",
+  "asset_sha256": "ddf800322b3142fbe1f6ca7d00308c8e1d86d3aaf9b26f195fbca34562b02ac3",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501994",
+    "title": {
+      "zh": "Learning Complex Word Embeddings in Classical and Quantum Spaces · 方法图",
+      "en": "Learning Complex Word Embeddings in Classical and Quantum Spaces"
+    },
+    "paper": {
+      "id": "arxiv-2412-13745",
+      "title": "Learning Complex Word Embeddings in Classical and Quantum Spaces",
+      "authors": [
+        "Carys Harvey",
+        "Stephen Clark",
+        "Douglas Brown",
+        "Konstantinos Meichanetzidis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13745",
+      "arxiv_url": "https://arxiv.org/abs/2412.13745",
+      "arxiv_id": "2412.13745",
+      "arxiv_first_submitted_at": "2024-12-18T11:26:51Z",
+      "arxiv_updated_at": "2024-12-18T11:26:51Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501994/image/image.jpg?Expires=1790835209&Signature=bw9F4qu2Wxkc7mOo94bspnDUt0B5icRKxnzIUfQbP-73vGMvWP4UTjSf7tLagRsATSTHyACD17hqSvrmPCXt-7SbfjIivaYK11mayIVOnEis3ECiRJoi3~6BlA5NEZeYx1SvU-W7DvpqGLNPbv6aE-80-JXfyUUs9kzLOMUX86KX6lx5TReImHlw-rHFyWMfUKbQ2GwNC~qUuHNe3KFSBCVlSRzv2f2V8mPsZFP9E-~jscZgq7ndpMxyVtVw2u~bLM0cIBnRn-5Bm5cNa861ezBkzhZ46oIIhlfHSPDq29sVjCNz4EIAioAn6P2t3UsolNMjWm~sK2HCT0R5-xYv5w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501994,
+      "description_sha256": "3fe578588b18e4ecc7bae23110b31bdf17270b78688e6a166626e94c90a4532e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an arbitrary encoding circuit designed to compute the overlap between two quantum states, structured in two main horizontal layers. The top layer presents a high-level schematic of the computation: it begins with an initial state vector |w_i> of dimension [2^N_q, 1], which is processed by a unitary operator Û(θ_f) of size [2^N_q, 2^N_q]. This is followed by another unitary operator Û†(θ̃_c), also of size [2^N_q, 2^N_q], and finally outputs a bra vector <w̃_c| of dimension [2^N_q, 1]. The entire process represents the inner product <w̃_c|w_i>, which corresponds to the overlap between the two quantum states.\n\nThe bottom layer provides a detailed circuit diagram of the unitary operations involved. It starts with an initial state |0>⊗N_q, representing N_q qubits all initialized to the ground state. This state is fed into a parameterized quantum circuit (PQC) denoted as PQC(N_q, N_l), which consists of N_l repeated blocks of quantum gates. Each block contains multiple single-qubit and two-qubit unitary operations labeled U₁(θ₁), U₂(θ₂), ..., U₈(θ₈), with parameters θ₁ through θ₈. These operations are arranged across N_q qubit lines, forming a layered structure. The circuit is enclosed in dashed boxes to indicate the repetition of the block structure N_l times.\n\nFollowing the PQC, the circuit continues with its adjoint, denoted as PQC†(N_q, N_l), which applies the same sequence of gates in reverse order and with conjugated parameters, such as U₁†(θ̃₁), U₂†(θ̃₂), etc., to form the Hermitian conjugate operation. The final output state is <0|⊗N_q, indicating the measurement or evaluation of the state after the full circuit execution.\n\nConnections are shown as solid horizontal lines representing qubit wires, with vertical boxes indicating quantum gates. Arrows in the top layer indicate the flow of the state vector through the unitary transformations. In the bottom layer, the flow is implicit from left to right, with dashed boxes grouping repeated gate sequences. The figure uses black-and-white line art with labeled components, and dimensions are specified below each major component to indicate the size of the state vectors and operators. The overall layout is modular and hierarchical, clearly separating the abstract mathematical representation from the detailed circuit implementation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502413",
+  "record_sha256": "2530cb3d3e868b70a6057d07fe107ddfd022a571ed39ac5aebb107259b3eb36f",
+  "asset_sha256": "d3c45d1b5bdf275351efda2c841c6abb5955bf1dece373d69494ae427d9795e5",
+  "original_file": "original.jpg",
+  "pixel_width": 1984,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502413",
+    "title": {
+      "zh": "Drive-1-to-3: Enriching Diffusion Priors for Novel View Synthesis of Real Vehicles · 方法图",
+      "en": "Drive-1-to-3: Enriching Diffusion Priors for Novel View Synthesis of Real Vehicles"
+    },
+    "paper": {
+      "id": "arxiv-2412-14494",
+      "title": "Drive-1-to-3: Enriching Diffusion Priors for Novel View Synthesis of Real Vehicles",
+      "authors": [
+        "Chuang Lin",
+        "Bingbing Zhuang",
+        "Shanlin Sun",
+        "Ziyu Jiang",
+        "Jianfei Cai",
+        "Manmohan Chandraker"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14494",
+      "arxiv_url": "https://arxiv.org/abs/2412.14494",
+      "arxiv_id": "2412.14494",
+      "arxiv_first_submitted_at": "2024-12-19T03:39:13Z",
+      "arxiv_updated_at": "2024-12-19T03:39:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502413/image/image.jpg?Expires=1790835221&Signature=NxuJllH-YRxHNCeugE0lk4ZAcSBNA6ilUKEOb2ezAQXU-3OaMUrpUHS6aFqLBpw1Nu44gCaR~Rv6LNhxADqtQXPoXiiBKDyyS8EyYowf9FVB7jiCn-a2JVnqUyiM9ZI-kAz9NGIYUtck5mkyVwp~tDSSXePuThrLrdIsWwotDUj061nkGgF7uQA~vmRUA883mZehL5794A27RtRdnMHxoqEr5p1Sw6UAu1ZhPBuEcpdqp1yr~3STr9mXHlt1cfgEY3JxpJNw5pW4HyOO6Yg2D98-0n9pvXJUzS2KiP1gEv3yzLNQlGvkML6YTqFmY5CX84QkkFK-1FBSRRyEHsydjw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502413,
+      "description_sha256": "06c0740b3a81d08121cb18582ba5ce5ec0736b593289ad0520bf62038ca03c11",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the end-to-end pipeline of Drive-1-to-3, a method for synthesizing 360° novel views of vehicles from a single on-board camera image. The global layout is left-to-right, depicting a sequential workflow: input scene → pose transformation → symmetry-based view generation → diffusion modeling → output synthesis. The process begins with an 'Original Scene' containing multiple vehicles, where one vehicle (highlighted in red) is selected for processing. A green arrow points from this scene to a central dashed box labeled 'Original Pose', which contains a top-down schematic showing the vehicle's initial orientation relative to the camera. This is followed by a 'Virtual Rotation' step, transforming the original pose into an 'Orbital Pose'—a standardized viewpoint aligned with a virtual orbit around the vehicle, maintaining a constant focal length. The resulting 'Source View' is a cropped, object-centric image of the vehicle, shown in a red-bordered box. From this source view, a 'Symmetry Pair' is generated via a 'Flip' operation, producing a mirrored view with inverted azimuth angle (α, -θ, z), which is also shown in a red-bordered box. These two views (source and symmetry pair) are then fed into a 'Pose-conditioned Diffusion Model', represented as a green trapezoidal block with pink internal layers, indicating a multi-stage neural network. The model receives 'Target Views' as input, each defined by a ray embedding (indicated by purple triangles and grid patterns) corresponding to different viewing angles (R,T). Below the diffusion model, 'Occlusion-aware Training' is depicted using four black-and-white silhouettes, suggesting latent space training that accounts for occlusions. The output of the diffusion model is a set of synthesized images, labeled 'GT Target Views', displayed in a vertical stack of four rendered vehicle views from different angles. These are compared to real-world reference images (shown in a separate column) to validate the synthesis. Finally, the rightmost section, separated by a dashed blue line, presents the final result: '360° Novel Views Synthesis', showing four distinct, photorealistic renderings of the vehicle from various perspectives, demonstrating the model’s ability to generate a full 360-degree view sequence. The entire pipeline emphasizes symmetry, consistent pose representation, and occlusion handling to enable robust view synthesis from a single input."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

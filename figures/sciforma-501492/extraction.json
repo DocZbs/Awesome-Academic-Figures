@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501492",
+  "record_sha256": "acd36fcabb3243c783cce0ce2129b859c8d2977f4b325e5de3a4a7ef0bc581d3",
+  "asset_sha256": "ed294ba18f4bb2d01bd0a8b1383841ea90b0ac2ae18cd7429679cac88f8a19e5",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501492",
+    "title": {
+      "zh": "Physically Interpretable World Models via Weakly Supervised Representation Learning · 方法图",
+      "en": "Physically Interpretable World Models via Weakly Supervised Representation Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12870",
+      "title": "Physically Interpretable World Models via Weakly Supervised Representation Learning",
+      "authors": [
+        "Zhenjiang Mao",
+        "Mrinall Eashaan Umasudhan",
+        "Ivan Ruchkin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12870",
+      "arxiv_url": "https://arxiv.org/abs/2412.12870",
+      "arxiv_id": "2412.12870",
+      "arxiv_first_submitted_at": "2024-12-17T12:51:24Z",
+      "arxiv_updated_at": "2026-04-04T22:46:07Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501492/image/image.jpg?Expires=1790835192&Signature=qS-F0A0sx2zkpnGvXrRCVfXjq6iAqDv63Gcp7mML5iUpt7euaSSMjYdm-vfb~JwrBvLW3EtcZijTKVnIHjLKqTtb7f5fcNSLmeVXeOknNqaTVLUH7Drc15FrzI5ryASVpbXvWd0DNRJ~J3KWfmbrqesRhp9v8uLLKo69AJwIxzKvPyqNqAIM5B7SvXG9TOrTv1IexYB1PDYfrvpfs17chFcF6peBfx8DM3hnGELktLHFcsjYd6ZcuyJVCEVSPqNAwHLLe8jzCNn7SS78kv4pcSK~tqTnqEeQF2nrF3OYBPlGCNrT1h0VDeyhladgu-h4crf1bE0MPwKpRe9aSc~gsA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501492,
+      "description_sha256": "7782a8490dd525c27ee359936d4477c118a159e7aa018b81de091ac666f707fb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a conceptual diagram illustrating the process of learning physically meaningful latent representations from high-dimensional visual observations. The global layout is structured horizontally from left to right, depicting a data flow from an underlying physical state through observations to latent representations. At the top, three circular nodes labeled 'State Space' (containing variable x), 'Observation Space' (containing variable y), and 'Latent Space of Standard World Model' (containing variable z) are arranged sequentially. Below these, another circular node labeled 'Interpretable Latent Space' contains variable z*. A cloud-shaped graphic labeled 'Weak supervision' is positioned beneath the observation space node, containing a map-like visualization with a blue circle and a red pin labeled 'Pine Island Dr', symbolizing vague or sparse supervisory signals linking observations to physical states.\n\nVisual modules include circular nodes for variables x, y, z, and z*, each clearly labeled with their respective mathematical symbols. The cloud graphic represents weak supervision and includes a stylized map element to convey spatial or contextual guidance. Text labels are placed adjacent to each node to denote their semantic roles: State Space, Observation Space, Latent Space of Standard World Model, and Interpretable Latent Space. The figure uses distinct line styles to represent different types of mappings: dotted lines indicate 'Unknown Mapping', solid arrows represent 'Intrinsic Autoencoding (one stage)', and dash-dotted arrows denote 'Extrinsic Autoencoding (two stages)'. These are explained in a legend at the bottom of the figure.\n\nConnections and arrows show the relationships between components. A dotted line connects x to y, indicating an unknown mapping from the true physical state to observations. From y, a solid arrow points directly to z, representing one-stage intrinsic autoencoding where observations are mapped to a standard latent space. Additionally, a dash-dotted arrow from y to z* signifies two-stage extrinsic autoencoding, where observations are mapped to an interpretable latent space via external supervision. A dashed vertical arrow connects z to z*, illustrating that the interpretable latent space is derived from or aligned with the standard latent space, possibly through a refinement or projection step. The weak supervision cloud is connected by a dotted line to both x and y, emphasizing its role in providing indirect, sparse guidance for learning meaningful representations. The diagram thus contrasts two paradigms: direct encoding to a generic latent space versus guided encoding to an interpretable one, with weak supervision enabling the latter."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

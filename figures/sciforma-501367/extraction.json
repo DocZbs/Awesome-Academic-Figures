@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-501367",
+  "record_sha256": "19dcbe4cb5e63fd35258e91317c15989a01b3922b017b502a68a04753e7e4cbf",
+  "asset_sha256": "46ffa10057636e6ba0d90173782e1c33c36e985bd2308b8284b347e36d07d1a6",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501367",
+    "title": {
+      "zh": "Uncertainty-Aware Hybrid Inference with On-Device Small and Remote Large Language Models · 方法图",
+      "en": "Uncertainty-Aware Hybrid Inference with On-Device Small and Remote Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-12687",
+      "title": "Uncertainty-Aware Hybrid Inference with On-Device Small and Remote Large Language Models",
+      "authors": [
+        "Seungeun Oh",
+        "Jinhyuk Kim",
+        "Jihong Park",
+        "Seung-Woo Ko",
+        "Tony Q. S. Quek",
+        "Seong-Lyun Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12687",
+      "arxiv_url": "https://arxiv.org/abs/2412.12687",
+      "arxiv_id": "2412.12687",
+      "arxiv_first_submitted_at": "2024-12-17T09:08:18Z",
+      "arxiv_updated_at": "2025-03-18T10:50:58Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.DC",
+        "cs.IT",
+        "cs.NI",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501367/image/image.jpg?Expires=1790835192&Signature=g5BmtosfregIJziOJiWf-D1IJVwAwjhkGTjYlEBjXIwpmY6lFc0vIsT2SPh2bJY2ZT0hHnlDC6UGBsmVDOIcoGZp~ODP7ThrMmLt7IjOREQdQys8rZZrwoAoC~VSpNZk48Am3GjXVGCK4-AfSoxe4GMxazoI~Aas~MzvnHkfKJ5ZMgBUhdJV-lDnHJq0hDhQoU6czcV~6KnsLO2eMFPG9tIJvbDHvZpLCVAlL0z8F8eCzmf3qQFDpi8R35Of350T85lxlzPrQbFRqhWPozQkLV067317WMoB5hduDUaUk5WScB8CaSWILihHAXPqI8PCD1K1sAS~ZCyTC2qT5dyutw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501367,
+      "description_sha256": "09c83239cd34367dceb2e31b869886062bf0c82a6227b7298b27529563f08ea0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.DC",
+        "cs.IT",
+        "cs.NI",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the token-by-token generation process in a hierarchical language model framework called U-HLM, which uses uncertainty-based decision making to determine whether to skip or transmit tokens to a larger language model (LLM) for verification and resampling. The diagram is divided into two main scenarios: (a) Skip and (b) Transmit, each showing the internal workflow of a Small Language Model (SLM) and, in the Transmit case, the involvement of a Large Language Model (LLM).\n\nIn both scenarios, the input token sequence 'The quick brown fox' is fed into the SLM. The SLM performs inference to generate a draft token (e.g., 'jumps') and simultaneously applies temperature perturbation to sample alternative tokens. For each perturbed sample, a binary comparison is made with the draft token: 0 if they match, 1 if they differ. These values are averaged to compute the uncertainty metric u(t). In scenario (a) Skip, the uncertainty is computed as (0 + 0 + 0)/3 = 0, which is less than or equal to the threshold u_th = 0.5. As a result, the token 'jumps' is directly outputted without further processing, and no transmission to the LLM occurs.\n\nIn scenario (b) Transmit, the input sequence has been extended to 'The quick brown fox jumps', and the next token is being generated. The SLM’s draft token is 'on', while the temperature perturbation samples 'over', 'on', and 'in'. The comparisons yield (1 + 0 + 1)/3 = 0.66..., which exceeds u_th. This triggers the Transmit path, where the token is sent to a blue-shaded module labeled 'Verifying & Resampling'. Within this module, the SLM again infers 'on', while the LLM infers 'over' with higher confidence (indicated by a taller bar in the probability distribution). The final output token is 'over', selected after verification and resampling by the LLM.\n\nVisually, the SLM components are enclosed in orange boxes with rounded corners, while the LLM and verification modules are in blue. Text labels are placed above or within boxes, with arrows indicating data flow. The uncertainty computation box is positioned at the top of each SLM section, receiving inputs from both the draft token and perturbation results. A vertical line separates the Skip and Transmit cases, emphasizing the conditional branching based on uncertainty. The final output tokens are shown above the respective sections, with 'jumps' in (a) and 'over' in (b), connected by arrows to indicate the generated sequence."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

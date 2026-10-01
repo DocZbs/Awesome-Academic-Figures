@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502601",
+  "record_sha256": "93579d802e4975926ae107b2cd6aa5e4a889f9bca59b72b4ebc4dffb0bf7bc7e",
+  "asset_sha256": "2eb381ae66742e568f01e3e46aa21808fbc7959d3c07cb6fec349f0d0f217a25",
+  "original_file": "original.jpg",
+  "pixel_width": 512,
+  "pixel_height": 2048,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502601",
+    "title": {
+      "zh": "Answer Set Networks: Casting Answer Set Programming into Deep Learning · 方法图",
+      "en": "Answer Set Networks: Casting Answer Set Programming into Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14814",
+      "title": "Answer Set Networks: Casting Answer Set Programming into Deep Learning",
+      "authors": [
+        "Arseny Skryagin",
+        "Daniel Ochs",
+        "Phillip Deibert",
+        "Simon Kohaut",
+        "Devendra Singh Dhami",
+        "Kristian Kersting"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_id": "2412.14814",
+      "arxiv_first_submitted_at": "2024-12-19T13:09:06Z",
+      "arxiv_updated_at": "2024-12-19T13:09:06Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502601/image/image.jpg?Expires=1790835223&Signature=R7mJtrtvVCJ1PeLhDlyDeQVrd1eec63lu0Atf4FOA9uBHfoHKK6DayT6JCZ8NnJznWcyMAP2Y~7IC2CFsZvZJmzs5YHxiQ2u5YLjiOP~Juk-yhPmYSXA81nKDC1Hnuq4SejGgC7sVFxuhlFRKIxTl29w8ouPxqgpRo~dQwtXOmxrnbGAjv3CoM5t~m9uSzoXCdoFC24Zg04MoPjy7B2ksooQVPBstXuQFdJhdiIeyvRHpHuVh78dOj~Ce-gQfYHoofNmMDx8dor6RW1SBfckcdarBOIe-TkWrWxwrj~JGg~FB1XPn7l~S6rM1snw-64JET185~aEaU-rvs4GIgy8wg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502601,
+      "description_sha256": "b12cf6aecd26ec3e3eadf66f134de13c4b409c8d4b2c6916d59572e4d44f2876",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a reasoning graph for the 4-Queens problem, structured as a directed acyclic graph (DAG) with multiple layers representing decision points and constraints. The global layout is vertically oriented, with nodes arranged in columns from left to right, indicating a progression through stages of reasoning or state exploration. On the far left, a root node labeled 'T' branches into four primary nodes labeled n(0), n(1), n(2), n(3), each representing a position or variable in the problem domain. These n(i) nodes connect via solid black lines to intermediate nodes labeled q(i,j), where i ranges from 0 to 3 and j from 0 to 3, forming a grid-like structure. Each q(i,j) node is an oval-shaped teal-colored box, symbolizing a specific assignment or state configuration. From each q(i,j) node, multiple solid black arrows extend to a column of white circular nodes containing the symbol '∧', representing logical conjunctions or constraint checks. These '∧' nodes are arranged in vertical stacks, with some stacks containing multiple such nodes, and each stack is associated with a rectangular box labeled 'i=#count', indicating a counting mechanism or constraint satisfaction check. The connections from q(i,j) to '∧' nodes are dense, reflecting the combinatorial nature of the problem. Dashed lines connect the n(i) nodes to certain q(i,j) nodes, possibly denoting optional or conditional paths. All '∧' nodes converge via solid black arrows to a single yellow circular node labeled '1' on the far right, which acts as the final output or solution node. This convergence suggests that all constraints must be satisfied for a valid solution. The caption notes that the graph's size, particularly the number of edges, reflects the full solution space of 4^4 = 256 possible configurations, emphasizing the complexity captured by this representation. The visual design uses color coding (teal for q-nodes, white for ∧-nodes, yellow for the terminal node) and distinct line styles (solid for direct connections, dashed for conditional or auxiliary links) to differentiate components and relationships within the reasoning process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

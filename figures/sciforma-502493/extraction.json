@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502493",
+  "record_sha256": "8cdee20e4a1ae135c8cba38c2a470052ea96729c51e7a3dcbd432ba515c06bc2",
+  "asset_sha256": "802d5060988628f2de389d5c4a92c63a003be7fc3f76964cd0e29b63993903d6",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502493",
+    "title": {
+      "zh": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information · 方法图",
+      "en": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information"
+    },
+    "paper": {
+      "id": "arxiv-2412-14603",
+      "title": "Successive optimization of optics and post-processing with differentiable coherent PSF operator and field information",
+      "authors": [
+        "Zheng Ren",
+        "Jingwen Zhou",
+        "Wenguan Zhang",
+        "Jiapu Yan",
+        "Bingkun Chen",
+        "Huajun Feng",
+        "Shiqi Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_url": "https://arxiv.org/abs/2412.14603",
+      "arxiv_id": "2412.14603",
+      "arxiv_first_submitted_at": "2024-12-19T07:49:40Z",
+      "arxiv_updated_at": "2024-12-23T11:40:38Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502493/image/image.jpg?Expires=1790835221&Signature=mYVQG94p5yHqzJVa~VV0mnljXtlayIknCx9SC-ZtjzxPZvbbOLlrdn5DWBjHTsgJW7iYlI68X45zcdLNvfphgJDapkJEF2bGUbBwplcwNLFrBA~UU8F7-SFZA-LlXCnCOwssvpnHPn~rlQUxJLMairMFIv62-DC3su9Tm9UMDrgUb5ZKwQ5p-5qHZeMM5lszN1sQrJuoMAEJ3B5DNYuXArx7HfKVl3t9irQHF-xO6aFWtyUA3ueWt0m3B1wfnvNCcMF2zd5r0oPD~ek3sEnadB0awBkfeFtiVqJMgNpdJjpEVu2aexp6GyBDDwBghaF5JyViKEN0Tkv8Ucu7qhnSYw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502493,
+      "description_sha256": "00bc687dd37d8e24da748afb64083a9fde896c6064c03dac3ee25c4b37c3b9a1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "physics.optics"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative diagram of two computational workflows for gradient computation in a forward-backward propagation context, labeled as (a) and (b), with a legend on the right explaining visual elements. The global layout consists of two vertically stacked, side-by-side flow diagrams, each depicting a sequence of data processing stages connected by arrows indicating data flow direction. Both diagrams share the same top-level components: 'N Rays' and 'M Grids' at the top, followed by an intermediate stage labeled 'M x N complex fields', and finally 'M PSF grids' at the bottom. The primary difference lies in the memory management and backward propagation strategy.\n\nIn diagram (a), all three modules — 'N Rays', 'M Grids', 'M x N complex fields', and 'M PSF grids' — are represented as rounded rectangles filled with light yellow, indicating they are 'Saved for backward' as per the legend. Solid black arrows point downward from 'N Rays' and 'M Grids' to 'M x N complex fields', and from there to 'M PSF grids', representing the forward pass. Red solid arrows point upward from 'M PSF grids' to 'M x N complex fields', and then to 'N Rays' and 'M Grids', indicating automatic backward propagation. This represents the standard automatic differentiation approach where intermediate results are stored for gradient computation.\n\nDiagram (b) illustrates a modified approach. Here, the 'M x N complex fields' module is colored light blue, signifying it is 'Released for backward' — meaning its memory is freed after the forward pass. The 'N Rays' and 'M PSF grids' modules remain light yellow, indicating they are saved. The forward pass is again shown with solid black arrows. However, the backward pass is altered: dashed red arrows point from 'M PSF grids' up to 'M x N complex fields', and then continue upward to 'N Rays' and 'M Grids'. These dashed arrows represent 'Manual backward' propagation, as defined in the legend, implying that gradients are computed analytically and propagated manually without relying on stored intermediate values. This design avoids saving the large broadcast tensor ('M x N complex fields') during the forward pass, thus reducing memory usage.\n\nThe legend on the right clarifies the color coding and arrow types: light yellow boxes denote data saved for backward computation; light blue boxes denote data released for backward; solid black arrows indicate forward propagation; solid red arrows indicate automatic backward propagation; and dashed red arrows indicate manual backward propagation. The figure caption explains that (a) shows the normal automatic differentiation procedure, while (b) demonstrates the proposed method that manually back-propagates analytical gradients without saving the large broadcast tensors, thereby optimizing memory efficiency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

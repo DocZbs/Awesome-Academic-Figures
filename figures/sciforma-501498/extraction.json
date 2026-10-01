@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501498",
+  "record_sha256": "e695bf454a4a93740ee8d080866e9d7a7b95c4b0eae0f24b268366d3e210c4b7",
+  "asset_sha256": "e82934132f4d7b30a5bfd00730cafa948182bf4785ea919da1fa453382e50efa",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501498",
+    "title": {
+      "zh": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset · 方法图",
+      "en": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset"
+    },
+    "paper": {
+      "id": "arxiv-2412-12877",
+      "title": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+      "authors": [
+        "Samuel Teodoro",
+        "Agus Gunawan",
+        "Soo Ye Kim",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_id": "2412.12877",
+      "arxiv_first_submitted_at": "2024-12-17T13:00:04Z",
+      "arxiv_updated_at": "2025-03-25T02:49:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501498/image/image.jpg?Expires=1790835192&Signature=VtB8ly-Uiq7ffXC1Lqkc8gWcOwip3b-MbFrfrtOpNrSvZOV9aWUy41jFyH6PQz63o788AOUYuVNhRpKIv8aSdEqHSNCND~t7FG5VBiIgv~UKBS8BFCoI2EotZOpVU9ny-99F9u0LbeWWLTrrEID8P7K~W3-IaPoKsH3Z4pT2nnXygIf~tJCwymJGqj3Fgcqfid0ux-xuen3luE6OCREg2FhNrtLp0dk5Hetvpd8q9-xLEmWyIJM7Mnoz5SvCMreIbPFuF~EgnIMdn58PM-9Do1tIGk5KhtxUGArsxRutwiWejxEJWi4dMsC9yrekYlWvfWB70FzOJgec7xctllKSoA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501498,
+      "description_sha256": "1dc8a86b48fcee3938855909f74f09118948c305019169ac7998a409d2f4a59a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a four-stage pipeline for generating target captions for video frames in the MIVE dataset, structured into four color-coded sections: yellow (Image Captioning), red (Text Summarization), blue (Manual Fix and Annotation), and purple (Target Caption Generation). The global layout is a 2x2 grid, with each quadrant representing a distinct phase of the workflow, connected sequentially from top-left to bottom-right via arrows indicating data flow.\n\nIn the yellow section (1. Image Captioning), the process begins with 'Input Frames'—a sequence of video frames shown as a stack of images, including a cat playing with a pink toy on a carpeted floor. These frames are fed into an LLaVA v1.6 Mistral 7b model, represented as a rounded rectangle with black text. The model receives a prompt: 'Can you describe the scene in this image if the scene must contain cat, curtain, toy, floor, wall, and table or desk?' Below the prompt, a note specifies '*choose the caption that includes most of the instances'. The output is a detailed descriptive caption in a rounded rectangle, describing the cat, toy, curtain, wooden table/desk, white wall, and cozy indoor environment.\n\nThis caption flows into the red section (2. Text Summarization), where it is processed by a Llama 3 model, also depicted as a rounded rectangle. The prompt given to Llama 3 instructs it to act as a summarization expert, condensing the input text into 50 words while preserving key objects and cases, with output required in JSON format. The resulting summarized caption appears in another rounded rectangle, retaining core elements like the cat, pink toy, white carpeted floor, curtain, wooden table, greenery, and cozy indoor setting.\n\nFrom here, the flow moves to the blue section (3. Manual Fix and Annotation), where human intervention is introduced. A rounded rectangle labeled 'Human+Llama 3' lists three manual steps: (1) manually including instances missed by Llama 3, (2) adding starting and ending tags to instances, and (3) fixing grammar with Llama 3’s help. The output is a tagged version of the caption, with each object enclosed in angle brackets containing an ID (e.g., '<21247>cat</21247>', '<4618360>white carpeted floor</4618360>').\n\nFinally, in the purple section (4. Target Caption Generation), this tagged caption is fed into another Llama 3 model. The prompt asks for five variations per object, involving retexturing or swapping with similar shapes, ensuring dramatic changes in appearance, texture, color, or semantic class. The output is a randomly selected target caption from these five variations, presented in a rounded rectangle with the same tagging structure. A note below states '*randomly select instance target caption from the five variations'.\n\nAll connections between stages are indicated by solid black arrows, showing a clear sequential workflow. Each module is visually distinct with consistent rounded rectangles and black borders, and the text within is clearly legible. The figure uses color-coding (yellow, red, blue, purple) to demarcate the four phases, enhancing visual clarity and logical progression."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

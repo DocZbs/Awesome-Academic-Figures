@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501580",
+  "record_sha256": "b92b7545b34a78f7f9f1f9cf19e07a8bc3b845b202cb3396b520a4e82eb6051f",
+  "asset_sha256": "00410059d36e1bcd09016afe265b52d63dca0d2e4606297c209fd96bcaf8e02d",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501580",
+    "title": {
+      "zh": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks · 方法图",
+      "en": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13053",
+      "title": "SMOSE: Sparse Mixture of Shallow Experts for Interpretable Reinforcement Learning in Continuous Control Tasks",
+      "authors": [
+        "Mátyás Vincze",
+        "Laura Ferrarotti",
+        "Leonardo Lucio Custode",
+        "Bruno Lepri",
+        "Giovanni Iacca"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13053",
+      "arxiv_url": "https://arxiv.org/abs/2412.13053",
+      "arxiv_id": "2412.13053",
+      "arxiv_first_submitted_at": "2024-12-17T16:15:04Z",
+      "arxiv_updated_at": "2024-12-17T16:15:04Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501580/image/image.jpg?Expires=1790835197&Signature=lgKX10OIIbANxCDMXWDJOYcyMbygHH-0Q-adFWp5CuhHD8BotBSXaYRLyTIdleAH1zyQ3IuSeJKtzhiqwE0kV96BFMFVpMVWFJ2pl-cF~Tk5nJ76rMX8xRN45tixdpH7UBh0PBTqDDfCw7M3QMLznJNrQ72IhHbk2XTyqgL5AeeYwn~URgXMeyiiytx145506fmOwUWuKwDPKRYveX7iexcwQ1aU0c9pEFVwNWZHd2h-sKu1GQL6Ndp-YS7EKbmKbGGAQE7xdbl1ZkB2gr6lmWtsXS1BytJRy1rSZ-Rbk47FcqzUqPvgRfybhyHh9U-2pRv~T3EzGH~SI9fAS8himg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501580,
+      "description_sha256": "3a2f6de5cc0bad0feafa41464973eb3430b9ec50feb46b04b399d2beaf63c336",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic overview of a reinforcement learning architecture incorporating a sparse Mixture-of-Experts (MoE) policy network. The global layout is divided into two main regions: on the left, a standard reinforcement learning loop comprising an Actor, Critic, and experience Buffer; on the right, a detailed depiction of the Sparse MoE module, which replaces the traditional policy network. These components are enclosed within a dashed blue boundary, indicating the full system. The Actor and Critic are represented as rectangular boxes connected by bidirectional arrows, signifying their interaction during training. The Buffer is depicted as a cylindrical shape, receiving state-action pairs (s,a) from the environment and feeding them back to both the Actor and Critic. A small image of a humanoid robot on a checkered floor is shown below the Buffer, labeled 's,a', representing the environment interaction. The Actor outputs action and expert selection signals ('a,e') to the Sparse MoE module.\n\nWithin the Sparse MoE region, outlined in pink, the core components include a Router (light blue rectangle), multiple Experts (pink rectangles labeled Expert 1, Expert 2, ..., Expert M), and an output action signal. The Router receives observations ('obs') as input and computes routing weights, visualized as a bar chart where only one expert (Expert M) is highlighted as 'activated' while others are marked 'not activated'. This indicates sparsity — only one expert is selected per input. The activated expert generates the action, which is passed back to the environment. Two matrices are shown to the right of the Sparse MoE block, illustrating interpretability: the top matrix, labeled 'interpretable router weights', displays a 4x3 grid with values such as -4.1, -9.7, -2.6, etc., color-coded in shades of red and blue, with dimensions labeled 'M' (number of experts) and 'obs dim' (observation dimension). The bottom matrix, labeled 'interpretable policy weights', shows a 4x2 grid with values like 4.0, 4.2, 3.0, etc., also color-coded, with dimensions labeled 'action dim' and 'obs dim'. These matrices suggest that the weights are structured and interpretable, allowing insight into how observations influence expert selection and action generation.\n\nConnections are indicated by arrows: observations flow into the Router; the Router selects an expert via a downward arrow to the activated Expert M; the Expert M produces the action, which flows out of the Sparse MoE block. The Actor sends 'a,e' to the Sparse MoE, and the Critic receives feedback from the environment. The Buffer stores experiences and feeds them back into the learning loop. The figure emphasizes modularity, sparsity, and interpretability through visual cues like color coding, activation states, and explicit weight matrices."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

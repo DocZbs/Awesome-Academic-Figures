@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501956",
+  "record_sha256": "a32c8d8263ebf3a4a8348b93ae4b8f2ac2aebe912caf197514e45d4f43389430",
+  "asset_sha256": "d8b0146833808397f75777a2d24b0c84ce32116e1ff85cdfb238836ce0f874ee",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501956",
+    "title": {
+      "zh": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks · 方法图",
+      "en": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13724",
+      "title": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks",
+      "authors": [
+        "Muhammad Sohail Ibrahim",
+        "Muhammad Usman",
+        "Jeong-A Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_id": "2412.13724",
+      "arxiv_first_submitted_at": "2024-12-18T11:04:58Z",
+      "arxiv_updated_at": "2025-05-13T11:19:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501956/image/image.jpg?Expires=1790835209&Signature=gE6xWmvCDNr~zM-eLjs-rj6jUlmJHTLVsYTvCzN5tAr2NOnRRxrixkTJYsalWJrjufNN30thRuVyYTev~rEcNHES7PVGy8ogeDU3hKKedEoZfEelv6TUX~gL2Sj5i1Gp0pnUW2iOib62o8nsAa84R~QZDgEkaM6TqxaRCl~kDhwlTIuXTFns-Gn2BKu3x3TOU-VOf443EbFebum9UIICfHrUZGuboUccKS6Q~BPLlCotWUbRHBZsGRvr5lSQHqCLI~a1B5ElZUEnS2WJ50Uo3x2T630GooaNYL4zm-FZ8-AOwCMmFZoXUbu~3o-wwnHbTOFim9idD9kupFkCVppvjQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501956,
+      "description_sha256": "e31ab152508b9aa979cdcd373efccb2cbd17399a4f3cc5972be5a9ccc0641068",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a general Convolutional Neural Network (CNN) architecture, structured into two main stages: Feature Extraction and Classification. The global layout is left-to-right, showing a sequential flow from input to output. The entire diagram is rendered in black and white, using simple geometric shapes and labeled text to denote components and their parameters.\n\nIn the Feature Extraction stage, the process begins with an 'Input Image' represented as a stack of N₁ rectangular layers, each of size R₁×C₁. This is followed by a 'Convolution' operation, depicted as a filter (a small square kernel) sliding over the input image. The convolution layer is parameterized as M₁, K₁×K₁×N₁, indicating M₁ filters of size K₁×K₁ applied across N₁ input channels. The result is a set of 'Feature Maps' denoted as M₁, R₂×C₂, shown as a stack of rectangles with reduced spatial dimensions compared to the input. These feature maps are then passed through a 'Pooling' layer, symbolized by a smaller square kernel operating on the feature maps. The pooling operation is specified as S_P1, P₁×P₁, where P₁×P₁ represents the pooling window size. The output of pooling is another set of 'Feature Maps' labeled M₁, R₃×C₃, with further reduced spatial dimensions. A dashed line connects the pooling output to the next stage, indicating potential additional convolution-pooling blocks not shown explicitly.\n\nThe Classification stage follows, beginning with a 'Fully-Connected Layers' block. This is visualized as a multi-layered neural network with circular nodes representing neurons. The first hidden layer contains multiple circles connected via solid lines to the second hidden layer, which in turn connects to the final output layer. Dashed vertical lines between nodes indicate that the number of neurons is not fully drawn but implied. The final output layer consists of a set of circles labeled 'Outputs Num_classes', representing the predicted class probabilities or scores for each of the Num_classes categories.\n\nConnections are shown as directed arrows: solid lines from the input image to the convolution layer, from convolution to pooling, and from pooling to the fully-connected layers. Within the fully-connected layers, solid lines represent connections between neurons across layers. The entire Feature Extraction section is grouped under a large curved brace labeled 'Feature Extraction', while the Classification section is similarly grouped under a brace labeled 'Classification'. All text labels are in plain black font, with mathematical notation used for dimensions and parameters. The diagram uses no color, relying solely on shape, position, and text to convey information."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500319",
+  "record_sha256": "d7f31fe7c74ff8a19393affc60e4b8d5ebe0da0778665d7d94181bad6f65e6b2",
+  "asset_sha256": "432f06e24b79c70707182f1fd542559d8f0aec411b2bf70040b6e0b3436d89b3",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500319",
+    "title": {
+      "zh": "Unpaired Multi-Domain Histopathology Virtual Staining using Dual Path Prompted Inversion · 方法图",
+      "en": "Unpaired Multi-Domain Histopathology Virtual Staining using Dual Path Prompted Inversion"
+    },
+    "paper": {
+      "id": "arxiv-2412-11106",
+      "title": "Unpaired Multi-Domain Histopathology Virtual Staining using Dual Path Prompted Inversion",
+      "authors": [
+        "Bing Xiong",
+        "Yue Peng",
+        "RanRan Zhang",
+        "Fuqiang Chen",
+        "JiaYe He",
+        "Wenjian Qin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11106",
+      "arxiv_url": "https://arxiv.org/abs/2412.11106",
+      "arxiv_id": "2412.11106",
+      "arxiv_first_submitted_at": "2024-12-15T08:09:56Z",
+      "arxiv_updated_at": "2024-12-15T08:09:56Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500319/image/image.jpg?Expires=1790835171&Signature=IivmGaCh5c2xi2Lc6cNfAsNds-Kb7Zh9PQBkv6q7K0y53F2CqYGcNnWvXM44EdwaQlXoDr4A-NDrXiQTSA7IE1sNOSCPMOG9I0eZ-JdvPbls1QJUnDsfJLl-mDzq7tNQWbE8zH6Rzj-6ECVlxF0Reoq7lsCBnXI-gPQnzCfoLDweLQDBMve44c5qy1yfEkDaH5IaM59LKKXVyaqayvo7lLUV8SfI7l~ZiahX1~nSdeWnhY8nQbn0whOIksem0wfHSqrvfIItxKW-UaN8boLjtRWEJ3vuS6D77~1cZnaogAOqSxqoDVa-ye6FyZOr~nCP2Z9reu91CV6oK8QiOk95vA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500319,
+      "description_sha256": "ca77b19de41a44b868c8184792caec6b4ea1a6d433eafb3bd1801f8e0615a79e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a dual-path prompted DDIM inversion framework for histopathology image processing, consisting of two parallel inversion trajectories—Path 1 (Structural Target) and Path 2 (Style Target)—that jointly optimize stain-specific prompts to preserve structural fidelity while enabling controlled style transfer. The global layout is divided into three main sections: (a) Path 1: StainStructPrompt Inversion Trajectory, (b) Path 2: StainStyle Inversion Trajectory, and (c) Pivotal Inversion StainPrompt Optimization. These are arranged vertically with shared components and feedback loops, emphasizing a coordinated optimization process.\n\nIn Path 1 (green background), an H&E input image x₀ is processed through a Feature Adapted Function G(·) before being fed into a pretrained diffusion model f_θ. The model performs deterministic sampling at each timestep using a StainStructPrompt φ_t (a T×3×H×W tensor), generating intermediate noisy images x₁, x₂, ..., x_T. The reverse DDIM process reconstructs the image as x₀^P = F_θ(x_t + φ_t, C_S), where C_S denotes the class condition for H&E stain. A reconstructed image without prompt is also shown for comparison. The StainStructPrompt is optimized via a loop labeled 'StainPrompt Optimization' to minimize structural deviation.\n\nPath 2 (yellow background) focuses on style inversion. It begins with a Fake Feature Reference y₀, which is processed by a StainStylePrompt φ_t (also T×3×H×W). Deterministic sampling with class condition C^φ (none class condition) generates intermediate samples y₁, y₂, ..., y_T. The process then switches to a second phase using class condition C_T (target stain), producing y_{T−1}, y_{T−2}, ..., y₀^*. This results in a virtual stain image y₀^* with prompt and another without, demonstrating style transfer. The StainStylePrompt is similarly optimized via 'StainPrompt Optimization'.\n\nSection (c) (blue background) details the pivotal inversion mechanism. It shows how the StainStructPrompt φ_t and StainStylePrompt φ_t are combined via a weighted sum (α and 1−α) to form a unified prompt. This combined prompt is used to generate a fake sample z_t under class condition C^r. Two loss functions are defined: L_struct = L_css(F(x_t^*, F(z_t))) measures structural consistency between the original and generated features, while L_style = L_MSE(y_t^*, z_t) ensures style alignment. The tuning of φ_t is guided by these losses, with α controlling the influence of the style trajectory. The diagram includes visual cues such as gear icons for optimization, noise patterns for stochastic inputs, and color-coded class conditions (C^S, C^T, C^φ) to distinguish different conditioning types. Arrows indicate data flow, with dashed lines representing optional or conditional paths, and solid lines denoting primary processes. The entire framework emphasizes maintaining structural integrity during style adaptation through dual-path optimization and controlled prompt blending."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

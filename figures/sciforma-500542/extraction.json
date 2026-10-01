@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-500542",
+  "record_sha256": "ffbf455806a35b95aed2187bfd7d116f385cdd087e6e1bf56507cdfa40062297",
+  "asset_sha256": "5693aa8501d32c624118f1af78eb4a9c2a7bece025a1bc4ad0e3287de9b455c3",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500542",
+    "title": {
+      "zh": "Data-driven Precipitation Nowcasting Using Satellite Imagery · 方法图",
+      "en": "Data-driven Precipitation Nowcasting Using Satellite Imagery"
+    },
+    "paper": {
+      "id": "arxiv-2412-11480",
+      "title": "Data-driven Precipitation Nowcasting Using Satellite Imagery",
+      "authors": [
+        "Young-Jae Park",
+        "Doyi Kim",
+        "Minseok Seo",
+        "Hae-Gon Jeon",
+        "Yeji Choi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11480",
+      "arxiv_url": "https://arxiv.org/abs/2412.11480",
+      "arxiv_id": "2412.11480",
+      "arxiv_first_submitted_at": "2024-12-16T06:48:30Z",
+      "arxiv_updated_at": "2024-12-16T06:48:30Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500542/image/image.jpg?Expires=1790835172&Signature=grKqA63PZllgQb2gduzxz02f4Yn152GkwomlXjmvIdznZyCgIRkZfo7OKJ9QEMk3H0f4vriAeWTvXxm0OIrCDpwotkbDQOSSEVuFOQdg1lG~3DPNg2wUnFQOGs7~hEjAqoiU2s6e0QZQv2LA1gHeTnj77jobwnm5yCjiT7K7RBC5U3M3e0dKk3RwuBBu7zbCykQoZOT4kZdIKAtsPtqxvoKkidQvfnOUHMwP8ap6I3He2crFhv7ihcbgdEmuGlbQbKpglYjXrIPG364ru2Hk9IV-7DrpHtvt351Eo6s5GiD~NTwQ-72PN-udTN8cXWg67HeXmziGE-8xPUT~LQclIg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500542,
+      "description_sha256": "f05260aed48fa22f61f38f6660ccf3f023a5f5c5bf6500b57ebf799abacf2d68",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the NPM (likely a Neural Precipitation Modeling) architecture, divided into two main components: the Satellite Prediction Model and the Satellite-to-Radar Model, separated by a vertical dashed line. The global layout is left-to-right, showing a sequential pipeline where the output of the first model serves as input to the second.\n\nIn the Satellite Prediction Model on the left, the input consists of a stack of satellite images labeled X_{t,T}, including IR 10.5 µm, WV 6.3 µm, WV 7.3 µm, and DERA (a color-coded image), arranged vertically. These inputs feed into a 'Season-aware sampling strategy' module, depicted as a light blue cylinder. The output of this module enters an Encoder, shown as a light gray trapezoid pointing right. The Encoder connects to a central processing block composed of four identical ST-Block units arranged horizontally within a dark blue rectangle. Each ST-Block contains a TCA-LKA module and a series of convolutional layers (DW Conv, Pointwise Conv, 1x1 Conv) with skip connections, as illustrated in a detailed inset below the main block. The ST-Blocks receive positional encodings: 'Day Positional Encoding' (from t_d) and 'Hour Positional Encoding' (from t_h), both shown as light blue rectangles feeding into the top and bottom of the ST-Block array via ⊕ (addition) operations. The output of the ST-Blocks goes to a Decoder, another light gray trapezoid pointing right, which produces a sequence of predicted satellite images Y_{t+1,T'} — again stacked vertically and labeled with the same spectral bands as the input. The loss function for this model is given as L(F_θ(X_{t,T}), Y_{t+1,T'}), indicating a comparison between predicted and ground truth future frames.\n\nThe Satellite-to-Radar Model on the right takes the predicted satellite sequence Y_{t+1,T'} as input. This feeds into a Generator Network G_Φ, represented as a series of seven yellow rectangular blocks of varying heights, symbolizing a deep neural network. The generator outputs a sequence of radar images, shown as a stack of color-coded precipitation maps labeled 'Radar'. This output is fed into a Discriminator Network D_ψ, depicted as a single yellow rectangle below the radar output. The training objective for the generator is specified by a combined loss function: L_{mse}(G_Φ(Y_{t+1,T'}), Z_{t+1}) + λ·E_{Y_{t+1,T'}~generated data}[log(1 - D_ψ(G_Φ(Y_{t+1,T'})))], combining mean squared error with a adversarial term to improve realism. The entire diagram uses solid black arrows to indicate data flow, with dashed lines used for the inset diagram of the ST-Block and for the positional encoding inputs. All major modules are labeled with clear text, and the figure includes mathematical notations for loss functions and network parameters, ensuring full methodological transparency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

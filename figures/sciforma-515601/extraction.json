@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-515601",
+  "record_sha256": "1801e06a30b126a57b71ec77085b8fdf700f30a5dafb60f01879fe1a2f87f7a3",
+  "asset_sha256": "e52dcdd989e88d2c61fbbce13ca627bc0b60e64debe964002a789b843a92efeb",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-515601",
+    "title": {
+      "zh": "Deep Learning Models for Physical Layer Communications · 方法图",
+      "en": "Deep Learning Models for Physical Layer Communications"
+    },
+    "paper": {
+      "id": "arxiv-2502-04895",
+      "title": "Deep Learning Models for Physical Layer Communications",
+      "authors": [
+        "Nunzio A. Letizia"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2502.04895",
+      "arxiv_url": "https://arxiv.org/abs/2502.04895",
+      "arxiv_id": "2502.04895",
+      "arxiv_first_submitted_at": "2025-02-07T13:03:36Z",
+      "arxiv_updated_at": "2025-02-07T13:03:36Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/515601/image/image.jpg?Expires=1790835471&Signature=cF5g7CijSRQQGcOm2ghlR2Bk~h~NvmDkLp34AjcECl2bDicPqdUt7sfv1CE~C8tDGTRPOFFdjTekPqwhOh3XxXGUShkQNWPD6Tglqd5kVD-TqQgAtOO7tdwzXezQBZXE1vg7sNom41~n194speRP4apLM8sMnGOZUp9q0Bn3uKzpOM5UTzEnM35rrr9ER6g72NzhvHSVFFrPVwhhbSEO0k5R05X~KWq9uKugqDPqaFb1BwJYjihbx35EonBjnxZdxihq7RImf1y0x6euw1mBEnqSgr1qWytqNFBD7pCvu7hhXlgnYj3vPzEYYoFKe~B~xQPg~Sfg15ymOmFnGKjJYg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 515601,
+      "description_sha256": "e07cef7be69ec38749a8f79e7456fbb231a593c2cd290d66810b1c89b05cb59e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a hierarchical taxonomy of learning models, structured as a tree diagram with a central root node labeled 'Learning Models' at the top. This root splits into two primary branches: 'Supervised' on the left and 'Unsupervised' on the right. Each of these is represented by an oval-shaped node with a shadow effect; the Supervised node includes the notation '(x, y)' above its label, while the Unsupervised node shows '(x)'.\n\nFrom each of these main branches, two rectangular subcategories emerge: 'Deterministic' and 'Probabilistic'. The Deterministic nodes are shaded light gray, while the Probabilistic nodes are shaded light blue, providing visual distinction. Both deterministic and probabilistic categories further branch downward.\n\nUnder the Supervised → Deterministic path, a dashed arrow leads to the equation 'y = f(x; θ)', indicating a fixed mapping from input x to output y parameterized by θ. Under Supervised → Probabilistic, two solid arrows point to 'Discriminative' and 'Generative' subtypes. Discriminative leads via a dashed arrow to 'p(y|x; θ)', representing the conditional probability of output given input. Generative leads to 'p(x, y|θ)', denoting the joint probability distribution over inputs and outputs.\n\nOn the Unsupervised side, Unsupervised → Deterministic leads via a dashed arrow to 'z = f(x; θ)', indicating a deterministic encoding of input x into a latent representation z. Unsupervised → Probabilistic branches into three subtypes: Discriminative, Generative, and Autoencoders. Discriminative leads to 'p(z|x; θ)', modeling the probability of latent variables given input. Generative leads to two expressions: 'p(x|z; θ)' or 'p(x, z|θ)', representing either the conditional or joint distribution of input given latent variables. Autoencoders lead to both 'p(z|x; θ)' and 'p(x|z; θ)', emphasizing bidirectional modeling between input and latent space.\n\nAll connections are directed arrows, with solid arrows indicating direct categorical relationships and dashed arrows indicating mathematical formulations or functional mappings. The layout is symmetrical, with supervised and unsupervised branches mirroring each other in structure. Text labels are centered within shapes, using standard sans-serif font. The diagram uses black outlines for all shapes and arrows, with consistent spacing and alignment to convey clarity and hierarchy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

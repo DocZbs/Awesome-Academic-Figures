@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502742",
+  "record_sha256": "d040a68f5b1daa0aaaf06f18f320b013b2e4b0d7a26e1e35dce162f3e69743cd",
+  "asset_sha256": "9ee13a9d533a47780636a60262faee068e8f79d1458a2f187774e2989ae38e4e",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502742",
+    "title": {
+      "zh": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues · 方法图",
+      "en": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues"
+    },
+    "paper": {
+      "id": "arxiv-2412-15190",
+      "title": "EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues",
+      "authors": [
+        "Sagar Soni",
+        "Akshay Dudhane",
+        "Hiyam Debary",
+        "Mustansar Fiaz",
+        "Muhammad Akhtar Munir",
+        "Muhammad Sohail Danish",
+        "Paolo Fraccaro",
+        "Campbell D Watson",
+        "Levente J Klein",
+        "Fahad Shahbaz Khan",
+        "Salman Khan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15190",
+      "arxiv_url": "https://arxiv.org/abs/2412.15190",
+      "arxiv_id": "2412.15190",
+      "arxiv_first_submitted_at": "2024-12-19T18:57:13Z",
+      "arxiv_updated_at": "2025-04-07T06:19:02Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502742/image/image.jpg?Expires=1790835227&Signature=otT02OH~jZY6rEJfFcKOSSwKZF03KbgOHshzn~Qx7PjLpBB4c0jk7fpOojmP-hcBvmlJ9pnltqVpkJGu8341eaoQUy4GYJH~muBhylPbM~sfhUglhuzsVb9MaAely45jFFdJ~zQOweQfGTDMjgauNmOT2lR-9Uam6skSnsyp4NTJi7pvR99rjELzpCUw11zhGgQ-HXl7w9lVgfZe4NGiqLy4JQpUZyeitb2IGbFNgSeGmrQytqHS5L7PN9R3FsXr1BYvZXnd3c5CKHDh3GK1KlBgLTYvwlDtjrjZWpGWQSgUDOcmeix1jhH3a4x8RpQpKz6JU5ZFBENRjHv5z-0ouQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502742,
+      "description_sha256": "b77ca168a5d7a1032996f35f43a4ddcb7fde6513122916821ada54879d0425af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the EarthDial architecture, a multi-modal large language model (LLM) designed for remote sensing (RS) applications. The global layout is structured into three main horizontal sections: the top row lists downstream tasks such as RS Visual QA, Land Cover Classification, RS Object Detection, Temporal Change Detection, RS Visual Grounding, RS Image Captioning, Tree Species Classification, and SAR Object Detection. These tasks are connected by upward arrows to a central pink rectangular block labeled 'Multi-modal Large Language Model', indicating that the model supports these diverse applications.\n\nThe middle section details the core processing pipeline. On the left, two parallel pathways handle image inputs at different resolutions. The first pathway processes low-resolution images through 'Resize', followed by 'Encode & Merge' and 'Flatten' to produce 'Low Resolution Features'. The second pathway uses 'Adaptive High Resolution' to split an image into patches, each processed via 'Encode & Merge' and 'Flatten' to yield 'High Resolution Features'. Both feature streams are combined into a unified token sequence.\n\nIn the center, textual inputs are processed by a green 'Tokenizer' block, while visual inputs—comprising RGB, Multi-Temporal, Multispectral, SAR, and RGBI images—are fed into a 'Vision Encoder' block. The 'Adaptive High Resolution' module feeds into this encoder, and a 'Data Fusion' block aggregates multi-channel inputs (e.g., multispectral or temporal sequences) before encoding. The encoded visual features are then passed through an 'MLP Projector' to map them into the LLM’s input space.\n\nOn the right, a detailed view of the vision encoder pipeline shows 'Feature Batch processing' feeding into a grid of visual features, which undergo 'Feature Aggregation' and 'Interpolate & Flatten' before being projected via another 'MLP Projector'. This entire visual token stream is concatenated with textual tokens using a 'Feature Concatenation' operation, symbolized by a ⊕ icon.\n\nA legend in the upper-left corner defines token types: yellow squares represent 'Visual tokens', blue squares denote 'Modality tokens', beige squares indicate 'Textual tokens', and red squares signify 'Task prompts'. These tokens are arranged in a sequence above the LLM, showing how different modalities and tasks are encoded together.\n\nArrows indicate data flow: from raw inputs (images and text) through encoding, fusion, projection, and concatenation, culminating in the multi-modal LLM. The model is trained end-to-end to support multiple downstream tasks, leveraging adaptive resolution handling, multi-channel fusion, and modality-aware tokenization to process diverse remote sensing data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

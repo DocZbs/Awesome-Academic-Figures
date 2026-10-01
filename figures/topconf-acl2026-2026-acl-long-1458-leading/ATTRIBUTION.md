@@ -1,0 +1,19 @@
+# Attribution
+
+SAFO: Stable Adaptive Fairness Optimization for LLM-Based Social Survey Simulation — Chenxi Lin, Zhuoren Jiang, Kaisong Song, Yiquan Wu, ACL 2026, leading figure / teaser (exact numbering unverified).
+
+Paper: https://aclanthology.org/2026.acl-long.1458/
+
+Index image: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/images/acl/final/acl2026-2026.acl-long.1458.jpg
+
+Index version: fbdff7620fc15b8429a4626aaf5b012f8dd08837
+
+License: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+
+Evidence: https://aclanthology.org/faq/copyright/
+
+Changes: External-index image is byte-preserved; WebP is a resized preview conversion on white.
+
+Original SHA-256: 29d989872e069fc67b45ca95ef0fac06c6a8a0ca6c6656edec4e7b5b46ee185f
+
+Prompt is a generic draft. No figure-specific visual analysis or generated adaptation has been tested.

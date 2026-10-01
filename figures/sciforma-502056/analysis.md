@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Unleashing the Power of Continual Learning on Non-Centralized Devices: A Survey — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13840
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a hierarchical federated learning architecture for continual learning across diverse IoT devices, structured into three main layers: Client, Edge, and Server. At the top, the Server layer is represented by a cloud icon labeled 'Server' and 'Global Aggregate', indicating centralized global model aggregation. Below it, the Edge layer contains two identical black server rack icons labeled 'Edge' and 'Group Aggregate', representing local aggregation points for device groups. These Edge servers are enclosed within a dashed rectangular boundary, signifying their role as intermediate aggregation nodes.
+
+The bottom layer, labeled 'Client', is further subdivided into two categories: 'Wearable Devices' on the left and 'Edge Computing Devices' on the right, both enclosed in separate dashed rectangles. Under Wearable Devices, there are two types of client devices: a smartwatch and a smartphone. Each device is associated with two machine learning tasks: 'Human Activity Recognition' (in light green boxes with green database icons) and 'Health Monitor' (in light blue boxes with blue database icons). Similarly, under Edge Computing Devices, there are a laptop and a desktop computer, each linked to 'Modulation Classification' (light blue boxes with teal databases) and 'IOT Traffic Classification' (light yellow boxes with gold databases).
+
+A vertical timeline labeled 'Time' runs through the center of the Client layer, marked with 'Task1' (green) and 'Task2' (blue), indicating sequential task learning over time. This suggests a continual learning paradigm where devices learn new tasks sequentially.
+
+Data flows are depicted via gray arrows: from each client device upward to its respective Group Aggregate server, then from each Group Aggregate to the Global Aggregate Server. These arrows represent the upload of local model updates or aggregated data for model refinement. The visual design uses distinct colors for different tasks—green for Human Activity Recognition, blue for Health Monitor and Modulation Classification, and yellow for IOT Traffic Classification—to differentiate task types. Each task box includes icons of documents and stacked databases, symbolizing data and model parameters. The overall layout emphasizes a hierarchical, distributed learning framework where local models are aggregated at edge servers and then globally at the cloud server, enabling continual learning across heterogeneous IoT devices grouped by device type.

@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502162",
+  "record_sha256": "bf485bfb023723847b4d3b89420e5bc1fd07bc0beb9c788490c194fe724ad454",
+  "asset_sha256": "bdb6dc160f2b31b57ac90a756807e8f78e012bc17cafc8455e0e9314eeb784ec",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502162",
+    "title": {
+      "zh": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models · 方法图",
+      "en": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-14006",
+      "title": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models",
+      "authors": [
+        "Cong Wei",
+        "Yujie Zhong",
+        "Haoxian Tan",
+        "Yingsen Zeng",
+        "Yong Liu",
+        "Zheng Zhao",
+        "Yujiu Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_id": "2412.14006",
+      "arxiv_first_submitted_at": "2024-12-18T16:20:40Z",
+      "arxiv_updated_at": "2024-12-18T16:20:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502162/image/image.jpg?Expires=1790835212&Signature=NULtjrxJLykkvUVQBHx8bxeFWUTl5QF4ngYK3vEampbJzojJA1OcUOvyZ6mJneEC9uwxI81K7M6IBx9HWkPrjN3r8fWX~xN06Q14VWFDzS1gOuOgEUQIdF0GFRp4XbyCKmXEhf4PgtZpPRy0BGbGx~mbculHCTPSKF-9qtqoz6QUziNn2xAy0PBMj3hlTVzTmg9D31q8b-~F2ucey-kuEKOmYAVQk6alngUwd5Rq7DEQrmot8RhTT9-Tu55viuLOWX5EpEIRWtliZqhtTqMWgZwQ6GRzwTprIdPfF2IE17rdldXka6ykPs-Gm5WrfsBqvIoqBVWwujJDi4IoD6z3ZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502162,
+      "description_sha256": "e12c47754b9997d9184e3cae36b9d42f5061ad676890e9a6c660b91dc26fb4ac",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Vision-guided Multi-granularity Text Fusion (VMTF) module, which is designed to integrate visual features with multi-grained textual representations for enhanced multimodal understanding. The diagram is divided into two main sections by a vertical dashed line: the left side shows the VMTF module itself, while the right side details the downstream processing pipeline that utilizes the output of VMTF.\n\nOn the left, the VMTF module receives two inputs: a sequence of detailed text embeddings, denoted as E_d, represented as a series of purple rectangular blocks enclosed in a dashed purple box labeled 'Detailed Text Embed'; and an image feature vector f_img, indicated by a downward arrow. These inputs are processed within a light peach-colored rectangular block labeled 'VMTF'. The output of this module is a new sequence of embeddings called 'Multi-grained Text Embed', also shown as a series of purple rectangular blocks within a dashed purple box, indicating that the module refines or transforms the original text embeddings using visual guidance.\n\nOn the right side, the process begins with a sample question: 'What is the food that makes people feel spicy or hot?', displayed in a dashed purple box. The words 'food', 'spicy', and 'hot' are highlighted in red, orange, and yellow respectively, suggesting emphasis on key entities or concepts. Below the question, a sequence of purple rectangular blocks represents the detailed text embeddings corresponding to this query. An 'average' operation, indicated by a small red square and an arrow, computes a global text embedding from these detailed embeddings. This global embedding is labeled 'Global Text Embed' in red text within a dashed black box, while the detailed embeddings remain labeled in purple.\n\nThe global text embedding (E_g) is then concatenated with the image feature f_img, forming Concat(f_img, E_g), as shown by a horizontal arrow leading to a larger light peach-colored rounded rectangle. Inside this container, two sequential components are stacked vertically: a blue rectangular block labeled 'Cross-Atten' (short for Cross-Attention), followed by a purple rectangular block labeled 'FFN' (Feed-Forward Network). A label 'N_2×' is placed to the left of this container, indicating that this cross-attention and FFN stack is repeated N_2 times. The output of the final FFN block is directed downward, implying further processing outside the scope of this diagram.\n\nConnections are represented by solid black arrows showing the flow of data: from the inputs to VMTF, from VMTF to the multi-grained embeddings, from the detailed text embeddings to the average operation, from the average to the global embedding, and finally from both the global embedding and image feature to the cross-attention module via concatenation. The overall layout emphasizes a two-stage process: first, vision-guided fusion of text at multiple granularities (VMTF), and second, a multi-layered cross-modal interaction between the fused text and image features to produce refined representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

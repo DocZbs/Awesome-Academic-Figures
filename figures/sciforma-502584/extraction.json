@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502584",
+  "record_sha256": "e15175ca4781432df06bc55e6272e579a123f00aa4bf913bf6c822479b5cece6",
+  "asset_sha256": "6f7f2c126d495ea7260f053e9f0593e2cf72a045230a318a819331dd4b329340",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502584",
+    "title": {
+      "zh": "YOLOv11 Optimization for Efficient Resource Utilization · 方法图",
+      "en": "YOLOv11 Optimization for Efficient Resource Utilization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14790",
+      "title": "YOLOv11 Optimization for Efficient Resource Utilization",
+      "authors": [
+        "Areeg Fahad Rasheed",
+        "M. Zarkoosh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_id": "2412.14790",
+      "arxiv_first_submitted_at": "2024-12-19T12:29:31Z",
+      "arxiv_updated_at": "2025-07-05T03:32:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502584/image/image.jpg?Expires=1790835226&Signature=vZN4NFYtfQuXf1Nqa4anaJmCJjyltmkFaJTcPADAZ7hKFtXu~l3A2u2H6ppLg4627RxS-mbAdS5SqnaXS3C41SaoDIeM-nYVrTmyhNd4NeAsHa2jeW22UXvPZUT0l~v6ZamQUyA7HlzYi5KXwS~91UyReNeT8XsqC61TLrMhDbA5QZ9McUZJaNEoqg05jC6uL1lNFpeEPIIdjSLnAmJc4bF996hD5xaKvxwBGs7wD-WcK6f8Aq25-uKTilNuBr1CbX7eTohPhPkjifR1uM8meNy8AN0BRN6ZGXDB1gJVbVjrcQOvzGAKZSrMo0-I1HJ2sRvOgMx68RoJc9p6M4SdJA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502584,
+      "description_sha256": "87de94be210ccfe4a9490ed478a3afab472f9e8e41b0f077919eb935817d5aaf",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the YOLOv11-sm architecture designed for small and medium object detection. The global layout is a hierarchical, multi-scale feature extraction and fusion network structured vertically from top to bottom, with lateral connections and skip pathways forming a complex flow. The input is specified as 640x640x3, entering at the top via block b0, which feeds into a convolutional layer labeled 'P1 Conv' (light purple rounded rectangle). This initiates a backbone network progressing downward through sequential blocks labeled b1 to b10.\n\nThe backbone consists of alternating convolutional layers (labeled 'Conv', light purple rounded rectangles with P2, P3, or P4 identifiers) and C3k2 blocks (yellow rounded rectangles), which likely represent a variant of the C3 module using 3x3 kernels with 2 layers. After several such stages, the network incorporates specialized modules: SPPF (Spatial Pyramid Pooling Fast, teal rounded rectangle) at block b9 and C2PSA (Cross-Stage Partial Attention, pink rounded rectangle) at block b10, indicating advanced feature aggregation and attention mechanisms.\n\nFrom block b10, the feature map flows upward via an upsample operation (red rounded rectangle, labeled 'Upsample') at block b11, which connects to a Concat (green rounded rectangle) module at block b12. This Concat merges features from the upsampled path with a lateral connection from block b6 (C3k2). The concatenated output feeds into another C3k2 block (b13), followed by another Upsample (b14) and Concat (b15), merging features from block b4 (C3k2). This forms a top-down pathway with lateral connections, characteristic of a Feature Pyramid Network (FPN) or Path Aggregation Network (PAN).\n\nParallel to this, the main backbone continues downward through blocks b7 and b8 (Conv and C3k2), leading to the SPPF and C2PSA modules. From block b10, a direct connection also feeds into the upsample block b11, reinforcing the feature propagation.\n\nOn the right side, the fused features from block b15 (Concat) feed into a C3k2 block labeled 'P3' (b16), which splits into two paths: one directly to a Detect module (light blue rounded rectangle), and another through a Conv layer (b17) to a Concat block (b18). This Concat merges with features from block b13 (C3k2), producing an output fed into another C3k2 block labeled 'P4' (b19), which then connects to a second Detect module.\n\nThus, the architecture employs a dual-path detection strategy: one at the P3 scale (higher resolution, finer details) and another at the P4 scale (lower resolution, broader context), enabling effective detection across different object sizes. The Detect modules represent the final prediction heads for bounding boxes and class probabilities. All blocks are labeled with 'b#' identifiers along the left margin, indicating their sequential order in the network. The color coding distinguishes module types: purple for Conv, yellow for C3k2, green for Concat, red for Upsample, teal for SPPF, pink for C2PSA, and light blue for Detect."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

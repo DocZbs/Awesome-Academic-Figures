@@ -1,0 +1,17 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Enhancing Diffusion Models for High-Quality Image Generation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14422
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the end-to-end process of Denoising Diffusion Probabilistic Models (DDPM), divided into two main phases: the Forward Diffusion Process and the Reverse Diffusion Process. The global layout is horizontal and bidirectional, with the forward process progressing from left to right (top half) and the reverse process moving from right to left (bottom half), connected by a central inference loop. At the top, a pink rectangular header labeled 'Forward Diffusion Process' introduces the noise addition phase. Below it, a sequence of six image representations shows a sunflower image progressively degraded by noise across timesteps 0 to T. Each image is labeled with its timestep index beneath it. The initial image at timestep 0 is clear, while subsequent images become increasingly noisy until timestep T, where the image is fully randomized noise. Above this sequence, mathematical expressions define the forward diffusion: q(x_t|x_0) = N(x_t; √ᾱ_t x_{t-1}, (1 - ᾱ_t)I) and x_t = √ᾱ_t x_0 + √(1 - ᾱ_t)ε, indicating that each step adds Gaussian noise to the previous state. The cumulative distribution q(x_{1:T}|x_0) = ∏_{t=1}^T q(x_t|x_{t-1}) ≈ N(0, I) is shown at the far right, signifying that after T steps, the data converges to a standard normal distribution. A dashed arrow connects this to p(x_T) := x_T ~ N(0, I), which serves as the starting point for the reverse process. The bottom half, under a blue header labeled 'Reverse Diffusion Process', depicts the denoising phase. It begins at timestep T with pure noise and proceeds backward toward timestep 0. The reverse transition probability is defined as p_θ(x_{t-1}|x_t) = N(x_{t-1}; μ_θ(x_t, t), Σ_θ(x_t, t)), with the corresponding sample equation ŷ_{t-1} = μ_θ(x_t, t) + √Σ_θ(x_t, t) ε. This process uses a neural network, represented as a box labeled ε_θ(x_t, t), which predicts the noise ε added at each step. The network's output feeds into the reverse transition formula to reconstruct the previous state. A large cyan arrow points from the final noise state back to the reverse process, emphasizing the starting point. The overall reverse process is mathematically expressed as p_θ(x_0) = ∫ p(x_T) ∏_{t=1}^T p_θ(x_{t-1}|x_t) dx_{1:T}, representing the learned generative distribution. Dashed arrows between the forward and reverse processes indicate the correspondence between states at each timestep. Solid arrows denote the direction of data flow, while dotted lines represent the iterative nature of both processes. The figure uses color-coded headers (pink for forward, blue for reverse), rectangular boxes for equations and model components, and image thumbnails to visually represent the degradation and reconstruction of data.

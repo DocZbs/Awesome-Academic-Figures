@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502068",
+  "record_sha256": "893fa1718213cf1700cedfb41091849929d580f0cff29c98ecb8070c0acc0513",
+  "asset_sha256": "01456e3474b9ee3dffa69d2027146d427736ac3d2537a526f4d71dd0e062de1e",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502068",
+    "title": {
+      "zh": "From approximation error to optimality gap -- Explaining the performance impact of opportunity cost approximation in integrated demand management and vehicle routing · 方法图",
+      "en": "From approximation error to optimality gap -- Explaining the performance impact of opportunity cost approximation in integrated demand management and vehicle routing"
+    },
+    "paper": {
+      "id": "arxiv-2412-13851",
+      "title": "From approximation error to optimality gap -- Explaining the performance impact of opportunity cost approximation in integrated demand management and vehicle routing",
+      "authors": [
+        "David Fleckenstein",
+        "Robert Klein",
+        "Vienna Klein",
+        "Claudius Steinhardt"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13851",
+      "arxiv_url": "https://arxiv.org/abs/2412.13851",
+      "arxiv_id": "2412.13851",
+      "arxiv_first_submitted_at": "2024-12-18T13:46:46Z",
+      "arxiv_updated_at": "2024-12-18T13:46:46Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502068/image/image.jpg?Expires=1790835207&Signature=DjiEFdTjpaV-1gE-LHhUDulaWfyBmqJCbFO4JiGkfK0SXpon8Nq0BawB6nTotGyAWVt1B298b1vGeN3K3xYA1fk6ffcmnpWPJ6OW-~3hUJ6dsY-rkcS2CKU1JcZoAFDAkcm36d92dwzdJ8l-wtYOaK7A5WjVwePANUVTiI4GgmpZqpf2lU~biPxMTpXXDINcuBPdtl~PRVj2-qC3uK7xnUpbI8BUTwFt-5zkRD2dRYupMRVDGmU6q5ELJ0ddX8l0orau2KFByYjlaNkTh6q1uiJRoIZAGwPkoISobBhEnbR2-ZkLWaeWl1S8RzIVWBCGM3Jpj3sDrAkC9XsY4EM74w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502068,
+      "description_sha256": "c1548b18247dbb3934b64ad4a303d79e9b21b9017f375dbc5bdf627f647c4ab7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a linear chain of four sequential influencing factors that connect OC (Optimal Cost or Objective Value) approximation error to objective value loss, structured as a horizontal flowchart. The global layout consists of four main rectangular boxes arranged horizontally from left to right, each representing a stage in the causal chain. Each main box is connected by a solid black arrow pointing rightward to the next, indicating the progression of influence. Beneath each main box is a secondary rectangular box containing explanatory text that elaborates on the corresponding stage.\n\nThe first main box, titled 'How bad is the approximation error?', is positioned at the far left. It is a white rectangle with black text and a thin black border. Below it, the secondary box explains that OC approximations can either underestimate or overestimate the true OC, but neither necessarily leads to suboptimal decisions. This establishes the initial condition of approximation error.\n\nThe second main box, 'How wrong is the resulting decision?', follows directly to the right. It shares the same visual style: white background, black text, thin black border. Its subordinate box clarifies that suboptimal decisions may result in less reward than optimal ones, transition the system to a lower-valued state, or both, linking approximation error to decision quality.\n\nThe third main box, 'How likely is this decision?', continues the sequence. It maintains consistent styling and is accompanied by a secondary box stating that the relevance of a wrong decision depends on how frequently the state in which the decision is made occurs under a given policy. This introduces the concept of state visitation frequency as a moderating factor.\n\nThe fourth and final main box, 'What is the performance impact?', concludes the chain on the far right. Its secondary box specifies that only approximation errors causing notably suboptimal decisions and occurring frequently lead to considerable objective value loss, tying together all prior factors into the final outcome.\n\nAll connections between the main boxes are represented by thick, solid black arrows pointing right, emphasizing the unidirectional causal flow from approximation error to performance impact. The entire diagram uses a clean, monochrome design with no colors other than black text and borders on a white background. The figure caption above reads: 'Figure 1: Chain of influencing factors from OC approximation error to objective value loss', summarizing the purpose of the diagram as a conceptual model for understanding how approximation errors propagate through decision-making to affect overall performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

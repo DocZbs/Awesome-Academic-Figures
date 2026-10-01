@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502791",
+  "record_sha256": "ac63895f6786a614ed6742fe65637be1b9992e9aceaf85c1d523884fe3de363f",
+  "asset_sha256": "9af2a9d5a6f360be559876cfe1953ac40b439ea08c8498d28b69de37498a934d",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502791",
+    "title": {
+      "zh": "DisEmbed: Transforming Disease Understanding through Embeddings · 方法图",
+      "en": "DisEmbed: Transforming Disease Understanding through Embeddings"
+    },
+    "paper": {
+      "id": "arxiv-2412-15258",
+      "title": "DisEmbed: Transforming Disease Understanding through Embeddings",
+      "authors": [
+        "Salman Faroz"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15258",
+      "arxiv_url": "https://arxiv.org/abs/2412.15258",
+      "arxiv_id": "2412.15258",
+      "arxiv_first_submitted_at": "2024-12-16T12:04:22Z",
+      "arxiv_updated_at": "2024-12-16T12:04:22Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502791/image/image.jpg?Expires=1790835227&Signature=sbJAieKfl6tt6L3f2IcrMfujH1ATzT2QPU8RwOXPVy1P~xO7D-F3njSj17qQvEoQskY42~0hgse2aBnKRxowgYrDGlivaeIGfoV8sLpPukxtmRQzE8Gc-sod494QhMAqYqXl6JAsmPl5pvPCCENdidAhx6wEA940-8DmQ5cyjrrVaA1K0Ep5qE2LVAiQPwdtnkkQKbYf5XDiA7Zl5ehExjvceDHOoGHJwaQSLt3-gXook8tmbssgLnk9~BQA03fNiOZwME1Dd5OvZLqlivtKa5TcUkn0WFPRBVwlchlTfL3bis8dCOvU2h~1vqvkppZK6A5gCU1eKyLiZtWOQrE6MA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502791,
+      "description_sha256": "8ea8bee0207aaa6443d9f6c1fe1f5b71645299e3878b9e6ccd0d9c5f538b8ff0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a workflow for creating a synthetic dataset using ICD-10 codes and the GPT-4o-mini language model. The global layout is a directed flowchart arranged from left to right and top to bottom, depicting a sequential process starting with input data and ending with structured output pairs. The structure begins at the top-left with a light blue rounded rectangle labeled 'ICD 10 Codes', which feeds into a central processing step via an arrow annotated with '70,000+ Diseases'. This indicates that the ICD-10 codes represent over 70,000 distinct diseases. The next major component is a light green rounded rectangle labeled 'GPT-4o mini', positioned to the right of the ICD-10 box, signifying the use of this specific large language model to process the disease inputs.\n\nFrom the GPT-4o-mini box, an arrow points downward to a light blue rounded rectangle labeled 'Generate Symptoms/Descriptions & QA Pairs', indicating that the model generates symptom descriptions and question-answer pairs for each disease. A feedback loop or iterative connection is shown from this generation box back to the GPT-4o-mini box, suggesting possible refinement or multiple passes through the model. From the generation box, another arrow leads to a light teal rounded rectangle labeled 'Manual Cleaning', representing a human-in-the-loop step where generated content is reviewed and refined. Following manual cleaning, a black arrow points to a small rectangular label containing '2,25,245 rows', specifying the number of processed entries after cleaning. Finally, an arrow from this count leads to a yellow rounded rectangle labeled '(Anchor, Positive)', which represents the final output format — structured pairs likely used for training or evaluation purposes.\n\nOn the far right, a gray rectangular note box contains two bullet points providing technical implementation details: 'Received responses in JSON format using {type: \"json_object\"} and processed them.' and 'Used async connections for time-saving in dataset creation.' These notes clarify that the model outputs were structured as JSON objects and that asynchronous connections were employed to improve efficiency during dataset generation. All boxes are connected by solid black arrows indicating the direction of data flow, and the entire diagram uses consistent rounded rectangles with distinct background colors to differentiate stages: light blue for input and generation, light green for the LLM, light teal for human intervention, and yellow for the final output. Text within boxes is centered and clearly legible, with annotations on arrows providing quantitative context."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

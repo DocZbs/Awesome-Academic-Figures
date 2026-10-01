@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501349",
+  "record_sha256": "d5f6b969ee021807f64502394d9565a23b7bebe5e52a21a22ba7c7bf3597f575",
+  "asset_sha256": "a2fa56949ddc9026f5d4d21b4c33c91880244d921959f1792b3da35c50cfbaab",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501349",
+    "title": {
+      "zh": "CALA: A Class-Aware Logit Adapter for Few-Shot Class-Incremental Learning · 方法图",
+      "en": "CALA: A Class-Aware Logit Adapter for Few-Shot Class-Incremental Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12654",
+      "title": "CALA: A Class-Aware Logit Adapter for Few-Shot Class-Incremental Learning",
+      "authors": [
+        "Chengyan Liu",
+        "Linglan Zhao",
+        "Fan Lyu",
+        "Kaile Du",
+        "Fuyuan Hu",
+        "Tao Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12654",
+      "arxiv_url": "https://arxiv.org/abs/2412.12654",
+      "arxiv_id": "2412.12654",
+      "arxiv_first_submitted_at": "2024-12-17T08:21:46Z",
+      "arxiv_updated_at": "2024-12-17T08:21:46Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501349/image/image.jpg?Expires=1790835192&Signature=bR5M10YId1SVgM51dbQ1CEYRwj4UKDaqNB01fNnx4Sf17Og8-SMyeICP04w3lEa5m9SsYHtoualj6xvmrA~gm5LFoCMn7hM2TtklX0pHWblppEiQmMMAXPDSL~6Dt7wfuXh2mMvt4xX~i~OKSTBxPUd-7fuRniJSlMs6IqDSXLiMJSv5ndhv9eXA4sqLRR78uEI62zOpm23RziTRkv-gyeNFW9wxec1U0Xis-QuAgenskheNmzAe1jmriEWQa7s8VRyKaW-Zy1nu2SqOxh0axJIzIX-5XI1aSdIs8eu4jcBMntdFwLKn7joA5Cm1Z-K8C4ZtEkPPcx7Uj5z3gvtDpA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501349,
+      "description_sha256": "ee06ca4a6110e2f976f696364ee582b16d891749ff8f9b5755a488232780bbfb",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the CALA method, divided into two main stages: (a) Base Class Pre-train and (b) Pseudo-train → FSCIL. The global layout is horizontal, split by a vertical dashed line into left and right sections. On the left, stage (a) begins with 'Base Classes' represented as a group of four sample images (e.g., birds and animals), feeding into a gray rectangular block labeled 'Backbone' (denoted as f_θ), marked with a fire icon indicating trainable parameters. This backbone outputs a sequence of green rectangular blocks labeled 'Prototypes' (W^0), followed by a single green block labeled 'Logits' (Z). On the right, stage (b) starts with two parallel branches: an upper branch labeled 'Fake Novel Classes' and a lower branch labeled 'Novel Classes'. The upper branch shows a Mixup operation combining two base class images (bird and dog) to produce a blended image, symbolizing synthetic novel classes. Both branches converge into a gray backbone block (f_θ), now marked with a snowflake icon indicating frozen parameters. From this backbone, a sequence of green, purple, and yellow blocks labeled W^t emerges, representing updated prototypes. Below this, a similarity matrix is shown as a grid of colored squares (purple, gray, yellow), connected to a neural network diagram labeled g_φ (with a fire-to-snowflake arrow indicating state switching from trainable to frozen). The output of g_φ is a vector β, which is element-wise added (indicated by a ⊕ symbol) to the logits Z to produce the final adjusted logits Ž. The figure includes a legend at the top: fire icon = trainable parameters, snowflake = frozen parameters, ⊕ = element-wise addition, blue arrow = stage or module state switching. The overall workflow illustrates pre-training on base classes, then using mixed-up data to pseudo-train a class-aware logit adapter, which is later used during real FSCIL to adapt logits via similarity-based correction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

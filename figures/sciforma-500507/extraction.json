@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500507",
+  "record_sha256": "ca2075e8965b5114cc262da01be70e9581a8a2aef135345949f8401e06972000",
+  "asset_sha256": "2a7e4ada066dd2d0e414c65ff3d84ed2b671382ebf7437682786675a24ce2f16",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500507",
+    "title": {
+      "zh": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models · 方法图",
+      "en": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11441",
+      "title": "UIBDiffusion: Universal Imperceptible Backdoor Attack for Diffusion Models",
+      "authors": [
+        "Yuning Han",
+        "Bingyin Zhao",
+        "Rui Chu",
+        "Feng Luo",
+        "Biplab Sikdar",
+        "Yingjie Lao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11441",
+      "arxiv_url": "https://arxiv.org/abs/2412.11441",
+      "arxiv_id": "2412.11441",
+      "arxiv_first_submitted_at": "2024-12-16T04:47:55Z",
+      "arxiv_updated_at": "2025-02-28T04:36:39Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500507/image/image.jpg?Expires=1790835171&Signature=IHRgPBawU1xCMzgj8DZAZPlBSIl0qGydOOLPWWmp9vZhVZeMkdslPVdbmjK8o7AE1-fDAtWGOKegA~DBczjrhBUK6YDvW2~sgISlg~gOb9nf65tcMAkKs8C9r0oN~iBhAMBhklH3Isu1-343m32oT5zOh2Wr8cHES52BGKcmMUmrMN-cKYr24n~V9MvfSCT2BPHQIWPWm8KfbO9jeGWJvDzoMmN7hQxrxKMN99xkw3iT1rN-T57jeGb0moYTXFHbeIq8mTELa8PYWqinuloSMg79OxkQNEdGWWu8aTAvjU6GDRSyZnyiQJR3pyJgfQ-vToorVdzqIhmpaD4xPS1EQw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500507,
+      "description_sha256": "0bd363c1b086e7352efddf498c990ca7bbcd2d37cedad74af21d453bfe57a90d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative illustration of three diffusion-based backdoor attack methodologies: a clean diffusion model, VillanDiffusion, and UIBDiffusion (the proposed framework), across both forward and backward diffusion processes. The layout is divided into two main horizontal blocks: the top block (yellow background) depicts the forward diffusion process, while the bottom block (blue background) illustrates the backward diffusion process. Each block contains three parallel workflows, distinguished by dashed borders—blue for the clean model, red for VillanDiffusion, and green for UIBDiffusion.\n\nIn the top section, the forward diffusion process begins with an input image x₀. For the clean model, Gaussian noise is progressively added through steps governed by q(xₜ|xₜ₋₁), leading to a noisy image xₜ and eventually x_T ~ N(0,I). In VillanDiffusion, a perceptible trigger g (e.g., green glasses) is added to x₀, resulting in g + x₀. This poisoned input undergoes forward diffusion, where the trigger remains visible at intermediate steps, as indicated by the label 'Trigger perceptible during forward diffusion'. In UIBDiffusion, an imperceptible trigger τ is added to x₀, forming τ + x₀. The trigger is invisible on the input and remains imperceptible throughout the forward diffusion steps, as noted by 'Trigger imperceptible during forward diffusion'. All three processes utilize a UNet architecture to model the noise addition.\n\nThe left side of the top block shows the trigger generation pipeline: datasets are fed into a trigger generation module (represented as a blue network diagram) to produce the imperceptible trigger τ, which is then combined with clean inputs for poisoning.\n\nIn the bottom section, the backward diffusion process reconstructs images from noise. The clean model starts from pure noise with μ=0, using the UNet to denoise step-by-step via p(xₜ₋₁|xₜ), producing a clean output x₀. VillanDiffusion starts from noise shifted to μ_g, where the trigger g is embedded; during denoising, the trigger becomes visible in intermediate steps ('Trigger perceptible during backward diffusion'), leading to a backdoored output (e.g., a cat with glasses). UIBDiffusion uses noise shifted to μ_τ, matching the distribution shift of the trigger τ. Although τ is imperceptible, it is plausible to humans during backward diffusion, as shown by the reconstructed image (e.g., a cat with a hat), labeled 'Trigger plausible to humans during backward diffusion'. The figure includes Gaussian distributions illustrating the mean shifts (μ → μ_g or μ_τ) applied during backward diffusion.\n\nConnections between modules are shown via arrows indicating data flow. A large blue curved arrow links the trigger generation module to the UIBDiffusion backward diffusion process, emphasizing the trigger's role. Text annotations clarify visibility and plausibility of triggers at each stage. The figure effectively contrasts the perceptibility and effectiveness of different triggers across diffusion phases, highlighting UIBDiffusion’s advantage in maintaining trigger imperceptibility while preserving attack efficacy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

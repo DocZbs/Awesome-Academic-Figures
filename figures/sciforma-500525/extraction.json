@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500525",
+  "record_sha256": "22cf9f70a588567d8a0bc2efe62ea876eb7101cb55d12752671756870910483b",
+  "asset_sha256": "d7c35969a4213b9a9952a9caffb600181f1b0ebb30e01ecf8853875bb60cec06",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500525",
+    "title": {
+      "zh": "Rethinking Associative Memory Mechanism in Induction Head · 方法图",
+      "en": "Rethinking Associative Memory Mechanism in Induction Head"
+    },
+    "paper": {
+      "id": "arxiv-2412-11459",
+      "title": "Rethinking Associative Memory Mechanism in Induction Head",
+      "authors": [
+        "Shuo Wang",
+        "Issei Sato"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11459",
+      "arxiv_url": "https://arxiv.org/abs/2412.11459",
+      "arxiv_id": "2412.11459",
+      "arxiv_first_submitted_at": "2024-12-16T05:33:05Z",
+      "arxiv_updated_at": "2025-07-08T13:14:01Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500525/image/image.jpg?Expires=1790835172&Signature=YnSSojRtnym012z9lFat0TQgF4~cRXwL2S9b5tjip6QeGB5M8zwo21ZS2E1kAUu~kbEIqO5IqGaF0~4wk38iFppbmsO6ZPi3vwMe5hMJTls-0zgwWYiw4wVY8SVbBLDFrnKuwnLnoXlW1tmOFWjPy5ztn82SaIs3TEwcYLQk08--aOqbnIlPa3gxEK4t1TW19qIqckfv94cqvl4K-ar8-6SfHWfLrAqOiJuFvWbD9905HId-mwp9N-zcEuuMgHUGi8Hx-QPMHYKS0cRGyOyOBLiQZQimWmpS4ROuh0D4JwkSIbuXnVqyizCDY7wtEIAADCldCShMbRZadWXH~553OQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500525,
+      "description_sha256": "228dd3f7e4106e3f9618f034c15246cf12382d6ac2aa03af491bbe8aa609e952",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of an induction head mechanism, a specialized component in transformer-based models designed to capture sequential patterns by copying and matching token information across layers. The global layout is vertically stacked into three main horizontal layers: a bottom orange 'Attention Layer (W_K^1 and Φ_1 = W_0^1 W_V^1)', a middle purple 'Attention Layer (W_K^2 and W_V^2)', and a top purple 'Output Matrix (W_0^2)'. These layers process a sequence of tokens represented as light blue rectangular blocks labeled A, B, C, etc., arranged horizontally from left to right, with ellipses indicating continuation. Each token block feeds upward through the layers.\n\nIn the bottom orange attention layer, each input token (e.g., A, B, C) is transformed via a linear projection to produce a hidden representation. The layer is defined by weight matrices W_K^1 and Φ_1, where Φ_1 is explicitly given as the product W_0^1 W_V^1. The output of this layer consists of dark blue blocks labeled Φ_1A, Φ_1B, etc., which represent the transformed token representations. These outputs are passed to the next layer.\n\nThe middle purple attention layer receives these transformed representations as inputs. It applies another attention mechanism using weight matrices W_K^2 and W_V^2. The outputs of this layer are stacked blocks: the bottom light blue block retains the original token label (e.g., A), the dark blue block above it contains the same Φ_1A or Φ_1B label, followed by a green block labeled W_V^2 B, and finally a peach-colored block labeled W_V^2 Φ_1A. This stacking indicates multiple transformations applied to the token. The outputs from this layer feed into the top Output Matrix.\n\nThe top Output Matrix (W_0^2) processes the stacked outputs from the second attention layer. It produces a final output vector, shown as a green box labeled w_u(B), which represents the predicted next token based on the context. A key feature is the presence of residual connections: two thick blue lines loop from the output of each attention layer back to its own input, labeled 'residual connection', ensuring gradient flow and stability during training.\n\nAdditionally, a diagonal purple arrow connects the green block W_V^2 B in the second attention layer's output stack to the dark blue block Φ_1A in the same layer’s input stack, visually emphasizing the matching mechanism described in the caption—where the current token (B) matches the previously copied information (Φ_1A) to predict the next token. The entire structure demonstrates a two-stage attention process: first, copying prior token information (via Φ_1), then using that copy to guide the prediction of the next token through contextual matching."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

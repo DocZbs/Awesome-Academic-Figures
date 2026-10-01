@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501361",
+  "record_sha256": "6de5626db36a99dd92a9cb36b5af19b75f2a97fba8921846aa578c25a5da03ce",
+  "asset_sha256": "32493b49116f827cb6af31e65eac54b6b67bf9cffca4ed602a9eacdbdb3f2130",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501361",
+    "title": {
+      "zh": "Discourse Features Enhance Detection of Document-Level Machine-Generated Content · 方法图",
+      "en": "Discourse Features Enhance Detection of Document-Level Machine-Generated Content"
+    },
+    "paper": {
+      "id": "arxiv-2412-12679",
+      "title": "Discourse Features Enhance Detection of Document-Level Machine-Generated Content",
+      "authors": [
+        "Yupei Li",
+        "Manuel Milling",
+        "Lucia Specia",
+        "Björn W. Schuller"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12679",
+      "arxiv_url": "https://arxiv.org/abs/2412.12679",
+      "arxiv_id": "2412.12679",
+      "arxiv_first_submitted_at": "2024-12-17T08:47:41Z",
+      "arxiv_updated_at": "2025-10-28T02:20:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501361/image/image.jpg?Expires=1790835192&Signature=pSmIEgiateuzD-qgEhQaLvDk~lvSuOje0MjF0~tQuUBWuGqQ8cnijiIvR5pqQ2LMPbDjOixAqxWOTxCWhUnzccLRY46NqUd2HfQGmSCbwkCXiNO6YkUt7gkfk6TVa4w6-2ak0J-wlh17QWgud97ktSTUOtmxeFifiB~qYQR5dXKDTkEse2gmzB-WnJEiC-vqeSrEXJuFTKuN9rSQgqLyDHiR-zMuTw8x~EMgyEkOGXX4nDqSsBpdz1Vd0EBVhYtUkHOYrhaHwlONiQqhkJRZp9LugbbE77oE4t74yVERQKux460ngt6RNJeXnpRbLf7I5xEa2kbam1wlSby8o3TQAA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501361,
+      "description_sha256": "d4a7b813e278cec441ced103731c2578b779144e9f72f03862cea12cc2f858af",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the DTransformer model, designed to integrate both structural and semantic features for document-level classification. The global layout is divided into two parallel processing streams that converge into a shared decoder module. On the left, raw text input is processed through an NLTK split module (teal rounded rectangle), breaking the text into individual sentences labeled Sentence 1 through Sentence n. These sentences are then fed into a Pretrained PDTB BERT model (large orange rounded rectangle), which generates sentence representations including a [CLS] token and Code 1 through Code n for each sentence. On the right, the same text undergoes identical preprocessing via another NLTK split module, followed by a Sentence Transformer Encoder (large pink rounded rectangle), which produces a separate [CLS] representation for each sentence, denoted as [CLS]₁, [CLS]₂, ..., [CLS]ₙ. This encoder is replicated N times, indicated by the '×N' symbol on its side. The outputs from both branches are combined: the [CLS] token and code representations from the left branch are concatenated with the [CLS] tokens from the right branch, and this combined sequence is augmented with Learned Positional Encoding (indicated by a circle with a plus sign). This enriched sequence is then fed into the Doc Transformer Decoder (large gray rounded rectangle), which consists of N stacked layers (also marked '×N'). Each layer contains a Multi-head Attention block (orange), followed by Add & Norm (yellow), then a Cross Multi-head Attention block (orange) that attends to the encoded sentence representations from the right branch, again followed by Add & Norm (yellow), a Feed-forward block (blue), and finally another Add & Norm (yellow). The output from the final decoder layer is passed through a Linear layer (purple) and then a Softmax layer (green) to produce Output Probabilities. Arrows indicate the flow of data: from text inputs downward through preprocessing and encoding, then converging at the positional encoding step before entering the decoder. The cross-attention connections are shown as horizontal arrows from the right branch’s [CLS] tokens to the decoder’s Cross Multi-head Attention blocks. The entire pipeline is designed to leverage both semantic information from BERT and structural discourse features from the Sentence Transformer Encoder, enabling enhanced document classification performance."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

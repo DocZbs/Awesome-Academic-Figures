@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500960",
+  "record_sha256": "4c90e0acd1c723db60f0269590ec3cd2188abad8fec89034a2564c3c867aa22f",
+  "asset_sha256": "83e007ec40e4b8315c9435a813168dffcc7d4050f363544562e3e68258449f91",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500960",
+    "title": {
+      "zh": "Empathic Coupling of Homeostatic States for Intrinsic Prosociality · 方法图",
+      "en": "Empathic Coupling of Homeostatic States for Intrinsic Prosociality"
+    },
+    "paper": {
+      "id": "arxiv-2412-12103",
+      "title": "Empathic Coupling of Homeostatic States for Intrinsic Prosociality",
+      "authors": [
+        "Naoto Yoshida",
+        "Kingson Man"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12103",
+      "arxiv_url": "https://arxiv.org/abs/2412.12103",
+      "arxiv_id": "2412.12103",
+      "arxiv_first_submitted_at": "2024-11-16T13:30:01Z",
+      "arxiv_updated_at": "2024-11-16T13:30:01Z",
+      "arxiv_subjects": [
+        "cs.MA",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500960/image/image.jpg?Expires=1790835181&Signature=CzhqoU5kOuHz5raSK1cVMp01Rfe-KfZvvAScuh56OB~jfi-12LPaAIE0SfT11H7Q8ME4M4cO16fHa~-qw-zmegDUCGh5qMcM3zBSC6oqZaBCg9ARrRujfjhMc2LyohtOeKqG6pBaACSSQhu8t4Bhuzc3eTRhgCN4vFdfPPtor-LDLIWd2aR6FhlEdcFHkKBzj4E9z8y2s386q~LcMO9hNZrAQ03xmTG4Y~fyL3acICl8jOW-0QkTdZ62PEClozA~LURIBIo-qjlQ-jOGjnxLRimhfAUHnT~YZaIdm7RNKoBkBC59awwAt5lCvXS47lxSSL9hSFPNyWSGBxwajFuwyw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500960,
+      "description_sha256": "91c60278cd5a9f37cb3bf72bf4b943c48287bae18ac29f2487a39d0d4fcd382e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.MA",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the basic network architecture of an agent designed for decision-making, incorporating both internal and external sensory inputs along with cognitive empathy. The global layout is vertically structured, progressing from input layers at the bottom to output layers at the top, with a central recurrent component. At the base, three distinct input sources are presented: 'Exteroception', 'Interoception', and 'Other’s Interoception'. The latter is highlighted in light green and labeled with the subcaption 'Cognitive Empathy', indicating it is conditionally activated only under cognitive empathy-enabled scenarios (referred to as 'cognitive' or 'full' conditions in the caption). These three inputs feed into a shared hidden layer represented by a light peach-colored rectangular box, which applies a ReLU activation function, as indicated by the label above the arrow pointing to the next layer. This ReLU layer then connects to a larger light peach-colored rectangular block labeled 'LSTM', signifying a Long Short-Term Memory unit, which serves as the core recurrent processing module. A large black curved arrow loops back to the left side of the LSTM block, symbolizing the recurrent nature of the LSTM, where past states influence current computations. From the LSTM, two outputs branch out: one arrow points upward to a light peach rectangle labeled with the Greek letter π (pi), representing the policy network that determines the 'Action'; the other arrow points to a circular node labeled V, representing the value function. Both the action and value outputs are positioned at the top of the diagram, with 'Action' explicitly labeled above the π block. All connections are depicted as thick, dark gray arrows, indicating the flow of information from inputs through the network to the final outputs. The visual modules are consistently styled with dark gray borders; the main processing units (ReLU, LSTM, π, V) are light peach, while the input nodes are white except for 'Other’s Interoception', which is light green to denote its conditional role. The diagram effectively conveys a hierarchical, recurrent neural network architecture that integrates self-perception, environmental perception, and empathetic understanding of others to produce actions and value estimates."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

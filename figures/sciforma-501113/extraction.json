@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501113",
+  "record_sha256": "4d9a420fff31ec5703e2e06db2733a218daf9c4528893c7cc1300432943baf87",
+  "asset_sha256": "960fb3df724a720f476cb76de2b182e13234fda9b3a753097959a2b40fee57fc",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501113",
+    "title": {
+      "zh": "Enhancing Temporal Link Prediction with HierTKG: A Hierarchical Temporal Knowledge Graph Framework · 方法图",
+      "en": "Enhancing Temporal Link Prediction with HierTKG: A Hierarchical Temporal Knowledge Graph Framework"
+    },
+    "paper": {
+      "id": "arxiv-2412-12385",
+      "title": "Enhancing Temporal Link Prediction with HierTKG: A Hierarchical Temporal Knowledge Graph Framework",
+      "authors": [
+        "Mariam Almutairi",
+        "Melike Yildiz Aktas",
+        "Nawar Wali",
+        "Shutonu Mitra",
+        "Dawei Zhou"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12385",
+      "arxiv_url": "https://arxiv.org/abs/2412.12385",
+      "arxiv_id": "2412.12385",
+      "arxiv_first_submitted_at": "2024-12-16T22:43:41Z",
+      "arxiv_updated_at": "2024-12-16T22:43:41Z",
+      "arxiv_subjects": [
+        "cs.SI",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501113/image/image.jpg?Expires=1790835185&Signature=o56~Z~s5IBcEWwSgEn~ODcW6p5jBeNCaZlEtePGDxvEiRgJnsGhr0dMF-y-gTmWDsfCXrEWJvKbpzSYMPrw1-eGk8oYmby7bmxNLVv2xgMqTUG9SyA2zSLYjBNkGLEIm17ArekIazqfvBB14EqiYSsF5T72pn-SJR9m7SNB4hDU~J9GH9uCyDw4mJJblrbty23GbRvLzcEYbF-0BLEpx2Fy702-9BZBZvqNHp0Y0L-PhFpVeyF04K6kD1PUEc4AGXKGFuuNrnSrkmX2sNjAGN2f3DNz2Ij~EvkYkwUM8hX9h3Ig9tlgA13ToGLRoKhijG3iTKRNrS140p-URwiTEJA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501113,
+      "description_sha256": "c1b47fe57520695b6eac9245a640a4357797de66177b61d193801c06e30f6170",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.SI",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the HierTKG (Hierarchical Temporal Knowledge Graph) architecture, which is structured into three main vertical sections: Graph Construction, HierTKG Algorithm, and Output. The global layout is a left-to-right pipeline, where the input graph is processed through two parallel pathways within the algorithm, and the results are fused and used for downstream tasks.\n\nIn the Graph Construction section on the left, multiple subgraphs are shown, each rooted at an entity node (E1, E2, E3, E4), represented as red circles. These entities are connected to various time-stamped event nodes (T1–T12), depicted as yellow circles, forming a hierarchical structure. User nodes (U1, U2) are shown as blue circles, linked to specific events. The edges between nodes represent temporal relationships, and the entire structure serves as the input to the HierTKG Algorithm.\n\nThe central section, labeled 'HierTKG Algorithm', contains two parallel processing streams: TGN Processing and DiffPool Processing. In TGN Processing, the input graph is processed by a Temporal Graph Network (TGN) memory module, represented as three stacked light green rectangles labeled S1(t1), S2(t2), S3(t3), indicating memory states at different timestamps. This is followed by a grid of 4x4 colored squares representing Graph Attention Embeddings, with colors including purple, light blue, yellow, and mint green, symbolizing diverse feature representations. These embeddings feed into the Fusion Layer.\n\nIn DiffPool Processing, the input graph undergoes Node Clustering, visualized as a light blue and green shaded region containing interconnected yellow nodes, indicating a clustering process. This leads to GNN Embedding, shown as a 4x2 grid of colored squares (light blue, yellow, purple, mint green), representing learned node features. A small Pooled Network diagram, consisting of a blue center node connected to two dark green nodes, represents the coarsened graph after pooling. These features also feed into the Fusion Layer.\n\nThe Fusion Layer combines features from both streams. From TGN Processing, DiffPool Features (a vertical stack of four colored squares) are passed through a Linear layer and then into an Attention block. Similarly, from DiffPool Processing, DiffPool Features (another vertical stack of four colored squares) go through a Linear layer and into a MultiHead Attention block. The outputs of these attention mechanisms are combined in a final Attention module, which produces the final representation.\n\nOn the far right, the Output section lists 'Downstream Tasks' and 'Link Predictions' in bold, indicating the ultimate goal of the model: to predict future links or relationships in the temporal knowledge graph. Blue arrows connect the components, showing the data flow from Graph Construction through the two processing streams, fusion, and finally to the output tasks. The overall design emphasizes a hierarchical, multi-modal approach to temporal graph learning, integrating memory-based and pooling-based methods before fusing them via attention mechanisms."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

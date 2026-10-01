@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500173",
+  "record_sha256": "3f31047970331c8ee57a1890ee1ef61a8aca1b40348695f4345b1f29157f9410",
+  "asset_sha256": "f1ae431fc05c01d21773c513591a06a3c332774c875c454ca8c77b488029b740",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500173",
+    "title": {
+      "zh": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos · 方法图",
+      "en": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos"
+    },
+    "paper": {
+      "id": "arxiv-2412-10861",
+      "title": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos",
+      "authors": [
+        "Qingyu Xu",
+        "Longguang Wang",
+        "Weidong Sheng",
+        "Yingqian Wang",
+        "Chao Xiao",
+        "Chao Ma",
+        "Wei An"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_id": "2412.10861",
+      "arxiv_first_submitted_at": "2024-12-14T15:17:49Z",
+      "arxiv_updated_at": "2024-12-14T15:17:49Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500173/image/image.jpg?Expires=1790835166&Signature=iHRnxxKncyE6~W1R4zxW8SLbarM8UuyisLBZXcMOb4uEg2s1sfJxBqr5s0dA2mxYBntCg6QgHHkZ0FUUWQAr9AqjFPP7ZXPi4u-xs6rUeM~UdAlyvILuFNCCYS6ygJVnJBmLSocq9Ux29qX-DInxkRF1wiOSBIq2mVf7EVB5pffkfu4asX4pmBK-VGDdWX9bns6scJWasO9Y2Bs8xN~-3fY~q-BoIiCLHqzSq~6HpQXhaOJiIlhOJpTWCOU2sfUF9oVGHgYLmGJKtXWGamFAkM05FOBR~R2tXltLuA0dDxIZeHhZPI0tgiXfUBfr15Ph0sIhz0gEuGTDkd3B6dX7FQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500173,
+      "description_sha256": "f637221b1a126468480a589e14b5a2194724a26f9150d39dc66484cf6d393538",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part architectural diagram of a Heterogeneous Graph Transformer (HGT) encoder used for multi-source information aggregation in a detection framework. Part (a), labeled 'HGT Encoder', shows a vertical stack of four processing stages, each containing an HGT module. The input to each stage consists of different node types: T_k^t (blue circle), T_k^{t-1} (light blue circle), D_k^e (green circle), and D_k^l (light blue circle), all connected via G^a (graph adjacency) to their respective HGT blocks. Each HGT block outputs a feature vector that flows into a shared Aggregation Module on the right, which combines features from all four stages using summation operations (indicated by circular plus signs). The final output of the Aggregation Module is a pair of nodes: D_k^x (green circle) and D_k^l (light blue circle), representing refined detection queries. The entire encoder is enclosed in a light yellow rounded rectangle.\n\nPart (b), labeled 'HGT', provides a detailed view of a single HGT module. It takes three input node types: D_k (blue circle), T_k^t (green circle), and T_k^{t-1} (light blue circle). These inputs are processed through query (Q), key (K), and value (V) projections, denoted as Q[D], K[T], V[T], Q[D], K[H], V[H], etc., where H likely stands for historical or another node type. The keys and queries are transformed using learnable weight matrices: W_{DT}^{ATT} and W_{DH}^{ATT} for attention computation. The attention scores are computed via dot products, passed through a Softmax function, and then multiplied with the corresponding value vectors. The resulting attended values are summed and passed through a ReLU activation. Additionally, there is a direct edge connection from T_k^t to D_k, represented by E_{HDT}, and from T_k^{t-1} to D_k, represented by E_{HT}. A bilinear upsampling operation is applied to the output before it is added to the original D_k input via a sum operation (circular plus sign). The diagram includes a legend on the right indicating symbols: red arrows for 'Bilinear Upsampling', green arrows for 'Linear Embedding', black arrows for 'Directed Edge', circular plus for 'Sum', and circular cross for 'Dot'. The overall layout of part (b) is a horizontal flow from left to right, with feedback loops and parallel processing paths. The entire HGT module is enclosed in a gray rounded rectangle."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

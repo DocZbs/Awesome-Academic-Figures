@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Physics-model-guided Worst-case Sampling for Safe Reinforcement Learning — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13224
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a Physics-informed Deep Reinforcement Learning (Phy-DRL) agent designed for safety-critical cyber-physical systems (CPS). The global layout is divided into two main regions: the left side contains the Phy-DRL Agent, enclosed within a dashed rectangular boundary, and the right side represents the Safety-Critical Environment, depicted as a tall vertical box with examples of robotic systems such as quadruped robots, drones, autonomous vehicles, and humanoid robots. The agent interacts with the environment through state-action feedback loops.
+
+Within the Phy-DRL Agent, the core components include a Critic Network and an Actor Network, both represented as neural network diagrams with gray circular nodes connected by lines, enclosed in rounded rectangles with light blue backgrounds. These networks are interconnected and feed into a Safety-Embedded Reward module, shown as an orange rounded rectangle. The Actor Network outputs a data-driven action policy denoted as a_drl(k), which is combined with a model-based action policy a_phy(k) from the Physics Model Knowledge module to form a Residual Action Policy, expressed mathematically as a(k) = a_drl(k) + a_phy(k). This residual policy is also rendered in an orange rounded rectangle.
+
+The Physics Model Knowledge module, represented as a white rounded rectangle labeled with (A, B), receives inputs from the Safety-Critical Environment via a linearized model and provides the model-based action policy to the Residual Action Policy. Additionally, it feeds into a lower-level module titled 'Physics-model-guided Periodic and Sparse Worst-case Sampling on Boundary of Safety Envelope,' which is highlighted with a yellow oval containing red dashed lines and blue dots labeled as 'worst-case sample.' This sampling mechanism is visually emphasized with a legend indicating that blue dots represent worst-case samples.
+
+Connections between modules are indicated by black arrows. The state s(k) flows from the Safety-Critical Environment to the Critic Network, while the action a(k) is sent from the Residual Action Policy back to the environment. Initial conditions are passed from the sampling module to the environment. The Safety-Embedded Reward module receives inputs from both the Critic and Actor Networks and feeds back into the Actor Network, forming a reinforcement learning loop. The Physics Model Knowledge module connects to both the Residual Action Policy and the worst-case sampling module, emphasizing its role in guiding safe exploration.
+
+The overall workflow follows a hybrid approach combining data-driven deep reinforcement learning with physics-based modeling to enhance safety. The periodic and sparse worst-case sampling ensures robustness by focusing exploration on the boundary of the safety envelope, leveraging the physics model to guide this process. The figure caption states that this is 'Phy-DRL training powered by periodic and sparse worst-case sampling for safety-critical CPS,' summarizing the method's purpose.

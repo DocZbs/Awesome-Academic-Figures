@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500567",
+  "record_sha256": "958580875aba540076fd236352b89ea6a4784bfe8609c18ea89c644578613f34",
+  "asset_sha256": "a54fa5c5c2b759f6d5b5214e3a80b7878fe5d7134fd2b133feef0a8736e9f4ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500567",
+    "title": {
+      "zh": "Skip Tuning: Pre-trained Vision-Language Models are Effective and Efficient Adapters Themselves · 方法图",
+      "en": "Skip Tuning: Pre-trained Vision-Language Models are Effective and Efficient Adapters Themselves"
+    },
+    "paper": {
+      "id": "arxiv-2412-11509",
+      "title": "Skip Tuning: Pre-trained Vision-Language Models are Effective and Efficient Adapters Themselves",
+      "authors": [
+        "Shihan Wu",
+        "Ji Zhang",
+        "Pengpeng Zeng",
+        "Lianli Gao",
+        "Jingkuan Song",
+        "Heng Tao Shen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11509",
+      "arxiv_url": "https://arxiv.org/abs/2412.11509",
+      "arxiv_id": "2412.11509",
+      "arxiv_first_submitted_at": "2024-12-16T07:33:23Z",
+      "arxiv_updated_at": "2025-03-14T06:12:38Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500567/image/image.jpg?Expires=1790835172&Signature=T-mLkoeJ5ClKxv2ZespD7eoA~-uLcEFq8Ap6psMlLnfDm4yXM-1loQ21AicjSpvWGdRpCH5WPjgVmiGWHoAT0ACRTlBNfISb3IoywO37w4RQ4YtOkb8G~Gyl12JxdLffdWzLHsWtXojOZhH4ecJXCbS3McHtdFeeLCl-htC-flJojM0WZG5GvrcVxv6fpaOSTkqyMiyXTLwpLf-ojTxCfx07YSxgIGYvMgPhrAqQm4e9VfrilM-Ky0HXvGF~JxX7j9uDWB9gv7Ikr8MioNHbNdUaa-cPUS5pImX1~1egvXw-7u~HW3v2CSSV44h-AyFJzjIyGCnUikpDy5~EVb17rQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500567,
+      "description_sha256": "afb6364a16c47c3eb937f3573cd877715ab4f17793d1b87d7a3bedbec59b097a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the code implementation of the CSkip step at a mini-batch scale, focusing on an exponential image-conditioned class filtering (EICF) strategy. The global layout is structured horizontally from left to right, depicting a data processing pipeline. On the far left, a vertical stack labeled 'mini-batch' contains m input images, denoted as x₁ through xₘ, with example images of a kitten and a tabby cat shown. These images feed into a scoring matrix S of size m×n, where each cell Sᵢ,ⱼ represents the score of the i-th image against the j-th class. The classes are listed above the matrix as 'cat', 'dog', 'lion', 'bear', 'bird', etc., with the first column corresponding to 'cat'. The matrix is visually segmented: the first row (S₁,₁ to S₁,ₙ) is outlined in blue, and the last row (Sₘ,₁ to Sₘ,ₙ) in orange, indicating different image inputs. A dashed line connects the first image x₁ to the first row of scores, emphasizing the per-image scoring process. Below the matrix, a 'max' operation is applied along the rows, producing a vector of maximum scores a₁ to aₙ, displayed in light green boxes. This vector is then passed to a red-bordered rounded rectangle labeled 'EICF', which outputs a filtered list of class names, shown as '[cat, lion, bear]' in red text below. This output is fed into a blue trapezoid labeled 'E_T [ω+1:N]', representing a temporal embedding or feature extractor. Simultaneously, a pink trapezoid labeled 'E_V [ω+1:M]' represents a visual embedding or feature extractor, receiving input from the top of the scoring matrix via a feedback loop. Both E_T and E_V are connected to a loss function L_ITM, indicating that the model is trained using an image-text matching loss. The connections are shown as solid black arrows, with the feedback loop from E_V to the top of the scoring matrix suggesting iterative refinement or conditioning. The entire diagram uses distinct colors and shapes to differentiate components: images in black boxes, scores in white boxes with colored borders, max scores in green, EICF in red, and embeddings in trapezoids with gradient fills. The structure reflects a two-stage process: first, computing class-wise scores for each image in the batch, then applying EICF to select a subset of classes based on the highest scores, which are then used to condition the embeddings for training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

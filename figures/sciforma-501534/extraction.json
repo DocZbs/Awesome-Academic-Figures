@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501534",
+  "record_sha256": "a42daacef0694fda4a33752f36b715ce01bbab79ad7c755de95cf9aa387e14af",
+  "asset_sha256": "58a41f0aee7cdc02abff842230e0b3607a5688c2ee18dad39dd461ee8fce848e",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501534",
+    "title": {
+      "zh": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning · 方法图",
+      "en": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12953",
+      "title": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning",
+      "authors": [
+        "Moritz Reuss",
+        "Jyothish Pari",
+        "Pulkit Agrawal",
+        "Rudolf Lioutikov"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12953",
+      "arxiv_url": "https://arxiv.org/abs/2412.12953",
+      "arxiv_id": "2412.12953",
+      "arxiv_first_submitted_at": "2024-12-17T14:34:51Z",
+      "arxiv_updated_at": "2024-12-17T14:34:51Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501534/image/image.jpg?Expires=1790835197&Signature=kq~lMNw-A-eSwW9Df3J0tBLx5sh5tNlzcAqDmxBpR9k9mFTTkT14XfMLhxUEC4NpIehFBZAC2FTmHIWT30aBzCiV3smBIStgcugdn~4-xLcmRbJUDL5L5TWKhAfHavwP4M6GO2d6fPX5xfXqGC~IUZz0Ag3lwOCEkz~heIm0IHZdM2y4kHtqG9SIfL8094s5l5SqRKyIPU-d3RRC6csOirt48GK5wLO2xpD0KMdwJQ0jiIWgvFDmKiRZK91c42WVcxojgDv2S-JQrXhpHTz1Lc3v69fxWqeeupv2fIbLnd4sCx0dmPLimSfPsgtFj~FvJnTvn-lDLS7OQMcfa8NwHw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501534,
+      "description_sha256": "e77cebc41a6e8294a1568f71aef6e07a610bc5a7da0a85a8ad56ffc6cebb37ef",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a transformation process in a Mixture-of-Experts (MoE) architecture, specifically focusing on expert utilization and optimization through caching. The global layout is divided into two main horizontal sections: the top row represents the original MoE structure with dynamic expert selection, while the bottom row shows the optimized, fused version after applying caching. A large black arrow labeled 'Caching' connects the two rows, indicating the transformation from the original to the optimized structure.\n\nIn the top row, three vertical rectangular blocks represent different time steps or noise levels, labeled σ_{i+1}, σ_i, and σ_{i−1} from left to right. Each block contains multiple rows of colored rounded rectangles (experts), with each row having four experts. The experts vary in color (e.g., teal, red, green, pink, orange, light blue), indicating different expert types. Between each pair of adjacent experts in a row, there is a short horizontal red line (router), signifying the routing mechanism that selects which experts to activate. In some rows, certain experts are outlined in black, indicating they are selected for activation at that time step. The routers are consistently present, showing that routing decisions are made per time step. The figure includes ellipses (...) on both ends of the top row, suggesting that this sequence extends beyond the shown time steps.\n\nA legend to the right of the top row clarifies the visual elements: a multicolored circle labeled 'Expert' and a red horizontal bar labeled 'Router'. Below this, the word 'Caching' is written, emphasizing the core operation being applied.\n\nThe bottom row displays the result of the caching process. It also contains three vertical blocks corresponding to the same time steps σ_{i+1}, σ_i, and σ_{i−1}. However, these blocks now contain fewer, larger, and vertically stacked experts. Each block has five rows, with two experts per row, arranged in a grid. The colors of the experts are consistent with those in the top row, but the structure is simplified—there are no routers, and the experts are fused into a compact form. This reflects the optimization where frequently co-activated experts are merged into a single fused expert module, reducing computational overhead. The ellipses (...) on both ends of the bottom row indicate continuation of the sequence.\n\nThe overall workflow is as follows: at each time step, the router selects a subset of experts (k=2, as noted in the caption) based on the input noise level. Since routing is deterministic per time step, the same set of experts is repeatedly activated across identical inputs. Caching leverages this determinism to precompute and fuse these co-activated experts into a single, more efficient module. The resulting architecture in the bottom row eliminates redundant routing and reduces inference cost, achieving a more streamlined and faster network. The figure thus visually communicates how caching transforms a dynamic, router-dependent MoE into a static, fused expert network."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

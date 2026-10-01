@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502509",
+  "record_sha256": "680a7807a8d83c6bef0c2ede677c62a6c5f12018f110c171ea63453e02e5c3aa",
+  "asset_sha256": "6e3a126329d306f396b814f0e174dc74ad3fec07c52e7a306d711511b613e370",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502509",
+    "title": {
+      "zh": "A Shapley Value Estimation Speedup for Efficient Explainable Quantum AI · 方法图",
+      "en": "A Shapley Value Estimation Speedup for Efficient Explainable Quantum AI"
+    },
+    "paper": {
+      "id": "arxiv-2412-14639",
+      "title": "A Shapley Value Estimation Speedup for Efficient Explainable Quantum AI",
+      "authors": [
+        "Iain Burge",
+        "Michel Barbeau",
+        "Joaquin Garcia-Alfaro"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14639",
+      "arxiv_url": "https://arxiv.org/abs/2412.14639",
+      "arxiv_id": "2412.14639",
+      "arxiv_first_submitted_at": "2024-12-19T08:50:46Z",
+      "arxiv_updated_at": "2025-04-17T07:00:56Z",
+      "arxiv_subjects": [
+        "quant-ph",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502509/image/image.jpg?Expires=1790835225&Signature=re4klAi2GXUusOEXg69EelopT-uC6YM2jgwdT7Sx5eCHCn6qcz7cdydRWF3EwZ8IOAFICh1ObIdzH5LT8741lIpDBoR2VkqH5ObB9AADJ15IrjXqJ1BNgOGSwZeJ~lgbBA~0e1yOck7vIjru47BCvL73-lx2oQq6snNxedcG7HAkNqX6TmXACOpbIaxHE1S3~5MaD65TrHbiuxWPVRpkZLf3lVhDGNGjp35YP~of5hzdeDgLswP3ex8zJgJfKuKL4kNYwHVoN1oeVMEYAvFG14tXbundYpskvbO2BIjdyqaxhlmj~UCugk~pZSysas5sCz3BeLUqfgFKVdK7iImK7g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502509,
+      "description_sha256": "6ad7a765afa10b7a777c9c12a60d6c49484ed7231e8ab1373985de6cca68b995",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "quant-ph",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a quantum circuit implementation of the unitary operator $U_V^/pm$ for a weighted voting game. The global layout consists of three horizontal registers stacked vertically: the top register labeled $|\\psi\\rangle_{\\text{P1}}$ represents the primary input state, the middle register labeled $|0\\rangle_{\\text{Aux}}$ serves as an auxiliary register initialized to zero, and the bottom register labeled $|0\\rangle_{\\text{Ut}}$ is the utility register, also initialized to zero. These registers are depicted as horizontal lines extending across the circuit.\n\nThe circuit proceeds from left to right. The top register $|\\psi\\rangle_{\\text{P1}}$ contains multiple qubits, represented by horizontal lines, with some connected via vertical control lines to boxes below. These control lines originate from specific qubits in the top register and connect to rectangular boxes in the auxiliary register. The auxiliary register contains a sequence of rectangular boxes labeled $+w_0$, $+w_1$, ..., $+w_{n-1}$, each representing an addition operation of a weight $w_i$ to the auxiliary register. Each box is connected to one control line from the top register, indicating that the weight is conditionally added based on the state of the corresponding qubit in $|\\psi\\rangle_{\\text{P1}}$. The boxes are arranged sequentially, separated by ellipses indicating continuation.\n\nAfter the last weight addition box ($+w_{n-1}$), the auxiliary register feeds into a large rectangular gate labeled $x \\geq q$, which performs a comparison between the accumulated vote count (stored in the auxiliary register) and a threshold $q$. This gate has two curly braces on its left and right sides, both labeled $x$, indicating that the input and output of this gate are associated with the variable $x$. The output of this comparison is written to the utility register $|0\\rangle_{\\text{Ut}}$, which is shown as a single horizontal line at the bottom. The gate is designed such that if the vote count in the auxiliary register is greater than or equal to $q$, the utility register is set accordingly.\n\nThe connections between components are represented by straight horizontal and vertical lines. Control lines from the top register to the weight addition boxes are vertical, while data flow within the auxiliary and utility registers is horizontal. The circuit is structured to compute the outcome of a weighted voting game: given an input state encoding a subset of players and a binary variable $x$ (indicating inclusion or exclusion of a specific player’s vote), the circuit computes the total vote count in the auxiliary register and then checks if it meets or exceeds the threshold $q$, outputting the result in the utility register. The caption clarifies that the circuit outputs $|V^-(S_h)\\rangle$ when $x=0$ and $|V^+(S_h)\\rangle$ when $x=1$, where $S_h$ is a subset defined in the paper. The auxiliary register holds the total vote count just before the comparison gate, and after the gate, the auxiliary register can be cleared by subtracting each player’s contribution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

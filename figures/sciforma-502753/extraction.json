@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502753",
+  "record_sha256": "e265a5d581b010faa322acdcc3ff941c46547935226955f78d8dc1835f2b46ff",
+  "asset_sha256": "0489bddb0c832b153e629ac961b9f509b0f27dfcd445abf77fffb94c00c69345",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502753",
+    "title": {
+      "zh": "OpenEMMA: Open-Source Multimodal Model for End-to-End Autonomous Driving · 方法图",
+      "en": "OpenEMMA: Open-Source Multimodal Model for End-to-End Autonomous Driving"
+    },
+    "paper": {
+      "id": "arxiv-2412-15208",
+      "title": "OpenEMMA: Open-Source Multimodal Model for End-to-End Autonomous Driving",
+      "authors": [
+        "Shuo Xing",
+        "Chengyuan Qian",
+        "Yuping Wang",
+        "Hongyuan Hua",
+        "Kexin Tian",
+        "Yang Zhou",
+        "Zhengzhong Tu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15208",
+      "arxiv_url": "https://arxiv.org/abs/2412.15208",
+      "arxiv_id": "2412.15208",
+      "arxiv_first_submitted_at": "2024-12-19T18:59:40Z",
+      "arxiv_updated_at": "2025-02-14T23:22:47Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502753/image/image.jpg?Expires=1790835227&Signature=A1QXRbH~RZhd3C~WNvmpDRSV33gswYi3Z-L2FLWfVr4enQACoV2awjaMF0l0DJBfs-ZsMjDz~rXuUCVQu9~PNWGy0Hv3gvlglusKM~lVH4GINBkgbtaBVn9dY21LZXBXvtDQXcolzGR9Vil9BpigoUdpTV7~iqyt5A3EqPkGiuypKakdP79-RswDt6sKnklkeqCYuWOV3pmue3rwkzypn9lwdI7dgUqzL306QvOAnUpbiZpsryhAqcIBA~G9iF1ni-N3ALWCKb2awSHy1OxkLJ6c~mt-oSphS5sO8hZXnLD~poW~OV1Jxs5dKJ~zRkvImVfkzdRsFObUMeOzuvm~0A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502753,
+      "description_sha256": "f723a26a4ea9e089eb3a4bfdbf2a47beb707fbc3f739be907371c61f03905997",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the OpenEMMA framework, a multimodal reasoning system for autonomous driving that leverages large language models for future trajectory prediction. The global layout is structured as a left-to-right data flow, beginning with input modalities on the left, processing through a central reasoning module, and culminating in output predictions on the right. The diagram is organized into distinct functional blocks connected by solid and dashed arrows indicating direct and indirect or auxiliary information flows, respectively.\n\nOn the left side, two primary inputs are shown: 'Historical Ego Status' presented as a light gray rounded rectangle labeled 'Textual Input', and a real-world driving scene image labeled 'Visual Input'. These inputs converge into the central processing unit, represented by a large white rounded rectangle containing the ChatGPT logo, the infinity symbol (representing Llama), and a llama icon, signifying the use of large language models. This central module is labeled 'ChatGPT' and serves as the core reasoning engine.\n\nAbove the ChatGPT module, a dashed rectangular box labeled 'CoT Reasoning' (Chain-of-Thought Reasoning) contains three stacked horizontal bars, each representing a step in the reasoning process: 'High-Level Intent Command' (light blue), 'Driving Scene Description' (light yellow), and 'Major Object Detection' (light green). A solid black arrow points from the ChatGPT module upward to this CoT Reasoning block, indicating that the model generates these intermediate reasoning steps.\n\nBelow the visual input, a dashed line connects it to a stylized human head icon with gears and a brain pattern, labeled 'Visual Expert'. This expert outputs a '3D Bounding Box' (a white rounded rectangle), which is then passed via a teal double-arrow icon to the final output visualization — an image of the same driving scene but with overlaid 3D bounding boxes around vehicles and a predicted purple trajectory path for the ego vehicle.\n\nOn the right side, the output of the ChatGPT module leads to two sequential prediction stages: 'Future Ego Status' (light purple rounded rectangle) and 'Future Ego Trajectory' (light pink rounded rectangle), connected by a dashed arrow. From 'Future Ego Trajectory', a teal double-downward arrow points to the final rendered output image, showing the predicted future state of the scene with the ego vehicle's trajectory.\n\nThe connections are color-coded and styled: solid black arrows denote primary data flow, dashed lines indicate auxiliary or indirect relationships (e.g., the visual expert’s contribution), and teal double-arrow icons represent transformation or rendering steps. The overall structure emphasizes a hybrid approach combining visual perception (via the Visual Expert) with language-based reasoning (via ChatGPT) to produce a coherent, interpretable, and actionable future trajectory prediction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

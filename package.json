@@ -11,13 +11,15 @@
     "preview": "vite preview --host 127.0.0.1",
     "format": "prettier --write src scripts/generate_tokens.mjs index.html",
     "format:check": "prettier --check src scripts/generate_tokens.mjs index.html",
-    "check": "node scripts/check_site.mjs",
-    "check:tokens": "node scripts/generate_tokens.mjs --check"
+    "check": "node scripts/check_site.mjs && node scripts/check_matching.mjs && node scripts/check_figure_details.mjs",
+    "check:tokens": "node scripts/generate_tokens.mjs --check",
+    "check:matching": "node scripts/check_matching.mjs"
   },
   "dependencies": {
     "@fontsource/manrope": "^5.2.8",
     "fflate": "^0.8.2",
     "lucide-react": "^0.468.0",
+    "pdfjs-dist": "^6.3.289",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

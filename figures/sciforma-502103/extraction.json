@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502103",
+  "record_sha256": "5c8945fba281965fd75c99726b8782d5359ebd2c1570e6e96fc5a5ccb84feee6",
+  "asset_sha256": "a00d6a771548744678d16dafe5f744a02c998aa4959b9773724c96ee2964850b",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502103",
+    "title": {
+      "zh": "Memorizing SAM: 3D Medical Segment Anything Model with Memorizing Transformer · 方法图",
+      "en": "Memorizing SAM: 3D Medical Segment Anything Model with Memorizing Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2412-13908",
+      "title": "Memorizing SAM: 3D Medical Segment Anything Model with Memorizing Transformer",
+      "authors": [
+        "Xinyuan Shao",
+        "Yiqing Shen",
+        "Mathias Unberath"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13908",
+      "arxiv_url": "https://arxiv.org/abs/2412.13908",
+      "arxiv_id": "2412.13908",
+      "arxiv_first_submitted_at": "2024-12-18T14:51:25Z",
+      "arxiv_updated_at": "2024-12-18T14:51:25Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502103/image/image.jpg?Expires=1790835212&Signature=IoMYAT1MlW5QbvTXpxTXDxj1Q7Go79DI4gOmktj-0J7m2zYKVvWIrVigU6fSzwYZq52c2FUV~kXPuT6TUGelbDjp-qDQ2ZrvCusfTqjTFmB31hu-736MvAT1C98s~iN1l25-HCAui8~sQ-m1cEgeT95ZaqSGy7sWEPpHg3rnCk61VtMYvWPccxbnQj~b6QMokGnA-6esujUTjxPZMkMWRBzEm4wHjgGaPTQMOK5goSWyKD0VJ~Xwk4pQFJgjuSLmFuI8JK2xhj~Vkt~sQYJxFh-Ha3e55Zmbsqg3AMSxj8XoHH8irlo9T16y4G9Hwg9iJ6yY-w9gOiOJFHCUPVgMbg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502103,
+      "description_sha256": "32006f9f3688b7ef184f692673d18f3b27fee5ede8774866f780a9611cfa4665",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the architecture of Memorizing SAM, divided into two main panels: Training (left) and Inference (right), each illustrating a distinct phase of the model’s operation. The global layout is split vertically, with both sides sharing similar structural components but differing in color coding and specific modules to denote training versus inference modes.\n\nIn the Training panel, input volumetric data of size 128x128x128 is fed into an Image Encoder composed of two blocks: the first block contains two Feed-Forward Networks (FFN) with Layer Normalization (yellow bars), followed by a second block with four Multi-Head Self-Attention (MHSA) layers interleaved with FFNs. These components are enclosed in pink boxes, indicating learnable parameters (marked with red flame icons). Embedded patches of size 768x8x8x8 are generated from the input and passed through this encoder. The output is then combined with a prompt encoder (pink triangle) and a mask decoder (pink triangle) to produce a segmented output volume of the same size (128x128x128). Below the encoder, a 3D self-attention module (red cube stack) receives Q, K, V projections from linear layers and accesses an External Memory (gray box) to store key-value pairs. This memory is updated during training, and the stored tuples are later used in inference. A legend at the bottom left indicates visual symbols: yellow bars for Layer Normalization, snowflake for frozen components, circle for addition, and flame for learnable parts.\n\nIn the Inference panel, the same input volumetric data flows through an identical Image Encoder, but now rendered in blue to indicate frozen weights (snowflake icons). The embedded patches pass through the same structure: two FFNs, then three MHSA blocks with FFNs. The output is combined with a prompt encoder (blue triangle) and mask decoder (blue triangle) to generate the final segmentation. Crucially, during inference, a K Nearest Neighbor Search (KNN) module (gray box) retrieves relevant key-value pairs from the External Memory (labeled 'Cached (Key,Value) Pairs') based on similarity to the current input. The retrieved results are fed into a modified 3D self-attention block (red cubes) within the inference path, which uses the saved K and V from memory to enhance the attention mechanism. This allows the model to leverage previously learned information without retraining. The external memory is shown as a gray bar at the bottom, emphasizing its role as a persistent cache.\n\nConnections between modules are represented by solid lines, with arrows indicating data flow direction. The prompt and mask decoders receive inputs from the encoder outputs and combine them via addition (circle symbol). The KNN search connects the embedded patches to the external memory and feeds the retrieved values into the 3D self-attention block during inference. The overall design highlights a plug-and-play memorizing block that can be integrated into any SAM variant’s Transformer architecture, enabling efficient knowledge reuse across sessions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

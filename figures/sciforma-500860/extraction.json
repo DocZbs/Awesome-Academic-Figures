@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-500860",
+  "record_sha256": "21bd733525d317cecd50d48d2e36688b3eb348b58d22abb1e8f949e0a7ae8a67",
+  "asset_sha256": "1fabbd4f7c55c66f598563c1fcb6a95fa5306a3c8241844f64ae3e315e0f0ae5",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500860",
+    "title": {
+      "zh": "CharacterBench: Benchmarking Character Customization of Large Language Models · 方法图",
+      "en": "CharacterBench: Benchmarking Character Customization of Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11912",
+      "title": "CharacterBench: Benchmarking Character Customization of Large Language Models",
+      "authors": [
+        "Jinfeng Zhou",
+        "Yongkang Huang",
+        "Bosi Wen",
+        "Guanqun Bi",
+        "Yuxuan Chen",
+        "Pei Ke",
+        "Zhuang Chen",
+        "Xiyao Xiao",
+        "Libiao Peng",
+        "Kuntian Tang",
+        "Rongsheng Zhang",
+        "Le Zhang",
+        "Tangjie Lv",
+        "Zhipeng Hu",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11912",
+      "arxiv_url": "https://arxiv.org/abs/2412.11912",
+      "arxiv_id": "2412.11912",
+      "arxiv_first_submitted_at": "2024-12-16T15:55:34Z",
+      "arxiv_updated_at": "2024-12-16T15:55:34Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500860/image/image.jpg?Expires=1790835177&Signature=lurIDmJS-wBSFM~f-ZohEhVymqgLB0R3P34jcGW15qcQ9ql97iIhc21LMaBsexsuto1x0uL21e0PiEmv5ekV5LinXxa-fQY9W4b2mbQX4FJob4v3RvuzRFaeXC0FZsxG86ql6eol2wJytXx0q0RJ9xfa0~NoqmOvOjx7nZirkSrwUYGsNxhu2i6t9jA2uqnOjcHxhsDW5oYhVRv8VfnL~gheR85Cp8wm49tbIkhTVjuI-Cw8-6dz2Qxp52tCDCHtA09nKZs-6nQLNQvfOnFTcjrc9ZuP7TeQZGjOB-YdBSrhD25ASRcKbDD79cEyOnvb5mKnQRjzgYAyM8c8OIdmpQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500860,
+      "description_sha256": "04ca1122681a4274e6b886fb390975d16877ac2835ccd1a212dc447007c4093a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the construction pipeline of CharacterBench, a benchmark for evaluating character-based dialogue systems. The global layout is divided into three main horizontal sections: data sourcing and script sampling at the top, query construction strategies in the middle, and response generation and human annotation at the bottom. The top section shows four sources for building a 'Character-based Dialogue Corpus': Human Role-Playing (light blue), Human Prototype Interaction (light pink), Extraction From Literature Resources (beige), and Synthesis Via Prototypes’ Interaction (light green). These sources feed into a central 'Script Sampling' step, producing a 'Script' containing 'Character Profile' and 'Dialogue Context'.\n\nIn the middle section, two parallel query construction pathways are shown. The upper pathway, labeled 'Target-oriented Query Construction for Sparse Dimensions', takes the Script and extracts four target attributes: Knowledge (purple box with brain icon), Persona (red box with person icon), Memory (teal box with brain icon), and Emotion (green box with smiley face). These targets are combined via OR logic to form a query, which is then presented to either LLMs or humans. The output undergoes filtering before being used.\n\nThe lower pathway, 'Target-free Query Construction for Dense Dimensions', also starts from the Script but focuses on two dense dimensions: Morality (yellow box with scales icon) and Believability (blue box with head icon). These are used to construct a target-free query, which is similarly presented to humans and filtered.\n\nThe bottom section, 'Response Generation and Human Annotation', receives both target-oriented and target-free scripts. Seven LLMs generate responses, which are then evaluated by three human annotators. A judge assigns a score based on these annotations. The generated responses and queries are fed back into the system to refine the script generation process, forming a closed-loop evaluation framework. Arrows indicate data flow: solid arrows represent direct input/output, dashed arrows denote feedback loops, and labeled arrows specify the type of data or operation (e.g., 'Target Extraction', 'Query', 'Filtering'). The entire pipeline emphasizes iterative refinement through human-in-the-loop validation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

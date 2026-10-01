@@ -9,7 +9,7 @@ public.mkdir(exist_ok=True)
 catalog = json.loads((root / "data/catalog.json").read_text())
 for figure in catalog["figures"]:
     if figure["asset_base"].startswith("https://"):
-        if not all(figure.get(field) for field in ("analysis_text", "prompt_text", "agent_text")):
+        if not figure.get("details_available") and not all(figure.get(field) for field in ("analysis_text", "prompt_text", "agent_text")):
             raise ValueError("Remote catalog must include text for thin local preview")
         continue
     source = root / "figures" / figure["id"]

@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501243",
+  "record_sha256": "95006b8a4f279699192d7987198334a8af0dcb96981c62ce861655b603c9e139",
+  "asset_sha256": "fd93adc740faf6a8093af07d4bdbad6778d3229e1e6cf0db91302f15e5907a8a",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501243",
+    "title": {
+      "zh": "LLMCL-GEC: Advancing Grammatical Error Correction with LLM-Driven Curriculum Learning · 方法图",
+      "en": "LLMCL-GEC: Advancing Grammatical Error Correction with LLM-Driven Curriculum Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-12541",
+      "title": "LLMCL-GEC: Advancing Grammatical Error Correction with LLM-Driven Curriculum Learning",
+      "authors": [
+        "Tao Fang",
+        "Derek F. Wong",
+        "Lusheng Zhang",
+        "Keyan Jin",
+        "Qiang Zhang",
+        "Tianjiao Li",
+        "Jinlong Hou",
+        "Lidia S. Chao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12541",
+      "arxiv_url": "https://arxiv.org/abs/2412.12541",
+      "arxiv_id": "2412.12541",
+      "arxiv_first_submitted_at": "2024-12-17T05:09:07Z",
+      "arxiv_updated_at": "2024-12-17T05:09:07Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501243/image/image.jpg?Expires=1790835190&Signature=Irn-cssJJK6~aXo1vH4yFvK8ZmOE5PJ-Ck5l4jW2LN3mUXwQb0bKz4krP5JS7X14xUm4~5ZUF~T3ktEU0RF5u4u7JRS7i4JQs-JUBemmDybaR4adV2HjJlNCp3Qnb3~e1AnuTZZ1iFykNdtBK8j1XR7URX25bKbKL82FO8OP~3Na-9VNn4Q1R5a5QC9Qm0~QYbLVhbfop0tvPnl3HcF4LYA0lsRspBuLbvgdNzQ1ZBOs9X2~FHIMQ6Rb6jrwyfK5BJQFc-ieQuWF43i5Ao5cZKI~5oGGj8npxN0HPDKcnp6tuDWSs~V5mW4gkz~q42hihD26wtEAmAZCSuQNqC31Mg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501243,
+      "description_sha256": "8309cf8f78ef53170e374b852d6255347fd923c5d3348ce4941a0f1091c7bde8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-part framework for a curriculum learning (CL) method applied to grammar error correction (GEC) using large language models (LLMs). The top section, labeled 'Curriculum Design', outlines how a foundation LLM (represented by a black-and-white llama icon) evaluates the difficulty of GEC samples. The input to this LLM is structured as a list containing a prompt, source-side GEC data, and a query for a difficulty score, enclosed in a red dashed box. The foundation LLM processes this input and outputs a difficulty score from 1 to 10, which categorizes each sample into one of three groups: 'Hard Samples' (score 8–10), 'Medium Samples' (score 4–7), or 'Easy Samples' (score 1–3). These categories are represented as rectangular boxes with distinct shading—dark gray for Hard, medium gray for Medium, and light gray for Easy—and are connected to the LLM via curved arrows labeled with their respective score ranges. A yellow curved arrow with a question mark points from the input to the LLM, symbolizing the evaluation process.\n\nThe bottom section, labeled 'Learning Process', depicts the training progression of a GEC model following the curriculum. It shows a stepwise learning path with three stages: 'Easy-stage', 'Medium-stage', and 'Hard-stage'. Each stage is visually marked by a different stylized llama icon: a cute, pastel-colored llama for Easy-stage, a more sophisticated blue-and-red llama for Medium-stage, and a vibrant, glowing, superhero-like llama for Hard-stage. The 'Medium-stage' is explicitly labeled as an 'SFT-tuned GEC LLM', indicating supervised fine-tuning. A thick gray arrow ascends from the Easy-stage to the Hard-stage, illustrating the sequential progression through the curriculum. The entire diagram is enclosed in a brown dashed border, with a horizontal purple dashed line separating the Curriculum Design and Learning Process sections. At the top, a prompt is displayed in a dashed box, instructing the foundation LLM to act as a grammar correction expert and assign a difficulty score to given text, providing context for the input format used in the curriculum design phase."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

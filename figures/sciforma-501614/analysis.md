@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Practicable Black-box Evasion Attacks on Link Prediction in Dynamic Graphs -- A Graph Sequential Embedding Method — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13134
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of an agent interaction framework designed for graph structure optimization, likely within a reinforcement learning context. The global layout is a left-to-right sequential pipeline, starting from an input adjacency matrix sequence and ending with a reward signal stored in a replay buffer. The process is modular, with distinct stages for feature extraction, embedding, policy decision-making, action execution, and reward computation.
+
+The first module on the left is labeled 'Adjacency Matrix Sequence' and consists of multiple stacked blue squares, each containing the symbol Â_k, representing a time-series or sequence of graph adjacency matrices. This input is processed by a light green rectangular block labeled 'F', which extracts 'Degree Feature'. The output of this step is passed to another light green block labeled 'Degree Embedding', denoted by χ_k, which produces a sequence of embedded representations.
+
+Next, the degree embeddings are fed into an LSTM-p module, depicted as a stack of yellow blocks, indicating a Long Short-Term Memory network specifically tuned for processing graph sequences. The output of this LSTM is a state representation S_k^p, shown as a yellow square. This state is then input into a 'Policy Network', represented as a multi-layered neural network with white circular nodes and connections, labeled μ_θ. The policy network outputs an action, denoted a_k, which is visualized as two possible operations: 'delete edge' (represented by a broken connection between two nodes) or 'add edge' (represented by a new connection between two nodes). These actions modify the current graph structure.
+
+The modified graph is represented as a new adjacency matrix sequence, Â_{k+1}, shown as a stack of blue squares similar to the initial input but updated. This updated graph is then processed by a dark gray rectangular block labeled 'M', which stands for LPDG (likely a graph-based model or metric). The output of M is a scalar 'Reward r_k', which is sent to a vertical bar-like structure labeled 'Replay Buffer', indicating storage for experience replay in reinforcement learning. A feedback loop connects the replay buffer back to the policy network, suggesting that past experiences are used to update the policy during training.
+
+All modules are connected by solid black arrows indicating the flow of data and control. The action selection step includes a small circle with the letter 'R' inside, possibly denoting a random or stochastic component in the action selection process. The entire diagram emphasizes a closed-loop reinforcement learning system where the agent learns to modify graph structures based on feedback from the environment (via rewards), using a combination of graph embedding, sequential modeling, and policy optimization.

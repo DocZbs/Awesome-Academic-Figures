@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LITA: An Efficient LLM-assisted Iterative Topic Augmentation Framework — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12459
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the LITA (Large Language Model-based Iterative Topic Analysis) framework, a method for topic discovery and refinement in a document corpus using an iterative procedure guided by large language models. The global layout is structured as a flowchart with a main loop labeled 'Iterative Refinement Procedure' spanning from Step 2 to Step 5, with a stop criterion defined as 'no more topic is identified'. The process begins outside the loop with Step 1: Document/Seed Embeddings, which takes two inputs — 'Corpus' (represented as a document icon) and 'Topic Seeds' (represented as a list icon) — and generates embeddings for both documents and initial seed topics.
+
+Inside the loop, Step 2 performs 'Document Clustering with Initial Centroid on Seeds', where documents are clustered around initial seed topics. This step is visually represented by two distinct clusters: 'Seed Topic #1' (orange squares within a light orange oval) and 'Seed Topic #2' (blue diamonds within a light blue oval), with unassigned documents shown as white triangles scattered between them. A dashed line with arrows indicates the dynamic nature of the clustering process.
+
+Step 3, 'Ambiguous Document Selection (Select △)', selects the white triangle documents that lie between or near existing clusters, indicating uncertainty in assignment. These ambiguous documents are then passed to Step 4, the 'LLM Evaluator', which presents a multiple-choice prompt: 'Select which topic provided below best describes the ambiguous document', listing options such as '(1): topic name, words', '(2): topic name, words', ..., '(K): topic name, words', and '(Other): none of above topics'.
+
+The output from the LLM Evaluator feeds into Step 5, 'Agglomerative Clustering', which processes two types of input: 'Ambiguous documents that do not belong to existing topic 1-K' and 'All other documents and their topic assignments'. The result of this step is the identification of new topics, shown as 'New Topic #3' (pink circle with pink triangles) and 'New Topic #4' (green circle with green triangles), which are then assigned to previously ambiguous documents (e.g., 'assign to #1' and 'assign to #2').
+
+A feedback loop labeled 'Update Topic Seeds' connects Step 5 back to Step 2, allowing the newly discovered topics to become updated seeds for the next iteration. The visual modules are primarily rounded rectangles for steps, ovals for topic clusters, and icons for inputs. Colors are used to distinguish topics: orange for Seed Topic #1, blue for Seed Topic #2, pink for New Topic #3, and green for New Topic #4. Text labels are clear and positioned adjacent to their respective elements. The entire iterative process is enclosed in a large rounded rectangle, emphasizing its cyclical nature until no new topics are found.

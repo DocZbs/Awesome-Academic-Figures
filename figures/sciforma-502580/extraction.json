@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502580",
+  "record_sha256": "ae6700664a45cb9f0897a61fdd45d5562abc9c0aaf9de546af37df9e46fe9847",
+  "asset_sha256": "c95ebd3bfd2f20461583f1fb10400e4457d5d97d435c6f0fa464d0488c244c3f",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 1024,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502580",
+    "title": {
+      "zh": "YOLOv11 Optimization for Efficient Resource Utilization · 方法图",
+      "en": "YOLOv11 Optimization for Efficient Resource Utilization"
+    },
+    "paper": {
+      "id": "arxiv-2412-14790",
+      "title": "YOLOv11 Optimization for Efficient Resource Utilization",
+      "authors": [
+        "Areeg Fahad Rasheed",
+        "M. Zarkoosh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_url": "https://arxiv.org/abs/2412.14790",
+      "arxiv_id": "2412.14790",
+      "arxiv_first_submitted_at": "2024-12-19T12:29:31Z",
+      "arxiv_updated_at": "2025-07-05T03:32:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502580/image/image.jpg?Expires=1790835225&Signature=OW5WuyWWE-mGrjjrL6T9vutCkhO2jslEuM4EUpSU464I2d0MnEYvrDFEik7FT~wA2iTQdtp3amHOC6z-xvOGPfQWQAyMewlvNcxn9nvi8g56Pv9bs3LstaJuyOZ6Du~o3AdI~OeuQDKPLhslgFl9l2VZev~cKLrlKo66O76jzaKHMAK9FpA-FLmP1W7jBoWJrZ0UzLXmBqmr17Traiva02h2Vbq9ZmQYZ51fu-hblKQZi9M9yn8KPBBJeVPh9hBmWLDQyM2bTA9i~0mQUquGkMWx9FswRlAhiOCuU~6isYgZb5DaL1GaZehVhrP3kZLWbN4Ghc-gJ0CX~10mRl5WKg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502580,
+      "description_sha256": "8832338448be02ccdc2f8654d459bf44d2f261ceb1d910dbd7c9fa1477d052d6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the complete architecture of YOLOv11, divided into three main components: Backbone, Neck, and Head, with detailed submodules explained on the right side. The global layout is structured from left to right, starting with the Backbone, followed by the Neck, and ending with the Head. Each component is enclosed in a rounded rectangular box with a light gray background, and the entire architecture is labeled at the bottom as 'a. YOLOv11 Architecture'.\n\nIn the Backbone section, input data of size 640×640×3 enters through a Conv layer (b0), followed by a sequence of Conv layers (b1, b3, b5, b7) and C3k2 blocks (b2, b4, b6, b8), each reducing spatial dimensions while increasing channel depth. The feature maps are labeled P1 to P5, corresponding to different resolution levels: P1 (320×320), P2 (160×160), P3 (80×80), P4 (40×40), and P5 (20×20), with channel counts determined by min(64, mc)×w up to min(1024, mc)×w. The final two layers in the Backbone are SPFF (b9) and C2PSA (b10), both highlighted in teal and pink respectively.\n\nThe Neck section begins with feature fusion from the Backbone. It receives inputs from b4, b6, and b8 via lateral connections. These are upsampled (Upsample blocks in red) and concatenated (Concat blocks in green) with higher-resolution features. The resulting features pass through C3k2 blocks (yellow) and Conv layers (purple) to form a feature pyramid. Specifically, b15 concatenates b4 and upsampled b6; b12 concatenates b6 and upsampled b8; b18 concatenates b17 and b13; b21 concatenates b20 and b19; and finally, b22 is a C3k2 block feeding into the Head. The Neck outputs three feature maps at resolutions 80×80, 40×40, and 20×20, labeled P3, P4, and P5 respectively.\n\nThe Head consists of three Detect modules (light blue boxes), each receiving one of the three feature maps from the Neck and producing detection outputs. The Detect module is detailed in subfigure i: it comprises two parallel branches, each with two Conv layers followed by a Conv2d layer, leading to Bbox Loss and Class Loss outputs.\n\nOn the right side, eight submodules are defined:\n\nb. Conv: A basic convolutional block with Conv2d, Batch2Norm2d, and SiLU activation.\nc. Bottle Neck: A residual block with two Conv layers and a shortcut connection if 'shortcut=True', ending in an element-wise addition.\nd. C3K: A block with Conv, followed by two BottleNeck layers, then Concatenation and a 1×1 Conv.\ne. C3K2: Similar to C3K but uses C3K (3×3) blocks instead of BottleNeck.\nf. SPFF: Spatial Pyramid Feature Fusion, consisting of three MaxPool2d layers of increasing kernel sizes, concatenated and followed by a 1×1 Conv.\ng. C2PSA: Channel-wise 2D Positional Self-Attention, including Split, two PSA blocks, Concat, and a 1×1 Conv.\nh. PSA: Positional Self-Attention, containing Attention, Concat, FNN, two 1×1 Convs, and another Concat.\n\nConnections between modules are shown with solid black arrows indicating data flow. Dashed lines indicate optional or conditional paths, such as the shortcut in Bottle Neck. All blocks are color-coded: Conv layers are purple, C3k2 blocks are yellow, Concat blocks are green, Upsample blocks are red, SPFF is teal, C2PSA is pink, and Detect is light blue. Text labels include layer names (e.g., 'Conv'), block identifiers (b0–b22), and feature map dimensions and channel counts. The figure comprehensively describes the hierarchical, multi-scale, and attention-enhanced design of YOLOv11."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

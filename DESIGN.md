@@ -112,3 +112,13 @@ Runtime mapping: `colors.* → --color-*`; `typography.*.fontFamily → --font-*
 - Keep the default classification dimension as graphical type; retain selections when filtering.
 - Show honest source counts and actionable empty/recovery states.
 - Do not fabricate more papers to fill the grid or invent a remote GitHub destination.
+
+
+## Paper-driven discovery
+
+“用我的论文找图” is the primary hero action alongside direct gallery exploration.
+The matching surface uses the shared modal, quiet upload/input panel, topic chips,
+and complete figure previews with readable recommendation reasons. Cobalt keeps
+its role for the recommended next action; no new palette or decorative scores.
+Uploaded research text stays transient and private in the browser. Awards are
+optional tags within the same visual library.

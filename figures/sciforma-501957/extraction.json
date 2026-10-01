@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501957",
+  "record_sha256": "40033fbed656b7f7968e0b1fbaa8c1a1f6264e43ad042752fb5c09d6153ddde8",
+  "asset_sha256": "22f471010b10a8dd288ad4ebc723ac5805b9d7d28b5ec3521330ee609e262252",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501957",
+    "title": {
+      "zh": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks · 方法图",
+      "en": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-13724",
+      "title": "USEFUSE: Uniform Stride for Enhanced Performance in Fused Layer Architecture of Deep Neural Networks",
+      "authors": [
+        "Muhammad Sohail Ibrahim",
+        "Muhammad Usman",
+        "Jeong-A Lee"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_url": "https://arxiv.org/abs/2412.13724",
+      "arxiv_id": "2412.13724",
+      "arxiv_first_submitted_at": "2024-12-18T11:04:58Z",
+      "arxiv_updated_at": "2025-05-13T11:19:44Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501957/image/image.jpg?Expires=1790835209&Signature=XOuTD8nmuuSul-8JOgnhm4z-cba~~I7o9OL63e5gX4opYJBd5ffXg7w6GSMhz3TlwgcJr3B3WbP7v1ZNiV-AVck9S4Y8X4vJ6~1bLV72IyJq~l9zx8j91SDVzyvyOHHv~u1qLguBQgY4L4m4m8o1X4td2O3bGcWLHlSXpyJZMjpAJGLfJ1f1DW~SLPr-MKcvfJ7W3BhzH7P7cS40bG1B8VRTFyfN4Wi~cuWMwAdquiBXX2jf-pRYOj7v68XS7T9HtBUCpBJ6z~tsqseE8tSeAEG8jPt2xGuPLc7lT~RnVHMWQJfzqGMLvmvoZRZ3Uq57cvacSX7rUbS-ZrADygYXHQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501957,
+      "description_sha256": "29d7a32d58cd777e3af926cc886f877de77d754dc82c4f23402bdbe2156b444e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR",
+        "cs.PF"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a proposed layer fusion accelerator design pipeline, presented as a flowchart with a top-down sequential structure and one feedback loop. The global layout is vertical, starting from the top with an input node and progressing downward through a series of processing steps, culminating in the final output at the bottom left. The diagram consists of five rounded rectangular nodes connected by solid black arrows indicating the direction of data or control flow.\n\nThe first node at the top, labeled 'Network Configurations', serves as the initial input. It feeds into the second node, 'Calculate and select tile sizes', which receives an additional input from the right labeled 'Number of layers (Q) in fusion design'. This indicates that the tile size calculation depends on both the network configuration and the number of layers Q.\n\nFrom 'Calculate and select tile sizes', the flow proceeds downward to 'Calculate largest tile strides (S^T) ensuring uniform movement'. This step computes the maximum possible stride values for tiles while maintaining uniform movement across the computation domain.\n\nNext, the flow continues to 'Start and end index for tiles', which determines the boundaries or ranges for each tile based on the previously computed tile sizes and strides.\n\nFinally, two arrows converge on the last node, 'Design (Q) accelerators', located at the bottom left. One arrow comes directly from 'Calculate and select tile sizes', suggesting that tile size information is used directly in accelerator design. The other arrow comes from 'Start and end index for tiles', indicating that tile boundary information also contributes to the design process. Additionally, there is a horizontal arrow branching from 'Calculate and select tile sizes' to 'Design (Q) accelerators', reinforcing that tile sizing is a primary input for accelerator design.\n\nAll nodes are uniformly styled with black borders and white backgrounds, using black sans-serif text. There are no colors or special shapes beyond the standard rounded rectangles. The connections are simple, straight or orthogonal black arrows with arrowheads pointing in the direction of flow. The diagram does not include any mathematical equations or LaTeX expressions within the nodes themselves, but the caption explicitly references 'Number of layers (Q)' and 'tile strides (S^T)', which are critical parameters in the design process. The overall workflow represents a systematic approach to designing accelerators for fused neural network layers, emphasizing tile-based computation planning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

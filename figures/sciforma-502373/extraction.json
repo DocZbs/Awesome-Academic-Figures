@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502373",
+  "record_sha256": "c98bbe8cfcf7184575bde9d2628556801a935a7133941c16e975a1f3aaee390a",
+  "asset_sha256": "fae3c4abe78dad91b66ea0bbc96e4d3ad0deea505b9e6ceafd702c4d7ed8c65b",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502373",
+    "title": {
+      "zh": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations · 方法图",
+      "en": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations"
+    },
+    "paper": {
+      "id": "arxiv-2412-14464",
+      "title": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations",
+      "authors": [
+        "Tung Do",
+        "Thuan Hoang Nguyen",
+        "Anh Tuan Tran",
+        "Rang Nguyen",
+        "Binh-Son Hua"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_id": "2412.14464",
+      "arxiv_first_submitted_at": "2024-12-19T02:23:55Z",
+      "arxiv_updated_at": "2024-12-19T02:23:55Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502373/image/image.jpg?Expires=1790835217&Signature=FaP02OldDthbZxpx6ye1SSpmkbmfuXVja5Cdyx2phzAuawxVh0unGFQNsELrH1xjaJmWDlD1CtPXVNxpZPj7ZkSCTzefXsdwjUQXxtW80F7xWZVNLVjOhyfFFBWdXa8N2suyOWZX2Yog13Pti-ddoCVkXXhgaaUeoQJjrnRNlizX6byxHPyqZpLGGDzXg5mh28i3bTlRco-OUmq0faEj3lZjDfDnMZywO-Guz~~DPdSIIlKoxkq1-gymqlZu9hCLwAcJ2g9RUkhTLVNPb~x6T3HEVbOXWMcwJYNojfqYCl2vFqioSDGtPEfrTRh-Ft3oy59mzMDnP0pkZ68LTxfVrg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502373,
+      "description_sha256": "a0076d65854b49eaf023a66aa243038b4ce37b934a96ae2e8ebfc118b55c2543",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a tri-plane decoder used in 3D representation learning. The global layout is left-to-right, showing a sequential flow from an input feature volume to the final output: a feature tri-plane. On the far left, a legend defines two key components: a red arrow symbolizes a processing block composed of a ResNet block, followed by upsampling and self-attention; a blue curly bracket denotes a final operation consisting of convolution and reshape. The central part of the diagram shows a 3D feature volume, represented as a cube with internal color gradients indicating feature activations, positioned at the center. From this cube, three sets of orthogonal feature planes are extracted — one along each axis (front-back, left-right, top-bottom), visualized as slabs extending outward. These three feature planes are then processed independently through multiple upsampler blocks, indicated by red arrows pointing from each plane to a stack of three output images, which represent progressively refined feature maps. Each output image displays a heat-map-like visualization of the features, with bright regions corresponding to high activation. After upsampling, the three processed feature planes are combined and passed through a final step, marked by a large blue curly bracket on the right side of the diagram, which represents a convolutional layer followed by a reshape operation. The result is a structured 3D representation called the 'Feature tri-plane', shown on the far right as three intersecting planes forming a 3D coordinate system, each displaying a color-coded feature map. The entire process is designed to transform a compact 3D feature volume into a set of depth-aware, high-resolution feature planes suitable for rendering or further 3D modeling tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

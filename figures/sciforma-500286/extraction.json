@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-500286",
+  "record_sha256": "a1b4ccc693312742f89ce7b1fe7c178dc500d73555f5a7de87ab2e631443f397",
+  "asset_sha256": "dae2a9833d3914c9191f779da7ad1a71d40af6b812441b750f16fcca22c57538",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500286",
+    "title": {
+      "zh": "NITRO: LLM Inference on Intel Laptop NPUs · 方法图",
+      "en": "NITRO: LLM Inference on Intel Laptop NPUs"
+    },
+    "paper": {
+      "id": "arxiv-2412-11053",
+      "title": "NITRO: LLM Inference on Intel Laptop NPUs",
+      "authors": [
+        "Anthony Fei",
+        "Mohamed S. Abdelfattah"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11053",
+      "arxiv_url": "https://arxiv.org/abs/2412.11053",
+      "arxiv_id": "2412.11053",
+      "arxiv_first_submitted_at": "2024-12-15T05:15:54Z",
+      "arxiv_updated_at": "2024-12-15T05:15:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500286/image/image.jpg?Expires=1790835164&Signature=lAmJuCFyZsIMlf4EtZ0H-WZmsv5k4klQbpK-Uht54nIfR5Hagx5DHgOSyxag5Ox5Gmp2Ixv4DtVFpvK12RSSU8xgxO8eu7jFc~eAcHRAIfp1v~IGWyjo-~umYlYHdfr3BERFwTgO7EfuPIObGIAeDL2ZEFwMaZs9DwU2RuuksGQmYeR5ARNVHzLQSFviNvgl6oFBK~6M6LTEizmN9C5d9p0DpOG6TaZRNAf5goaNzJ~O4aXBrUin5oTJ9eZ9zob5dGxksURTbQKhe1mdp9RnTLGqitIn7ZtRNIh8KDX5JlaJ0993EStgi8r2YNEqD6EE77~r7vlliO-PIh0KGatGDA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500286,
+      "description_sha256": "9def993f89bcb2ffb0e2d39c59381b0e54879d5ffc87165e65b80c5f59ddd129",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a high-level architectural diagram of the Meteor Lake chipset, illustrating its modular tile-based design interconnected via a central System-on-Chip (SOC) Tile. The global layout is horizontally oriented, with the SOC Tile positioned centrally as the core component, enclosed within a large light gray rectangular boundary labeled 'SOC Tile' at the bottom. To the left of the SOC Tile is the 'Graphics Tile (GPU)', depicted as a green rectangle. To the right, two tiles are vertically stacked: the upper one is the 'Compute Tile (CPU)', shown as a yellow rectangle, and below it is the 'I/O Tile', shown as an orange rectangle. These external tiles are connected to the SOC Tile through thick dark blue lines representing communication pathways.\n\nWithin the SOC Tile, three primary internal components are arranged vertically. At the top is the 'NPU', represented by a purple rectangle. Below it is the 'Network-on-chip (NOC)', shown as a light blue rounded rectangle. Further down is the 'IO Fabric', also a light blue rounded rectangle. All internal components within the SOC Tile are connected by vertical dark blue lines, indicating data flow or interconnectivity. Specifically, the NPU connects downward to the NOC, which in turn connects downward to the IO Fabric. The NOC extends horizontally to the left to connect with the Graphics Tile (GPU) and to the right to connect with the Compute Tile (CPU). Similarly, the IO Fabric extends horizontally to the right to connect with the I/O Tile.\n\nThe visual modules are distinguished by color, shape, and labeling. Rectangular shapes denote discrete functional tiles (GPU, CPU, I/O), while rounded rectangles represent internal interconnect fabrics (NOC, IO Fabric). The NPU is uniquely colored purple to differentiate it from other components. All labels are centered within their respective shapes using black sans-serif font. The connections between modules are represented by thick, solid dark blue lines, with no arrowheads, implying bidirectional communication or structural linkage rather than unidirectional data flow. The overall structure emphasizes modularity and hierarchical connectivity, with the SOC Tile acting as the central hub coordinating interactions among specialized compute, graphics, and I/O tiles via dedicated on-chip networks and fabric layers."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

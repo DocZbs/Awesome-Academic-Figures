@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-502782",
+  "record_sha256": "b088bd9f3d78a2acb4e84426934097a8c83552ac40948261295cdc77ee05aae0",
+  "asset_sha256": "f3aee18ab5cb79682f6945c7d9dc354f5ae8c19314f1a477fa00d8683ee2bd80",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502782",
+    "title": {
+      "zh": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\" · 方法图",
+      "en": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\""
+    },
+    "paper": {
+      "id": "arxiv-2412-15242",
+      "title": "Script-Based Dialog Policy Planning for LLM-Powered Conversational Agents: A Basic Architecture for an \"AI Therapist\"",
+      "authors": [
+        "Robert Wasenmüller",
+        "Kevin Hilbert",
+        "Christoph Benzmüller"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15242",
+      "arxiv_url": "https://arxiv.org/abs/2412.15242",
+      "arxiv_id": "2412.15242",
+      "arxiv_first_submitted_at": "2024-12-13T12:12:47Z",
+      "arxiv_updated_at": "2024-12-13T12:12:47Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502782/image/image.jpg?Expires=1790835227&Signature=U8hSAcXBAZtzgEFatYG-ZnSEeK1wkK1NbdDK8JCdIZpeAJUoTav-T27pVhtq~fPxUSeIp7tcofrXq4mgT1oaCWkzGvR16vTbC~vzgeyDXkwca-qhLrJZcQy0OUPYepISe16T~hiBd9BVz5zlRv~4AZUo9Nm8TLa9RrONQQdbj15MeuOtrsuuUqlE10WsNgRN18SQyiJGUUzSf3slE30eBNzhiDHIj1mzERfIC96thfFotcvyxU2AWnhUeBg7fLaD4Zpwmiux9FBf8uFwwIkVH~53Lvd5jRgP0Y3G-7AYVd1Kaxw5IcivK91yl7n26veeAjB~7jRmzc5-pecinO1X2g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502782,
+      "description_sha256": "93a093585c5943e1aacddb96c061ae7503297aa20d38c4ae4331def05fc57eba",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a script-based dialog policy planning framework utilizing multiple Large Language Models (LLMs) in a coordinated workflow across each conversation turn. The global layout is a circular, feedback-driven process involving four main components: Assessor LLM, Dispatcher LLM, Dialog LLM, and User, with Dialog History serving as a central data repository. The structure follows a sequential yet conditional flow, where each step depends on the outcome of the previous one, forming a loop that continues until the dialog task is complete.\n\nVisual modules are represented as gray rounded rectangles for the LLMs, a gray document icon for Dialog History, and a gray silhouette of a human head for the User. The Proactive Prompt with Script is depicted as a smaller document icon with a folded corner, positioned below the Dispatcher LLM. Each module has associated text labels describing its function: 'Assessor LLM' assesses completion of current instruction section; 'Dispatcher LLM' performs optional reasoning and selects next instruction section from the script; 'Dialog LLM' generates messages based on current instructions; and 'User' sends messages to the agent. The Dialog History module stores the entire conversation context and feeds into the Assessor LLM and Dispatcher LLM.\n\nConnections and arrows indicate the flow of information and control. The User sends a message to the agent, which is recorded in Dialog History. From there, the Dialog History is fed into the Assessor LLM, which evaluates whether the current section of instructions is completed. If not completed, an arrow loops back to the Dialog LLM with the label 'IF not completed yet: Triggers to proceed', indicating the Dialog LLM continues generating messages based on the current section. If completed, the Assessor LLM triggers the Dispatcher LLM via an arrow labeled 'IF completed: Triggers to select next section of instr.'. The Dispatcher LLM then optionally performs reasoning and planning, using the Proactive Prompt with Script as input, and selects the next section of instructions from the script. This selected section is passed to the Dialog LLM via an arrow labeled 'Provides next section of instr.'. The Dialog LLM generates a message based on the current section of instructions and sends it to the User, completing the cycle. The User’s response is again recorded in Dialog History, restarting the assessment phase. The arrows are solid black lines with classic arrowheads, clearly indicating directionality and dependencies between modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

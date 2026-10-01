@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500591",
+  "record_sha256": "16ebf07645a119021f927bd3f702bc8bea839fb3e4e0c6aace6ef7ec325624bc",
+  "asset_sha256": "3b62f1e88c89071e0f05fe8b7cea6c1356b77e8274a560ed0e565d2f6b6daaf3",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500591",
+    "title": {
+      "zh": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer · 方法图",
+      "en": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11540",
+      "title": "SP$^2$T: Sparse Proxy Attention for Dual-stream Point Transformer",
+      "authors": [
+        "Jiaxu Wan",
+        "Hong Zhang",
+        "Ziqi He",
+        "Yangyan Deng",
+        "Qishu Wang",
+        "Ding Yuan",
+        "Yifan Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_url": "https://arxiv.org/abs/2412.11540",
+      "arxiv_id": "2412.11540",
+      "arxiv_first_submitted_at": "2024-12-16T08:21:09Z",
+      "arxiv_updated_at": "2025-07-11T10:38:22Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500591/image/image.jpg?Expires=1790835172&Signature=PMcWp3e0h6jyH5cQ3OwA36v8tmTU7FT5k~qF95a4QZBPPPrktNELhO8~kFIxjW-Y7xbx-1nW-QshVtIIqq~LZxMPhLdR6MHTBTqjjBrMarjD1i03ShHMYOOSYzTKX0P8Z-T0oyv1BZqd1Q3e0hvQG6nYq6GxV7xwYj7hRpSxW5W8wUuT2f1zNyeu8iFr8pPze0TqUUbLGOzOQ0XMbDeiHtOH3Na7QXOLJyOgoR71rpjRb4PPJHOvM~wwyDNVxmTC5ZhHj5L08n4sHmhdV~uD8NgdfirGZi9wF-SaVVLNPrJy4OYNj~uSoC6VaTw7B-YQWSQDyM0lUR9sOhtx8cocyQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500591,
+      "description_sha256": "69b79e88ca4d6192f04a4a94abdc616c6560a641309fe847303de97c118105b5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of the Sparse Proxy Attention (SPA) computation, divided into two main parts: (a) Sparse Attention Map and (b) Sparse Proxy Attention. The global layout is horizontal, with part (a) on the left illustrating the construction of an association tuple list from a sparse attention map, and part (b) on the right showing how this list is used to compute attention values via a parallelized, map-reduce style process.\n\nIn part (a), a 5x2 grid represents the sparse attention map, with rows labeled Q0 through Q4 (in salmon-colored cells) and columns labeled K0 and K1 (in light blue headers). Each cell contains a pair of indices representing query-key associations; empty or cross-hatched cells indicate zero or inactive attention. For example, Q2 has an active association with K0 at position (2,0), and Q4 with K1 at (4,1). A 'Flatten' operation converts this 2D map into a vertical list of non-zero association tuples, such as (0,0), (0,1), (1,1), (2,0), (3,1), (4,1), shown in a column of light purple boxes. This list is labeled 'Association Tuple List'.\n\nPart (b) details the SPA computation. The association tuple list feeds into a multi-threaded processing stage, indicated by the label 'Multi thread (in parallel)' in red text. Each tuple, like (0,0) or (0,1), is processed independently. Dashed arrows from K0 and K1 headers point to the corresponding tuples, indicating key selection. Solid arrows from each tuple point to a corresponding value node (V0, V1, ..., V4) in a row of yellow boxes below, representing the output values. The process involves applying Softmax and Sum operations to the selected values, as indicated by the label 'Softmax & Sum' beneath the tuple processing stage. The final output is a sequence of computed values V0 through V4, aligned vertically with the original queries Q0 to Q4 on the far right, which are again shown in salmon-colored cells. Dotted lines connect the processed tuples back to their respective query positions, emphasizing the mapping from sparse attention to computed outputs. The entire process reflects a map-reduce paradigm where sparse associations are mapped to value computations and then reduced via Softmax and Sum to produce the final attention outputs."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

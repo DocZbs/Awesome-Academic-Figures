@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502199",
+  "record_sha256": "5d20a257a2fbe035955399b78ab08fd01322e97e4adbd40c705d228a7210ae5c",
+  "asset_sha256": "3faff3d28e8f90782ff2f3136c36cd22657716b584914663195b537af11e328b",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502199",
+    "title": {
+      "zh": "Adaptive Concept Bottleneck for Foundation Models Under Distribution Shifts · 方法图",
+      "en": "Adaptive Concept Bottleneck for Foundation Models Under Distribution Shifts"
+    },
+    "paper": {
+      "id": "arxiv-2412-14097",
+      "title": "Adaptive Concept Bottleneck for Foundation Models Under Distribution Shifts",
+      "authors": [
+        "Jihye Choi",
+        "Jayaram Raghuram",
+        "Yixuan Li",
+        "Somesh Jha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14097",
+      "arxiv_url": "https://arxiv.org/abs/2412.14097",
+      "arxiv_id": "2412.14097",
+      "arxiv_first_submitted_at": "2024-12-18T17:47:46Z",
+      "arxiv_updated_at": "2024-12-18T17:47:46Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502199/image/image.jpg?Expires=1790835213&Signature=oRm0tJqx-uq6qMBKgPsAlj75elghWptuAPXiggIysdQVN8sDVtumUHaEO27g9gScVYCsYPUtR7~Xo6Q3jRYVB0yQv3c~Tz1mtdhvtJSa0NdJN5vAcRFrsNPPta04oL4wKQ6raLe99J4xmbuoB9vcQSyJq0iLXToomQXtgQnLExwUmQux-1GPHlpqpIrIHaPnzKQBqa4QpitK8EeRe~qcM4Bqkf8Wzs3Kefvxb4YXbP2Ly1m3YhekNejZMAS9oG7wfuh5qP4U6yRdZlSpwb0kiMCarIpAie7bXs3sKr2wPuhoDQj8qwtl8pAYacXUuQ~oL2qjPtPesdhuD3YpLNBJLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502199,
+      "description_sha256": "1a3060080eaeed0882fe4e9f7ebd5239c3ccec88af20a521e87182b4995f3d00",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of CONDA, a domain adaptation framework for concept-based models (CBMs), structured into two main horizontal sections: the Source Domain (top) and Target Domain (bottom), separated by a dashed line. In the Source Domain, input images (x_s, y_s) are processed by a Frozen Foundation Model φ(x), represented as a light blue rectangle, which outputs a feature vector z = φ(x) — depicted as a vertical stack of blue squares. This feature vector feeds into a Concept Bottleneck C_s (light blue trapezoid, m × d), producing Concept Scores v_Cs(x) (green vertical bar, m × 1). These scores are then passed to a Label Predictor W_s, b_s (light blue trapezoid, L × m), generating Prediction Logits f_s^(cbm)(x) (pink vertical bar). A legend on the right indicates color coding: light blue for 'Frozen' components, light green for 'Adapted: CSA', pink for 'Adapted: LPA', and yellow for 'Adapted: RCB'.\n\nIn the Target Domain, input images x_t are similarly processed by a Frozen Foundation Model φ(x) (light blue rectangle), yielding z = φ(x) (blue stack, d × 1). The feature vector splits into two parallel branches. The main branch uses a Concept Bottleneck C (light green trapezoid, m × d), producing v_C(x) (green bar, m × 1), which feeds into a Label Predictor W, b (pink trapezoid, L × m), outputting prediction logits. The residual branch uses a smaller Concept Bottleneck Ĉ (yellow trapezoid, r × d), producing v_Ĉ(x) (yellow bar, r × 1), which feeds into a Label Predictor Ŵ, b̂ (yellow trapezoid, L × r). The outputs of both predictors are summed via a plus symbol to produce the final target prediction logits f_t^(cbm)(x). A text box on the right specifies: feature dimension: d, # classes: L, # main concepts: m, # residual concepts: r (≪ m). The figure visually emphasizes that CSA adapts the main concept bottleneck (green), LPA adapts the main label predictor (pink), and RCB adapts the residual branch (yellow). The overall layout follows a left-to-right data flow, with clear separation between source and target domains, and modular representation of each component with labeled dimensions and color-coded adaptation status."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

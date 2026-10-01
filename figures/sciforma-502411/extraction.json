@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502411",
+  "record_sha256": "f33c1ca8290c9e6d46492eeeec321070c11ec72cdcd55c4d8732a86895b5aeaa",
+  "asset_sha256": "ede22c48b0336d6f66eb9b427fd02f16fa58ba5b3d012e66d66e2c2f2f6a8b70",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502411",
+    "title": {
+      "zh": "Mediation Analysis for Probabilities of Causation · 方法图",
+      "en": "Mediation Analysis for Probabilities of Causation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14491",
+      "title": "Mediation Analysis for Probabilities of Causation",
+      "authors": [
+        "Yuta Kawakami",
+        "Jin Tian"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14491",
+      "arxiv_url": "https://arxiv.org/abs/2412.14491",
+      "arxiv_id": "2412.14491",
+      "arxiv_first_submitted_at": "2024-12-19T03:28:13Z",
+      "arxiv_updated_at": "2024-12-19T03:28:13Z",
+      "arxiv_subjects": [
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502411/image/image.jpg?Expires=1790835221&Signature=fAHI0Xz~2MyriTQWQsIjADV2DWgWSGIoPHmiDZsZQsb0pRee9PtxluQZHeneuVzChWNYbBVRzBFt1zhbLQt7bDe9httc4ZE~rzQ3nHpM6gYNp7IxhYMAZ6FJudfnQQJYddJTaZqi7ObvlIPsz-5zaSBoPkXVSHBpcayOBmdilQLOum9IOzFTPnc1tFn5dem2Y4wnd47lCi3f2VzkokunuLFlDwuNA71ysakdkCOHMq0ux5ADiVSadZXUSzCjsuYgZwnTyngqWedU2HTRjEzXmfjgceRImv1OmEBoLpkiauiMjIXKevMu5avbWD5UY~oWl~CqLwESxKLSFSjhbBBkLg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502411,
+      "description_sha256": "7a6b343627a73cdafbd2974bf0fa964c6b2d2a7b4fd72583532bee61ee6e56e9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a causal graph representing a Structural Causal Model (SCM) denoted as ${\\cal M}$. The global layout is a symmetric, diamond-shaped structure composed of four circular nodes arranged in a quadrilateral formation: two nodes on the left and right sides (labeled X and Y, respectively), one node at the top (labeled C), and one node at the bottom (labeled M). All nodes are drawn as simple black-outlined circles with centered, bold, uppercase letters as labels. The graph is undirected in terms of spatial arrangement but directed in terms of causal relationships, indicated by arrows.\n\nThe visual modules consist of these four circular nodes, each representing a variable in the model. Node X is positioned on the far left, node Y on the far right, node C at the top center, and node M at the bottom center. There are no color distinctions or additional visual attributes such as shading or textures; all elements are rendered in monochrome with clean, thin lines.\n\nConnections between the nodes are represented by directed arrows, indicating causal influences. Specifically, there is a bidirectional arrow between X and Y, meaning each directly influences the other. From node C, there are directed arrows pointing to X, Y, and M, indicating that C is a common cause of all three. Additionally, there are directed arrows from X to M and from M to Y, forming a mediating path from X to Y through M. Thus, the causal pathways include direct effects (X → Y, C → X, C → Y, C → M), an indirect effect via mediator M (X → M → Y), and confounding effects due to C. The graph captures both direct and indirect causal relationships, as well as potential confounding, making it suitable for analyzing mediation and confounding in causal inference. The caption explicitly identifies this as a causal graph for SCM ${\\cal M}$, implying that the structure encodes a set of structural equations defining the joint distribution of the variables under the assumption of causal sufficiency and no unobserved confounders beyond those depicted."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

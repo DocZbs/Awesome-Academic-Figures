@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500940",
+  "record_sha256": "a7407330b352343fea7f4695d3bf9fa4c26afdaab63a8c4e4c680ea388735ca0",
+  "asset_sha256": "4fa56348c6649feb036a531c89c80db2326b38552aeb35b0561d091e8556fe16",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500940",
+    "title": {
+      "zh": "IDArb: Intrinsic Decomposition for Arbitrary Number of Input Views and Illuminations · 方法图",
+      "en": "IDArb: Intrinsic Decomposition for Arbitrary Number of Input Views and Illuminations"
+    },
+    "paper": {
+      "id": "arxiv-2412-12083",
+      "title": "IDArb: Intrinsic Decomposition for Arbitrary Number of Input Views and Illuminations",
+      "authors": [
+        "Zhibing Li",
+        "Tong Wu",
+        "Jing Tan",
+        "Mengchen Zhang",
+        "Jiaqi Wang",
+        "Dahua Lin"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12083",
+      "arxiv_url": "https://arxiv.org/abs/2412.12083",
+      "arxiv_id": "2412.12083",
+      "arxiv_first_submitted_at": "2024-12-16T18:52:56Z",
+      "arxiv_updated_at": "2025-04-01T16:23:56Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500940/image/image.jpg?Expires=1790835181&Signature=G1YaYWaXhsGu6sR4t7tvhGL02elwXm0fhLy3k9NT-nFUunuCuzgnf~9jBQol7hYau4Zl~jwusFHyybRyn2Wm~ZrztDQ26434x1yJdYqqXE4KUW3LVBgWdqdrOmwTK7fLD9bO-KCtQg3KxddJI1-pHd0bAT1~C4Fl5~FIL3NoqeNyHp43OyD9Zir551EZc-iHblvQsyVYDf1t0T54HUOhqOnPuVa02j3Pduazxynh71C2whRp8NGvrMsqoNwSWVV~aFc-47dwzO5HZAExT9a6MVxWSzUXBaQRhjb0WjGeW~-4f~~IHZ2v2-WJa-KYgaukp5KvSzvuHbyWC8WWvPRhvQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500940,
+      "description_sha256": "887cc9702a4fa1f6d192d0d364fecee5489b63df5eff1154f454867d6ba9bc8f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a two-part architectural diagram for a neural network method designed to estimate intrinsic properties (albedo, normal, metallic & roughness) of 3D objects from multi-view, multi-illumination images. The top section provides an overview of the entire pipeline, while the bottom section details the internal structure of the attention block within the U-Net.\n\n[1] Global Layout and Structure:\n\nThe top portion shows the end-to-end workflow: starting from a grid of input images representing N_v views and N_i illuminations of a 3D object (e.g., a car), N images are sampled. These images are paired with corresponding noise maps and fed into an encoder ε, which produces latent representations. These latents are concatenated with a specific text prompt (e.g., 'albedo', 'normal', or 'metallic&roughness') and processed by a U-Net denoiser D. The output is a set of predicted intrinsic maps for the object, shown in three distinct color-coded outputs: albedo (gray-scale), normal (pinkish), and metallic&roughness (green).\n\nThe bottom portion zooms into the attention block inside the U-Net, structured as a sequence of three modules: cross-component attention, cross-view attention, and a feed-forward layer with cross-attention. Each module processes a latent tensor of shape D×H×W (where D=3 for the three intrinsic components), and the flow proceeds left to right.\n\n[2] Visual Modules and Attributes:\n\nIn the top section, input images are arranged in a grid labeled 'N_v views' and 'N_i illumination'. Sampled images are highlighted with orange borders. The encoder ε is depicted as a gray box with a downward arrow, followed by a concatenation symbol ⊕. The U-Net is shown as a series of vertical bars with a central bottleneck, labeled 'U-Net'. The decoder D is represented by a gray box with a rightward arrow. Output intrinsic maps are displayed in three rows, each with a distinct color scheme: gray for albedo, pink for normal, green for metallic&roughness.\n\nIn the bottom section, the 'cross-component attention' module takes a latent tensor (D×H×W) and applies attention across the three intrinsic components (albedo, normal, metallic&roughness), visualized as three separate image patches. The attention mechanism uses query (Q_N), key (K_N), and value (V_N) matrices derived from the latent, producing attention maps of size D×H×W. The 'cross-view attention' module similarly processes the same latent tensor but applies attention across four different views (view1 to view4), using Q_D, K_D, V_D to generate attention maps of size N×H×W. Both attention blocks use standard transformer-style diagrams with colored boxes for keys, queries, values, and attention maps. The final 'feed-forward' block includes a cross-attention step guided by the specific text prompt, which modulates the latent representation before passing it forward.\n\n[3] Connections and Arrows:\n\nIn the top section, arrows indicate the data flow: from the input grid → sample N images → encoder ε → concatenation with text prompt → U-Net → decoder D → output intrinsic maps. A curved black arrow points from the U-Net to the attention block in the bottom section, indicating that this is the detailed implementation of the attention mechanism within the U-Net.\n\nIn the bottom section, data flows from left to right through the three attention modules. Within each module, arrows show how the latent tensor is split into Q, K, V, then multiplied to produce attention maps, which are combined with the original values via addition. The output of each module feeds into the next. The feed-forward block receives the output from cross-view attention and performs cross-attention with the text prompt before proceeding. All connections are solid black arrows, except for the curved arrow linking the U-Net to the attention block."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

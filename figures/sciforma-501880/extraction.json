@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501880",
+  "record_sha256": "e826e9881032be2dfa8a6fc0deea22128ae3335c8f01a806aab8709c37f5b37b",
+  "asset_sha256": "c3058a248a1226fc921b81de90629bf93052a2acc40939fbbf4860108a243415",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501880",
+    "title": {
+      "zh": "Unifying Attribution-Based Explanations Using Functional Decomposition · 方法图",
+      "en": "Unifying Attribution-Based Explanations Using Functional Decomposition"
+    },
+    "paper": {
+      "id": "arxiv-2412-13623",
+      "title": "Unifying Attribution-Based Explanations Using Functional Decomposition",
+      "authors": [
+        "Arne Gevaert",
+        "Yvan Saeys"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13623",
+      "arxiv_url": "https://arxiv.org/abs/2412.13623",
+      "arxiv_id": "2412.13623",
+      "arxiv_first_submitted_at": "2024-12-18T09:04:07Z",
+      "arxiv_updated_at": "2024-12-18T09:04:07Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501880/image/image.jpg?Expires=1790835205&Signature=Y632EQflMesZ0mPxEde45i6YjJJdThoZTeYE9TFtsA4YTT3baWU9irHN20Kx0kqDGNjQ8aMIvnKxGhjneLhymGu7at-EqjmRutbTWdilFCPaQpi0Dwyfy0XZSgMBvdEpq72VEpiRmMuqNQ-nPg5psUKRF2aWgfH4oZLH~fSbRMEv~lHlZnMzHaTvILuKXqCU2N2oOgVMTyhonLcA6X~2JA1G9mCoNgqEFtGIpbLuZZuIg941gEn~3m65PJzq7XmylkLeNroheAjsr7rHlqSpzG1~yRdi4BD7VFOXYe-Wcea2rXIauTQVwdUw7gQgRBVFgXppz4OnRLbn1xvhUuljUQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501880,
+      "description_sha256": "6f447588e7f77f1a0ea3a7f4887fcfc951c15e4dc2c17596df7e4c9dc0add97e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a hierarchical, tree-like diagram illustrating a unifying framework for removal-based attribution methods in machine learning or explainable AI. At the top, a gray rounded rectangle labeled 'Attribution method' contains the mathematical definition: m : F × 2^[d] → F, indicating a function that maps from a feature space F and subsets of features (2^[d]) to the feature space F. This top node branches downward into two main components: a gray rounded rectangle on the left labeled 'Cooperative game', defined as v_G^Φ : F × X → (2^[d] → R), and a red rounded rectangle on the right labeled 'Aggregation', defined as {α_S^T | S, T ⊆ [d]}, representing a set of aggregation coefficients over subsets of features. The 'Cooperative game' node further splits into two red rounded rectangles at the bottom: 'Behaviour', defined as Φ : F → F, and 'Decomposition', defined as G := {g_S : F → F | S ⊆ [d]}, which represents a family of functions indexed by subsets of features. The red nodes signify user-defined choices within the framework. The diagram visually conveys that an attribution method is determined by selecting a behaviour, a decomposition, and a set of aggregation coefficients. The behaviour and decomposition together define a cooperative game, and the attribution method corresponds to a value or interaction index derived from this game. The layout is strictly hierarchical, with arrows flowing from top to bottom, indicating a top-down derivation process. All nodes are rectangular with rounded corners; gray nodes denote derived or structural components, while red nodes denote user-specified parameters. Text inside each node is centered, using bold for titles and standard font for mathematical expressions. The overall structure emphasizes modularity and the compositional nature of attribution methods under this framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

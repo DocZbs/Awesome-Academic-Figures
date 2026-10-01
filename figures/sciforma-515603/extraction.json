@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-515603",
+  "record_sha256": "45c3ba49c3bf1b1cf6dee4250faadd710321429a6e25392d2b7f43f1c818e67d",
+  "asset_sha256": "dc408a67c2526296d98e47f0598d1c1531216c7bcff659edbfa683ff9759fede",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-515603",
+    "title": {
+      "zh": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy · 方法图",
+      "en": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy"
+    },
+    "paper": {
+      "id": "arxiv-2502-04898",
+      "title": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy",
+      "authors": [
+        "Ricardo Coimbra Brioso",
+        "Leonardo Crespi",
+        "Andrea Seghetto",
+        "Damiano Dei",
+        "Nicola Lambri",
+        "Pietro Mancosu",
+        "Marta Scorsetti",
+        "Daniele Loiacono"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_id": "2502.04898",
+      "arxiv_first_submitted_at": "2025-02-07T13:04:25Z",
+      "arxiv_updated_at": "2025-02-07T13:04:25Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/515603/image/image.jpg?Expires=1790835471&Signature=plNU317zwI9l0krfv5AM~p0AgkEhBAKYSfjJUSXD91leUVNZlnSadjwrC5H~xHaYoxE7J-Na1YW2fUrVLxaV5gUmaLizl~aDuKjkRH7jxxdEEN4YMiNtXue9LS7EKV7f3oxWcRHb7oUObMoViTXf9fQG1U4qy-xoDkX7IeA6yWV40yFXSbdK2w5qnTVU-6EYxi~lKEOKyFK6G247fgnb9oEU7btl5UvA6AM6iIO-AYGqsVrUw~DWFVEbJoozrbbh31bvpDOwPQM5vUmggy7DRD8B6PIJwAF9yJH~Fh6a7wdiw7Enwq3oLTSCNR6Ctz0qFVuYeXKA7p4IDx4dA9pCCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 515603,
+      "description_sha256": "970c5c2d981fdde886457c2d821ae4675b7cc6439af7333ea97643890e15b826",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the ARTInp framework, which consists of two main components: a Completion Network and a Translation Network, arranged vertically. The top section, labeled 'Completion Network', processes sagittal slices of cone-beam CT (CBCT) data with gaps. It begins with an input block showing an original CBCT volume with a gap, alongside an original CT and a gap mask, indicated by a 3D coordinate system (x, y, z). This input feeds into a Generator module, depicted as a pink hourglass-shaped structure, which produces a synthesized CBCT (sCBCT) output. The sCBCT is shown as a sagittal slice with a green dashed line indicating the gap region. This output is then combined with the original CBCT to form an inpainted CBCT, displayed as a sagittal slice with a red dashed line marking the reconstructed area. The inpainted CBCT is evaluated by two discriminators: a Global Discriminator and a Local Discriminator, both represented as pink triangular shapes. The Global Discriminator receives the full inpainted image, while the Local Discriminator focuses on the region around the gap, indicated by a yellow dashed box. Both discriminators output a 'Real/Fake' classification, with the Local Discriminator's output connected via a dashed red arrow, suggesting adversarial training feedback.\n\nThe bottom section, labeled 'Translation Network', processes axial slices derived from the inpainted CBCT via a 'Sagittal to Axial Slice' transformation, indicated by a coordinate system (x, y). The inpainted CBCT axial slice serves as input to another Generator, also shown as a pink hourglass. This Generator produces a synthesized CT (sCT), displayed as an axial slice. The sCT is then paired with the original CT for evaluation by a Discriminator, represented as a pink triangle, which outputs a 'Real/Fake' decision. A dotted vertical line separates the sCT from the original CT within the Discriminator’s input, emphasizing the comparison. The entire framework is labeled 'ARTInp' at the center, bridging the two networks. All modules are enclosed in dashed rectangular boxes, and arrows indicate the flow of data between components, with solid lines for forward propagation and dashed lines for adversarial feedback or auxiliary connections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

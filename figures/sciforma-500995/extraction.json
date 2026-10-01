@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500995",
+  "record_sha256": "e85eee74288bf99016f83f2038906ef487bad090b35fc77d92a4062c7c80b36c",
+  "asset_sha256": "9a5ddc3268892cf6a5ab555aafac9b822444a26500995a9fd2d7f672798f29b3",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500995",
+    "title": {
+      "zh": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature · 方法图",
+      "en": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature"
+    },
+    "paper": {
+      "id": "arxiv-2412-12150",
+      "title": "Rethinking Comprehensive Benchmark for Chart Understanding: A Perspective from Scientific Literature",
+      "authors": [
+        "Lingdong Shen",
+        " Qigqi",
+        "Kun Ding",
+        "Gaofeng Meng",
+        "Shiming Xiang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12150",
+      "arxiv_url": "https://arxiv.org/abs/2412.12150",
+      "arxiv_id": "2412.12150",
+      "arxiv_first_submitted_at": "2024-12-11T05:29:54Z",
+      "arxiv_updated_at": "2024-12-11T05:29:54Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500995/image/image.jpg?Expires=1790835182&Signature=XPvD08mVeb2AJWmA4SG9kytksjtjnfnoeAxDvN2NSqZOLRbD-KTy1AlNnVsGWiHvJqjt6z-q49nsw6wZVFIm5ahuzarcUb0X4fLGirZbC813qZ0qsl9rzXZqSjJcVkueZfnRAO5~8o5hI3vvWa59IvaT32eEgA2Wd9wVaErhJu6CJQnZI~DLSc~LjBSGlF6DxAcPCpvC2UjxBc23YmaHz4IugXlC9zhFdIxiz9bGDNrl3Q7O4rWjvYNlLSFu3IHNihMnBJRDDiDhfpXhWQp4LIOV2G~OVicSc76YOTb7arCQitdsBpAeAV-kdSF9B94eNHUNCaTcBBKbXYpm56ZaSQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500995,
+      "description_sha256": "9f0223d9e89682852353aa9db36a4d448b170a83d86b2c6276161f57103ca52f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The diagram illustrates the architectural design of FANet, a vision transformer-based model, structured as a linear, feed-forward pipeline without any feedback loops or recurrent connections. The global layout is organized into two main horizontal sections: the top section represents the high-level module structure of FANet, while the bottom section provides an expanded view of the internal structure of the Swin Transformer Blocks. The entire diagram flows from left to right, indicating a sequential processing order.\n\nIn the top section, the input is represented by a stack of pink grid-like patches, symbolizing image patches. These patches are fed into a gray rounded rectangle labeled 'Patch Embedding', which performs initial feature extraction. The output then proceeds to a large orange rounded rectangle labeled 'Swin Transformer Blocks with GRPB', indicating a group of transformer blocks enhanced with a specific mechanism (GRPB). This is followed by another orange rounded rectangle labeled 'Swin Transformer Block', representing a standard Swin Transformer block. A dashed arrow extends from this block to the right, suggesting continuation or output. Above this sequence, a dashed rectangular boundary encloses these components and is labeled 'FANet', identifying the entire model.\n\nBelow this, the diagram expands on the internal structure of the Swin Transformer Blocks. Two identical dashed boxes represent repeated units, each containing a sequence of operations: a green rectangle labeled 'LN' (Layer Normalization), followed by a purple rectangle labeled 'W-MSA' (Window Multi-head Self-Attention), then a circular node with a plus sign indicating element-wise addition (residual connection). This is followed by another 'LN' block, a blue rectangle labeled 'MLP' (Multi-Layer Perceptron), and another residual addition circle. The second dashed box is identical to the first, and both are connected in series. A label 'X5' above the second box indicates that this entire unit is repeated five times, forming the core of the transformer stack.\n\nAll connections between modules are represented by solid black arrows pointing rightward, emphasizing the unidirectional, feed-forward nature of the computation. There are no curved arrows, loops, or backward connections visible anywhere in the diagram. The visual attributes include distinct colors for different functional components: gray for embedding, orange for high-level blocks, green for LN, purple for attention, and blue for MLP. Text labels are placed inside or adjacent to each component for clarity. The diagram’s structure and connections clearly depict a straightforward, one-way process flow, consistent with the statement that it contains no feedback loops or recurrent connections."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

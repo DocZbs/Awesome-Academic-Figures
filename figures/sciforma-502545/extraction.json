@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502545",
+  "record_sha256": "ecfdc7d35a4f05a48b00eefdb78f88e6c502dc58d791d9f54e4b8a800cab4674",
+  "asset_sha256": "c4acb7ae5181057c61db1287c540bc0a8db1508c490a4c9b48c106f3929ccdad",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502545",
+    "title": {
+      "zh": "Event-assisted 12-stop HDR Imaging of Dynamic Scene · 方法图",
+      "en": "Event-assisted 12-stop HDR Imaging of Dynamic Scene"
+    },
+    "paper": {
+      "id": "arxiv-2412-14705",
+      "title": "Event-assisted 12-stop HDR Imaging of Dynamic Scene",
+      "authors": [
+        "Shi Guo",
+        "Zixuan Chen",
+        "Ziran Zhang",
+        "Yutian Chen",
+        "Gangwei Xu",
+        "Tianfan Xue"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_id": "2412.14705",
+      "arxiv_first_submitted_at": "2024-12-19T10:17:50Z",
+      "arxiv_updated_at": "2024-12-19T10:17:50Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502545/image/image.jpg?Expires=1790835225&Signature=XUNrkro588fAsN1g9R7JwHFqECHnH9HROVdtdaZqxRbC~pW075nQ5B9klcWJ88v0S~~Ty3V00CmGWpv62fBf1hiHX4C3N1otxyNChET8NvmG9qTbuM9M6ZFkTeKDvcXKdHNKwjaDnVOMsbSHRGphfIZhbANw5HCWAQ~fhc1ORu0SGTGPJk146-Mcwu-gzMRntvuWScNrctRC2oL29b5LEoprPgR1uIiTDO-iwnyZXZ0XznWGTKbe2Wshp-f9ntCGt59FD7vvXxk2YuJvK0tyE0diAClmeQ780WHpt0NvOWaPIGnGTZapGiB0U8MxB3nxAkJi5-Tq3TMg7ZKmWPPGng__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502545,
+      "description_sha256": "6ee209cf4acb3663cf99bd98998c7f441491244831f0c30aa6f9c1fbb1bdf1f6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-stage framework for 12-stop HDR imaging in dynamic scenes, comprising an event-assisted alignment module and a diffusion-based fusion module. The global layout is divided into three horizontal sections: the top section displays input data, while the bottom section is split into two parallel modules labeled (a) Step 1: Event-assisted Alignment Module and (b) Step 2: Diffusion-based Fusion Module.\n\nIn the input data section, five LDR images (I₁ to I₅) are shown sequentially from left to right, corresponding to exposure values ranging from -6EV to +6EV, with I₃ at 0EV designated as the reference EV. Between each consecutive pair of images, small orange-bordered icons represent inter-exposure events, indicating motion information captured between exposures. A legend on the right clarifies that blue-bordered squares denote LDR images and orange-bordered squares denote inter-exposure events.\n\nIn module (a), the event-assisted alignment module, two LDR images are processed: Iₙ^a (a pre-reconstruction output) and I₃^a (the reference EV image). Both pass through orange trapezoidal blocks labeled 'Image Encoder'. The outputs feed into a FlowNet block, which computes motion flow using inter-exposure events E(tₙ → t₃) and RAFT-based motion estimation. This motion is refined and used to warp the encoded features of Iₙ^a via a 'Warp' operation. The warped features are then decoded by an 'Image Decoder' to produce an aligned LDR image Iₙ^a, which is visually similar to I₃^a but corrected for motion. The module’s background is light blue, and all encoder/decoder blocks have a red flame icon in the top-right corner.\n\nModule (b), the diffusion-based fusion module, has a light green background. It receives five aligned LDR images (I₁^a to I₅^a) stacked vertically. Each image is encoded by a blue parallelogram labeled 'VAE Encoder', producing latent representations C_lars. These latents are fed into an orange trapezoid labeled 'ControlNet', which also receives noise Z_t as input. The ControlNet guides a diffusion process involving a blue parallelogram 'SD Encoder' and 'SD Decoder'. The SD Decoder generates a latent Z_{t−1} from Z_t, iteratively refining the output over T steps. The final latent Z₀ is decoded by a 'VAE Decoder' to produce the final HDR image I, which includes tone mapping for display. All VAE and SD blocks feature a snowflake icon in the top-left corner. The ControlNet and SD components are connected with bidirectional arrows, indicating iterative refinement, and the entire diffusion loop is annotated with 'T steps'."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-500460",
+  "record_sha256": "afa01fcd2778f2d56b36e97c0558a012a7892de9c96875e32e99868d50846055",
+  "asset_sha256": "792ec3ed9c4fc9f4c8219ac17e6823e8b3f00b0cb5b52d5dc726f0e631eadfdd",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500460",
+    "title": {
+      "zh": "Relation-Guided Adversarial Learning for Data-free Knowledge Transfer · 方法图",
+      "en": "Relation-Guided Adversarial Learning for Data-free Knowledge Transfer"
+    },
+    "paper": {
+      "id": "arxiv-2412-11380",
+      "title": "Relation-Guided Adversarial Learning for Data-free Knowledge Transfer",
+      "authors": [
+        "Yingping Liang",
+        "Ying Fu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11380",
+      "arxiv_url": "https://arxiv.org/abs/2412.11380",
+      "arxiv_id": "2412.11380",
+      "arxiv_first_submitted_at": "2024-12-16T02:11:02Z",
+      "arxiv_updated_at": "2024-12-16T02:11:02Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500460/image/image.jpg?Expires=1790835171&Signature=mAoDsC3skn7fbQ1-77LFWU-guwmLnGPBK1-NVAJpo-Ut-1WHFNFRJyqyjbDzunE~cytdUojpypW5rCYAvcfTS-h~0kjKygwbNyErt8y83lJuPpiOsKnvYxeidQUbYrKc7F9SlU8AROL7fnKBz80UsSylNtaD31v9ZioYY8z4R0oPqknr1aXUGPHpsQ1l5kuDs8NYSn5vqmXwPJdT3eT1pOrB3cJrVm-hme4WCs5BUZEHZzbm6pGym4NOmWSao5KSUSpLLlU13CbeAV0OTAuPFsA~IgmgwJHO-txW3hsqFoDtxOQ6JsZPm3MxLvGLbhy6eDHQWmDoqMUK0m46MHAvcQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500460,
+      "description_sha256": "19b6020a7538048dfc789fdf9a19e1ef84379209afcd0a4d001aaf910fef3ae7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative illustration of three different sample optimization strategies in the context of teacher-student learning frameworks: adversarial methods, contrastive methods, and the proposed 'Ours' approach. The global layout consists of three side-by-side panels, each enclosed in a dashed rectangular box, labeled at the bottom as 'Adversarial methods', 'Contrastive methods', and 'Ours'. Above these panels is a legend specifying the visual symbols: blue circles and triangles represent 'Samples from the teacher', peach-colored circles and triangles denote 'Samples from the student', and a gray circle signifies the 'Average embedding'.\n\nEach panel contains two diagonal regions separated by a gray diagonal line, labeled 'Teacher' in the upper region and 'Student' in the lower region. In all panels, the teacher samples (blue shapes) are positioned in the upper half, and student samples (peach shapes) are in the lower half.\n\nIn the 'Adversarial methods' panel, red dashed arrows point from each student sample toward the teacher samples, indicating a push-away mechanism. There are no connections between student samples themselves, suggesting that adversarial methods focus solely on aligning student samples away from teacher samples without considering relationships among student samples.\n\nIn the 'Contrastive methods' panel, red dashed arrows again indicate pushing student samples away from teacher samples. Additionally, a gray circle labeled 'Average embedding' appears below the student samples, with red arrows pointing from it to each student sample, implying that student samples are pushed away from this average embedding. This suggests an attempt to increase intra-class diversity but still lacks explicit modeling of relationships between individual student samples.\n\nIn the 'Ours' panel, red dashed arrows continue to show student samples being pushed away from teacher samples. However, new green solid arrows appear, connecting the student samples to each other and to the average embedding. Specifically, green arrows point from the average embedding to each student sample and also connect the student samples to one another, indicating a pull-together mechanism. This reflects the proposed method's goal of enhancing intra-class diversity by encouraging student samples to cluster around the average embedding while simultaneously maintaining separation from teacher samples to preserve inter-class confusion.\n\nThe figure uses color-coded arrows to convey directionality: red dashed arrows signify repulsion (pushing away), while green solid arrows signify attraction (pulling close). The visual design emphasizes that the proposed method uniquely incorporates both inter-class repulsion and intra-class attraction, unlike the other two approaches which only enforce repulsion. The overall structure highlights the evolution from simple adversarial pushing to contrastive pushing with an average anchor, culminating in the proposed method that explicitly models relationships among student samples for improved sample diversity and class separation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

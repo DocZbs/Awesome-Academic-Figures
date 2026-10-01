@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502160",
+  "record_sha256": "8dd45d0fe99af68d9cffaa3107ad6e206815ae55148da5e5625c9ef5ecfcec1c",
+  "asset_sha256": "8625e35b937fbe14497832ee30451384ab20e63af27f058f6432c5fcd369636d",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502160",
+    "title": {
+      "zh": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models · 方法图",
+      "en": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-14006",
+      "title": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models",
+      "authors": [
+        "Cong Wei",
+        "Yujie Zhong",
+        "Haoxian Tan",
+        "Yingsen Zeng",
+        "Yong Liu",
+        "Zheng Zhao",
+        "Yujiu Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_id": "2412.14006",
+      "arxiv_first_submitted_at": "2024-12-18T16:20:40Z",
+      "arxiv_updated_at": "2024-12-18T16:20:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502160/image/image.jpg?Expires=1790835212&Signature=JbnArYlnsPASutXSpTtCDYHpNv7xuUsvLYRuVyaiFcuM1pq4YlGbXYuMg-vR6QxIbM6LnmpLFNPT1PACEka~2YJWahj0UXMo2MG3f~c7xs5sXKjbTHEll2pX4CHTWAenluZ2nGePx6H4XOJTyHg9i3ZFc7F9ONYnOirH6z7lq8hqtOvwOpm3V-8aBa3W1SK2eBPJczVoQ~cJEYeQitC2Or~XkIrZdBJs8Y2GWCdNTZ-1aCS03kJ5oNgDo1Zt1nSC0k61gGb7H9OYSwk8P9dQnnGp48wyYFnAlao7WloddBmq9NJ-dszlOzB2~uC18rwdVo8b3m2Qng8ml--7S4PS~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502160,
+      "description_sha256": "00c6a98b1900f05d38e439243906f6c1f26290dcf3be691eb37f804a5afc32ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the end-to-end framework of a model named \\name, designed for instructed visual segmentation tasks, particularly for images and videos. The global layout is structured as a left-to-right data processing pipeline, starting with input modalities on the far left and progressing through multiple processing modules to produce segmentation results on the far right. The entire architecture is divided into distinct functional blocks, each represented by colored boxes with specific shapes and icons indicating their roles and computational characteristics.\n\nOn the left side, three types of inputs are shown: an 'Image' (a single frame with a cat), a 'Key Frame' (a single frame with a cheetah), and 'Reference Frames' (a sequence of frames showing a cheetah in motion). These inputs are fed into a 'CLIP Encoder', depicted as a green rectangular block with a snowflake icon, symbolizing a frozen or pre-trained model. This encoder outputs a feature representation denoted as F_{CLIP}, which is then split into two streams: one feeding into a 'Vision Tokens' module (a dashed box containing blue squares) and another into an 'Object-aware Video Perceiver' (a yellow rounded rectangle with a flame icon, indicating a trainable component).\n\nBelow the input section, two text prompts are provided: a 'Referring Prompt' ('A black cat sitting on a wooden toilet') and a 'Reasoning Prompt' ('What is about to become cheetah's food?'). These prompts are tokenized into 'Text Tokens' (purple squares in a dashed box) and 'Mask Tokens' (orange squares in a dashed box), which are then processed by a 'Large Language Model' (green rectangle with a snowflake icon, again indicating a frozen base model). Within this large language model, a 'LoRA' (Low-Rank Adaptation) module is highlighted in yellow with a flame icon, signifying a fine-tuned, trainable adaptation layer.\n\nThe 'Object-aware Video Perceiver' processes the visual features from the CLIP encoder and generates a sequence of blue square tokens representing object-specific and temporal features. These are combined with the text tokens from the prompt and passed to the Large Language Model. The output from the Large Language Model includes two types of embeddings: 'Detailed Text Embed' (purple squares) and 'Mask Embed' (orange squares), which are sent to the next stage.\n\nThe 'Vision-guided Multi-granularity Text Fusion' module (yellow rounded rectangle with a flame icon) receives the detailed text embeddings and the visual features f_v (from Vision Tokens) to perform cross-modal fusion. This module also receives the mask embeddings. The fused representations are then passed to the 'Segmentation Decoder' (yellow rounded rectangle with a flame icon), which produces 'Masks & Scores' (red squares in a dashed box).\n\nFinally, the 'Masks & Scores' are used to generate the 'Image / Video Segmentation Results', shown as the original images with red segmentation masks overlaid on the target objects (the cat and the cheetah). The top-level visual encoder (blue rectangle with a snowflake icon) processes the input image directly to produce f_img, which is also fed into the Vision-guided Multi-granularity Text Fusion module, enabling direct visual guidance.\n\nArrows indicate the flow of data between modules. Solid arrows represent primary data flows, while dashed lines denote auxiliary connections or token sequences. The snowflake icons denote frozen or pre-trained components, and flame icons denote trainable or adapted components. The color coding—green for encoders, yellow for trainable fusion/decoding modules, purple for text-related embeddings, orange for mask-related embeddings, and red for final outputs—helps distinguish different data types and processing stages."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

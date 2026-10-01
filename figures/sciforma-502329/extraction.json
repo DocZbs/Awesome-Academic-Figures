@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502329",
+  "record_sha256": "cdb8ff9e24940c9d706074b5a839acffab0fad3d3c007dc6a269113407583501",
+  "asset_sha256": "d565ac54357402ffd34905f957af0a7a54c3832b55d600a86ffa1dddb54b006e",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502329",
+    "title": {
+      "zh": "ECG-Byte: A Tokenizer for End-to-End Generative Electrocardiogram Language Modeling · 方法图",
+      "en": "ECG-Byte: A Tokenizer for End-to-End Generative Electrocardiogram Language Modeling"
+    },
+    "paper": {
+      "id": "arxiv-2412-14373",
+      "title": "ECG-Byte: A Tokenizer for End-to-End Generative Electrocardiogram Language Modeling",
+      "authors": [
+        "William Han",
+        "Chaojing Duan",
+        "Michael A. Rosenberg",
+        "Emerson Liu",
+        "Ding Zhao"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14373",
+      "arxiv_url": "https://arxiv.org/abs/2412.14373",
+      "arxiv_id": "2412.14373",
+      "arxiv_first_submitted_at": "2024-12-18T22:13:21Z",
+      "arxiv_updated_at": "2025-07-29T21:20:14Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502329/image/image.jpg?Expires=1790835216&Signature=Arl~mcJeSbbM7S6v03wy36ucxgeGcL0~lV5VPifCRihRMhOwjngz8YkOvbR0RNQRIo0FS-HNWIuQwpbe4f4TGnyb9hPtBjs2Q0gOe2q~FeDyI4EeU7zW~6l9MNi4W91p6qzhe9dXWz7h9Vhgl7yeQU44eagLkUOhD8en7KZtgVu5FYRZEcssCFuU8aVt5v4FrhOYyiHlkzfSWgtc6MGbsfkaU5yfiOLZSlLkFAgjmj9v-J8DZAA7PwvcMO-EQcS88nP~haUYZ32Hcc853OjvRgW6BlErZNUnvctQBgr6eMB6Eh22v7XpI6fJHcYc1LQTLi2WrH2nywMbUnKGmKE5jQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502329,
+      "description_sha256": "9974cd55e17d191bd16023013fb25339c7314e3c0c5b0c0705863485a2e48724",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a side-by-side comparison of traditional two-stage methods and a proposed end-to-end method for ECG language modeling. The layout is divided into three main vertical sections: 'Traditional Methods: 2 Stages' on the left, split into Stage 1 and Stage 2 by a dashed vertical line, and 'Our Method: End-to-End' on the right. A legend at the top-left corner defines visual symbols: a red flame indicates trainable components, a blue snowflake denotes frozen components, diagonal stripes represent masking, and a black plus sign signifies concatenation.\n\nIn Stage 1 of the traditional approach, raw ECG signals (depicted as wavy lines in a light peach rectangle) are processed by a trainable ECG Encoder (orange trapezoid with red flame), producing latent representation z_e (orange circle). Simultaneously, an Original Diagnostic Report (light blue rectangle) is fed into a frozen Text Encoder (blue trapezoid with snowflake), yielding z_o (blue circle). These representations are combined via contrastive loss L_CL (purple circle) using an 'And / Or' logic box. Alternatively or additionally, the ECG signal may undergo masked image modeling (MIM) where a portion of the signal is masked (striped region) and the ECG Encoder (trainable) produces a latent feature z_e, which is used to compute L_MIM (purple circle).\n\nStage 2 of the traditional method takes the ECG features from Stage 1 (z_e) and passes them through a trainable Projection Layer (orange rectangle with red flame) to obtain z'_e (orange circle). Concurrently, a Natural Language Prompt (light blue rectangle) is encoded by a frozen Large Language Model Embedding (green trapezoid with snowflake) to produce z_t (green circle). The projected ECG features z'_e and text features z_t are concatenated (indicated by a black plus sign) and fed into a Large Language Model (green rounded rectangle with red flame), which generates output text tokens (three blue rectangles labeled 'Text').\n\nThe 'Our Method: End-to-End' section shows a unified pipeline. Raw ECG signals (wavy lines) are processed by a trainable ECG-Byte module (red rectangle with red flame), while a Natural Language Prompt (light blue rectangle) is tokenized by a Text Tokenizer (gray rectangle). The outputs from both modules are concatenated (black plus sign) and directly fed into a Large Language Model (green rounded rectangle with red flame), which generates text output (three blue rectangles labeled 'Text'). This end-to-end design eliminates intermediate stages and uses ECG-Byte as a dedicated ECG tokenizer, allowing joint training of all components."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

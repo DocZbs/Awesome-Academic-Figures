@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501460",
+  "record_sha256": "f43adf8e605ab2e167bbb66dc2289712db8ef5de67a99aac88d1be6c58cc744e",
+  "asset_sha256": "8046ae74a2a3ad2b1f73af699fdfc1a5e68933cfc297516d6d73677b6426ded5",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501460",
+    "title": {
+      "zh": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions · 方法图",
+      "en": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions"
+    },
+    "paper": {
+      "id": "arxiv-2412-12836",
+      "title": "A Survey on Recommendation Unlearning: Fundamentals, Taxonomy, Evaluation, and Open Questions",
+      "authors": [
+        "Yuyuan Li",
+        "Xiaohua Feng",
+        "Chaochao Chen",
+        "Qiang Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_url": "https://arxiv.org/abs/2412.12836",
+      "arxiv_id": "2412.12836",
+      "arxiv_first_submitted_at": "2024-12-17T11:58:55Z",
+      "arxiv_updated_at": "2025-12-03T06:36:26Z",
+      "arxiv_subjects": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501460/image/image.jpg?Expires=1790835191&Signature=O6xBoskdsKdb4VWZWMV3vWoMZrwEfKVzY7croRfWHKebd5QuzAeQraT0cKSzTiwJvZCzMC1-HVZt33A3wPMU4yvc1hxlbEB22OMu8UL5~O5-bsVZ20OLwvrOPOnikb4tzawG35gMNEA~ioG7AU95t2KmKl50JnMsm899dYxN6bvsFUSxwlCn1NpFxaXSa4bciHKBlyI1spWimbBQlHFOoJog1Jtu60khQqvZGVDeMJMdzKjmcevTLS5kU3fBmg~Pw7NDkFF~VfykCGbiVAatFYw1iubtY18Iuhy5vRLQOeDeHHfMJ~vi6BmMtc8NHfYi2M5-rQ8~Mt4n1Mk3DRsfvw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501460,
+      "description_sha256": "b8b05d358616234f8c427b45b22836d656845dae738a015e936bab89f2d8f617",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive overview of machine unlearning, with a specific focus on recommendation unlearning, illustrating both general principles and domain-specific challenges. The layout is divided into four main sections: Machine Unlearning, Recommendation Unlearning, Collaborative Effect of Recommendation Data, and two technical variants—Reverse Unlearning and Active Unlearning.\n\nIn the top-left section labeled 'Machine Unlearning', training data is partitioned into an 'Unlearned Data (Forget Set)' represented by a red cylinder and a 'Remaining Data (Retain Set)' shown as a blue cylinder. These are enclosed within a dashed box labeled 'Training Data'. The 'Original Model' (a gray neural network icon) is trained on the full dataset. A retraining process using only the Retain Set produces a 'Retrained Model' (blue neural network), which is shown as equivalent to an 'Unlearned Model' via a bidirectional green arrow, indicating the goal of unlearning.\n\nThe top-right section, 'Recommendation Unlearning', extends this concept to user-item interaction data, depicted as a grid with colored cells representing interactions. The Forget Set (red cylinder) and Retain Set (blue cylinder) are again defined. The Original Model is trained on all data. Two types of unlearning are shown: 'Input Unlearning' leads to a Retrained Model equivalent to the Unlearned Model, while 'Attribute Unlearning' targets latent attributes not involved in training. An arrow from the Original Model to a grid labeled 'Latent Attribute (not participate in training)' is marked with a sad face and 'Inferring', while the Unlearned Model's arrow to the same grid is crossed out with a smiley face and 'Cannot Infer', emphasizing the success of attribute unlearning.\n\nThe bottom-left section illustrates the 'Collaborative Effect of Recommendation Data' through a bipartite graph of users (colored circles) and items (icons like shopping bags). Solid black lines indicate original interactions. After 'Breakdown' (removing one user's data), the graph shows broken connections. The 'Re-remember' step demonstrates how the model may inadvertently re-learn the forgotten user’s preferences due to collaborative signals from other users, indicated by dotted blue lines reconnecting the user to items.\n\nThe bottom-right section presents two technical approaches: 'Reverse Unlearning' uses a decoder D to map from θ₀ (original parameters) to θᵤ (unlearned parameters), with a feedback loop. 'Active Unlearning' adds a filter D_f between D and θᵤ, suggesting a more controlled unlearning process.\n\nThe figure caption notes that black lines represent original interactions and blue lines represent unlearned interactions, highlighting the visual distinction in the collaborative effect diagrams."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

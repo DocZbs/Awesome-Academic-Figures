@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-501135",
+  "record_sha256": "0f62abd20d75b40bc9af457570dfae76aa6f704e67030cbdb0aeffd9c722b874",
+  "asset_sha256": "65f57805acb2b3b73d3d84ad8f57ccf6dfe6d097d9990c40c70af06f8336bcf8",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501135",
+    "title": {
+      "zh": "Efficient Scaling of Diffusion Transformers for Text-to-Image Generation · 方法图",
+      "en": "Efficient Scaling of Diffusion Transformers for Text-to-Image Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12391",
+      "title": "Efficient Scaling of Diffusion Transformers for Text-to-Image Generation",
+      "authors": [
+        "Hao Li",
+        "Shamit Lal",
+        "Zhiheng Li",
+        "Yusheng Xie",
+        "Ying Wang",
+        "Yang Zou",
+        "Orchid Majumder",
+        "R. Manmatha",
+        "Zhuowen Tu",
+        "Stefano Ermon",
+        "Stefano Soatto",
+        "Ashwin Swaminathan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12391",
+      "arxiv_url": "https://arxiv.org/abs/2412.12391",
+      "arxiv_id": "2412.12391",
+      "arxiv_first_submitted_at": "2024-12-16T22:59:26Z",
+      "arxiv_updated_at": "2024-12-16T22:59:26Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501135/image/image.jpg?Expires=1790835185&Signature=kxxn6QyGKuVwo1-HBM9fanqBb~Hd6y~F6WBATnixWNtV4N41Gl8i36ildVKEC6o~P-zJbigTJhbJnZ75IdU7C-VVprvbVf08WDWHMdhPCVblfH544rA8tI1HnqHRdOXh2tHOYytPlpmM8Gul-4Np302ZhcP4qrEaeN7baxSj99j76N2RpleJ2ffBXGuyK0vLbLjTlVvzCoZHZfyySVZIzWTwIc5yjdqgoDZjkiLzBzNBoq7Jl9ZOonQu2PHaMcnYrrqliM0kkKASydt94uezjXVsrZL08IPUS0aUEvvlvmlJNfZYWqWuFyFvpNlxWRkPM~m8-l7Kq1TgkLM73UM50Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501135,
+      "description_sha256": "9a1590d54e03fae2a7f10b4271d0e2698a881b3ba8f12988cbb930f18902eaba",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two alternative methods for extending the U-ViT model to perform image inpainting, labeled as (a) Channel concatenation and (b) Token concatenation. The global layout consists of two side-by-side diagrams, each illustrating a distinct data processing pipeline feeding into the U-ViT model, which is represented at the top by an orange rectangular box labeled 'U-ViT'. Each diagram includes input components at the bottom: a text prompt ('couple horses standing in a grassy field'), a masked image (with black regions indicating missing content), and in case (b), an additional original image. These inputs are processed through intermediate representations before being fed into U-ViT.\n\nIn diagram (a) Channel concatenation, the text prompt is mapped to a green square labeled 't', representing text embeddings. The masked image is processed to produce a gray square labeled 'c' (condition) and three blue squares labeled 'x' (noise image tokens). The gray and blue squares are concatenated along the channel dimension, forming a combined feature map that is then tokenized into a sequence of tokens (represented by the three blue squares). An arrow points from this combined token sequence to the U-ViT model. The caption notes that this method maintains the same number of tokens as in text-to-image generation but requires special handling of the new condition.\n\nIn diagram (b) Token concatenation, the text prompt again maps to a green square 't'. The masked image is tokenized into a gray square 'c' and three yellow squares (representing the condition tokens), while the original image is tokenized into three blue squares 'x' (noise image tokens). The gray and yellow squares are concatenated along the token dimension, forming a longer sequence of condition tokens. This sequence is then concatenated with the text embeddings 't' along the token dimension, resulting in a combined token sequence (green, gray, yellow, blue squares) that feeds into U-ViT. An arrow from the original image to the blue squares indicates its role in generating the noise image tokens. The caption explains that this approach involves tokenizing the new condition (input image plus mask), adding positional embeddings, and concatenating text embeddings along the token dimension.\n\nBoth diagrams use color-coded squares to represent different types of embeddings: green for text, gray for condition, yellow for condition tokens in (b), and blue for noise image tokens. Arrows indicate the flow of data from inputs to the U-ViT model, with specific emphasis on how the condition and noise image are combined differently in each method."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

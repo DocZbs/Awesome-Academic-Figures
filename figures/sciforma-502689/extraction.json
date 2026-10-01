@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-502689",
+  "record_sha256": "03c796cfec893a6a252020ee4737764c76b00f08c41eba2d34bed7b40ac875c8",
+  "asset_sha256": "78c2fd7e377b4218c16d4b0d9d22a19cbcbd5ccbb1fa50251930e87a3cce883b",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502689",
+    "title": {
+      "zh": "Tests for model misspecification in simulation-based inference: from local distortions to global model checks · 方法图",
+      "en": "Tests for model misspecification in simulation-based inference: from local distortions to global model checks"
+    },
+    "paper": {
+      "id": "arxiv-2412-15100",
+      "title": "Tests for model misspecification in simulation-based inference: from local distortions to global model checks",
+      "authors": [
+        "Noemi Anau Montel",
+        "James Alvey",
+        "Christoph Weniger"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.15100",
+      "arxiv_url": "https://arxiv.org/abs/2412.15100",
+      "arxiv_id": "2412.15100",
+      "arxiv_first_submitted_at": "2024-12-19T17:48:03Z",
+      "arxiv_updated_at": "2025-03-14T14:47:52Z",
+      "arxiv_subjects": [
+        "astro-ph.IM",
+        "astro-ph.CO",
+        "cs.LG",
+        "gr-qc"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502689/image/image.jpg?Expires=1790835224&Signature=SnvIbcRH2pjkdlO-sV80Gc9thTmqkr28om96XHp7LrKs6A0btj97jrelJU6ZUJ-pgCzwKMtX8~JUcxHLtrGEFGlLUzn02U25EJAIav9QMMqE7Jik-MdItcYtvNptaILxM5toeeNHARkjTb~ooPc2MxFiE85iOEI~ySICMQXISno-YsQOjvOOB9pIXXJYm0X-4A1XDv3-l7BAGiz6DXrbKZ17W~k~xQAh8Kp3oweYc0Hn-jW8vzis1w8epR87hyE8AP0e9cvMPBniCI8gQ-n6fqklx5I9UsL9q6MNOcC6WDz1ThGjznBFIf-u6Z-6gh~xdoleFSYHBZjm9fiCV8mjFw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502689,
+      "description_sha256": "8d4302ec7d8374c84eb8e78a1c263b0c201e3a6cd0582a2d41f3ee215d238a54",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "astro-ph.IM",
+        "astro-ph.CO",
+        "cs.LG",
+        "gr-qc"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a methodological framework for detecting model misspecification in Simulation-Based Inference (SBI), structured into three main panels: 'Localized deviation tests' on the left, 'Aggregated deviation tests' on the right, and a central integration panel connecting both. The left panel, set against a light blue background, begins with a wavy line graph illustrating a localized deviation, where a dashed segment indicates a perturbation or anomaly. Below this, the localized test statistic is defined as t_i(x) = -2 ln(p_sim(x)/p_dist(x|i)), representing the log-likelihood ratio between simulated and distorted distributions. This leads to two downstream analyses: first, p-values for anomaly detection, indicated by a solid downward arrow, and second, residual analysis, indicated by a dashed downward arrow. The right panel, on a light gray background, shows a similar wavy graph but with a dashed curve overlaying the solid one, symbolizing aggregated deviations across multiple local tests. The aggregated test statistic is defined as t_sum(x) = Σ_i t_i(x), summing over all localized test statistics. This leads to two outputs: first, a p-value for model validation via a solid downward arrow, and second, residual variance analysis via a dashed downward arrow. The central panel connects both sides with horizontal arrows: a solid arrow from the left panel to the center, and another from the right panel to the center, converging on the label 'Global p-value of all tests'. From this global p-value, a solid downward arrow points to 'Insight', which is also connected bidirectionally via dashed arrows to both residual analysis and residual variance analysis, indicating that these analyses contribute to and are informed by the final insight. The overall layout is horizontal, with the left and right panels containing distinct methodologies that feed into a shared central evaluation step, emphasizing the integration of localized and aggregated testing for comprehensive model assessment."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

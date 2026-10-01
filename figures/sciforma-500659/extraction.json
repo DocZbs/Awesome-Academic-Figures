@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500659",
+  "record_sha256": "908b106be7a88513e155ec7f1af50b32c7e60eba4d00edb5ee75d2b9f24dab7b",
+  "asset_sha256": "5bfd74138148b1748d7814776af1c96cdff8afd9ec99e4a2cd69eb186d9641a9",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500659",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500659/image/image.jpg?Expires=1790835174&Signature=lPcJVYT3Svbc8Oqi9l-~zN~JmHTQOTTKHbtNkyPhcsLw0J-9OKLF~J4-fEm~tcgmiiCEgB8z5xmgO06s5jhuuznsebU66rdK83MxDJiQjVI9f84A05DfnYA43fj2TaZo5yWoTfhy-gf7OqNu0p-wbwba4OfvbbHNNYDOs8JM45kWDV7-aS0CoIBtM10Frmj6tLLE-oVDCJN9Ny09F5unTSzw0P-6ChbhH3TyJlxDk8tCrVg~3H5u8VlgySdu6SO3uIswbwkQMQbTfHwP28S6rn~6kR~ps-tTJ158o3Dbnol43TgbolwsIziOELxms--b41vytOcxXi9CxF-ZLP6cBA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500659,
+      "description_sha256": "1dcd9abd39d2c15387f5ea1ff4e71182ac7a5275e9b815ed5a150ffb7e1e94ab",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Stacked Denoising Autoencoder (SDAE) designed for route calculation, as proposed in Chen et al. (2020). The global layout is a symmetric, feedforward neural network structure arranged horizontally from left to right, depicting an encoding-decoding pipeline. The entire architecture is divided into four main stages: input corrupted features, hidden layers, textual embedding vectors, and decoded layers leading to decoded corrected features. Each stage is enclosed within a dashed blue rectangular boundary, indicating modular components of the network.\n\nThe first module on the far left contains the 'Input corrupted features', represented by a vertical stack of pink circular nodes. These nodes symbolize the raw, noisy input data fed into the network. The number of nodes is indicated as variable, with ellipses (...) suggesting multiple units beyond those explicitly drawn. From each of these pink nodes, black lines extend fully connected to the next module.\n\nThe second module, labeled 'Hidden Layers', consists of light blue circular nodes arranged vertically. This layer serves as the encoder component of the autoencoder, compressing the input features into a lower-dimensional representation. The connections from the input layer to this hidden layer are dense, meaning every input node connects to every hidden node. Above this module, an ellipsis (...) indicates that additional hidden layers may exist, forming a stacked structure.\n\nAt the center of the architecture lies the 'Textual Embedding Vectors' module, composed of orange circular nodes. This represents the bottleneck or latent space of the autoencoder, where the compressed, denoised feature representation is stored. It acts as the core embedding layer, capturing essential semantic information from the corrupted inputs. The connections from the hidden layers to this central module are also fully connected, and similarly, the connections from this module to the subsequent decoded layers are fully connected as well.\n\nThe third major module, labeled 'Decoded Layers', mirrors the hidden layers in structure and color (light blue circular nodes), functioning as the decoder. It reconstructs the original feature space from the latent textual embeddings. The connections from the textual embedding vectors to the decoded layers are again fully connected, ensuring complete reconstruction capability.\n\nFinally, the last module on the far right is labeled 'Decoded corrected features', consisting of pink circular nodes identical in appearance to the input layer. These represent the reconstructed output after denoising and correction. The connections from the decoded layers to this final output layer are fully connected, completing the autoencoder loop.\n\nAll connections between modules are depicted as solid black lines, indicating direct, weighted transformations. The symmetry between the encoder (input → hidden → embedding) and decoder (embedding → decoded → output) emphasizes the autoencoder’s goal of learning robust representations by reconstructing clean outputs from corrupted inputs. The use of distinct colors—pink for input/output, light blue for hidden/decoded layers, and orange for the latent embedding—helps differentiate functional roles within the network. The dashed blue boxes group related layers, enhancing visual clarity and modular understanding of the SDAE architecture."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501471",
+  "record_sha256": "ff6a45baa3fdd54fcaf653cbfdec44b953c982d33996c0aaaca1e65517cfccc4",
+  "asset_sha256": "05213068436b2ae43c29a5c94928d9654e67519654217b6764b516d504c129ed",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501471",
+    "title": {
+      "zh": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs · 方法图",
+      "en": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12841",
+      "title": "Benchmarking and Understanding Compositional Relational Reasoning of LLMs",
+      "authors": [
+        "Ruikang Ni",
+        "Da Xiao",
+        "Qingye Meng",
+        "Xiangyu Li",
+        "Shihui Zheng",
+        "Hongliang Liang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_url": "https://arxiv.org/abs/2412.12841",
+      "arxiv_id": "2412.12841",
+      "arxiv_first_submitted_at": "2024-12-17T12:10:38Z",
+      "arxiv_updated_at": "2024-12-17T12:10:38Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501471/image/image.jpg?Expires=1790835192&Signature=JJq5eHty9E9oRrKBAEQy7Ia9OdCRDI3dQIPCmXMIsFLUgXsoEDcUNZsY7HWeWZAONbcz3laWD2k~qRaV1nG72zPNOzPP-0gYw73cE0Y5kIZPTQ-PwYu64UIXT0jO~QkzogLGQTefmfSninBh0ZLpIir~Z-NM1eyVy7OUPPpjM0U4jqPLJs0c3Yw2k9fZKdE9fJLoYDNyl-~meR~sSU7bxqZ4SRj1ppqY6PK7jBuZRM68FVh9bQWxUr8T2LbLbQAzNlB7Coobj7CByLJPWToJ3BQydx4F7a0Myjnb4TplRamtmVLz~cSUrsYAtTETXn65PM1RbRG-cQHklT~shIZTIA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501471,
+      "description_sha256": "c6c7cdbff58bf48b383a881c910b9459efd990fda59d44f83c1276010e8fe42c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of Generalized Associative Recall (GAR), a method for generating relational reasoning tasks. The process is structured into three main steps: Step 1 selects relational schemas and relations; Step 2 samples data from these schemas; and Step 3 generates statements based on the sampled data. The global layout is horizontal, progressing left to right across these steps, with a legend in the top-right corner defining visual elements. The legend specifies that solid arrows represent long-range semantic relations, dashed arrows indicate local syntactic relations, 'target' labels denote targets for generation tasks, '[added]' and '[target]' in green denote additions and targets for classification tasks, and circular dashed arrows represent relational loops.\n\nIn Step 1, two relational schema graphs are shown. On the left, a pink schema labeled 'Persons' connects to 'Genders' via a 'gender' relation, with a self-loop labeled 'same'. On the right, a blue schema labeled 'Things' connects to 'Kinds' via a 'kindOf' relation, also with a 'same' self-loop. These schemas define the domain structure for data sampling.\n\nStep 2 shows data sampling from these schemas. From the 'Persons' schema, entities like John_K', Mary_K, and Mary_Q are sampled, displayed in a pink box with dashed lines indicating 'same' relations between Mary_K and Mary_Q. From the 'Things' schema, entities apple_V, dog_V, animal_A, and fruit_A' are sampled, shown in a blue box with a red curved arrow labeled 'kindOf' linking animal_A to dog_V. A dashed line connects animal_A to fruit_A', indicating a negative or non-existent relation. This step also includes an example of associative recall (Assoc. Recall) and knowledge recall, where a template sentence 'A dog_Q is a kind of animal_A' is combined with a graph structure to form a composite representation. Below this, an IOI (set difference/negation) example is shown, where a scenario involving John_K', Mary_K, and Mary_Q is used to generate a negated relation ('¬same') between Mary_Q and John_A.\n\nStep 3 generates statements from the sampled data. Two examples are shown: one affirmative ('So Mary has a kind of animal') with answer 'Yes', and one negative ('So Mary doesn't have/a kind of fruit') with answer 'No'. These are then transformed through syntactic variations: swapping question-answer (QA) pairs yields rephrased versions like 'The one who has a kind of animal is Mary', and swapping key-value (KV) pairs produces forms such as 'The apple is owned by Jonh' (with a typo 'Jonh'). The generated statements include highlighted target words in green, such as 'animal' and 'fruit', and the answers are marked in green brackets. The entire process culminates in the creation of diverse, semantically grounded reasoning tasks suitable for evaluation in natural language understanding systems."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

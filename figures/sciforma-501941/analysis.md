@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Typhoon 2: A Family of Open Text and Multimodal Thai Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13702
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the end-to-end architecture of the Typhoon2-Audio model, designed for audio-to-text and text-to-audio processing with optional textual prompting. The global layout is a left-to-right dataflow pipeline, starting from two input modalities on the far left and progressing through multiple processing stages to produce both text and audio outputs on the far right. The entire system is structured into distinct functional blocks connected by directed arrows indicating the flow of information.
+
+On the left, under the label 'Input', there are two parallel input streams: one labeled 'Audio' represented by a spectrogram image, and another labeled 'Textual Prompt (or Null)', indicating an optional text input. These inputs feed into a large gray-bordered module that serves as the multimodal encoder. Inside this module, the audio input is processed by an 'Audio Encoder' (white rounded rectangle with a blue snowflake icon), which extracts features. This is followed by an 'Adapter' (purple rounded rectangle with a red flame icon), suggesting a trainable or fine-tuned component. The textual input is processed by a 'Text Tokenizer & Embedding' block (white rounded rectangle with a blue snowflake icon), converting text into token embeddings. The outputs of the Adapter and the Text Tokenizer & Embedding are then concatenated via a dashed box containing yellow and cyan horizontal bars, with a '+' symbol and the label 'concat' below it, indicating feature fusion.
+
+The concatenated feature vector is passed to the next major component: a large purple rectangular block labeled 'LLM' (Large Language Model), which also contains a smaller purple section at the bottom labeled 'LoRA' (Low-Rank Adaptation) with a red flame icon, signifying parameter-efficient fine-tuning. An upward arrow from the LLM points to 'Text Output', indicating that the LLM generates text as one of the outputs.
+
+From the LLM, the output flows to a peach-colored rectangular block labeled 'Speech Decoder', marked with a red flame icon, implying it is a trainable component. The Speech Decoder's output is then sent to a light green rectangular block labeled 'Unit Vocoder', also marked with a red flame icon, which synthesizes the final audio waveform. An upward arrow from the Unit Vocoder points to 'Audio Output', depicted as a black waveform icon, representing the generated speech signal.
+
+The visual attributes include color-coded blocks: white for standard processing units, purple for core model components (LLM, Adapter, LoRA), peach for the Speech Decoder, and light green for the Unit Vocoder. The snowflake icons denote frozen or pre-trained components, while the flame icons indicate trainable or adapted modules. All connections are solid black arrows, except for the concatenation step, which uses a dashed box to visually group the merging operation. The overall structure emphasizes a unified framework where audio and text inputs are jointly encoded, processed by a language model, and then decoded into both text and synthesized speech.

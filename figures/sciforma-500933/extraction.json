@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500933",
+  "record_sha256": "b5881e8fe8801f5cb0404696159c54b518c390a6887592de2ef2f067db6f87af",
+  "asset_sha256": "b45c4ce6d274bc3bcc25d135100e844e9da0e2c73066681d0afbc33d2499836e",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500933",
+    "title": {
+      "zh": "Extrapolating Jet Radiation with Autoregressive Transformers · 方法图",
+      "en": "Extrapolating Jet Radiation with Autoregressive Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2412-12074",
+      "title": "Extrapolating Jet Radiation with Autoregressive Transformers",
+      "authors": [
+        "Anja Butter",
+        "François Charton",
+        "Javier Mariño Villadamigo",
+        "Ayodele Ore",
+        "Tilman Plehn",
+        "Jonas Spinner"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12074",
+      "arxiv_url": "https://arxiv.org/abs/2412.12074",
+      "arxiv_id": "2412.12074",
+      "arxiv_first_submitted_at": "2024-12-16T18:46:43Z",
+      "arxiv_updated_at": "2025-12-11T16:24:23Z",
+      "arxiv_subjects": [
+        "hep-ph",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500933/image/image.jpg?Expires=1790835181&Signature=U8CTp3ivNR~6FMeF7MxVtKblG8R66BcR9bUDsjrZ9-ADtMsEyEFWlRqDiUGjNFMctGNBZ54W3KJC2xjIvnCjgxyRnAQ29cCsXb7Jz8fAqkzH8DCHLjdySo1UGIgnIUrRUdiq2i5cmYH15QX7zCrjDKrMgqF2QKhLJvk13dosepsgYfqXAPZPqSgYcqfWWH4giWArlfBoWLjwPSZKIf25jTTZDa1PaUyYU5F3-sJb0JH2DsXKcCPeBahqplTjkZ0IbM8m4qnk-lGQ4e910RLWcyx9n0K-T2BzxB8mtYjcROk3i6kuZ6BU7ghITFiVOQBaQWtpjwow40B9WjvUC7TC4w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500933,
+      "description_sha256": "6f532336acbbffe174d4e74f2f78de8832c2fb1e8fe777def4bfa8bda21c42c8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "hep-ph",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the iterative implementation of the DiscFormer algorithm, structured as a flowchart with a clear sequence of steps. The global layout consists of an initial step on the left, followed by a main loop on the right enclosed in a large rectangular box labeled 'i-th DiscFormer iteration'. An arrow from the initial step points into the loop, indicating the start of the iterative process, with a counter variable i initialized to 0. The loop itself contains three vertically stacked modules, connected sequentially by downward arrows, forming a top-to-bottom workflow. A feedback loop on the right side of the box increments the counter from i to i+1 and feeds back into the first module, signifying the next iteration.\n\nThe visual modules are color-coded and shaped to distinguish their roles. The initial step is a light green rounded rectangle labeled 'Initial generator training', containing the loss function L = ⟨−log pθ(x)⟩_{x∼pdata}. This module initiates the process. Inside the main loop, the first module is a light green oval labeled 'Sample generator p_{θ_i}(x)', representing the sampling of the current generator state at iteration i. The second module is a light blue rounded rectangle labeled 'Discriminator training', which includes the weight function w_i(x) = p_data(x)/p_{θ_i}(x), indicating the computation of weights based on the ratio of data distribution to generator distribution. The third module is another light green rounded rectangle labeled 'Re-train generator', containing the DiscFormer-specific loss function L_i^DF = ⟨−w^α(x) log p_θ(x)⟩_{x∼pdata}, which is used to update the generator parameters.\n\nConnections and arrows define the flow: a horizontal arrow from the initial training step leads to the 'Sample generator' module, marking the entry into the loop. Within the loop, a vertical arrow connects 'Sample generator' to 'Discriminator training', and another connects 'Discriminator training' to 'Re-train generator'. After the re-training step, a horizontal arrow exits the loop to the right, then turns upward and loops back to the 'Sample generator' module, with a label 'i ← i+1' indicating the increment of the iteration counter. The entire structure emphasizes an iterative refinement process where the generator is sampled, a discriminator is trained using the current generator's output, and the generator is retrained using a weighted loss derived from the discriminator's weights, repeating until convergence or a stopping criterion is met."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

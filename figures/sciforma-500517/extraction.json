@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500517",
+  "record_sha256": "dd4697dba1f96500ac44d1df184abece1dfb72fc4045a787f7b1977509045bb0",
+  "asset_sha256": "7bee6f2afdb143d46c956bbf0f21412b8b72391eb665a877b936b021d0dcbc62",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500517",
+    "title": {
+      "zh": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization · 方法图",
+      "en": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-11450",
+      "title": "GroupFace: Imbalanced Age Estimation Based on Multi-hop Attention Graph Convolutional Network and Group-aware Margin Optimization",
+      "authors": [
+        "Yiping Zhang",
+        "Yuntao Shou",
+        "Wei Ai",
+        "Tao Meng",
+        "Keqin Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11450",
+      "arxiv_url": "https://arxiv.org/abs/2412.11450",
+      "arxiv_id": "2412.11450",
+      "arxiv_first_submitted_at": "2024-12-16T05:08:15Z",
+      "arxiv_updated_at": "2024-12-16T05:08:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500517/image/image.jpg?Expires=1790835172&Signature=fafuWx~3J-vGWjRwjx1TkImlaUFHANIKWp0noCVLp-pZph2ZIovwaqUAmupZqrAA40rkHslOEUGvZ7XM6E0uj8Ys3aaFQbpROAGt0889y8Ojl6JDH~OrS2cCxbyv5D94eJYfpLCSVXDPB8yyasz5hzUNHqx9arbQZpW5HffL5RRA6Tcjti7HhtC5ZuoUN6F7jb4rhlrgowgKzHH9xdPs0OHsC69~htTTjZcOnB0REgf5Dyvjqovsaxkhkb1-G4Ty~Uk2aLB~njwpDTpKukPJApOXGn8p3xfKJK1bbB0NdN2BvPtpmqA-vVWAXVirWx~2-z9hpJf0PixB-jeJLu1r3Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500517,
+      "description_sha256": "d51d934364de02ee2928ae9fb5ba9ee747d50a3286b1d311f8650b6f6905a1fe",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of an EMAGCN (Enhanced Multi-hop Attention Graph Convolutional Network) block, designed for graph-based learning tasks. The global layout consists of a horizontal pipeline at the bottom representing the main processing flow, with two illustrative diagrams positioned above it to explain the underlying mechanisms of multi-hop relation modeling via attention diffusion.\n\nThe main pipeline is enclosed within a layered, rounded rectangular container, indicating a stackable or repeated module structure. It begins with an 'Input' on the left and ends with an 'Output' on the right. The processing sequence flows from left to right through a series of functional modules connected by solid black arrows. These modules are color-coded and labeled as follows: an orange rectangle labeled 'Multi-head Self Attention', followed by a yellow rectangle labeled 'Diffusion Aggregation', then a light green rectangle labeled 'Add & Norm'. This is followed by a light blue rectangle labeled 'Feed Forward', another 'Add & Norm' block, then two consecutive red rectangles labeled 'Graph Conv', and finally a third 'Add & Norm' block before the output.\n\nEach 'Add & Norm' block receives a skip connection from the input of the preceding module, forming residual connections that bypass one or more layers. Specifically, the first 'Add & Norm' receives a skip connection from the input to the 'Multi-head Self Attention' module; the second 'Add & Norm' receives a skip connection from the input to the 'Feed Forward' module; and the final 'Add & Norm' receives a skip connection from the input to the first 'Graph Conv' module.\n\nAbove the main pipeline, two inset diagrams illustrate the concept of attention diffusion across multi-hop graph relationships. Both insets depict a graph with nodes labeled v_i, v_j, v_k, v_m, and v_n, represented as light blue circles. In the left inset (on a pale green background), solid red arrows indicate direct attention weights A_ij, A_ik, A_jm, and A_kn, showing how node v_i aggregates information from its immediate neighbors v_j and v_k, which themselves receive attention from v_m and v_n respectively. Node v_i is highlighted with a dashed red border to emphasize its role as the target node for aggregation.\n\nIn the right inset (on a pale blue background), dashed red curved arrows represent diffused attention weights A_im and A_in, illustrating how attention propagates from v_m and v_n to v_i through intermediate nodes v_j and v_k. This visualizes the multi-hop attention mechanism where information from distant nodes is aggregated via attention diffusion. Dashed lines connect these insets to the corresponding 'Multi-head Self Attention' and 'Diffusion Aggregation' modules in the main pipeline, indicating that these components implement the illustrated attention and diffusion processes.\n\nThe overall structure suggests a hybrid model combining self-attention for capturing local dependencies, diffusion aggregation for modeling long-range multi-hop relationships, and graph convolution for structural feature propagation, all integrated within a residual network framework."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502016",
+  "record_sha256": "8831cecd690f5a7128f780d4aa87a073dd9c4b38be4bbd5dd81d4d76efbb6a6a",
+  "asset_sha256": "bab04a9854b9816d91f0169bd374aac2926dac55d4670833510540ac8fe167ea",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502016",
+    "title": {
+      "zh": "Knowledge Editing with Dynamic Knowledge Graphs for Multi-Hop Question Answering · 方法图",
+      "en": "Knowledge Editing with Dynamic Knowledge Graphs for Multi-Hop Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-13782",
+      "title": "Knowledge Editing with Dynamic Knowledge Graphs for Multi-Hop Question Answering",
+      "authors": [
+        "Yifan Lu",
+        "Yigeng Zhou",
+        "Jing Li",
+        "Yequan Wang",
+        "Xuebo Liu",
+        "Daojing He",
+        "Fangming Liu",
+        "Min Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13782",
+      "arxiv_url": "https://arxiv.org/abs/2412.13782",
+      "arxiv_id": "2412.13782",
+      "arxiv_first_submitted_at": "2024-12-18T12:21:46Z",
+      "arxiv_updated_at": "2024-12-25T14:52:33Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502016/image/image.jpg?Expires=1790835207&Signature=TusKSCoMfF2zd-V~1Ygh0Qf6cNrNgE6sV5Uj~FswpZfYXVM8x7gT~P~3pCzNigUmJHKNlaQuAVkWLdcDDXkQYNEEaDCKlOERGFev6Om2ak7ekghTmLdulqASHi0~JVHUMqu3OC7xGdv0uD3jc2DV9paOSCLM4~2ond6RwGzYFge5Z9UjyGCmp0wR4noMADMYBnnPVNk0Tp1E9yMJMaBoGMEP8cbJJaTEk2FSWM3JF86EfZ4xJdJVH9sbgKQfd-abj7T2Dm4o5YdYZDu8SItWQXnpwwPPg6GFalNIVvgEZ4nG2d8eD4TEtoBgK~0Je1fZPbHmPb5wxM0NyoqDp7lnvQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502016,
+      "description_sha256": "157f01cba27ee7d401cf0364690c6d97bd67ea45aee7aa82aaa8c696653450a6",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a memory-based knowledge editing method, divided into two main stages: Step 1 – Dynamic Knowledge Graph Construction (left, green background) and Step 2 – Knowledge Graph Augmented Generation (right, blue background). The entire process is titled 'A memory-based knowledge editing method (Work in progress)' at the top.\n\nIn Step 1, the process begins with 'Edited Facts' (represented as purple rounded rectangles containing examples like 'Ellie Kemper is a citizen of Croatia.' and 'The author of Misery is Richard Dawkins.') feeding into a 'Relation Extraction Model' (white rounded rectangle). This model outputs 'Edited Fact Triplets' (purple boxes arranged in rows showing subject-predicate-object triples such as 'Ellie Kemper → citizen of → Croatia'). These triplets are then processed by an 'Entity Linker' (blue box with a barcode icon labeled 'WIKIDATA'), which maps entities to Wikidata IDs, producing a small knowledge graph with nodes labeled Q72077, Q224, etc., connected by relations like 'citizen of', 'author', and 'notable work'. This intermediate graph is passed to a 'Conflict Detection' module (red box with a magnifying glass icon), which identifies inconsistencies. The final output of this step is a comprehensive 'Knowledge Graph' (large orange-bordered box in the center), displaying nodes (blue and orange circles) with Wikidata IDs (e.g., Q72077, Q970867) and directed edges labeled with relations such as 'citizen of', 'author', 'birthplace', 'lives in', and 'notable work'.\n\nStep 2 begins with a 'Multi-hop Question' (green box with example: 'Q: What is the nationality of the author of \"Misery\"?'). This question is fed into a 'Fine-tuned LLM for Question Decomposition' (beige box with robot icon and flame symbol), which generates 'Subquestions' (dark blue boxes: 'Q1: Who is the author of \"Misery\"?' and 'Q2: What is the nationality of [ENT]?'). These subquestions are processed by a 'Detector' module (blue box with magnifying glass icon), which contains two components: 'Entity detector' and 'Relation detector'. These detectors interact with the central 'Knowledge Graph' to retrieve relevant information. The answers to the subquestions are generated by a 'Base LLM for Question Answering' (beige box with robot icon and snowflake symbol), producing initial responses like 'A1: Richard Dawkins' and 'A2: [NOT FOUND]'. The system then replaces '[ENT]' with the retrieved entity ('Richard Dawkins') and re-runs the query, yielding corrected answers: 'A1: Richard Dawkins. A2: British.'. Once all subquestions are solved (indicated by a lightbulb icon and text 'all the subquestions solved'), the final output is produced: 'Output: British' (light green box). A feedback arrow from the final answer loops back to the subquestions, indicating iterative refinement. The central 'Knowledge Graph' serves as a shared resource, accessed by both the detectors and the LLM during generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

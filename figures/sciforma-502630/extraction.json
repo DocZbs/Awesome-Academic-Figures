@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502630",
+  "record_sha256": "42b236b857114e81d75b469a98f3a6689221fa843835462b0bafc0eac7533c76",
+  "asset_sha256": "3f35122e53fd11cb5cef669d512a7dc14dca7c7807fb2010f60983764bbe2e0f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502630",
+    "title": {
+      "zh": "Graph-Convolutional Networks: Named Entity Recognition and Large Language Model Embedding in Document Clustering · 方法图",
+      "en": "Graph-Convolutional Networks: Named Entity Recognition and Large Language Model Embedding in Document Clustering"
+    },
+    "paper": {
+      "id": "arxiv-2412-14867",
+      "title": "Graph-Convolutional Networks: Named Entity Recognition and Large Language Model Embedding in Document Clustering",
+      "authors": [
+        "Imed Keraghel",
+        "Mohamed Nadif"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14867",
+      "arxiv_url": "https://arxiv.org/abs/2412.14867",
+      "arxiv_id": "2412.14867",
+      "arxiv_first_submitted_at": "2024-12-19T14:03:22Z",
+      "arxiv_updated_at": "2024-12-19T14:03:22Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502630/image/image.jpg?Expires=1790835223&Signature=mfxMFYHiuBPFYqS8XkNB44Xxww1OS3rfIb06ZOFVt9SEfVQBhzx1zY3xe7w5Xsp2xByxsmYHAMqvrGu6pKB~K6zGYJXzw3olElVm643yDS6fYuFGzWrWwKgeHPIc5YE80ZcUy8gqhQLtNqFFBskTj6wwMKl~PdgG5KDABdUNoCkhFIgV2x9lhVnKqnYnHRC5OZf2fgjDRacNkZ4qknfiLz0FrCCcJzhrBQNHDNVsYTyVH~v6F-5H5hRlaT4aZtpG-gKy78XiMQZztvHoyZErAge2cnhvvmr4boilYSMxirLnSSzTeHCjxPydBCpDCziHfT9nwC80lmGhPwi1gUW6Pg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502630,
+      "description_sha256": "5561bc05e7ab66ce46bf4b8b5da7caf2bc983b046a160d4aad28a88e07ad00ae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a multi-stage model pipeline for document graph construction using named entity recognition (NER), similarity modeling, and clustering. The global layout is a left-to-right flowchart with a central component for embedding space and a lower section dedicated to graph construction. The process begins on the left with a stack of yellow document icons labeled 'Documents', each containing sample text such as 'Mbappé scored two goals against OM'. An arrow labeled 'Train similarity model' points from these documents to a 3D coordinate system titled 'Embedding space', which visualizes entities as colored dots: CR7 (purple), Messi (green), PSG (red), and OM (blue), connected by dashed lines indicating semantic relationships. From the embedding space, an arrow labeled 'NER' leads to another stack of documents where named entities like 'Mbappé' and 'OM' are highlighted in blue, indicating entity recognition. Below this, a box labeled 'Named Entity similarity calculation' processes these entities to determine context similarity. This leads to two document snippets: one green box with 'Mbappé scored two goals against OM' and another purple box with 'Kylian Mbappé joined Macron for an educational initiative with the UN'. These are linked via arrows labeled 'Different contexts' and 'Similar contexts' to a third green box: 'CR7 score a winning goal against Al-Hilal', illustrating how similar contexts are identified. The lower half of the diagram shows a 'Document Graph Construction' module labeled 'GCC', which receives input from the context comparison step. This module outputs a graph composed of six circular nodes (X1 to X6) connected by black edges. Nodes X1, X2, and X3 are grouped within a blue dashed oval, while X4, X5, and X6 are enclosed in a red dashed oval, indicating two distinct clusters. Node X6 is orange, connecting both clusters, suggesting a bridging role. The entire pipeline demonstrates how raw documents are transformed into a structured graph through embedding, NER, context similarity analysis, and clustering."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-500246",
+  "record_sha256": "0781d33f2f49aab265d44a981cf188239f3b19dab7d0c4b4a74b9f54d2e571fb",
+  "asset_sha256": "63d04c0d0e35c53306da79c0d72a21504428029880f481e60e629a3d0903e091",
+  "original_file": "original.jpg",
+  "pixel_width": 704,
+  "pixel_height": 1408,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500246",
+    "title": {
+      "zh": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation · 方法图",
+      "en": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11014",
+      "title": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation",
+      "authors": [
+        "Zhendong Mi",
+        "Renming Zheng",
+        "Haowen Zhong",
+        "Yue Sun",
+        "Seth Kneeland",
+        "Sayan Moitra",
+        "Ken Kutzer",
+        "Zhaozhuo Xu Shaoyi Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11014",
+      "arxiv_url": "https://arxiv.org/abs/2412.11014",
+      "arxiv_id": "2412.11014",
+      "arxiv_first_submitted_at": "2024-12-15T01:58:10Z",
+      "arxiv_updated_at": "2025-06-06T01:25:37Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500246/image/image.jpg?Expires=1790835164&Signature=oNVy-phtTWMuStmfkfM4BCHkMHGJmcrqMNMh~ir67WC1BRIYX1l~iJhX5ydEWTx5kbhV6OLunboUBUUKTZQ8MsXt5JAuqwx9y3ByajfqRykUlzkB3HgUzdf46IhurAi9Dx6fwfB3132CDS2aLtcyEmF2wRGPHoZ~FxylN7bN9gcmmutSIMQGR82yj5WvqHtC0YdCVwPu9j9JW8i2~oD~tJ4xE1~vcENHqtsrQlYXpCMFQ5zmW1FzG9U5z3ekIQWhoEekfnVqioSlzbxdxPmJRYhGMWxXP-aJckXnsr4xIEugCRmDBAXk6RNBG37dprWgs-GydCTihOPduJreK~xXnQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500246,
+      "description_sha256": "701e94556c6cbda3e62b50a3384329f941cecda46d795267c9bc9f1cb78be2f3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a comparative analysis of single-agent versus multi-agent approaches for debugging and correcting Verilog code, specifically focusing on a module for serial input data accumulation. The diagram is divided into two main sections, labeled (a) and (b), each enclosed in a dashed red border, and a third section at the bottom enclosed in a dashed green border representing an enhanced multi-agent framework.\n\nIn section (a), the process begins with an input prompt requesting Verilog code for a module to achieve serial input data accumulation. The output from a single agent (represented by a rounded rectangle with a green OpenAI logo) generates a Verilog module 'accu' with inputs clk, rst_n, and data_in[7:0]. A prompt instructs the agent to check and correct bugs. However, the resulting corrected code still contains an error: the 'end' statement is not replaced with 'endmodule', leading to a syntax error. This is highlighted with a red arrow labeled 'Error Remained (Degeneration)', indicating the failure of the single-agent approach to fully correct the code.\n\nSection (b) demonstrates a multi-agent approach to overcome this limitation. The same initial output is shown, but now a 'Research agent' (with a green OpenAI logo) receives a prompt asking how to debug the code. The research agent responds with advice: first, revise 'end' to 'endmodule', and second, address other potential issues. This advice is then passed to a 'Revision agent' (also with a green OpenAI logo) via a prompt to revise the code accordingly. The revised code correctly uses 'endmodule', and a green arrow labeled 'Errors Corrected' indicates successful correction, showing the effectiveness of the multi-agent collaboration.\n\nThe bottom section, enclosed in a dashed green border, presents a more sophisticated multi-agent system. It features four distinct agents: a 'Research Agent' (orange box with a researcher icon) who acts as an expert in RTL design and provides guidance on analyzing RTL code and testbenches; a 'Prosecutor Agent' (blue box with a judge icon) who critically assesses the research agent's method, identifies flaws, and offers constructive improvements; and two 'Revision Agents' (green boxes with graduate icons), A and B, who act as revisors learning from the refined method to correct RTL code and testbenches. These agents interact through feedback loops: the Research Agent’s proposal is sent to the Prosecutor Agent, who returns a 'Refined method'. This refined method is then used by Revision Agents A and B to correct the code. The corrected code is validated using a 'Testbench' and 'Simulator' (symbolized by a gear and document icon). If errors remain, a red 'X' indicates failure and feedback is sent back to the Research Agent. If the code passes, a green checkmark and 'Errors Corrected' label confirm success. The entire system emphasizes iterative refinement, critical evaluation, and collaborative debugging to ensure robust code generation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

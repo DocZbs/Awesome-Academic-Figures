@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+HA-RDet: Hybrid Anchor Rotation Detector for Oriented Object Detection — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14379
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of the proposed HA-RDet, a hybrid anchor-based and anchor-free detection framework for oriented object detection in aerial images. The global layout is a left-to-right data flow pipeline starting from feature extraction and ending with the final output. On the far left, an input aerial image is processed by an FPN backbone, represented as a stack of blue layers, which outputs extracted features shown as a gray feature map. This feature map feeds into two parallel pathways: one for horizontal proposal generation and another for oriented proposal generation.
+
+The upper pathway begins with a convolutional layer (blue parallelogram labeled 'Conv') applied to the extracted features. The output is then processed by an 'Orientation Aware Conv' module (green parallelogram), which is central to the hybrid approach. This module is connected to both an 'Anchor-free' branch (yellow box) and an 'Anchor-based' branch (yellow box), indicating dual strategies for proposal generation. The 'Anchor-free' branch generates horizontal proposals directly from rectangularized oriented ground truths, while the 'Anchor-based' branch refines these using a novel 'Orientation-aware Convolution' mechanism. A detailed inset within a green dashed box explains this mechanism: it shows how a ground-truth box (red diamond) and an anchor box (green rectangle) are used to compute interpolated anchors (dashed lines), with shape offsets (blue arrows) and orientation offsets (red arrows) applied to adjust convolution kernels. The resulting convolution features (green dots) are combined to form the final computed feature (black dots), enabling precise alignment with oriented objects.
+
+The lower pathway, labeled 'Light-weight Transformation Proposal Network' (red dashed box), takes the horizontal proposals and transforms them into oriented proposals. This involves passing the proposals through a 'RoiAlign' module (red block), followed by a 'Fully Connected' layer (two pink blocks), and then a 'Rotated RoiAlign' module (red block). These transformed oriented proposals are then fed into the 'RCNN Head' (orange dashed box), which contains a 'BBox Head' (yellow block) that branches into two outputs: 'Rgs' (regression) and 'Cls' (classification), both represented as purple rectangles. The final output is displayed on the right as an aerial image with detected airplanes enclosed in red rotated bounding boxes, demonstrating the model's capability to detect objects with arbitrary orientations.
+
+Connections between modules are indicated by solid black arrows for primary data flow, with additional dashed lines (red, green, blue) illustrating auxiliary relationships or parameter flows. The entire diagram uses consistent color coding: blue for backbone and convolution, green for orientation-aware components, red for proposal and output elements, and yellow for key architectural blocks. Text labels are placed near each component for clarity, and the overall structure emphasizes a two-stage detection process combining anchor-free proposal generation with anchor-based refinement and lightweight transformation for oriented detection.

@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501523",
+  "record_sha256": "33b917bd5fbd524e96ebba02534230d0147b765c022f3c2d2f23db115d687e33",
+  "asset_sha256": "62275e04c2c1b27f3984985aa12b610f8ccf3f9ad3d86ce61bb55a604f247de5",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501523",
+    "title": {
+      "zh": "Truthful Text Sanitization Guided by Inference Attacks · 方法图",
+      "en": "Truthful Text Sanitization Guided by Inference Attacks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12928",
+      "title": "Truthful Text Sanitization Guided by Inference Attacks",
+      "authors": [
+        "Ildikó Pilán",
+        "Benet Manzanares-Salor",
+        "David Sánchez",
+        "Pierre Lison"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12928",
+      "arxiv_url": "https://arxiv.org/abs/2412.12928",
+      "arxiv_id": "2412.12928",
+      "arxiv_first_submitted_at": "2024-12-17T14:07:01Z",
+      "arxiv_updated_at": "2025-08-31T09:17:53Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501523/image/image.jpg?Expires=1790835197&Signature=M5-FtxOem~VPmoUokZiyRSSUdJuGeWwaJ~N5Tv7J1f-lSqD1mHAu8gH9eab9ABrl6iPjSWoUHvV0HpSDqldnVfIAzoSLj9IROS~d~UIIn~p9crdAD96J5c9-t1IWiCEK6rEQKPVWaHw79tztjoR7lYDylnEnmACjPtP3G74eYOFFGjNeqQvPA~1M-NMXrlc0aLJrq1cXkD6joYVmFvXOCBT5Q~Lgk~A7ahCvSDsnrhQntRB-AKAuYHGFMe9oU-SyKgWY7MrudZFhumOxfTJmNl1XmJtfOv3yz18Az7z~6fGtUxCrIvgLfRvAjPhvfP-JYdPAQw4u45qegSGOYL7mAw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501523,
+      "description_sha256": "48b5e723d5660eefcde7dbe299e2f789efe310f8940959873cbcc690d0e344c4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a text sanitization pipeline using the INTACT method, structured as a left-to-right workflow with four main stages: Clear text, Replacement generation (sorted by specificity), Inference attack, and Sanitized text. The global layout is linear and horizontal, with each stage represented by a labeled section containing an icon, a descriptive box, and directional arrows indicating the flow. The process begins with 'Clear text', depicted by a document icon with a profile symbol, and an example sentence: '... the applicant believes that he was the only Catholic.' This text flows via a teal arrow to the next stage.\n\nIn the 'Replacement generation' stage, a multicolored M-shaped icon (representing a model or generator) and a circular diagram with branching nodes symbolize the generation of replacement terms sorted by specificity. Below this, a numbered list presents five replacement options: 1. Christian, 2. Monotheist (highlighted in teal), 3. Follower of a Western religion, 4. Member of a religious denomination, 5. Believer in a particular faith. The second option, 'Monotheist', is selected and indicated by a horizontal arrow pointing to the next stage.\n\nThe 'Inference attack' stage features the same M-shaped icon now paired with a question mark inside a circle, symbolizing uncertainty or adversarial inference. Below it, a list of potential inferred identities—Christian, Jew, Muslim, Sikh, Zoroastrian—is shown. A bidirectional arrow connects this list to a 'Matching' icon (two documents with exchange arrows), which then feeds back into the original clear text box, suggesting a feedback loop for evaluating the effectiveness of replacements.\n\nFinally, the 'Sanitized text' stage displays a document icon with a brush, symbolizing cleaning or modification. The output text reads: '... the applicant believes that he was the only Monotheist.', with 'Monotheist' highlighted in teal to indicate the replacement. Teal arrows connect all stages sequentially, emphasizing the forward progression of the sanitization process. The figure uses consistent visual elements: black text for labels and content, teal for highlights and arrows, and simple icons to represent abstract components like models and matching processes. The overall design is clean, modular, and emphasizes the logical flow from sensitive input to sanitized output through controlled replacement and adversarial testing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

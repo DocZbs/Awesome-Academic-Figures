@@ -1,0 +1,33 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+RapidNet: Multi-Level Dilated Convolution Based Mobile Backbone — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10995
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents the architectural design of RapidNet, a deep learning model composed of multiple stages and specialized blocks, illustrated through a series of flow diagrams labeled (a) through (g). The global layout is divided into three main columns: the left column shows the overall network architecture (a), the middle column details the Conv Stem (b), Inverted Residual Block (c), and Downsample operation (d), while the right column elaborates on the Dilated Convolution Block (e), MLDC Block (f), and Large Kernel FFN (g). All components are connected via solid black arrows indicating data flow, with dashed lines in (e) and (f) denoting optional or skip connections.
+
+In (a) RapidNet Architecture, the network begins with a yellow trapezoid labeled 'Conv Stem', followed by four sequential stages. Stage 1 and Stage 2 are represented by pink rounded rectangles containing 'Inverted Residual Block X N1i' and 'Inverted Residual Block X N2i' respectively, each followed by a purple downward-pointing trapezoid labeled 'Downsample'. Stage 3 and Stage 4 are green rounded rectangles, each containing two block types: 'Inverted Residual Block X N3i/N4i' and 'Dilated Convolution Block X N3d/N4d', also followed by 'Downsample' operations. The entire structure flows vertically from top to bottom, ending at the label 'a) RapidNet Architecture'.
+
+(b) Conv Stem consists of two stacked yellow rectangular blocks: 'Conv 3x3, BN, S=2' followed by 'GeLU', then another 'Conv 3x3, BN, S=2' and 'GeLU', indicating a double convolutional stem with batch normalization and GeLU activation, each with stride 2.
+
+(c) Inverted Residual Block is shown as a vertical stack starting with a pink trapezoid 'Conv 1x1, BN', followed by a pink rectangle 'GeLU', then a pink rectangle 'DW Conv 3x3, BN', another 'GeLU', and finally a pink trapezoid 'Conv 1x1, BN'. A horizontal line connects the output of the last 'Conv 1x1, BN' back to the input of the first 'Conv 1x1, BN', forming a residual connection. This block is labeled 'c) Inverted Residual Block'.
+
+(d) Downsample is a single purple rectangle labeled 'Conv 3x3, BN, S=2', indicating a downsampling layer using a 3x3 convolution with stride 2 and batch normalization.
+
+(e) Dilated Convolution Block starts with a green parallelogram 'MLDC Block', followed by a green rectangle 'LK FFN', then a green trapezoid '7x7 DW Conv' with a dashed feedback loop to itself, and finally a green trapezoid 'Conv 1x1, BN'. This block is labeled 'e) Dilated Convolution Block'.
+
+(f) MLDC Block is detailed as a green parallelogram 'MLDC Block' feeding into a green trapezoid '7x7 DW Conv', which connects to a green trapezoid 'Conv 1x1, BN'. From this point, the flow splits into two parallel green rectangles: 'Conv 3x3 Dilation = 3, BN' and 'Conv 3x3 Dilation = 2, BN', both feeding into a shared green rectangle 'GeLU', then merging into a green trapezoid 'Conv 1x1, BN'. This entire structure is labeled 'f) MLDC Block'.
+
+(g) Large Kernel FFN is a vertical stack of green trapezoids and rectangles: '7x7 DW Conv, BN', 'Conv 1x1, BN', 'GeLU', and 'Conv 1x1, BN', labeled 'g) Large Kernel FFN'.
+
+All blocks use consistent shapes and colors: trapezoids for convolutional layers, rectangles for activations or other operations, and parallelograms for composite blocks. Text within each block specifies the operation type, kernel size, dilation, batch normalization (BN), stride (S), and activation function (GeLU). The figure comprehensively outlines the hierarchical and modular construction of RapidNet, emphasizing its use of inverted residual structures, dilated convolutions, and large-kernel feed-forward networks.

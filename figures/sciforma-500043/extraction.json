@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500043",
+  "record_sha256": "102aeb70c88c89828277e100e7e6b84f7f2b74f1ab483db3f0583f7cfdcb2285",
+  "asset_sha256": "74ab8e96de2c16c09d4f124ef6498d107c482f74d25e26abc9d176079055191d",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500043",
+    "title": {
+      "zh": "Chasing Progress, Not Perfection: Revisiting Strategies for End-to-End LLM Plan Generation · 方法图",
+      "en": "Chasing Progress, Not Perfection: Revisiting Strategies for End-to-End LLM Plan Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-10675",
+      "title": "Chasing Progress, Not Perfection: Revisiting Strategies for End-to-End LLM Plan Generation",
+      "authors": [
+        "Sukai Huang",
+        "Trevor Cohn",
+        "Nir Lipovetzky"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10675",
+      "arxiv_url": "https://arxiv.org/abs/2412.10675",
+      "arxiv_id": "2412.10675",
+      "arxiv_first_submitted_at": "2024-12-14T04:23:14Z",
+      "arxiv_updated_at": "2024-12-14T04:23:14Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500043/image/image.jpg?Expires=1790835163&Signature=BrOFbMyO04Bx62pxDSTZ15WHwWfwywgJ8DppriI2ajkqiLDsGID-hm9YbLqEAYusfVyqVesibH9FIIUVB~OF7hR66CwxI2Z7ikXFOUTotyX1mPl2T8RV0Y001d1Qi3QY577EwckZ8G3nQXx2-ymQyXuL30Sz-17i~QkYXOJAJKy71Pxatj3OW3wypwU914ozFTAI0HLViBGzmTlOvlx2iJEg5FiwMR7l89Mx5NanSRnYOBwMjEOS8ZwvYo4zhut~hRkDNG28c3YLI4HxLO5HW4COkMLSnlQgmB0QB2M1GL2I2fvGa1GucZwAL74H~HDqv9J0o0oF71~CxwmJeHm2aw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500043,
+      "description_sha256": "a8d053042c9ed437497f80253cd58d365315c6f95816d62f1a250da7a5cae36f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-part methodology for training and refining a large language model (LLM) as a planner for robotic tasks using reinforcement learning, with a focus on improving plan quality through a proposed reward mechanism based on Longest Contiguous Common Subsequence (LCCS).\n\nPart (a), titled 'Next-token prediction on a training data triplet', illustrates the autoregressive training process of the LLM. The global layout shows a horizontal flow from left to right, representing sequential token prediction. At the top, a light blue rectangular box labeled 'Autoregressive Language Model' spans the width, with a small emoji and explanatory text stating it predicts the next token based solely on previous tokens, processing strictly left-to-right. Below this, three parallel sequences of gray rectangular tokens represent input data: 'Domain NL Desc.' (e.g., 'A robotic bartender ...'), 'Problem NL Desc.' (e.g., 'Initially I have ... My goal ...'), and 'Action sequence (plan) in NL' (e.g., '<PLAN> grasp shaker x using left hand \\n fill ...'). Each token in these sequences has an upward arrow pointing to the LLM, indicating the model's task of predicting the next token in each sequence. The vertical label on the left, 'predicting the next token', reinforces the autoregressive nature.\n\nPart (b), titled 'Proposed LCCS Reward Model', details the reward computation mechanism. The layout is a flowchart starting from a gray rounded rectangle labeled 'Domain & Problem Spec.', which feeds into three components: a 'Symbolic Planner' (light blue), an 'LLM' (light blue), and a 'VAL' (light blue). The Symbolic Planner outputs a 'Reference Plan' (e.g., [A,B,C,D,E,F,G]) in a white box, while the LLM outputs a 'Generated Plan' (e.g., [A,B,C,E,F,G]) in a yellow box. These two plans are compared to compute a 'Contiguous Common Subsequence' (e.g., [A,B], [B,C], [E,F,G]) and then the 'Longest Contiguous Common Subsequence' (e.g., [E,F,G]). Two cases are shown: Case 1, where the generated plan is valid, yields a reward of 1.0; Case 2, where the plan is not valid, yields a reward of 3/7, reflecting the length of the LCCS relative to the reference plan. All boxes are rounded rectangles with distinct colors: gray for inputs, light blue for models, white for reference, yellow for generated output, and purple for reward cases.\n\nPart (c), titled 'Reinforcement Learning for tuning LLM planner', outlines the training loop. The global structure is a feedback loop. A 'Problem Context' (gray rounded rectangle) is fed into an 'Initial LM' (light blue), which produces a '*Tuned LM' (light blue) after an update. The *Tuned LM generates a 'Plan' (yellow rounded rectangle), which is evaluated by a 'Reward Model' (purple rounded rectangle). The reward model combines the LCCS-based reward with a KL prediction shift penalty, represented as '-λ_KL D_KL(LM_tuned(π|x) || LM_initial(π|x))'. This combined reward R(π; π*) is used in a 'Reinforcement Learning Update' step, shown as a mathematical update rule: 'θ ← θ + ∇_θ J(θ)', which feeds back to update the *Tuned LM. The connections are directed arrows, with a thick gray arrow from the reward model to the update step, and a feedback arrow from the update step back to the *Tuned LM, forming a closed loop. The KL penalty term is shown as a separate box feeding into the reward calculation via a plus sign."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

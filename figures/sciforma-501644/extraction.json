@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501644",
+  "record_sha256": "b450b1ec300dde4594e33e7a527152e42b0e964f9f28b80dca7e78d363c217fd",
+  "asset_sha256": "4b2ffe586a4615494a1529a935806aa959292f7817e32d91c2aa209136e306d8",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501644",
+    "title": {
+      "zh": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models · 方法图",
+      "en": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13195",
+      "title": "CoMPaSS: Enhancing Spatial Understanding in Text-to-Image Diffusion Models",
+      "authors": [
+        "Gaoyang Zhang",
+        "Bingtao Fu",
+        "Qingnan Fan",
+        "Qi Zhang",
+        "Runxing Liu",
+        "Hong Gu",
+        "Huaqi Zhang",
+        "Xinguo Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13195",
+      "arxiv_url": "https://arxiv.org/abs/2412.13195",
+      "arxiv_id": "2412.13195",
+      "arxiv_first_submitted_at": "2024-12-17T18:59:50Z",
+      "arxiv_updated_at": "2025-08-25T17:59:59Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501644/image/image.jpg?Expires=1790835197&Signature=TMobU3kDRIiWSYZrTmLyN~-E3C6IiWCgDJ~t05TlMk9rRJrsoOht5SndQRws7c0SIv6o~8Mp7pe~HX6oGNk4kwb7N2uzVdhmxfSTGzQYov9rDxAfMB6og~oyt92qfxBMON2NCn8zQHPIbAzIm3~LPMUTPar0VDqgeenASjX5tEkwQ0QNsVskjAuhgm5gfoCfkHN1DqE5rVwojAmW8At33gXrekqgnogizQZjVp8t0HU3g9DgB6KH3cCj~WVjGXkD9tnVKYAAY-Ale9Ws8vZkCrZys02CG40xBRHXIr6OAUAByasIOFWDlp9LnGEGld4ayoWeAr3yvWmil7HyBElUeA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501644,
+      "description_sha256": "ebbdb0b6e30c6c2ab608cc6de8fe966f38cc2084e683a024509cfb17cde13b8d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural overview of cross-attention mechanisms in two diffusion model variants: Diffusion UNet and MMDiT, highlighting how token ordering information is injected via positional encodings. The layout is divided into two main vertical sections separated by a dashed gray line, each enclosed in a rounded rectangular box with a light purple background. The left section is labeled 'Diffusion UNet' and the right section 'MMDiT'. Both sections depict a 'Cross Attention' module, but with differing internal structures.\n\nIn the Diffusion UNet section, the module begins with query (Q) and key (K) inputs. The key input is combined with 'Positional Encodings' using an element-wise add operation (denoted by ⊕), producing K_TENOR. This K_TENOR is then matrix-multiplied (⊗) with Q to produce attention scores A. These scores are element-wise multiplied (⊙) with the value input V to yield the final output. All components are represented as white rectangles with black borders, and the operations are indicated by symbols at the bottom legend: ⊕ for Element-wise Add, ⊗ for Matrix Multiply, and ⊙ for Element-wise Multiply.\n\nThe MMDiT section, labeled 'Double Stream Block', shows a more complex structure designed for joint text-image processing. It features two parallel streams: one for query inputs (Q_image and Q_text) and another for key inputs (K_text and K_image). The query stream combines Q_image and Q_text via element-wise addition to form Q_TENOR. Similarly, the key stream combines K_text and K_image to form K_TENOR. Positional encodings are added to both Q_TENOR and K_TENOR via element-wise addition. The resulting Q_TENOR and K_TENOR are matrix-multiplied to produce A_text&image. Simultaneously, the original K_image is passed directly to form part of the key input for the attention computation. The attention scores A_text&image are then element-wise multiplied with V_text&image to produce the output. The diagram uses dashed lines within the Q and K boxes to visually separate the text and image components before fusion.\n\nThe figure’s caption indicates that this architecture, referred to as \\peName{}, injects token ordering information into every text-image attention operation in both UNet- and MMDiT-based diffusion models. The visual design emphasizes the integration of positional encodings into the attention mechanism, particularly through the TENOR (Token Encoding Ordering Representation) concept, which fuses text and image tokens before attention computation. The consistent use of white boxes with black outlines and light purple backgrounds maintains visual coherence across both architectures, while the distinct flow paths highlight the evolution from a simple cross-attention block to a double-stream, multimodal attention block."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

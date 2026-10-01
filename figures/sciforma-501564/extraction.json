@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501564",
+  "record_sha256": "8d571ec393fd7fcb77805e708427c372471862fd8f563e54f8236e6ed79b7965",
+  "asset_sha256": "a5bfa3bebd6684fe7bb2a50a559b10f0ae1bbb2786b4d5686a42d5848e0b2784",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501564",
+    "title": {
+      "zh": "Relational Neurosymbolic Markov Models · 方法图",
+      "en": "Relational Neurosymbolic Markov Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13023",
+      "title": "Relational Neurosymbolic Markov Models",
+      "authors": [
+        "Lennert De Smet",
+        "Gabriele Venturato",
+        "Luc De Raedt",
+        "Giuseppe Marra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_id": "2412.13023",
+      "arxiv_first_submitted_at": "2024-12-17T15:41:51Z",
+      "arxiv_updated_at": "2024-12-17T15:41:51Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501564/image/image.jpg?Expires=1790835197&Signature=T4ol4fT7Rp1t3G7sJqJGSWlTB~Vj12p2cv4eENR1cDyeQ8MyZCz3gdxPjto0p4r6sX-biH6v8mXpffS8GWTASnefJvRUqTlh0oZ0HsZvbJ5iGJLeRiw6cb7lYrBdPch4N0hQ-SKaj009HzGsULl8LhFohimNqdNv1KWsRo2gCswdWScqlc-IKGFhz0AKDZQXpf7~nozrm3-elFG57ijhDEaUbOldgfTksJpqcqm7cg3CTjn9w3FOmZhrkRiLFChsmbwtBDJQKiClKGGdTkRHTfS5Kp~ACoFR9oFUlTEUcJoHjwvKICWtCNQsWVuWp0SyzgpQfa-1xfLzvxtsL9BQbA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501564,
+      "description_sha256": "b751ed7284c791307d2e79c379c65cf73146b5d72db3e6507b3a9848d7940504",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a probabilistic graphical model representing the DSL encoding referenced in another figure (not shown here). The global layout is a directed acyclic graph (DAG) arranged vertically and horizontally, with nodes positioned to reflect dependencies and information flow. At the top-left, there is a rectangular node labeled 'Im', colored light blue, representing an input or initial state. From this node, two directed edges emerge: one labeled φ^m pointing right to a circular node labeled 'M', and another labeled φ^p pointing down to a circular node labeled 'P'. Both 'M' and 'P' are light blue circles, consistent with the visual style of all other variable nodes. Node 'M' has a downward arrow to a circular node 'H', which also receives an incoming edge from a circular node 'C' located to the right of 'M'. Node 'P' also points to 'H', indicating that 'H' is influenced by both 'M' and 'P'. Finally, both 'H' and 'P' have arrows pointing to a circular node 'G' at the bottom-right, suggesting that 'G' is a joint output or latent variable dependent on these two. Additionally, there is a direct edge from 'M' to 'G', forming a direct path from the initial input 'Im' through 'M' to 'G'. All nodes are uniformly styled with light blue fill and black outlines, and all edges are solid black arrows indicating directionality of influence. The caption below the diagram reads: 'Figure 1: Probabilistic graphical model view of the DSL encoding referenced in Figure ??.' This indicates the diagram serves as a formal representation of the underlying probabilistic structure of a domain-specific language (DSL) encoding, likely used in a generative or inference context within a machine learning or programming synthesis framework. The variables Im, M, P, H, C, and G represent random variables in the model, with Im being the observed input, and G possibly representing the generated output or target. The parameters φ^m and φ^p denote transformations or encodings applied to the input Im to produce representations M and P respectively."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

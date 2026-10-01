@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501977",
+  "record_sha256": "d52bda09b1a5b20568b6d4c68d4b85740489f683b33f66df4fee4b809d3a954c",
+  "asset_sha256": "10ee8c84683d46292f45ee8232cc702f51bf6777ca07ca04fdfcbd735a0a4bf9",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501977",
+    "title": {
+      "zh": "3D Registration in 30 Years: A Survey · 方法图",
+      "en": "3D Registration in 30 Years: A Survey"
+    },
+    "paper": {
+      "id": "arxiv-2412-13735",
+      "title": "3D Registration in 30 Years: A Survey",
+      "authors": [
+        "Jiaqi Yang",
+        "Chu'ai Zhang",
+        "Zhengbao Wang",
+        "Xinyue Cao",
+        "Xuan Ouyang",
+        "Xiyu Zhang",
+        "Zhenxuan Zeng",
+        "Zhao Zeng",
+        "Borui Lu",
+        "Zhiyi Xia",
+        "Qian Zhang",
+        "Yulan Guo",
+        "Yanning Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_url": "https://arxiv.org/abs/2412.13735",
+      "arxiv_id": "2412.13735",
+      "arxiv_first_submitted_at": "2024-12-18T11:14:01Z",
+      "arxiv_updated_at": "2024-12-19T12:59:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501977/image/image.jpg?Expires=1790835209&Signature=JCUPuZsGSdxwIWa731SrZqNYYO7akv8keHAQK18gmQ0QfYIrFf7rHG6xKX28qkTAVG1VnJG86QZFYCsBl7QXgJh8EBqEqfEh2j2YbEX3kD5iCAQCqdQBH-LHfl9ox4S7yCOJfBC7v3lahy2IWYuofe~cD5QvkHkhiOUuZ6XjZtZNqI4fiKg1XdtO1no77TQbIAUI0HEgk3EIAMLunl0OVcP5KvWPvevjUiclHxBJ-bTfEEBR2QnhOozbm3Cy~ywFwHbsM~fiHQxafhr3MUDRdURAU-67cJRbF6-lyMpKYnIjCR2DovJ7X7XjjuR66VF9IKfdJ2qdq0NeDg3RO0V9aA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501977,
+      "description_sha256": "38cf5eedd25a070738eed1c8e9dabbe7e20fa943643a6571f32f867879bf0cd5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a general framework for an iterative paradigm in unsupervised 3D pairwise coarse registration methods, divided into two main sections: the top section depicting the data processing pipeline, and the bottom section showing the training architecture with feedback loops.\n\n[1] Global Layout and Structure:\nThe diagram is vertically split into two distinct parts. The upper part outlines the forward pass of the registration process, where two 3D point clouds (one blue, one red) are processed through feature extraction, alignment state computation, and transformation estimation, followed by an update step that feeds back into the input. The lower part presents the training setup, where two 3D scans (labeled P and Q, shown as colored mesh models) are fed into a registration network and auxiliary modules, with gradients flowing backward from a loss function to update the network parameters.\n\n[2] Visual Modules and Attributes:\nIn the top section, two 3D point cloud inputs (blue and red) are shown on the left. Each connects to a light blue rounded rectangle labeled 'Feature Extraction'. Outputs from both feature extractors feed into a dashed-line rounded rectangle containing two stacked states: 'Feature Alignment State' and 'Geometry Alignment State'. This combined state then connects to another light blue rounded rectangle labeled 'Transformation Estimation'. A solid black arrow labeled 'Update' loops from the transformation estimation back to the red point cloud input, indicating iterative refinement.\n\nIn the bottom section, two 3D mesh models (P in cyan, Q in yellow) are shown on the left. These are connected via a cross-shaped structure to two modules: a light blue rounded rectangle labeled 'Registration Network', and a dashed-line rounded rectangle below it containing two components: 'Prior Verifier' and 'Pseudo Labeler'. The Registration Network outputs to a light blue rounded rectangle labeled 'Loss Function'. A dotted arrow labeled 'Backward' points from the Loss Function back to the Registration Network, indicating gradient propagation during training.\n\n[3] Connections and Arrows:\nIn the top section, solid arrows indicate the forward data flow: from each point cloud to Feature Extraction, then to the alignment state box, then to Transformation Estimation, and finally a feedback loop labeled 'Update' returning to the red point cloud. In the bottom section, solid lines connect the 3D models P and Q to the Registration Network and the Prior Verifier/Pseudo Labeler module. The Registration Network sends output to the Loss Function, which in turn sends a dotted 'Backward' arrow to the Registration Network, signifying the backpropagation of gradients. The Prior Verifier/Pseudo Labeler also connects to the Loss Function, suggesting its role in generating pseudo-labels or verifying priors to inform the loss computation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

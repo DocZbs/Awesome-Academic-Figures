@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501899",
+  "record_sha256": "9a5f9829f017e91ee3686c450497cff37c947b65f8c1b51d63b8b80c99a4450f",
+  "asset_sha256": "159496a8c2e8b80740b6021d8ffb6886e3074bb779d13797b66109a7f3411cca",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501899",
+    "title": {
+      "zh": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting · 方法图",
+      "en": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-13654",
+      "title": "GAGS: Granularity-Aware Feature Distillation for Language Gaussian Splatting",
+      "authors": [
+        "Yuning Peng",
+        "Haiping Wang",
+        "Yuan Liu",
+        "Chenglu Wen",
+        "Zhen Dong",
+        "Bisheng Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_url": "https://arxiv.org/abs/2412.13654",
+      "arxiv_id": "2412.13654",
+      "arxiv_first_submitted_at": "2024-12-18T09:33:20Z",
+      "arxiv_updated_at": "2025-03-10T13:37:13Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501899/image/image.jpg?Expires=1790835205&Signature=g0P5Rnj2FHOAeP2ae-aCJ2vf-Rq8LeEuk9-eWrU4VywyeHAXLLOEp6HLsHs4d3TjN-zusiQwRME6rrKVODbwKQBSDnK-AgpLx3b3x3smnTJNTJl2HrvRrV3AOFlmnNCwMhL6IiOv2wHnZ5JjhZasfE8fjTX96eb33TAxlyVsHqv4Oc~TOQXF5ZIgu6Jq0~pCXM3Eqcqsm63emu5ZsP1maKHCimV2kWS1fhv4eN1opBMTVw9CD3ogtJubBy48a9wkm1CqPl8T-QZ3DyT4pjx~PL38qc2Wkq9gEn8jKArCx3tZ-oE4~jw1yuI0x4AQTri~NoZnCddONm~sVmerIbfheQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501899,
+      "description_sha256": "4019e78d75358d962f300d60efce87552fb1cfe8809b824fa649f6839d200dec",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the mask fusion process during the training phase, structured into three main horizontal sections representing different granularity masks, followed by a central processing block and a final fused output. The top row contains three distinct mask regions labeled m_w (blue), m_p (green), and m_s (red), each corresponding to a different level of spatial or semantic granularity. Each region is a rectangular area filled with its respective color and contains geometric shapes (circles and triangles) with numerical labels indicating specific pixel or region identifiers. In m_w (blue), region 0 contains circle 1 and triangle 2. In m_p (green), region 3 contains circle 5 and triangle 6, with additional regions 4 and 7. In m_s (red), region 8 contains a subdivided circle (quadrants 10, 11, 12, 13) and triangle 14, with regions 9 and 16 also present. Below these three masks, a central gray rounded rectangle labeled 'Granularity weight α per pixel' serves as a weighting module. It includes a legend with three colored squares (blue, green, red) corresponding to weights α_w, α_p, α_s, respectively. Lines connect specific points within each mask—specifically, point 1 from m_w, point 5 from m_p, and point 12 from m_s—to this central module, indicating that these pixels contribute to the computation of per-pixel granularity weights. From this module, a single line leads downward to the bottom section, which displays the resulting 'Fused mask m_f'. This fused mask is a composite image combining elements from the input masks: it retains the blue background from m_w, incorporates triangle 6 from m_p (now colored green), and integrates the subdivided circle from m_s (with quadrants 10 and 12 visible, colored orange). The fused mask also includes region 7 from m_p, now appearing as a green triangular segment. The label 'Fused mask m_f' is placed below this output, presented in a gradient-colored rounded rectangle transitioning from blue to red, symbolizing the integration of the three input masks. The overall layout follows a top-down flow: three input masks → granularity weight computation → fused output mask. The connections are represented by solid black lines with small circular nodes at connection points, emphasizing the data flow from specific pixels to the weighting module and then to the final fused result. The figure visually conveys how different granularity levels are combined using learned weights to produce a unified segmentation mask."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

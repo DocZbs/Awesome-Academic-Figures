@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500357",
+  "record_sha256": "58941b2d48a6fa8169e3e27d7571c77e2bed85df22dc5196751eb9bccd6d4655",
+  "asset_sha256": "1fa522d16e6f39c07a806d551dce545a11056423f9d8d6e00e95b40604f6fcd5",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500357",
+    "title": {
+      "zh": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation · 方法图",
+      "en": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11183",
+      "title": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation",
+      "authors": [
+        "Bohan Li",
+        "Xin Jin",
+        "Jianan Wang",
+        "Yukai Shi",
+        "Yasheng Sun",
+        "Xiaofeng Wang",
+        "Zhuang Ma",
+        "Baao Xie",
+        "Chao Ma",
+        "Xiaokang Yang",
+        "Wenjun Zeng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_id": "2412.11183",
+      "arxiv_first_submitted_at": "2024-12-15T13:26:51Z",
+      "arxiv_updated_at": "2025-08-22T08:05:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500357/image/image.jpg?Expires=1790835171&Signature=FHfpXraiLx2APLdowYzVDNcmdnx1aoYdWaQfFihjNWs3khxL3lasrGdtJpFe27a9ohjtAh~crjyULgX1l6ZIzaG2zaZvIBYqFcT1oyOfO4v~BriAhyXv~-puGx3zgHVF~G3WjC~dX7PXVrnWBCyjLFvYXfqg5tcQvEtfjXIlS~C1aBpPVHq9AwJWlMpDzaGNxUVZF9Ch01a7p0TpC9w7Cr4mlp17Ef46e8rYwhV2UoF89xGWKGgGaNFThfpkjdgPRO1tpl1u7AVwRRiTN0SiIBDD7VxFMv2cU8MaONFOe8LgY9IuRc54D5PP4H~M9sFderirprXgnREevKtrqnKCOw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500357,
+      "description_sha256": "264e4696031e9cd4009f34a890191f5183d0e233c6d4203aab18932ac3370e5c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Mamba-based Dual Alignment (MDA) module designed for occupancy-based constraint conditions. The overall layout is divided into three main sections: an input visualization on the left, two primary processing stages in the center—Cross-view Camera Encoding and Sequential Feature Encoding—and a detailed breakdown of the Bidirectional Mamba Block on the right. The entire structure is organized within dashed rectangular boundaries to delineate functional modules.\n\nOn the far left, the input consists of a sequence of four consecutive street-view images stacked vertically along the Temporal Axis, representing frames T₁ through T₄. Above these images is a color-coded 2D occupancy map with a Depth Axis indicated horizontally, showing segmented regions in various colors (yellow, green, purple, blue), with small camera icons indicating viewpoints. This visualizes the spatial and temporal inputs to the system.\n\nThe first major module, Cross-view Camera Encoding, begins by taking the camera parameters P (represented as a geometric transformation between two camera poses) and feeding them into a Parameter Encoder, which outputs a learned parameter vector P̂. Simultaneously, the 3D occupancy tensor X_occ (visualized as a blue grid cube) undergoes interpolation and is processed by a 3D Deform Conv layer. The output from the Parameter Encoder and the 3D Deform Conv are combined via element-wise multiplication (denoted by ⊗), producing the refined occupancy feature X̂_occ. This module integrates camera trajectory information with semantic occupancy data.\n\nThe second major module, Sequential Feature Encoding, receives X̂_occ and processes it through a 3D Patch Embedding Layer, which divides the 3D feature into smaller patches. These patches are then stacked across time steps T₁ to T₄ in a Patch Stacking operation. The resulting sequence is fed into a Bidirectional Mamba Block, which performs context-aware sequential modeling. Following this, a Zero-Conv layer processes the output, denoted as X̂_mam. Additionally, a separate latent feature sequence L (shown as a stack of four layers labeled T₁ to T₄) is passed through another 3D Patch Embedding Layer and then fused with X̂_mam via element-wise addition, producing the aggregated feature L_agg.\n\nThe rightmost section details the internal structure of the Bidirectional Mamba Block. It consists of two parallel SSM (State Space Model) blocks, each preceded by a δ (delta) node and a Depthwise Convolution (Dw-Conv) layer. The Dw-Conv layers receive inputs from Linear layers, which are connected to the previous stage. Each SSM block also receives a flip signal, indicating bidirectional processing. The outputs of both SSM blocks are combined via element-wise addition, followed by a final Linear layer that produces the output of the block. The connections are shown with solid arrows indicating forward flow, and dashed lines indicate auxiliary or feedback paths, such as the flip signals.\n\nAll modules are represented using standardized shapes: rectangles for processing layers, circles for operations like δ, and trapezoids for Linear layers. Colors are used consistently: light gray for general layers, light blue for embedding and stacking layers, and white for input/output tensors. Text labels are placed adjacent to each component, clearly identifying their function. The diagram uses mathematical notation such as X̂_occ, L_agg, and δ to denote intermediate representations and operations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

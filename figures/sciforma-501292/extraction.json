@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501292",
+  "record_sha256": "5d722181a181218d2509461ed0da1168f4b36444a92c5efbee5cd7ee2fad99cd",
+  "asset_sha256": "2f394a1ff2d8a8a88d01823393637d5ae302e6457cead353c6012863dcf7cde4",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501292",
+    "title": {
+      "zh": "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization · 方法图",
+      "en": "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12588",
+      "title": "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization",
+      "authors": [
+        "Yun Luo",
+        "Yingjie Li",
+        "Xiangkun Hu",
+        "Qinglin Qi",
+        "Fang Guo",
+        "Qipeng Guo",
+        "Zheng Zhang",
+        "Yue Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12588",
+      "arxiv_url": "https://arxiv.org/abs/2412.12588",
+      "arxiv_id": "2412.12588",
+      "arxiv_first_submitted_at": "2024-12-17T06:44:06Z",
+      "arxiv_updated_at": "2024-12-17T06:44:06Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501292/image/image.jpg?Expires=1790835190&Signature=nQX3k8MVRA26L3S6E8zvYNKUNKXadpq0bRzAQkMiAlN~ypz4EFcpaRxdGuQI8ru-LpvEaToWBvncFos6XAr1HXym-cRUD40kQekv6eFS2wV4ULOCI~Fa4Mv2pAPj9QFhW~ELjvACDyCRF37e-f-7yj-ysLRMEi66n5832Gif6aUaXHJFfsmvrbtcDTP0ZJdFVHKGG9rP3XMw77ULtPlaJIburx~9BJMwfifVcia8Tyy16kELhe3ae064kjjHubyH1vXhe2iR3y8IzhxW~eNbW~nBYUEDNERLOx9SfvWp7wssZW1qI0VQSJ4uM-YHUWyQcB8WzlXUn4zAbIQEi-ZBCw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501292,
+      "description_sha256": "30d6b064b23c5ec8773eb2b3da38836b2da378849523d5adc12e118ef4cf76c0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the HierSphere framework for multi-faceted summarization, structured as a two-step hierarchical process. The global layout is a top-down flowchart with a clear division into two main stages: Step 1: Local Summarization and Step 2: Merge and Modify. On the right side, these steps are labeled with corresponding icons — a blue document icon with a pencil for Step 1 and a red human silhouette holding a pencil for Step 2 — indicating the progression from automated local processing to human-in-the-loop refinement.\n\nIn Step 1, multiple input documents are grouped into clusters, each cluster being processed independently to generate a local summary. These clusters are visually represented as light green rounded rectangles at the bottom level. For example, 'Doc 1: ...' and 'Doc 2: ...' feed into 'Summary 0'; 'Doc 6: ...' and 'Doc 7: ...' feed into 'Summary 1'; and 'Doc 16: ...' and 'Doc 17: ...' feed into 'Summary 3'. The ellipsis between 'Summary 1' and 'Summary 3' indicates that additional such clusters exist beyond those shown. Each document group is connected via a blue upward arrow to its corresponding summary box, signifying the summarization operation.\n\nStep 2 involves merging and modifying the generated local summaries to produce a final, coherent summary. This is depicted by multiple blue arrows pointing from each 'Summary X' box (e.g., Summary 0, Summary 1, Summary 3) toward a single, larger, peach-colored rounded rectangle at the top labeled 'Final Summarization'. This top node represents the consolidated output of the entire process, integrating insights from all local summaries.\n\nAll boxes are uniformly styled with rounded corners; the document groups and local summaries are light green, while the final summary is peach-colored to distinguish it as the ultimate output. Text within each box is black, bold, and centered. The arrows are solid blue lines with arrowheads, clearly indicating the direction of data flow from documents to local summaries and then to the final summary. The figure’s structure emphasizes a hierarchical aggregation: local summarization first, followed by a merge-and-modify phase that synthesizes the results into a unified summary."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

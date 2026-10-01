@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501864",
+  "record_sha256": "915d33dd44a8fb465c1cf4c7ee32b4722921106c05daed196586459d31b74179",
+  "asset_sha256": "ffa811877896fd113882fe2c27bf2064544fa79c2f9d878c6522848b77c84df8",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501864",
+    "title": {
+      "zh": "Sign-IDD: Iconicity Disentangled Diffusion for Sign Language Production · 方法图",
+      "en": "Sign-IDD: Iconicity Disentangled Diffusion for Sign Language Production"
+    },
+    "paper": {
+      "id": "arxiv-2412-13609",
+      "title": "Sign-IDD: Iconicity Disentangled Diffusion for Sign Language Production",
+      "authors": [
+        "Shengeng Tang",
+        "Jiayi He",
+        "Dan Guo",
+        "Yanyan Wei",
+        "Feng Li",
+        "Richang Hong"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13609",
+      "arxiv_url": "https://arxiv.org/abs/2412.13609",
+      "arxiv_id": "2412.13609",
+      "arxiv_first_submitted_at": "2024-12-18T08:36:35Z",
+      "arxiv_updated_at": "2024-12-19T03:12:19Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501864/image/image.jpg?Expires=1790835205&Signature=c8wBPNdhqHKAL5XB4uDx59sq-OEByiPvdtukyneRUGwWoDVjXG-3lNPvN~APq2kRp1~ySkdXYcvJsbb1CaJGICT4b-BoqySNREgRZ-5rvU4iMRyjdvBMm-FqXbrrF1mRDGAMgDgShhcS7dXOiOnqDaPKLrqMARc-smRRlYlH2pN5IqNZ~J-vxlqs39FtN8iMDm0bJcSZcQiGjBRKJofvz1jgVrv3UMQvAJPSeR0Xq7YJSRqxNCia7ovnN7qgKqw~CV0UNnuR490P2NDjzp12eERmQBDoTZY10i2UH-7uOzIDQx8PoQ-j-MtbRkAkZuGwlR3XIYaYIlNK2iu2Nxjs5w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501864,
+      "description_sha256": "c5e837a3f68b4386065bba6bb270cfe6efae35101ae595e4014628f84b26ab1f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Attribute Control Decoder (ACD) module, which processes input pose and gloss tokens to generate output pose tokens through a series of structured layers. The global layout is vertically oriented, with the input at the bottom, processing layers stacked in the center, and the output at the top. On the right side, a legend defines color-coded token types: orange for Pose embeddings, green for Gloss tokens, yellow for Pose tokens, light blue for Attribute tokens, and labeled boxes for Query (q), Key (k), Value (v), and Attention (a). The central processing block consists of four main layers arranged sequentially from bottom to top: Pose Self-Embedding, Condition Integration Layer, Attribute Separation Layer, and Attribute Control Layer. These layers are enclosed within a large rounded rectangle, indicating a unified module. At the bottom, the Input is represented by two dashed boxes containing an orange square (Pose embedding) and a green square (Gloss token), feeding into the Pose Self-Embedding layer. This layer connects to the Condition Integration Layer, which then feeds into the Attribute Separation Layer. The Attribute Separation Layer outputs to the Self-MHA (Self-Multi-Head Attention) block, which in turn connects to the Attribute Control Layer. The Attribute Control Layer produces the final Output, shown as a dashed box with a yellow square (Pose token). Two auxiliary attention mechanisms are depicted on the left side: one in a light blue box and another in a light purple box. Each contains a query (q), key (k), value (v), and attention (a) computation, where the attention weight 'a' multiplies the value 'v' to produce an output. The light blue attention mechanism receives inputs from a yellow square (Pose token) and a light blue square (Attribute token), while the light purple one receives inputs from an orange square (Pose embedding) and a green square (Gloss token). Dashed lines connect these attention blocks to the main processing stack, indicating that their outputs feed into the Attribute Separation Layer and the Attribute Control Layer respectively. On the far right, a separate sub-module shows a Norm layer followed by a Linear layer, which takes an orange square (Pose embedding) as input and outputs both a yellow square (Pose token) and a light blue square (Attribute token), suggesting a transformation or projection step. All connections between components are indicated by solid black arrows, showing the forward flow of data, while dashed lines represent auxiliary or feedback connections. The entire diagram uses consistent visual attributes: rounded rectangles for layers, squares for tokens with distinct colors per type, and labeled boxes for attention components. The structure emphasizes a hierarchical flow from input embeddings through condition integration, attribute separation, and control, culminating in the generation of output pose tokens."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

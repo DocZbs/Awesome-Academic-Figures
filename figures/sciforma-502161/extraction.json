@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502161",
+  "record_sha256": "a32060b930d847c74a0ca281b507dbd9016b01e2cbe5fc91d98a3091a4723991",
+  "asset_sha256": "68e4578b20ab6589bd52e312987322cb6d0c91524f11b2fec15455fc6ac81528",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502161",
+    "title": {
+      "zh": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models · 方法图",
+      "en": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-14006",
+      "title": "InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models",
+      "authors": [
+        "Cong Wei",
+        "Yujie Zhong",
+        "Haoxian Tan",
+        "Yingsen Zeng",
+        "Yong Liu",
+        "Zheng Zhao",
+        "Yujiu Yang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_url": "https://arxiv.org/abs/2412.14006",
+      "arxiv_id": "2412.14006",
+      "arxiv_first_submitted_at": "2024-12-18T16:20:40Z",
+      "arxiv_updated_at": "2024-12-18T16:20:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502161/image/image.jpg?Expires=1790835212&Signature=kf5uioMIc16GxznroGxlIs27Q6VmhcjnqunlF1OFsBSPrEjUn87Co-KVkt9EaoIjfw0Ey982StsbDJUT~0praBtCED6233GPuPNPx04NgriLWavcQ~r1AOzTNn0lQgsppo5je2HenC-q~iZDWp4jS~D9vCqxRuQmcTxsw7~3pBM5-vemex9bVI1H9DIaMKiy6JSumZxnKQyfXVRC9zk9lHVuA3cChiyhTZ6S-l73N3sSu5XBbT0ClqpmeZ8S82ciLPmJb283WEeHH5ND1~d1zi58qTR10AFSH1ubsrt4HZ~Evvr-4DP4Bl9VCOrJ~WZMG3FW8EjOc4K42flXqxa7Cw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502161,
+      "description_sha256": "e9e32a316013934cb5974f1dd462f60aa74baa072d91965dae7f715e2a8ac4ef",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Object-aware Video Perceiver (OVP), a model designed to learn temporal and object-level information from video sequences by integrating visual and textual inputs. The global layout is structured in a top-down, sequential flow: at the top, a series of reference frames—depicted as images of a cheetah interacting with prey in grassy terrain—are arranged horizontally. These frames are processed by a green rectangular module labeled 'CLIP Encoder', which is annotated with the mathematical symbol F_CLIP, indicating the feature extraction function. Below this, a light yellow background encloses a sequence of identical pinkish-beige rounded rectangles labeled 'Perceiver', representing N₁ perceiver layers arranged in a horizontal chain. These layers form the core processing unit of the model.\n\nOn the left side, a green rounded rectangle labeled 'Learnable Queries' contains two orange squares, signifying initial query embeddings that are fed into the first Perceiver layer. On the right side, a vertical dashed purple rectangle labeled 'Text Tokens' contains multiple purple squares, representing discrete textual input tokens that are fed into the last Perceiver layer. This indicates a bidirectional interaction between the visual and textual modalities within the Perceiver stack.\n\nEach Perceiver layer outputs a pair of colored squares—dark blue for the first, medium blue for the second, and progressively lighter blue for subsequent layers—indicating the evolving feature representations or latent embeddings generated after each processing step. These outputs are aligned vertically beneath each Perceiver block, with the notation 'N₁×' placed near the first output pair to denote the number of such outputs produced across all layers. The connections are represented by solid black arrows: from each reference frame to the CLIP Encoder, from the CLIP Encoder to each Perceiver layer, from the Learnable Queries to the first Perceiver, from the Text Tokens to the last Perceiver, and from each Perceiver to its corresponding output pair. The ellipsis (...) between the reference frames and between the Perceiver layers suggests that the sequence is extended beyond what is explicitly shown. The overall structure emphasizes a multi-modal, sequential processing pipeline where visual features from reference frames and textual tokens are jointly encoded and refined through a series of Perceiver layers, guided by learnable queries, to extract rich spatio-temporal and object-aware representations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

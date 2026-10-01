@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501716",
+  "record_sha256": "5590c057a85505d9eda8e5abb96a4086d2ec8c75e82fd158fe1d50134b57f79b",
+  "asset_sha256": "4aef09ffb21d252ab67dd237efcfdaa65c51fa8f5d276a79f714abd045f0e799",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501716",
+    "title": {
+      "zh": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild · 方法图",
+      "en": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild"
+    },
+    "paper": {
+      "id": "arxiv-2412-13393",
+      "title": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild",
+      "authors": [
+        "Muhammad Usama Saleem",
+        "Ekkasit Pinyoanuntapong",
+        "Mayur Jagdishbhai Patel",
+        "Hongfei Xue",
+        "Ahmed Helmy",
+        "Srijan Das",
+        "Pu Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_id": "2412.13393",
+      "arxiv_first_submitted_at": "2024-12-18T00:10:00Z",
+      "arxiv_updated_at": "2025-03-19T14:49:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501716/image/image.jpg?Expires=1790835200&Signature=SGxTipnxBRiQezbtBjn2Z4ZYCnkHsqzOwLq5Cz29q8nc5Ewmt4EgEF9XjowFT2eJ78vuqRwJdQh4BsDkmqK6vtdQuhHBm9Lb5rcbzrIgqDpWRp42aRo0v8lBNT0uKEaennhAMiTdD1ddfkABybwhnKNHeE2mUthROjqo8Loha1W711JVZhZJk5boZIm7hZLg5ah6XZlOEEj91nHhmNtRnrm9YxRhm4L0dNg3IyZfNJCod5b6zfrwSON4vebzwx7W91Thy0uD8P4ae4bPWfUEFfmeAtsxq703rdAX8nvJ4WOoMBT17EesDVmQFwlg2raERAjrG0T1JUlCXUTBkUMJSw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501716,
+      "description_sha256": "c0765580bee99810d0e1bd54ef032c03af0ac389512f7c52f8f0d2aa4a363d2c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the training phase of MaskHand, a framework composed of two main components: VQ-MANO and a Context-Guided Masked Transformer. The global layout is divided into two parts: (a) VQ-MANO on the left, and (b) the Context-Guided Masked Transformer on the right, separated by a vertical dashed line. A legend at the top defines visual elements: pink for Mano Pose, yellow for Shape, light blue for Camera, cyan for 2D Pose, black for Mask, a cross symbol for Deformable Cross-Attention, and a snowflake for Frozen Network.\n\nIn part (a), VQ-MANO, a 3D hand pose θ is encoded by a VQ Encoder into a sequence of discrete latent codes ŷ₁, ŷ₂, ..., ŷₘ, represented as gray 3D blocks. These codes are quantized from a Mano Pose Codebook (CB), depicted as a vertical stack of pink rectangles labeled 1 to K, with a book icon indicating it's a codebook. The quantization process maps continuous latent vectors to discrete indices. The reverse process, dequantization, converts the discrete indices back into continuous latent vectors z₁, z₂, ..., zₖ, shown as pink 3D blocks, which are then fed into a VQ Decoder to reconstruct the original pose θ'.\n\nPart (b) shows the Context-Guided Masked Transformer. An input image of a hand holding an object is processed by an Image Encoder, producing feature maps. These features are upsampled and passed to an X-Attention Head, which combines them with a query from a 2D Pose Estimator via Deformable Cross-Attention (indicated by a cross symbol). The 2D Pose Estimator outputs a 2D pose, shown as a cyan block, which is further processed by a Graph Convolutional Network (GCN) to generate a graph structure. This graph, along with the 2D pose, is used to guide a VQ Encoder (marked as frozen with a snowflake) to produce a token sequence θ, where some tokens are masked (black blocks). The masked sequence is then processed by a Context-Infused Masked Synthesizer, which uses expectation-approximated sampling to predict the most likely token indices (e.g., 2, 1, 4, 6, 3) with associated confidence scores (e.g., 0.9, 0.7, 0.9, 0.8, 0.9). The predicted tokens are combined with the context from the X-Attention Head and passed through a Graph-based Anatomical Pose Refinement module. The refined token sequence is then decoded by a VQ Decoder (also marked as frozen) using the Mano Pose Codebook (CB) to reconstruct the final pose θ'. The connections between modules are indicated by arrows, showing the flow of data: from the input image and 2D pose to the encoder, then through attention and refinement stages, and finally to the decoder. The diagram emphasizes the conditional generation of discrete pose tokens based on visual and structural context."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

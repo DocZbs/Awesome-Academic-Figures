@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502155",
+  "record_sha256": "840f4470e837514e19c7ed3b15d5a5662f9dedcc28330ea4eca31c87ba7a1a89",
+  "asset_sha256": "f1b5fadca8b88d93c7be9c920deb9308c79cb164f0e009b3f9a6acb40cac6839",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502155",
+    "title": {
+      "zh": "What makes a good metric? Evaluating automatic metrics for text-to-image consistency · 方法图",
+      "en": "What makes a good metric? Evaluating automatic metrics for text-to-image consistency"
+    },
+    "paper": {
+      "id": "arxiv-2412-13989",
+      "title": "What makes a good metric? Evaluating automatic metrics for text-to-image consistency",
+      "authors": [
+        "Candace Ross",
+        "Melissa Hall",
+        "Adriana Romero Soriano",
+        "Adina Williams"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13989",
+      "arxiv_url": "https://arxiv.org/abs/2412.13989",
+      "arxiv_id": "2412.13989",
+      "arxiv_first_submitted_at": "2024-12-18T16:09:42Z",
+      "arxiv_updated_at": "2024-12-18T16:09:42Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502155/image/image.jpg?Expires=1790835212&Signature=wb-Jhs6IfgKg3I0Y6AuvCx0eJpoVFIMDVhEiq83ZAxLAOv5i7PSmiiLoIb38SmcorQFy3quen3pQ7ujhxdJq2Exoj~sn9Vh8Bc5cxzmMkvWLWwVTPEgx41l4Xv-Bzh-ypepQ2FKKylyRdRoeL3GqBSVPZ852d7IdgrTcIgS3nxS54ZSHQ5M63-e52s8Jm3~MfCEPV6hCbG9YA92q9BTegL~2fEdDKmD~d8l1Kj0ytGb5B7KJ0CipEp9FVLl1Yo4pMyLyxGDQarhCs5~h6hq4~tB6QDsvm2VL6SFguJfY9ZcTqSk5KODqffSvi~jf3VDb4KtHBtbcIakeMBRY36Bo5A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502155,
+      "description_sha256": "e29ff6a3e6bd7fd773d061bc6fd2948f58ed1f6aa8e687ee8b3513084c234155",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a hierarchical semantic relationship structure used for generating negative questions via WordNet, specifically leveraging hypernym-hyponym relationships. The global layout is a directed acyclic graph centered around the concept 'edible_fruit' at the top, which serves as a hypernym. From this node, two downward arrows point to 'avocado' and 'berry', both enclosed in rounded rectangular boxes, indicating they are co-hyponyms of 'edible_fruit'. These two nodes further branch out: 'berry' has two outgoing arrows pointing to 'blackberry' and 'blueberry', while 'avocado' has no further descendants shown. The term 'apple' appears to the left of 'avocado', connected by an arrow from 'edible_fruit', suggesting it is also a hyponym of 'edible_fruit' but not directly linked to the other hyponyms in the diagram. Labels 'hypernym' and 'hyponyms' are placed to the right of the respective nodes in orange text, clarifying the semantic roles. All nodes are rendered in black text, with 'avocado' and 'berry' distinguished by rounded rectangles, while others are plain text. The connections are solid black arrows pointing downward, indicating the direction of the semantic hierarchy from general to specific. The caption explains the methodology: given a question like 'Is there an apple? A: yes', the word 'apple' is processed by finding its hypernym (e.g., 'edible_fruit') and then sampling from its co-hyponyms (e.g., 'avocado', 'berry'). Further sampling from the hyponyms of 'berry' (e.g., 'blackberry') leads to a negative question such as 'Is there a blackberry? A: no'. This process demonstrates how semantic similarity via WordNet’s synsets enables the generation of semantically related but logically negative variants of original questions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

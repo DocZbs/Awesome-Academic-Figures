@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501841",
+  "record_sha256": "3ac5a7f975a0a8e794e88199b4d33ea487f914876e56fc63aa3e4129531e4f93",
+  "asset_sha256": "4bf68c1cdec1279514cad68cd4cbdb59ba8b198ee8a89d43354ff9422bc6ccce",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501841",
+    "title": {
+      "zh": "CA-Edit: Causality-Aware Condition Adapter for High-Fidelity Local Facial Attribute Editing · 方法图",
+      "en": "CA-Edit: Causality-Aware Condition Adapter for High-Fidelity Local Facial Attribute Editing"
+    },
+    "paper": {
+      "id": "arxiv-2412-13565",
+      "title": "CA-Edit: Causality-Aware Condition Adapter for High-Fidelity Local Facial Attribute Editing",
+      "authors": [
+        "Xiaole Xian",
+        "Xilin He",
+        "Zenghao Niu",
+        "Junliang Zhang",
+        "Weicheng Xie",
+        "Siyang Song",
+        "Zitong Yu",
+        "Linlin Shen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13565",
+      "arxiv_url": "https://arxiv.org/abs/2412.13565",
+      "arxiv_id": "2412.13565",
+      "arxiv_first_submitted_at": "2024-12-18T07:33:22Z",
+      "arxiv_updated_at": "2024-12-18T07:33:22Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501841/image/image.jpg?Expires=1790835205&Signature=gQge4fK8rywz6HSqpXw5yyRiBz0yz3qrrYHd62v197LOJfRSe40FDplML6vDYMGTepVTr2S31aso~O8etLs-qMUI50j2S8Z1fxEUu6boo3pYwk5HNKIxRcCVKOl~WNphyvFUjRuHozbmth825wc356VV9pXY6W-5pZUtuhBnElVZf1ycueo8wcyYuopWoZ5W0cPA08X~5Mcn2CVTZkp~0MjUaXQNp5TPBh9~BAA3S6A4gOJff7gpEPS-b9uYXbVfchYrRhU7BRUm9S7C0W4jUcRjBGdGxhdajaLegF7WIseLzbrTtVTaxdB2G8~-NdhwzcSegWeDMTEO8pXyxpICbg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501841,
+      "description_sha256": "69be8d10aec8f235bfeaa4f30db68f0fed7ac1a20e7637e37ecabaa8113f74e8",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates an inference pipeline for image editing, specifically for modifying facial features such as closing eyes, using a combination of diffusion modeling, frequency guidance, and causality-aware conditioning. The global layout is left-to-right, divided into four main stages: input preparation, conditional adaptation, frequency-guided refinement, and final causality modeling inference.\n\nOn the far left, two input images are shown: an 'Original Image' and a 'Mask Image', both depicting a person with eyes open. The mask image has the eyes blacked out, indicating the target region for modification. These inputs feed into the first module, a 'Causality-Aware Condition Adapter', which receives a textual prompt ('closed eyes') as additional conditioning. This adapter is visually represented as an orange hourglass-shaped block labeled 'Reference Net'. It processes the original image and mask to produce a latent representation denoted as z_T.\n\nThis latent representation is then passed to a blue hourglass-shaped block labeled 'SD Unet', which performs the core diffusion process. The SD Unet generates intermediate outputs, denoted as ẑ_t, which are fed into the next stage. This stage, titled 'Skin Transition Frequency Guidance', contains multiple visual components. It displays ẑ_t as a face with closed eyes (dashed outline), alongside a green-tinted image showing localized eye regions (boundary regions), and a heat-map-like 'Attention map' highlighting the eye area in blue and red. These components are connected via green arrows labeled 'Localization', indicating that the boundary regions are identified based on attention.\n\nWithin this stage, a Fourier Mask (black square with white center) is applied to the FFT Image (a frequency spectrum visualization) via a circular operator, representing a low-frequency filter. This produces 'Frequency Guidance', which is mathematically defined by the equation: ê_t = ϵ_θ - λρ_t∇_{z_t}g(z'_0, ẑ_{t→0}). This guidance is combined with the intermediate output to refine the image.\n\nThe refined output, ẑ_{t−1}, is then passed to the final stage: 'Causality Modeling Inference'. This is depicted as a dashed rectangular box containing two smaller boxes, with a curved arrow labeled '×T' looping back from the output to the input, indicating iterative refinement over T steps. The final output is the edited image, ẑ_0, showing the person with closed eyes, consistent with the input mask and prompt.\n\nThe legend at the bottom clarifies the visual elements: the blue hourglass is the SD Unet, the orange hourglass is the Reference Net, the green rounded rectangles represent Boundary Regions, and the green arrows indicate Localization. The entire pipeline emphasizes causal reasoning, frequency-based refinement, and attention-driven localization to achieve realistic image editing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

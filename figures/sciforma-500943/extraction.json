@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500943",
+  "record_sha256": "c73bf8dc88c6b39d0ee28ff53d088234dc7fdfce6e89f98a6bca1fff1e16751b",
+  "asset_sha256": "4de43507a05a107b99f707ca3b6394f607a058e83cc9613708440e1c8ecb4cc6",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500943",
+    "title": {
+      "zh": "Stabilizing Reinforcement Learning in Differentiable Multiphysics Simulation · 方法图",
+      "en": "Stabilizing Reinforcement Learning in Differentiable Multiphysics Simulation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12089",
+      "title": "Stabilizing Reinforcement Learning in Differentiable Multiphysics Simulation",
+      "authors": [
+        "Eliot Xing",
+        "Vernon Luk",
+        "Jean Oh"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12089",
+      "arxiv_url": "https://arxiv.org/abs/2412.12089",
+      "arxiv_id": "2412.12089",
+      "arxiv_first_submitted_at": "2024-12-16T18:56:24Z",
+      "arxiv_updated_at": "2025-02-27T19:05:47Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500943/image/image.jpg?Expires=1790835181&Signature=MXMSc6xV77POBz2-COV-iRsy1uuBEcl1D5tp6ZBP-HSHqJ8--mdsw~G8miTIzp0-2Ju4PFbR4KMJWAZHPk-jTQImuT81EwIWgJQZY81yxsu7GQ1Ee9ipxOGej3RzINhLFJK92l0QkqY7K1INWoRWD7e0fbAHbbGFo2-Q8UuwwKyaN7hUKCgqYWlzN56yM1Mn2KUwmPmGKyFuvISD7dmyKAZt4CZMBjOzlJMglnq5M-r2JmY4xL9~N-Z1IQ5lgmesiV0N6Q3cAZmMCM3CE-thf0PwQOSra119D3Rs6KPgdIlyrpjkbVEHMuqMk0Scw47wL8DBMSLFKOgAmx~z8cIJGg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500943,
+      "description_sha256": "811adefb234cd6614ba03d378b49fc425dbf0252097157cd7201ca65dc9df301",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the computational graph of a reinforcement learning algorithm, denoted as \\ouralgo, which operates over a sequence of time steps from t to t+H. The global layout consists of three vertically aligned, identical processing blocks representing consecutive time steps: t, t+1, and t+H, arranged horizontally from left to right. Each block is enclosed in a light yellow rounded rectangle, indicating a modular, time-unrolled structure. At the bottom of the diagram, a sequence of green circular nodes labeled 'Diff. Sim.' (short for Differentiable Simulator) generates state-action pairs, feeding into each time step. These simulator outputs produce state s_t (green square) and reward r_t (green circle) at each time step, which are then fed into corresponding encoders.\n\nWithin each time step block, there are two parallel processing streams: one for the Actor and one for the Critic. The Actor stream begins with a green square node labeled s_t, which feeds into a trapezoidal 'Actor Encoder' (light blue). This encoder outputs a blue grid-like feature representation z_t^{(π)}. This feature is passed to a rectangular 'Actor MLP' (light blue), which outputs mean μ_t^{(π)} and standard deviation σ_t^{(π)} (both represented as horizontal bars). These parameters define a Gaussian policy distribution, shown as a blue bell-shaped curve, from which an action a_t is sampled (blue circle). A black arrow from a_t loops back to the 'H_π[·]' node (blue circle), indicating the policy's application or evaluation.\n\nThe Critic stream, running in parallel, takes both s_t and r_t as inputs. s_t feeds into a trapezoidal 'Critic Encoder' (light red), producing a red grid-like feature z_t^{(V)}. This is passed to a rectangular 'Critic MLP' (light red), which outputs the value function v_t (red circle). An orange arrow connects v_t to the 'H_π[·]' node, suggesting the value is used in policy evaluation or gradient computation.\n\nConnections between time steps are shown via thick black arrows: the action a_t from time t is passed to the next time step’s differentiable simulator, which then produces s_{t+1} and r_{t+1}. This creates a sequential, unrolled architecture. The orange lines indicate a shared or recurrent connection from the Critic’s output v_t to the next time step’s H_π[·], possibly for advantage estimation or temporal difference learning.\n\nAt the final time step t+H, the value v_{t+H} is connected via an orange arrow to a diamond-shaped node labeled J(π), which represents the policy objective or loss function. The caption notes that J(π) only updates the actor, even though gradients may propagate through the critic. The entire structure emphasizes a model-based, differentiable simulation framework where the policy and value functions are learned through a sequence of simulated interactions, with the critic providing value estimates to guide the actor’s optimization."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

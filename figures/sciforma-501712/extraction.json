@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501712",
+  "record_sha256": "f7165e60997c8dd13f8d3a8255a5b22333642a186b5702ba5b86dcf79dc152ab",
+  "asset_sha256": "5a4dbbda4568af7f1a1ead5f12fc329c463ecfcfe70b8e8e2070289c213666e4",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501712",
+    "title": {
+      "zh": "SummExecEdit: A Factual Consistency Benchmark in Summarization with Executable Edits · 方法图",
+      "en": "SummExecEdit: A Factual Consistency Benchmark in Summarization with Executable Edits"
+    },
+    "paper": {
+      "id": "arxiv-2412-13378",
+      "title": "SummExecEdit: A Factual Consistency Benchmark in Summarization with Executable Edits",
+      "authors": [
+        "Onkar Thorat",
+        "Philippe Laban",
+        "Chien-Sheng Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13378",
+      "arxiv_url": "https://arxiv.org/abs/2412.13378",
+      "arxiv_id": "2412.13378",
+      "arxiv_first_submitted_at": "2024-12-17T23:26:44Z",
+      "arxiv_updated_at": "2025-05-30T19:47:02Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501712/image/image.jpg?Expires=1790835200&Signature=B3gruSYNF~xAqp6O1NojcKWvZzxeqDPW0F7p4elj8209i1VAx0S3ItbEUDjlAUCfCPchtTcv9GpEawO3AN5g1Vq3PKl9~x6g1WCuXOouKuK5z5BXd4b2Lt5z279HoXxWDK9eRhhF1pFpbuyleErKm7Ubtl6mw6~OYHXDMti8rzqvkB88oWQgiS2JBXZU1Xcx9mDndBg~F7AIGNbWaiAIUxGzlLfRnOZSfid1RCOXi2Zvtpvh8fE7vAfUhznuoN1PuH0gwgQ1Vze~4reCt2CiJbVcMEnYALOm4ei0bJSmd6Jzk6mKCrkREux~LIdtmyAjwbg3mrRO8~38PfKf2a~VTg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501712,
+      "description_sha256": "7a98892a1bc3597104a276d34e084ff9a742ed1cc6566eb731590434ea587979",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a three-stage methodology for developing and evaluating an executable editing framework for summarization, titled 'SummExecEdit'. The overall layout is divided into three vertically aligned sections: 'POC Stage to verify superiority of Executable Editing', 'Creation of SummExecEdit Benchmark', and 'Evaluating 20+ LLMs on SummExecEdit'. Each section contains a flowchart illustrating a sequential process with distinct modules, connections, and annotations.\n\nIn the first stage, the input is a pair '(Document, Seed Summary)'. This splits into two paths: one labeled 'Executable Prompt' feeding into the 'SummExecEdit Pipeline', and another labeled 'Normal Prompt' feeding directly into an LLM. The SummExecEdit Pipeline, enclosed in a dashed rectangle, consists of three beige rectangular modules: 'Original Text', 'Replace Text', and 'Explanation', each with descriptive subtext. These feed into a beige box labeled 'Edited Inconsistent Summary'. The Normal Prompt path leads directly to a similar beige box labeled 'Edited Inconsistent Summary'. Both outputs are shuffled and anonymized before being sent to a human verification module, represented by a person icon, which evaluates four criteria: whether the edit is inconsistent, complex, controlled, and whether the explanation quality is good.\n\nThe second stage begins with the same '(Document, Seed Summary)' input, now processed via an 'Executable Prompt' into the 'SummExecEdit Pipeline' (shown as a light green rounded rectangle). This output undergoes 'Quality Assurance' via an LLM, which discards trivial edits. The remaining 'Quality Inconsistent Summary' is stored in a pink cylinder labeled 'SummExecEdit'. Additionally, summaries from a separate dataset 'SummEdit' (another pink cylinder) are added to balance the benchmark. This stage ensures scalability while maintaining quality.\n\nThe third stage evaluates multiple LLMs on the created SummExecEdit benchmark. Input pairs '(Document, Summary) - SummExecEdit' are fed into an LLM (represented by a brain icon), which produces two outputs: 'Detection' and 'Explanation'. The 'Explanation' branch is shuffled and anonymized for 'Human Labeling for Error Analysis'. The 'Detection' branch feeds into an 'LLM Judge' (brain icon) that assigns labels: 'Not Correct', 'Partially Correct', or 'Entirely Correct'. These labels are combined with human feedback to form an 'Explanation Eval Label', which, along with detection results, contributes to a final 'Joint Score'.\n\nThroughout the diagram, arrows indicate data flow, with solid lines for direct processing and dashed lines for grouping or auxiliary processes. All LLMs are depicted as brain icons, and data storage is shown as pink cylinders. Text boxes are primarily beige rectangles with black borders, except for the pipeline box which is light green. The figure emphasizes a systematic progression from proof-of-concept validation through benchmark creation to comprehensive evaluation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

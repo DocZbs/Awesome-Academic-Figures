@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501847",
+  "record_sha256": "0a272b6057065a0270cc85580dd0fbdf7f8e015c969f8a0505583269b207c896",
+  "asset_sha256": "20b7af865a9fcc82ce83e4a9092d0e2078d28c0dc834dfe5ace039b3d4ca40e1",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501847",
+    "title": {
+      "zh": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement · 方法图",
+      "en": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement"
+    },
+    "paper": {
+      "id": "arxiv-2412-13575",
+      "title": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement",
+      "authors": [
+        "Qianyue Wang",
+        "Jinwu Hu",
+        "Zhengping Li",
+        "Yufeng Wang",
+        "daiyuan li",
+        "Yu Hu",
+        "Mingkui Tan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13575",
+      "arxiv_url": "https://arxiv.org/abs/2412.13575",
+      "arxiv_id": "2412.13575",
+      "arxiv_first_submitted_at": "2024-12-18T07:50:54Z",
+      "arxiv_updated_at": "2024-12-18T07:50:54Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501847/image/image.jpg?Expires=1790835205&Signature=QVTIKnuIsf2IN2Ln2P-s5cnYzXbIhhUVAMmROiCE8WZKaGq33MbMs~LWaNSxUmPvhg-JC0i99UFA5ua2JJPV4dpdGt2qkusucaKxKzJ1krU0boX~6J3Q3k9xe-igEJsr5ONf-oHJVz4PtILj65xMxkxyilIOgX7aNCNzRW5-Vd1ng-oGbPHeQrUqFBy1hpy5pgsBkoRAYVDQZWqdC07ukRb-SWe2AfSlfHLEkDImq16TnitlwGsjOqbUtmt~3ibPq6wbXa4I4s62M0HXR7xbOEgPVDIkeeCLXvXTq8fA6DR50ZCghy8-OxvbudLYOR4G4qurOM-Cme6e4JfP-IVTVw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501847,
+      "description_sha256": "7f28f4068658f3d1e54e7ae74ff41b3a697f0f7d2f4fe2196f668ea6a33f0338",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a pipeline for querying relevant content from a structured knowledge base, driven by an input outline. The global layout is a left-to-right flowchart, beginning with an input box labeled 'Outline' on the far left, progressing through several processing stages, and concluding with a relevance filtering module on the right. The entire process is sequential, with arrows indicating data flow between modules.\n\nThe first module, 'Outline', is represented as a dashed rectangular box containing sample text: '1. Rising Action: Gabriel faces the challenges...'. This serves as the initial input to the system. From this, a solid black arrow leads to a light blue rounded rectangle labeled 'LLM', representing a Large Language Model. The LLM processes the outline and outputs entities, depicted as a cluster of blue circles of varying sizes, labeled 'Entity'. These entities are then transformed into a 'Knowledge Graph', shown as a network of interconnected blue nodes of different sizes, symbolizing relationships among entities.\n\nFrom the Knowledge Graph, another arrow leads to a rectangular table labeled 'Quadruple', which contains multiple rows formatted as '<sub_i, act_i, obj_i, idx_i>', representing structured knowledge tuples where each row corresponds to a subject, action, object, and index. This table is the primary structured output from the knowledge graph.\n\nThe quadruples are then fed into a dashed rectangular box labeled 'Relevance filtering', which encapsulates the final processing stage. Inside this box, there are three horizontal light blue bars representing intermediate filtered results, with an ellipsis indicating more such entries. A separate light blue rounded rectangle within this box is labeled 'calculate the similarity score', indicating a computational step. An arrow from the quadruple table points to this scoring module, while another arrow from the original 'Outline' box also feeds into it, suggesting that similarity is computed between the input outline and each quadruple. The output of the scoring module is directed to the filtered results, which are then processed by a step labeled 'select top-k score content', indicating selection of the highest-scoring items. Finally, a thick black arrow exits the 'Relevance filtering' box, pointing to the right, and is annotated with the caption: 'the last arrow points to the historical information semantically related to the input content', indicating the final output consists of semantically relevant historical data derived from the input outline.\n\nAll connections are represented by solid black arrows, with the exception of the feedback or dual-input path from the Outline to the similarity score calculation, which is a direct line. The visual style uses consistent colors—light blue for processing modules, dark blue for entities and graph nodes, and gray for the input outline box—and clear labels for each component, ensuring clarity in the workflow."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

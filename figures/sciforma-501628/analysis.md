@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Locate n' Rotate: Two-stage Openable Part Detection with Foundation Model Priors — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13173
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the overall architecture of MOPD, a multi-modal perception and decoding framework for understanding openable parts in scenes. The layout is divided into two main sections: the top portion presents the high-level network structure, while the bottom portion provides detailed views of the two transformer-based decoders.
+
+In the top section, three parallel encoders process input images: the OPD Encoder, Perceptual Grouping Encoder, and Geometric Understanding Encoder. Each encoder consists of a backbone followed by a pixel decoder, enclosed within a light cyan dashed rectangle. These encoders extract distinct feature representations—OPD feature, perceptual feature, and geometric feature—which are then fed into separate decoders. The perceptual feature is directed to the Semantic Segmentation Decoder (light orange box), while the geometric feature goes to the Motion Decoder (light green box). Both decoders consist of sequential blocks (yellow for segmentation, blue for motion), each receiving inputs from their respective features and producing outputs that are further processed.
+
+The bottom section details the internal structure of both decoders. The Semantic Segmentation Decoder (yellow background) receives OPD feature and perceptual feature as inputs. It comprises three stages: two cross-attention modules (orange rectangles labeled 'Cross-attention') where the query (Q) comes from the part queries (represented by colored squares), and the key (K) and value (V) come from the respective features. This is followed by a self-attention module (orange rectangle labeled 'Self-attention'), and finally a Feed-Forward Network (FFN, green rectangle). The FFN outputs predictions for Mask, Part type, and Motion type, indicated by labeled boxes below.
+
+Similarly, the Motion Decoder (blue background) receives OPD feature and geometric feature. Its structure mirrors the segmentation decoder: two cross-attention layers, one self-attention layer, and an FFN. The FFN outputs predictions for Axis, Origin, and Object pose, shown as labeled boxes below.
+
+Connections between components are represented by solid black arrows indicating data flow. Dashed arrows indicate auxiliary or optional connections. The input images are shown on the left, and the final output image on the far right displays the predicted motion axis (red) overlaid on the scene, with the ground truth axis shown in blue for comparison. Color-coded legends (green, yellow, orange, blue) represent different part queries or object categories, consistently used across both decoders.

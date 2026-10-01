@@ -1,0 +1,97 @@
+{
+  "id": "sciforma-500586",
+  "record_sha256": "41cc73dbd7647b124b7adb6b08df50859ca6d0efc7830a5ae67ff0fff807883a",
+  "asset_sha256": "f32ab5516b3c35d9e1b35dd663dc6330dd21df5ed6ea5ee690c669b2155e48ef",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500586",
+    "title": {
+      "zh": "MERaLiON-SpeechEncoder: Towards a Speech Foundation Model for Singapore and Beyond · 方法图",
+      "en": "MERaLiON-SpeechEncoder: Towards a Speech Foundation Model for Singapore and Beyond"
+    },
+    "paper": {
+      "id": "arxiv-2412-11538",
+      "title": "MERaLiON-SpeechEncoder: Towards a Speech Foundation Model for Singapore and Beyond",
+      "authors": [
+        "Muhammad Huzaifah",
+        "Geyu Lin",
+        "Tianchi Liu",
+        "Hardik B. Sailor",
+        "Kye Min Tan",
+        "Tarun K. Vangani",
+        "Qiongqiong Wang",
+        "Jeremy H. M. Wong",
+        "Jinyang Wu",
+        "Nancy F. Chen",
+        "Ai Ti Aw"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11538",
+      "arxiv_url": "https://arxiv.org/abs/2412.11538",
+      "arxiv_id": "2412.11538",
+      "arxiv_first_submitted_at": "2024-12-16T08:15:19Z",
+      "arxiv_updated_at": "2025-09-11T05:26:13Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500586/image/image.jpg?Expires=1790835172&Signature=CMJH-shkcXZ5kdls3S2vB8lxmxUKoyafRLReZpZnwoReOpepa95SFE8xqo5194gx~ysBb2~~Tb5dScJoNEspglR8sahlVVcKGHOQV703K6wEeH00s3iwYSjRd7vt6iXqIiI5DgJStRv7U-uK8rB8ZJOR2b7LSApek3k3L89yELL58XXoyehzi-mMWv3EvkOo7GJb5O0xdDUCknSUGIba54R5uoj7ntjVyxm9ODPH-iIYFu6yzq-4Bgcd3PSt29-87~OsEnfPIk5FHUbGd7FEX06SXWJ-9sLXCfGgZQAezUDQPHDyhYVaMPZQ9WRjX9EdeU3cm0CGvv0Fl5ekgVi~KQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500586,
+      "description_sha256": "9886cbeda63ac5598f41a9c299107d9d1a818fc31fecb4cdea45e3c9759156ac",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents three distinct architectural configurations for utilizing the MERaLiON Speech Encoder, arranged side-by-side from left to right, separated by vertical dotted lines. Each configuration illustrates a different strategy for downstream task adaptation, starting from the same 'Audio Input' at the top.\n\n[1] Global Layout and Structure:\nThe diagram is divided into three vertical panels, each depicting a complete processing pipeline. All pipelines begin with 'Audio Input' at the top, flow downward through a series of modules, and end with 'Output' at the bottom. The left panel shows a simple end-to-end fine-tuning setup. The middle panel introduces feature extraction with a weighted combination of encoder layers. The right panel demonstrates integration with a large language model (LLM) for multimodal processing.\n\n[2] Visual Modules and Attributes:\nIn all panels, the 'MERaLiON Speech Encoder' is represented as a rounded rectangle with a light green fill and dark blue border. In the left panel, it has a small orange flame icon, indicating full fine-tuning. In the middle panel, it has a blue snowflake icon, indicating frozen weights during feature extraction. In the right panel, it has both icons (flame/snowflake), suggesting a hybrid or configurable mode.\n\nIn the left panel, the 'Task specific decoder' is a light blue rounded rectangle with a flame icon, signifying it is also fine-tuned. In the middle panel, the same decoder appears with a flame icon, but now receives input from a 'Weighted sum' module (gray rectangle with flame icon) that aggregates outputs from multiple layers (Layer 1, Layer 2, ..., Layer n) of the encoder.\n\nIn the right panel, the 'Adaptor' is a gray rectangle with a flame icon, processing the encoder output. Below it, 'Speech Embeddings' are shown as a sequence of dashed green squares, which are concatenated with a 'Text Prompt' before being fed into the 'Large Language Model'—a large light blue rounded rectangle with both flame and snowflake icons, indicating potential for partial fine-tuning or freezing.\n\n[3] Connections and Arrows:\nAll connections are solid black arrows pointing downward, indicating data flow. In the left panel, audio flows into the encoder, then directly to the decoder, producing output.\n\nIn the middle panel, audio enters the encoder, whose outputs from multiple layers are fed into the 'Weighted sum' module, which then connects to the 'Task specific decoder'.\n\nIn the right panel, audio goes to the encoder, then to the 'Adaptor', which produces 'Speech Embeddings'. These embeddings are combined with a 'Text Prompt' and sent to the 'Large Language Model', which generates the final 'Output'.\n\nThe figure visually contrasts three paradigms: full fine-tuning (left), frozen feature extraction with layer aggregation (middle), and multimodal LLM integration (right), as described in the caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

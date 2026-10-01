@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501567",
+  "record_sha256": "d4131f60cc945f5c70b9eed9f99a68d806edd7ca991ffa06f15c10576457084d",
+  "asset_sha256": "601656c4b1ff74f9c1e72fc063ba270fa80ba559d8f9e9f4e3672b0bc0d606b3",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501567",
+    "title": {
+      "zh": "Relational Neurosymbolic Markov Models · 方法图",
+      "en": "Relational Neurosymbolic Markov Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13023",
+      "title": "Relational Neurosymbolic Markov Models",
+      "authors": [
+        "Lennert De Smet",
+        "Gabriele Venturato",
+        "Luc De Raedt",
+        "Giuseppe Marra"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_url": "https://arxiv.org/abs/2412.13023",
+      "arxiv_id": "2412.13023",
+      "arxiv_first_submitted_at": "2024-12-17T15:41:51Z",
+      "arxiv_updated_at": "2024-12-17T15:41:51Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501567/image/image.jpg?Expires=1790835197&Signature=j6rXXqoLVdZbjdLlw87rBC-RAysmFt15alCk1pqNGc~y2o8qBnyZXIM-7EoAFuaY1Edt-XxCtRUAj7WxuWIn2GgEVlcmoh40m~WGRYh9G5cR6VC0fZzSjAKEu7Drl9LlS137U8bJ7NWPrQHmdHbtJShs~d5Fd7kGOEZOT14xNaHPVvqJiarDcQc-g8tTtmoCNjnY9r4nomA1W1hdaYAu7VC3r9LL5kPX3UZFkUj2xG2EEC9vjM-uignTlcu4gWfnCGdFhdY2~C3mUXtBzKF1Apfu-sKXUjqgAUZ1dmsukowEUklLJG9JH2X8vNo-a2GCe6ltng8oiw~MN92UjD6Tcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501567,
+      "description_sha256": "61dd9bcc374e788aa256ac2fc77a12b4745bbab035d4f15b5c1689a7c9c91e68",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is horizontally divided into two main sections: a textual logic program on the left and a graphical probabilistic model on the right. The left side presents a logic programming description of a game in the discrete-continuous probabilistic Neuro-Symbolic (NeSy) language DSPL. It consists of several probabilistic facts and rules written in a Prolog-like syntax. The program defines random variables for player and monster positions over time, using normal distributions for continuous values (e.g., player(Im, P) ~ normal(noisy_player(Im)) at time 0, and recursively at time t based on previous state and monster position), and a Bernoulli distribution for a binary 'clumsy' variable (clumsy ~ bernoulli(0.75)). It also includes deterministic rules for events such as 'hits(M, P)' when distance between monster and player is less than 2 and the player is not clumsy, and 'game_over' when a hit occurs. The 'safe' predicate is defined as true when the distance exceeds 2. Finally, an observation is made: observe(safe@{0:T}, true), indicating that safety is observed to be true across all time steps from 0 to T.\n\nOn the right side, the corresponding graphical model is shown. It uses a directed acyclic graph (DAG) structure with nodes representing random variables and edges representing dependencies. The graph includes a rectangular plate labeled '0:T', indicating a Markov transition over time steps from 0 to T. Inside the plate, there are three circular nodes: Pt (light blue, representing player position at time t), Ht (light blue, representing hit event at time t), and St (light green, representing safe state at time t). Outside the plate, there are four additional nodes: Im (light blue square, representing initial player position), M (light blue circle, representing monster position), C (light blue circle, representing clumsiness), and G (light blue circle, representing game_over). Arrows indicate dependencies: from Im to Pt and M; from M to Ht; from C to Ht; from Pt to Ht; from Pt to St; from Ht to St; from Ht to G; and from St to G. Two curved arrows labeled φ^m and φ^p point from Im to M and from Im to Pt respectively, suggesting parameterized transitions or functions. The plate notation implies that the internal structure (Pt, Ht, St) is repeated for each time step t from 0 to T, with dependencies within and across time steps as specified by the arrows."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

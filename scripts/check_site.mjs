@@ -21,6 +21,9 @@ assert.equal(filterFigures(figures, base, [], [figures[0].id]).length, figures.l
 assert.equal(filterFigures(figures, { ...base, view: 'hidden' }, [], [figures[0].id]).length, 1);
 assert.equal(filterFigures(figures, { ...base, query: 'no such figure' }, [], []).length, 0);
 const fields = filterFieldsFor(figures);
+const awarded = filterFigures(figures, { ...base, filters: { award: ['awarded'] } }, [], []);
+assert.ok(awarded.length > 0);
+assert.ok(awarded.every(f => f.paper.awards?.length > 0));
 assert.equal(fields.venue.options.length, new Set(figures.map(f => f.paper.venue)).size);
 assert.equal(fields.year.options.length, new Set(figures.map(f => f.paper.publication_year)).size);
 assert.ok(assetUrl(figures[0], 'preview').startsWith('https://raw.githubusercontent.com/'));

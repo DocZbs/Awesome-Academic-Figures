@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501722",
+  "record_sha256": "f697fa83c56d172fff77b0f009022ce83d083f7a2877d633b7764f0dff882655",
+  "asset_sha256": "aad5ffdf37c8ef17880b8a869528b053127c162d322fb664d28ff67160260eb2",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501722",
+    "title": {
+      "zh": "Zero-Shot Low Light Image Enhancement with Diffusion Prior · 方法图",
+      "en": "Zero-Shot Low Light Image Enhancement with Diffusion Prior"
+    },
+    "paper": {
+      "id": "arxiv-2412-13401",
+      "title": "Zero-Shot Low Light Image Enhancement with Diffusion Prior",
+      "authors": [
+        "Joshua Cho",
+        "Sara Aghajanzadeh",
+        "Zhen Zhu",
+        "D. A. Forsyth"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13401",
+      "arxiv_url": "https://arxiv.org/abs/2412.13401",
+      "arxiv_id": "2412.13401",
+      "arxiv_first_submitted_at": "2024-12-18T00:31:18Z",
+      "arxiv_updated_at": "2025-03-24T00:01:58Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501722/image/image.jpg?Expires=1790835200&Signature=OUrd4O2PhBQ3iML~cCmT5KkrYTmw9iLngrTjzFD1cV02s5e37AarTf9WF3p~CwJXZTv50qZQ~IZsn2y7Ar6pTYRLJ2hRbz8pNPcFbrFZ0sfPCufvV7jxon66lj6z71qbIucYkTXokGCnt3vIEQuPih-F~lA6itJWDAH4YGVOsnfvc0w7KpNhHEvGVlzMg427MWVKzzZEP0rMrwirrV9yjnQevW-1NW3f6-cKWlbdvuv5-isjZx6Zp9DBCiwrDHjaImYf7gKsIKr7BbxiPvWunQcfrZ131gu0QE0VDpY6aG2qcxh6rslPjk7oGHy60agh8Hpeygm9ZojQqPh~CoelBQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501722,
+      "description_sha256": "94b030c0ac06af50246131295b0f42b83a4fe28087b0a7ce8af102269cba15cf",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a taxonomy of Low-Light Image Enhancement (LLIE) methods, organized into four quadrants labeled (a), (b), (c), and (d), each illustrating a distinct approach with corresponding visual components and textual annotations.\n\n[1] Global Layout and Structure:\nThe figure is divided into a 2x2 grid. The top row compares supervised/unsupervised methods (a) with zero-shot methods without pretrained models (b). The bottom row contrasts zero-shot methods with pretrained models (c) against the proposed method (d). Each quadrant contains a central processing module represented by a light blue hourglass-shaped block with a flame icon at its center, symbolizing the enhancement process. Input and output images are shown on either side of this module. Textual descriptions below each quadrant explain the core characteristics of the respective method.\n\n[2] Visual Modules and Attributes:\nIn all quadrants, the central processing unit is a light blue hourglass-shaped block with a small orange flame icon inside, indicating the enhancement operation. The input images vary: (a) shows a dark candle image with label 'Dataset-specific noise'; (b) uses the same dark candle image; (c) displays two inputs — a small dark image and a noisy color texture — with a box labeled 'Learnable Param.' connected to the flame; (d) shows only the noisy color texture as input, with a box labeled 'Feature()' pointing to the module. The output in all cases is a well-lit scene with a candle, bottle, and cups. In (c) and (d), a black padlock icon appears on the lower part of the hourglass, indicating a frozen or fixed component. The text labels beneath each quadrant specify the method type: (a) 'Supervised & Unsupervised', (b) 'Zero-Shot (w/o Pretrained Model)', (c) 'Zero-Shot (w/ Pretrained Model)', and (d) 'Zero-Shot (Ours)'. Additional descriptive text below (b) and (c) states 'Optimization based on predefined loss.', while (d) adds 'Supports inputs from any data source.'\n\n[3] Connections and Arrows:\nIn (a), a gray arrow connects the dark input image to the hourglass, which then outputs the enhanced image. In (b), the same flow exists, but an additional gray arrow descends from a rounded rectangle labeled 'Pre-defined ℒ' to the hourglass, indicating loss-based optimization. In (c), two inputs feed into the hourglass: one from the small dark image via a gray arrow to the 'Learnable Param.' box, which then connects to the flame, and another from the noisy texture directly to the hourglass. The 'Learnable Param.' box also has a flame icon. In (d), the noisy texture feeds into the hourglass, and a gray arrow from the 'Feature()' box points to the hourglass, suggesting feature guidance. All arrows are solid gray lines with arrowheads, indicating data or control flow direction. The padlock in (c) and (d) visually suggests that the base model is fixed during inference."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

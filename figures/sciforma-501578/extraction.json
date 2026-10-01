@@ -1,0 +1,100 @@
+{
+  "id": "sciforma-501578",
+  "record_sha256": "9b7c8a0a2602494b0fca5fcd02f5d26130c3735e30b1835a91aacd1014df84dc",
+  "asset_sha256": "92e79a0b8f9e17382ca6f0ba472829ceda517acf3e16097792ac61afcebd5de9",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501578",
+    "title": {
+      "zh": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments · 方法图",
+      "en": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments"
+    },
+    "paper": {
+      "id": "arxiv-2412-13049",
+      "title": "TIMESAFE: Timing Interruption Monitoring and Security Assessment for Fronthaul Environments",
+      "authors": [
+        "Joshua Groen",
+        "Simone Di Valerio",
+        "Imtiaz Karim",
+        "Davide Villa",
+        "Yiewi Zhang",
+        "Leonardo Bonati",
+        "Michele Polese",
+        "Salvatore D'Oro",
+        "Tommaso Melodia",
+        "Elisa Bertino",
+        "Francesca Cuomo",
+        "Kaushik Chowdhury"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_url": "https://arxiv.org/abs/2412.13049",
+      "arxiv_id": "2412.13049",
+      "arxiv_first_submitted_at": "2024-12-17T16:13:37Z",
+      "arxiv_updated_at": "2025-11-07T21:46:37Z",
+      "arxiv_subjects": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501578/image/image.jpg?Expires=1790835197&Signature=i0-LBbTPsi51wST0cTrT2PEHNT49AQo5dz3lE~yF0nFqyFOMxajEXQ7xQevG4joKkRQ3kdVIGlPhI-cmK6S~Fc~xLhCfzBusDGHUuWmBuT1E8rOSYdT5cjanJkoIN55bybp3Cliz9lVpjNX~v1QZz9pHCKt1~JeM9ZvpDmuP4DmGvta1oQRVrAubjQx6zD0a4L2lpAcu5K9U~boeQD2xT-PaLZNp-y3txWQrhgbXjHvZFDvMgkleDLO1o6aXTMNPKccGAiJdK~9t0ZG0kug0f9eUA48zFEP2LFHqq~dLBAl7d4vFBf~gwSxkLxUP0T1rGgDglccycVcg-UQ~twkcng__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501578,
+      "description_sha256": "b88feb425164fbf22c8a787890bc7939bd66cc2b618c2750052e974124070386",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.NI",
+        "cs.CR",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two sequence diagrams side by side, illustrating message flows in a Precision Time Protocol (PTP) network under normal operation and during two distinct attacks: Spoofing and Replay. Each diagram contains three vertical timelines labeled 'Master', 'Slave', and 'Attacker', representing the respective entities involved in the communication.\n\n[1] Global Layout and Structure:\nThe figure is divided into two main panels. The left panel depicts the Spoofing Attack scenario, while the right panel shows the Replay Attack scenario. Both panels follow a top-to-bottom chronological order, with time progressing downward along each entity’s timeline. Messages are represented as arrows between these timelines, indicating direction and timing of communication.\n\n[2] Visual Modules and Attributes:\nIn both diagrams, the Master, Slave, and Attacker are represented as vertical lines extending from top to bottom. Messages are labeled with their type (e.g., 'Announce', 'Sync', 'FollowUp', 'Delay Req', 'Delay Resp') and are drawn as arrows connecting the timelines.\n\nIn the left panel (Spoofing Attack):\n- Black solid arrows represent normal PTP messages: 'Announce' from Master to Slave and Attacker, followed by 'Sync' and then 'FollowUp' (dotted line).\n- Red dashed arrows illustrate the spoofing attack: the Attacker sends multiple 'Announce' messages back to both Master and Slave, attempting to impersonate the Master and gain control over the Best Master Clock Algorithm (BMCA).\n\nIn the right panel (Replay Attack):\n- Black solid and dotted lines again denote normal traffic: 'Sync' and 'FollowUp' messages from Master to Slave and Attacker at timestamps T1 and T1'.\n- Red dashed arrows depict the replay attack: the Attacker captures a legitimate 'Sync' message sent at T1 and retransmits it to the Slave at a later time (labeled Tx), followed by a replayed 'FollowUp' message.\n- Additional timestamps are marked: T2 and T2' (Slave reception times), T3 (Slave’s response initiation), and T4 (Master’s receipt of Delay Resp).\n- The Slave initiates a 'Delay Req' message to the Master at T3, which is responded to with 'Delay Resp' at T4.\n\n[3] Connections and Arrows:\nIn the left panel, the normal sequence begins with the Master sending 'Announce', 'Sync', and 'FollowUp' messages to both Slave and Attacker. The Attacker then launches the spoofing attack by sending repeated 'Announce' messages (red dashed arrows) to both Master and Slave, disrupting the BMCA.\n\nIn the right panel, the normal sequence includes Master sending 'Sync' at T1 and 'FollowUp' at T1', followed by another 'Sync' at T1' and 'FollowUp' at T1'. The Attacker intercepts the first 'Sync' message (at T1) and replays it to the Slave at time Tx, causing timing disruption. The Slave responds with 'Delay Req' at T3, and the Master replies with 'Delay Resp' at T4, completing the delay measurement phase. The red dashed arrows clearly indicate the malicious retransmission of previously captured messages, highlighting the attack vector.\n\nThe figure effectively contrasts normal PTP behavior with two common attack types, using color-coding (black for normal, red for attack) and arrow styles (solid for direct, dotted for FollowUp, dashed for attack) to distinguish message types and attack flows."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

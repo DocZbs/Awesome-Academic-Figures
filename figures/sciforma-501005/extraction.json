@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501005",
+  "record_sha256": "c6820d292c4a1b223b2175718dc45ed0eff50cca002f23fbc932d398c8b20872",
+  "asset_sha256": "c96e50b2322310cbafc7a1414e0eb30d437c4a526d524edda124a2b8736a7430",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501005",
+    "title": {
+      "zh": "SGPT: Few-Shot Prompt Tuning for Signed Graphs · 方法图",
+      "en": "SGPT: Few-Shot Prompt Tuning for Signed Graphs"
+    },
+    "paper": {
+      "id": "arxiv-2412-12155",
+      "title": "SGPT: Few-Shot Prompt Tuning for Signed Graphs",
+      "authors": [
+        "Zian Zhai",
+        "Sima Qing",
+        "Xiaoyang Wang",
+        "Wenjie Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12155",
+      "arxiv_url": "https://arxiv.org/abs/2412.12155",
+      "arxiv_id": "2412.12155",
+      "arxiv_first_submitted_at": "2024-12-11T09:22:46Z",
+      "arxiv_updated_at": "2025-08-17T16:07:53Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501005/image/image.jpg?Expires=1790835183&Signature=T-h1h53uoDYjhvIV2FVH~2VAc2HoOy9tWsk9U~hVaw~3u3gJ--iQYCyhNGYUiKjZBH9tqaW3T5Sw1s6r2PCnP2Zf~RlNFnvdsjUCJkZ8dPMTqDQ1RGXuAFsrryQ2964jePLw9tyIkMjEVyYktTQf-oj8vSU73Kn5EWiNaCmL8mDhbpks8j645yJ3wl5UyEENLtqHRtPD-488Cj3O4srUPWGuaJYva59bJyO~riDhAMoM0kOvkv3pHlfqUXDqAso0g4pmitMlPRMwpcrWQ606T2Y2dRWBKQBBEIUOEF5jkVBBdxJtfh~9HSJr1M-I1ymlZcSY6GXoHufKU4YQb4hOIQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501005,
+      "description_sha256": "5914b629f7bdc03eb0b979fa55b97e4d8e872fac449f93b2f70c42bd97245e50",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates four distinct scenarios for path classification in signed graphs, focusing on the transition from an initial path state to a resulting path type based on the sign of the final edge. The global layout consists of four horizontal rows, each representing a separate case. Each row contains a sequence of circular nodes connected by edges, followed by a labeled arrow indicating an action ('Hold' or 'Change'), which leads to a rectangular output box denoting the resulting path type ('Balance Path' or 'Unbalance Path').\n\nIn each row, the path begins with a source node labeled 's', followed by intermediate nodes 'i' through 'j' (represented by ellipsis), and ends with a target node 't'. The edges between these nodes are either marked with '+' (green) or '-' (red), indicating positive or negative signs. The first two rows are enclosed in rounded rectangles: the top one is green-labeled 'Balanced', and the second is red-labeled 'Unbalanced'. The third and fourth rows follow the same structure but are labeled 'Balanced' and 'Unbalanced' respectively, with different edge signs.\n\nVisual modules include circular nodes for graph vertices, colored edges for signed relationships, and rectangular output boxes for path classification. The green color scheme (light teal borders and text) denotes balanced states or outcomes, while red indicates unbalanced states. The labels 'Balanced' and 'Unbalanced' appear below the initial path segments, directly beneath the enclosing rounded rectangle. The action labels 'Hold' and 'Change' are placed above the arrows connecting the path to the output box.\n\nConnections and arrows show the logic flow: In the first row, a balanced path (all '+' edges) with a '+' edge to 't' results in a 'Hold' action leading to a 'Balance Path' output. In the second row, an unbalanced path (with a '-' edge between 'j' and 't') triggers a 'Change' action, also leading to a 'Balance Path'. The third row shows a balanced path with a '-' edge to 't', causing a 'Change' action that results in an 'Unbalance Path'. The fourth row presents an unbalanced path with a '+' edge to 't', where a 'Hold' action leads to an 'Unbalance Path'. This structure demonstrates how the sign of the last edge and the initial balance status determine whether the path remains unchanged or is modified, and what the resulting path type becomes."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

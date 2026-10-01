@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Predicting Internet Connectivity in Schools: A Feasibility Study Leveraging Multi-modal Data and Location Encoders in Low-Resource Settings — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12188
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a two-path methodological workflow for predicting school internet connectivity using geospatial data, divided into two main horizontal sections labeled 'Location Encoder Embeddings' (top) and 'Engineered Features' (bottom), with a side panel titled 'School Connectivity Data' on the right. The global layout is structured as a comparative pipeline, with both paths converging toward a machine learning classification output, and the right-side panel providing context for the ground truth labels.
+
+In the top section, 'Location Encoder Embeddings', the process begins with a satellite image and a school location specified by longitude and latitude, visually represented by a small black square on a globe centered on Africa. An arrow connects the satellite image and location to a gray rectangular box labeled 'Location Encoder', which is described as a pre-trained geographically-aware model (e.g., SatCLIP). From this encoder, a vertical stack of four small gray rectangles labeled 'Feature Embedding' is produced, indicating a vector representation. This embedding is then fed into another gray box labeled 'ML Classifier', described as a downstream ML classifier (e.g., Random Forest or MLP). The output is a small gray square labeled 'Prediction: Connected/Not Connected'.
+
+In the bottom section, 'Engineered Features', the process starts with a map outline of a region, with a dashed red circle indicating a user-defined buffer around a school location. An arrow from this buffer points to a vertical stack of five small satellite image tiles, each showing different spectral bands or data layers (e.g., night lights, land cover, etc.). These images are processed to generate 'Tabular Features', represented by a vertical stack of four gray rectangles. These features are then input into an 'ML Classifier' (same as above, e.g., RF, MLP), which outputs a 'Prediction: Connected/Not Connected'. A caption below this section clarifies that feature engineering is based on satellite images, electric grid information, and speedtest data.
+
+On the right, the 'School Connectivity Data' panel displays a map of a geographic region with numerous small markers: green triangles represent 'Connected' schools, and red circles represent 'Unconnected' schools, as indicated by a legend. This panel serves as the source of labeled data for training and evaluation.
+
+Connections between components are shown via solid black arrows, indicating the flow of data from inputs through encoders or feature extraction to classifiers and final predictions. Both pipelines are parallel and independent, designed to compare the performance of learned embeddings versus hand-engineered features for the same task. The figure uses consistent visual elements: gray boxes for models/classifiers, stacked rectangles for feature vectors, and clear labels for all components. The overall structure emphasizes a comparative experimental design for connectivity prediction.

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500197",
+  "record_sha256": "82086075e324cefe405d12cee960f46f6149d6d68329ac7c761f2f55d900fbf2",
+  "asset_sha256": "23c1f0dfb0ef1fbc994564c9300c47debc355bb7fb333db2766ccd3b375699a2",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500197",
+    "title": {
+      "zh": "Enhancing Discoverability in Enterprise Conversational Systems with Proactive Question Suggestions · 方法图",
+      "en": "Enhancing Discoverability in Enterprise Conversational Systems with Proactive Question Suggestions"
+    },
+    "paper": {
+      "id": "arxiv-2412-10933",
+      "title": "Enhancing Discoverability in Enterprise Conversational Systems with Proactive Question Suggestions",
+      "authors": [
+        "Xiaobin Shen",
+        "Daniel Lee",
+        "Sumit Ranjan",
+        "Sai Sree Harsha",
+        "Pawan Sevak",
+        "Yunyao Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10933",
+      "arxiv_url": "https://arxiv.org/abs/2412.10933",
+      "arxiv_id": "2412.10933",
+      "arxiv_first_submitted_at": "2024-12-14T19:04:16Z",
+      "arxiv_updated_at": "2024-12-14T19:04:16Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500197/image/image.jpg?Expires=1790835166&Signature=el~91Wyf440QQ-O0iDcsPW9FjA9BLgeXGG~vI9rZN95Ef0B6gxgZwrrbUJayrO3oZlAGqlGHl65LWpGM6XEkqHQz229-tl0Tka7MUTsSvBWnhiN8-YZV7GJrsrWglk7d0qzL4oljAFkLez7d9tgl3Z8RGhiH5CNzv3lG5QC2A9noIA1aXVxMXMbU2QflG0XE1mwV~Wn~mu5YrrfIRkQy69Yc1ZZ-45V1Ro8fAkHVJJvvtbTug8a6wTV0qOA9TavAnkmG27fNOw4cFV1OznLyrXpnKAQAVSIoIUF8ZpuMEru6wkKr-L5gqosq6PIGowUZBKu1M~Fen8aYrUerBbzYaw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500197,
+      "description_sha256": "5788409199c4895e5dfcdaace2f7bfa189e321e6ce11f57a9ea30782c61cc781",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a two-tiered framework for next question suggestion in enterprise conversational AI systems, divided into a 'Chat-Session Level' (left and center) and a 'Population Level' (right). The global layout is structured horizontally, with the Chat-Session Level enclosed in a large dashed rectangle and further subdivided into two dotted regions labeled 'Response Generation' (left) and 'Next Question Suggestion' (center). The Population Level is a separate dashed rectangle on the right, connected to the central module.\n\nAt the Chat-Session Level, the Response Generation module begins with a 'User query' (light blue speech bubble) feeding into an 'Embedding Model' (light green rounded rectangle). This model retrieves relevant documents from a 'Document Index' (gray cylinder), producing 'Retrieved Documents' (stacked white rectangles). These documents, along with the user query, are input into an 'LLM' (light green rounded rectangle), which generates an 'AI response' (pink speech bubble). The user query and AI response are also stored in a 'Query History' box (white rectangle) for session context.\n\nThe Next Question Suggestion module receives inputs from both the current user query and the Query History, as well as the AI response from the previous LLM. These inputs are processed by a second 'LLM' (light green rounded rectangle), which outputs multiple 'Suggested Question' boxes (light blue rectangles labeled 'Suggested Question 1', 'Suggested Question 2', etc.).\n\nOn the Population Level, a 'Population-level Interaction History' (white rectangle) feeds into a 'User Intent Analysis' component (light blue oval), which produces 'Question Categories' (white rectangle). These categories are sent to the central LLM in the Next Question Suggestion module, providing contextual guidance based on aggregated user behavior.\n\nConnections are represented by solid black arrows indicating data flow. Dashed lines connect the user query and AI response to the Query History, and dotted lines outline the internal modules within the Chat-Session Level. The figure includes labels for each component and uses distinct shapes and colors to differentiate between user inputs (speech bubbles), models (rounded rectangles), data stores (cylinder), and output suggestions (rectangles). The caption clarifies that the framework integrates population-level insights to enhance session-level question suggestions, with response generation included for context."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

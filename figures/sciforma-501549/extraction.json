@@ -1,0 +1,83 @@
+{
+  "id": "sciforma-501549",
+  "record_sha256": "90c84f1efbced960ec853828026de67b310a1bd877ddceea806b710f0b4afe3c",
+  "asset_sha256": "cd12ad928b4dc43fcc994ee345dac82b47bc6580ef8f48e203fd3687aa7f7039",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501549",
+    "title": {
+      "zh": "What is YOLOv6? A Deep Insight into the Object Detection Model · 方法图",
+      "en": "What is YOLOv6? A Deep Insight into the Object Detection Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-13006",
+      "title": "What is YOLOv6? A Deep Insight into the Object Detection Model",
+      "authors": [
+        "Athulya Sundaresan Geetha"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13006",
+      "arxiv_url": "https://arxiv.org/abs/2412.13006",
+      "arxiv_id": "2412.13006",
+      "arxiv_first_submitted_at": "2024-12-17T15:26:15Z",
+      "arxiv_updated_at": "2024-12-17T15:26:15Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501549/image/image.jpg?Expires=1790835197&Signature=ODZywaoKH4VOC8kwf8GiJRQX~sdGPdvM3toXDUXgWFKtB8jJFW5RsMP6Vt1I6v53PjfZFQ-tkZNKTYpRY~8NhgmYpv8iyOrbN8j3TdJvYwjfxUb39o5SI0xP9UYZ1nRL~V7HCw4VuW3tyfZo1E3HSfi5FLi4KgmgPWAqxria549hOVXIKpisfSmTWlIoehVUFUcDDUokyPuL7eOUXvUe-zTHxwFpCvD2hgRzVX0Ah~wObRCeTsdv9f6grHrMgY2F9hA45OExCOfiFbo5zHAvomV-oAiPgb~ks8S7bZ0hODn1Mmkx0LjYXJDULzU9JJrYDuki8-xxQDb65K5pPaYdRA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501549,
+      "description_sha256": "a5f3e3a364eaf5e193a2aed26b5553b6b29443945dcd4686cf06c01300656852",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architectural design of YOLOv6, a deep learning object detection model. The global layout is a left-to-right flowchart, beginning with an input that feeds into an EfficientRep Backbone, followed by a multi-scale feature processing stage called Rep-PAN, and concluding with three parallel Efficient decoupled heads for classification and regression tasks.\n\nThe EfficientRep Backbone is represented as a gray trapezoidal block on the far left, receiving the input and producing three distinct feature maps of varying resolutions. These feature maps are passed to the Rep-PAN module, which is enclosed within a dashed rectangular boundary and labeled 'Rep-PAN'. Inside this module, the feature maps are processed through a hierarchical structure involving up-sampling (denoted by 'U'), concatenation over channel dimension (denoted by 'C'), convolutional layers (green rectangles labeled 'Conv'), and RepBlocks (gray rectangles labeled 'RepBlock').\n\nEach level of the Rep-PAN contains a RepBlock connected to a Conv layer, which then feeds into an up-sampling operation (U) that increases spatial resolution. The up-sampled output is concatenated (C) with the feature map from the lower resolution path. This concatenated feature is then processed by another RepBlock, followed by a Conv layer, and finally merged again via concatenation with the next higher-resolution path. This creates a top-down and bottom-up flow, enabling feature fusion across scales.\n\nThe visual modules include light blue rectangular blocks representing feature maps at different scales, green rectangles for Conv layers, gray rectangles for RepBlocks, and circular icons labeled 'U' and 'C' for up-sampling and channel concatenation operations, respectively. The Rep-PAN module’s internal connections form a dense network of arrows indicating data flow: from each feature map to its corresponding RepBlock, then to Conv, then to U or C, and finally to the next stage.\n\nAfter processing through Rep-PAN, three separate feature maps emerge, each feeding into one of three identical Efficient decoupled heads. Each head is depicted as a rounded rectangle with a light orange fill and contains two outputs: 'cls.' for classification and 'reg.' for regression. These heads are arranged vertically on the right side of the diagram, indicating parallel processing for multi-scale detection.\n\nConnections are shown as solid black arrows, clearly directing the flow from input to backbone, through Rep-PAN, and finally to the decoupled heads. The arrows within Rep-PAN illustrate both horizontal progression and vertical cross-scale connections via up-sampling and concatenation. The diagram includes a legend inside the Rep-PAN box explaining that 'U' stands for up-sample and 'C' for concatenation over channel dimension. The overall structure emphasizes efficient multi-scale feature fusion and parallel detection heads for robust object localization and classification."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

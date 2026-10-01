@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502081",
+  "record_sha256": "27f779a020eda8c42af303f4e70f8666ffc3c3d2ab26a164bf328467f55e011b",
+  "asset_sha256": "2eb20903834fb22a5a35f12e10e4b0739fd655a2ac56c5ce75e3f277b512e3bf",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502081",
+    "title": {
+      "zh": "Crabs: Consuming Resource via Auto-generation for LLM-DoS Attack under Black-box Settings · 方法图",
+      "en": "Crabs: Consuming Resource via Auto-generation for LLM-DoS Attack under Black-box Settings"
+    },
+    "paper": {
+      "id": "arxiv-2412-13879",
+      "title": "Crabs: Consuming Resource via Auto-generation for LLM-DoS Attack under Black-box Settings",
+      "authors": [
+        "Yuanhe Zhang",
+        "Zhenhong Zhou",
+        "Wei Zhang",
+        "Xinyue Wang",
+        "Xiaojun Jia",
+        "Yang Liu",
+        "Sen Su"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13879",
+      "arxiv_url": "https://arxiv.org/abs/2412.13879",
+      "arxiv_id": "2412.13879",
+      "arxiv_first_submitted_at": "2024-12-18T14:19:23Z",
+      "arxiv_updated_at": "2025-05-26T15:19:26Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502081/image/image.jpg?Expires=1790835207&Signature=N2mZM7GZMkiQqqZsNDuzJyvws4HxCk~KfkUQJKVEHyHSk9jSdhyCjimpxJja5PnM38W7EIzIerAqxPyPutcKfbSEhbIT1ifk~226sQfYeTXqNKWgcADPJ7sArN-ri5bKG6BWhqC~GZgIhocZOG7MN2u9eO6nevw0HPW0kAZ8lwZTE8qFLtU1hEAspKVpuSUql9hJzR70kJKu6r5RAwGYw4CF3MGET~Fb0nkuN2HmG7L5R97y7F~YJaLgH2ODzAkQqlMoyJ-t0wY5dXQ2cqZtsVyLGuyY05wqQxTYy3UCobNdyQPyU4VwG6kTqj0A-X4IhB6pNHNwQsCBOKE5vwT4nQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502081,
+      "description_sha256": "2f54b5c5a4f4465d5b6754e861a94d9d5091ce0b94325bbf749203ac6d20c669",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the AutoDoS algorithm, structured into three main steps, each visually distinct in color and layout. The global layout is divided into three vertically stacked rectangular sections labeled 1, 2, and 3, arranged left-to-right across the diagram, with a vertical sidebar on the far left displaying logos of major AI models (including OpenAI, Anthropic, DeepMind, Meta, Google, and Microsoft), indicating the target scope of the attack.\n\nStep 1, titled 'Construct DoS Prompt through DoS Attack Tree' and colored beige, begins with an 'Initial DoS Prompt T' at the top. This prompt branches into a tree structure with four main subtrees labeled T₁, T₂, T₃, and T₄. Each subtree expands further into nodes representing sub-problems, with different colors indicating strategies: cyan for 'Deep Backtracking', green for 'Breadth Expansion', and orange for 'Initial Sub-problem'. A highlighted region within T₂, enclosed by a dashed pink border, shows a refined subtree P’ derived from P_L via 'Breadth Extension enhance stability' and 'Depth Backtracking broaden the scope'. A legend at the bottom right clarifies these node types.\n\nStep 2, titled 'Iterative optimization process of Tree DoS' and colored light blue, features three interacting models: 'Attack Model' (represented by a robot with a red skull icon), 'Target Model' (a robot with a neutral face), and 'Judge Model' (a human silhouette). These models form a feedback loop: the Attack Model generates prompts, which are evaluated by the Judge Model against the Target Model’s responses. The evaluation process is visualized through multiple iterations of tree structures, each progressively refined—some marked with red Xs for rejection, others accepted. Accompanying speech bubbles show evolving responses from the Target Model, such as 'I can only answer the first question...' to 'Sure, let’s dive into your questions...'. A bar chart on the right compares 'Initial' vs. 'Iterative' token lengths, showing a dramatic increase under iterative optimization, with a caption stating 'Iterative optimization unleashes the full potential of the DoS Attack Tree'.\n\nStep 3, titled 'Length Trojan Strategy' and colored light green, depicts a trojan implantation mechanism. It starts with a sequence of small trees (symbolizing prompts) leading to a large orange rocking horse (symbolizing the implanted trojan). A speech bubble from the attacker says 'I only need a response within 200 tokens', while another from the victim model responds 'Sure, let’s dive into your questions...'. This indicates the trojan forces the model to generate long responses despite constraints. A shield icon with a checkmark represents successful evasion, and a red skull icon signifies the malicious intent. An arrow leads from this step to the final panel.\n\nOn the far right, a vertical panel displays the logos of the same AI models from the sidebar, now overlaid with red skull icons, symbolizing compromised systems. Above it, two speech bubbles show the model’s behavior before and after the attack: initially refusing ('I’m sorry, but I can’t assist with that request.') and then generating a long response ('<Model Generates 16384 tokens>') after being triggered by the Length Trojan. The entire diagram uses consistent icons, arrows, and color coding to convey the workflow from prompt construction to iterative refinement and finally to trojan-based exploitation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

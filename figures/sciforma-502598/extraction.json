@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502598",
+  "record_sha256": "be51e7e098d298d399da79bc6ad758134e89c00c6babd2b1cd89c99ed1cf6a74",
+  "asset_sha256": "b70edd9ae8282ae884d7234251fab37c1845facc0961b7d7c6eb533250fb3996",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502598",
+    "title": {
+      "zh": "Answer Set Networks: Casting Answer Set Programming into Deep Learning · 方法图",
+      "en": "Answer Set Networks: Casting Answer Set Programming into Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14814",
+      "title": "Answer Set Networks: Casting Answer Set Programming into Deep Learning",
+      "authors": [
+        "Arseny Skryagin",
+        "Daniel Ochs",
+        "Phillip Deibert",
+        "Simon Kohaut",
+        "Devendra Singh Dhami",
+        "Kristian Kersting"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_id": "2412.14814",
+      "arxiv_first_submitted_at": "2024-12-19T13:09:06Z",
+      "arxiv_updated_at": "2024-12-19T13:09:06Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502598/image/image.jpg?Expires=1790835226&Signature=HUayH0HWrgX3F~3Ekief3mDEGMnMK1Y-kiGTSybq4bdo~nR92kSzXdvkfMK1CqplVeJL9TfSZobLAfmJtl-QrUivNHJc2PC6I48~~3T87bVaN7BWsSVFRIaE9iyciR7KYE4Uuk9D0~PKx-7nLcfgrYdL7gc7UH~WogGDSmCwMn0B06a5QxJnVirTpOVyo76fWPbPGDs0A3OuGrOqpfSNMaKi7pfmOua6c2sLIp~D8yrZOSOa5n7VFHnB~FIuVEpBL1ZjPd2nRbybbQFuoIdjCYjZaB-JdtUO8BbA9d-WSQeWlUm2pvVtnfryi6gufkZADnk9WGn0LqyZVH-ci4zpcg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502598,
+      "description_sha256": "e0158aecb631c1809cf6027763441191744b786147755f2104cf03f133f18f2d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ASN (Artificial Neural Solver) solving process, structured as a left-to-right pipeline divided into four main stages: Neural Compilation, Choice Definitization, Message Passing, and Model Reduction. The global layout is linear and horizontal, with each stage represented by a distinct visual module and labeled beneath with its name in a gray curved bracket. The entire process begins with an 'ASP Program' depicted as a rectangular box with three horizontal gray bars, symbolizing input code or rules. This flows via a solid black arrow to the 'Reasoning Graph', shown as a small graph structure with five interconnected nodes—colored blue, yellow, gray, and white—enclosed in a rounded rectangle. This transition represents the Neural Compilation phase, where the ASP program is translated into a reasoning graph.\n\nFrom the Reasoning Graph, a dashed line leads to the Choice Definitization stage, which is visually represented by a stack of five overlapping, semi-transparent rectangular boxes, each containing an identical copy of the reasoning graph. These copies symbolize different possible choices or instantiations of variables in the ASP program. The dashed lines indicate that these are generated from the original graph through branching possibilities.\n\nThe next stage, Message Passing, is centered around a large, light-gray cylindrical shape with a circular end cap containing a bidirectional arrow (↔), indicating iterative processing. Dashed arrows connect the stack of reasoning graphs to this cylinder, and a dotted feedback loop curves back from the cylinder to itself, emphasizing the iterative nature of message passing across the graph instances. This stage processes the multiple graph instances in parallel, updating node states through message exchange.\n\nFollowing this, another set of dashed arrows leads to the Model Reduction stage, depicted similarly to Choice Definitization but with a stack of five overlapping rectangles, each now containing a reasoning graph with nodes colored green and pink, indicating updated or filtered states. This suggests that the message-passing process has refined the graph structures toward valid models.\n\nFinally, a solid black arrow extends from the last graph instance in the Model Reduction stage to a small circle labeled 'Solutions', signifying the output of the process—the stable models of the original ASP program. The entire diagram uses consistent visual elements: solid arrows for direct flow, dashed arrows for generation or transformation, and dotted loops for iteration. Node colors (blue, yellow, gray, white, green, pink) likely represent different variable states or truth values during processing. The figure’s design emphasizes parallelism, iteration, and transformation from symbolic input to concrete solutions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

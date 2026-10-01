@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500277",
+  "record_sha256": "f0001845a394e3c2d90694f6154fad661bbb5a1840676beef79c4eca3d920eae",
+  "asset_sha256": "1c4f191c6828d7a6b6c7577239bb135cdb51c7929b935a9828ff6c4adba168f5",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500277",
+    "title": {
+      "zh": "Facial Surgery Preview Based on the Orthognathic Treatment Prediction · 方法图",
+      "en": "Facial Surgery Preview Based on the Orthognathic Treatment Prediction"
+    },
+    "paper": {
+      "id": "arxiv-2412-11045",
+      "title": "Facial Surgery Preview Based on the Orthognathic Treatment Prediction",
+      "authors": [
+        "Huijun Han",
+        "Congyi Zhang",
+        "Lifeng Zhu",
+        "Pradeep Singh",
+        "Richard Tai Chiu Hsung",
+        "Yiu Yan Leung",
+        "Taku Komura",
+        "Wenping Wang",
+        "Min Gu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11045",
+      "arxiv_url": "https://arxiv.org/abs/2412.11045",
+      "arxiv_id": "2412.11045",
+      "arxiv_first_submitted_at": "2024-12-15T04:06:39Z",
+      "arxiv_updated_at": "2025-04-14T20:02:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500277/image/image.jpg?Expires=1790835164&Signature=OgR8yJudG3uYqKT4Mo5Ks3R35AQNWPKP6Dwwp1ZzXqzfsH9t6axgB8zhBZ2CLbmqn3vGe8NzAoexb4hyHWa24SGzcnk3NBaobmnW3ND-hH6tO-QnPvsrrWnVTm7u0l4gTIFQP-h9GC3M~WeEgW3VFPPkjncahwK6lwl6xVKjzRLqHFE1d-pGkuJDjeeC6scb~E3bkcX6Mrz6a0u1cub7BBJhMwG64z4Zo2jaQrqwkFx0vcmFb1Uik3pdk2DZNGYhwG-3ddQcSs4~LupnVKmrWMHUtCx3kPoFAVLzWLlq5kzbqfc7cRSOIwug-DAZTh4zr7PHSRo~1eHWS3wT737i1w__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500277,
+      "description_sha256": "600a78765789d2dd65139570b9b47d539f8f251d0ebccf460a295cf65cdc4a9a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a neural network architecture designed to predict postoperative facial appearance from a preoperative 3D scan. The global layout is a left-to-right pipeline, starting with input data on the far left and progressing through several processing modules to produce a reconstructed 3D mesh on the right, with feedback loops and loss computation indicated by dashed lines. The entire process is divided into two phases: training (including all components) and testing (excluding the dashed-line components).\n\nOn the left, two inputs are shown: a 3D scan of a face and a set of facial landmarks marked with red dots. These inputs are fed into a trapezoidal module labeled 'FLAME fitting', which processes them to generate a compact representation called the 'latent code'. This latent code is represented as a blue vertical cylinder.\n\nThe latent code is then passed to a rectangular box labeled 'code difference predictor', which computes a 'code diff'—represented as an orange vertical cylinder. This code diff is added to the original latent code via a circular '+' node, producing a 'predicted code'—shown as a purple vertical cylinder.\n\nThe predicted code is then fed into another trapezoidal module labeled 'FLAME recon', which reconstructs a 3D facial mesh. The output mesh is displayed on the right, along with a side view showing facial markers (blue dots) and a front view with a green vertical line indicating symmetry and an orange arc indicating mouth convexity. These features are used to compute various loss terms during training.\n\nA dashed green box encloses the loss computation section, labeled 'E_loss'. Inside this box, three types of loss are computed: 'geometry' (from the reconstructed mesh), 'asymmetry' (based on the vertical alignment of markers), and 'mouth convexity' (based on the curvature of the lower lip). These losses are backpropagated to update the parameters of the 'code difference predictor' during training.\n\nDuring testing, the dashed lines are not active, meaning the loss computation is bypassed, and the predicted code is directly used to generate the final reconstructed mesh without feedback. The figure also includes a dashed green arrow from the 'latent code' to the 'E_loss' box, indicating that the original latent code is also used in loss computation during training, likely for comparison or regularization purposes.\n\nAll modules are connected with solid black arrows indicating forward data flow, while dashed green arrows indicate feedback paths or auxiliary connections for loss computation. The visual design uses distinct colors and shapes to differentiate between data representations (cylinders), processing modules (trapezoids and rectangles), and loss components (dashed box)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

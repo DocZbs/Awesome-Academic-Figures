@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501496",
+  "record_sha256": "d3ef7f412c5e702a56821eeae904a23a648193ae7cde4a734914fe2534752505",
+  "asset_sha256": "4f9f753f8d2546930157c3944659e1800b788920ede8ffb34d35763358304585",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501496",
+    "title": {
+      "zh": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset · 方法图",
+      "en": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset"
+    },
+    "paper": {
+      "id": "arxiv-2412-12877",
+      "title": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+      "authors": [
+        "Samuel Teodoro",
+        "Agus Gunawan",
+        "Soo Ye Kim",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_url": "https://arxiv.org/abs/2412.12877",
+      "arxiv_id": "2412.12877",
+      "arxiv_first_submitted_at": "2024-12-17T13:00:04Z",
+      "arxiv_updated_at": "2025-03-25T02:49:28Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501496/image/image.jpg?Expires=1790835192&Signature=sTPwP5~5-w9NWCXSQAL65UMqCcgwpyPOihR2nJuO1TeHrIxHyoRE0DIiYsZdcwLl~csSecxW0k5OlpYTAcCl-jquG5oQ-U9Gg8HeAHvBR7FdC2uVgrQIZdfMXDBanCRg9FOGBNRfEXJifFrAuWLeBn1PpwIWOukqICI1-i-wFX3IArScr1TP1s0lbO76nR9bQpauFEUVeHkC2zdqtz8fVbziQ~bqiNTKvIkEqX-f3TKYGrEq1JdV2xkZFyyMoU1PHe1uO9YOA8ZVwFghQG6aXiz9HggML9jSwd3ar7~swVbwYfOL30sCa~3ZpvJ-pigf0pRisCzqwL7EC8jQ83mmEg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501496,
+      "description_sha256": "c7b8c3fc7de1dfa043be47382402f8125c21afba745f0240a1ba0898c7b6f9b0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the PRIMEdit framework, a method for disentangled multi-instance video editing using diffusion-based latent manipulation. The global layout is a horizontal workflow from left to right, starting with input frames on the far right and progressing through several processing stages to produce output frames on the far left. The top row shows the DDIM inversion process, which converts input frames into latent representations via an encoder ε, producing a sequence of noisy latents represented as stacked color bars (yellow, green, orange) indicating different modules: Spatio-Temporal Attention (yellow), Instance-centric Probability Redistribution (IPR, orange), Cross-Attention (blue), and Motion Module (green). These latents are then processed through four main modules arranged horizontally: Series Noise Sampling (SNS, yellow background), Latent Fusion (green background), Re-Inversion (purple background), and Parallel Noise Sampling (PNS, light blue background).\n\nIn the SNS module, multiple instance-specific captions (e.g., 'pembroke welsh corgi', 'white wooden chair') are fed into separate noise sampling branches. Each branch processes a caption c_i with a corresponding mask m_i, generating a sequence of noisy latents ň_i^1:N via Equation (4). These are combined with the mask using element-wise multiplication (*) and then undergo noise removal to produce clean latents. The outputs are masked latents for each instance.\n\nThe Latent Fusion module takes these masked latents {z_i^1:N} for all instances i=1 to M and fuses them using Equation (7), combining them with a summation operation (+) and applying a mask 1 - Σm_i to preserve background regions. This produces a fused latent representation ẑ_t^1:N.\n\nThe Re-Inversion module performs a reverse DDIM inversion on the fused latent to generate a reconstructed frame, which is then used to refine the latent representation further, ensuring consistency between instances.\n\nFinally, the PNS module operates in parallel to SNS but uses the fused latent from Re-Inversion as input. It applies the same noise sampling process per instance, using the same captions and masks, and combines the results with noise removal and a decoder D to produce the final output frames.\n\nConnections between modules are shown via solid arrows indicating data flow and dashed arrows for feedback or auxiliary paths. The figure includes annotations for equations (Eq. (4), Eq. (5), Eq. (7)), module names, and visual indicators for masks (black silhouettes), noise (gray textured blocks), and latent representations (color-coded bars). The bottom legend clarifies the color coding for the four core modules: Spatio-Temporal Attention (yellow), IPR (orange), Cross-Attention (blue), and Motion Module (green)."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Boosting Long-Context Management via Query-Guided Activation Refilling — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12486
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of ACRE, a method for efficient long-context processing in large language models (LLMs), structured into three main panels: (a) Bi-layer KV Cache construction, (b) Query-Guided Refilling, and (c) Optimization stages.
+
+Panel (a) illustrates the Bi-layer KV Cache architecture. At the bottom, a long context (~1M tokens) is represented as a horizontal sequence of tokens, with red dots indicating selected L1 tokens. These L1 tokens form a 'Nested Input' denoted by x̃, which is fed into an LLM module depicted as a gray rounded rectangle containing a snowflake icon (indicating freezing or caching) and a flame icon (indicating computation). The LLM processes this input through selective attention mechanisms, shown as curved arrows connecting tokens within the nested input. This results in the construction of two levels of KV caches: L1 KV Cache [K^L1, V^L1], represented as a horizontal row of red circles, and L2 KV Cache [K^L2, V^L2], shown above as multiple groups of gray circles. The L1 cache is proxied by the L2 cache via dashed arrows labeled 'Proxying'. Additionally, a 'Nested KV [K̃, Ṽ]' structure is shown below the L1 cache, linking back to the original long context via curved arrows labeled 'Selective Attention', indicating how relevant tokens are chosen for caching.
+
+Panel (b) describes the Query-Guided Refilling process. An input query q, symbolized by a speech bubble with a question mark, is processed alongside the stored Context L1 Cache (a grid of red and pink circles representing cached activations). Within Transformer Layers, the model attends to the L1 cache, indicated by curved arrows pointing from the query-relevant positions to the L1 cache entries. This leads to the generation of a Query-relevant L2 KV Cache (gray circles), which is then used to refill the L1 KV Cache, producing Refilled KV Activations (a mix of red, gray, and blue circles). These refilled activations are fed into the LLM to generate the Final Answer, represented by a green checkmark inside a speech bubble.
+
+Panel (c) outlines the two-stage optimization process. Stage I, 'learn to build Bi-layer cache', involves training the LLM on unsupervised long text. The original LLM parameters are kept frozen (indicated by the snowflake icon), while newly initialized parameters are trained (flame icon). The goal is to predict the next token, using the long context to construct the Bi-layer cache. Stage II, 'learn to select KV cache', uses task-specific data consisting of context and query pairs. The LLM is trained to predict the ground-truth answer, learning to selectively choose which KV cache entries to use during decoding. This stage builds upon the previously learned Bi-layer cache structure, refining the selection mechanism for improved performance.

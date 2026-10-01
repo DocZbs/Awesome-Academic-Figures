@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Gramian Multimodal Representation Learning and Alignment — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11959
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a GRAM-based multimodal learning model, designed to align and integrate multiple data modalities through a geometric representation in a k-dimensional space. The global layout is left-to-right, beginning with input modalities on the far left, progressing through individual encoders, then converging into a shared geometric structure, followed by a multimodal encoder, and finally leading to loss computation components on the right.
+
+On the left side, four distinct input modalities are shown: an audio waveform (Modality 1), a sequence of video frames (Modality 2), another audio waveform (Modality 3), and a block of text (Modality k). Each modality is processed by a dedicated encoder—labeled 'Modality 1 Encoder' (light blue rounded rectangle), 'Modality 2 Encoder' (light green), 'Modality 3 Encoder' (light orange), and 'Modality k Encoder' (light gray)—which outputs a sequence of modality-specific tokens. These tokens are represented as colored circles grouped in horizontal sequences: blue for Modality 1, green for Modality 2, orange for Modality 3, and gray for Modality k. Each token sequence includes a 'Class Token' at the start, highlighted by a darker shade within the group.
+
+These token sequences are then fed into a central geometric module labeled 'Modality Tokens', which visually represents the formation of a k-dimensional parallelotope. This structure is depicted as a 3D convex polyhedron (a tetrahedron in the 3D projection) inscribed within a hemisphere, with vertices corresponding to each modality’s class token. The vertices are labeled 'Modality1', 'Modality2', 'Modality3', and 'Modalityk', positioned along the x, y, z axes respectively, forming a pyramid-like shape with the origin O at the base. The volume of this parallelotope serves as a measure of semantic alignment across modalities, as stated in the caption.
+
+From this geometric module, dashed lines of matching colors (blue, green, orange, gray) connect each modality's token sequence to a concatenated sequence of all tokens arranged horizontally below the parallelotope. This combined token sequence is then passed into a 'Multimodal Encoder' (yellow rounded rectangle), which processes the fused representation. The output of the multimodal encoder is a sequence of yellow tokens, which are further processed by a small neural network structure (three interconnected yellow circles) to produce a probability distribution p_dam.
+
+Finally, three loss functions are computed from the model’s outputs: L_D2A (light purple box), L_A2D (light purple box), and L_DAM (yellow box), with arrows indicating their derivation from the multimodal encoder’s output and the geometric structure. The caption specifies that these are Gramian multimodal contrastive losses used during pretraining. The entire diagram uses consistent color coding for each modality throughout, and dashed lines indicate information flow or influence between components, while solid arrows denote direct data transmission.

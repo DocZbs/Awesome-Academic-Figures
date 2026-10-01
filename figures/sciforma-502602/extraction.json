@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-502602",
+  "record_sha256": "9eae0780b9342fd405f1e5c12764eec115fc5b8cadefaf11d99cc2411069bdcc",
+  "asset_sha256": "82c84d83a49e71e96c47eb4c8cc7b8912ce840caf372db855afcccc1a259853a",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502602",
+    "title": {
+      "zh": "Answer Set Networks: Casting Answer Set Programming into Deep Learning · 方法图",
+      "en": "Answer Set Networks: Casting Answer Set Programming into Deep Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14814",
+      "title": "Answer Set Networks: Casting Answer Set Programming into Deep Learning",
+      "authors": [
+        "Arseny Skryagin",
+        "Daniel Ochs",
+        "Phillip Deibert",
+        "Simon Kohaut",
+        "Devendra Singh Dhami",
+        "Kristian Kersting"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_url": "https://arxiv.org/abs/2412.14814",
+      "arxiv_id": "2412.14814",
+      "arxiv_first_submitted_at": "2024-12-19T13:09:06Z",
+      "arxiv_updated_at": "2024-12-19T13:09:06Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502602/image/image.jpg?Expires=1790835223&Signature=mDlbUutyeTeRZRwLHxxXv1DK~1vUQzoJJcZdUXQtg7WsRMWlvlR5W7p0pEzPZgqrDvZdvByiSsj-rPrUJmKsl5s4FH9vdNI9SXsyMNI~QErzxbGat8F9pKgg8EWqgUOHXyorYLwd5wXEjitLIgcAGJN90iJ85qeDKXcEoKx6ewXWsDicftSVdxX6Bv9t1EljnlvKYMogU3OSD2F49Fe-QpqDBsv3yRCy6t~IUEo1xogsSqMnWSFTYBKn6P8Jw6c9Y0wcZ~W7v185nV4yqyINcai4Yh-lhIoKzbrSS4fK5V~Oo3StJC~JR~SLYKWL9nPV6Mpylxm2pZkMRDNVTMM~Dg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502602,
+      "description_sha256": "40ffb447bcf9580e863f9592b4e22458024cf8723b2539208f3069c478ae35ed",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a reasoning graph (RG) for an MNIST-addition task, structured as a directed acyclic graph (DAG) with multiple interconnected nodes representing computational steps and logical operations. The global layout is hierarchical and left-to-right, beginning with input nodes on the far left and progressing through intermediate processing stages to a final output node on the right. The graph is organized into distinct vertical columns: inputs, digit extraction, logical conjunctions, addition operations, and final aggregation.\n\nVisual modules include several types of nodes: circular white nodes labeled with '∧' (logical AND), rectangular white nodes labeled '1=#count' (counting constraints), teal oval nodes labeled with functions such as 'img(i1)', 'digit(i1,k)', and 'addition(i1,i2,k)', and a single yellow circular node labeled '⊥' (representing a terminal or failure state). The teal ovals denote specific operations or data representations; 'img(i1)' and 'img(i2)' represent two input images, each connected via dashed arrows to their respective digit extractions ('digit(i1,0)', 'digit(i1,1)', etc.), indicating that digits are extracted from these images. The 'addition(i1,i2,k)' nodes compute the sum of digits at position k from both images, while 'addition(i2,i1,k)' represents the reverse operation, possibly for symmetry or validation. The '∧' nodes serve as logical gates combining conditions, and the '1=#count' nodes enforce constraints that exactly one condition must hold among their inputs.\n\nConnections are represented by directed arrows: solid black arrows indicate standard data or control flow, while dashed arrows denote derivation or extraction relationships (e.g., from image to digit). Red arrows specifically highlight paths leading to the yellow '⊥' node, suggesting error or invalid paths in the reasoning process. The graph begins with a root node '⊤' (true), branching to 'img(i1)' and 'img(i2)'. From each image, digits are extracted and fed into multiple '∧' gates, which then feed into 'addition' operations. Each 'addition(i1,i2,k)' node connects to its corresponding 'addition(i2,i1,k)' node, forming a symmetric pair. Multiple 'addition' nodes converge via red arrows to the '⊥' node, indicating that if any addition step fails or violates constraints, the entire computation terminates in failure. Additionally, the '1=#count' constraint nodes are connected to '∧' gates, ensuring that only one digit per position is selected or validated. The overall structure reflects a symbolic reasoning pipeline where image inputs are parsed into digits, combined via addition, and validated against logical constraints, with failure paths explicitly modeled."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

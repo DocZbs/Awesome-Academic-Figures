@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501683",
+  "record_sha256": "5c98772564c8b248d0644c9e53cff16a8bc90eb11d0492812a957398f3ca6dc6",
+  "asset_sha256": "9c0aa1cbd5f4779c6713e29ace1efb2b6c05a8d68c9a57a7f7fc9c078c2625a2",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501683",
+    "title": {
+      "zh": "Interpretable deformable image registration: A geometric deep learning perspective · 方法图",
+      "en": "Interpretable deformable image registration: A geometric deep learning perspective"
+    },
+    "paper": {
+      "id": "arxiv-2412-13294",
+      "title": "Interpretable deformable image registration: A geometric deep learning perspective",
+      "authors": [
+        "Vasiliki Sideri-Lampretsa",
+        "Nil Stolt-Ansó",
+        "Huaqi Qiu",
+        "Julian McGinnis",
+        "Wenke Karbole",
+        "Martin Menten",
+        "Daniel Rueckert"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13294",
+      "arxiv_url": "https://arxiv.org/abs/2412.13294",
+      "arxiv_id": "2412.13294",
+      "arxiv_first_submitted_at": "2024-12-17T19:47:10Z",
+      "arxiv_updated_at": "2025-03-10T12:42:18Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501683/image/image.jpg?Expires=1790835197&Signature=grFkxfib-lAnU8MDzgxp5nAcXkomgxKZYiPsPhtK-J9L023XpYlLBcD3Pecs8v9OWYLeBy1ETjQc0-ZcH2YU5Ay~Swi8wfnfBqdvwB~xP7Rdflj6IXy92gdr4eVNj80c4XnIxMmvmWXKaDSHH9pzdPNIssFMVbizepLLPcqH9RA2cH31eJTBSZd~yQwZXcTlcdlLCLq~HY-0pzAtHVxGq-QYC2jtNmKogPyBp9FWb2rFiMSz0ns4dxB1VkUsVczPZ6jRQL5iDfBf~~uAnkzKWfoQ8OAzV371XaMLYqZ~xVqRd8ToTTj~CqPPl3W1x3X7vHWsIWhsOA7fF5aqlyMy2Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501683,
+      "description_sha256": "345c8b2c5fc1a3216934185e4f44ef513ce180ce19b8de4507d6285f219f0013",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-resolution, coarse-to-fine deformation refinement architecture for feature-based image processing, likely in the context of image generation or transformation. The global layout is divided into two main sections: a large left-side diagram showing the hierarchical refinement process across three resolutions (Resolution 0, 1, and 2, increasing in coarseness upward), and two inset boxes on the right providing detailed explanations of the core components: deformation refinement (T_θ) and learned interpolation (δ_θ).\n\nIn the main diagram, a pixelated digit '3' is shown at the bottom-left, with a red box highlighting a local region. This region corresponds to a feature hierarchy represented by a 3D grid of blocks at Resolution 0, which becomes sparser and more abstract at higher resolutions. Each resolution level contains multiple feature blocks, with specific ones highlighted in pink (e.g., x^Res0_0, x^Res1_0, x^Res2_0) to indicate the active feature being processed. The process starts at the top-most resolution (Resolution 2) and proceeds downward.\n\nThe workflow follows a refinement-inheritance cycle. At each resolution, a feature (e.g., x^Res2_0) undergoes a 'Refine' step, indicated by a solid blue arrow, producing a refined feature (e.g., x^Res2_N). This refined feature then 'Inherits' its transformation to the next lower resolution via a dashed orange arrow, which propagates the deformation to the corresponding feature at the next level (e.g., from x^Res2_N to x^Res1_0). The refinement process continues iteratively within each resolution until it reaches the base resolution (Resolution 0), where the final refined feature (x^Res0_N) is produced. Text annotations clarify this: 'Starting position of feature hierarchy', 'Feature hierarchy follows refined position of top-most parent', and 'Refinement process continues to lower hierarchies' and 'Refinement ends at base resolution'.\n\nThe right-side insets provide mechanistic details. The top inset, labeled 'T_θ Deformation refinement' (blue border), shows how a source point (x_1) uses neighboring source (pink dots) and target (green dots) points to refine its current transformation. A deformation vector u_1 is applied, moving x_1 to x_2, and the process can be reapplied using updated neighboring features at the new position, leading to x_N. This illustrates an iterative refinement of the deformation function T_θ.\n\nThe bottom inset, labeled 'δ_θ Learned interpolation' (orange border), explains how deformations are transferred between resolutions. A 'parent' feature (x^parent_0) with associated deformation vectors u_0...N is connected to a 'child' feature (x^child_0). The child inherits the parent's deformation (u^parent_0...N), then applies a learned interpolation (u^interp) based on neighboring parents to compute its own deformation (u^child_0...N). Finally, the deformation function T_θ is applied to transform the child feature to x^child_1. This highlights the role of δ_θ in interpolating deformations across resolution boundaries.\n\nThe entire architecture is supervised such that most deformation modeling occurs at coarser (earlier) resolutions, with supervision at finer (later) resolutions providing feedback to all coarser levels, ensuring consistency and efficiency."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

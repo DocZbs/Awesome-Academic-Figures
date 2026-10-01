@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+From approximation error to optimality gap -- Explaining the performance impact of opportunity cost approximation in integrated demand management and vehicle routing — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13851
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents an overview of the Markov Decision Process (MDP) model for the i-DMVRP (integrated Dynamic Multi-Vehicle Routing Problem) booking and fulfillment process, emphasizing the inclusion of an interim state. The global layout is a horizontal timeline spanning from decision epoch t-1 to t+1, divided into distinct phases by vertical dashed lines marking state transitions at s_{t-1}, t, and s_t. The structure follows a sequential workflow from left to right, with two parallel tracks: an upper operational track and a lower decision/transition track, both progressing through time.
+
+In the upper track, the process begins with 'Fulfillment operations' leading to 'Request arrival type c'. This triggers a 'Demand control decision', followed by 'Order confirmation' and then 'Vehicle routing decision', which feeds back into 'Fulfillment operations' before the next request arrives. These boxes are rectangular with black borders and plain black text. The lower track represents the MDP’s internal state evolution: starting from 'Stochastic transition' at s_{t-1}, it proceeds to 'Decision g_t', then 'Deterministic transition', followed by 'Decision φ_t(g_t)', another 'Deterministic transition', and finally 'Stochastic transition' leading to state s_t at time t+1. All these boxes are also rectangular with black borders and black text, except for the 'Interim state s'_t(c)' box, which is highlighted in pink and positioned below the main flow, indicating its special role.
+
+Connections between modules are represented by solid arrows indicating direct transitions or decisions, and curved gray arrows showing feedback or influence paths. For example, the 'Demand control decision' influences both 'Order confirmation' and 'Decision g_t', while 'Vehicle routing decision' affects 'Decision φ_t(g_t)'. Dotted vertical lines connect the upper and lower tracks, linking operational events to their corresponding decision states. Rewards are explicitly labeled beneath the lower track: 'Reward g_t · r_c' is associated with the transition after 'Decision g_t', and 'Reward r_{φ_t(g_t)}' follows 'Decision φ_t(g_t)'. A pink dashed vertical line marks the point where the interim state s'_t(c) occurs, situated between the deterministic transition and the subsequent decision φ_t(g_t), signifying a temporary state within the decision-making cycle. The figure uses consistent visual attributes—black text, black-bordered rectangles, and gray arrows—with the pink highlight drawing attention to the interim state. The caption explicitly notes the inclusion of this interim state, which is central to the model's temporal decomposition.

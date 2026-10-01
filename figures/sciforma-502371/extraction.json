@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502371",
+  "record_sha256": "aa1df1e2fa53083d472c97ec6f9287f2b648df73a53ced1babc6b8b2afcf5477",
+  "asset_sha256": "7e7f43c3fa4b0c7f4e86c55af73f100b228c946fc3e273fd0fe08b8d6c59d765",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502371",
+    "title": {
+      "zh": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion · 方法图",
+      "en": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion"
+    },
+    "paper": {
+      "id": "arxiv-2412-14462",
+      "title": "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
+      "authors": [
+        "Jixuan He",
+        "Wanhua Li",
+        "Ye Liu",
+        "Junsik Kim",
+        "Donglai Wei",
+        "Hanspeter Pfister"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14462",
+      "arxiv_url": "https://arxiv.org/abs/2412.14462",
+      "arxiv_id": "2412.14462",
+      "arxiv_first_submitted_at": "2024-12-19T02:23:13Z",
+      "arxiv_updated_at": "2025-04-20T20:58:33Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502371/image/image.jpg?Expires=1790835217&Signature=OiclaL9Udhs~8Py6zlG3kzSfAE5N2C7yoNGq5PwlWgPTqskU35Aw~zBK2813kF5x8VRje6kgQWYMSL77Cdbbg9zk9ElfrHpE9xlgMIVYdT0B08S~ok24~bYeW3w3xHB44eBplxsV3Ol2VObhGgMAbr~GidIwNx12iby54co6Nlesin2pyvw8EiRdDUi4N0x7rig5bN-80Pu~CM2ypvJQIUvfQMtnVpPFdaN-fgUsLK5EYcXcRtFloynzh52yuVb1LjzXQl7~fXYSNps3AvTFAataR9EU~rLcyiPcCPH6ps7LlRMXv-JZktFGbDFuDGy375Qmd3sNm6hd8InhudpBjA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502371,
+      "description_sha256": "8db4b58a2af61af510875c3c482fbf7ef6de1d257562f77b6e7a1212f011d46d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a four-stage pipeline for constructing the SAM-FB dataset, designed to automatically convert any input image into a high-quality tetrad output consisting of foreground, background, mask, and bounding box or point annotations. The overall layout is horizontal, progressing from left to right across four main modules labeled ① through ④, each enclosed in a rounded rectangular box with a dashed border, connected by gray arrows indicating the flow of data.\n\nStage ①, 'Foreground Mask Generation', begins with multiple input images shown in a grid. These images are processed by SAM (Segment Anything Model), represented by a blue infinity symbol logo, which generates initial segmentation masks. The outputs include various segmented regions such as buildings, phones, and other objects. Non-Maximum Suppression (NMS), indicated by a blue square icon with a white cross, is applied to refine the masks by removing overlapping segments. The result is a set of candidate foreground masks displayed below the input images.\n\nStage ②, 'Foreground Filter', refines these masks using two filtering approaches. First, a 'Rule-based filter' (light blue box with a blue funnel icon) applies criteria including Relative Size, Component Number, Aspect Ratio, and Color Standard Deviation to eliminate low-quality masks. Second, a 'Model-based filter' (light blue box with a red and blue model icon) uses a binary classifier trained on 2000 annotated samples to further select high-quality foregrounds. The filtered masks are shown as smaller, more coherent segments, with some rejected masks depicted outside the main flow.\n\nStage ③, 'Background Inpaint', processes the remaining image regions after foreground removal. The mask is enlarged to ensure complete coverage of the foreground object, then fed into LAMA (a neural network for image inpainting, represented by a multicolored star icon) to reconstruct the background. The output is a filled-in background region, shown alongside the original image for comparison.\n\nStage ④, 'Background Filter', evaluates the quality of the reconstructed background using Structural Similarity Index (SSIM). Two examples are shown: one with an SSIM score of 0.85 (high quality) and another with 0.69 (low quality). A blue funnel icon labeled 'SSIM Filter' indicates that only backgrounds meeting a threshold are retained. The final output is directed to the 'SAM-FB Dataset' section on the far right.\n\nThe 'SAM-FB Dataset' box (light blue background) displays the final tetrad components: a clean background image, a foreground image (e.g., a church), a corresponding mask (shown as a blue silhouette), and annotation types including a bounding box and a point. Arrows from stages ①, ②, ③, and ④ converge to this final output, emphasizing the pipeline's end-to-end nature. The entire process ensures high-quality foreground and background retention through automated segmentation, filtering, inpainting, and quality control."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

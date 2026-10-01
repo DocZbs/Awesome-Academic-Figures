@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-502628",
+  "record_sha256": "17f9cd6677b968a7e3fdb8a2c93f1480f2dc141e3b6b14b9750fac3e35f0bc4e",
+  "asset_sha256": "48553edb9f9cd2f9388b626fb0ca9fac51d497df238c110e3fbe7b0bff6b49b7",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502628",
+    "title": {
+      "zh": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling · 方法图",
+      "en": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling"
+    },
+    "paper": {
+      "id": "arxiv-2412-14860",
+      "title": "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+      "authors": [
+        "Junyi Li",
+        "Hwee Tou Ng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14860",
+      "arxiv_url": "https://arxiv.org/abs/2412.14860",
+      "arxiv_id": "2412.14860",
+      "arxiv_first_submitted_at": "2024-12-19T13:55:48Z",
+      "arxiv_updated_at": "2025-06-20T13:47:25Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502628/image/image.jpg?Expires=1790835223&Signature=HBP~Ybv80AzaZmQgentH~xFIhEbk3TxDiFM-t0oXJripZA-ynri21p7CSG9t-WdCRjwH3z9lI8xfldhp6Z9Q7oYdVDQo5V0N7ELJaaDv6uAneSW241NfON4ApTESZUMxDbVO53rTmUWWgWOqLQN8c5FJuoVx9jueyGodqRno7b0Eey-aOUEiKvel8VfZ0l5owExVILBtafK2B7cKxcjqxKOavSTMXAsKWFIWtJaf6m2vkD1BkfqHn3aMfyswCInk0Od1CNeGBKi~~0h4RxvNJAjMiIryc8Yjp3pGcInN2mzjlsls~sn~0DFMDsIsNQJC-BggrMYcYk6A3AvaiplFaw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502628,
+      "description_sha256": "3c4a3c54b1ac081c7ad8856693a7524b8959f4f23055e395e0f853d90311d080",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of the Think&cite approach, which combines self-guided Monte Carlo Tree Search (MCTS) with Progress Reward Modeling for generating citable, factually grounded responses. The layout is divided into two main sections: the left side details the MCTS-based reasoning process, while the right side explains the reward modeling mechanism used to evaluate progress during search.\n\n[1] Global Layout and Structure:\nThe diagram is horizontally partitioned into two major regions. On the left, under the heading 'Self-Guided Monte Carlo Tree Search', a tree-like structure represents the search space exploration. At the top center, an input question box ('What natural place is located in or near Gunnison?') serves as the root node. From this, blue arrows (representing expansion) branch out to query nodes, forming a hierarchical tree. A central rectangular module labeled 'Think' contains the core reasoning steps: Reflection, Verbalize, and Cite. This module receives inputs from the tree and outputs a final response. On the right, under 'Progress Reward Modeling', two reward components—Generation Progress Reward and Attribution Progress Reward—are shown, each with their own computational flow. These rewards are combined via the equation R(st) = Rg + Ra, where Rg is derived from a DPO-aligned model and Ra from citation metrics.\n\n[2] Visual Modules and Attributes:\n- Input Question: A black-bordered rounded rectangle at the top center containing the sample question.\n- Query Nodes: Light blue rounded rectangles with orange headers (e.g., 'Query: Gunnison natural place nearby') and black text summarizing retrieved information, including citations in square brackets.\n- Think Module: A large outlined box with three stages: \n  - 'Reflection': Purple header, with text indicating document retrieval failure and a suggestion to refine the query, accompanied by icons of documents and a magnifying glass.\n  - 'Verbalize': Blue header, showing a synthesized answer incorporating retrieved facts.\n  - 'Cite': Green header, indicating the inclusion of citations [2][3] in the final output.\n- Reward Components:\n  - Generation Progress Reward: A flow starting from 'Generated Sentences y1,...,yt', passing through a gray box labeled 'DPO-aligned Model', leading to an orange box with Rg = 0.25.\n  - Attribution Progress Reward: Two parallel flows using green and blue borders. Each takes premise-hypothesis pairs (e.g., Premise: [2][3], Hypothesis: y1), applies NLI (Natural Language Inference) to compute Citation Recall (green path) and Citation Precision (blue path), culminating in Ra = 1.0.\n- Legend: Top-right corner defines arrow types: gray dashed for Selection, blue solid for Expansion, red dashed for Backpropagation.\n\n[3] Connections and Arrows:\n- From the Input Question, blue expansion arrows lead to initial query nodes.\n- These query nodes further expand via blue arrows to deeper query nodes (e.g., 'Query: Curecanti National Recreation Area Gunnison').\n- Red dashed backpropagation arrows connect the deeper nodes back to the Think module, indicating feedback.\n- Within the Think module, a gray selection arrow points from the query to the Reflection step, followed by internal processing to Verbalize and Cite.\n- From the Think module, blue expansion arrows point to additional nodes below, suggesting iterative refinement.\n- On the right, black arrows show data flow: Generated sentences → DPO-aligned Model → Rg; premise-hypothesis pairs → NLI → Citation Recall/Precision → Ra.\n- The final rewards Rg and Ra are combined via the formula R(st) = Rg + Ra, visually linked to the tree search process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

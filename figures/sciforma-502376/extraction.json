@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-502376",
+  "record_sha256": "5914811c30b70d731be6a9e2a3b83852deb32eaa26905f9209c4afdccfcd6440",
+  "asset_sha256": "8600a8646ca79f2550d7141dfe3638c018e01405bcf56928dc20e0735c151b63",
+  "original_file": "original.jpg",
+  "pixel_width": 1280,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502376",
+    "title": {
+      "zh": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations · 方法图",
+      "en": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations"
+    },
+    "paper": {
+      "id": "arxiv-2412-14464",
+      "title": "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations",
+      "authors": [
+        "Tung Do",
+        "Thuan Hoang Nguyen",
+        "Anh Tuan Tran",
+        "Rang Nguyen",
+        "Binh-Son Hua"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_url": "https://arxiv.org/abs/2412.14464",
+      "arxiv_id": "2412.14464",
+      "arxiv_first_submitted_at": "2024-12-19T02:23:55Z",
+      "arxiv_updated_at": "2024-12-19T02:23:55Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502376/image/image.jpg?Expires=1790835217&Signature=CEl~82-kD7REEEHLuWU4vVhFhxYZRQWv0bK0B1elPKzrHMntrN0FeuudJDwYBh-KzW4Y30Evs-KNoYRAoUx2fLS9Nn7geP8RyssES-Rh4ZCRsn6yqDU6IcQzNKm1mYTPDwk2j7uLiNkqbBLs0khhWvDKhY6KG0BrJFP8~3M4JOKQjcBJIbsI1MUmGbA4E8BxC9CQ~VEALuTdEHqW4SIaXWjjXVNG8LtYUMfFh878hXI7Ok5RNmkzOclJXDq7dPTJ9vS4izkIfJRi5z0jtPcrYpbyCZTQ37Mz0MLE7gP-p-STxrrqjz6iIeVerG11yZrwY3RdGWaxSwvwB0S~4fKOSg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502376,
+      "description_sha256": "f5479a1894a51d8da65223c7ec7f7b6629a537ee0d2d8e0928dabcdb0dc38a08",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a progressive inference pipeline for 3D reconstruction and rendering, structured as a horizontal workflow across multiple iterative stages labeled 'iter = 1', 'iter = 2', ..., 'iter = n', culminating in a 'Final' stage. The global layout is linear and sequential from left to right, beginning with an input image denoted as ℐ_input, which is a 2D rendering of a 3D character viewed from behind. This input feeds into an initialization step that populates an 'Image buffer'—represented as a cylindrical data structure—marking the start of the iterative refinement process.\n\nEach iteration consists of three main components: an Image buffer (cylinder), a feature map (small square with color heatmap), and a rendered output image (square frame). The Image buffer at each stage receives data from the previous stage via a black arrow labeled 'Append', indicating accumulation of information over iterations. From the Image buffer, a green arrow labeled 'Lift + Feature map' points downward to a small square displaying a color-coded feature map (e.g., pink/orange regions on a dark background), representing extracted semantic features from the current 3D state.\n\nFrom this feature map, a blue arrow labeled 'Diffusion sampling' leads to a rendered 2D image of the 3D character, shown in a square frame. These rendered outputs evolve across iterations: starting from a rough, incomplete reconstruction (iter=1), progressing through increasingly refined views (iter=2, iter=n), and ending with a final, high-quality rendering labeled ℐ_diff. A red arrow labeled 'Lift + Image rendering' connects the original input ℐ_input directly to the first rendered output ℐ_det, which serves as an initial detection or coarse reconstruction.\n\nThe connections between stages are indicated by solid black arrows for direct progression and dashed arrows for intermediate steps, emphasizing the iterative nature of the process. The final stage’s Image buffer feeds into the last rendered output ℐ_diff via the same blue diffusion sampling path. The legend at the bottom clarifies the meaning of the colored arrows: red for 'Lift + Image rendering', green for 'Lift + Feature map', and blue for 'Diffusion sampling'. The overall method progressively refines the 3D representation by accumulating features and sampling improved renderings at each step, ultimately producing a high-fidelity output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

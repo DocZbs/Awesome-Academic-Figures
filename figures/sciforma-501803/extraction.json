@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-501803",
+  "record_sha256": "68bca265fb6595ef1d27f32deb725a21e7b5abe489c51522915f4a16f6f2e201",
+  "asset_sha256": "00f8e4b205904862d27faa23366ce74c5545c0bd5dd5bcd1a488f8e0091c1d83",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501803",
+    "title": {
+      "zh": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning · 方法图",
+      "en": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13520",
+      "title": "ROMAS: A Role-Based Multi-Agent System for Database monitoring and Planning",
+      "authors": [
+        "Yi Huang",
+        "Fangyin Cheng",
+        "Fan Zhou",
+        "Jiahui Li",
+        "Jian Gong",
+        "Hongjun Yang",
+        "Zhidong Fan",
+        "Caigao Jiang",
+        "Siqiao Xue",
+        "Faqiang Chen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13520",
+      "arxiv_url": "https://arxiv.org/abs/2412.13520",
+      "arxiv_id": "2412.13520",
+      "arxiv_first_submitted_at": "2024-12-18T05:45:39Z",
+      "arxiv_updated_at": "2024-12-18T05:45:39Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "cs.DB",
+        "cs.MA"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501803/image/image.jpg?Expires=1790835205&Signature=SHJYgpaaiwJXmIlDgyNh2yxwtQL8NVKie4JJzXMlWvksk1Dz~huPJER2N9Geo5oV4ip8MR4SdQLsxOW2KihYUWE5aX~z6GhtXIrzUcNCyifg7PqyZH0G19nMfl8AUNxfPG0sVj~Dojt24QVIwfYMTMEjcncZfvuxhmuHWIczK4SjsXDbIr9ZkqObMVJqvEg8xmjUrUt6C~-F6a3zDubbmBdxrwCc6Q12njEpx3QEvdSYtjmNL5tbRwnIUr-~otKxxb0~J6cfRaZmF19cCf352D3sJaiU8OtdEeYyKgUttA6tDE~wHQxiqwZXBo4CGXqNB7gaTkpfrBfk3za8lQO4ug__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501803,
+      "description_sha256": "9f691fa70c7c2a602fe576921a0d78681f86c8b1f59568e159076ccc53b231de",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "cs.DB",
+        "cs.MA"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the ROMAS framework, a modular agent-based system centered around DB-GPT, which acts as the core orchestrator. The global layout is circular, depicting a continuous workflow among three primary agents: Planner, Worker, and Monitor, all interconnected with DB-GPT at the center. The structure emphasizes a cyclical process divided into three distinct phases—Init, Execute, and Replan—represented by thick orange curved arrows forming a clockwise loop around the central components. Each phase corresponds to a stage in the task lifecycle: Init initiates the process from Planner to Worker, Execute involves active task execution between Worker and Monitor, and Replan triggers a feedback-driven adjustment back to Planner.\n\nThe visual modules consist of four rectangular boxes with rounded corners and blue borders: 'Planner', 'Worker', 'Monitor', and 'DB-GPT'. All module labels are in bold black font. DB-GPT is positioned centrally, serving as the hub for communication and coordination. The Planner receives inputs from DB-GPT labeled 'Agent team' and 'Task list' via a blue arrow, indicating data flow from the database. From DB-GPT, a blue arrow labeled 'Component' points to the Worker, while another labeled 'Memory' points to the Monitor. Additionally, a bidirectional blue arrow connects Worker and Monitor, labeled 'Instruction' (from Worker to Monitor) and 'Error' (from Monitor to Worker), signifying real-time feedback during execution.\n\nConnections are color-coded: blue lines represent key messages exchanged between agents and DB-GPT; orange lines denote the three operational phases (Init, Execute, Replan); and green curved arrows indicate internal self-planning and self-reflection processes within each agent. Specifically, a green loop above the Planner is labeled 'Self-plan and self-reflect', one on the left side of the Monitor also labeled 'Self-plan and self-reflect', and a green loop on the right side of the Worker labeled 'Self-reflect'. These internal loops suggest autonomous reasoning and adaptation capabilities within each agent. The Planner sends a 'Recommendation' to DB-GPT via a blue arrow, completing the feedback cycle. The overall design conveys a dynamic, self-improving system where agents collaborate under DB-GPT’s guidance, continuously adapting through planning, execution, monitoring, and reflection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

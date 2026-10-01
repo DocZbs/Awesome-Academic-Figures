@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+INTERACT: Enabling Interactive, Question-Driven Learning in Large Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.11388
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a cyclic four-stage workflow representing the dynamic interaction between a student and a teacher during an educational dialogue, specifically within the context of concept-related questioning and evaluation. The global layout is a rectangular cycle composed of four rounded-corner rectangular nodes arranged in a clockwise sequence: top-left, top-right, bottom-right, and bottom-left. Each node represents a distinct phase in the interaction loop and is connected by thick black arrows indicating the direction of the process flow.
+
+Visual modules consist of four colored boxes, each with bold black text centered inside. The top-left box is light pink and labeled 'Student Asks Teacher A Question', initiating the cycle. The top-right box is light purple and labeled 'Teacher Responds to Student Query', representing the teacher's feedback. The bottom-right box is light blue and labeled 'Student Integrates New Information into Existing Knowledge', depicting the cognitive processing stage. The bottom-left box is light green and labeled 'Student Undergoes Evaluation', signifying the assessment phase that leads back to the initial question-asking step.
+
+Connections are unidirectional black arrows with solid arrowheads, forming a closed loop. The arrow from the pink box points to the purple box, indicating the student’s query triggers the teacher’s response. From the purple box, an arrow points downward to the blue box, showing that the teacher’s response enables the student to integrate new information. The blue box connects via an arrow to the green box, illustrating that integration precedes evaluation. Finally, an upward arrow from the green box returns to the pink box, completing the cycle and demonstrating that evaluation informs subsequent questions, thereby sustaining continuous learning. This structure reflects an iterative, feedback-driven educational model where each dialogue turn reinforces knowledge acquisition through active engagement and assessment.

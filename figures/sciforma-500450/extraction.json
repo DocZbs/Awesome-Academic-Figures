@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500450",
+  "record_sha256": "4c7d832385ae3a3a40503f3ff7dd574f8a4279921a90e95f157c3a8ecc06bad9",
+  "asset_sha256": "6af69dbb261f0374e1e2bdefa24fb727ed6333f3656c65ba57f1ba90203da093",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500450",
+    "title": {
+      "zh": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions · 方法图",
+      "en": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions"
+    },
+    "paper": {
+      "id": "arxiv-2412-11365",
+      "title": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+      "authors": [
+        "Wonyong Seo",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_url": "https://arxiv.org/abs/2412.11365",
+      "arxiv_id": "2412.11365",
+      "arxiv_first_submitted_at": "2024-12-16T01:37:51Z",
+      "arxiv_updated_at": "2025-03-24T02:37:44Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500450/image/image.jpg?Expires=1790835171&Signature=XD~VtQ6~GK-YyCIEPB-Oy6NvS0Ngp21VXGdXIDTes1jizjkmV7yA5t1AP7iT8OJWmd89ieIZketZ-2aXYz5T-l4I2d5qmus7xff3xfL2XyQOG1Ga3rWgW~Wk~P0S69J7YBPTxLCxmMLCoEVn6Uq7bbaQmrBYwHd8xhFlsCExQssXAsrkzv6k3LrMtXGxMmlFdpyG3gHlx9uC-yw02ba2-00ZcBl2c~sjc4SRIbaVI~uLGc1slELMWXevN7NOvCf4iMjwMib5lOXBPptyCm-eUKYTRu~hvBHmzqEi7YIyH5bgn2EKV0vfeRyfLCUJ~gMOjkIAaZKLP3EmNE2iP2UBkQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500450,
+      "description_sha256": "5e18c9282e04f665c0818ffda074ff9fa8f8411e7fced1bc9b6e37c7264cfcf7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the detailed architecture of a Synthesis Network (SN), structured as a multi-scale, U-shaped encoder-decoder framework with skip connections. The global layout is enclosed within a large rounded rectangle, representing the entire network. The main flow proceeds from top to bottom on the left side (encoding path) and then ascends on the right side (decoding path), with horizontal skip connections linking corresponding levels. At the top, an input feature map O^{l-1} is upsampled by a factor of 2 using a green 'Bilinear Upsample ×2' block, which feeds into the first concatenation node (C). \n\nOn the left, three hierarchical levels of input features are processed. Each level receives two optical flow vectors (e.g., v_{t→0}^l and v_{t→1}^l) and corresponding feature maps (F_0^{l,c,k}, F_1^{l,c,k}) as inputs. These are fed into circular 'W' nodes labeled 'Backwarp.', indicating backward warping operations that align features across frames. The outputs of these warping operations are concatenated via circular 'C' nodes labeled 'Concat.' before being processed by the respective blocks.\n\nThe encoding path consists of three stages: the top stage uses a red 'ConvBlock', followed by two purple 'DownBlock' modules. Each 'DownBlock' reduces spatial resolution by half through a 2×2 convolution with stride 2, followed by PReLU activation, then a 3×3 convolution and another PReLU. The decoding path mirrors this with three orange 'UpBlock' modules. Each 'UpBlock' includes a 3×3 convolution, a green 'PixelShuffle ×2' layer for upsampling, followed by PReLU and another 3×3 convolution with PReLU. The 'ConvBlock' (red) is composed of two 3×3 convolutions separated by PReLU activations.\n\nSkip connections concatenate features from the encoder to the decoder at each level. The final output is generated by a blue 'Conv 3x3' layer, producing both the residual image Î^{l,res} and the final output O^l. The figure also includes a legend on the right defining the components: ConvBlock (two 3×3 conv + PReLU), DownBlock (2×2 conv stride 2 + PReLU + 3×3 conv + PReLU), UpBlock (3×3 conv + PixelShuffle ×2 + PReLU + 3×3 conv + PReLU), along with symbols for 'W' (Backwarp.) and 'C' (Concat.). All connections are represented by solid black arrows indicating the data flow direction."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

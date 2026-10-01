@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500198",
+  "record_sha256": "5822536ef2c7ebcb1f5761a86bc7970a91ec9e0e95b1ec552e760c9728ea975e",
+  "asset_sha256": "584836ceca1e96258e518d1494a458d006753adb1f8202b6a914e981f6da882a",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500198",
+    "title": {
+      "zh": "APAR: Modeling Irregular Target Functions in Tabular Regression via Arithmetic-Aware Pre-Training and Adaptive-Regularized Fine-Tuning · 方法图",
+      "en": "APAR: Modeling Irregular Target Functions in Tabular Regression via Arithmetic-Aware Pre-Training and Adaptive-Regularized Fine-Tuning"
+    },
+    "paper": {
+      "id": "arxiv-2412-10941",
+      "title": "APAR: Modeling Irregular Target Functions in Tabular Regression via Arithmetic-Aware Pre-Training and Adaptive-Regularized Fine-Tuning",
+      "authors": [
+        "Hong-Wei Wu",
+        "Wei-Yao Wang",
+        "Kuang-Da Wang",
+        "Wen-Chih Peng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10941",
+      "arxiv_url": "https://arxiv.org/abs/2412.10941",
+      "arxiv_id": "2412.10941",
+      "arxiv_first_submitted_at": "2024-12-14T19:33:21Z",
+      "arxiv_updated_at": "2024-12-14T19:33:21Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500198/image/image.jpg?Expires=1790835166&Signature=mTOaOYimMUNkIP3ttPd5CEHTT6YBQBRkAmEdJZKLHEiL5SxFraIYoEcDvOfcFlMYAgBsQgGvXoE1P7T4mzR1GLBMYWOcczG9cwH6RV8OOLPvB22cLHWDH~Ynnrs~DoF6lqrR9uBAZ5ew5Fn5xXANqpCFfDOAHETRgJcrwcz2xfOVJ84rvgMFN6h-21kWZPt38SOIJbraDK-oUuzkLbWcWvnQ3jNQkYSrZ0xmmsqDj-EEJLvybPfGX4f2bMGaRa846xFIOiPYZ-bmiB6yT9n3XThBWPrLNl~vs9XehhRQElmViuH77HZvbJhzairgry51Xuwm8YqpAzMCyBmhs6uEgA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500198,
+      "description_sha256": "bf3728fd99d943daeefb9d97b66934e19a8d8e13a6e112c01cf755b836f0db8d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the Arithmetic-Aware Pre-Train phase of APAR, designed for tabular regression tasks. The overall layout is left-to-right, divided into three main stages: Feature Tokenizer, Feature Encoder, and Arithmetic-Aware Task, each enclosed in dashed boxes. The process begins with two input sample pairs, denoted as x_i and x_j, each consisting of four features (x_i0 to x_i3 and x_j0 to x_j3), represented as stacked colored rectangles (blue, orange, red). Each sample pair also includes a corresponding label y_i or y_j, shown as green rectangles.\n\nIn the Feature Tokenizer stage, numerical features (x^(num)) undergo linear transformation via Equation (2): z^(num) = x^(num) × W^(num) + b^(num), depicted as blue blocks multiplying and adding to produce output z^(num). Categorical features (x^(cat)) are processed via Equation (3): z^(cat) = x^(cat) × W^(cat) + b^(cat), shown with orange and red blocks representing embeddings for different categories. The outputs from both branches are then concatenated (indicated by ⊕ symbol) to form a unified feature vector Z, as per Equation (4).\n\nThe resulting Z vectors for samples i and j are each prepended with a [CLS] token (gray rectangle), forming Z_i and Z_j. These are then fed into the Feature Encoder, which consists of L identical layers. Each layer performs normalization (Norm), followed by Multi-Head Self-Attention (MHSA), then element-wise multiplication (⊗) with the residual connection. This is followed by another normalization, a linear transformation, and another element-wise multiplication with the residual path. The outputs after L layers are Z_iL and Z_jL, each still containing the [CLS] token.\n\nIn the final Arithmetic-Aware Task stage, the [CLS] tokens from Z_iL and Z_jL are concatenated (⊕) and passed through an MLP (Multi-Layer Perceptron) to predict a value ŷ^AP. This prediction is compared to the ground truth arithmetic operation y^AP, which is derived from labels y_i and y_j using one of the four operations {+, −, ×, /}, as specified in Equation (8). The loss function ℒ^AP is computed based on this comparison. The entire process enables the model to learn arithmetic relationships between sample pairs during pre-training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

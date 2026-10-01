@@ -1,0 +1,94 @@
+{
+  "id": "sciforma-515605",
+  "record_sha256": "a153914963d5372084ebbca71a0191fc27801344974187430765d7855d256b37",
+  "asset_sha256": "045193aa93838877c0dfee9a15f3f80e12cd563e6c5ebffe114935e5efffe8fa",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-515605",
+    "title": {
+      "zh": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy · 方法图",
+      "en": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy"
+    },
+    "paper": {
+      "id": "arxiv-2502-04898",
+      "title": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy",
+      "authors": [
+        "Ricardo Coimbra Brioso",
+        "Leonardo Crespi",
+        "Andrea Seghetto",
+        "Damiano Dei",
+        "Nicola Lambri",
+        "Pietro Mancosu",
+        "Marta Scorsetti",
+        "Daniele Loiacono"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2025,
+      "url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_url": "https://arxiv.org/abs/2502.04898",
+      "arxiv_id": "2502.04898",
+      "arxiv_first_submitted_at": "2025-02-07T13:04:25Z",
+      "arxiv_updated_at": "2025-02-07T13:04:25Z",
+      "arxiv_subjects": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/515605/image/image.jpg?Expires=1790835471&Signature=PFTorJdFq5V6fYzYTzOHYPUVDjYwnf9QwmKE1Dgg~XpFx-vM9w0X1j7GcvhBqBm3SVFEG8hfEz34U~J0TRtlDBs4M0urZmV-qGvQ29Aq4gaigFQ9Zb2o1OnaZrjCLT-aLKB9MF3KDIdC4Yi1U1dMUENv4gWbJKXoqd99bhKzVuU-Ugi4ohJOboLZAkRKv7yLxtTsfFo0hTezHZZMZk81cH4JAold8cYv9ngtc8Dz2xGBg9hqHc67Bq8fU7OQ-bwYu0tJkpi-w8ne~j-eG4uzLdBmfT0MwXg5LQxcIj9ziEzLmKpKbu3sr7sE-W8NeMJFFNcI1fhlpSP6PLCUrwYcNg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 515605,
+      "description_sha256": "6bd3c8c687e36019a1a2098b75a64c80a79d9c2b0a80debb38d30fde2041ffba",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "de16f10cdf4a1a155117f91d90df3bf351405e99b091c4464da8cea9e6b0dc8f",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a translation network designed to convert axial CBCT (Cone Beam Computed Tomography) slices into synthetic CT (sCT) slices, using a 16-bit format. The overall layout is divided into two main horizontal pathways: the top pathway represents the generator network responsible for translating CBCT to sCT, and the bottom pathway represents the discriminator network used for adversarial training to distinguish between real and synthetic images.\n\nIn the top pathway, the input is an NIfTI volume containing CT or CBCT data, which is then converted into a 256x256x1 TIFF 16-bit image representing a single axial CBCT slice. This input feeds into the generator network, which consists of a series of downsampling blocks (colored purple) followed by upsampling blocks (colored yellow). Each block is represented as a vertical rectangle, with dimensions labeled at the top (e.g., 128x128, 64x64) indicating spatial resolution and numbers below (e.g., 64, 128) indicating feature channel count. The downsampling blocks progressively reduce spatial resolution from 128x128 to 2x2 while increasing feature channels up to 512. A 1x1 convolutional layer (labeled '1x1') with 512 channels connects the last downsampling block to the first upsampling block. The upsampling blocks then gradually increase spatial resolution back to 128x128, reducing feature channels from 512 down to 64. Skip connections (indicated by black arrows) link corresponding layers in the downsampling and upsampling paths, allowing feature maps to bypass intermediate layers. The final output is a 256x256x1 TIFF 16-bit sCT image.\n\nIn the bottom pathway, the discriminator network takes as input a pair of 256x256x2 images: one original CT slice and one synthetic sCT slice, stacked together. This input passes through a series of downsampling blocks (colored blue), each reducing spatial resolution and increasing feature channels (from 64 to 512). The final output is a binary classification: 'Real/Fake', indicating whether the input pair contains real or synthetic data.\n\nThe legend on the right clarifies the visual elements: red arrows denote convolution operations (4x4 kernel, stride 2), blue arrows denote deconvolution (or transposed convolution) operations (4x4 kernel, stride 2), black arrows represent skip connections, purple rectangles are generator downsampling blocks, yellow rectangles are upsampling blocks, and blue rectangles are discriminator downsampling blocks. The entire diagram is structured to show the end-to-end flow from raw CBCT data to generated sCT, with the discriminator providing feedback for adversarial training."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

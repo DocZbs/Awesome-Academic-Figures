@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501293",
+  "record_sha256": "df7a075ec4762a5af2cc7efe96a0e4a704d6b528788ed96d4498e18edf0cc176",
+  "asset_sha256": "136c62665c3f200b64b22a2963112dc9ec96d3b2d1aa5eb4e77bd0c773c21e63",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501293",
+    "title": {
+      "zh": "LLMs are Also Effective Embedding Models: An In-depth Overview · 方法图",
+      "en": "LLMs are Also Effective Embedding Models: An In-depth Overview"
+    },
+    "paper": {
+      "id": "arxiv-2412-12591",
+      "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+      "authors": [
+        "Chongyang Tao",
+        "Tao Shen",
+        "Shen Gao",
+        "Junshuo Zhang",
+        "Zhen Li",
+        "Kai Hua",
+        "Wenpeng Hu",
+        "Zhengwei Tao",
+        "Shuai Ma"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_url": "https://arxiv.org/abs/2412.12591",
+      "arxiv_id": "2412.12591",
+      "arxiv_first_submitted_at": "2024-12-17T06:48:24Z",
+      "arxiv_updated_at": "2025-07-25T09:22:04Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501293/image/image.jpg?Expires=1790835190&Signature=MSsWkrUg2fFor97n8z85Ya5qPWU15VWNFF7XXUJ4TpPQieuRwQ6auLLzFKiGTAMJwjMuVlmh6PLPw8KFefl6fTyo2xPbN7alZmYxVfp0e8PFZsyfjGgqH6-g2~ezfIcn8w0y~sFgE3u6pa1hLMY0QEEnaA~juPJRD42umBQdxzLGsCgq0Pwe1NqkvDrM6jGXVBduo1QY76SqrH~3xEongSEMOKb-aKd-5TLtltB2qvSDypkombv7ikp-2Zp792nAZGu2cP-SZ4ZE2KSP9vrjzh39Fr3XPgbP7RMYBu3StsvZzCpVZ9o~OaK8l3yNo7HbLgVlcoxFsgkTxbJlHe9gIw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501293,
+      "description_sha256": "42b6dee81e4f4e7c960f8a98097d281e1e6d70f070c7b561e6904492603c92fa",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a survey on deploying Large Language Models (LLMs) as embedding models, structured into three main sections: Sec 4. Direct Prompt for Embedding, Sec 5. Tuning as Embedding Model, and Sec 6. Specialized Embedding. The layout is divided into three horizontal dashed-bordered regions, each representing one section.\n\nIn Sec 4, titled 'Direct Prompt for Embedding' (marked with a snowflake icon), the top region illustrates a prompt-based approach. On the left, two green rectangular boxes show a prompt template ('This sentence: “{sentence}” means in one word:') and an example sentence ('An apple a day keeps the doctor away.'). These feed into a gray box labeled 'LLM', depicted as a neural network with interconnected circles. From the LLM, four labeled outputs emerge: ① E[POS], ② Pooling, ③ Logit dist., and ④ Others, leading to a green bar with five white circles representing the derived embedding vector. This section is subdivided into 4.1 Prompt Design and 4.2 Embedding Derivation.\n\nSec 5, titled 'Tuning as Embedding Model' (marked with a fire icon), occupies the middle region. It begins with input components: a purple box containing a task instruction ('Retrieval relevant passages that answer the query. Query: {query}') and another with a sample query ('What are some ways to reduce stress?'), which merge into a 'Task Instruct' and 'Query' block. Below, a yellow box labeled 'Positive' contains a relevant passage about exercise reducing stress, while a pink box labeled 'Negative' contains an irrelevant passage about unhealthy habits. Both are directed toward a second LLM model (also shown as a neural network with a fire icon). The output from this LLM consists of three horizontal bars—purple, yellow, and pink—each with five white circles, representing embeddings for the query, positive, and negative examples respectively. Curved arrows connect these to labels 'Relevant' and 'Irrelevant'. A speech bubble points to this setup, stating 'Main Objective: Contrastive Loss'. This section includes subsections: 5.3 Data Construction (listing Data Adaption, Data Synthesis, Negative Mining with icons of documents and a database), 5.1 Model Design (listing Bi-Attention, Low-Rank Adaption, Embedding Derivation, Contextual Embeddings with an AI chip icon), and 5.2 Training Objective (listing Multi-task Training, Multi-stage Training, Knowledge Distillation with icons of a target and lightbulb).\n\nSec 6, titled 'Specialized Embedding', spans the bottom region and displays six distinct embedding types using icons and labels: Multi-lingual Embedding (globe with 'A' and star), Multi-modal Embedding (person with speech bubbles showing Chinese characters and symbols), Long Context Embedding (scroll), Code Embedding (code editor), Reason-aware Embedding (lightbulb with gear), and Domain-Specific Embedding (atom symbol). Each is represented by a simple black-and-white icon above its respective label.\n\nThe entire figure uses color-coded boxes for clarity: green for prompt inputs, purple for queries and task instructions, yellow for positive examples, pink for negative examples, and gray for LLM models. Arrows indicate data flow and relationships between components, emphasizing the progression from raw input to embedding derivation through either direct prompting or fine-tuning, culminating in specialized applications."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

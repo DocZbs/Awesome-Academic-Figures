@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501821",
+  "record_sha256": "51b54967ed586ed054096d6607585c951774c30f61653d354a985d83bf3ecab1",
+  "asset_sha256": "f5b0f18a0ee1507397291fd1b3d010f8a992fec7ec22b679b797a46526449e45",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501821",
+    "title": {
+      "zh": "Query-centric Audio-Visual Cognition Network for Moment Retrieval, Segmentation and Step-Captioning · 方法图",
+      "en": "Query-centric Audio-Visual Cognition Network for Moment Retrieval, Segmentation and Step-Captioning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13543",
+      "title": "Query-centric Audio-Visual Cognition Network for Moment Retrieval, Segmentation and Step-Captioning",
+      "authors": [
+        "Yunbin Tu",
+        "Liang Li",
+        "Li Su",
+        "Qingming Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13543",
+      "arxiv_url": "https://arxiv.org/abs/2412.13543",
+      "arxiv_id": "2412.13543",
+      "arxiv_first_submitted_at": "2024-12-18T06:43:06Z",
+      "arxiv_updated_at": "2024-12-18T06:43:06Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501821/image/image.jpg?Expires=1790835205&Signature=wJ-1k3~dgwmjirqVbUI2JGrEI9JqvyZipjnNkzKmqBiw46Q7T6u3eNYKZUP~OkBVu6YiIhd-ZeMB6F~DYqkRMjGcHx6TPs8msJICJGqLDKk~94toHgctQDTWVjwKi6Tyc6m0qIfvETq9LIa2AZX19oxCv6y53xwyvSurLf1AgAYRrdEttQexITyrv0DZuWYdCn92E3lCTdnaEB0isiRKKwXXm-dsvPV63PicooP0f4YV-jI-R1NWc7YBLgaZX0CxXV4jbYxgKiRc2w~t~tmkAkGUI3Kxe~SWim92ebkpcCuD-MOSlnUWtD6EHqX50WLlgJPejwKcHL2L444XC4VXGA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501821,
+      "description_sha256": "eeeef4b08fb796b104ef8c3b81d38ed81197dba22272d51a4446785476c5e444",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a query-centric audio-visual cognition network (QUAG), structured into three main stages: input modalities, core cognition modules, and downstream tasks. The global layout is left-to-right, beginning with three input streams—video frames, audio, and a textual query—on the far left, progressing through two central processing blocks labeled 'Modality-Synergistic Perception' and 'Query-Centric Cognition', and concluding with task-specific outputs on the right for moment retrieval & segmentation and step captioning.\n\nThe input streams are processed independently first. Video frames are encoded into a sequence of visual representations R_v using a blue-colored encoder block with a lock icon, symbolizing feature extraction. Similarly, audio is encoded into R_a via a green encoder block, and the query (e.g., 'How to take seasonal pan') is encoded into R_t via an orange encoder block. These three representations feed into the 'Modality-Synergistic Perception' module, which is divided into two submodules: (1) Global Contrastive Alignment and (2) Local Fine-grained Interaction.\n\nIn submodule (1), Global Contrastive Alignment, average and normalized versions of R_v and R_a (denoted R̄_v and R̄_a) are computed and then undergo dot-product operations to establish cross-modal alignment. This is visually represented by two gray boxes labeled 'dot-product', each receiving inputs from both modalities, with bidirectional arrows indicating contrastive learning between them.\n\nSubmodule (2), Local Fine-grained Interaction, performs cross-attention between R_v and R_a to generate refined representations Ŝ_v and Ŝ_a. These are then fused together via a 'fusion' block to produce a combined representation R̃_v. The cross-attention blocks are shown as gray rectangles with arrows indicating the flow from one modality to another.\n\nThe output R̃_v from this module is passed to a 'Temporal Fusion' block, which also receives R̃_c (a representation derived from the query R_t) and combines them. The fused output is then fed into the 'Query-Centric Cognition' module.\n\nWithin 'Query-Centric Cognition', the fused representation R̃_v is processed alongside R̃_c through a temporal-channel filtration layer, followed by sigmoid activation functions (σ). The outputs are then combined via element-wise multiplication (⊙) with R̃_v, and further processed through self-attention to generate the final multimodal representation R̃_m.\n\nThis R̃_m is then used by the downstream tasks. On the right side, it feeds into a 'Multi-modal Encoder', which connects to a 'Text Decoder' for generating step captions. Additionally, R̃_m is sent to 'Multi-task Prediction Heads' to predict start and end frames for moment retrieval and segmentation. The entire central processing pipeline is enclosed within a dashed box labeled 'Query-centric Audio-visual Cognition Network'.\n\nArrows indicate data flow: blue for visual, green for audio, orange for text/query, and purple for internal cognition pathways. The connections are directional, showing the progression from raw inputs to refined representations and finally to task outputs. The figure emphasizes a shallow-to-deep cognitive hierarchy, integrating modalities at multiple levels before producing query-aligned representations for multi-task learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

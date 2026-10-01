@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501520",
+  "record_sha256": "05e082e35ed0748db861888049942145b118138414019346489a401723f15691",
+  "asset_sha256": "7d6b403bd85aea1bd4379999ee103dd59b31a21e3068d1c5e2c9bffac8607efd",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501520",
+    "title": {
+      "zh": "BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings · 方法图",
+      "en": "BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings"
+    },
+    "paper": {
+      "id": "arxiv-2412-12918",
+      "title": "BOIDS: High-dimensional Bayesian Optimization via Incumbent-guided Direction Lines and Subspace Embeddings",
+      "authors": [
+        "Lam Ngo",
+        "Huong Ha",
+        "Jeffrey Chan",
+        "Hongyu Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12918",
+      "arxiv_url": "https://arxiv.org/abs/2412.12918",
+      "arxiv_id": "2412.12918",
+      "arxiv_first_submitted_at": "2024-12-17T13:51:24Z",
+      "arxiv_updated_at": "2024-12-17T13:51:24Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501520/image/image.jpg?Expires=1790835197&Signature=FT4tHzhFK3K2QQEwIqqagsI-nDeuxwuvnwxLtCSBB~0uRzNgyz5eDiqa9NJT08OyfwWoekTSuAeVfPP6b32upCoHW~L4H2zjB7U1WJI49UHKE4cn6U~VbKo-gInWMfCn94FNCDtFIGd~ZZgf3uNDURPwIKZVFoDzLkwEDv4BzsdlQEF~BsfIMsljZklp7GK23OZLCl0oB6FoW24HK00ue34pPOlB89U7O7gZ1BDWyg1URK3jUwbA04XDekb5jtNVEEXaBF6xLl4Gg7~bEQuNqtLfRn4zJZb8M7GL1ZrEIXtdq3FeyzHcbjET675PykyRp82eRguDcoX0bJBwwKOAyg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501520,
+      "description_sha256": "f44c7151b4b552d9a0c87e52a0f086721d28655b1d72588facab3b7307f162d4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "conceptual",
+      "types": [
+        "conceptual"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the four-stage workflow of the proposed PSBO algorithm, presented sequentially from left to right. The overall layout consists of four rectangular panels, each labeled with a step number and title: (1) Incumbent-guided Lines, (2) Optimal Line Selection, (3) Line-based Optimization, and (4) Subspace Embedding. These panels are connected by solid blue arrows indicating the forward progression of the algorithm, with a dashed blue arrow linking panel (3) to (4), suggesting an optional or subsequent enhancement step.\n\nIn panel (1), a 2D scatter plot shows data points: red stars represent global incumbents, purple stars represent personal incumbents, and blue circles denote points along lines. Three blue lines are drawn through these points, forming a triangular region. A legend in the lower-right corner identifies the blue lines as 'L(ˆx, v)', the purple stars as 'personal', and the red stars as 'global'. This stage constructs lines guided by the incumbent solutions.\n\nPanel (2) continues the 2D plot, now showing three dotted lines: one orange, one light blue, and one purple, each representing a candidate line. The legend indicates the orange line as 'optimal L', while the purple and red stars remain labeled as 'personal' and 'global', respectively. This stage selects the optimal line using a Thompson Sampling Multi-Armed Bandit (MAB) strategy, with the orange line being chosen as the best.\n\nPanel (3) displays a simplified 2D plot with only the selected orange dashed line, which now serves as the search direction. A new red dot labeled 'x_next' appears near the line, indicating the next point to be evaluated. The legend includes 'x_next' (red dot), 'personal' (purple star), and 'global' (red star), showing the updated state after optimization along the selected line.\n\nPanel (4) shifts to a conceptual diagram. It features two dark blue rectangles: the top one labeled 'Subspace A' and the bottom one unlabeled but larger. A blue arrow labeled 'Increase dimension' points from the top rectangle to the bottom, illustrating the subspace embedding process that expands the dimensionality of the search space to improve algorithmic performance. This final stage enhances the optimization by operating in a higher-dimensional embedded subspace."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

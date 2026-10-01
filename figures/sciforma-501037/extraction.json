@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-501037",
+  "record_sha256": "fb78ad97f96b849939462f49496307987b66c7814da9efeebf39d33b7c8df6a4",
+  "asset_sha256": "a741f0d784178d140c52c33cf3282ae46b0c90eaaed3a570ba97e89eb7da4803",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501037",
+    "title": {
+      "zh": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks · 方法图",
+      "en": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks"
+    },
+    "paper": {
+      "id": "arxiv-2412-12194",
+      "title": "BlockDoor: Blocking Backdoor Based Watermarks in Deep Neural Networks",
+      "authors": [
+        "Yi Hao Puah",
+        "Anh Tu Ngo",
+        "Nandish Chattopadhyay",
+        "Anupam Chattopadhyay"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_url": "https://arxiv.org/abs/2412.12194",
+      "arxiv_id": "2412.12194",
+      "arxiv_first_submitted_at": "2024-12-14T06:38:01Z",
+      "arxiv_updated_at": "2024-12-14T06:38:01Z",
+      "arxiv_subjects": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501037/image/image.jpg?Expires=1790835183&Signature=JHW0wKI6YHMKVmXnhZ5kAkGtu~fzcYeKRsyDUuail-LA11b-iQCiCyreFi9HoMZkbeNxXEvxDttlvSM27AWSqxo9X9Vnb8-xyJ6cRBVU7Rr-YoXygYKutx53MY3L5jrT081ozq9gw8e4ZMuNulfqthEwfia0TUy3Dq2934hu9ujVJzmiPitGwn1tROGQLoJOVEtvjiqgFw2l3AvJxP5hCV4J~AbGcmx0wSL-oVwtcK1i7IF05sNKRIEZZWmOIcdDN2I6ZH1QRm5qQI5TFLtE5yvIvitRA07nYy0Q9yowWMdRGSh5iG2wmv1ApIPIe7CzYVbHIdMDkH8CROEW1WV0oA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501037,
+      "description_sha256": "9444d675a249788c32808c61b5603a2f7b8ccb70388b4b35f981c59f45a777db",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the BlockDoor architecture, which employs a Wrapper function designed to detect and eliminate trigger samples containing adversarial noise before they reach a potential watermarked model. The global layout is a rectangular box labeled 'Wrapper' that encapsulates the entire processing pipeline. The flow begins from the left with an 'Input' arrow entering the wrapper, leading to a red rectangular module labeled 'Modified ResNet'. This module processes the input and produces one of two outputs: if the output is an adversarial image (indicated by a small blurred image thumbnail and the label 'Output is Adv Image'), a red arrow branches upward to a second red rectangular module labeled 'Autoencoder'. The Autoencoder then reconstructs the image, producing a 'Reconstructed Image' (shown as a slightly clearer thumbnail), which is fed via a red arrow into the next stage. If, instead, the Modified ResNet outputs a normal image (indicated by a clear fish image thumbnail and the label 'Output is Normal Image'), a teal-colored arrow proceeds directly to the next module. Both paths converge at a purple rectangular module labeled 'Potential Watermarked Model', which receives either the reconstructed image or the original normal image. From this module, a black arrow leads to the right, labeled 'Label', indicating the final classification output. The decision point between the two paths is marked with the word 'if', signifying a conditional routing based on whether the output from Modified ResNet is adversarial or normal. The visual modules are color-coded: Modified ResNet and Autoencoder are red, the Potential Watermarked Model is purple, and the conditional path is teal. All text labels are in black sans-serif font, except for 'Input' and 'Label', which are in red. The figure's purpose, as stated in the caption, is to depict a system that detects adversarial noise and mitigates its impact by reconstructing corrupted images before they are processed by a potentially watermarked model."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

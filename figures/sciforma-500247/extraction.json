@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-500247",
+  "record_sha256": "315736cda1ce68a73a64443eb48d453001c4f31e7e7c95877936487b221fc026",
+  "asset_sha256": "1b85d50551fbf84fcee22919af2aa9ecd14984e18c45fa785452c843e12d4905",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500247",
+    "title": {
+      "zh": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation · 方法图",
+      "en": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11014",
+      "title": "CoopetitiveV: Leveraging LLM-powered Coopetitive Multi-Agent Prompting for High-quality Verilog Generation",
+      "authors": [
+        "Zhendong Mi",
+        "Renming Zheng",
+        "Haowen Zhong",
+        "Yue Sun",
+        "Seth Kneeland",
+        "Sayan Moitra",
+        "Ken Kutzer",
+        "Zhaozhuo Xu Shaoyi Huang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11014",
+      "arxiv_url": "https://arxiv.org/abs/2412.11014",
+      "arxiv_id": "2412.11014",
+      "arxiv_first_submitted_at": "2024-12-15T01:58:10Z",
+      "arxiv_updated_at": "2025-06-06T01:25:37Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500247/image/image.jpg?Expires=1790835164&Signature=GrQjAa76qPu8eX5IED0OH82gNXGa6DHDp8yaHVSF-4AIpdsVg0ApVoeXWXe-0ARf9Phr9yBflUTrGa39SdR~bHrwua80cLzjyTBxUC0IH5Kw1aUcQd2HM6loVaPS6-zV5tHLocb5Xtj96kx4O~6ozW8R5nBWHIgaYAKaxhwDTVl7g07LNq80ImKK23RBHnJWxcZOkJfGWFHMzoCJsecvzybMuDHGTI4OSayLw9NH-Lsogukqf6BBfP4hEsYNcImJQc3YrOefXCkMD-it0F-66GvpShIG8T6Udni2umeIR8vgtKHklAa6R1K9YgIe61mm-8VPO4FGxRCrVdJ-WAICXw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500247,
+      "description_sha256": "752e497f879e88ebb2791b84f196e79954661f96e5a59e50d39ac6b9989506e2",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two distinct LLM-based multi-agent frameworks for Verilog code generation: (a) a cooperation-only mechanism and (b) a coopetitive mechanism. Both diagrams are enclosed within dashed green borders and depict a workflow involving multiple agents interacting through feedback loops and code simulation.\n\nIn both panels, the process begins with a 'Revision Agent' (represented by a graduate student icon inside a light green rounded rectangle) generating initial Verilog code. This code is then sent to a 'Testbench Simulator' (symbolized by a gear and circuit icon), which executes the code and returns results. In panel (a), if errors are detected, they are propagated back to a 'Correction code' box (white rounded rectangle with a red 'X' and red arrow labeled 'Errors Propagated'). The 'Research Agent' (a person at a computer, in an orange rounded rectangle) reviews the erroneous code and provides feedback to the Revision Agent, suggesting revisions. However, this feedback leads to a cycle where errors persist, indicating the limitation of pure cooperation.\n\nPanel (b) introduces a 'Prosecutor Agent' (a judge-like figure in a blue rounded rectangle) to enhance the process. After the Research Agent provides feedback to the Revision Agent, the Prosecutor Agent evaluates the suggested revision and may disagree, offering an alternative revision method. This refined method is then fed back to the Revision Agent, who revises the code accordingly. The revised code is again tested via the Testbench Simulator. If errors remain, the Correction code box shows them, but now with a green checkmark and label 'Errors Corrected', indicating successful resolution. The visual elements include agent icons, color-coded boxes (orange for Research Agent, blue for Prosecutor Agent, green for Revision Agent, white for Correction code), and arrows labeled 'Feedbacks', 'Code', 'Error', and 'Refined method'. Each agent box contains sample Verilog code snippets, such as 'module accu (input clk, ... end end)', with syntax highlighting (e.g., 'endmodule' in green). The figure uses consistent visual cues: red 'X' for errors, green checkmarks for corrections, and black arrows for data flow. The overall layout is horizontal, showing a step-by-step progression from code generation to testing and refinement, with panel (b) adding a critical evaluation layer to improve accuracy."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

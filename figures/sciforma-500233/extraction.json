@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500233",
+  "record_sha256": "868c2f32bd7add35db799bca0cc9deb2427526e7b454666aa402edf500ac565b",
+  "asset_sha256": "2cc49a753a71aca182afbb3bba4de984df82abf2845ea266a11d7e7f2545ecb4",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500233",
+    "title": {
+      "zh": "Entropy-Regularized Process Reward Model · 方法图",
+      "en": "Entropy-Regularized Process Reward Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-11006",
+      "title": "Entropy-Regularized Process Reward Model",
+      "authors": [
+        "Hanning Zhang",
+        "Pengcheng Wang",
+        "Shizhe Diao",
+        "Yong Lin",
+        "Rui Pan",
+        "Hanze Dong",
+        "Dylan Zhang",
+        "Pavlo Molchanov",
+        "Tong Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11006",
+      "arxiv_url": "https://arxiv.org/abs/2412.11006",
+      "arxiv_id": "2412.11006",
+      "arxiv_first_submitted_at": "2024-12-15T01:09:23Z",
+      "arxiv_updated_at": "2025-09-18T22:47:30Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500233/image/image.jpg?Expires=1790835164&Signature=TBAy8qzCVKAApr89NngrHWYhXRy8lZcaCE79X9WEivCKhOGUjpRtnz7~h34ZHa8-QerELsysebGVwK4Q1O7TbeDV1Hf6znmXnNDrXLFffwDCErchAK9sNOGyE-E8uoNYlv0Tpfbqu1pLkaQhZZLgYSR5-1odcDqzOjEjiTSbB9kN05KNnV7tr9a33x4EPUemnsoJjjwqyWSaIfMr1Riil9xj-qox3a8kZMKeu-mvkikEodXOoKfHzXG-tZaZGGbZo7oEQQbCavmA8~7E4P8O~nhIACgbQReWTSbR7DhbM~qRXRGVefsEaX85GO1n-dSOpuoWw93HlHGjStQ~-JOwSg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500233,
+      "description_sha256": "54a079559b7e29834ffbf841bb80d98973d278e8bf4e3fd78a9387d25807655f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a three-phase experimental pipeline for training and evaluating reward models in mathematical reasoning tasks. The overall layout is divided into three vertical columns, each representing a distinct phase: Phase 1: Process Reward Data Construction, Phase 2: Process Reward Model Training, and Phase 3: Evaluation. Each phase is enclosed in a rectangular box with a red header, and internal components are organized hierarchically using colored boxes, numbered steps, and labeled modules.\n\nIn Phase 1, the process begins with two generator and completer models—Mistral-MetaMath-7B and Deepseek-Math-Instruct-7B—alongside two datasets: GSM8K and MATH, represented by pink oval shapes. These inputs feed into a three-step data construction workflow. Step 1 (red circle labeled '1') involves generating 15 solutions per problem with step-by-step reasoning. Step 2 (red circle labeled '2') performs path completion by generating 16 possible completion paths for each step toward the final answer. Step 3 (red circle labeled '3') calculates rewards using Hard-Label, Soft-Label, or ER-PRM methods to select appropriate rationales as answer candidates. The output splits into two green boxes: Mistral-Data (collected using Mistral-MetaMath-7B) and Deepseek-Data (collected using Deepseek-Math-Instruct-7B), which then feed into Phase 2.\n\nPhase 2 focuses on reward model training. It starts with Base Model Selection (blue box), specifying Llama-3.1-8B for main experiments and Llama-3.2-1B/3B for scale analysis. Training Configuration (blue box) lists parameters: batch size 64, learning rate 1e-6, max sequence length 512, and 4 x H100 GPUs, with η set to 2 for Mistral data and 10 for Deepseek data. Hyperparameter Tuning (blue box) uses grid search over η ∈ {0.1, 1, 2, 5, 8, 10, 15} and learning rates ∈ {5e-6, 2e-6, 1e-6, 5e-7}. Below this, a yellow section labeled Baselines lists three comparison methods: A) ORM – Outcome Reward Model; B) Hard-Label PRM – labeling by final answer correctness; C) Soft-Label PRM – labeling by probability of reaching correct answer, each marked with a yellow circle containing a letter.\n\nPhase 3 presents evaluation methods. Bset of N Evaluation samples N solutions and selects the highest-scoring response using the trained reward model, evaluating accuracy directly. RLHF optimizes a policy model via rejection sampling fine-tuning with trained reward models, assessing performance gain. Out-of-Distribution & Scale Analysis tests on stronger models (DeepSeek-Math-7B-RL, OpenMath2-Llama3.1-8B) and evaluates across different model sizes (1B, 3B, 8B). A Notes section (yellow box) clarifies that all experiments are evaluated on GSM8K and MATH test sets, and results are reported as mean ± standard deviation from five runs on seeds {0, 1, 2, 3, 42}.\n\nConnections between phases are indicated by arrows: from Phase 1’s data outputs to Phase 2’s training, and from Phase 2 to Phase 3’s evaluation. Internal flows within each phase are shown with downward arrows between steps. All text is clearly legible, with consistent color coding: blue for configuration, pink for processing steps, green for data outputs, and yellow for baselines and notes. The diagram is structured to reflect a clear, sequential workflow from data generation to model training to evaluation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

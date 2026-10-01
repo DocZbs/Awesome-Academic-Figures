@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-501718",
+  "record_sha256": "92c0be703d68fca22f974e037850b73fbbc04f9337b2fef040eabc2a13a35cea",
+  "asset_sha256": "8820f11956c9d4b4054380855130d711896f4c8c27ff0e0c1d66f4a4ec5ce275",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501718",
+    "title": {
+      "zh": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild · 方法图",
+      "en": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild"
+    },
+    "paper": {
+      "id": "arxiv-2412-13393",
+      "title": "MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild",
+      "authors": [
+        "Muhammad Usama Saleem",
+        "Ekkasit Pinyoanuntapong",
+        "Mayur Jagdishbhai Patel",
+        "Hongfei Xue",
+        "Ahmed Helmy",
+        "Srijan Das",
+        "Pu Wang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_url": "https://arxiv.org/abs/2412.13393",
+      "arxiv_id": "2412.13393",
+      "arxiv_first_submitted_at": "2024-12-18T00:10:00Z",
+      "arxiv_updated_at": "2025-03-19T14:49:31Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501718/image/image.jpg?Expires=1790835200&Signature=PBtbNrHA~EbRSdsuECbKXJNcsuq7gOwxcP5LcuM3cPustUHbVMQ002KZCUJatUmXuJtb-w-~YaWH1alaGdBVArGQp64SCwhFbHWdKjFCaWrQ845zJVTj8cvaThRI9Ogq97aSrdphwgiuJGG0h~tiqkf8qmuhqR4qQP1TR9QI-oF~fQEq9Tuwju5kInAipLRwBpMP9khEsKNbnidNavyyjeuUAaK3mp3iVrL2yxmaqVVRM5we9Mu1QttAECGePP3SJQWqeFuMsLATGDpXNJzb2nqAo-rDRWeeFKZ~zp04dQ9Wwr0AMtnYsd7-CRzHKAvaXUXx79cyrbcKmy9aRrJzgw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501718,
+      "description_sha256": "14e0887406c4fc43bc5a5478d399dcc1e6311a773a6cfe570242aac59e06787e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the inference phase of the MaskHand framework, specifically the 'Iterative Confidence-Guided Sampling' process. The global layout is horizontal and sequential, depicting a multi-step refinement pipeline that progresses from an initial input to a final hand pose output. The process is divided into two main stages: an initial Q₁ step and subsequent T iterations, culminating in a final Q_T step. At the top, a legend defines visual elements: a salmon-colored square represents 'Mano Pose', a light blue square denotes '2D Pose', a black square indicates 'Mask', a gray square with a question mark signifies 'Low Confidence', and a blue snowflake icon marks a 'Frozen Network'.\n\nThe workflow begins at the bottom left with an 'Input' image showing a hand holding a red object. This input feeds into the first stage, labeled 'Q₁ step', where a sequence of five tokens (2, 9, 4, 1, 3) is processed by a 'Context Guided-Masked Transformer' module. This module is represented as a rounded rectangle with a light gray fill and a blue snowflake icon, indicating it is a frozen network. Below this transformer, a sequence of five black squares labeled 'M' (for mask) is shown, signifying that all tokens are masked initially.\n\nThe process then proceeds through 'T iterations', indicated by a dotted line connecting the first and last stages. In each iteration, the same 'Context Guided-Masked Transformer' is applied, but now the masking is adaptive. For example, in the final 'Q_T step', the input token sequence is [2, ?, 4, ?, 3], where '?' represents low-confidence tokens. These low-confidence tokens are masked out via 'Confidence-based Masking', resulting in a refined token sequence [2, M, 4, M, 3] (where 'M' again denotes mask). The masked tokens are replaced with high-confidence predictions from previous steps, such as '1' and '6' in the intermediate sequence [2, 1, 4, 6, 3].\n\nThe refined token sequence from the final iteration is passed to a 'VQ Decoder', depicted as a vertical white rectangle with a blue snowflake icon, also indicating it is a frozen network. The decoder outputs the final hand pose, denoted as θ', which is visually represented as a grayscale 3D hand model. The entire process emphasizes iterative refinement, where confidence scores guide the unmasking of tokens, allowing the model to progressively recover accurate Mano poses while suppressing uncertain predictions. The figure's title, 'Iterative Confidence-Guided Sampling', underscores the core mechanism: using confidence estimates to selectively sample and refine pose tokens over multiple steps."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

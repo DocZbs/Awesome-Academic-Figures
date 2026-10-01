@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Learning Complex Word Embeddings in Classical and Quantum Spaces — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13745
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents three distinct architectural diagrams illustrating different implementations of the Skip-gram model, arranged side-by-side from left to right. The global layout is divided into three main sections: the original Skip-gram model on the left, a unitary implementation in the upper right, and a quantum circuit-based binary representation in the lower right. Each section is self-contained and labeled accordingly.
+
+In the leftmost diagram, representing the original Skip-gram model, a one-hot representation of a word vector |w_i> is input into a rectangular module labeled 'Proj(θ)', which projects the input into a continuous space. From this module, four directed arrows branch out to separate output vectors labeled w_{i-2}, w_{i-1}, w_{i+1}, and w_{i+2}, each represented as a vertical bar with a single black segment indicating the active dimension. This structure visually conveys the model’s goal of predicting context words given a central word.
+
+The upper right diagram illustrates a unitary implementation. It begins with a one-hot representation |w_i> of size [|V|,1], which is fed into a square module labeled 'Û(θ)', representing a unitary transformation parameterized by θ. The output is another vector of size [|V|,1], expressed as the sum over j in context(i) of c_j |w_j>, indicating a linear combination of context word vectors. The dimensions of the input, transformation, and output are explicitly annotated below each component.
+
+The lower right diagram shows a quantum circuit implementation using a binary representation |b_i>. Two parallel quantum circuits are depicted, each consisting of multiple qubits (represented as horizontal lines) initialized with black triangles (possibly denoting initial states or inputs). The circuits include a series of gates: the first set includes labeled gates such as v_1(θ_1), v_6(θ_6), etc., followed by a repeated block labeled 'x N_l' containing additional gates. The final stage features measurement operations symbolized by stylized 'A' shapes. The output probability for each bit b_j is given by P_{b_j} = |c_j|^2. Below the circuits, annotations specify N_q = log(|V|) for the number of qubits, and the central block is labeled 'PQC(log(|V|), N_l)', indicating a Parameterized Quantum Circuit with log(|V|) qubits and N_l layers. The entire structure is enclosed in dashed boxes to group related components.
+
+Connections between modules are shown via solid black arrows, indicating the direction of data flow. In the left and upper right diagrams, these are simple feed-forward connections. In the quantum circuit, connections are implicit in the circuit layout, with wires carrying qubit states through successive gates. The figure uses consistent visual elements: rectangular blocks for classical modules, horizontal lines for quantum wires, and specific symbols for gates and measurements. Text labels are placed adjacent to components to denote their function, parameters, or dimensions. The overall design emphasizes the evolution from classical to quantum-inspired representations of the Skip-gram model.

@@ -5,6 +5,9 @@ export const TYPE_LABELS = {
   qualitative: "定性对比图",
   data: "数据图",
   "multi-panel": "多面板组合图",
+  taxonomy: "分类与层级图",
+  teaser: "首图与研究概览",
+  unclassified: "待分类",
 };
 export const PURPOSE_LABELS = {
   "method-overview": "方法介绍",
@@ -30,11 +33,17 @@ export const DIMENSIONS = {
   source: "论文来源",
 };
 export const FILTER_FIELDS = {
+  award: {
+    label: "论文标签",
+    options: [{ value: "awarded", label: "获奖论文" }],
+  },
   number: {
     label: "图号",
     options: [
       { value: "1", label: "Figure 1" },
       { value: "2", label: "Figure 2" },
+      { value: "leading", label: "论文首图 / Teaser" },
+      { value: "unverified", label: "图号待核" },
     ],
   },
   layout: {
@@ -55,6 +64,7 @@ export const FILTER_FIELDS = {
   year: { label: "论文年份", options: [{ value: "2025", label: "2025" }] },
 };
 export function valuesFor(figure, field) {
+  if (field === "award") return figure.paper.awards?.length ? ["awarded"] : [];
   if (field === "type")
     return figure.classification.types.flatMap((value) =>
       ["line", "bar", "scatter", "heatmap"].includes(value)
@@ -64,7 +74,14 @@ export function valuesFor(figure, field) {
   if (field === "purpose") return figure.classification.purposes;
   if (field === "layout") return figure.classification.layouts;
   if (field === "source" || field === "venue") return [figure.paper.venue];
-  if (field === "number") return [String(figure.source.number)];
+  if (field === "number")
+    return [
+      figure.source.number
+        ? String(figure.source.number)
+        : figure.source.number_status === "source_index_leading_figure"
+          ? "leading"
+          : "unverified",
+    ];
   if (field === "year") return [String(figure.paper.publication_year)];
   return [];
 }
@@ -89,6 +106,57 @@ export function assetUrl(figure, field) {
   return /^https?:\/\//.test(path)
     ? path
     : `${import.meta.env?.BASE_URL || "/"}${path}`;
+}
+export function figureLabel(figure) {
+  if (figure.source.number) return `Figure ${figure.source.number}`;
+  return figure.source.number_status === "source_index_leading_figure"
+    ? "论文首图 / Teaser"
+    : "方法图 · 图号待核";
+}
+const detailCache = new Map();
+export async function loadFigureDetails(figure, options = {}) {
+  if (figure.analysis_text && figure.prompt_text && figure.agent_text)
+    return figure;
+  if (detailCache.has(figure.id)) return detailCache.get(figure.id);
+  const fullMetadata = figure.assets.metadata
+    ? fetchResource(assetUrl(figure, "metadata"), options).then(
+        async (response) => {
+          const text = await response.text();
+          const hash = await crypto.subtle.digest(
+            "SHA-256",
+            new TextEncoder().encode(text),
+          );
+          const checksum = [...new Uint8Array(hash)]
+            .map((value) => value.toString(16).padStart(2, "0"))
+            .join("");
+          if (checksum !== figure.metadata_sha256)
+            throw new Error("Figure metadata changed; reload catalog");
+          const metadata = JSON.parse(text);
+          if (metadata.id !== figure.id)
+            throw new Error("Figure metadata identity mismatch");
+          return metadata;
+        },
+      )
+    : Promise.resolve(figure);
+  const textContents = Promise.all(
+    ["analysis", "prompt", "agent"].map(async (field) => {
+      const response = await fetchResource(assetUrl(figure, field), options);
+      return [field + "_text", await response.text()];
+    }),
+  );
+  const [metadata, results] = await Promise.all([fullMetadata, textContents]);
+  const details = {
+    ...metadata,
+    ...figure,
+    paper: { ...metadata.paper, ...figure.paper },
+    source: { ...metadata.source, ...figure.source },
+    rights: { ...metadata.rights, ...figure.rights },
+    curation: { ...metadata.curation, ...figure.curation },
+    original_assets: metadata.original_assets || figure.original_assets,
+    ...Object.fromEntries(results),
+  };
+  detailCache.set(figure.id, details);
+  return details;
 }
 export function normalized(value) {
   return value.normalize("NFKC").toLocaleLowerCase("zh-CN").trim();
@@ -124,6 +192,8 @@ export function filterFigures(figures, state, favorites, hidden) {
         figure.paper.venue,
         figure.paper.publication_year,
         ...figure.classification.search_aliases,
+        ...(figure.paper.awards || []).map((award) => award.official_name),
+        ...(figure.paper.awards?.length ? ["获奖论文"] : []),
         ...figure.classification.types.map((key) => TYPE_LABELS[key] || key),
       ].join(" "),
     );

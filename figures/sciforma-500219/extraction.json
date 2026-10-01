@@ -1,0 +1,84 @@
+{
+  "id": "sciforma-500219",
+  "record_sha256": "65a8ec83d5538db83601abc7eed61bacd52c1b469922c48cf863139873ef3837",
+  "asset_sha256": "92e4b869506fb6fac25b89e8684d6bc3fbdbd4c4c83150cc0b1197b506760ab8",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500219",
+    "title": {
+      "zh": "Can LLMs Help Create Grammar?: Automating Grammar Creation for Endangered Languages with In-Context Learning · 方法图",
+      "en": "Can LLMs Help Create Grammar?: Automating Grammar Creation for Endangered Languages with In-Context Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-10960",
+      "title": "Can LLMs Help Create Grammar?: Automating Grammar Creation for Endangered Languages with In-Context Learning",
+      "authors": [
+        "Piyapath T Spencer",
+        "Nanthipat Kongborrirak"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10960",
+      "arxiv_url": "https://arxiv.org/abs/2412.10960",
+      "arxiv_id": "2412.10960",
+      "arxiv_first_submitted_at": "2024-12-14T20:43:12Z",
+      "arxiv_updated_at": "2024-12-14T20:43:12Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500219/image/image.jpg?Expires=1790835164&Signature=r453u6Drpo2zIvu6w220rHLrBa2QOLi0gSDMbZoC69CmhPXoLu69gChUMecGnTxFpM0de6fpDEubD92uz6v68GxsDQD-RwNObTGcUd6~SblRwqLDjZpA2WBOiHtZPQz1Zu0rP7YNemwzelRKXO7AarLDNtLesJ5KKDQFtJU2ZlvLB08KO3o3Et2vkjnLAa8U1z1QGlExmVxCiFwWFn6G0mzPjGpsZItAGTGqYSzGnYGD7tiQS3yj9o9mTkSwY4M9-J0cg-LVAHNnUoNyP-sOdjkVuk~9~oI~Uz-6RSU5TDVrm~SNYF9cW3VtCAEYh6CY8UzOtjEMZ0YdMFPkWb5m4g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500219,
+      "description_sha256": "d48961cab44ac3180aab1bf5427cc7e1503cdffa7b11018646bb169192c49428",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-stage natural language processing pipeline designed for cross-lingual text generation using a large language model (LLM), specifically applied to a Thai-English bitext example. The global layout is vertically structured, progressing from top to bottom, with numbered steps indicating the sequential flow of data transformation. At the top, an English sentence 'I am making a white sea bass curry this evening' is paired with its Thai translation 'เวลาเนี้ยจิเบาะห์ซอบายกานกีพงปูเตียก'. A large blue downward arrow directs the input into step 1, labeled 'Tokeniser', which breaks the Thai sentence into individual tokens: 'เวลา', 'เนี้ย', 'จิ', 'เบาะห์', 'ซอบาย', 'กาน', 'กีพง', 'ปูเตียก', displayed in a horizontal rectangular box. Step 2, 'Sense Mapping', is indicated by bidirectional blue arrows linking each Thai token to its corresponding semantic or grammatical sense in English: 'evening', 'this', '1sg', 'do', 'curry', 'fish', 'sea bass', 'white'. These senses are aligned directly beneath the Thai tokens. Step 3, 'Concat as String', combines these mapped senses into a single linear string: 'evening this 1sg do curry fish sea bass white', shown below the alignment. This concatenated string then flows via a curved blue arrow into step 4–5, labeled 'LLM Generation', represented by a stylized neural network icon composed of interconnected black and light-blue nodes. From this LLM module, two blue arrows diverge: one points leftward to a yellow-labeled box titled 'Grammar & Lexicon', suggesting the output is used to refine linguistic resources; the other loops back upward along the right edge of the diagram, forming a feedback path that implies iterative refinement or continuous learning. The entire process is framed within a thick blue border, emphasizing it as a complete system. The caption clarifies that this procedure is applied to each sentence pair in a bitext corpus before being fed into the LLM prompt for downstream tasks."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

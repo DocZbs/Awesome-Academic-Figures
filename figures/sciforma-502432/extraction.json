@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502432",
+  "record_sha256": "21e43d3dc470c9edeba98087cbe5f32cfcf4149840c43cfc57c7b8e8caaa7eef",
+  "asset_sha256": "c398f44293e1f03c92e54534846b3daba6c56ff5800d810b06f889c4e9d40e42",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1280,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502432",
+    "title": {
+      "zh": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection · 方法图",
+      "en": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-14522",
+      "title": "CwA-T: A Channelwise AutoEncoder with Transformer for EEG Abnormality Detection",
+      "authors": [
+        "Youshen Zhao",
+        "Keiji Iramina"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14522",
+      "arxiv_url": "https://arxiv.org/abs/2412.14522",
+      "arxiv_id": "2412.14522",
+      "arxiv_first_submitted_at": "2024-12-19T04:38:34Z",
+      "arxiv_updated_at": "2024-12-24T00:56:06Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE",
+        "eess.SP"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502432/image/image.jpg?Expires=1790835221&Signature=CF9dDUtMs5rUGurIV3gj2qaSksW5mNthiX9BRpB5lMX1rR3hvdP2Wc6K6kbAftEX2xKrigmBPTrLxk4wBhQKFctA7QDZUaXFDc~rejvKJR2ptuVURPiJqFhnIj5MIVIWlNpZmkWliXxX-sbUNcbjdX~VrpeN-hc7GR0-JVx0MOkMTLZrCB8arJXVcv8vvTmXCkSuvsTOeDiDeoIaj8jsbLDQ8U2XcaytZigC9Ovk12PlJ6oUbQygDzfVU8xTdezkZyEoX5M5FXUZcbivjcgSIuaUeO4zMYF8c9sbLyLuW~fz3MOqfhtzx9pq-DW1ETg7BZiq4uMXTO2Lk5AtiW2lig__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502432,
+      "description_sha256": "5e104578858b5fa43a846762b28dfb673231100d9267422eb215bd4a1293d4c5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE",
+        "eess.SP"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a schematic overview of a channelwise autoencoder architecture designed for processing EEG data. The global layout is vertically structured, depicting a sequential flow from top to bottom: an input feature map F from the k−1th layer, a central processing block, and an output feature map G from the k−th layer. The entire diagram is enclosed within a clean, rectangular boundary with rounded corners, emphasizing a modular and hierarchical design.\n\nAt the top, the input feature map F is represented as a large rounded rectangle containing a list of channels labeled Channel 1 through Channel C, with ellipsis indicating intermediate channels. Each channel is visually depicted as a distinct, colored, wavy rectangular block—Channel 1 in purple, Channel 2 in yellow, Channel 3 in green, and Channel C in pink—symbolizing individual EEG channel data. These blocks are arranged horizontally, slightly overlapping, to suggest parallel processing while maintaining visual separation.\n\nThe central processing block is a larger rounded rectangle encompassing two main components: a 1D convolutional layer and an Add&LayerNorm module. The 1D convolutional layer is specified with 'groups=C', indicating grouped convolutions where each group corresponds to one channel, ensuring channel-wise independent processing. This component is shown as a rounded rectangle with bold black text. Below it, the Add&LayerNorm module is similarly styled, representing the residual connection and normalization step. A bidirectional arrow connects these two modules, signifying a feedback or residual loop between them, which is typical in transformer-like or residual network architectures.\n\nA vertical arrow descends from the input feature map to the 1D convolutional layer, indicating the forward pass. From the Add&LayerNorm module, another arrow points downward to the output feature map G, which mirrors the input structure: a rounded rectangle listing Channel 1 to Channel C with corresponding colored wavy blocks, identical in style to the input but possibly reduced in size to reflect downsampling.\n\nOn the right side of the diagram, a horizontal line extends from the input feature map, labeled 'Downsample' along its length, and connects to the Add&LayerNorm module. This represents a skip connection or shortcut that performs spatial downsampling on the input before adding it to the processed output, preserving spatial information while reducing dimensionality.\n\nThe bottom of the diagram includes a caption stating 'Output feature map G from k − th layer', mirroring the top caption 'Input feature map F from k − 1th layer'. The overall color scheme is minimalistic, using black outlines and text with pastel-colored blocks for channels, enhancing clarity and focus on the architectural flow. The design emphasizes channel-wise independence, computational efficiency, and alignment with EEG data structure, as described in the figure caption."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

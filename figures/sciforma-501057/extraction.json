@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501057",
+  "record_sha256": "0026f085d4e48a0541e1d8618d3c9cf305e669790fe9da0440cc6be29259fe2b",
+  "asset_sha256": "ebaba9b985bee771867e208478d226003cd828381213775e7667dbe33de114bf",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501057",
+    "title": {
+      "zh": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization · 方法图",
+      "en": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12218",
+      "title": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization",
+      "authors": [
+        "Ka Wai Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_id": "2412.12218",
+      "arxiv_first_submitted_at": "2024-12-16T01:57:53Z",
+      "arxiv_updated_at": "2025-02-23T21:26:57Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501057/image/image.jpg?Expires=1790835183&Signature=mSc7N8AzG3cCaFWEXnsh8Ak7tZNgm3ffgE2sjq4UBcX3Fnh33ZsjD2rjkhO-oIgLRGovgGwH7DvY28oTDNRsv1JutK6CNMY6zt69vJcL7EYfGbRoV~O9qJordUfSun2fQ4UrImLTaWsbsnAIKQcSKn-w0opzC8ttZWNja0KHq~3FQsgjaDT5U6W4VCP7VtXWLmaBhO2Dw985ywGI9rBP8yyCbG7vYXsrspmWhuC5qp5b5QsY-9b04rWME0Yd04Zvjwae3NNDdXqrgFlVD4sSaQNItRS-6KlXCSugxGs1P7ndked7UWDRLLGC6Pc7Tg4xi5S8LE9sKRw7pI0HaAQr~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501057,
+      "description_sha256": "71d6dab5b92da79e01c4251f49db7fb9b6074551dcddcd9374c5d741baee2eae",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the computational process of a Graph Neural Network (GNN), structured into two main components: a detailed node-level update mechanism on the left and a high-level stack of GNN layers on the right. The global layout is divided by a dashed rectangular boundary enclosing the node update process, which is shown as a repeated pattern for multiple nodes, while the right side displays a vertical sequence of layers representing the full network architecture.\n\nOn the left, within the dashed box, the node update process is depicted as a two-step procedure labeled with black circular markers '1' and '2'. Step '1', labeled 'Neighbor Aggregation', shows blue circular nodes connected to a central pink or cyan node via arrows pointing toward it, indicating information flow from neighbors. Each incoming neighbor node is associated with a vertical stack of blue rectangles, representing feature vectors. These features are aggregated at the central node, visually represented by an arrow converging into the central node. Step '2', labeled 'Node Update', involves processing the aggregated features through a small neural network module shown as a green rectangle containing interconnected white circles (representing neurons) with black lines between them. This module outputs a new feature vector, shown as a vertical stack of pink or cyan rectangles, respectively, corresponding to the updated node representation. This entire node update process is duplicated for two different nodes (one pink, one cyan), demonstrating the parallel computation across nodes in the graph.\n\nOn the right side, outside the dashed box, the overall GNN architecture is presented as a vertical stack of rectangular blocks connected by solid black lines. The stack begins with 'GNN - First Layer' (purple rectangle), followed by a 'ReLU' activation layer (blue rectangle), then 'GNN - Second Layer' (purple), another 'ReLU' (blue), and continues with a dotted line leading to 'GNN - Nth Layer' (purple), indicating multiple intermediate layers. The final block is 'Softmax' (blue), signifying the output layer for classification or probability distribution. A dashed diagonal line connects the node update process on the left to the first GNN layer on the right, indicating that the detailed node-level operations constitute the internal computation of each GNN layer in the stack.\n\nThe visual modules use distinct colors and shapes: nodes are blue circles; updated nodes are pink or cyan circles; feature vectors are vertical stacks of colored rectangles; neural network modules are green rectangles with internal neuron connections; and GNN layers are purple rectangles, while activation functions are blue rectangles. Text labels are placed near relevant components in red or black for clarity. The diagram emphasizes the iterative nature of GNNs, where each layer performs neighbor aggregation and node update operations across all nodes simultaneously, followed by non-linear activation, culminating in a softmax output."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

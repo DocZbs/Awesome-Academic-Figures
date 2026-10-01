@@ -1,0 +1,89 @@
+{
+  "id": "sciforma-501846",
+  "record_sha256": "76b758c589273423c85def79e54c343a6970a4692330b1525385d1b216b531b1",
+  "asset_sha256": "fb75499d7c569127664d2c5d2e7114f8f5486da37a98ea7c09e2621e3c698da1",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501846",
+    "title": {
+      "zh": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement · 方法图",
+      "en": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement"
+    },
+    "paper": {
+      "id": "arxiv-2412-13575",
+      "title": "Generating Long-form Story Using Dynamic Hierarchical Outlining with Memory-Enhancement",
+      "authors": [
+        "Qianyue Wang",
+        "Jinwu Hu",
+        "Zhengping Li",
+        "Yufeng Wang",
+        "daiyuan li",
+        "Yu Hu",
+        "Mingkui Tan"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13575",
+      "arxiv_url": "https://arxiv.org/abs/2412.13575",
+      "arxiv_id": "2412.13575",
+      "arxiv_first_submitted_at": "2024-12-18T07:50:54Z",
+      "arxiv_updated_at": "2024-12-18T07:50:54Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501846/image/image.jpg?Expires=1790835205&Signature=EYlT6512Zl3ADc3-VkorUBlyLqzSKb~QvnOdvz3rDP5cr~LYgQdQw41VotV7matsl2ADZOiJEea~RvDzuSSA0ilMSvOneke-3wAeyjY7adxTvztNxLqyAOz3fesy8Jy13-GXXFUOfMkIOTFSSqlcXKlxDTHqJwAYRLSojadw~hUsMa1QcRT5xKGQVTjylHV8JISXfgHoZ9lj5W4pNcxnMXLOcYAQ2GBtn9NbjZyzCB6J3Gmj4k6RHjqLhNeD-MK6oanlWb2rKdQrt97xXbry7y5jb61-cHWPoqsVaOOLzcZc9Z2QBu7N98V0l5-SJV3WhyvBObLSarROmfXHTn2qnw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501846,
+      "description_sha256": "a8c2e8b2dd843d028c8f01bd6f3482d6dd0740c7ff908133c6a8082c4aad186d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a general architectural diagram of a multi-stage story generation framework, where the process is structured around expanding rough outlines into detailed ones using memory-enhanced content retrieval. The global layout is horizontal and modular, divided into distinct functional blocks connected by directional arrows indicating data flow and processing steps. On the far left, a box labeled 'Relevant content' feeds into a central processing pipeline via a blue arrow, which then branches into an 'Update' and 'Store' operation, suggesting a feedback loop for content management.\n\nAt the top right, a dashed rectangular boundary labeled 'Update' contains a light-blue rounded rectangle labeled 'Calculate the score', which receives input from a list of quadruples <sub_n, act_n, obj_n, idx_n> and outputs a 'score Content'. This scoring mechanism appears to evaluate generated content.\n\nThe core of the diagram is centered around the 'DHO at stage i' block, which stands for Detailed Outline at stage i. This block contains two main components: a blue document-shaped box labeled 'Detailed Outline i' and an orange document-shaped box labeled 'Partial Story s_i^f', containing sample narrative text: 'As he stood in the middle of the room, taking in the blank canvas ...'. An arrow from the 'Detailed Outline i' points to the 'Partial Story s_i^f', indicating that the detailed outline generates the partial story.\n\nTo the left of the DHO block, a vertical stack of boxes lists story elements: 'Setting', 'Characters', 'Outline', and 'Writing Theory', which feed into a sequence of 'Rough Outline i', 'Rough Outline i+1', etc., suggesting iterative refinement. A gray downward arrow connects this stack to the rough outlines, indicating derivation.\n\nBelow the DHO block lies the 'Memory-Enhancement Module', which includes a gray box labeled 'TKG at stage i−1' (Temporal Knowledge Graph), depicted as a network of interconnected blue nodes with one central node. This TKG receives 'relevant content' from the 'Detailed Outline i' via a dashed blue arrow labeled 'query', and also receives updates from extracted quadruples via a solid orange arrow labeled 'update'. The quadruples are listed as <sub_1, act_1, obj_1, idx_1>, ..., <sub_n, act_n, obj_n, idx_n>, and are derived from the 'Partial Story s_i^f' through an 'extract quadruples' step.\n\nOn the far right, a large peach-colored document-shaped box labeled 'Long Story S' contains narrative text, including the same sentence from the partial story and additional text: 'Peering through the peephole, he saw an older gentleman with a friendly smile - his ...'. This indicates that partial stories are aggregated into a complete long story.\n\nArrows connect the 'Partial Story s_i^f' to the 'Long Story S' and also back to the 'Memory-Enhancement Module' for quadruple extraction. Additionally, a dashed blue arrow labeled 'relevant content' loops from the TKG back to the 'Detailed Outline i', forming a feedback loop that enhances the outline with retrieved information. The entire process is iterative, with each stage refining the outline and enriching the memory graph for subsequent stages."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

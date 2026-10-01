@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500426",
+  "record_sha256": "7fa8797a83504f97cfe56e60954814f4c754aecc6459d657eae66744712232f1",
+  "asset_sha256": "152c642018839a7d1ed0120ab1f1a3eb5dd07f27732f1be3d9c6951e651abf52",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500426",
+    "title": {
+      "zh": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers · 方法图",
+      "en": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers"
+    },
+    "paper": {
+      "id": "arxiv-2412-11293",
+      "title": "A Comparative Study on Dynamic Graph Embedding based on Mamba and Transformers",
+      "authors": [
+        "Ashish Parmanand Pandey",
+        "Alan John Varghese",
+        "Sarang Patil",
+        "Mengjia Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11293",
+      "arxiv_url": "https://arxiv.org/abs/2412.11293",
+      "arxiv_id": "2412.11293",
+      "arxiv_first_submitted_at": "2024-12-15T19:56:56Z",
+      "arxiv_updated_at": "2025-05-12T17:41:35Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500426/image/image.jpg?Expires=1790835171&Signature=XgULCn8xJjdzwrsPdLQRWjs0fahzfH3sZDqfI3aX1UHQSwFujkl0wv0dcvSCP7XNeaDJ3Vr01TYEYjpGX3l8LUAgwq78MRYVwWJ-gUFoxDU3QE3DgAFq-i1nyx~-jKzkj0HRBS5bWDGWaYUzZ8ql43VujLwltb5q2RTyENtRQBCSF4t5AsQCjyNSNusNjG54U4PeEFl3Z1NmR4Nvu9dAen2gvkTq0B6Ee6vuE5LfodCi6JqpjPrSiiBV5CJz9Yt5BAvrGFzS~S8TSPupqIkwNshlALEE~DGrqz5Wky~Mhwq4ku1NZ-YnjkFwnp-SzYCRN49IT9jMyyedQTIzU19cWQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500426,
+      "description_sha256": "05b13b6a6f725a0ca3faed61eef0f66834338cf51f1aadc8df5fada30a40c267",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of the GDG-Mamba model, designed for processing dynamic graphs over time. The global layout is left-to-right, depicting a sequential pipeline: input dynamic graph snapshots are processed through a GINE convolution module, then fed into a Mamba block for temporal modeling, followed by mean pooling, a linear + tanh layer, and finally two parallel mapping branches producing Gaussian embeddings.\n\nOn the far left, a vertical stack of discrete-time graph snapshots {G_t} from t = 1 to T is shown, with each graph represented as a node-edge structure. Adjacent to this, a lookback mechanism is indicated, where l ∈ {1,2,3,4,5}, meaning the model considers past graph states G_{t-l} up to five steps back. For each graph G, the model applies a GINEConv operation, which takes the graph G, edge_index, and edge_attention as inputs, generating a sequence of hidden representations z_t^i for each node i at time t. These representations are stacked vertically as a sequence of green rectangular blocks, labeled z_{t-l}^i to z_t^i, indicating the temporal context.\n\nThis sequence is then fed into the core Mamba block, enclosed in a large box. Inside, two parallel projection layers (green rectangles) transform the input sequence. One branch passes through a SiLU activation (beige oval), while the other goes through a Convolution layer (gray rectangle), followed by another SiLU activation. The outputs of these two branches are combined via an element-wise multiplication (orange circle labeled 'Activation') with the output of a Selective SSM module (orange rectangle), which captures long-range dependencies. The result is passed through another projection layer (blue rectangles), forming a new sequence.\n\nFollowing the Mamba block, a MeanPool operation (vertical rectangle) aggregates the sequence into a single vector. This is then processed by a Linear + tanh layer (vertical rectangle), which introduces nonlinearity. From here, two parallel pathways diverge: one leads to a Linear Mapping (light blue rounded rectangle) producing μ_t (a vertical stack of light blue squares), and the other to a Nonlinear Mapping (light orange rounded rectangle) producing σ_t (a vertical stack of light orange squares). These represent the mean and standard deviation of the Gaussian embedding for time step t.\n\nThe visual modules are color-coded: green for initial projections, gray for convolution, beige for SiLU activations, orange for Selective SSM and activation, blue for final projections and linear mapping, and light orange for nonlinear mapping. All connections are directed blue arrows, indicating data flow from left to right and within modules. The figure includes explicit labels for each component and uses consistent shapes—rectangles for operations, ovals for activations, and stacked squares for feature sequences—to convey the model’s structure and data transformation process."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

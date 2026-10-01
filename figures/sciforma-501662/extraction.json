@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-501662",
+  "record_sha256": "a03fa0a90bd4ab45bd27f27f4c270b7ba08993be215636c3f5bb652997b3fd43",
+  "asset_sha256": "d4afbfe63bd2a310985b34b1123108d9c271bb4df8c1e0f0d23d6ed57c7d2079",
+  "original_file": "original.jpg",
+  "pixel_width": 1152,
+  "pixel_height": 896,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501662",
+    "title": {
+      "zh": "Generative modeling of protein ensembles guided by crystallographic electron densities · 方法图",
+      "en": "Generative modeling of protein ensembles guided by crystallographic electron densities"
+    },
+    "paper": {
+      "id": "arxiv-2412-13223",
+      "title": "Generative modeling of protein ensembles guided by crystallographic electron densities",
+      "authors": [
+        "Sai Advaith Maddipatla",
+        "Nadav Bojan Sellam",
+        "Sanketh Vedula",
+        "Ailie Marx",
+        "Alex Bronstein"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13223",
+      "arxiv_url": "https://arxiv.org/abs/2412.13223",
+      "arxiv_id": "2412.13223",
+      "arxiv_first_submitted_at": "2024-12-17T00:31:59Z",
+      "arxiv_updated_at": "2024-12-17T00:31:59Z",
+      "arxiv_subjects": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501662/image/image.jpg?Expires=1790835197&Signature=nY5ajdmvBOfOa1CVDQdIGMNWuVjSPxGvJr~HV5yuQ~dz-RAePwHiU71CMu8z6o1fsauHVULdsOxiTKTknJqJZ7VOj43LyL5GYKfi1boZRGl5i6yHzyOpSsNjOoBg~Jv~gO7wtDZKHzOpMJxTUxC7jW9oYEvWueYG3hxAhjRXaS8ARZvSj0jR~vWn1Qt8VovT5UsUGDy9CPgKDwWEl29~sIepsoUrtf4a0eSmWPygCKtKVywdBk5TLEy5lUxGLKEbv4zyGhCP5nZjkJ~3HyNhF83RDtmIJP6pv8g01xY2kE3BD2gg1DXMgRRH1kVM4AY~N76IaEC~WA6lSWLxsTA3Dg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501662,
+      "description_sha256": "520dbe53f078d7c3cbfe39131ae4129162bd528887354796bd3aba3d28532bb1",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a density-guided protein ensemble generation method using a diffusion-based framework. The global layout is a left-to-right workflow with feedback loops, structured around three main stages: ensemble sampling, forward modeling, and likelihood-based guidance. The background features a faint white ribbon diagram of a protein structure, providing context for the molecular modeling process.\n\nOn the far left, an amino acid sequence 'ADGGIK' is input into a module labeled 'Chroma', represented as a rounded rectangle with black border and white fill. Chroma computes the gradient of the log probability with respect to the atomic coordinates, denoted as ∇ₓlog p(x,X | a), where 'x' represents atomic positions, 'X' denotes the ensemble, and 'a' is the amino acid sequence. An arrow labeled 'a' points from the sequence to Chroma. From Chroma, an arrow labeled 'x' leads to a central visualization of a sampled ensemble, depicted as a ball-and-stick molecular structure with red, blue, gray, and white atoms, superimposed on the faint protein backbone. This ensemble is then fed into a 'Forward model' module (rounded rectangle), which generates a 'calculated density' shown as a pinkish translucent 3D electron density map.\n\nBelow this, an 'observed density' is shown as a light cyan translucent 3D map, labeled 'Fₒ'. This observed density is input into a 'Likelihood' module (rounded rectangle), which computes log p(x,X | a), representing the probability of the ensemble given the observed data. A downward arrow labeled 'F_c' connects the calculated density to the Likelihood module, indicating the comparison between predicted and observed densities.\n\nFrom the Likelihood module, a gradient symbol (∇ₓ) is computed and sent back to Chroma via a feedback loop. This gradient is labeled 'guidance score' and mathematically expressed as ∇ₓlog p(Fₒ | X,a), indicating how the observed density guides the sampling process. This closed-loop architecture enables iterative refinement of the sampled ensemble by incorporating experimental density data to improve the accuracy of the generated structures. The overall design emphasizes the integration of generative modeling (Chroma) with experimental data (observed density) through a forward model and likelihood computation to produce physically plausible and data-consistent protein ensembles."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

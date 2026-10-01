@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500362",
+  "record_sha256": "152097ee19f7becd758160f820b17fbb6e5654f128351fef7bdf1bc17aeb41ee",
+  "asset_sha256": "869e6f675c3ad9e0e943d2ccd018146c02b040d0db0f680c844eecd04a73ae42",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500362",
+    "title": {
+      "zh": "Analyzing the Attention Heads for Pronoun Disambiguation in Context-aware Machine Translation Models · 方法图",
+      "en": "Analyzing the Attention Heads for Pronoun Disambiguation in Context-aware Machine Translation Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-11187",
+      "title": "Analyzing the Attention Heads for Pronoun Disambiguation in Context-aware Machine Translation Models",
+      "authors": [
+        "Paweł Mąka",
+        "Yusuf Can Semerci",
+        "Jan Scholtes",
+        "Gerasimos Spanakis"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11187",
+      "arxiv_url": "https://arxiv.org/abs/2412.11187",
+      "arxiv_id": "2412.11187",
+      "arxiv_first_submitted_at": "2024-12-15T13:42:49Z",
+      "arxiv_updated_at": "2024-12-15T13:42:49Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500362/image/image.jpg?Expires=1790835171&Signature=JJ453K1RROXyuk-4JSJjMYTx2wq3JqLdRAiBaiIfG5uVK-ZRSoJlrvjB2XT7reJopO~CyICPybjX0m8MbrR4DGWulXw3I1~AxECVeHdbGmZ3x58eX1sbIrk0MCGA0xV1V1QeFTz9u516dEL-mfqZc7H~RUP6i0UT78~sIFphIiJL6jervNUu70egus~pv3iAoEK8dFwvtQ1kzCbjZSPyCuz~qhJ8knv4FxB5-J6-TDdpZZ~iyLNZh9HpjiSok~9H-CbKnVx6n471Mf-z6q-WCEpUd9wrQNG2FBJYvG8V5kV3PXzrt91haJW-dH27oIPpYWoq5DxLISHiehxSAxo9XQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500362,
+      "description_sha256": "bf694230f7b39556324358f1ce1cbe5eccefaf1b605ca3b7b91912ce57ef4c1c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the different types of attention relations investigated in a machine translation model, specifically focusing on how context-dependent words (like pronouns) relate to their antecedents across source and target sequences. The global layout consists of two horizontal text lines: the top line labeled 'Source' contains the English sentence 'This is my house . [SEP] I like it . [EOS]', and the bottom line labeled 'Target' contains the German translation 'Das ist mein Haus . [SEP] Ich mag es . [EOS]'. Key words are color-coded: 'house' and 'Haus' are highlighted in red, indicating they are context cues (S_C and T_C), while 'it' and 'es' are highlighted in purple, representing context-dependent pronouns (S_P and T_P). The [SEP] and [EOS] tokens are shown in black, serving as sequence separators and end-of-sequence markers.\n\nVisual modules include four distinct attention paths represented by colored curved arrows. A blue arrow labeled S_P → S_C connects the source pronoun 'it' to the source context cue 'house', representing self-attention within the source sequence. Two yellow arrows represent cross-attention: one labeled T_P → S_C connects the target pronoun 'es' to the source context cue 'house', and another labeled T_P → S_P connects 'es' to the source pronoun 'it'. These indicate the target-side model attending to source-side elements. Two green arrows represent decoder-attention (decoder self-attention): one labeled T_P → T_C connects 'es' to the target context cue 'Haus', and another labeled T_P → T_{C+1} connects 'es' to the preceding token 'mag' in the target sequence, which corresponds to the antecedent as input during decoding.\n\nConnections and arrows are drawn as smooth curves with arrowheads pointing from the source of attention to the target. The blue arrow originates from 'it' and curves upward to 'house'. The first yellow arrow curves from 'es' to 'house', and the second yellow arrow curves from 'es' to 'it'. The green arrows curve from 'es' to 'Haus' and from 'es' to 'mag', respectively. Each arrow is annotated with its corresponding mathematical notation, clearly labeling the type of attention relation being modeled. The figure's design emphasizes the flow of information between context-dependent words and their antecedents across both source and target languages, highlighting the interplay of self-, cross-, and decoder-attention mechanisms in capturing linguistic dependencies during neural machine translation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500172",
+  "record_sha256": "1715b623c0ddfff31db7363be67a44cee46c4f2af711507935d3105ef101b822",
+  "asset_sha256": "cadfcbd45d55f134418eb97b70b63c9ace4d909a8a8d45f1d4bd44b82368260a",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500172",
+    "title": {
+      "zh": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos · 方法图",
+      "en": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos"
+    },
+    "paper": {
+      "id": "arxiv-2412-10861",
+      "title": "Heterogeneous Graph Transformer for Multiple Tiny Object Tracking in RGB-T Videos",
+      "authors": [
+        "Qingyu Xu",
+        "Longguang Wang",
+        "Weidong Sheng",
+        "Yingqian Wang",
+        "Chao Xiao",
+        "Chao Ma",
+        "Wei An"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_url": "https://arxiv.org/abs/2412.10861",
+      "arxiv_id": "2412.10861",
+      "arxiv_first_submitted_at": "2024-12-14T15:17:49Z",
+      "arxiv_updated_at": "2024-12-14T15:17:49Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500172/image/image.jpg?Expires=1790835166&Signature=YxNJEYxgQsPMJ7hYbt6QqnBxqUO41wCk7lkCg7Vlye1ifUqyrp2lXbzi~bcT9-7LvOUJwwKGEwNr-kTbCX9ej5Ke5auAjsjb4g0POelBUwX2kVyo0yjOBrWlvnWUEdJ7lyZjEIB1nlQ4KQUvQPRikaD0Uk1X8fURnDHaAE-YoEsh-Ji6tKTJOuac6JPIqBjtRwLKvMC9m33AFMlkcS8m4M6Wcf9VRaLnjsZgl9CtfwQjwGOd0pRt~ktRfSiYOituJx0r9gN65LQAgKVHo31KPKirjKVtIdH-ja1PnOFfBL2PSUcyQQc1M5Nn~87Os1nswj52JUaisNLc5UZGR15nUw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500172,
+      "description_sha256": "74df4419b8d42c002e32ebc8adef079e4829ed7f826d0a02c1cfc0aabf1efeb7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of a Heterogeneous Graph Transformer-based tracking method, structured into four main stages: (a) Feature Embedding and Graph Generation, (b) Information Integration, (c) Tracking & Detection, and (d) Tracklet Generation. The global layout is a left-to-right pipeline, starting from input image pairs at time steps k-1 and k, progressing through modular processing blocks, and ending with output tracks at time k. Each stage is visually demarcated by labeled sections along the bottom axis.\n\nIn stage (a), two image pairs — one visible and one thermal — are provided at consecutive time steps k-1 and k. These images feed into an 'Embedding Layer' composed of two parallel branches: a green rectangular block for visible modality and a blue rectangular block for thermal modality. Each branch applies a 'Flatten' operation to produce feature representations D_k^v and D_k^t for time k, and similarly D_{k-1}^v and D_{k-1}^t for time k-1. From the previous time step’s features, 'Nodes Sampling' generates node representations T_{k-1}^v (green circle) and T_{k-1}^t (blue circle). These nodes, along with the current flattened features, are fed into a 'Spatial Confined Heterogeneous Graph Generator', which constructs a heterogeneous graph G^a. Position encoding symbols (clock icons) are applied to the flattened features before graph generation.\n\nStage (b), 'Information Integration', involves a yellow 'Heterogeneous Graph Transformer Encoder' and an orange 'Heterogeneous Graph Transformer Decoder'. The encoder takes G^a as input and outputs detection features Ŝ_k^v and Ŝ_k^t. The decoder receives the encoder's output and produces tracking features Ŝ_k^v and Ŝ_k^t. Both outputs undergo 'Post Process' operations to yield Ŝ_D^v and Ŝ_D^t.\n\nIn stage (c), 'Tracking & Detection', the tracking features are processed via 'Linear Regression' to generate predicted tracking offsets Ť_k^v and Ť_k^t. Simultaneously, the detection features undergo 'Post Process' to produce detection proposals Ŝ_D^v and Ŝ_D^t. An 'IOU Match' operation connects the tracking and detection outputs, enabling association.\n\nStage (d), 'Tracklet Generation', includes two parallel 'Edge Regression' modules producing edge features A^v and A^t. These are followed by 'Tracklet-Detection Association' blocks generating associated tracklets X̂_k^v and X̂_k^t. The final outputs, X_k^v and X_k^t, are refined using a 'ReDet' module before being presented as 'Tracks at k', depicted as annotated images showing tracked objects with bounding boxes. The entire pipeline concludes with the output image pair, mirroring the input format but now containing tracked instances."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

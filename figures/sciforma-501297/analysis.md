@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+LLMs are Also Effective Embedding Models: An In-depth Overview — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12591
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-stage methodology for constructing training data for LLM-based embedding models, organized into distinct modules labeled ① Data adapting, ② Data curation, and ③ Data labeling. The overall layout is a 2x2 grid: the top-left contains Data adapting, bottom-left contains Data curation, and the right column is dedicated to Data labeling, split into two submodules. Each module is enclosed in a rounded rectangle with a dashed border, colored differently for visual distinction—gray for Data adapting, light blue for Data curation, and light green for Data labeling.
+
+In module ① Data adapting, the process begins with a pair of existing data {q, d}, represented as a black-bordered rounded rectangle. This input flows through a golden gear icon symbolizing transformation, leading to outputs: t (task instruction), q (query), d⁺ (positive document), and {d⁻} (set of hard negative documents). All output elements are shown as white rounded rectangles with black borders.
+
+Module ② Data curation, in light blue, takes three inputs: I (instruction), m (meta-information), and c (few-shot demonstrations), each in a white rounded rectangle. These feed into a central LLMs model, depicted as a blue hexagon with six surrounding nodes (three blue, three white) connected by lines, representing a neural network structure. The LLMs model generates outputs: t, q, d⁺, and {d⁻}, again in white rounded rectangles.
+
+Module ③ Data labeling, in light green, consists of two parallel sub-processes. The top subprocess takes inputs I, q, and c, processes them through an identical LLMs model, and produces outputs t, d⁺, and {d⁻}. The bottom subprocess takes I, d, and c, processes them via the same LLMs model, and outputs t and q. Both submodules use the same LLMs icon and output format.
+
+All connections between components are represented by solid black arrows indicating the direction of data flow. The figure uses consistent visual attributes: white rounded rectangles for data elements, colored backgrounds for modules, and a standardized LLMs icon. The caption clarifies that d⁺ is the positive document, {d⁻} is the set of hard negatives, m is meta-information for synthetic data, I is the instruction for LLMs, c is optional few-shot examples, and t is the task-specific instruction.

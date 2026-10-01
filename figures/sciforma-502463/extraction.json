@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502463",
+  "record_sha256": "bbb8f3f3b35d22b50a66e4c67b45eb69340cbb74376f5d6a3c0db3fc5c7ec4ac",
+  "asset_sha256": "c5f67e448d03b79d1c6f36876a240b003e79b92df5ceb5e1ad37a3f7d39bf115",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502463",
+    "title": {
+      "zh": "ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model · 方法图",
+      "en": "ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model"
+    },
+    "paper": {
+      "id": "arxiv-2412-14559",
+      "title": "ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model",
+      "authors": [
+        "Shunlin Lu",
+        "Jingbo Wang",
+        "Zeyu Lu",
+        "Ling-Hao Chen",
+        "Wenxun Dai",
+        "Junting Dong",
+        "Zhiyang Dou",
+        "Bo Dai",
+        "Ruimao Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14559",
+      "arxiv_url": "https://arxiv.org/abs/2412.14559",
+      "arxiv_id": "2412.14559",
+      "arxiv_first_submitted_at": "2024-12-19T06:22:19Z",
+      "arxiv_updated_at": "2024-12-19T06:22:19Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502463/image/image.jpg?Expires=1790835221&Signature=gtf0snt1XiBfwLsi60TcUScPZ0oLHI03NqZ9k0qUrKLP-3CxnKD9sqDZwhV9p1cb9D0H3BpLJvCYmFmAVRrMrd9u15GpLKdi66GivnA9uQuxcaQf6SxU8y7Btimqw9~NBGvjl~5ew-KrQ3CgojJYw53qkREdu2CNU7Ts5PxXP-dk9xO44QnboLB9GlEauxLmHIPBVgbNOmAoLfkaYwK9rYgaP45HOGY0W-URnvBZ95xbDMmM4jZsCH~ICHkhYKLKt4NEAsDfk9mUbfsyOzHuiXpvBnOBtiwR5pWiPwW6OTeYIgnSRNPqZSvSdKwj4fLrPn-M5vXFzA10SnC1X1jn4A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502463,
+      "description_sha256": "4034aa58d6ab2c6df8e49f0ff2cc14faa64082ab4aca2735453fbcf0d8f065d7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents the ScaMo architecture, divided into three main parts: (a) FSQ, (b) Architecture, and (c) Prefix Attention Mask.\n\nIn part (a), the FSQ (Vector Quantized Motion VAE) pipeline is shown. It begins with a sequence of 3D human motion frames on the left, depicted as a group of blue humanoid figures in various poses. These frames are fed into an orange trapezoidal block labeled 'Motion Encoder'. The output of the encoder is a sequence of three orange rectangular tokens, representing quantized features. These tokens are then mapped into a 3D cube grid, illustrating a vector quantization space with axes labeled (1,0,-1) and a point marked at coordinates (1,0,-1). A green box below the cube displays the quantized index '22' corresponding to the values [1, 0, -1]. This index is passed to a green trapezoidal block labeled 'Motion Decoder', which reconstructs the original motion sequence shown on the right, identical in form to the input but now reconstructed from the quantized representation.\n\nPart (b) details the full model architecture, centered around a large pink rounded rectangle labeled 'Prefix Autoregressive Transformer'. This transformer receives two types of inputs: text tokens (t₁, t₂, t₃, t₄) from a yellow box labeled 'Text Tokenizer', and motion tokens (m₁, m₂, m₃, m₄, m₅) from a blue box labeled 'Motion Tokenizer', which processes a 3D motion sequence similar to that in (a). Below the text tokenizer, the input text 'A man is performing a flying kick.' is shown. The transformer's internal structure is expanded in a dashed box on the right, showing a stack of layers repeated L times. Each layer contains, from bottom to top: a 'Prefix Attention' block (peach-colored), followed by 'RMSNorm' (gray), then a 'FFN' (Feed-Forward Network) block (light green), and another 'RMSNorm'. The outputs of the transformer are shown as a sequence of motion tokens (m̂₁, m̂₂, m̂₃, m̂₅, m̂₄, ...), indicating autoregressive generation.\n\nPart (c) illustrates the 'Prefix Attention Mask' as a square grid. The rows and columns are indexed by t₁–t₄ (text tokens) and m₁–m₅ (motion tokens). The mask uses color coding: yellow squares indicate positions where attention is allowed (e.g., text tokens can attend to each other bidirectionally). Gray squares indicate no attention. Blue squares with diagonal shading indicate that motion tokens can attend to all preceding text tokens (i.e., m₁ can attend to t₁–t₄, m₂ to t₁–t₄, etc.), but not to other motion tokens or future text tokens. This visualizes the attention pattern: text tokens have bidirectional attention among themselves, while motion tokens have causal attention over text tokens only, enabling the model to condition motion generation on the entire text context."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

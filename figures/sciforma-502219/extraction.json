@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-502219",
+  "record_sha256": "1f75f83071785fd9bbd96966bd2c21639f1317aeb2bcc71f69c8431b1c00a906",
+  "asset_sha256": "df972d82b8bc232379e19c1f7899f70416995d7f8a5a77cb5a25cf031f36642a",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502219",
+    "title": {
+      "zh": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities · 方法图",
+      "en": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities"
+    },
+    "paper": {
+      "id": "arxiv-2412-14123",
+      "title": "AnySat: One Earth Observation Model for Many Resolutions, Scales, and Modalities",
+      "authors": [
+        "Guillaume Astruc",
+        "Nicolas Gonthier",
+        "Clement Mallet",
+        "Loic Landrieu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14123",
+      "arxiv_url": "https://arxiv.org/abs/2412.14123",
+      "arxiv_id": "2412.14123",
+      "arxiv_first_submitted_at": "2024-12-18T18:11:53Z",
+      "arxiv_updated_at": "2025-05-09T09:50:12Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502219/image/image.jpg?Expires=1790835212&Signature=abTidVOc6stzCFgcD8cX2PHKHvNLV23kfoDtqjnmGHkH-MadAD1YEdCXq4MAVkTWoohFWWmoCnQHTpNJq3~SWGvhEstMoYuapNvdAklN1vmyC84Ai7dAIo5kUnRx7fTz3b1w-BoEJB3SLxlw6LSLzEoFpFDjqZ0hegBaiqHVAHfDEPdn38I2tr2BQ6iorh4f78sUB4Pts2g4Wm5J1kxvGtDe7k03ecZpumdNopdSYfmHSa6YyiarzPtqdgQQLPAx87ffcrjOoTz~7i5pttwvQ8oLSNedvIT8KihNM6vy0acLxJD0piJn4aDaVI~NyIBJEc8JLmcB0K4uWmLiSBtW8g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502219,
+      "description_sha256": "a0fdedac821f007f8562daa65704044cd17f39c8b801ff13c68b955e550b1fd3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of AnySat, a multimodal learning framework designed for satellite imagery analysis using data from GeoPlex. The global layout is left-to-right, depicting a data processing pipeline starting from raw input and progressing through encoding, combining, prediction, and teacher-student interaction stages. On the far left, a gray square labeled 'GeoPlex Tile' represents the input data source under the heading 'GEOPLEX'. This tile feeds into two vertical black bars representing modality-specific patch encoders; these bars contain multiple small squares—green ones at the top indicating one modality, and blue ones below indicating another—symbolizing spatially aligned patches extracted from the tile.\n\nFrom these patch encoders, the flow splits into two parallel branches: the 'STUDENT' branch, enclosed in a light blue rounded rectangle, and the 'TEACHER' branch, enclosed in a light red rounded rectangle. Both branches consist of triangular modules representing neural network components. In the STUDENT branch, the first triangle is labeled φ_S^patch (blue), indicating the student’s patch encoder. It connects via a solid arrow to a small red square, symbolizing a masking/dropping operation. From there, a solid arrow leads to the next triangle labeled φ_S^comb (blue), representing the student’s modality combiner. A final solid arrow connects this to φ_S^pred (blue), the student’s predictor module.\n\nIn the TEACHER branch, the corresponding modules are colored red: φ_T^patch and φ_T^comb. These modules receive inputs from the student’s counterparts via dashed arrows labeled 'EMA', indicating that the teacher’s weights are updated as an Exponential Moving Average of the student’s weights. Notably, the teacher branch does not include the red square masking/dropping component, meaning it processes the full set of patches without perturbation.\n\nConnections between modules are shown with solid arrows for forward propagation within the student branch and dashed arrows for weight updates from student to teacher. The overall workflow reflects a self-supervised learning paradigm where the student learns to reconstruct masked patches, guided by the stable teacher model. The caption clarifies that this is a simplified placeholder figure, and colors/shapes follow a legend described elsewhere in the paper."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

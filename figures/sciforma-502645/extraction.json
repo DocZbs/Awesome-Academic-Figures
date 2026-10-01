@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-502645",
+  "record_sha256": "a7af33aa0e3b8084234a61ebf0ed7d50026838e2f1fe64ef8a813c09beeda0f1",
+  "asset_sha256": "efe5f821220f5483c65f9eda10ef1a95b5276e26a3db123283ebcfed11b3a4f9",
+  "original_file": "original.jpg",
+  "pixel_width": 768,
+  "pixel_height": 1344,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502645",
+    "title": {
+      "zh": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis · 方法图",
+      "en": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis"
+    },
+    "paper": {
+      "id": "arxiv-2412-14933",
+      "title": "Cirbo: A New Tool for Boolean Circuit Analysis and Synthesis",
+      "authors": [
+        "Daniil Averkov",
+        "Tatiana Belova",
+        "Gregory Emdin",
+        "Mikhail Goncharov",
+        "Viktoriia Krivogornitsyna",
+        "Alexander S. Kulikov",
+        "Fedor Kurmazov",
+        "Daniil Levtsov",
+        "Georgie Levtsov",
+        "Vsevolod Vaskin",
+        "Aleksey Vorobiev"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_url": "https://arxiv.org/abs/2412.14933",
+      "arxiv_id": "2412.14933",
+      "arxiv_first_submitted_at": "2024-12-19T15:10:31Z",
+      "arxiv_updated_at": "2024-12-19T15:10:31Z",
+      "arxiv_subjects": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502645/image/image.jpg?Expires=1790835223&Signature=JILt~XAje~4SNOh3gjQIkFGEcm54wFueSZssr5v~1Ot3VDtASkPllLcrSOWCighJhM4Frq1cj~NIkIfsqpYlhjtPPeFndNTonNwEgezpSD1iOT3RraQsJcxzmBTtZMe2BJm6~0QPxpTa3AmE2l~eYNc5pvBdqSjh3DrDI-wa~pOztEA~OESu2veDEyUWvOrb01zvRI98lkzWaST1VPVjRhMXjJYPRVn~H9o33o1MZaDBPNZUu-fHyc8VR0ccywgoYH1FTAPSdM8Gdf1l5daMvrCrPKmEU3cOwTSOw-Rz8TU8nW-336AT-0mJ48mI45xtcnLu8fSLL~XN~CSs1~bZGQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502645,
+      "description_sha256": "fb2820a310f5519dbaf9da6cb8b28550a2c687840b73bc1ca6fdb1c62339f634",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a miter circuit used in formal verification, composed of three main computational modules enclosed in blue rectangular boxes labeled 'aig', 'xaig', and 'pairwise_xor'. The global layout is vertically structured, with inputs at the top, processing modules in the middle, and a final output node at the bottom. The circuit is designed to compare two logic functions, represented by the 'aig' and 'xaig' modules, using an XOR-based equivalence check.\n\nThe left module, labeled 'aig', implements a Boolean circuit using AND (∧), OR (∨), and NOT (¬) gates. It receives inputs x_1 and x_0, with x_1 feeding into the topmost AND gate and x_0 connecting to multiple internal gates. The structure forms a directed acyclic graph (DAG) where each gate is a circle containing the corresponding operator symbol, and edges are directed arrows indicating data flow from inputs to outputs.\n\nThe right module, labeled 'xaig', represents an extended AND-Inverter Graph (XAIG) that includes XOR (+) gates alongside AND and NOT gates. It takes inputs x_2 and x_0, with x_2 entering the topmost XOR gate and x_0 feeding into several intermediate gates. The XAIG structure also forms a DAG, with XOR gates denoted by ⊕ symbols inside circles, and connections showing how the inputs propagate through the network.\n\nAt the bottom, the 'pairwise_xor' module contains two XOR gates, each receiving one output from the 'aig' and 'xaig' modules. These XOR gates compute the bitwise difference between the two function outputs. The results from these two XOR gates are then fed into a final OR gate (represented by a gray circle with ∨), which produces the overall output of the miter circuit. This final OR gate acts as an equivalence checker: if both outputs are identical, the XORs produce 0, and the OR gate outputs 0; otherwise, it outputs 1, indicating a mismatch.\n\nConnections are shown as black arrows, indicating the direction of signal propagation. Inputs x_0, x_1, and x_2 are positioned at the top and feed into the respective modules. The outputs of the 'aig' and 'xaig' modules are connected to the 'pairwise_xor' module, and the outputs of the XOR gates in 'pairwise_xor' converge to the final OR gate. The entire structure is designed to verify whether the two logic functions implemented by 'aig' and 'xaig' are equivalent under all input combinations."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

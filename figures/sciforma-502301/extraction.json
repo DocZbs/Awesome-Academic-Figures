@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-502301",
+  "record_sha256": "33d23d9ef237fb049af7ca468d424c88f18a83739f0f0ca9588d592c6dcecb6f",
+  "asset_sha256": "e96f94aadb110f54b9323f94df04706631871e976c9f01ac77df4b664710e5a4",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502301",
+    "title": {
+      "zh": "Fake News Detection: Comparative Evaluation of BERT-like Models and Large Language Models with Generative AI-Annotated Data · 方法图",
+      "en": "Fake News Detection: Comparative Evaluation of BERT-like Models and Large Language Models with Generative AI-Annotated Data"
+    },
+    "paper": {
+      "id": "arxiv-2412-14276",
+      "title": "Fake News Detection: Comparative Evaluation of BERT-like Models and Large Language Models with Generative AI-Annotated Data",
+      "authors": [
+        "Shaina Raza",
+        "Drai Paulen-Patterson",
+        "Chen Ding"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14276",
+      "arxiv_url": "https://arxiv.org/abs/2412.14276",
+      "arxiv_id": "2412.14276",
+      "arxiv_first_submitted_at": "2024-12-18T19:15:17Z",
+      "arxiv_updated_at": "2024-12-20T12:45:58Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502301/image/image.jpg?Expires=1790835216&Signature=T7EORn2mG9bYiV7L32VlYJ669EJEFla9VHJtAj41HqOeOK3Eb4A~1NJFdwHImVxeWtWvMkyTgZVHLjo0irhYv2GAKFpmwHJUo13Nm5Ocfs2dW0gw06kOOGfn0gtvvYQwaU2MLtSCqVSmVLCZQe~sY6pxXs7gZ4-oyNhusZT7PhsN6s9U0L60WprDVebGC0MELizgackuxEbKAkEx9CW7viojurAHRKvplUjKYMvt~t2QaGTshcN0IDd8xtHn6fUf4xkJ~M72IqT7QYsnQ4nlV3pdlI0aL5rjbyRyqn-1~nI1atmd7GCcFGBJnRHDRoQ7TaI-cZ49t8S9zgNhclp-Fg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502301,
+      "description_sha256": "6c61e79e429c6a209cb9cf0844fbb60315ff7132f7e751dc80efc901713728a5",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a data annotation and model training pipeline, structured as a sequential workflow from raw data acquisition to deployment. The global layout is horizontal and linear, progressing from left to right, with a vertical branch leading to the final deployment stage. The top row represents the data annotation phase, while the bottom row depicts the model training and evaluation phase.\n\nIn the top row, the process begins with 'Web scraping', symbolized by a globe icon with an arrow, feeding into a pink cylindrical database labeled 'Unlabelled Data'. This unlabelled data flows via a thick gray arrow to a central module represented as a dark gray monitor labeled 'LLM as annotator' with 'GPT 4' written beneath it. Above this module, a small icon of three human figures is labeled 'Experts Review', indicating human oversight or validation of the LLM’s annotations. The output of this annotation step is a green cylindrical database labeled 'Labelled Data', connected by another thick gray arrow.\n\nFrom the 'Labelled Data' cylinder, a downward arrow leads to a large light blue rectangular box labeled 'Trainer' at the bottom center. Inside this trainer box are two white rounded rectangles: the top one labeled 'BERT-like models' and the bottom one labeled 'Large Language Models', indicating the types of models being trained on the labelled data.\n\nFrom the 'Trainer' box, a thick gray arrow points leftward to a pale yellow rounded rectangle labeled 'Benchmarking', which then connects via another arrow to a peach-colored circle labeled 'Deployment', completing the workflow.\n\nAll connections are represented by thick, gray, right-pointing arrows (except the downward arrow from Labelled Data to Trainer), emphasizing the directional flow of data and processing steps. The visual modules use distinct shapes and colors to differentiate stages: cylinders for data storage (pink for unlabelled, green for labelled), a monitor for the LLM annotator, a rectangle for the trainer, a rounded rectangle for benchmarking, and a circle for deployment. Text labels are clear and centrally placed within each module. The overall structure reflects a systematic approach where web-scraped unlabelled data is automatically annotated using GPT-4 under expert supervision, converted into labelled data, used to train both BERT-like and large language models, evaluated through benchmarking, and finally deployed."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

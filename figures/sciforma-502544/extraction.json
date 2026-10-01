@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-502544",
+  "record_sha256": "89e9338ca26e3a075a246622bb139b979dc8903dd26a348cc98c8c7155e4cda4",
+  "asset_sha256": "3268e7e8e8c13a0c8aa9dd1afc962fc119af8ba9abb833805ef4532b61494d84",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502544",
+    "title": {
+      "zh": "Event-assisted 12-stop HDR Imaging of Dynamic Scene · 方法图",
+      "en": "Event-assisted 12-stop HDR Imaging of Dynamic Scene"
+    },
+    "paper": {
+      "id": "arxiv-2412-14705",
+      "title": "Event-assisted 12-stop HDR Imaging of Dynamic Scene",
+      "authors": [
+        "Shi Guo",
+        "Zixuan Chen",
+        "Ziran Zhang",
+        "Yutian Chen",
+        "Gangwei Xu",
+        "Tianfan Xue"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_url": "https://arxiv.org/abs/2412.14705",
+      "arxiv_id": "2412.14705",
+      "arxiv_first_submitted_at": "2024-12-19T10:17:50Z",
+      "arxiv_updated_at": "2024-12-19T10:17:50Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502544/image/image.jpg?Expires=1790835225&Signature=UCMeaAVrGAhnRcTOi0L-NZFU2tL8RJqB7vPFe12dHMh0Iz-nTm190DxHo6KHE31BUiWis4oGe5GbOPAhfIICTumLy8dMgkrgASsh5F4rEd2TbaBUGAOxWgUCjGTK4MTRXFMSbkFz1~eMOBvOl9rkbZz-10sKNAJg3hMsDdquKm07pUBlh4s3P5GFPQQdVb71O-YSF7UA4Rznx4R~McIgqbz6ddxr1-yg-HCLms8t8g5MScEQHBaUTij~WNMMxnf8rab6azju8yrFwRJOOqDLmShTs96~NhM65yTCY-XhyjOLg2S~7RTqeg7h63GieQ0o559-dhfFIYTXOcT05B22Sg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502544,
+      "description_sha256": "a6aee78dbbdde891da048068ee522861673a070b8ecf99b62a25ab3266ec5519",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of an event-assisted alignment module used for fine-tuning, presented in a horizontal workflow layout. On the left side, two input images are shown: I₁ at the top and I₂ labeled as 'Reference' at the bottom. Each image is processed by a separate event-based processing step denoted as EV1 and EV2, respectively. The outputs of these steps are labeled I₁^ev1 and I₂^ev2, which are visually represented as slightly enhanced or adjusted versions of the original images, suggesting event-driven image refinement. These processed images are then fed into the central component of the diagram: a large rounded rectangular box labeled 'Event-assisted Alignment Module'. Above this module, a small square image labeled 'Events' is shown, depicting a sparse, colorful event stream (red and blue dots on a white background), representing asynchronous event data from an event camera. This event data is also directed into the alignment module via a downward arrow. The alignment module processes the inputs and produces a loss signal, indicated by a rightward arrow labeled 'Loss'. This loss is used to update the model parameters, as suggested by a feedback loop: a thick blue line extends from the bottom of the reference image I₂, passes under the module, and points upward to the output I₂^ev1, indicating that the module's output for the reference image is refined during training. The entire diagram emphasizes a dual-input pipeline (I₁ and I₂) with event data augmentation, where the alignment module leverages both visual and event streams to compute a loss for fine-tuning, particularly focusing on improving the reference image’s event-aligned representation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

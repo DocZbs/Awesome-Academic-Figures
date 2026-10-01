@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500565",
+  "record_sha256": "9054b56a93909bb6e5b9fa42b729d707bd37d4488bd20f85d9533e6e5a444d55",
+  "asset_sha256": "47775d30b7fa063fcad7500ec06b77fbc336e6d968cac5f1bdfa9194efe736e0",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500565",
+    "title": {
+      "zh": "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection · 方法图",
+      "en": "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection"
+    },
+    "paper": {
+      "id": "arxiv-2412-11506",
+      "title": "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+      "authors": [
+        "Guangsheng Bao",
+        "Yanbin Zhao",
+        "Juncai He",
+        "Yue Zhang"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11506",
+      "arxiv_url": "https://arxiv.org/abs/2412.11506",
+      "arxiv_id": "2412.11506",
+      "arxiv_first_submitted_at": "2024-12-16T07:28:36Z",
+      "arxiv_updated_at": "2025-02-19T07:37:55Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500565/image/image.jpg?Expires=1790835172&Signature=iWzw2DSRz9Qd3kVY3hf3CzkUw6NKGUNeZsceVRnB~XisuMEabM6Q54DAVPHnReMTGJy5sYp8qvm5YWLBT4cVZ0wIf6-WrLFjjRIpMxc-~ThYcsbviyYONaC23-qQOtGEITidbkNulP6MXrSi19XPkmvS9TjFP9bC2PZ3wHKDn4vdoyYry80PceNN7n0EBNbTXS~ftlFAnyIePMd4nWfDX1X7MBrYx4Gt~JuxIjv1FDukvCdYEzaxYL9518yl9g3IJ4ImGOt9eAXHDJbMwLfdwmkDuPdARqB0aBjqOw-LupZMLZv1gp6M6bnlgokpiFyizC7KFBMtXtiO6lNR2~DFIw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500565,
+      "description_sha256": "e3afc3d7f6bef4947c32ec2006d5b20b11ce360b513b9c045a3a7441dd28f188",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the Fast-DetectGPT method enhanced with Glimpse, a technique for estimating the full probability distribution of a language model (GPT) from partial observations returned by its API. The global layout is divided into two main sections: the top section outlines the three-step detection pipeline—Sample, Score, and Compare—while the bottom section details how Glimpse reconstructs the full token distribution from limited API outputs.\n\nIn the top section, a passage x (e.g., “President Joe Biden claimed in an interview with The Weather Channel...”) is fed into the Fast-DetectGPT with Glimpse framework. Step (1) Sample uses a modified GPT model (denoted as \\widetilde{\\text{GPT}} in red-bordered blue rectangles) to generate N alternative continuations \\tilde{x}_1 to \\tilde{x}_N from input x. Step (2) Score computes the conditional probabilities p(\\tilde{x}_i | x) for each generated sample using the same \\widetilde{\\text{GPT}} model, along with the original probability p(x) of the input passage. Step (3) Compare evaluates whether the normalized log-likelihood difference, \\frac{\\log p(x) - \\bar{\\mu}}{\\bar{\\sigma}}, exceeds a threshold \\epsilon; if yes, the passage is classified as coming from GPT; otherwise, it is deemed from another source.\n\nThe bottom section explains the Glimpse mechanism. It begins with a green GPT box receiving input x via API and returning only the top-K token probabilities (e.g., for the partial observation 'President ___', the top-3 tokens are 'Joe' at 37%, 'Biden' at 24%, and 'Donald' at 11%). This partial observation is then processed by the Glimpse module (a green rounded rectangle), which estimates the full probability distribution over all possible tokens. The resulting 'Full Distribution' table lists tokens ranked by estimated probability, including lower-ranked tokens like 'Trump' (8%), 'Obama' (3%), and 'Barack' (2%), which were not in the original top-K output. A callout notes these are 'Algorithm-estimated probabilities'.\n\nVisual elements include blue boxes for inputs/outputs, red-bordered blue rectangles for \\widetilde{\\text{GPT}} models, green for Glimpse and the base GPT, and dashed lines indicating data flow between components. Text labels specify steps, variables, and probability values. The figure emphasizes that the token column in the distribution tables is for reference only and not required for computing the conditional probability curvature metric used in detection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

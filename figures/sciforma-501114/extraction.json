@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501114",
+  "record_sha256": "545cbad5a205fd822debb31455142b1c19c7eee36b52e53e1870f4eda699a654",
+  "asset_sha256": "010fa429cc5589d6a20e7e5e5cb39664b3d643c52c59298188305d1bd1dbf998",
+  "original_file": "original.jpg",
+  "pixel_width": 1216,
+  "pixel_height": 832,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501114",
+    "title": {
+      "zh": "Interpretable LLM-based Table Question Answering · 方法图",
+      "en": "Interpretable LLM-based Table Question Answering"
+    },
+    "paper": {
+      "id": "arxiv-2412-12386",
+      "title": "Interpretable LLM-based Table Question Answering",
+      "authors": [
+        "Giang Nguyen",
+        "Ivan Brugere",
+        "Shubham Sharma",
+        "Sanjay Kariyappa",
+        "Anh Totti Nguyen",
+        "Freddy Lecue"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12386",
+      "arxiv_url": "https://arxiv.org/abs/2412.12386",
+      "arxiv_id": "2412.12386",
+      "arxiv_first_submitted_at": "2024-12-16T22:44:31Z",
+      "arxiv_updated_at": "2025-06-28T18:26:11Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501114/image/image.jpg?Expires=1790835185&Signature=g0kPMFmO6-Utm5QpCFrY3wsDjfzyus-cfv~MQrGXsx2mRBJnzB4gzswVe1yWgihZefhqPqJASMQX8caMps2nIAT4x1B5YfQstH6PoL9bIZTGFsaF5MF0OszBXwrLVcom4GQb7eKHuIkyz5--hwxucHttgmHil~1OpJWRwZvY70eKbQhS8p9WAY4QtYeCdtvwWHdQiQPFbnmHFeEkTU~MLCaDQQxSzCCjQ6GyhO5Yra6jj7iCSWy4q8Xb-i1UTKcA5Maypv2~CNtKlFLpnS7g9CNL2xTPVCxJ-YHFChV86AX0zIAFUc1snNOjWS9oMJcN8iMnHGt58~RnK9MxLXDMcw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501114,
+      "description_sha256": "d1ff6ec21161ceb6dd8e9c783d4a582ffed6bf5833af63dcd9cc74993204ac3e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents four distinct methodologies for answering a tabular reasoning question using large language models (LLMs), labeled (a) End-to-end, (b) Text-to-SQL, (c) Hybrid (Chain-of-Table or CoTable), and (d) Plan-of-SQLs (POS, proposed method). The global layout is divided into four quadrants, each illustrating a different approach to processing the same input table, 'Input Table 7: wildcats football team', which contains columns: game, opponent, result, wc_pts, and opponents. The question posed is: 'True or False? The wildcats kept the opposing team scoreless in 4 games.' The correct answer is 'True'.\n\nIn section (a) End-to-end, the entire process is handled by a single black rectangular LLM block. The input table is fed directly into the LLM, which outputs the answer 'True' without any intermediate steps or explanations. This method is opaque and does not reveal the reasoning path.\n\nSection (b) Text-to-SQL shows the LLM generating a single SQL query: 'SELECT CASE WHEN COUNT(*) = 4 THEN 'TRUE' ELSE 'FALSE' END AS result FROM table_sql WHERE opponents = 0;'. This query is then executed to produce the answer. While this provides some transparency through code, it requires SQL expertise to interpret and becomes difficult to understand for complex queries.\n\nSection (c) Hybrid (CoTable) introduces a planning phase. The LLM first generates a plan consisting of four steps: 1. f_select_row(2,3,4,5,9), 2. f_select_column(game,wc_pts,opponents), 3. f_sort_column(opponents), and 4. simple_query(). These abstract functions are applied sequentially to the input table. The first function selects specific rows (highlighted in yellow), the second selects specific columns, the third sorts the resulting table by the 'opponents' column in ascending order, and finally, a simple query is performed. The LLM then produces the answer based on this processed data. However, the function arguments are not explained, and the reasoning remains partially opaque.\n\nSection (d) Plan-of-SQLs (POS) is the proposed method. It begins with the LLM generating a natural language plan: '1. Order the table by 'opponents' in ascending order. 2. Select rows where 'opponents' is 0. 3. Use a 'CASE' statement to return TRUE if the number of rows is equal to 4, otherwise return FALSE.' Each step in the plan is then converted into a concrete SQL command. Step 1: 'SELECT * FROM table_sql ORDER BY opponents ASC;' results in a table sorted by 'opponents'. Step 2: 'SELECT * FROM table_sql WHERE opponents = 0;' filters rows where 'opponents' equals 0, highlighted in green. Step 3: 'SELECT CASE WHEN COUNT(*) = 4 THEN 'TRUE' ELSE 'FALSE' END AS result FROM table_sql;' is executed on the filtered data to yield the final answer. This method provides full transparency, as each step is both human-readable and executable, allowing for clear understanding of the reasoning process. The figure uses color coding (yellow for selected rows, green for filtered rows) and numbered steps to guide the viewer through the transformation pipeline."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

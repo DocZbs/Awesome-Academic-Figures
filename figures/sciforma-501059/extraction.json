@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501059",
+  "record_sha256": "f5400b1bd4c55f97ad612d97f73a16e8fd2beefdffddb6326e892c1aa5b98ad1",
+  "asset_sha256": "37218474c2a708b614275d77daf0293f67c12801e69d99960b455962bfe18be7",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501059",
+    "title": {
+      "zh": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization · 方法图",
+      "en": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization"
+    },
+    "paper": {
+      "id": "arxiv-2412-12218",
+      "title": "Accelerating Sparse Graph Neural Networks with Tensor Core Optimization",
+      "authors": [
+        "Ka Wai Wu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_url": "https://arxiv.org/abs/2412.12218",
+      "arxiv_id": "2412.12218",
+      "arxiv_first_submitted_at": "2024-12-16T01:57:53Z",
+      "arxiv_updated_at": "2025-02-23T21:26:57Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501059/image/image.jpg?Expires=1790835183&Signature=eFHYnHGb7I7IIDwCR0E-TbQv-jHc1v0j~en4tWIFkBhsm6rLBnMSAHXj4a8wJHPUQZfpVdTVQwUPATDkYTwQfD6Vci6Xm3OsLK~vvLep4o8VOvktdw808zKn6koCbW0Osb96CP3aT-WyF5~oAf47-xC0K0~8e~Swkf6eRyed0Bop9QJaJPpHaeh--1F-wSzskaS5OwiddEmlkjIRj~PHYBzRbwEqCsNek15c22LTA5dkr1qf6rsll1ifKTF0vdM1LAhqJ1Rl6si3HIquLVDM4byHaoi~7eZLQnK9U1i35t1dtJPrGhTGRfyDBNCyt5mUnXwq-cX1OdC~nwLmWRiWlA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501059,
+      "description_sha256": "b775af1d378e072b8dbf4423df971ae058555ef3503ae3b26a6e7df5dcbc14d4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure is a flowchart illustrating the algorithmic workflow for Sparse Neighbor Aggregation, designed for efficient computation on sparse matrices, likely within a GPU computing context. The global layout is vertical, starting from the top with a 'Start' node and progressing downward through sequential steps, decision points, and loops, culminating in an 'End' node on the left side. The structure is hierarchical and modular, with clear branching based on conditional checks, and includes nested loops and parallel processing logic.\n\nThe visual modules consist of standard flowchart shapes: rounded rectangles for start/end points ('Start', 'End'), rectangles for process steps, and diamonds for decision points. All nodes are outlined in black with black text, using a clean, sans-serif font. The process steps include 'Initialize Shared Memory Variables', 'Traverse Most TC Blocks in the Current Row Window', 'Initialize Thread ID, Warp ID and Lane ID', 'Load Edges and Initialize sparse_A', 'Set the Edge of sparse_A and Map the Columns of sparse_A to the Rows of dense_X', 'Initialize dense_X with Column-Major Storage', 'Copy Values from input in dense_X to the Target Location', and 'Call wmma to Load A_frag and X_frag, Compute and Accumulate'. Decision nodes include 'Is Traversal Complete?', 'Has Thread Traversal Completed?', and 'Is the Edge within the Column Range of the Current TC Block?'. Each decision node has 'Yes' and 'No' branches indicated by labeled arrows.\n\nConnections are represented by solid black arrows indicating the direction of control flow. The main path begins at 'Start', proceeds to initialize shared memory, then traverses most TC blocks in the current row window. This leads to a decision point: if traversal is complete, it proceeds to traverse remaining TC blocks; otherwise, it initializes thread identifiers. Following this, edges are loaded and sparse_A is initialized. A decision checks whether the edge falls within the column range of the current TC block; if not, the flow loops back to load more edges; if yes, it sets the edge and maps columns of sparse_A to rows of dense_X. From here, the flow enters a loop on the right side where dense_X is initialized with column-major storage. Another decision checks if thread traversal is complete; if not, values are copied from input to dense_X, then the wmma instruction is called to perform matrix multiplication and accumulation. If traversal is complete, the flow exits the loop and proceeds to another 'Is Traversal Complete?' check. If yes, the process ends; if no, scalar multiplication and addition operations are performed on non-zero elements before returning to the traversal step. The diagram uses clear, uncluttered lines and consistent spacing to maintain readability and logical clarity."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

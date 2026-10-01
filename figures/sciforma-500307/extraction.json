@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500307",
+  "record_sha256": "c884db0ac2a8b879d7f3bd3d37bb50c6a8a01b718b6372dc5c0ab848175a3200",
+  "asset_sha256": "993a892c57d73cb342ef73696db9772c5cc840ce9695dd08d04ef3a1f2d39cd3",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500307",
+    "title": {
+      "zh": "GraphMoRE: Mitigating Topological Heterogeneity via Mixture of Riemannian Experts · 方法图",
+      "en": "GraphMoRE: Mitigating Topological Heterogeneity via Mixture of Riemannian Experts"
+    },
+    "paper": {
+      "id": "arxiv-2412-11085",
+      "title": "GraphMoRE: Mitigating Topological Heterogeneity via Mixture of Riemannian Experts",
+      "authors": [
+        "Zihao Guo",
+        "Qingyun Sun",
+        "Haonan Yuan",
+        "Xingcheng Fu",
+        "Min Zhou",
+        "Yisen Gao",
+        "Jianxin Li"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11085",
+      "arxiv_url": "https://arxiv.org/abs/2412.11085",
+      "arxiv_id": "2412.11085",
+      "arxiv_first_submitted_at": "2024-12-15T06:52:40Z",
+      "arxiv_updated_at": "2024-12-15T06:52:40Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500307/image/image.jpg?Expires=1790835171&Signature=mpbzgMDYmWv~t2xDQYjbOswkF3Tj2lfP32WnPukzRYlaL~oPu-O8JUdg2ryOvbLoYh~P3Oy4xH16krUUMMoGDX3OX-gv8ojjKSfnmCkobbjbohxpkTt5UE0AlrD88P-fHpge6LhWW~JOrTyHnxXwCry5bxJZU8LcU4wcUKjhbuFzNg-sba-PFIXudEtrjG-vBW9rpKmWAJ10dxgxuVPbheSK3rV9UWBTEpOxVlOmQ5QdSzmRmLUqtGimLld8SXYDx4bPL0W~QwsQpmsEjYrrHpIhFUfKu-SgIPWeguOb7F-SiDcyjKV5h2CWlwuzt4irLs8KJ7D55-MSxEPBCDZCZA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500307,
+      "description_sha256": "f1d5451c5c5d4d7551fd5cce1a8358f740e780ca9a7b1b05406115743162fbb0",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of a graph embedding method named \\textbf{\\MethodName}, which leverages diverse Riemannian experts and a topology-aware gating mechanism to learn personalized embeddings in mixed curvature spaces. The global layout is structured into three main horizontal sections: the input graph, the diverse Riemannian experts module, and the mixture and alignment of experts module. Additionally, a vertical section on the left details the topology-aware gating mechanism applied to individual nodes.\n\nIn the top-left corner, the 'Input Graph $\\mathcal{G}$' is depicted as a multi-layered network with nodes colored differently, indicating potential community structures or node types. This graph feeds into two parallel processing streams.\n\nThe upper central part, labeled 'Diverse Riemannian Experts', contains three distinct curvature spaces: Hyperbolic Space ($\\kappa < 0$), Euclidean Space ($\\kappa = 0$), and Spherical Space ($\\kappa > 0$). Each space hosts multiple experts: Hyperbolic experts (e.g., Expert - $\\mathbb{H}_1$, Expert - $\\mathbb{H}_2$) are represented by curved, saddle-shaped surfaces; Euclidean experts (Expert - $\\mathbb{E}$) by flat grids; and Spherical experts (e.g., Expert - $\\mathbb{S}_{k-1}$, Expert - $\\mathbb{S}_k$) by spherical shapes. These experts are visually grouped under dashed boxes, with labels indicating 'Space Type' and 'Curving Degree' as dimensions of diversity. The outputs from these experts are aggregated into 'Riemannian Embeddings', denoted by $\\mathbf{Z}$, which flow into the right-hand side of the diagram.\n\nBelow this, the 'Topology-aware Gating Mechanism' processes individual nodes $u$ and $v$. For each node, a local neighborhood is shown as a circular graph centered on the node. This undergoes 'Multi-resolution Sampling', producing multiple sampled subgraphs at different scales. These are then processed by 'Topology Encoding $\\xi(\\cdot)$', which generates a series of feature maps representing 'Local Topology Characterization'. These features are fed into a 'Gating Network $\\phi(\\cdot)$', which outputs expert weights $\\mathbf{W}^u$ and $\\mathbf{W}^v$ as bar charts, where each bar corresponds to an expert (e.g., $\\mathbb{H}_1, \\mathbb{H}_2, \\mathbb{E}, \\mathbb{S}_k$) and indicates its contribution to the embedding of node $u$ or $v$.\n\nOn the right, the 'Mixture and Alignment of Experts' block receives the Riemannian embeddings $\\mathbf{Z}$ and the expert weights $\\mathbf{W}^u, \\mathbf{W}^v$. It computes 'Personalized Embedding' for each node via weighted sum: $\\|_{\\varepsilon \\in E} \\mathbf{W}^u_\\varepsilon \\otimes_\\varepsilon \\mathbf{Z}^u_\\varepsilon$ for node $u$, and similarly for $v$. These embeddings are then aligned through 'Weight Alignment', visualized as a histogram $\\mathbf{W}_{(u,v)}$ that combines the weights of both nodes. From this, 'Pairwise Distance' is computed as $d^2(u,v) = \\sum_{\\varepsilon \\in E} \\mathbf{W}^\\varepsilon_{(u,v)} d^2_\\varepsilon(\\mathbf{Z}^u_\\varepsilon, \\mathbf{Z}^v_\\varepsilon)$. The final objective is to minimize 'Pairwise Embedding Distortion', defined as $\\mathcal{D}_{(u,v)} = \\left| \\left( \\frac{d(u,v)}{g(u,v)} \\right)^2 - 1 \\right|$, where $g(u,v)$ represents the ground-truth geometric distance. A dashed arrow labeled 'Minimize' connects this distortion metric back to the gating mechanism, indicating an optimization loop.\n\nThe diagram uses consistent color coding: blue for Euclidean, green for spherical, and purple/blue gradients for hyperbolic experts. All modules are enclosed in rounded rectangles or dashed boxes, with arrows indicating data flow. Text labels are clear and positioned near relevant components, ensuring the entire pipeline is logically traceable from input graph to optimized personalized embeddings."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

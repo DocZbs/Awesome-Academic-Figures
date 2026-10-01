@@ -1,0 +1,96 @@
+{
+  "id": "sciforma-501941",
+  "record_sha256": "5638bf5ce7f87698c97e7ad678ca7b737689842aa9cd0e00caf6373fab223390",
+  "asset_sha256": "4a06fc36902598c78ecfe0bca8bd5ac52316683146078cbf054809b1eaffebd8",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501941",
+    "title": {
+      "zh": "Typhoon 2: A Family of Open Text and Multimodal Thai Large Language Models · 方法图",
+      "en": "Typhoon 2: A Family of Open Text and Multimodal Thai Large Language Models"
+    },
+    "paper": {
+      "id": "arxiv-2412-13702",
+      "title": "Typhoon 2: A Family of Open Text and Multimodal Thai Large Language Models",
+      "authors": [
+        "Kunat Pipatanakul",
+        "Potsawee Manakul",
+        "Natapong Nitarach",
+        "Warit Sirichotedumrong",
+        "Surapon Nonesung",
+        "Teetouch Jaknamon",
+        "Parinthapat Pengpun",
+        "Pittawat Taveekitworachai",
+        "Adisai Na-Thalang",
+        "Sittipong Sripaisarnmongkol",
+        "Krisanapong Jirayoot",
+        "Kasima Tharnpipitchai"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13702",
+      "arxiv_url": "https://arxiv.org/abs/2412.13702",
+      "arxiv_id": "2412.13702",
+      "arxiv_first_submitted_at": "2024-12-18T10:45:24Z",
+      "arxiv_updated_at": "2024-12-19T17:36:38Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501941/image/image.jpg?Expires=1790835209&Signature=cjjMnNbEixRTjXyvO7uio4cm04~8euvYiwCPw-gZXqzWiXu3PzhP~x9BTlXXOWDG~9TIurVvIEOdl08-Pjz8GAf9xRbnmFO97fm1HTgJ1MkOYdX~4viL3iigSXCWRN0V~AMX-MptKunz5GfefQl8DZYM5JG-uxYayxbR-77559dNc~aKfMWbmwAjB2UCDYtgPuzBFi1EtSbjV~1ZAd7sCgdHpVLAiKc7GqZCU4Xir03UHMg0Jupv4b8DAoB0xMqWtg3~~eVaBCXv2vgjFC498-yvbhx53S4sdi1e0ARvHoHsRYu9eYbE4xsxDLMSUU3hgsnIRVZwO3HvSTvgvOlK6g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501941,
+      "description_sha256": "9eee103f9902f777fa7c3e0e39bf834bee2eb1a977ec6985c12e4f3c36018d0d",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the end-to-end architecture of the Typhoon2-Audio model, designed for audio-to-text and text-to-audio processing with optional textual prompting. The global layout is a left-to-right dataflow pipeline, starting from two input modalities on the far left and progressing through multiple processing stages to produce both text and audio outputs on the far right. The entire system is structured into distinct functional blocks connected by directed arrows indicating the flow of information.\n\nOn the left, under the label 'Input', there are two parallel input streams: one labeled 'Audio' represented by a spectrogram image, and another labeled 'Textual Prompt (or Null)', indicating an optional text input. These inputs feed into a large gray-bordered module that serves as the multimodal encoder. Inside this module, the audio input is processed by an 'Audio Encoder' (white rounded rectangle with a blue snowflake icon), which extracts features. This is followed by an 'Adapter' (purple rounded rectangle with a red flame icon), suggesting a trainable or fine-tuned component. The textual input is processed by a 'Text Tokenizer & Embedding' block (white rounded rectangle with a blue snowflake icon), converting text into token embeddings. The outputs of the Adapter and the Text Tokenizer & Embedding are then concatenated via a dashed box containing yellow and cyan horizontal bars, with a '+' symbol and the label 'concat' below it, indicating feature fusion.\n\nThe concatenated feature vector is passed to the next major component: a large purple rectangular block labeled 'LLM' (Large Language Model), which also contains a smaller purple section at the bottom labeled 'LoRA' (Low-Rank Adaptation) with a red flame icon, signifying parameter-efficient fine-tuning. An upward arrow from the LLM points to 'Text Output', indicating that the LLM generates text as one of the outputs.\n\nFrom the LLM, the output flows to a peach-colored rectangular block labeled 'Speech Decoder', marked with a red flame icon, implying it is a trainable component. The Speech Decoder's output is then sent to a light green rectangular block labeled 'Unit Vocoder', also marked with a red flame icon, which synthesizes the final audio waveform. An upward arrow from the Unit Vocoder points to 'Audio Output', depicted as a black waveform icon, representing the generated speech signal.\n\nThe visual attributes include color-coded blocks: white for standard processing units, purple for core model components (LLM, Adapter, LoRA), peach for the Speech Decoder, and light green for the Unit Vocoder. The snowflake icons denote frozen or pre-trained components, while the flame icons indicate trainable or adapted modules. All connections are solid black arrows, except for the concatenation step, which uses a dashed box to visually group the merging operation. The overall structure emphasizes a unified framework where audio and text inputs are jointly encoded, processed by a language model, and then decoded into both text and synthesized speech."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

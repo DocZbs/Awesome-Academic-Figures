@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-502616",
+  "record_sha256": "94d9dcbf198807c184e4a1f2940360409c427627fc384181a3b57709fb3b977d",
+  "asset_sha256": "d62a137abf62d93e773eb86ff9b640355feb10b491bdfc471778afbc82180350",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502616",
+    "title": {
+      "zh": "Entropy Regularized Task Representation Learning for Offline Meta-Reinforcement Learning · 方法图",
+      "en": "Entropy Regularized Task Representation Learning for Offline Meta-Reinforcement Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-14834",
+      "title": "Entropy Regularized Task Representation Learning for Offline Meta-Reinforcement Learning",
+      "authors": [
+        "Mohammadreza Nakhaei",
+        "Aidan Scannell",
+        "Joni Pajarinen"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14834",
+      "arxiv_url": "https://arxiv.org/abs/2412.14834",
+      "arxiv_id": "2412.14834",
+      "arxiv_first_submitted_at": "2024-12-19T13:24:01Z",
+      "arxiv_updated_at": "2025-01-22T13:07:07Z",
+      "arxiv_subjects": [
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502616/image/image.jpg?Expires=1790835223&Signature=sDyKx41LX3P4ICZunX8aZw-5Pyo3O2W0ZlVfzWmf-ph3lzatHEYsMyb1gv97~oMDZtaSjXSuraQ81qBxwXQbxDW6ayyPehGfhawYpNx3AF7~WNTJ~4H8NJMIhXwUH7C8QuY8vz2~qJLS7ZxuGLq8s0kgElole5~pwaqipzwN9pwzZmf9qb~SA50NhlN6MLrZq4HB8BRP0-~NiQFVRdf-mvl6Oa9iEGvkB6dVFJo3aPPRfMuxAB5BUAkvYDOBVr3W8rXT98QYpbMi91wQFwPQvf24nwon6VE2UlRRC4vlIFHTdPQk23S0gQp53oDLi3IHlSqWvtabJJ8ze7GdBcQI-g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502616,
+      "description_sha256": "2dce2816722efda15d770f249e9986abd7e3a5db9cdab6d32a31a33ab783af55",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a meta-reinforcement learning framework designed for offline policy learning using context-based task adaptation. The global layout is a horizontal flowchart, starting from the left with data inputs and progressing rightward through encoding, generation, discrimination, and reinforcement learning components, culminating in loss functions. The structure is modular, with distinct blocks representing different model components, connected by solid black lines indicating forward computation and dashed lines denoting gradient backpropagation paths.\n\nOn the far left, a blue cylinder labeled 'Offline Datasets D' receives input from a set of four training tasks depicted as human-like figures on a checkered floor, symbolizing diverse motion or robotic control scenarios. This dataset feeds into a light blue triangular module labeled 'Context c', which extracts contextual information from the tasks. The context is then passed to a green rectangular block labeled 'Encoder e_θ(c)', which maps the context to a latent representation z, represented as a white circle at the center of the diagram.\n\nFrom the latent variable z, multiple pathways diverge. One path leads to a gray rectangular block labeled 'Generator G_ψ(s, z, ϵ)', which generates fake actions a^fake given state s, latent code z, and noise ϵ. This generated action is fed into an orange rectangular block labeled 'Discriminator D_ζ(a, s, z)', which distinguishes between real and fake actions. The discriminator's output connects to a light orange rectangle labeled 'ℒ_D(ζ)', representing the discriminator loss. Gradient flows (dashed lines) from this loss back to the discriminator and also to the generator via a feedback loop, indicating adversarial training. Additionally, a green box labeled 'ℒ_DML(θ)' (Distance Metric Learning loss) and another green box 'ℒ_MI(θ)' (Mutual Information loss) are connected to the latent variable z and the generator, respectively, suggesting that the encoder is trained to optimize these objectives to improve task representation quality.\n\nAnother branch from z leads to a yellow rectangular block labeled 'Actor π_φ(s, z)', which outputs policies conditioned on state and latent context. This actor is associated with a yellow box 'ℒ_Actor(φ)', indicating its loss function, with gradients flowing back to the actor. A third branch from z goes to a pink rectangular block labeled 'Critic Q_ω(s, z, a)', which evaluates state-action pairs, connected to a pink box 'ℒ_Critic(ω)' for its loss, with gradients flowing back to the critic. The critic and actor form a standard reinforcement learning component, likely part of an off-policy algorithm such as Soft Actor-Critic (SAC) or similar, adapted for context-aware policy learning.\n\nThe diagram includes several loss terms: ℒ_D(ζ) for the discriminator, ℒ_G(ψ) for the generator (connected via dashed lines from the discriminator), ℒ_Actor(φ), ℒ_Critic(ω), ℒ_DML(θ), and ℒ_MI(θ). These losses are used to update the respective model parameters (θ, ψ, φ, ω, ζ) through backpropagation, as indicated by the dashed arrows. The encoder’s training is explicitly tied to both distance metric learning and mutual information maximization, emphasizing its role in learning discriminative and informative latent representations from context.\n\nOverall, the architecture combines adversarial learning for action generation, reinforcement learning for policy optimization, and representation learning for context encoding, all operating within an offline setting using pre-collected datasets. The visual design uses color-coded blocks (green for encoder/losses, gray for generator, orange for discriminator, yellow for actor, pink for critic) to distinguish functional modules, while solid lines denote data flow and dashed lines indicate gradient flow, providing a clear computational graph for the entire system."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500444",
+  "record_sha256": "56294b096316c79c2446be7ee75ff18f5586444f32722b6fad3bc7924d1b76f3",
+  "asset_sha256": "8f150f14ffdcfbb182074dbe0c66cc45a09c469a8ebad3eadfe41b7080c8b60d",
+  "original_file": "original.jpg",
+  "pixel_width": 1856,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500444",
+    "title": {
+      "zh": "Visual IRL for Human-Like Robotic Manipulation · 方法图",
+      "en": "Visual IRL for Human-Like Robotic Manipulation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11360",
+      "title": "Visual IRL for Human-Like Robotic Manipulation",
+      "authors": [
+        "Ehsan Asali",
+        "Prashant Doshi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11360",
+      "arxiv_url": "https://arxiv.org/abs/2412.11360",
+      "arxiv_id": "2412.11360",
+      "arxiv_first_submitted_at": "2024-12-16T01:23:13Z",
+      "arxiv_updated_at": "2024-12-16T01:23:13Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500444/image/image.jpg?Expires=1790835171&Signature=XkhJ4qeok~3KLa6JiVgqGsrLabRC133DZs8paplyCh9MEUOuS-4PaUW6bRn4BWUB5HhWYcesMh38Rt1HUS7Vh3cxwe-SD4Jrf58tJo0~reaS2j9uMfnzcjpmgg0gMCeeuRK8UxI27hjN72d1gsUmnBgdY6NRVE5POOMhsugN8ZhnH9peo52YG7Blfiw8F~g3T209cGwjRQ262TUNEVy~jtpAZmPEv5ZzTZbPfPsY3evuFDmuRuHXRvqis2X-QUpgVq0LN1P0tyS1j2szyMpStkS1oFmnKAGXLCwXg89mPZZMoNAF7847kxSU8~qfLqstrBIQRphfFCCDZvgLXfoFHg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500444,
+      "description_sha256": "fdc55720dc61410e4781b1e20d88992d6b9e447a66849d506f022b17e6d9906a",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a two-phase robotic learning pipeline: first, learning a task from a human expert, and second, performing the task by a cobot in a human-like manner. The global layout is divided into two main sections, each enclosed in a rounded rectangle with distinct background colors. The left section, titled 'Learning the task from the human expert' with a light orange header, outlines the training phase. The right section, titled 'Performing the task by the cobot' with a light green header, details the execution phase. Both sections are arranged horizontally and connected sequentially.\n\nIn the left section, the process begins with a green rounded rectangle labeled 'RGB-D video frames of human expert demonstrations', containing an inset image of a person interacting with objects on a table. This input feeds into a blue rounded rectangle labeled 'Visual IRL'. Inside this module, two pink and green rounded rectangles represent sub-models: 'Object Location Prediction Model' (pink) and 'Human Keypoint Detection Model' (green). Both models output to a central beige rounded rectangle labeled 'Adversarial IRL', which learns a reward function from the expert’s behavior. An arrow connects the Adversarial IRL to the next stage.\n\nThe right section begins with a yellow rounded rectangle titled 'Neuro-Symbolic Dynamics Mapping'. Within it, a purple rounded rectangle labeled 'Human Joints IK Model' receives the learned policy. This connects to a light blue rounded rectangle labeled 'Symbolic Mapping of Human Joints to Cobot Joints', which then connects to another light blue rounded rectangle labeled 'Cobot Joints FK Model'. This FK model is followed by a cyan rounded rectangle labeled 'Cobot Joints IK Model', which refines the joint angles for precise end-effector control. A final arrow leads to a pink rounded rectangle titled 'Cobot task execution in a human-like manner', containing an inset image of a cobot performing the same task as the human expert.\n\nAll connections are represented by solid black arrows indicating the flow of data or control. The color coding helps distinguish between different functional modules: green for input/data, blue for visual processing and IRL, purple and light blue for symbolic mapping, and pink/cyan for cobot-specific dynamics. Text labels are clear and centered within each module. The overall structure follows a left-to-right, top-down logic, emphasizing the progression from human demonstration to cobot execution through learned reward functions and neuro-symbolic mapping."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

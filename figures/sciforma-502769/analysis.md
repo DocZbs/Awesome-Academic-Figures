@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.15224
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502700&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a Wavelet Packet Decomposition (WPD) process applied to an EEG signal sampled at 128 Hz. The global layout is hierarchical and tree-like, starting from a single root node labeled 'EEG Signal' at the top center, which branches downward into multiple levels of decomposition. The structure is organized into three main vertical branches representing different frequency bands derived from the original signal, with each level of decomposition shown as a horizontal layer labeled 'Level 1', 'Level 2', and so on, progressing downward. The leftmost branch decomposes the 0–64 Hz band, the central branch processes the full 0–128 Hz band, and the rightmost branch handles the 64–128 Hz band.
+
+Each node in the diagram is represented as a rectangular box with black borders and black text inside. Nodes are labeled using mathematical notation: 'CA' denotes Approximation Coefficients and 'CD' denotes Detail Coefficients, followed by subscripted indices indicating the decomposition level and branch (e.g., CA_{(1,0)}, CD_{(2,1)}). Frequency ranges are indicated in parentheses below or beside each node. Specific brainwave bands are highlighted in red text beneath relevant nodes: 'α wave' (8–16 Hz), 'β wave' (16–32 Hz), 'γ wave' (32–64 Hz), 'δ wave' (0–4 Hz), and 'θ wave' (4–8 Hz). The term 'other' in red appears next to the CD_{(1,1)} node, indicating frequencies above 64 Hz not assigned to standard brainwave categories.
+
+Connections between nodes are represented by thick black arrows pointing downward, indicating the flow of signal decomposition from parent to child nodes. The root 'EEG Signal' splits into three initial paths: one to 'Appr. Coefficient (CA_{(1,0)})' for 0–64 Hz, one to 'Detail Coefficient (CD_{(1,1)})' for 64–128 Hz, and a central path directly to Level 1 decomposition of the full 0–128 Hz band. Each subsequent level further subdivides the frequency bands, with each parent node splitting into two children: one CA (approximation) and one CD (detail) coefficient. For example, CA_{(1,0)} splits into CA_{(2,0)} (0–32 Hz) and CD_{(2,1)} (32–64 Hz), which is labeled 'γ wave'. This branching continues down to Level 5, where CA_{(5,0)} (0–4 Hz) is labeled 'δ wave' and CD_{(5,1)} (4–8 Hz) is labeled 'θ wave'. The rightmost branch terminates after Level 2, with CD_{(2,2)} and CD_{(2,3)} nodes, and an ellipsis (...) indicating further decomposition beyond what is shown. The diagram emphasizes the multi-resolution analysis of EEG signals, mapping frequency bands to known neural oscillations through a structured, recursive decomposition process.

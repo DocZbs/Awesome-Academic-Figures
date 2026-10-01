@@ -1,0 +1,91 @@
+{
+  "id": "sciforma-500203",
+  "record_sha256": "c080b09ca305af212a22a6f4cccaf9f26a3b48291940be38fc98f8297e1e3f6a",
+  "asset_sha256": "1b30d541e583a8c65c469331b228816cebe88fff7a9372c0a02c152d8b753ce0",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500203",
+    "title": {
+      "zh": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport · 方法图",
+      "en": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport"
+    },
+    "paper": {
+      "id": "arxiv-2412-10945",
+      "title": "A Staged Deep Learning Approach to Spatial Refinement in 3D Temporal Atmospheric Transport",
+      "authors": [
+        "M. Giselle Fernández-Godino",
+        "Wai Tong Chung",
+        "Akshay A. Gowardhan",
+        "Matthias Ihme",
+        "Qingkai Kong",
+        "Donald D. Lucas",
+        "Stephen C. Myers"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10945",
+      "arxiv_url": "https://arxiv.org/abs/2412.10945",
+      "arxiv_id": "2412.10945",
+      "arxiv_first_submitted_at": "2024-12-14T19:43:48Z",
+      "arxiv_updated_at": "2024-12-18T18:46:15Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500203/image/image.jpg?Expires=1790835164&Signature=qAK8MxRtBuLwd7IH~ObZcdO5y641vM0OEWhMRvOb3TTn9FazsWG0afJXr~l12FyhwtJjCHXlvrF91g1FhXWvF1nW7Z484R~aOGGdeY9-w5JMpqm3d2-MZ2HeAz0dh-EW6gC0~7Zj7Sx7A8gvNOjiGS8QuxyrjkdRYZ37gtnodoXS1xUZG4dVu2U8FDcGCsBrHOBn-~0z1UjWgpgnQuDhhcS-MlFfslADSPOPi5ndvMGHP~2i7tTo7TgIhPCPN2kAbvB~mwbk3R7lRfmpK9qOf3jS8PzTweNVs--4OBhBhZ9MPh9WouNnKw2p8ZAXRdgebx3dPWruA2neaF~GuwV2eQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500203,
+      "description_sha256": "3421599e4eb1a4badaa3c0c55b9252c6edb0ca7a5f7d8878cbe4233d46aa94bc",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the dual-stage architecture of DST3D-UNet-SR, comprising two sequential modules: the Temporal Model (TM) and the Super-Resolution Model (SRM). The global layout is horizontal and left-to-right, divided into three main stages: Dual-Stage Input, TM, and SRM, with the final output labeled 'Dual-Stage Output' on the far right. Each stage is enclosed in a dashed rectangular boundary, indicating distinct processing phases.\n\nIn the first stage, 'Dual-Stage Input', multiple temporal sequences are shown, each represented as a horizontal row of five low-resolution (LR) frames. These sequences are labeled with time intervals such as [t₀,t₄], [t₁,t₅], ..., [tₙ₋₄,tₙ]. The first four frames in each sequence are colored green, representing 'LR Ground Truth' as per the legend at the bottom. The fifth frame in each sequence is highlighted in yellow, indicating it is a 'TM Pred.' (prediction from the TM), which is generated by the model during the process. This structure implies a sliding window approach where each new sequence shifts forward by one time step, incorporating the previous TM prediction as the new input.\n\nThe second stage, labeled 'TM', processes each input sequence through a black arrow pointing to a single yellow-framed output image, labeled 'TM Pred.'. This indicates that the TM takes a sequence of five LR frames (four ground truth + one predicted) and produces a single predicted LR frame. The TM’s output for one sequence becomes the fifth frame in the next sequence, forming a recursive prediction loop. The TM module is visually represented as a vertical column of these processing steps, with each row corresponding to a different time window.\n\nThe third stage, 'SRM', receives both the original input sequence (the first four green frames) and the TM’s predicted frame (the fifth yellow frame) as input. A black arrow leads from the TM’s output to the SRM, which then generates a single high-resolution (HR) frame, shown in a blue border. This output is labeled 'SRM Pred.' in the legend and is part of the 'Dual-Stage Output' column on the far right. The SRM thus performs super-resolution on the combined input, producing a high-quality frame.\n\nThe legend at the bottom clarifies the color coding: green boxes represent 'LR Ground Truth', yellow boxes represent 'TM Pred.', and blue boxes represent 'SRM Pred.'. All images within the figure are small square thumbnails depicting what appears to be a moving object (e.g., a bird or fish) against a dark background, consistent with video or time-lapse data.\n\nConnections between modules are shown via thick black arrows, indicating the flow of data. The TM processes each input sequence independently, and its output feeds into the SRM for the same time step. The recursive nature of the input is shown by how the TM’s prediction from one sequence becomes part of the next sequence’s input, enabling temporal consistency across predictions. The entire pipeline is designed to generate high-resolution frames from low-resolution video sequences in a dual-stage fashion, combining temporal modeling with super-resolution."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

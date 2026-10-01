@@ -1,0 +1,88 @@
+{
+  "id": "sciforma-500707",
+  "record_sha256": "c77c7de4fbd1e05eae96f664eeffaf06172d8ed3596ca396f10c35c694af0a8e",
+  "asset_sha256": "a93cffbf607593065e0051db00447b25eba73772e32c583475aa23f75aa07f5f",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500707",
+    "title": {
+      "zh": "Ultra-High-Definition Dynamic Multi-Exposure Image Fusion via Infinite Pixel Learning · 方法图",
+      "en": "Ultra-High-Definition Dynamic Multi-Exposure Image Fusion via Infinite Pixel Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-11685",
+      "title": "Ultra-High-Definition Dynamic Multi-Exposure Image Fusion via Infinite Pixel Learning",
+      "authors": [
+        "Xingchi Chen",
+        "Zhuoran Zheng",
+        "Xuerui Li",
+        "Yuying Chen",
+        "Shu Wang",
+        "Wenqi Ren"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11685",
+      "arxiv_url": "https://arxiv.org/abs/2412.11685",
+      "arxiv_id": "2412.11685",
+      "arxiv_first_submitted_at": "2024-12-16T11:55:26Z",
+      "arxiv_updated_at": "2024-12-16T11:55:26Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500700&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500707/image/image.jpg?Expires=1790835177&Signature=Mvt84OOrSrjZ9hq0D0EmMZAMbB31GWR52giFG8JN6MvUWZp6~c7ProF7baA-zAQS0QbpSqBRjEW5hbrbT-vLkVQi8J0~BapzQO9J7mKuUFEgZ12OpIUTEhoZjhKj9Vy58fZvJxlATG3TrOJ~~JqEQMkUCPs82lmWDCMMPKiJ0906U8JIxQscN48~tDwY9Wz67joCZ0flJMDT1rjc~tYxypMkQ~C1M~UW7spFbURG5UlhAZIqwN~KtWNMYBN4lo3igAdsIB~1EN1kKaou2P3BHgk4Yk3qDjbYNCo~apFfb~6gE3yPQQKxZnQ2OAlIAcHBWao~JkEpU2un0lM76ivbOQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500707,
+      "description_sha256": "5ee04734a33868dcf42d7ef3477da7d399655c69d08003d71fd0dc8c916035f4",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall architecture of IPL, a model designed for processing multiple input images (X1, X2, X3) to generate an output image Ŷ. The global layout is structured as a U-shaped encoder-decoder framework, with a series of Feature Integration Blocks (FIBs) forming the core of the network. At the top, three input images are concatenated and passed through a DownSampler, followed by a sequence of FIBs, then an UpSampler, and finally element-wise multiplication with a skip connection from the initial concatenation to produce the final output. A dashed red box encloses the entire pipeline, indicating the main flow.\n\nEach FIB is expanded below into two major modules: the Dimensional Attention Enhancement Module (DAEM) on the left and the Dimensional Rolling Transformation Module (DRTM) on the right. DAEM processes input slices sequentially via a 'Slice' block, where each slice is processed by a Cyclic Scanner. The Cyclic Scanner contains a Local Feature Extractor (LFE) for training, which includes operations like Global Average Pooling, 1x1 Convolution, ReLU, Sigmoid, and element-wise multiplication. For inference, the LFE is replaced with an Encoder-Decoder pipeline that compresses and decompresses features, storing them in an 'Attention Cache' to enable efficient processing of infinite-length inputs. The outputs from all blocks are concatenated and summed before being passed to DRTM.\n\nDRTM performs dimensional permutation to associate features across different spatial dimensions. It consists of a series of Permute operations, shown as 3D cubes with color-coded axes (height, width, channel), demonstrating transformations such as (C,W,H) → (C,H,W) and (C,H,W) → (W,H,C). These permutations are visualized with arrows and labeled with the corresponding dimension reordering. The permuted features are then combined via element-wise addition and multiplication, with skip connections indicated by dashed lines.\n\nAt the bottom, a legend defines the visual symbols used: Global Average Pooling (light pink cube), 1x1 Conv (beige cube), ReLU (red cube), Sigmoid (dark red cube), GELU (teal cube), Permute (green cube), Interpolate (stacked beige rectangles), Skip Connection (dashed arrow), Element-wise Addition (plus sign), and Element-wise Multiplication (multiplication sign). The entire design emphasizes efficient, scalable feature integration through attention caching and multi-dimensional transformation."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

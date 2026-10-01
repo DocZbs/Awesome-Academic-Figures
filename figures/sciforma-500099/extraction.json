@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-500099",
+  "record_sha256": "1ae51594a718b48002e80aa36b12cbee730b7785d9c4022cafa4ea00411fcd27",
+  "asset_sha256": "4680a0ebf4cd41e5bdd0005283fde70db735c1ff0ca958cb1474988b88113f32",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500099",
+    "title": {
+      "zh": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions · 方法图",
+      "en": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions"
+    },
+    "paper": {
+      "id": "arxiv-2412-10739",
+      "title": "DSRC: Learning Density-insensitive and Semantic-aware Collaborative Representation against Corruptions",
+      "authors": [
+        "Jingyu Zhang",
+        "Yilei Wang",
+        "Lang Qian",
+        "Peng Sun",
+        "Zengwen Li",
+        "Sudong Jiang",
+        "Maolin Liu",
+        "Liang Song"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.10739",
+      "arxiv_url": "https://arxiv.org/abs/2412.10739",
+      "arxiv_id": "2412.10739",
+      "arxiv_first_submitted_at": "2024-12-14T08:19:30Z",
+      "arxiv_updated_at": "2025-02-27T13:17:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500099/image/image.jpg?Expires=1790835163&Signature=vuytP9LSPOAF~hEROVVJ5FhJrubKVezIuLOuoQMHgl8HHfPmeiTM0iBevjzSxvxZJ6P5ql1o6utTUudr6iLDKDk51G0N55jllI9tSP5Gv2nvVCdsYH5rEECTXeUsXXUJyZ83c~cyOzUgvfXe1C3lpy03nc3VooZEPWFJ1hA~XkBx3tiQbv6XBHeXf1V2qspkW~rICeG9~hfBAae8SV1GSDxHG0HKBBK0d2MXND49I2yHubJlhCjAL8udRSayTXwdH69uvhqw34nkwN3buM0Z8zJPzXNxcRHGJvWHs3RcduR1Z~CzW3uuh9XGg3NgCs~hXvZBLbjbDRAuqwyoUAivrA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500099,
+      "description_sha256": "cf9a0ce43e463d879362eee870a433022312b6ee1a618277920ce68eac82469f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a point cloud reconstruction module designed to enhance feature fusion across agents through additional supervision. The global layout is a left-to-right workflow with a feedback loop from the rightmost component to the middle component. On the far left, a 3D grid structure labeled 'Fused Feature' represents a volumetric feature map, depicted as a blue-tinted cube composed of smaller voxels, some of which contain darker blue regions indicating feature intensity. This fused feature is processed via a 'Reconstruction' step, indicated by a black arrow pointing right. Above this arrow, two small icons represent the outputs of the reconstruction: a blue checkered square labeled 'Voxel Mask' and a gray cube with an orange point and a blue offset vector labeled 'Point Offsets'. These components together reconstruct a 'Voxel-level Point Cloud', shown in the center as a dense, colorful point cloud with green-yellow clusters on a cyan background, suggesting density or confidence levels. To the right, a '3D Multi-view Point Cloud' is displayed as a more sparse, multi-colored point cloud with purple, blue, and green regions, representing ground truth or reference data. A bidirectional supervision connection, labeled 'Supervision' with loss terms 'L_m' and 'L_o' above the arrow, links the 3D Multi-view Point Cloud back to the Voxel-level Point Cloud, indicating that the reconstruction is guided by these losses to improve alignment and accuracy. The overall structure emphasizes a generative process from fused features to reconstructed points, refined by external supervision to ensure fidelity to multi-view input data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

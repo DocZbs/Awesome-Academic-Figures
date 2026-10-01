@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Chasing Progress, Not Perfection: Revisiting Strategies for End-to-End LLM Plan Generation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10675
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-part methodology for training and refining a large language model (LLM) as a planner for robotic tasks using reinforcement learning, with a focus on improving plan quality through a proposed reward mechanism based on Longest Contiguous Common Subsequence (LCCS).
+
+Part (a), titled 'Next-token prediction on a training data triplet', illustrates the autoregressive training process of the LLM. The global layout shows a horizontal flow from left to right, representing sequential token prediction. At the top, a light blue rectangular box labeled 'Autoregressive Language Model' spans the width, with a small emoji and explanatory text stating it predicts the next token based solely on previous tokens, processing strictly left-to-right. Below this, three parallel sequences of gray rectangular tokens represent input data: 'Domain NL Desc.' (e.g., 'A robotic bartender ...'), 'Problem NL Desc.' (e.g., 'Initially I have ... My goal ...'), and 'Action sequence (plan) in NL' (e.g., '<PLAN> grasp shaker x using left hand \n fill ...'). Each token in these sequences has an upward arrow pointing to the LLM, indicating the model's task of predicting the next token in each sequence. The vertical label on the left, 'predicting the next token', reinforces the autoregressive nature.
+
+Part (b), titled 'Proposed LCCS Reward Model', details the reward computation mechanism. The layout is a flowchart starting from a gray rounded rectangle labeled 'Domain & Problem Spec.', which feeds into three components: a 'Symbolic Planner' (light blue), an 'LLM' (light blue), and a 'VAL' (light blue). The Symbolic Planner outputs a 'Reference Plan' (e.g., [A,B,C,D,E,F,G]) in a white box, while the LLM outputs a 'Generated Plan' (e.g., [A,B,C,E,F,G]) in a yellow box. These two plans are compared to compute a 'Contiguous Common Subsequence' (e.g., [A,B], [B,C], [E,F,G]) and then the 'Longest Contiguous Common Subsequence' (e.g., [E,F,G]). Two cases are shown: Case 1, where the generated plan is valid, yields a reward of 1.0; Case 2, where the plan is not valid, yields a reward of 3/7, reflecting the length of the LCCS relative to the reference plan. All boxes are rounded rectangles with distinct colors: gray for inputs, light blue for models, white for reference, yellow for generated output, and purple for reward cases.
+
+Part (c), titled 'Reinforcement Learning for tuning LLM planner', outlines the training loop. The global structure is a feedback loop. A 'Problem Context' (gray rounded rectangle) is fed into an 'Initial LM' (light blue), which produces a '*Tuned LM' (light blue) after an update. The *Tuned LM generates a 'Plan' (yellow rounded rectangle), which is evaluated by a 'Reward Model' (purple rounded rectangle). The reward model combines the LCCS-based reward with a KL prediction shift penalty, represented as '-λ_KL D_KL(LM_tuned(π|x) || LM_initial(π|x))'. This combined reward R(π; π*) is used in a 'Reinforcement Learning Update' step, shown as a mathematical update rule: 'θ ← θ + ∇_θ J(θ)', which feeds back to update the *Tuned LM. The connections are directed arrows, with a thick gray arrow from the reward model to the update step, and a feedback arrow from the update step back to the *Tuned LM, forming a closed loop. The KL penalty term is shown as a separate box feeding into the reward calculation via a plus sign.

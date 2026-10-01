@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Bridge then Begin Anew: Generating Target-relevant Intermediate Model for Source-free Visual Emotion Adaptation — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13577
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501800&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a comparative analysis between standard loss functions and a proposed 'polarity loss' in the context of emotion classification, using numerical examples to demonstrate enhanced differentiation capability. The global layout is divided into two main vertical sections: the left section labeled 'standard loss' and the right section labeled 'our polarity loss', separated by a dashed vertical line. The entire diagram is enclosed within a dashed rectangular border.
+
+On the left side, three horizontal rows represent outputs from different models: 'Target Model output A' at the top, 'Bridge Model output' in the middle, and 'Target Model output B' at the bottom. Each row begins with a black arrow pointing to a horizontal bar containing eight circular nodes, each representing a probability distribution over emotion categories: 'amuse', 'awe', 'content', 'excite', 'anger', 'disgust', 'sad', 'fear'. These bars have a gradient fill from light yellow to gray, indicating varying confidence levels. The values inside the circles are numerical probabilities (e.g., 0.4, 0.6, 0.9, etc.).
+
+Each model output is associated with a mathematical expression: 'Target Model output A' is labeled φ_t(x_t^A), 'Bridge Model output' is φ_b(x_t), and 'Target Model output B' is φ_t(x_t^B). Between these rows, bidirectional arrows labeled L_sl (standard SL loss) connect the Bridge Model output to both Target Model outputs, with the value 'standard SL loss: 2.07' specified. Additionally, unidirectional arrows labeled L_im (standard IM loss) point upward from Target Model output A and downward from Target Model output B, each with the value 'standard IM loss: 0.93'.
+
+On the right side, corresponding to each model output on the left, there are smaller horizontal bars with two circular nodes labeled 'pos' and 'neg', representing positive and negative emotion polarity. These bars also have a gradient fill. For Target Model output A, the values are 1 (pos) and 0 (neg); for Bridge Model output, 0.9 (pos) and 0.1 (neg); for Target Model output B, 0.4 (pos) and 0.6 (neg).
+
+To the right of these polarity bars, the figure shows the breakdown of losses: for each model output, the standard loss is added to the 'polarity IM loss' or 'polarity SL loss' (in red text), resulting in a total loss (also in red). Specifically: for Target Model A, 0.93 + 0.34 = 1.27; for Bridge Model, 2.07 + 0.10 = 2.17; for Target Model B, 2.07 + 1.42 = 3.49; and for Target Model B's IM loss, 0.93 + 1.01 = 1.94. The connections between the left and right sides are indicated by black arrows from the emotion distribution bars to the polarity bars.
+
+The figure visually emphasizes how the proposed polarity loss adds a finer-grained penalty based on emotional valence, thereby improving model discrimination between similar emotion distributions. The caption clarifies that this approach enhances the model’s ability to differentiate samples by incorporating emotion polarity into both IM and SL loss components.

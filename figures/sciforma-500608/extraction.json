@@ -1,0 +1,83 @@
+{
+  "id": "sciforma-500608",
+  "record_sha256": "0024ef2c3075a7d3f6d2ca7114ed55695082e243d5b8e78cfe14f723841ed9b3",
+  "asset_sha256": "ecd94701c5b08ac1e2c17057962d917e3ca16705c79b6627e5213e734ffe60df",
+  "original_file": "original.jpg",
+  "pixel_width": 832,
+  "pixel_height": 1216,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500608",
+    "title": {
+      "zh": "PyPotteryLens: An Open-Source Deep Learning Framework for Automated Digitisation of Archaeological Pottery Documentation · 方法图",
+      "en": "PyPotteryLens: An Open-Source Deep Learning Framework for Automated Digitisation of Archaeological Pottery Documentation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11574",
+      "title": "PyPotteryLens: An Open-Source Deep Learning Framework for Automated Digitisation of Archaeological Pottery Documentation",
+      "authors": [
+        "Lorenzo Cardarelli"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11574",
+      "arxiv_url": "https://arxiv.org/abs/2412.11574",
+      "arxiv_id": "2412.11574",
+      "arxiv_first_submitted_at": "2024-12-16T09:01:32Z",
+      "arxiv_updated_at": "2024-12-16T09:01:32Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500608/image/image.jpg?Expires=1790835174&Signature=omsp38cz~esReFsggeyfrbgRZdCJRDiCCmWUQKWWZ2IfkwNSJqfNIzYPcG9pNJeup2uQkJl-cmOxKliyAPMEBpcsbhBsdRBXyqRdNyDyoSWrmBQ1UX-26xi0lKeO3T0yn0lyunPX0gnqyg4a8FtA3rFM1k0mZ84y9-V6VS-AMeKC3GtDzsBu-Liqwo~DSWgfu0uYp0UjCnnR4Y9tykHZiWRBLE9GMUhcOzsKEIqcPf7MUy8BrI39x0loT1yvCPK1oNfpbzWMEg-5tuhVJruQdwdIMOlYEHIpJFpY0BvXGtVpoQ7ih8HE6sOrVdGn9kj-LfdY9R-H9Q4MaU21O5jZdA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500608,
+      "description_sha256": "cfc1318313f55c94106afb22fc3c5f86ecbb9da312f170a6a2cd20c8c46e7c0f",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The diagram illustrates a comprehensive workflow for processing PDF documents using computer vision and machine learning techniques, structured into four main stages: Document Processing, Model Processing, Post-Processing, and Tabular Data Management, culminating in Outputs. The global layout is hierarchical and left-to-right, with clear modular boundaries and directional arrows indicating data flow.\n\nIn the top-left, an 'Input PDF' rectangle initiates the process. This connects to the 'Document Processing' module, which contains two components: a process box labeled 'PDF2imgs Conversion' and a rounded rectangle labeled 'Quality checking'. The output from this module flows to a diamond-shaped decision node labeled 'Images', which serves as an input to the next stage.\n\nThe 'Model Processing' module follows, starting with 'Model selection' (rectangle), which receives input from 'YOLO Vision Models' (rectangle) and feeds into 'Adjustable parameters' (rounded rectangle). These parameters influence the 'Images' node, leading to 'Segmentation Masks' (rectangle). A parallel path includes 'Manual Checking' (process box) feeding into 'Segmentation Masks', which then leads to 'Enhanced Segmentation Masks' (rectangle). From here, a feedback loop connects to 'Self-Annotation' (process box), which in turn feeds back into 'YOLO Vision Models', forming a self-improving cycle.\n\nThe 'Post-Processing' module begins with 'EfficientNet Classifier Model' (rectangle), which processes the 'Enhanced Segmentation Masks' to produce 'Extracted Instances' (diamond). This is followed by another 'Manual Checking' (process box), resulting in 'Enhanced Instances' (diamond).\n\nSimultaneously, the 'Tabular Data Management' module runs in parallel, starting with 'PDF Metadata' (rectangle), flowing through 'Metadata Association' (process box) to form an 'Enriched Dataset' (rectangle). This dataset connects to the 'Enhanced Instances' node, integrating metadata with processed content.\n\nFinally, the 'Outputs' section at the bottom contains three diamond-shaped nodes: 'PDF Report', 'Extracted Images', and 'CVS Metadata', all receiving input from 'Enhanced Instances'. The entire diagram uses black lines and standard shapes: rectangles for processes or models, diamonds for data or decision points, and process boxes (with double vertical lines) for manual or specific operations. All text is black, sans-serif, and centered within each shape. The diagram is monochromatic, with no color coding, and uses solid arrows to indicate unidirectional data flow, except for the feedback loop from 'Self-Annotation' to 'YOLO Vision Models'."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

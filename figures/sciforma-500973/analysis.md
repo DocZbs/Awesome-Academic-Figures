@@ -1,0 +1,21 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Mastering Board Games by External and Internal Planning with Language Models — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.12119
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates a decision-making process in a chess game using a minimax search with breadth=3 and depth=1, alongside a model's internal search response. On the left side, there is a textual representation of the model’s input prompt and output response, formatted as a log of evaluations for different nodes in the search tree. The prompt includes metadata such as 'Minimax breadth=3 depth=1' and structured XML-like tags like <mav game=chess> and <nav game=chess>, which denote different evaluation modes. For each node (e.g., <root>, <root g3d6>, <root g3g6>, <root c2e2>), the log shows the current state (FEN notation), previous action, top action-value pairs (e.g., g3d6:<ctrl133>, c2e2:<ctrl132>), and the selected best action. The text uses color coding: green for evaluation results, red for selected actions, and black for structural information. The final decision is highlighted as selecting 'g3g6' from the root node.
+
+On the right side, the corresponding minimax search tree is visualized with three branches stemming from the initial chessboard position at the top. Each branch represents a possible move from the root: Queen to d6 (red arrow), Queen captures on g6 (green arrow), and Rook to e2 (blue arrow). Below each move, the resulting board state is shown. The move 'd6' has a value v(●) = 0.55, 'xg6' has v(●) = 0.52, and 'e2' has v(●) = 0.5. Under each resulting board, the best action from that state is indicated: for 'd6', it's Queen x d6 with v(○) = 0.5; for 'xg6', it's Knight f4 with v(○) = 0.34; for 'e2', it's Knight f4 with v(○) = 0.5. The boards use standard chess notation with pieces rendered in black and white, and highlighted squares indicate the move or target square (e.g., pink for 'd6', green for 'xg6', blue for 'e2').
+
+At the bottom, the overall values for the three root actions are summarized: v(●, a₁) = 0.5 for 'd6', v(●, a₂) = 0.66 for 'xg6', and v(●, a₃) = 0.5 for 'e2'. This indicates that although the model’s MAV (Model Action Value) assigns the highest value to 'd6', the internal search correctly identifies 'xg6' as the optimal move, which is the only winning move in this context. The figure caption clarifies that the response shown is an actual model output, but only partial action-value pairs are displayed for brevity. The layout is split into two main regions: textual logs on the left and graphical search tree on the right, connected by the shared context of the chess decision process.

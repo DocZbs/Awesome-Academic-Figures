@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-501936",
+  "record_sha256": "8d07ae366d85dce5b640acb09cc30d1ad3954a3c89decd7098f3861b14a6dd25",
+  "asset_sha256": "f257884f6155d40ddd0aaf72c37c448c420e62d9fec8716d4b42b19d973b0b3a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501936",
+    "title": {
+      "zh": "Optical aberrations in autonomous driving: Physics-informed parameterized temperature scaling for neural network uncertainty calibration · 方法图",
+      "en": "Optical aberrations in autonomous driving: Physics-informed parameterized temperature scaling for neural network uncertainty calibration"
+    },
+    "paper": {
+      "id": "arxiv-2412-13695",
+      "title": "Optical aberrations in autonomous driving: Physics-informed parameterized temperature scaling for neural network uncertainty calibration",
+      "authors": [
+        "Dominik Werner Wolf",
+        "Alexander Braun",
+        "Markus Ulrich"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13695",
+      "arxiv_url": "https://arxiv.org/abs/2412.13695",
+      "arxiv_id": "2412.13695",
+      "arxiv_first_submitted_at": "2024-12-18T10:36:46Z",
+      "arxiv_updated_at": "2025-04-30T16:15:29Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501936/image/image.jpg?Expires=1790835209&Signature=cLUfu8GHN0pH2~k0QaOOIjBl4iT39-jJQh710gUmGuOxbeh7o7qWMn3OTRAXXXkBJBwFKDarrggeScOcDypqRUHpQ5TTrnzRoa54L5YRhThXs0aYzote-y-S4foT26tbVlH6FZCkXDfHQibQwgI4T3Ypa4QMUMRFllCcp~wqWV9mQf5FXtBCHm7S1h1R5SVLsH7qWOUSVhNVNe8X-Xl9Zn5F24wURMRvLzKZ5~28u9TqeGe9F82UPMpWBhgnmWa8jjp9GLArxjwmk~PWFwWh39Ng9XBGFmoZISe2NAJWez2m-UP0q2ckidkFTwNu7h0i0IG1JknnK554R5deFaBXYQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501936,
+      "description_sha256": "fcbe427e98ae29513cad027b7469a1d8b8810896d0fa64c9dd03e602a60cf8a3",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a multi-task deep learning architecture designed for semantic segmentation and simultaneous prediction of effective Zernike coefficients (specifically α₃, α₄, α₅) under optical aberrations caused by windshields. The overall layout is divided into three main sections: a data augmentation pipeline on the left, a central U-Net-based restoration and segmentation network, and a downstream calibration module on the right.\n\n[1] Global Layout and Structure:\nThe diagram flows from left to right. On the far left, a data preparation stage generates perturbed images using a Fourier-optics model applied to clean images (without windshield). This augmentation is marked as 'Only used during training'. The central part features a U-Net-like architecture with an encoder, bottleneck, and two coupled decoders: one for image restoration and another for semantic segmentation. Skip connections are shown for both high- and low-resolution features, with dashed lines indicating the flow. On the right, a ResNet classifier processes residual batches to predict Zernike coefficients, followed by a calibration block that incorporates physics-based inductive bias to produce calibrated confidence scores and final semantic segmentation maps.\n\n[2] Visual Modules and Attributes:\n- The input data sources are represented as cylindrical containers labeled 'Images without windshield' and 'Images with windshield'.\n- The Fourier-optics module is a rectangular box with a wavy line inside, receiving an expected value E[α₃, α₄, α₅] as input during training.\n- The central network consists of a KOR-enhanced Encoder (trapezoid), Bottleneck (rectangle), KOR-enhanced Restorer (trapezoid), and KOR-enhanced Decoder (trapezoid). These components are connected via solid arrows, with dotted skip connections labeled 'Skip connections for high-resolution features' and 'Skip connections for low-resolution features'.\n- Loss functions are annotated alongside outputs: 'Restoration loss (L1-norm)' for the restored batch, 'Cross-Entropy loss' for the logits tensor, and 'Zernike coefficients loss (L2-norm)' for the coefficient prediction.\n- The ResNet block is a trapezoid, leading to a set of predicted coefficients {α₃, α₄, α₅}.\n- The calibration module includes a red-dashed box labeled 'Inductive calibration bias', containing a physics-based term T_cal = M(ω, α), which feeds into a 'Calibrated confidence scores' block and then to the 'Semantic segmentation map'.\n\n[3] Connections and Arrows:\n- Clean images pass through Fourier-optics to create a perturbed batch; this batch merges with the original windshield images at a black circular node before entering the encoder.\n- The encoder outputs to the bottleneck, which connects to both decoders. The restorer decoder outputs a 'Restored batch', while the segmentation decoder outputs a 'Logits tensor'.\n- The restored batch is subtracted from the original perturbed batch to form a 'Residual batch', which is fed into the ResNet for Zernike coefficient prediction.\n- The logits tensor and the predicted coefficients are combined at a black circular node, feeding into the calibration block. The physics-based term T_cal is derived from the predicted coefficients and used to adjust the logits, producing calibrated confidence scores that lead to the final semantic segmentation map.\n- Dotted lines represent skip connections between encoder and decoder layers, preserving spatial information across resolutions."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

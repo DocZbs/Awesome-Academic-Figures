@@ -1,0 +1,86 @@
+{
+  "id": "sciforma-501239",
+  "record_sha256": "7b58ab0b088138f1f6a91b550df8f5fd5ff4c7b1a3c841d8f7962272693a0d5c",
+  "asset_sha256": "d301562cb28bde52bffadc8450226001ac4decf82f61d0425f845ba3cc1f81c9",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501239",
+    "title": {
+      "zh": "When to Speak, When to Abstain: Contrastive Decoding with Abstention · 方法图",
+      "en": "When to Speak, When to Abstain: Contrastive Decoding with Abstention"
+    },
+    "paper": {
+      "id": "arxiv-2412-12527",
+      "title": "When to Speak, When to Abstain: Contrastive Decoding with Abstention",
+      "authors": [
+        "Hyuhng Joon Kim",
+        "Youna Kim",
+        "Sang-goo Lee",
+        "Taeuk Kim"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12527",
+      "arxiv_url": "https://arxiv.org/abs/2412.12527",
+      "arxiv_id": "2412.12527",
+      "arxiv_first_submitted_at": "2024-12-17T04:38:08Z",
+      "arxiv_updated_at": "2025-05-16T06:29:41Z",
+      "arxiv_subjects": [
+        "cs.CL"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501239/image/image.jpg?Expires=1790835190&Signature=vDlonwbDy-xidYftvcw59UryeR7qSujZluIpWI5wH2HfK-PeqThfoV830M7Dkz5nwgkB8FGHm4X4XHxe4ahNF8zWZxLp-bgKoqN~OFOd6IS52z4Q59cFUUPfoirGXfRyltcJWEN-slRYkzVqt7QyaSwXbzI2McTA7eu2M00KgVg2b-4JpJYyEjkESdvXDT4uzkirLdhzKR6UGcqb2keARtp2dsbsrO1qajxqmq5DpfWqeHfpDqCoHSye6i~5wQ-j3x0j6fPvd9~BH0E3kUztfXN1kSdgH83s0JNVDCc9AFDddTcVVA8D53fGutfO5hqKfQ2Tln-~3oz-qPSaVBr6jg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501239,
+      "description_sha256": "186a4753b8cc90fe64a4bf888bda9561a2f400fd9c18e3e46de94872fa9693c9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a four-stage pipeline for constructing a final dataset from test data, designed to evaluate models based on parametric and contextual knowledge. The global layout is a horizontal flowchart divided into four main stages: Initial Dataset Construction, Parametric Knowledge Estimation, Contextual Knowledge Estimation, and Final Dataset Construction. Each stage is enclosed in a rounded rectangular box, with arrows indicating the forward progression of data through the pipeline. A legend at the top left indicates that white boxes represent selected samples, while hatched boxes denote samples not used.\n\nIn the first stage, 'Initial Dataset Construction', a database icon labeled 'Test Data' feeds into a large white rectangle labeled D_init, representing the initial dataset. This dataset is then processed in the second stage, 'Parametric Knowledge Estimation'. Here, D_init is split into three components based on a threshold r relative to η: a white box labeled D_P=0 (r=0), a hatched box (not used), and another white box labeled D_P=1 (r>η). These are combined into a central white box labeled D_P, which represents the parametric knowledge subset. Text annotations clarify that D_P=0 corresponds to 'Without parametric knowledge p_i=0' and D_P=1 to 'With parametric knowledge p_i=1'.\n\nThe third stage, 'Contextual Knowledge Estimation', takes D_P and further processes it using train data from a database icon. This stage splits samples into two categories: those with relevant context (D_C=1, r>η, white box) and those with irrelevant context (D_C=0, r=0, hatched box). The relevant context samples are marked with a document icon labeled 'Irrelevant Context Candidate'. The two subsets are combined via a '+' symbol, indicating their union.\n\nIn the final stage, 'Final Dataset Construction', the output from the previous stage is processed to balance the number of samples, resulting in a final dataset D, represented by a white box. From this final dataset, four scenario types are derived and listed in a box titled 'Answerable Scenarios' and 'Unanswerable Scenario'. These scenarios are defined by combinations of parametric (P) and contextual (C) knowledge flags: ① P=1, C=1: {x_i, c_i^+, y_i, p_i=1}; ② P=1, C=0: {x_i, c_i^-, y_i, p_i=1}; ③ P=0, C=1: {x_i, c_i^+, y_i, p_i=0}; ④ P=0, C=0: {x_i, c_i^-, y_i, p_i=0}. The relevant context c_i^+ is highlighted in blue, and irrelevant context c_i^- in red, visually distinguishing them. Dotted lines connect the final dataset D to these scenario definitions, indicating their derivation. The entire process emphasizes filtering and categorizing samples based on their parametric and contextual knowledge properties to construct a balanced, scenario-specific testbed."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

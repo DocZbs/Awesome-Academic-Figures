@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-501548",
+  "record_sha256": "90d7edf61128cb26bf33c36421d829ca18b5e1aca22672beb7c9fd9b40e2029e",
+  "asset_sha256": "bd80c8db224a1b6eafcf5b835a1fb7d9ac45dca3579fc656364f9654391c4495",
+  "original_file": "original.jpg",
+  "pixel_width": 1536,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501548",
+    "title": {
+      "zh": "Neural Control and Certificate Repair via Runtime Monitoring · 方法图",
+      "en": "Neural Control and Certificate Repair via Runtime Monitoring"
+    },
+    "paper": {
+      "id": "arxiv-2412-12996",
+      "title": "Neural Control and Certificate Repair via Runtime Monitoring",
+      "authors": [
+        "Emily Yu",
+        "Đorđe Žikelić",
+        "Thomas A. Henzinger"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12996",
+      "arxiv_url": "https://arxiv.org/abs/2412.12996",
+      "arxiv_id": "2412.12996",
+      "arxiv_first_submitted_at": "2024-12-17T15:15:30Z",
+      "arxiv_updated_at": "2024-12-17T15:15:30Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501548/image/image.jpg?Expires=1790835197&Signature=uZmmuENK1Aqm6~x6kYm8HWdo887dG7sMyZdFR~L9BavzhffeuObpzE6-I3BEJS0tEv-e8ZDwPp53mAWyZkSlBQBfCXxmR7-UJ2fLdhqKsEM8LJZZ2FqDc20XU5LCeoaO7Q3ZNv1KGKCjWsVPIdkXATMYf9Rh-qtPJP3W9k2-Bk7XpRxrG0n-zr71BqRtSkeSjqpm1AErRsoa3gd0GiE3AkI25E1OPkPMehX5kHQcVowNPCq0F0vjshDpnEPujwwdMBUOZR3RbNETSJ5Hcq9Vwz5S1lNk7aohi5bm6Uez5lIvSOwsGVJcFkSX0~fnzubhBixroxdAkCtZxzsqI6WSJw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501548,
+      "description_sha256": "2ff755bd8c46461d15e5a1789e8d41158fb08011404d48869307638054e23c66",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a monitor-learner framework for reinforcement learning with safety guarantees, structured as a directed graph of interconnected modules. The global layout is horizontal, with components arranged from left to right and feedback loops connecting them vertically and diagonally. At the far left is a rectangular box labeled 'Env', representing the environment. From Env, two curved black arrows emerge: one points to a square box labeled 'π' (policy), and the other points to a rectangular box labeled 'Learner'. The policy box π is positioned above the Learner box and is labeled 'policy' above it. A straight black arrow extends from π to a rectangular box labeled 'Monitor', which is located to the right of π. The Monitor box has two outgoing curved black arrows: one points downward to a rectangular box labeled 'Data', and the other points rightward to a square box labeled 'β', which is annotated with the label 'barrier function' to its right. The Data box sends a curved black arrow back to the Learner box. Additionally, the Monitor box receives an incoming curved black arrow from the β box. To the far right of the diagram is a square box labeled 'ν', annotated above with 'Lyapunov function'. This ν box sends a curved black arrow to the Monitor box. Three green arrows labeled 'update' indicate parameter updates: one from Learner to π, another from Learner to β, and a third from Learner to ν. These green update arrows are solid lines with arrowheads pointing toward the respective modules. All boxes are white with black borders and black text, except for the labels 'policy', 'barrier function', and 'Lyapunov function', which are placed outside the boxes. The overall structure reflects a closed-loop system where the Learner interacts with the environment via the policy, collects data through monitoring, and updates both the policy and safety-related functions (barrier and Lyapunov) to ensure safe learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

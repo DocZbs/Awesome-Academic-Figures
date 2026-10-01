@@ -1,0 +1,23 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+FLAMe: Federated Learning with Attention Mechanism using Spatio-Temporal Keypoint Transformers for Pedestrian Fall Detection in Smart Cities — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.14768
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architecture of a Spatio-Temporal Keypoint Transformer, designed for processing sequential keypoint data, such as human pose sequences over time. The global layout is a left-to-right flowchart, beginning with input sequences on the far left and progressing through two main encoder blocks—Spatial Encoder and Temporal Encoder—before concluding with classification output on the far right. The entire structure is organized into distinct functional modules connected by directed arrows indicating data flow.
+
+The process starts with 'Input Sequences', visually represented as a series of green-framed frames showing skeletal keypoints over time, labeled with 'T' to denote temporal progression. These inputs are first processed by a vertical gray rectangular module labeled 'Keypoints Embedding'. This embedding is then combined via an addition operation (indicated by a circular '+' symbol) with 'Spatial Embedding', which is supplied from a separate gray rounded rectangle above. The resulting combined representation feeds into the 'Spatial Encoder', a large light-blue rectangular block containing three core components: a Multi-Head Attention module (orange rectangle), a Layer Norm module (light-green rectangle), and a Feed Forward module (light-gray rectangle). Within the Multi-Head Attention, query (Q), key (K), and value (V) paths are shown as small boxes feeding into the attention mechanism. The output of the Feed Forward module is added back to the input of the attention block via another circular '+' symbol, forming a residual connection. After this encoder block, an 'Average Pooling' layer (gray rectangle) reduces the spatial dimensionality.
+
+The pooled output is then combined with 'Temporal Embedding' (from a gray rounded rectangle above) via another addition operation before entering the 'Temporal Encoder', a large light-yellow rectangular block mirroring the structure of the Spatial Encoder. It contains identical components: Multi-Head Attention (orange), Layer Norm (light-green), and Feed Forward (light-gray), again with residual connections. Following this encoder, another 'Average Pooling' layer is applied, followed by a 'Fully Connected' layer (gray rectangle), which produces the final 'Output Class (ŷ)', labeled as the predicted class.
+
+All modules are represented as rectangles with distinct colors and labels. The Spatial Encoder is enclosed in a light-blue box, while the Temporal Encoder is in light-yellow, visually distinguishing the two stages. Arrows indicate the forward pass of data, with explicit residual connections shown as feedback loops from the Feed Forward output back to the input of the attention block within each encoder. The figure uses consistent visual cues: gray for embedding and pooling layers, orange for attention, light-green for normalization, and light-gray for feed-forward networks. The overall design emphasizes a hierarchical, two-stage encoding process that first captures spatial relationships within each frame and then models temporal dynamics across frames, culminating in a classification output.

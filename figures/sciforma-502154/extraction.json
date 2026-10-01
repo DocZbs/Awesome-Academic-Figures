@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-502154",
+  "record_sha256": "c40ffc9f6a52b83005f161ab06d9b8bb5b6fb74343b90686495d769e6b020348",
+  "asset_sha256": "0d6bf5a0927fed08dff0c1ccb4f26f7aca8afe0f5f397fa7bdb93be0a7588a8d",
+  "original_file": "original.jpg",
+  "pixel_width": 1920,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502154",
+    "title": {
+      "zh": "GraphAvatar: Compact Head Avatars with GNN-Generated 3D Gaussians · 方法图",
+      "en": "GraphAvatar: Compact Head Avatars with GNN-Generated 3D Gaussians"
+    },
+    "paper": {
+      "id": "arxiv-2412-13983",
+      "title": "GraphAvatar: Compact Head Avatars with GNN-Generated 3D Gaussians",
+      "authors": [
+        "Xiaobao Wei",
+        "Peng Chen",
+        "Ming Lu",
+        "Hui Chen",
+        "Feng Tian"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13983",
+      "arxiv_url": "https://arxiv.org/abs/2412.13983",
+      "arxiv_id": "2412.13983",
+      "arxiv_first_submitted_at": "2024-12-18T16:05:40Z",
+      "arxiv_updated_at": "2024-12-18T16:05:40Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502154/image/image.jpg?Expires=1790835212&Signature=HS9aQ69GWfq6F6qU10DViJZk2x4OKPXBHGufne5XEhh360hjJuWvdW7uZWS3QX1XzzCezSzCHxOPEBd6SfWZim4wc7bbt0mOyoPw2H0UJw9X3HklRmcLeHaAl0wurnbvjJ0xG1t--uCTVhykU-z4uT3jLYKtKtfEjtMyR-FCWIwzKbP~oOkjB3N7xXfgViBuG6rZCL-oOr3tjEejRKuYcv77b9mSK3x4lq2kkvOCNk8khg9ZBvd9D1mxeKXrt1yE1T8UIOJxEQQz1saQ4UuQS2mlbkvrSd4qGbDngXMdvsYrhlpss7rMi0YrgOd-eyDUzu6fWK7Xf8AMsA9qjoNj3A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502154,
+      "description_sha256": "c15df499c191df9b78ac9856b837b2950d9a37d960bef1e8728e750a26721a76",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comprehensive overview of the GraphAvatar framework, its architectural design, qualitative outputs, and quantitative performance comparison on the INSTA dataset. The global layout is horizontally structured into four main sections: input data, the core GraphAvatar model architecture, output visualization, and a performance evaluation chart.\n\nIn the first section, labeled 'Tracked Mesh', three sequential facial mesh frames are shown vertically, representing dynamic facial expressions. These serve as input to the GraphAvatar model. The second section illustrates the GraphAvatar architecture, depicted as a graph-based neural network. It consists of two stacked, parallel blocks of gray rectangular layers, each containing four circular nodes of distinct colors: orange, yellow, green, and blue. These nodes represent different feature representations or latent states within the graph. The nodes are interconnected by solid lines forming a graph structure, with dashed lines indicating the boundaries of the layer stacks. A central 'Hidden Layers' component, represented by a small black rectangle, connects the two blocks via curved arrows: an orange arrow from the top node, a yellow arrow from the second node, a green arrow from the third, and a blue arrow from the bottom node, symbolizing information flow through hidden layers. The model is labeled 'GraphAvatar' in bold above the central connection.\n\nThe third section displays the outputs: on the left, under '3D Gaussians', three sets of colorful, elliptical 3D Gaussian distributions are shown, corresponding to each input frame. On the right, under 'Rendered Images', three photorealistic facial renderings are presented, matching the expressions of the input meshes. Dashed lines link each input mesh to its corresponding 3D Gaussian and rendered image, indicating the generative pipeline.\n\nThe fourth section contains a scatter plot titled 'Quantitative Results on the INSTA Dataset'. The x-axis represents PSNR (Peak Signal-to-Noise Ratio), ranging from 26 to 31, and the y-axis represents SSIM (Structural Similarity Index), ranging from 0.940 to 0.970. Data points for various methods are plotted, including GraphAvatar (Ours), GaussianAvatars, Gaussian Head Avatar, FlashAvatar, INSTA, IMAvatar, and NHA. Each point's size corresponds to the model size in MB, as indicated in the legend. The legend lists the methods with their respective sizes: GraphAvatar (10.80 MB), GaussianAvatars (71.30 MB), Gaussian Head Avatar (43.10 MB), FlashAvatar (13.25 MB), INSTA (523.70 MB), IMAvatar (22.70 MB), and NHA (90.80 MB). GraphAvatar is highlighted in red and positioned at the top-right of the plot, indicating the highest SSIM and PSNR values, while also having the smallest point size, emphasizing its superior performance and minimal model size. The caption below the plot clarifies that point size corresponds to model size in megabytes.\n\nOverall, the figure demonstrates that GraphAvatar uses graph neural networks to process tracked facial meshes, generating 3D Gaussians that are rendered into high-fidelity images, achieving state-of-the-art quality with the most compact model size."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

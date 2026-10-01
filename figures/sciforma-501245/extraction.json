@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501245",
+  "record_sha256": "c9bb6d4a7f18a83383f25afed2b3e1644d2c243a3dd1fc6b776db7c85b0d3dca",
+  "asset_sha256": "396d57fd6477d84de3f1c7cd17b82c48ffd5c4cc2c9ac86008b10abc7c60a3fa",
+  "original_file": "original.jpg",
+  "pixel_width": 1472,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501245",
+    "title": {
+      "zh": "EXIT: Context-Aware Extractive Compression for Enhancing Retrieval-Augmented Generation · 方法图",
+      "en": "EXIT: Context-Aware Extractive Compression for Enhancing Retrieval-Augmented Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-12559",
+      "title": "EXIT: Context-Aware Extractive Compression for Enhancing Retrieval-Augmented Generation",
+      "authors": [
+        "Taeho Hwang",
+        "Sukmin Cho",
+        "Soyeong Jeong",
+        "Hoyun Song",
+        "SeungYoon Han",
+        "Jong C. Park"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12559",
+      "arxiv_url": "https://arxiv.org/abs/2412.12559",
+      "arxiv_id": "2412.12559",
+      "arxiv_first_submitted_at": "2024-12-17T05:38:27Z",
+      "arxiv_updated_at": "2025-05-29T16:18:33Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501200&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501245/image/image.jpg?Expires=1790835190&Signature=lsiDrrpUIXLWSL68FgIX~HF~~OcEx2H0Q7rhhUPrfFwLrZ3QTSP5D~JbygzvuNCqUVsSnxX8cgODJm931I7VvKxd3-lkNqcfl9d5IR-jFRSb1vTVb0BTdf77-3th5ibc6sVtRzXSwyAINbaJDZMYucuRVeIWC2eQXqJwbw03hC601iouzkyzZvt-zQz7h2KVq~43DUbbXA-vEv2r5lgWx2xONxKVvL39prxhwUzuP5wDDlyoPbGiQmw275zQbpj1skzIJCk6Kh5OLJfgy9xXeM6lRvrlV1WplRcpREVonqbQOvmvTB3s3qv20Z4WBHy7L~e7mWGoC4Cfar-ivYwOAw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501245,
+      "description_sha256": "2588af9f7d91326fe69c9d60e60baaa6c8ba15df232f007b77004a4367b0ca33",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a document compression framework for question answering, structured as a three-step pipeline. The global layout is horizontal, progressing from left to right: starting with a Query (q), passing through a Retriever, then a Compressor, followed by a Reader LLM, and ending with an Answer (a). Each stage is visually separated by dashed lines and labeled with icons — a magnifying glass for Retriever, a flame for Compressor, and a neural network symbol for Reader LLM.\n\nStep 1: Sentence-Level Decomposition. The top-k retrieved documents, shown as stacked pink rectangles with sample text about Ezzard Charles, are fed into this step. Each document is decomposed into individual sentences, illustrated by scissors cutting the document into separate sentence blocks. These sentences are numbered (①, ②, ..., ②) and retain their original color-coding from the source document.\n\nStep 2: Context-Aware Relevance Classification. Here, each sentence is evaluated for relevance. The query is concatenated with each sentence, forming a context-aware input pair. These pairs are processed by the Compressor module, depicted as a rounded rectangle with a neural network icon. The Compressor outputs a binary decision: 'Yes' (green box) if the sentence is relevant, or 'No' (red box) if not. Only sentences marked 'Yes' proceed to the next step.\n\nStep 3: Document Reassembly. Relevant sentences (those marked 'Yes') are reassembled in their original order to form a compressed document. This reconstructed document is shown alongside the original query and passed to the Reader LLM, which generates the final answer — in this case, 'Boxing'. The Reader LLM is represented with a neural network icon, indicating it is a large language model.\n\nVisual modules include rectangular boxes for documents and sentences, with pink backgrounds for original content and blue for non-relevant sentences. The Compressor is a central processing unit with a neural network symbol. Arrows indicate data flow: from the query to the retriever, then to decomposition, classification, reassembly, and finally to the reader. Binary decisions ('Yes'/'No') are shown as colored boxes connected to the Compressor output. The entire process emphasizes preserving the original sentence order while filtering out irrelevant information."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

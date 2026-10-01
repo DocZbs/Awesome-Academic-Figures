@@ -1,0 +1,27 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+What is YOLOv6? A Deep Insight into the Object Detection Model — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.13006
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501500&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure illustrates the architectural design of YOLOv6, a deep learning object detection model. The global layout is a left-to-right flowchart, beginning with an input that feeds into an EfficientRep Backbone, followed by a multi-scale feature processing stage called Rep-PAN, and concluding with three parallel Efficient decoupled heads for classification and regression tasks.
+
+The EfficientRep Backbone is represented as a gray trapezoidal block on the far left, receiving the input and producing three distinct feature maps of varying resolutions. These feature maps are passed to the Rep-PAN module, which is enclosed within a dashed rectangular boundary and labeled 'Rep-PAN'. Inside this module, the feature maps are processed through a hierarchical structure involving up-sampling (denoted by 'U'), concatenation over channel dimension (denoted by 'C'), convolutional layers (green rectangles labeled 'Conv'), and RepBlocks (gray rectangles labeled 'RepBlock').
+
+Each level of the Rep-PAN contains a RepBlock connected to a Conv layer, which then feeds into an up-sampling operation (U) that increases spatial resolution. The up-sampled output is concatenated (C) with the feature map from the lower resolution path. This concatenated feature is then processed by another RepBlock, followed by a Conv layer, and finally merged again via concatenation with the next higher-resolution path. This creates a top-down and bottom-up flow, enabling feature fusion across scales.
+
+The visual modules include light blue rectangular blocks representing feature maps at different scales, green rectangles for Conv layers, gray rectangles for RepBlocks, and circular icons labeled 'U' and 'C' for up-sampling and channel concatenation operations, respectively. The Rep-PAN module’s internal connections form a dense network of arrows indicating data flow: from each feature map to its corresponding RepBlock, then to Conv, then to U or C, and finally to the next stage.
+
+After processing through Rep-PAN, three separate feature maps emerge, each feeding into one of three identical Efficient decoupled heads. Each head is depicted as a rounded rectangle with a light orange fill and contains two outputs: 'cls.' for classification and 'reg.' for regression. These heads are arranged vertically on the right side of the diagram, indicating parallel processing for multi-scale detection.
+
+Connections are shown as solid black arrows, clearly directing the flow from input to backbone, through Rep-PAN, and finally to the decoupled heads. The arrows within Rep-PAN illustrate both horizontal progression and vertical cross-scale connections via up-sampling and concatenation. The diagram includes a legend inside the Rep-PAN box explaining that 'U' stands for up-sample and 'C' for concatenation over channel dimension. The overall structure emphasizes efficient multi-scale feature fusion and parallel detection heads for robust object localization and classification.

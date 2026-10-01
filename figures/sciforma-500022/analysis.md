@@ -1,0 +1,25 @@
+# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+
+Model-driven deep neural network for enhanced direction finding with commodity 5G gNodeB — arXiv 2024.
+
+This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+
+The index supplied no caption.
+
+Paper: https://arxiv.org/abs/2412.10644
+
+Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100
+
+## Machine-generated source description
+
+This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
+
+The figure presents a three-part network framework for Angle-of-Arrival (AoA) estimation using gNodeB, labeled as (a), (b), and (c), each representing a distinct stage in the processing pipeline. The overall layout is horizontal, with each section enclosed in a colored background: (a) in light green, (b) in light blue, and (c) in light red, indicating a sequential workflow from data preprocessing to final spectrum reconstruction.
+
+In part (a), titled 'Multi-task Autoencoder-Based Beamformer', the process begins with an input CSI matrix H, represented as a 2D grid of green squares, with axes labeled 'Antenna' (vertical) and 'Subcarrier' (horizontal). This matrix is reshaped into real-valued vectors h(k) for k = 1 to K, depicted as vertical stacks of green rectangles. These vectors are processed through multiple parallel autoencoder branches, each corresponding to a task c(k). Each autoencoder consists of a green rectangular block labeled f_k, which encodes the input into a latent representation, followed by a decoding path that reconstructs the output as h̃(k). The outputs from all K autoencoders are combined to form P subregions, denoted as H_p, each represented as a 2D grid of green squares. The entire process is encapsulated under the label 'Autoencoder Training'.
+
+Part (b), 'Coarray Spectrum Generation', takes the P subregion matrices H_p as input. For each subregion, a covariance matrix R̂_p is computed and shown as a blue square matrix with diagonal elements emphasized. This matrix is then vectorized into a column vector y_p, represented as a tall blue rectangle. The vector y_p is processed through a 'Coarray DBF' (Delay-and-Sum Beamforming) operation, resulting in a spatial spectrum vector η̂_p, shown as a vertical stack of red-to-orange gradient rectangles. A dashed box labeled 'Coarray Spatial Spectrum' contains a small inset graph depicting a bell-shaped curve over a red bar chart, illustrating the spatial spectrum output. This process is repeated for all P subregions.
+
+Part (c), 'MoDL-SSR' (Model-driven Deep Learning - Spatial Spectrum Reconstruction), receives the P spectrum vectors η̂_p as inputs. These are fed into P separate modules labeled 'MoDN#1' to 'MoDN#P', each represented as a white rectangular box. These modules are trained via 'CNN Training', indicated by a dashed red border enclosing the entire block. The output of each MoDN is a refined spectrum vector η_p, also shown as a vertical stack of red-to-orange gradient rectangles. All P refined spectra are then combined into a final spectrum vector η, depicted as a single tall stack of red-to-orange rectangles, with red arrows indicating the aggregation of individual outputs.
+
+Connections between parts are shown via solid black arrows: from the autoencoder outputs H_p in (a) to the covariance matrices in (b), and from the coarray spectra η̂_p in (b) to the MoDN inputs in (c). Within each part, internal connections are also shown: from h(k) to the autoencoders in (a), from R̂_p to y_p to η̂_p in (b), and from η̂_p to MoDN#p to η_p in (c). The final output η in (c) represents the reconstructed spatial spectrum used for AoA estimation.

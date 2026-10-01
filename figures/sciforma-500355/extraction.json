@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-500355",
+  "record_sha256": "216a87b8b1dcc760b3dfd1dfc90a87af6329b37e3eedf7b5b51cebe8f7fda009",
+  "asset_sha256": "4cb800e3bbb6344a066a14bd08a04524039031eb2c52575371669fc7f67d7efe",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500355",
+    "title": {
+      "zh": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation · 方法图",
+      "en": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-11183",
+      "title": "OccScene: Semantic Occupancy-based Cross-task Mutual Learning for 3D Scene Generation",
+      "authors": [
+        "Bohan Li",
+        "Xin Jin",
+        "Jianan Wang",
+        "Yukai Shi",
+        "Yasheng Sun",
+        "Xiaofeng Wang",
+        "Zhuang Ma",
+        "Baao Xie",
+        "Chao Ma",
+        "Xiaokang Yang",
+        "Wenjun Zeng"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_url": "https://arxiv.org/abs/2412.11183",
+      "arxiv_id": "2412.11183",
+      "arxiv_first_submitted_at": "2024-12-15T13:26:51Z",
+      "arxiv_updated_at": "2025-08-22T08:05:31Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500355/image/image.jpg?Expires=1790835171&Signature=Vvhgb2Z3D2vseRvFAtze7A-iFutfzgF0~l~9y--U8ictgyExco01RqtSBbIMZG1HzAC4z~bFDT7eC5~2vACuQdW6HGl7J4BA1wZTz0fNcaaGaqhhnV10W26cSDz6D2w5Ze44Lzxf8ZbuM3V3FBXjFR6wVft5ruciJpQ04DdFCAP5q9sC00sOD1VUAuA1D46IucpHkuOXRhjQnJW50F4UdPK51XuWNJLBPhU7sUX~3lMEz29qmSvok6E0cq9Xzhx2QxUiKRS54VUO9NTgAefQZ7ufV2Rp1-V-Ngp5XKWbRjQjwoIUmPEU76QUP00x-nTSWi3TZmHqRF3Z3t4VpsItxQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500355,
+      "description_sha256": "ac78a49a7a7addbc67f4f75ef020a3bf74a144a92295653512be0862d2d4ed79",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents a comparative architectural design of three different encoding strategies for the Mamba-based Dual Alignment (MDA) module: (a) Attention-based Encoding, (b) GRU-based Encoding, and (c) Mamba-based Encoding. Each subfigure shares a common global layout, starting from input data on the left, progressing through two main processing stages — 'Cross-view Camera Encoding' and 'Sequential Feature Encoding' — and culminating in an output labeled L_agg. The inputs consist of a 3D tensor X_vcc (representing cross-view camera features) and a sequence of 2D frames L (along the temporal axis), alongside a parameter P from a Parameter Encoder. These are visually represented as stacked cubes (for X_vcc) and layered images (for L), with color-coded depth axes and temporal axes shown on the left side of each subfigure.\n\nIn all three architectures, the Cross-view Camera Encoding stage begins with the Parameter Encoder producing P, which is then multiplied element-wise with interpolated X_vcc via a 3D Conv layer. This is followed by an MLP block, and the resulting feature is combined with the original X_vcc through addition. The output of this stage feeds into the Sequential Feature Encoding stage.\n\nSubfigure (a) Attention-based Encoding uses a series of 3D Conv layers followed by a 3D Conv layer with a skip connection, and the final output is generated by summing the outputs of multiple such blocks. The connections are depicted as solid arrows, with dashed lines indicating skip connections.\n\nSubfigure (b) GRU-based Encoding replaces the attention mechanism with a sequence of ConvGRU blocks. Each ConvGRU block is followed by a Zero-Conv layer, and the outputs are accumulated through summation operations. The structure emphasizes sequential processing with recurrent connections, indicated by dashed feedback loops.\n\nSubfigure (c) Mamba-based Encoding introduces a more complex structure. After the Cross-view Camera Encoding stage, the feature is passed through a 3D Patch Embedding Layer, followed by Patch Stacking. The core component is the Bidirectional Mamba Block, which includes two parallel paths with State Space Models (SSM), each followed by a De-Conv layer. The outputs of these paths are summed and passed through Linear layers before being added to the input from the Cross-view Camera Encoding stage. The final output L_agg is produced by summing the processed features. The architecture highlights linear complexity and efficient long-term modeling in a single pass, as noted in the caption.\n\nAll modules are enclosed in dashed boxes to denote functional blocks. Colors are used consistently: light blue for processing layers, gray for convolutional or embedding layers, and white for auxiliary components like Parameter Encoder and Linear layers. Text labels are placed directly on or near the corresponding modules, with mathematical notations such as X_vcc, L, P, and L_agg clearly marked. The figure is structured to compare the three methods side-by-side, emphasizing differences in complexity, efficiency, and design philosophy, with the Mamba-based approach being highlighted for its superior performance in speed and quality."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

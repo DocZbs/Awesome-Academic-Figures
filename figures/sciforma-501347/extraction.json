@@ -1,0 +1,95 @@
+{
+  "id": "sciforma-501347",
+  "record_sha256": "70e20ccc1e4a016d337001f770fb1a0e471599ddf17ba3d1835135faf740efbe",
+  "asset_sha256": "442f23ba0fadafafa9c2ee35dc503a7d641162f267d970deb3c921c2cdfb5b4d",
+  "original_file": "original.jpg",
+  "pixel_width": 1088,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501347",
+    "title": {
+      "zh": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification · 方法图",
+      "en": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification"
+    },
+    "paper": {
+      "id": "arxiv-2412-12651",
+      "title": "Shared Attention-based Autoencoder with Hierarchical Fusion-based Graph Convolution Network for sEEG SOZ Identification",
+      "authors": [
+        "Huachao Yan",
+        "Kailing Guo",
+        "Shiwei Song",
+        "Yihai Dai",
+        "Xiaoqiang Wei",
+        "Xiaofen Xing",
+        "Xiangmin Xu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_url": "https://arxiv.org/abs/2412.12651",
+      "arxiv_id": "2412.12651",
+      "arxiv_first_submitted_at": "2024-12-17T08:20:02Z",
+      "arxiv_updated_at": "2024-12-17T08:20:02Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501347/image/image.jpg?Expires=1790835192&Signature=T2E9-petnYjhI3WVtn2ThYNsMX4UDd1M8DjeiST1OKu1-pCpGPg~6CP82PfcWNzVUgjPbftHd97C~hlP5DP~rkclXGmUV9Yoo2CWM9hR7fbtnR0Kw615YWy2Zwq0W9zvIie94AVCQsWWyU3wA9fdCodSC5WCSuMacjqXkX1GA3~is9puQM5uog8WEkPMJj2b6sYZMSowCpxvXX1002SB4mjjJip7AOyykqryIC4DXXLLmSNo-9aMLusxPe4f4KvvAPiKlt4gMjk-veP6uGdZA2MkOAxb9wuidPxnvrVmU9babLgPXZnKAlqYIsem7lLQHRQVBIiiHVqh3TRoA3jdaw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501347,
+      "description_sha256": "e68586273ba3acd2bc4142eac0f1fa3733e9914ed90e3a6408eb5d8ed1c9d82e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents two versions of the hierarchical fusion-based graph convolution network (HFGCN) framework, illustrating the construction of graph structure data and the end-to-end processing pipeline for epileptic brain region classification. Both diagrams share a similar core architecture but differ in input preprocessing.\n\n[1] Global Layout and Structure:\nEach diagram is horizontally structured, flowing from left to right. On the far left, input data is represented as brain images with colored nodes indicating contact sites. This input feeds into a 'Build Graph' module, which generates a graph representation. The central part of the diagram contains a sequence of three Graph Convolutional Layers (GCL1, GCL2, GCL3), each followed by a corresponding Disentangled Graph Convolution Layer (DGCL1, DGCL2, DGCL3). These layers are arranged in a cascading fashion, with outputs from one layer feeding into the next. The final output is processed through a classification head labeled 'cls', producing a prediction on a brain image with red (epileptic) and yellow (nonepileptic) nodes. A legend at the bottom right clarifies these color codes. The entire processing pipeline is enclosed within a light blue rounded rectangle, labeled 'The Framework of HFGCN' in the lower diagram.\n\n[2] Visual Modules and Attributes:\n- Input: The top diagram shows a single brain image with multicolored nodes labeled 'Build Graph'. The bottom diagram shows two separate inputs: 'All Contact Sites Latent Features' (brain with multicolored nodes) and 'CCEP Connections' (brain with blue nodes and red edges), both converging into the 'Build Graph' module.\n- Graph Convolution Layers (GCL1–GCL3): Represented as gray rectangles containing small graphs with nodes (red, yellow, blue) connected by lines. Each layer produces an output denoted as Ĥ₁, Ĥ₂, Ĥ₃ respectively.\n- Disentangled Graph Convolution Layers (DGCL1–DGCL3): Shown as orange-bordered rectangles with similar internal graph structures, but with dashed red lines indicating disentanglement or attention mechanisms. Outputs are labeled as H̃₁, H̃₂, H̃₃.\n- L2 norm: Yellow rectangular blocks placed after each DGCL, normalizing the output features. Weight parameters w₁^SD and w₂^SD are shown as red arrows connecting these blocks to subsequent operations.\n- Element-wise Addition: Represented by a blue rectangle with a ⊕ symbol, combining outputs from GCL and DGCL layers.\n- Element-wise Multiplication: Represented by a pink rectangle with a ⊗ symbol, used to fuse normalized outputs with weights.\n- Classification Head (cls): A vertical stack of three circles (yellow, red, blue) indicating class probabilities, leading to the final output brain image.\n\n[3] Connections and Arrows:\nData flows from left to right. In both diagrams, the input graph X enters GCL1. The output Ĥ₁ from GCL1 is fed into GCL2, and so on. Simultaneously, Ĥ₁ is also passed to DGCL1, whose output H̃₁ is added element-wise to Ĥ₁ (via ⊕), then normalized via L2 norm. This normalized output is multiplied element-wise (⊗) by weight w₁^SD and fed forward. Similarly, Ĥ₂ from GCL2 goes to DGCL2, and its output H̃₂ is combined with Ĥ₂, normalized, and multiplied by w₂^SD. The resulting Ĥ₁^SD and Ĥ₂^SD are then combined with Ĥ₃ from GCL3 and H̃₃ from DGCL3, respectively. The final fused feature H^out (denoted as Ĥ₂^SD) is passed to the cls module for classification. Red arrows indicate the flow of weights w₁^SD and w₂^SD from L2 norm blocks to multiplication operations. Black arrows denote standard data flow between modules."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

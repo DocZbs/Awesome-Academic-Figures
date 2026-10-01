@@ -1,0 +1,85 @@
+{
+  "id": "sciforma-500920",
+  "record_sha256": "1a68341c0f1de6890afd114c10c3173d4616931a380c3cc9e9c1c6714eccd8bc",
+  "asset_sha256": "2f547d443894758f884977ebd4f34c48edf96b3635d97e463f42d5189c733730",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500920",
+    "title": {
+      "zh": "A LoRA is Worth a Thousand Pictures · 方法图",
+      "en": "A LoRA is Worth a Thousand Pictures"
+    },
+    "paper": {
+      "id": "arxiv-2412-12048",
+      "title": "A LoRA is Worth a Thousand Pictures",
+      "authors": [
+        "Chenxi Liu",
+        "Towaki Takikawa",
+        "Alec Jacobson"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12048",
+      "arxiv_url": "https://arxiv.org/abs/2412.12048",
+      "arxiv_id": "2412.12048",
+      "arxiv_first_submitted_at": "2024-12-16T18:18:17Z",
+      "arxiv_updated_at": "2024-12-16T18:18:17Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500900&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500920/image/image.jpg?Expires=1790835181&Signature=mt4DTLkXnUguPoIP4LVzKYL13ZNUYYzWaggdoupxhiVegL8NieMrSnXtWz2tpo3CMTQyW9apr9VVc64w7dUa2zlUaLzNEN6olJGv8P1iy5kguCfmDhQqsyEgzfK2~PqVpQD5qkGlfWd5n8kmoYgtxC9auWiglyS2nJFRTI3VjjZhVcq8H~4orNxTRCSxpWoTnc9gQoaYZYXHMTzQid0IdKpLpAN~N85cdDJYYVlfk1PkszVbKZKT~sK1fNUPqA-YpoCxI63J81Op5shKDv8CFzyd9YXidEm1HajV0U9WKwt~rg4FgynA6IqIeiFZGKlj9lUPhHwFTgrtJAXbH9yByA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500920,
+      "description_sha256": "cf2caa62feeaccafa35352d641c5d30990fdda66c914411982676bc4470bc291",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates two distinct approaches for retrieving customized diffusion models: (a) image feature-based retrieval and (b) model weight-based retrieval. The global layout consists of two large light-blue dashed ovals labeled (a) and (b), positioned side-by-side, representing the two methodologies. Above these ovals, a central component shows a pretrained diffusion U-Net (represented as a blue banner with a lock icon, indicating it is fixed or frozen) combined with a 'Customized LoRA' (Low-Rank Adaptation), depicted as a 3x3 grid of colored squares. This combination feeds into both retrieval methods.\n\nIn section (a), 'Image feature based', the retrieval process is shown as a set of three nested functions F({image sets}), each containing three example images (e.g., portraits, landscapes, animals). These represent different image feature clusters. A magnifying glass with a question mark inside points to this set, symbolizing uncertainty or the need for inference. Red dashed arrows with clock icons indicate that generating images for feature matching requires additional computational steps, which depend on hyperparameters such as T (number of denoising steps) and w_guidance (guidance scale), shown at the top left with a thinking emoji. These hyperparameters influence the generated images used for feature comparison.\n\nIn section (b), 'Model weight based', the same pretrained U-Net + Customized LoRA setup is used, but instead of generating images, the model weights themselves are directly compared. This is visualized by multiple 3x3 grids of colored squares (representing weight matrices) within the oval. One grid is highlighted with a green checkmark under a magnifying glass, indicating successful and accurate retrieval without requiring image generation. A red dashed arrow with a clock icon points from this section back to the input, emphasizing that this approach avoids the time-consuming and hyperparameter-dependent image generation step.\n\nThe connections between components are indicated by black solid arrows for direct data flow (e.g., from U-Net+LoRA to the retrieval ovals) and red dashed arrows with clock icons for time-consuming, hyperparameter-dependent processes. The figure visually contrasts the inefficiency and dependency of image feature-based retrieval with the efficiency and accuracy of model weight-based retrieval, aligning with the caption’s emphasis on avoiding extra costs and hyperparameter selection."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

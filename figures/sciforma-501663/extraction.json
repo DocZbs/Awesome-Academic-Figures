@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-501663",
+  "record_sha256": "2799226aef870cdfdd8c9d91f1d3ae4f3cb561da9c98f1ae1cb11d00876e88b2",
+  "asset_sha256": "76b2cfb178c3126f0d892d1f4bbf8f0f7c81c0553a97321c303db4f3f35837ce",
+  "original_file": "original.jpg",
+  "pixel_width": 896,
+  "pixel_height": 1152,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501663",
+    "title": {
+      "zh": "Physics-model-guided Worst-case Sampling for Safe Reinforcement Learning · 方法图",
+      "en": "Physics-model-guided Worst-case Sampling for Safe Reinforcement Learning"
+    },
+    "paper": {
+      "id": "arxiv-2412-13224",
+      "title": "Physics-model-guided Worst-case Sampling for Safe Reinforcement Learning",
+      "authors": [
+        "Hongpeng Cao",
+        "Yanbing Mao",
+        "Lui Sha",
+        "Marco Caccamo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13224",
+      "arxiv_url": "https://arxiv.org/abs/2412.13224",
+      "arxiv_id": "2412.13224",
+      "arxiv_first_submitted_at": "2024-12-17T04:13:06Z",
+      "arxiv_updated_at": "2024-12-17T04:13:06Z",
+      "arxiv_subjects": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501663/image/image.jpg?Expires=1790835197&Signature=CpWp6erVoChg238cnxdyqsKQmo5A8CoLtqchaXCx9RFaCmAOOetxvDsRMFIeOh80DceBGfxRkXY5BTSSynaRkunreTeTaChrqbdg3~pV9sz8MNdXto0i1uZiXkO9VynebPXxLlj~u28DKFGh-hXhieU4XXItcmkNV-RRANLxvs7YTKaOOAhJVGx4gJc~CkXmanzhLohfNdDpS~8vvziuJp9lL1jj6zpkO51rldLfEBzClGDiSqPCqipredbivLB99v4GJkFavcs8MwSaSwg5a25tnqk3mbfP8t3tZxebsSBchuozAVWcks5OKpY4W9TvUvpU8I1jv1bhYJnisEyV3A__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501663,
+      "description_sha256": "5c0ab259e668d334458108b1440111df70d13dee781055e0eaa413c131b81ec9",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Physics-informed Deep Reinforcement Learning (Phy-DRL) agent designed for safety-critical cyber-physical systems (CPS). The global layout is divided into two main regions: the left side contains the Phy-DRL Agent, enclosed within a dashed rectangular boundary, and the right side represents the Safety-Critical Environment, depicted as a tall vertical box with examples of robotic systems such as quadruped robots, drones, autonomous vehicles, and humanoid robots. The agent interacts with the environment through state-action feedback loops.\n\nWithin the Phy-DRL Agent, the core components include a Critic Network and an Actor Network, both represented as neural network diagrams with gray circular nodes connected by lines, enclosed in rounded rectangles with light blue backgrounds. These networks are interconnected and feed into a Safety-Embedded Reward module, shown as an orange rounded rectangle. The Actor Network outputs a data-driven action policy denoted as a_drl(k), which is combined with a model-based action policy a_phy(k) from the Physics Model Knowledge module to form a Residual Action Policy, expressed mathematically as a(k) = a_drl(k) + a_phy(k). This residual policy is also rendered in an orange rounded rectangle.\n\nThe Physics Model Knowledge module, represented as a white rounded rectangle labeled with (A, B), receives inputs from the Safety-Critical Environment via a linearized model and provides the model-based action policy to the Residual Action Policy. Additionally, it feeds into a lower-level module titled 'Physics-model-guided Periodic and Sparse Worst-case Sampling on Boundary of Safety Envelope,' which is highlighted with a yellow oval containing red dashed lines and blue dots labeled as 'worst-case sample.' This sampling mechanism is visually emphasized with a legend indicating that blue dots represent worst-case samples.\n\nConnections between modules are indicated by black arrows. The state s(k) flows from the Safety-Critical Environment to the Critic Network, while the action a(k) is sent from the Residual Action Policy back to the environment. Initial conditions are passed from the sampling module to the environment. The Safety-Embedded Reward module receives inputs from both the Critic and Actor Networks and feeds back into the Actor Network, forming a reinforcement learning loop. The Physics Model Knowledge module connects to both the Residual Action Policy and the worst-case sampling module, emphasizing its role in guiding safe exploration.\n\nThe overall workflow follows a hybrid approach combining data-driven deep reinforcement learning with physics-based modeling to enhance safety. The periodic and sparse worst-case sampling ensures robustness by focusing exploration on the boundary of the safety envelope, leveraging the physics model to guide this process. The figure caption states that this is 'Phy-DRL training powered by periodic and sparse worst-case sampling for safety-critical CPS,' summarizing the method's purpose."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

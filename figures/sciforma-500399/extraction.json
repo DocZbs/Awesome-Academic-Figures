@@ -1,0 +1,98 @@
+{
+  "id": "sciforma-500399",
+  "record_sha256": "304350844d50287c7ed200c8efc702e0f7a00a95645c4532023d7d3830615416",
+  "asset_sha256": "75b938ccb5d977c87f9b8c1853bf8bc8ac8d7e1d79b279a87ca8694f002c0611",
+  "original_file": "original.jpg",
+  "pixel_width": 1024,
+  "pixel_height": 960,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500399",
+    "title": {
+      "zh": "Prediction-Enhanced Monte Carlo: A Machine Learning View on Control Variate · 方法图",
+      "en": "Prediction-Enhanced Monte Carlo: A Machine Learning View on Control Variate"
+    },
+    "paper": {
+      "id": "arxiv-2412-11257",
+      "title": "Prediction-Enhanced Monte Carlo: A Machine Learning View on Control Variate",
+      "authors": [
+        "Fengpei Li",
+        "Haoxian Chen",
+        "Jiahe Lin",
+        "Arkin Gupta",
+        "Xiaowei Tan",
+        "Honglei Zhao",
+        "Gang Xu",
+        "Yuriy Nevmyvaka",
+        "Agostino Capponi",
+        "Henry Lam"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11257",
+      "arxiv_url": "https://arxiv.org/abs/2412.11257",
+      "arxiv_id": "2412.11257",
+      "arxiv_first_submitted_at": "2024-12-15T17:41:38Z",
+      "arxiv_updated_at": "2026-08-04T02:58:13Z",
+      "arxiv_subjects": [
+        "stat.ML",
+        "cs.CE",
+        "cs.LG",
+        "q-fin.PR"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500399/image/image.jpg?Expires=1790835171&Signature=drQDUeUKsNWJ1Sb50bxO77yC7Z1v1AJdhOJn65~-DZSVMH~3ozyCkIApyGQ8YB4YbYlTjrAqButOwKc9OHeW0xZ0ge4wExNooiAyESZPLxLpJf7cDmPfhs6~I-CjWEFmiaFrR7KcF5RmL4Uy-dJhE00P8GUPDGRKldl9vhQiz25tAMJ7PTBkmAk79mPGOhYLK6Ae6GQri~OBU6HsIZf~JNlNsmnDqglN8KfG7P1YTAGLM4iMmXW0-vKxAh5nG12tJ0wj0HkK9APQfcO8G6Kwsr4zDi3fp8mPjlqRQDGLczdSVoJ8Tr9tahNWjmRxbo4OaNo9cwThSjg11aEJ9ahJ4g__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500399,
+      "description_sha256": "e7e0a278dc560910912ae930321256c610343ae1788e3fddac75a281fbc63616",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "415b1ab66f893e1b5e849bc32c89e512aaf844f4e5fe4e6f80f86f6663e5edf6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "stat.ML",
+        "cs.CE",
+        "cs.LG",
+        "q-fin.PR"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates a neural network architecture designed for modeling Swaption payoff, structured into three parallel encoder branches—2D Function Encoder, Vector Feature Encoder, and 1D Function Encoder—feeding into a central Synthesizer module. The global layout is modular and vertically segmented into three main columns, each representing an encoder, with the Synthesizer positioned centrally below the Vector Feature Encoder. All modules are arranged in a top-down flow, indicating data progression from input to output.\n\nIn the leftmost column, the 2D Function Encoder processes input σ(t,T) of dimension N × d × T × T. This encoder consists of two stacked Conv2d layers (purple rounded rectangles), each followed by BatchNorm2d (light blue rounded rectangles). These layers are connected via solid teal arrows indicating forward propagation and dashed red arrows for backward propagation. An AvgPool2d layer (gray rounded rectangle) follows, reducing spatial dimensions. The output is a feature tensor of dimension N × E, represented as a grid of light yellow cells.\n\nThe middle column contains the Vector Feature Encoder, which takes inputs θ_model, θ_payoff, and X(θ) of dimension N × D. It comprises two Fully Connected layers (orange rounded rectangles), each followed by BatchNorm1d (light blue rounded rectangles). Forward and backward connections are again indicated by solid teal and dashed red arrows, respectively. This encoder feeds into the Synthesizer.\n\nThe rightmost column presents the 1D Function Encoder, processing f(0,T) of dimension N × 1 × T. It includes two Conv1d layers (purple rounded rectangles) followed by BatchNorm1d layers (light blue). An AvgPool1d layer (gray) reduces the sequence length, producing an output of dimension N × E', visualized as a light yellow grid.\n\nThe Synthesizer, located at the bottom center, integrates features from all three encoders. It consists of three Fully Connected layers (orange) alternating with BatchNorm1d layers (light blue). Inputs from the 2D and 1D encoders are fed via solid teal arrows, while the Vector Feature Encoder’s output connects directly. The final output of the Synthesizer is the predicted payoff, denoted as ŷ_payoff(X, θ, σ(·,·), f(0,·)), shown as a labeled arrow exiting the last Fully Connected layer.\n\nA legend in the lower-left corner clarifies that solid teal arrows represent forward propagation and dashed red arrows represent backward propagation. The entire architecture emphasizes multi-modal feature extraction and fusion, with distinct dimensional reductions and normalization steps in each encoder, culminating in a unified prediction through the Synthesizer."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

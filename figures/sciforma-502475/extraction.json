@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502475",
+  "record_sha256": "ccf7e13b14639c6de64257588593297f7822643c28d00b5a74273c41fd2c912f",
+  "asset_sha256": "2ff471b25ac9d8e35b899d4c1d1dcb30c830d96a158fe384a79e069f5b7f73a1",
+  "original_file": "original.jpg",
+  "pixel_width": 1792,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502475",
+    "title": {
+      "zh": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting · 方法图",
+      "en": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-14579",
+      "title": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting",
+      "authors": [
+        "Qianpu Sun",
+        "Changyong Shu",
+        "Sifan Zhou",
+        "Runxi Cheng",
+        "Yongxian Wei",
+        "Zichen Yu",
+        "Dawei Yang",
+        "Sirui Han",
+        "Yuan Chun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14579",
+      "arxiv_url": "https://arxiv.org/abs/2412.14579",
+      "arxiv_id": "2412.14579",
+      "arxiv_first_submitted_at": "2024-12-19T06:57:37Z",
+      "arxiv_updated_at": "2025-12-22T12:47:43Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502475/image/image.jpg?Expires=1790835221&Signature=eWCU-5P-LA6jLjNe8FY8OS3FBktgsF~bHvZ8TXxAwhD5t4E~pDEz1IRwJFlGHsuZZvOOlj18BJIuO63~5i~utl7Rsiepe3eIIbta2-kpb5Xw4nr2Bc84AFMKCrynNk5cb6xSxvEg5yHxDSwkl4jJ~N6UfipZV58~gV4-lf2-ABEh0N4gQLeQualaT3e2NS6gU9gheKqtcT2SkkmIJ~EoUtcmwxBHS~4G8ces~CLkDhkqdbF1DGHoEQNrwA1dgzBq8AGwJCyHmNNms~NeZL4PfZpK1AOP159J3aAcge8U~o1QKyAqet28~k4cPy18Toy~o0ShKZDmYC0Nv44FPC47Iw__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502475,
+      "description_sha256": "06465bb01c77bed433e47fbb3ca1af93803452bb75ab9c1dfa0573b194831a7c",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Gaussian Properties Field, which processes an occupancy feature to generate parameters defining Gaussian primitives. The global layout is left-to-right, starting with a 3D volumetric representation labeled 'Occupancy Feature' on the left, followed by a processing block labeled 'head' in the center, and ending with a visual representation of Gaussian properties on the right. The leftmost component is a 3D grid structure, depicted as a transparent cube with internal dashed lines indicating a voxelized volume. This structure is annotated with the mathematical expression V ∈ ℝ^{H_V × W_V × Z_V × K}, representing a feature volume of dimensions H_V (height), W_V (width), Z_V (depth), and K (number of feature channels). An arrow extends from this volume to a central rectangular block labeled 'head', indicating the input to a neural network head module. From this 'head' block, four output branches emerge, each represented by a horizontal arrow pointing to a mathematical expression: δ_μ ∈ ℝ^{H_V × W_V × Z_V × 3} (shift of Gaussian mean), δ_s ∈ ℝ^{H_V × W_V × Z_V × 3} (shift of Gaussian scale), o ∈ ℝ^{H_V × W_V × Z_V × 1} (opacity), and c ∈ ℝ^{H_V × W_V × Z_V × (L−1)} (semantic logits for L−1 classes). These outputs are visually aligned vertically, suggesting they are generated in parallel. On the far right, a graphical representation shows two overlapping ellipses—one yellow and one light blue—forming a greenish intersection, symbolizing the spatial distribution of Gaussians. Below this graphic, the label 'Gaussian Properties' is written, along with the equation G = (μ + δ_μ, s + δ_s, r, o, c), which defines the final Gaussian parameters as a combination of base values (μ, s, r) and the learned shifts (δ_μ, δ_s), along with opacity o and semantic logits c. The figure uses black text and lines for all components, with the exception of the yellow and blue ellipses on the right, which are colored to visually represent the Gaussian distributions. The overall flow is sequential: the occupancy feature is processed by the head to produce the four output fields, which together define the properties of a set of Gaussians in 3D space."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

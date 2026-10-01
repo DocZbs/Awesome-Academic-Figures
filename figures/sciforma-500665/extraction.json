@@ -1,0 +1,87 @@
+{
+  "id": "sciforma-500665",
+  "record_sha256": "02459c872d96aacf8cf2103534e34d4e3a0946fb6a25062cd0ed09797f4a1dae",
+  "asset_sha256": "68a5b7014fa2c7bf69644f6b2a96201cc2230f6e8d82b5ed7438a8393bf03eb2",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 768,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-500665",
+    "title": {
+      "zh": "A comprehensive GeoAI review: Progress, Challenges and Outlooks · 方法图",
+      "en": "A comprehensive GeoAI review: Progress, Challenges and Outlooks"
+    },
+    "paper": {
+      "id": "arxiv-2412-11643",
+      "title": "A comprehensive GeoAI review: Progress, Challenges and Outlooks",
+      "authors": [
+        "Anasse Boutayeb",
+        "Iyad Lahsen-cherif",
+        "Ahmed El Khadimi"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_url": "https://arxiv.org/abs/2412.11643",
+      "arxiv_id": "2412.11643",
+      "arxiv_first_submitted_at": "2024-12-16T10:41:02Z",
+      "arxiv_updated_at": "2024-12-16T10:41:02Z",
+      "arxiv_subjects": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500665/image/image.jpg?Expires=1790835174&Signature=i84Dej5-1SJFX06P-z07ICl8qhAKUJtVak6~x2qtwC~OGS~7J7kVmfBHEM~Ueame04G8fYf0mMdfIIaNNBeaKjZ298QALEQOpd9vfwUn-D-tl~SmcSVO6rQ9pRCLo4RQGFJUp8-4QQ7oOe5NstKG-NED-l4S7-Mdgye1tL7wwo4Jf3hjy-w8uE3mv68y0PR6wMD0g43TY7BZkzSWjDkVbpGXWfr-RrlaJrxPv83DIGrjkVCu5BABZWtlnhG3CaFVAANnG-tHmDedsTep7c4tfqk6zjsnDzKJW4zhPfmANU5x3dubA~TsdJVcUhzSaI5MNZC50vj1bXsOrGBKBoIYnQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 500665,
+      "description_sha256": "1174cd68a0513c18ed2cb632a50bcc7760750b9bf6e7ba40acfa074f9af93b30",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "32bc2de1aa5fc70ccb62769f58b179c858a0609feb1f6b9c74e2933d0e23a4f8",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.AI",
+        "physics.geo-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the federated learning workflow, depicting a distributed machine learning process where multiple local devices collaboratively train a global model without sharing raw data. The global layout is vertically structured: at the top, a server hosts the 'Global model on server', represented by a gray server rack icon enclosed in a blue dashed rectangle. Below it, a horizontal row of four identical client devices, each symbolized by a blue cylindrical database icon, represents 'Local models on multiple devices', grouped within a red dashed rectangle. Each device contains a small neural network diagram composed of interconnected nodes in various colors (teal, red, yellow, light green, pink), indicating local model structures.\n\nThe visual modules include the server and the client devices. The server’s global model is shown as a larger, more complex neural network with nodes in green, pink, and red, signifying a centralized, aggregated model. The local models on each device are smaller, simpler networks with fewer nodes, colored in teal, red, yellow, and light green, representing individual, localized training instances. All components are labeled with clear black text, and the server and client groups are demarcated by dashed borders—blue for the server and red for the clients.\n\nConnections and arrows indicate the three-step federated learning cycle. A red dashed arrow labeled '1: Download global model' points from the server to the first client, showing the initial step where the global model is sent to each device. A solid red arrow labeled '2: Upload local model' points upward from the last client to the server, illustrating the second step where updated local models are sent back. Finally, a red text label '3: Update models' is placed below the client group, indicating the third step where each local device trains its model using its own data, updating the weights before uploading. The arrows and labels are rendered in bold red font, emphasizing the flow direction and sequence. The entire diagram is clean, schematic, and designed to convey the iterative, decentralized nature of federated learning."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

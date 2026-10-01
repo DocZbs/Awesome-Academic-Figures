@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502474",
+  "record_sha256": "89425af3e75451a49a12310f18debec565cd59e5e5531cd955a6baed87be2d8b",
+  "asset_sha256": "e1c6d17e3ac3d5130d2c622079ff692fcdccfd6d3783dced9816c4bf52993627",
+  "original_file": "original.jpg",
+  "pixel_width": 2048,
+  "pixel_height": 512,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502474",
+    "title": {
+      "zh": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting · 方法图",
+      "en": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting"
+    },
+    "paper": {
+      "id": "arxiv-2412-14579",
+      "title": "GSRender: Deduplicated Occupancy Prediction via Weakly Supervised 3D Gaussian Splatting",
+      "authors": [
+        "Qianpu Sun",
+        "Changyong Shu",
+        "Sifan Zhou",
+        "Runxi Cheng",
+        "Yongxian Wei",
+        "Zichen Yu",
+        "Dawei Yang",
+        "Sirui Han",
+        "Yuan Chun"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14579",
+      "arxiv_url": "https://arxiv.org/abs/2412.14579",
+      "arxiv_id": "2412.14579",
+      "arxiv_first_submitted_at": "2024-12-19T06:57:37Z",
+      "arxiv_updated_at": "2025-12-22T12:47:43Z",
+      "arxiv_subjects": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502400&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502474/image/image.jpg?Expires=1790835221&Signature=AnEk6clNgsrF4QVMo~o~X78VOh5tpVvsFVczyfla3rQkdf2SCpADyd~KTqNHEiJhdPn1GEXkke~96-PyXVcoDOvAJ~SVqKhrQYIAM-2X1-TzXeO2Qk49uoQEEzPNdQ30-9JtSP5R~kiu9DZQlkf2rqPiRrLi3o-yv7q~AfpHCj09AB2H7A4zqz~YKHEvW0gG3rEa5OYARA-cMmolA2G6VStCd~34Zm6r76yi~R92UfJUACWDtF4iNDchn4Y0jo5RW040wikoL71xdYU5gecaFNmtWtrRQt80zta-PhX50KVJAVEgdDOCTULuV-sJlgaB~AvzUYr-a3Ttsyj3-W2AdA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502474,
+      "description_sha256": "60662dc595b1fe440e9681f3dbd35f9ec6c399bba19c126b0f9c615907826bb7",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the overall framework of GSRender, a method for 3D scene reconstruction and rendering from surround-view 2D images. The global layout is horizontal and two-tiered: the top row represents the current frame processing pipeline, while the bottom row shows the adjacent frame processing with Ray Compensation (RC). Both pipelines share a common 2D-to-3D feature extraction step, followed by Gaussian-based rendering and loss computation.\n\nIn the top row, multiple 2D surround-view images (N × H × W × 3) are fed into a 2D-to-3D module, represented by a yellow arrow, which converts them into a 3D voxel grid (Hv × Wv × Zv × K). This grid is then processed by a shared head (red arrow) to generate a 3D feature volume with Gaussian attributes (Hv × Wv × Zv × (7 + L − 1)), where each Gaussian is defined by its position, scale, rotation, and color. These Gaussians are rendered using ray casting, producing a predicted image (pred), which is compared to the ground truth (gt) via a current loss function (Lcurr).\n\nThe bottom row introduces the RC module, which takes the same 3D voxel grid from the 2D-to-3D step and applies a separate shared head (red arrow) to generate a modified 3D feature volume. This module compensates for viewpoint differences between frames, particularly addressing duplicate object predictions across views. The resulting Gaussians are rendered again using rays, producing a new predicted image. This output is compared to a ground truth from a different viewpoint (N view) using an adjustment loss (Ladj).\n\nThe figure uses color-coded arrows to denote data flow: yellow for the current frame, blue for the adjacent frame, and red for shared components. The 3D volumes are depicted as grids transitioning into abstract 3D spaces filled with colored ellipses representing Gaussians. The final outputs are rendered images with semantic segmentation-like colorization, and losses are shown as directed comparisons between pred and gt. The entire process emphasizes temporal consistency and multi-view compensation through shared heads and dedicated RC processing."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

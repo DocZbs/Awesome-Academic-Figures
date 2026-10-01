@@ -1,0 +1,90 @@
+{
+  "id": "sciforma-502637",
+  "record_sha256": "9f30acaccbce7c50f0386ed6a20332387d3d9dac447151bb2533939c98e36085",
+  "asset_sha256": "96e7c35cdabc7360dc283f7a3e6bdb16def83d135e942cfabbfa2c312fb0bd3a",
+  "original_file": "original.jpg",
+  "pixel_width": 1600,
+  "pixel_height": 640,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502637",
+    "title": {
+      "zh": "Dehallucinating Parallel Context Extension for Retrieval-Augmented Generation · 方法图",
+      "en": "Dehallucinating Parallel Context Extension for Retrieval-Augmented Generation"
+    },
+    "paper": {
+      "id": "arxiv-2412-14905",
+      "title": "Dehallucinating Parallel Context Extension for Retrieval-Augmented Generation",
+      "authors": [
+        "Zexiong Ma",
+        "Shengnan An",
+        "Zeqi Lin",
+        "Yanzhen Zou",
+        "Jian-Guang Lou",
+        "Bing Xie"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.14905",
+      "arxiv_url": "https://arxiv.org/abs/2412.14905",
+      "arxiv_id": "2412.14905",
+      "arxiv_first_submitted_at": "2024-12-19T14:37:11Z",
+      "arxiv_updated_at": "2024-12-19T14:37:11Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502600&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502637/image/image.jpg?Expires=1790835223&Signature=cGwOZIJPsdLnDdTvOonD1hICFuMvCc10GzB6rCGjcABHq4EWaVDVgRVQXRkV0EIg3kmT9lwY2CjhWDfHM89J1k3fxEKCDON2iVv3sDwWdUb6VEXzjHb-vrxD49RS2feXcpDRb8x5Tu~n~qxoduBLEL34AGqQy~qlIZb-pvNzW3tzmD05ewTv4brgqSFvrY7-uxvQDQUYSGsTbH-qXbRV~KnWDkl0P4KFwDIJMerxVTj2Ir05SE1~4Gp4nsJxj4e0ljZgoa2uiJ1sYa1IT80ZdMyl4DMpc2Sq-Fy2fSru9y6z1uMQRkaOZ40X9s98nXaCRQrGFyXhVoTOtAIx1UfjUg__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502637,
+      "description_sha256": "29f1ed372ca47ca9904c318bb4924f71f3f6566aedc9f37a90ddd0801b00a600",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "5d7b74d273bab56c7cebde0e1c9844a2944329e7824eba8195e7534b313f5cc6",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "data",
+      "types": [
+        "data"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DePaC framework, which comprises two main stages: (1) Negative Training and (2) Information-Calibrated Aggregation. The global layout is divided into two large green-dashed boxes representing these stages, arranged sequentially from left to right. The first stage, 'Negative Training,' shows a fine-tuning process where a Large Language Model (LLM) is trained on both positive and negative examples. Positive examples consist of a document (Doc_p, green box) paired with a question (Q, purple box) and a correct answer sequence (A_1:m, magenta box), while negative examples use a different document (Doc_n, red box) with the same question but an incorrect or unknown answer (UNK, magenta box). An orange arrow labeled 'finetune' points from these inputs to a light blue rounded rectangle labeled 'LLM'.\n\nBelow this, concrete examples demonstrate the application: three documents (Doc1, Doc2, Doc3) are shown in rounded rectangles with green, red, and pink borders respectively, each containing family relationship facts. Each document is paired with the same question, 'Who is Alice’s grandfather?', in a purple rounded rectangle. These inputs feed into a larger light blue rounded rectangle labeled 'NegTrained LLM', indicating the model after negative training.\n\nThe second stage, 'Information-Calibrated Aggregation', begins with outputs from the NegTrained LLM: multiple probability distributions P_1, P_2, P_3, and P_c, each represented as a bar chart with three categories: 'Charlie', 'Unknown', and 'Wendy'. For example, P_1 shows Charlie with probability 0.5, Unknown with 0.2, and Wendy with 0.1. These distributions are fed into a peach-colored trapezoid labeled 'D_KL(P_i || P_c) Information Calibrated Aggregation', indicating the use of Kullback-Leibler divergence for calibration. The output is a single aggregated probability distribution with Charlie at 0.5, Unknown at 0.2, and Wendy at 0.2. This leads to the final answer, 'A: Charlie.', displayed in a purple rounded rectangle with a green checkmark, signifying correctness.\n\nConnections are shown via orange arrows: from the training data to the LLM, from the documents and questions to the NegTrained LLM, from the LLM's outputs to the aggregation module, and finally from the aggregation result to the final answer. The visual modules use distinct colors and shapes: documents are colored green, red, or pink; questions and answers are in purple; the LLMs are light blue; probability distributions are bar charts; and the aggregation module is a peach trapezoid. Text labels are clear and positioned near relevant components, including mathematical notation D_KL(P_i || P_c) within the aggregation block."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

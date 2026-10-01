@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-501327",
+  "record_sha256": "84a46ed42a44f2e1f87ea7858706457186f1374e3c0c1beb6bf7b1d892af6c2f",
+  "asset_sha256": "0082685251b22c1396461f615b4e89d35fde1ac69501ee5453e2bf6b4ac008fd",
+  "original_file": "original.jpg",
+  "pixel_width": 1408,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-501327",
+    "title": {
+      "zh": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA · 方法图",
+      "en": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA"
+    },
+    "paper": {
+      "id": "arxiv-2412-12632",
+      "title": "What External Knowledge is Preferred by LLMs? Characterizing and Exploring Chain of Evidence in Imperfect Context for Multi-Hop QA",
+      "authors": [
+        "Zhiyuan Chang",
+        "Mingyang Li",
+        "Xiaojun Jia",
+        "Junjie Wang",
+        "Yuekai Huang",
+        "Qing Wang",
+        "Yihao Huang",
+        "Yang Liu"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_url": "https://arxiv.org/abs/2412.12632",
+      "arxiv_id": "2412.12632",
+      "arxiv_first_submitted_at": "2024-12-17T07:49:49Z",
+      "arxiv_updated_at": "2025-05-26T01:35:19Z",
+      "arxiv_subjects": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=501300&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/501327/image/image.jpg?Expires=1790835191&Signature=ZWrROTH9nUHVztE7OE6TqRyU5R53ZM8SAsMYbIBeCAiXceI7DFgFTt9jIqtQF19r8GezxpwLJ15ngWOWTO2b9gyb~iqzE1Sw1fkKT7rNwlyWwwlYeClPEjcrKeZF7eWTE~wZcyRqkr8T8M~4CPJ9qiRfSIdUqtawP4oS56GzhlykxkGghejoSUTuCSwTmjyU-kyKwa--X-HYlQKx7KMrSMIdcl10yF4sMIm9R6SiUDyvThi1SAYQaLv2IH~W0gEAJKLf-lYKL0u6UTMBgxixSjAcNXhy5RUB~6ah7gnAAJZ9p82U3xj~SVnYV~~9P3GXTsqk2L2wNPnNYW6Qmzkc~Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 501327,
+      "description_sha256": "71e27ac1f2e27267552873c09cece1c99a7de55f698dab46943d92b71d9fea3b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "29ce16381e5fee932b29b92769ca9522d28ede789fe08227003aef71a8120b05",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure presents an overview of a system architecture for structured knowledge extraction, labeled as {\tool}. The global layout is a left-to-right workflow consisting of four main stages: Question input, Information Extraction, Evidence Graph Construction with External Knowledge, and Minimal Coverage Search leading to Structured Knowledge output.\n\nStarting from the left, a black square icon labeled 'Question' with a question mark and horizontal lines represents the input query. An arrow points upward from this icon to a blue document icon labeled 'Information Extraction', indicating the first processing step. This step extracts relevant information from the question.\n\nThe output of Information Extraction feeds into a large rounded rectangular container labeled 'Intent'. Inside this container, multiple yellow rectangular boxes labeled 'Evidence Node₁', 'Evidence Node₂', ..., 'Evidence Nodeₙ' are vertically aligned. These nodes are connected by curved black arrows labeled 'Relation₁₂', 'Relation₂ₙ', etc., forming a graph structure. A large curly brace on the left side groups all evidence nodes under the label 'Intent'. Below this container, the text 'External Knowledge' is displayed alongside three blue book icons, indicating that external sources are used to enrich or inform the evidence graph.\n\nFrom the Intent container, a thick black arrow leads to the next stage, titled 'Minimal Coverage Search' in bold blue text. This stage is represented by another rounded rectangular container containing three vertically stacked yellow rounded rectangles. From top to bottom, they are labeled 'Intent Coverage', 'Evidence Relation Coverage', and 'Evidence Node Coverage'. Black downward-pointing arrows connect these components sequentially, suggesting a hierarchical or iterative coverage verification process.\n\nFinally, an arrow extends from the bottom of the Minimal Coverage Search container to a blue icon depicting two interlinked chains, labeled 'CoE Structured Knowledge'. This signifies the final output: a compact, coherent, and structured representation of knowledge derived from the input question and external sources.\n\nAll visual elements use a consistent color scheme: blue for input/output and major process labels, yellow for internal data or coverage components, and black for text and connectors. Shapes include squares, rounded rectangles, and icons for intuitive representation. The diagram emphasizes a pipeline approach where raw questions are transformed through structured reasoning and coverage optimization into formalized knowledge."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}

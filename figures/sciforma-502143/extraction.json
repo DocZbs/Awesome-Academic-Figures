@@ -1,0 +1,93 @@
+{
+  "id": "sciforma-502143",
+  "record_sha256": "3a6495fc8d719243c0386fa550bacda7926033e09b75949ddeb31791645c0995",
+  "asset_sha256": "45ade3957e50575063832bacd9de7de807410d3e1200c14c9d16b88bb0905eea",
+  "original_file": "original.jpg",
+  "pixel_width": 1344,
+  "pixel_height": 704,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-502143",
+    "title": {
+      "zh": "Self-attentive Transformer for Fast and Accurate Postprocessing of Temperature and Wind Speed Forecasts · 方法图",
+      "en": "Self-attentive Transformer for Fast and Accurate Postprocessing of Temperature and Wind Speed Forecasts"
+    },
+    "paper": {
+      "id": "arxiv-2412-13957",
+      "title": "Self-attentive Transformer for Fast and Accurate Postprocessing of Temperature and Wind Speed Forecasts",
+      "authors": [
+        "Aaron Van Poecke",
+        "Tobias Sebastian Finn",
+        "Ruoke Meng",
+        "Joris Van den Bergh",
+        "Geert Smet",
+        "Jonathan Demaeyer",
+        "Piet Termonia",
+        "Hossein Tabari",
+        "Peter Hellinckx"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.13957",
+      "arxiv_url": "https://arxiv.org/abs/2412.13957",
+      "arxiv_id": "2412.13957",
+      "arxiv_first_submitted_at": "2024-12-18T15:37:09Z",
+      "arxiv_updated_at": "2025-07-14T08:34:23Z",
+      "arxiv_subjects": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": []
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=502100&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/502143/image/image.jpg?Expires=1790835212&Signature=t22A9D1I7PA1C3PUtBM5XwZx949n3SBf5epUkp1F1ihel8iT9~NwY2oNxWw0MTkOVhYi0HUZeUX5BpHoCwGdjxLaLGJj7T1Qb~rXf7ecTUKxo8YvNjgYmTYx0~eQtXhM2yfA4pesy-~50O3SJsynxFGKRsW3K5cB~TjRlFQiqZX-88Vd0r8jcldm2Sgm36EObmjXTBS7H97-2-XRTig4Yi9xiJKgi9kbbQAv0JSC3V8X1F1vSjaV60qUQIk2xXsqqxCD~OiDe3Sp~AGB0-yTB0AKOCSpS7jjjP~2RfoLS~A18QpjAiiBGX28iA9BTOk7b13S~oEZYoCzakiMKymI8Q__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 502143,
+      "description_sha256": "06d0c986acaa44c59a7faed84a87451c0791ed752c50d35faf60f06e0d5e744b",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "1d05411c895aff7def7c4b74d49ff5bfe71a5cb4be158035c1ae053dc0656960",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved."
+    },
+    "classification": {
+      "primary_type": "architecture",
+      "types": [
+        "architecture"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the architecture of a Transformer-based postprocessing model designed for spatiotemporal forecasting data. The global layout is left-to-right, showing a data flow from input to output. On the far left, the input is represented as a 5D tensor of dimensions k × c × t × h × w, where k denotes the number of ensemble members, c represents the number of original predictors, t is the number of lead times, and h × w corresponds to the spatial grid resolution (latitude-longitude). This input tensor is visualized as a 3D volume with axes labeled t (time), w (width), and h (height), and is annotated with 'k × c' to indicate the ensemble-predictor dimensionality. The input undergoes a linear projection from c to ãc features, depicted as a sequence of small rectangular boxes labeled 'c' transforming into 'ãc', symbolizing a feature expansion step. This projected feature sequence is then fed into a series of n identical Transformer blocks, indicated by the '×n' notation adjacent to the first block.\n\nEach Transformer block is enclosed in a large rounded rectangle and contains two main components: a 'Multi-headed attention' module and a 'Multilayer perceptron' module, both shown as rectangular boxes stacked vertically. The input to each block is specified as b × k × t × h × w × ãc, where b likely represents batch size. The multi-headed attention layer processes this input and passes its output to the multilayer perceptron. Both modules are followed by residual connections, shown as circular '+' symbols, which add the input of the block to the output of each submodule before proceeding to the next. The output of the multilayer perceptron is also of dimension b × k × t × h × w × ãc, indicating that the feature dimension remains unchanged within the block.\n\nAfter passing through n Transformer blocks, the final output is processed by a projection layer that reduces the feature dimension from ãc back to 1, corresponding to the postprocessed variable. This is visually represented on the right side of the figure, where the output sequence of ãc features is transformed into a single feature per time step, again shown as a sequence of small boxes. The final output is also visualized as a 3D volume similar to the input, with axes t, w, h, and an additional label 'k' pointing to the ensemble dimension, indicating that the output retains the ensemble structure. The entire process is designed to learn complex spatiotemporal dependencies across ensemble members and predictors, enabling accurate postprocessing of forecast data."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}
