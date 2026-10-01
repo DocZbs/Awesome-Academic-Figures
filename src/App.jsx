@@ -896,7 +896,9 @@ export default function App() {
       <footer className="site-footer page-width">
         <div>
           <span className="footer-logo">
-            aaf<span>↗</span>
+            Awesome
+            <br />
+            Academic Figures<span>↗</span>
           </span>
           <span>好图，让研究被看见。</span>
         </div>
