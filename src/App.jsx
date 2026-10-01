@@ -1191,7 +1191,9 @@ function ReadyDetailDialog({
           <strong>
             {figure.reuse.validation.visual_extraction === "reviewed"
               ? "原图已核对"
-              : "来源索引已核对"}
+              : figure.reuse.validation.visual_annotation === "reviewed"
+                ? "视觉结构已逐图标注"
+                : "来源索引已核对"}
           </strong>
           <span>
             {figure.source.pdf_page_index_1based
@@ -1256,7 +1258,7 @@ function ReadyDetailDialog({
               ? "这份图形描述由来源数据集生成，尚未经逐图人工核验。请先确认参考图细节，再替换为你的研究内容；描述中的原论文结果不能直接用于你的论文。"
               : figure.reuse.prompt_status === "draft"
                 ? "这是参考图驱动的通用改绘草稿，尚未逐图重建。智能体应先分析附图，再结合你的真实材料绘制。"
-                : "替换双花括号中的变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。"}
+                : "替换模板中的占位变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。"}
           </p>
           <pre className="prompt-code" tabIndex="0">
             {figure.prompt_text}
