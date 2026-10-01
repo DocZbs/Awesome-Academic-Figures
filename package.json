@@ -9,9 +9,9 @@
     "prebuild": "python3 scripts/prepare_site.py && node scripts/build_research_tags.mjs && node scripts/generate_tokens.mjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "format": "prettier --write src scripts/generate_tokens.mjs scripts/build_research_tags.mjs scripts/check_search.mjs index.html",
-    "format:check": "prettier --check src scripts/generate_tokens.mjs scripts/build_research_tags.mjs scripts/check_search.mjs index.html",
-    "check": "node scripts/check_site.mjs && node scripts/check_matching.mjs && node scripts/check_search.mjs && node scripts/check_figure_details.mjs && node scripts/build_research_tags.mjs --check",
+    "format": "prettier --write src scripts/generate_tokens.mjs scripts/build_research_tags.mjs scripts/check_search.mjs scripts/check_projects.mjs index.html",
+    "format:check": "prettier --check src scripts/generate_tokens.mjs scripts/build_research_tags.mjs scripts/check_search.mjs scripts/check_projects.mjs index.html",
+    "check": "node scripts/check_site.mjs && node scripts/check_matching.mjs && node scripts/check_search.mjs && node scripts/check_figure_details.mjs && node scripts/build_research_tags.mjs --check && node scripts/check_projects.mjs",
     "tags:build": "node scripts/build_research_tags.mjs",
     "check:tokens": "node scripts/generate_tokens.mjs --check",
     "check:matching": "node scripts/check_matching.mjs"

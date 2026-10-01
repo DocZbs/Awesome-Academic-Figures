@@ -21,12 +21,12 @@ DESIGN.md owns taste and generates runtime tokens. Light theme only. Generated s
 
 | Capability | Canonical owner | Source of truth | Allowed variants | Verification |
 | --- | --- | --- | --- | --- |
-| Selection | App/usePreference and FigureActions | Product brief | current task | browser |
-| Form | ExportDialog / PaperMatcher | This contract | reference task / transient paper input | browser |
-| Select/Listbox | PaperMatcher native select | This contract | explicit figure kinds; platform popup accepted | keyboard and native popup |
+| Selection | useProjects / FigureActions / ProjectPanel | Current user project brief | active project, independent membership | browser |
+| Form | ExportDialog / PaperMatcher / ProjectPanel | This contract | project config / reference task / transient paper input | browser |
+| Select/Listbox | Native select in PaperMatcher / ProjectPanel / App project toolbar | This contract | figure kind / active project; platform popup accepted | keyboard and native popup |
 | Scrollbar | src/styles.css | DESIGN.md | global baseline | computed style |
 | Toast | Feedback | This contract | polite inline status | browser |
-| Dialog | Dialog | This contract | detail / guide / export | focus and Escape |
+| Dialog | Dialog | This contract | detail / guide / export / project | focus and Escape |
 | Search | Gallery search | This contract | local, IME-safe | browser |
 
 The matcher figure-kind field uses a native select; its platform-owned popup is intentionally accepted. No date picker, server CRUD or destructive operation is implemented. Gallery filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
@@ -37,7 +37,7 @@ PaperSource owns the source archive shared between source-dimension browsing and
 
 ## Dataset navigation
 
-Gallery is a local bounded catalog, 12 results per explicit load-more batch. Default dimension is type; purpose/layout/source are alternatives. URL stores query, dimension, category, filters and view. Current task selection persists in sessionStorage independently of filtering. Favorites use localStorage; hidden items use sessionStorage. Both recover to memory with an explanatory banner when storage fails. Favorites update across tabs using storage events. These preferences contain only figure IDs.
+Gallery is a local bounded catalog, 12 results per explicit load-more batch. Default dimension is type; purpose/layout/source are alternatives. URL stores query, dimension, category, filters and view. Project names, descriptions and reference IDs persist in localStorage independently of filtering. Active project ID stays in sessionStorage per tab. Legacy session selection migrates once into the default project when no saved project store exists. Favorites use localStorage; hidden items use sessionStorage. Both recover to memory with an explanatory banner when storage fails. Favorites update across tabs using storage events. Favorite and hidden preferences contain only figure IDs; the project store contains user-entered project names/descriptions and figure IDs, never uploaded paper text or drawing-task text.
 
 Search suppresses filtering during IME composition, commits after 300ms, clears immediately and returns focus to its input. Filters combine OR within one field and AND across fields. Changing filters resets the batch count. No-results provides reset; empty favorites explain how to add items; hidden view offers Restore. Load/error media use a stable image container and a retry affordance.
 
@@ -47,7 +47,8 @@ Category totals and per-tag counts share the current search, advanced filters an
 
 | Operation | Trigger | Success | Failure | Source |
 | --- | --- | --- | --- | --- |
-| Select | 选作参考 / 已选参考 | Update tray without navigating | Memory fallback if session unavailable | Product brief |
+| Select | 添加到项目 / 已加入项目 | Update current project only; a figure can belong to many projects | Memory fallback and warning if storage unavailable | User project brief |
+| Configure project | 新建项目 / 保存项目配置 | Save name/description; create switches to new board | Preserve config draft, inline error and invalid focus | User project brief |
 | Favorite | 收藏 / 已收藏 | Update favorite count | Storage warning, retain current state | Product brief |
 | Hide | 暂时隐藏 | Hide from ordinary views; reversible | No destructive effect | Product brief |
 | Restore | 恢复展示 | Return to gallery visibility, no automatic selection | Not applicable | Product brief |
@@ -61,7 +62,7 @@ Each view has a localized document title. Detail is shareable via figure URL par
 
 ## Overlays and feedback
 
-Shared native dialog element is opened through showModal; browser top layer provides inert background, focus containment and Escape. App owns content, initial focus, scroll lock and restoration. All feedback uses shared Feedback; in-dialog messages are inside that dialog so they remain accessible. No native alert/confirm/prompt calls. Export task draft stays in app memory if the dialog is closed; close does not discard it.
+Shared native dialog element is opened through showModal; browser top layer provides inert background, focus containment and Escape. App owns content, initial focus, scroll lock and restoration. All feedback uses shared Feedback; in-dialog messages are inside that dialog so they remain accessible. No native alert/confirm/prompt calls. Export task and notes stay in app memory separately for each project if the dialog is closed; close does not discard them. Project configuration drafts likewise survive closing and switching within this page, but save is explicit. Refresh discards these drafts.
 
 ## Async and resilience
 
@@ -70,6 +71,12 @@ Catalog and ZIP asset requests use AbortController and a 15s timeout. Retry is e
 ## Validation and clipboard
 
 Export form uses noValidate, real labels, inline error and first-invalid focus. Research task is required; user input is retained after failure. Textareas have resize none. Clipboard success appears only after a resolved copy; denial leaves a visible text pane for manual copying. User task content is not placed in URLs or persistent storage.
+
+## Project reference boards
+
+ProjectPanel uses shared Dialog, Button, FigureImage and Feedback. The quiet project toolbar shows the active context before selecting any figure; card, detail and matcher selection all update that same project. Project boards show all selected references independently of gallery filters, with a recoverable empty state and placeholders for missing catalog IDs. Project renaming does not change identity or membership. No delete operation is introduced. Native select is the canonical platform-owned project chooser. Config requires a nonblank name (max 80 chars); description max 2,000 chars. Failure preserves drafts and focuses the invalid field.
+
+Storage events synchronize saved projects across tabs without switching each tab's active project. Mutations read the latest saved store before merging. Storage failures retain in-memory operations and avoid overwriting unreadable data; this is browser-local convenience, not collaborative atomic storage or cloud sync. ZIP names reflect the project, and PROJECT.json records identity, task, notes, source-linked figure entries and unavailable IDs. MY_TASK.md includes project context. Export requires at least one available reference and a task, preserves source checksums and blocks closing during generation.
 
 ## Verification
 

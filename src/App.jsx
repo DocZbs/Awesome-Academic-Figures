@@ -34,8 +34,13 @@ import {
   FolderDown,
   ChevronDown,
   FileSearch,
+  FolderOpen,
+  Plus,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
+import ProjectPanel from "./ProjectPanel.jsx";
+import { useProjects } from "./useProjects.js";
+import { projectManifest } from "./projects.js";
 import { researchTagsFor } from "./research-topics.js";
 import {
   Button,
@@ -128,11 +133,15 @@ export default function App() {
     "localStorage",
     setStorageWarning,
   );
-  const [selected, setSelected] = usePreference(
-    "aaf:selected",
-    "sessionStorage",
-    setStorageWarning,
-  );
+  const workspace = useProjects(setStorageWarning);
+  const project = workspace.activeProject;
+  const selected = project.figureIds;
+  const [projectOpen, setProjectOpen] = useState(false);
+  const [projectIntent, setProjectIntent] = useState("board");
+  function openProjects(intent = "board") {
+    setProjectIntent(intent);
+    setProjectOpen(true);
+  }
   const [hidden, setHidden] = usePreference(
     "aaf:hidden",
     "sessionStorage",
@@ -144,14 +153,23 @@ export default function App() {
   const [guide, setGuide] = useState(false);
   const [matcherOpen, setMatcherOpen] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
-  const [task, setTask] = useState("");
-  const [notes, setNotes] = useState("");
+  const [projectDrafts, setProjectDrafts] = useState({});
+  const task = projectDrafts[project.id]?.task || "";
+  const notes = projectDrafts[project.id]?.notes || "";
+  const setProjectDraft = (field, value) =>
+    setProjectDrafts((old) => ({
+      ...old,
+      [project.id]: { ...old[project.id], [field]: value },
+    }));
+  const setTask = (value) => setProjectDraft("task", value);
+  const setNotes = (value) => setProjectDraft("notes", value);
   const [feedback, setFeedback] = useState(null);
   const searchRef = useRef(null);
   const composing = useRef(false);
   const debounce = useRef(null);
   const actions = {
-    onSelect: (id) => toggleItem(setSelected, id),
+    projectName: project.name,
+    onSelect: (id) => workspace.toggleFigure(id),
     onFavorite: (id) => toggleItem(setFavorites, id),
     onHide: (id) => {
       setHidden((old) => [...new Set([...old, id])]);
@@ -486,6 +504,30 @@ export default function App() {
           className="gallery page-width"
           aria-labelledby="gallery-heading"
         >
+          <div className="project-toolbar">
+            <div className="project-toolbar-label">
+              <FolderOpen size={19} />
+              <label htmlFor="active-project">为项目收集灵感</label>
+            </div>
+            <select
+              id="active-project"
+              value={project.id}
+              onChange={(event) => workspace.selectProject(event.target.value)}
+            >
+              {workspace.projects.map((item) => (
+                <option key={item.id} value={item.id}>
+                  {item.name} · {item.figureIds.length} 幅图
+                </option>
+              ))}
+            </select>
+            <Button icon={Plus} onClick={() => openProjects("create")}>
+              新建项目
+            </Button>
+            <Button icon={Layers3} onClick={() => openProjects()}>
+              项目参考板{" "}
+              <span className="project-count">{selected.length}</span>
+            </Button>
+          </div>
           <div className="gallery-heading-row">
             <div>
               <div className="eyebrow">FIND YOUR NEXT FIGURE</div>
@@ -968,16 +1010,21 @@ export default function App() {
         </button>
       </footer>
       {selectedFigures.length > 0 && (
-        <div className="selection-tray" aria-label="当前选中的参考图">
+        <div className="selection-tray" aria-label={`${project.name}的参考板`}>
           <div className="tray-label">
             <span className="tray-icon">
               <Layers3 size={20} />
             </span>
             <div>
               <strong>
-                我的参考板 <span>{selectedFigures.length}</span>
+                {project.name} <span>{selectedFigures.length}</span>
               </strong>
-              <small>选好了，就开始你的图</small>
+              <button
+                className="tray-open-project"
+                onClick={() => openProjects()}
+              >
+                查看项目参考板
+              </button>
             </div>
           </div>
           <div className="tray-thumbnails">
@@ -1010,7 +1057,7 @@ export default function App() {
           </Button>
         </div>
       )}
-      {!detailId && !guide && !exportOpen && (
+      {!detailId && !guide && !exportOpen && !projectOpen && (
         <Feedback
           message={feedback?.message}
           undo={
@@ -1024,6 +1071,23 @@ export default function App() {
           onDismiss={() => setFeedback(null)}
         />
       )}
+      <ProjectPanel
+        open={projectOpen}
+        intent={projectIntent}
+        figures={figures}
+        storageWarning={storageWarning}
+        workspace={{
+          ...workspace,
+          onCreate: () => setProjectIntent("create"),
+          onCreated: () => setProjectIntent("board"),
+        }}
+        onClose={() => setProjectOpen(false)}
+        onOpenFigure={openDetail}
+        onExport={() => {
+          setProjectOpen(false);
+          setExportOpen(true);
+        }}
+      />
       {detail && (
         <DetailDialog
           figure={detail}
@@ -1063,9 +1127,9 @@ export default function App() {
           <div className="guide-step">
             <span>02</span>
             <div>
-              <h3>选作参考，或先收藏</h3>
+              <h3>为项目收集参考图</h3>
               <p>
-                “选作参考”加入这次绘图的参考板；“收藏”保留在当前浏览器，方便以后再找。“暂时隐藏”的图随时可以恢复。
+                先创建或选择项目，再点击“添加到项目”。同一张图可以加入多个项目，每个项目的参考板独立保存。“收藏”方便以后再找，“暂时隐藏”的图随时可以恢复。
               </p>
             </div>
           </div>
@@ -1101,10 +1165,11 @@ export default function App() {
           <PaperMatcher
             figures={figures}
             selectedFigureIds={selected}
+            projectName={project.name}
             onOpenFigure={openDetail}
             onSelectFigure={actions.onSelect}
             onUseTask={({ task: paperTask, notes: paperNotes, figureIds }) => {
-              setSelected((old) => [...new Set([...old, ...figureIds])]);
+              workspace.addFigures(figureIds);
               setTask(paperTask);
               setNotes(paperNotes);
               setMatcherOpen(false);
@@ -1116,6 +1181,7 @@ export default function App() {
       )}
       {exportOpen && (
         <ExportDialog
+          project={project}
           figures={selectedFigures}
           task={task}
           setTask={setTask}
@@ -1402,7 +1468,15 @@ function ReadyDetailDialog({
   );
 }
 
-function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
+function ExportDialog({
+  project,
+  figures,
+  task,
+  setTask,
+  notes,
+  setNotes,
+  onClose,
+}) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
@@ -1412,6 +1486,10 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
   async function download(event) {
     event.preventDefault();
     if (busy) return;
+    if (!figures.length) {
+      setError("请先为这个项目添加参考图。");
+      return;
+    }
     if (!task.trim()) {
       setError("写一句你的绘图任务，例如“绘制包含三个阶段的多模态框架图”。");
       taskRef.current?.focus();
@@ -1423,8 +1501,15 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
     controller.current = new AbortController();
     try {
       const archive = {
+        "PROJECT.json": strToU8(
+          JSON.stringify(
+            projectManifest(project, figures, task, notes),
+            null,
+            2,
+          ),
+        ),
         "MY_TASK.md": strToU8(
-          `# 我的绘图任务\n\n${task}\n\n## 想借鉴的部分\n\n${notes || "查看参考图的实际结构，结合我的研究进行适配。"}\n\n请查看每个图目录里的参考预览、来源图文件（有作者原文件时一并附上）、analysis.md、prompt.md、agent.md 和 ATTRIBUTION.md。所有数值与模块关系应使用我自己的真实材料。\n`,
+          `# ${project.name} · 绘图任务\n\n${project.description ? project.description + "\n\n" : ""}${task}\n\n## 想借鉴的部分\n\n${notes || "查看参考图的实际结构，结合我的研究进行适配。"}\n\n请查看每个图目录里的参考预览、来源图文件（有作者原文件时一并附上）、analysis.md、prompt.md、agent.md 和 ATTRIBUTION.md。所有数值与模块关系应使用我自己的真实材料。\n`,
         ),
       };
       await Promise.all(
@@ -1481,7 +1566,7 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
       );
       const link = document.createElement("a");
       link.href = url;
-      link.download = "academic-figure-references.zip";
+      link.download = `${project.name.replace(/[\\/:*?"<>|\x00-\x1f]/g, "-").slice(0, 80) || "project"}-figure-references.zip`;
       link.click();
       setTimeout(() => URL.revokeObjectURL(url), 10000);
       setMessage(
@@ -1495,7 +1580,7 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
   }
   return (
     <Dialog
-      title="把灵感，带进你的研究"
+      title={`${project.name} · 参考包`}
       eyebrow="YOUR REFERENCE PACK"
       onClose={onClose}
       busy={busy}
@@ -1559,7 +1644,13 @@ function ExportDialog({ figures, task, setTask, notes, setNotes, onClose }) {
             <FolderDown size={17} />
             包含原图、描述、prompt 和你的任务
           </p>
-          <Button variant="primary" icon={Download} busy={busy} type="submit">
+          <Button
+            variant="primary"
+            icon={Download}
+            busy={busy}
+            disabled={!figures.length}
+            type="submit"
+          >
             {busy ? "正在打包" : "下载参考包"}
           </Button>
         </div>

@@ -127,3 +127,8 @@ optional tags within the same visual library.
 ## Research-topic labels
 
 Paper topic tags wrap below the existing figure-kind/layout tags, using restrained outline pills and the established green/cobalt tokens. Selected pills use pressed semantics and the same filter state as sidebar checkboxes. Labels carry readable research names (RL, ICL, World Model and WAM) without implying a new visual genre. The existing hero keeps its composition with the user-approved copy: “找到你的绘图灵感，交给你的绘图智能体。” and “为你的研究找到更精准优雅的表达”.
+
+
+## Project reference boards
+
+A restrained surface-and-border toolbar above the gallery establishes the current project, with a native selector, New Project and reference-board actions. It uses existing spacing, cobalt actions and green count labels. Each card uses the shared FigureActions for “添加到项目 / 已加入项目”. The bottom tray names the current project and links to its board. ProjectPanel uses the shared dialog, a native project chooser, explicit configuration disclosure and complete figure previews. Desktop boards use two columns; narrow screens use one, with wrapped selectors and stacked footer actions. Empty boards give a direct return to the gallery. Project names wrap in headings; long names in the compact tray truncate while the board shows the full title. Config drafts remain visible as unsaved, and persistence limitations are stated near export.

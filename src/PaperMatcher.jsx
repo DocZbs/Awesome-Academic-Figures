@@ -31,6 +31,7 @@ export default function PaperMatcher({
   onOpenFigure,
   onSelectFigure,
   selectedFigureIds = [],
+  projectName = "当前项目",
   onUseTask,
   onClose,
 }) {
@@ -383,11 +384,12 @@ export default function PaperMatcher({
                               ? "selected"
                               : "neutral"
                           }
+                          title={`项目：${projectName}`}
                           onClick={() => select(item.figure.id)}
                         >
                           {chosen.includes(item.figure.id)
-                            ? "已选参考"
-                            : "选作参考"}
+                            ? "已加入项目"
+                            : "添加到项目"}
                         </Button>
                       </div>
                     </article>

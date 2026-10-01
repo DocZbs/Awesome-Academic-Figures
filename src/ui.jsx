@@ -252,6 +252,7 @@ export function FigureActions({
   onHide,
   onRestore,
   compact = false,
+  projectName = "当前项目",
 }) {
   return (
     <div className={`figure-actions ${compact ? "compact" : ""}`}>
@@ -259,9 +260,10 @@ export function FigureActions({
         icon={selected ? Check : Plus}
         variant={selected ? "selected" : "neutral"}
         aria-pressed={selected}
+        title={`${selected ? "从项目移出" : "添加到项目"}：${projectName}`}
         onClick={() => onSelect(figure.id)}
       >
-        {selected ? "已选参考" : "选作参考"}
+        {selected ? "已加入项目" : "添加到项目"}
       </Button>
       <Button
         icon={Star}
