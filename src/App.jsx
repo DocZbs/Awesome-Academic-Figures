@@ -325,9 +325,7 @@ export default function App() {
           <span>
             Awesome
             <br />
-            <strong>
-              Academic Figures<span className="brand-dot">.</span>
-            </strong>
+            <strong>Academic Figures</strong>
           </span>
         </a>
         <nav aria-label="主导航">
