@@ -4,7 +4,8 @@
 figure collection. It never downloads full paper PDFs or source archives, and
 does not claim the source collection's JPEG crops are author vector originals.
 Local operations read/write metadata only. Image staging and promotion require
-Linux paths beneath `/home/jdp` and run in the jdp checkout.
+Linux paths beneath `/home/jdp`, or a validated GitHub Actions workspace on a
+Linux cloud runner. Large originals remain on the staging server or in GitHub.
 
 The importer has three stages:
 

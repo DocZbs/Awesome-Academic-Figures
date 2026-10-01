@@ -4,11 +4,11 @@
 
 ## 初始化服务器
 
-在服务器的项目目录创建 Python 虚拟环境，安装 `requirements-ingest.txt`。缓存和候选素材通过 `.gitignore` 排除，不得加入 Git。初始批次使用 `jdp` 作为服务器别名，其他维护者可替换为自己的主机。
+在服务器的项目目录创建 Python 虚拟环境，安装 `requirements/ingest.txt`。缓存和候选素材通过 `.gitignore` 排除，不得加入 Git。初始批次使用 `jdp` 作为服务器别名，其他维护者可替换为自己的主机。
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-ingest.txt
+.venv/bin/python -m pip install -r requirements/ingest.txt
 .venv/bin/python scripts/discover_awards.py
 .venv/bin/python scripts/resolve_papers.py
 ```

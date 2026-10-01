@@ -122,3 +122,8 @@ and complete figure previews with readable recommendation reasons. Cobalt keeps
 its role for the recommended next action; no new palette or decorative scores.
 Uploaded research text stays transient and private in the browser. Awards are
 optional tags within the same visual library.
+
+
+## Research-topic labels
+
+Paper topic tags wrap below the existing figure-kind/layout tags, using restrained outline pills and the established green/cobalt tokens. Selected pills use pressed semantics and the same filter state as sidebar checkboxes. Labels carry readable research names (RL, ICL, World Model and WAM) without implying a new visual genre. The existing hero keeps its composition with the user-approved copy: “找到你的绘图灵感，交给你的绘图智能体。” and “为你的研究找到更精准优雅的表达”.

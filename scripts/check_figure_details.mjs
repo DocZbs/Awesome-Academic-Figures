@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { loadFigureDetails } from '../src/gallery.js';
+import { researchTagsFor } from '../src/research-topics.js';
 
 const figure = JSON.parse(fs.readFileSync('data/catalog.json', 'utf8')).figures[0];
 const metadata = fs.readFileSync(`figures/${figure.id}/metadata.json`, 'utf8');
@@ -43,6 +44,7 @@ try {
   assert.equal(overlaidDetail.reuse.prompt_status, 'draft');
   assert.deepEqual(overlaidDetail.source, full.source);
   const portableMetadata = JSON.parse(JSON.stringify(overlaidDetail));
+  assert.deepEqual(portableMetadata.research_tags, researchTagsFor(overlay));
   assert.equal(portableMetadata.layout_annotation.status, 'visual_layout_reviewed');
   console.log('Detail loading verifies full metadata SHA, rejects changed bytes, retries failures and caches successful results.');
 } finally {

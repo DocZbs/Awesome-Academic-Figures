@@ -10,7 +10,7 @@ Local preview for Chinese-speaking researchers choosing Figure 1/2 references. A
 | --- | --- | --- | --- |
 | Default dimension and scope | Current user decisions; docs/PROJECT_DESIGN.md | Product brief | 2026-10-01 |
 | Selection, favorites, hiding and restore | docs/PROJECT_DESIGN.md, 挑选交互 | Product brief | 2026-10-01 |
-| Source/provenance and current sample count | data/catalog.json; docs/REMOTE_STAGING.md | Curated data | 2026-10-01 |
+| Source/provenance and current sample count | data/catalog.json; docs/ingestion/REMOTE_STAGING.md | Curated data | 2026-10-01 |
 | Identity, payment, irreversible mutations | Not present in this local frontend | Not applicable | 2026-10-01 |
 
 ## Visual contract
@@ -117,4 +117,10 @@ A newly verified arXiv correspondence uses an arXiv badge in the figure label, a
 
 ## Layout review provenance
 
-1,919 of 1,920 published figures currently have macro layout labels; one page-like preview remains unresolved because its diagram is too small to judge. `data/layout_annotations.json` records inspection of the 1,876 previously unlabelled previews, with 1,875 labelled and one explicitly unresolved. The build checks preview SHA-256 and author/reference asset identity, then overlays layout fields without rewriting source metadata. Detail loading and portable exports preserve the overlay while verifying the original full metadata checksum. A layout-only badge must not imply full extraction, numbering, genre or prompt review. Add vertical and freeform options; multiple tags overlap. Future genuinely unresolved entries keep the explicit unlabelled category.
+All 3,000 published figures have macro layout labels; unresolved layout count is zero after the documented whole-page replacement. `data/layout_annotations.json` binds preview SHA-256 and reference identity to each overlay. `data/batches/layout_cleanup_20261001/reviews.json` retains the removed crop evidence. Layout labels do not imply full extraction, numbering, genre or prompt review. Future genuinely unresolved entries keep the explicit unlabelled category.
+
+## Research-topic discovery
+
+`src/research-topics.js` owns the shared topic vocabulary and aliases used by gallery search, paper matching, displayed tags and the agent index. Topics describe the associated paper, inferred only from explicit paper-title, abstract and recorded research-topic keywords; they are not a claim that every figure depicts every paper topic. Each inferred tag retains its matched field and terms and the status `metadata_keyword_match`. Multiple topics per figure are allowed.
+
+Research-topic selections combine with AND (intersection); existing source/layout/purpose fields retain their OR-within-field behavior. Topic counts reflect the candidate intersection with the other selected topics. Search accepts abbreviations, Chinese and English aliases; short Latin terms match word boundaries, so RL does not match world and ICL does not match ICLR. Compound-topic searches require every topic. Tags use existing filter state, URL persistence, clear/reset, IME and selected-reference behavior. Gallery cards expose topic filter buttons; no new modal or network service is introduced. Exports include the same tags and evidence in metadata. `data/research_tags.json` and the published `research-tags.json` share the runtime derivation and are checked for drift.

@@ -36,6 +36,7 @@ import {
   FileSearch,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
+import { researchTagsFor } from "./research-topics.js";
 import {
   Button,
   Chip,
@@ -383,11 +384,7 @@ export default function App() {
               </span>
               。
             </h1>
-            <p>
-              从 AI 论文中，找到你的绘图灵感。
-              <br />
-              挑选论文首图与方法图，交给你的绘图智能体。
-            </p>
+            <p>找到你的绘图灵感，交给你的绘图智能体。</p>
             <div className="hero-buttons">
               <Button
                 variant="primary"
@@ -404,7 +401,8 @@ export default function App() {
             </div>
             <div className="hero-caption">
               <span className="source-dot" /> 源自真实论文{" "}
-              <span className="caption-divider" /> 为你的研究重新表达
+              <span className="caption-divider" />{" "}
+              为你的研究找到更精准优雅的表达
             </div>
           </div>
           <div className="hero-art">
@@ -509,7 +507,7 @@ export default function App() {
                 id="figure-search"
                 ref={searchRef}
                 type="search"
-                placeholder="搜索图形、布局或论文…"
+                placeholder="关键词、论文或布局，如 rl、world model…"
                 value={query}
                 onCompositionStart={() => {
                   composing.current = true;
@@ -662,7 +660,10 @@ export default function App() {
                 .map(([field, info]) => (
                   <details
                     key={field}
-                    open={field === "layout"}
+                    open={
+                      field === "layout" ||
+                      (field === "topic" && state.filters.topic.length > 0)
+                    }
                     onKeyDown={(event) => {
                       if (event.key === "Escape") {
                         event.currentTarget.open = false;
@@ -674,6 +675,11 @@ export default function App() {
                       {info.label}
                       <ChevronDown size={14} />
                     </summary>
+                    {field === "topic" && (
+                      <p className="filter-topic-note">
+                        多选须同时满足。标签按论文标题和元数据识别。
+                      </p>
+                    )}
                     <div className="filter-options">
                       {info.options.map((option) => (
                         <label key={option.value}>
@@ -837,6 +843,27 @@ export default function App() {
                             </span>
                             <span>Prompt 已配备</span>
                           </div>
+                          {researchTagsFor(figure).length > 0 && (
+                            <div
+                              className="research-tags"
+                              aria-label="研究主题标签"
+                            >
+                              {researchTagsFor(figure).map((tag) => (
+                                <button
+                                  key={tag.id}
+                                  type="button"
+                                  aria-pressed={state.filters.topic.includes(
+                                    tag.id,
+                                  )}
+                                  aria-label={`筛选主题 ${tag.label}`}
+                                  title={`${tag.label} · 根据论文元数据关键词识别`}
+                                  onClick={() => setFilter("topic", tag.id)}
+                                >
+                                  {tag.label}
+                                </button>
+                              ))}
+                            </div>
+                          )}
                           <div className="card-footer">
                             <FigureActions
                               figure={figure}
@@ -1028,7 +1055,7 @@ export default function App() {
               <h3>浏览完整图像</h3>
               <p>
                 按 Teaser
-                图、机制图、实验图浏览，叠加用途、布局、会议或期刊筛选。
+                图、机制图、实验图浏览，叠加研究主题、用途、布局、会议或期刊筛选。
                 点击图像查看大图、结构描述和同篇参考图。
               </p>
             </div>

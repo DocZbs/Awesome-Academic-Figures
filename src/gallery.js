@@ -1,3 +1,6 @@
+import { compileSearch, matchesSearch } from "./search.js";
+import { TOPIC_LABELS, researchTagsFor } from "./research-topics.js";
+
 export const TYPE_LABELS = {
   teaser: "Teaser 图",
   mechanism: "机制图",
@@ -45,6 +48,13 @@ export const DIMENSIONS = {
   source: "论文来源",
 };
 export const FILTER_FIELDS = {
+  topic: {
+    label: "研究主题 · 多选交集",
+    options: Object.entries(TOPIC_LABELS).map(([value, label]) => ({
+      value,
+      label,
+    })),
+  },
   award: {
     label: "论文标签",
     options: [{ value: "awarded", label: "获奖论文" }],
@@ -79,6 +89,7 @@ export const FILTER_FIELDS = {
   year: { label: "论文年份", options: [{ value: "2025", label: "2025" }] },
 };
 export function valuesFor(figure, field) {
+  if (field === "topic") return researchTagsFor(figure).map((tag) => tag.id);
   if (field === "award") return figure.paper.awards?.length ? ["awarded"] : [];
   if (field === "type")
     return [
@@ -176,6 +187,33 @@ export function filterFieldsFor(figures) {
 export function facetCountsFor(figures, state, favorites = [], hidden = []) {
   return Object.fromEntries(
     Object.keys(FILTER_FIELDS).map((field) => {
+      if (field === "topic") {
+        const selected = state.filters.topic || [];
+        const scope = filterFigures(
+          figures,
+          { ...state, filters: { ...state.filters, topic: [] } },
+          favorites,
+          hidden,
+        );
+        return [
+          field,
+          Object.fromEntries(
+            FILTER_FIELDS.topic.options.map(({ value }) => {
+              const required = [
+                ...new Set([...selected.filter((tag) => tag !== value), value]),
+              ];
+              return [
+                value,
+                scope.filter((figure) =>
+                  required.every((tag) =>
+                    valuesFor(figure, "topic").includes(tag),
+                  ),
+                ).length,
+              ];
+            }),
+          ),
+        ];
+      }
       const scope = filterFigures(
         figures,
         {
@@ -205,7 +243,7 @@ export function figureLabel(figure) {
 const detailCache = new Map();
 export async function loadFigureDetails(figure, options = {}) {
   if (figure.analysis_text && figure.prompt_text && figure.agent_text)
-    return figure;
+    return { ...figure, research_tags: researchTagsFor(figure) };
   if (detailCache.has(figure.id)) return detailCache.get(figure.id);
   const fullMetadata = figure.assets.metadata
     ? fetchResource(assetUrl(figure, "metadata"), options).then(
@@ -242,6 +280,7 @@ export async function loadFigureDetails(figure, options = {}) {
     rights: { ...metadata.rights, ...figure.rights },
     curation: { ...metadata.curation, ...figure.curation },
     original_assets: metadata.original_assets || figure.original_assets,
+    research_tags: researchTagsFor(figure),
     ...Object.fromEntries(results),
   };
   detailCache.set(figure.id, details);
@@ -251,6 +290,7 @@ export function normalized(value) {
   return value.normalize("NFKC").toLocaleLowerCase("zh-CN").trim();
 }
 export function filterFigures(figures, state, favorites, hidden) {
+  const search = compileSearch(state.query);
   return figures.filter((figure) => {
     if (
       state.view === "hidden"
@@ -273,7 +313,9 @@ export function filterFigures(figures, state, favorites, hidden) {
       !Object.entries(state.filters).every(
         ([key, selected]) =>
           !selected.length ||
-          selected.some((value) => valuesFor(figure, key).includes(value)),
+          (key === "topic"
+            ? selected.every((value) => valuesFor(figure, key).includes(value))
+            : selected.some((value) => valuesFor(figure, key).includes(value))),
       )
     )
       return false;
@@ -284,16 +326,23 @@ export function filterFigures(figures, state, favorites, hidden) {
         figure.paper.title,
         figure.paper.venue,
         figure.paper.publication_year,
+        figure.paper.arxiv_id,
+        figure.paper.doi,
+        ...(figure.paper.authors || []),
         ...figure.classification.search_aliases,
         ...(figure.paper.awards || []).map((award) => award.official_name),
         ...(figure.paper.awards?.length ? ["获奖论文"] : []),
         ...figure.classification.types.map((key) => TYPE_LABELS[key] || key),
         ...browseGenresFor(figure).map((key) => BROWSE_TYPE_LABELS[key]),
+        ...(figure.classification.layouts || []).map(
+          (key) => LAYOUT_LABELS[key],
+        ),
+        ...(figure.classification.purposes || []).map(
+          (key) => PURPOSE_LABELS[key],
+        ),
       ].join(" "),
     );
-    return normalized(state.query)
-      .split(/\s+/)
-      .every((word) => text.includes(word));
+    return matchesSearch(figure, text, search);
   });
 }
 export function readUrl() {
