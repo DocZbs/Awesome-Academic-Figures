@@ -22,12 +22,14 @@ export const PURPOSE_LABELS = {
 export const LAYOUT_LABELS = {
   unlabelled: "未标注布局",
   "left-to-right": "横向布局",
+  "top-to-bottom": "纵向布局",
   "nested-modules": "嵌套模块",
   "feedback-loop": "反馈环路",
   "two-column": "双列对照",
   grid: "网格排列",
   radial: "径向布局",
   "hub-and-spoke": "中心汇聚",
+  freeform: "自由排布",
 };
 export const DIMENSIONS = {
   type: "图形类型",

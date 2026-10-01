@@ -10,6 +10,8 @@
 
 **本轮更新（2026-10-01）**：逐图补充 26 幅已有图片的类型、用途、布局、结构描述与 prompt；累计 44 幅完成逐图视觉核对。已核实图号为 **Figure 1：21 幅，Figure 2：12 幅**，其余 1,887 幅保留图号待核。本轮新增的 15 个已知图号通过指定 arXiv 版本的官方 HTML 图注与图像直接对照确认，卡片显示 arXiv 标记，详情提供版本与证据链接；不将它们表述为已核实的正式会议版本图号。总图库仍为 1,920 幅，未重复收录同一图片来增加数量。详见[本轮逐图标注记录](data/visual_review_batch_20261001.json)。
 
+**布局补齐（2026-10-01）**：对原先未标注的 1,876 幅预览图逐图检查宏观空间结构，补齐其中 1,875 幅，当前 1,919 幅有布局标签，未标注布局从 1,876 降为 1；剩余 1 幅预览为整页正文且图块过小，保留待核。新增纵向布局和自由排布；一幅图可含多个标签，分栏计数不直接相加。每条记录保留预览 SHA-256、参考文件 SHA-256 和具体空间观察，详见[布局审核记录](data/layout_annotations.json)。此项只核对预览图的布局，不改变图号、图类、许可或 prompt 审核状态；累计完整结构 / prompt 视觉核对仍为 44 幅。
+
 默认按 **Teaser 图、机制图、方法框架图、流程图、概念示意图、数据图、多面板图**等图类浏览。Figure 1 / 2 是独立的论文图号筛选；首图不自动等于 Teaser，机制图依据已记录的机制用途标签。筛选选项显示当前范围内的数量，并保留其他筛选条件。
 
 截至 **2026-10-01**，统一画廊发布 **1,920 幅图，来自 1,517 篇去重后的论文**；其中 **21 幅图带有已核实的获奖标签**。获奖是可选筛选条件，普通论文、获奖论文和图号未知的方法图在同一画廊浏览。
@@ -21,7 +23,7 @@
 | [SciFormaData-700K](https://huggingface.co/datasets/microsoft/SciFormaData-700K) 方法图           |        847 | 保留有明确行级许可的图像与论文对应关系；准确图号和正文 / 附录范围未知               |
 | **合计**                                                                                          |  **1,920** | 按图片字节 SHA-256 去重；同一论文可能来自多个来源                                   |
 
-首图和方法图批次完成了来源索引与许可依据检查，并进行了人工抽样；**没有声称 1,920 幅图都经过独立逐图人工审核**。裁剪缺失、已识别的第三方照片 / 标志权限疑问及重复图被排除，抽样观察与排除记录保存在 [Top-Conf 审核报告](data/external/topconf/visual_sample_review.json) 和 [SciForma 审核报告](data/external/sciforma/visual_sample_review.json)。批量图像在 SSH 中转服务器收录，不重新下载整篇论文 PDF 截图。
+首图和方法图批次完成了来源索引与许可依据检查，并进行了人工抽样；**尚未对 1,920 幅图的提取完整性、图号及 prompt 全部完成逐图核对**；宏观布局已逐图检查并补齐可辨认项。裁剪缺失、已识别的第三方照片 / 标志权限疑问及重复图被排除，抽样观察与排除记录保存在 [Top-Conf 审核报告](data/external/topconf/visual_sample_review.json) 和 [SciForma 审核报告](data/external/sciforma/visual_sample_review.json)。批量图像在 SSH 中转服务器收录，不重新下载整篇论文 PDF 截图。
 
 各会议、年份和正文 Figure 1 / 2 仍为部分覆盖。另有 **156 篇官方获奖论文清单**用于跟踪覆盖进度，它不等于已发布论文数或已获图片转载许可。授权不明确的记录只保留元数据和来源链接；源码候选中的 5 幅待审图与 1 幅已确认位于附录的图未作为正文图示例发布。下面保留最初 18 幅经过人工核对的精选索引。
 
@@ -97,6 +99,6 @@ npm run dev -- --port 5173
 
 `data/award_inventory.json` 保存官方奖项记录与状态，`data/coverage.json` 按会议年份统计部分覆盖，`data/source_collection_report.json` 记录已核查的 arXiv 条目。没有绕过需要登录或验证的站点，也没有因为公开可下载就默认获得转载权。
 
-前端检查：`npm run check`、`npm run check:tokens`、`npm run format:check`、`npm run build`。论文推荐检查：`node scripts/check_matching.mjs`。源码提取与授权约束检查在安装收录依赖后运行 `python scripts/check_ingestion.py`。
+前端检查：`npm run check`、`npm run check:tokens`、`npm run format:check`、`npm run build`。论文推荐检查：`node scripts/check_matching.mjs`。布局证据检查：`python3 scripts/check_layout_annotations.py`。源码提取与授权约束检查在安装收录依赖后运行 `python scripts/check_ingestion.py`。
 
 欢迎贡献有明确授权的 Figure 1 / 2、论文概览或方法图、分类改进和 prompt。请附具体来源版本、许可证据与可用的完整图像；仅在添加获奖标签时要求官方获奖依据。有权利疑问的图先进入待审队列。

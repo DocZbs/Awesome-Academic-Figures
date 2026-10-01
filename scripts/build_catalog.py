@@ -7,6 +7,7 @@ import re
 import unicodedata
 import hashlib
 from pathlib import Path
+from layout_annotations import load_annotations, apply_annotation
 
 
 def main():
@@ -16,6 +17,7 @@ def main():
     parser.add_argument("--bundles", action="store_true", help="Optionally also generate static ZIPs on the staging server")
     args = parser.parse_args()
     root = args.root.resolve()
+    layout_annotations = load_annotations(root)
     figures = []
     seen = set()
     bundles = root / "bundles"
@@ -24,6 +26,8 @@ def main():
     for path in sorted((root / "figures").glob("*/metadata.json")):
         entry = json.loads(path.read_text())
         figure_id = entry["id"]
+        if figure_id in layout_annotations:
+            apply_annotation(entry, layout_annotations[figure_id], path.parent)
         if entry["rights"].get("publication_status") != "approved" or not entry["rights"].get("license_evidence_url"):
             raise ValueError(f"Publication requires reviewed license evidence: {figure_id}")
         if entry["rights"].get("source_license") not in {"CC-BY-4.0", "CC0-1.0"}:
@@ -62,7 +66,10 @@ def main():
         if args.bundles:
             with zipfile.ZipFile(bundles / f"{figure_id}.zip", "w", zipfile.ZIP_DEFLATED) as archive:
                 for name in sorted(files):
-                    archive.write(path.parent / name, name)
+                    if name == "metadata.json":
+                        archive.writestr(name, json.dumps(entry, ensure_ascii=False, indent=2) + "\n")
+                    else:
+                        archive.write(path.parent / name, name)
         entry["asset_base"] = f"{args.remote_assets}figures/{figure_id}/"
         # Keep the searchable gallery index small. Detailed texts are requested
         # only when opening a figure or exporting selected references.
@@ -76,6 +83,8 @@ def main():
         entry["curation"] = {k: v for k, v in entry.get("curation", {}).items() if k in {"maintainer", "checked_at", "collected_at"}}
         entry["original_assets"] = [{k: v for k, v in original.items() if k != "source_path"} for original in entry.get("original_assets", [])]
         figures.append(entry)
+    if set(layout_annotations) - seen:
+        raise ValueError("Layout annotations reference missing figures")
     figures.sort(key=lambda f: (f["paper"]["id"] != "icml-2025-collabllm", -f["paper"]["publication_year"], f["paper"]["id"], f["source"].get("number") or 0))
     # A final proceedings record and its arXiv record can refer to one paper.
     # Only exact normalized titles with the same first author share an ID;

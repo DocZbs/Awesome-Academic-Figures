@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import { loadFigureDetails } from '../src/gallery.js';
 
 const figure = JSON.parse(fs.readFileSync('data/catalog.json', 'utf8')).figures[0];
@@ -23,6 +24,26 @@ try {
   const after = requests;
   assert.equal(await loadFigureDetails(figure), detail);
   assert.equal(requests, after);
+  const full = JSON.parse(metadata);
+  full.id = 'fixture-layout-overlay';
+  full.classification.layouts = [];
+  full.reuse.prompt_status = 'draft';
+  const bytes = JSON.stringify(full);
+  const overlay = {
+    ...full,
+    asset_base: figure.asset_base,
+    metadata_sha256: createHash('sha256').update(bytes).digest('hex'),
+    classification: { ...full.classification, layouts: ['top-to-bottom'] },
+    layout_annotation: { status: 'visual_layout_reviewed', observation: 'Stacked macro stages.' },
+  };
+  globalThis.fetch = async (url) => new Response(url.endsWith('/metadata.json') ? bytes : 'Fixture text');
+  const overlaidDetail = await loadFigureDetails(overlay);
+  assert.deepEqual(overlaidDetail.classification.layouts, ['top-to-bottom']);
+  assert.deepEqual(overlaidDetail.layout_annotation, overlay.layout_annotation);
+  assert.equal(overlaidDetail.reuse.prompt_status, 'draft');
+  assert.deepEqual(overlaidDetail.source, full.source);
+  const portableMetadata = JSON.parse(JSON.stringify(overlaidDetail));
+  assert.equal(portableMetadata.layout_annotation.status, 'visual_layout_reviewed');
   console.log('Detail loading verifies full metadata SHA, rejects changed bytes, retries failures and caches successful results.');
 } finally {
   globalThis.fetch = originalFetch;

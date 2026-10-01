@@ -243,6 +243,9 @@ export default function App() {
     () => categorySummary(categoryFigures, state.dimension),
     [categoryFigures, state.dimension],
   );
+  const inferredLayoutCount = categoryFigures.filter(
+    (figure) => figure.layout_annotation?.status === "description_inferred",
+  ).length;
   const categoryLabels =
     state.dimension === "type"
       ? TYPE_LABELS
@@ -617,6 +620,9 @@ export default function App() {
                 `当前 ${categoryStats.total} 幅图中，${categoryStats.labelled} 幅已标注${state.dimension === "layout" ? "布局" : "用途"}，${categoryStats.unlabelled} 幅未标注。`}
               {categoryStats.overlapping &&
                 "同一幅图可有多个标签，分类数量不相加。"}
+              {state.dimension === "layout" &&
+                inferredLayoutCount > 0 &&
+                `其中 ${inferredLayoutCount} 幅为来源描述初标，待看图复核。`}
               数量按当前搜索、筛选与列表统计。
             </p>
           )}
@@ -1193,7 +1199,9 @@ function ReadyDetailDialog({
               ? "原图已核对"
               : figure.reuse.validation.visual_annotation === "reviewed"
                 ? "视觉结构已逐图标注"
-                : "来源索引已核对"}
+                : figure.layout_annotation?.status === "visual_layout_reviewed"
+                  ? "布局已看图核对"
+                  : "来源索引已核对"}
           </strong>
           <span>
             {figure.source.pdf_page_index_1based
@@ -1266,6 +1274,24 @@ function ReadyDetailDialog({
         </>
       ) : (
         <div className="source-details">
+          {figure.layout_annotation && (
+            <>
+              <h3>布局标注</h3>
+              <p>
+                {figure.classification.layouts
+                  .map((tag) => LAYOUT_LABELS[tag])
+                  .join(" · ")}
+              </p>
+              <p>
+                {figure.layout_annotation.status === "visual_layout_reviewed"
+                  ? "已查看参考图预览，核对宏观空间布局。此项不代表全文或绘图 prompt 已完成审核。"
+                  : "根据来源数据集的图像描述初标，尚待看图复核。"}
+              </p>
+              {figure.layout_annotation.status === "visual_layout_reviewed" && (
+                <p>{figure.layout_annotation.observation}</p>
+              )}
+            </>
+          )}
           {figure.source.number_evidence && (
             <>
               <h3>图号核验</h3>
