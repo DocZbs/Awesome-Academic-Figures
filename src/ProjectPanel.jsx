@@ -113,7 +113,6 @@ export default function ProjectPanel({
             maxLength={80}
             value={draft.name}
             onChange={(event) => setField("name", event.target.value)}
-            placeholder="例如：World Model 论文"
             aria-invalid={Boolean(error)}
             aria-describedby={error ? "project-error" : undefined}
           />
