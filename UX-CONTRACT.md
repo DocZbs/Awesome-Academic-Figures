@@ -23,13 +23,13 @@ DESIGN.md owns taste and generates runtime tokens. Light theme only. Generated s
 | --- | --- | --- | --- | --- |
 | Selection | App/usePreference and FigureActions | Product brief | current task | browser |
 | Form | ExportDialog / PaperMatcher | This contract | reference task / transient paper input | browser |
-| Select/Listbox | PaperMatcher native select | This contract | four graphic purposes; platform popup accepted | keyboard and native popup |
+| Select/Listbox | PaperMatcher native select | This contract | explicit figure kinds; platform popup accepted | keyboard and native popup |
 | Scrollbar | src/styles.css | DESIGN.md | global baseline | computed style |
 | Toast | Feedback | This contract | polite inline status | browser |
 | Dialog | Dialog | This contract | detail / guide / export | focus and Escape |
 | Search | Gallery search | This contract | local, IME-safe | browser |
 
-The matcher purpose field uses a native select; its platform-owned popup is intentionally accepted. No date picker, server CRUD or destructive operation is implemented. Gallery filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
+The matcher figure-kind field uses a native select; its platform-owned popup is intentionally accepted. No date picker, server CRUD or destructive operation is implemented. Gallery filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
 
 ## Paper provenance
 
@@ -94,9 +94,16 @@ files are read in the browser; paper text is held only in component memory, neve
 placed in URLs, browser storage, analytics or outbound matching requests. Native
 file input supplies local file selection. Reset discards the working document.
 The initial recommender uses multilingual topic terms, text relevance and graphic
-purpose/type; it gives reasons rather than claiming a model has read every paper
+figure kind; it gives reasons rather than claiming a model has read every paper
 or guaranteeing that the top result is objectively best. Empty text, unsupported
 files, textless/scanned PDFs, password protection, size/page limits and stale
 parsing attempts need visible recovery. Reference selection and task handoff reuse
 the existing export flow. A paper preview may open a nested figure dialog while
 preserving the matcher document in memory.
+
+Paper matching defaults to Teaser. Users choose Teaser, mechanism, architecture,
+flowchart, conceptual, comparison, data, dataset or multi-panel figures, or any
+kind. The recommender strictly restricts candidates to the selected kind using
+recorded type/purpose tags; an unknown figure number or Figure 1 is not evidence
+of a Teaser. Empty kinds/topics have recovery text and never silently backfill
+other kinds. Result reasons and exported task brief retain the selected kind.

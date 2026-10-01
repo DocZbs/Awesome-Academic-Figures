@@ -151,11 +151,30 @@ const TOPICS = [
     ],
   ],
 ];
-export const MATCH_PURPOSES = {
-  auto: "从内容判断",
-  method: "讲清方法 / 框架",
-  dataset: "介绍数据集 / 评测",
-  comparison: "对比方法 / 结果",
+export const MATCH_FIGURE_KINDS = {
+  teaser: "Teaser 图（研究概览）",
+  mechanism: "机制图",
+  architecture: "方法框架图",
+  flowchart: "流程图",
+  conceptual: "概念示意图",
+  comparison: "对比图",
+  data: "数据图",
+  dataset: "数据集 / 评测图",
+  "multi-panel": "多面板图",
+  all: "不限图类",
+};
+export const FIGURE_KIND_BRIEFS = {
+  teaser:
+    "用一张研究概览图呈现任务、核心创新与代表性结果，突出读者第一眼应理解的信息。",
+  mechanism: "解释关键机制、因果关系或交互过程，明确变量、作用方向与反馈关系。",
+  architecture: "展示模块层级、输入输出和模块间连接。",
+  flowchart: "按步骤表达流程，明确分支、条件与反馈。",
+  conceptual: "用简洁图形解释核心概念与关系。",
+  comparison: "对齐比较条件和展示面板，只使用我的方法与真实结果。",
+  data: "使用我的真实数据绘制图表，明确坐标、单位和图例。",
+  dataset: "表达数据来源、组成、处理与评测组织，使用实际统计信息。",
+  "multi-panel": "组织多面板叙事，统一标注、配色和阅读顺序。",
+  all: "先根据论文和参考图确定适用的图类，再组织准确的信息表达。",
 };
 const STOP = new Set(
   "the a an of for to in on with by and or is are was were this that our we as from at it its into via using use based new study paper approach proposed proposes propose method methods model models framework learning learn learned research results result system systems task tasks data dataset datasets figure figures introduction abstract references conclusion related work show shows can not which have has these their also such more than each all between they under first second through over toward towards about some other both specific general many one two three neural deep training trained test testing evaluation evaluate benchmark benchmarks information representation representations algorithm algorithms state art".split(
@@ -221,41 +240,7 @@ export function preparePaperText(input) {
     truncated: String(input || "").length > 120000,
   };
 }
-function inferPurpose(text) {
-  const n = normalize(text);
-  // A method abstract usually mentions data and comparisons too. Require a
-  // contribution statement, or a clear title, before switching away from method.
-  const title = n.split("\n").find((line) => line.trim()) || "";
-  const titleIsSeparate = n.includes("\n") && title.length < 240;
-  const datasetContribution =
-    /\bwe\s+(?:introduce|release|present|construct|build)\s+(?:a|an|the|our|new)\s+(?:(?!method\b|model\b|framework\b)[a-z0-9-]+\s+){0,12}(?:dataset|benchmark)\b/.test(
-      n,
-    ) ||
-    /(?:本文|我们)[^。！？\n]{0,12}(?:构建|发布|建立)[^。！？\n]{0,35}(?:数据集|评测基准|基准测试集)/.test(
-      n,
-    );
-  const datasetTitle =
-    titleIsSeparate &&
-    /\b(?:a|an|new|novel)\s+(?:(?!method\b|model\b|framework\b)[a-z0-9-]+\s+){0,12}(?:dataset|benchmark)\b/.test(
-      title,
-    );
-  if (datasetContribution || datasetTitle) return "dataset";
-  if (
-    (titleIsSeparate &&
-      /\b(?:comparative (?:study|analysis)|systematic comparison|benchmarking)\b/.test(
-        title,
-      )) ||
-    /\bwe\s+(?:present|conduct|provide)\s+(?:a|an)\s+(?:systematic|comprehensive|comparative)\s+(?:comparison|analysis|study)\b/.test(
-      n,
-    ) ||
-    /(?:本文|我们)[^。！？\n]{0,12}(?:开展|进行)[^。！？\n]{0,20}(?:系统对比研究|比较研究|对比分析)/.test(
-      n,
-    )
-  )
-    return "comparison";
-  return "method";
-}
-export function analyzePaper(text, purpose = "auto") {
+export function analyzePaper(text, figureKind = "teaser") {
   const prepared = preparePaperText(text);
   const frequency = new Map();
   for (const word of words(prepared.focusedText))
@@ -268,7 +253,9 @@ export function analyzePaper(text, purpose = "auto") {
     ...prepared,
     topics: topicsFor(prepared.focusedText),
     keywords,
-    purpose: purpose === "auto" ? inferPurpose(prepared.focusedText) : purpose,
+    figureKind: Object.hasOwn(MATCH_FIGURE_KINDS, figureKind)
+      ? figureKind
+      : "teaser",
   };
 }
 function candidateText(figure) {
@@ -281,45 +268,35 @@ function candidateText(figure) {
     .filter(Boolean)
     .join(" ");
 }
-function purposeFit(figure, purpose) {
+export function matchesFigureKind(figure, kind) {
   const c = figure.classification || {};
   const types = new Set([c.primary_type, ...(c.types || [])]);
   const purposes = new Set(c.purposes || []);
-  const text = normalize(candidateText(figure));
-  if (
-    purpose === "dataset" &&
-    (purposes.has("dataset-overview") ||
-      types.has("taxonomy") ||
-      /\b(dataset|benchmark|evaluation)\b/.test(text))
-  )
-    return "适合介绍数据集 / 评测组成";
-  if (
-    purpose === "comparison" &&
-    (purposes.has("comparison") ||
-      types.has("qualitative") ||
-      types.has("multi-panel") ||
-      /\b(comparison|comparative|versus)\b/.test(text))
-  )
-    return "适合呈现方法 / 结果对比";
-  if (
-    purpose === "method" &&
-    (purposes.has("method-overview") ||
-      types.has("architecture") ||
-      types.has("flowchart") ||
-      types.has("conceptual"))
-  )
-    return "适合解释方法结构 / 信息流";
-  return null;
+  if (kind === "all") return true;
+  if (kind === "mechanism")
+    return purposes.has("mechanism") || types.has("mechanism");
+  if (kind === "comparison")
+    return purposes.has("comparison") || types.has("qualitative");
+  if (kind === "dataset") return purposes.has("dataset-overview");
+  if (kind === "data")
+    return ["data", "line", "bar", "scatter", "heatmap", "treemap"].some(
+      (type) => types.has(type),
+    );
+  return types.has(kind);
 }
 export function rankFigures(
   figures,
   text,
-  { purpose = "auto", limit = 12 } = {},
+  { figureKind = "teaser", limit = 12 } = {},
 ) {
-  const analysis = analyzePaper(text, purpose);
-  if (!analysis.focusedText.trim()) return { analysis, results: [] };
+  const analysis = analyzePaper(text, figureKind);
+  const candidates = figures.filter((figure) =>
+    matchesFigureKind(figure, analysis.figureKind),
+  );
+  if (!analysis.focusedText.trim())
+    return { analysis, eligibleCount: candidates.length, results: [] };
   const queryWords = new Set(analysis.keywords);
-  const documents = figures.map((figure) => ({
+  const documents = candidates.map((figure) => ({
     figure,
     text: candidateText(figure),
     words: new Set(words(candidateText(figure))),
@@ -351,16 +328,19 @@ export function rankFigures(
             ),
           0,
         );
-      const fit = purposeFit(figure, analysis.purpose);
+      const kindReason =
+        analysis.figureKind === "all"
+          ? null
+          : `符合所选图类：${MATCH_FIGURE_KINDS[analysis.figureKind]}`;
       return {
         figure,
-        score: relevance + (fit && relevance > 0 ? 4 : 0),
+        score: relevance,
         reasons: [
           ...topicMatches.map((topic) => `共同主题：${topic.label}`),
           ...(keywordMatches.length
             ? [`研究关键词：${keywordMatches.slice(0, 4).join(" · ")}`]
             : []),
-          ...(fit && relevance > 0 ? [fit] : []),
+          ...(kindReason && relevance > 0 ? [kindReason] : []),
         ],
       };
     })
@@ -377,5 +357,5 @@ export function rankFigures(
       return count < 2;
     })
     .slice(0, limit);
-  return { analysis, results: diversified };
+  return { analysis, eligibleCount: candidates.length, results: diversified };
 }

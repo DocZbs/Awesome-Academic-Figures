@@ -10,7 +10,11 @@ import {
 } from "lucide-react";
 import { Button, Dialog, Feedback, FigureImage } from "./ui.jsx";
 import { figureLabel } from "./gallery.js";
-import { MATCH_PURPOSES, rankFigures } from "./matching.js";
+import {
+  MATCH_FIGURE_KINDS,
+  FIGURE_KIND_BRIEFS,
+  rankFigures,
+} from "./matching.js";
 import "./matching.css";
 
 const MAX_BYTES = 20 * 1024 * 1024;
@@ -31,7 +35,7 @@ export default function PaperMatcher({
   onClose,
 }) {
   const [text, setText] = useState("");
-  const [purpose, setPurpose] = useState("auto");
+  const [figureKind, setFigureKind] = useState("teaser");
   const [document, setDocument] = useState(null);
   const [match, setMatch] = useState(null);
   const chosen = selectedFigureIds;
@@ -49,19 +53,19 @@ export default function PaperMatcher({
     },
     [],
   );
-  function findMatches(input, desiredPurpose = purpose) {
+  function findMatches(input, desiredKind = figureKind) {
     if (input.trim().length < 20) {
       setError("请至少提供 20 个字符，建议包含标题、摘要和方法描述。");
       textInput.current?.focus();
       return;
     }
-    const result = rankFigures(figures, input, { purpose: desiredPurpose });
+    const result = rankFigures(figures, input, { figureKind: desiredKind });
     setMatch(result);
     setError("");
     setFeedback(
       result.results.length
         ? `找到 ${result.results.length} 幅候选参考，可查看理由后选择。`
-        : "暂未找到相关标题或主题。请补充具体方法关键词，或直接浏览画廊。",
+        : "所选图类中暂未找到相关参考。请补充关键词或切换图类。",
     );
   }
   async function readFile(event) {
@@ -195,8 +199,8 @@ export default function PaperMatcher({
       match.analysis.topics.map((topic) => topic.label).join("、") ||
       "请根据论文内容判断";
     onUseTask({
-      task: `为下面的论文绘制${MATCH_PURPOSES[match.analysis.purpose] || "研究概览"}。\n请结合所选参考图的信息层级、布局和连线规则，使用我的方法、数据和准确标签。\n\n论文内容：\n${text.slice(0, 12000)}`,
-      notes: `本地标题 / 主题词推荐，尚未验证最佳适配。识别主题：${topics}。\n${match.results
+      task: `为下面的论文绘制${MATCH_FIGURE_KINDS[match.analysis.figureKind] || "研究概览"}。\n${FIGURE_KIND_BRIEFS[match.analysis.figureKind]}\n请结合所选参考图的信息层级、布局和连线规则，使用我的方法、数据和准确标签。\n\n论文内容：\n${text.slice(0, 12000)}`,
+      notes: `本地标题 / 主题词推荐，尚未验证最佳适配。所选图类：${MATCH_FIGURE_KINDS[match.analysis.figureKind]}。识别主题：${topics}。\n${match.results
         .filter((item) => chosen.includes(item.figure.id))
         .map((item) => `${item.figure.paper.title}：${item.reasons.join("；")}`)
         .join("\n")}`,
@@ -227,9 +231,7 @@ export default function PaperMatcher({
       }
     >
       <div className="matcher-intro">
-        <p>
-          上传论文，或粘贴标题、摘要与方法。按研究主题和图的用途，从画廊里挑选参考。
-        </p>
+        <p>选择想画的图类，上传论文或粘贴标题、摘要与方法，找到相关参考图。</p>
         <span>本地关键词匹配 · 不上传论文到外部服务</span>
       </div>
       <div className="matcher-workspace">
@@ -279,18 +281,18 @@ export default function PaperMatcher({
             }}
           />
           <div className="matcher-controls">
-            <label htmlFor="matcher-purpose">
-              这幅图要讲什么
+            <label htmlFor="matcher-figure-kind">
+              想找哪类参考图
               <select
-                id="matcher-purpose"
-                value={purpose}
+                id="matcher-figure-kind"
+                value={figureKind}
                 disabled={busy}
                 onChange={(event) => {
-                  setPurpose(event.target.value);
+                  setFigureKind(event.target.value);
                   if (match) findMatches(text, event.target.value);
                 }}
               >
-                {Object.entries(MATCH_PURPOSES).map(([key, label]) => (
+                {Object.entries(MATCH_FIGURE_KINDS).map(([key, label]) => (
                   <option value={key} key={key}>
                     {label}
                   </option>
@@ -331,10 +333,10 @@ export default function PaperMatcher({
                   {match.analysis.topics.map((topic) => (
                     <span key={topic.id}>{topic.label}</span>
                   ))}
-                  <span>{MATCH_PURPOSES[match.analysis.purpose]}</span>
+                  <span>{MATCH_FIGURE_KINDS[match.analysis.figureKind]}</span>
                 </div>
                 <p>
-                  依据论文标题、主题同义词和图形分类排序。用途标签不完整时只能作为初步建议，请打开原图确认。
+                  先限定所选图类，再按论文主题与关键词排序。图类标签为初步分类，请打开原图确认。
                 </p>
                 {match.analysis.referencesExcluded && (
                   <p>匹配时已排除参考文献部分。</p>
@@ -395,7 +397,9 @@ export default function PaperMatcher({
                 <div className="matcher-empty">
                   <Search size={30} />
                   <h3>暂未匹配到相关主题</h3>
-                  <p>补充具体任务、模型名称或方法关键词，再试一次。</p>
+                  <p>
+                    所选图类中暂未找到相关参考。可补充关键词，或换一个图类。图类标签仍在完善，未标注条目不会强行混入推荐。
+                  </p>
                 </div>
               )}
             </>
@@ -408,7 +412,7 @@ export default function PaperMatcher({
               <p>
                 {busy
                   ? "解析在浏览器内进行；完成后自动推荐。"
-                  : "上传后自动推荐；粘贴文字后点击匹配。推荐会说明共同主题、关键词和用途。"}
+                  : "上传后自动推荐；粘贴文字后点击匹配。推荐限定所选图类，并说明共同主题与关键词。"}
               </p>
               <span>你的文本不会进入链接、浏览器存储或匹配 API。</span>
             </div>
