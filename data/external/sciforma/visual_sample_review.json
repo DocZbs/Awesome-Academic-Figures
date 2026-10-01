@@ -16,7 +16,8 @@
     "sciforma-501181",
     "sciforma-501971",
     "sciforma-502393",
-    "sciforma-502679"
+    "sciforma-502679",
+    "sciforma-501980"
   ],
   "no_obvious_visual_issue_count": 6,
   "pending_third_party_count": 6,
@@ -686,6 +687,30 @@
       "sample_number": 12,
       "observation": "M-ALERT taxonomy/pipeline shows recognizable OpenAI/ChatGPT logo; separate logo reuse permission not established.",
       "caption_visual_consistency": "No obvious large mismatch between dataset description and visible diagram subject/structure. Not an exhaustive text accuracy check."
+    }
+  ],
+  "post_sample_reviews": [
+    {
+      "id": "sciforma-501980",
+      "reviewed_at": "2026-10-01",
+      "review_status": "excluded_bad_crop_and_pending_third_party",
+      "preview_sha256": "e822647d43d30f3a2f76e777d4edf49940ee3bc52bd28e5ec58314aafd56121d",
+      "reference_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64",
+      "observation": "预览为带大量双栏正文的整页截图，页脚可见 IET Comput. Vis. 2019 及 The Institution of Engineering and Technology 2018 版权声明；和所登记的 2024 年综述来源不对应。第三方页面复用依据未确认，移出公开图库。",
+      "replacement_id": "sciforma-503898",
+      "previous_unresolved_layout": {
+        "id": "sciforma-501980",
+        "preview_sha256": "e822647d43d30f3a2f76e777d4edf49940ee3bc52bd28e5ec58314aafd56121d",
+        "sheet_position": 6,
+        "sheet_index": 8,
+        "layouts": [],
+        "observation": "预览包含整页正文及非常小的图块，图中主结构细节不足以可靠区分宏观布局，保留未判定。",
+        "status": "visual_layout_unresolved",
+        "reviewed_at": "2026-10-01",
+        "review_method": "direct_preview_visual_inspection",
+        "reference_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64"
+      },
+      "action": "Removed gallery record and all figure-directory assets from current main; retained metadata-only exclusion evidence."
     }
   ]
 }

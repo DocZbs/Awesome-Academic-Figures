@@ -4,21 +4,21 @@
   "scope": "macro_layout_only",
   "total_figures": 3000,
   "unlabelled_before": 2956,
-  "unlabelled_after": 1,
+  "unlabelled_after": 0,
   "inspected_count": 2956,
-  "reviewed_count": 2955,
+  "reviewed_count": 2956,
   "inferred_count": 0,
   "existing_labelled_count": 44,
-  "layout_labelled_count": 2999,
+  "layout_labelled_count": 3000,
   "tag_counts": {
-    "left-to-right": 1616,
-    "nested-modules": 1596,
+    "left-to-right": 1617,
+    "nested-modules": 1597,
     "feedback-loop": 242,
     "two-column": 647,
     "grid": 516,
     "top-to-bottom": 1121,
-    "radial": 18,
     "freeform": 95,
+    "radial": 18,
     "hub-and-spoke": 18
   },
   "limitations": "Preview macro layout only. Does not certify paper content, extraction completeness, figure numbering, figure genre or drawing prompts.",
@@ -47571,27 +47571,31 @@
       "reviewed_at": "2026-10-01",
       "reference_sha256": "aba0111fa7eb044147141060f6eb81b1e305b3cf57efd9d7e8d2a53d165d2a68",
       "review_method": "direct_preview_visual_inspection"
-    }
-  ],
-  "unresolved": [
+    },
     {
-      "id": "sciforma-501980",
-      "preview_sha256": "e822647d43d30f3a2f76e777d4edf49940ee3bc52bd28e5ec58314aafd56121d",
-      "sheet_position": 6,
-      "sheet_index": 8,
-      "layouts": [],
-      "observation": "预览包含整页正文及非常小的图块，图中主结构细节不足以可靠区分宏观布局，保留未判定。",
-      "status": "visual_layout_unresolved",
+      "id": "sciforma-503898",
+      "preview_sha256": "9c7a3e410974cc030a00407b3a1c51936214ecb03aa6d475d5541752b9554fad",
+      "sheet_position": 11,
+      "sheet_index": 17,
+      "layouts": [
+        "left-to-right",
+        "nested-modules"
+      ],
+      "observation": "高光谱输入、空间光谱特征学习、融合投影、Transformer 编码器和分类输出从左向右展开；绿色编码器框内嵌注意力计算子模块。",
+      "status": "visual_layout_reviewed",
       "reviewed_at": "2026-10-01",
+      "reference_sha256": "27568bb50d3ed1c46376da878fd514b3f75b4cde00f86f74e53d71b60ae05512",
       "review_method": "direct_preview_visual_inspection",
-      "reference_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64"
+      "verification": "Individually rechecked preview after the original contact-sheet inspection."
     }
   ],
+  "unresolved": [],
   "expansion_batch": {
     "baseline_figures": 1920,
     "new_figures": 1080,
     "layout_unlabelled_before": 1081,
-    "layout_unlabelled_after": 1,
+    "layout_unlabelled_after": 0,
     "new_visual_annotations": 1080
-  }
+  },
+  "post_release_cleanup": "data/batches/layout_cleanup_20261001/reviews.json"
 }

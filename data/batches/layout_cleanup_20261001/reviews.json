@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1",
+  "reviewed_at": "2026-10-01",
+  "base_commit": "b8432b321791711dbdd336da843a673eb8c24846",
+  "candidate_commit": "63b442677812b0d3646e6f6b2864f8d565d5d492",
+  "figure_count_before": 3000,
+  "figure_count_after": 3000,
+  "paper_count_after": 2174,
+  "unlabelled_layout_after": 0,
+  "removed": [
+    {
+      "id": "sciforma-501980",
+      "reviewed_at": "2026-10-01",
+      "review_status": "excluded_bad_crop_and_pending_third_party",
+      "preview_sha256": "e822647d43d30f3a2f76e777d4edf49940ee3bc52bd28e5ec58314aafd56121d",
+      "reference_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64",
+      "observation": "预览为带大量双栏正文的整页截图，页脚可见 IET Comput. Vis. 2019 及 The Institution of Engineering and Technology 2018 版权声明；和所登记的 2024 年综述来源不对应。第三方页面复用依据未确认，移出公开图库。",
+      "replacement_id": "sciforma-503898",
+      "previous_unresolved_layout": {
+        "id": "sciforma-501980",
+        "preview_sha256": "e822647d43d30f3a2f76e777d4edf49940ee3bc52bd28e5ec58314aafd56121d",
+        "sheet_position": 6,
+        "sheet_index": 8,
+        "layouts": [],
+        "observation": "预览包含整页正文及非常小的图块，图中主结构细节不足以可靠区分宏观布局，保留未判定。",
+        "status": "visual_layout_unresolved",
+        "reviewed_at": "2026-10-01",
+        "review_method": "direct_preview_visual_inspection",
+        "reference_sha256": "b5c4c221a6031e065fa767fa07bc43663810984aa59aabc4a5f2ba07daab0f64"
+      },
+      "action": "Removed gallery record and all figure-directory assets from current main; retained metadata-only exclusion evidence."
+    }
+  ],
+  "added": [
+    {
+      "id": "sciforma-503898",
+      "layout": {
+        "id": "sciforma-503898",
+        "preview_sha256": "9c7a3e410974cc030a00407b3a1c51936214ecb03aa6d475d5541752b9554fad",
+        "sheet_position": 11,
+        "sheet_index": 17,
+        "layouts": [
+          "left-to-right",
+          "nested-modules"
+        ],
+        "observation": "高光谱输入、空间光谱特征学习、融合投影、Transformer 编码器和分类输出从左向右展开；绿色编码器框内嵌注意力计算子模块。",
+        "status": "visual_layout_reviewed",
+        "reviewed_at": "2026-10-01",
+        "reference_sha256": "27568bb50d3ed1c46376da878fd514b3f75b4cde00f86f74e53d71b60ae05512",
+        "review_method": "direct_preview_visual_inspection",
+        "verification": "Individually rechecked preview after the original contact-sheet inspection."
+      },
+      "classification": {
+        "id": "sciforma-503898",
+        "preview_sha256": "9c7a3e410974cc030a00407b3a1c51936214ecb03aa6d475d5541752b9554fad",
+        "sheet_position": 11,
+        "sheet_index": 17,
+        "observation": "模型整体架构展示输入特征、嵌套 Transformer 编码器及分类输出，箭头显示数据处理流程。",
+        "status": "visual_genre_reviewed",
+        "reviewed_at": "2026-10-01",
+        "reference_sha256": "27568bb50d3ed1c46376da878fd514b3f75b4cde00f86f74e53d71b60ae05512",
+        "review_method": "direct_preview_visual_inspection",
+        "verification": "Individually rechecked preview after the original contact-sheet inspection.",
+        "primary_type": "architecture",
+        "types": [
+          "architecture",
+          "flowchart"
+        ],
+        "purpose_review": "preserved_existing_not_independently_reviewed"
+      },
+      "rights_evidence": {
+        "source_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+        "publication_status": "approved"
+      },
+      "metadata_sha256": "efa3209c4f06b84734cb15cb23533c4242aa3fec096f332ee852be140bd114ca"
+    }
+  ],
+  "scope": "Individual preview inspection; original source identity/number and prompt review levels are preserved."
+}

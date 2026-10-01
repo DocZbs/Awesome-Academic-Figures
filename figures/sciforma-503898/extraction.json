@@ -1,0 +1,92 @@
+{
+  "id": "sciforma-503898",
+  "record_sha256": "19b1e7c689bb8dbfd57ec2fcdd017ea364ac23c5685afde077874ed4d62778b3",
+  "asset_sha256": "27568bb50d3ed1c46376da878fd514b3f75b4cde00f86f74e53d71b60ae05512",
+  "original_file": "original.jpg",
+  "pixel_width": 1728,
+  "pixel_height": 576,
+  "preview_status": "ready",
+  "staged_at": "2026-10-01",
+  "index_record": {
+    "id": "sciforma-503898",
+    "title": {
+      "zh": "DiffFormer: a Differential Spatial-Spectral Transformer for Hyperspectral Image Classification · 方法图",
+      "en": "DiffFormer: a Differential Spatial-Spectral Transformer for Hyperspectral Image Classification"
+    },
+    "paper": {
+      "id": "arxiv-2412-17350",
+      "title": "DiffFormer: a Differential Spatial-Spectral Transformer for Hyperspectral Image Classification",
+      "authors": [
+        "Muhammad Ahmad",
+        "Manuel Mazzara",
+        "Salvatore Distefano",
+        "Adil Mehmood Khan",
+        "Silvia Liberata Ullo"
+      ],
+      "venue": "arXiv",
+      "publication_year": 2024,
+      "url": "https://arxiv.org/abs/2412.17350",
+      "arxiv_url": "https://arxiv.org/abs/2412.17350",
+      "arxiv_id": "2412.17350",
+      "arxiv_first_submitted_at": "2024-12-23T07:21:41Z",
+      "arxiv_updated_at": "2024-12-23T07:21:41Z",
+      "arxiv_subjects": [
+        "cs.CV"
+      ],
+      "collected_at": "2026-10-01",
+      "awards": [],
+      "doi": "10.1109/JSTARS.2025.3558889",
+      "journal_reference": "10.1109/JSTARS.2025.3558889",
+      "arxiv_current_version_observed": "2412.17350v1"
+    },
+    "source": {
+      "kind": "standalone_figure",
+      "document": "unspecified",
+      "number": null,
+      "number_status": "dataset_figure_number_unresolved",
+      "method": "hosted_dataset_figure",
+      "caption": null,
+      "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=503800&length=100",
+      "version": "b38211e94f25858388f860b6db0b596b3ff45f18",
+      "image_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/503898/image/image.jpg?Expires=1790855403&Signature=RlL7M-h1POYae~~B-fj1MqekbXPkJsLUzts76KBfPav3binH49hb8pHHEx2IinXLsCxIj3GURgfEyP5iEKZ6DNpoqN2jtBr9ELVs78~QjYWVMxHFAx5aXZd6K6H2r0eKEuSv4681SsodyhZFeXkAejPvCEMHNIvI2WOn9SgTKiAgKAUE1Xi2qfY-u5XGd6V2yvRgMlgnM-5XEOWjVgd~FXF62hdBHf-vxFAl8Ne3S7LeQrTSbipeLCfsCkYOZojgM3EYOSQv2uOhK0kEvF7Wlb8PnpJe8ZLx7wKVwsw96FYjXx8p8vsdTWIpea~fnn0lHdXWzJo1z1Vuq-0sJvGRlA__&Key-Pair-Id=K3C0L9WB6U5DUC",
+      "format": "jpeg",
+      "dataset": "microsoft/SciFormaData-700K",
+      "row_index": 503898,
+      "description_sha256": "db4fe3b49b412aba7e49250f8094fd6c8b8fff9f79835e7859f14a34a5989c0e",
+      "description_origin": "dataset_generated_description",
+      "license_evidence_kind": "frozen_dataset_row_license",
+      "paper_metadata_sha256": "389b7c52b1ca8b0c0f2273135551df2e02ebea932d691babdaac3ed185f27367",
+      "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
+      "hosted_row_sha256": "f4b829c6dc6478f35c5a5c4a2cf483c004418d2deb3d4947a02e52f357b06cfa",
+      "row_response_sha256": "738d9d9d724f7284f210f367a6cb6f601b5adbb5d05076ff5ba8dbe46db44cd1"
+    },
+    "classification": {
+      "primary_type": "flowchart",
+      "types": [
+        "flowchart"
+      ],
+      "purposes": [
+        "method-overview"
+      ],
+      "layouts": [],
+      "search_aliases": [
+        "cs.CV"
+      ],
+      "status": "dataset_generated_labels"
+    },
+    "rights": {
+      "source_license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://huggingface.co/datasets/microsoft/SciFormaData-700K/blob/b38211e94f25858388f860b6db0b596b3ff45f18/README.md",
+      "evidence_scope": "Audited license attached to this hosted dataset row, described by the frozen dataset card. Not a claim about every version of the associated paper.",
+      "publication_status": "candidate",
+      "license_verification": "dataset_audited_hosted_row"
+    },
+    "dataset_generation_caption": "The figure illustrates the DiffFormer pipeline for Hyperspectral Image Classification (HSIC), structured as a left-to-right flowchart depicting the end-to-end processing from raw input to classification output. The global layout begins with a 3D tensor input χ ∈ ℝ^(H×W×K), representing a hyperspectral image with H rows, W columns, and K spectral bands, shown as a colorful 3D block. This input undergoes preprocessing: it is divided into non-overlapping patches, each represented as a smaller 3D cube, forming X_patch ∈ ℝ^(Npatch × d_embed), where Npatch is the number of patches and d_embed is the embedding dimension. These patches are then processed through a 'Spatial-Spectral Feature Learning' module, which uses a convolutional-like operation denoted by a grid multiplication (X * K = Y), where K is a kernel, to extract spatial-spectral features. The resulting features are visualized as small grayscale image patches arranged vertically.\n\nThese feature patches are then fed into a vertical pink column labeled 'Projection of Fused Patches', which projects them into a sequence of tokens indexed from 0 to Z (with green circular markers), indicating the order of patches in the sequence. This sequence is then passed to a multi-layer encoder structure, depicted as a large light-green box containing L-1 encoder layers. Each layer consists of a residual connection, normalization (Norm), a Differential Multi-Head Self-Attention (DMHSA) block, another normalization, and an FNN & SWiGLU block. The DMHSA block is highlighted in orange and receives Q, K, V inputs, which are derived from linear projections of the input sequence. A detailed inset within the encoder shows the internal mechanism of DMHSA: three linear layers project the input into Q, K, and V, which are then used to compute softmax(S + S_diff)V, where S_diff represents the differential attention component. The output of this computation is concatenated and passed through a final linear layer. Positional Embeddings (PE), shown in a red circle, are added to the embeddings before entering the encoder, enabling the model to capture spatial relationships.\n\nThe encoder stack processes the sequence through (L-1) layers, with outputs from each layer feeding into the next via residual connections. The final output of the last encoder layer is passed to Layer (L), which includes a final normalization and a 'Classify' block (pink rectangle) that produces the classification result. The output is visualized as a segmented image with distinct color regions corresponding to different classes, demonstrating the model’s ability to delineate class boundaries in hyperspectral data. The entire pipeline emphasizes hierarchical feature aggregation and refined attention mechanisms to enhance spectral-spatial representation learning for accurate HSIC."
+  },
+  "method": "hosted_dataset_figure",
+  "visual_source_review": "Host dataset row provenance and machine-generated description retained; no independent human visual description review claimed.",
+  "figure_scope_review": "Exact figure number and main-paper/appendix scope unresolved; displayed as a method figure with number pending, never as leading Figure 1/2.",
+  "original_is_author_source_file": false,
+  "note": "Byte-preserved hosted dataset figure; author vector/source file unavailable; figure numbering and main-paper scope unverified."
+}
