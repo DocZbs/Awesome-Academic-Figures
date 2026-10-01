@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-iclr2025-1273-leading",
   "title": {
-    "zh": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models · 首图",
-    "en": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    "zh": "MMed-RAG：领域检索、上下文选择与偏好微调的多分区流程",
+    "en": "MMed-RAG: Domain Retrieval, Context Selection and Preference Fine-Tuning Panels"
   },
   "paper": {
     "id": "topconf-iclr2025-1273",
@@ -53,26 +53,55 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "multi-panel",
     "types": [
-      "architecture"
+      "multi-panel",
+      "architecture",
+      "flowchart"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "method-overview",
+      "mechanism",
+      "comparison"
+    ],
+    "layouts": [
+      "grid",
+      "nested-modules",
+      "left-to-right"
+    ],
     "search_aliases": [
-      "framework"
+      "医学多模态检索框架",
+      "检索与偏好微调",
+      "Medical multimodal retrieval framework",
+      "Retrieval and preference fine tuning"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "numbered-stage-panels",
+      "dashed-comparison-groups",
+      "illustrated-process"
+    ],
+    "research_topics": [
+      "Medical AI",
+      "Multimodal models",
+      "Retrieval augmented generation",
+      "Preference fine-tuning"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.967,
     "pixel_width": 956,
     "pixel_height": 486,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 4,
+    "palette_hex": [
+      "#E2F3FD",
+      "#EBF6E9",
+      "#F3D17A",
+      "#AAD5C6",
+      "#E3AAA0"
+    ],
+    "palette_source": "preview_visual_approximation",
+    "panel_count_basis": "semantic_regions_in_preview_not_original_lettered_panels"
   },
   "assets": {
     "preview": "preview.webp",
@@ -95,11 +124,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -107,11 +136,17 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "input_domains",
+      "retriever_mapping",
+      "context_selection_rule",
+      "preference_cases",
+      "training_stages"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -132,7 +167,7 @@
     "maintainer": "preserved_official_openreview_note_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-iclr2025-1273-leading",
       "record_sha256": "d51ceb5eba94200b0062109154fa6fcf571c83f2d99f24126886dfdf03a2bb93",
@@ -150,6 +185,28 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "efc3e684a4bee551457c684479752f2228619d8e3a369c9c428578a2876c2981"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "6dd79eb6f39832ff34cf7a032db5e29ce713486b33a1fe1213e5d4d9b3063df5",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Preview pixels only; no full-paper reading or original-resolution extraction check.",
+        "Exact source figure numbering remains independently unverified.",
+        "Palette hex values are visual approximations.",
+        "Adaptation generation and rendering have not been tested.",
+        "Medical image thumbnails and schoolchildren illustrations have unresolved separate third-party provenance; original rights fields were not reclassified."
+      ],
+      "third_party_material_observation": "Visible medical-image thumbnails and illustration characters; separate rights provenance pending.",
+      "numbering_review": {
+        "status": "not_verified_material_version_difference",
+        "official_html_url": "https://arxiv.org/html/2410.13085v1#S3.F1",
+        "version": "2410.13085v1",
+        "official_image_sha256": "a28023c0d4831218ae82eaaf0dbb03f82d4371aa0b0c86bac030afe31e28fde1",
+        "preview_sha256": "6dd79eb6f39832ff34cf7a032db5e29ce713486b33a1fe1213e5d4d9b3063df5",
+        "observation": "Three named stages and preference fine-tuning structure correspond, but two Unrelated Image thumbnails in the third stage differ materially: official v1 displays random colored noise, while the existing preview displays chest X-ray images. Do not assert exact image correspondence for this version."
+      }
+    }
   }
 }

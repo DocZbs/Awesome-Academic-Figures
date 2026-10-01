@@ -1,11 +1,11 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 强化学习控制器替换与动作平滑机制对照
 
-LipsNet++: Unifying Filter and Controller into a Policy Network — ICML 2025.
+上部为 RL 框中的 Actor、Critic 与 Env 之间双向连接。下部将 Actor 放大为两个并排于同一竖向框内的替代控制器：MLP 与 LipsNet++，二者分别连接右侧 Fluctuated action 与 Smooth action 的线条示意。图中右边界略被裁切，左侧 replace 文本也有裁切；只描述可见关系，不补写被截文字。上下波形没有完整坐标、单位或数据点，不能当真实实验曲线。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+## 适合借鉴
 
-The index supplied no caption.
+借鉴分区比例、对照结构、标签位置与信息流；用自己的研究组件、示例和科学结论替换原论文内容。输入 MY_TASK.md 时说明想保留的布局以及必须保留的科学关系。
 
-Paper: https://proceedings.mlr.press/v267/song25a.html
+## 核对范围
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+本次逐张查看已发布 preview.webp，核对图类、用途和可见布局。未阅读整篇论文，未核实原论文图号；图中可见文字以外的科学细节不能补猜。配色为视觉近似，prompt 已逐图整理但尚未进行生成测试。原图来源、许可与署名以 metadata.json / ATTRIBUTION.md 为准。

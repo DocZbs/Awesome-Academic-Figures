@@ -1,12 +1,13 @@
 export const TYPE_LABELS = {
-  architecture: "框架图",
+  teaser: "Teaser 图",
+  mechanism: "机制图",
+  architecture: "方法框架图",
   flowchart: "流程图",
   conceptual: "概念示意图",
   qualitative: "定性对比图",
   data: "数据图",
   "multi-panel": "多面板组合图",
   taxonomy: "分类与层级图",
-  teaser: "首图与研究概览",
   unclassified: "待分类",
 };
 export const PURPOSE_LABELS = {
@@ -40,12 +41,12 @@ export const FILTER_FIELDS = {
     options: [{ value: "awarded", label: "获奖论文" }],
   },
   number: {
-    label: "图号",
+    label: "论文图号",
     options: [
       { value: "1", label: "Figure 1" },
       { value: "2", label: "Figure 2" },
-      { value: "leading", label: "论文首图 / Teaser" },
-      { value: "unverified", label: "图号待核" },
+      { value: "leading", label: "首图 · 图号待核" },
+      { value: "unverified", label: "其他图 · 图号待核" },
     ],
   },
   layout: {
@@ -68,11 +69,18 @@ export const FILTER_FIELDS = {
 export function valuesFor(figure, field) {
   if (field === "award") return figure.paper.awards?.length ? ["awarded"] : [];
   if (field === "type")
-    return figure.classification.types.flatMap((value) =>
-      ["line", "bar", "scatter", "heatmap"].includes(value)
-        ? [value, "data"]
-        : [value],
-    );
+    return [
+      ...new Set([
+        ...figure.classification.types.flatMap((value) =>
+          ["line", "bar", "scatter", "heatmap"].includes(value)
+            ? [value, "data"]
+            : [value],
+        ),
+        ...(figure.classification.purposes?.includes("mechanism")
+          ? ["mechanism"]
+          : []),
+      ]),
+    ];
   if (field === "purpose" || field === "layout") {
     const tags =
       figure.classification[field === "purpose" ? "purposes" : "layouts"];
@@ -124,6 +132,22 @@ export function filterFieldsFor(figures) {
   }
   return fields;
 }
+export function facetCountsFor(figures, state, favorites = [], hidden = []) {
+  return Object.fromEntries(
+    Object.keys(FILTER_FIELDS).map((field) => {
+      const scope = filterFigures(
+        figures,
+        {
+          ...state,
+          filters: { ...state.filters, [field]: [] },
+        },
+        favorites,
+        hidden,
+      );
+      return [field, categorySummary(scope, field).counts];
+    }),
+  );
+}
 export function assetUrl(figure, field) {
   const path = `${figure.asset_base}${figure.assets[field]}`;
   return /^https?:\/\//.test(path)
@@ -131,10 +155,11 @@ export function assetUrl(figure, field) {
     : `${import.meta.env?.BASE_URL || "/"}${path}`;
 }
 export function figureLabel(figure) {
-  if (figure.source.number) return `Figure ${figure.source.number}`;
+  if (figure.source.number)
+    return `Figure ${figure.source.number}${figure.source.number_status === "verified_arxiv_html_correspondence" ? " · arXiv" : ""}${figure.source.document === "appendix" ? " · 附录" : ""}`;
   return figure.source.number_status === "source_index_leading_figure"
-    ? "论文首图 / Teaser"
-    : "方法图 · 图号待核";
+    ? "论文首图 · 图号待核"
+    : "参考图 · 图号待核";
 }
 const detailCache = new Map();
 export async function loadFigureDetails(figure, options = {}) {

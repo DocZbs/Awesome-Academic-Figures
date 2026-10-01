@@ -52,6 +52,7 @@ import {
   DIMENSIONS,
   FILTER_FIELDS,
   filterFieldsFor,
+  facetCountsFor,
   assetUrl,
   filterFigures,
   categorySummary,
@@ -63,6 +64,7 @@ import {
 
 const TYPE_ICONS = {
   architecture: Network,
+  mechanism: Workflow,
   flowchart: Workflow,
   conceptual: Shapes,
   qualitative: Images,
@@ -219,11 +221,16 @@ export default function App() {
     return () => window.removeEventListener("popstate", back);
   }, []);
   useEffect(() => {
-    document.title = `${detailId ? `Figure ${figures.find((item) => item.id === detailId)?.source.number || ""}` : state.view === "favorites" ? "我的收藏" : state.view === "hidden" ? "已隐藏图像" : "图形画廊"} — Awesome Academic Figures`;
+    const currentFigure = figures.find((item) => item.id === detailId);
+    document.title = `${detailId ? (currentFigure ? figureLabel(currentFigure) : "参考图详情") : state.view === "favorites" ? "我的收藏" : state.view === "hidden" ? "已隐藏图像" : "图形画廊"} — Awesome Academic Figures`;
   }, [detailId, state.view, figures]);
   const detail = figures.find((item) => item.id === detailId);
   const results = useMemo(
     () => filterFigures(figures, state, favorites, hidden),
+    [figures, state, favorites, hidden],
+  );
+  const facetCounts = useMemo(
+    () => facetCountsFor(figures, state, favorites, hidden),
     [figures, state, favorites, hidden],
   );
   const selectedFigures = figures.filter((item) => selected.includes(item.id));
@@ -649,6 +656,13 @@ export default function App() {
                     {info.label}
                     <ChevronDown size={14} />
                   </summary>
+                  {field === "number" && (
+                    <p className="filter-caption">
+                      Figure 1 / 2 是已核实的论文图号；带 arXiv
+                      标记的图号仅在相应预印本版本核实。找研究概览，请选上方的
+                      Teaser 图。
+                    </p>
+                  )}
                   <div className="filter-options">
                     {info.options.map((option) => (
                       <label key={option.value}>
@@ -658,6 +672,9 @@ export default function App() {
                           onChange={() => setFilter(field, option.value)}
                         />
                         <span>{option.label}</span>
+                        <span className="filter-count mono">
+                          {facetCounts[field]?.[option.value] || 0}
+                        </span>
                       </label>
                     ))}
                   </div>
@@ -837,7 +854,7 @@ export default function App() {
                   <div className="collection-note">
                     <Check size={15} />
                     <span>
-                      {figures.length} 幅图已核对 · 改绘 prompt
+                      {figures.length} 幅图已收录 · 改绘 prompt
                       为维护者重建，尚未经生成验证
                     </span>
                   </div>
@@ -995,8 +1012,9 @@ export default function App() {
             <div>
               <h3>浏览完整图像</h3>
               <p>
-                按图形类型进入，叠加用途、布局、会议和图号筛选。点击图像查看大图、结构描述和同篇
-                Figure 1/2。
+                按 Teaser
+                图、机制图、方法框架图等图类进入，叠加用途、布局、会议和论文图号筛选。图号与图类独立：Figure
+                1 不一定是 Teaser 图。点击图像查看大图、结构描述和同篇参考图。
               </p>
             </div>
           </div>
@@ -1246,6 +1264,24 @@ function ReadyDetailDialog({
         </>
       ) : (
         <div className="source-details">
+          {figure.source.number_evidence && (
+            <>
+              <h3>图号核验</h3>
+              <p>
+                图号已在 arXiv {figure.source.number_version} 核实
+                {figure.paper.venue === "arXiv"
+                  ? "。"
+                  : "，正式会议版本图号尚未独立核实。"}
+              </p>
+              <a
+                href={figure.source.number_evidence.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                查看图号与图注依据 <ArrowUpRight size={15} />
+              </a>
+            </>
+          )}
           <h3>原始图注</h3>
           <p>
             {figure.source.caption ||

@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "sciforma-500000",
   "title": {
-    "zh": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models · 方法图",
-    "en": "WHAT-IF: Exploring Branching Narratives by Meta-Prompting Large Language Models"
+    "zh": "分支叙事树的递进展开机制",
+    "en": "Progressive branching narrative tree mechanism"
   },
   "paper": {
     "id": "arxiv-2412-10582",
@@ -29,9 +29,9 @@
   },
   "source": {
     "kind": "figure",
-    "document": "unspecified",
-    "number": null,
-    "number_status": "dataset_figure_number_unresolved",
+    "document": "main",
+    "number": 2,
+    "number_status": "verified_arxiv_html_correspondence",
     "method": "hosted_dataset_figure",
     "caption": null,
     "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=500000&length=100",
@@ -47,32 +47,59 @@
     "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
     "asset_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/500000/image/image.jpg?Expires=1790835163&Signature=U0AVgHvR1-ZkOy97UKewQ47lneVV0CT9MGiYurmx5xtaGTE4qRw~DZmBnGGAWpL26vVXTALM1mo0DkgUy6fXyU1UlacQzlXl3X8kBP6AitjywK1b42IrawbUNAuaGIiTj17WtFRvTl901LTAqLU1Oc9b0wHhOEm9gMvCL2z-RUjYHwwkVPZo1U9wfUxp34na4h0oCeqZnOrv4QlIldpf31iLXbH7M9KRoiy0cvpGBWo3-8u81Y1-Q-wKLZOtNzCEukSbP2cJ5eOOcOaVoFcW5bxyNqkiHQnW6TwjB0NEUFKA3NpMUZ2eG9IaQNH6D25gPcUFgBpjgZsni1wtR21KrQ__&Key-Pair-Id=K3C0L9WB6U5DUC",
     "core_figure_slot": "unspecified-figure",
-    "external_record_sha256": "6edeee1304338ee8520e8988d75788ee41b66c461dfc734db096f39fcc1a51bb"
+    "external_record_sha256": "6edeee1304338ee8520e8988d75788ee41b66c461dfc734db096f39fcc1a51bb",
+    "number_version": "2412.10582v3",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2412.10582v3#S1.F2",
+      "version": "2412.10582v3",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_sha256": "a5fd4e746e426ac13e69a25f3a2325ff8a5b5c0e6defbe417ac0a32bb541d20e",
+      "preview_sha256": "8108ba87066e01cde4a5f93514557532ffe8a125ec703f4bb6de673439380100",
+      "limitations": "Published dataset asset retained; visual correspondence does not assert byte identity with the official HTML image."
+    }
   },
   "classification": {
-    "primary_type": "architecture",
+    "primary_type": "taxonomy",
     "types": [
-      "architecture"
+      "taxonomy",
+      "flowchart",
+      "conceptual"
     ],
     "purposes": [
+      "mechanism",
       "method-overview"
     ],
-    "layouts": [],
-    "search_aliases": [
-      "cs.CL"
+    "layouts": [
+      "left-to-right"
     ],
-    "status": "dataset_generated_labels",
+    "search_aliases": [
+      "分支叙事",
+      "树结构",
+      "机制图",
+      "branching narrative"
+    ],
+    "status": "visually_reviewed",
     "collection": "community-index",
-    "styles": [],
-    "research_topics": []
+    "styles": [
+      "reference-guided",
+      "white-background"
+    ],
+    "research_topics": [
+      "narrative-generation",
+      "large-language-models"
+    ]
   },
   "visual": {
     "aspect_ratio": 2.0,
     "pixel_width": 1408,
     "pixel_height": 704,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 3,
+    "palette_hex": [
+      "#FFFFFF",
+      "#223A60",
+      "#000000"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -95,11 +122,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "dataset_generation_caption",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "dataset_generated_description_unreviewed",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -111,7 +138,8 @@
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -131,7 +159,7 @@
     "maintainer": "frozen_hosted_dataset_row_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "Hosted licensed dataset figure; exact numbering/body scope unresolved. Detailed source description is machine-generated, unreviewed and untested.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 2 correspondence verified in arXiv 2412.10582v3; only that version is confirmed.",
     "external_source_review": {
       "id": "sciforma-500000",
       "record_sha256": "6edeee1304338ee8520e8988d75788ee41b66c461dfc734db096f39fcc1a51bb",
@@ -149,6 +177,17 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "74ae6986304d613ef16a6e765c6ce5ffe548d507a82ddc99d39dbe2806720736"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "8108ba87066e01cde4a5f93514557532ffe8a125ec703f4bb6de673439380100",
+      "basis": "published preview and official HTML figure pixels",
+      "limitations": [
+        "No full-paper scientific audit or adaptation generation test",
+        "Colors approximate the preview",
+        "Figure 2 verified only in arXiv 2412.10582v3"
+      ]
+    }
   }
 }

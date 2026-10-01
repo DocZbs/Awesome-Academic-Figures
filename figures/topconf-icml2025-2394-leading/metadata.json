@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-2394-leading",
   "title": {
-    "zh": "Identifying Neural Dynamics Using Interventional State Space Models · 首图",
-    "en": "Identifying Neural Dynamics Using Interventional State Space Models"
+    "zh": "神经观测与干预的记录、动力轨迹和图模型对照",
+    "en": "Neural observation versus intervention across recordings dynamics and graphical models"
   },
   "paper": {
     "id": "topconf-icml2025-2394",
@@ -41,26 +41,57 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "multi-panel",
     "types": [
+      "multi-panel",
+      "conceptual",
       "architecture"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "mechanism",
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "grid",
+      "left-to-right"
+    ],
     "search_aliases": [
-      "architecture"
+      "神经干预",
+      "状态空间",
+      "潜在轨迹",
+      "neural intervention",
+      "state space models",
+      "latent trajectories"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "white-background",
+      "three-column-panels",
+      "grayscale-brain-schematic",
+      "spike-raster-glyphs",
+      "vector-field-trajectories",
+      "graphical-model-nodes"
+    ],
+    "research_topics": [
+      "neural-dynamics",
+      "intervention",
+      "state-space-models"
+    ]
   },
   "visual": {
     "aspect_ratio": 2.264,
     "pixel_width": 1114,
     "pixel_height": 492,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 3,
+    "palette_hex": [
+      "#D4D5D6",
+      "#6E9FB4",
+      "#63AA89",
+      "#BD3432",
+      "#111111"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -83,11 +114,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -95,11 +126,23 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "observation_condition",
+      "intervention_condition",
+      "recorded_channels",
+      "recording_examples",
+      "latent_trajectories",
+      "intervention_time",
+      "hypothesis_labels",
+      "graph_model_nodes",
+      "graph_model_edges",
+      "intervention_edges",
+      "parameter_labels"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -119,7 +162,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-2394-leading",
       "record_sha256": "12aef3ea76357ff74106c4a548f04948e32f561cc2cd691bae3180159ff2f6a4",
@@ -137,6 +180,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "e7e138a201fe4ac0c740a3594032b2416239d8a292702bb1162fb77db14ad6b8"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "e0170e6bbf9d53f8dacafd8368fe1ffd478d917a0c2bba1bb4944d67a2e2fd46",
+      "basis": "published preview pixels",
+      "limitations": [
+        "仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。",
+        "约近似配色；改绘尚未生成或渲染验证。",
+        "部分节点上标和干预边较小，准确变量定义与干预规则需用户提供。",
+        "栅格/轨迹可为概念示意，没有数据出处不能称为实测神经记录。"
+      ]
+    }
   }
 }

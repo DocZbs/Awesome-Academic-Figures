@@ -1,11 +1,9 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 线性注意力的VAR组合与网络结构展开
 
-Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting — ICML 2025.
+上方左侧是时间索引的向量/矩阵计算展开：蓝色value向量与浅灰query图形相乘，经向下箭头形成彩色小矩阵A，再与黄色key向量组合；几项以加号相加，右侧得到红色输出。下方(a)说明单层线性注意力step t的VAR结构。右上(b)以j、j+1、t-1、t节点和彩色弧线表示时间影响路径的遍历/组合；路径计数及上下标不宜按小图补公式。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+下方分三块：左是标准网络模块，自下而上的Input、LN/Attn、LN/MLP、加号与残差旁路，并有l×重复；中部把多块紫色Attn横向展开，Q/K/V标注与弧形连线联系，下面仍保留LN/MLP及残差；右侧浅紫圆角放大框有Norm、Wv/Wq分支、矩阵堆叠、乘法点、key堆叠及输出ot，小斜线联系中图与放大细节。
 
-The index supplied no caption.
+architecture主类保留，增加multi-panel与conceptual。mechanism由实际运算和内部结构支持，另有comparison/method-overview。上方从左到右求和、下方自下而上主干及嵌套局部详解的多种方向并存，不能一律称横向流水线。五个高层区域指上面两个与下面三个视觉单元，不代表已核正式论文子图。
 
-Paper: https://proceedings.mlr.press/v267/lu25r.html
-
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+可复用“代数展开—时间路径—网络结构—局部运算放大”。所有符号、投影、归一化、重复层、残差及时间边需用户提供，不能由矩阵图标猜维度，或把图的视觉类比当成数学等价证明。淡蓝、淡紫、淡黄、淡红分别区分表示与模块，需保持同角色同色。公式准确性、正文图号和生成效果仍未验证。

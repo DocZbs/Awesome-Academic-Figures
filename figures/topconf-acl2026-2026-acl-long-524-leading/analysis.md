@@ -1,11 +1,13 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# LLaDA 1.5：八维能力雷达图与 GSM8K / Math 柱状对比
 
-LLaDA 1.5: Variance-Reduced Preference Optimization for Large Language Diffusion Models — ACL 2026.
+整图仅由三张横排性能图构成，没有模型模块或流程箭头。左侧是八轴雷达图，外围维度可读为 AlignBench、Arena-Hard、IFEval、MBPP、HumanEval、GPQA、Math、GSM8K。紫蓝色 LLaDA SFT 和红色 LLaDA 1.5 的线及半透明填充叠加。外围弧箭头以 Alignment、Code、Mathematics & Science 概括能力组。各轴附近的灰色刻度不一样，预览不足以确认它们的归一化方式，不能把多轴刻度直接当作一个共同数值尺度。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+中间是 GSM8K 柱图，右侧是 Math 柱图，纵轴都标 Performance。每图横排六根单系列柱，依次为 DeepSeek 7B、Dream 7B、LLaMA 3 8B、LLaDA d1、LLaDA、LLaDA 1.5，模型名倾斜放置。灰绿、蓝、棕、浅黄、青绿、玫红按模型对应；两图复用同一颜色。柱顶有数值和括号，例如 GSM8K 的 63.0(0)、77.2(8)、83.3(4)；括号究竟代表何种设置并未在图内说明，不称作误差或方差。GSM8K 的可见纵轴是截断范围，重新作图时应明确尺度，不能靠截断轴夸大改进。
 
-The index supplied no caption.
+将 architecture 改为 data，补 multi-panel；用途只有 comparison。当前图展示结果，没有提供偏好优化机制细节，故不标 mechanism、method-overview 或 teaser。布局是 1×3 的 grid，雷达子图有 radial 结构。读者检索时可以通过雷达图、柱状图、多模型性能比较找到它。
 
-Paper: https://aclanthology.org/2026.acl-long.524/
+适合做多维能力与两个重点基准的联合对比。需用户提供真实模型名、雷达维度、每轴范围/归一化规则、两组柱图分数及括号注释含义。保留“概况+细节”组合，不照抄原评测结果。应由绘图库根据真实数据生成 SVG/PDF，检查各模型颜色一致、轴刻度真实、括号有图注解释。此分析仅看预览，未读评测正文、复核原数值表或图号；没有进行改绘生成验证，颜色为目测近似。
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+## 补充图号核对：作者版图像不对应
+
+已直接查看 arXiv:2505.19223v1 与 v2 的 Figure 1 雷达和柱图 SVG 临时渲染，官方蓝色雷达折线在 Arena-Hard 处明显内凹，预览并非该形状；AlignBench 相对位置也不同。部分柱图标签相同不足以证明整幅裁图对应。因此 source.number 仍为 null，不能显示作者版 Figure 1 已核实。后续需要找到与此正式裁图相符的具体版本。此核对不改变现有图片来源与许可，也不重新分发作者版素材。

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { transform } from 'esbuild';
-import { filterFigures, filterFieldsFor, assetUrl, categorySummary } from '../src/gallery.js';
+import { filterFigures, filterFieldsFor, assetUrl, categorySummary, facetCountsFor, figureLabel, valuesFor } from '../src/gallery.js';
 
 for (const file of ['src/App.jsx', 'src/ui.jsx', 'src/main.jsx']) {
   await transform(fs.readFileSync(file, 'utf8'), { loader: 'jsx', jsx: 'automatic' });
@@ -50,3 +50,35 @@ assert.equal(fields.year.options.length, new Set(figures.map(f => f.paper.public
 assert.ok(assetUrl(figures[0], 'preview').startsWith('https://raw.githubusercontent.com/'));
 for (const f of figures) assert.equal(f.rights.publication_status, 'approved');
 console.log('JSX parses; taxonomy, multi-dimensional filtering, favorites, hidden and no-results checks pass.');
+
+// Numbers describe paper position; genres describe visual content.
+const fixture = (id, number, types, purposes = []) => ({ ...figures[0], id,
+  source: { kind: 'figure', number, number_status: number ? 'verified_arxiv_html_correspondence' : 'source_index_leading_figure', number_version: '1234.56789v2' },
+  classification: { ...figures[0].classification, types, primary_type: types[0], purposes, layouts: ['two-column'] } });
+const numbered = [fixture('first-architecture', 1, ['architecture'], ['mechanism']), fixture('second-teaser', 2, ['teaser']), fixture('unknown-teaser', null, ['teaser'])];
+assert.equal(filterFigures(numbered, { ...base, category: 'teaser' }, [], []).length, 2);
+assert.deepEqual(valuesFor(numbered[0], 'type'), ['architecture', 'mechanism']);
+assert.equal(filterFigures(numbered, { ...base, category: 'mechanism' }, [], []).length, 1);
+assert.equal(figureLabel(numbered[0]), 'Figure 1 · arXiv');
+assert.equal(figureLabel(numbered[2]), '论文首图 · 图号待核');
+const selectedNumber = { ...base, filters: { number: ['1'], layout: ['two-column'] } };
+assert.deepEqual(facetCountsFor(numbered, selectedNumber).number, { '1': 1, '2': 1, leading: 1 });
+assert.equal(facetCountsFor(numbered, selectedNumber).layout['two-column'], 1);
+assert.deepEqual(facetCountsFor(numbered, { ...selectedNumber, category: 'teaser' }).number, { '2': 1, leading: 1 });
+assert.deepEqual(facetCountsFor(numbered, { ...selectedNumber, query: 'no such figure' }).number, {});
+assert.deepEqual(facetCountsFor(numbered, { ...selectedNumber, view: 'favorites' }, ['second-teaser', 'unknown-teaser'], ['unknown-teaser']).number, { '2': 1 });
+assert.deepEqual(facetCountsFor(numbered, { ...selectedNumber, view: 'hidden' }, [], ['unknown-teaser']).number, { leading: 1 });
+const batch = JSON.parse(fs.readFileSync('data/visual_review_batch_20261001.json', 'utf8'));
+for (const item of batch.figures) {
+  const f = figures.find(f => f.id === item.id);
+  assert.equal(f.classification.status, 'visually_reviewed');
+  assert.equal(f.metadata_sha256, item.metadata_sha256);
+  assert.equal(f.source.number, item.number);
+  if (item.number) {
+    assert.equal(f.source.number_version, item.number_evidence.version);
+    assert.ok(item.number_evidence.url.startsWith(`https://arxiv.org/html/${f.source.number_version}#`));
+    assert.match(item.number_evidence.official_image_sha256, /^[a-f0-9]{64}$/);
+  }
+}
+for (const n of [1, 2]) assert.equal(figures.filter(f => f.source.number === n).length, batch.figure_number_counts[String(n)]);
+console.log('Figure genres, independent facet counts and recorded numbering evidence checks pass.');

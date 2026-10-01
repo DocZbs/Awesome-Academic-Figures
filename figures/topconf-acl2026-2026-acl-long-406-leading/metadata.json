@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-acl2026-2026-acl-long-406-leading",
   "title": {
-    "zh": "Visual Attention Reasoning via Hierarchical Search and Self-Verification · 首图",
-    "en": "Visual Attention Reasoning via Hierarchical Search and Self-Verification"
+    "zh": "VAR：视觉定位、推理纠错与多基准性能对比",
+    "en": "VAR: visual grounding, reasoning correction and multi-benchmark comparison"
   },
   "paper": {
     "id": "topconf-acl2026-2026-acl-long-406",
@@ -47,26 +47,62 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "multi-panel",
     "types": [
-      "architecture"
+      "multi-panel",
+      "qualitative",
+      "data",
+      "teaser"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "qualitative",
+      "method-overview"
+    ],
+    "layouts": [
+      "nested-modules",
+      "left-to-right"
+    ],
     "search_aliases": [
-      "architecture"
+      "视觉推理对比",
+      "定位框与局部裁剪",
+      "自校验案例",
+      "多面板案例与曲线",
+      "visual reasoning comparison",
+      "bounding boxes and crops",
+      "self-verification example",
+      "case study with benchmark curves"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "样例照片嵌入 / embedded sample photos",
+      "彩色定位框 / colored bounding boxes",
+      "推理文字高亮 / highlighted reasoning text",
+      "多系列折线图 / multi-series line chart",
+      "圆角案例卡 / rounded case cards"
+    ],
+    "research_topics": [
+      "视觉定位 / visual grounding",
+      "多模态推理 / multimodal reasoning",
+      "层级视觉搜索 / hierarchical visual search",
+      "自校验 / self-verification"
+    ]
   },
   "visual": {
     "aspect_ratio": 2.036,
     "pixel_width": 1144,
     "pixel_height": 562,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 4,
+    "palette_hex": [
+      "#FFFFFF",
+      "#FFE7CE",
+      "#D9E8FC",
+      "#376F36",
+      "#AC1818",
+      "#FFF842",
+      "#FE8B32"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -89,11 +125,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -101,11 +137,20 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "case_image",
+      "question",
+      "verified_boxes",
+      "baseline_reasoning",
+      "proposed_reasoning",
+      "crop_search_connections",
+      "benchmark_series",
+      "benchmark_categories"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -125,7 +170,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-acl2026-2026-acl-long-406-leading",
       "record_sha256": "518dc3176a2040b77cd82d487ac76d7c62b1a3f8b2a41e9b06f18795676fe626",
@@ -143,6 +188,19 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "77f1500d59689399f7d130043f0ed98d941f7d862554a53aa9887e5718a4e931"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "1bb2c11332ae9df04da167759f5e0290a49631b9d4df7601181a5f3b339ecf8e",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Only the 1144 × 562 published preview was inspected.",
+        "Fine benchmark legend and category text are not exhaustively transcribed.",
+        "Bounding-box coordinate semantics and actual image dimensions are not verified.",
+        "The source photo and cartoon avatars require independent replacement rights for a new drawing.",
+        "No full-paper reasoning or benchmark result verification; original figure number remains unknown."
+      ]
+    }
   }
 }

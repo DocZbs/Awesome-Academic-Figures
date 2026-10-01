@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-iclr2025-1881-leading",
   "title": {
-    "zh": "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting · 首图",
-    "en": "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting"
+    "zh": "Speculative RAG：三种基线对照与并行草稿验证流程",
+    "en": "Speculative RAG: Three Baseline Panels and Parallel Draft Verification"
   },
   "paper": {
     "id": "topconf-iclr2025-1881",
@@ -35,8 +35,8 @@
   "source": {
     "kind": "figure",
     "document": "main",
-    "number": null,
-    "number_status": "source_index_leading_figure",
+    "number": 1,
+    "number_status": "verified_arxiv_html_correspondence",
     "caption": null,
     "index_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json",
     "version": "fbdff7620fc15b8429a4626aaf5b012f8dd08837",
@@ -52,30 +52,72 @@
     "method": "external_index_image",
     "asset_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/images/iclr/final/iclr2025-1881.jpg",
     "core_figure_slot": "leading-figure",
-    "external_record_sha256": "9ed3ba139d35dc4c62c507ee2f80d1b1b017b22c278ba77d478cc2b86a54eaf2"
+    "external_record_sha256": "9ed3ba139d35dc4c62c507ee2f80d1b1b017b22c278ba77d478cc2b86a54eaf2",
+    "number_version": "2407.08223v2",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2407.08223v2#S1.F1",
+      "version": "2407.08223v2",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_url": "https://arxiv.org/html/2407.08223v2/main_figure-5-21.png",
+      "official_image_sha256": "a02a47597691b5b893e82157fb30dbff2d3dfb200e945938b394774ffc0bab97",
+      "preview_sha256": "3b55f9a6c21e02265b949682d251235c1ae4ffbfc780002207cc561b9fe471c3",
+      "limitations": [
+        "final conference numbering not checked"
+      ],
+      "observations": "Four lettered panels, all baseline names, generalist/specialist icons, the three parallel document-pair branches (1/2,4/5,3/6), alpha/beta outputs, score selector and three stage ribbons correspond. Only size/framing differences observed."
+    }
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "flowchart",
+    "primary_type": "multi-panel",
     "types": [
-      "flowchart"
+      "multi-panel",
+      "flowchart",
+      "architecture"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "method-overview",
+      "mechanism"
+    ],
+    "layouts": [
+      "grid",
+      "left-to-right",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "pipeline"
+      "并行草稿与验证",
+      "检索增强生成对照图",
+      "Parallel drafting and verification",
+      "RAG baseline comparison"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "lettered-panels",
+      "shared-symbol-legend",
+      "parallel-branches",
+      "stage-ribbon"
+    ],
+    "research_topics": [
+      "Retrieval augmented generation",
+      "Large language models",
+      "Parallel inference"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.683,
     "pixel_width": 912,
     "pixel_height": 542,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 4,
+    "palette_hex": [
+      "#F5BE85",
+      "#59BC9E",
+      "#BEDCE5",
+      "#ED8D98",
+      "#DAD3AE"
+    ],
+    "palette_source": "preview_visual_approximation",
+    "panel_count_basis": "semantic_regions_in_preview_not_original_lettered_panels"
   },
   "assets": {
     "preview": "preview.webp",
@@ -98,11 +140,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -110,11 +152,18 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "baseline_variants",
+      "document_groups",
+      "drafting_model",
+      "verification_model",
+      "draft_and_rationale_labels",
+      "selection_rule"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -135,7 +184,7 @@
     "maintainer": "preserved_official_openreview_note_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 1 correspondence verified in arXiv 2407.08223v2; only that version is confirmed.",
     "external_source_review": {
       "id": "topconf-iclr2025-1881-leading",
       "record_sha256": "9ed3ba139d35dc4c62c507ee2f80d1b1b017b22c278ba77d478cc2b86a54eaf2",
@@ -153,6 +202,27 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "6c988d6513bb423c0b0f79fc9fc600db2b457646a173fd26a90aa6cba8a670a0"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "3b55f9a6c21e02265b949682d251235c1ae4ffbfc780002207cc561b9fe471c3",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Preview pixels only; no full-paper reading or original-resolution extraction check.",
+        "Figure number verified in arXiv 2407.08223v2; final conference numbering not checked.",
+        "Palette hex values are visual approximations.",
+        "Adaptation generation and rendering have not been tested.",
+        "Recognizable Google G logo visible in panel (c); separate third-party material provenance was not established."
+      ],
+      "numbering_review": {
+        "status": "verified_arxiv_html_correspondence",
+        "official_html_url": "https://arxiv.org/html/2407.08223v2#S1.F1",
+        "version": "2407.08223v2",
+        "official_image_sha256": "a02a47597691b5b893e82157fb30dbff2d3dfb200e945938b394774ffc0bab97",
+        "preview_sha256": "3b55f9a6c21e02265b949682d251235c1ae4ffbfc780002207cc561b9fe471c3",
+        "observation": "Four lettered panels, all baseline names, generalist/specialist icons, the three parallel document-pair branches (1/2,4/5,3/6), alpha/beta outputs, score selector and three stage ribbons correspond. Only size/framing differences observed."
+      }
+    }
   }
 }

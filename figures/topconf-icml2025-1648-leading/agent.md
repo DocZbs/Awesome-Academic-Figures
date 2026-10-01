@@ -1,3 +1,13 @@
-# Agent handoff
+# 智能体交接：视觉问答与临床图思维的需求对照
 
-Read metadata.json and ATTRIBUTION.md, inspect the attached original image, and read the user's MY_TASK.md. The supplied prompt.md is a generic draft and analysis.md is a source record, not a reviewed visual specification. Produce your own visual inspection before adapting the reference. Keep paper provenance and license attribution with any redistributed original image.
+先读MY_TASK.md、附带参考图、analysis.md、prompt.md、metadata.json与ATTRIBUTION.md。该prompt是维护者从现有预览逐区重建，不是原作者提示词；正文图号与全文语义未因此核实。
+
+以用户真实研究内容替换变量，先核对本图各区域与自己的科学流程/数据是否对应。只对缺失且影响科学准确性的输入提问，不重复确认参考已有配色或普通版式。缺少结果数组、轨迹、图节点定义、公式或层数时，索取相应科学输入；不编造性能数字、张量形状、医学结论或因果边。
+
+参考中的品牌/医学图像等素材用用户拥有或明确获准的素材与原创通用符号替代。保留引用原图时必要的归属/许可，并区分新改绘与原作。输出可编辑文件及预览，检查语义、轴/图例、箭头端点、公式与出版尺寸文字可读性；当前生成状态仍为not_tested。
+
+本图特别注意：
+- 仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。
+- 约近似配色；改绘尚未生成或渲染验证。
+- 医学影像缩略图的受试者/素材权限未在本次视觉文字检查中重审；改绘用获准影像或原创示意。
+- 小图思维节点没有足够语义标注，不能补出医学因果关系。

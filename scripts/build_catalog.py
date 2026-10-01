@@ -70,7 +70,7 @@ def main():
         entry["metadata_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
         entry["assets"]["metadata"] = "metadata.json"
         entry["source"] = {k: v for k, v in entry["source"].items() if k in {
-            "kind", "document", "number", "number_status", "core_figure_slot", "method", "arxiv_version", "pdf_page_index_1based"}}
+            "kind", "document", "number", "number_status", "number_version", "core_figure_slot", "method", "arxiv_version", "pdf_page_index_1based"}}
         entry["rights"] = {k: v for k, v in entry["rights"].items() if k in {
             "source_license", "publication_status", "license_url", "license_evidence_url"}}
         entry["curation"] = {k: v for k, v in entry.get("curation", {}).items() if k in {"maintainer", "checked_at", "collected_at"}}

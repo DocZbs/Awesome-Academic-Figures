@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-3126-leading",
   "title": {
-    "zh": "Sundial: A Family of Highly Capable Time Series Foundation Models · 首图",
-    "en": "Sundial: A Family of Highly Capable Time Series Foundation Models"
+    "zh": "连续与离散 token、三类时间序列模型的对照",
+    "en": "Continuous versus discrete tokens and time-series model-family comparison"
   },
   "paper": {
     "id": "topconf-icml2025-3126",
@@ -47,26 +47,49 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "teaser",
+    "primary_type": "conceptual",
     "types": [
-      "teaser"
+      "conceptual",
+      "multi-panel"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "grid",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "teaser"
+      "时间序列",
+      "连续token",
+      "离散token",
+      "模型对比",
+      "TimeFlow",
+      "Sundial"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "reference-guided",
+      "white-background"
+    ],
+    "research_topics": [
+      "time-series",
+      "foundation-model",
+      "generative-modeling"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.528,
     "pixel_width": 611,
     "pixel_height": 400,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#536EEC",
+      "#D7E2CB",
+      "#FDE7E7"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -89,23 +112,28 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
+      "connections",
+      "language",
+      "layout_changes",
+      "method_name",
+      "output_format",
       "research_content",
       "true_data",
-      "layout_changes",
-      "language",
-      "output_format"
+      "user_owned_images",
+      "verified_scientific_labels"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -125,7 +153,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-3126-leading",
       "record_sha256": "b499b6dd9bac759c7f3051770512aa33f1abe72edc5b97f5f83830cd7d305135",
@@ -143,6 +171,17 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "5c7f68e59b2354e4c9a35d642e5fe6d3d55f5b76e2922757bbbf25b6fe8f8b82"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "a0ce56a53028907e6e4cccc397909785efbee87c3a29d2296e1706db487fe2a0",
+      "basis": "published preview pixels",
+      "limitations": [
+        "No original-resolution extraction or full-paper semantic audit",
+        "Figure number remains unverified in this visual annotation pass",
+        "Colors are approximations, not sampled author palette"
+      ]
+    }
   }
 }

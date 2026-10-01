@@ -1,19 +1,7 @@
-# Source record: Figure unresolved (hosted method figure; numbering/scope unverified)
+# 医学影像补全与翻译的双网络框架
 
-ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy — arXiv 2025.
+上下两个灰底虚线框。上方 Completion Network：缺口 CBCT、原 CT 与缺口掩码作为左侧输入，蝴蝶形 Generator 生成 sCBCT，与原输入组合得到 Inpainted CBCT；右侧 Global 与 Local Discriminator 分别比较整体与局部，彩色虚线指向 Real/Fake。补全结果转换矢状面到轴向切片后进入下方 Translation Network，经过 Generator 得到 sCT，和 Original CT 送入 Discriminator。不能把这些示例切片视为用户的真实诊断或效果证据。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+主类：architecture。布局：left-to-right, nested-modules。颜色为目测近似。
 
-The index supplied no caption.
-
-Paper: https://arxiv.org/abs/2502.04898
-
-Index: https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100
-
-## Machine-generated source description
-
-This is the dataset's generated description, not an author caption or independently reviewed visual analysis.
-
-The figure presents the ARTInp framework, which consists of two main components: a Completion Network and a Translation Network, arranged vertically. The top section, labeled 'Completion Network', processes sagittal slices of cone-beam CT (CBCT) data with gaps. It begins with an input block showing an original CBCT volume with a gap, alongside an original CT and a gap mask, indicated by a 3D coordinate system (x, y, z). This input feeds into a Generator module, depicted as a pink hourglass-shaped structure, which produces a synthesized CBCT (sCBCT) output. The sCBCT is shown as a sagittal slice with a green dashed line indicating the gap region. This output is then combined with the original CBCT to form an inpainted CBCT, displayed as a sagittal slice with a red dashed line marking the reconstructed area. The inpainted CBCT is evaluated by two discriminators: a Global Discriminator and a Local Discriminator, both represented as pink triangular shapes. The Global Discriminator receives the full inpainted image, while the Local Discriminator focuses on the region around the gap, indicated by a yellow dashed box. Both discriminators output a 'Real/Fake' classification, with the Local Discriminator's output connected via a dashed red arrow, suggesting adversarial training feedback.
-
-The bottom section, labeled 'Translation Network', processes axial slices derived from the inpainted CBCT via a 'Sagittal to Axial Slice' transformation, indicated by a coordinate system (x, y). The inpainted CBCT axial slice serves as input to another Generator, also shown as a pink hourglass. This Generator produces a synthesized CT (sCT), displayed as an axial slice. The sCT is then paired with the original CT for evaluation by a Discriminator, represented as a pink triangle, which outputs a 'Real/Fake' decision. A dotted vertical line separates the sCT from the original CT within the Discriminator’s input, emphasizing the comparison. The entire framework is labeled 'ARTInp' at the center, bridging the two networks. All modules are enclosed in dashed rectangular boxes, and arrows indicate the flow of data between components, with solid lines for forward propagation and dashed lines for adversarial feedback or auxiliary connections.
+图号已核实：arXiv 2502.04898v1 Figure 2。依据：https://arxiv.org/html/2502.04898v1#S3.F2。核查采用现有预览与官方 HTML 图像直接对照，未下载整篇 PDF。保留上游原图字节及既有许可记录；未进行全文科学审核或改绘生成验证。

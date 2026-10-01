@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-1996-leading",
   "title": {
-    "zh": "CoPINN: Cognitive Physics-Informed Neural Networks · 首图",
-    "en": "CoPINN: Cognitive Physics-Informed Neural Networks"
+    "zh": "两种方法的三维场与截面热图对比",
+    "en": "Comparison of volumetric fields and slice heatmaps"
   },
   "paper": {
     "id": "topconf-icml2025-1996",
@@ -45,26 +45,51 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "data",
     "types": [
-      "architecture"
+      "data",
+      "multi-panel"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison"
+    ],
+    "layouts": [
+      "grid"
+    ],
     "search_aliases": [
-      "architecture"
+      "热图对比",
+      "三维场",
+      "截面对比",
+      "slice heatmap comparison",
+      "volume visualization"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "white-background",
+      "aligned-subplots",
+      "3d-volume-glyphs",
+      "slice-heatmaps",
+      "individual-colorbars"
+    ],
+    "research_topics": [
+      "physics-informed-neural-networks",
+      "volumetric-visualization",
+      "method-comparison"
+    ]
   },
   "visual": {
     "aspect_ratio": 0.914,
     "pixel_width": 656,
     "pixel_height": 718,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#080E79",
+      "#173BDB",
+      "#F4F0DA",
+      "#CF2926",
+      "#FFFFFF"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -87,11 +112,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -99,11 +124,20 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "method_names",
+      "volumetric_fields",
+      "slice_coordinates",
+      "field_quantity",
+      "colorbar_ranges",
+      "panel_labels",
+      "axis_labels",
+      "comparison_notes"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -123,7 +157,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-1996-leading",
       "record_sha256": "3344a565cfb593e6b87fb474cc6e711cfdd306673b7a520308815e8e66d9b4c7",
@@ -141,6 +175,19 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "ab63d818b1ba2e6e15ed734e5bd8216530d12841d02fd73d478b553ddb09999a"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "0531aa11dae6bad082aaf9871131a4e5bae74b8fbe7b5408c3d0c5795def78ba",
+      "basis": "published preview pixels",
+      "limitations": [
+        "仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。",
+        "约近似配色；改绘尚未生成或渲染验证。",
+        "来源裁图保留大片空白、截断论文标题与作者行，需另行裁切或来源修复。",
+        "没有图注，不能确认颜色量是解、残差或误差；两行色条范围不同，不能凭亮暗判优。"
+      ],
+      "needs_asset_cleanup": true
+    }
   }
 }

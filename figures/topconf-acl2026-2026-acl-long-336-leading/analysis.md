@@ -1,11 +1,15 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# Arg-LLaDA：掩码生成与充分性感知细化的双栏过程对比
 
-Arg-LLaDA: Argument Summarization via Large Language Diffusion Models and Sufficiency-Aware Refinement — ACL 2026.
+整图用中间黑色竖虚线分成双栏，每栏内部主要向下读。最上方两列均是横向 token 条，前半为几种蓝色矩形，后半为橙、黄、米色、玫红矩形；括号在条上方分组，但没有可见组名。左列从完整条开始，黑色点线箭头选择后半的若干位置，把它们换成带交叉线的白色矩形，然后向下进入灰色 Mask Predictor 横条，粗实线箭头输出被替换位置的彩色块。左下图例明确交叉框为 Mask Token、蓝框为 Non-Mask Token，点线下箭头为 Mask、实线下箭头为 Generation。因此不能把叉框误称为错误或删除。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+右列顶端后半条全是掩码框。中部较大的圆角虚线框标注 An Intermediate Step，其中包含部分已填 token 条、Mask Predictor、绿色 Sufficiency Diagnosis Module 条及黄色、玫红的生成块。诊断模块与生成区域间有红色弧形虚线箭头，表现诊断/细化联系；下方更新条仍含一个交叉掩码框。框外最下端为最终彩色条，与上方用省略点暗示还有中间步骤。红色反馈箭头的精确输入输出对象需要论文或用户算法说明，不能仅凭空间邻近补出迭代终止规则。
 
-The index supplied no caption.
+将原 architecture 改为 flowchart，补 conceptual、multi-panel；用途为 mechanism、comparison、method-overview。可见核心是两个 token 更新过程，而非层级网络架构。预览未给双栏命名，不根据位置擅自称左栏为基线/训练、右栏为新方法/推理。版式为 two-column 与局部 feedback-loop；单栏为自上而下流程，该方向不在当前允许的布局枚举中，所以不伪标 left-to-right。
 
-Paper: https://aclanthology.org/2026.acl-long.336/
+适合借用为扩散生成、迭代填空、诊断修正或序列更新的过程对比。替换 token 分组/颜色角色、掩码位置、模型名、诊断模块、真实更新轨迹。颜色代表角色必须由用户确认，图本身不能证明蓝块是输入、橙块是某特定语义。参考没有 token 文本、概率、公式或实测数据，不为改绘添加。仅检查预览，未核正式会议版图号或全文算法；调色板为目测近似，未生成验证。
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+## 补充图号核实（指定作者版本）
+
+已直接查看官方 HTML 绑定图像，与本画廊预览对照，核实对应 **arXiv:2507.19081v2 · Figure 1**。证据页面：[arXiv:2507.19081v2](https://arxiv.org/html/2507.19081v2#S3.F1)。官方 SVG 与预览的两条 token 过程、8 个槽位的配色和掩码位置、Mask Predictor、Sufficiency Diagnosis Module、红色诊断弧箭头、图例和中间步骤虚线框一一对应。预览省去顶部 Training/Inference 与 Prompt/Argument/Response 标题；版面裁剪不构成另一算法图。
+
+这仅核实指定 arXiv 作者版本的图号对应关系；正式 ACL 会议版本图号未核实。现有图片来源、许可与冻结上游版本不变，未重新分发 arXiv 图像。没有阅读全文或测试改绘输出。

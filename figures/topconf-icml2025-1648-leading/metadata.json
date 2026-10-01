@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-1648-leading",
   "title": {
-    "zh": "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning · 首图",
-    "en": "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning"
+    "zh": "视觉问答与临床图思维的需求对照",
+    "en": "Visual question answering versus clinical graph-of-thought needs"
   },
   "paper": {
     "id": "topconf-icml2025-1648",
@@ -45,26 +45,57 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "teaser",
+    "primary_type": "conceptual",
     "types": [
+      "conceptual",
+      "multi-panel",
       "teaser"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "grid",
+      "left-to-right",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "teaser"
+      "临床推理",
+      "问题方案对照",
+      "能力需求矩阵",
+      "clinical reasoning",
+      "graph of thoughts",
+      "problem solution overview"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "white-background",
+      "rounded-row-panels",
+      "question-cards",
+      "node-link-reasoning-glyph",
+      "check-cross-matrix"
+    ],
+    "research_topics": [
+      "medical-reasoning",
+      "vision-language-models",
+      "graph-of-thought"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.577,
     "pixel_width": 593,
     "pixel_height": 376,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#C3E4F0",
+      "#F9E3D8",
+      "#CFB0E4",
+      "#DFF4C3",
+      "#F96662",
+      "#55C578"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -87,11 +118,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -99,11 +130,20 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "input_modality_label",
+      "easy_question",
+      "clinically_relevant_question",
+      "domain_knowledge_label",
+      "reasoning_graph",
+      "capability_statuses",
+      "user_relevance_statuses",
+      "task_legend"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -123,7 +163,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-1648-leading",
       "record_sha256": "cafc22cd8e6e0f77ded166cd3eac5e4e358fadf7000931495c11b74aab836366",
@@ -141,6 +181,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "5fd7fde9e1dd9465c076d4c65a0ae8e58cba996c9463b3e7c17c0bf302c5cff8"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "519f98306225f7a0efc56f24339814eecbe6c4396275ec377bdd2eb63bb3f364",
+      "basis": "published preview pixels",
+      "limitations": [
+        "仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。",
+        "约近似配色；改绘尚未生成或渲染验证。",
+        "医学影像缩略图的受试者/素材权限未在本次视觉文字检查中重审；改绘用获准影像或原创示意。",
+        "小图思维节点没有足够语义标注，不能补出医学因果关系。"
+      ]
+    }
   }
 }

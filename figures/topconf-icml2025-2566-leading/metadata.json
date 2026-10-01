@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-2566-leading",
   "title": {
-    "zh": "LipsNet++: Unifying Filter and Controller into a Policy Network · 首图",
-    "en": "LipsNet++: Unifying Filter and Controller into a Policy Network"
+    "zh": "强化学习控制器替换与动作平滑机制对照",
+    "en": "Reinforcement-learning controller replacement and action-smoothing comparison"
   },
   "paper": {
     "id": "topconf-icml2025-2566",
@@ -48,26 +48,50 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "conceptual",
     "types": [
-      "architecture"
+      "conceptual",
+      "teaser",
+      "multi-panel"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "mechanism"
+    ],
+    "layouts": [
+      "two-column",
+      "left-to-right",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "architecture"
+      "强化学习",
+      "控制器",
+      "动作平滑",
+      "机制对照",
+      "LipsNet"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "reference-guided",
+      "white-background"
+    ],
+    "research_topics": [
+      "reinforcement-learning",
+      "control",
+      "robotics"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.091,
     "pixel_width": 525,
     "pixel_height": 481,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#D4B8ED",
+      "#F9EDC7",
+      "#516C91"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -90,23 +114,28 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
+      "connections",
+      "language",
+      "layout_changes",
+      "method_name",
+      "output_format",
       "research_content",
       "true_data",
-      "layout_changes",
-      "language",
-      "output_format"
+      "user_owned_images",
+      "verified_scientific_labels"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -126,7 +155,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-2566-leading",
       "record_sha256": "ec2732b922ada7a6d528f8fe75033340143c5043dfb6860a1adc7371babb470e",
@@ -144,6 +173,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "8c7641ae0008880ec1e078f45d21968a20c06f731bde19d599e2586a23b17c27"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "4b1c13bbdf84cd67fe96387a6cbbddf8c02778d4b3417404b0f61e641abbe2c3",
+      "basis": "published preview pixels",
+      "limitations": [
+        "No original-resolution extraction or full-paper semantic audit",
+        "Figure number remains unverified in this visual annotation pass",
+        "Colors are approximations, not sampled author palette",
+        "Source preview has clipped text at left and cropped output cards at right"
+      ]
+    }
   }
 }

@@ -1,3 +1,7 @@
-# Agent handoff
+# 智能体任务：机器人训练到部署的精度、记忆与泛化 Teaser
 
-Read metadata.json and ATTRIBUTION.md, inspect the attached original image, and read the user's MY_TASK.md. The supplied prompt.md is a generic draft and analysis.md is a source record, not a reviewed visual specification. Produce your own visual inspection before adapting the reference. Keep paper provenance and license attribution with any redistributed original image.
+先读 MY_TASK.md、附带参考图、analysis.md、prompt.md、metadata.json 和 ATTRIBUTION.md。本参考的核心视觉结构见 analysis.md；用 MY_TASK 中的研究文字、真实数据、模块名称和科学关系替换来源内容，保留用户明确想借鉴的布局。
+
+若缺少必要的数据、公式或输入输出关系，只提出具体缺项，不猜测维度、实验结果或模块。没有实测曲线时只能画标明“示意”的符号图。图类与图号独立，本图对应 arXiv 2501.18564v4 的 Figure 1；不得声明已经核实正式会议版本图号。采用参考图配色时视为视觉近似；仅使用许可明确的自有图片或原创图标，不追描来源的品牌标志、截图和插画。
+
+输出可编辑 SVG / 矢量源和高分辨率预览；逐一核对箭头方向、科学标签、图例与灰度可读性，说明你替换了哪些内容。本 prompt 未经生成验证，第一次输出必须由用户核对科学正确性。引用来源图时保留 metadata.json 的许可和作者署名；改绘图明确为新图，不暗示原作者认可。

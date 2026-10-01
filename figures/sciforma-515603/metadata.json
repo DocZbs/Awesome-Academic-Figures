@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "sciforma-515603",
   "title": {
-    "zh": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy · 方法图",
-    "en": "ARTInp: CBCT-to-CT Image Inpainting and Image Translation in Radiotherapy"
+    "zh": "医学影像补全与翻译的双网络框架",
+    "en": "Two-network completion and translation framework"
   },
   "paper": {
     "id": "arxiv-2502-04898",
@@ -36,9 +36,9 @@
   },
   "source": {
     "kind": "figure",
-    "document": "unspecified",
-    "number": null,
-    "number_status": "dataset_figure_number_unresolved",
+    "document": "main",
+    "number": 2,
+    "number_status": "verified_arxiv_html_correspondence",
     "method": "hosted_dataset_figure",
     "caption": null,
     "index_url": "https://datasets-server.huggingface.co/rows?dataset=microsoft%2FSciFormaData-700K&config=generation_1024&split=train&offset=515600&length=100",
@@ -54,34 +54,61 @@
     "scope_claim": "Method figure hosted in a licensed dataset; exact figure number and main-paper/appendix scope are unresolved.",
     "asset_url": "https://datasets-server.huggingface.co/cached-assets/microsoft/SciFormaData-700K/--/b38211e94f25858388f860b6db0b596b3ff45f18/--/generation_1024/train/515603/image/image.jpg?Expires=1790835471&Signature=plNU317zwI9l0krfv5AM~p0AgkEhBAKYSfjJUSXD91leUVNZlnSadjwrC5H~xHaYoxE7J-Na1YW2fUrVLxaV5gUmaLizl~aDuKjkRH7jxxdEEN4YMiNtXue9LS7EKV7f3oxWcRHb7oUObMoViTXf9fQG1U4qy-xoDkX7IeA6yWV40yFXSbdK2w5qnTVU-6EYxi~lKEOKyFK6G247fgnb9oEU7btl5UvA6AM6iIO-AYGqsVrUw~DWFVEbJoozrbbh31bvpDOwPQM5vUmggy7DRD8B6PIJwAF9yJH~Fh6a7wdiw7Enwq3oLTSCNR6Ctz0qFVuYeXKA7p4IDx4dA9pCCg__&Key-Pair-Id=K3C0L9WB6U5DUC",
     "core_figure_slot": "unspecified-figure",
-    "external_record_sha256": "45c3ba49c3bf1b1cf6dee4250faadd710321429a6e25392d2b7f43f1c818e67d"
+    "external_record_sha256": "45c3ba49c3bf1b1cf6dee4250faadd710321429a6e25392d2b7f43f1c818e67d",
+    "number_version": "2502.04898v1",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2502.04898v1#S3.F2",
+      "version": "2502.04898v1",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_sha256": "c16f852b70d6463a6bd11472e6b46720caa209c1277fee0724e137d674d4bf90",
+      "preview_sha256": "9c15a25a934871cddeae504db36fa0a32879ff799754f528fffdb4801504edcd",
+      "limitations": "Published dataset asset retained; visual correspondence does not assert byte identity with the official HTML image."
+    }
   },
   "classification": {
     "primary_type": "architecture",
     "types": [
-      "architecture"
+      "architecture",
+      "flowchart"
     ],
     "purposes": [
-      "method-overview"
+      "method-overview",
+      "mechanism"
     ],
-    "layouts": [],
+    "layouts": [
+      "left-to-right",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "eess.IV",
-      "cs.AI",
-      "cs.CV"
+      "补全网络",
+      "翻译网络",
+      "机制图",
+      "医学影像",
+      "inpainting"
     ],
-    "status": "dataset_generated_labels",
+    "status": "visually_reviewed",
     "collection": "community-index",
-    "styles": [],
-    "research_topics": []
+    "styles": [
+      "reference-guided",
+      "white-background"
+    ],
+    "research_topics": [
+      "medical-imaging",
+      "image-inpainting",
+      "image-translation"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.75,
     "pixel_width": 1344,
     "pixel_height": 768,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#D9D9D9",
+      "#DE91E6",
+      "#000000"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -104,11 +131,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "dataset_generation_caption",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "dataset_generated_description_unreviewed",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -120,7 +147,8 @@
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -140,7 +168,7 @@
     "maintainer": "frozen_hosted_dataset_row_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "Hosted licensed dataset figure; exact numbering/body scope unresolved. Detailed source description is machine-generated, unreviewed and untested.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 2 correspondence verified in arXiv 2502.04898v1; only that version is confirmed.",
     "external_source_review": {
       "id": "sciforma-515603",
       "record_sha256": "45c3ba49c3bf1b1cf6dee4250faadd710321429a6e25392d2b7f43f1c818e67d",
@@ -158,6 +186,17 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "dc408a67c2526296d98e47f0598d1c1531216c7bcff659edbfa683ff9759fede"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "9c15a25a934871cddeae504db36fa0a32879ff799754f528fffdb4801504edcd",
+      "basis": "published preview and official HTML figure pixels",
+      "limitations": [
+        "No full-paper scientific audit or adaptation generation test",
+        "Colors approximate the preview",
+        "Figure 2 verified only in arXiv 2502.04898v1"
+      ]
+    }
   }
 }

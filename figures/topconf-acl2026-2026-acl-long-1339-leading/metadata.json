@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-acl2026-2026-acl-long-1339-leading",
   "title": {
-    "zh": "Why Are We Moral? An LLM -based Agent Simulation Approach to the Study of Moral Evolution · 首图",
-    "en": "Why Are We Moral? An LLM -based Agent Simulation Approach to the Study of Moral Evolution"
+    "zh": "MoRE / Social-Evol：道德类型、认知架构与社会演化环境",
+    "en": "MoRE / Social-Evol: moral types, cognitive architecture and evolving social environment"
   },
   "paper": {
     "id": "topconf-acl2026-2026-acl-long-1339",
@@ -33,8 +33,8 @@
   "source": {
     "kind": "figure",
     "document": "main",
-    "number": null,
-    "number_status": "source_index_leading_figure",
+    "number": 2,
+    "number_status": "verified_arxiv_html_correspondence",
     "caption": null,
     "index_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json",
     "version": "fbdff7620fc15b8429a4626aaf5b012f8dd08837",
@@ -46,30 +46,78 @@
     "method": "external_index_image",
     "asset_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/images/acl/final/acl2026-2026.acl-long.1339.jpg",
     "core_figure_slot": "leading-figure",
-    "external_record_sha256": "4219ccac2487cdaa5c6c535662ab7a0361ca5866b3a21d2f02e99a3aaec43a9c"
+    "external_record_sha256": "4219ccac2487cdaa5c6c535662ab7a0361ca5866b3a21d2f02e99a3aaec43a9c",
+    "number_version": "2509.17703v2",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2509.17703v2#S2.F2",
+      "version": "2509.17703v2",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_url": "https://arxiv.org/html/2509.17703v2/framework.png",
+      "official_image_sha256": "4887edcc5a638e650f4c81e31913458e56e66755c438e1306f907a641c9bc2b1",
+      "preview_sha256": "57c8a25f926c478ba8bda3d1ac91f76b12e480c26690866875a6e506c5f44960",
+      "matching_basis": "官方 v2 PNG 与预览上部 Moral Types/Reflection/Immediate Action Plan/Entity-based Memory/Perception 各模块、上下感知行动回路、下部两幅 Environment 场景、左下 Simulation Analysis Assistant 与 Temporal Dynamics 图标均一一对应。v1 Figure 1 只有环境概览，与该完整框架图不对应；v2 将该框架编号为 Figure 2。",
+      "limitations": [
+        "Final conference numbering not checked.",
+        "v1 Figure 1 does not match; the verified correspondence is specifically v2 Figure 2.",
+        "Visual correspondence, not byte identity; scaling and crop margins differ."
+      ],
+      "reviewed_at": "2026-10-01"
+    }
   },
   "classification": {
     "collection": "community-index",
     "primary_type": "architecture",
     "types": [
-      "architecture"
+      "architecture",
+      "flowchart",
+      "multi-panel"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "method-overview",
+      "mechanism",
+      "experimental-setup"
+    ],
+    "layouts": [
+      "nested-modules",
+      "feedback-loop"
+    ],
     "search_aliases": [
-      "framework"
+      "智能体认知架构",
+      "社会演化仿真",
+      "感知—行动循环",
+      "嵌套模块",
+      "agent cognitive architecture",
+      "social evolution simulation",
+      "perception–action loop",
+      "nested modules"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "嵌套圆角框 / nested rounded boxes",
+      "柔和模块填色 / pastel module fills",
+      "环境场景插画 / illustrated environment scenes",
+      "细黑箭头 / thin black connectors"
+    ],
+    "research_topics": [
+      "道德演化 / moral evolution",
+      "LLM 智能体仿真 / LLM-agent simulation",
+      "记忆与行动规划 / memory and action planning"
+    ]
   },
   "visual": {
     "aspect_ratio": 2.183,
     "pixel_width": 1098,
     "pixel_height": 503,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 3,
+    "palette_hex": [
+      "#F8F0D1",
+      "#E8DFF1",
+      "#DCEAF3",
+      "#F6E6D9",
+      "#E4EDDA",
+      "#365D76"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -92,11 +140,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -104,11 +152,19 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "agent_types",
+      "reflection_questions",
+      "planning_fields",
+      "memory_modules",
+      "perception_fields",
+      "environment_actions",
+      "simulation_outputs"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -128,7 +184,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 2 correspondence verified in arXiv arXiv:2509.17703v2; only that version is confirmed.",
     "external_source_review": {
       "id": "topconf-acl2026-2026-acl-long-1339-leading",
       "record_sha256": "4219ccac2487cdaa5c6c535662ab7a0361ca5866b3a21d2f02e99a3aaec43a9c",
@@ -146,6 +202,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "f8e1cca957e573b49c345464ee205e4f2d8c1de72a5e5adc68b013cf9f8bd57c"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "57c8a25f926c478ba8bda3d1ac91f76b12e480c26690866875a6e506c5f44960",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Initial classification used the 1098 × 503 published preview only; subsequent number verification inspected the specified official HTML graphic.",
+        "Tiny module placeholder text is partly abbreviated or illegible.",
+        "Scene art and human/animal icons are illustrative and do not establish quantitative behavior.",
+        "Number correspondence is verified only in arXiv:2509.17703v2; final conference numbering remains unverified."
+      ]
+    }
   }
 }

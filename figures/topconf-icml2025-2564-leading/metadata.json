@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-2564-leading",
   "title": {
-    "zh": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting · 首图",
-    "en": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting"
+    "zh": "线性注意力的VAR组合与网络结构展开",
+    "en": "VAR composition and architectural expansion of linear attention"
   },
   "paper": {
     "id": "topconf-icml2025-2564",
@@ -43,24 +43,57 @@
     "collection": "community-index",
     "primary_type": "architecture",
     "types": [
-      "architecture"
+      "architecture",
+      "multi-panel",
+      "conceptual"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "mechanism",
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "grid",
+      "nested-modules",
+      "left-to-right"
+    ],
     "search_aliases": [
-      "architecture"
+      "线性注意力",
+      "VAR展开",
+      "时间影响路径",
+      "linear attention",
+      "VAR composition",
+      "attention architecture detail"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "white-background",
+      "matrix-glyphs",
+      "pastel-attention-blocks",
+      "dashed-section-dividers",
+      "residual-connectors",
+      "rounded-detail-inset"
+    ],
+    "research_topics": [
+      "linear-attention",
+      "autoregressive-models",
+      "transformer-architecture"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.707,
     "pixel_width": 932,
     "pixel_height": 546,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 5,
+    "palette_hex": [
+      "#D5E6F7",
+      "#E4D5EA",
+      "#FFF0C2",
+      "#EDBCBA",
+      "#F2EDF6",
+      "#111111"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -83,11 +116,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -95,11 +128,24 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "time_indices",
+      "query_symbol",
+      "key_symbols",
+      "value_symbols",
+      "coefficient_matrices",
+      "output_symbol",
+      "temporal_paths",
+      "baseline_blocks",
+      "expanded_attention_blocks",
+      "normalization_operations",
+      "projection_labels",
+      "validated_equations"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -119,7 +165,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-2564-leading",
       "record_sha256": "8265b06600efd8eb10e46cdb93097d9a4f91a37c42e597a7fc9d2f7f1c422faf",
@@ -137,6 +183,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "d31f2be2121934a5d2323647c2e4b37bc5af59f6d2e165e1d1298fff2e98195e"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "c740f9b8f19cf85befb08b1cda1a1c6327ec6f2f686456abbb39e5af495d4f3e",
+      "basis": "published preview pixels",
+      "limitations": [
+        "仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。",
+        "约近似配色；改绘尚未生成或渲染验证。",
+        "路径计数、上下标和公式部分较小，不能按曲线数补数学证明。",
+        "l×、矩阵图标不确定真实层数/维度；实际投影与归一化定义需用户提供。"
+      ]
+    }
   }
 }

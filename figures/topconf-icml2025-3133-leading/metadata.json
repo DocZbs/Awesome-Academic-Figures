@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-3133-leading",
   "title": {
-    "zh": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data · 首图",
-    "en": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data"
+    "zh": "列嵌入、行交互与上下文预测的三阶段框架",
+    "en": "Column embedding, row interaction and in-context prediction architecture"
   },
   "paper": {
     "id": "topconf-icml2025-3133",
@@ -43,26 +43,49 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "teaser",
+    "primary_type": "architecture",
     "types": [
-      "teaser"
+      "architecture",
+      "flowchart"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "method-overview",
+      "mechanism"
+    ],
+    "layouts": [
+      "left-to-right",
+      "nested-modules"
+    ],
     "search_aliases": [
-      "teaser"
+      "表格学习",
+      "列嵌入",
+      "行交互",
+      "上下文学习",
+      "三阶段框架",
+      "TabICL"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "reference-guided",
+      "white-background"
+    ],
+    "research_topics": [
+      "tabular-learning",
+      "in-context-learning",
+      "transformer"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.87,
     "pixel_width": 1167,
     "pixel_height": 624,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 3,
+    "palette_hex": [
+      "#81D555",
+      "#F89A9B",
+      "#F39B25"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -85,23 +108,28 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
+      "connections",
+      "language",
+      "layout_changes",
+      "method_name",
+      "output_format",
       "research_content",
       "true_data",
-      "layout_changes",
-      "language",
-      "output_format"
+      "user_owned_images",
+      "verified_scientific_labels"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -121,7 +149,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-icml2025-3133-leading",
       "record_sha256": "a0fec8522619ad4fae77a72bf825e577d987252f39c51f61510dad599834c9e5",
@@ -139,6 +167,17 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "a6e924d3fc52c2d93f31d217ce9ab0b33b0dd01e04942175bc78ef68c294a416"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "16a5a56456fbf8fa15ef200fc191e5a3a35d73874c0ac87a6e2ff8df5348b821",
+      "basis": "published preview pixels",
+      "limitations": [
+        "No original-resolution extraction or full-paper semantic audit",
+        "Figure number remains unverified in this visual annotation pass",
+        "Colors are approximations, not sampled author palette"
+      ]
+    }
   }
 }

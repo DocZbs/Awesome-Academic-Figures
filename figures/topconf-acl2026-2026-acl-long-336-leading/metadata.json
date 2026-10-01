@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-acl2026-2026-acl-long-336-leading",
   "title": {
-    "zh": "Arg- LL a DA : Argument Summarization via Large Language Diffusion Models and Sufficiency-Aware Refinement · 首图",
-    "en": "Arg- LL a DA : Argument Summarization via Large Language Diffusion Models and Sufficiency-Aware Refinement"
+    "zh": "Arg-LLaDA：掩码生成与充分性感知细化的双栏过程对比",
+    "en": "Arg-LLaDA: side-by-side masked generation and sufficiency-aware refinement"
   },
   "paper": {
     "id": "topconf-acl2026-2026-acl-long-336",
@@ -29,8 +29,8 @@
   "source": {
     "kind": "figure",
     "document": "main",
-    "number": null,
-    "number_status": "source_index_leading_figure",
+    "number": 1,
+    "number_status": "verified_arxiv_html_correspondence",
     "caption": null,
     "index_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json",
     "version": "fbdff7620fc15b8429a4626aaf5b012f8dd08837",
@@ -42,30 +42,82 @@
     "method": "external_index_image",
     "asset_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/images/acl/final/acl2026-2026.acl-long.336.jpg",
     "core_figure_slot": "leading-figure",
-    "external_record_sha256": "34ebded7babc743cde4e42fb8f9ec16be89a283f8e0bc9d0e21f7b625206e108"
+    "external_record_sha256": "34ebded7babc743cde4e42fb8f9ec16be89a283f8e0bc9d0e21f7b625206e108",
+    "number_version": "2507.19081v2",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2507.19081v2#S3.F1",
+      "version": "2507.19081v2",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_url": "https://arxiv.org/html/2507.19081v2/arg_llada.svg",
+      "official_image_sha256": "d38283fbae2c75e5ab92436d978c2d6a9aaa7445cb86cd2aa31d7a452e76384a",
+      "preview_sha256": "95f3cb1ca68a0c829e427f534a1ee39fae38cfd69c95471e52f14e80c66e68f6",
+      "matching_basis": "官方 SVG 与预览的两条 token 过程、8 个槽位的配色和掩码位置、Mask Predictor、Sufficiency Diagnosis Module、红色诊断弧箭头、图例和中间步骤虚线框一一对应。预览省去顶部 Training/Inference 与 Prompt/Argument/Response 标题；版面裁剪不构成另一算法图。",
+      "limitations": [
+        "Final conference numbering not checked.",
+        "Visual correspondence, not byte identity: the gallery crop omits top training/inference and group headings present in the official SVG.",
+        "Official SVG was rendered with macOS Quick Look for visual comparison; source SVG SHA is retained, temporary render will be deleted."
+      ],
+      "reviewed_at": "2026-10-01"
+    }
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "flowchart",
     "types": [
-      "architecture"
+      "flowchart",
+      "conceptual",
+      "multi-panel"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "mechanism",
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "two-column",
+      "feedback-loop"
+    ],
     "search_aliases": [
-      "architecture"
+      "掩码生成流程",
+      "token 序列示意",
+      "充分性诊断",
+      "双栏过程对比",
+      "masked generation flow",
+      "token-sequence schematic",
+      "sufficiency diagnosis",
+      "side-by-side process comparison"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "矩形 token 条 / rectangular token strips",
+      "黑色括号与箭头 / black braces and arrows",
+      "虚线反馈标注 / dashed feedback annotations",
+      "灰色模块横条 / grey process bars"
+    ],
+    "research_topics": [
+      "语言扩散模型 / language diffusion models",
+      "论点摘要 / argument summarization",
+      "充分性感知细化 / sufficiency-aware refinement"
+    ]
   },
   "visual": {
     "aspect_ratio": 2.399,
     "pixel_width": 1125,
     "pixel_height": 469,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#A0BFFA",
+      "#7F9EE5",
+      "#7392C4",
+      "#CCDFF6",
+      "#FF7A44",
+      "#FFD452",
+      "#F2E8D2",
+      "#C74F78",
+      "#CCCCCC",
+      "#D9E7AF"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -88,11 +140,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -100,11 +152,18 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "sequence_blocks",
+      "left_mask_steps",
+      "right_refinement_steps",
+      "diagnosis_module",
+      "group_braces",
+      "token_color_roles"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -124,7 +183,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 1 correspondence verified in arXiv arXiv:2507.19081v2; only that version is confirmed.",
     "external_source_review": {
       "id": "topconf-acl2026-2026-acl-long-336-leading",
       "record_sha256": "34ebded7babc743cde4e42fb8f9ec16be89a283f8e0bc9d0e21f7b625206e108",
@@ -142,6 +201,20 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "67ccac494b579146434a93f8ebc5520dee6f10f03d26770cad60c9e256bc53ed"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "95f3cb1ca68a0c829e427f534a1ee39fae38cfd69c95471e52f14e80c66e68f6",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Initial classification used the 1125 × 469 published preview only; subsequent number verification inspected the specified official HTML graphic.",
+        "Top braces are unlabeled; their grouping semantics are not inferred.",
+        "Crossed rectangles are mask symbols, not failure markers.",
+        "The diagram contains no empirical scores, verified token strings or sequence-length specification.",
+        "Number correspondence is verified only in arXiv:2507.19081v2; final conference numbering remains unverified.",
+        "Gallery preview omits headings; the supplementary official SVG labels the columns Training and Inference."
+      ]
+    }
   }
 }

@@ -226,7 +226,7 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
         <button
           className="image-open"
           onClick={onOpen}
-          aria-label={`查看 Figure ${figure.source.number} 详情`}
+          aria-label={`查看 ${figureLabel(figure)} 详情`}
         >
           {img}
         </button>
@@ -261,7 +261,7 @@ export function FigureActions({
         icon={Star}
         className={`favorite-button ${favorite ? "is-favorite" : ""}`}
         aria-pressed={favorite}
-        aria-label={`${favorite ? "取消收藏" : "收藏"} Figure ${figure.source.number}`}
+        aria-label={`${favorite ? "取消收藏" : "收藏"} ${figureLabel(figure)}`}
         title={favorite ? "取消收藏" : "收藏"}
         onClick={() => onFavorite(figure.id)}
       >
@@ -272,8 +272,8 @@ export function FigureActions({
         className="icon-button hide-button"
         aria-label={
           hidden
-            ? `恢复展示 Figure ${figure.source.number}`
-            : `暂时隐藏 Figure ${figure.source.number}`
+            ? `恢复展示 ${figureLabel(figure)}`
+            : `暂时隐藏 ${figureLabel(figure)}`
         }
         title={hidden ? "恢复展示" : "暂时隐藏"}
         onClick={() => (hidden ? onRestore(figure.id) : onHide(figure.id))}

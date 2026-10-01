@@ -1,7 +1,14 @@
-# Draft adaptation instructions
+# Reference-specific adaptation prompt
 
-Generic reference-guided draft; no figure-specific layout, palette, or prompt generation has been reviewed.
+Create a reference-specific adaptation of the supplied Meta Agent Search diagram on a roughly 2:1 white canvas. Preserve the upper iterative loop and lower expanded archive examples. Use {{generator_name}}, {{candidate_descriptor}}, {{evaluation_process}}, {{archive_name}} and {{example_agent_designs}}; user-provided scientific content replaces every source example.
 
-```text
-Use the attached original image (Figure 1 / teaser (upstream leading-image claim; exact numbering unverified) from Automated Design of Agentic Systems) as a visual reference. First inspect the actual image and summarize its layout, panels, typography, connectors and visual hierarchy. Do not infer these from the paper title or index labels. Then adapt the useful visual conventions to {{research_content}}. Every module, label, relationship and numerical value must come from {{research_content}} and {{true_data}}. Do not copy the reference paper's results, names, photographs or third-party logos into the new work. Use {{layout_changes}}, {{language}} and {{output_format}} to determine the final editable deliverable. Describe any uncertainty before drawing; do not invent missing data.
-```
+=== UPPER SEARCH LOOP ===
+At upper-left place a white rounded box for the generator, with dark-teal outline and restrained gray shadow. Add a teal curved self-loop next to it only for the user-confirmed refinement operation, with a short external label. Route a thick black orthogonal connector upward, across the upper edge with generous top margin, then down into a candidate description at upper-right. Do not reproduce the clipped line at the top of the reference. The candidate should have a short heading and a pale-gray inset containing supplied fields such as motivation, candidate name and a genuine code excerpt or structured description. Use no fabricated executable code.
+
+Place the archive as a second rounded box at center-lower within the upper loop. A black return path runs from the candidate downward and left into the archive, labeled with {{evaluation_process}}. Another black path runs leftward from the archive and upward into the generator, labeled with the archive input. Maintain distinct arrows for candidate creation, evaluation/storage and archive feedback.
+
+=== LOWER EXPANDED ARCHIVE ===
+From the archive's lower corners draw thin gray dashed expansion lines to a wide pale-gray rectangular strip occupying the bottom third. Inside it arrange three separated rounded mini-panels for the supplied example designs; add an ellipsis between panels only if further examples exist. Each mini-panel must use the user's real internal node names and directed connections. The source's three different visual motifs may guide organization: a stacked peer-review path, a compact vertical analyzer/verifier path, and a fan-out/fan-in decomposition path. Keep each mini-panel caption below its border. Do not invent a multi-agent design to fill an unused position; reduce the panel count when necessary.
+
+=== STYLE AND OUTPUT ===
+Use black main-loop arrows, dark teal near #20677B, pale green near #DAEDD5, pale blue near #DAE8F0 and light gray outlines near #999999; colors are approximate preview observations. Keep the main rounded boxes large and readable, with smaller detail nodes aligned to a grid. Prefer editable vector output, preserve {{language}}, {{layout_changes}} and {{output_format}}, and leave safe margins on every edge. Do not copy original candidate names unless intentionally citing them. Use only supplied {{research_content}} and {{true_data}}, retain source attribution/license, and label the newly generated work as an adaptation, not a validated reproduction.

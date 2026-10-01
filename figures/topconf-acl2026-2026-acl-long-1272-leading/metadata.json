@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-acl2026-2026-acl-long-1272-leading",
   "title": {
-    "zh": "Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLM s · 首图",
-    "en": "Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLM s"
+    "zh": "Hetero-Designer：异构智能体协作的成本对比与连接建模概览",
+    "en": "Hetero-Designer: heterogeneous-agent comparison and connection-modeling overview"
   },
   "paper": {
     "id": "topconf-acl2026-2026-acl-long-1272",
@@ -46,26 +46,58 @@
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "architecture",
+    "primary_type": "conceptual",
     "types": [
-      "architecture"
+      "conceptual",
+      "multi-panel",
+      "architecture",
+      "teaser"
     ],
-    "purposes": [],
-    "layouts": [],
+    "purposes": [
+      "comparison",
+      "method-overview"
+    ],
+    "layouts": [
+      "two-column",
+      "left-to-right"
+    ],
     "search_aliases": [
-      "framework"
+      "概念概览",
+      "问题与改进",
+      "智能体成本对比",
+      "异构多智能体",
+      "conceptual overview",
+      "problem–solution overview",
+      "agent cost comparison",
+      "heterogeneous multi-agent systems"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "status": "visually_reviewed",
+    "styles": [
+      "手绘示意 / hand-drawn schematic",
+      "柔和分区底色 / pastel panel backgrounds",
+      "图标节点网络 / icon-based node networks",
+      "指标文字标注 / metric callouts"
+    ],
+    "research_topics": [
+      "异构多智能体系统 / heterogeneous multi-agent systems",
+      "连接建模 / connection modeling",
+      "语义表示 / semantic representations"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.218,
     "pixel_width": 597,
     "pixel_height": 490,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 2,
+    "palette_hex": [
+      "#F3F7FD",
+      "#F8E4D8",
+      "#DCF0D6",
+      "#F7DD65",
+      "#318F9C",
+      "#D2474B"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -88,11 +120,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -100,11 +132,18 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "comparison_query",
+      "agent_networks",
+      "verified_cost_metrics",
+      "representation_baseline",
+      "representation_proposal",
+      "connection_examples"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -124,7 +163,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Exact figure number remains unverified.",
     "external_source_review": {
       "id": "topconf-acl2026-2026-acl-long-1272-leading",
       "record_sha256": "c895bebd8915f34310a3218a2922a92dc192a5be3cdae088390c34897274b1d6",
@@ -142,6 +181,18 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "47133cdc27530ae1bdd03188405eb752b0d1637d5f05dbd2e2d29f2144714fe0"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "b32a321b9918a969610a47c59639132e90ba02cc121c80690f2a4d352c69fa32",
+      "basis": "published preview pixels",
+      "limitations": [
+        "Only the 597 × 490 published preview was inspected.",
+        "Small icon labels and exponents are not independently transcribed.",
+        "Original figure number and caption remain unverified.",
+        "Displayed savings are reference-paper annotations, not results for an adaptation."
+      ]
+    }
   }
 }

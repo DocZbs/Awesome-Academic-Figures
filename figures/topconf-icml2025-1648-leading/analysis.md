@@ -1,11 +1,9 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 视觉问答与临床图思维的需求对照
 
-Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning — ICML 2025.
+两个上下对照面板标(a)/(b)，共享 Knowledge?、Question Type?、LVLM works?、Clinicians’ Interest? 四列。上面(a)仅标Visual：灰度医学扫描缩略图经箭头连接两张问题卡，蓝卡可读为 What is the Modality/Organ?，浅桃卡为2-year Neurocognitive outcome；圆点分别浅绿和红。模型能力与临床兴趣列用相反的绿勾/红叉对应两种任务。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+下面(b)标Visual Clinical：影像旁增加头脑/领域知识图标，箭头进入浅桃色Clinical Graph of Thoughts卡。一排粉紫圆点通过直线/弧线走向右端红色圆点，右侧能力与兴趣两列均为绿勾。底部三色图例区分容易且临床无关的任务、临床/中间知识任务与复杂且临床重要的任务。节点小字不足以定义医学语义或精确边方向。
 
-The index supplied no caption.
+主类由teaser细化为conceptual，附加multi-panel；保留teaser辅助类型仅因为实际有“现状不足—方案概览”的(a)/(b)对照，而不是因为文件叫leading。用途为对比与方法介绍。没有给出内部算法或临床因果结构，不强贴mechanism。
 
-Paper: https://proceedings.mlr.press/v267/bao25b.html
-
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+可借鉴“容易回答不等于专家真正关心；加入领域知识重新组织推理”的概念矩阵。替换模态、问题、推理节点、领域知识和实际证据支持的能力/相关性判定。不能把勾叉搬成新方法成功证据，也不能复制原扫描作为自己的医疗样本；用已授权影像或原创抽象示意。配色近似参考，医学结论、正文图号和改绘效果均未验证。

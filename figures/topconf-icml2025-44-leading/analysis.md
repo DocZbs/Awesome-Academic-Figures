@@ -1,11 +1,11 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 静态视觉编码与预测视觉表征的机制对照
 
-Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations — ICML 2025.
+上下两条左到右路径，中间是粗虚线分隔。上方为单张观察图→Vision Encoder→二维特征网格；下方为视频帧叠和 Instruction→Video Diffusion Model 多个 Block→包含蓝色当前表征与橙色未来表征的时空网格，标有 Shape (T,H,W)。底部颜色图例将视觉编码器、当前表征、未来表征区分。它解释静态与预测表征的差异，适合机制/方法对照。T,H,W 仅是可见源图符号，不替用户确定张量维度。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+## 适合借鉴
 
-The index supplied no caption.
+借鉴分区比例、对照结构、标签位置与信息流；用自己的研究组件、示例和科学结论替换原论文内容。输入 MY_TASK.md 时说明想保留的布局以及必须保留的科学关系。
 
-Paper: https://proceedings.mlr.press/v267/hu25g.html
+## 核对范围
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+本次逐张查看已发布 preview.webp，核对图类、用途和可见布局。未阅读整篇论文，已通过官方 HTML 图注与图像核实 arXiv 2412.14803v2 的 Figure 1，正式会议版本的图号仍未独立核实；图中可见文字以外的科学细节不能补猜。配色为视觉近似，prompt 已逐图整理但尚未进行生成测试。原图来源、许可与署名以 metadata.json / ATTRIBUTION.md 为准。

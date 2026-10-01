@@ -1,11 +1,11 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 机器人训练到部署的精度、记忆与泛化 Teaser
 
-SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation — ICML 2025.
+左侧 Training Data 区域为三组叠放的演示帧与任务文本，经过 Train 箭头指向 SAM2Act 图标，再由 Deploy 箭头连接右侧 2×4 机器人场景序列。右侧用绿色 Precision、紫红 Memory、浅黄 Generalization 标注三类能力，圈和指示线定位场景中的关键对象。它展示输入演示与部署能力，而不是展开 SAM2 编码器/记忆模块；因此将原流程图标签补为 Teaser 主类。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+## 适合借鉴
 
-The index supplied no caption.
+借鉴分区比例、对照结构、标签位置与信息流；用自己的研究组件、示例和科学结论替换原论文内容。输入 MY_TASK.md 时说明想保留的布局以及必须保留的科学关系。
 
-Paper: https://proceedings.mlr.press/v267/fang25c.html
+## 核对范围
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+本次逐张查看已发布 preview.webp，核对图类、用途和可见布局。未阅读整篇论文，已通过官方 HTML 图注与图像核实 arXiv 2501.18564v4 的 Figure 1，正式会议版本的图号仍未独立核实；图中可见文字以外的科学细节不能补猜。配色为视觉近似，prompt 已逐图整理但尚未进行生成测试。原图来源、许可与署名以 metadata.json / ATTRIBUTION.md 为准。

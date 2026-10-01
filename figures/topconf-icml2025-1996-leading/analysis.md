@@ -1,11 +1,9 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 两种方法的三维场与截面热图对比
 
-CoPINN: Cognitive Physics-Informed Neural Networks — ICML 2025.
+该参考有明确裁剪问题：上半部保留大片空白、论文标题/作者行，标题左端被截断；不能把它当成干净图块。真正可复用的绘图位于下方，为两行三列网格。上行SPINN，下行CoPINN (Ours)，右端分别标(a)/(b)。每行左侧是带坐标轴与色条的三维立方体颜色场，中间/右侧为y=-1与y=0的截面热图，并各有独立色条。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+上行中间有规则亮点阵列，右侧多数深蓝；下行显示更暗/低对比纹理。上行色条约0.05、0.10，下行可读0.000、0.002、0.004。不同色标意味着不能单凭深浅判断谁更优。没有可读图注，不能确定颜色量是解、残差、绝对误差或别的量，也不推导科学结论。
 
-The index supplied no caption.
+原architecture明显错误：主类应为data，附加multi-panel，用途为comparison，布局grid。没有网络层、模块或处理箭头。面板计数2指两个标(a)/(b)的方法行组，其内有六个绘图单元，未据此推断论文Figure编号。
 
-Paper: https://proceedings.mlr.press/v267/duan25b.html
-
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+适合复用同一方法一行、同一视图一列的体场/截面比较。必须从用户真实数组生成体图和切片，替换方法名、切片位置、量纲、坐标与色标。共享色标需确认量可比；独立色标必须注明。prompt明确只借鉴下方网格并排除标题/作者/留白。裁图还需后续清理，视觉文字审核不等于源图已修复，改绘也未生成验证。

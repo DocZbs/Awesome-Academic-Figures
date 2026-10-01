@@ -2,8 +2,8 @@
   "schema_version": "0.3",
   "id": "topconf-icml2025-1666-leading",
   "title": {
-    "zh": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities · 首图",
-    "en": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    "zh": "五维任务复杂度与基准评测全景图",
+    "en": "Five-dimensional task complexity and benchmark overview"
   },
   "paper": {
     "id": "topconf-icml2025-1666",
@@ -35,8 +35,8 @@
   "source": {
     "kind": "figure",
     "document": "main",
-    "number": null,
-    "number_status": "source_index_leading_figure",
+    "number": 1,
+    "number_status": "verified_arxiv_html_correspondence",
     "caption": null,
     "index_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json",
     "version": "fbdff7620fc15b8429a4626aaf5b012f8dd08837",
@@ -48,30 +48,71 @@
     "method": "external_index_image",
     "asset_url": "https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/images/icml/final/icml2025-1666.jpg",
     "core_figure_slot": "leading-figure",
-    "external_record_sha256": "2aeb0c8ce5d4b19e5f280ed0e3ccd0753270045e982d3103df20f771d02179b9"
+    "external_record_sha256": "2aeb0c8ce5d4b19e5f280ed0e3ccd0753270045e982d3103df20f771d02179b9",
+    "number_version": "2506.08933v1",
+    "number_evidence": {
+      "url": "https://arxiv.org/html/2506.08933v1#S1.F1",
+      "version": "2506.08933v1",
+      "method": "official HTML caption plus direct visual correspondence",
+      "official_image_sha256": "6dfeffe66ad56c1e492f7acb39b647886786aa063329d28f4ec230c454c6e195",
+      "preview_sha256": "693adc8580e0741412b468fa1b8ee50bdd9d568b804d22edc36af4c7ec6b8942",
+      "limitations": "Correspondence verified in the specified arXiv version; final proceedings numbering not checked."
+    }
   },
   "classification": {
     "collection": "community-index",
-    "primary_type": "conceptual",
+    "primary_type": "multi-panel",
     "types": [
+      "multi-panel",
+      "taxonomy",
+      "data",
       "conceptual"
     ],
-    "purposes": [],
-    "layouts": [],
-    "search_aliases": [
-      "taxonomy"
+    "purposes": [
+      "dataset-overview",
+      "method-overview",
+      "comparison"
     ],
-    "status": "source_index_labels_unverified",
-    "styles": [],
-    "research_topics": []
+    "layouts": [
+      "grid",
+      "radial",
+      "nested-modules"
+    ],
+    "search_aliases": [
+      "多维基准",
+      "任务复杂度",
+      "中心轮盘",
+      "radial taxonomy",
+      "benchmark overview"
+    ],
+    "status": "visually_reviewed",
+    "styles": [
+      "white-background",
+      "colored-region-outlines",
+      "radial-category-wheel",
+      "embedded-charts"
+    ],
+    "research_topics": [
+      "virtual-agents",
+      "benchmarking",
+      "task-complexity"
+    ]
   },
   "visual": {
     "aspect_ratio": 1.446,
     "pixel_width": 1254,
     "pixel_height": 867,
-    "panel_count": null,
-    "palette_hex": [],
-    "palette_source": "not_analyzed"
+    "panel_count": 5,
+    "palette_hex": [
+      "#527E39",
+      "#B9211A",
+      "#D4AF1A",
+      "#5795C0",
+      "#C5E8B5",
+      "#F8D6D5",
+      "#FFF2BA"
+    ],
+    "palette_source": "preview_visual_approximation"
   },
   "assets": {
     "preview": "preview.webp",
@@ -94,11 +135,11 @@
   ],
   "reuse": {
     "reference_available": true,
-    "prompt_origin": "generic_reference_guided_draft",
+    "prompt_origin": "reference_visual_reconstruction",
     "prompt_language": "en",
-    "prompt_version": "0.3",
-    "prompt_status": "draft",
-    "analysis_status": "source_record_only",
+    "prompt_version": "0.4",
+    "prompt_status": "reviewed",
+    "analysis_status": "visual_reviewed",
     "code_status": "unavailable",
     "adaptation_status": "untested",
     "variables": [
@@ -106,11 +147,22 @@
       "true_data",
       "layout_changes",
       "language",
-      "output_format"
+      "output_format",
+      "benchmark_name",
+      "complexity_dimensions",
+      "difficulty_levels",
+      "capability_groups",
+      "task_graph",
+      "task_instruction",
+      "construction_steps",
+      "platform_categories",
+      "scenario_categories",
+      "evaluation_series"
     ],
     "validation": {
       "visual_extraction": "source_index_verified",
-      "adaptation_generation": "not_tested"
+      "adaptation_generation": "not_tested",
+      "visual_annotation": "reviewed"
     }
   },
   "rights": {
@@ -130,7 +182,7 @@
     "maintainer": "official_publisher_metadata_validator",
     "checked_at": "2026-10-01",
     "collected_at": "2026-10-01",
-    "notes": "External image and numbering reviewed; source labels unverified; visual analysis absent; prompt is a generic draft.",
+    "notes": "Published preview visually reviewed; specific structure and adaptation prompt rewritten. Original source-index audit trail is retained below. Adaptation generation remains untested. Figure 1 correspondence verified in arXiv 2506.08933v1; only that version is confirmed.",
     "external_source_review": {
       "id": "topconf-icml2025-1666-leading",
       "record_sha256": "2aeb0c8ce5d4b19e5f280ed0e3ccd0753270045e982d3103df20f771d02179b9",
@@ -148,6 +200,19 @@
       "asset_binding_method": "immutable_source_index_download",
       "asset_sha256": "d1ec341deeab9f7fe87d4a14937057088e9330b0979e5a8e5f9f7b2ac5c8178e"
     },
-    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag."
+    "award_matching": "Exact normalized title match to verified official-source award inventory; no match means no award tag.",
+    "visual_review": {
+      "reviewer": "Codex visual inspection",
+      "reviewed_at": "2026-10-01",
+      "preview_sha256": "693adc8580e0741412b468fa1b8ee50bdd9d568b804d22edc36af4c7ec6b8942",
+      "basis": "published preview pixels",
+      "limitations": [
+        "仅核对现有预览，未读全文、核对正文图号或验证原分辨率裁图。",
+        "约近似配色；改绘尚未生成或渲染验证。",
+        "小字和部分数字不足以逐字可靠转录，不据此推断统计口径。",
+        "含多个商业软件/模型标志；改绘应用原创通用图标，原许可字段未重新审核。",
+        "Figure 1 verified in arXiv 2506.08933v1; final proceedings numbering not independently checked."
+      ]
+    }
   }
 }

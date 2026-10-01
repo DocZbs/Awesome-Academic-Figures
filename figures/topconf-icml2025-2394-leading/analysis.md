@@ -1,11 +1,11 @@
-# Source record: Figure 1 / teaser (upstream leading-image claim; exact numbering unverified)
+# 神经观测与干预的记录、动力轨迹和图模型对照
 
-Identifying Neural Dynamics Using Interventional State Space Models — ICML 2025.
+图按A、B、C三列排列，用浅灰竖向虚线隔开，上下对照正常观测与刺激条件。A列Neural Recordings含灰色脑示意、状态节点/边与多个放电栅格条；下行用蓝闪电和栅格中的蓝色窗口表示Stimulation。横轴Time可读，但这些栅格是否为实测记录不能仅凭图形确认。
 
-This record was imported from an external figure index. No figure-specific visual analysis has been written. Labels inherited from the index are retrieval hints, not a verified description of the image.
+B列上方是潜在活动空间的向量场和闭合观测轨迹，下方在相似空间中叠加蓝/绿干预轨迹，并有Hypothesis 1 / Hypothesis 2图例及刺激闪电。小三轴标Neural State Space。对照说明刺激可使轨迹与候选动力行为产生区别，而不代表哪个假说已被实验确认。
 
-The index supplied no caption.
+C列上方Observational Graphical Model沿时间排输入u、状态x、观测y层；灰/白节点与箭头表示联系，左侧有{A,B}、{θ}等参数。下方Interventional Graphical Model展开分量、用红叉/红字标干预相关项。部分小上标和边不够清晰，不能按预览补参数定义、维度或边移除规则。
 
-Paper: https://proceedings.mlr.press/v267/nejatbakhsh25a.html
+主要类型由architecture细化为multi-panel，附加conceptual和architecture。记录、潜在动力和形式图模型相互对应，观察/干预对模型内联系的作用实际可见，所以mechanism用途有依据，另有comparison/method-overview。三列上下对应的grid和左到右阅读关系均可见，但三列不是串行处理流水线。
 
-Index: https://raw.githubusercontent.com/qwdwqfwq/topconf-paper-figure-gallery/fbdff7620fc15b8429a4626aaf5b012f8dd08837/data/figures.json
+可复用“记录/操作—潜在动态—形式模型”的三视角说明。须提供通道、刺激、假说、轨迹与真实变量/边，不能只换标题；没有真数据时标示概念示意，不冒充测量。灰度主体、蓝绿干预强调与红色改变边能保持视觉层次。正文图号、全文结论及改绘结果未验证。

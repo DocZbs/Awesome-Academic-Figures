@@ -84,7 +84,7 @@ The catalog is the authority for counts, venue and year filters. Assets may live
 
 All approved figures share one gallery. Awards are evidence-backed paper tags and
 an optional filter, never a prerequisite for inclusion. Imported leading images
-without verified numbering are labeled “论文首图 / Teaser”; Figure 1/2 filters
+without verified numbering are labeled “论文首图 · 图号待核”; Figure 1/2 filters
 include only known numbers. Source-index checking and individual visual checking
 are distinct public states; generic adaptation prompts remain explicitly drafts.
 Long analysis/prompt/agent texts load only for a detail view or selected export.
@@ -107,3 +107,9 @@ kind. The recommender strictly restricts candidates to the selected kind using
 recorded type/purpose tags; an unknown figure number or Figure 1 is not evidence
 of a Teaser. Empty kinds/topics have recovery text and never silently backfill
 other kinds. Result reasons and exported task brief retain the selected kind.
+
+## Figure genres and version-specific numbering
+
+Teaser 图, 机制图 and 方法框架图 are first-class graphic navigation labels. Mechanism uses the recorded mechanism-purpose tag; neither Figure 1 nor an upstream leading slot implies Teaser. Figure 1/2 is a separate paper-number filter. Counts for each advanced filter clear only that same field while preserving query, graphic category, other filters and favorites/hidden scope, so checking Figure 1 still lets a reader see how many Figure 2 references they can add.
+
+A newly verified arXiv correspondence uses an arXiv badge in the figure label, an explicit number_version and official HTML evidence in detail/export. Conference paper records retain their publisher source and license; the detail states when final proceedings numbering remains unchecked. Historical source-index audit trails remain intact, while current visual_review records state the new annotation coverage and limits. Prompts remain generation-untested.
