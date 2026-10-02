@@ -26,7 +26,7 @@ Great research deserves a clear figure. Explore Teasers, method architectures, m
 <h2 align="center">🎬 Demo</h2>
 
 <table align="center">
-<tr><td width="560">
+<tr><td width="720">
 
 https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b
 
