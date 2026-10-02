@@ -23,7 +23,7 @@ Refresh these files when the interface materially changes. Do not upscale compre
 
 ## English video walkthrough
 
-Both READMEs show a compact GitHub-native inline video player after the introductory paragraph. Only the Demo / 演示 heading accompanies it. The asset URL is placed in a single 560-pixel table cell so the desktop player is about 530 pixels wide and remains responsive on mobile. The GitHub player requires a visible filename header; its display name is shortened to `Demo.mp4`. GitHub owns the media controls and initially mutes embedded videos; viewers can unmute in the player.
+Both READMEs show a compact GitHub-native inline video player after the introductory paragraph. The Demo / 演示 heading and the compact player are centered using GitHub-supported HTML alignment attributes. The asset URL is placed in a single 560-pixel table cell so the desktop player is about 530 pixels wide and remains responsive on mobile. The GitHub player requires a visible filename header; its display name is shortened to `Demo.mp4`. GitHub owns the media controls and initially mutes embedded videos; viewers can unmute in the player.
 
 The attachment is `https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b`, uploaded directly with the token-authenticated GitHub user-attachments API used by GitHub CLI. No issue or comment was created for the upload. Its content is the same approved English H.264/AAC walkthrough in `public/media/walkthrough.en.mp4`; Pages continues to serve the original asset. README footer links preserve [video attribution](media/walkthrough-sources.md); [English captions](media/walkthrough.en.srt) remain in the media documentation.
 

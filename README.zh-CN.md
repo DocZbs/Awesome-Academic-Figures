@@ -23,9 +23,9 @@
 
 好研究，值得一张好图。这里收集会议、期刊与 arXiv 论文中的 Teaser、方法框架、机制与实验图。找到喜欢的表达，把图像、结构描述和 prompt 连同自己的研究任务一起交给绘图智能体，为你的研究找到更精准优雅的表达。
 
-## 🎬 演示
+<h2 align="center">🎬 演示</h2>
 
-<table>
+<table align="center">
 <tr><td width="560">
 
 https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b

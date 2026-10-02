@@ -23,9 +23,9 @@
 
 Great research deserves a clear figure. Explore Teasers, method architectures, mechanisms and experiments from conferences, journals and arXiv. Save the expression that clicks, then take its image, structural notes and prompt to your drawing agent—with your own research brief.
 
-## 🎬 Demo
+<h2 align="center">🎬 Demo</h2>
 
-<table>
+<table align="center">
 <tr><td width="560">
 
 https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b
