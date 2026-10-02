@@ -23,6 +23,20 @@
 
 好研究，值得一张好图。这里收集会议、期刊与 arXiv 论文中的 Teaser、方法框架、机制与实验图。找到喜欢的表达，把图像、结构描述和 prompt 连同自己的研究任务一起交给绘图智能体，为你的研究找到更精准优雅的表达。
 
+## 🎬 86 秒，看懂怎么用
+
+搜索、选图、整理项目，再把完整参考包交给你的绘图智能体。
+
+<a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4">
+  <img src="docs/assets/walkthrough-cover.png" width="100%" alt="点击观看 Awesome Academic Figures 画廊与智能体使用演示" />
+</a>
+<p align="center">
+  <a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4"><strong>▶ 播放使用演示</strong></a><br />
+  <sub>86 秒 · 英文解说 · 1080p</sub>
+</p>
+
+[英文字幕](docs/media/walkthrough.en.srt) · [视频来源与署名](docs/media/walkthrough-sources.md)
+
 ## 🔎 找到适合你的表达
 
 先选想画的图类，再沿着 [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl)、[World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model) 或 [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl) 逛。每张图可以带多个研究主题标签，让你顺着想法之间的联系找到参考。

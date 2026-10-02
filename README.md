@@ -23,6 +23,20 @@
 
 Great research deserves a clear figure. Explore Teasers, method architectures, mechanisms and experiments from conferences, journals and arXiv. Save the expression that clicks, then take its image, structural notes and prompt to your drawing agent—with your own research brief.
 
+## 🎬 See it in action
+
+Search, choose a figure, organize your project, and hand a complete reference pack to your drawing agent.
+
+<a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4">
+  <img src="docs/assets/walkthrough-cover.png" width="100%" alt="Watch the Awesome Academic Figures gallery and agent workflow" />
+</a>
+<p align="center">
+  <a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4"><strong>▶ Watch the walkthrough</strong></a><br />
+  <sub>86 seconds · English narration · 1080p</sub>
+</p>
+
+[English subtitles](docs/media/walkthrough.en.srt) · [Sources & credits](docs/media/walkthrough-sources.md)
+
 ## 🔎 Find an expression that fits
 
 Start with the kind of figure you want to draw. Follow a topic such as [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl), [World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model) or [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl). A figure can have several research tags, so you can explore the connections between ideas.
