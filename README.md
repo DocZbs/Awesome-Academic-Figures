@@ -6,7 +6,8 @@
   <p>为你的研究找到更精准优雅的表达</p>
   <p>
     <a href="https://doczbs.github.io/Awesome-Academic-Figures/">打开画廊 ↗</a> ·
-    <a href="docs/USAGE.md">使用指南</a> ·
+    <a href="docs/USAGE.md">给研究者</a> ·
+    <a href="AGENTS.md">给智能体</a> ·
     <a href="docs/SEARCH_AND_TAGS.md">搜索与标签</a> ·
     <a href="CONTRIBUTING.md">参与贡献</a>
   </p>
@@ -39,18 +40,27 @@
 ## 挑选 → 获得灵感 → 交给智能体
 
 1. **找到表达方式**：按图形类型浏览，或用研究主题检索。上传自己的 PDF、TXT、Markdown，也可以粘贴摘要与方法找参考。
-2. **为项目收集灵感**：创建或选择项目，点击「添加到项目」；同一张图可以加入多个独立的项目参考板。也可以先收藏，暂时隐藏的图可以恢复。
+2. **为项目收集灵感**：在图像上点击「加入项目」，明确选择一个或多个项目；同一张图可以加入多个独立的项目参考板。也可以先收藏，暂时隐藏的图可以恢复。
 3. **带走参考包**：填写自己的绘图任务，下载图片、来源、结构描述与 prompt。智能体使用你的模块、关系和真实数据重新绘制。
 
 论文匹配在浏览器内完成，文件和文字不上传到匹配服务。项目名称、说明、参考图引用与收藏留在当前浏览器；图片按需从 GitHub 加载。详见[使用指南](docs/USAGE.md)。
 
-## 给智能体的入口
+## 与智能体一起选图
 
-- [研究主题索引 JSON](https://doczbs.github.io/Awesome-Academic-Figures/research-tags.json)：稳定 tag ID、别名、图 ID、论文链接和匹配依据。
-- [完整画廊目录 JSON](https://doczbs.github.io/Awesome-Academic-Figures/catalog.json)：分类、布局、来源、许可、文件地址与核验状态。
-- [检索示例与字段说明](docs/SEARCH_AND_TAGS.md)：交集筛选、元数据证据和 Python 示例。
+README 面向研究者；智能体从 [AGENTS.md](AGENTS.md) 开始。你可以把研究方向、想画的图类和这份指南交给 agent，让它检索候选、检查来源，再为你的项目挑选参考图。
 
-这些是可直接读取的静态索引。项目参考包的 `PROJECT.json` 提供项目名称、说明、绘图任务、图像清单与来源链接，便于智能体接手。每张图的 `metadata.json` 也包含同一套主题标签与证据，方便智能体继续筛选和组织素材。
+**我的项目 → 项目与智能体** 可以导出轻量的 `aaf-projects.json`。智能体通过共用检索逻辑的 CLI 新建和配置项目、添加或移除参考图，再把 JSON 交还。导入前展示新增 / 更新的项目供你核对，导入后继续在参考板中查看和调整。
+
+- [智能体操作指南](AGENTS.md)：命令、检索、项目格式、核验与操作边界。
+- [能力清单](https://doczbs.github.io/Awesome-Academic-Figures/agent.json) 与 [轻量入口](https://doczbs.github.io/Awesome-Academic-Figures/llms.txt)：便于智能体发现接口。
+- [图目录](https://doczbs.github.io/Awesome-Academic-Figures/catalog.json)、[主题索引](https://doczbs.github.io/Awesome-Academic-Figures/research-tags.json) 和 [项目格式](https://doczbs.github.io/Awesome-Academic-Figures/project-schema.json)：机器可读的数据契约。
+
+```sh
+node scripts/agent.mjs search --query "rl world model" --type mechanism --limit 12
+node scripts/agent.mjs project list --store aaf-projects.json
+```
+
+项目配置只包含名称、说明和图像 ID；图库图片按需读取。当前采用静态索引、CLI 与文件交接，项目保存在浏览器或你的配置文件中。智能体操作不需要模拟点击网页，也没有后台自动执行或账号同步。
 
 ## 来源与核验
 

@@ -153,6 +153,7 @@ export function Dialog({
       aria-labelledby={titleId}
       onCancel={(event) => {
         event.preventDefault();
+        event.stopPropagation();
         if (!busy) onClose();
       }}
     >
@@ -196,24 +197,37 @@ export function Feedback({ message, undo, onDismiss, inline = false }) {
 }
 export function FigureImage({ figure, full = false, className = "", onOpen }) {
   const [failed, setFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const imageRef = useRef(null);
   const [version, setVersion] = useState(0);
   useEffect(() => {
     setFailed(false);
+    setLoaded(
+      Boolean(imageRef.current?.complete && imageRef.current?.naturalWidth),
+    );
     setVersion(0);
   }, [figure.id]);
   const img = (
     <img
+      ref={imageRef}
       src={`${assetUrl(figure, full ? "reference" : "preview")}?v=${version}`}
       width={figure.visual.pixel_width}
       height={figure.visual.pixel_height}
       alt={`${figure.paper.title} 的 ${figureLabel(figure)}：${figure.title.zh}`}
       loading="lazy"
       decoding="async"
+      onLoad={() => setLoaded(true)}
       onError={() => setFailed(true)}
     />
   );
   return (
     <div className={`figure-media ${className}`}>
+      {!failed && !loaded && (
+        <span className="figure-loading" role="status">
+          <span className="loader" aria-hidden="true" />
+          <span className="sr-only">正在加载图像</span>
+        </span>
+      )}
       {failed ? (
         <div className="image-error">
           <ImageOff size={25} />
@@ -222,6 +236,7 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
             icon={RotateCcw}
             onClick={() => {
               setFailed(false);
+              setLoaded(false);
               setVersion((value) => value + 1);
             }}
           >
@@ -252,18 +267,20 @@ export function FigureActions({
   onHide,
   onRestore,
   compact = false,
-  projectName = "当前项目",
+  projectCountFor,
 }) {
   return (
     <div className={`figure-actions ${compact ? "compact" : ""}`}>
       <Button
         icon={selected ? Check : Plus}
         variant={selected ? "selected" : "neutral"}
-        aria-pressed={selected}
-        title={`${selected ? "从项目移出" : "添加到项目"}：${projectName}`}
+        aria-haspopup="dialog"
+        title="选择要加入的项目"
         onClick={() => onSelect(figure.id)}
       >
-        {selected ? "已加入项目" : "添加到项目"}
+        {selected
+          ? `已加入 ${projectCountFor?.(figure.id) || 1} 个项目`
+          : "加入项目"}
       </Button>
       <Button
         icon={Star}

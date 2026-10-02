@@ -1,8 +1,38 @@
-import React, { useEffect, useRef, useState } from "react";
-import { FolderOpen, Plus, Settings2, Download, X } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import {
+  Plus,
+  ArrowUpRight,
+  ArrowLeft,
+  Download,
+  Pencil,
+  FolderOpen,
+  Images,
+  X,
+  FileJson,
+} from "lucide-react";
 import { Button, Dialog, FigureImage, Feedback } from "./ui.jsx";
-import { figureLabel } from "./gallery.js";
+import { figureDisplayTitle, figureLabel, assetUrl } from "./gallery.js";
+import ProjectExchange from "./ProjectExchange.jsx";
+import ProjectForm from "./ProjectForm.jsx";
 
+export function ProjectCover({ project, figures, small = false }) {
+  const refs = project.figureIds
+    .map((id) => figures.find((f) => f.id === id))
+    .filter(Boolean)
+    .slice(0, 3);
+  return (
+    <span
+      className={`project-cover ${small ? "small" : ""}`}
+      aria-hidden="true"
+    >
+      {refs.length ? (
+        refs.map((f) => <img key={f.id} src={assetUrl(f, "preview")} alt="" />)
+      ) : (
+        <FolderOpen size={small ? 20 : 26} />
+      )}
+    </span>
+  );
+}
 export default function ProjectPanel({
   open,
   intent,
@@ -14,200 +44,267 @@ export default function ProjectPanel({
   onExport,
 }) {
   const [drafts, setDrafts] = useState({});
-  const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-  const nameRef = useRef(null);
-  useEffect(() => {
-    if (open && intent === "create") nameRef.current?.focus();
-  }, [open, intent]);
+  const [limit, setLimit] = useState(12);
+  const [exchange, setExchange] = useState(false);
   const project = workspace.activeProject;
-  const key = intent === "create" ? "new" : project.id;
-  const draft =
-    drafts[key] ||
-    (intent === "create"
-      ? { name: "", description: "" }
-      : { name: project.name, description: project.description });
+  const key = intent === "create" ? "new" : project?.id;
+  const draft = drafts[key] || {
+    name: intent === "create" ? "" : project?.name || "",
+    description: intent === "create" ? "" : project?.description || "",
+  };
   const dirty =
     intent === "create"
       ? Boolean(draft.name || draft.description)
-      : draft.name !== project.name ||
-        draft.description !== project.description;
-  function setField(field, value) {
-    setDrafts((old) => ({ ...old, [key]: { ...draft, [field]: value } }));
-    setError("");
-  }
-  function save(event) {
-    event.preventDefault();
-    if (!draft.name.trim()) {
-      setError("请为项目起一个名字。");
-      nameRef.current?.focus();
-      return;
-    }
-    try {
-      if (intent === "create")
-        workspace.onCreated(
-          workspace.createProject(draft.name.trim(), draft.description),
-        );
-      else
-        workspace.configureProject(
-          project.id,
-          draft.name.trim(),
-          draft.description,
-        );
-      setDrafts((old) => {
-        const next = { ...old };
-        delete next[key];
-        return next;
-      });
-      setMessage(
-        intent === "create"
-          ? "项目已创建，可以开始添加参考图。"
-          : "项目配置已保存。",
-      );
-    } catch {
-      setError("项目未能更新，填写的内容已保留，请重试。");
-    }
+      : draft.name !== project?.name ||
+        draft.description !== project?.description;
+  useEffect(() => {
+    setLimit(12);
+    setMessage("");
+  }, [project?.id, intent]);
+  function save(name, description) {
+    if (intent === "create") workspace.createProject(name, description);
+    else workspace.configureProject(project.id, name, description);
+    setDrafts((old) => {
+      const next = { ...old };
+      delete next[key];
+      return next;
+    });
+    workspace.onCreated();
+    setMessage(intent === "create" ? "项目已创建。" : "项目已更新。");
   }
   if (!open) return null;
+  const editing = intent !== "board";
   return (
     <Dialog
-      title={intent === "create" ? "新建项目参考板" : "项目参考板"}
-      eyebrow="YOUR RESEARCH PROJECT"
+      title="我的项目"
+      eyebrow="FIGURE COLLECTIONS"
+      className="projects-workspace"
       onClose={onClose}
-      className="project-dialog"
     >
-      <div className="project-panel-heading">
-        <label htmlFor="panel-project">当前项目</label>
-        <select
-          id="panel-project"
-          value={project.id}
-          onChange={(event) => {
-            workspace.selectProject(event.target.value);
-            workspace.onCreated();
-            setMessage("");
-            setError("");
-          }}
-        >
-          {workspace.projects.map((p) => (
-            <option key={p.id} value={p.id}>
-              {p.name} · {p.figureIds.length} 幅图
-            </option>
-          ))}
-        </select>
-        <Button icon={Plus} onClick={workspace.onCreate}>
-          新建项目
-        </Button>
-      </div>
-      <details className="project-settings" open={intent === "create"}>
-        <summary>
-          <Settings2 size={16} /> 项目配置{dirty && <span>有未保存修改</span>}
-        </summary>
-        <form noValidate onSubmit={save}>
-          <label htmlFor="project-name">
-            项目名称 <span>必填</span>
-          </label>
-          <input
-            id="project-name"
-            ref={nameRef}
-            autoFocus={intent === "create"}
-            maxLength={80}
-            value={draft.name}
-            onChange={(event) => setField("name", event.target.value)}
-            aria-invalid={Boolean(error)}
-            aria-describedby={error ? "project-error" : undefined}
-          />
-          <label htmlFor="project-description">项目说明</label>
-          <textarea
-            id="project-description"
-            className="resize-none"
-            rows={3}
-            maxLength={2000}
-            value={draft.description}
-            onChange={(event) => setField("description", event.target.value)}
-            placeholder="研究方向，以及希望借鉴的图形表达"
-          />
-          {error && (
-            <p id="project-error" className="field-error" role="alert">
-              {error}
-            </p>
-          )}
-          {dirty && (
-            <p className="project-note">
-              关闭窗口会保留本次页面的配置草稿，点击保存才更新项目。
-            </p>
-          )}
-          <Button type="submit" variant="primary">
-            {intent === "create" ? "创建项目" : "保存项目配置"}
-          </Button>
-        </form>
-      </details>
-      {storageWarning && (
-        <p className="notice" role="status">
-          {storageWarning}
-        </p>
-      )}
-      <Feedback message={message} inline />
-      {intent !== "create" && (
-        <>
-          <div className="project-board-heading">
-            <div>
-              <h3>{project.name}</h3>
-              <p>{project.description || "为这个项目收集有启发的参考图。"}</p>
-            </div>
-            <span>{project.figureIds.length} 幅参考图</span>
+      <div className="projects-layout">
+        <aside className="projects-rail" aria-label="项目导航">
+          <div className="projects-rail-title">
+            <span>项目参考板</span>
+            <span>{workspace.projects.length}</span>
           </div>
-          {!project.figureIds.length ? (
-            <div className="project-empty">
-              <FolderOpen size={30} />
-              <h3>从第一张参考图开始</h3>
-              <p>回到画廊，点击「添加到项目」。</p>
-              <Button onClick={onClose}>继续找图</Button>
-            </div>
-          ) : (
-            <div className="project-board-grid">
-              {project.figureIds.map((id) => {
-                const figure = figures.find((f) => f.id === id);
-                return (
-                  <article key={id}>
-                    {figure ? (
-                      <>
-                        <FigureImage
-                          figure={figure}
-                          className="project-preview"
-                          onOpen={() => onOpenFigure(id)}
-                        />
-                        <h4>{figure.paper.title}</h4>
-                        <small>{figureLabel(figure)}</small>
-                      </>
-                    ) : (
-                      <p>这幅参考图已不在当前图库中。</p>
-                    )}
-                    <Button
-                      icon={X}
-                      onClick={() => workspace.toggleFigure(id)}
-                      aria-label={`从项目移除 ${figure?.paper.title || id}`}
-                    >
-                      移出参考板
-                    </Button>
-                  </article>
-                );
-              })}
-            </div>
-          )}
-          <div className="project-panel-footer">
-            <p>
-              项目名称、说明和图像引用仅保存在当前浏览器。上传的论文文字不会自动保存。
-            </p>
-            <Button
-              icon={Download}
-              variant="primary"
-              disabled={!figures.some((f) => project.figureIds.includes(f.id))}
-              onClick={onExport}
-            >
-              导出项目参考包
+          <Button
+            className="project-new-button"
+            icon={Plus}
+            onClick={workspace.onCreate}
+          >
+            新建项目
+          </Button>
+          <div className="projects-nav">
+            {workspace.projects.map((p) => (
+              <button
+                key={p.id}
+                className={`project-nav-item ${!editing && p.id === project?.id ? "active" : ""}`}
+                aria-current={
+                  !editing && p.id === project?.id ? "true" : undefined
+                }
+                onClick={() => {
+                  workspace.selectProject(p.id);
+                  workspace.onCreated();
+                }}
+              >
+                <ProjectCover project={p} figures={figures} small />
+                <span>
+                  <strong>{p.name}</strong>
+                  <small>{p.figureIds.length} 幅参考图</small>
+                </span>
+              </button>
+            ))}
+          </div>
+          <div className="project-transfer-actions">
+            <Button icon={FileJson} onClick={() => setExchange(true)}>
+              项目与智能体
             </Button>
           </div>
-        </>
+          <p className="projects-rail-note">把喜欢的表达，留给正在做的研究。</p>
+        </aside>
+        <div className="projects-main">
+          {storageWarning && (
+            <p className="notice" role="status">
+              {storageWarning}
+            </p>
+          )}
+          {editing ? (
+            <section className="project-editor">
+              <Button
+                className="project-back"
+                icon={ArrowLeft}
+                onClick={workspace.onCreated}
+              >
+                返回参考板
+              </Button>
+              <span className="eyebrow">
+                {intent === "create" ? "A NEW COLLECTION" : "PROJECT DETAILS"}
+              </span>
+              <h3>{intent === "create" ? "开始一个新项目" : "编辑项目"}</h3>
+              <ProjectForm
+                key={key}
+                draft={draft}
+                dirty={dirty}
+                onChange={(value) =>
+                  setDrafts((old) => ({ ...old, [key]: value }))
+                }
+                onSave={save}
+                onCancel={workspace.onCreated}
+                submitLabel={intent === "create" ? "创建项目" : "保存修改"}
+              />
+            </section>
+          ) : project ? (
+            <>
+              <div className="project-board-header">
+                <div>
+                  <span className="eyebrow">YOUR REFERENCE BOARD</span>
+                  <h3>{project.name}</h3>
+                  <p>
+                    {project.description ||
+                      "收集图形，整理表达，让下一张图更有方向。"}
+                  </p>
+                </div>
+                <Button
+                  icon={Pencil}
+                  className="icon-button"
+                  aria-label="编辑项目"
+                  title="编辑项目"
+                  onClick={workspace.onEdit}
+                />
+              </div>
+              <div className="project-board-tools">
+                <span>
+                  <Images size={16} />
+                  {project.figureIds.length} 幅参考图
+                </span>
+                <Button
+                  icon={Download}
+                  variant="primary"
+                  disabled={
+                    !figures.some((f) => project.figureIds.includes(f.id))
+                  }
+                  onClick={onExport}
+                >
+                  导出参考包
+                </Button>
+              </div>
+              {project.figureIds.length ? (
+                <div className="project-board-grid">
+                  {project.figureIds.slice(0, limit).map((id) => {
+                    const figure = figures.find((f) => f.id === id);
+                    return (
+                      <article key={id}>
+                        {figure ? (
+                          <>
+                            <div className="project-board-image">
+                              <FigureImage
+                                figure={figure}
+                                onOpen={() => onOpenFigure(id)}
+                              />
+                              <span className="project-figure-label">
+                                {figureLabel(figure)}
+                              </span>
+                            </div>
+                            <h4 title={figure.paper.title}>
+                              {figureDisplayTitle(figure)}
+                            </h4>
+                            <div className="project-card-meta">
+                              <span>
+                                {figure.paper.venue} ·{" "}
+                                {figure.paper.publication_year}
+                              </span>
+                              <Button
+                                icon={X}
+                                className="icon-button"
+                                title="移出项目"
+                                aria-label={`移出项目 ${figure.paper.title}`}
+                                onClick={() => {
+                                  workspace.setMembership(
+                                    project.id,
+                                    id,
+                                    false,
+                                  );
+                                  setMessage(
+                                    "已移出项目，其他项目的选图不受影响。",
+                                  );
+                                }}
+                              />
+                            </div>
+                          </>
+                        ) : (
+                          <div className="project-missing">
+                            <p>这幅图已不在当前图库中。</p>
+                            <Button
+                              onClick={() =>
+                                workspace.setMembership(project.id, id, false)
+                              }
+                            >
+                              移出项目
+                            </Button>
+                          </div>
+                        )}
+                      </article>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="project-board-empty">
+                  <span className="project-empty-icon">
+                    <Images size={32} />
+                  </span>
+                  <h4>灵感，从一张图开始</h4>
+                  <p>
+                    在图像卡片上点击「加入项目」，
+                    <br />
+                    为它选择这个项目。
+                  </p>
+                  <Button icon={ArrowUpRight} onClick={onClose}>
+                    去画廊找图
+                  </Button>
+                </div>
+              )}
+              {project.figureIds.length > limit && (
+                <Button
+                  className="project-load-more"
+                  onClick={() => setLimit((old) => old + 12)}
+                >
+                  再显示 {Math.min(12, project.figureIds.length - limit)} 幅图
+                </Button>
+              )}
+              <Feedback message={message} inline />
+              <p className="project-local-note">
+                项目保存在当前浏览器 · 图片按需加载
+              </p>
+            </>
+          ) : (
+            <div className="project-board-empty">
+              <span className="project-empty-icon">
+                <FolderOpen size={32} />
+              </span>
+              <h3>给你的灵感一个名字</h3>
+              <p>
+                按论文或研究方向建立项目，
+                <br />
+                把参考图整理在一起。
+              </p>
+              <Button
+                variant="primary"
+                icon={Plus}
+                onClick={workspace.onCreate}
+              >
+                创建第一个项目
+              </Button>
+            </div>
+          )}
+        </div>
+      </div>
+      {exchange && (
+        <ProjectExchange
+          workspace={workspace}
+          figures={figures}
+          onClose={() => setExchange(false)}
+        />
       )}
     </Dialog>
   );

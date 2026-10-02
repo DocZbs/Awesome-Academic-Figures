@@ -21,9 +21,10 @@ DESIGN.md owns taste and generates runtime tokens. Light theme only. Generated s
 
 | Capability | Canonical owner | Source of truth | Allowed variants | Verification |
 | --- | --- | --- | --- | --- |
-| Selection | useProjects / FigureActions / ProjectPanel | Current user project brief | active project, independent membership | browser |
-| Form | ExportDialog / PaperMatcher / ProjectPanel | This contract | project config / reference task / transient paper input | browser |
-| Select/Listbox | Native select in PaperMatcher / ProjectPanel / App project toolbar | This contract | figure kind / active project; platform popup accepted | keyboard and native popup |
+| Selection | useProjects / FigureActions / ProjectPanel / ProjectPicker | Current user project brief | explicit per-figure destination, independent membership | browser |
+| Form | ExportDialog / PaperMatcher / ProjectForm | This contract | project config / reference task / transient paper input | browser |
+| Select/Listbox | PaperMatcher native select | This contract | figure kind; platform popup accepted | keyboard and native popup |
+| Project destination | ProjectPicker / useProjects | Current user brief 2026-10-02 | shared Dialog + native checkbox group; task destination uses buttons | browser + keyboard |
 | Scrollbar | src/styles.css | DESIGN.md | global baseline | computed style |
 | Toast | Feedback | This contract | polite inline status | browser |
 | Dialog | Dialog | This contract | detail / guide / export / project | focus and Escape |
@@ -37,7 +38,7 @@ PaperSource owns the source archive shared between source-dimension browsing and
 
 ## Dataset navigation
 
-Gallery is a local bounded catalog, 12 results per explicit load-more batch. Default dimension is type; purpose/layout/source are alternatives. URL stores query, dimension, category, filters and view. Project names, descriptions and reference IDs persist in localStorage independently of filtering. Active project ID stays in sessionStorage per tab. Legacy session selection migrates once into the default project when no saved project store exists. Favorites use localStorage; hidden items use sessionStorage. Both recover to memory with an explanatory banner when storage fails. Favorites update across tabs using storage events. Favorite and hidden preferences contain only figure IDs; the project store contains user-entered project names/descriptions and figure IDs, never uploaded paper text or drawing-task text.
+Gallery is a local bounded catalog, 12 results per explicit load-more batch. Default dimension is type; purpose/layout/source are alternatives. URL stores query, dimension, category, filters and view. Project names, descriptions and reference IDs persist in localStorage independently of filtering. Active project ID stays in sessionStorage per tab. Legacy nonempty session selection migrates once into a named project when no saved project store exists. New users start with no projects; existing stored projects, including the previous default board, are preserved. Favorites use localStorage; hidden items use sessionStorage. Both recover to memory with an explanatory banner when storage fails. Favorites update across tabs using storage events. Favorite and hidden preferences contain only figure IDs; the project store contains user-entered project names/descriptions and figure IDs, never uploaded paper text or drawing-task text.
 
 Search suppresses filtering during IME composition, commits after 300ms, clears immediately and returns focus to its input. Filters combine OR within one field and AND across fields. Changing filters resets the batch count. No-results provides reset; empty favorites explain how to add items; hidden view offers Restore. Load/error media use a stable image container and a retry affordance.
 
@@ -47,8 +48,8 @@ Category totals and per-tag counts share the current search, advanced filters an
 
 | Operation | Trigger | Success | Failure | Source |
 | --- | --- | --- | --- | --- |
-| Select | 添加到项目 / 已加入项目 | Update current project only; a figure can belong to many projects | Memory fallback and warning if storage unavailable | User project brief |
-| Configure project | 新建项目 / 保存项目配置 | Save name/description; create switches to new board | Preserve config draft, inline error and invalid focus | User project brief |
+| Select | 加入项目 / 已加入 N 个项目 | Open destination chooser; explicit checkbox adds/removes only that named project; opening never assigns | Memory fallback, inline error and storage warning | User brief 2026-10-02 |
+| Configure project | 新建项目 / 保存修改 | Save name/description; create switches to new board | Preserve config draft, inline error and invalid focus | User project brief |
 | Favorite | 收藏 / 已收藏 | Update favorite count | Storage warning, retain current state | Product brief |
 | Hide | 暂时隐藏 | Hide from ordinary views; reversible | No destructive effect | Product brief |
 | Restore | 恢复展示 | Return to gallery visibility, no automatic selection | Not applicable | Product brief |
@@ -66,7 +67,7 @@ Shared native dialog element is opened through showModal; browser top layer prov
 
 ## Async and resilience
 
-Catalog and ZIP asset requests use AbortController and a 15s timeout. Retry is explicit. Opening the catalog keeps a fixed loading footprint. Export prevents duplicate submissions, blocks closing while building a local archive, and never claims success before all assets are fetched. There are no server writes or external messages. Offline catalog failures have a retry path; local favorites do not promise cloud sync. Partial media failures expose an individual retry.
+Catalog and ZIP asset requests use AbortController and a 15s timeout. Retry is explicit. Opening the catalog keeps a fixed loading footprint. Export prevents duplicate submissions, blocks closing while building a local archive, and never claims success before all assets are fetched. There are no server writes or external messages. Offline catalog failures have a retry path; local favorites do not promise cloud sync. Partial media failures expose an individual retry. FigureImage reserves media geometry while its shared spinner is pending and switches to retry after a failed load. Lazy images do not time out before they enter the viewport.
 
 ## Validation and clipboard
 
@@ -74,8 +75,9 @@ Export form uses noValidate, real labels, inline error and first-invalid focus. 
 
 ## Project reference boards
 
-ProjectPanel uses shared Dialog, Button, FigureImage and Feedback. The quiet project toolbar shows the active context before selecting any figure; card, detail and matcher selection all update that same project. Project boards show all selected references independently of gallery filters, with a recoverable empty state and placeholders for missing catalog IDs. Project renaming does not change identity or membership. No delete operation is introduced. Native select is the canonical platform-owned project chooser. Config requires a nonblank name (max 80 chars); description max 2,000 chars. Failure preserves drafts and focuses the invalid field.
+ProjectPanel, ProjectPicker and ProjectForm reuse shared Dialog, Button, FigureImage and Feedback. Manager navigation uses native buttons; the per-image destination list uses native labeled checkboxes in a fieldset, not a custom Select/Listbox. Cards, detail and matcher use the same action to open this chooser and display the number of all project memberships. Checking a destination commits idempotent membership to that exact project ID; unchecking removes only that membership. No implicit current-project assignment remains. Manager creates an empty project and returns to its board. “创建并加入” in the chooser explicitly creates a project containing the displayed figure in one mutation. Saved data is schema-compatible, with empty project arrays now allowed.
 
+Project boards display 12 references at a time with explicit Load more, independently of gallery filters, including missing-ID placeholders. Renaming does not change identity. No deletion operation is introduced. Config requires a nonblank name (max 80 chars), description max 2,000 chars, inline validation and invalid focus. ProjectForm is the canonical create/edit form for both surfaces. Each form's drafts remain in app memory across close, back and navigation; refreshed pages discard drafts. PaperMatcher task handoff opens the same chooser in a named task variant; the user chooses one project before references and transient task text enter that project's export. Cancelling leaves the pending handoff available within this page. Uploaded paper text never enters persistent project storage.
 Storage events synchronize saved projects across tabs without switching each tab's active project. Mutations read the latest saved store before merging. Storage failures retain in-memory operations and avoid overwriting unreadable data; this is browser-local convenience, not collaborative atomic storage or cloud sync. ZIP names reflect the project, and PROJECT.json records identity, task, notes, source-linked figure entries and unavailable IDs. MY_TASK.md includes project context. Export requires at least one available reference and a task, preserves source checksums and blocks closing during generation.
 
 ## Verification
@@ -131,3 +133,9 @@ All 3,000 published figures have macro layout labels; unresolved layout count is
 `src/research-topics.js` owns the shared topic vocabulary and aliases used by gallery search, paper matching, displayed tags and the agent index. Topics describe the associated paper, inferred only from explicit paper-title, abstract and recorded research-topic keywords; they are not a claim that every figure depicts every paper topic. Each inferred tag retains its matched field and terms and the status `metadata_keyword_match`. Multiple topics per figure are allowed.
 
 Research-topic selections combine with AND (intersection); existing source/layout/purpose fields retain their OR-within-field behavior. Topic counts reflect the candidate intersection with the other selected topics. Search accepts abbreviations, Chinese and English aliases; short Latin terms match word boundaries, so RL does not match world and ICL does not match ICLR. Compound-topic searches require every topic. Tags use existing filter state, URL persistence, clear/reset, IME and selected-reference behavior. Gallery cards expose topic filter buttons; no new modal or network service is introduced. Exports include the same tags and evidence in metadata. `data/research_tags.json` and the published `research-tags.json` share the runtime derivation and are checked for drift.
+
+## Agent interoperability and heading identity
+
+ProjectExchange uses the shared Dialog and Button, a labeled native JSON file input, pending reading status, inline failure recovery and Feedback. Import reads at most 2 MiB, validates with src/projects.js and displays added/updated counts, project names and missing-figure warnings before explicit application. Import upserts by stable project ID and preserves other projects; repeated identical imports are idempotent. No paper text or task drafts are implicitly persisted or exported. CLI and browser share project changes and catalog search; discovery is published through agent.json, llms.txt, AGENTS.md and project-schema.json.
+
+Card headings are display-only: preserve curated short titles, remove duplicate terminal Figure/图 labels, use a colon prefix for bibliographic headings when appropriate, otherwise truncate at a word boundary. Full source titles remain in detail, search and export. Number labels are independent of graphic genre.

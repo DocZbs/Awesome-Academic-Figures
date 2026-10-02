@@ -35,10 +35,10 @@ import {
   ChevronDown,
   FileSearch,
   FolderOpen,
-  Plus,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import ProjectPanel from "./ProjectPanel.jsx";
+import ProjectPicker from "./ProjectPicker.jsx";
 import { useProjects } from "./useProjects.js";
 import { projectManifest } from "./projects.js";
 import { researchTagsFor } from "./research-topics.js";
@@ -68,6 +68,7 @@ import {
   fetchResource,
   loadFigureDetails,
   figureLabel,
+  figureDisplayTitle,
 } from "./gallery.js";
 
 const TYPE_ICONS = {
@@ -134,7 +135,19 @@ export default function App() {
     setStorageWarning,
   );
   const workspace = useProjects(setStorageWarning);
-  const project = workspace.activeProject;
+  const project = workspace.activeProject || {
+    id: "",
+    name: "",
+    description: "",
+    figureIds: [],
+  };
+  const [projectPicker, setProjectPicker] = useState(null);
+  const [pendingHandoff, setPendingHandoff] = useState(null);
+  const projectCountFor = (id) =>
+    workspace.projects.filter((p) => p.figureIds.includes(id)).length;
+  const projectFigureIds = [
+    ...new Set(workspace.projects.flatMap((p) => p.figureIds)),
+  ];
   const selected = project.figureIds;
   const [projectOpen, setProjectOpen] = useState(false);
   const [projectIntent, setProjectIntent] = useState("board");
@@ -168,8 +181,8 @@ export default function App() {
   const composing = useRef(false);
   const debounce = useRef(null);
   const actions = {
-    projectName: project.name,
-    onSelect: (id) => workspace.toggleFigure(id),
+    projectCountFor,
+    onSelect: (id) => setProjectPicker({ figureIds: [id] }),
     onFavorite: (id) => toggleItem(setFavorites, id),
     onHide: (id) => {
       setHidden((old) => [...new Set([...old, id])]);
@@ -504,29 +517,25 @@ export default function App() {
           className="gallery page-width"
           aria-labelledby="gallery-heading"
         >
-          <div className="project-toolbar">
-            <div className="project-toolbar-label">
-              <FolderOpen size={19} />
-              <label htmlFor="active-project">为项目收集灵感</label>
-            </div>
-            <select
-              id="active-project"
-              value={project.id}
-              onChange={(event) => workspace.selectProject(event.target.value)}
+          <div className="project-entry">
+            <button
+              className="project-entry-link"
+              onClick={() => openProjects()}
             >
-              {workspace.projects.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.name} · {item.figureIds.length} 幅图
-                </option>
-              ))}
-            </select>
-            <Button icon={Plus} onClick={() => openProjects("create")}>
-              新建项目
-            </Button>
-            <Button icon={Layers3} onClick={() => openProjects()}>
-              项目参考板{" "}
-              <span className="project-count">{selected.length}</span>
-            </Button>
+              <FolderOpen size={18} />
+              <span>我的项目</span>
+              <span className="project-entry-count">
+                {workspace.projects.length}
+              </span>
+              <ArrowUpRight size={15} />
+            </button>
+            {pendingHandoff ? (
+              <Button onClick={() => setProjectPicker(pendingHandoff)}>
+                继续选择绘图项目
+              </Button>
+            ) : (
+              <span>在每张图上选择项目，收集你的绘图灵感。</span>
+            )}
           </div>
           <div className="gallery-heading-row">
             <div>
@@ -819,7 +828,7 @@ export default function App() {
                   <div className="figure-grid">
                     {results.slice(0, limit).map((figure) => (
                       <article
-                        className={`figure-card ${selected.includes(figure.id) ? "card-selected" : ""}`}
+                        className={`figure-card ${projectCountFor(figure.id) ? "card-selected" : ""}`}
                         key={figure.id}
                       >
                         <div className="card-preview">
@@ -852,11 +861,10 @@ export default function App() {
                               {figure.paper.venue}{" "}
                               {figure.paper.publication_year}
                             </span>
-                            <span>{figure.paper.title.split(":")[0]}</span>
                           </div>
                           <h3>
                             <button onClick={() => openDetail(figure.id)}>
-                              {figure.title.zh}
+                              {figureDisplayTitle(figure)}
                             </button>
                           </h3>
                           <div className="card-provenance">
@@ -909,7 +917,7 @@ export default function App() {
                           <div className="card-footer">
                             <FigureActions
                               figure={figure}
-                              selected={selected.includes(figure.id)}
+                              selected={projectCountFor(figure.id) > 0}
                               favorite={favorites.includes(figure.id)}
                               hidden={hidden.includes(figure.id)}
                               {...actions}
@@ -1035,7 +1043,9 @@ export default function App() {
                   alt={`已选 ${figureLabel(figure)}`}
                 />
                 <button
-                  onClick={() => actions.onSelect(figure.id)}
+                  onClick={() =>
+                    workspace.setMembership(project.id, figure.id, false)
+                  }
                   aria-label={`移除 ${figureLabel(figure)}`}
                 >
                   <X size={12} />
@@ -1057,7 +1067,7 @@ export default function App() {
           </Button>
         </div>
       )}
-      {!detailId && !guide && !exportOpen && !projectOpen && (
+      {!detailId && !guide && !exportOpen && !projectOpen && !projectPicker && (
         <Feedback
           message={feedback?.message}
           undo={
@@ -1079,6 +1089,7 @@ export default function App() {
         workspace={{
           ...workspace,
           onCreate: () => setProjectIntent("create"),
+          onEdit: () => setProjectIntent("edit"),
           onCreated: () => setProjectIntent("board"),
         }}
         onClose={() => setProjectOpen(false)}
@@ -1094,7 +1105,7 @@ export default function App() {
           figures={figures}
           onClose={closeDetail}
           onNavigate={openDetail}
-          selected={selected.includes(detail.id)}
+          selected={projectCountFor(detail.id) > 0}
           favorite={favorites.includes(detail.id)}
           hidden={hidden.includes(detail.id)}
           actions={actions}
@@ -1129,7 +1140,7 @@ export default function App() {
             <div>
               <h3>为项目收集参考图</h3>
               <p>
-                先创建或选择项目，再点击“添加到项目”。同一张图可以加入多个项目，每个项目的参考板独立保存。“收藏”方便以后再找，“暂时隐藏”的图随时可以恢复。
+                在图像上点击“加入项目”，明确选择一个或多个项目，也可以现场新建项目。每个项目的参考板独立保存。“收藏”方便以后再找，“暂时隐藏”的图随时可以恢复。
               </p>
             </div>
           </div>
@@ -1164,16 +1175,14 @@ export default function App() {
         >
           <PaperMatcher
             figures={figures}
-            selectedFigureIds={selected}
-            projectName={project.name}
+            selectedFigureIds={projectFigureIds}
+            projectCountFor={projectCountFor}
             onOpenFigure={openDetail}
             onSelectFigure={actions.onSelect}
-            onUseTask={({ task: paperTask, notes: paperNotes, figureIds }) => {
-              workspace.addFigures(figureIds);
-              setTask(paperTask);
-              setNotes(paperNotes);
+            onUseTask={(selection) => {
               setMatcherOpen(false);
-              setExportOpen(true);
+              setPendingHandoff(selection);
+              setProjectPicker(selection);
             }}
             onClose={() => setMatcherOpen(false)}
           />
@@ -1190,6 +1199,24 @@ export default function App() {
           onClose={() => setExportOpen(false)}
         />
       )}
+      <ProjectPicker
+        selection={projectPicker}
+        workspace={workspace}
+        figures={figures}
+        storageWarning={storageWarning}
+        onClose={() => setProjectPicker(null)}
+        onHandoff={(id, selection) => {
+          workspace.addFiguresTo(id, selection.figureIds);
+          workspace.selectProject(id);
+          setProjectDrafts((old) => ({
+            ...old,
+            [id]: { task: selection.task, notes: selection.notes },
+          }));
+          setProjectPicker(null);
+          setPendingHandoff(null);
+          setExportOpen(true);
+        }}
+      />
     </>
   );
 }

@@ -233,6 +233,22 @@ export function assetUrl(figure, field) {
     ? path
     : `${import.meta.env?.BASE_URL || "/"}${path}`;
 }
+// Display only: original titles remain available in details, search and exports.
+export function figureDisplayTitle(figure) {
+  const full = (figure.title?.zh || figure.title?.en || figure.paper.title)
+    .replace(/\s*(?:[·•|—–-]\s*)?(?:图\s*\d+|fig(?:ure)?\.?\s*\d+)\s*$/i, "")
+    .trim();
+  const paper = figure.paper.title.trim();
+  const candidate =
+    full === paper && /[:：]/.test(paper)
+      ? paper.split(/[:：]/)[0].trim()
+      : full;
+  const max = /[\u3400-\u9fff]/.test(candidate) ? 30 : 76;
+  if (candidate.length <= max) return candidate;
+  let short = candidate.slice(0, max - 1);
+  if (!/[\u3400-\u9fff]/.test(candidate)) short = short.replace(/\s+\S*$/, "");
+  return `${short.trimEnd()}…`;
+}
 export function figureLabel(figure) {
   if (figure.source.number)
     return `Figure ${figure.source.number}${figure.source.number_status === "verified_arxiv_html_correspondence" ? " · arXiv" : ""}${figure.source.document === "appendix" ? " · 附录" : ""}`;

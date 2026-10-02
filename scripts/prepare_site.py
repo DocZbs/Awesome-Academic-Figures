@@ -25,3 +25,6 @@ for figure in catalog["figures"]:
     figure["agent_text"] = (source / "agent.md").read_text()
 (public / "catalog.json").write_text(json.dumps(catalog, ensure_ascii=False) + "\n")
 print(f"Prepared {len(catalog['figures'])} figures; remote originals stay on the staging server / GitHub.")
+
+# Publish the agent operating guide alongside the static JSON discovery contract.
+shutil.copy2(root / "AGENTS.md", public / "AGENTS.md")

@@ -31,7 +31,7 @@ export default function PaperMatcher({
   onOpenFigure,
   onSelectFigure,
   selectedFigureIds = [],
-  projectName = "当前项目",
+  projectCountFor,
   onUseTask,
   onClose,
 }) {
@@ -40,6 +40,10 @@ export default function PaperMatcher({
   const [document, setDocument] = useState(null);
   const [match, setMatch] = useState(null);
   const chosen = selectedFigureIds;
+  const taskFigureIds =
+    match?.results
+      .filter((item) => chosen.includes(item.figure.id))
+      .map((item) => item.figure.id) || [];
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -189,11 +193,6 @@ export default function PaperMatcher({
   }
   function select(id) {
     onSelectFigure(id);
-    setFeedback(
-      chosen.includes(id)
-        ? "已移出当前参考。"
-        : "已加入当前参考，可继续挑选或带入绘图任务。",
-    );
   }
   function useTask() {
     const topics =
@@ -205,7 +204,9 @@ export default function PaperMatcher({
         .filter((item) => chosen.includes(item.figure.id))
         .map((item) => `${item.figure.paper.title}：${item.reasons.join("；")}`)
         .join("\n")}`,
-      figureIds: chosen,
+      figureIds: match.results
+        .filter((item) => chosen.includes(item.figure.id))
+        .map((item) => item.figure.id),
     });
   }
   return (
@@ -222,11 +223,12 @@ export default function PaperMatcher({
           </Button>
           <Button
             variant="primary"
-            disabled={!chosen.length || !match || busy}
+            disabled={!taskFigureIds.length || !match || busy}
             onClick={useTask}
             icon={ArrowUpRight}
           >
-            带入绘图任务{chosen.length ? ` · ${chosen.length} 幅` : ""}
+            带入绘图任务
+            {taskFigureIds.length ? ` · ${taskFigureIds.length} 幅` : ""}
           </Button>
         </>
       }
@@ -384,12 +386,13 @@ export default function PaperMatcher({
                               ? "selected"
                               : "neutral"
                           }
-                          title={`项目：${projectName}`}
+                          title="选择要加入的项目"
+                          aria-haspopup="dialog"
                           onClick={() => select(item.figure.id)}
                         >
                           {chosen.includes(item.figure.id)
-                            ? "已加入项目"
-                            : "添加到项目"}
+                            ? `已加入 ${projectCountFor(item.figure.id)} 个项目`
+                            : "加入项目"}
                         </Button>
                       </div>
                     </article>

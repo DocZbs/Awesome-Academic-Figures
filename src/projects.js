@@ -9,24 +9,16 @@ const uniqueIds = (ids) => [
 ];
 
 export function initialProjects(legacyIds = []) {
+  const figureIds = uniqueIds(legacyIds);
   return {
     version: 1,
-    projects: [
-      {
-        id: "default",
-        name: "我的研究项目",
-        description: "",
-        figureIds: uniqueIds(legacyIds),
-      },
-    ],
+    projects: figureIds.length
+      ? [{ id: "default", name: "我的研究项目", description: "", figureIds }]
+      : [],
   };
 }
 export function validateProjects(value) {
-  if (
-    value?.version !== 1 ||
-    !Array.isArray(value.projects) ||
-    !value.projects.length
-  )
+  if (value?.version !== 1 || !Array.isArray(value.projects))
     throw new Error("Invalid project store");
   const ids = new Set();
   const projects = value.projects.map((project) => {
@@ -54,12 +46,16 @@ export function validateProjects(value) {
   return { version: 1, projects };
 }
 export function changeProject(store, action) {
+  if (action.type === "import") return mergeProjects(store, action.store);
   if (action.type === "create") {
     if (store.projects.some((p) => p.id === action.project.id))
       throw new Error("Duplicate project ID");
     return validateProjects({
       ...store,
-      projects: [...store.projects, { ...action.project, figureIds: [] }],
+      projects: [
+        ...store.projects,
+        { ...action.project, figureIds: uniqueIds(action.project.figureIds) },
+      ],
     });
   }
   if (!store.projects.some((p) => p.id === action.id))
@@ -74,13 +70,20 @@ export function changeProject(store, action) {
           name: action.name,
           description: action.description,
         };
-      if (action.type === "toggle")
+      if (action.type === "membership") {
+        if (
+          typeof action.selected !== "boolean" ||
+          typeof action.figureId !== "string" ||
+          !action.figureId
+        )
+          throw new Error("Invalid membership");
         return {
           ...project,
-          figureIds: project.figureIds.includes(action.figureId)
-            ? project.figureIds.filter((id) => id !== action.figureId)
-            : [...project.figureIds, action.figureId],
+          figureIds: action.selected
+            ? uniqueIds([...project.figureIds, action.figureId])
+            : project.figureIds.filter((id) => id !== action.figureId),
         };
+      }
       if (action.type === "add")
         return {
           ...project,
@@ -110,4 +113,21 @@ export function projectManifest(project, figures, task, notes) {
       (id) => !figures.some((f) => f.id === id),
     ),
   };
+}
+
+// Portable configuration shared by agents and the browser. Import is an explicit upsert.
+export function mergeProjects(store, incoming) {
+  const current = validateProjects(store);
+  const imported = validateProjects(incoming);
+  return validateProjects({
+    version: 1,
+    projects: [
+      ...current.projects.map(
+        (p) => imported.projects.find((i) => i.id === p.id) || p,
+      ),
+      ...imported.projects.filter(
+        (i) => !current.projects.some((p) => p.id === i.id),
+      ),
+    ],
+  });
 }

@@ -34,18 +34,20 @@ export function useProjects(onWarning) {
   const [initial] = useState(load);
   const [store, setStore] = useState(initial.store);
   const writable = useRef(initial.writable);
+  const storeRef = useRef(initial.store);
   const [activeId, setActiveId] = useState(() => {
     try {
       return (
         sessionStorage.getItem(ACTIVE_PROJECT_KEY) ||
-        initial.store.projects[0].id
+        initial.store.projects[0]?.id ||
+        ""
       );
     } catch {
-      return initial.store.projects[0].id;
+      return initial.store.projects[0]?.id || "";
     }
   });
   const activeProject =
-    store.projects.find((p) => p.id === activeId) || store.projects[0];
+    store.projects.find((p) => p.id === activeId) || store.projects[0] || null;
   useEffect(() => {
     if (initial.warning) onWarning(initial.warning);
     if (initial.writable) {
@@ -60,8 +62,11 @@ export function useProjects(onWarning) {
     const sync = (event) => {
       if (event.key !== PROJECTS_KEY) return;
       try {
-        if (event.newValue)
-          setStore(validateProjects(JSON.parse(event.newValue)));
+        if (event.newValue) {
+          const next = validateProjects(JSON.parse(event.newValue));
+          storeRef.current = next;
+          setStore(next);
+        }
       } catch {
         onWarning("其他窗口的项目更新无法读取，当前参考板已保留。");
       }
@@ -79,7 +84,7 @@ export function useProjects(onWarning) {
     }
   }
   function commit(action) {
-    let latest = store;
+    let latest = storeRef.current;
     let canWrite = writable.current;
     if (canWrite) {
       try {
@@ -92,6 +97,7 @@ export function useProjects(onWarning) {
       }
     }
     const next = changeProject(latest, action);
+    storeRef.current = next;
     setStore(next);
     if (canWrite) {
       try {
@@ -103,9 +109,9 @@ export function useProjects(onWarning) {
     }
     return next;
   }
-  function createProject(name, description) {
+  function createProject(name, description, figureIds = []) {
     const id = crypto.randomUUID();
-    commit({ type: "create", project: { id, name, description } });
+    commit({ type: "create", project: { id, name, description, figureIds } });
     setActiveId(id);
     try {
       sessionStorage.setItem(ACTIVE_PROJECT_KEY, id);
@@ -116,14 +122,14 @@ export function useProjects(onWarning) {
   }
   return {
     projects: store.projects,
+    importProjects: (incoming) => commit({ type: "import", store: incoming }),
     activeProject,
     selectProject,
     createProject,
     configureProject: (id, name, description) =>
       commit({ type: "configure", id, name, description }),
-    toggleFigure: (figureId) =>
-      commit({ type: "toggle", id: activeProject.id, figureId }),
-    addFigures: (figureIds) =>
-      commit({ type: "add", id: activeProject.id, figureIds }),
+    setMembership: (id, figureId, selected) =>
+      commit({ type: "membership", id, figureId, selected }),
+    addFiguresTo: (id, figureIds) => commit({ type: "add", id, figureIds }),
   };
 }

@@ -19,7 +19,8 @@ store = changeProject(store, {
 assert.deepEqual(store.projects[1].figureIds, []);
 assert.deepEqual(initialProjects(["figure-1"]), original);
 store = changeProject(store, {
-  type: "toggle",
+  type: "membership",
+  selected: true,
   id: "world-model",
   figureId: "figure-1",
 });
@@ -28,7 +29,8 @@ assert.deepEqual(
   [["figure-1"], ["figure-1"]],
 );
 store = changeProject(store, {
-  type: "toggle",
+  type: "membership",
+  selected: false,
   id: "world-model",
   figureId: "figure-1",
 });
@@ -82,9 +84,69 @@ assert.throws(() =>
   }),
 );
 assert.throws(() =>
-  changeProject(store, { type: "toggle", id: "absent", figureId: "figure-1" }),
+  changeProject(store, {
+    type: "membership",
+    selected: true,
+    id: "absent",
+    figureId: "figure-1",
+  }),
 );
 assert.deepEqual(original.projects[0].figureIds, ["figure-1"]);
 console.log(
   "Project migration, isolated membership, multi-project references, config validation and export manifest checks pass.",
+);
+
+assert.deepEqual(initialProjects(), { version: 1, projects: [] });
+assert.deepEqual(
+  validateProjects({ version: 1, projects: [] }),
+  initialProjects(),
+);
+const empty = initialProjects();
+const created = changeProject(empty, {
+  type: "create",
+  project: {
+    id: "explicit",
+    name: "Explicit choice",
+    description: "",
+    figureIds: ["figure-3"],
+  },
+});
+assert.deepEqual(created.projects[0].figureIds, ["figure-3"]);
+assert.deepEqual(empty.projects, []);
+const assigned = changeProject(created, {
+  type: "membership",
+  id: "explicit",
+  figureId: "figure-3",
+  selected: true,
+});
+assert.deepEqual(
+  assigned,
+  created,
+  "Selecting a project twice must be idempotent",
+);
+const removed = changeProject(created, {
+  type: "membership",
+  id: "explicit",
+  figureId: "figure-3",
+  selected: false,
+});
+assert.deepEqual(
+  changeProject(removed, {
+    type: "membership",
+    id: "explicit",
+    figureId: "figure-3",
+    selected: false,
+  }),
+  removed,
+);
+assert.throws(() =>
+  changeProject(created, {
+    type: "membership",
+    id: "explicit",
+    figureId: "figure-3",
+    selected: "yes",
+  }),
+);
+console.log(
+  "Empty-first workspace, explicit destination creation and idempotent assignment pass.",
 );

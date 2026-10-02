@@ -4,6 +4,7 @@
 
 | 环节 | 入口 |
 | --- | --- |
+| 智能体检索与项目管理 | `agent.mjs`（详见 [AGENTS.md](../AGENTS.md)） |
 | 前端预览与静态资源 | `prepare_site.py`, `generate_tokens.mjs` |
 | 多主题索引 | `build_research_tags.mjs`（`npm run tags:build`） |
 | 官方奖项与论文解析 | `discover_awards.py`, `resolve_papers.py` |

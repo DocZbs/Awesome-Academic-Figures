@@ -1,0 +1,27 @@
+{
+  "schema_version": "1",
+  "name": "Awesome Academic Figures",
+  "description": "Search academic figures and manage portable reference projects with the same model used by the gallery.",
+  "guide": "./AGENTS.md",
+  "human_guide": "https://github.com/DocZbs/Awesome-Academic-Figures#readme",
+  "catalog": "./catalog.json",
+  "research_tags": "./research-tags.json",
+  "project_schema": "./project-schema.json",
+  "cli": "https://github.com/DocZbs/Awesome-Academic-Figures/blob/main/scripts/agent.mjs",
+  "capabilities": [
+    "search",
+    "describe",
+    "project.list",
+    "project.show",
+    "project.create",
+    "project.configure",
+    "project.add",
+    "project.remove",
+    "project.import",
+    "project.export"
+  ],
+  "transport": "static-json-and-local-cli",
+  "project_storage": "Portable JSON file; browser import/export with explicit review. No server-side account or automatic synchronization.",
+  "assets": "Fetch only chosen figure assets. Respect per-figure rights and verification status.",
+  "search_semantics": "Topic tags combine with AND. Layout, venue, year and number combine with OR inside a field and AND across fields. Search aliases and filters share the gallery implementation."
+}
