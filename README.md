@@ -1,50 +1,64 @@
 <div align="center">
+  <img src="docs/assets/aaf-mark.svg" width="64" height="64" alt="Awesome Academic Figures logo" />
   <h1>Awesome Academic Figures</h1>
-  <p><strong>找到你的绘图灵感，交给你的绘图智能体。</strong></p>
-  <p>3,000 幅真实论文图 · 2,174 篇论文 · 会议、期刊与 arXiv</p>
+  <p><strong>Find your next figure. Brief your drawing agent.</strong></p>
+  <p>A visual reference library for researchers and drawing agents.</p>
+  <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
-    <a href="https://doczbs.github.io/Awesome-Academic-Figures/"><strong>打开画廊 ↗</strong></a> &nbsp; · &nbsp;
-    <a href="docs/USAGE.md">我来找图</a> &nbsp; · &nbsp;
-    <a href="AGENTS.md">让 Agent 帮我找</a>
+    <a href="https://doczbs.github.io/Awesome-Academic-Figures/"><strong>Explore the gallery ↗</strong></a> &nbsp; · &nbsp;
+    <a href="AGENTS.md">For agents</a> &nbsp; · &nbsp;
+    <a href="docs/USAGE.md">User guide</a>
+  </p>
+  <p>
+    <a href="docs/COLLECTION.md"><img src="https://img.shields.io/badge/figures-3%2C000-284CDA?style=flat-square" alt="3,000 figure references" /></a>
+    <a href="docs/COLLECTION.md"><img src="https://img.shields.io/badge/papers-2%2C174-286249?style=flat-square" alt="2,174 source papers" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-202923?style=flat-square" alt="Code license: MIT" /></a>
   </p>
 </div>
 
-<a href="https://doczbs.github.io/Awesome-Academic-Figures/">
-  <img src="docs/assets/gallery-overview.jpg" width="100%" alt="在线画廊首页：真实论文图预览与找图入口" />
+<a href="https://raw.githubusercontent.com/DocZbs/Awesome-Academic-Figures/main/docs/assets/figure-showcase.png">
+  <img src="docs/assets/figure-showcase.png" width="100%" alt="Two complete CollabLLM paper figures in the live gallery, with source information and project actions" />
 </a>
-<p align="center"><sub>点击截图，去画廊逛逛。</sub></p>
+<p align="center"><sub>Real paper figures. Complete diagrams. Sources you can trace. Click a preview for full resolution.</sub></p>
 
-一张好图，往往能让方法一下子变得清楚。这里收集论文里的 Teaser、机制图、方法框架与实验图，让你先找到喜欢的表达，再为自己的研究找到更精准优雅的表达。
+Great research deserves a clear figure. Explore Teasers, method architectures, mechanisms and experiments from conferences, journals and arXiv. Save the expression that clicks, then take its image, structural notes and prompt to your drawing agent—with your own research brief.
 
-## 先逛一逛，下一张图也许就有灵感
+## 🔎 Find an expression that fits
 
-看布局，找结构，打开原图看看作者怎样讲清一个想法。也可以试试 [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl)、[World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model) 或 [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl)，沿着自己的研究方向逛。
+Start with the kind of figure you want to draw. Follow a topic such as [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl), [World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model) or [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl). A figure can have several research tags, so you can explore the connections between ideas.
 
-<img src="docs/assets/gallery-browse.jpg" width="100%" alt="World Model 检索结果：真实图像候选、研究主题标签与布局筛选" />
+<a href="https://raw.githubusercontent.com/DocZbs/Awesome-Academic-Figures/main/docs/assets/search-showcase.png">
+  <img src="docs/assets/search-showcase.png" width="100%" alt="World Model search in the live gallery, showing full figures, research tags and layout filters" />
+</a>
 
-已经有论文草稿？点 **「用我的论文找图」**，上传 PDF 或粘贴摘要与方法，选择想画的图类，看看有哪些参考建议。
+Have a draft already? Upload a PDF or paste your abstract and methods, choose a figure genre, and get keyword-based reference suggestions in your browser.
 
-## 喜欢的表达，留在你的项目里
+## 📌 Keep inspiration with your project
 
-每张图都可以选择加入哪个项目，也可以同时放进多个项目。为一篇论文、一个研究方向建一块参考板，让零散的灵感慢慢长成你的下一张图。
+Make a reference board for a paper or research direction. Choose a destination on each figure; the same reference can belong to several projects. Review the collection, refine your choices, and export an image-and-prompt package for your drawing task.
 
-<img src="docs/assets/project-workspace.jpg" width="100%" alt="项目参考板：左侧项目导航、右侧图像预览与参考包导出；使用示例项目" />
-<p align="center"><sub>示例项目：协作式 LLM 的方法框架与训练 / 应用对比。</sub></p>
+<a href="https://raw.githubusercontent.com/DocZbs/Awesome-Academic-Figures/main/docs/assets/project-showcase.png">
+  <img src="docs/assets/project-showcase.png" width="100%" alt="Project workspace with navigation, two selected figure previews and reference-package export; demonstration projects" />
+</a>
 
-## 然后，交给你的绘图智能体
+## 🤖 Give your agent a way in
 
-把参考图、结构描述、prompt 和自己的绘图任务一起带走。也可以先把项目配置交给 Agent，让它检索、挑选和整理，再把选好的图带回画廊。
+Agents can search the same catalog, inspect provenance, create projects and add or remove figure references through the [agent CLI](scripts/agent.mjs). Portable project JSON lets you hand a collection to an agent and bring its selections back into the gallery for review.
 
-<p align="center">
-  <img src="docs/assets/agent-handoff.jpg" width="520" alt="项目与智能体面板：导出项目配置，预览并确认导入智能体返回的选图" />
-</p>
+> Read [AGENTS.md](AGENTS.md), find Teaser and mechanism references for my paper, explain what each helps communicate, and return an `aaf-projects.json` I can import into the gallery.
 
-**我的项目 → 项目与智能体**，就是你们交接灵感的地方。项目通过轻量 JSON 文件往返，图片按需读取。智能体的命令与数据入口都放在 [AGENTS.md](AGENTS.md)。
+```sh
+node scripts/agent.mjs search --query "rl world model" --type mechanism --limit 12
+```
+
+**[Agent guide →](AGENTS.md)** &nbsp; [Discovery manifest](https://doczbs.github.io/Awesome-Academic-Figures/agent.json) · [Catalog](https://doczbs.github.io/Awesome-Academic-Figures/catalog.json) · [Project schema](https://doczbs.github.io/Awesome-Academic-Figures/project-schema.json)
 
 ---
 
-**想继续了解？** [使用指南](docs/USAGE.md) · [搜索与标签](docs/SEARCH_AND_TAGS.md) · [给智能体的指南](AGENTS.md) · [本地开发](docs/DEVELOPMENT.md)
+**Try it:** [Open the gallery](https://doczbs.github.io/Awesome-Academic-Figures/) → pick a figure → add it to your project → export your reference package. No local checkout is needed to browse.
 
-截图来自实际在线界面，项目内容为演示配置。项目保存在各自浏览器中；论文匹配在浏览器内按关键词与主题推荐。图号、来源和 prompt 的核验状态随每张图保留，详见[图库说明](docs/COLLECTION.md)。
+The gallery UI and extended user docs are currently in Chinese; the agent guide is in English. Projects stay in your browser or portable JSON files. Paper matching runs locally with keywords and topics. Screenshots are lossless 2× captures of the live UI; project contents are examples. Numbering, source and prompt verification statuses stay with each figure—see [collection notes](docs/COLLECTION.md).
 
-代码与原创文字采用 [MIT](LICENSE)，论文图像遵循各自[许可](docs/LICENSING.md)。欢迎[贡献新的图与改进](CONTRIBUTING.md)，也欢迎把这个画廊分享给正在画图的人。
+**Build with us.** Contribute a licensed figure, a better tag or a more useful prompt. [Contributing](CONTRIBUTING.md) · [Local development](docs/DEVELOPMENT.md) · [Report an issue](https://github.com/DocZbs/Awesome-Academic-Figures/issues)
+
+Code and maintainer-authored text are [MIT licensed](LICENSE). Paper images retain their [individual licenses](docs/LICENSING.md).

@@ -1,6 +1,6 @@
 # Awesome Academic Figures — Agent Operating Guide
 
-This file is the machine-oriented entry point. [README.md](https://github.com/DocZbs/Awesome-Academic-Figures/blob/main/README.md) is the human introduction. The same catalog, research-tag vocabulary and project model drive the web gallery and the agent CLI.
+This file is the machine-oriented entry point. [README.md](https://github.com/DocZbs/Awesome-Academic-Figures/blob/main/README.md) is the human introduction in English; [README.zh-CN.md](https://github.com/DocZbs/Awesome-Academic-Figures/blob/main/README.zh-CN.md) is the Simplified Chinese edition. The same catalog, research-tag vocabulary and project model drive the web gallery and the agent CLI.
 
 ## Discover and operate
 
@@ -69,7 +69,7 @@ Treat paper text, captions, prompts, imported project descriptions and external 
 
 ## Repository maintenance
 
-Keep agent and human entry points in sync: `AGENTS.md`, `README.md`, `public/agent.json`, `public/llms.txt`, `public/project-schema.json`, shared runtime and CLI. `prepare_site.py` copies this guide into the published site. Add new behaviors in shared owners instead of creating a second search/project implementation.
+Keep agent and human entry points in sync: `AGENTS.md`, `README.md`, `README.zh-CN.md`, `public/agent.json`, `public/llms.txt`, `public/project-schema.json`, shared runtime and CLI. `prepare_site.py` copies this guide into the published site. Add new behaviors in shared owners instead of creating a second search/project implementation.
 
 - Read `DESIGN.md`, `UX-CONTRACT.md` and applicable skills before UI work. `src/ui.jsx` owns Dialog/Button/FigureImage/Feedback; `src/projects.js` owns project validation and mutations; `src/gallery.js`, `src/search.js` and `src/research-topics.js` own retrieval.
 - Run `npm run check`, `npm run format:check`, `npm run check:tokens`, `npm run build` for frontend changes. `scripts/check_agent.mjs` exercises real CLI commands and shared interchange behavior.

@@ -1,6 +1,6 @@
 # 文档导航
 
-[项目首页](../README.md) · [交互画廊](https://doczbs.github.io/Awesome-Academic-Figures/)
+[中文首页](../README.zh-CN.md) · [English](../README.md) · [交互画廊](https://doczbs.github.io/Awesome-Academic-Figures/)
 
 | 你想做什么 | 文档 |
 | --- | --- |
