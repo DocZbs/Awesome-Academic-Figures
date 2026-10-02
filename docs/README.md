@@ -6,6 +6,9 @@
 | --- | --- |
 | 找图、上传论文、下载参考包 | [使用指南](USAGE.md) |
 | 用 RL / World Model / ICL 等关键词检索 | [搜索、多标签与智能体索引](SEARCH_AND_TAGS.md) |
+| 查看图库规模、来源和核验状态 | [图库说明](COLLECTION.md) |
+| 本地运行与仓库目录 | [开发指南](DEVELOPMENT.md) |
+| 让智能体检索和管理项目 | [智能体操作指南](../AGENTS.md) |
 | 查看图像许可和转载规则 | [授权规则](LICENSING.md) |
 | 理解产品结构和交互 | [产品设计](PROJECT_DESIGN.md) |
 | 在云端或 SSH 服务器收录图像 | [收录流程](ingestion/REMOTE_STAGING.md) |
