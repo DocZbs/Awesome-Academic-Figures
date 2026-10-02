@@ -1,6 +1,6 @@
 # README presentation
 
-The 2026-10-02 README revision uses an English default (`README.md`) and a Simplified Chinese edition (`README.zh-CN.md`). Both carry the same capabilities, evidence limits and screenshot assets. The gallery interface remains Chinese; README translation does not imply interface localization.
+The 2026-10-02 README revision uses an English default (`README.md`) and a Simplified Chinese edition (`README.zh-CN.md`). Both carry the same capabilities, evidence limits and screenshot assets. The gallery now supports English and Simplified Chinese through a shared locale owner. Existing showcase captures use the Chinese interface; scientific source descriptions and prompts retain their original language.
 
 ## References and decisions
 

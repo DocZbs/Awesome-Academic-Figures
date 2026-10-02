@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import { assetUrl, figureLabel } from "./gallery.js";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -13,8 +14,9 @@ import {
 } from "lucide-react";
 
 export function PaperSource({ paper }) {
+  const { t } = useI18n();
   return (
-    <section className="paper-source" aria-label="论文档案">
+    <section className="paper-source" aria-label={t("论文档案")}>
       <div className="paper-source-heading">
         <span className="eyebrow">PAPER ARCHIVE</span>
         <span>
@@ -32,23 +34,25 @@ export function PaperSource({ paper }) {
       <div className="paper-source-meta">
         {paper.publication_date && (
           <span>
-            {paper.publication_kind === "journal"
-              ? "期刊发表日期"
-              : "论文集发布日期"}{" "}
+            {t(
+              paper.publication_kind === "journal"
+                ? "期刊发表日期"
+                : "论文集发布日期",
+            )}{" "}
             <time dateTime={paper.publication_date.replaceAll("/", "-")}>
               {paper.publication_date.replaceAll("/", "-")}
             </time>
           </span>
         )}
         <span>
-          图鉴收录{" "}
+          {t("图鉴收录")}{" "}
           <time dateTime={paper.collected_at}>
-            {paper.collected_at || "待记录"}
+            {t(paper.collected_at || "待记录")}
           </time>
         </span>
         {paper.arxiv_first_submitted_at && (
           <span>
-            arXiv 首次提交{" "}
+            {t("arXiv 首次提交")}{" "}
             <time dateTime={paper.arxiv_first_submitted_at}>
               {paper.arxiv_first_submitted_at}
             </time>
@@ -63,16 +67,18 @@ export function PaperSource({ paper }) {
           </a>
         )}
         <a href={paper.url} target="_blank" rel="noreferrer">
-          {paper.publication_kind === "journal"
-            ? "期刊原文"
-            : paper.venue === "arXiv"
-              ? "论文来源"
-              : "会议论文集"}
+          {t(
+            paper.publication_kind === "journal"
+              ? "期刊原文"
+              : paper.venue === "arXiv"
+                ? "论文来源"
+                : "会议论文集",
+          )}
           <ExternalLink size={14} />
         </a>
         {paper.pdf_url && (
           <a href={paper.pdf_url} target="_blank" rel="noreferrer">
-            论文 PDF
+            {t("论文 PDF")}
             <ExternalLink size={14} />
           </a>
         )}
@@ -131,6 +137,7 @@ export function Dialog({
   busy = false,
   className = "",
 }) {
+  const { t } = useI18n();
   const ref = useRef(null);
   const titleId = React.useId();
   useEffect(() => {
@@ -164,8 +171,8 @@ export function Dialog({
         </div>
         <Button
           className="icon-button"
-          aria-label="关闭窗口"
-          title="关闭窗口"
+          aria-label={t("关闭窗口")}
+          title={t("关闭窗口")}
           icon={X}
           disabled={busy}
           onClick={onClose}
@@ -177,6 +184,7 @@ export function Dialog({
   );
 }
 export function Feedback({ message, undo, onDismiss, inline = false }) {
+  const { t } = useI18n();
   if (!message) return null;
   return (
     <div
@@ -185,10 +193,10 @@ export function Feedback({ message, undo, onDismiss, inline = false }) {
       aria-live="polite"
     >
       <Check size={17} aria-hidden="true" />
-      <span>{message}</span>
-      {undo && <button onClick={undo}>撤销</button>}
+      <span>{t(message)}</span>
+      {undo && <button onClick={undo}>{t("撤销")}</button>}
       {onDismiss && (
-        <button onClick={onDismiss} aria-label="关闭提示">
+        <button onClick={onDismiss} aria-label={t("关闭提示")}>
           <X size={15} />
         </button>
       )}
@@ -196,6 +204,7 @@ export function Feedback({ message, undo, onDismiss, inline = false }) {
   );
 }
 export function FigureImage({ figure, full = false, className = "", onOpen }) {
+  const { t, locale } = useI18n();
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const imageRef = useRef(null);
@@ -213,7 +222,9 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
       src={`${assetUrl(figure, full ? "reference" : "preview")}?v=${version}`}
       width={figure.visual.pixel_width}
       height={figure.visual.pixel_height}
-      alt={`${figure.paper.title} 的 ${figureLabel(figure)}：${figure.title.zh}`}
+      alt={t(
+        `${figure.paper.title} 的 ${figureLabel(figure)}：${locale === "en" ? figure.title.en || figure.paper.title : figure.title.zh}`,
+      )}
       loading="lazy"
       decoding="async"
       onLoad={() => setLoaded(true)}
@@ -225,13 +236,13 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
       {!failed && !loaded && (
         <span className="figure-loading" role="status">
           <span className="loader" aria-hidden="true" />
-          <span className="sr-only">正在加载图像</span>
+          <span className="sr-only">{t("正在加载图像")}</span>
         </span>
       )}
       {failed ? (
         <div className="image-error">
           <ImageOff size={25} />
-          <p>图片暂时无法加载</p>
+          <p>{t("图片暂时无法加载")}</p>
           <Button
             icon={RotateCcw}
             onClick={() => {
@@ -240,14 +251,14 @@ export function FigureImage({ figure, full = false, className = "", onOpen }) {
               setVersion((value) => value + 1);
             }}
           >
-            重新加载
+            {t("重新加载")}
           </Button>
         </div>
       ) : onOpen ? (
         <button
           className="image-open"
           onClick={onOpen}
-          aria-label={`查看 ${figureLabel(figure)} 详情`}
+          aria-label={t(`查看 ${figureLabel(figure)} 详情`)}
         >
           {img}
         </button>
@@ -269,38 +280,41 @@ export function FigureActions({
   compact = false,
   projectCountFor,
 }) {
+  const { t } = useI18n();
   return (
     <div className={`figure-actions ${compact ? "compact" : ""}`}>
       <Button
         icon={selected ? Check : Plus}
         variant={selected ? "selected" : "neutral"}
         aria-haspopup="dialog"
-        title="选择要加入的项目"
+        title={t("选择要加入的项目")}
         onClick={() => onSelect(figure.id)}
       >
-        {selected
-          ? `已加入 ${projectCountFor?.(figure.id) || 1} 个项目`
-          : "加入项目"}
+        {t(
+          selected
+            ? `已加入 ${projectCountFor?.(figure.id) || 1} 个项目`
+            : "加入项目",
+        )}
       </Button>
       <Button
         icon={Star}
         className={`favorite-button ${favorite ? "is-favorite" : ""}`}
         aria-pressed={favorite}
-        aria-label={`${favorite ? "取消收藏" : "收藏"} ${figureLabel(figure)}`}
-        title={favorite ? "取消收藏" : "收藏"}
+        aria-label={`${t(favorite ? "取消收藏" : "收藏")} ${t(figureLabel(figure))}`}
+        title={t(favorite ? "取消收藏" : "收藏")}
         onClick={() => onFavorite(figure.id)}
       >
-        {!compact && (favorite ? "已收藏" : "收藏")}
+        {t(!compact && (favorite ? "已收藏" : "收藏"))}
       </Button>
       <Button
         icon={hidden ? RotateCcw : EyeOff}
         className="icon-button hide-button"
-        aria-label={
+        aria-label={t(
           hidden
             ? `恢复展示 ${figureLabel(figure)}`
-            : `暂时隐藏 ${figureLabel(figure)}`
-        }
-        title={hidden ? "恢复展示" : "暂时隐藏"}
+            : `暂时隐藏 ${figureLabel(figure)}`,
+        )}
+        title={t(hidden ? "恢复展示" : "暂时隐藏")}
         onClick={() => (hidden ? onRestore(figure.id) : onHide(figure.id))}
       />
     </div>

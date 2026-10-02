@@ -234,8 +234,12 @@ export function assetUrl(figure, field) {
     : `${import.meta.env?.BASE_URL || "/"}${path}`;
 }
 // Display only: original titles remain available in details, search and exports.
-export function figureDisplayTitle(figure) {
-  const full = (figure.title?.zh || figure.title?.en || figure.paper.title)
+export function figureDisplayTitle(figure, locale = "zh-CN") {
+  const title =
+    locale === "en"
+      ? figure.title?.en || figure.paper.title
+      : figure.title?.zh || figure.title?.en || figure.paper.title;
+  const full = title
     .replace(/\s*(?:[·•|—–-]\s*)?(?:图\s*\d+|fig(?:ure)?\.?\s*\d+)\s*$/i, "")
     .trim();
   const paper = figure.paper.title.trim();

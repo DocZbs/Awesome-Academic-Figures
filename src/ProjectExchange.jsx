@@ -1,9 +1,11 @@
+import { useI18n } from "./i18n.jsx";
 import React, { useId, useState } from "react";
 import { Download, Upload, ArrowUpRight } from "lucide-react";
 import { Button, Dialog, Feedback } from "./ui.jsx";
 import { validateProjects } from "./projects.js";
 
 export default function ProjectExchange({ workspace, figures, onClose }) {
+  const { t } = useI18n();
   const id = useId();
   const [incoming, setIncoming] = useState(null);
   const [error, setError] = useState("");
@@ -60,20 +62,24 @@ export default function ProjectExchange({ workspace, figures, onClose }) {
   }
   return (
     <Dialog
-      title="项目与智能体"
+      title={t("项目与智能体")}
       eyebrow="HUMAN ↔ AGENT"
       className="project-picker"
       onClose={onClose}
       busy={busy}
     >
-      <p className="exchange-intro">把项目交给智能体，带着选好的参考图回来。</p>
+      <p className="exchange-intro">
+        {t("把项目交给智能体，带着选好的参考图回来。")}
+      </p>
       <div className="exchange-section">
-        <h3>导出给智能体</h3>
+        <h3>{t("导出给智能体")}</h3>
         <p>
-          下载项目名称、说明和图像 ID。智能体可修改配置，再导入这里继续浏览。
+          {t(
+            "下载项目名称、说明和图像 ID。智能体可修改配置，再导入这里继续浏览。",
+          )}
         </p>
         <Button icon={Download} onClick={download}>
-          导出项目配置
+          {t("导出项目配置")}
         </Button>
         <a
           className="exchange-guide"
@@ -81,12 +87,13 @@ export default function ProjectExchange({ workspace, figures, onClose }) {
           target="_blank"
           rel="noreferrer"
         >
-          智能体操作指南 <ArrowUpRight size={14} />
+          {t("智能体操作指南 ")}
+          <ArrowUpRight size={14} />
         </a>
       </div>
       <div className="exchange-section">
-        <h3>接回智能体的选图</h3>
-        <label htmlFor={`${id}-file`}>项目配置 JSON</label>
+        <h3>{t("接回智能体的选图")}</h3>
+        <label htmlFor={`${id}-file`}>{t("项目配置 JSON")}</label>
         <input
           id={`${id}-file`}
           type="file"
@@ -96,24 +103,27 @@ export default function ProjectExchange({ workspace, figures, onClose }) {
           disabled={busy}
           onChange={(e) => read(e.target.files?.[0])}
         />
-        {busy && <p role="status">正在读取配置…</p>}
+        {busy && <p role="status">{t("正在读取配置…")}</p>}
         {incoming && (
           <div className="exchange-review">
             <p>
-              新增 {incoming.projects.length - updated} 个项目，更新 {updated}{" "}
-              个同 ID 项目。其他项目保留。
+              {t("新增 ")}
+              {incoming.projects.length - updated}
+              {t(" 个项目，更新 ")}
+              {updated} {t("个同 ID 项目。其他项目保留。")}
             </p>
             <ul>
               {incoming.projects.map((p) => (
                 <li key={p.id}>
-                  {p.name} · {p.figureIds.length} 幅参考图
+                  {p.name} · {p.figureIds.length}
+                  {t(" 幅参考图")}
                 </li>
               ))}
             </ul>
             {unknown.length > 0 && (
               <p className="notice">
-                {new Set(unknown).size} 个图 ID
-                不在当前图库中，将保留引用并在参考板提示。
+                {new Set(unknown).size}
+                {t(" 个图 ID 不在当前图库中，将保留引用并在参考板提示。")}
               </p>
             )}
             <Button
@@ -122,13 +132,13 @@ export default function ProjectExchange({ workspace, figures, onClose }) {
               onClick={apply}
               disabled={!incoming.projects.length}
             >
-              确认导入项目
+              {t("确认导入项目")}
             </Button>
           </div>
         )}
         {error && (
           <p id={`${id}-error`} className="field-error" role="alert">
-            {error}
+            {t(error)}
           </p>
         )}
       </div>

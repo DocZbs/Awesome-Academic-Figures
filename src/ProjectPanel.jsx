@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import React, { useEffect, useState } from "react";
 import {
   Plus,
@@ -43,6 +44,7 @@ export default function ProjectPanel({
   onOpenFigure,
   onExport,
 }) {
+  const { t, locale } = useI18n();
   const [drafts, setDrafts] = useState({});
   const [message, setMessage] = useState("");
   const [limit, setLimit] = useState(12);
@@ -77,15 +79,15 @@ export default function ProjectPanel({
   const editing = intent !== "board";
   return (
     <Dialog
-      title="我的项目"
+      title={t("我的项目")}
       eyebrow="FIGURE COLLECTIONS"
       className="projects-workspace"
       onClose={onClose}
     >
       <div className="projects-layout">
-        <aside className="projects-rail" aria-label="项目导航">
+        <aside className="projects-rail" aria-label={t("项目导航")}>
           <div className="projects-rail-title">
-            <span>项目参考板</span>
+            <span>{t("项目参考板")}</span>
             <span>{workspace.projects.length}</span>
           </div>
           <Button
@@ -93,7 +95,7 @@ export default function ProjectPanel({
             icon={Plus}
             onClick={workspace.onCreate}
           >
-            新建项目
+            {t("新建项目")}
           </Button>
           <div className="projects-nav">
             {workspace.projects.map((p) => (
@@ -111,22 +113,27 @@ export default function ProjectPanel({
                 <ProjectCover project={p} figures={figures} small />
                 <span>
                   <strong>{p.name}</strong>
-                  <small>{p.figureIds.length} 幅参考图</small>
+                  <small>
+                    {p.figureIds.length}
+                    {t(" 幅参考图")}
+                  </small>
                 </span>
               </button>
             ))}
           </div>
           <div className="project-transfer-actions">
             <Button icon={FileJson} onClick={() => setExchange(true)}>
-              项目与智能体
+              {t("项目与智能体")}
             </Button>
           </div>
-          <p className="projects-rail-note">把喜欢的表达，留给正在做的研究。</p>
+          <p className="projects-rail-note">
+            {t("把喜欢的表达，留给正在做的研究。")}
+          </p>
         </aside>
         <div className="projects-main">
           {storageWarning && (
             <p className="notice" role="status">
-              {storageWarning}
+              {t(storageWarning)}
             </p>
           )}
           {editing ? (
@@ -136,12 +143,12 @@ export default function ProjectPanel({
                 icon={ArrowLeft}
                 onClick={workspace.onCreated}
               >
-                返回参考板
+                {t("返回参考板")}
               </Button>
               <span className="eyebrow">
                 {intent === "create" ? "A NEW COLLECTION" : "PROJECT DETAILS"}
               </span>
-              <h3>{intent === "create" ? "开始一个新项目" : "编辑项目"}</h3>
+              <h3>{t(intent === "create" ? "开始一个新项目" : "编辑项目")}</h3>
               <ProjectForm
                 key={key}
                 draft={draft}
@@ -151,7 +158,7 @@ export default function ProjectPanel({
                 }
                 onSave={save}
                 onCancel={workspace.onCreated}
-                submitLabel={intent === "create" ? "创建项目" : "保存修改"}
+                submitLabel={t(intent === "create" ? "创建项目" : "保存修改")}
               />
             </section>
           ) : project ? (
@@ -161,22 +168,25 @@ export default function ProjectPanel({
                   <span className="eyebrow">YOUR REFERENCE BOARD</span>
                   <h3>{project.name}</h3>
                   <p>
-                    {project.description ||
-                      "收集图形，整理表达，让下一张图更有方向。"}
+                    {t(
+                      project.description ||
+                        "收集图形，整理表达，让下一张图更有方向。",
+                    )}
                   </p>
                 </div>
                 <Button
                   icon={Pencil}
                   className="icon-button"
-                  aria-label="编辑项目"
-                  title="编辑项目"
+                  aria-label={t("编辑项目")}
+                  title={t("编辑项目")}
                   onClick={workspace.onEdit}
                 />
               </div>
               <div className="project-board-tools">
                 <span>
                   <Images size={16} />
-                  {project.figureIds.length} 幅参考图
+                  {project.figureIds.length}
+                  {t(" 幅参考图")}
                 </span>
                 <Button
                   icon={Download}
@@ -186,7 +196,7 @@ export default function ProjectPanel({
                   }
                   onClick={onExport}
                 >
-                  导出参考包
+                  {t("导出参考包")}
                 </Button>
               </div>
               {project.figureIds.length ? (
@@ -203,11 +213,11 @@ export default function ProjectPanel({
                                 onOpen={() => onOpenFigure(id)}
                               />
                               <span className="project-figure-label">
-                                {figureLabel(figure)}
+                                {t(figureLabel(figure))}
                               </span>
                             </div>
                             <h4 title={figure.paper.title}>
-                              {figureDisplayTitle(figure)}
+                              {figureDisplayTitle(figure, locale)}
                             </h4>
                             <div className="project-card-meta">
                               <span>
@@ -217,8 +227,8 @@ export default function ProjectPanel({
                               <Button
                                 icon={X}
                                 className="icon-button"
-                                title="移出项目"
-                                aria-label={`移出项目 ${figure.paper.title}`}
+                                title={t("移出项目")}
+                                aria-label={t(`移出项目 ${figure.paper.title}`)}
                                 onClick={() => {
                                   workspace.setMembership(
                                     project.id,
@@ -234,13 +244,13 @@ export default function ProjectPanel({
                           </>
                         ) : (
                           <div className="project-missing">
-                            <p>这幅图已不在当前图库中。</p>
+                            <p>{t("这幅图已不在当前图库中。")}</p>
                             <Button
                               onClick={() =>
                                 workspace.setMembership(project.id, id, false)
                               }
                             >
-                              移出项目
+                              {t("移出项目")}
                             </Button>
                           </div>
                         )}
@@ -253,14 +263,14 @@ export default function ProjectPanel({
                   <span className="project-empty-icon">
                     <Images size={32} />
                   </span>
-                  <h4>灵感，从一张图开始</h4>
+                  <h4>{t("灵感，从一张图开始")}</h4>
                   <p>
-                    在图像卡片上点击「加入项目」，
+                    {t("在图像卡片上点击「加入项目」，")}
                     <br />
-                    为它选择这个项目。
+                    {t("为它选择这个项目。")}
                   </p>
                   <Button icon={ArrowUpRight} onClick={onClose}>
-                    去画廊找图
+                    {t("去画廊找图")}
                   </Button>
                 </div>
               )}
@@ -269,12 +279,14 @@ export default function ProjectPanel({
                   className="project-load-more"
                   onClick={() => setLimit((old) => old + 12)}
                 >
-                  再显示 {Math.min(12, project.figureIds.length - limit)} 幅图
+                  {t("再显示 ")}
+                  {Math.min(12, project.figureIds.length - limit)}
+                  {t(" 幅图")}
                 </Button>
               )}
               <Feedback message={message} inline />
               <p className="project-local-note">
-                项目保存在当前浏览器 · 图片按需加载
+                {t("项目保存在当前浏览器 · 图片按需加载")}
               </p>
             </>
           ) : (
@@ -282,18 +294,18 @@ export default function ProjectPanel({
               <span className="project-empty-icon">
                 <FolderOpen size={32} />
               </span>
-              <h3>给你的灵感一个名字</h3>
+              <h3>{t("给你的灵感一个名字")}</h3>
               <p>
-                按论文或研究方向建立项目，
+                {t("按论文或研究方向建立项目，")}
                 <br />
-                把参考图整理在一起。
+                {t("把参考图整理在一起。")}
               </p>
               <Button
                 variant="primary"
                 icon={Plus}
                 onClick={workspace.onCreate}
               >
-                创建第一个项目
+                {t("创建第一个项目")}
               </Button>
             </div>
           )}

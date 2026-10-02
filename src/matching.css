@@ -8,7 +8,6 @@
   margin: 0 0 6px;
   font-size: 16px;
 }
-.matcher-intro > span,
 .matcher-privacy,
 .matcher-limit {
   color: var(--color-muted);
@@ -128,6 +127,10 @@
 }
 .matcher-limit {
   line-height: 1.7;
+}
+.matcher-limit summary {
+  width: fit-content;
+  cursor: pointer;
 }
 .matcher-error {
   font-size: 13px;
@@ -262,11 +265,6 @@
   font-size: 13px;
   color: var(--color-muted);
   line-height: 1.8;
-}
-.matcher-empty > span {
-  font-size: 11px;
-  color: var(--color-muted);
-  line-height: 1.7;
 }
 .matcher-dialog .dialog-footer {
   flex-wrap: wrap;

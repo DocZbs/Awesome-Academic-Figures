@@ -2,6 +2,10 @@
 
 [返回项目首页](../README.md) · [打开画廊](https://doczbs.github.io/Awesome-Academic-Figures/)
 
+## 界面语言
+
+顶部 **English / 中文** 按钮切换中英文界面；搜索、收藏、项目与当前选择都会保留。可直接打开[英文画廊](https://doczbs.github.io/Awesome-Academic-Figures/?lang=en)或[中文画廊](https://doczbs.github.io/Awesome-Academic-Figures/?lang=zh)。语言偏好与项目配置分开保存。英文图名使用已有元数据，论文原题、图注、结构描述、Prompt 和你填写的文字保留原文。
+
 ## 怎样找图
 
 默认按 **图形类型**：Teaser 图、机制图和实验图。细分图类、研究主题和布局是独立标签，一张图可同时关联多个主题。还可切换作用用途、布局结构和论文来源，再叠加研究主题、会议、年份、已核实的 Figure 1 / 2、获奖标签与关键词搜索。详见[搜索和多标签](SEARCH_AND_TAGS.md)。图号未知的首图或方法图不会冒充已核实的 Figure 1 / 2。

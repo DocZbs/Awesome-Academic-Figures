@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import React, { useEffect, useRef, useState } from "react";
 import {
   Upload,
@@ -35,6 +36,7 @@ export default function PaperMatcher({
   onUseTask,
   onClose,
 }) {
+  const { t } = useI18n();
   const [text, setText] = useState("");
   const [figureKind, setFigureKind] = useState("teaser");
   const [document, setDocument] = useState(null);
@@ -211,15 +213,15 @@ export default function PaperMatcher({
   }
   return (
     <Dialog
-      title="用我的论文找参考图"
+      title={t("为论文找图")}
       eyebrow="PAPER → FIGURE"
       onClose={onClose}
       className="matcher-dialog"
       footer={
         <>
-          <span className="matcher-privacy">论文文字仅在本机临时处理</span>
+          <span className="matcher-privacy">{t("本地处理")}</span>
           <Button icon={RotateCcw} onClick={reset}>
-            清空文档
+            {t("清空文档")}
           </Button>
           <Button
             variant="primary"
@@ -227,27 +229,26 @@ export default function PaperMatcher({
             onClick={useTask}
             icon={ArrowUpRight}
           >
-            带入绘图任务
-            {taskFigureIds.length ? ` · ${taskFigureIds.length} 幅` : ""}
+            {t("带入绘图任务")}
+            {t(taskFigureIds.length ? ` · ${taskFigureIds.length} 幅` : "")}
           </Button>
         </>
       }
     >
       <div className="matcher-intro">
-        <p>选择想画的图类，上传论文或粘贴标题、摘要与方法，找到相关参考图。</p>
-        <span>本地关键词匹配 · 不上传论文到外部服务</span>
+        <p>{t("上传论文或粘贴文字，选择想画的图类。")}</p>
       </div>
       <div className="matcher-workspace">
-        <section className="matcher-input" aria-label="论文输入">
+        <section className="matcher-input" aria-label={t("论文输入")}>
           <label className={`matcher-upload ${busy ? "is-busy" : ""}`}>
             <Upload size={25} aria-hidden="true" />
-            <strong>{busy ? "正在本机读取论文…" : "选择论文文件"}</strong>
-            <span>PDF / TXT / Markdown · 最大 20 MB</span>
+            <strong>{t(busy ? "正在本机读取论文…" : "选择论文文件")}</strong>
+            <span>{t("PDF / TXT / Markdown · 最大 20 MB")}</span>
             <input
               ref={fileInput}
               type="file"
               accept=".pdf,.txt,.md,.markdown"
-              aria-label="上传论文文件"
+              aria-label={t("上传论文文件")}
               onChange={readFile}
               disabled={busy}
             />
@@ -257,16 +258,16 @@ export default function PaperMatcher({
               <FileText size={16} />
               <span>
                 {document.name}
-                {document.totalPages
-                  ? ` · 已读取 ${document.processedPages} / ${document.totalPages} 页`
-                  : ""}
-                {document.truncated ? " · 文字已截取前 12 万字符" : ""}
+                {t(
+                  document.totalPages
+                    ? ` · 已读取 ${document.processedPages} / ${document.totalPages} 页`
+                    : "",
+                )}
+                {t(document.truncated ? " · 文字已截取前 12 万字符" : "")}
               </span>
             </div>
           )}
-          <label htmlFor="matcher-text">
-            论文文字 <span>建议：标题 + 摘要 + 方法</span>
-          </label>
+          <label htmlFor="matcher-text">{t("或粘贴文字")}</label>
           <textarea
             id="matcher-text"
             className="resize-none"
@@ -276,7 +277,7 @@ export default function PaperMatcher({
             aria-invalid={Boolean(error)}
             aria-describedby={error ? "matcher-error" : "matcher-limit"}
             disabled={busy}
-            placeholder="例如：我们提出一个医疗多模态智能体，结合影像编码器、检索模块和大语言模型，生成可验证的诊断解释…"
+            placeholder={t("标题、摘要与方法…")}
             onChange={(event) => {
               setText(event.target.value);
               setMatch(null);
@@ -285,7 +286,7 @@ export default function PaperMatcher({
           />
           <div className="matcher-controls">
             <label htmlFor="matcher-figure-kind">
-              想找哪类参考图
+              {t("想找哪类参考图")}
               <select
                 id="matcher-figure-kind"
                 value={figureKind}
@@ -297,7 +298,7 @@ export default function PaperMatcher({
               >
                 {Object.entries(MATCH_FIGURE_KINDS).map(([key, label]) => (
                   <option value={key} key={key}>
-                    {label}
+                    {t(label)}
                   </option>
                 ))}
               </select>
@@ -308,44 +309,55 @@ export default function PaperMatcher({
               busy={busy}
               onClick={() => findMatches(text)}
             >
-              匹配参考图
+              {t("匹配参考图")}
             </Button>
           </div>
-          <p id="matcher-limit" className="matcher-limit">
-            PDF 最多解析前 {MAX_PAGES}{" "}
-            页；优先使用摘要与方法，遇到参考文献标题会排除后文。可检查并编辑上面的文字。
-          </p>
+          <details className="matcher-limit">
+            <summary>{t("处理说明")}</summary>
+            <p id="matcher-limit">
+              {t("PDF 最多解析前 ")}
+              {MAX_PAGES}{" "}
+              {t(
+                "页；优先使用摘要与方法，遇到参考文献标题会排除后文。可检查并编辑上面的文字。",
+              )}
+            </p>
+            <p>{t("你的文本不会进入链接、浏览器存储或匹配 API。")}</p>
+          </details>
           {error && (
             <p id="matcher-error" className="matcher-error" role="alert">
-              {error}
+              {t(error)}
             </p>
           )}
           <Feedback message={feedback} inline />
         </section>
         <section
           className="matcher-results"
-          aria-label="匹配结果"
+          aria-label={t("匹配结果")}
           aria-busy={busy}
         >
           {match ? (
             <>
               <div className="matcher-summary">
                 <span className="eyebrow">MATCHING SIGNALS</span>
-                <h3>参考建议与匹配理由</h3>
+                <h3>{t("参考建议与匹配理由")}</h3>
                 <div className="matcher-topics">
                   {match.analysis.topics.map((topic) => (
-                    <span key={topic.id}>{topic.label}</span>
+                    <span key={topic.id}>{t(topic.label)}</span>
                   ))}
-                  <span>{MATCH_FIGURE_KINDS[match.analysis.figureKind]}</span>
+                  <span>
+                    {t(MATCH_FIGURE_KINDS[match.analysis.figureKind])}
+                  </span>
                 </div>
                 <p>
-                  先限定所选图类，再按论文主题与关键词排序。图类标签为初步分类，请打开原图确认。
+                  {t(
+                    "先限定所选图类，再按论文主题与关键词排序。图类标签为初步分类，请打开原图确认。",
+                  )}
                 </p>
                 {match.analysis.referencesExcluded && (
-                  <p>匹配时已排除参考文献部分。</p>
+                  <p>{t("匹配时已排除参考文献部分。")}</p>
                 )}
                 <details>
-                  <summary>查看本次使用的文字片段</summary>
+                  <summary>{t("查看本次使用的文字片段")}</summary>
                   <pre>{match.analysis.focusedText.slice(0, 1800)}</pre>
                 </details>
               </div>
@@ -361,7 +373,7 @@ export default function PaperMatcher({
                           <span>
                             {item.figure.paper.venue}{" "}
                             {item.figure.paper.publication_year} ·{" "}
-                            {figureLabel(item.figure)}
+                            {t(figureLabel(item.figure))}
                           </span>
                           <h4>{item.figure.paper.title}</h4>
                         </div>
@@ -369,7 +381,7 @@ export default function PaperMatcher({
                       <FigureImage figure={item.figure} />
                       <ul>
                         {item.reasons.map((reason) => (
-                          <li key={reason}>{reason}</li>
+                          <li key={reason}>{t(reason)}</li>
                         ))}
                       </ul>
                       <div className="matcher-result-actions">
@@ -377,7 +389,7 @@ export default function PaperMatcher({
                           onClick={() => onOpenFigure(item.figure.id)}
                           icon={ArrowUpRight}
                         >
-                          查看原图与来源
+                          {t("查看原图与来源")}
                         </Button>
                         <Button
                           icon={chosen.includes(item.figure.id) ? Check : Plus}
@@ -386,13 +398,15 @@ export default function PaperMatcher({
                               ? "selected"
                               : "neutral"
                           }
-                          title="选择要加入的项目"
+                          title={t("选择要加入的项目")}
                           aria-haspopup="dialog"
                           onClick={() => select(item.figure.id)}
                         >
-                          {chosen.includes(item.figure.id)
-                            ? `已加入 ${projectCountFor(item.figure.id)} 个项目`
-                            : "加入项目"}
+                          {t(
+                            chosen.includes(item.figure.id)
+                              ? `已加入 ${projectCountFor(item.figure.id)} 个项目`
+                              : "加入项目",
+                          )}
                         </Button>
                       </div>
                     </article>
@@ -401,25 +415,16 @@ export default function PaperMatcher({
               ) : (
                 <div className="matcher-empty">
                   <Search size={30} />
-                  <h3>暂未匹配到相关主题</h3>
-                  <p>
-                    所选图类中暂未找到相关参考。可补充关键词，或换一个图类。图类标签仍在完善，未标注条目不会强行混入推荐。
-                  </p>
+                  <h3>{t("暂未匹配到相关主题")}</h3>
+                  <p>{t("补充关键词，或换个图类。")}</p>
                 </div>
               )}
             </>
           ) : (
             <div className="matcher-empty">
               <FileText size={34} />
-              <h3>
-                {busy ? "正在提取可检索的文字" : "先让参考图了解你的论文"}
-              </h3>
-              <p>
-                {busy
-                  ? "解析在浏览器内进行；完成后自动推荐。"
-                  : "上传后自动推荐；粘贴文字后点击匹配。推荐限定所选图类，并说明共同主题与关键词。"}
-              </p>
-              <span>你的文本不会进入链接、浏览器存储或匹配 API。</span>
+              <h3>{t(busy ? "正在提取可检索的文字" : "参考图将在这里出现")}</h3>
+              <p>{t(busy ? "完成后自动推荐。" : "先添加你的论文。")}</p>
             </div>
           )}
         </section>

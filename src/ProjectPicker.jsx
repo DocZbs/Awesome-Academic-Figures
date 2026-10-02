@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import React, { useEffect, useRef, useState } from "react";
 import { Plus, ArrowRight, ArrowLeft, Search, X } from "lucide-react";
 import { Button, Dialog, FigureImage, Feedback } from "./ui.jsx";
@@ -13,6 +14,7 @@ export default function ProjectPicker({
   onClose,
   onHandoff,
 }) {
+  const { t, locale } = useI18n();
   const [creating, setCreating] = useState(false);
   const [draft, setDraft] = useState({ name: "", description: "" });
   const [message, setMessage] = useState("");
@@ -68,18 +70,20 @@ export default function ProjectPicker({
   }
   return (
     <Dialog
-      title={creating ? "新建项目" : handoff ? "选择绘图项目" : "加入项目"}
+      title={t(creating ? "新建项目" : handoff ? "选择绘图项目" : "加入项目")}
       eyebrow="SAVE YOUR INSPIRATION"
       className="project-picker"
       onClose={onClose}
       footer={
         <>
           <span>
-            {handoff
-              ? "为这次绘图任务明确选择一个项目"
-              : "可加入多个项目 · 勾选即保存"}
+            {t(
+              handoff
+                ? "为这次绘图任务明确选择一个项目"
+                : "可加入多个项目 · 勾选即保存",
+            )}
           </span>
-          <Button onClick={onClose}>{handoff ? "返回画廊" : "完成"}</Button>
+          <Button onClick={onClose}>{t(handoff ? "返回画廊" : "完成")}</Button>
         </>
       }
     >
@@ -88,15 +92,19 @@ export default function ProjectPicker({
           <FigureImage figure={figure} />
           <div>
             <span>
-              {ids.length > 1 ? `${ids.length} 幅参考图` : figureLabel(figure)}
+              {t(
+                ids.length > 1 ? `${ids.length} 幅参考图` : figureLabel(figure),
+              )}
             </span>
-            <h3 title={figure.paper.title}>{figureDisplayTitle(figure)}</h3>
+            <h3 title={figure.paper.title}>
+              {figureDisplayTitle(figure, locale)}
+            </h3>
           </div>
         </div>
       )}
       {storageWarning && (
         <p className="notice" role="status">
-          {storageWarning}
+          {t(storageWarning)}
         </p>
       )}
       {creating ? (
@@ -106,7 +114,7 @@ export default function ProjectPicker({
             icon={ArrowLeft}
             onClick={() => setCreating(false)}
           >
-            返回项目列表
+            {t("返回项目列表")}
           </Button>
           <ProjectForm
             draft={draft}
@@ -114,18 +122,23 @@ export default function ProjectPicker({
             onChange={setDraft}
             onSave={create}
             onCancel={() => setCreating(false)}
-            submitLabel={handoff ? "创建并带入任务" : "创建并加入"}
+            submitLabel={t(handoff ? "创建并带入任务" : "创建并加入")}
           />
         </div>
       ) : (
         <>
           <div className="picker-list-heading">
             <span>
-              {handoff
-                ? "把任务与参考图交给哪个项目？"
-                : "这张图要加入哪些项目？"}
+              {t(
+                handoff
+                  ? "把任务与参考图交给哪个项目？"
+                  : "这张图要加入哪些项目？",
+              )}
             </span>
-            <span>{workspace.projects.length} 个项目</span>
+            <span>
+              {workspace.projects.length}
+              {t(" 个项目")}
+            </span>
           </div>
           {workspace.projects.length > 5 && (
             <div className="project-search">
@@ -133,7 +146,7 @@ export default function ProjectPicker({
               <input
                 ref={searchRef}
                 value={query}
-                aria-label="搜索项目"
+                aria-label={t("搜索项目")}
                 onCompositionStart={() => {
                   composing.current = true;
                 }}
@@ -150,7 +163,7 @@ export default function ProjectPicker({
                 <Button
                   className="icon-button"
                   icon={X}
-                  aria-label="清空项目搜索"
+                  aria-label={t("清空项目搜索")}
                   onClick={() => {
                     setQuery("");
                     setCommittedQuery("");
@@ -162,7 +175,7 @@ export default function ProjectPicker({
           )}
           <fieldset className="picker-projects">
             <legend className="sr-only">
-              {handoff ? "选择绘图项目" : "选择项目，可多选"}
+              {t(handoff ? "选择绘图项目" : "选择项目，可多选")}
             </legend>
             {projects.map((project) =>
               handoff ? (
@@ -174,7 +187,10 @@ export default function ProjectPicker({
                   <ProjectCover project={project} figures={figures} small />
                   <span className="picker-project-copy">
                     <strong>{project.name}</strong>
-                    <small>{project.figureIds.length} 幅参考图</small>
+                    <small>
+                      {project.figureIds.length}
+                      {t(" 幅参考图")}
+                    </small>
                   </span>
                   <ArrowRight size={18} />
                 </button>
@@ -187,15 +203,16 @@ export default function ProjectPicker({
                   <span className="picker-project-copy">
                     <strong>{project.name}</strong>
                     <small>
-                      {project.figureIds.length} 幅参考图
-                      {project.figureIds.includes(ids[0]) ? " · 已加入" : ""}
+                      {project.figureIds.length}
+                      {t(" 幅参考图")}
+                      {t(project.figureIds.includes(ids[0]) ? " · 已加入" : "")}
                     </small>
                   </span>
                   <input
                     type="checkbox"
                     checked={project.figureIds.includes(ids[0])}
                     onChange={(event) => assign(project, event.target.checked)}
-                    aria-label={`加入 ${project.name}`}
+                    aria-label={t(`加入 ${project.name}`)}
                   />
                 </label>
               ),
@@ -203,14 +220,18 @@ export default function ProjectPicker({
             {!projects.length && (
               <div className="picker-empty">
                 <p>
-                  {workspace.projects.length
-                    ? "没有找到这个项目"
-                    : "还没有项目"}
+                  {t(
+                    workspace.projects.length
+                      ? "没有找到这个项目"
+                      : "还没有项目",
+                  )}
                 </p>
                 <small>
-                  {workspace.projects.length
-                    ? "换个关键词，或新建一个项目。"
-                    : "给你的研究创建一个参考板。"}
+                  {t(
+                    workspace.projects.length
+                      ? "换个关键词，或新建一个项目。"
+                      : "给你的研究创建一个参考板。",
+                  )}
                 </small>
               </div>
             )}
@@ -220,13 +241,14 @@ export default function ProjectPicker({
             icon={Plus}
             onClick={() => setCreating(true)}
           >
-            新建项目{!handoff && "，加入这张图"}
+            {t("新建项目")}
+            {t(!handoff && "，加入这张图")}
           </Button>
         </>
       )}
       {error && (
         <p className="field-error" role="alert">
-          {error}
+          {t(error)}
         </p>
       )}
       <Feedback message={message} inline />

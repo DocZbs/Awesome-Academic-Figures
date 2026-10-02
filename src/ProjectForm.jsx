@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui.jsx";
@@ -11,6 +12,7 @@ export default function ProjectForm({
   submitLabel,
   dirty,
 }) {
+  const { t } = useI18n();
   const id = useId();
   const nameRef = useRef(null);
   const composing = useRef(false);
@@ -36,7 +38,8 @@ export default function ProjectForm({
   return (
     <form className="project-form" noValidate onSubmit={submit}>
       <label htmlFor={`${id}-name`}>
-        项目名称 <span>必填</span>
+        {t("项目名称 ")}
+        <span>{t("必填")}</span>
       </label>
       <input
         id={`${id}-name`}
@@ -58,7 +61,8 @@ export default function ProjectForm({
         }}
       />
       <label htmlFor={`${id}-description`}>
-        项目说明 <span>选填</span>
+        {t("项目说明 ")}
+        <span>{t("选填")}</span>
       </label>
       <textarea
         id={`${id}-description`}
@@ -72,18 +76,20 @@ export default function ProjectForm({
       />
       {error && (
         <p id={`${id}-error`} className="field-error" role="alert">
-          {error}
+          {t(error)}
         </p>
       )}
       <p className="project-draft-note">
-        {dirty
-          ? "草稿保留在本次页面，保存后更新项目。"
-          : "为一篇论文、一个研究方向，整理自己的绘图参考。"}
+        {t(
+          dirty
+            ? "草稿保留在本次页面，保存后更新项目。"
+            : "为一篇论文、一个研究方向，整理自己的绘图参考。",
+        )}
       </p>
       <div className="project-form-actions">
-        <Button onClick={onCancel}>返回</Button>
+        <Button onClick={onCancel}>{t("返回")}</Button>
         <Button variant="primary" type="submit" icon={ArrowRight}>
-          {submitLabel}
+          {t(submitLabel)}
         </Button>
       </div>
     </form>

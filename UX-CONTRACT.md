@@ -2,7 +2,7 @@
 
 ## Product context
 
-Local preview for Chinese-speaking researchers choosing Figure 1/2 references. Active UI locale is zh-CN; source paper content remains English. Dates follow Asia/Shanghai when displayed. Accessibility target is WCAG 2.2 AA; automated checks are evidence, not a claim of certification.
+A gallery for Chinese- and English-speaking researchers choosing academic figure references. Supported UI locales are zh-CN and en, with zh-CN as the default. Scientific source content retains its original language. Dates follow Asia/Shanghai when displayed. Accessibility target is WCAG 2.2 AA; automated checks are evidence, not a claim of certification.
 
 ## Business-context sources
 
@@ -29,6 +29,7 @@ DESIGN.md owns taste and generates runtime tokens. Light theme only. Generated s
 | Toast | Feedback | This contract | polite inline status | browser |
 | Dialog | Dialog | This contract | detail / guide / export / project | focus and Escape |
 | Search | Gallery search | This contract | local, IME-safe | browser |
+| Interface language | LocaleProvider / useI18n / src/locale.js | Current user request 2026-10-02 | zh-CN / en; shared Button in the header | browser + URL + persistence |
 
 The matcher figure-kind field uses a native select; its platform-owned popup is intentionally accepted. No date picker, server CRUD or destructive operation is implemented. Gallery filters use checkbox groups in native details disclosure; dimension changes use plain pressed buttons.
 
@@ -102,6 +103,9 @@ PaperMatcher reuses Dialog, Button, Feedback and FigureImage. PDF/text/Markdown
 files are read in the browser; paper text is held only in component memory, never
 placed in URLs, browser storage, analytics or outbound matching requests. Native
 file input supplies local file selection. Reset discards the working document.
+Initial instructions and placeholders are brief in both locales. Processing
+limits and privacy details remain available in a native disclosure beneath the
+inputs; the footer shows only the concise local-processing status.
 The initial recommender uses multilingual topic terms, text relevance and graphic
 figure kind; it gives reasons rather than claiming a model has read every paper
 or guaranteeing that the top result is objectively best. Empty text, unsupported
@@ -139,3 +143,10 @@ Research-topic selections combine with AND (intersection); existing source/layou
 ProjectExchange uses the shared Dialog and Button, a labeled native JSON file input, pending reading status, inline failure recovery and Feedback. Import reads at most 2 MiB, validates with src/projects.js and displays added/updated counts, project names and missing-figure warnings before explicit application. Import upserts by stable project ID and preserves other projects; repeated identical imports are idempotent. No paper text or task drafts are implicitly persisted or exported. CLI and browser share project changes and catalog search; discovery is published through agent.json, llms.txt, AGENTS.md and project-schema.json.
 
 Card headings are display-only: preserve curated short titles, remove duplicate terminal Figure/图 labels, use a colon prefix for bibliographic headings when appropriate, otherwise truncate at a word boundary. Full source titles remain in detail, search and export. Number labels are independent of graphic genre.
+
+
+## Language switching
+
+The header language button switches all product navigation, forms, feedback, validation messages, accessibility labels and taxonomy labels through the shared locale owner. Explicit `lang=en` / `lang=zh` / `lang=zh-CN` in the URL wins over the saved `aaf:language` preference; otherwise a valid saved language wins over the Chinese default. Switching updates that URL field with replaceState and preserves all search/figure parameters, results, pagination, favorites, hidden state, project configurations and in-page drafts. Browser history reads the explicit locale again. Unavailable localStorage falls back to page state and the shareable URL without blocking operation.
+
+Document language and title track the current interface. ISO source dates remain source dates, with the existing timezone policy. English figure display titles use recorded English metadata; original paper titles, captions, collected descriptions/prompts and user names/inputs are not automatically translated. The project interchange schema and agent search semantics remain locale-independent.

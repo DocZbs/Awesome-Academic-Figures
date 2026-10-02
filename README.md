@@ -5,7 +5,7 @@
   <p>A visual reference library for researchers and drawing agents.</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
-    <a href="https://doczbs.github.io/Awesome-Academic-Figures/"><strong>Explore the gallery ↗</strong></a> &nbsp; · &nbsp;
+    <a href="https://doczbs.github.io/Awesome-Academic-Figures/?lang=en"><strong>Explore the gallery ↗</strong></a> &nbsp; · &nbsp;
     <a href="AGENTS.md">For agents</a> &nbsp; · &nbsp;
     <a href="docs/USAGE.md">User guide</a>
   </p>
@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b
 
 ## 🔎 Find an expression that fits
 
-Start with the kind of figure you want to draw. Follow a topic such as [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl), [World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model) or [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl). A figure can have several research tags, so you can explore the connections between ideas.
+Start with the kind of figure you want to draw. Follow a topic such as [RL](https://doczbs.github.io/Awesome-Academic-Figures/?q=rl&lang=en), [World Model](https://doczbs.github.io/Awesome-Academic-Figures/?q=world+model&lang=en) or [ICL](https://doczbs.github.io/Awesome-Academic-Figures/?q=icl&lang=en). A figure can have several research tags, so you can explore the connections between ideas.
 
 <a href="https://raw.githubusercontent.com/DocZbs/Awesome-Academic-Figures/main/docs/assets/search-showcase.png">
   <img src="docs/assets/search-showcase.png" width="100%" alt="World Model search in the live gallery, showing full figures, research tags and layout filters" />
@@ -65,9 +65,9 @@ node scripts/agent.mjs search --query "rl world model" --type mechanism --limit 
 
 ---
 
-**Try it:** [Open the gallery](https://doczbs.github.io/Awesome-Academic-Figures/) → pick a figure → add it to your project → export your reference package. No local checkout is needed to browse.
+**Try it:** [Open the gallery](https://doczbs.github.io/Awesome-Academic-Figures/?lang=en) → pick a figure → add it to your project → export your reference package. No local checkout is needed to browse.
 
-The gallery UI and extended user docs are currently in Chinese; the agent guide is in English. Projects stay in your browser or portable JSON files. Paper matching runs locally with keywords and topics. Screenshots are lossless 2× captures of the live UI; project contents are examples. Numbering, source and prompt verification statuses stay with each figure—see [collection notes](docs/COLLECTION.md).
+The gallery interface supports English and Simplified Chinese; switch at the top of the page. Paper captions, collected descriptions and prompts retain their original language. Extended user docs are in Chinese; the agent guide is in English. Projects stay in your browser or portable JSON files. Paper matching runs locally with keywords and topics. Screenshots are lossless 2× captures of the live UI; project contents are examples. Numbering, source and prompt verification statuses stay with each figure—see [collection notes](docs/COLLECTION.md).
 
 **Build with us.** Contribute a licensed figure, a better tag or a more useful prompt. [Contributing](CONTRIBUTING.md) · [Local development](docs/DEVELOPMENT.md) · [Report an issue](https://github.com/DocZbs/Awesome-Academic-Figures/issues)
 

@@ -67,7 +67,7 @@ node scripts/agent.mjs search --query "rl world model" --type mechanism --limit 
 
 **现在就试试：** [打开画廊](https://doczbs.github.io/Awesome-Academic-Figures/) → 选一张图 → 加入你的项目 → 导出绘图参考包。直接在线使用即可。
 
-网页和扩展使用文档目前为中文，智能体指南为英文。项目保存在各自浏览器或配置文件中，论文推荐在浏览器内按关键词与主题进行。截图为当前界面的 2× 无损 PNG，项目内容为示例。图号、来源和 prompt 的核验状态随每张图保留，详见[图库说明](docs/COLLECTION.md)。
+网页支持中文和英文，可在顶部切换；图注、已有图形描述与 Prompt 保留来源语言。扩展使用文档为中文，智能体指南为英文。项目保存在各自浏览器或配置文件中，论文推荐在浏览器内按关键词与主题进行。截图为当前界面的 2× 无损 PNG，项目内容为示例。图号、来源和 prompt 的核验状态随每张图保留，详见[图库说明](docs/COLLECTION.md)。
 
 **一起让好图更容易被找到。** 欢迎贡献有明确授权的论文图、主题标签与 prompt 改进。[贡献指南](CONTRIBUTING.md) · [本地开发](docs/DEVELOPMENT.md) · [反馈问题](https://github.com/DocZbs/Awesome-Academic-Figures/issues)
 

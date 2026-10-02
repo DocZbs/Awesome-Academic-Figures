@@ -70,7 +70,7 @@ components:
 
 ## Overview
 
-The reference is a researcher's figure contact sheet: annotation corners, complete diagrams, precise captions and a working selection tray. The audience is Chinese-speaking AI researchers browsing Figure 1/2 to adapt for their own work. English paper titles and figure labels remain original. This is a product gallery with a small editorial introduction, for laptop exploration and mobile review. Japan-market behavior is not in scope.
+The reference is a researcher's figure contact sheet: annotation corners, complete diagrams, precise captions and a working selection tray. The audience is Chinese- and English-speaking researchers browsing Figure 1/2 to adapt for their own work. English paper titles and figure labels remain original. This is a product gallery with a small editorial introduction, for laptop exploration and mobile review. Japan-market behavior is not in scope.
 
 The signature is a paired Figure 1/2 composition on a pale plotting grid, with small figure labels and connector marks. Expression stays in this introduction; filters, cards and dialogs use quiet familiar controls. No invented inventory, decorative chart data, generic gradient hero, oversized statistics or cropped figure previews.
 
@@ -121,7 +121,9 @@ The matching surface uses the shared modal, quiet upload/input panel, topic chip
 and complete figure previews with readable recommendation reasons. Cobalt keeps
 its role for the recommended next action; no new palette or decorative scores.
 Uploaded research text stays transient and private in the browser. Awards are
-optional tags within the same visual library.
+optional tags within the same visual library. The input surface uses one short
+intro and one-line empty state; parsing limits and privacy details live in a
+closed native disclosure. The footer keeps a concise local-processing status.
 
 
 ## Research-topic labels
@@ -140,3 +142,8 @@ The palette, fonts, radius scale, global scrollbar and shared Dialog/Button/Feed
 ## Concise headings and agent handoff
 
 Gallery and project reference headings preserve curated short titles, strip duplicate trailing figure labels and shorten bibliographic headings without inventing scientific claims. Full paper identity remains in detail and exported metadata; figure numbering appears in the image label. Source rows avoid repeating the paper title. The project rail includes a quiet “项目与智能体” action opening the shared compact dialog: export portable JSON or review an import before applying it. It retains the established palette and uses labeled native file input, explicit action buttons and readable status feedback.
+
+
+## Interface languages
+
+A restrained language button in the header uses the shared Button and Languages icon. It offers English from the Chinese interface and 中文 from the English interface, including on narrow screens. It keeps the existing palette, fonts, spacing tokens and figure composition. LocaleProvider/useI18n owns the locale for every surface; UI messages and taxonomy labels come from one dictionary. The English hero uses a slightly smaller responsive type size to preserve the paired composition. English figure titles use existing metadata; scientific source content and user-authored text are preserved.

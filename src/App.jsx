@@ -1,3 +1,4 @@
+import { useI18n } from "./i18n.jsx";
 import React, {
   lazy,
   Suspense,
@@ -35,6 +36,7 @@ import {
   ChevronDown,
   FileSearch,
   FolderOpen,
+  Languages,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import ProjectPanel from "./ProjectPanel.jsx";
@@ -122,6 +124,7 @@ const toggleItem = (setValue, id) =>
   );
 
 export default function App() {
+  const { t, locale, setLocale } = useI18n();
   const [figures, setFigures] = useState([]);
   const [loadState, setLoadState] = useState("loading");
   const [retry, setRetry] = useState(0);
@@ -258,8 +261,8 @@ export default function App() {
   }, []);
   useEffect(() => {
     const currentFigure = figures.find((item) => item.id === detailId);
-    document.title = `${detailId ? (currentFigure ? figureLabel(currentFigure) : "参考图详情") : state.view === "favorites" ? "我的收藏" : state.view === "hidden" ? "已隐藏图像" : "图形画廊"} — Awesome Academic Figures`;
-  }, [detailId, state.view, figures]);
+    document.title = `${t(detailId ? (currentFigure ? figureLabel(currentFigure) : "参考图详情") : state.view === "favorites" ? "我的收藏" : state.view === "hidden" ? "已隐藏图像" : "图形画廊")} — Awesome Academic Figures`;
+  }, [detailId, state.view, figures, t]);
   const detail = figures.find((item) => item.id === detailId);
   const results = useMemo(
     () => filterFigures(figures, state, favorites, hidden),
@@ -355,13 +358,13 @@ export default function App() {
   return (
     <>
       <a className="skip-link" href="#gallery">
-        跳到图形画廊
+        {t("跳到图形画廊")}
       </a>
       <header className="site-header page-width">
         <a
           href={import.meta.env.BASE_URL}
           className="brand"
-          aria-label="Awesome Academic Figures 首页"
+          aria-label={t("Awesome Academic Figures 首页")}
         >
           <span className="brand-mark">
             <span />
@@ -374,14 +377,14 @@ export default function App() {
             <strong>Academic Figures</strong>
           </span>
         </a>
-        <nav aria-label="主导航">
+        <nav aria-label={t("主导航")}>
           <button
             className={
               state.view === "gallery" ? "nav-link active" : "nav-link"
             }
             onClick={() => setView("gallery")}
           >
-            图形画廊
+            {t("图形画廊")}
           </button>
           <button
             className={
@@ -389,16 +392,31 @@ export default function App() {
             }
             onClick={() => setView("favorites")}
           >
-            我的收藏<span className="nav-count">{favorites.length}</span>
+            {t("我的收藏")}
+            <span className="nav-count">{favorites.length}</span>
           </button>
           <button className="nav-link" onClick={() => setGuide(true)}>
-            使用指南
+            {t("使用指南")}
             <ArrowUpRight size={14} />
           </button>
         </nav>
-        <span className="version-badge">
-          <span /> 开放图鉴 <span className="mono">v0.2</span>
-        </span>
+        <div className="header-tools">
+          <span className="version-badge">
+            <span />
+            {t(" 开放图鉴 ")}
+            <span className="mono">v0.2</span>
+          </span>
+          <Button
+            className="language-switch"
+            icon={Languages}
+            aria-label={t(locale === "en" ? "切换到中文" : "切换到英文")}
+            onClick={() => setLocale(locale === "en" ? "zh-CN" : "en")}
+          >
+            <span lang={locale === "en" ? "zh-CN" : "en"}>
+              {locale === "en" ? "中文" : "English"}
+            </span>
+          </Button>
+        </div>
       </header>
       <main className={selectedFigures.length ? "with-tray" : ""}>
         <section className="hero page-width" aria-labelledby="hero-title">
@@ -407,15 +425,16 @@ export default function App() {
               <span className="tiny-axis" /> A VISUAL LIBRARY FOR RESEARCH
             </div>
             <h1 id="hero-title">
-              好研究，
+              {t("好研究，")}
               <br />
-              值得一张
+              {t("值得一张")}
               <span className="heading-accent">
-                好图<span className="accent-spark">✳</span>
+                {t("好图")}
+                <span className="accent-spark">✳</span>
               </span>
-              。
+              {t("。")}
             </h1>
-            <p>找到你的绘图灵感，交给你的绘图智能体。</p>
+            <p>{t("找到你的绘图灵感，交给你的绘图智能体。")}</p>
             <div className="hero-buttons">
               <Button
                 variant="primary"
@@ -423,17 +442,17 @@ export default function App() {
                 disabled={loadState !== "ready"}
                 onClick={() => setMatcherOpen(true)}
               >
-                用我的论文找图
+                {t("用我的论文找图")}
               </Button>
               <a href="#gallery" className="button button-neutral">
-                探索图形画廊
+                {t("探索图形画廊")}
                 <ArrowDown size={17} />
               </a>
             </div>
             <div className="hero-caption">
-              <span className="source-dot" /> 源自真实论文{" "}
-              <span className="caption-divider" />{" "}
-              为你的研究找到更精准优雅的表达
+              <span className="source-dot" />
+              {t(" 源自真实论文")} <span className="caption-divider" />{" "}
+              {t("为你的研究找到更精准优雅的表达")}
             </div>
           </div>
           <div className="hero-art">
@@ -446,7 +465,7 @@ export default function App() {
                 <button
                   className="hero-figure hero-figure-one"
                   onClick={() => openDetail(figures[0].id)}
-                  aria-label="查看 Figure 1"
+                  aria-label={t("查看 Figure 1")}
                 >
                   <div className="hero-figure-header">
                     <span className="mono">FIG. 01</span>
@@ -459,7 +478,7 @@ export default function App() {
                     src={assetUrl(figures[0], "preview")}
                     width="1200"
                     height="400"
-                    alt="协作模拟与反馈框架预览"
+                    alt={t("协作模拟与反馈框架预览")}
                   />
                   <div className="hero-figure-caption">
                     <span>CollabLLM</span>
@@ -469,7 +488,7 @@ export default function App() {
                 <button
                   className="hero-figure hero-figure-two"
                   onClick={() => openDetail(figures[1].id)}
-                  aria-label="查看 Figure 2"
+                  aria-label={t("查看 Figure 2")}
                 >
                   <div className="hero-figure-header">
                     <span className="mono">FIG. 02</span>
@@ -482,11 +501,12 @@ export default function App() {
                     src={assetUrl(figures[1], "preview")}
                     width="1200"
                     height="444"
-                    alt="两种方法的训练与应用对比预览"
+                    alt={t("两种方法的训练与应用对比预览")}
                   />
                 </button>
                 <div className="art-sticker">
-                  <Sparkles size={15} /> 好图，让想法被看见
+                  <Sparkles size={15} />
+                  {t(" 好图，让想法被看见")}
                 </div>
               </>
             ) : (
@@ -498,7 +518,7 @@ export default function App() {
           </div>
         </section>
         <div className="source-strip page-width">
-          <span className="strip-label">从这些会议开始</span>
+          <span className="strip-label">{t("从这些会议开始")}</span>
           <div className="conference-list">
             <strong>NeurIPS</strong>
             <strong>ICML</strong>
@@ -508,8 +528,11 @@ export default function App() {
             <strong>ACL</strong>
           </div>
           <span className="strip-note">
-            已收录 · {new Set(figures.map((figure) => figure.paper.id)).size}{" "}
-            篇论文 / {figures.length} 幅图
+            {t("已收录 · ")}
+            {new Set(figures.map((figure) => figure.paper.id)).size}{" "}
+            {t("篇论文 / ")}
+            {figures.length}
+            {t(" 幅图")}
           </span>
         </div>
         <section
@@ -523,7 +546,7 @@ export default function App() {
               onClick={() => openProjects()}
             >
               <FolderOpen size={18} />
-              <span>我的项目</span>
+              <span>{t("我的项目")}</span>
               <span className="project-entry-count">
                 {workspace.projects.length}
               </span>
@@ -531,34 +554,36 @@ export default function App() {
             </button>
             {pendingHandoff ? (
               <Button onClick={() => setProjectPicker(pendingHandoff)}>
-                继续选择绘图项目
+                {t("继续选择绘图项目")}
               </Button>
             ) : (
-              <span>在每张图上选择项目，收集你的绘图灵感。</span>
+              <span>{t("在每张图上选择项目，收集你的绘图灵感。")}</span>
             )}
           </div>
           <div className="gallery-heading-row">
             <div>
               <div className="eyebrow">FIND YOUR NEXT FIGURE</div>
               <h2 id="gallery-heading" tabIndex="-1">
-                {state.view === "favorites"
-                  ? "你的灵感收藏夹"
-                  : state.view === "hidden"
-                    ? "暂时隐藏的图"
-                    : "从一种图形，开始一个想法"}
+                {t(
+                  state.view === "favorites"
+                    ? "你的灵感收藏夹"
+                    : state.view === "hidden"
+                      ? "暂时隐藏的图"
+                      : "从一种图形，开始一个想法",
+                )}
                 <span className="heading-count">{results.length}</span>
               </h2>
             </div>
             <div className="search-field">
               <Search size={19} aria-hidden="true" />
               <label className="sr-only" htmlFor="figure-search">
-                搜索图形、布局或论文
+                {t("搜索图形、布局或论文")}
               </label>
               <input
                 id="figure-search"
                 ref={searchRef}
                 type="search"
-                placeholder="关键词、论文或布局，如 rl、world model…"
+                placeholder={t("关键词、论文或布局，如 rl、world model…")}
                 value={query}
                 onCompositionStart={() => {
                   composing.current = true;
@@ -584,7 +609,7 @@ export default function App() {
               />
               {query && (
                 <button
-                  aria-label="清除搜索"
+                  aria-label={t("清除搜索")}
                   onClick={() => {
                     clearTimeout(debounce.current);
                     setQuery("");
@@ -599,12 +624,12 @@ export default function App() {
           </div>
           {storageWarning && (
             <div className="notice" role="status">
-              {storageWarning}
+              {t(storageWarning)}
             </div>
           )}
           <div className="dimension-row">
-            <span>浏览维度</span>
-            <div className="dimension-buttons" aria-label="浏览维度">
+            <span>{t("浏览维度")}</span>
+            <div className="dimension-buttons" aria-label={t("浏览维度")}>
               {Object.entries(DIMENSIONS).map(([key, label]) => (
                 <button
                   key={key}
@@ -618,8 +643,10 @@ export default function App() {
                     }))
                   }
                 >
-                  {label}
-                  {key === "type" && <span className="default-tag">默认</span>}
+                  {t(label)}
+                  {key === "type" && (
+                    <span className="default-tag">{t("默认")}</span>
+                  )}
                 </button>
               ))}
             </div>
@@ -630,19 +657,23 @@ export default function App() {
               }
             >
               <Eye size={15} />
-              {state.view === "hidden" ? "返回画廊" : `已隐藏 ${hidden.length}`}
+              {t(
+                state.view === "hidden"
+                  ? "返回画廊"
+                  : `已隐藏 ${hidden.length}`,
+              )}
             </button>
           </div>
           <div
             className="category-row"
-            aria-label={DIMENSIONS[state.dimension]}
+            aria-label={t(DIMENSIONS[state.dimension])}
           >
             <Chip
               active={state.category === "all"}
               onClick={() => setState((old) => ({ ...old, category: "all" }))}
             >
               <LayoutGrid size={17} />
-              全部图形
+              {t("全部图形")}
               <span>{categoryStats.total}</span>
             </Chip>
             {Object.entries(categoryLabels).map(([key, label]) => {
@@ -666,7 +697,7 @@ export default function App() {
                   onClick={() => setState((old) => ({ ...old, category: key }))}
                 >
                   <Icon size={17} />
-                  {label}
+                  {t(label)}
                   <span>{categoryStats.counts[key] || 0}</span>
                 </Chip>
               );
@@ -674,15 +705,21 @@ export default function App() {
           </div>
           {loadState === "ready" && (
             <p className="category-summary">
-              {(state.dimension === "layout" ||
-                state.dimension === "purpose") &&
-                `当前 ${categoryStats.total} 幅图中，${categoryStats.labelled} 幅已标注${state.dimension === "layout" ? "布局" : "用途"}，${categoryStats.unlabelled} 幅未标注。`}
-              {categoryStats.overlapping &&
-                "同一幅图可有多个标签，分类数量不相加。"}
-              {state.dimension === "layout" &&
-                inferredLayoutCount > 0 &&
-                `其中 ${inferredLayoutCount} 幅为来源描述初标，待看图复核。`}
-              数量按当前搜索、筛选与列表统计。
+              {t(
+                (state.dimension === "layout" ||
+                  state.dimension === "purpose") &&
+                  `当前 ${categoryStats.total} 幅图中，${categoryStats.labelled} 幅已标注${state.dimension === "layout" ? "布局" : "用途"}，${categoryStats.unlabelled} 幅未标注。`,
+              )}
+              {t(
+                categoryStats.overlapping &&
+                  "同一幅图可有多个标签，分类数量不相加。",
+              )}
+              {t(
+                state.dimension === "layout" &&
+                  inferredLayoutCount > 0 &&
+                  `其中 ${inferredLayoutCount} 幅为来源描述初标，待看图复核。`,
+              )}
+              {t("数量按当前搜索、筛选与列表统计。")}
             </p>
           )}
           {state.dimension === "source" && (
@@ -697,15 +734,15 @@ export default function App() {
             </div>
           )}
           <div className="gallery-layout">
-            <aside className="filter-panel" aria-label="多维筛选">
+            <aside className="filter-panel" aria-label={t("多维筛选")}>
               <div className="filter-heading">
                 <SlidersHorizontal size={17} />
-                <strong>进一步筛选</strong>
+                <strong>{t("进一步筛选")}</strong>
                 {filterCount > 0 && (
-                  <button onClick={clearFilters}>重置</button>
+                  <button onClick={clearFilters}>{t("重置")}</button>
                 )}
               </div>
-              <p className="filter-caption">找到适合你研究的表达方式</p>
+              <p className="filter-caption">{t("找到适合你研究的表达方式")}</p>
               {Object.entries(filterFieldsFor(figures))
                 .filter(([field]) => field !== "number")
                 .map(([field, info]) => (
@@ -723,12 +760,12 @@ export default function App() {
                     }}
                   >
                     <summary>
-                      {info.label}
+                      {t(info.label)}
                       <ChevronDown size={14} />
                     </summary>
                     {field === "topic" && (
                       <p className="filter-topic-note">
-                        多选须同时满足。标签按论文标题和元数据识别。
+                        {t("多选须同时满足。标签按论文标题和元数据识别。")}
                       </p>
                     )}
                     <div className="filter-options">
@@ -741,7 +778,7 @@ export default function App() {
                             )}
                             onChange={() => setFilter(field, option.value)}
                           />
-                          <span>{option.label}</span>
+                          <span>{t(option.label)}</span>
                           <span className="filter-count mono">
                             {facetCounts[field]?.[option.value] || 0}
                           </span>
@@ -753,12 +790,12 @@ export default function App() {
               <div className="filter-tip">
                 <CornerDownRight size={17} />
                 <p>
-                  先找布局，再换内容。
+                  {t("先找布局，再换内容。")}
                   <br />
                   <span>
-                    参考图不是答案，
+                    {t("参考图不是答案，")}
                     <br />
-                    你的研究才是。
+                    {t("你的研究才是。")}
                   </span>
                 </p>
               </div>
@@ -766,32 +803,35 @@ export default function App() {
             <div className="results-panel">
               <div className="results-meta">
                 <span role="status">
-                  {loadState === "ready"
-                    ? `找到 ${results.length} 幅图形`
-                    : loadState === "error"
-                      ? "图形库加载失败"
-                      : "正在读取图形库"}
+                  {t(
+                    loadState === "ready"
+                      ? `找到 ${results.length} 幅图形`
+                      : loadState === "error"
+                        ? "图形库加载失败"
+                        : "正在读取图形库",
+                  )}
                 </span>
                 <span>
-                  <span className="verified-dot" /> 图片 + 结构描述 + Prompt
+                  <span className="verified-dot" />
+                  {t(" 图片 + 结构描述 + Prompt")}
                 </span>
               </div>
               {loadState === "loading" ? (
                 <div className="empty-state loading-state">
                   <div className="loader" />
-                  <h3>正在打开图形库</h3>
-                  <p>读取参考图和来源信息…</p>
+                  <h3>{t("正在打开图形库")}</h3>
+                  <p>{t("读取参考图和来源信息…")}</p>
                 </div>
               ) : loadState === "error" ? (
                 <div className="empty-state" role="alert">
                   <FolderDown size={36} />
-                  <h3>图形库暂时无法加载</h3>
-                  <p>检查网络，然后重新尝试。</p>
+                  <h3>{t("图形库暂时无法加载")}</h3>
+                  <p>{t("检查网络，然后重新尝试。")}</p>
                   <Button
                     icon={RotateCcw}
                     onClick={() => setRetry((value) => value + 1)}
                   >
-                    重新加载
+                    {t("重新加载")}
                   </Button>
                 </div>
               ) : results.length === 0 ? (
@@ -800,18 +840,22 @@ export default function App() {
                     <Shapes size={30} />
                   </div>
                   <h3>
-                    {state.view === "favorites"
-                      ? "把喜欢的图，留给下一个想法"
-                      : state.view === "hidden"
-                        ? "这里还没有隐藏的图"
-                        : "还没找到这样的图形"}
+                    {t(
+                      state.view === "favorites"
+                        ? "把喜欢的图，留给下一个想法"
+                        : state.view === "hidden"
+                          ? "这里还没有隐藏的图"
+                          : "还没找到这样的图形",
+                    )}
                   </h3>
                   <p>
-                    {state.view === "favorites"
-                      ? "点击图像旁的星标，就能在这里再次找到它。"
-                      : state.view === "hidden"
-                        ? "暂时隐藏的图会出现在这里，随时可以恢复。"
-                        : "试试其他图形类型，或放宽筛选条件。"}
+                    {t(
+                      state.view === "favorites"
+                        ? "点击图像旁的星标，就能在这里再次找到它。"
+                        : state.view === "hidden"
+                          ? "暂时隐藏的图会出现在这里，随时可以恢复。"
+                          : "试试其他图形类型，或放宽筛选条件。",
+                    )}
                   </p>
                   <Button
                     onClick={() => {
@@ -820,7 +864,7 @@ export default function App() {
                     }}
                     icon={ArrowRight}
                   >
-                    {state.view === "gallery" ? "清除筛选" : "浏览图形画廊"}
+                    {t(state.view === "gallery" ? "清除筛选" : "浏览图形画廊")}
                   </Button>
                 </div>
               ) : (
@@ -834,7 +878,7 @@ export default function App() {
                         <div className="card-preview">
                           <div className="card-topline">
                             <span className="figure-label mono">
-                              {figureLabel(figure)}
+                              {t(figureLabel(figure))}
                             </span>
                             {figure.paper.awards?.length > 0 && (
                               <span className="award-badge">
@@ -848,8 +892,8 @@ export default function App() {
                           />
                           <button
                             className="expand-button"
-                            aria-label={`放大 ${figureLabel(figure)}`}
-                            title="放大图像"
+                            aria-label={t(`放大 ${figureLabel(figure)}`)}
+                            title={t("放大图像")}
                             onClick={() => openDetail(figure.id)}
                           >
                             <ArrowUpRight size={18} />
@@ -864,12 +908,13 @@ export default function App() {
                           </div>
                           <h3>
                             <button onClick={() => openDetail(figure.id)}>
-                              {figureDisplayTitle(figure)}
+                              {figureDisplayTitle(figure, locale)}
                             </button>
                           </h3>
                           <div className="card-provenance">
                             <time dateTime={figure.paper.collected_at}>
-                              收录 {figure.paper.collected_at}
+                              {t("收录 ")}
+                              {figure.paper.collected_at}
                             </time>
                             {figure.paper.arxiv_url && (
                               <a
@@ -885,18 +930,20 @@ export default function App() {
                           <div className="card-tags">
                             {browseGenresFor(figure).map((genre) => (
                               <span key={genre}>
-                                {BROWSE_TYPE_LABELS[genre]}
+                                {t(BROWSE_TYPE_LABELS[genre])}
                               </span>
                             ))}
                             <span>
-                              {LAYOUT_LABELS[figure.classification.layouts[0]]}
+                              {t(
+                                LAYOUT_LABELS[figure.classification.layouts[0]],
+                              )}
                             </span>
-                            <span>Prompt 已配备</span>
+                            <span>{t("Prompt 已配备")}</span>
                           </div>
                           {researchTagsFor(figure).length > 0 && (
                             <div
                               className="research-tags"
-                              aria-label="研究主题标签"
+                              aria-label={t("研究主题标签")}
                             >
                               {researchTagsFor(figure).map((tag) => (
                                 <button
@@ -905,11 +952,13 @@ export default function App() {
                                   aria-pressed={state.filters.topic.includes(
                                     tag.id,
                                   )}
-                                  aria-label={`筛选主题 ${tag.label}`}
-                                  title={`${tag.label} · 根据论文元数据关键词识别`}
+                                  aria-label={t(`筛选主题 ${tag.label}`)}
+                                  title={t(
+                                    `${tag.label} · 根据论文元数据关键词识别`,
+                                  )}
                                   onClick={() => setFilter("topic", tag.id)}
                                 >
-                                  {tag.label}
+                                  {t(tag.label)}
                                 </button>
                               ))}
                             </div>
@@ -940,14 +989,16 @@ export default function App() {
                       className="load-more"
                       onClick={() => setLimit((value) => value + PAGE_SIZE)}
                     >
-                      加载更多图形
+                      {t("加载更多图形")}
                     </Button>
                   )}
                   <div className="collection-note">
                     <Check size={15} />
                     <span>
-                      {figures.length} 幅图已收录 · 改绘 prompt
-                      为维护者重建，尚未经生成验证
+                      {figures.length}
+                      {t(
+                        " 幅图已收录 · 改绘 prompt 为维护者重建，尚未经生成验证",
+                      )}
                     </span>
                   </div>
                 </>
@@ -959,12 +1010,12 @@ export default function App() {
           <div className="reuse-title">
             <span className="eyebrow">FROM INSPIRATION TO YOUR FIGURE</span>
             <h2>
-              找到好图。
+              {t("找到好图。")}
               <br />
-              获得灵感
+              {t("获得灵感")}
             </h2>
             <button onClick={() => setGuide(true)}>
-              查看使用指南
+              {t("查看使用指南")}
               <ArrowUpRight size={17} />
             </button>
           </div>
@@ -972,31 +1023,31 @@ export default function App() {
             <div>
               <span className="step-number mono">01</span>
               <Network size={24} />
-              <h3>找到表达方式</h3>
+              <h3>{t("找到表达方式")}</h3>
               <p>
-                按类型与布局，挑一张
+                {t("按类型与布局，挑一张")}
                 <br />
-                适合你研究的参考图。
+                {t("适合你研究的参考图。")}
               </p>
             </div>
             <div>
               <span className="step-number mono">02</span>
               <Bookmark size={24} />
-              <h3>选出想借鉴的部分</h3>
+              <h3>{t("选出想借鉴的部分")}</h3>
               <p>
-                布局、配色或模块表达，
+                {t("布局、配色或模块表达，")}
                 <br />
-                告诉智能体你喜欢什么。
+                {t("告诉智能体你喜欢什么。")}
               </p>
             </div>
             <div>
               <span className="step-number mono">03</span>
               <FolderDown size={24} />
-              <h3>带走完整参考包</h3>
+              <h3>{t("带走完整参考包")}</h3>
               <p>
-                图片与 prompt 一起下载，
+                {t("图片与 prompt 一起下载，")}
                 <br />
-                用你的内容重新绘制。
+                {t("用你的内容重新绘制。")}
               </p>
             </div>
           </div>
@@ -1009,16 +1060,19 @@ export default function App() {
             <br />
             Academic Figures<span>↗</span>
           </span>
-          <span>好图，让研究被看见。</span>
+          <span>{t("好图，让研究被看见。")}</span>
         </div>
         <span className="mono">AWESOME ACADEMIC FIGURES · OPEN GALLERY</span>
         <button onClick={() => setGuide(true)}>
-          关于这个图鉴
+          {t("关于这个图鉴")}
           <ArrowUpRight size={14} />
         </button>
       </footer>
       {selectedFigures.length > 0 && (
-        <div className="selection-tray" aria-label={`${project.name}的参考板`}>
+        <div
+          className="selection-tray"
+          aria-label={t(`${project.name}的参考板`)}
+        >
           <div className="tray-label">
             <span className="tray-icon">
               <Layers3 size={20} />
@@ -1031,7 +1085,7 @@ export default function App() {
                 className="tray-open-project"
                 onClick={() => openProjects()}
               >
-                查看项目参考板
+                {t("查看项目参考板")}
               </button>
             </div>
           </div>
@@ -1040,17 +1094,17 @@ export default function App() {
               <div className="tray-thumb" key={figure.id}>
                 <img
                   src={assetUrl(figure, "preview")}
-                  alt={`已选 ${figureLabel(figure)}`}
+                  alt={t(`已选 ${figureLabel(figure)}`)}
                 />
                 <button
                   onClick={() =>
                     workspace.setMembership(project.id, figure.id, false)
                   }
-                  aria-label={`移除 ${figureLabel(figure)}`}
+                  aria-label={t(`移除 ${figureLabel(figure)}`)}
                 >
                   <X size={12} />
                 </button>
-                <span className="mono">{figureLabel(figure)}</span>
+                <span className="mono">{t(figureLabel(figure))}</span>
               </div>
             ))}
           </div>
@@ -1062,7 +1116,7 @@ export default function App() {
               setExportOpen(true);
             }}
           >
-            整理并导出
+            {t("整理并导出")}
             <ArrowUpRight size={16} />
           </Button>
         </div>
@@ -1112,14 +1166,14 @@ export default function App() {
         />
       )}
       {detailId && loadState === "ready" && !detail && (
-        <Dialog title="没有找到这幅图" onClose={closeDetail}>
-          <p>这幅图尚未收录，返回画廊选择其他参考图。</p>
-          <Button onClick={closeDetail}>返回画廊</Button>
+        <Dialog title={t("没有找到这幅图")} onClose={closeDetail}>
+          <p>{t("这幅图尚未收录，返回画廊选择其他参考图。")}</p>
+          <Button onClick={closeDetail}>{t("返回画廊")}</Button>
         </Dialog>
       )}
       {guide && (
         <Dialog
-          title="让参考图，成为你的下一张图"
+          title={t("让参考图，成为你的下一张图")}
           eyebrow="HOW TO USE"
           onClose={() => setGuide(false)}
           className="guide-dialog"
@@ -1127,37 +1181,42 @@ export default function App() {
           <div className="guide-step">
             <span>01</span>
             <div>
-              <h3>浏览完整图像</h3>
+              <h3>{t("浏览完整图像")}</h3>
               <p>
-                按 Teaser
-                图、机制图、实验图浏览，叠加研究主题、用途、布局、会议或期刊筛选。
-                点击图像查看大图、结构描述和同篇参考图。
+                {t(
+                  "按 Teaser 图、机制图、实验图浏览，叠加研究主题、用途、布局、会议或期刊筛选。 点击图像查看大图、结构描述和同篇参考图。",
+                )}
               </p>
             </div>
           </div>
           <div className="guide-step">
             <span>02</span>
             <div>
-              <h3>为项目收集参考图</h3>
+              <h3>{t("为项目收集参考图")}</h3>
               <p>
-                在图像上点击“加入项目”，明确选择一个或多个项目，也可以现场新建项目。每个项目的参考板独立保存。“收藏”方便以后再找，“暂时隐藏”的图随时可以恢复。
+                {t(
+                  "在图像上点击“加入项目”，明确选择一个或多个项目，也可以现场新建项目。每个项目的参考板独立保存。“收藏”方便以后再找，“暂时隐藏”的图随时可以恢复。",
+                )}
               </p>
             </div>
           </div>
           <div className="guide-step">
             <span>03</span>
             <div>
-              <h3>填写任务，下载参考包</h3>
+              <h3>{t("填写任务，下载参考包")}</h3>
               <p>
-                写下你的研究内容和想借鉴的部分。下载 ZIP 后解压，把图片、prompt
-                和任务说明一起交给你的智能体。
+                {t(
+                  "写下你的研究内容和想借鉴的部分。下载 ZIP 后解压，把图片、prompt 和任务说明一起交给你的智能体。",
+                )}
               </p>
             </div>
           </div>
           <div className="guide-note">
             <BookOpen size={20} />
             <p>
-              论文图统一展示，获奖作为标签。详情会标注图号与来源审核状态；尚未核实图号的方法图也会如实标记。收藏保存在本机浏览器，不会自动跨设备同步。
+              {t(
+                "论文图统一展示，获奖作为标签。详情会标注图号与来源审核状态；尚未核实图号的方法图也会如实标记。收藏保存在本机浏览器，不会自动跨设备同步。",
+              )}
             </p>
           </div>
         </Dialog>
@@ -1166,10 +1225,10 @@ export default function App() {
         <Suspense
           fallback={
             <Dialog
-              title="用我的论文找图"
+              title={t("用我的论文找图")}
               onClose={() => setMatcherOpen(false)}
             >
-              <p role="status">正在打开论文匹配…</p>
+              <p role="status">{t("正在打开论文匹配…")}</p>
             </Dialog>
           }
         >
@@ -1222,6 +1281,7 @@ export default function App() {
 }
 
 function DetailDialog(props) {
+  const { t, locale } = useI18n();
   const [loaded, setLoaded] = useState(null);
   const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
@@ -1241,19 +1301,25 @@ function DetailDialog(props) {
   if (!loaded)
     return (
       <Dialog
-        title={props.figure.title.zh}
+        title={
+          locale === "en"
+            ? props.figure.title.en || props.figure.paper.title
+            : props.figure.title.zh
+        }
         onClose={props.onClose}
         className="detail-dialog"
       >
         <FigureImage figure={props.figure} full className="detail-media" />
         <p role="status">
-          {failed
-            ? "图形描述暂时无法加载，你的选择已保留。"
-            : "正在加载这幅图的描述与 prompt…"}
+          {t(
+            failed
+              ? "图形描述暂时无法加载，你的选择已保留。"
+              : "正在加载这幅图的描述与 prompt…",
+          )}
         </p>
         {failed && (
           <Button onClick={() => setRetry((value) => value + 1)}>
-            重新加载
+            {t("重新加载")}
           </Button>
         )}
       </Dialog>
@@ -1271,6 +1337,7 @@ function ReadyDetailDialog({
   hidden,
   actions,
 }) {
+  const { t, locale } = useI18n();
   const [panel, setPanel] = useState("analysis");
   const [message, setMessage] = useState("");
   const [copyBusy, setCopyBusy] = useState(false);
@@ -1295,8 +1362,12 @@ function ReadyDetailDialog({
   }
   return (
     <Dialog
-      title={figure.title.zh}
-      eyebrow={`${figure.paper.venue} ${figure.paper.publication_year} / ${figureLabel(figure)}`}
+      title={
+        locale === "en"
+          ? figure.title.en || figure.paper.title
+          : figure.title.zh
+      }
+      eyebrow={`${figure.paper.venue} ${figure.paper.publication_year} / ${t(figureLabel(figure))}`}
       onClose={onClose}
       className="detail-dialog"
       footer={
@@ -1314,7 +1385,7 @@ function ReadyDetailDialog({
             busy={copyBusy}
             onClick={copyPrompt}
           >
-            复制 prompt
+            {t("复制 prompt")}
           </Button>
         </>
       }
@@ -1324,23 +1395,28 @@ function ReadyDetailDialog({
         <div>
           <span className="verified-dot" />
           <strong>
-            {figure.reuse.validation.visual_extraction === "reviewed"
-              ? "原图已核对"
-              : figure.reuse.validation.visual_annotation === "reviewed"
-                ? "视觉结构已逐图标注"
-                : figure.layout_annotation?.status === "visual_layout_reviewed"
-                  ? "布局已看图核对"
-                  : "来源索引已核对"}
+            {t(
+              figure.reuse.validation.visual_extraction === "reviewed"
+                ? "原图已核对"
+                : figure.reuse.validation.visual_annotation === "reviewed"
+                  ? "视觉结构已逐图标注"
+                  : figure.layout_annotation?.status ===
+                      "visual_layout_reviewed"
+                    ? "布局已看图核对"
+                    : "来源索引已核对",
+            )}
           </strong>
           <span>
-            {figure.source.pdf_page_index_1based
-              ? `PDF 第 ${figure.source.pdf_page_index_1based} 页 · `
-              : ""}
+            {t(
+              figure.source.pdf_page_index_1based
+                ? `PDF 第 ${figure.source.pdf_page_index_1based} 页 · `
+                : "",
+            )}
             {figure.visual.pixel_width} × {figure.visual.pixel_height}
           </span>
         </div>
         <a href={figure.paper.url} target="_blank" rel="noreferrer">
-          打开论文
+          {t("打开论文")}
           <ExternalLink size={15} />
         </a>
       </div>
@@ -1348,31 +1424,37 @@ function ReadyDetailDialog({
       {sibling && (
         <button className="sibling-link" onClick={() => onNavigate(sibling.id)}>
           <Layers3 size={17} />
-          同一篇论文的 {figureLabel(sibling)}
-          <span>{sibling.title.zh}</span>
+          {t("同一篇论文的 ")}
+          {t(figureLabel(sibling))}
+          <span>
+            {locale === "en"
+              ? sibling.title.en || sibling.paper.title
+              : sibling.title.zh}
+          </span>
           <ArrowRight size={17} />
         </button>
       )}
-      <div className="detail-tabs" aria-label="参考材料">
+      <div className="detail-tabs" aria-label={t("参考材料")}>
         <button
           aria-pressed={panel === "analysis"}
           onClick={() => setPanel("analysis")}
         >
-          结构描述
+          {t("结构描述")}
         </button>
         <button
           aria-pressed={panel === "prompt"}
           onClick={() => setPanel("prompt")}
         >
-          改绘 Prompt
+          {t("改绘 Prompt")}
         </button>
         <button
           aria-pressed={panel === "source"}
           onClick={() => setPanel("source")}
         >
-          来源与图注
+          {t("来源与图注")}
         </button>
       </div>
+      <p className="prompt-hint">{t("图形描述与 Prompt 保留来源语言。")}</p>
       {panel === "analysis" ? (
         <div className="analysis-text">
           {figure.analysis_text
@@ -1391,11 +1473,13 @@ function ReadyDetailDialog({
       ) : panel === "prompt" ? (
         <>
           <p className="prompt-hint">
-            {figure.reuse.prompt_origin === "dataset_generation_caption"
-              ? "这份图形描述由来源数据集生成，尚未经逐图人工核验。请先确认参考图细节，再替换为你的研究内容；描述中的原论文结果不能直接用于你的论文。"
-              : figure.reuse.prompt_status === "draft"
-                ? "这是参考图驱动的通用改绘草稿，尚未逐图重建。智能体应先分析附图，再结合你的真实材料绘制。"
-                : "替换模板中的占位变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。"}
+            {t(
+              figure.reuse.prompt_origin === "dataset_generation_caption"
+                ? "这份图形描述由来源数据集生成，尚未经逐图人工核验。请先确认参考图细节，再替换为你的研究内容；描述中的原论文结果不能直接用于你的论文。"
+                : figure.reuse.prompt_status === "draft"
+                  ? "这是参考图驱动的通用改绘草稿，尚未逐图重建。智能体应先分析附图，再结合你的真实材料绘制。"
+                  : "替换模板中的占位变量，再与参考图一起交给智能体。此模板尚未经改绘生成验证。",
+            )}
           </p>
           <pre className="prompt-code" tabIndex="0">
             {figure.prompt_text}
@@ -1405,16 +1489,20 @@ function ReadyDetailDialog({
         <div className="source-details">
           {figure.layout_annotation && (
             <>
-              <h3>布局标注</h3>
+              <h3>{t("布局标注")}</h3>
               <p>
-                {figure.classification.layouts
-                  .map((tag) => LAYOUT_LABELS[tag])
-                  .join(" · ")}
+                {t(
+                  figure.classification.layouts
+                    .map((tag) => t(LAYOUT_LABELS[tag]))
+                    .join(" · "),
+                )}
               </p>
               <p>
-                {figure.layout_annotation.status === "visual_layout_reviewed"
-                  ? "已查看参考图预览，核对宏观空间布局。此项不代表全文或绘图 prompt 已完成审核。"
-                  : "根据来源数据集的图像描述初标，尚待看图复核。"}
+                {t(
+                  figure.layout_annotation.status === "visual_layout_reviewed"
+                    ? "已查看参考图预览，核对宏观空间布局。此项不代表全文或绘图 prompt 已完成审核。"
+                    : "根据来源数据集的图像描述初标，尚待看图复核。",
+                )}
               </p>
               {figure.layout_annotation.status === "visual_layout_reviewed" && (
                 <p>{figure.layout_annotation.observation}</p>
@@ -1423,28 +1511,35 @@ function ReadyDetailDialog({
           )}
           {figure.source.number_evidence && (
             <>
-              <h3>图号核验</h3>
+              <h3>{t("图号核验")}</h3>
               <p>
-                图号已在 arXiv {figure.source.number_version} 核实
-                {figure.paper.venue === "arXiv"
-                  ? "。"
-                  : "，正式会议版本图号尚未独立核实。"}
+                {t("图号已在 arXiv ")}
+                {figure.source.number_version}
+                {t(" 核实")}
+                {t(
+                  figure.paper.venue === "arXiv"
+                    ? "。"
+                    : "，正式会议版本图号尚未独立核实。",
+                )}
               </p>
               <a
                 href={figure.source.number_evidence.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                查看图号与图注依据 <ArrowUpRight size={15} />
+                {t("查看图号与图注依据 ")}
+                <ArrowUpRight size={15} />
               </a>
             </>
           )}
-          <h3>原始图注</h3>
+          <h3>{t("原始图注")}</h3>
           <p>
-            {figure.source.caption ||
-              "来源索引未提供逐图图注，可打开论文查看。"}
+            {t(
+              figure.source.caption ||
+                "来源索引未提供逐图图注，可打开论文查看。",
+            )}
           </p>
-          <h3>授权与原始文件</h3>
+          <h3>{t("授权与原始文件")}</h3>
           <p>
             {figure.rights.source_license} ·{" "}
             {figure.source.arxiv_version || figure.paper.pdf_version}
@@ -1454,7 +1549,8 @@ function ReadyDetailDialog({
             target="_blank"
             rel="noreferrer"
           >
-            查看授权依据 <ArrowUpRight size={15} />
+            {t("查看授权依据 ")}
+            <ArrowUpRight size={15} />
           </a>
           {figure.original_assets?.map((original) => (
             <a
@@ -1463,13 +1559,15 @@ function ReadyDetailDialog({
               target="_blank"
               rel="noreferrer"
             >
-              {original.source_kind === "upstream_extracted_figure"
-                ? "来源图文件"
-                : "作者原文件"}{" "}
+              {t(
+                original.source_kind === "upstream_extracted_figure"
+                  ? "来源图文件"
+                  : "作者原文件",
+              )}{" "}
               · {original.source_path} <ArrowUpRight size={15} />
             </a>
           ))}
-          <h3>论文作者</h3>
+          <h3>{t("论文作者")}</h3>
           <p>{figure.paper.authors.join(" · ")}</p>
           {figure.paper.awards?.[0] && (
             <a
@@ -1477,16 +1575,18 @@ function ReadyDetailDialog({
               target="_blank"
               rel="noreferrer"
             >
-              核验官方奖项
+              {t("核验官方奖项")}
               <ArrowUpRight size={15} />
             </a>
           )}
           <p className="prompt-hint">
-            {figure.reuse.prompt_origin === "dataset_generation_caption"
-              ? "来源方法图的原论文图号与正文范围尚未核实。图形描述由数据集生成，未经人工逐图验证。"
-              : figure.reuse.prompt_status === "draft"
-                ? "图片与分类来自公开论文图鉴。图号、图注及逐图视觉描述未完成独立审核；prompt 为通用草稿。"
-                : "图片取自论文；结构描述与 prompt 由维护者重建，尚未经生成验证。"}
+            {t(
+              figure.reuse.prompt_origin === "dataset_generation_caption"
+                ? "来源方法图的原论文图号与正文范围尚未核实。图形描述由数据集生成，未经人工逐图验证。"
+                : figure.reuse.prompt_status === "draft"
+                  ? "图片与分类来自公开论文图鉴。图号、图注及逐图视觉描述未完成独立审核；prompt 为通用草稿。"
+                  : "图片取自论文；结构描述与 prompt 由维护者重建，尚未经生成验证。",
+            )}
           </p>
         </div>
       )}
@@ -1504,6 +1604,7 @@ function ExportDialog({
   setNotes,
   onClose,
 }) {
+  const { t } = useI18n();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
@@ -1607,7 +1708,7 @@ function ExportDialog({
   }
   return (
     <Dialog
-      title={`${project.name} · 参考包`}
+      title={t(`${project.name} · 参考包`)}
       eyebrow="YOUR REFERENCE PACK"
       onClose={onClose}
       busy={busy}
@@ -1618,11 +1719,13 @@ function ExportDialog({
           <div key={figure.id}>
             <img
               src={assetUrl(figure, "preview")}
-              alt={`参考 ${figureLabel(figure)}`}
+              alt={t(`参考 ${figureLabel(figure)}`)}
             />
             <span>
-              {figureLabel(figure)}
-              <small>{TYPE_LABELS[figure.classification.primary_type]}</small>
+              {t(figureLabel(figure))}
+              <small>
+                {t(TYPE_LABELS[figure.classification.primary_type])}
+              </small>
             </span>
             <Check size={17} />
           </div>
@@ -1630,7 +1733,8 @@ function ExportDialog({
       </div>
       <form noValidate onSubmit={download}>
         <label htmlFor="research-task">
-          你想画什么？<span>必填</span>
+          {t("你想画什么？")}
+          <span>{t("必填")}</span>
         </label>
         <textarea
           id="research-task"
@@ -1644,13 +1748,16 @@ function ExportDialog({
           }}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? "export-error" : "task-help"}
-          placeholder="例如：我的方法分为视觉编码、跨模态融合和文本生成三个阶段，想画一张带反馈分支的框架图。"
+          placeholder={t(
+            "例如：我的方法分为视觉编码、跨模态融合和文本生成三个阶段，想画一张带反馈分支的框架图。",
+          )}
         />
         <p id="task-help" className="field-help">
-          写下你的方法、模块关系或数据。越具体，智能体越容易画对。
+          {t("写下你的方法、模块关系或数据。越具体，智能体越容易画对。")}
         </p>
         <label htmlFor="reference-notes">
-          你想借鉴哪些部分？<span>选填</span>
+          {t("你想借鉴哪些部分？")}
+          <span>{t("选填")}</span>
         </label>
         <textarea
           id="reference-notes"
@@ -1658,18 +1765,20 @@ function ExportDialog({
           rows="3"
           value={notes}
           onChange={(event) => setNotes(event.target.value)}
-          placeholder="例如：Figure 1 的整体布局，Figure 2 的对比方式；用蓝绿配色，保留我的模块名称。"
+          placeholder={t(
+            "例如：Figure 1 的整体布局，Figure 2 的对比方式；用蓝绿配色，保留我的模块名称。",
+          )}
         />
         {error && (
           <p id="export-error" className="field-error" role="alert">
-            {error}
+            {t(error)}
           </p>
         )}
         <Feedback message={message} inline />
         <div className="export-footer">
           <p>
             <FolderDown size={17} />
-            包含原图、描述、prompt 和你的任务
+            {t("包含原图、描述、prompt 和你的任务")}
           </p>
           <Button
             variant="primary"
@@ -1678,7 +1787,7 @@ function ExportDialog({
             disabled={!figures.length}
             type="submit"
           >
-            {busy ? "正在打包" : "下载参考包"}
+            {t(busy ? "正在打包" : "下载参考包")}
           </Button>
         </div>
       </form>
