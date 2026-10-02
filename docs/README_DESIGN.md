@@ -23,8 +23,8 @@ Refresh these files when the interface materially changes. Do not upscale compre
 
 ## English video walkthrough
 
-Both READMEs include a clickable 1920×1080 cover after the introductory paragraph. The cover is an actual final frame of the approved English walkthrough; the link opens the H.264/AAC MP4 hosted under the gallery's `media/` directory with browser playback controls. English narration, subtitles and editorial overlays explain the captured Chinese interface.
+Both READMEs show a compact GitHub-native inline video player after the introductory paragraph. Only the Demo / 演示 heading accompanies it. The asset URL is placed in a single 560-pixel table cell so the desktop player is about 530 pixels wide and remains responsive on mobile. GitHub owns the media controls and initially mutes embedded videos; viewers can unmute in the player.
 
-`public/media/walkthrough.en.mp4` is the single published video asset; Vite copies it to the Pages build. `docs/assets/walkthrough-cover.png`, `docs/media/walkthrough.en.srt` and `docs/media/walkthrough-sources.md` hold the cover, captions and paper/voice attribution. The video is 86.1 seconds and approximately 9 MB.
+The attachment is `https://github.com/user-attachments/assets/114a905e-697a-4cfe-ac63-72d63e5c025f`, uploaded directly with the token-authenticated GitHub user-attachments API used by GitHub CLI. No issue or comment was created for the upload. Its content is the same approved English H.264/AAC walkthrough in `public/media/walkthrough.en.mp4`; Pages continues to serve the original asset. README footer links preserve [video attribution](media/walkthrough-sources.md); [English captions](media/walkthrough.en.srt) remain in the media documentation.
 
 Paper figures retain their recorded licenses. English synthesized narration uses Kokoro v1.0 `af_heart`; music and edit accents are original deterministic synthesis. No inference weights, intermediate audio files or full image corpus are added to the repository for this walkthrough.

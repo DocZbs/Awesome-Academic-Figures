@@ -23,19 +23,15 @@
 
 Great research deserves a clear figure. Explore Teasers, method architectures, mechanisms and experiments from conferences, journals and arXiv. Save the expression that clicks, then take its image, structural notes and prompt to your drawing agent—with your own research brief.
 
-## 🎬 See it in action
+## 🎬 Demo
 
-Search, choose a figure, organize your project, and hand a complete reference pack to your drawing agent.
+<table>
+<tr><td width="560">
 
-<a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4">
-  <img src="docs/assets/walkthrough-cover.png" width="100%" alt="Watch the Awesome Academic Figures gallery and agent workflow" />
-</a>
-<p align="center">
-  <a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4"><strong>▶ Watch the walkthrough</strong></a><br />
-  <sub>86 seconds · English narration · 1080p</sub>
-</p>
+https://github.com/user-attachments/assets/114a905e-697a-4cfe-ac63-72d63e5c025f
 
-[English subtitles](docs/media/walkthrough.en.srt) · [Sources & credits](docs/media/walkthrough-sources.md)
+</td></tr>
+</table>
 
 ## 🔎 Find an expression that fits
 
@@ -75,4 +71,4 @@ The gallery UI and extended user docs are currently in Chinese; the agent guide 
 
 **Build with us.** Contribute a licensed figure, a better tag or a more useful prompt. [Contributing](CONTRIBUTING.md) · [Local development](docs/DEVELOPMENT.md) · [Report an issue](https://github.com/DocZbs/Awesome-Academic-Figures/issues)
 
-Code and maintainer-authored text are [MIT licensed](LICENSE). Paper images retain their [individual licenses](docs/LICENSING.md).
+Code and maintainer-authored text are [MIT licensed](LICENSE). Paper images retain their [individual licenses](docs/LICENSING.md). [Video credits](docs/media/walkthrough-sources.md).

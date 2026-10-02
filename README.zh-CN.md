@@ -23,19 +23,15 @@
 
 好研究，值得一张好图。这里收集会议、期刊与 arXiv 论文中的 Teaser、方法框架、机制与实验图。找到喜欢的表达，把图像、结构描述和 prompt 连同自己的研究任务一起交给绘图智能体，为你的研究找到更精准优雅的表达。
 
-## 🎬 86 秒，看懂怎么用
+## 🎬 演示
 
-搜索、选图、整理项目，再把完整参考包交给你的绘图智能体。
+<table>
+<tr><td width="560">
 
-<a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4">
-  <img src="docs/assets/walkthrough-cover.png" width="100%" alt="点击观看 Awesome Academic Figures 画廊与智能体使用演示" />
-</a>
-<p align="center">
-  <a href="https://doczbs.github.io/Awesome-Academic-Figures/media/walkthrough.en.mp4"><strong>▶ 播放使用演示</strong></a><br />
-  <sub>86 秒 · 英文解说 · 1080p</sub>
-</p>
+https://github.com/user-attachments/assets/114a905e-697a-4cfe-ac63-72d63e5c025f
 
-[英文字幕](docs/media/walkthrough.en.srt) · [视频来源与署名](docs/media/walkthrough-sources.md)
+</td></tr>
+</table>
 
 ## 🔎 找到适合你的表达
 
@@ -75,4 +71,4 @@ node scripts/agent.mjs search --query "rl world model" --type mechanism --limit 
 
 **一起让好图更容易被找到。** 欢迎贡献有明确授权的论文图、主题标签与 prompt 改进。[贡献指南](CONTRIBUTING.md) · [本地开发](docs/DEVELOPMENT.md) · [反馈问题](https://github.com/DocZbs/Awesome-Academic-Figures/issues)
 
-代码与维护者原创文字采用 [MIT](LICENSE)，论文图像遵循各自[许可](docs/LICENSING.md)。
+代码与维护者原创文字采用 [MIT](LICENSE)，论文图像遵循各自[许可](docs/LICENSING.md)。 [视频署名](docs/media/walkthrough-sources.md)。
