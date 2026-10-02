@@ -62,6 +62,8 @@ Category totals and per-tag counts share the current search, advanced filters an
 
 Each view has a localized document title. Detail is shareable via figure URL parameter; Back closes detail and preserves filters. Modal close restores trigger focus where it still exists. No hidden permissions or auth are implied. Mobile retains all actions and reflows filters above the grid. No sticky header; bottom tray reserves document padding and closes/removes references through native buttons.
 
+The header repository-support link opens the verified public GitHub repository in a new tab. Visitors choose Star on GitHub; the gallery does not perform a GitHub account mutation or claim a successful star. This link remains available with the catalog loading, empty or failed, and on narrow screens. Its accessible name identifies the new tab in both locales.
+
 ## Overlays and feedback
 
 Shared native dialog element is opened through showModal; browser top layer provides inert background, focus containment and Escape. App owns content, initial focus, scroll lock and restoration. All feedback uses shared Feedback; in-dialog messages are inside that dialog so they remain accessible. No native alert/confirm/prompt calls. Export task and notes stay in app memory separately for each project if the dialog is closed; close does not discard them. Project configuration drafts likewise survive closing and switching within this page, but save is explicit. Refresh discards these drafts.

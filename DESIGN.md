@@ -147,3 +147,8 @@ Gallery and project reference headings preserve curated short titles, strip dupl
 ## Interface languages
 
 A restrained language button in the header uses the shared Button and Languages icon. It offers English from the Chinese interface and 中文 from the English interface, including on narrow screens. It keeps the existing palette, fonts, spacing tokens and figure composition. LocaleProvider/useI18n owns the locale for every surface; UI messages and taxonomy labels come from one dictionary. The English hero uses a slightly smaller responsive type size to preserve the paired composition. English figure titles use existing metadata; scientific source content and user-authored text are preserved.
+
+
+## Repository support
+
+The header includes a quiet GitHub link styled with the existing neutral button. Desktop shows “Star 仓库” / “Star on GitHub”; narrow screens show the GitHub icon and “Star” in the second header row, with a complete localized accessible name. The language switch stays beside the brand. No star count or in-page starred state is claimed.

@@ -37,6 +37,7 @@ import {
   FileSearch,
   FolderOpen,
   Languages,
+  Github,
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import ProjectPanel from "./ProjectPanel.jsx";
@@ -400,6 +401,19 @@ export default function App() {
             <ArrowUpRight size={14} />
           </button>
         </nav>
+        <a
+          className="button button-neutral github-star"
+          href="https://github.com/DocZbs/Awesome-Academic-Figures"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t("在 GitHub 为仓库点 Star（新窗口）")}
+        >
+          <Github size={16} aria-hidden="true" />
+          <span className="github-star-label">{t("Star 仓库")}</span>
+          <span className="github-star-compact" aria-hidden="true">
+            Star
+          </span>
+        </a>
         <div className="header-tools">
           <span className="version-badge">
             <span />
