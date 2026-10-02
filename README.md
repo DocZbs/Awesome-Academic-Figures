@@ -28,7 +28,7 @@ Great research deserves a clear figure. Explore Teasers, method architectures, m
 <table>
 <tr><td width="560">
 
-https://github.com/user-attachments/assets/114a905e-697a-4cfe-ac63-72d63e5c025f
+https://github.com/user-attachments/assets/d4c4fef6-f91e-4fa3-a247-5d7b5a0b3f8b
 
 </td></tr>
 </table>
